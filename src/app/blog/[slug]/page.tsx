@@ -19,6 +19,7 @@ export function generateMetadata({ params }: Props): Metadata {
   return {
     title: `${post.title} | Ramses Digital Blog`,
     description: post.excerpt,
+    alternates: { canonical: `https://ramsesdigital.com/blog/${post.slug}` },
     openGraph: {
       title: post.title,
       description: post.excerpt,
@@ -26,8 +27,49 @@ export function generateMetadata({ params }: Props): Metadata {
       publishedTime: post.date,
       authors: [post.author],
       tags: post.tags,
+      images: [{ url: post.coverImage, width: 800, alt: post.title }],
     },
   }
+}
+
+function ArticleJsonLd({ post }: { post: (typeof posts)[0] }) {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: post.title,
+    description: post.excerpt,
+    image: post.coverImage,
+    datePublished: post.date,
+    dateModified: post.date,
+    author: {
+      '@type': 'Person',
+      name: post.author,
+      jobTitle: post.authorRole,
+      url: 'https://ramsesdigital.com/hakkimizda',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Ramses Digital',
+      url: 'https://ramsesdigital.com',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://ramsesdigital.com/favicon.ico',
+      },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `https://ramsesdigital.com/blog/${post.slug}`,
+    },
+    keywords: post.tags.join(', '),
+    articleSection: post.category,
+    inLanguage: 'tr-TR',
+  }
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  )
 }
 
 function categoryBadgeClass(color: string): string {
@@ -67,6 +109,7 @@ export default function BlogPostPage({ params }: Props) {
 
   return (
     <div className="min-h-screen bg-[#0A0F1E]">
+      <ArticleJsonLd post={post} />
       <style>{`
         .post-content h2 {
           color: #60a5fa;

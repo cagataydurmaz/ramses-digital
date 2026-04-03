@@ -3,17 +3,29 @@ import { posts } from '@/lib/posts'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = 'https://ramsesdigital.com'
-  const statics = ['', '/hizmetler', '/hakkimizda', '/blog', '/iletisim', '/portfolyo', '/teklif-al', '/seo-analiz'].map((path, i) => ({
+
+  const statics = [
+    { path: '',             priority: 1.0, freq: 'weekly'  },
+    { path: '/hizmetler',  priority: 0.9, freq: 'monthly' },
+    { path: '/hakkimizda', priority: 0.8, freq: 'monthly' },
+    { path: '/portfolyo',  priority: 0.8, freq: 'monthly' },
+    { path: '/blog',       priority: 0.9, freq: 'weekly'  },
+    { path: '/iletisim',   priority: 0.8, freq: 'monthly' },
+    { path: '/teklif-al',  priority: 0.7, freq: 'monthly' },
+    { path: '/seo-analiz', priority: 0.7, freq: 'monthly' },
+  ].map(({ path, priority, freq }) => ({
     url: base + path,
     lastModified: new Date(),
-    changeFrequency: 'monthly' as const,
-    priority: i === 0 ? 1 : 0.8,
+    changeFrequency: freq as 'weekly' | 'monthly',
+    priority,
   }))
+
   const blogPages = posts.map(p => ({
     url: `${base}/blog/${p.slug}`,
     lastModified: new Date(p.date),
-    changeFrequency: 'monthly' as const,
+    changeFrequency: 'weekly' as const,
     priority: 0.7,
   }))
+
   return [...statics, ...blogPages]
 }
