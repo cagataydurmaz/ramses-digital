@@ -1,0 +1,114 @@
+'use client'
+
+import { useState, useEffect } from 'react'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+import { motion, AnimatePresence } from 'framer-motion'
+import { Menu, X } from 'lucide-react'
+import CalendlyButton from '@/components/CalendlyButton'
+
+const navLinks = [
+  { href: '/hizmetler', label: 'Hizmetler' },
+  { href: '/hakkimizda', label: 'Hakkımızda' },
+  { href: '/portfolyo', label: 'Portföy' },
+  { href: '/blog', label: 'Blog' },
+  { href: '/iletisim', label: 'İletişim' },
+]
+
+export default function Navbar() {
+  const [scrolled, setScrolled] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(false)
+  const pathname = usePathname()
+
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 20)
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  useEffect(() => {
+    setMenuOpen(false)
+  }, [pathname])
+
+  return (
+    <>
+      <motion.header
+        initial={{ y: -100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.6, ease: 'easeOut' }}
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+          scrolled
+            ? 'bg-[#0A0F1E]/90 backdrop-blur-xl border-b border-white/[0.06]'
+            : 'bg-transparent'
+        }`}
+      >
+        <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+          {/* Logo */}
+          <Link href="/" className="flex items-center gap-1">
+            <span className="text-blue-500 font-bold text-xl tracking-tight">RAMSES</span>
+            <span className="text-white font-light text-xl tracking-tight">Digital</span>
+          </Link>
+
+          {/* Desktop Nav */}
+          <nav className="hidden md:flex items-center gap-8">
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={`text-sm transition-colors duration-200 ${
+                  pathname === link.href
+                    ? 'text-white'
+                    : 'text-zinc-400 hover:text-white'
+                }`}
+              >
+                {link.label}
+              </Link>
+            ))}
+          </nav>
+
+          {/* CTA */}
+          <div className="hidden md:flex items-center gap-4">
+            <CalendlyButton label="Ücretsiz Danışmanlık" variant="primary" className="!px-5 !py-2 !text-sm !rounded-full !shadow-none hover:!shadow-md" showIcon={false} />
+          </div>
+
+          {/* Mobile Menu Toggle */}
+          <button
+            onClick={() => setMenuOpen(!menuOpen)}
+            className="md:hidden text-zinc-400 hover:text-white transition-colors p-2.5 -mr-1"
+            aria-label="Menü"
+          >
+            {menuOpen ? <X size={22} /> : <Menu size={22} />}
+          </button>
+        </div>
+      </motion.header>
+
+      {/* Mobile Menu */}
+      <AnimatePresence>
+        {menuOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.2 }}
+            className="fixed top-16 left-0 right-0 z-40 bg-[#080D18]/95 backdrop-blur-xl border-b border-white/[0.06] md:hidden"
+          >
+            <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col gap-4">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className={`text-base py-3 border-b border-white/[0.04] transition-colors ${
+                    pathname === link.href ? 'text-white' : 'text-zinc-400'
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              ))}
+              <CalendlyButton label="Ücretsiz Danışmanlık" variant="primary" />
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </>
+  )
+}
