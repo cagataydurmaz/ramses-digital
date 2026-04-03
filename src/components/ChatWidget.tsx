@@ -220,9 +220,10 @@ export default function ChatWidget() {
               </div>
               <button
                 onClick={() => { setIsOpen(false); setIsMinimized(true) }}
-                className="text-zinc-600 hover:text-zinc-400 transition-colors p-1"
+                aria-label="Sohbeti kapat"
+                className="text-zinc-400 hover:text-zinc-200 transition-colors p-1"
               >
-                <X size={16} />
+                <X size={16} aria-hidden="true" />
               </button>
             </div>
 
@@ -273,17 +274,18 @@ export default function ChatWidget() {
                 onChange={(e) => setInput(e.target.value)}
                 onKeyDown={handleKeyDown}
                 placeholder="Mesajınızı yazın..."
-                className="flex-1 bg-[#111827] border border-white/[0.06] rounded-xl px-3 py-2 text-sm text-white placeholder:text-zinc-600 focus:outline-none focus:border-blue-500/50 transition-colors"
+                className="flex-1 bg-[#111827] border border-white/[0.06] rounded-xl px-3 py-2 text-sm text-white placeholder:text-zinc-400 focus:outline-none focus:border-blue-500/50 transition-colors"
               />
               <button
                 onClick={sendMessage}
                 disabled={!input.trim() || isLoading}
-                className="w-9 h-9 bg-blue-500 hover:bg-blue-600 disabled:bg-zinc-800 disabled:text-zinc-600 rounded-xl flex items-center justify-center transition-all shrink-0"
+                aria-label="Mesajı gönder"
+                className="w-9 h-9 bg-blue-500 hover:bg-blue-600 disabled:bg-zinc-800 disabled:text-zinc-500 rounded-xl flex items-center justify-center transition-all shrink-0"
               >
                 {isLoading ? (
-                  <Loader2 size={14} className="text-white animate-spin" />
+                  <Loader2 size={14} className="text-white animate-spin" aria-hidden="true" />
                 ) : (
-                  <Send size={14} className="text-white" />
+                  <Send size={14} className="text-white" aria-hidden="true" />
                 )}
               </button>
             </div>

@@ -299,7 +299,7 @@ export default function HomePage() {
                 <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-1.5">
                   <Counter target={stat.value} suffix={stat.suffix} />
                 </div>
-                <div className="text-zinc-500 text-xs sm:text-sm">{stat.label}</div>
+                <div className="text-zinc-400 text-xs sm:text-sm">{stat.label}</div>
               </FadeIn>
             ))}
           </div>
@@ -331,7 +331,7 @@ export default function HomePage() {
                       <Icon size={20} className="text-blue-400" />
                     </div>
                     <h3 className="text-white font-semibold text-lg mb-2">{service.title}</h3>
-                    <p className="text-zinc-500 text-sm leading-relaxed mb-4">{service.desc}</p>
+                    <p className="text-zinc-400 text-sm leading-relaxed mb-4">{service.desc}</p>
                     <div className="flex flex-wrap gap-2">
                       {service.tags.map((tag) => (
                         <span
@@ -382,7 +382,7 @@ export default function HomePage() {
                   className={`group relative bg-gradient-to-br ${project.color} border border-white/[0.06] rounded-2xl p-8 overflow-hidden card-hover cursor-default`}
                 >
                   <div className="absolute top-0 right-0 w-40 h-40 bg-white/[0.02] rounded-full -translate-y-20 translate-x-20" />
-                  <span className="text-xs text-zinc-500 font-medium uppercase tracking-wider">
+                  <span className="text-xs text-zinc-400 font-medium uppercase tracking-wider">
                     {project.category}
                   </span>
                   <h3 className="text-white font-bold text-2xl mt-2 mb-4">{project.title}</h3>
@@ -431,7 +431,7 @@ export default function HomePage() {
                   <p className="text-zinc-300 text-sm leading-relaxed mb-6">&ldquo;{t.content}&rdquo;</p>
                   <div>
                     <p className="text-white font-semibold text-sm">{t.name}</p>
-                    <p className="text-zinc-500 text-xs mt-0.5">{t.role}</p>
+                    <p className="text-zinc-400 text-xs mt-0.5">{t.role}</p>
                   </div>
                 </div>
               </FadeIn>
@@ -453,7 +453,7 @@ export default function HomePage() {
                   <TrendingUp size={20} className="text-blue-400" />
                 </div>
                 <h3 className="text-white font-bold text-xl mb-2">AI Teklif Hesaplayıcı</h3>
-                <p className="text-zinc-500 text-sm leading-relaxed mb-4">
+                <p className="text-zinc-400 text-sm leading-relaxed mb-4">
                   İşletmenize özel dijital pazarlama paketini saniyeler içinde oluşturun. Bütçenize ve hedeflerinize göre AI destekli öneri alın.
                 </p>
                 <span className="inline-flex items-center gap-1.5 text-blue-400 text-sm font-medium group-hover:gap-2.5 transition-all">
@@ -468,7 +468,7 @@ export default function HomePage() {
                   <Search size={20} className="text-violet-400" />
                 </div>
                 <h3 className="text-white font-bold text-xl mb-2">Ücretsiz SEO Analizi</h3>
-                <p className="text-zinc-500 text-sm leading-relaxed mb-4">
+                <p className="text-zinc-400 text-sm leading-relaxed mb-4">
                   Web sitenizin URL'sini girin, AI destekli kapsamlı SEO raporunuzu anında alın. Hız, mobil uyum, teknik SEO puanlarınızı görün.
                 </p>
                 <span className="inline-flex items-center gap-1.5 text-violet-400 text-sm font-medium group-hover:gap-2.5 transition-all">
