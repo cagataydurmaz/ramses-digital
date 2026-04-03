@@ -129,20 +129,20 @@ export default function SmartIntake() {
             {/* Glow blob behind card */}
             <div className="relative">
               <div
-                className="absolute inset-0 -z-10 blur-3xl opacity-30 rounded-3xl"
-                style={{ background: 'radial-gradient(ellipse at 50% 50%, rgba(59,130,246,0.35) 0%, transparent 70%)' }}
+                className="absolute inset-0 -z-10 blur-3xl opacity-50 rounded-3xl"
+                style={{ background: 'radial-gradient(ellipse at 50% 50%, rgba(59,130,246,0.5) 0%, transparent 70%)' }}
               />
 
               {/* Gradient border wrapper */}
               <div
                 className={`rounded-2xl p-[1px] transition-all duration-500 ${
                   isFocused
-                    ? 'bg-gradient-to-br from-blue-500/70 via-violet-500/40 to-cyan-500/30 shadow-[0_0_40px_rgba(59,130,246,0.2)]'
-                    : 'bg-gradient-to-br from-white/10 via-white/[0.04] to-white/[0.02]'
+                    ? 'bg-gradient-to-br from-blue-500/80 via-violet-500/50 to-cyan-500/40 shadow-[0_0_60px_rgba(59,130,246,0.35)]'
+                    : 'bg-gradient-to-br from-blue-500/30 via-white/10 to-white/[0.05]'
                 }`}
               >
                 <form onSubmit={handleSubmit}>
-                  <div className="relative bg-[#0D1225] rounded-[15px] overflow-hidden">
+                  <div className="relative bg-[#111830] rounded-[15px] overflow-hidden">
                     {/* Top bar */}
                     <div className="flex items-center gap-2.5 px-4 pt-4 pb-2">
                       <div className="flex items-center gap-2 flex-1">
@@ -183,18 +183,18 @@ export default function SmartIntake() {
                           }}
                           placeholder={EXAMPLES[exampleIndex]}
                           rows={2}
-                          className="w-full bg-transparent text-white placeholder:text-zinc-600 text-base resize-none outline-none leading-relaxed"
+                          className="w-full bg-transparent text-white placeholder:text-zinc-400 text-base resize-none outline-none leading-relaxed"
                         />
                       </AnimatePresence>
                     </div>
 
                     {/* Divider */}
-                    <div className="h-px mx-4 bg-white/[0.05]" />
+                    <div className="h-px mx-4 bg-white/[0.10]" />
 
                     {/* Bottom bar */}
                     <div className="flex items-center justify-between px-4 py-3">
-                      <span className="text-zinc-700 text-xs hidden sm:block">
-                        <kbd className="bg-white/[0.04] border border-white/[0.08] rounded px-1.5 py-0.5 text-[10px] font-mono mr-1">Enter</kbd>
+                      <span className="text-zinc-400 text-xs hidden sm:block">
+                        <kbd className="bg-white/[0.08] border border-white/[0.15] rounded px-1.5 py-0.5 text-[10px] font-mono mr-1 text-zinc-300">Enter</kbd>
                         ile gönder
                       </span>
                       <button
