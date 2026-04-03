@@ -144,7 +144,7 @@ export default function SmartIntake() {
                 <form onSubmit={handleSubmit}>
                   <div className="relative bg-[#111830] rounded-[15px] overflow-hidden">
                     {/* Top bar */}
-                    <div className="flex items-center gap-2.5 px-4 pt-4 pb-2">
+                    <div className="flex items-center gap-2.5 px-4 pt-3 pb-2 sm:pt-4">
                       <div className="flex items-center gap-2 flex-1">
                         {/* Animated sparkle icon */}
                         <motion.div
@@ -183,7 +183,7 @@ export default function SmartIntake() {
                           }}
                           placeholder={EXAMPLES[exampleIndex]}
                           rows={2}
-                          className="w-full bg-transparent text-white placeholder:text-zinc-400 text-base resize-none outline-none leading-relaxed"
+                          className="w-full bg-transparent text-white placeholder:text-zinc-400 text-sm sm:text-base resize-none outline-none leading-relaxed min-h-[44px]"
                         />
                       </AnimatePresence>
                     </div>
@@ -223,7 +223,7 @@ export default function SmartIntake() {
                 initial={{ opacity: 0, y: 8 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.15 }}
-                className="flex flex-wrap gap-2 mt-4 justify-center"
+                className="hidden sm:flex flex-wrap gap-2 mt-4 justify-center"
               >
                 <span className="text-zinc-700 text-xs self-center mr-1">Örnek:</span>
                 {EXAMPLES.slice(0, 3).map((ex, i) => (
@@ -279,7 +279,7 @@ export default function SmartIntake() {
 
               {/* Gradient border wrapper */}
               <div className={`rounded-2xl p-[1px] bg-gradient-to-br ${colors!.gradientBorder} shadow-[0_0_40px_rgba(0,0,0,0.4)]`}>
-                <div className={`bg-gradient-to-b ${colors!.bg} to-[#0D1225] rounded-[15px] p-6`}>
+                <div className={`bg-gradient-to-b ${colors!.bg} to-[#0D1225] rounded-[15px] p-4 sm:p-6`}>
                   {/* Service badge + reset */}
                   <div className="flex items-center justify-between mb-5">
                     <motion.div
