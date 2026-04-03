@@ -164,10 +164,10 @@ export default function ContactPage() {
                       <div>
                         <p className="text-white text-sm font-medium mb-0.5">E-Posta</p>
                         <a
-                          href="mailto:contact@ramsesdigital.com"
+                          href="mailto:ramsesdigitalagency@gmail.com"
                           className="text-zinc-500 hover:text-white text-sm transition-colors"
                         >
-                          contact@ramsesdigital.com
+                          ramsesdigitalagency@gmail.com
                         </a>
                       </div>
                     </div>

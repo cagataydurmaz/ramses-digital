@@ -23,7 +23,7 @@ export default function GizlilikPolitikasiPage() {
             <div className="mt-3 bg-white/[0.03] border border-white/[0.06] rounded-xl p-4">
               <p><strong className="text-white">Ticaret Unvanı:</strong> Ramses Digital</p>
               <p className="mt-1"><strong className="text-white">Adres:</strong> Telsizler Mahallesi, Boğazkale Sokak, No:2, Kağıthane / İstanbul</p>
-              <p className="mt-1"><strong className="text-white">E-posta:</strong> contact@ramsesdigital.com</p>
+              <p className="mt-1"><strong className="text-white">E-posta:</strong> ramsesdigitalagency@gmail.com</p>
               <p className="mt-1"><strong className="text-white">Telefon:</strong> +90 (535) 560 19 36</p>
             </div>
           </section>
@@ -99,8 +99,8 @@ export default function GizlilikPolitikasiPage() {
             </ul>
             <p className="mt-3">
               Bu haklarınızı kullanmak için{' '}
-              <a href="mailto:contact@ramsesdigital.com" className="text-blue-400 hover:text-blue-300">
-                contact@ramsesdigital.com
+              <a href="mailto:ramsesdigitalagency@gmail.com" className="text-blue-400 hover:text-blue-300">
+                ramsesdigitalagency@gmail.com
               </a>{' '}
               adresine yazılı başvuruda bulunabilirsiniz.
             </p>

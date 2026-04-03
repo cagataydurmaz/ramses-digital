@@ -72,7 +72,7 @@ export default function RootLayout({
               name: 'Ramses Digital',
               url: 'https://ramsesdigital.com',
               telephone: '+905355601936',
-              email: 'contact@ramsesdigital.com',
+              email: 'ramsesdigitalagency@gmail.com',
               address: {
                 '@type': 'PostalAddress',
                 streetAddress: 'Telsizler Mah. Boğazkale Sok. No:2',

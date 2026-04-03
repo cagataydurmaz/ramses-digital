@@ -123,8 +123,8 @@ export default function CerezPolitikasiPage() {
             <h2 className="text-white font-semibold text-lg mb-3">6. İletişim</h2>
             <p>
               Çerez politikamız hakkında sorularınız için{' '}
-              <a href="mailto:contact@ramsesdigital.com" className="text-blue-400 hover:text-blue-300">
-                contact@ramsesdigital.com
+              <a href="mailto:ramsesdigitalagency@gmail.com" className="text-blue-400 hover:text-blue-300">
+                ramsesdigitalagency@gmail.com
               </a>{' '}
               adresine ulaşabilirsiniz.
             </p>

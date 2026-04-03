@@ -119,11 +119,11 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:contact@ramsesdigital.com"
+                  href="mailto:ramsesdigitalagency@gmail.com"
                   className="flex items-center gap-3 text-zinc-500 hover:text-white text-sm transition-colors"
                 >
                   <Mail size={14} className="text-blue-500 shrink-0" />
-                  contact@ramsesdigital.com
+                  ramsesdigitalagency@gmail.com
                 </a>
               </li>
             </ul>
