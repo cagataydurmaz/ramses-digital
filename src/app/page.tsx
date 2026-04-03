@@ -128,7 +128,7 @@ const portfolio = [
     color: 'from-blue-600/20 to-blue-900/20',
   },
   {
-    title: 'Lüks Otel Zinciri',
+    title: 'Elite World Hotels',
     category: 'Google Ads',
     result: '4.2x ROAS Başarısı',
     color: 'from-violet-600/20 to-violet-900/20',
@@ -157,7 +157,7 @@ const testimonials = [
   },
   {
     name: 'Elif Kaya',
-    role: 'Pazarlama Direktörü, Lüks Hotels',
+    role: 'Pazarlama Direktörü, Elite World Hotels',
     content:
       'Google Ads kampanyalarımızda elde ettiğimiz 4.2x ROAS sonucu beklentilerimizin çok üzerindeydi. Harika bir iş çıkardılar.',
     rating: 5,

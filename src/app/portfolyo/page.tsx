@@ -46,7 +46,7 @@ const projects = [
     tag: 'bg-blue-500/10 text-blue-400',
   },
   {
-    title: 'Lüks Otel Zinciri',
+    title: 'Elite World Hotels',
     category: 'Google Ads',
     industry: 'Turizm & Konaklama',
     duration: '12 Ay',
