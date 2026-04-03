@@ -75,7 +75,7 @@ const team = [
 ]
 
 const milestones = [
-  { year: '2019', title: 'Kuruluş', desc: 'İstanbul Kağıthane\'de 2 kişilik bir ekiple dijital pazarlama yolculuğumuzu başlattık.' },
+  { year: '2019', title: 'Kuruluş', desc: 'İstanbul\'da 2 kişilik bir ekiple dijital pazarlama yolculuğumuzu başlattık.' },
   { year: '2020', title: 'İlk 10 Müşteri', desc: 'KOBİ\'lere odaklanarak ilk 10 müşterimizle anlamlı sonuçlar elde ettik.' },
   { year: '2021', title: 'Ekip Büyümesi', desc: 'Uzman kadromuzu genişlettik, 6 kişilik güçlü bir ekip oluşturduk.' },
   { year: '2022', title: '50+ Proje', desc: 'Farklı sektörlerden 50\'den fazla projede başarılı sonuçlar elde ettik.' },
@@ -136,7 +136,7 @@ export default function AboutPage() {
                   teknik SEO, performans reklamcılığı ve otomasyon — hepsine bir mühendis gözüyle bakıyoruz.
                 </p>
                 <p className="text-zinc-400 leading-relaxed">
-                  2019 yılında İstanbul Kağıthane&apos;de başladığımız yolculuğumuzda bugün 200&apos;den
+                  2019 yılında İstanbul&apos;da başladığımız yolculuğumuzda bugün 200&apos;den
                   fazla projeyi başarıyla tamamladık. Koddan kampanyaya, algoritmadan analitiğe
                   uzanan bu perspektif, müşterilerimize rakiplerinden farklı ve ölçülebilir bir avantaj sağlıyor.
                 </p>
