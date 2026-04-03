@@ -139,7 +139,7 @@ export default function ChatWidget() {
                 transition={{ duration: 2, repeat: Infinity }}
                 className="text-blue-400 text-[11px] leading-none"
               >
-                Ücretsiz danışalım →
+                Ücretsiz Danışmanlık →
               </motion.p>
             </div>
           </motion.button>
