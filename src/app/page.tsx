@@ -3,8 +3,8 @@
 import { useRef, useEffect, useState } from 'react'
 import { motion, useInView } from 'framer-motion'
 import Link from 'next/link'
+import dynamic from 'next/dynamic'
 import CalendlyButton from '@/components/CalendlyButton'
-import SmartIntake from '@/components/SmartIntake'
 import {
   Search,
   TrendingUp,
@@ -17,6 +17,14 @@ import {
   Star,
   CheckCircle2,
 } from 'lucide-react'
+
+// SmartIntake lazy load — hero render'ı beklemez, sonradan gelir
+const SmartIntake = dynamic(() => import('@/components/SmartIntake'), {
+  ssr: false,
+  loading: () => (
+    <div className="w-full max-w-2xl mx-auto h-[120px] rounded-2xl bg-white/[0.03] border border-white/[0.06] animate-pulse" />
+  ),
+})
 
 // ─── Fade-in wrapper ───────────────────────────────────────────────────────
 function FadeIn({
@@ -179,7 +187,7 @@ export default function HomePage() {
       <section className="relative min-h-screen flex flex-col items-center overflow-hidden px-4 sm:px-6 pt-24 sm:pt-32 md:pt-44 pb-12 sm:pb-16">
         {/* Background glow */}
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[900px] h-[600px] bg-blue-500/8 rounded-full blur-[160px]" />
+          <div className="mobile-hide-blur absolute top-1/4 left-1/2 -translate-x-1/2 w-[900px] h-[600px] bg-blue-500/8 rounded-full blur-[160px]" />
           <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/5 to-transparent" />
         </div>
 

@@ -1,12 +1,15 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Script from 'next/script'
+import dynamic from 'next/dynamic'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
-import ChatWidget from '@/components/ChatWidget'
-import WhatsAppButton from '@/components/WhatsAppButton'
-import CookieBanner from '@/components/CookieBanner'
+
+// Lazy-load widget'lar — first paint'i engellemez
+const ChatWidget = dynamic(() => import('@/components/ChatWidget'), { ssr: false })
+const WhatsAppButton = dynamic(() => import('@/components/WhatsAppButton'), { ssr: false })
+const CookieBanner = dynamic(() => import('@/components/CookieBanner'), { ssr: false })
 
 const inter = Inter({
   subsets: ['latin'],
@@ -44,7 +47,10 @@ export default function RootLayout({
     <html lang="tr" className={inter.variable}>
       <head>
         <meta name="color-scheme" content="dark" />
-        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+        {/* Preconnect: tarayıcı DNS'i önceden çözümler */}
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://assets.calendly.com" />
+        <link rel="dns-prefetch" href="https://wa.me" />
       </head>
       <body className="bg-[#0A0F1E] text-white antialiased">
         <Navbar />
@@ -53,14 +59,9 @@ export default function RootLayout({
         <ChatWidget />
         <WhatsAppButton />
         <CookieBanner />
+        {/* Calendly: lazyOnload — sayfayı bloklamaz */}
         <Script
           src="https://assets.calendly.com/assets/external/widget.js"
-          strategy="lazyOnload"
-        />
-        <Script
-          defer
-          data-domain="YOUR_PLAUSIBLE_DOMAIN"
-          src="https://plausible.io/js/script.js"
           strategy="lazyOnload"
         />
         <script

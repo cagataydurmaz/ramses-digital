@@ -135,3 +135,30 @@ img, video {
   max-width: 100%;
   height: auto;
 }
+
+/* ── Mobile performance ─────────────────────────────────────────────────── */
+@media (max-width: 640px) {
+  /* Dekoratif blur blob'ları mobilde gizle — GPU texture oluşturur, yavaşlatır */
+  .mobile-hide-blur,
+  .blur-\[80px\],
+  .blur-\[120px\],
+  .blur-\[160px\],
+  .blur-3xl {
+    display: none !important;
+  }
+
+  /* Framer-motion animasyonlarını kısalt */
+  :root {
+    --motion-duration: 0.25s;
+  }
+
+  /* Ağır gölge efektlerini kapat */
+  .shadow-2xl {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4) !important;
+  }
+
+  /* Scroll sırasında compositing katmanını optimize et */
+  * {
+    will-change: auto !important;
+  }
+}
