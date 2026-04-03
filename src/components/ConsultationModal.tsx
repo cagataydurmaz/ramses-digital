@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import { createPortal } from 'react-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { X, MessageCircle, Calendar, ArrowRight, CheckCircle2, Loader2 } from 'lucide-react'
 
@@ -78,7 +79,7 @@ export default function ConsultationModal({ isOpen, onClose }: ConsultationModal
 
   const hasCalendly = CALENDLY_URL !== 'YOUR_CALENDLY_URL'
 
-  return (
+  const modalContent = (
     <AnimatePresence>
       {isOpen && (
         <>
@@ -93,12 +94,12 @@ export default function ConsultationModal({ isOpen, onClose }: ConsultationModal
             style={{ zIndex: 9998 }}
           />
 
-          {/* Centering wrapper — pointer-events-none so clicks fall through to backdrop */}
+          {/* Centering wrapper */}
           <div
-            className="fixed inset-0 flex items-center justify-center pointer-events-none overflow-y-auto"
-            style={{ zIndex: 9999, padding: '1rem' }}
+            className="fixed inset-0 flex items-center justify-center p-4 pointer-events-none"
+            style={{ zIndex: 9999 }}
           >
-            {/* Modal card — pointer-events-auto to capture its own clicks */}
+            {/* Modal card */}
             <motion.div
               key="modal"
               initial={{ opacity: 0, scale: 0.95, y: 16 }}
@@ -106,7 +107,7 @@ export default function ConsultationModal({ isOpen, onClose }: ConsultationModal
               exit={{ opacity: 0, scale: 0.95, y: 16 }}
               transition={{ duration: 0.22, ease: [0.21, 0.47, 0.32, 0.98] }}
               onClick={(e) => e.stopPropagation()}
-              className="pointer-events-auto w-full max-w-md bg-[#0D1225] border border-white/[0.08] rounded-2xl shadow-2xl my-auto"
+              className="pointer-events-auto w-full max-w-md bg-[#0D1225] border border-white/[0.08] rounded-2xl shadow-2xl"
               style={{ maxHeight: 'calc(100dvh - 2rem)', overflowY: 'auto' }}
             >
               {/* Header */}
@@ -253,4 +254,7 @@ export default function ConsultationModal({ isOpen, onClose }: ConsultationModal
       )}
     </AnimatePresence>
   )
+
+  if (typeof document === 'undefined') return null
+  return createPortal(modalContent, document.body)
 }
