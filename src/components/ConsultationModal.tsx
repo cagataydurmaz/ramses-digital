@@ -95,8 +95,8 @@ export default function ConsultationModal({ isOpen, onClose }: ConsultationModal
 
           {/* Centering wrapper — pointer-events-none so clicks fall through to backdrop */}
           <div
-            className="fixed inset-0 flex items-center justify-center p-4 pointer-events-none"
-            style={{ zIndex: 9999 }}
+            className="fixed inset-0 flex items-center justify-center pointer-events-none overflow-y-auto"
+            style={{ zIndex: 9999, padding: '1rem' }}
           >
             {/* Modal card — pointer-events-auto to capture its own clicks */}
             <motion.div
@@ -106,7 +106,7 @@ export default function ConsultationModal({ isOpen, onClose }: ConsultationModal
               exit={{ opacity: 0, scale: 0.95, y: 16 }}
               transition={{ duration: 0.22, ease: [0.21, 0.47, 0.32, 0.98] }}
               onClick={(e) => e.stopPropagation()}
-              className="pointer-events-auto w-full max-w-md bg-[#0D1225] border border-white/[0.08] rounded-2xl shadow-2xl overflow-hidden"
+              className="pointer-events-auto w-full max-w-md bg-[#0D1225] border border-white/[0.08] rounded-2xl shadow-2xl my-auto"
               style={{ maxHeight: 'calc(100dvh - 2rem)', overflowY: 'auto' }}
             >
               {/* Header */}
