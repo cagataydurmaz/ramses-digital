@@ -29,8 +29,9 @@ export default function ChatWidget() {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' })
   }, [messages])
 
-  // Auto-open chat panel for 5 seconds on first visit, then auto-close
+  // Auto-open chat panel for 5 seconds on first visit, then auto-close (desktop only)
   useEffect(() => {
+    if (window.innerWidth < 640) return // mobilde auto-open yok
     const dismissed = sessionStorage.getItem('ramses_chat_notif')
     if (dismissed) return
     // Open after 2s
@@ -199,6 +200,7 @@ export default function ChatWidget() {
             exit={{ opacity: 0, scale: 0.9, y: 20 }}
             transition={{ type: 'spring', stiffness: 300, damping: 30 }}
             className="fixed bottom-20 right-3 sm:bottom-24 sm:right-6 z-50 w-[calc(100vw-24px)] sm:w-[360px] max-w-[360px] rounded-2xl overflow-hidden shadow-2xl"
+            style={{ maxHeight: 'calc(100dvh - 120px)' }}
             style={{
               background: '#0D1225',
               border: '1px solid rgba(255,255,255,0.08)',
@@ -225,7 +227,7 @@ export default function ChatWidget() {
             </div>
 
             {/* Messages */}
-            <div className="h-80 overflow-y-auto p-4 flex flex-col gap-3">
+            <div className="h-52 sm:h-80 overflow-y-auto p-4 flex flex-col gap-3">
               {messages.map((msg, i) => (
                 <div
                   key={i}
