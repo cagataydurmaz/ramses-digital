@@ -55,8 +55,6 @@ export default function RootLayout({
     <html lang="tr" className={inter.variable}>
       <head>
         <meta name="color-scheme" content="dark" />
-        {/* dns-prefetch: 3rd party gecikmelerini azaltır */}
-        <link rel="dns-prefetch" href="https://assets.calendly.com" />
       </head>
       <body className="bg-[#0A0F1E] text-white antialiased">
         <Navbar />
@@ -78,11 +76,6 @@ export default function RootLayout({
             gtag('config', 'G-JQMD80KVTJ');
           `}
         </Script>
-        {/* Calendly: lazyOnload — sayfayı bloklamaz */}
-        <Script
-          src="https://assets.calendly.com/assets/external/widget.js"
-          strategy="lazyOnload"
-        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
