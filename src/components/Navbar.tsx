@@ -7,6 +7,7 @@ import { Menu, X } from 'lucide-react'
 import CalendlyButton from '@/components/CalendlyButton'
 
 const navLinks = [
+  { href: '/', label: 'Anasayfa' },
   { href: '/hizmetler', label: 'Hizmetler' },
   { href: '/hakkimizda', label: 'Hakkımızda' },
   { href: '/portfolyo', label: 'Portföy' },
