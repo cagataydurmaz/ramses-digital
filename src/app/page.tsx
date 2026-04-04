@@ -5,7 +5,7 @@ import Link from 'next/link'
 import dynamic from 'next/dynamic'
 import CalendlyButton from '@/components/CalendlyButton'
 import {
-  Search,
+  Sparkles,
   TrendingUp,
   Share2,
   Monitor,
@@ -91,10 +91,10 @@ function Counter({ target, suffix = '' }: { target: number; suffix?: string }) {
 // ─── Data ──────────────────────────────────────────────────────────────────
 const services = [
   {
-    icon: Search,
-    title: 'SEO & İçerik Optimizasyonu',
-    desc: "Google'da üst sıralara çıkın. Organik trafiğinizi artırın ve kalıcı büyüme elde edin.",
-    tags: ['On-Page SEO', 'Teknik SEO', 'İçerik Stratejisi'],
+    icon: Sparkles,
+    title: 'SEO, GEO & AEO',
+    desc: "Markanızı Google'da değil; ChatGPT, Gemini ve Perplexity'de de güvenilir kaynak yapıyoruz.",
+    tags: ['GEO & LLM Görünürlüğü', 'EEAT & Otorite', 'Schema Markup'],
   },
   {
     icon: TrendingUp,
