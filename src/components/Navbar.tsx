@@ -93,15 +93,6 @@ export default function Navbar() {
           style={{ contain: 'layout style paint' }}
         >
           <div className="px-6 py-6 flex flex-col gap-1">
-            <Link
-              href="/"
-              onClick={() => setMenuOpen(false)}
-              className={`text-base py-3 border-b border-white/[0.04] ${
-                pathname === '/' ? 'text-white' : 'text-zinc-400'
-              }`}
-            >
-              Ana Sayfa
-            </Link>
             {navLinks.map((link) => (
               <Link
                 key={link.href}
