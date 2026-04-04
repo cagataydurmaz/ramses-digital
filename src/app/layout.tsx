@@ -13,6 +13,7 @@ const CookieBanner = dynamic(() => import('@/components/CookieBanner'), { ssr: f
 
 const inter = Inter({
   subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
   variable: '--font-inter',
   display: 'swap',
   preload: true,
@@ -49,10 +50,8 @@ export default function RootLayout({
     <html lang="tr" className={inter.variable}>
       <head>
         <meta name="color-scheme" content="dark" />
-        {/* Preconnect: tarayıcı DNS'i önceden çözümler */}
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        {/* dns-prefetch: 3rd party gecikmelerini azaltır */}
         <link rel="dns-prefetch" href="https://assets.calendly.com" />
-        <link rel="dns-prefetch" href="https://wa.me" />
       </head>
       <body className="bg-[#0A0F1E] text-white antialiased">
         <Navbar />

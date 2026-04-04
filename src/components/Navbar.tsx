@@ -30,6 +30,16 @@ export default function Navbar() {
     setMenuOpen(false)
   }, [pathname])
 
+  // Lock body scroll when mobile menu is open — prevents layout shift from scrollbar
+  useEffect(() => {
+    if (menuOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
+    }
+    return () => { document.body.style.overflow = '' }
+  }, [menuOpen])
+
   return (
     <>
       <header
@@ -83,12 +93,12 @@ export default function Navbar() {
       <AnimatePresence>
         {menuOpen && (
           <motion.div
-            initial={{ y: -8, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            exit={{ y: -8, opacity: 0 }}
-            transition={{ duration: 0.15, ease: 'easeOut' }}
-            className="fixed top-16 left-0 right-0 z-40 bg-[#080D18] border-b border-white/[0.06] md:hidden"
-            style={{ willChange: 'transform' }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.15 }}
+            className="fixed top-16 left-0 right-0 bottom-0 z-40 bg-[#080D18] border-b border-white/[0.06] md:hidden"
+            style={{ isolation: 'isolate' }}
           >
             <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col gap-1">
               {/* Ana Sayfa */}
