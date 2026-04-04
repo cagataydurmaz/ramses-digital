@@ -135,7 +135,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-16 pt-8 border-t border-white/[0.05] flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-zinc-500 text-sm">
+          <p className="text-zinc-400 text-sm">
             © {new Date().getFullYear()} Ramses Digital. Tüm hakları saklıdır.
           </p>
           <div className="flex items-center gap-6">

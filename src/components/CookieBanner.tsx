@@ -44,7 +44,7 @@ export default function CookieBanner() {
             <div className="flex items-center gap-2 shrink-0">
               <button
                 onClick={reject}
-                className="text-zinc-500 hover:text-white text-xs transition-colors px-2 py-1"
+                className="text-zinc-400 hover:text-white text-xs transition-colors px-2 py-1"
               >
                 Reddet
               </button>

@@ -215,7 +215,7 @@ export default function ChatWidget() {
                 <p className="text-white text-sm font-semibold">Ramses AI Asistan</p>
                 <div className="flex items-center gap-1.5">
                   <span className="w-1.5 h-1.5 bg-green-400 rounded-full" />
-                  <span className="text-zinc-500 text-xs">Çevrimiçi</span>
+                  <span className="text-zinc-400 text-xs">Çevrimiçi</span>
                 </div>
               </div>
               <button
@@ -280,7 +280,7 @@ export default function ChatWidget() {
                 onClick={sendMessage}
                 disabled={!input.trim() || isLoading}
                 aria-label="Mesajı gönder"
-                className="w-9 h-9 bg-blue-500 hover:bg-blue-600 disabled:bg-zinc-800 disabled:text-zinc-500 rounded-xl flex items-center justify-center transition-all shrink-0"
+                className="w-9 h-9 bg-blue-500 hover:bg-blue-600 disabled:bg-zinc-800 disabled:text-zinc-400 rounded-xl flex items-center justify-center transition-all shrink-0"
               >
                 {isLoading ? (
                   <Loader2 size={14} className="text-white animate-spin" aria-hidden="true" />

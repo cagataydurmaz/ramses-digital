@@ -295,7 +295,7 @@ export default function TeklifAlPage() {
                           ? 'bg-blue-500 text-white'
                           : step === i + 1
                           ? 'bg-white text-black'
-                          : 'bg-white/10 text-zinc-500'
+                          : 'bg-white/10 text-zinc-400'
                       }`}
                     >
                       {step > i + 1 ? '✓' : i + 1}
@@ -326,7 +326,7 @@ export default function TeklifAlPage() {
                   transition={{ duration: 0.25 }}
                 >
                   <h2 className="text-white font-bold text-xl mb-2">İşletme Tipinizi Seçin</h2>
-                  <p className="text-zinc-500 text-sm mb-6">Size en uygun paketi hazırlayabilmemiz için işletme tipinizi seçin.</p>
+                  <p className="text-zinc-400 text-sm mb-6">Size en uygun paketi hazırlayabilmemiz için işletme tipinizi seçin.</p>
                   <div className="grid grid-cols-2 gap-3">
                     {businessTypes.map((bt) => {
                       const Icon = bt.icon
@@ -343,7 +343,7 @@ export default function TeklifAlPage() {
                         >
                           <Icon
                             size={20}
-                            className={`mb-3 ${selected ? 'text-blue-400' : 'text-zinc-500'}`}
+                            className={`mb-3 ${selected ? 'text-blue-400' : 'text-zinc-400'}`}
                           />
                           <p className={`font-semibold text-sm ${selected ? 'text-white' : 'text-zinc-300'}`}>
                             {bt.label}
@@ -366,7 +366,7 @@ export default function TeklifAlPage() {
                   transition={{ duration: 0.25 }}
                 >
                   <h2 className="text-white font-bold text-xl mb-2">İhtiyacınız Olan Hizmetler</h2>
-                  <p className="text-zinc-500 text-sm mb-6">Birden fazla seçebilirsiniz.</p>
+                  <p className="text-zinc-400 text-sm mb-6">Birden fazla seçebilirsiniz.</p>
                   <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
                     {serviceOptions.map((svc) => {
                       const Icon = svc.icon
@@ -387,7 +387,7 @@ export default function TeklifAlPage() {
                               className="absolute top-3 right-3 text-blue-400"
                             />
                           )}
-                          <Icon size={18} className={`mb-2 ${selected ? 'text-blue-400' : 'text-zinc-500'}`} />
+                          <Icon size={18} className={`mb-2 ${selected ? 'text-blue-400' : 'text-zinc-400'}`} />
                           <p className={`text-xs font-medium ${selected ? 'text-white' : 'text-zinc-400'}`}>
                             {svc.label}
                           </p>
@@ -408,7 +408,7 @@ export default function TeklifAlPage() {
                   transition={{ duration: 0.25 }}
                 >
                   <h2 className="text-white font-bold text-xl mb-2">Aylık Bütçe Aralığınız</h2>
-                  <p className="text-zinc-500 text-sm mb-6">Bütçenize göre en verimli stratejiyi öneriyoruz.</p>
+                  <p className="text-zinc-400 text-sm mb-6">Bütçenize göre en verimli stratejiyi öneriyoruz.</p>
                   <div className="grid grid-cols-2 gap-3">
                     {budgetOptions.map((b) => {
                       const selected = budget === b.id
@@ -443,7 +443,7 @@ export default function TeklifAlPage() {
                   transition={{ duration: 0.25 }}
                 >
                   <h2 className="text-white font-bold text-xl mb-2">Web Siteniz</h2>
-                  <p className="text-zinc-500 text-sm mb-6">
+                  <p className="text-zinc-400 text-sm mb-6">
                     Opsiyoneldir. Girmeniz durumunda daha kişiselleştirilmiş bir teklif alırsınız.
                   </p>
                   <input
@@ -478,7 +478,7 @@ export default function TeklifAlPage() {
                       </div>
                       <div className="text-center">
                         <p className="text-white font-semibold">AI teklifiniz hazırlanıyor...</p>
-                        <p className="text-zinc-500 text-sm mt-1">Bu birkaç saniye sürebilir</p>
+                        <p className="text-zinc-400 text-sm mt-1">Bu birkaç saniye sürebilir</p>
                       </div>
                       <div className="flex gap-1.5">
                         {[0, 150, 300].map((delay) => (
@@ -560,7 +560,7 @@ export default function TeklifAlPage() {
                 <button
                   onClick={() => setStep((s) => Math.max(1, s - 1))}
                   disabled={step === 1}
-                  className="flex items-center gap-2 text-zinc-500 hover:text-white disabled:opacity-0 disabled:pointer-events-none text-sm transition-colors"
+                  className="flex items-center gap-2 text-zinc-400 hover:text-white disabled:opacity-0 disabled:pointer-events-none text-sm transition-colors"
                 >
                   <ChevronLeft size={16} /> Geri
                 </button>

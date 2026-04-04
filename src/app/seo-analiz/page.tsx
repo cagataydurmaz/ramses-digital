@@ -98,7 +98,7 @@ function OverallScore({ score }: { score: number }) {
         </svg>
         <div className="absolute inset-0 flex flex-col items-center justify-center">
           <span className="text-white font-bold text-2xl">{score}</span>
-          <span className="text-zinc-500 text-[10px]">/ 100</span>
+          <span className="text-zinc-400 text-[10px]">/ 100</span>
         </div>
       </div>
       <span className="text-sm font-semibold" style={{ color: getColor() }}>{getLabel()}</span>
@@ -217,7 +217,7 @@ export default function SeoAnalizPage() {
                   <Search size={20} className="text-blue-400 animate-pulse" />
                 </div>
                 <p className="text-white font-semibold mb-1">SEO analizi yapılıyor...</p>
-                <p className="text-zinc-500 text-sm">Bu 10-20 saniye sürebilir</p>
+                <p className="text-zinc-400 text-sm">Bu 10-20 saniye sürebilir</p>
                 <div className="flex justify-center gap-1.5 mt-4">
                   {[0, 150, 300].map((delay) => (
                     <span
@@ -338,7 +338,7 @@ export default function SeoAnalizPage() {
                   <CalendlyButton label="Detaylı Rapor İçin Bize Ulaşın" variant="primary" />
                   <button
                     onClick={() => { setResult(null); setUrl('') }}
-                    className="text-zinc-500 hover:text-white text-sm transition-colors"
+                    className="text-zinc-400 hover:text-white text-sm transition-colors"
                   >
                     Yeni analiz yap
                   </button>

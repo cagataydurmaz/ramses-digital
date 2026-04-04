@@ -135,7 +135,7 @@ export default function ContactPage() {
                       </div>
                       <div>
                         <p className="text-white text-sm font-medium mb-0.5">Adres</p>
-                        <p className="text-zinc-500 text-sm leading-relaxed">
+                        <p className="text-zinc-400 text-sm leading-relaxed">
                           Telsizler Mahallesi, Boğazkale Sokak, No:2
                           <br />
                           Kağıthane / İstanbul
@@ -150,7 +150,7 @@ export default function ContactPage() {
                         <p className="text-white text-sm font-medium mb-0.5">Telefon</p>
                         <a
                           href="tel:+905355601936"
-                          className="text-zinc-500 hover:text-white text-sm transition-colors"
+                          className="text-zinc-400 hover:text-white text-sm transition-colors"
                         >
                           +90 (535) 560 19 36
                         </a>
@@ -164,7 +164,7 @@ export default function ContactPage() {
                         <p className="text-white text-sm font-medium mb-0.5">E-Posta</p>
                         <a
                           href="mailto:ramsesdigitalagency@gmail.com"
-                          className="text-zinc-500 hover:text-white text-sm transition-colors"
+                          className="text-zinc-400 hover:text-white text-sm transition-colors"
                         >
                           ramsesdigitalagency@gmail.com
                         </a>
@@ -176,7 +176,7 @@ export default function ContactPage() {
                       </div>
                       <div>
                         <p className="text-white text-sm font-medium mb-0.5">Çalışma Saatleri</p>
-                        <p className="text-zinc-500 text-sm">
+                        <p className="text-zinc-400 text-sm">
                           Pazartesi – Cuma: 09:00 – 18:00
                           <br />
                           Cumartesi: 10:00 – 14:00
@@ -228,7 +228,7 @@ export default function ContactPage() {
                   </svg>
                   <div>
                     <p className="text-white text-sm font-medium">WhatsApp'tan Ulaşın</p>
-                    <p className="text-zinc-500 text-xs">Hızlı yanıt garantisi</p>
+                    <p className="text-zinc-400 text-xs">Hızlı yanıt garantisi</p>
                   </div>
                 </a>
               </FadeIn>

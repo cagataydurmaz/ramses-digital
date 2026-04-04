@@ -10,7 +10,7 @@ export default function GizlilikPolitikasiPage() {
     <div className="pt-32 pb-24 px-6">
       <div className="max-w-3xl mx-auto">
         <h1 className="text-4xl font-bold text-white mb-2">Gizlilik Politikası</h1>
-        <p className="text-zinc-500 text-sm mb-10">Son güncelleme: Ocak 2025</p>
+        <p className="text-zinc-400 text-sm mb-10">Son güncelleme: Ocak 2025</p>
 
         <div className="space-y-8 text-zinc-400 text-sm leading-relaxed">
           <section>

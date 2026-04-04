@@ -118,7 +118,7 @@ export default function ConsultationModal({ isOpen, onClose }: ConsultationModal
                   </div>
                   <h2 className="text-white font-bold text-lg">Ücretsiz Danışmanlık Al</h2>
                 </div>
-                <p className="text-zinc-500 text-xs pl-11">Bilgilerinizi bırakın, sizi arayalım.</p>
+                <p className="text-zinc-400 text-xs pl-11">Bilgilerinizi bırakın, sizi arayalım.</p>
                 <button
                   onClick={onClose}
                   className="absolute top-5 right-5 text-zinc-600 hover:text-white transition-colors p-1"
@@ -195,7 +195,7 @@ export default function ConsultationModal({ isOpen, onClose }: ConsultationModal
 
                       <p className="text-zinc-700 text-[11px] text-center">
                         Bilgileriniz yalnızca sizinle iletişim amacıyla kullanılır.{' '}
-                        <a href="/gizlilik-politikasi" className="underline hover:text-zinc-500" onClick={onClose}>
+                        <a href="/gizlilik-politikasi" className="underline hover:text-zinc-400" onClick={onClose}>
                           Gizlilik Politikası
                         </a>
                       </p>

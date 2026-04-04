@@ -78,7 +78,7 @@ function BlogCard({ post }: { post: Post }) {
           {post.tags.slice(0, 3).map((tag) => (
             <span
               key={tag}
-              className="text-[10px] px-2 py-0.5 rounded-full bg-white/[0.04] text-zinc-500 border border-white/[0.06]"
+              className="text-[10px] px-2 py-0.5 rounded-full bg-white/[0.04] text-zinc-400 border border-white/[0.06]"
             >
               {tag}
             </span>
@@ -87,7 +87,7 @@ function BlogCard({ post }: { post: Post }) {
 
         {/* Footer */}
         <div className="flex items-center justify-between pt-3 border-t border-white/[0.05]">
-          <div className="flex items-center gap-3 text-xs text-zinc-500">
+          <div className="flex items-center gap-3 text-xs text-zinc-400">
             <span>{post.readTime} dk okuma</span>
             <span>·</span>
             <span>
@@ -159,7 +159,7 @@ export default function BlogPage() {
       <section className="px-4 sm:px-6 pb-24">
         <div className="max-w-7xl mx-auto">
           {filtered.length === 0 ? (
-            <div className="text-center py-20 text-zinc-500">
+            <div className="text-center py-20 text-zinc-400">
               Bu kategoride henüz içerik bulunmuyor.
             </div>
           ) : (

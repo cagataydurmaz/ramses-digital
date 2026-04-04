@@ -256,7 +256,7 @@ export default function SmartIntake() {
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                className="mt-4 flex items-center justify-center gap-3 text-zinc-500 text-sm"
+                className="mt-4 flex items-center justify-center gap-3 text-zinc-400 text-sm"
               >
                 <Loader2 size={14} className="animate-spin text-blue-400" />
                 <span>AI analiz ediyor...</span>

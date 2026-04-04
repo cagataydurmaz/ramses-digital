@@ -220,7 +220,7 @@ export default function ServicesPage() {
                       <div className={`w-12 h-12 ${colors.icon} rounded-xl flex items-center justify-center mb-5`}>
                         <Icon size={22} />
                       </div>
-                      <p className="text-zinc-500 text-xs font-medium uppercase tracking-wider mb-2">
+                      <p className="text-zinc-400 text-xs font-medium uppercase tracking-wider mb-2">
                         {service.tagline}
                       </p>
                       <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">

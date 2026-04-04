@@ -164,7 +164,7 @@ export default function BlogPostPage({ params }: Props) {
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 pt-24 sm:pt-32 pb-24">
         {/* Breadcrumb */}
-        <nav className="flex items-center gap-2 text-sm text-zinc-500 mb-10 flex-wrap">
+        <nav className="flex items-center gap-2 text-sm text-zinc-400 mb-10 flex-wrap">
           <Link href="/" className="hover:text-zinc-300 transition-colors">
             Ana Sayfa
           </Link>
@@ -206,14 +206,14 @@ export default function BlogPostPage({ params }: Props) {
           </h1>
 
           {/* Meta row */}
-          <div className="flex flex-wrap items-center gap-4 text-sm text-zinc-500 border-t border-white/[0.06] pt-6">
+          <div className="flex flex-wrap items-center gap-4 text-sm text-zinc-400 border-t border-white/[0.06] pt-6">
             <div className="flex items-center gap-2">
               <div className="w-8 h-8 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400 font-bold text-xs">
                 R
               </div>
               <div>
                 <div className="text-zinc-300 font-medium text-sm">{post.author}</div>
-                <div className="text-zinc-500 text-xs">{post.authorRole}</div>
+                <div className="text-zinc-400 text-xs">{post.authorRole}</div>
               </div>
             </div>
             <span className="hidden sm:block text-zinc-700">·</span>
@@ -261,7 +261,7 @@ export default function BlogPostPage({ params }: Props) {
                   <h3 className="text-white font-semibold text-sm leading-snug group-hover:text-blue-300 transition-colors mb-2">
                     {rp.title}
                   </h3>
-                  <p className="text-zinc-500 text-xs line-clamp-2">{rp.excerpt}</p>
+                  <p className="text-zinc-400 text-xs line-clamp-2">{rp.excerpt}</p>
                 </Link>
               ))}
             </div>

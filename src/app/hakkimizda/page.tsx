@@ -193,7 +193,7 @@ export default function AboutPage() {
                       <Icon size={18} className="text-blue-400" />
                     </div>
                     <h3 className="text-white font-semibold mb-2">{value.title}</h3>
-                    <p className="text-zinc-500 text-sm leading-relaxed">{value.desc}</p>
+                    <p className="text-zinc-400 text-sm leading-relaxed">{value.desc}</p>
                   </div>
                 </FadeIn>
               )
@@ -225,7 +225,7 @@ export default function AboutPage() {
                     </div>
                     <div className="bg-[#0D1225] border border-white/[0.06] rounded-xl p-5 flex-1">
                       <h3 className="text-white font-semibold mb-1">{m.title}</h3>
-                      <p className="text-zinc-500 text-sm">{m.desc}</p>
+                      <p className="text-zinc-400 text-sm">{m.desc}</p>
                     </div>
                   </div>
                 </FadeIn>
@@ -256,8 +256,8 @@ export default function AboutPage() {
                   </div>
                   <h3 className="text-white font-semibold mb-0.5">{member.name}</h3>
                   <p className="text-blue-400 text-xs font-medium mb-3">{member.role}</p>
-                  <p className="text-zinc-500 text-sm leading-relaxed mb-4">{member.bio}</p>
-                  <span className="inline-block bg-white/[0.04] border border-white/[0.08] rounded-full px-3 py-1 text-[11px] text-zinc-500">
+                  <p className="text-zinc-400 text-sm leading-relaxed mb-4">{member.bio}</p>
+                  <span className="inline-block bg-white/[0.04] border border-white/[0.08] rounded-full px-3 py-1 text-[11px] text-zinc-400">
                     🎓 {member.badge}
                   </span>
                 </div>
