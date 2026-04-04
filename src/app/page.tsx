@@ -38,10 +38,10 @@ function FadeIn({
 }) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 24 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: '-60px' }}
-      transition={{ duration: 0.6, delay, ease: [0.21, 0.47, 0.32, 0.98] }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true, margin: '-40px' }}
+      transition={{ duration: 0.4, delay }}
       className={className}
     >
       {children}
@@ -193,7 +193,7 @@ export default function HomePage() {
 
         {/* Grid overlay */}
         <div
-          className="absolute inset-0 opacity-[0.03] pointer-events-none"
+          className="hidden sm:block absolute inset-0 opacity-[0.03] pointer-events-none"
           style={{
             backgroundImage:
               'linear-gradient(rgba(255,255,255,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.5) 1px, transparent 1px)',
@@ -203,9 +203,9 @@ export default function HomePage() {
 
         <div className="relative z-10 max-w-5xl mx-auto text-center">
           <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.4 }}
             className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 rounded-full px-4 py-1.5 mb-6 sm:mb-10"
           >
             <span className="w-1.5 h-1.5 bg-blue-400 rounded-full animate-pulse" />
@@ -215,9 +215,9 @@ export default function HomePage() {
           </motion.div>
 
           <motion.h1
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.4, delay: 0.05 }}
             className="text-[2rem] xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.08] tracking-tight mb-6 sm:mb-8"
           >
             Markanızı{' '}
@@ -227,18 +227,18 @@ export default function HomePage() {
           </motion.h1>
 
           <motion.p
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.4, delay: 0.1 }}
             className="text-base sm:text-xl md:text-2xl text-zinc-400 max-w-2xl mx-auto mb-8 sm:mb-10 font-light"
           >
             Gerçek Sonuçlar Elde Edin
           </motion.p>
 
           <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.4, delay: 0.15 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
             <CalendlyButton label="Ücretsiz Danışmanlık Al" variant="primary" />
@@ -252,9 +252,9 @@ export default function HomePage() {
 
           {/* ── AI Smart Intake ── */}
           <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.5 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.4, delay: 0.2 }}
             className="mt-8 sm:mt-14 w-full"
           >
             {/* Section label */}
@@ -273,13 +273,8 @@ export default function HomePage() {
           </motion.div>
         </div>
 
-        {/* Scroll indicator */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.5 }}
-          className="flex flex-col items-center gap-2 mt-10"
-        >
+        {/* Scroll indicator — masaüstünde göster */}
+        <div className="hidden sm:flex flex-col items-center gap-2 mt-10 opacity-60">
           <span className="text-zinc-600 text-xs tracking-widest uppercase">Keşfet</span>
           <motion.div
             animate={{ y: [0, 8, 0] }}
@@ -287,7 +282,7 @@ export default function HomePage() {
           >
             <ChevronDown size={18} className="text-zinc-600" />
           </motion.div>
-        </motion.div>
+        </div>
       </section>
 
       {/* ── STATS ────────────────────────────────────────────────────────── */}
