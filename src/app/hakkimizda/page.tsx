@@ -17,8 +17,7 @@ function FadeIn({
   return (
     <motion.div
       initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ once: true, margin: '-60px' }}
+      animate={{ opacity: 1 }}
       transition={{ duration: 0.3, delay }}
       className={className}
     >
