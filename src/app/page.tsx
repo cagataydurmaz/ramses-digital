@@ -6,6 +6,7 @@ import dynamic from 'next/dynamic'
 import CalendlyButton from '@/components/CalendlyButton'
 import {
   Sparkles,
+  Search,
   TrendingUp,
   Share2,
   Monitor,
