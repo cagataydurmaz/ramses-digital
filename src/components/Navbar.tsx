@@ -3,7 +3,6 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
 import CalendlyButton from '@/components/CalendlyButton'
 
@@ -22,30 +21,21 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20)
-    window.addEventListener('scroll', handleScroll)
+    window.addEventListener('scroll', handleScroll, { passive: true })
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  // Close menu on route change
   useEffect(() => {
     setMenuOpen(false)
   }, [pathname])
 
-  // Lock body scroll when mobile menu is open — prevents layout shift from scrollbar
-  useEffect(() => {
-    if (menuOpen) {
-      document.body.style.overflow = 'hidden'
-    } else {
-      document.body.style.overflow = ''
-    }
-    return () => { document.body.style.overflow = '' }
-  }, [menuOpen])
-
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        className={`fixed top-0 left-0 right-0 z-50 ${
           scrolled
-            ? 'bg-[#0A0F1E]/95 md:bg-[#0A0F1E]/90 md:backdrop-blur-xl border-b border-white/[0.06]'
+            ? 'bg-[#0A0F1E]/95 md:backdrop-blur-xl border-b border-white/[0.06]'
             : 'bg-transparent'
         }`}
       >
@@ -73,62 +63,62 @@ export default function Navbar() {
             ))}
           </nav>
 
-          {/* CTA */}
+          {/* Desktop CTA */}
           <div className="hidden md:flex items-center gap-4">
-            <CalendlyButton label="Ücretsiz Danışmanlık" variant="primary" className="!px-5 !py-2 !text-sm !rounded-full !shadow-none hover:!shadow-md" showIcon={false} />
+            <CalendlyButton
+              label="Ücretsiz Danışmanlık"
+              variant="primary"
+              className="!px-5 !py-2 !text-sm !rounded-full !shadow-none hover:!shadow-md"
+              showIcon={false}
+            />
           </div>
 
           {/* Mobile Menu Toggle */}
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="md:hidden text-zinc-400 hover:text-white transition-colors p-2.5 -mr-1"
+            className="md:hidden text-zinc-400 hover:text-white p-2.5 -mr-1"
             aria-label="Menü"
+            aria-expanded={menuOpen}
           >
             {menuOpen ? <X size={22} /> : <Menu size={22} />}
           </button>
         </div>
       </header>
 
-      {/* Mobile Menu */}
-      <AnimatePresence>
-        {menuOpen && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.15 }}
-            className="fixed top-16 left-0 right-0 bottom-0 z-40 bg-[#080D18] border-b border-white/[0.06] md:hidden"
-            style={{ isolation: 'isolate' }}
-          >
-            <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col gap-1">
-              {/* Ana Sayfa */}
+      {/* Mobile Menu — no Framer Motion, no opacity animation, instant render */}
+      {menuOpen && (
+        <div
+          className="fixed top-16 left-0 right-0 bottom-0 z-40 bg-[#080D18] md:hidden overflow-y-auto"
+          style={{ contain: 'layout style paint' }}
+        >
+          <div className="px-6 py-6 flex flex-col gap-1">
+            <Link
+              href="/"
+              onClick={() => setMenuOpen(false)}
+              className={`text-base py-3 border-b border-white/[0.04] ${
+                pathname === '/' ? 'text-white' : 'text-zinc-400'
+              }`}
+            >
+              Ana Sayfa
+            </Link>
+            {navLinks.map((link) => (
               <Link
-                href="/"
+                key={link.href}
+                href={link.href}
                 onClick={() => setMenuOpen(false)}
-                className={`text-base py-3 border-b border-white/[0.04] transition-colors ${
-                  pathname === '/' ? 'text-white' : 'text-zinc-400'
+                className={`text-base py-3 border-b border-white/[0.04] ${
+                  pathname === link.href ? 'text-white' : 'text-zinc-400'
                 }`}
               >
-                Ana Sayfa
+                {link.label}
               </Link>
-              {navLinks.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className={`text-base py-3 border-b border-white/[0.04] transition-colors ${
-                    pathname === link.href ? 'text-white' : 'text-zinc-400'
-                  }`}
-                >
-                  {link.label}
-                </Link>
-              ))}
-              <div className="pt-2">
-                <CalendlyButton label="Ücretsiz Danışmanlık" variant="primary" />
-              </div>
+            ))}
+            <div className="pt-4">
+              <CalendlyButton label="Ücretsiz Danışmanlık" variant="primary" />
             </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+          </div>
+        </div>
+      )}
     </>
   )
 }
