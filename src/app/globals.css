@@ -77,6 +77,15 @@ body {
   }
 }
 
+/* Fade-in CSS animation — Framer Motion'sız, GPU compositor-safe */
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+.animate-fadein {
+  animation: fadein 0.35s ease both;
+}
+
 /* Gradient text */
 .gradient-text {
   background: linear-gradient(135deg, #3B82F6 0%, #60A5FA 50%, #93C5FD 100%);

@@ -1,7 +1,6 @@
 'use client'
 
 import { useRef, useEffect, useState } from 'react'
-import { motion, useInView } from 'framer-motion'
 import Link from 'next/link'
 import dynamic from 'next/dynamic'
 import CalendlyButton from '@/components/CalendlyButton'
@@ -26,7 +25,7 @@ const SmartIntake = dynamic(() => import('@/components/SmartIntake'), {
   ),
 })
 
-// ─── Fade-in wrapper ───────────────────────────────────────────────────────
+// ─── Fade-in wrapper — CSS only, no Framer Motion ─────────────────────────
 function FadeIn({
   children,
   delay = 0,
@@ -37,22 +36,31 @@ function FadeIn({
   className?: string
 }) {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.35, delay }}
-      className={className}
+    <div
+      className={`animate-fadein ${className}`}
+      style={{ animationDelay: `${delay}s` }}
     >
       {children}
-    </motion.div>
+    </div>
   )
 }
 
 // ─── Animated counter ──────────────────────────────────────────────────────
 function Counter({ target, suffix = '' }: { target: number; suffix?: string }) {
   const [count, setCount] = useState(0)
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true })
+  const ref = useRef<HTMLSpanElement>(null)
+  const [isInView, setIsInView] = useState(false)
+
+  useEffect(() => {
+    const el = ref.current
+    if (!el) return
+    const observer = new IntersectionObserver(
+      ([entry]) => { if (entry.isIntersecting) { setIsInView(true); observer.disconnect() } },
+      { threshold: 0.1 }
+    )
+    observer.observe(el)
+    return () => observer.disconnect()
+  }, [])
 
   useEffect(() => {
     if (!isInView) return
@@ -201,44 +209,33 @@ export default function HomePage() {
         />
 
         <div className="relative z-10 max-w-5xl mx-auto text-center">
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.4 }}
-            className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 rounded-full px-4 py-1.5 mb-6 sm:mb-10"
-          >
+          <div className="animate-fadein inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 rounded-full px-4 py-1.5 mb-6 sm:mb-10">
             <span className="w-1.5 h-1.5 bg-blue-400 rounded-full animate-pulse" />
             <span className="text-blue-400 text-xs font-medium tracking-wider uppercase">
               Performans Odaklı Dijital Pazarlama
             </span>
-          </motion.div>
+          </div>
 
-          <motion.h1
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.4, delay: 0.05 }}
-            className="text-[2rem] xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.08] tracking-tight mb-6 sm:mb-8"
+          <h1
+            className="animate-fadein text-[2rem] xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.08] tracking-tight mb-6 sm:mb-8"
+            style={{ animationDelay: '0.05s' }}
           >
             Markanızı{' '}
             <span className="gradient-text">Dijitalde</span>
             <br />
             Büyütün
-          </motion.h1>
+          </h1>
 
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.4, delay: 0.1 }}
-            className="text-base sm:text-xl md:text-2xl text-zinc-400 max-w-2xl mx-auto mb-8 sm:mb-10 font-light"
+          <p
+            className="animate-fadein text-base sm:text-xl md:text-2xl text-zinc-400 max-w-2xl mx-auto mb-8 sm:mb-10 font-light"
+            style={{ animationDelay: '0.1s' }}
           >
             Gerçek Sonuçlar Elde Edin
-          </motion.p>
+          </p>
 
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.4, delay: 0.15 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-4"
+          <div
+            className="animate-fadein flex flex-col sm:flex-row items-center justify-center gap-4"
+            style={{ animationDelay: '0.15s' }}
           >
             <CalendlyButton label="Ücretsiz Danışmanlık Al" variant="primary" />
             <Link
@@ -247,14 +244,12 @@ export default function HomePage() {
             >
               Projelerimizi İncele
             </Link>
-          </motion.div>
+          </div>
 
           {/* ── AI Smart Intake ── */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.4, delay: 0.2 }}
-            className="mt-8 sm:mt-14 w-full"
+          <div
+            className="animate-fadein mt-8 sm:mt-14 w-full"
+            style={{ animationDelay: '0.2s' }}
           >
             {/* Section label */}
             <div className="flex items-center justify-center gap-3 mb-3 sm:mb-5">
@@ -269,18 +264,13 @@ export default function HomePage() {
               <div className="h-px flex-1 bg-gradient-to-l from-transparent to-white/10 max-w-[80px]" />
             </div>
             <SmartIntake />
-          </motion.div>
+          </div>
         </div>
 
         {/* Scroll indicator — masaüstünde göster */}
         <div className="hidden sm:flex flex-col items-center gap-2 mt-10 opacity-60">
           <span className="text-zinc-600 text-xs tracking-widest uppercase">Keşfet</span>
-          <motion.div
-            animate={{ y: [0, 8, 0] }}
-            transition={{ repeat: Infinity, duration: 1.5 }}
-          >
-            <ChevronDown size={18} className="text-zinc-600" />
-          </motion.div>
+          <ChevronDown size={18} className="text-zinc-600 animate-bounce" />
         </div>
       </section>
 

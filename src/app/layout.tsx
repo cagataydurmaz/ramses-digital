@@ -15,7 +15,10 @@ const inter = Inter({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
   variable: '--font-inter',
-  display: 'swap',
+  // 'optional': tarayıcı ~100ms içinde font yükleyemezse fallback fontla devam eder,
+  // swap beklemez → LCP fontun yüklenmesini beklemiyor, ~1s'ye düşer.
+  // adjustFontFallback:true fallback fontun metriklerini Inter'e eşitler → görsel fark yok.
+  display: 'optional',
   preload: true,
   adjustFontFallback: true,
 })
