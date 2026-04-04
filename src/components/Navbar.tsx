@@ -32,11 +32,8 @@ export default function Navbar() {
 
   return (
     <>
-      <motion.header
-        initial={{ y: -100, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.6, ease: 'easeOut' }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+      <header
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           scrolled
             ? 'bg-[#0A0F1E]/95 md:bg-[#0A0F1E]/90 md:backdrop-blur-xl border-b border-white/[0.06]'
             : 'bg-transparent'
@@ -80,7 +77,7 @@ export default function Navbar() {
             {menuOpen ? <X size={22} /> : <Menu size={22} />}
           </button>
         </div>
-      </motion.header>
+      </header>
 
       {/* Mobile Menu */}
       <AnimatePresence>

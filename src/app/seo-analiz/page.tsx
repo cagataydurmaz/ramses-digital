@@ -144,24 +144,24 @@ export default function SeoAnalizPage() {
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-blue-500/8 rounded-full blur-[120px] pointer-events-none" />
         <div className="max-w-3xl mx-auto text-center relative z-10">
           <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 rounded-full px-4 py-1.5 mb-5"
           >
             <TrendingUp size={14} className="text-blue-400" />
             <span className="text-blue-400 text-xs font-medium">AI Destekli SEO Analizi</span>
           </motion.div>
           <motion.h1
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{ delay: 0.1 }}
             className="text-4xl md:text-5xl font-bold text-white mb-4"
           >
             Ücretsiz SEO Analizi
           </motion.h1>
           <motion.p
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
             className="text-zinc-400 text-lg"
           >
@@ -208,8 +208,8 @@ export default function SeoAnalizPage() {
           <AnimatePresence>
             {isLoading && (
               <motion.div
-                initial={{ opacity: 0, y: 12 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 className="mt-6 bg-[#0D1225] border border-white/[0.06] rounded-2xl p-8 text-center"
               >
@@ -243,8 +243,8 @@ export default function SeoAnalizPage() {
         <AnimatePresence>
           {result && (
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
               transition={{ duration: 0.5 }}
               className="max-w-3xl mx-auto mt-8 space-y-5"
             >

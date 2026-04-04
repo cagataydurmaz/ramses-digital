@@ -249,24 +249,24 @@ export default function TeklifAlPage() {
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-blue-500/8 rounded-full blur-[120px] pointer-events-none" />
         <div className="max-w-3xl mx-auto text-center relative z-10">
           <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 rounded-full px-4 py-1.5 mb-5"
           >
             <Sparkles size={14} className="text-blue-400" />
             <span className="text-blue-400 text-xs font-medium">AI Destekli Teklif Hesaplayıcı</span>
           </motion.div>
           <motion.h1
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{ delay: 0.1 }}
             className="text-4xl md:text-5xl font-bold text-white mb-4"
           >
             Anında Ücretsiz Teklif Al
           </motion.h1>
           <motion.p
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
             className="text-zinc-400 text-lg"
           >
@@ -526,8 +526,8 @@ export default function TeklifAlPage() {
 
                       {isDone && (
                         <motion.div
-                          initial={{ opacity: 0, y: 12 }}
-                          animate={{ opacity: 1, y: 0 }}
+                          initial={{ opacity: 0 }}
+                          animate={{ opacity: 1 }}
                           className="mt-8 pt-6 border-t border-white/[0.06]"
                         >
                           <p className="text-zinc-400 text-sm mb-4">
