@@ -86,13 +86,24 @@ export default function Navbar() {
       <AnimatePresence>
         {menuOpen && (
           <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.2 }}
-            className="fixed top-16 left-0 right-0 z-40 bg-[#080D18]/95 backdrop-blur-xl border-b border-white/[0.06] md:hidden"
+            initial={{ y: -8, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            exit={{ y: -8, opacity: 0 }}
+            transition={{ duration: 0.15, ease: 'easeOut' }}
+            className="fixed top-16 left-0 right-0 z-40 bg-[#080D18] border-b border-white/[0.06] md:hidden"
+            style={{ willChange: 'transform' }}
           >
-            <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col gap-4">
+            <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col gap-1">
+              {/* Ana Sayfa */}
+              <Link
+                href="/"
+                onClick={() => setMenuOpen(false)}
+                className={`text-base py-3 border-b border-white/[0.04] transition-colors ${
+                  pathname === '/' ? 'text-white' : 'text-zinc-400'
+                }`}
+              >
+                Ana Sayfa
+              </Link>
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
@@ -104,7 +115,9 @@ export default function Navbar() {
                   {link.label}
                 </Link>
               ))}
-              <CalendlyButton label="Ücretsiz Danışmanlık" variant="primary" />
+              <div className="pt-2">
+                <CalendlyButton label="Ücretsiz Danışmanlık" variant="primary" />
+              </div>
             </div>
           </motion.div>
         )}
