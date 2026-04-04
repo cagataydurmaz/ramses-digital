@@ -133,7 +133,7 @@ const stats = [
   { value: 200, suffix: '+', label: 'Başarılı Proje' },
   { value: 50, suffix: '+', label: 'Mutlu Müşteri' },
   { value: 5, suffix: '+', label: 'Yıl Deneyim' },
-  { value: 98, suffix: '%', label: 'Müşteri Memnuniyeti' },
+  { value: 94, suffix: '%', label: 'Müşteri Memnuniyeti' },
 ]
 
 const portfolio = [
