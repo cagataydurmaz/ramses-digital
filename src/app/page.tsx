@@ -130,7 +130,7 @@ const services = [
 ]
 
 const stats = [
-  { value: 200, suffix: '+', label: 'Başarılı Proje' },
+  { value: 100, suffix: '+', label: 'Başarılı Proje' },
   { value: 50, suffix: '+', label: 'Mutlu Müşteri' },
   { value: 5, suffix: '+', label: 'Yıl Deneyim' },
   { value: 94, suffix: '%', label: 'Müşteri Memnuniyeti' },
