@@ -130,25 +130,25 @@ const stats = [
 
 const portfolio = [
   {
-    title: 'TechStore Türkiye',
+    title: 'Global Elektronik Pazaryeri',
     category: 'E-Ticaret SEO',
     result: '%340 Organik Trafik Artışı',
     color: 'from-blue-600/20 to-blue-900/20',
   },
   {
-    title: 'Elite World Hotels',
+    title: 'Lüks Otel Zinciri (Konaklama)',
     category: 'Google Ads',
     result: '4.2x ROAS Başarısı',
     color: 'from-violet-600/20 to-violet-900/20',
   },
   {
-    title: 'Fintech Startup',
+    title: 'Yeni Nesil Ödeme Sistemleri',
     category: 'Sosyal Medya',
     result: '120K Yeni Takipçi',
     color: 'from-emerald-600/20 to-emerald-900/20',
   },
   {
-    title: 'Global Yazılım Firması',
+    title: 'SaaS & Kurumsal Yazılım Çözümleri',
     category: 'Web & SEO',
     result: '%280 Lead Artışı',
     color: 'from-orange-600/20 to-orange-900/20',
@@ -158,14 +158,14 @@ const portfolio = [
 const testimonials = [
   {
     name: 'Ahmet Yılmaz',
-    role: 'CEO, TechStore Türkiye',
+    role: 'CEO, Global Elektronik Pazaryeri',
     content:
       'Ramses Digital ile çalışmaya başladığımızdan beri organik trafiğimiz 3 katına çıktı. Gerçekten sonuç odaklı bir ekip.',
     rating: 5,
   },
   {
     name: 'Elif Kaya',
-    role: 'Pazarlama Direktörü, Elite World Hotels',
+    role: 'Pazarlama Direktörü, Lüks Otel Zinciri',
     content:
       'Google Ads kampanyalarımızda elde ettiğimiz 4.2x ROAS sonucu beklentilerimizin çok üzerindeydi. Harika bir iş çıkardılar.',
     rating: 5,

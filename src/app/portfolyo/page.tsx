@@ -32,7 +32,7 @@ const categories = ['Tümü', 'SEO', 'Google Ads', 'Sosyal Medya', 'Web Tasarım
 
 const projects = [
   {
-    title: 'TechStore Türkiye',
+    title: 'Global Elektronik Pazaryeri',
     category: 'SEO',
     industry: 'E-Ticaret',
     duration: '6 Ay',
@@ -46,7 +46,7 @@ const projects = [
     tag: 'bg-blue-500/10 text-blue-400',
   },
   {
-    title: 'Elite World Hotels',
+    title: 'Lüks Otel Zinciri (Konaklama)',
     category: 'Google Ads',
     industry: 'Turizm & Konaklama',
     duration: '12 Ay',
@@ -60,7 +60,7 @@ const projects = [
     tag: 'bg-violet-500/10 text-violet-400',
   },
   {
-    title: 'Fintech Startup',
+    title: 'Yeni Nesil Ödeme Sistemleri',
     category: 'Sosyal Medya',
     industry: 'Fintek',
     duration: '9 Ay',
@@ -74,7 +74,7 @@ const projects = [
     tag: 'bg-emerald-500/10 text-emerald-400',
   },
   {
-    title: 'Global Yazılım Firması',
+    title: 'SaaS & Kurumsal Yazılım Çözümleri',
     category: 'Web Tasarımı',
     industry: 'B2B Yazılım',
     duration: '3 Ay',
