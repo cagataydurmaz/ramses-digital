@@ -463,4 +463,130 @@ export const posts: Post[] = [
       <p>AI aramaları büyüdükçe, GEO yapmayan markalar görünmez olmaya başlar. Rakipleriniz bugün GEO'ya yatırım yapıyorsa, siz de en geç 6 ay içinde başlamalısınız — aksi hâlde yakalamak giderek zorlaşacak.</p>
     `,
   },
+  {
+    slug: 'seo-geo-aeo-arama-motorundan-yanit-motoruna',
+    coverImage: 'https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=800&q=80&fit=crop',
+    title: "Arama Motorundan Yanıt Motoruna: SEO, GEO ve AEO'yu Birlikte Anlamak",
+    excerpt: "Klasik SEO artık tek başına yetmiyor. ChatGPT, Gemini ve Perplexity'nin yükselişiyle birlikte GEO ve AEO kavramları dijital pazarlamanın merkezine oturdu. Bu rehberde üç disiplini nasıl birlikte uygulayacağınızı öğrenin.",
+    category: 'AI & Strateji',
+    categoryColor: 'violet',
+    emoji: '🚀',
+    coverGradient: 'from-violet-500/10 to-indigo-900/5',
+    readTime: 14,
+    date: '2026-04-04',
+    author: 'Çağatay Durmaz',
+    authorRole: 'Co-Founder & CEO, Ramses Digital',
+    tags: ['SEO', 'GEO', 'AEO', 'AI', 'ChatGPT', 'Perplexity', 'Yapay Zeka', 'Dijital Pazarlama'],
+    content: `
+      <p><strong>Yayın tarihi: 4 Nisan 2026 · Yazar: Çağatay Durmaz, Ramses Digital</strong></p>
+
+      <p>Bir kullanıcı artık "ayakkabı" yazmıyor. Şöyle soruyor: <em>"Ayağım düz taban, haftada 3 gün koşuyorum, hangi koşu ayakkabısını almalıyım?"</em> Ve cevabı Google'ın 10 mavi linkinden değil, ChatGPT'nin tek bir paragrafından alıyor.</p>
+
+      <p>Bu değişim tesadüf değil. Arama davranışı köklü biçimde dönüşüyor — ve buna hazır olmayan markalar, rakiplerine görünmez olmaya başlıyor.</p>
+
+      <p>Bu rehberde, yeni nesil dijital görünürlüğün üç temel disiplinini — <strong>SEO, GEO ve AEO</strong> — nasıl birlikte kurgulamanız gerektiğini adım adım açıklıyoruz.</p>
+
+      <h2>Üç Kavramı Netleştirelim</h2>
+
+      <h3>SEO — Arama Motoru Optimizasyonu (Temel, Hâlâ Geçerli)</h3>
+      <p>SEO, web sitenizin Google gibi arama motorlarında üst sıralarda görünmesini sağlayan disiplindir. Teknik altyapı, içerik kalitesi, backlink profili ve kullanıcı deneyimi üzerine kuruludur. 2026'da SEO hâlâ geçerliliğini koruyor — ancak tek başına yeterli değil.</p>
+
+      <h3>GEO — Generative Engine Optimization (Yapay Zeka Görünürlüğü)</h3>
+      <p>GEO, markanızın ChatGPT, Gemini, Perplexity ve Claude gibi büyük dil modellerinin (LLM) yanıtlarında kaynak veya öneri olarak görünmesini sağlayan optimizasyon stratejisidir. SEO'nun "tıklama" hedeflediği yerde, GEO "alıntılanmayı" hedefler.</p>
+
+      <h3>AEO — Answer Engine Optimization (Yanıt Motoru Optimizasyonu)</h3>
+      <p>AEO, içeriğinizin hem geleneksel arama motorlarının hem de yapay zeka araçlarının sorulara doğrudan yanıt üretirken başvurduğu kaynak haline gelmesi sanatıdır. Featured snippet'lardan AI Overviews'a, sesli aramadan chatbot yanıtlarına kadar her yanıt kanalını kapsar.</p>
+
+      <blockquote><strong>Özet tablo:</strong><br/>SEO → Sıralama | GEO → Alıntılanma | AEO → Yanıt Üretme<br/>Bu üçü birbirinin rakibi değil, birbirini tamamlayan katmanlardır.</blockquote>
+
+      <h2>Neden Şimdi? Rakamlar Ne Diyor?</h2>
+      <ul>
+        <li>Google AI Overviews, ABD'deki aramaların <strong>%84'ünde</strong> tetikleniyor (BrightEdge, 2025).</li>
+        <li>ChatGPT aylık <strong>100M+ aktif kullanıcıyla</strong> kendi başına bir arama motoru büyüklüğüne ulaştı.</li>
+        <li>Perplexity günde <strong>15M+ sorguya</strong> yanıt veriyor ve organik trafik yerine direkt yanıt tercih ediliyor.</li>
+        <li>B2B alıcıların <strong>%67'si</strong> satın alma sürecinde AI araçlarını aktif kullandığını belirtiyor (Gartner, 2025).</li>
+        <li>Sesli arama kullanımı, AI asistanlarla birlikte <strong>%42 artış</strong> gösterdi (Edison Research, 2025).</li>
+      </ul>
+
+      <p>Bu rakamlar şunu söylüyor: kullanıcılar artık <em>bulmak</em> değil, <em>sormak</em> istiyor. Ve yapay zeka onlara cevabı doğrudan veriyor. Siz bu yanıtta yoksa, pratik olarak görünmez oluyorsunuz.</p>
+
+      <h2>Semantic Content Architecture: Her Şeyin Temeli</h2>
+      <p>Geleneksel SEO "anahtar kelime" üzerine kuruluydu. GEO ve AEO ise <strong>anlamsal (semantic) içerik mimarisi</strong> gerektirir. Bu ne demek?</p>
+      <ul>
+        <li><strong>Varlık (entity) odaklı içerik:</strong> "Dijital pazarlama" anahtar kelimesi değil; "Ramses Digital" → "İstanbul" → "mühendislik temelli pazarlama" gibi birbirine bağlı kavramlar ağı oluşturmak.</li>
+        <li><strong>Topical authority:</strong> Bir konuyu yüzeysel değil, tüm alt başlıklarıyla derinlemesine ele alan içerik kümeleri (content cluster) kurmak.</li>
+        <li><strong>Makine tarafından okunabilir yapı:</strong> Başlık hiyerarşisi (H1→H2→H3), liste formatları ve açık cevap paragrafları LLM'lerin içeriği daha kolay parse etmesini sağlar.</li>
+      </ul>
+
+      <h2>Structured Data ve Schema Markup: Makinelere Dil Öğretmek</h2>
+      <p>JSON-LD formatında yapılandırılmış veri, hem Google'ın hem de LLM tarayıcılarının içeriğinizi anlamlandırmasının en doğrudan yolu. Uygulamanız gereken temel schema türleri:</p>
+      <ul>
+        <li><strong>Organization + LocalBusiness:</strong> Kim olduğunuzu, nerede olduğunuzu ve ne yaptığınızı tanımlar.</li>
+        <li><strong>Article + BlogPosting:</strong> Her içerik parçasının yazarını, tarihini ve konusunu makinelere bildirir.</li>
+        <li><strong>FAQPage:</strong> Soru-cevap çiftleri, AI'ın yanıt üretirken doğrudan alıntılayabileceği formattır.</li>
+        <li><strong>HowTo:</strong> Adım adım rehberler, sesli arama ve AI yanıtlarında öncelikli olarak seçilir.</li>
+        <li><strong>Service + Offer:</strong> Sunduğunuz hizmetleri, fiyat aralıklarını ve hedef kitleyi tanımlar.</li>
+      </ul>
+
+      <h2>EEAT: Güven İnşa Etmek</h2>
+      <p>Google'ın <strong>E-E-A-T</strong> çerçevesi — Deneyim (Experience), Uzmanlık (Expertise), Yetkililik (Authoritativeness), Güvenilirlik (Trustworthiness) — artık sadece geleneksel SEO için değil, LLM'lerin içerik güvenilirliğini değerlendirmesi için de referans noktası.</p>
+      <p>Pratik adımlar:</p>
+      <ul>
+        <li>Her içeriğe gerçek yazar biyografisi ekleyin.</li>
+        <li>Kurum sayfanızı (Hakkımızda) detaylı ve güncel tutun.</li>
+        <li>Sektör yayınlarında, podcast'lerde, haber sitelerinde yer alın.</li>
+        <li>Müşteri referanslarını ve vaka çalışmalarını düzenli yayınlayın.</li>
+        <li>Wikipedia, Crunchbase, LinkedIn Company, Clutch gibi otoriter platformlarda eksiksiz profil oluşturun.</li>
+      </ul>
+
+      <h2>Niyet Odaklı (Intent-Based) İçerik Stratejisi</h2>
+      <p>AEO'nun özü şudur: kullanıcı ne soruyor, tam olarak o soruyu cevaplayın. Kullanıcı niyetini dört kategoride değerlendirin:</p>
+      <ul>
+        <li><strong>Bilgi niyeti:</strong> "GEO nedir?" → Kapsamlı, tarafsız bir rehber yazın.</li>
+        <li><strong>Karşılaştırma niyeti:</strong> "SEO mu GEO mu?" → Her iki tarafı dengeli ele alın.</li>
+        <li><strong>İşlem niyeti:</strong> "GEO ajansı nerede bulabilirim?" → Net CTA ve iletişim bilgisi ekleyin.</li>
+        <li><strong>Yerel niyet:</strong> "İstanbul GEO ajansı" → Yerel schema ve konum sinyallerini güçlendirin.</li>
+      </ul>
+      <p>AI araçları, bu niyet kategorilerini algılayarak kullanıcının sorduğu soruya en uygun kaynağı seçer. İçeriğiniz niyet eşleşmesi sağlamıyorsa, seçilme şansı düşer.</p>
+
+      <h2>LLM Görünürlüğü: Pratik Kontrol Listesi</h2>
+      <p>Bugün şu adımları uygulayabilirsiniz:</p>
+      <ul>
+        <li>ChatGPT, Perplexity ve Gemini'ye markanızla ilgili sorular sorun — yanıtlarda adınız geçiyor mu?</li>
+        <li>En önemli 5 hizmet sayfanıza FAQPage schema ekleyin.</li>
+        <li>Her blog yazısına yazar schema ve tarih bilgisi ekleyin.</li>
+        <li>Rakiplerinizi AI aramalarında arayın; nasıl konumlandıklarını inceleyin.</li>
+        <li>Sektöre özgü sorulara doğrudan, net, bir paragraflık cevaplar içeren "answer snippet" blokları oluşturun.</li>
+        <li>Marka adınızı ve uzmanlık alanınızı birlikte içeren tutarlı bir içerik ritmi oluşturun.</li>
+      </ul>
+
+      <h2>AI Performans Analitiği: Başarıyı Nasıl Ölçersiniz?</h2>
+      <p>Klasik metrikler (tıklama, sıralama) yalnız yetmez. GEO/AEO için izlemeniz gerekenler:</p>
+      <ul>
+        <li><strong>AI mention sıklığı:</strong> Markanız ne sıklıkla ChatGPT/Perplexity yanıtlarında geçiyor? (Profound, Peec.ai, Otterly.ai araçlarıyla takip edilebilir)</li>
+        <li><strong>Brand search trendi:</strong> Google Search Console'da doğrudan marka aramaları artıyor mu?</li>
+        <li><strong>AI referral traffic:</strong> GA4'te ChatGPT veya Perplexity'den gelen traffic görünüyor mu?</li>
+        <li><strong>Share of voice (AI):</strong> Rakiplerinizle karşılaştırmalı AI görünürlük oranı.</li>
+        <li><strong>Featured snippet ve AI Overview oranı:</strong> Google Search Console'daki impression ve click verileri.</li>
+      </ul>
+
+      <h2>Ramses Digital'in SEO+GEO+AEO Yaklaşımı</h2>
+      <p>Biz bu üç disiplini ayrı ayrı değil, entegre bir strateji olarak uyguluyoruz. Teknik SEO altyapısı, semantik içerik mimarisi, JSON-LD implementasyonu ve LLM görünürlük takibini tek bir çatı altında yönetiyoruz.</p>
+      <p>Hedefimiz basit: müşterilerimizin markasını sadece Google'da değil, kullanıcıların soru sorduğu her platformda güvenilir kaynak haline getirmek.</p>
+
+      <h2>Sık Sorulan Sorular</h2>
+
+      <h3>SEO hâlâ işe yarıyor mu?</h3>
+      <p>Evet, kesinlikle. Google hâlâ en büyük trafik kaynağı. Ancak GEO ve AEO olmadan yalnızca SEO yapmak, giderek daralan bir alana odaklanmak demektir. Üçü birlikte uygulanmalı.</p>
+
+      <h3>GEO ve AEO sonuç ne kadar sürede görülür?</h3>
+      <p>İlk sinyaller 2-4 ayda görülür; ancak kalıcı ve ölçülebilir sonuçlar için 6-12 aylık tutarlı çalışma gerekir. SEO gibi GEO da uzun vadeli bir yatırımdır.</p>
+
+      <h3>Küçük işletmeler bu stratejileri uygulayabilir mi?</h3>
+      <p>Evet. Niş alanlarda uzmanlaşmış küçük işletmeler, belirli sorularda büyük rakiplerden daha kolay AI kaynağı haline gelebilir. Önemli olan hacim değil, uzmanlık derinliği.</p>
+
+      <h3>Hangi içerik türleri GEO/AEO için en etkili?</h3>
+      <p>Soru-cevap formatı, kapsamlı rehberler, karşılaştırma yazıları, vaka çalışmaları ve özgün veriler içeren araştırmalar en yüksek AI alıntılanma oranına sahip içerik türleridir.</p>
+    `,
+  },
 ]

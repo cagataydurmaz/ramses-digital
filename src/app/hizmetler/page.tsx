@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import Link from 'next/link'
 import CalendlyButton from '@/components/CalendlyButton'
 import {
-  Search,
+  Sparkles,
   TrendingUp,
   Share2,
   Monitor,
@@ -37,17 +37,17 @@ function FadeIn({
 
 const services = [
   {
-    icon: Search,
-    title: 'SEO & İçerik Optimizasyonu',
-    tagline: "Google'da Üst Sıralar, Organik Trafik",
-    desc: "Arama motorlarında üst sıralara çıkmak için teknik SEO, içerik stratejisi ve link building çalışmaları yapıyoruz. Markanızın online görünürlüğünü artırarak uzun vadeli organik büyüme sağlıyoruz.",
+    icon: Sparkles,
+    title: 'SEO, GEO ve Yanıt Motoru Optimizasyonu (AEO)',
+    tagline: 'AI-Native Görünürlük & Organik Otorite',
+    desc: "Markanızı sadece Google'da değil; ChatGPT, Gemini ve Perplexity gibi yapay zeka motorlarının \"güvenilir kaynağı\" haline getiriyoruz. Veri odaklı içerik stratejileriyle, yapay zekanın kullanıcıya önerdiği ilk marka olun.",
     features: [
-      'Teknik SEO Denetimi & Optimizasyonu',
-      'Anahtar Kelime Araştırması & Strateji',
-      'İçerik Planlama & Üretim',
-      'Link Building Kampanyaları',
-      'Yerel SEO (Google My Business)',
-      'Aylık Performans Raporları',
+      'LLM & Chatbot Görünürlüğü (GEO)',
+      'Semantic Content Architecture',
+      'Structured Data & Schema Markup (JSON-LD)',
+      'EEAT Odaklı Otorite İnşası',
+      'Niyet Odaklı (Intent-Based) Strateji',
+      'AI Performans Analitiği',
     ],
     color: 'blue',
   },
