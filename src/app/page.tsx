@@ -341,30 +341,23 @@ export default function HomePage() {
               )
             })}
 
-            {/* n8n — full-width featured card */}
-            <FadeIn delay={0.5} className="md:col-span-2 lg:col-span-3">
-              <div className="group bg-[#0D1225] border border-fuchsia-500/20 hover:border-fuchsia-500/40 rounded-2xl p-6 md:p-8 transition-all duration-300 cursor-default">
-                <div className="flex flex-col md:flex-row md:items-start gap-6 md:gap-10">
-                  <div className="md:w-[45%]">
-                    <div className="flex items-center gap-3 mb-4">
-                      <div className="w-11 h-11 bg-fuchsia-500/10 rounded-xl flex items-center justify-center group-hover:bg-fuchsia-500/20 transition-colors shrink-0">
-                        <Workflow size={20} className="text-fuchsia-400" />
-                      </div>
-                      <span className="text-fuchsia-400 text-xs font-medium uppercase tracking-wider bg-fuchsia-500/10 px-3 py-1 rounded-full">
-                        {n8nService.tagline}
-                      </span>
-                    </div>
-                    <h3 className="text-white font-bold text-xl md:text-2xl mb-3">{n8nService.title}</h3>
-                    <p className="text-zinc-400 text-sm leading-relaxed">{n8nService.desc}</p>
-                  </div>
-                  <div className="md:flex-1 grid grid-cols-1 sm:grid-cols-2 gap-2.5">
-                    {n8nService.tags.map((tag) => (
-                      <div key={tag} className="flex items-center gap-2.5">
-                        <CheckCircle2 size={14} className="text-fuchsia-400 shrink-0" />
-                        <span className="text-zinc-400 text-sm">{tag}</span>
-                      </div>
-                    ))}
-                  </div>
+            {/* n8n — centered in last row */}
+            <FadeIn delay={0.5} className="lg:col-start-2">
+              <div className="group h-full bg-[#0D1225] border border-white/[0.06] rounded-2xl p-6 card-hover cursor-default">
+                <div className="w-11 h-11 bg-blue-500/10 rounded-xl flex items-center justify-center mb-5 group-hover:bg-blue-500/20 transition-colors">
+                  <Workflow size={20} className="text-blue-400" />
+                </div>
+                <h3 className="text-white font-semibold text-lg mb-2">{n8nService.title}</h3>
+                <p className="text-zinc-400 text-sm leading-relaxed mb-4">{n8nService.desc}</p>
+                <div className="flex flex-wrap gap-2">
+                  {n8nService.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="text-xs text-zinc-400 bg-white/[0.04] px-2.5 py-1 rounded-full"
+                    >
+                      {tag}
+                    </span>
+                  ))}
                 </div>
               </div>
             </FadeIn>
