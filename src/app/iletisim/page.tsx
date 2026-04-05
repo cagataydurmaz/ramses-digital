@@ -49,9 +49,9 @@ export default function ContactPage() {
     if (!validate()) return
     setIsSubmitting(true)
     try {
-      const res = await fetch('https://formspree.io/f/xwvwapjy', {
+      const res = await fetch('/api/contact', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           name: form.name,
           email: form.email,
