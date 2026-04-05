@@ -48,9 +48,28 @@ export default function ContactPage() {
     e.preventDefault()
     if (!validate()) return
     setIsSubmitting(true)
-    await new Promise((resolve) => setTimeout(resolve, 1500))
-    setIsSubmitting(false)
-    setIsSubmitted(true)
+    try {
+      const res = await fetch('https://formspree.io/f/xwvwapjy', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          phone: form.phone,
+          service: form.service,
+          message: form.message,
+        }),
+      })
+      if (res.ok) {
+        setIsSubmitted(true)
+      } else {
+        alert('Mesaj gönderilemedi, lütfen tekrar deneyin.')
+      }
+    } catch {
+      alert('Bir hata oluştu, lütfen tekrar deneyin.')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const handleChange = (
