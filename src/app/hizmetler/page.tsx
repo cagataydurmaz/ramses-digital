@@ -8,6 +8,7 @@ import {
   Mail,
   BarChart3,
   CheckCircle2,
+  Workflow,
 } from 'lucide-react'
 
 const services = [
@@ -87,6 +88,21 @@ const services = [
     color: 'orange',
   },
   {
+    icon: Workflow,
+    title: 'n8n İş Akışı Otomasyonu',
+    tagline: 'No-Code / Low-Code · AI Entegrasyonlu İş Akışları',
+    desc: 'n8n ile CRM, e-posta, sosyal medya, muhasebe ve yapay zeka araçlarını birbirine bağlıyoruz. Tekrar eden manuel işleri tamamen otomatize ediyor; ekibinizin zamanını ve enerjisini asıl işe harcamasını sağlıyoruz.',
+    features: [
+      'CRM & Satış Pipeline Otomasyonu',
+      'AI Destekli İçerik & Raporlama Akışları',
+      'Webhook & API Entegrasyonları',
+      'Lead Yakalama & Nurturing Otomasyonu',
+      'Çoklu Platform Senkronizasyonu',
+      'Self-Hosted & Güvenli Altyapı',
+    ],
+    color: 'fuchsia',
+  },
+  {
     icon: BarChart3,
     title: 'Veri Analizi & Stratejik Danışmanlık',
     tagline: 'Google Analytics, Data Studio',
@@ -139,6 +155,12 @@ const colorMap: Record<string, { bg: string; border: string; icon: string; tag: 
     border: 'border-cyan-500/20 hover:border-cyan-500/40',
     icon: 'bg-cyan-500/10 text-cyan-400',
     tag: 'bg-cyan-500/10 text-cyan-400',
+  },
+  fuchsia: {
+    bg: 'from-fuchsia-500/5 to-transparent',
+    border: 'border-fuchsia-500/20 hover:border-fuchsia-500/40',
+    icon: 'bg-fuchsia-500/10 text-fuchsia-400',
+    tag: 'bg-fuchsia-500/10 text-fuchsia-400',
   },
 }
 
