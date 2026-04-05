@@ -1,6 +1,3 @@
-'use client'
-
-import { motion } from 'framer-motion'
 import Link from 'next/link'
 import CalendlyButton from '@/components/CalendlyButton'
 import {
@@ -10,30 +7,8 @@ import {
   Monitor,
   Mail,
   BarChart3,
-  ArrowRight,
   CheckCircle2,
 } from 'lucide-react'
-
-function FadeIn({
-  children,
-  delay = 0,
-  className = '',
-}: {
-  children: React.ReactNode
-  delay?: number
-  className?: string
-}) {
-  return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.3, delay }}
-      className={className}
-    >
-      {children}
-    </motion.div>
-  )
-}
 
 const services = [
   {
@@ -174,72 +149,56 @@ export default function ServicesPage() {
       <section className="relative pt-32 pb-20 px-6 overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-blue-500/8 rounded-full blur-[120px] pointer-events-none" />
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            className="text-blue-500 text-sm font-medium tracking-wider uppercase mb-3"
-          >
+          <p className="text-blue-500 text-sm font-medium tracking-wider uppercase mb-3">
             Hizmetlerimiz
-          </motion.p>
-          <motion.h1
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.1 }}
-            className="text-5xl md:text-6xl font-bold text-white mb-6"
-          >
+          </p>
+          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
             Dijital Büyüme İçin
             <br />
             <span className="gradient-text">Kapsamlı Çözümler</span>
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.2 }}
-            className="text-zinc-400 text-lg max-w-2xl mx-auto"
-          >
-            SEO'dan Google Ads'e, sosyal medyadan web tasarımına kadar her alanda
+          </h1>
+          <p className="text-zinc-400 text-lg max-w-2xl mx-auto">
+            SEO&apos;dan Google Ads&apos;e, sosyal medyadan web tasarımına kadar her alanda
             performans odaklı çözümler sunuyoruz.
-          </motion.p>
+          </p>
         </div>
       </section>
 
       {/* Services */}
       <section className="pb-24 px-6">
         <div className="max-w-7xl mx-auto space-y-6">
-          {services.map((service, i) => {
+          {services.map((service) => {
             const Icon = service.icon
             const colors = colorMap[service.color]
             return (
-              <FadeIn key={service.title} delay={i * 0.06}>
-                <div
-                  className={`bg-gradient-to-r ${colors.bg} bg-[#0D1225] border ${colors.border} rounded-2xl p-8 md:p-10 transition-all duration-300`}
-                  style={{ background: '#0D1225' }}
-                >
-                  <div className="grid md:grid-cols-2 gap-8 items-start">
-                    <div>
-                      <div className={`w-12 h-12 ${colors.icon} rounded-xl flex items-center justify-center mb-5`}>
-                        <Icon size={22} />
+              <div
+                key={service.title}
+                className={`bg-[#0D1225] border ${colors.border} rounded-2xl p-8 md:p-10 transition-all duration-300`}
+              >
+                <div className="grid md:grid-cols-2 gap-8 items-start">
+                  <div>
+                    <div className={`w-12 h-12 ${colors.icon} rounded-xl flex items-center justify-center mb-5`}>
+                      <Icon size={22} />
+                    </div>
+                    <p className="text-zinc-400 text-xs font-medium uppercase tracking-wider mb-2">
+                      {service.tagline}
+                    </p>
+                    <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
+                      {service.title}
+                    </h2>
+                    <p className="text-zinc-400 leading-relaxed">{service.desc}</p>
+                    <CalendlyButton label="Teklif Al" variant="link" className="mt-6" />
+                  </div>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    {service.features.map((feature) => (
+                      <div key={feature} className="flex items-start gap-2.5">
+                        <CheckCircle2 size={15} className={`${colors.tag.split(' ')[1]} mt-0.5 shrink-0`} />
+                        <span className="text-zinc-400 text-sm">{feature}</span>
                       </div>
-                      <p className="text-zinc-400 text-xs font-medium uppercase tracking-wider mb-2">
-                        {service.tagline}
-                      </p>
-                      <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
-                        {service.title}
-                      </h2>
-                      <p className="text-zinc-400 leading-relaxed">{service.desc}</p>
-                      <CalendlyButton label="Teklif Al" variant="link" className="mt-6" />
-                    </div>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                      {service.features.map((feature) => (
-                        <div key={feature} className="flex items-start gap-2.5">
-                          <CheckCircle2 size={15} className={`${colors.tag.split(' ')[1]} mt-0.5 shrink-0`} />
-                          <span className="text-zinc-400 text-sm">{feature}</span>
-                        </div>
-                      ))}
-                    </div>
+                    ))}
                   </div>
                 </div>
-              </FadeIn>
+              </div>
             )
           })}
         </div>
@@ -248,15 +207,13 @@ export default function ServicesPage() {
       {/* CTA */}
       <section className="py-20 px-6 bg-[#080D18]">
         <div className="max-w-3xl mx-auto text-center">
-          <FadeIn>
-            <h2 className="text-4xl font-bold text-white mb-4">
-              Hangi Hizmet Size Uygun?
-            </h2>
-            <p className="text-zinc-400 text-lg mb-8">
-              Ücretsiz danışmanlık seansımızda işletmenize özel strateji geliştirelim.
-            </p>
-            <CalendlyButton label="Ücretsiz Danışmanlık Al" variant="primary" />
-          </FadeIn>
+          <h2 className="text-4xl font-bold text-white mb-4">
+            Hangi Hizmet Size Uygun?
+          </h2>
+          <p className="text-zinc-400 text-lg mb-8">
+            Ücretsiz danışmanlık seansımızda işletmenize özel strateji geliştirelim.
+          </p>
+          <CalendlyButton label="Ücretsiz Danışmanlık Al" variant="primary" />
         </div>
       </section>
     </>

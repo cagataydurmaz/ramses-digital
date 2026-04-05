@@ -1,31 +1,8 @@
 'use client'
 
 import { useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
-import Link from 'next/link'
 import CalendlyButton from '@/components/CalendlyButton'
-import { ArrowRight, TrendingUp, Users, Eye } from 'lucide-react'
-
-function FadeIn({
-  children,
-  delay = 0,
-  className = '',
-}: {
-  children: React.ReactNode
-  delay?: number
-  className?: string
-}) {
-  return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.3, delay }}
-      className={className}
-    >
-      {children}
-    </motion.div>
-  )
-}
+import { TrendingUp, Users, Eye } from 'lucide-react'
 
 const categories = ['Tümü', 'SEO', 'Google Ads', 'Sosyal Medya', 'Web Tasarımı', 'Veri Analizi']
 
@@ -158,31 +135,17 @@ export default function PortfolioPage() {
       <section className="relative pt-32 pb-20 px-6 overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-blue-500/8 rounded-full blur-[120px] pointer-events-none" />
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            className="text-blue-500 text-sm font-medium tracking-wider uppercase mb-3"
-          >
+          <p className="text-blue-500 text-sm font-medium tracking-wider uppercase mb-3">
             Portföy
-          </motion.p>
-          <motion.h1
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.1 }}
-            className="text-5xl md:text-6xl font-bold text-white mb-6"
-          >
+          </p>
+          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
             Gerçek Sonuçlar,
             <br />
             <span className="gradient-text">Gerçek Büyüme</span>
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.2 }}
-            className="text-zinc-400 text-lg max-w-2xl mx-auto"
-          >
+          </h1>
+          <p className="text-zinc-400 text-lg max-w-2xl mx-auto">
             Farklı sektörlerde elde ettiğimiz somut başarılar ve ölçülebilir sonuçlar.
-          </motion.p>
+          </p>
         </div>
       </section>
 
@@ -210,70 +173,57 @@ export default function PortfolioPage() {
       {/* Projects Grid */}
       <section className="pb-24 px-6">
         <div className="max-w-7xl mx-auto">
-          <AnimatePresence mode="popLayout">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-              {filtered.map((project, i) => (
-                <motion.div
-                  key={project.title}
-                  layout
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0, scale: 0.95 }}
-                  transition={{ duration: 0.3, delay: i * 0.05 }}
-                >
-                  <div
-                    className={`bg-gradient-to-br ${project.gradient} bg-[#0D1225] border border-white/[0.06] rounded-2xl p-8 h-full card-hover`}
-                    style={{ background: '#0D1225' }}
-                  >
-                    <div className="flex items-start justify-between mb-5">
-                      <div>
-                        <div className="flex items-center gap-2 mb-2">
-                          <span className={`text-xs px-2.5 py-1 rounded-full font-medium ${project.tag}`}>
-                            {project.category}
-                          </span>
-                          <span className="text-zinc-600 text-xs">{project.industry}</span>
-                        </div>
-                        <h3 className="text-white font-bold text-xl">{project.title}</h3>
-                      </div>
-                      <span className="text-zinc-600 text-xs shrink-0 ml-4">{project.duration}</span>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            {filtered.map((project) => (
+              <div
+                key={project.title}
+                className="bg-[#0D1225] border border-white/[0.06] rounded-2xl p-8 h-full card-hover"
+              >
+                <div className="flex items-start justify-between mb-5">
+                  <div>
+                    <div className="flex items-center gap-2 mb-2">
+                      <span className={`text-xs px-2.5 py-1 rounded-full font-medium ${project.tag}`}>
+                        {project.category}
+                      </span>
+                      <span className="text-zinc-600 text-xs">{project.industry}</span>
                     </div>
-
-                    <p className="text-zinc-400 text-sm leading-relaxed mb-6">{project.desc}</p>
-
-                    <div className="grid grid-cols-3 gap-3">
-                      {project.results.map((result) => {
-                        const Icon = result.icon
-                        return (
-                          <div key={result.label} className="bg-white/[0.03] rounded-xl p-3">
-                            <Icon size={14} className={project.tag.split(' ')[1]} />
-                            <p className="text-white font-bold text-base mt-1">{result.value}</p>
-                            <p className="text-zinc-600 text-[10px] leading-tight mt-0.5">
-                              {result.label}
-                            </p>
-                          </div>
-                        )
-                      })}
-                    </div>
+                    <h3 className="text-white font-bold text-xl">{project.title}</h3>
                   </div>
-                </motion.div>
-              ))}
-            </div>
-          </AnimatePresence>
+                  <span className="text-zinc-600 text-xs shrink-0 ml-4">{project.duration}</span>
+                </div>
+
+                <p className="text-zinc-400 text-sm leading-relaxed mb-6">{project.desc}</p>
+
+                <div className="grid grid-cols-3 gap-3">
+                  {project.results.map((result) => {
+                    const Icon = result.icon
+                    return (
+                      <div key={result.label} className="bg-white/[0.03] rounded-xl p-3">
+                        <Icon size={14} className={project.tag.split(' ')[1]} />
+                        <p className="text-white font-bold text-base mt-1">{result.value}</p>
+                        <p className="text-zinc-600 text-[10px] leading-tight mt-0.5">
+                          {result.label}
+                        </p>
+                      </div>
+                    )
+                  })}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
       {/* CTA */}
       <section className="py-20 px-6 bg-[#080D18]">
         <div className="max-w-3xl mx-auto text-center">
-          <FadeIn>
-            <h2 className="text-4xl font-bold text-white mb-4">
-              Sıradaki Başarı Hikayesi Sizin
-            </h2>
-            <p className="text-zinc-400 text-lg mb-8">
-              Markanız için ne yapabileceğimizi konuşalım. Ücretsiz danışmanlık seansı için iletişime geçin.
-            </p>
-            <CalendlyButton label="Ücretsiz Teklif Al" variant="primary" />
-          </FadeIn>
+          <h2 className="text-4xl font-bold text-white mb-4">
+            Sıradaki Başarı Hikayesi Sizin
+          </h2>
+          <p className="text-zinc-400 text-lg mb-8">
+            Markanız için ne yapabileceğimizi konuşalım. Ücretsiz danışmanlık seansı için iletişime geçin.
+          </p>
+          <CalendlyButton label="Ücretsiz Teklif Al" variant="primary" />
         </div>
       </section>
     </>

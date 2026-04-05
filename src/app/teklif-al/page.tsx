@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
 import {
   ShoppingCart,
   MapPin,
@@ -248,30 +247,16 @@ export default function TeklifAlPage() {
       <section className="relative pt-32 pb-10 px-6 overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-blue-500/8 rounded-full blur-[120px] pointer-events-none" />
         <div className="max-w-3xl mx-auto text-center relative z-10">
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 rounded-full px-4 py-1.5 mb-5"
-          >
+          <div className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 rounded-full px-4 py-1.5 mb-5">
             <Sparkles size={14} className="text-blue-400" />
             <span className="text-blue-400 text-xs font-medium">AI Destekli Teklif Hesaplayıcı</span>
-          </motion.div>
-          <motion.h1
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.1 }}
-            className="text-4xl md:text-5xl font-bold text-white mb-4"
-          >
+          </div>
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Anında Ücretsiz Teklif Al
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.2 }}
-            className="text-zinc-400 text-lg"
-          >
+          </h1>
+          <p className="text-zinc-400 text-lg">
             3 adımda işletmenize özel dijital pazarlama paketi önerisi alın.
-          </motion.p>
+          </p>
         </div>
       </section>
 
@@ -305,26 +290,19 @@ export default function TeklifAlPage() {
                 ))}
               </div>
               <div className="h-1 bg-white/[0.06] rounded-full overflow-hidden">
-                <motion.div
-                  className="h-full bg-blue-500 rounded-full"
-                  animate={{ width: `${((step - 1) / 4) * 100}%` }}
-                  transition={{ duration: 0.3 }}
+                <div
+                  className="h-full bg-blue-500 rounded-full transition-all duration-300"
+                  style={{ width: `${((step - 1) / 4) * 100}%` }}
                 />
               </div>
             </div>
           )}
 
           <div className="bg-[#0D1225] border border-white/[0.06] rounded-2xl p-6 md:p-8">
-            <AnimatePresence mode="wait">
+            <>
               {/* Step 1: Business Type */}
               {step === 1 && (
-                <motion.div
-                  key="step1"
-                  initial={{ opacity: 0, x: 20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  exit={{ opacity: 0, x: -20 }}
-                  transition={{ duration: 0.25 }}
-                >
+                <div>
                   <h2 className="text-white font-bold text-xl mb-2">İşletme Tipinizi Seçin</h2>
                   <p className="text-zinc-400 text-sm mb-6">Size en uygun paketi hazırlayabilmemiz için işletme tipinizi seçin.</p>
                   <div className="grid grid-cols-2 gap-3">
@@ -353,18 +331,12 @@ export default function TeklifAlPage() {
                       )
                     })}
                   </div>
-                </motion.div>
+                </div>
               )}
 
               {/* Step 2: Services */}
               {step === 2 && (
-                <motion.div
-                  key="step2"
-                  initial={{ opacity: 0, x: 20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  exit={{ opacity: 0, x: -20 }}
-                  transition={{ duration: 0.25 }}
-                >
+                <div>
                   <h2 className="text-white font-bold text-xl mb-2">İhtiyacınız Olan Hizmetler</h2>
                   <p className="text-zinc-400 text-sm mb-6">Birden fazla seçebilirsiniz.</p>
                   <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
@@ -395,18 +367,12 @@ export default function TeklifAlPage() {
                       )
                     })}
                   </div>
-                </motion.div>
+                </div>
               )}
 
               {/* Step 3: Budget */}
               {step === 3 && (
-                <motion.div
-                  key="step3"
-                  initial={{ opacity: 0, x: 20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  exit={{ opacity: 0, x: -20 }}
-                  transition={{ duration: 0.25 }}
-                >
+                <div>
                   <h2 className="text-white font-bold text-xl mb-2">Aylık Bütçe Aralığınız</h2>
                   <p className="text-zinc-400 text-sm mb-6">Bütçenize göre en verimli stratejiyi öneriyoruz.</p>
                   <div className="grid grid-cols-2 gap-3">
@@ -430,18 +396,12 @@ export default function TeklifAlPage() {
                       )
                     })}
                   </div>
-                </motion.div>
+                </div>
               )}
 
               {/* Step 4: URL */}
               {step === 4 && (
-                <motion.div
-                  key="step4"
-                  initial={{ opacity: 0, x: 20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  exit={{ opacity: 0, x: -20 }}
-                  transition={{ duration: 0.25 }}
-                >
+                <div>
                   <h2 className="text-white font-bold text-xl mb-2">Web Siteniz</h2>
                   <p className="text-zinc-400 text-sm mb-6">
                     Opsiyoneldir. Girmeniz durumunda daha kişiselleştirilmiş bir teklif alırsınız.
@@ -460,17 +420,12 @@ export default function TeklifAlPage() {
                       <strong className="text-white">{budget} ₺/ay</strong> bütçeyle.
                     </p>
                   </div>
-                </motion.div>
+                </div>
               )}
 
               {/* Step 5: Result */}
               {step === 5 && (
-                <motion.div
-                  key="step5"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ duration: 0.3 }}
-                >
+                <div>
                   {isLoading && !result && (
                     <div className="py-12 flex flex-col items-center gap-4">
                       <div className="w-12 h-12 bg-blue-500/10 rounded-2xl flex items-center justify-center">
@@ -525,11 +480,7 @@ export default function TeklifAlPage() {
                       />
 
                       {isDone && (
-                        <motion.div
-                          initial={{ opacity: 0 }}
-                          animate={{ opacity: 1 }}
-                          className="mt-8 pt-6 border-t border-white/[0.06]"
-                        >
+                        <div className="mt-8 pt-6 border-t border-white/[0.06]">
                           <p className="text-zinc-400 text-sm mb-4">
                             Teklifinizi beğendiniz mi? Hemen randevu alın, detayları konuşalım.
                           </p>
@@ -546,13 +497,13 @@ export default function TeklifAlPage() {
                               Yeni Teklif Hesapla
                             </button>
                           </div>
-                        </motion.div>
+                        </div>
                       )}
                     </div>
                   )}
-                </motion.div>
+                </div>
               )}
-            </AnimatePresence>
+            </>
 
             {/* Navigation */}
             {step < 5 && (
