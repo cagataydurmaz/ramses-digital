@@ -117,9 +117,9 @@ const services = [
   },
   {
     icon: Mail,
-    title: 'E-Posta & Otomasyon',
-    desc: 'CRM entegrasyonu ve otomatik akışlarla müşteri sadakatini ve geliri artırın.',
-    tags: ['CRM Entegrasyonu', 'Drip Kampanyalar', 'A/B Test'],
+    title: 'E-Posta, Otomasyon & n8n',
+    desc: 'n8n ile uygulama entegrasyonlarını ve iş akışlarını otomatize edin; CRM bağlantısı ve drip kampanyalarla geliri artırın.',
+    tags: ['n8n İş Akışı', 'CRM Entegrasyonu', 'AI Otomasyon'],
   },
   {
     icon: BarChart3,
