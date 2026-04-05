@@ -12,6 +12,7 @@ import {
   Monitor,
   Mail,
   BarChart3,
+  Workflow,
   ArrowRight,
   ChevronDown,
   Star,
@@ -117,9 +118,9 @@ const services = [
   },
   {
     icon: Mail,
-    title: 'E-Posta, Otomasyon & n8n',
-    desc: 'n8n ile uygulama entegrasyonlarını ve iş akışlarını otomatize edin; CRM bağlantısı ve drip kampanyalarla geliri artırın.',
-    tags: ['n8n İş Akışı', 'CRM Entegrasyonu', 'AI Otomasyon'],
+    title: 'E-Posta & Otomasyon',
+    desc: 'CRM entegrasyonu ve otomatik akışlarla müşteri sadakatini ve geliri artırın.',
+    tags: ['CRM Entegrasyonu', 'Drip Kampanyalar', 'A/B Test'],
   },
   {
     icon: BarChart3,
@@ -128,6 +129,14 @@ const services = [
     tags: ['GA4', 'Data Studio', 'Strateji'],
   },
 ]
+
+const n8nService = {
+  icon: Workflow,
+  title: 'n8n İş Akışı Otomasyonu',
+  tagline: 'No-Code / Low-Code · AI Entegrasyonlu İş Akışları',
+  desc: 'n8n ile CRM, e-posta, sosyal medya, muhasebe ve yapay zeka araçlarını birbirine bağlıyoruz. Tekrar eden manuel işleri tamamen otomatize ediyor; ekibinizin zamanını ve enerjisini asıl işe harcamasını sağlıyoruz.',
+  tags: ['CRM & Satış Pipeline Otomasyonu', 'AI Destekli İş Akışları', 'Webhook & API Entegrasyonları', 'Lead Yakalama Otomasyonu', 'Çoklu Platform Senkronizasyonu', 'Self-Hosted & Güvenli Altyapı'],
+}
 
 const stats = [
   { value: 100, suffix: '+', label: 'Başarılı Proje' },
@@ -331,6 +340,34 @@ export default function HomePage() {
                 </FadeIn>
               )
             })}
+
+            {/* n8n — full-width featured card */}
+            <FadeIn delay={0.5} className="md:col-span-2 lg:col-span-3">
+              <div className="group bg-[#0D1225] border border-fuchsia-500/20 hover:border-fuchsia-500/40 rounded-2xl p-6 md:p-8 transition-all duration-300 cursor-default">
+                <div className="flex flex-col md:flex-row md:items-start gap-6 md:gap-10">
+                  <div className="md:w-[45%]">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="w-11 h-11 bg-fuchsia-500/10 rounded-xl flex items-center justify-center group-hover:bg-fuchsia-500/20 transition-colors shrink-0">
+                        <Workflow size={20} className="text-fuchsia-400" />
+                      </div>
+                      <span className="text-fuchsia-400 text-xs font-medium uppercase tracking-wider bg-fuchsia-500/10 px-3 py-1 rounded-full">
+                        {n8nService.tagline}
+                      </span>
+                    </div>
+                    <h3 className="text-white font-bold text-xl md:text-2xl mb-3">{n8nService.title}</h3>
+                    <p className="text-zinc-400 text-sm leading-relaxed">{n8nService.desc}</p>
+                  </div>
+                  <div className="md:flex-1 grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                    {n8nService.tags.map((tag) => (
+                      <div key={tag} className="flex items-center gap-2.5">
+                        <CheckCircle2 size={14} className="text-fuchsia-400 shrink-0" />
+                        <span className="text-zinc-400 text-sm">{tag}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </FadeIn>
           </div>
 
           <FadeIn className="text-center mt-10">
