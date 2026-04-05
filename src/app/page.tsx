@@ -12,7 +12,6 @@ import {
   Monitor,
   Mail,
   BarChart3,
-  Workflow,
   ArrowRight,
   ChevronDown,
   Star,
@@ -129,14 +128,6 @@ const services = [
     tags: ['GA4', 'Data Studio', 'Strateji'],
   },
 ]
-
-const n8nService = {
-  icon: Workflow,
-  title: 'n8n İş Akışı Otomasyonu',
-  tagline: 'No-Code / Low-Code · AI Entegrasyonlu İş Akışları',
-  desc: 'n8n ile CRM, e-posta, sosyal medya, muhasebe ve yapay zeka araçlarını birbirine bağlıyoruz. Tekrar eden manuel işleri tamamen otomatize ediyor; ekibinizin zamanını ve enerjisini asıl işe harcamasını sağlıyoruz.',
-  tags: ['CRM & Satış Pipeline Otomasyonu', 'AI Destekli İş Akışları', 'Webhook & API Entegrasyonları', 'Lead Yakalama Otomasyonu', 'Çoklu Platform Senkronizasyonu', 'Self-Hosted & Güvenli Altyapı'],
-}
 
 const stats = [
   { value: 100, suffix: '+', label: 'Başarılı Proje' },
@@ -341,26 +332,6 @@ export default function HomePage() {
               )
             })}
 
-            {/* n8n — centered in last row */}
-            <FadeIn delay={0.5} className="lg:col-start-2">
-              <div className="group h-full bg-[#0D1225] border border-white/[0.06] rounded-2xl p-6 card-hover cursor-default">
-                <div className="w-11 h-11 bg-blue-500/10 rounded-xl flex items-center justify-center mb-5 group-hover:bg-blue-500/20 transition-colors">
-                  <Workflow size={20} className="text-blue-400" />
-                </div>
-                <h3 className="text-white font-semibold text-lg mb-2">{n8nService.title}</h3>
-                <p className="text-zinc-400 text-sm leading-relaxed mb-4">{n8nService.desc}</p>
-                <div className="flex flex-wrap gap-2">
-                  {n8nService.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="text-xs text-zinc-400 bg-white/[0.04] px-2.5 py-1 rounded-full"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </FadeIn>
           </div>
 
           <FadeIn className="text-center mt-10">
