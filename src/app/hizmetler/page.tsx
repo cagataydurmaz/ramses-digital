@@ -1,5 +1,18 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import CalendlyButton from '@/components/CalendlyButton'
+
+export const metadata: Metadata = {
+  title: 'Hizmetlerimiz | SEO, Google Ads, Sosyal Medya & n8n Otomasyon — Ramses Digital Kocaeli',
+  description:
+    'SEO, Google Ads, sosyal medya yönetimi, web tasarımı ve n8n iş akışı otomasyonu. Kocaeli ve İstanbul\'da performans odaklı dijital pazarlama hizmetleri.',
+  alternates: { canonical: 'https://ramsesdigital.com/hizmetler' },
+  openGraph: {
+    title: 'Dijital Pazarlama Hizmetleri | Ramses Digital',
+    description: 'SEO\'dan Google Ads\'e, sosyal medyadan n8n otomasyonuna — tüm dijital büyüme araçları tek çatı altında.',
+    url: 'https://ramsesdigital.com/hizmetler',
+  },
+}
 import {
   Sparkles,
   TrendingUp,

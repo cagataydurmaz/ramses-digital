@@ -1,5 +1,18 @@
+import type { Metadata } from 'next'
 import CalendlyButton from '@/components/CalendlyButton'
 import { Target, Zap, Heart, Shield, Users, Award, Globe, Code2 } from 'lucide-react'
+
+export const metadata: Metadata = {
+  title: 'Hakkımızda | Ramses Digital Hikayesi ve Ekibi — Kocaeli & İstanbul',
+  description:
+    'Ramses Digital kimdir? 2019\'dan bu yana Kocaeli ve İstanbul\'daki işletmelere SEO, Google Ads ve dijital pazarlama alanında gerçek büyüme sağlayan ajans ekibimizi tanıyın.',
+  alternates: { canonical: 'https://ramsesdigital.com/hakkimizda' },
+  openGraph: {
+    title: 'Hakkımızda | Ramses Digital',
+    description: 'Performans odaklı dijital pazarlama ajansı. Ekibimiz, değerlerimiz ve başarı hikayemiz.',
+    url: 'https://ramsesdigital.com/hakkimizda',
+  },
+}
 
 const values = [
   {

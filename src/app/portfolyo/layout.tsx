@@ -1,9 +1,9 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Portföy | Gerçek Sonuçlar ve Başarı Hikayeleri — Ramses Digital',
+  title: 'Portföy | Gerçek Başarı Hikayeleri — Ramses Digital Kocaeli & İstanbul',
   description:
-    'SEO\'da %340 trafik artışı, Google Ads\'de 4.2x ROAS, sosyal medyada 120K yeni takipçi. Farklı sektörlerden 200+ başarılı proje ve ölçülebilir sonuçlar.',
+    'SEO\'da %340 trafik artışı, Google Ads\'de 4.2x ROAS, 120K yeni takipçi. Kocaeli ve İstanbul\'daki işletmeler için 100+ başarılı dijital pazarlama projesi.',
   openGraph: {
     title: 'Portföy | Ramses Digital Başarı Hikayeleri',
     description: 'E-ticaret, turizm, fintech ve daha fazlasında elde ettiğimiz somut dijital pazarlama sonuçları.',

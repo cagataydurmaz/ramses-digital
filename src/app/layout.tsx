@@ -27,11 +27,11 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://ramsesdigital.com'),
   alternates: { canonical: 'https://ramsesdigital.com' },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
-  title: 'Ramses Digital | Performans Odaklı Dijital Pazarlama Ajansı',
+  title: 'Ramses Digital | Performans Odaklı Dijital Pazarlama Ajansı — Kocaeli',
   description:
-    'Ramses Digital – Markanızı dijitalde büyütün. SEO, Google Ads, sosyal medya yönetimi, web tasarımı ve veri analizinde uzman ekibimizle gerçek sonuçlar elde edin.',
+    'Ramses Digital – Kocaeli ve İstanbul\'da SEO, Google Ads, sosyal medya yönetimi, web tasarımı ve n8n otomasyonunda uzman dijital pazarlama ajansı. Gerçek sonuçlar.',
   keywords:
-    'dijital pazarlama, SEO, Google Ads, sosyal medya yönetimi, web tasarımı, İstanbul dijital ajans',
+    'dijital pazarlama, SEO, Google Ads, sosyal medya yönetimi, web tasarımı, Kocaeli dijital ajans, İstanbul dijital ajans, n8n otomasyon',
   viewport: {
     width: 'device-width',
     initialScale: 1,
@@ -119,6 +119,7 @@ export default function RootLayout({
                 areaServed: [
                   { '@type': 'Country', name: 'Turkey' },
                   { '@type': 'City', name: 'İstanbul' },
+                  { '@type': 'City', name: 'Kocaeli' },
                 ],
                 sameAs: [
                   'https://instagram.com/ramsesdigital',
