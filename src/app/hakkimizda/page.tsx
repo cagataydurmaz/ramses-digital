@@ -42,24 +42,6 @@ const values = [
   },
 ]
 
-const team = [
-  {
-    name: 'Çağatay Durmaz',
-    role: 'Co-Founder & CEO',
-    bio: 'Mühendislik altyapısıyla dijital pazarlama stratejisi geliştiriyor. Veri odaklı büyüme kampanyaları ve performans reklamcılığında uzman.',
-    color: 'bg-blue-500/20',
-    initials: 'ÇD',
-    badge: 'Elektrik-Elektronik Mühendisi · Pazarlama Stratejisti',
-  },
-  {
-    name: 'Atalay Durmaz',
-    role: 'Co-Founder & CTO',
-    bio: 'Yazılım mühendisliği ve AI entegrasyonlarında uzman. Ramses Digital\'in teknoloji altyapısını, otomasyon sistemlerini ve ürün vizyonunu yönetiyor.',
-    color: 'bg-violet-500/20',
-    initials: 'AD',
-    badge: 'Yazılım Mühendisi & AI Uzmanı',
-  },
-]
 
 const milestones = [
   { year: '2019', title: 'Kuruluş', desc: 'İstanbul\'da 2 kişilik bir ekiple dijital pazarlama yolculuğumuzu başlattık.' },
@@ -195,35 +177,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Team */}
-      <section className="py-20 px-6 bg-[#080D18]">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <p className="text-blue-500 text-sm font-medium tracking-wider uppercase mb-3">
-              Ekibimiz
-            </p>
-            <h2 className="text-4xl font-bold text-white mb-4">Uzman Kadromuz</h2>
-            <p className="text-zinc-400 max-w-xl mx-auto">
-              Dijital pazarlamanın her alanında uzmanlaşmış, tutkulu ve sonuç odaklı bir ekip.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {team.map((member) => (
-              <div key={member.name} className="bg-[#0D1225] border border-white/[0.06] rounded-2xl p-6">
-                <div className={`w-14 h-14 ${member.color} rounded-2xl flex items-center justify-center mb-4`}>
-                  <span className="text-white font-bold text-lg">{member.initials}</span>
-                </div>
-                <h3 className="text-white font-semibold mb-0.5">{member.name}</h3>
-                <p className="text-blue-400 text-xs font-medium mb-3">{member.role}</p>
-                <p className="text-zinc-400 text-sm leading-relaxed mb-4">{member.bio}</p>
-                <span className="inline-block bg-white/[0.04] border border-white/[0.08] rounded-full px-3 py-1 text-[11px] text-zinc-400">
-                  🎓 {member.badge}
-                </span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* CTA */}
       <section className="py-20 px-6">
