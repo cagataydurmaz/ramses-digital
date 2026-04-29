@@ -107,21 +107,21 @@ export default function RootLayout({
                   url: 'https://ramsesdigital.com/favicon.ico',
                 },
                 description:
-                  'Performans odaklı dijital pazarlama ajansı. SEO, Google Ads, sosyal medya yönetimi, web tasarımı ve veri analizinde uzman İstanbul ajansı.',
+                  'Performans odaklı dijital pazarlama ajansı. SEO, Google Ads, n8n otomasyon, web tasarımı ve veri analizinde uzman Kocaeli merkezli ajans.',
                 telephone: '+905355601936',
                 email: 'ramsesdigitalagency@gmail.com',
                 address: {
                   '@type': 'PostalAddress',
-                  streetAddress: 'Telsizler Mah. Boğazkale Sok. No:2',
-                  addressLocality: 'Kağıthane',
-                  addressRegion: 'İstanbul',
-                  postalCode: '34413',
+                  streetAddress: 'Körfez Mah. Sanayi Cd. Berk Sk. Dolphin AVM Kat:2 No:224',
+                  addressLocality: 'İzmit',
+                  addressRegion: 'Kocaeli',
+                  postalCode: '41050',
                   addressCountry: 'TR',
                 },
                 geo: {
                   '@type': 'GeoCoordinates',
-                  latitude: 41.0729,
-                  longitude: 28.9799,
+                  latitude: 40.7588,
+                  longitude: 29.9320,
                 },
                 openingHoursSpecification: [
                   {

@@ -24,7 +24,7 @@ export default function GizlilikPolitikasiPage() {
             </p>
             <div className="mt-3 bg-white/[0.03] border border-white/[0.06] rounded-xl p-4">
               <p><strong className="text-white">Ticaret Unvanı:</strong> Ramses Digital</p>
-              <p className="mt-1"><strong className="text-white">Adres:</strong> Telsizler Mahallesi, Boğazkale Sokak, No:2, Kağıthane / İstanbul</p>
+              <p className="mt-1"><strong className="text-white">Adres:</strong> Körfez Mah. Sanayi Cd. Berk Sk. Dolphin AVM Kat:2 No:224, 41050 İzmit / Kocaeli</p>
               <p className="mt-1"><strong className="text-white">E-posta:</strong> ramsesdigitalagency@gmail.com</p>
               <p className="mt-1"><strong className="text-white">Telefon:</strong> +90 (535) 560 19 36</p>
             </div>

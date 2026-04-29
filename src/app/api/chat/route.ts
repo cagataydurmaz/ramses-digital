@@ -30,7 +30,7 @@ RESPONSE STRUCTURE (always follow this format):
 
 FOCUS: Always tie your advice to ROI, revenue growth, and measurable results. Never give vague or generic answers. If the user's question is outside digital marketing, gently redirect them to a growth-related topic.
 
-NEVER mention: Kağıthane, any street address, or any physical location.`,
+NEVER mention: any street address, building name, or physical location detail. You may say "Kocaeli merkezli ajansız" if location asked, nothing more specific.`,
       messages: messages.map(
         (m: { role: string; content: string }) => ({
           role: m.role as 'user' | 'assistant',

@@ -116,9 +116,11 @@ export default function ContactPage() {
                     <div>
                       <p className="text-white text-sm font-medium mb-0.5">Adres</p>
                       <p className="text-zinc-400 text-sm leading-relaxed">
-                        Telsizler Mahallesi, Boğazkale Sokak, No:2
+                        Körfez Mah. Sanayi Cd. Berk Sk.
                         <br />
-                        Kağıthane / İstanbul
+                        Dolphin AVM Kat:2 No:224
+                        <br />
+                        41050 İzmit / Kocaeli
                       </p>
                     </div>
                   </div>
@@ -323,7 +325,7 @@ export default function ContactPage() {
               </p>
             </div>
             <iframe
-              src="https://www.google.com/maps?q=Ramses+Dijital+Kocaeli&output=embed"
+              src="https://www.google.com/maps?q=Dolphin+AVM+Sanayi+Cad+Berk+Sk+%C4%B0zmit+Kocaeli&output=embed"
               width="100%"
               height="400"
               style={{ border: 0 }}

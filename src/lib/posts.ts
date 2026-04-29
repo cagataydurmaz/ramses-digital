@@ -615,7 +615,7 @@ export const posts: Post[] = [
 
       <h2>2. NAP Tutarlılığı</h2>
       <p>NAP, "Name, Address, Phone" yani işletme isminiz, adresiniz ve telefon numaranızdır. Bu üç bilgi, web sitenizden Google Business Profile'a, sektörel rehberlerden sosyal medya bio'larınıza kadar her platformda birebir aynı olmalıdır.</p>
-      <p>"Boğazkale Cad." yerine "Boğazkale Caddesi", "+90 535 560 19 36" yerine "0535 560 19 36" gibi küçük farklılıklar bile Google'a "bu işletme tutarsız" mesajı verir ve sıralamanızı düşürür. Tutarlılığı kontrol etmek için Yext, BrightLocal veya Whitespark gibi araçlar kullanılabilir.</p>
+      <p>"Atatürk Cad." yerine "Atatürk Caddesi", "+90 535 560 19 36" yerine "0535 560 19 36" gibi küçük farklılıklar bile Google'a "bu işletme tutarsız" mesajı verir ve sıralamanızı düşürür. Tutarlılığı kontrol etmek için Yext, BrightLocal veya Whitespark gibi araçlar kullanılabilir.</p>
 
       <h2>3. Yerel Anahtar Kelime Stratejisi</h2>
       <p>"Dijital pazarlama ajansı" gibi geniş terimler yerine "Kocaeli dijital pazarlama ajansı", "İzmit web tasarım", "Gebze SEO uzmanı" gibi şehir + ilçe + hizmet kombinasyonlarına odaklanın. Bu uzun kuyruklu ifadelerde rekabet daha az, dönüşüm oranı daha yüksektir.</p>
