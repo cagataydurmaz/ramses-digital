@@ -7,6 +7,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const statics = [
     { path: '',             priority: 1.0, freq: 'weekly'  },
     { path: '/hizmetler',  priority: 0.9, freq: 'monthly' },
+    { path: '/hizmetler/seo-kocaeli',         priority: 0.95, freq: 'monthly' },
+    { path: '/hizmetler/google-ads-kocaeli',  priority: 0.95, freq: 'monthly' },
+    { path: '/hizmetler/n8n-otomasyon',       priority: 0.9,  freq: 'monthly' },
+    { path: '/hizmetler/web-tasarim-kocaeli', priority: 0.9,  freq: 'monthly' },
     { path: '/hakkimizda', priority: 0.8, freq: 'monthly' },
     { path: '/portfolyo',  priority: 0.8, freq: 'monthly' },
     { path: '/blog',       priority: 0.9, freq: 'weekly'  },

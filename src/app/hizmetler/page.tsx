@@ -29,6 +29,7 @@ import {
   BarChart3,
   CheckCircle2,
   Workflow,
+  ArrowRight,
 } from 'lucide-react'
 
 const services = [
@@ -46,6 +47,7 @@ const services = [
       'AI Performans Analitiği',
     ],
     color: 'blue',
+    href: '/hizmetler/seo-kocaeli',
   },
   {
     icon: TrendingUp,
@@ -61,6 +63,7 @@ const services = [
       'Dönüşüm Takibi & Optimizasyon',
     ],
     color: 'violet',
+    href: '/hizmetler/google-ads-kocaeli',
   },
   {
     icon: Share2,
@@ -91,6 +94,7 @@ const services = [
       'Hız & Performans Optimizasyonu',
     ],
     color: 'emerald',
+    href: '/hizmetler/web-tasarim-kocaeli',
   },
   {
     icon: Mail,
@@ -121,6 +125,7 @@ const services = [
       'Self-Hosted & Güvenli Altyapı',
     ],
     color: 'fuchsia',
+    href: '/hizmetler/n8n-otomasyon',
   },
   {
     icon: BarChart3,
@@ -229,7 +234,18 @@ export default function ServicesPage() {
                       {service.title}
                     </h2>
                     <p className="text-zinc-400 leading-relaxed">{service.desc}</p>
-                    <CalendlyButton label="Teklif Al" variant="link" className="mt-6" />
+                    <div className="flex flex-wrap items-center gap-4 mt-6">
+                      <CalendlyButton label="Teklif Al" variant="link" />
+                      {service.href && (
+                        <Link
+                          href={service.href}
+                          className="inline-flex items-center gap-1.5 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors"
+                        >
+                          Detayları İncele
+                          <ArrowRight size={14} />
+                        </Link>
+                      )}
+                    </div>
                   </div>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     {service.features.map((feature) => (
