@@ -105,12 +105,6 @@ const services = [
     tags: ['Search Ads', 'YouTube Ads', 'Remarketing'],
   },
   {
-    icon: Share2,
-    title: 'Sosyal Medya Yönetimi',
-    desc: 'Instagram, Facebook, LinkedIn ve TikTok platformlarında markanızı güçlendirin.',
-    tags: ['İçerik Üretimi', 'Topluluk Yönetimi', 'Reklam'],
-  },
-  {
     icon: Monitor,
     title: 'Web Tasarımı & Geliştirme',
     desc: 'Modern, hızlı ve mobil uyumlu web siteleri ile dönüşüm oranlarınızı artırın.',
