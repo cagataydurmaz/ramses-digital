@@ -10,6 +10,12 @@ export const metadata: Metadata = {
     url: 'https://ramsesdigital.com/portfolyo',
   },
   alternates: { canonical: 'https://ramsesdigital.com/portfolyo' },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Portföy | Ramses Digital Başarı Hikayeleri',
+    description: 'E-ticaret, turizm, fintech ve daha fazlasında somut dijital pazarlama sonuçları.',
+    images: ['https://ramsesdigital.com/og-image.png'],
+  },
 }
 
 export default function PortfoyLayout({ children }: { children: React.ReactNode }) {

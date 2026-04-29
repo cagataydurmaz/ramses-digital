@@ -27,9 +27,33 @@ export function generateMetadata({ params }: Props): Metadata {
       publishedTime: post.date,
       authors: [post.author],
       tags: post.tags,
-      images: [{ url: post.coverImage, width: 800, alt: post.title }],
+      images: [{ url: post.coverImage, width: 1200, height: 630, alt: post.title }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.title,
+      description: post.excerpt,
+      images: [post.coverImage],
     },
   }
+}
+
+function BreadcrumbJsonLd({ post }: { post: (typeof posts)[0] }) {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Anasayfa', item: 'https://ramsesdigital.com' },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://ramsesdigital.com/blog' },
+      { '@type': 'ListItem', position: 3, name: post.title, item: `https://ramsesdigital.com/blog/${post.slug}` },
+    ],
+  }
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  )
 }
 
 function ArticleJsonLd({ post }: { post: (typeof posts)[0] }) {
@@ -110,6 +134,7 @@ export default function BlogPostPage({ params }: Props) {
   return (
     <div className="min-h-screen bg-[#0A0F1E]">
       <ArticleJsonLd post={post} />
+      <BreadcrumbJsonLd post={post} />
       <style>{`
         .post-content h2 {
           color: #60a5fa;

@@ -10,6 +10,12 @@ export const metadata: Metadata = {
     url: 'https://ramsesdigital.com/iletisim',
   },
   alternates: { canonical: 'https://ramsesdigital.com/iletisim' },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'İletişim | Ramses Digital',
+    description: 'Ücretsiz danışmanlık için bize ulaşın.',
+    images: ['https://ramsesdigital.com/og-image.png'],
+  },
 }
 
 export default function IletisimLayout({ children }: { children: React.ReactNode }) {

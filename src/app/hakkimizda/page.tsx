@@ -11,6 +11,13 @@ export const metadata: Metadata = {
     title: 'Hakkımızda | Ramses Digital',
     description: 'Performans odaklı dijital pazarlama ajansı. Ekibimiz, değerlerimiz ve başarı hikayemiz.',
     url: 'https://ramsesdigital.com/hakkimizda',
+    images: ['https://ramsesdigital.com/og-image.png'],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Hakkımızda | Ramses Digital',
+    description: 'Mühendislik temelli dijital pazarlama ajansı. 2019\'dan beri ölçülebilir sonuçlar.',
+    images: ['https://ramsesdigital.com/og-image.png'],
   },
 }
 
@@ -178,6 +185,35 @@ export default function AboutPage() {
       </section>
 
 
+      {/* About FAQ — GEO/AEO */}
+      <section className="py-20 px-6 bg-[#080D18]">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <p className="text-blue-500 text-sm font-medium tracking-wider uppercase mb-3">
+              Hakkımızda Sorular
+            </p>
+            <h2 className="text-4xl font-bold text-white mb-4">Bizi Tanıyın</h2>
+            <p className="text-zinc-400 max-w-2xl mx-auto">
+              Ramses Digital hakkında en çok merak edilen konular.
+            </p>
+          </div>
+          <div className="space-y-4">
+            {aboutFaqs.map((item, i) => (
+              <details
+                key={i}
+                className="group bg-[#0D1225] border border-white/[0.06] rounded-2xl p-6 hover:border-white/[0.12] transition-colors"
+              >
+                <summary className="cursor-pointer list-none flex items-start justify-between gap-4">
+                  <h3 className="text-white font-semibold text-base">{item.q}</h3>
+                  <span className="text-blue-400 text-2xl leading-none group-open:rotate-45 transition-transform shrink-0">+</span>
+                </summary>
+                <p className="text-zinc-400 text-sm leading-relaxed mt-4">{item.a}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-20 px-6">
         <div className="max-w-3xl mx-auto text-center">
@@ -190,6 +226,66 @@ export default function AboutPage() {
           <CalendlyButton label="İletişime Geç" variant="primary" />
         </div>
       </section>
+
+      {/* FAQ Schema — GEO/AEO */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: aboutFaqs.map((f) => ({
+              '@type': 'Question',
+              name: f.q,
+              acceptedAnswer: { '@type': 'Answer', text: f.a },
+            })),
+          }),
+        }}
+      />
+
+      {/* AboutPage Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'AboutPage',
+            name: 'Hakkımızda — Ramses Digital',
+            url: 'https://ramsesdigital.com/hakkimizda',
+            mainEntity: {
+              '@type': 'Organization',
+              name: 'Ramses Digital',
+              foundingDate: '2019',
+              description:
+                'Performans odaklı dijital pazarlama ajansı. Mühendislik temelli yaklaşımla SEO, Google Ads ve n8n otomasyon hizmetleri sunuyoruz.',
+              url: 'https://ramsesdigital.com',
+            },
+          }),
+        }}
+      />
     </>
   )
 }
+
+const aboutFaqs = [
+  {
+    q: 'Ramses Digital ne zaman kuruldu?',
+    a: 'Ramses Digital, iki mühendis kurucu tarafından 2019 yılında kuruldu. Kuruluşumuzdan bu yana 100+ proje tamamladık ve dijital pazarlamayı mühendislik disiplinine dayandıran çözümler üretiyoruz.',
+  },
+  {
+    q: 'Nerede konumlanıyorsunuz?',
+    a: 'Merkezimiz Kocaeli\'de. İstanbul, Ankara, İzmir başta olmak üzere Türkiye genelinde ve uluslararası pazarda online olarak hizmet veriyoruz.',
+  },
+  {
+    q: 'Ramses Digital\'i diğer ajanslardan ayıran ne?',
+    a: 'Mühendislik kökenli bir ekip olarak her stratejiyi veri ve teknik disiplinle kuruyoruz. Vanity metrik yerine ölçülebilir sonuçlara (ROAS, organik trafik artışı, lead kalitesi) odaklanırız. Şeffaf raporlama ve canlı dashboard erişimi standardımızdır.',
+  },
+  {
+    q: 'Hangi sektörlerde uzmanlığınız var?',
+    a: 'E-ticaret, B2B SaaS, fintech, turizm/konaklama, eğitim ve profesyonel hizmetler sektörlerinde derin deneyime sahibiz. Sektörel know-how, kampanyalarımızın hız ve verimliliğini artırıyor.',
+  },
+  {
+    q: 'Bir projeye başlamak için süreç nasıl ilerliyor?',
+    a: 'İlk adım: 30 dakikalık ücretsiz danışmanlık. Ardından mevcut durum analizi ve özel strateji teklifi sunarız. Onay sonrası kick-off toplantısı yapar, 2 hafta içinde uygulamaya geçeriz. İlk ay test ve optimizasyon, sonraki aylar büyüme odaklıdır.',
+  },
+]

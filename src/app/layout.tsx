@@ -43,6 +43,22 @@ export const metadata: Metadata = {
     description: 'Markanızı Dijitalde Büyütün, Gerçek Sonuçlar Elde Edin',
     locale: 'tr_TR',
     type: 'website',
+    url: 'https://ramsesdigital.com',
+    siteName: 'Ramses Digital',
+    images: [
+      {
+        url: 'https://ramsesdigital.com/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Ramses Digital — Performans Odaklı Dijital Pazarlama Ajansı',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Ramses Digital | Performans Odaklı Dijital Pazarlama Ajansı',
+    description: 'Kocaeli ve İstanbul\'da SEO, Google Ads, sosyal medya ve n8n otomasyonu.',
+    images: ['https://ramsesdigital.com/og-image.png'],
   },
 }
 

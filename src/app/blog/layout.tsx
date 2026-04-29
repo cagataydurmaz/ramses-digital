@@ -11,6 +11,12 @@ export const metadata: Metadata = {
     type: 'website',
   },
   alternates: { canonical: 'https://ramsesdigital.com/blog' },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Dijital Pazarlama Blogu | Ramses Digital',
+    description: 'SEO, Google Ads ve sosyal medya üzerine uzman içerikleri.',
+    images: ['https://ramsesdigital.com/og-image.png'],
+  },
 }
 
 export default function BlogLayout({ children }: { children: React.ReactNode }) {

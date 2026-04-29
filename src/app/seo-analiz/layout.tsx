@@ -10,6 +10,12 @@ export const metadata: Metadata = {
     url: 'https://ramsesdigital.com/seo-analiz',
   },
   alternates: { canonical: 'https://ramsesdigital.com/seo-analiz' },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Ücretsiz SEO Analiz Aracı | Ramses Digital',
+    description: 'Web sitenizin SEO puanını, hız skorunu ve teknik sorunlarını ücretsiz öğrenin.',
+    images: ['https://ramsesdigital.com/og-image.png'],
+  },
 }
 
 export default function SeoAnalizLayout({ children }: { children: React.ReactNode }) {

@@ -11,6 +11,13 @@ export const metadata: Metadata = {
     title: 'Dijital Pazarlama Hizmetleri | Ramses Digital',
     description: 'SEO\'dan Google Ads\'e, sosyal medyadan n8n otomasyonuna — tüm dijital büyüme araçları tek çatı altında.',
     url: 'https://ramsesdigital.com/hizmetler',
+    images: ['https://ramsesdigital.com/og-image.png'],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Dijital Pazarlama Hizmetleri | Ramses Digital',
+    description: 'SEO, GEO, Google Ads, n8n otomasyon — tüm dijital büyüme araçları.',
+    images: ['https://ramsesdigital.com/og-image.png'],
   },
 }
 import {
@@ -239,6 +246,58 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      {/* Definitions / Glossary — GEO/AEO Optimized */}
+      <section className="py-20 px-6 bg-[#080D18]">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <p className="text-blue-500 text-sm font-medium tracking-wider uppercase mb-3">
+              Kavramlar
+            </p>
+            <h2 className="text-4xl font-bold text-white mb-4">Dijital Pazarlama Sözlüğü</h2>
+            <p className="text-zinc-400 max-w-2xl mx-auto">
+              Hizmetlerimizde sıkça geçen terimlerin kısa ve net açıklamaları.
+            </p>
+          </div>
+          <div className="space-y-5">
+            {definitions.map((item) => (
+              <div key={item.term} className="bg-[#0D1225] border border-white/[0.06] rounded-2xl p-6">
+                <h3 className="text-white font-semibold text-lg mb-2">{item.term} nedir?</h3>
+                <p className="text-zinc-400 text-sm leading-relaxed">{item.definition}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-20 px-6">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <p className="text-blue-500 text-sm font-medium tracking-wider uppercase mb-3">
+              Sık Sorulan Sorular
+            </p>
+            <h2 className="text-4xl font-bold text-white mb-4">Aklınızdaki Sorular</h2>
+            <p className="text-zinc-400 max-w-2xl mx-auto">
+              Hizmetlerimiz, süreçler ve fiyatlandırma hakkında en çok sorulan soruların cevapları.
+            </p>
+          </div>
+          <div className="space-y-4">
+            {faqs.map((item, i) => (
+              <details
+                key={i}
+                className="group bg-[#0D1225] border border-white/[0.06] rounded-2xl p-6 hover:border-white/[0.12] transition-colors"
+              >
+                <summary className="cursor-pointer list-none flex items-start justify-between gap-4">
+                  <h3 className="text-white font-semibold text-base">{item.q}</h3>
+                  <span className="text-blue-400 text-2xl leading-none group-open:rotate-45 transition-transform shrink-0">+</span>
+                </summary>
+                <p className="text-zinc-400 text-sm leading-relaxed mt-4">{item.a}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-20 px-6 bg-[#080D18]">
         <div className="max-w-3xl mx-auto text-center">
@@ -251,6 +310,116 @@ export default function ServicesPage() {
           <CalendlyButton label="Ücretsiz Danışmanlık Al" variant="primary" />
         </div>
       </section>
+
+      {/* FAQ Schema — GEO/AEO */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: faqs.map((f) => ({
+              '@type': 'Question',
+              name: f.q,
+              acceptedAnswer: { '@type': 'Answer', text: f.a },
+            })),
+          }),
+        }}
+      />
+
+      {/* Service Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'ItemList',
+            itemListElement: services.map((s, i) => ({
+              '@type': 'ListItem',
+              position: i + 1,
+              item: {
+                '@type': 'Service',
+                name: s.title,
+                description: s.desc,
+                provider: {
+                  '@type': 'Organization',
+                  name: 'Ramses Digital',
+                  url: 'https://ramsesdigital.com',
+                },
+                areaServed: ['Kocaeli', 'İstanbul', 'Türkiye'],
+              },
+            })),
+          }),
+        }}
+      />
     </>
   )
 }
+
+const definitions = [
+  {
+    term: 'SEO (Arama Motoru Optimizasyonu)',
+    definition:
+      'SEO, web sitenizin Google, Bing gibi arama motorlarında daha üst sıralarda çıkmasını sağlayan teknik ve içerik optimizasyon sürecidir. Anahtar kelime araştırması, teknik düzenlemeler, içerik üretimi ve backlink stratejilerini içerir.',
+  },
+  {
+    term: 'GEO (Generative Engine Optimization)',
+    definition:
+      'GEO, ChatGPT, Gemini ve Perplexity gibi yapay zeka destekli arama motorlarında markanızın güvenilir kaynak olarak gösterilmesini sağlayan optimizasyon türüdür. Yapılandırılmış veri, EEAT prensipleri ve semantik içerik mimarisi temelinde çalışır.',
+  },
+  {
+    term: 'AEO (Answer Engine Optimization)',
+    definition:
+      'AEO, kullanıcıların doğrudan yanıt aradığı sorularda (sesli arama, öne çıkan snippet\'lar) markanızın cevap kaynağı olarak görünmesini sağlar. Soru-cevap formatı, FAQ schema ve net tanımlar AEO\'nun temelidir.',
+  },
+  {
+    term: 'Google Ads',
+    definition:
+      'Google Ads, Google\'ın arama sonuçlarında, YouTube\'da ve Display Network\'te ücretli reklam vermenizi sağlayan platformdur. Tıklama başı ödeme (CPC) modeliyle çalışır ve doğru kurgulandığında yüksek ROI getirebilir.',
+  },
+  {
+    term: 'n8n İş Akışı Otomasyonu',
+    definition:
+      'n8n, kod yazmadan veya minimum kodla farklı uygulamaları (CRM, e-posta, sosyal medya, AI araçları) birbirine bağlayıp tekrarlanan iş akışlarını otomatize etmenizi sağlayan açık kaynak bir platformdur.',
+  },
+  {
+    term: 'ROAS (Reklam Harcamasının Geri Dönüşü)',
+    definition:
+      'ROAS, reklam harcaması başına elde edilen gelirdir. Formülü: Gelir / Reklam Harcaması. 4x ROAS, harcadığınız her 1 TL\'nin 4 TL gelir getirdiği anlamına gelir.',
+  },
+]
+
+const faqs = [
+  {
+    q: 'SEO çalışması ne kadar sürede sonuç verir?',
+    a: 'Genellikle ilk anlamlı sonuçları 3-6 ay içinde görüyoruz. Rekabetçi sektörlerde bu süre 6-12 aya çıkabilir. Teknik düzeltmeler ve içerik üretimi ilk haftalardan itibaren etki etmeye başlar; ancak Google\'ın yeni siteyi tanıması ve sıralamaları stabilize etmesi zaman alır.',
+  },
+  {
+    q: 'Google Ads bütçem ne kadar olmalı?',
+    a: 'B2B ve nişe özel sektörler için aylık 5.000-15.000 TL test bütçesiyle başlamayı öneriyoruz. E-ticaret ve geniş kitleli işletmeler için 15.000-50.000 TL arası bir başlangıç bütçesi sağlıklı sonuç verir. Optimal bütçe sektör, ürün marjı ve hedef kitleye göre değişir.',
+  },
+  {
+    q: 'Hizmetlerinizden hangisi benim için uygun?',
+    a: 'Hızlı sonuç istiyorsanız Google Ads, uzun vadeli organik büyüme için SEO/GEO, otomasyon ve operasyonel verimlilik için n8n otomasyon önerilir. Ücretsiz danışmanlık seansımızda işletmenize özel önceliklendirme yapıyoruz.',
+  },
+  {
+    q: 'Sözleşme süresi ne kadar?',
+    a: 'Minimum 3 ay, ortalama 6-12 ay arasında çalışıyoruz. SEO\'da kısa süreli (1-2 ay) sözleşmeler önerilmez çünkü sonuç almak için zaman gerekir. Google Ads\'de aylık esnek modelimiz de mevcuttur.',
+  },
+  {
+    q: 'Kocaeli dışından çalışıyor musunuz?',
+    a: 'Evet, tüm Türkiye ve uluslararası pazarda online çalışıyoruz. Merkezimiz Kocaeli\'de olmakla birlikte İstanbul, Ankara, İzmir başta olmak üzere her şehirden müşteri kabul ediyoruz. Görüşmeleri Google Meet veya Zoom üzerinden yapıyoruz.',
+  },
+  {
+    q: 'Raporlama nasıl yapılıyor?',
+    a: 'Aylık detaylı performans raporu + canlı dashboard erişimi sağlıyoruz. Google Analytics, Search Console ve özel dashboard\'larımızdan tüm KPI\'ları (trafik, dönüşüm, ROAS, organik sıralamalar) gerçek zamanlı görebilirsiniz.',
+  },
+  {
+    q: 'GEO ve AEO neden önemli?',
+    a: 'Kullanıcıların %30\'u artık ChatGPT, Perplexity gibi AI motorları üzerinden arama yapıyor. GEO, bu yeni platformlarda görünür olmanızı sağlar. AEO ise sesli arama ve "öne çıkan yanıt" kutucuklarında markanızı ön plana çıkarır.',
+  },
+  {
+    q: 'n8n otomasyonu ile ne tür süreçler otomatize edilebilir?',
+    a: 'Lead yakalama → CRM\'e kayıt → otomatik e-posta, sosyal medya paylaşım otomasyonu, fatura/sipariş senkronizasyonu, müşteri destek bildirimleri, rapor oluşturma ve AI destekli içerik akışları gibi 200+ farklı senaryo otomatize edilebilir.',
+  },
+]

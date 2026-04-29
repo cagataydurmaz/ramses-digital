@@ -10,6 +10,12 @@ export const metadata: Metadata = {
     url: 'https://ramsesdigital.com/teklif-al',
   },
   alternates: { canonical: 'https://ramsesdigital.com/teklif-al' },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'AI Teklif Hesaplayıcı | Ramses Digital',
+    description: 'Bütçenize ve hedeflerinize göre kişiselleştirilmiş dijital pazarlama paketi.',
+    images: ['https://ramsesdigital.com/og-image.png'],
+  },
 }
 
 export default function TeklifAlLayout({ children }: { children: React.ReactNode }) {
