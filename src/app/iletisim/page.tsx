@@ -311,6 +311,31 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+
+      {/* Map Section */}
+      <section className="pb-24 px-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="bg-[#0D1225] border border-white/[0.06] rounded-2xl overflow-hidden">
+            <div className="p-6 border-b border-white/[0.06]">
+              <h2 className="text-white font-semibold text-lg mb-1">Konumumuz</h2>
+              <p className="text-zinc-400 text-sm">
+                Kocaeli&apos;deyiz. Online çalışıyoruz; tüm Türkiye ve uluslararası pazarda hizmet veriyoruz.
+              </p>
+            </div>
+            <iframe
+              src="https://www.google.com/maps?q=Ramses+Dijital+Kocaeli&output=embed"
+              width="100%"
+              height="400"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Ramses Digital Konum"
+              className="w-full"
+            />
+          </div>
+        </div>
+      </section>
     </>
   )
 }

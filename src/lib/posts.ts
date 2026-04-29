@@ -589,4 +589,414 @@ export const posts: Post[] = [
       <p>Soru-cevap formatı, kapsamlı rehberler, karşılaştırma yazıları, vaka çalışmaları ve özgün veriler içeren araştırmalar en yüksek AI alıntılanma oranına sahip içerik türleridir.</p>
     `,
   },
+  {
+    slug: 'kocaeli-seo-yerel-isletmeler-rehberi',
+    coverImage: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1200&q=80&fit=crop',
+    title: 'Kocaeli\'de SEO: Yerel İşletmeler İçin 2026 Tam Rehberi',
+    excerpt:
+      'Kocaeli\'de işletmenizin Google\'da üst sıralarda çıkması için bilmeniz gereken her şey: Google Business Profile, yerel anahtar kelimeler, NAP tutarlılığı ve gerçek vaka örnekleri.',
+    category: 'SEO',
+    categoryColor: 'blue',
+    emoji: '📍',
+    coverGradient: 'from-blue-500/10 to-blue-900/5',
+    readTime: 12,
+    date: '2026-04-25',
+    author: 'Ramses Digital Ekibi',
+    authorRole: 'Yerel SEO Uzmanları',
+    tags: ['Yerel SEO', 'Kocaeli', 'Google Business Profile', 'KOBİ'],
+    content: `
+      <h2>Kocaeli'de SEO Neden Önemli?</h2>
+      <p>Kocaeli, sanayinin yoğun olduğu, hızla büyüyen ve dijitalleşen bir şehir. Tüketicilerin %78'i, yerel bir hizmet veya ürün ararken Google'a yöneliyor. "Kocaeli web tasarım", "İzmit dijital pazarlama", "Gebze SEO ajansı" gibi aramalarda ilk üçte yer almak, web sitenize gelen organik trafiğin %75'ini bir anda kazanmanız anlamına geliyor.</p>
+      <p>Yerel SEO, klasik SEO'dan farklı dinamiklere sahiptir. Burada amaç sadece "SEO" gibi genel terimlerde değil, "Kocaeli + hizmet" kombinasyonunda görünür olmak ve Google Maps'in "Local Pack" alanına girmektir.</p>
+
+      <h2>1. Google Business Profile (GBP) Optimizasyonu</h2>
+      <p>Yerel SEO'nun temeli, Google Business Profile'dır. Profilinizi açtığınız ve doğruladığınız anda Kocaeli aramalarında görünür olma şansınız ortaya çıkar. Profili açmak için google.com/business adresine giderek işletmenizi kaydedin ve doğrulama kodunu adresinize getirin.</p>
+      <p>Profilde dikkat etmeniz gerekenler: tam ve doğru NAP (İsim, Adres, Telefon), tüm hizmet kategorileri, çalışma saatleri, en az 10 kaliteli fotoğraf, haftalık güncellenen "post"lar ve müşteri yorumlarına 24 saat içinde verilen profesyonel cevaplar.</p>
+
+      <h2>2. NAP Tutarlılığı</h2>
+      <p>NAP, "Name, Address, Phone" yani işletme isminiz, adresiniz ve telefon numaranızdır. Bu üç bilgi, web sitenizden Google Business Profile'a, sektörel rehberlerden sosyal medya bio'larınıza kadar her platformda birebir aynı olmalıdır.</p>
+      <p>"Boğazkale Cad." yerine "Boğazkale Caddesi", "+90 535 560 19 36" yerine "0535 560 19 36" gibi küçük farklılıklar bile Google'a "bu işletme tutarsız" mesajı verir ve sıralamanızı düşürür. Tutarlılığı kontrol etmek için Yext, BrightLocal veya Whitespark gibi araçlar kullanılabilir.</p>
+
+      <h2>3. Yerel Anahtar Kelime Stratejisi</h2>
+      <p>"Dijital pazarlama ajansı" gibi geniş terimler yerine "Kocaeli dijital pazarlama ajansı", "İzmit web tasarım", "Gebze SEO uzmanı" gibi şehir + ilçe + hizmet kombinasyonlarına odaklanın. Bu uzun kuyruklu ifadelerde rekabet daha az, dönüşüm oranı daha yüksektir.</p>
+      <p>Anahtar kelime fikirleri için Google Keyword Planner'da Kocaeli filtresi uygulayabilir, "Google Trends Kocaeli" üzerinden sezonsallık trendlerini izleyebilir ve "ahrefs.com" üzerinden rakip sitelerin yerel sıralamalarını analiz edebilirsiniz.</p>
+
+      <h2>4. Yerel İçerik Üretimi</h2>
+      <p>Web sitenizde Kocaeli'ye özel içerikler yayınlayın: "Kocaeli'deki KOBİ'ler için 5 dijital pazarlama ipucu", "İzmit'te Google Ads kampanyası nasıl kurulur", "Gebze sanayicilerine özel SEO stratejileri" gibi başlıklar hem yerel arayanlara hitap eder hem Google'a "bu site Kocaeli odaklı" sinyali gönderir.</p>
+      <p>İçerik içinde yerel referanslar (Sapanca Gölü, Seka Park, Gebze OSB gibi) kullanmak, Google'ın yer-içerik bağlantısını güçlendirir.</p>
+
+      <h2>5. Yerel Backlink İnşası</h2>
+      <p>Kocaeli Sanayi Odası, Kocaeli Ticaret Odası, Doğu Marmara Kalkınma Ajansı, yerel haber siteleri (kocaelibarisi.com, gazetekocaeli.com.tr), sektörel rehberler ve Kocaeli odaklı bloglardan alacağınız backlinkler altın değerindedir.</p>
+      <p>Yerel etkinliklere sponsor olmak, basın bülteni göndermek, ortak yerel kampanyalar düzenlemek bu backlinkleri kazanmanın doğal yöntemleridir.</p>
+
+      <h2>6. Yorumlar ve İtibar Yönetimi</h2>
+      <p>Google Business Profile yorumları, yerel sıralamada en güçlü 3 faktörden biridir. Hedefiniz: en az 50+ yorum, ortalama 4.5+ yıldız ve yorumlarınızın %80'ine 24 saat içinde cevap verilmiş olması.</p>
+      <p>Yorum istemek için müşterilere e-posta, SMS veya QR kod gönderebilirsiniz. Olumsuz yorumlara savunmacı değil, çözüm odaklı ve profesyonel cevaplar verin.</p>
+
+      <h2>7. Schema Markup ve LocalBusiness</h2>
+      <p>Web sitenize JSON-LD formatında "LocalBusiness" schema markup ekleyin. Bu, Google'a işletmenizin türü, adresi, telefonu, çalışma saatleri ve hizmet alanı hakkında net bilgi verir. Sonuç: arama sonuçlarında "rich snippet"ler (yıldız puanı, açılış saati, telefon kısayolu) görüntülenir.</p>
+
+      <h3>Sık Sorulan Sorular</h3>
+
+      <h3>Kocaeli'de SEO sonuçları ne kadar sürede görülür?</h3>
+      <p>Yerel SEO sonuçları, klasik SEO'ya göre çok daha hızlı gelir. Google Business Profile optimizasyonu sonrası 2-4 hafta içinde Local Pack'te görünmeye başlayabilirsiniz. Web sitesi sıralamaları için 3-6 ay daha gerçekçi bir beklenti olur.</p>
+
+      <h3>Sadece Kocaeli'de mi hizmet vermeliyim?</h3>
+      <p>Hayır, Kocaeli'de güçlü bir yerel varlık kurduktan sonra İstanbul, Sakarya, Yalova gibi yakın şehirlere kademeli olarak genişleyebilirsiniz. Her yeni şehir için ayrı bir hizmet sayfası ve yerel içerik stratejisi kurmak idealdir.</p>
+
+      <h3>Kocaeli'de yerel SEO ne kadara mal olur?</h3>
+      <p>KOBİ'ler için aylık 4.000-12.000 TL arasında değişen paketlerle yürüyebilir. İçeriğin derinliği, GBP yönetimi, backlink çalışması ve raporlama dahil olmalıdır. Çok düşük fiyatlı paketler ("aylık 1.500 TL'ye SEO") genellikle düşük kaliteli backlink ve şablon içerik anlamına gelir.</p>
+
+      <h3>Sonuç</h3>
+      <p>Kocaeli'de yerel SEO, sabır ve sistematik çalışma gerektiren stratejik bir yatırımdır. Doğru kurgulanırsa, ücretli reklamlardan çok daha sürdürülebilir ve düşük maliyetli müşteri akışı sağlar. Ramses Digital olarak Kocaeli merkezli ekibimizle bu sürece eşlik etmekten mutluluk duyarız.</p>
+    `,
+  },
+  {
+    slug: 'n8n-vs-zapier-vs-make-karsilastirmasi',
+    coverImage: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80&fit=crop',
+    title: 'n8n vs Zapier vs Make: 2026 Otomasyon Aracı Karşılaştırması',
+    excerpt:
+      'İş akışı otomasyonu için en popüler 3 araç olan n8n, Zapier ve Make\'i fiyat, özellik, esneklik ve AI entegrasyonu açısından karşılaştırdık. Hangisi sizin için doğru?',
+    category: 'Otomasyon',
+    categoryColor: 'fuchsia',
+    emoji: '⚙️',
+    coverGradient: 'from-fuchsia-500/10 to-fuchsia-900/5',
+    readTime: 10,
+    date: '2026-04-20',
+    author: 'Ramses Digital Ekibi',
+    authorRole: 'Otomasyon Uzmanları',
+    tags: ['n8n', 'Zapier', 'Make', 'Otomasyon', 'No-Code'],
+    content: `
+      <h2>İş Akışı Otomasyonunda Üç Dev: n8n, Zapier, Make</h2>
+      <p>Manuel işleri otomatize etmek isteyen her işletme bugün bu üç araçtan birini kullanıyor. n8n açık kaynak ve self-hosted yapısıyla, Zapier kullanım kolaylığıyla, Make ise görsel akış tasarımıyla öne çıkıyor. Peki hangisini seçmeli?</p>
+
+      <h2>n8n: Geliştiriciler ve Veri Hassasiyeti İçin</h2>
+      <p>n8n (eski adıyla "node-mation"), açık kaynaklı bir otomasyon platformudur. En büyük avantajı: kendi sunucunuza kurabilmeniz (self-hosted). Bu, hassas verilerinizin üçüncü parti sunucularından geçmemesi anlamına gelir.</p>
+      <p>Self-hosted versiyonu tamamen ücretsizdir. Cloud versiyonu aylık 20€'dan başlar. Sınırsız iş akışı, sınırsız çalıştırma. JavaScript desteği olduğu için karmaşık dönüşümler ve özel mantık eklemek son derece kolaydır. AI entegrasyonu (OpenAI, Anthropic, Hugging Face) yerleşik geliyor.</p>
+      <p><strong>Kimin için uygun:</strong> Teknik bilgisi olan ekipler, GDPR/KVKK hassasiyeti yüksek işletmeler, karmaşık iş akışlarına ihtiyaç duyan büyüyen şirketler.</p>
+
+      <h2>Zapier: Hızlı Başlangıç ve Kolaylık</h2>
+      <p>Zapier, otomasyon dünyasının "Apple"ıdır: kolay, sezgisel, ama kapalı ekosistem. 7.000+ uygulama entegrasyonu ile pazar lideridir. 5 dakikada ilk otomasyonunuzu kurabilirsiniz.</p>
+      <p>Ücretsiz planda ayda 100 görev hakkı, 5 zap (akış) limiti vardır. Pro plan aylık $29.99'dan başlar ve hızla artar. Görev başına ücretlendirme yapısı, yüksek hacimli işletmelerde maliyeti hızla şişirir.</p>
+      <p><strong>Kimin için uygun:</strong> Teknik bilgisi sınırlı küçük ekipler, hızlı prototip yapmak isteyen pazarlama ekipleri, basit lineer otomasyonlar (X olduğunda Y yap).</p>
+
+      <h2>Make (eski Integromat): Görsel ve Esnek</h2>
+      <p>Make, görsel akış tasarımıyla dikkat çeker. Karmaşık koşullu mantıkları (if/else, döngüler, paralel akışlar) sürükle-bırak ile kurabilirsiniz. Zapier'den daha güçlü, n8n'den daha kullanıcı dostudur.</p>
+      <p>Ücretsiz planda ayda 1.000 işlem hakkı vardır (Zapier'den 10 kat fazla). Core plan aylık $9'dan başlar. İşlem başına fiyatlandırması Zapier'e göre çok daha avantajlıdır.</p>
+      <p><strong>Kimin için uygun:</strong> Görsel düşünen ekipler, orta karmaşıklıkta akışlar kuran ajanslar, bütçesi sınırlı ama özellik isteyen KOBİ'ler.</p>
+
+      <h2>Detaylı Karşılaştırma Tablosu</h2>
+      <p><strong>Fiyat:</strong> n8n (self-hosted): Ücretsiz · n8n Cloud: 20€/ay · Make: $9/ay · Zapier: $29.99/ay</p>
+      <p><strong>Entegrasyon Sayısı:</strong> Zapier 7.000+ · Make 1.500+ · n8n 400+ (ama API ile sınırsıza ulaşır)</p>
+      <p><strong>Self-Hosted:</strong> Sadece n8n</p>
+      <p><strong>Özel Kod:</strong> n8n (JavaScript) > Make (kısıtlı) > Zapier (Code by Zapier $29+)</p>
+      <p><strong>AI Entegrasyonu:</strong> Hepsinde mevcut, n8n yerleşik AI node'ları sunar</p>
+      <p><strong>Öğrenme Eğrisi:</strong> Zapier (kolay) < Make (orta) < n8n (zor ama güçlü)</p>
+
+      <h2>Hangi Aracı Ne Zaman Tercih Etmeli?</h2>
+      <p><strong>Hızlı sonuç istiyorsanız:</strong> Zapier. 30 dakikada ilk otomasyonunuz çalışır.</p>
+      <p><strong>Bütçeniz sınırlıysa:</strong> Make veya self-hosted n8n.</p>
+      <p><strong>Veri gizliliği kritikse (sağlık, finans, KVKK):</strong> Self-hosted n8n. Veriler asla sunucularınızı terk etmez.</p>
+      <p><strong>Karmaşık iş akışları gerekiyorsa:</strong> n8n veya Make. Zapier basit kalır.</p>
+      <p><strong>Yüksek hacim varsa (aylık 10.000+ işlem):</strong> Self-hosted n8n. Diğerleri çok pahalılaşır.</p>
+
+      <h3>Sık Sorulan Sorular</h3>
+
+      <h3>n8n self-hosted için sunucu maliyeti ne kadar?</h3>
+      <p>DigitalOcean, Hetzner veya AWS Lightsail üzerinde aylık 5-20$ arasında bir VPS yeterlidir. Yüksek hacimli akışlar için 30-50$ aralığında bir sunucu, Zapier'in $300+ planının yerine geçer.</p>
+
+      <h3>Zapier'den n8n'e geçiş zor mu?</h3>
+      <p>Mantık aynı, terminoloji farklı. Zapier'in "Zap"ları n8n'in "Workflow"larına denk gelir. Geçiş sırasında akışları yeniden kurmanız gerekir; otomatik bir taşıma aracı yoktur. Ortalama 30+ Zap'lık bir geçiş 2-3 hafta sürer.</p>
+
+      <h3>Hangisi AI ile en iyi entegre çalışıyor?</h3>
+      <p>n8n, yerleşik OpenAI, Anthropic, Hugging Face ve LangChain node'larıyla en gelişmiş AI desteğine sahiptir. AI Agent'lar kurmak, RAG yapmak ve LLM'leri akışlara entegre etmek n8n'de çok daha doğal hisseder.</p>
+
+      <h3>KOBİ için en iyi seçenek hangisi?</h3>
+      <p>5 kişiden az ekip için Make, 5-20 kişi arası için n8n Cloud, 20+ kişi ve hassas veri için self-hosted n8n önerilir. Zapier ise sadece çok basit ihtiyaçlar veya prototip için makuldür.</p>
+    `,
+  },
+  {
+    slug: 'google-search-console-rehberi',
+    coverImage: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80&fit=crop',
+    title: 'Google Search Console Kullanım Rehberi: Adım Adım Yeni Başlayanlar İçin',
+    excerpt:
+      'Google Search Console nedir, nasıl kurulur, hangi raporları nasıl okunur? Sitenizin Google\'daki performansını ücretsiz takip etmenin en kapsamlı rehberi.',
+    category: 'SEO',
+    categoryColor: 'blue',
+    emoji: '📊',
+    coverGradient: 'from-blue-500/10 to-blue-900/5',
+    readTime: 11,
+    date: '2026-04-15',
+    author: 'Ramses Digital Ekibi',
+    authorRole: 'SEO Uzmanları',
+    tags: ['Google Search Console', 'SEO', 'Analytics', 'Sitemap'],
+    content: `
+      <h2>Google Search Console Nedir?</h2>
+      <p>Google Search Console (GSC), Google'ın web sitesi sahiplerine ücretsiz sunduğu performans takip ve teknik SEO aracıdır. Sitenizin hangi anahtar kelimelerde, hangi sıralarda göründüğünü, kaç kez tıklandığını, hangi sayfaların indekslendiğini ve teknik hataları gerçek zamanlı olarak gösterir.</p>
+      <p>GSC, hiçbir SEO çalışmasının atlanmaması gereken zorunlu bir araçtır. Google'ın size doğrudan ne düşündüğünü söylediği yegane platformdur.</p>
+
+      <h2>Adım 1: Hesap Oluşturma ve Mülk Ekleme</h2>
+      <p>search.google.com/search-console adresine gidin ve Gmail hesabınızla giriş yapın. "Mülk ekle" butonuna tıkladığınızda iki seçenek sunulur:</p>
+      <p><strong>Domain mülkü:</strong> Tüm alt alan adlarını ve protokolleri (www, m, http, https) tek seferde kapsar. Önerilen seçenek budur. Doğrulama için DNS TXT kaydı eklemeniz gerekir.</p>
+      <p><strong>URL öneki mülkü:</strong> Sadece belirttiğiniz tam URL'yi takip eder. HTML dosyası yükleme, meta tag ekleme veya Google Analytics ile doğrulama gibi alternatifler sunar.</p>
+
+      <h2>Adım 2: Site Haritası (Sitemap) Gönderimi</h2>
+      <p>Sol menüden "Site Haritaları"na tıklayın. Site haritası URL'nizi (genellikle siteniz.com/sitemap.xml) girin ve "Gönder"e tıklayın. Bu, Google'a sitenizin yapısını ve tüm sayfalarını net bir şekilde haritalandırır.</p>
+      <p>Sitemap durumu "Başarılı" olarak gözükmeli ve "Keşfedilen sayfalar" sayısı 0'dan büyük olmalıdır. Aksi halde XML dosyanızda hata vardır.</p>
+
+      <h2>Adım 3: Performans Raporu</h2>
+      <p>GSC'nin en önemli ekranı "Performans" raporudur. Bu rapor 4 ana metrik gösterir:</p>
+      <p><strong>Toplam tıklama:</strong> Arama sonuçlarından sitenize gelen tıklama sayısı.</p>
+      <p><strong>Toplam gösterim:</strong> Sitenizin Google sonuçlarında kaç kez göründüğü.</p>
+      <p><strong>Ortalama TO (Tıklama Oranı):</strong> Tıklama / Gösterim. Yüksek pozisyondaysanız %5+ olmalı.</p>
+      <p><strong>Ortalama pozisyon:</strong> Sitenizin ortalama sıralaması. 1-3 arası harika, 4-10 arası iyi, 10+ iyileştirme gerektirir.</p>
+
+      <h2>Adım 4: URL Denetleme</h2>
+      <p>Üst arama çubuğuna herhangi bir URL'nizi yapıştırın. Google size o sayfa hakkında her şeyi gösterir:</p>
+      <p>İndekslenmiş mi? Son ne zaman tarandı? Mobil uyumlu mu? Hangi anahtar kelimelerde görünüyor? Schema markup'ı doğru çalışıyor mu? Canonical URL nedir? Bu bilgiler, sayfa bazında detaylı SEO teşhisi yapmanızı sağlar.</p>
+      <p>Yeni içerik yayınladığınızda "İndeksleme iste" butonuyla Google'dan o sayfayı acilen taramasını talep edebilirsiniz.</p>
+
+      <h2>Adım 5: Sayfalar Raporu</h2>
+      <p>"Dizin > Sayfalar" raporunda hangi sayfalarınızın indekslendiğini, hangilerinin indekslenmediğini ve nedenlerini görürsünüz. Yaygın sorun türleri:</p>
+      <p><strong>404 Bulunamadı:</strong> Silinmiş veya yanlış yönlendirilmiş sayfalar.</p>
+      <p><strong>Robots.txt ile engellendi:</strong> Robots.txt dosyanız bu sayfaları engelliyor.</p>
+      <p><strong>noindex meta etiketi:</strong> Sayfada noindex kodu var.</p>
+      <p><strong>Yinelenen, kullanıcı tarafından seçilen URL:</strong> Canonical URL belirtilmiş ama farklı bir sürüm seçilmiş.</p>
+
+      <h2>Adım 6: Önemli Web Verileri (Core Web Vitals)</h2>
+      <p>"Deneyim > Önemli Web Verileri" raporu, sitenizin sayfa hızı ve kullanıcı deneyimi metriklerini gösterir. Üç kritik metrik:</p>
+      <p><strong>LCP (Largest Contentful Paint):</strong> Ana içeriğin yüklenme hızı. 2.5 saniyenin altı iyi.</p>
+      <p><strong>INP (Interaction to Next Paint):</strong> Etkileşim hızı. 200ms altı iyi.</p>
+      <p><strong>CLS (Cumulative Layout Shift):</strong> Görsel kararlılık. 0.1 altı iyi.</p>
+
+      <h2>Adım 7: Bağlantılar Raporu</h2>
+      <p>"Bağlantılar" raporu hem sitenize gelen (backlink) hem de site içi linkleri gösterir. En çok bağlantı alan sayfalarınızı, en aktif anchor metinlerinizi ve hangi domainlerin size link verdiğini öğrenebilirsiniz.</p>
+
+      <h3>Sık Sorulan Sorular</h3>
+
+      <h3>GSC verisi ne kadar geç güncellenir?</h3>
+      <p>Performans verileri 1-2 gün gecikmeyle güncellenir. URL denetleme anlık çalışır. İndeksleme istekleri ise 1 saat ile 1 hafta arasında değişir.</p>
+
+      <h3>GSC ile Google Analytics farkı nedir?</h3>
+      <p>GSC Google'ın gözünden sitenizi gösterir (arama performansı, indeksleme). GA4 ise kullanıcı davranışını gösterir (sayfa görüntüleme, oturum, dönüşüm). İkisi birlikte tam resmi verir.</p>
+
+      <h3>Birden fazla site nasıl yönetilir?</h3>
+      <p>GSC'de aynı hesapla sınırsız mülk ekleyebilirsiniz. Sol üstteki dropdown ile siteler arasında geçiş yaparsınız. Ajans hesabı paylaşımı için "Ayarlar > Kullanıcılar ve izinler" bölümünden ekipleri ekleyebilirsiniz.</p>
+
+      <h3>Manuel ceza alındığını nasıl anlarım?</h3>
+      <p>"Güvenlik ve Manuel İşlemler" raporu, Google'ın manuel olarak verdiği cezaları gösterir. Spam içerik, yapay backlink veya gizli yönlendirme tespit edildiğinde burada bildirim alırsınız.</p>
+    `,
+  },
+  {
+    slug: 'schema-markup-jsonld-rehberi',
+    coverImage: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&q=80&fit=crop',
+    title: 'Schema Markup Nedir? JSON-LD Örnekleriyle Kapsamlı Rehber',
+    excerpt:
+      'Schema markup ile arama sonuçlarınızı zenginleştirin. JSON-LD nedir, nasıl uygulanır, hangi şema tipleri SEO ve GEO için kritik öneme sahiptir?',
+    category: 'SEO',
+    categoryColor: 'violet',
+    emoji: '🏷️',
+    coverGradient: 'from-violet-500/10 to-violet-900/5',
+    readTime: 9,
+    date: '2026-04-10',
+    author: 'Ramses Digital Ekibi',
+    authorRole: 'Teknik SEO Uzmanları',
+    tags: ['Schema Markup', 'JSON-LD', 'Structured Data', 'GEO'],
+    content: `
+      <h2>Schema Markup Nedir?</h2>
+      <p>Schema markup, web sitenizdeki içeriği arama motorlarının daha iyi anlaması için kullanılan, schema.org tarafından geliştirilmiş bir kelime dağarcığıdır. Sitenizin "anlam katmanı"dır: bir sayfanın yalnızca metin değil, ürün, makale, etkinlik, yemek tarifi, işletme veya kişi gibi belirli bir varlık olduğunu Google'a söyler.</p>
+      <p>Schema markup uygulanan sayfalar, arama sonuçlarında yıldız puanı, fiyat, açılış saati, etkinlik tarihi gibi "rich snippet"ler ile gösterilir. Bu da CTR'yi (tıklama oranını) %30'a kadar artırabilir.</p>
+
+      <h2>JSON-LD: Önerilen Format</h2>
+      <p>Schema markup üç farklı formatta uygulanabilir: Microdata, RDFa ve JSON-LD. Google, JSON-LD formatını resmi olarak önerir. Avantajı: HTML'inizden ayrı bir &lt;script&gt; bloğunda durur, mevcut tasarımınızı bozmaz, kolayca eklenip kaldırılabilir.</p>
+
+      <h2>En Önemli Schema Tipleri</h2>
+
+      <h2>1. Organization & LocalBusiness</h2>
+      <p>İşletmenizin temel bilgilerini Google'a tanıtır: ad, adres, telefon, çalışma saatleri, sosyal medya hesapları, hizmet alanı. LocalBusiness, Organization'ın yerel işletmeler için özelleşmiş alt türüdür.</p>
+
+      <h2>2. Article & BlogPosting</h2>
+      <p>Blog yazıları, haber içerikleri ve makaleler için kullanılır. Yazar, yayın tarihi, kapak görseli ve özet bilgilerini içerir. Google'ın "Top Stories" karuselinde görünmek için zorunludur.</p>
+
+      <h2>3. Product</h2>
+      <p>E-ticaret siteleri için kritik. Fiyat, stok durumu, marka, model, GTIN ve değerlendirmeler bilgisini içerir. Sonuç: arama sonuçlarında "₺249 - Stokta var - 4.5 ⭐" gibi zengin gösterim.</p>
+
+      <h2>4. FAQPage</h2>
+      <p>Sık sorulan sorular sayfaları için. Her soru ve cevap çiftini Google'ın doğrudan arama sonuçlarında "accordion" şeklinde göstermesini sağlar. AEO (Answer Engine Optimization) için altın standarttır.</p>
+
+      <h2>5. HowTo</h2>
+      <p>Adım adım rehberler için. "Nasıl yapılır" tipi içeriklerinizi Google'ın görsel adım gösterimi ile zenginleştirir. Sesli aramalarda öne çıkar.</p>
+
+      <h2>6. BreadcrumbList</h2>
+      <p>Sayfa hiyerarşisi (Anasayfa > Blog > Kategori > Yazı). Arama sonuçlarında URL yerine bu hiyerarşik gösterim çıkar, kullanıcının nerede olduğunu anlamasını kolaylaştırır.</p>
+
+      <h2>7. Event</h2>
+      <p>Etkinlikler için: ad, tarih, konum, bilet bilgisi. Google'ın etkinlik karuselinde görünmek için zorunludur. Webinar, konser, konferans için kullanılır.</p>
+
+      <h2>8. Review & AggregateRating</h2>
+      <p>Müşteri yorumları ve toplu derecelendirme. Arama sonuçlarında yıldız puanı göstermek için kritiktir.</p>
+
+      <h2>JSON-LD Nasıl Uygulanır?</h2>
+      <p>JSON-LD kodunu HTML sayfanızın &lt;head&gt; veya &lt;body&gt; bölümüne &lt;script type="application/ld+json"&gt; etiketi içinde eklersiniz. Next.js gibi modern framework'lerde dangerouslySetInnerHTML ile component bazında uygulanır.</p>
+      <p>Doğru çalıştığını test etmek için Google'ın "Rich Results Test" aracını (search.google.com/test/rich-results) veya Schema.org'un "Validator" aracını kullanabilirsiniz.</p>
+
+      <h2>Schema Markup'un GEO ve AEO İçin Önemi</h2>
+      <p>ChatGPT, Gemini ve Perplexity gibi yapay zeka motorları, web içeriğini anlamak için schema markup'a güvenir. Yapısal veri olmadan AI motorları içeriği "metin yığını" olarak algılar; schema ile "bu bir ürün, bu fiyat, bu stok durumu" şeklinde net bilgilere ulaşır.</p>
+      <p>GEO (Generative Engine Optimization) için en kritik schema tipleri: Organization, FAQPage, HowTo, Article ve LocalBusiness'tır.</p>
+
+      <h3>Sık Sorulan Sorular</h3>
+
+      <h3>Schema markup eklemek SEO sıralamamı yükseltir mi?</h3>
+      <p>Doğrudan değil, ama dolaylı olarak evet. Schema markup CTR'yi artırarak (rich snippet'lerle) trafik kazandırır, yapısal verinin temizliğiyle Google'ın içeriği daha iyi anlamasını sağlar ve böylece daha doğru anahtar kelimelerde sıralanırsınız.</p>
+
+      <h3>Yanlış schema markup zarar verir mi?</h3>
+      <p>Evet. Eksik veya yanıltıcı schema (örneğin gerçekte olmayan ürün stoğunu "stokta" göstermek) Google'dan manuel ceza alabilir. Bu nedenle her zaman gerçek verileri yansıtın.</p>
+
+      <h3>Tek sayfada birden fazla schema kullanılabilir mi?</h3>
+      <p>Evet, hatta önerilir. Bir blog sayfasında Article + BreadcrumbList + Organization + FAQPage schema'larını birlikte kullanabilirsiniz. Her biri farklı bir zenginlik katar.</p>
+
+      <h3>Schema markup'u kim ekler?</h3>
+      <p>Geliştirici desteği gerektirir. WordPress kullanıyorsanız Yoast SEO veya Rank Math eklentileri otomatik schema üretir. Custom siteler için (Next.js, Vue, vb.) manuel kodlama veya AI asistan yardımıyla eklenebilir.</p>
+    `,
+  },
+  {
+    slug: 'kaliteli-backlink-alma-yontemleri',
+    coverImage: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=1200&q=80&fit=crop',
+    title: 'Backlink Nedir? Kaliteli Backlink Almanın 8 Etkili Yolu',
+    excerpt:
+      'Backlink hâlâ Google\'ın en önemli sıralama faktörlerinden biri. Spam\'e düşmeden, manuel cezalardan kaçınarak gerçek otorite kazandıran 8 backlink stratejisi.',
+    category: 'SEO',
+    categoryColor: 'emerald',
+    emoji: '🔗',
+    coverGradient: 'from-emerald-500/10 to-emerald-900/5',
+    readTime: 9,
+    date: '2026-04-05',
+    author: 'Ramses Digital Ekibi',
+    authorRole: 'SEO Uzmanları',
+    tags: ['Backlink', 'Link Building', 'SEO', 'Domain Authority'],
+    content: `
+      <h2>Backlink Nedir?</h2>
+      <p>Backlink, başka bir web sitesinin sizin sitenize verdiği bağlantıdır. SEO dünyasında bir backlink, "güven oyu" olarak değerlendirilir: ne kadar çok ve kaliteli site size link veriyorsa, Google sitenizi o kadar otoriter görür.</p>
+      <p>Ancak burada anahtar kelime "kaliteli"dir. 2026 yılında Google, düşük kaliteli, satın alınmış veya manipülatif backlink'leri tespit etmekte çok başarılıdır. Yanlış strateji manuel ceza, sıralama düşüşü ve hatta deindeksleme ile sonuçlanabilir.</p>
+
+      <h2>1. Misafir Yazarlık (Guest Blogging)</h2>
+      <p>Sektörünüzdeki saygın bloglara, sektör yayınlarına ve haber sitelerine kaliteli misafir içerik yazmak, en sürdürülebilir backlink stratejisidir. Örneğin Kocaeli Sanayi Odası dergisi, Webrazzi, Marketing Türkiye gibi yayınlara teklif gönderebilirsiniz.</p>
+      <p>Önemli: pitch'iniz net olmalı, içerik gerçek değer üretmeli ve sayfada doğal yerleştirilmiş 1-2 backlink olmalı. "Buyurun yüzlerce link" mantığı çalışmaz.</p>
+
+      <h2>2. Kırık Bağlantı İnşası (Broken Link Building)</h2>
+      <p>Sektörünüzdeki popüler sitelerde kırık (404 veren) bağlantıları bulun ve site sahibine "X sayfanızda kırık bir link var, benim güncel içeriğimle değiştirmek ister misiniz?" diye e-posta gönderin. Win-win: onlar SEO sorununu çözer, siz backlink alırsınız.</p>
+      <p>Kırık link bulmak için Ahrefs Site Explorer'ın "Broken Backlinks" raporunu veya Check My Links Chrome eklentisini kullanabilirsiniz.</p>
+
+      <h2>3. Skyscraper Tekniği</h2>
+      <p>Backlinko'nun kurucusu Brian Dean'in popülerleştirdiği yöntem: sektörünüzde en çok backlink alan içeriği bulun, çok daha kapsamlı bir versiyonunu hazırlayın, sonra orijinal içeriğe link veren sitelere "sizinkinden daha iyi bir versiyon var, ister misiniz?" mailini atın.</p>
+
+      <h2>4. Dijital PR ve Basın Bültenleri</h2>
+      <p>Şirketinizden gerçek haber değeri taşıyan gelişmeleri (yeni hizmet, ödül, anlaşma, açıklamalı veri) basın bülteni olarak hazırlayın ve sektörel haber sitelerine, yerel gazetelere gönderin. Webrazzi, Donanımhaber, Kocaeli Barış gibi yayınlardan alınan backlinkler altın değerindedir.</p>
+
+      <h2>5. Sektörel Rehberler ve Dizinler</h2>
+      <p>Niche-relevant rehberlere kaydolmak değerlidir. Türkiye için: KOSGEB rehberi, ihracat.gov.tr listeleri, sektör dernekleri. Yabancı: Crunchbase, Clutch, G2 (yazılım), Houzz (mimarlık). Yelp tarzı genel dizinler ise düşük değere sahiptir.</p>
+
+      <h2>6. HARO (Help A Reporter Out) ve Türk Muhabirlerle İletişim</h2>
+      <p>HARO, gazetecilerin uzman aradığı bir platformdur. Sektörünüzle ilgili sorgulara hızlı ve değerli cevap vererek New York Times, Forbes seviyesinde yayınlardan backlink alabilirsiniz. Türkiye için Twitter'da gazetecileri takip etmek ve sorularına cevap vermek benzer şekilde işler.</p>
+
+      <h2>7. Orijinal Veri ve Araştırma Yayınlama</h2>
+      <p>Sektörünüzde orijinal araştırma yapın: "2026 Türkiye E-Ticaret Raporu", "KOBİ'lerin Dijital Dönüşüm Anketi". Diğer siteler verilerinizi alıntıladıkça doğal backlink kazanırsınız. Bu, en sürdürülebilir backlink kaynağıdır çünkü her referans Google'ın "evet bu kaynak otoriter" sinyalini güçlendirir.</p>
+
+      <h2>8. Kaynak Sayfaları</h2>
+      <p>"En iyi 10 SEO aracı", "Türkiye'nin en güvenilir e-ticaret platformları" gibi kaynak (resource) sayfalarına başvurun. Bu sayfaların editörlerine, sitenizin neden bu listede yer almayı hak ettiğini açıklayan profesyonel bir e-posta gönderin.</p>
+
+      <h2>Kaçınılması Gerekenler</h2>
+      <p><strong>Backlink satın alma:</strong> Ucuz backlink paketleri (50 link 100 TL) %99 spam içerir. Google bunları tespit eder ve cezalandırır.</p>
+      <p><strong>PBN (Private Blog Network):</strong> Sahte bloglar oluşturup kendinize backlink vermek. Google'ın algoritması bu yapıları tespit etmekte uzmandır.</p>
+      <p><strong>Yorum spam'i:</strong> Forumlara veya bloglara "Harika yazı! Sitemize bekleriz" yorumlarıyla link bırakmak.</p>
+      <p><strong>Link borsası (link exchange):</strong> "Ben sana, sen bana" mantığıyla yapılan agresif link değişimleri Google tarafından tespit edilir.</p>
+
+      <h3>Sık Sorulan Sorular</h3>
+
+      <h3>Yeni bir site için ayda kaç backlink hedeflemeli?</h3>
+      <p>İlk 6 ay için ayda 3-5 kaliteli backlink yeterlidir. Ani backlink artışları (1 ayda 100+) Google'a "manipülasyon" sinyali verir ve cezalandırılır.</p>
+
+      <h3>Nofollow backlink'lerin değeri var mı?</h3>
+      <p>Evet, dolaylı olarak. Nofollow link'ler doğrudan PageRank geçirmez ama trafik getirir, marka bilinirliği artırır ve Google'ın "doğal backlink profili" değerlendirmesini iyileştirir. %100 dofollow profil yapay görünür.</p>
+
+      <h3>Backlink'lerimi nasıl takip edebilirim?</h3>
+      <p>Ücretsiz: Google Search Console'un "Bağlantılar" raporu. Profesyonel: Ahrefs ($99/ay), SEMrush, Moz Pro. Yeni başlayanlar için Ubersuggest aylık $29 ile makul fiyatlı bir alternatiftir.</p>
+
+      <h3>Kötü backlink'leri nasıl temizlerim?</h3>
+      <p>Google Search Console'un "Disavow Tool"unu kullanın. Spam ve manipülatif backlinklerinizi listeleyip Google'a "bu linkleri saymayın" diyebilirsiniz. Ancak dikkatli kullanın: yanlış kaldırılan değerli linkler sıralamanızı düşürebilir.</p>
+    `,
+  },
+  {
+    slug: 'meta-aciklama-yazma-rehberi',
+    coverImage: 'https://images.unsplash.com/photo-1542435503-956c469947f6?w=1200&q=80&fit=crop',
+    title: 'Meta Açıklama Yazma Sanatı: CTR\'yi 2x Artıran 10 Kural',
+    excerpt:
+      'Meta açıklama, Google\'da sıralama yapmaz ama tıklama oranını (CTR) doğrudan etkiler. CTR\'yi 2x artıran kanıtlanmış 10 yazım kuralı ve gerçek örnekler.',
+    category: 'SEO',
+    categoryColor: 'orange',
+    emoji: '✍️',
+    coverGradient: 'from-orange-500/10 to-orange-900/5',
+    readTime: 7,
+    date: '2026-03-30',
+    author: 'Ramses Digital Ekibi',
+    authorRole: 'İçerik Stratejistleri',
+    tags: ['Meta Description', 'CTR', 'SEO', 'Copywriting'],
+    content: `
+      <h2>Meta Açıklama Nedir, Neden Önemli?</h2>
+      <p>Meta açıklama (meta description), bir web sayfasının arama sonuçlarında başlığın altında gösterilen kısa özettir. Google sıralamasını doğrudan etkilemese de, kullanıcının tıklama kararını verdiği son cümledir. İyi yazılmış bir meta açıklama, CTR'yi (tıklama oranını) %30-100 arasında artırabilir.</p>
+      <p>2026'da Google, meta açıklamaları yapay zeka ile yeniden yazabilir, ancak sizin yazdığınız iyi bir meta açıklamayı %70 oranında olduğu gibi kullanır.</p>
+
+      <h2>Kural 1: 150-160 Karakter Sınırı</h2>
+      <p>Google mobilde ~120 karakter, masaüstünde ~155-160 karakter gösterir. 160'ı geçen açıklamalar "..." ile kesilir ve mesajınız tamamlanmadan biter. İdeal uzunluk: 145-155 karakter arası.</p>
+
+      <h2>Kural 2: Anahtar Kelimeyi İlk 50 Karakterde Geçir</h2>
+      <p>Kullanıcı arama yaptığında, sorgu kelimeleri meta açıklamada bold (kalın) olarak gösterilir. Bu da CTR'yi artırır. Ana anahtar kelimenizi açıklamanın başında kullanın.</p>
+      <p><strong>Kötü:</strong> "Şirketimiz hakkında bilgi almak için web sitemizi ziyaret edin. Kocaeli'de SEO hizmetleri sunuyoruz."</p>
+      <p><strong>İyi:</strong> "Kocaeli SEO hizmetleri | Yerel işletmeler için Google'da 1. sıraya çıkın. Ücretsiz analiz, ROI odaklı strateji."</p>
+
+      <h2>Kural 3: Net Bir Fayda Vurgula</h2>
+      <p>Kullanıcı "ben bunu okuyunca ne kazanırım?" sorusuna cevap arar. Açıklamanızda somut fayda olsun: "%340 trafik artışı", "5 dakikada kurulum", "ücretsiz", "garantili sonuç".</p>
+
+      <h2>Kural 4: Eylem Çağrısı (CTA) Ekle</h2>
+      <p>Açıklamayı pasif bir cümleyle değil, eyleme çağıran bir mesajla bitirin: "Hemen analiz et", "Ücretsiz dene", "Şimdi öğren", "Detayları gör".</p>
+
+      <h2>Kural 5: Sayı ve Veri Kullan</h2>
+      <p>Sayılar dikkat çeker. "Birçok strateji" yerine "7 strateji", "kısa sürede" yerine "30 günde", "yüksek başarı" yerine "%85 başarı".</p>
+
+      <h2>Kural 6: Aktif Ses Kullan</h2>
+      <p>"Sitenize trafik kazandırılır" gibi pasif yapı yerine "Sitenize organik trafik kazandırın" gibi aktif yapı tercih edin. Aktif cümleler daha enerjik ve ikna edicidir.</p>
+
+      <h2>Kural 7: Soruyla Başla (Bazen)</h2>
+      <p>Hedef kitlenizin merak ettiği bir soruyla açın: "SEO ne kadar sürede sonuç verir? Detaylı rehber, gerçek vaka örnekleri ve ücretsiz checklist." Soru, beynin "cevabı bul" refleksini tetikler ve tıklama olasılığını artırır.</p>
+
+      <h2>Kural 8: USP'yi (Unique Selling Proposition) Vurgula</h2>
+      <p>Sizi rakiplerden ayıran tek özelliği öne çıkarın: "Tek mühendislik temelli ajans", "İlk hafta sonuç garantisi", "Sınırsız revizyon dahil", "AI destekli analiz".</p>
+
+      <h2>Kural 9: Marka İsmini Sona Yerleştir</h2>
+      <p>Marka adınız zaten title tag'de ve URL'de geçiyor. Meta açıklamanın başını fayda mesajı için saklayın, marka adını sonda kullanın: "...Ücretsiz analiz alın. — Ramses Digital Kocaeli"</p>
+
+      <h2>Kural 10: A/B Test Yap</h2>
+      <p>Meta açıklamayı sabit bilmeyin. 2 farklı versiyonu deneyin, Google Search Console'dan CTR'leri kıyaslayın. Düşük performanslı sayfaları (CTR &lt; %2) yeni açıklamayla yeniden test edin.</p>
+
+      <h2>Yapılmaması Gerekenler</h2>
+      <p><strong>Tekrar:</strong> Aynı meta açıklamayı her sayfada kullanmak. Google bunu "yinelenen içerik" sinyali olarak algılar.</p>
+      <p><strong>Anahtar kelime doldurma:</strong> "SEO Kocaeli SEO hizmeti SEO ajansı SEO uzmanı". Robot gibi durur ve cezalandırılır.</p>
+      <p><strong>Yanıltıcı vaatler:</strong> "1 saatte Google'da 1. sıra" gibi gerçek dışı vaatler tıklama getirir ama yüksek hemen çıkma oranı (bounce rate) ile sıralamayı düşürür.</p>
+      <p><strong>Boş bırakmak:</strong> Meta açıklama yoksa Google sayfadan rastgele bir paragraf alıp gösterir. Genellikle bu çok daha kötü performans gösterir.</p>
+
+      <h3>Sık Sorulan Sorular</h3>
+
+      <h3>Meta açıklama olmasa ne olur?</h3>
+      <p>Google sayfadan rastgele bir bölümü çekip gösterir. Genellikle uyumsuz, eksik veya çekici olmayan bir cümle olur. Her sayfaya manuel meta açıklama yazmak CTR için zorunludur.</p>
+
+      <h3>Aynı meta açıklamayı birden fazla sayfada kullanabilir miyim?</h3>
+      <p>Hayır, kullanmamalısınız. Her sayfa benzersiz bir meta açıklamaya sahip olmalıdır. Google'ın "Pages" raporunda yinelenen meta açıklamalar uyarı olarak gösterilir.</p>
+
+      <h3>Meta açıklama sıralamada etkili mi?</h3>
+      <p>Doğrudan değil. Ancak iyi yazılmış bir meta açıklamadan gelen yüksek CTR, dolaylı olarak sıralamayı artırır. Yüksek CTR Google'a "kullanıcılar bu sonucu tercih ediyor" sinyali gönderir.</p>
+
+      <h3>Yapay zeka ile meta açıklama yazılır mı?</h3>
+      <p>Yazılır ama dikkatli olun. ChatGPT veya Claude meta açıklama taslağı için harikadır, ancak çıktıyı mutlaka 150-160 karaktere düşürün, anahtar kelimeyi başa alın ve manuel optimizasyon yapın. Doğrudan yapıştırılan AI çıktıları genellikle ortalama performans gösterir.</p>
+    `,
+  },
 ]
