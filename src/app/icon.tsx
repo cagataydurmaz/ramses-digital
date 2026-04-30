@@ -9,8 +9,8 @@ export default function Icon() {
     (
       <div
         style={{
-          fontSize: 22,
-          background: 'linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%)',
+          fontSize: 16,
+          background: 'linear-gradient(135deg, #0A0F1E 0%, #1a2347 100%)',
           width: '100%',
           height: '100%',
           display: 'flex',
@@ -20,9 +20,10 @@ export default function Icon() {
           fontWeight: 800,
           borderRadius: 6,
           letterSpacing: '-0.05em',
+          border: '1px solid rgba(59, 130, 246, 0.4)',
         }}
       >
-        R
+        RD
       </div>
     ),
     { ...size }

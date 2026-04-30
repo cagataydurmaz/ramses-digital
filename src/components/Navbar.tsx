@@ -42,9 +42,10 @@ export default function Navbar() {
       >
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-1">
+          <Link href="/" className="flex items-center gap-1" aria-label="Ramses Dijital Reklam Ajansı">
             <span className="text-blue-500 font-bold text-xl tracking-tight">RAMSES</span>
-            <span className="text-white font-light text-xl tracking-tight">Digital</span>
+            <span className="text-white font-light text-xl tracking-tight">Dijital</span>
+            <span className="hidden sm:inline text-zinc-500 font-light text-xs tracking-tight ml-1">Reklam Ajansı</span>
           </Link>
 
           {/* Desktop Nav */}
