@@ -197,7 +197,7 @@ export default function ServicesPage() {
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-blue-500/8 rounded-full blur-[120px] pointer-events-none" />
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <p className="text-blue-500 text-sm font-medium tracking-wider uppercase mb-3">
-            Hizmetlerimiz
+            Hizmetlerimiz · İzmit & Kocaeli
           </p>
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
             Dijital Büyüme İçin
@@ -205,8 +205,8 @@ export default function ServicesPage() {
             <span className="gradient-text">Kapsamlı Çözümler</span>
           </h1>
           <p className="text-zinc-400 text-lg max-w-2xl mx-auto">
-            SEO&apos;dan Google Ads&apos;e, sosyal medyadan web tasarımına kadar her alanda
-            performans odaklı çözümler sunuyoruz.
+            İzmit, Kocaeli ve Türkiye geneli için SEO, Google Ads, n8n otomasyon ve
+            web tasarımında performans odaklı çözümler.
           </p>
         </div>
       </section>

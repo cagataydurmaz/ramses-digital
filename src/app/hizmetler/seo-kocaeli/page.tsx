@@ -4,9 +4,9 @@ import CalendlyButton from '@/components/CalendlyButton'
 import { Sparkles, CheckCircle2, ArrowRight, Search, FileText, Link2, BarChart3, Zap, Award } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'SEO Kocaeli | Yerel İşletmeler İçin Performans Odaklı SEO Hizmeti — Ramses Digital',
+  title: 'SEO Kocaeli & İzmit | Yerel İşletmeler İçin Profesyonel SEO Ajansı — Ramses Digital',
   description:
-    'Kocaeli ve İzmit\'teki işletmeler için Google\'da 1. sayfa SEO hizmeti. Yerel SEO, GEO, AEO, teknik SEO ve içerik stratejisi. Şeffaf raporlama ve gerçek sonuçlar.',
+    'İzmit, Kocaeli, Gebze ve Körfez işletmeleri için Google\'da 1. sayfa SEO hizmeti. Yerel SEO, GEO, AEO, teknik SEO ve içerik stratejisi. İzmit merkezli ajans.',
   alternates: { canonical: 'https://ramsesdigital.com/hizmetler/seo-kocaeli' },
   openGraph: {
     title: 'SEO Kocaeli | Ramses Digital',

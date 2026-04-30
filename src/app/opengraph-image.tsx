@@ -109,7 +109,7 @@ export default async function Image() {
             fontSize: '20px',
           }}
         >
-          <span>Kocaeli · İstanbul · Türkiye</span>
+          <span>İzmit · Kocaeli · İstanbul · Türkiye</span>
           <span>ramsesdigital.com</span>
         </div>
       </div>

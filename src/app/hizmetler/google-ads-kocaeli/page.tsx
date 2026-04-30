@@ -4,9 +4,9 @@ import CalendlyButton from '@/components/CalendlyButton'
 import { TrendingUp, Target, BarChart3, ShoppingBag, Youtube, Repeat, ArrowRight, CheckCircle2 } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Google Ads Kocaeli | ROI Odaklı Reklam Yönetimi — Ramses Digital',
+  title: 'Google Ads Kocaeli & İzmit | ROI Odaklı Reklam Ajansı — Ramses Digital',
   description:
-    'Kocaeli ve İzmit\'teki işletmeler için profesyonel Google Ads yönetimi. Search, Display, YouTube, Shopping ve Remarketing kampanyalarıyla ölçülebilir ROAS sonuçları.',
+    'İzmit, Kocaeli ve Gebze işletmeleri için profesyonel Google Ads yönetimi. Search, Display, YouTube, Shopping ve Remarketing — 4.2x ortalama ROAS. İzmit merkezli ajans.',
   alternates: { canonical: 'https://ramsesdigital.com/hizmetler/google-ads-kocaeli' },
   openGraph: {
     title: 'Google Ads Kocaeli | Ramses Digital',

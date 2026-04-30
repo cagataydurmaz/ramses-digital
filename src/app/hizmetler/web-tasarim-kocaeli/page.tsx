@@ -4,9 +4,9 @@ import CalendlyButton from '@/components/CalendlyButton'
 import { Monitor, Code2, Smartphone, Gauge, Search, ShoppingCart, ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Web Tasarım Kocaeli | Performans Odaklı Modern Web Siteleri — Ramses Digital',
+  title: 'Web Tasarım Kocaeli & İzmit | Modern Web Sitesi Yapımı — Ramses Digital',
   description:
-    'Kocaeli\'de modern, hızlı ve SEO uyumlu web tasarım hizmeti. Next.js, WordPress, Shopify. Mobil uyumlu, Core Web Vitals optimize, dönüşüm odaklı tasarım.',
+    'İzmit, Kocaeli ve Gebze\'de modern, hızlı, SEO uyumlu web tasarım. Next.js, WordPress, Shopify. Core Web Vitals optimize, mobil uyumlu, dönüşüm odaklı.',
   alternates: { canonical: 'https://ramsesdigital.com/hizmetler/web-tasarim-kocaeli' },
   openGraph: {
     title: 'Web Tasarım Kocaeli | Ramses Digital',
