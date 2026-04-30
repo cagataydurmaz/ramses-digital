@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { Menu, X } from 'lucide-react'
 import CalendlyButton from '@/components/CalendlyButton'
@@ -42,10 +43,20 @@ export default function Navbar() {
       >
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-1" aria-label="Ramses Dijital Reklam Ajansı">
-            <span className="text-blue-500 font-bold text-xl tracking-tight">RAMSES</span>
-            <span className="text-white font-light text-xl tracking-tight">Dijital</span>
-            <span className="hidden sm:inline text-zinc-500 font-light text-xs tracking-tight ml-1">Reklam Ajansı</span>
+          <Link href="/" className="flex items-center gap-2.5" aria-label="Ramses Dijital Reklam Ajansı">
+            <Image
+              src="/logo.png"
+              alt="Ramses Dijital Reklam Ajansı"
+              width={36}
+              height={36}
+              priority
+              className="rounded-md"
+            />
+            <div className="flex items-baseline gap-1.5">
+              <span className="text-blue-500 font-bold text-xl tracking-tight">RAMSES</span>
+              <span className="text-white font-light text-xl tracking-tight">Dijital</span>
+              <span className="hidden md:inline text-zinc-500 font-light text-xs tracking-tight">Reklam Ajansı</span>
+            </div>
           </Link>
 
           {/* Desktop Nav */}

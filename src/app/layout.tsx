@@ -123,7 +123,9 @@ export default function RootLayout({
                 url: 'https://ramsesdigital.com',
                 logo: {
                   '@type': 'ImageObject',
-                  url: 'https://ramsesdigital.com/favicon.ico',
+                  url: 'https://ramsesdigital.com/logo.png',
+                  width: 512,
+                  height: 512,
                 },
                 description:
                   'İzmit Kocaeli merkezli performans odaklı dijital pazarlama ajansı. SEO, Google Ads, n8n otomasyon, web tasarımı ve veri analizinde uzman. Türkiye geneli ve uluslararası hizmet.',

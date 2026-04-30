@@ -38,7 +38,7 @@ export default function BlogLayout({ children }: { children: React.ReactNode }) 
               url: 'https://ramsesdigital.com',
               logo: {
                 '@type': 'ImageObject',
-                url: 'https://ramsesdigital.com/favicon.ico',
+                url: 'https://ramsesdigital.com/logo.png',
               },
             },
             inLanguage: 'tr-TR',

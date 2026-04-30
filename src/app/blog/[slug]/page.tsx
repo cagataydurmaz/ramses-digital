@@ -77,7 +77,7 @@ function ArticleJsonLd({ post }: { post: (typeof posts)[0] }) {
       url: 'https://ramsesdigital.com',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://ramsesdigital.com/favicon.ico',
+        url: 'https://ramsesdigital.com/logo.png',
       },
     },
     mainEntityOfPage: {
