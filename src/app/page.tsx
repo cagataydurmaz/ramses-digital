@@ -215,7 +215,7 @@ export default function HomePage() {
           <div className="animate-fadein inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 rounded-full px-4 py-1.5 mb-6 sm:mb-10">
             <span className="w-1.5 h-1.5 bg-blue-400 rounded-full animate-pulse" />
             <span className="text-blue-400 text-xs font-medium tracking-wider uppercase">
-              İzmit & Kocaeli · Performans Odaklı Dijital Pazarlama
+              Performans Odaklı Dijital Pazarlama
             </span>
           </div>
 
@@ -233,7 +233,7 @@ export default function HomePage() {
             className="animate-fadein text-base sm:text-xl md:text-2xl text-zinc-400 max-w-2xl mx-auto mb-8 sm:mb-10 font-light"
             style={{ animationDelay: '0.1s' }}
           >
-            İzmit Kocaeli merkezli dijital pazarlama ajansı · Gerçek sonuçlar elde edin
+            Gerçek sonuçlar elde edin
           </p>
 
           <div

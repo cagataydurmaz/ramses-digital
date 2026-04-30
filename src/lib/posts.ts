@@ -606,7 +606,7 @@ export const posts: Post[] = [
     tags: ['Yerel SEO', 'Kocaeli', 'Google Business Profile', 'KOBİ'],
     content: `
       <h2>Kocaeli'de SEO Neden Önemli?</h2>
-      <p>Kocaeli, sanayinin yoğun olduğu, hızla büyüyen ve dijitalleşen bir şehir. Tüketicilerin %78'i, yerel bir hizmet veya ürün ararken Google'a yöneliyor. "Kocaeli web tasarım", "İzmit dijital pazarlama", "Gebze SEO ajansı" gibi aramalarda ilk üçte yer almak, web sitenize gelen organik trafiğin %75'ini bir anda kazanmanız anlamına geliyor.</p>
+      <p>Kocaeli, sanayinin yoğun olduğu, hızla büyüyen ve dijitalleşen bir şehir. Tüketicilerin %78'i, yerel bir hizmet veya ürün ararken Google'a yöneliyor. "Kocaeli web tasarım", "İzmit dijital pazarlama", "İzmit reklam ajansı" gibi aramalarda ilk üçte yer almak, web sitenize gelen organik trafiğin %75'ini bir anda kazanmanız anlamına geliyor.</p>
       <p>Yerel SEO, klasik SEO'dan farklı dinamiklere sahiptir. Burada amaç sadece "SEO" gibi genel terimlerde değil, "Kocaeli + hizmet" kombinasyonunda görünür olmak ve Google Maps'in "Local Pack" alanına girmektir.</p>
 
       <h2>1. Google Business Profile (GBP) Optimizasyonu</h2>
@@ -618,12 +618,12 @@ export const posts: Post[] = [
       <p>"Atatürk Cad." yerine "Atatürk Caddesi", "+90 535 560 19 36" yerine "0535 560 19 36" gibi küçük farklılıklar bile Google'a "bu işletme tutarsız" mesajı verir ve sıralamanızı düşürür. Tutarlılığı kontrol etmek için Yext, BrightLocal veya Whitespark gibi araçlar kullanılabilir.</p>
 
       <h2>3. Yerel Anahtar Kelime Stratejisi</h2>
-      <p>"Dijital pazarlama ajansı" gibi geniş terimler yerine "Kocaeli dijital pazarlama ajansı", "İzmit web tasarım", "Gebze SEO uzmanı" gibi şehir + ilçe + hizmet kombinasyonlarına odaklanın. Bu uzun kuyruklu ifadelerde rekabet daha az, dönüşüm oranı daha yüksektir.</p>
+      <p>"Dijital pazarlama ajansı" gibi geniş terimler yerine "Kocaeli dijital pazarlama ajansı", "İzmit web tasarım", "İzmit reklam ajansı" gibi şehir + hizmet kombinasyonlarına odaklanın. Bu uzun kuyruklu ifadelerde rekabet daha az, dönüşüm oranı daha yüksektir.</p>
       <p>Anahtar kelime fikirleri için Google Keyword Planner'da Kocaeli filtresi uygulayabilir, "Google Trends Kocaeli" üzerinden sezonsallık trendlerini izleyebilir ve "ahrefs.com" üzerinden rakip sitelerin yerel sıralamalarını analiz edebilirsiniz.</p>
 
       <h2>4. Yerel İçerik Üretimi</h2>
-      <p>Web sitenizde Kocaeli'ye özel içerikler yayınlayın: "Kocaeli'deki KOBİ'ler için 5 dijital pazarlama ipucu", "İzmit'te Google Ads kampanyası nasıl kurulur", "Gebze sanayicilerine özel SEO stratejileri" gibi başlıklar hem yerel arayanlara hitap eder hem Google'a "bu site Kocaeli odaklı" sinyali gönderir.</p>
-      <p>İçerik içinde yerel referanslar (Sapanca Gölü, Seka Park, Gebze OSB gibi) kullanmak, Google'ın yer-içerik bağlantısını güçlendirir.</p>
+      <p>Web sitenizde Kocaeli'ye özel içerikler yayınlayın: "Kocaeli'deki KOBİ'ler için 5 dijital pazarlama ipucu", "İzmit'te Google Ads kampanyası nasıl kurulur", "İzmit restoranları için yerel SEO" gibi başlıklar hem yerel arayanlara hitap eder hem Google'a "bu site Kocaeli odaklı" sinyali gönderir.</p>
+      <p>İçerik içinde yerel referanslar (Sapanca Gölü, Seka Park, Sırrıpaşa, Yenidoğan gibi) kullanmak, Google'ın yer-içerik bağlantısını güçlendirir.</p>
 
       <h2>5. Yerel Backlink İnşası</h2>
       <p>Kocaeli Sanayi Odası, Kocaeli Ticaret Odası, Doğu Marmara Kalkınma Ajansı, yerel haber siteleri (kocaelibarisi.com, gazetekocaeli.com.tr), sektörel rehberler ve Kocaeli odaklı bloglardan alacağınız backlinkler altın değerindedir.</p>

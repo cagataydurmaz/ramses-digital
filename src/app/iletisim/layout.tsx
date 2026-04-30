@@ -1,9 +1,9 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'İletişim | Ücretsiz Danışmanlık Al — Ramses Digital Kocaeli & İstanbul',
+  title: 'İletişim | Ücretsiz Danışmanlık Al — Ramses Dijital Reklam Ajansı',
   description:
-    'Kocaeli veya İstanbul\'daki dijital pazarlama projeniz için ücretsiz danışmanlık alın. WhatsApp\'tan yazın veya formu doldurun — 24 saat içinde geri dönüyoruz.',
+    'Dijital pazarlama projeniz için ücretsiz danışmanlık alın. WhatsApp\'tan yazın veya formu doldurun — 24 saat içinde geri dönüyoruz.',
   openGraph: {
     title: 'İletişim | Ramses Digital',
     description: 'Ücretsiz danışmanlık için bize ulaşın. +90 (535) 560 19 36 · ramsesdigitalagency@gmail.com',

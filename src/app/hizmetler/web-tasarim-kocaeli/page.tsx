@@ -4,9 +4,9 @@ import CalendlyButton from '@/components/CalendlyButton'
 import { Monitor, Code2, Smartphone, Gauge, Search, ShoppingCart, ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Web Tasarım Kocaeli & İzmit | Modern Web Sitesi Yapımı — Ramses Digital',
+  title: 'Web Tasarım & Geliştirme | Modern, Hızlı, SEO Uyumlu — Ramses Dijital',
   description:
-    'İzmit, Kocaeli ve Gebze\'de modern, hızlı, SEO uyumlu web tasarım. Next.js, WordPress, Shopify. Core Web Vitals optimize, mobil uyumlu, dönüşüm odaklı.',
+    'Modern, hızlı ve SEO uyumlu web tasarım. Next.js, WordPress, Shopify. Core Web Vitals optimize, mobil uyumlu, dönüşüm odaklı tasarım.',
   alternates: { canonical: 'https://ramsesdigital.com/hizmetler/web-tasarim-kocaeli' },
   openGraph: {
     title: 'Web Tasarım Kocaeli | Ramses Digital',
@@ -61,7 +61,7 @@ export default function WebTasarimKocaeliPage() {
             <span className="text-emerald-400 text-xs font-medium tracking-wider uppercase">Next.js · WordPress · Shopify</span>
           </div>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-[1.1]">
-            Kocaeli&apos;de Modern
+            Modern
             <br />
             <span className="gradient-text">Web Tasarım & Geliştirme</span>
           </h1>
@@ -140,7 +140,7 @@ export default function WebTasarimKocaeliPage() {
               <li>Schema markup, OG image, sitemap otomatik üretilebilir</li>
             </ul>
             <p>WordPress hâlâ %43 pazar payına sahip ama yavaş kalıyor. Modern alternatif olarak Next.js ile <strong className="text-white">3-5x daha hızlı</strong> siteler kuruyoruz. Ama içerik girişi WordPress kadar kolay olsun derseniz, headless CMS (Sanity, Strapi) entegrasyonu yapıyoruz.</p>
-            <p>Kocaeli&apos;deki KOBİ&apos;ler için en yaygın hata: ucuz tema satın alıp özelleştirmek. Bu ilk başta hızlı görünür ama performans, güvenlik ve özel özellik eklemede sorun yaratır. Custom kod ilk yatırımda biraz daha yüksek; ancak 3-5 yıllık ömründe çok daha karlı çıkar.</p>
+            <p>KOBİ&apos;ler için en yaygın hata: ucuz tema satın alıp özelleştirmek. Bu ilk başta hızlı görünür ama performans, güvenlik ve özel özellik eklemede sorun yaratır. Custom kod ilk yatırımda biraz daha yüksek; ancak 3-5 yıllık ömründe çok daha karlı çıkar.</p>
           </div>
         </div>
       </section>
@@ -194,7 +194,7 @@ export default function WebTasarimKocaeliPage() {
         name: 'Web Tasarım & Geliştirme — Kocaeli',
         description: 'Kocaeli işletmeleri için modern, hızlı ve SEO uyumlu web tasarım hizmeti.',
         provider: { '@type': 'Organization', name: 'Ramses Digital', url: 'https://ramsesdigital.com' },
-        areaServed: [{ '@type': 'City', name: 'Kocaeli' }, { '@type': 'City', name: 'İzmit' }, { '@type': 'City', name: 'İstanbul' }],
+        areaServed: [{ '@type': 'City', name: 'İzmit' }, { '@type': 'City', name: 'Kocaeli' }, { '@type': 'Country', name: 'Türkiye' }],
         serviceType: 'Web Design and Development',
         url: 'https://ramsesdigital.com/hizmetler/web-tasarim-kocaeli',
       })}} />

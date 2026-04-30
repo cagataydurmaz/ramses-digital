@@ -4,9 +4,9 @@ import CalendlyButton from '@/components/CalendlyButton'
 import { TrendingUp, Target, BarChart3, ShoppingBag, Youtube, Repeat, ArrowRight, CheckCircle2 } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Google Ads Kocaeli & İzmit | ROI Odaklı Reklam Ajansı — Ramses Digital',
+  title: 'Google Ads Yönetimi | ROI Odaklı Performans Reklamcılığı — Ramses Dijital',
   description:
-    'İzmit, Kocaeli ve Gebze işletmeleri için profesyonel Google Ads yönetimi. Search, Display, YouTube, Shopping ve Remarketing — 4.2x ortalama ROAS. İzmit merkezli ajans.',
+    'Profesyonel Google Ads kampanya yönetimi. Search, Display, YouTube, Shopping ve Remarketing kampanyalarıyla 4.2x ortalama ROAS. Şeffaf raporlama.',
   alternates: { canonical: 'https://ramsesdigital.com/hizmetler/google-ads-kocaeli' },
   openGraph: {
     title: 'Google Ads Kocaeli | Ramses Digital',
@@ -40,7 +40,7 @@ const process = [
 ]
 
 const faqs = [
-  { q: 'Google Ads bütçem ne kadar olmalı?', a: 'Kocaeli\'deki KOBİ\'ler için aylık 8.000-25.000 TL test bütçesi, e-ticaret ve geniş kitleli işletmeler için 25.000-100.000 TL aralığı sağlıklıdır. İlk ay test ve kalibre, sonraki aylar ölçeklendirme aşamasıdır. Düşük bütçelerde anlamlı veri toplamak zorlaşır.' },
+  { q: 'Google Ads bütçem ne kadar olmalı?', a: 'KOBİ\'ler için aylık 8.000-25.000 TL test bütçesi, e-ticaret ve geniş kitleli işletmeler için 25.000-100.000 TL aralığı sağlıklıdır. İlk ay test ve kalibre, sonraki aylar ölçeklendirme aşamasıdır. Düşük bütçelerde anlamlı veri toplamak zorlaşır.' },
   { q: 'Yönetim ücretiniz nedir?', a: 'Reklam bütçenizin %10-20\'si arasında değişen aylık yönetim ücreti veya sabit aylık paket (5.000 TL\'den başlayan) iki seçenek de mevcuttur. Setup ücreti ilk ay tek seferlik 3.000-7.000 TL\'dir.' },
   { q: 'Ne kadar sürede sonuç alırım?', a: 'Search kampanyalarında ilk dönüşümler 1-7 gün içinde gelir. Optimal ROAS\'a ulaşmak için 30-60 günlük bir öğrenme süreci gerekir. Bu sürede algoritma anahtar kelime ve kitleyi öğrenir; üçüncü aydan itibaren ölçeklendirme başlar.' },
   { q: 'ROAS ne demek ve hedef ne olmalı?', a: 'ROAS = Gelir / Reklam Harcaması. Yani 4x ROAS, harcadığınız her 1 TL\'nin 4 TL gelir getirdiği anlamına gelir. Sektöre göre değişmekle birlikte: e-ticaret 3-5x, B2B SaaS 5-10x, profesyonel hizmetler 6-15x sağlıklı hedeflerdir.' },
@@ -61,7 +61,7 @@ export default function GoogleAdsKocaeliPage() {
             <span className="text-orange-400 text-xs font-medium tracking-wider uppercase">Google Ads · Performance Marketing</span>
           </div>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-[1.1]">
-            Kocaeli&apos;de ROI Odaklı
+            ROI Odaklı
             <br />
             <span className="gradient-text">Google Ads Yönetimi</span>
           </h1>
@@ -132,8 +132,8 @@ export default function GoogleAdsKocaeliPage() {
           <div className="space-y-5 text-zinc-300 leading-relaxed">
             <p>Google Ads, doğru kurgulandığında <strong className="text-white">harcadığınızın 4-10 katını</strong> geri getirebilen en güçlü dijital pazarlama kanalıdır. Yanlış kurgulandığındaysa bütçenizi haftalar içinde tüketebilir. Aradaki fark: <strong className="text-white">veri ve disiplin</strong>.</p>
             <p>Birçok ajans &ldquo;set it and forget it&rdquo; mantığıyla çalışır: kampanyayı kurar ve aylarca dokunmaz. Biz aksine, haftalık bid optimizasyonu, negatif anahtar kelime ekleme, ad performans analizi ve A/B testlerle sürekli iyileştirme yaparız.</p>
-            <p>Kocaeli&apos;deki yerel rekabet ortamında, &ldquo;Kocaeli + sektör&rdquo; kombinasyonlarında uzun kuyruklu anahtar kelimelerle düşük CPC&apos;li yüksek dönüşümlü kampanyalar kurabiliyoruz. Yerel kitle hedefleme (Coğrafi: Kocaeli, çevresi 30 km), saat ve cihaz optimizasyonları gibi mikro detaylar ROAS\'ınızı katlıyor.</p>
-            <p>Ramses Digital&apos;in Google Ads ekibi, Google Partner sertifikalı uzmanlardan oluşuyor. Her ay 1+ milyon TL reklam bütçesi yönetiyor ve sektörel kıyaslamalarda %35 daha düşük CPA elde ediyoruz.</p>
+            <p>Uzun kuyruklu anahtar kelimelerle düşük CPC&apos;li yüksek dönüşümlü kampanyalar kurabiliyoruz. Coğrafi hedefleme, saat ve cihaz optimizasyonları gibi mikro detaylar ROAS&apos;ınızı katlıyor.</p>
+            <p>Ramses Dijital Reklam Ajansı&apos;nın Google Ads ekibi, sertifikalı uzmanlardan oluşuyor. Her ay milyonlarca TL reklam bütçesi yönetiyor ve sektörel kıyaslamalarda %35 daha düşük CPA elde ediyoruz.</p>
           </div>
         </div>
       </section>
@@ -187,7 +187,7 @@ export default function GoogleAdsKocaeliPage() {
         name: 'Google Ads Yönetimi — Kocaeli',
         description: 'Kocaeli işletmeleri için Search, Display, YouTube, Shopping ve Remarketing kampanya yönetimi.',
         provider: { '@type': 'Organization', name: 'Ramses Digital', url: 'https://ramsesdigital.com' },
-        areaServed: [{ '@type': 'City', name: 'Kocaeli' }, { '@type': 'City', name: 'İzmit' }, { '@type': 'City', name: 'İstanbul' }],
+        areaServed: [{ '@type': 'City', name: 'İzmit' }, { '@type': 'City', name: 'Kocaeli' }, { '@type': 'Country', name: 'Türkiye' }],
         serviceType: 'Pay Per Click Advertising',
         url: 'https://ramsesdigital.com/hizmetler/google-ads-kocaeli',
       })}} />

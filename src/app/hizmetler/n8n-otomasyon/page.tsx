@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://ramsesdigital.com/hizmetler/n8n-otomasyon' },
   openGraph: {
     title: 'n8n İş Akışı Otomasyonu | Ramses Digital',
-    description: 'No-Code/Low-Code AI entegrasyonlu iş akışı otomasyonu. Kocaeli\'den tüm Türkiye\'ye.',
+    description: 'No-Code/Low-Code AI entegrasyonlu iş akışı otomasyonu. Online çalışıyoruz, tüm Türkiye\'ye.',
     url: 'https://ramsesdigital.com/hizmetler/n8n-otomasyon',
     images: ['https://ramsesdigital.com/og-image.png'],
   },
@@ -188,7 +188,7 @@ export default function N8nOtomasyonPage() {
         name: 'n8n İş Akışı Otomasyonu',
         description: 'n8n ile no-code/low-code AI entegrasyonlu iş akışı otomasyonu hizmeti.',
         provider: { '@type': 'Organization', name: 'Ramses Digital', url: 'https://ramsesdigital.com' },
-        areaServed: [{ '@type': 'City', name: 'Kocaeli' }, { '@type': 'City', name: 'İstanbul' }, { '@type': 'Country', name: 'Türkiye' }],
+        areaServed: [{ '@type': 'City', name: 'İzmit' }, { '@type': 'City', name: 'Kocaeli' }, { '@type': 'Country', name: 'Türkiye' }],
         serviceType: 'Workflow Automation',
         url: 'https://ramsesdigital.com/hizmetler/n8n-otomasyon',
       })}} />

@@ -4,9 +4,9 @@ import CalendlyButton from '@/components/CalendlyButton'
 import { Sparkles, CheckCircle2, ArrowRight, Search, FileText, Link2, BarChart3, Zap, Award } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'SEO Kocaeli & İzmit | Yerel İşletmeler İçin Profesyonel SEO Ajansı — Ramses Digital',
+  title: 'SEO Hizmeti | Yerel & Teknik SEO, GEO, AEO — Ramses Dijital Reklam Ajansı',
   description:
-    'İzmit, Kocaeli, Gebze ve Körfez işletmeleri için Google\'da 1. sayfa SEO hizmeti. Yerel SEO, GEO, AEO, teknik SEO ve içerik stratejisi. İzmit merkezli ajans.',
+    'İşletmenize özel SEO hizmeti. Yerel SEO, teknik SEO, GEO, AEO ve içerik stratejisi. Online çalışıyoruz, tüm Türkiye\'ye hizmet veriyoruz. Ücretsiz analiz.',
   alternates: { canonical: 'https://ramsesdigital.com/hizmetler/seo-kocaeli' },
   openGraph: {
     title: 'SEO Kocaeli | Ramses Digital',
@@ -62,13 +62,13 @@ export default function SeoKocaeliPage() {
             <span className="text-blue-400 text-xs font-medium tracking-wider uppercase">SEO · GEO · AEO</span>
           </div>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-[1.1]">
-            Kocaeli&apos;de Google&apos;da
+            Google&apos;da
             <br />
             <span className="gradient-text">1. Sayfaya Çıkın</span>
           </h1>
           <p className="text-zinc-400 text-lg max-w-2xl mx-auto mb-10">
-            Kocaeli ve İzmit&apos;teki işletmenize özel, performans odaklı SEO hizmeti.
-            Yerel SEO&apos;dan teknik optimizasyona, GEO&apos;dan içerik stratejisine kadar tek çatı altında.
+            İşletmenize özel, performans odaklı SEO hizmeti. Yerel SEO&apos;dan teknik optimizasyona,
+            GEO&apos;dan içerik stratejisine kadar tek çatı altında.
           </p>
           <CalendlyButton label="Ücretsiz SEO Analizi Al" variant="primary" />
         </div>
@@ -130,15 +130,15 @@ export default function SeoKocaeliPage() {
         </div>
       </section>
 
-      {/* Why Local SEO Matters */}
+      {/* Why SEO Matters */}
       <section className="py-20 px-6">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 text-center">Kocaeli&apos;de Yerel SEO Neden Kritik?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 text-center">SEO Neden Kritik?</h2>
           <div className="space-y-5 text-zinc-300 leading-relaxed">
-            <p>Kocaeli, sanayinin yoğun olduğu, hızla dijitalleşen bir şehir. <strong className="text-white">Tüketicilerin %78&apos;i</strong> yerel bir hizmet veya ürün ararken Google&apos;a yöneliyor. &ldquo;Kocaeli web tasarım&rdquo;, &ldquo;İzmit dijital pazarlama&rdquo;, &ldquo;Gebze SEO ajansı&rdquo; gibi aramalarda ilk üçte yer almak, web sitenize gelen organik trafiğin <strong className="text-white">%75&apos;ini</strong> bir anda kazanmanız anlamına geliyor.</p>
-            <p>Yerel SEO, klasik SEO&apos;dan farklı dinamiklere sahiptir. Burada amaç sadece &ldquo;SEO&rdquo; gibi genel terimlerde değil, &ldquo;Kocaeli + hizmet&rdquo; kombinasyonunda görünür olmak ve Google Maps&apos;in &ldquo;Local Pack&rdquo; alanına girmektir.</p>
-            <p>Local Pack, arama sonuçlarının en üstünde 3 işletmenin haritayla birlikte gösterildiği premium alandır. Bu alana girmek, organik 1. sıraya çıkmaktan bile daha değerlidir çünkü <strong className="text-white">tıklama oranları %44&apos;e</strong> kadar çıkabilir.</p>
-            <p>Ramses Digital olarak Kocaeli merkezli ekibimizle, yerel pazarın dinamiklerini ilk elden biliyoruz. NAP tutarlılığı, Google Business Profile optimizasyonu, yerel dizin kayıtları, müşteri yorumu yönetimi ve coğrafi anahtar kelime stratejilerinde uzmanız.</p>
+            <p><strong className="text-white">Tüketicilerin %93&apos;ü</strong> bir hizmet veya ürün ararken önce Google&apos;a yöneliyor. Hedef anahtar kelimelerinizde ilk üçte yer almak, web sitenize gelen organik trafiğin <strong className="text-white">%75&apos;ini</strong> bir anda kazanmanız anlamına geliyor.</p>
+            <p>SEO, sadece teknik değil; <strong className="text-white">strateji + içerik + otorite</strong> üçgenidir. Doğru anahtar kelime seçimi, kullanıcı niyetine uygun içerik üretimi ve sektörel backlink stratejileri bir araya gelmediğinde sıralama yarısında kalırsınız.</p>
+            <p>2026&apos;da SEO artık sadece Google demek değil. ChatGPT, Gemini, Perplexity gibi yapay zeka motorları kullanıcının %30&apos;una hizmet veriyor. Bu yüzden modern SEO &ldquo;GEO&rdquo; (Generative Engine Optimization) ve &ldquo;AEO&rdquo; (Answer Engine Optimization) olmadan eksik kalır.</p>
+            <p>Ramses Dijital Reklam Ajansı olarak ekibimizle, klasik SEO&apos;dan AI motorlarına kadar tüm arama ekosistemini kapsayan stratejiler kuruyoruz. NAP tutarlılığı, Google Business Profile optimizasyonu, yerel ve global anahtar kelime stratejileri uzmanlık alanımızdır.</p>
           </div>
         </div>
       </section>
@@ -206,7 +206,7 @@ export default function SeoKocaeliPage() {
         name: 'SEO Hizmeti — Kocaeli',
         description: 'Kocaeli ve İzmit işletmeleri için yerel SEO, GEO, AEO ve teknik SEO hizmetleri.',
         provider: { '@type': 'Organization', name: 'Ramses Digital', url: 'https://ramsesdigital.com' },
-        areaServed: [{ '@type': 'City', name: 'Kocaeli' }, { '@type': 'City', name: 'İzmit' }, { '@type': 'City', name: 'Gebze' }, { '@type': 'City', name: 'İstanbul' }],
+        areaServed: [{ '@type': 'City', name: 'İzmit' }, { '@type': 'City', name: 'Kocaeli' }, { '@type': 'Country', name: 'Türkiye' }],
         serviceType: 'Search Engine Optimization',
         url: 'https://ramsesdigital.com/hizmetler/seo-kocaeli',
       })}} />

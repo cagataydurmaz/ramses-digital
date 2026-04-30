@@ -3,7 +3,7 @@ import { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'AI Teklif Hesaplayıcı | Dijital Pazarlama Fiyatları — Ramses Digital Kocaeli',
   description:
-    'Kocaeli ve İstanbul işletmeleri için dijital pazarlama paket fiyatını anında öğrenin. SEO, Google Ads, sosyal medya ve web tasarımı için AI destekli ücretsiz hesaplayıcı.',
+    'Dijital pazarlama paket fiyatını anında öğrenin. SEO, Google Ads, sosyal medya ve web tasarımı için AI destekli ücretsiz teklif hesaplayıcı.',
   openGraph: {
     title: 'Ücretsiz Dijital Pazarlama Teklifi | Ramses Digital',
     description: 'Bütçenize ve hedeflerinize göre kişiselleştirilmiş dijital pazarlama paketi oluşturun.',

@@ -33,7 +33,7 @@ export default function Footer() {
               <span className="text-white font-light text-xl tracking-tight">Digital</span>
             </Link>
             <p className="text-zinc-400 text-sm leading-relaxed mb-6">
-              İzmit Kocaeli merkezli performans odaklı dijital pazarlama ajansı. SEO, Google Ads ve n8n otomasyon ile markanızı dijitalde büyütüyoruz.
+              Performans odaklı dijital pazarlama ajansı. SEO, Google Ads ve n8n otomasyon ile markanızı dijitalde büyütüyoruz.
             </p>
             <div className="flex items-center gap-3">
               {/* Sosyal medya linkleri — aria-label ile ekran okuyucu desteği */}
