@@ -999,4 +999,237 @@ export const posts: Post[] = [
       <p>Yazılır ama dikkatli olun. ChatGPT veya Claude meta açıklama taslağı için harikadır, ancak çıktıyı mutlaka 150-160 karaktere düşürün, anahtar kelimeyi başa alın ve manuel optimizasyon yapın. Doğrudan yapıştırılan AI çıktıları genellikle ortalama performans gösterir.</p>
     `,
   },
+  {
+    slug: 'izmit-reklam-ajansi-nasil-secilir',
+    coverImage: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=80&fit=crop',
+    title: 'İzmit\'te Reklam Ajansı Nasıl Seçilir? KOBİ\'ler İçin 2026 Rehberi',
+    excerpt:
+      'İzmit\'te doğru reklam ajansını bulmak için 10 kritik soru, fiyat aralıkları, sözleşme tuzakları ve gerçek müşteri deneyiminden ipuçları. Bütçenizi boşa harcamadan büyüyün.',
+    category: 'Strateji',
+    categoryColor: 'blue',
+    emoji: '🎯',
+    coverGradient: 'from-blue-500/10 to-blue-900/5',
+    readTime: 11,
+    date: '2026-04-30',
+    author: 'Ramses Dijital Reklam Ajansı',
+    authorRole: 'Strateji Uzmanları',
+    tags: ['İzmit', 'Reklam Ajansı', 'KOBİ', 'Ajans Seçimi'],
+    content: `
+      <h2>İzmit'te Reklam Ajansı Seçmek Neden Zor?</h2>
+      <p>İzmit ve Kocaeli genelinde 100'ün üzerinde dijital pazarlama ve reklam ajansı faaliyet gösteriyor. Bunların yarısı freelance, %30'u butik ajans, %20'si kurumsal yapıda. Fiyatlar aylık 1.500 TL'den 50.000 TL'ye kadar uzanıyor. Peki bu yelpazede doğru ajansı nasıl seçeceksiniz?</p>
+      <p>Yanlış ajans seçimi sadece para kaybı değil; <strong class="text-white">marka itibarınıza zarar</strong>, <strong class="text-white">Google'dan ceza</strong> ve <strong class="text-white">aylar süren toparlanma süreci</strong> demek. Bu rehberde, İzmit'teki KOBİ'ler için doğru ajansı seçmenin 10 kritik adımını anlatıyoruz.</p>
+
+      <h2>1. Net Hedef Belirleyin: Nereye Ulaşmak İstiyorsunuz?</h2>
+      <p>Ajans aramaya başlamadan önce kendinize şu soruları sorun:</p>
+      <ul>
+        <li>İlk 3 ayda hangi somut sonuçları görmek istiyorum? (örn: ayda 50 lead, %30 organik trafik artışı)</li>
+        <li>Bütçem aylık ne kadar? (gerçekçi: 5.000-25.000 TL aralığı KOBİ için)</li>
+        <li>Hangi kanallarda büyümek istiyorum? (SEO, Google Ads, sosyal medya, hepsi?)</li>
+        <li>İç ekibim hangi işleri yapacak, ajans nereyi devralacak?</li>
+      </ul>
+      <p>Net hedefi olmayan müşteri, "her şeyi yapan" ama hiçbirinde derinleşmeyen ajans bulur. Bu en yaygın hatadır.</p>
+
+      <h2>2. Ajansın Uzmanlık Alanı: Genelci mi, Uzman mı?</h2>
+      <p>Bazı ajanslar SEO + Google Ads + sosyal medya + web tasarım + e-posta + grafik tasarım hepsini birden yapıyoruz der. KOBİ için ÇOK iddialı bir vaattir ve genelde her birinde ortalama performans verir.</p>
+      <p>Tercih: 2-3 alanda gerçek uzman ajanslar. Örneğin SEO ve Google Ads odaklı bir ajans, hem teknik derinlik hem ekosistem entegrasyonu sunar. "Her işi yapan" ajansların ekibi genelde küçük olur ve kalite düşer.</p>
+
+      <h2>3. Geçmiş Vaka Çalışmaları: Sonuçlar Somut mu?</h2>
+      <p>Ajansın "biz harikayız" demesi yetmez. Şunları sorun:</p>
+      <ul>
+        <li>Son 12 ayda hangi sektörlerden müşterileriniz oldu?</li>
+        <li>3 vaka çalışması paylaşır mısınız? (Sektör, sorun, strateji, sonuç)</li>
+        <li>Ölçülebilir sayılar verebilir misiniz? (ROAS, organik trafik artışı, lead sayısı)</li>
+      </ul>
+      <p>"Müşteri gizliliği nedeniyle paylaşamıyoruz" cevabı kırmızı bayraktır. Profesyonel ajanslar müşterilerinden onay alır ve anonim de olsa metrik paylaşır.</p>
+
+      <h2>4. Ekip Yapısı: Kim Çalışacak Sizinle?</h2>
+      <p>İlk satış görüşmesinde size CEO veya Sales Manager geliyor. Peki gerçekte projeniz kime atanacak?</p>
+      <ul>
+        <li>Account manager kimdir, kaç müşteri yönetir? (10'dan fazla = sizinle ilgilenmeyebilir)</li>
+        <li>SEO çalışmasını kim yapar? Junior bir stajyer mi, deneyimli uzman mı?</li>
+        <li>Ekipte kaç kişi var? Tamamı in-house mu, freelance mi?</li>
+      </ul>
+      <p>İzmit'teki ajansların %40'ı freelance ekiple çalışır. Bu kötü değil — ama bilmek hakkınız.</p>
+
+      <h2>5. Şeffaf Raporlama: Ne Yaptıklarını Görebiliyor musunuz?</h2>
+      <p>Profesyonel bir ajans size şu erişimleri verir:</p>
+      <ul>
+        <li>Google Ads hesabı: sizin sahipliğinizde, manager olarak ajans</li>
+        <li>Google Analytics 4 + Search Console: tam erişim</li>
+        <li>Canlı dashboard (Looker Studio veya benzer): 7/24 izleme</li>
+        <li>Aylık detaylı PDF rapor: harcama, sonuç, sonraki adımlar</li>
+      </ul>
+      <p>"Sizin hesabınızı biz yönetiyoruz, raporu ay sonu gönderiyoruz" diyen ajansa ŞÜPHEYLE yaklaşın. Şeffaflık 2026'da pazarlık konusu değil, standarttır.</p>
+
+      <h2>6. Sözleşme Detayları: Tuzaklar Nereler?</h2>
+      <p>Sözleşmeyi imzalamadan önce şunlara dikkat:</p>
+      <ul>
+        <li><strong class="text-white">Çıkış maddesi:</strong> 1-2 ay içinde memnun değilseniz cezasız çıkabilir misiniz?</li>
+        <li><strong class="text-white">Veri sahipliği:</strong> Ürettikleri içerik, kampanya, schema markup size mi ait?</li>
+        <li><strong class="text-white">Otomatik yenileme:</strong> Sözleşme otomatik mi uzanıyor? Gizli madde var mı?</li>
+        <li><strong class="text-white">İlave maliyetler:</strong> "Kampanya kurulumu" "setup fee" "raporlama ücreti" gibi gizli kalemler?</li>
+      </ul>
+
+      <h2>7. Fiyatlandırma: Ne Aldığınıza Bakın</h2>
+      <p>İzmit'teki ortalama fiyat yelpazeleri:</p>
+      <ul>
+        <li><strong class="text-white">Aylık 1.500-3.000 TL:</strong> Genelde freelance, sınırlı hizmet, sosyal medya post + 1 reklam</li>
+        <li><strong class="text-white">Aylık 4.000-8.000 TL:</strong> Butik ajans, 2-3 hizmet kombinasyonu, ölçülebilir KPI'lar</li>
+        <li><strong class="text-white">Aylık 8.000-20.000 TL:</strong> Kurumsal yapı, derin uzmanlık, 4+ hizmet, dedicated account manager</li>
+        <li><strong class="text-white">Aylık 20.000+ TL:</strong> Enterprise, özel strateji, multi-disciplinary ekip</li>
+      </ul>
+      <p>"Aylık 1.000 TL'ye SEO" gibi tekliflere asla rağbet etmeyin. Bu fiyatla içerik AI çöp üretir, backlink spam toplanır, Google cezalandırır.</p>
+
+      <h2>8. Yerel Bilgi: İzmit Pazarını Tanıyor mu?</h2>
+      <p>Yerel SEO ve Google Ads kampanyaları için ajansın bölgenizi tanıması kritiktir. Sorun:</p>
+      <ul>
+        <li>Daha önce İzmit'te kaç müşteri ile çalıştınız?</li>
+        <li>Kocaeli sektörel dinamiklerini biliyor musunuz? (sanayi yoğunluğu, KOBİ eğilimleri)</li>
+        <li>Yerel haber siteleri, dergiler ve dizin platformlarıyla ilişkiniz var mı?</li>
+      </ul>
+      <p>İzmit'in ne demek olduğunu bilmeyen, "küçük şehir" diye tepeden bakan İstanbul ajansları, kampanyada gerçek yerel adaptasyon yapamaz.</p>
+
+      <h2>9. İletişim Hızı: Acil Durumda Ulaşabiliyor musunuz?</h2>
+      <p>Reklam kampanyasında hata olur, Google'da algoritma değişir, kriz yönetimi gerekir. Ajansa ulaşma hızınızı test edin:</p>
+      <ul>
+        <li>WhatsApp/Telegram grubu var mı? (tercih edilmeli)</li>
+        <li>Acil durumda kim ne kadar sürede dönüş yapar?</li>
+        <li>Haftalık check-in yoksa, ne zaman size durum bildirilir?</li>
+      </ul>
+
+      <h2>10. Referans Görüşmesi: Önceki Müşteri Ne Diyor?</h2>
+      <p>Ajansın 2-3 mevcut/eski müşterisinin telefon numarasını isteyin. 5 dakikalık konuşmada şunları sorun:</p>
+      <ul>
+        <li>Sözleşmeden ne bekliyordunuz, ne aldınız?</li>
+        <li>Sıkıştığınız anlarda ajans nasıl davrandı?</li>
+        <li>Tekrar seçecek olsanız aynı ajansla devam eder miydiniz?</li>
+      </ul>
+      <p>Profesyonel bir ajans bu paylaşımı yapmaktan çekinmez.</p>
+
+      <h2>Ramses Dijital Reklam Ajansı: Neden Tercih Edilebilir?</h2>
+      <p>İzmit Kocaeli merkezli olarak 2019'dan bu yana 100+ projeye imza attık. Mühendislik kökenli bir ekibiz; her stratejiyi veri ve teknik disiplinle kuruyoruz.</p>
+      <p>Bizi farklı kılan: <strong class="text-white">şeffaf raporlama</strong>, <strong class="text-white">veri sahipliğinin tamamen müşteride kalması</strong>, <strong class="text-white">çıkış maddesi her sözleşmede mevcut</strong>, <strong class="text-white">aylık detaylı raporlama + canlı dashboard</strong> ve <strong class="text-white">Kocaeli pazarına 5+ yıllık derin tecrübe</strong>.</p>
+      <p>Ücretsiz keşif görüşmesinde size özgü strateji çıkartırız ve teklif sunarız — taahhüt yok.</p>
+
+      <h3>Sık Sorulan Sorular</h3>
+
+      <h3>İzmit'te en iyi reklam ajansı hangisi?</h3>
+      <p>"En iyi" göreceli bir kavram. Sizin için doğru ajans, hedeflerinize, bütçenize ve ihtiyaçlarınıza uygun olandır. Yukarıdaki 10 maddeyi gözden geçirip 3-5 ajansla görüşün, en uygun olanı seçin.</p>
+
+      <h3>Reklam ajansı ile freelance arasında nasıl seçim yaparım?</h3>
+      <p>Bütçeniz aylık 5.000 TL'den azsa freelance daha mantıklı (tek bir uzman, sınırlı kapasite). 5.000 TL+ ajans tercih edilmelidir; ekip yapısı, süreklilik ve birden fazla disiplin kapsama avantajı sağlar.</p>
+
+      <h3>Sözleşme süresi minimum ne kadar olmalı?</h3>
+      <p>SEO için minimum 6 ay, Google Ads için minimum 3 ay, sosyal medya için minimum 3 ay. Daha kısa süreler ajansın algoritma öğrenme sürecini yarıda keser ve sonuç alamazsınız.</p>
+
+      <h3>Ajansın Google Partner sertifikası önemli mi?</h3>
+      <p>Önemlidir ama tek başına yeterli değil. Sertifika, ajansın Google Ads platformunda belirli bir performans seviyesinde olduğunu gösterir. Ancak gerçek değer; vaka çalışmalarında ve müşteri referanslarındadır.</p>
+    `,
+  },
+  {
+    slug: 'izmit-restoran-dijital-pazarlama-rehberi',
+    coverImage: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&q=80&fit=crop',
+    title: 'İzmit Restoranları İçin Dijital Pazarlama: Yerel Müşteri Çekme Rehberi',
+    excerpt:
+      'İzmit\'te restoran sahibiyseniz Google Maps, sosyal medya ve yerel SEO ile rezervasyonlarınızı 3 katına çıkartabilirsiniz. Detaylı strateji ve gerçek örnekler.',
+    category: 'Sektörel',
+    categoryColor: 'orange',
+    emoji: '🍽️',
+    coverGradient: 'from-orange-500/10 to-orange-900/5',
+    readTime: 9,
+    date: '2026-04-29',
+    author: 'Ramses Dijital Reklam Ajansı',
+    authorRole: 'Sektörel Strateji Uzmanları',
+    tags: ['Restoran', 'İzmit', 'Yerel SEO', 'Google Maps'],
+    content: `
+      <h2>İzmit Restoranları İçin Dijital Pazarlama Neden Kritik?</h2>
+      <p>2026 yılında bir restoran arayan İzmitli müşterinin <strong class="text-white">%87'si önce Google'a bakıyor</strong>. "İzmit pizza", "Kocaeli kahvaltı yapılacak yerler", "İzmit en iyi kebapçı" gibi aramalar günlük binlerce kez yapılıyor.</p>
+      <p>Eğer restoranınız bu aramalarda görünmüyorsa, müşteri rakibinize gidiyor. İyi haber: doğru kurgulanmış bir dijital pazarlama stratejisi 3-6 ayda restoranınızı bölgenizin "git buraya" tavsiyesine dönüştürebilir.</p>
+
+      <h2>1. Google Business Profile: Restoran Pazarlamasının Belkemiği</h2>
+      <p>Restoranlar için Google Business Profile (GBP) en önemli kanaldır. Aramalardaki "İzmit pizza" tipi sorgularda Google, üst kısımda 3 restoran haritalı şekilde gösterir ("Local Pack"). Buraya girmek = oyunu kazanmak.</p>
+      <p>GBP optimizasyonu için yapılması gerekenler:</p>
+      <ul>
+        <li><strong class="text-white">Profili doğrulayın</strong> (Google'dan adresinize kart gelir, kod girersiniz)</li>
+        <li><strong class="text-white">Tüm bilgileri eksiksiz doldurun</strong>: çalışma saatleri, telefon, menü PDF'i, hizmet tipleri (paket servis, teslim alma, masa rezervasyonu)</li>
+        <li><strong class="text-white">En az 30 yüksek kaliteli foto yükleyin</strong>: dış cephe, iç mekan, popüler yemekler, ekip, mutfak</li>
+        <li><strong class="text-white">Haftalık post paylaşın</strong>: yeni menü, kampanya, etkinlik, sezon özel yemekler</li>
+        <li><strong class="text-white">Müşteri yorumlarına 24 saat içinde yanıt verin</strong></li>
+        <li><strong class="text-white">Q&A bölümünde sık sorulan soruları kendiniz sorup cevaplayın</strong> (vegan seçenek var mı, otopark var mı, pet-friendly mi)</li>
+      </ul>
+
+      <h2>2. Yerel SEO: Web Sitenizi Google'a Hazırlayın</h2>
+      <p>Web siteniz var mı? Çoğu İzmit restoranı sosyal medya hesabı ile yetinir; bu büyük hata. Profesyonel bir web sitesi:</p>
+      <ul>
+        <li>Aramalarda görünme şansı verir ("İzmit en iyi balık restoranı" tipi sorgulara)</li>
+        <li>Online rezervasyon almanızı sağlar</li>
+        <li>Menü, fotoğraf galerisi, müşteri yorumları gibi zengin içerik barındırır</li>
+        <li>Google Maps'e ek olarak ikinci bir trafik kanalı oluşturur</li>
+      </ul>
+      <p>Web sitenizi yerel SEO için optimize edin: schema markup (Restaurant + Menu + Review), Kocaeli + İzmit anahtar kelimeleri, mahalle/ilçe içerikleri ("Yenidoğan'da kahvaltı", "Sırrıpaşa'da pide salonu" gibi).</p>
+
+      <h2>3. Instagram & TikTok: Görsel İştah Açıcı</h2>
+      <p>Restoranlar için Instagram ve TikTok altın madeni. İnsanlar yemek görüntüsünden satın alma kararı verir. Strateji:</p>
+      <ul>
+        <li>Haftada en az 3 yüksek kaliteli yemek fotoğrafı paylaşın (doğal ışık + temiz arka plan)</li>
+        <li>Reels: yemek hazırlanışı, mutfak içi görüntüler (15-30 saniye)</li>
+        <li>Yerel hashtag kullanın: #izmit #izmityemek #kocaelirestoran #izmitkahvalti</li>
+        <li>Müşteri tag'lerini repost edin (UGC = User Generated Content; en güçlü içerik türü)</li>
+        <li>Aylık influencer işbirliği: 5-10K takipçili Kocaeli food blogger'larıyla (yemek karşılığı paylaşım)</li>
+      </ul>
+
+      <h2>4. Google Ads: Hızlı Sonuç İçin</h2>
+      <p>SEO 3-6 ay süre alır; Google Ads anında trafik getirir. Restoran için en etkili kampanya türleri:</p>
+      <ul>
+        <li><strong class="text-white">Search Ads:</strong> "İzmit pizza", "Kocaeli kebap" gibi yüksek niyetli aramalarda görünme</li>
+        <li><strong class="text-white">Performance Max:</strong> Google'ın AI'ı ile otomatik optimize edilmiş kampanyalar (yeni başlayanlar için ideal)</li>
+        <li><strong class="text-white">Yerel kampanyalar:</strong> Maps'te ve Google çevre aramalarında öncelikli görünme</li>
+      </ul>
+      <p>Bütçe: Aylık 3.000-8.000 TL ile başlanabilir. Daha düşük bütçelerde (örn: 1.000 TL) Google'ın algoritması yeterli veri toplayamaz.</p>
+
+      <h2>5. Yorumlar (Reviews): En Güçlü Sosyal Kanıt</h2>
+      <p>Yorumlar restoranın can damarıdır. İstatistikler:</p>
+      <ul>
+        <li>Müşterilerin %93'ü Google yorumlarını okumadan tercih yapmıyor</li>
+        <li>4.5+ ortalama yıldıza sahip restoranlar 2x daha fazla rezervasyon alıyor</li>
+        <li>Yorum sayısı 50+ olan restoranlar Local Pack'e öncelikli giriyor</li>
+      </ul>
+      <p>Yorum almak için: faturanın altına QR kod basın, müşteri çıkarken nazikçe "Memnun kaldıysanız 1 dakikanızı ayırır mısınız?" deyin, WhatsApp ile takip mesajı gönderin.</p>
+
+      <h2>6. Online Rezervasyon Sistemi</h2>
+      <p>Telefonla rezervasyon eskidi. Modern müşteri online sistem ister:</p>
+      <ul>
+        <li>OpenTable, ResDiary, Sevenrooms gibi global sistemler</li>
+        <li>Türk alternatifi: Yemek.com Rezervasyon, GetirYemek</li>
+        <li>Web sitenizde direkt rezervasyon formu (Calendly gibi araçlarla)</li>
+      </ul>
+      <p>Online rezervasyon = no-show oranı düşer (otomatik hatırlatma SMS), pik saatlerde daha iyi yönetim.</p>
+
+      <h2>7. Yerel İşbirlikleri ve Backlink</h2>
+      <p>Yerel SEO için backlink kritik. Restoranınız için kazanılabilir bağlantılar:</p>
+      <ul>
+        <li>Kocaeli yerel haber siteleri ("İzmit'in en iyi 10 restoranı" yazılarına dahil olun)</li>
+        <li>Food blogger ve Instagram review hesaplarına davet</li>
+        <li>Yelp Türkiye, Foursquare, Tripadvisor profilleri</li>
+        <li>Otel ve turistik tesislerle ortaklık ("müşterimize tavsiye ediyoruz" linkleri)</li>
+      </ul>
+
+      <h2>8. WhatsApp Pazarlama (Yeni Trend)</h2>
+      <p>2026 trendi: WhatsApp Business API ile menü gönderme, rezervasyon kabul etme, kampanya bildirimi yapma. Düzgün kurgulandığında %60+ açılma oranı görülür (e-postanın 4 katı).</p>
+
+      <h3>Sık Sorulan Sorular</h3>
+
+      <h3>İzmit'te bir restoran için aylık dijital pazarlama bütçesi ne olmalı?</h3>
+      <p>Yeni başlayan küçük bir restoran için aylık 3.000-6.000 TL (organik içerik + Google Ads). Orta büyüklükte yerleşik bir restoran için 6.000-15.000 TL. Zincir veya premium restoranlar için 15.000+ TL.</p>
+
+      <h3>Sosyal medyayı kendim mi yöneteyim, ajans mı?</h3>
+      <p>Mutfak ekibinizin günlük rutinini biliyor ve fotoğraf çekebiliyorsanız "günlük post" sizin sorumluluğunuzda olabilir. Ajans işi: strateji, ücretli reklam, performans analizi, içerik takvimi planlaması. İdeal model: hibrit.</p>
+
+      <h3>Google'da 1. sıraya çıkmak ne kadar sürer?</h3>
+      <p>Google Business Profile için 4-8 hafta (Local Pack'te ilk 3'e girmek). Web sitenizin "İzmit + sektör" aramasında 1. sayfada görünmesi için 4-6 ay tutarlı çalışma. Şehir geneli "İzmit restoran" aramasında ilk 3 ise 8-12 ay alabilir (yüksek rekabet).</p>
+
+      <h3>Hangi sosyal medya platformu restoran için en etkili?</h3>
+      <p>Instagram (görsel + Reels) ve Google Business Profile (yorum + foto) ilk önceliklerdir. TikTok genç hedef kitle için iyi. Facebook 35 yaş üstü için hâlâ değerli. Twitter ve LinkedIn restoran için düşük öncelikli.</p>
+    `,
+  },
 ]
