@@ -3,13 +3,13 @@ import Link from 'next/link'
 import CalendlyButton from '@/components/CalendlyButton'
 
 export const metadata: Metadata = {
-  title: 'Hizmetlerimiz | SEO, Google Ads, Sosyal Medya & n8n Otomasyon — Ramses Digital Kocaeli',
+  title: 'Hizmetlerimiz | SEO, Google Ads, Web Tasarım & n8n Otomasyon — Ramses Dijital',
   description:
-    'SEO, Google Ads, sosyal medya yönetimi, web tasarımı ve n8n iş akışı otomasyonu. Performans odaklı dijital pazarlama hizmetleri.',
+    'SEO/GEO/AEO, Google Ads, web tasarımı, e-posta otomasyonu, n8n iş akışı ve veri analizi. Performans odaklı dijital pazarlama hizmetleri.',
   alternates: { canonical: 'https://ramsesdigital.com/hizmetler' },
   openGraph: {
-    title: 'Dijital Pazarlama Hizmetleri | Ramses Digital',
-    description: 'SEO\'dan Google Ads\'e, sosyal medyadan n8n otomasyonuna — tüm dijital büyüme araçları tek çatı altında.',
+    title: 'Dijital Pazarlama Hizmetleri | Ramses Dijital',
+    description: 'SEO/GEO/AEO, Google Ads, web tasarımı, e-posta otomasyonu, n8n iş akışı ve veri analizi — tüm dijital büyüme araçları tek çatı altında.',
     url: 'https://ramsesdigital.com/hizmetler',
     images: ['https://ramsesdigital.com/og-image.png'],
   },
@@ -23,7 +23,6 @@ export const metadata: Metadata = {
 import {
   Sparkles,
   TrendingUp,
-  Share2,
   Monitor,
   Mail,
   BarChart3,
@@ -66,21 +65,6 @@ const services = [
     href: '/hizmetler/google-ads-kocaeli',
   },
   {
-    icon: Share2,
-    title: 'Sosyal Medya Yönetimi',
-    tagline: 'Instagram, Facebook, LinkedIn, TikTok',
-    desc: 'Hedef kitlenizle gerçek bağlar kurmak için özgün içerikler üretiyor, topluluğunuzu büyütüyor ve sosyal medya reklamlarıyla erişiminizi genişletiyoruz.',
-    features: [
-      'İçerik Takvimi & Planlama',
-      'Görsel İçerik Üretimi',
-      'Topluluk Yönetimi',
-      'Influencer İşbirlikleri',
-      'Sosyal Medya Reklamları',
-      'Performans Analizi & Raporlama',
-    ],
-    color: 'pink',
-  },
-  {
     icon: Monitor,
     title: 'Web Tasarımı & Geliştirme',
     tagline: 'Modern, Hızlı, Mobil Uyumlu',
@@ -110,6 +94,7 @@ const services = [
       'Açılma & Tıklama Analizi',
     ],
     color: 'orange',
+    href: '/hizmetler/eposta-otomasyon',
   },
   {
     icon: Workflow,
@@ -141,6 +126,7 @@ const services = [
       'Büyüme Stratejisi Danışmanlığı',
     ],
     color: 'cyan',
+    href: '/hizmetler/veri-analizi',
   },
 ]
 
