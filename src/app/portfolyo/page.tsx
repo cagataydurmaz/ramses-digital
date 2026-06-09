@@ -13,7 +13,7 @@ const liveProjects = [
     industry: 'Sağlık & Psikoloji',
     desc: 'Kocaeli\'nin en çok aranan psikologlarından biri için sıfırdan tasarladığımız, SEO odaklı, randevu dönüşümü yüksek web sitesi. Yerel SEO çalışmasıyla Google\'da 1. sayfaya taşındı.',
     tags: ['Web Tasarım', 'Yerel SEO', 'WhatsApp Entegrasyonu'],
-    thumb: 'https://image.thum.io/get/width/1280/crop/720/noanimate/https://nurcelen.com',
+    thumb: '/portfolio/nurcelen.jpg',
   },
   {
     name: 'Av. Mert Anıl Güler, LL.M.',
@@ -24,7 +24,7 @@ const liveProjects = [
     industry: 'Hukuk',
     desc: 'İstanbul Barosu avukatı için premium kurumsal kimliğe sahip, içerik ağırlıklı hukuk bürosu sitesi. Blog ve makale altyapısıyla otorite inşası, Google Ads entegrasyonu.',
     tags: ['Web Tasarım', 'Kurumsal SEO', 'Google Ads'],
-    thumb: 'https://image.thum.io/get/width/1280/crop/720/noanimate/https://www.mertanilguler.av.tr',
+    thumb: '/portfolio/mertanilguler.jpg',
   },
 ]
 
@@ -54,9 +54,12 @@ export default function PortfolioPage() {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {liveProjects.map((project) => (
-              <div
+              <Link
                 key={project.name}
-                className="group bg-[#0D1225] border border-white/[0.06] hover:border-white/[0.14] rounded-2xl overflow-hidden transition-all duration-300"
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block bg-[#0D1225] border border-white/[0.06] hover:border-blue-500/30 rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-[0_0_40px_-10px_rgba(59,130,246,0.2)]"
               >
                 {/* Browser Chrome */}
                 <div className="bg-[#080D18] border-b border-white/[0.06] px-4 py-3 flex items-center gap-3">
@@ -69,28 +72,19 @@ export default function PortfolioPage() {
                     <Globe size={10} className="text-zinc-500 shrink-0" />
                     <span className="text-zinc-400 text-xs font-mono truncate">{project.displayUrl}</span>
                   </div>
-                  <Link
-                    href={project.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-zinc-500 hover:text-blue-400 transition-colors"
-                    aria-label="Siteyi ziyaret et"
-                  >
-                    <ExternalLink size={13} />
-                  </Link>
+                  <ExternalLink size={13} className="text-zinc-500 group-hover:text-blue-400 transition-colors shrink-0" />
                 </div>
 
                 {/* Screenshot */}
-                <div className="relative overflow-hidden" style={{ aspectRatio: '16/9' }}>
+                <div className="relative overflow-hidden" style={{ height: '260px' }}>
                   <Image
                     src={project.thumb}
                     alt={`${project.name} web sitesi ekran görüntüsü`}
                     fill
-                    className="object-cover object-top group-hover:scale-[1.02] transition-transform duration-500"
+                    className="object-cover object-top group-hover:scale-[1.03] transition-transform duration-500"
                     sizes="(max-width: 1024px) 100vw, 50vw"
-                    unoptimized
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0D1225] via-transparent to-transparent opacity-60" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0D1225]/80 via-transparent to-transparent" />
                 </div>
 
                 {/* Info */}
@@ -101,14 +95,9 @@ export default function PortfolioPage() {
                       <h3 className="text-white font-bold text-lg leading-snug">{project.name}</h3>
                       <p className="text-zinc-400 text-sm">{project.title}</p>
                     </div>
-                    <Link
-                      href={project.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="shrink-0 inline-flex items-center gap-1.5 text-xs font-medium text-blue-400 hover:text-blue-300 bg-blue-500/10 hover:bg-blue-500/20 border border-blue-500/20 rounded-full px-3 py-1.5 transition-all"
-                    >
+                    <span className="shrink-0 inline-flex items-center gap-1.5 text-xs font-medium text-blue-400 group-hover:text-blue-300 bg-blue-500/10 group-hover:bg-blue-500/20 border border-blue-500/20 rounded-full px-3 py-1.5 transition-all">
                       Siteyi Gör <ExternalLink size={11} />
-                    </Link>
+                    </span>
                   </div>
                   <p className="text-zinc-400 text-sm leading-relaxed mb-4">{project.desc}</p>
                   <div className="flex flex-wrap gap-2">
@@ -119,7 +108,7 @@ export default function PortfolioPage() {
                     ))}
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
 
