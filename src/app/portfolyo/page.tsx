@@ -1,8 +1,37 @@
 'use client'
 
 import { useState } from 'react'
+import Image from 'next/image'
+import Link from 'next/link'
 import CalendlyButton from '@/components/CalendlyButton'
-import { TrendingUp, Users, Eye } from 'lucide-react'
+import { TrendingUp, Users, Eye, ExternalLink, Globe } from 'lucide-react'
+
+const liveProjects = [
+  {
+    name: 'Psk. Nur Çelen',
+    title: 'Kocaeli Psikolog — Bireysel & Çift Terapi',
+    url: 'https://nurcelen.com',
+    displayUrl: 'nurcelen.com',
+    category: 'Web Tasarımı + SEO',
+    industry: 'Sağlık & Psikoloji',
+    desc: 'Kocaeli\'nin en çok aranan psikologlarından biri için sıfırdan tasarladığımız, SEO odaklı, randevu dönüşümü yüksek web sitesi. Yerel SEO çalışmasıyla Google\'da 1. sayfaya taşındı.',
+    tags: ['Web Tasarım', 'Yerel SEO', 'WhatsApp Entegrasyonu'],
+    accentColor: 'rose',
+    thumb: 'https://image.thum.io/get/width/1280/crop/720/noanimate/https://nurcelen.com',
+  },
+  {
+    name: 'Av. Mert Anıl Güler, LL.M.',
+    title: 'Bakırköy Avukat — Hukuk Bürosu',
+    url: 'https://www.mertanilguler.av.tr',
+    displayUrl: 'mertanilguler.av.tr',
+    category: 'Web Tasarımı + SEO',
+    industry: 'Hukuk',
+    desc: 'İstanbul Barosu avukatı için premium kurumsal kimliğe sahip, içerik ağırlıklı hukuk bürosu sitesi. Blog ve makale altyapısıyla otorite inşası, Google Ads entegrasyonu.',
+    tags: ['Web Tasarım', 'Kurumsal SEO', 'Google Ads'],
+    accentColor: 'amber',
+    thumb: 'https://image.thum.io/get/width/1280/crop/720/noanimate/https://www.mertanilguler.av.tr',
+  },
+]
 
 const categories = ['Tümü', 'SEO', 'Google Ads', 'Sosyal Medya', 'Web Tasarımı', 'Veri Analizi']
 
@@ -146,6 +175,87 @@ export default function PortfolioPage() {
           <p className="text-zinc-400 text-lg max-w-2xl mx-auto">
             Farklı sektörlerde elde ettiğimiz somut başarılar ve ölçülebilir sonuçlar.
           </p>
+        </div>
+      </section>
+
+      {/* Live Projects — Real Clients */}
+      <section className="pb-20 px-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <p className="text-blue-500 text-sm font-medium tracking-wider uppercase mb-3">Canlı Referanslar</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-3">Gerçek Müşteri Projeleri</h2>
+            <p className="text-zinc-400 max-w-xl mx-auto text-sm">Tasarladığımız ve büyüttüğümüz siteler — canlı olarak ziyaret edebilirsiniz.</p>
+          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {liveProjects.map((project) => (
+              <div
+                key={project.name}
+                className="group bg-[#0D1225] border border-white/[0.06] hover:border-white/[0.14] rounded-2xl overflow-hidden transition-all duration-300"
+              >
+                {/* Browser Chrome Mockup */}
+                <div className="bg-[#080D18] border-b border-white/[0.06] px-4 py-3 flex items-center gap-3">
+                  <div className="flex gap-1.5">
+                    <div className="w-3 h-3 rounded-full bg-red-500/60" />
+                    <div className="w-3 h-3 rounded-full bg-yellow-500/60" />
+                    <div className="w-3 h-3 rounded-full bg-green-500/60" />
+                  </div>
+                  <div className="flex-1 bg-white/[0.05] rounded-md px-3 py-1 flex items-center gap-2">
+                    <Globe size={10} className="text-zinc-500 shrink-0" />
+                    <span className="text-zinc-400 text-xs font-mono truncate">{project.displayUrl}</span>
+                  </div>
+                  <Link
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-zinc-500 hover:text-blue-400 transition-colors"
+                    aria-label="Siteyi ziyaret et"
+                  >
+                    <ExternalLink size={13} />
+                  </Link>
+                </div>
+
+                {/* Screenshot */}
+                <div className="relative overflow-hidden" style={{ aspectRatio: '16/9' }}>
+                  <Image
+                    src={project.thumb}
+                    alt={`${project.name} web sitesi ekran görüntüsü`}
+                    fill
+                    className="object-cover object-top group-hover:scale-[1.02] transition-transform duration-500"
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    unoptimized
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0D1225] via-transparent to-transparent opacity-60" />
+                </div>
+
+                {/* Info */}
+                <div className="p-6">
+                  <div className="flex items-start justify-between gap-3 mb-3">
+                    <div>
+                      <p className="text-zinc-500 text-xs uppercase tracking-wider mb-1">{project.industry} · {project.category}</p>
+                      <h3 className="text-white font-bold text-lg leading-snug">{project.name}</h3>
+                      <p className="text-zinc-400 text-sm">{project.title}</p>
+                    </div>
+                    <Link
+                      href={project.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="shrink-0 inline-flex items-center gap-1.5 text-xs font-medium text-blue-400 hover:text-blue-300 bg-blue-500/10 hover:bg-blue-500/20 border border-blue-500/20 rounded-full px-3 py-1.5 transition-all"
+                    >
+                      Siteyi Gör <ExternalLink size={11} />
+                    </Link>
+                  </div>
+                  <p className="text-zinc-400 text-sm leading-relaxed mb-4">{project.desc}</p>
+                  <div className="flex flex-wrap gap-2">
+                    {project.tags.map((tag) => (
+                      <span key={tag} className="text-xs bg-white/[0.04] border border-white/[0.08] text-zinc-400 rounded-full px-2.5 py-1">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
