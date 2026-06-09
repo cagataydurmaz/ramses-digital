@@ -13,7 +13,7 @@ const liveProjects = [
     industry: 'Sağlık & Psikoloji',
     desc: 'Kocaeli\'nin en çok aranan psikologlarından biri için sıfırdan tasarladığımız, SEO odaklı, randevu dönüşümü yüksek web sitesi. Yerel SEO çalışmasıyla Google\'da 1. sayfaya taşındı.',
     tags: ['Web Tasarım', 'Yerel SEO', 'WhatsApp Entegrasyonu'],
-    thumb: '/portfolio/nurcelen.jpg',
+    thumb: '/portfolio/nurcelen.png',
   },
   {
     name: 'Av. Mert Anıl Güler, LL.M.',
@@ -24,7 +24,7 @@ const liveProjects = [
     industry: 'Hukuk',
     desc: 'İstanbul Barosu avukatı için premium kurumsal kimliğe sahip, içerik ağırlıklı hukuk bürosu sitesi. Blog ve makale altyapısıyla otorite inşası, Google Ads entegrasyonu.',
     tags: ['Web Tasarım', 'Kurumsal SEO', 'Google Ads'],
-    thumb: '/portfolio/mertanilguler.jpg',
+    thumb: '/portfolio/mertanilguler.png',
   },
 ]
 
