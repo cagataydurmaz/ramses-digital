@@ -138,32 +138,6 @@ const stats = [
   { value: 94, suffix: '%', label: 'Müşteri Memnuniyeti' },
 ]
 
-const portfolio = [
-  {
-    title: 'Global Elektronik Pazaryeri',
-    category: 'E-Ticaret SEO',
-    result: '%340 Organik Trafik Artışı',
-    color: 'from-blue-600/20 to-blue-900/20',
-  },
-  {
-    title: 'Lüks Otel Zinciri (Konaklama)',
-    category: 'Google Ads',
-    result: '4.2x ROAS Başarısı',
-    color: 'from-violet-600/20 to-violet-900/20',
-  },
-  {
-    title: 'Yeni Nesil Ödeme Sistemleri',
-    category: 'Sosyal Medya',
-    result: '120K Yeni Takipçi',
-    color: 'from-emerald-600/20 to-emerald-900/20',
-  },
-  {
-    title: 'SaaS & Kurumsal Yazılım Çözümleri',
-    category: 'Web & SEO',
-    result: '%280 Lead Artışı',
-    color: 'from-orange-600/20 to-orange-900/20',
-  },
-]
 
 const testimonials = [
   {
@@ -369,53 +343,6 @@ export default function HomePage() {
               className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 text-sm font-medium transition-colors"
             >
               Tüm hizmetleri görüntüle
-              <ArrowRight size={14} />
-            </Link>
-          </FadeIn>
-        </div>
-      </section>
-
-      {/* ── PORTFOLIO PREVIEW ────────────────────────────────────────────── */}
-      <section className="py-24 px-6 bg-[#080D18]">
-        <div className="max-w-7xl mx-auto">
-          <FadeIn className="text-center mb-16">
-            <p className="text-blue-500 text-sm font-medium tracking-wider uppercase mb-3">
-              Portföy
-            </p>
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              Başarı Hikayelerimiz
-            </h2>
-            <p className="text-zinc-400 text-lg max-w-2xl mx-auto">
-              Müşterilerimiz için elde ettiğimiz somut sonuçlar.
-            </p>
-          </FadeIn>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            {portfolio.map((project, i) => (
-              <FadeIn key={project.title} delay={i * 0.1}>
-                <div
-                  className={`group relative bg-gradient-to-br ${project.color} border border-white/[0.06] rounded-2xl p-8 overflow-hidden card-hover cursor-default`}
-                >
-                  <div className="absolute top-0 right-0 w-40 h-40 bg-white/[0.02] rounded-full -translate-y-20 translate-x-20" />
-                  <span className="text-xs text-zinc-400 font-medium uppercase tracking-wider">
-                    {project.category}
-                  </span>
-                  <h3 className="text-white font-bold text-2xl mt-2 mb-4">{project.title}</h3>
-                  <div className="flex items-center gap-2">
-                    <CheckCircle2 size={16} className="text-blue-400" />
-                    <span className="text-blue-300 font-semibold">{project.result}</span>
-                  </div>
-                </div>
-              </FadeIn>
-            ))}
-          </div>
-
-          <FadeIn className="text-center mt-10">
-            <Link
-              href="/portfolyo"
-              className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 text-sm font-medium transition-colors"
-            >
-              Tüm projeleri görüntüle
               <ArrowRight size={14} />
             </Link>
           </FadeIn>
