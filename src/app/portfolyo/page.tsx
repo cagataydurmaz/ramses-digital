@@ -29,8 +29,8 @@ const liveProjects = [
   {
     name: 'Gamzeli Eczanem',
     title: 'Online Eczane & Güzellik — E-Ticaret',
-    url: 'https://www.gamzelieczanem.com',
-    displayUrl: 'gamzelieczanem.com',
+    url: 'https://gamzelidermokozmetik.com',
+    displayUrl: 'gamzelidermokozmetik.com',
     category: 'E-Ticaret + SEO',
     industry: 'Sağlık & Güzellik',
     desc: 'Eczacı güvencesiyle makyaj, yüz, cilt ve saç bakım ürünleri sunan e-ticaret platformu. Cilt analizi aracı ve kişiselleştirilmiş ürün öneri sistemi ile dönüşüm odaklı tasarım.',
@@ -51,8 +51,8 @@ const liveProjects = [
   {
     name: 'TerapistBul',
     title: 'Yapay Zeka Eşleştirmeli Terapist Platformu',
-    url: 'https://www.terapistbul.com',
-    displayUrl: 'terapistbul.com',
+    url: 'https://terapistibul.com',
+    displayUrl: 'terapistibul.com',
     category: 'Platform + Yapay Zeka',
     industry: 'Psikoloji & Sağlık',
     desc: 'Yapay zeka ile 81 ilden seçilmiş uzman psikolog ve terapistler arasından kişiye özel eşleştirme yapan platform. KVKK uyumlu, güvenli terapi altyapısı ve psikoloji blog sistemi.',
