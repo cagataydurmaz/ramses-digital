@@ -113,8 +113,38 @@ export default function BlogPage() {
   const filtered =
     activeCategory === 'Tümü' ? posts : posts.filter((p) => p.category === activeCategory)
 
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'Blog',
+        '@id': 'https://ramsesdigital.com/blog#page',
+        name: 'Ramses Dijital Blog',
+        url: 'https://ramsesdigital.com/blog',
+        description: 'SEO, Google Ads, GEO, AEO, e-posta pazarlama ve dijital strateji üzerine içerikler.',
+        publisher: { '@id': 'https://ramsesdigital.com/#organization' },
+        inLanguage: 'tr-TR',
+        blogPost: posts.map((p) => ({
+          '@type': 'BlogPosting',
+          headline: p.title,
+          url: `https://ramsesdigital.com/blog/${p.slug}`,
+          datePublished: p.date,
+          author: { '@id': 'https://ramsesdigital.com/#organization' },
+        })),
+      },
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Ana Sayfa', item: 'https://ramsesdigital.com' },
+          { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://ramsesdigital.com/blog' },
+        ],
+      },
+    ],
+  }
+
   return (
     <div className="min-h-screen bg-[#0A0F1E]">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       {/* Hero */}
       <section className="pt-28 sm:pt-36 pb-12 sm:pb-16 px-4 sm:px-6 text-center">
         <div className="max-w-3xl mx-auto">

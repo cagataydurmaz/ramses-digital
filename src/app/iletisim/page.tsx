@@ -82,8 +82,30 @@ export default function ContactPage() {
     }
   }
 
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'ContactPage',
+        '@id': 'https://ramsesdigital.com/iletisim#page',
+        name: 'Ramses Dijital İletişim',
+        url: 'https://ramsesdigital.com/iletisim',
+        description: 'Ramses Dijital Reklam Ajansı ile iletişime geçin. İzmit / Kocaeli\'de dijital pazarlama danışmanlığı için ücretsiz görüşme ayarlayın.',
+        publisher: { '@id': 'https://ramsesdigital.com/#organization' },
+      },
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Ana Sayfa', item: 'https://ramsesdigital.com' },
+          { '@type': 'ListItem', position: 2, name: 'İletişim', item: 'https://ramsesdigital.com/iletisim' },
+        ],
+      },
+    ],
+  }
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       {/* Hero */}
       <section className="relative pt-32 pb-16 px-6 overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-blue-500/8 rounded-full blur-[120px] pointer-events-none" />

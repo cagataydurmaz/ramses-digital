@@ -1,7 +1,20 @@
+import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import CalendlyButton from '@/components/CalendlyButton'
 import { ExternalLink, Globe } from 'lucide-react'
+
+export const metadata: Metadata = {
+  title: 'Portföy | Gerçek Projeler, Gerçek Sonuçlar — Ramses Dijital',
+  description: 'Ramses Dijital\'in gerçek müşteri projeleri. Kocaeli psikolog, İstanbul avukat, e-ticaret ve platform projelerimizi inceleyin. Canlı siteler, doğrulanabilir sonuçlar.',
+  alternates: { canonical: 'https://ramsesdigital.com/portfolyo' },
+  openGraph: {
+    title: 'Portföy — Ramses Dijital',
+    description: 'Tasarladığımız ve büyüttüğümüz gerçek projeler. Ziyaret edebilirsiniz.',
+    url: 'https://ramsesdigital.com/portfolyo',
+    images: ['https://ramsesdigital.com/og-image.png'],
+  },
+}
 
 const liveProjects = [
   {
@@ -61,9 +74,41 @@ const liveProjects = [
   },
 ]
 
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'CollectionPage',
+      '@id': 'https://ramsesdigital.com/portfolyo#page',
+      name: 'Ramses Dijital Portföy',
+      description: 'Ramses Dijital tarafından tasarlanan ve büyütülen gerçek müşteri projeleri.',
+      url: 'https://ramsesdigital.com/portfolyo',
+      publisher: { '@id': 'https://ramsesdigital.com/#organization' },
+      mainEntity: {
+        '@type': 'ItemList',
+        itemListElement: liveProjects.map((p, i) => ({
+          '@type': 'ListItem',
+          position: i + 1,
+          name: p.name,
+          description: p.desc,
+          url: p.url,
+        })),
+      },
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Ana Sayfa', item: 'https://ramsesdigital.com' },
+        { '@type': 'ListItem', position: 2, name: 'Portföy', item: 'https://ramsesdigital.com/portfolyo' },
+      ],
+    },
+  ],
+}
+
 export default function PortfolioPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       {/* Hero */}
       <section className="relative pt-32 pb-20 px-6 overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-blue-500/8 rounded-full blur-[120px] pointer-events-none" />
