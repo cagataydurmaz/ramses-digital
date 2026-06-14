@@ -13,6 +13,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/hizmetler/web-tasarim-kocaeli', priority: 0.9,  freq: 'monthly' },
     { path: '/hizmetler/eposta-otomasyon',    priority: 0.9,  freq: 'monthly' },
     { path: '/hizmetler/veri-analizi',        priority: 0.9,  freq: 'monthly' },
+    { path: '/izmit-reklam-ajansi',        priority: 0.95, freq: 'monthly' },
+    { path: '/kocaeli-dijital-pazarlama',  priority: 0.95, freq: 'monthly' },
     { path: '/hakkimizda', priority: 0.8, freq: 'monthly' },
     { path: '/portfolyo',  priority: 0.8, freq: 'monthly' },
     { path: '/blog',       priority: 0.9, freq: 'weekly'  },
