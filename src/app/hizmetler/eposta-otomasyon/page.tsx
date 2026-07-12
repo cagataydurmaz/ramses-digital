@@ -287,9 +287,9 @@ export default function EpostaOtomasyonPage() {
               <p className="text-orange-400 text-xs font-medium uppercase tracking-wider mb-2">Hizmet</p>
               <h3 className="text-white font-medium leading-snug group-hover:text-orange-300 transition-colors">Google Ads Yönetimi <ArrowRight size={14} className="inline ml-1" /></h3>
             </Link>
-            <Link href="/blog/n8n-otomasyon-rehberi" className="group bg-[#0D1225] border border-white/[0.06] hover:border-orange-500/30 rounded-xl p-5 transition-all">
+            <Link href="/blog/n8n-vs-zapier-vs-make-karsilastirmasi" className="group bg-[#0D1225] border border-white/[0.06] hover:border-orange-500/30 rounded-xl p-5 transition-all">
               <p className="text-orange-400 text-xs font-medium uppercase tracking-wider mb-2">Blog</p>
-              <h3 className="text-white font-medium leading-snug group-hover:text-orange-300 transition-colors">n8n Otomasyon Rehberi <ArrowRight size={14} className="inline ml-1" /></h3>
+              <h3 className="text-white font-medium leading-snug group-hover:text-orange-300 transition-colors">n8n vs Zapier vs Make Karşılaştırması <ArrowRight size={14} className="inline ml-1" /></h3>
             </Link>
           </div>
         </div>
