@@ -72,6 +72,17 @@ const liveProjects = [
     tags: ['Platform', 'YZ Eşleştirme', 'Online Terapi'],
     thumb: '/portfolio/terapistbul.png',
   },
+  {
+    name: 'Av. Furkan Arıkan',
+    title: 'İstanbul Avukat — Hukuk Bürosu',
+    url: 'https://furkanarikan.av.tr',
+    displayUrl: 'furkanarikan.av.tr',
+    category: 'Web Tasarımı + SEO',
+    industry: 'Hukuk',
+    desc: 'İstanbul Barosu avukatı için ceza, iş ve gayrimenkul hukuku alanlarında dava takibi ve danışmanlık odaklı kurumsal web sitesi. WhatsApp ve telefon entegrasyonuyla hızlı iletişim.',
+    tags: ['Web Tasarım', 'Kurumsal SEO', 'WhatsApp Entegrasyonu'],
+    thumb: '/portfolio/furkanarikan.png',
+  },
 ]
 
 const jsonLd = {
