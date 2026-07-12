@@ -22,6 +22,10 @@ const quickLinks = [
 ]
 
 const localPages = [
+  { href: '/seo-ajansi', label: 'SEO Ajansı (Türkiye Geneli)' },
+  { href: '/google-ads-ajansi', label: 'Google Ads Ajansı (Türkiye Geneli)' },
+  { href: '/web-tasarim-ajansi', label: 'Web Tasarım Ajansı (Türkiye Geneli)' },
+  { href: '/yazilim-ajansi', label: 'Yazılım Ajansı (Türkiye Geneli)' },
   { href: '/izmit-reklam-ajansi', label: 'İzmit Reklam Ajansı' },
   { href: '/izmit-seo', label: 'İzmit SEO' },
   { href: '/izmit-web-tasarim', label: 'İzmit Web Tasarım' },
@@ -153,7 +157,7 @@ export default function Footer() {
 
         {/* Local SEO — İzmit/Kocaeli sayfalarına sitewide iç link */}
         <div className="mt-12 pt-8 border-t border-white/[0.05]">
-          <h3 className="text-white font-semibold text-sm mb-4">İzmit & Kocaeli&apos;de Hizmetlerimiz</h3>
+          <h3 className="text-white font-semibold text-sm mb-4">Türkiye Geneli & İzmit/Kocaeli&apos;de Hizmetlerimiz</h3>
           <div className="flex flex-wrap gap-x-5 gap-y-2">
             {localPages.map((page) => (
               <Link

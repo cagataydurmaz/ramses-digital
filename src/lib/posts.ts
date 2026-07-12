@@ -1232,4 +1232,139 @@ export const posts: Post[] = [
       <p>Instagram (görsel + Reels) ve Google Business Profile (yorum + foto) ilk önceliklerdir. TikTok genç hedef kitle için iyi. Facebook 35 yaş üstü için hâlâ değerli. Twitter ve LinkedIn restoran için düşük öncelikli.</p>
     `,
   },
+  {
+    slug: 'uzaktan-calisan-dijital-pazarlama-ajansi-rehberi',
+    coverImage: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80&fit=crop',
+    title: 'Uzaktan Çalışan Dijital Pazarlama Ajansı: Avantajları ve Dikkat Edilmesi Gerekenler',
+    excerpt:
+      'Şehrinizde ofisi olmayan bir ajansla çalışmak riskli mi? Uzaktan çalışan dijital pazarlama ajanslarının avantajlarını, dezavantajlarını ve doğru seçim yapmanın yollarını inceliyoruz.',
+    category: 'Strateji',
+    categoryColor: 'blue',
+    emoji: '🌍',
+    coverGradient: 'from-blue-500/10 to-blue-900/5',
+    readTime: 7,
+    date: '2026-07-01',
+    author: 'Ramses Digital Ekibi',
+    authorRole: 'Ajans Danışmanları',
+    tags: ['Dijital Pazarlama', 'Uzaktan Çalışma', 'Ajans Seçimi', 'Türkiye'],
+    content: `
+      <h2>Neden Artık Şehrinizdeki Ajansla Sınırlı Değilsiniz?</h2>
+      <p>Birkaç yıl öncesine kadar bir dijital pazarlama ajansıyla çalışmak, genellikle aynı şehirde olmayı gerektiriyordu — toplantılar yüz yüze yapılır, raporlar basılı sunulurdu. Bugün durum tamamen farklı. Google Meet, Zoom, Slack ve canlı dashboard'lar sayesinde İstanbul'daki bir işletme Kocaeli'deki, Ankara'daki bir işletme İzmir'deki bir ajansla sorunsuzca çalışabiliyor.</p>
+      <p>Bu değişim, işletmeler için seçenek havuzunu ciddi şekilde genişletiyor: artık "şehrimde hangi ajanslar var" sorusu yerine "hangi ajans benim sektörümde en iyi sonucu üretiyor" sorusunu sorabiliyorsunuz.</p>
+
+      <h2>Uzaktan Çalışan Ajansların Avantajları</h2>
+      <p><strong>1. Daha geniş uzmanlık havuzu:</strong> Şehir sınırı olmadığında, sektörünüzde gerçekten deneyimli bir ajans bulma şansınız artar. Yerel bir ajans genel geçer hizmet sunarken, uzaktan çalışan bir ajans belirli bir nişte (örneğin sağlık sektörü SEO'su veya B2B Google Ads) uzmanlaşmış olabilir.</p>
+      <p><strong>2. Şeffaf ve ölçülebilir süreç:</strong> Uzaktan çalışan ajanslar iletişimi dijital kanallar üzerinden yürüttüğü için her şey kayıt altındadır — toplantı notları, raporlar, dashboard erişimi. Bu, hesap verebilirliği artırır.</p>
+      <p><strong>3. Genellikle daha rekabetçi fiyatlandırma:</strong> Fiziksel ofis, showroom gibi maliyetleri olmayan ajanslar, bu tasarrufu genellikle müşteriye yansıtabilir.</p>
+
+      <h2>Dikkat Edilmesi Gereken Noktalar</h2>
+      <p><strong>1. İletişim ritmi net olmalı:</strong> Yüz yüze görüşme olmadığı için haftalık/aylık düzenli check-in toplantılarının takvime bağlı olduğundan emin olun. Belirsiz iletişim ritmi, uzaktan çalışan ilişkilerde en sık yaşanan sorundur.</p>
+      <p><strong>2. Raporlama şeffaf olmalı:</strong> Canlı dashboard erişimi (Google Analytics, Search Console, Ads hesabı) talep edin. Sadece PDF rapor gönderen değil, verinin kendisine erişim sağlayan bir ajans tercih edin.</p>
+      <p><strong>3. Referansları doğrulayın:</strong> Uzaktan çalışan bir ajansın gösterdiği "başarı hikayeleri"nin gerçek ve doğrulanabilir olduğundan emin olun. Canlı site linkleri isteyin, mümkünse o müşterilerle iletişime geçin.</p>
+      <p><strong>4. Zaman dilimi ve dil uyumu:</strong> Türkiye içi çalışıyorsanız bu genellikle sorun değildir, ancak yanıt sürelerini netleştirin.</p>
+
+      <h2>Hangi Hizmetler Uzaktan En İyi Şekilde Yürütülür?</h2>
+      <p>SEO, Google Ads yönetimi, web tasarım/geliştirme, e-posta pazarlama, veri analizi ve iş süreçleri otomasyonu (n8n gibi) — bunların hepsi doğası gereği dijital hizmetlerdir ve fiziksel konum hiçbir zaman gerektirmez. Yerel SEO çalışması bile (Google Business Profile yönetimi gibi) tamamen uzaktan yürütülebilir; ajansın sizin şehrinizde ofis açmasına gerek yoktur.</p>
+
+      <h3>Sonuç</h3>
+      <p>Doğru ajans, en yakın ofis değil, en doğru uzmanlıktır. Şeffaf raporlama, düzenli iletişim ve doğrulanabilir referanslar sağlayan bir ajans, şehir sınırı olmadan işletmenizi büyütebilir. Ramses Digital olarak Türkiye'nin her yerinden müşterilerimize aynı titizlikle hizmet veriyoruz.</p>
+    `,
+  },
+  {
+    slug: 'seo-ajansi-mi-freelancer-mi',
+    coverImage: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80&fit=crop',
+    title: 'SEO Ajansı mı Freelancer mı? İşletmeniz İçin Doğru Seçim',
+    excerpt:
+      'SEO çalışmasına başlarken ajans mı yoksa freelancer mı tercih etmelisiniz? Maliyet, kapsam, risk ve sürdürülebilirlik açısından karşılaştırmalı bir rehber.',
+    category: 'SEO',
+    categoryColor: 'cyan',
+    emoji: '⚖️',
+    coverGradient: 'from-cyan-500/10 to-cyan-900/5',
+    readTime: 6,
+    date: '2026-07-05',
+    author: 'Ramses Digital Ekibi',
+    authorRole: 'SEO Uzmanları',
+    tags: ['SEO', 'Ajans Seçimi', 'Freelancer', 'Bütçe'],
+    content: `
+      <h2>İki Farklı Model, İki Farklı Risk Profili</h2>
+      <p>SEO çalışmasına başlamaya karar verdiğinizde karşınıza iki temel seçenek çıkar: bireysel bir freelancer ile mi çalışmalısınız, yoksa bir ajansla mı? Her ikisinin de doğru olduğu senaryolar var — ama yanlış seçim, aylarca süren bir çalışmanın boşa gitmesine neden olabilir.</p>
+
+      <h2>Freelancer ile Çalışmanın Avantajları</h2>
+      <p><strong>Düşük maliyet:</strong> Freelancer'lar genellikle ajanslardan daha düşük ücretle çalışır çünkü ofis, ekip ve operasyonel giderleri yoktur.</p>
+      <p><strong>Doğrudan iletişim:</strong> Aracı olmadan doğrudan işi yapan kişiyle konuşursunuz.</p>
+      <p><strong>Esneklik:</strong> Küçük, spesifik görevler için (örneğin tek seferlik bir teknik audit) idealdir.</p>
+
+      <h2>Freelancer ile Çalışmanın Riskleri</h2>
+      <p><strong>Tek nokta arızası:</strong> Freelancer hastalanır, tatile çıkar veya işi bırakırsa çalışmanız durur. Yedek plan genellikle yoktur.</p>
+      <p><strong>Sınırlı uzmanlık kapsamı:</strong> SEO; teknik optimizasyon, içerik stratejisi, backlink inşası ve veri analizi gibi çok farklı beceri setleri gerektirir. Tek bir kişinin hepsinde uzman olması nadirdir.</p>
+      <p><strong>Ölçeklenebilirlik sorunu:</strong> İşletmeniz büyüdükçe içerik üretimi, teknik iş yükü de artar. Bir freelancer'ın kapasitesi sınırlıdır.</p>
+
+      <h2>Ajans ile Çalışmanın Avantajları</h2>
+      <p><strong>Çok disiplinli ekip:</strong> Teknik SEO uzmanı, içerik yazarı, backlink stratejisti ve veri analisti bir arada çalışır — her biri kendi alanında derinlemesine uzmandır.</p>
+      <p><strong>Süreklilik garantisi:</strong> Bir ekip üyesi izne çıksa bile çalışma durmaz.</p>
+      <p><strong>Kurumsal süreç ve raporlama:</strong> Ajanslar genellikle standartlaştırılmış raporlama, proje yönetimi ve kalite kontrol süreçlerine sahiptir.</p>
+      <p><strong>Daha geniş kaynak erişimi:</strong> Profesyonel SEO araçları (Ahrefs, SEMrush, Screaming Frog gibi) genellikle ajans bünyesinde zaten mevcuttur.</p>
+
+      <h2>Ajans ile Çalışmanın Dezavantajları</h2>
+      <p>Genellikle freelancer'a göre daha yüksek maliyetlidir ve bazı ajanslarda müşteri, işi fiilen yapan kişiyle değil bir hesap yöneticisiyle iletişim kurar — bu da bilgi kaybına yol açabilir. Doğru ajans, bu iletişim mesafesini şeffaflıkla kapatır.</p>
+
+      <h2>Karar Verirken Sorulması Gereken Sorular</h2>
+      <ul>
+        <li>SEO ihtiyacım tek seferlik mi, yoksa sürekli mi?</li>
+        <li>Aylık içerik üretim hacmim ne kadar? (Yüksek hacimde ajans daha sürdürülebilir)</li>
+        <li>Bütçem ne kadar esnek?</li>
+        <li>Teknik SEO, içerik ve backlink çalışmasının hepsine mi ihtiyacım var, yoksa tek bir alana mı?</li>
+      </ul>
+
+      <h3>Sonuç</h3>
+      <p>Küçük, tek seferlik işler için freelancer mantıklı olabilir. Ancak sürekli, çok yönlü ve ölçeklenebilir bir SEO stratejisi için ajans modeli genellikle daha güvenilir ve sürdürülebilirdir. Ramses Digital olarak Türkiye genelindeki işletmelere teknik SEO'dan içerik stratejisine kadar uçtan uca hizmet sunuyoruz.</p>
+    `,
+  },
+  {
+    slug: 'google-ads-ajansi-secerken-sorulacak-sorular',
+    coverImage: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80&fit=crop',
+    title: 'Google Ads Ajansı Seçerken Sormanız Gereken 8 Soru',
+    excerpt:
+      'Google Ads bütçenizi doğru ellere teslim ettiğinizden emin olun. Ajans görüşmesinde sormanız gereken 8 kritik soru ve doğru cevapların neye benzemesi gerektiği.',
+    category: 'Google Ads',
+    categoryColor: 'orange',
+    emoji: '🎯',
+    coverGradient: 'from-orange-500/10 to-orange-900/5',
+    readTime: 7,
+    date: '2026-07-09',
+    author: 'Ramses Digital Ekibi',
+    authorRole: 'Google Ads Uzmanları',
+    tags: ['Google Ads', 'Ajans Seçimi', 'PPC', 'Bütçe Yönetimi'],
+    content: `
+      <h2>Google Ads Bütçeniz, Doğrudan Kâr veya Zarar Demek</h2>
+      <p>SEO'nun aksine, Google Ads'te sonuçlar anında görülür — ama aynı şekilde bütçe de anında harcanır. Yanlış kurgulanmış bir kampanya, haftalar içinde binlerce liranın boşa gitmesine neden olabilir. Bu yüzden ajans seçimi, SEO'ya göre çok daha "acil" bir karardır. İşte görüşme sırasında sormanız gereken 8 soru.</p>
+
+      <h2>1. "Quality Score'u nasıl yönetiyorsunuz?"</h2>
+      <p>Doğru cevap, reklam metni-açılış sayfası uyumundan, beklenen tıklama oranından ve alaka düzeyinden bahsetmelidir. "Sadece teklifi artırırız" gibi bir cevap kırmızı bayraktır — bu, bütçeyi yakan bir yaklaşımdır.</p>
+
+      <h2>2. "Negatif anahtar kelime listesini ne sıklıkla güncelliyorsunuz?"</h2>
+      <p>Negatif anahtar kelimeler, alakasız aramalarda bütçenizin harcanmasını engeller. Düzenli (haftalık/iki haftalık) güncelleme yapmayan bir ajans, para kaybına göz yumuyor demektir.</p>
+
+      <h2>3. "Dönüşüm izleme nasıl kuruluyor?"</h2>
+      <p>Telefon araması, form gönderimi, WhatsApp tıklaması gibi tüm önemli aksiyonların izlendiğinden emin olun. "Sadece tıklama sayısına bakıyoruz" diyen bir ajans, gerçek ROI'yi ölçemiyor demektir.</p>
+
+      <h2>4. "Raporlamaya nasıl erişim sağlıyorsunuz?"</h2>
+      <p>Canlı Google Ads hesap erişimi veya paylaşımlı dashboard talep edin. Sadece aylık PDF gönderen ajanslarda şeffaflık sınırlıdır.</p>
+
+      <h2>5. "İlk 30 günde ne bekleyebilirim?"</h2>
+      <p>Dürüst bir ajans, ilk ayın "öğrenme dönemi" olduğunu ve CPA'nın (dönüşüm başı maliyet) başlangıçta yüksek olabileceğini açıkça söyler. "İlk haftadan itibaren mükemmel sonuç" vaadi gerçekçi değildir.</p>
+
+      <h2>6. "Hangi sektörlerde deneyiminiz var?"</h2>
+      <p>Her sektörün kendine özgü teklif stratejisi ve kullanıcı davranışı vardır. Sizin sektörünüzde (veya benzer bir B2B/B2C dinamiğinde) deneyimi olan bir ajans, öğrenme eğrisini kısaltır.</p>
+
+      <h2>7. "Yönetim ücretiniz nasıl hesaplanıyor?"</h2>
+      <p>Sabit ücret mi, reklam harcamasının yüzdesi mi? Yüzde bazlı modellerde, bütçe arttıkça ücretin de orantısız artmadığından emin olun.</p>
+
+      <h2>8. "Sözleşme minimum süresi ve iptal koşulları nedir?"</h2>
+      <p>Google Ads optimizasyonu zaman alır (genellikle 2-3 ay). Çok kısa süreli taahhütlerde ajans anlamlı optimizasyon yapamadan sözleşme biter. Ama aşırı uzun ve esnek olmayan sözleşmelerden de kaçının.</p>
+
+      <h3>Sonuç</h3>
+      <p>Doğru sorular sormak, yanlış ajans seçiminin maliyetli sonuçlarından sizi korur. Ramses Digital olarak Türkiye genelindeki müşterilerimize şeffaf raporlama, net Quality Score stratejisi ve dürüst zaman beklentileriyle Google Ads yönetimi sunuyoruz.</p>
+    `,
+  },
 ]
