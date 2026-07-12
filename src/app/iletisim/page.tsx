@@ -114,7 +114,7 @@ export default function ContactPage() {
             İletişim
           </p>
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-            Hadi Konuşalım
+            Sizinle Tanışmak İsteriz
           </h1>
           <p className="text-zinc-400 text-lg max-w-2xl mx-auto">
             Projenizi anlatın, size özel bir strateji geliştirelim. İlk görüşme tamamen ücretsiz.
