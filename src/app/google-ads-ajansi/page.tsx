@@ -7,7 +7,7 @@ import { Globe2, Megaphone, ArrowRight, CheckCircle2, Target, BarChart3, Trendin
 export const metadata: Metadata = {
   title: 'Google Ads Ajansı — Ramses Dijital',
   description:
-    'Türkiye genelinde Google Ads yönetimi. Hangi şehirde olursanız olun, doğru kitleye ulaşan arama, display ve remarketing kampanyaları. Tamamen online çalışıyoruz. Ücretsiz kampanya analizi.',
+    'Türkiye genelinde Google Ads yönetimi. Türkiye\'nin her şehrindeki işletmeler için doğru kitleye ulaşan arama, display ve remarketing kampanyaları. Tamamen online çalışıyoruz. Ücretsiz kampanya analizi.',
   alternates: { canonical: 'https://ramsesdigital.com/google-ads-ajansi' },
   openGraph: {
     title: 'Google Ads Ajansı | Ramses Dijital',
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 }
 
 const services = [
-  { icon: Target, title: 'Arama Reklamları', desc: 'Hedef kitlenizin aktif olarak aradığı anahtar kelimelerde, hangi şehirde olursanız olun görünür olun.' },
+  { icon: Target, title: 'Arama Reklamları', desc: 'Hedef kitlenizin aktif olarak aradığı anahtar kelimelerde, bulunduğunuz şehirden bağımsız olarak görünür olun.' },
   { icon: Megaphone, title: 'Display & YouTube', desc: 'Görsel ve video reklamlarla marka bilinirliğinizi Türkiye genelinde artırın.' },
   { icon: TrendingUp, title: 'Remarketing', desc: 'Sitenizi ziyaret edip ayrılan kullanıcıları geri getirin. En yüksek dönüşüm oranına sahip segment.' },
   { icon: BarChart3, title: 'Dönüşüm Takibi', desc: 'Telefon araması, form gönderimi, satın alma — her aksiyon izlenir, hiçbir şey tahmine bırakılmaz.' },
@@ -79,7 +79,7 @@ export default function GoogleAdsAjansiPage() {
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
             Google Ads Ajansı
             <br />
-            <span className="gradient-text">Nerede Olursanız Olun</span>
+            <span className="gradient-text">Türkiye Genelinde Kampanya Yönetimi</span>
           </h1>
           <p className="text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
             Kampanya kurulumu, optimizasyon ve raporlama tamamen uzaktan yürütülür. Türkiye&apos;nin her şehrinden işletmelere ROI odaklı Google Ads yönetimi sunuyoruz.

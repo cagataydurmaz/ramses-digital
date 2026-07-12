@@ -7,7 +7,7 @@ import { Globe2, Search, ArrowRight, CheckCircle2, FileText, Link2, BarChart3, Z
 export const metadata: Metadata = {
   title: 'SEO Ajansı — Ramses Dijital',
   description:
-    'Türkiye genelinde SEO ajansı. Teknik SEO, içerik stratejisi, GEO ve AEO ile hangi şehirde olursanız olun Google\'da üst sıraya çıkın. Tamamen online çalışıyoruz. Ücretsiz SEO analizi.',
+    'Türkiye genelinde hizmet veren SEO ajansı. Teknik SEO, içerik stratejisi, GEO ve AEO ile Türkiye\'nin her şehrindeki işletmeler için Google\'da üst sıraya çıkın. Tamamen online çalışıyoruz. Ücretsiz SEO analizi.',
   alternates: { canonical: 'https://ramsesdigital.com/seo-ajansi' },
   openGraph: {
     title: 'SEO Ajansı | Ramses Dijital',
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 }
 
 const features = [
-  { icon: Search, title: 'Anahtar Kelime Stratejisi', desc: 'Sektörünüze ve hedef kitlenize özel, dönüşüm odaklı anahtar kelime araştırması — hangi şehirde olursanız olun.' },
+  { icon: Search, title: 'Anahtar Kelime Stratejisi', desc: 'Sektörünüze ve hedef kitlenize özel, dönüşüm odaklı anahtar kelime araştırması — bulunduğunuz şehirden bağımsız olarak.' },
   { icon: FileText, title: 'Teknik SEO Audit', desc: 'Site hızı, Core Web Vitals, mobil uyum ve indexlenebilirlik. Teknik engeller Google\'ın önündeki en büyük bariyerdir.' },
   { icon: Zap, title: 'GEO & AEO Optimizasyonu', desc: 'ChatGPT, Gemini ve Perplexity\'de markanızın referans kaynağı olmasını sağlıyoruz — coğrafi sınır tanımayan bir görünürlük.' },
   { icon: Link2, title: 'Backlink İnşası', desc: 'Sektörel otorite sitelerden, dijital PR ve misafir yazılarla kaliteli backlink profili.' },
@@ -80,10 +80,10 @@ export default function SeoAjansiPage() {
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
             SEO Ajansı
             <br />
-            <span className="gradient-text">Hangi Şehirde Olursanız Olun</span>
+            <span className="gradient-text">Türkiye&apos;nin Her Şehrinden Erişilebilir</span>
           </h1>
           <p className="text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
-            İstanbul, Ankara, İzmir, Antalya, Bursa fark etmez — tüm çalışmalarımız uzaktan yürütülüyor. Teknik SEO, GEO ve AEO ile Google&apos;da ve yapay zeka motorlarında görünür olun.
+            İstanbul, Ankara, İzmir, Antalya, Bursa dahil Türkiye&apos;nin her şehrindeki işletmelere hizmet veriyoruz; tüm çalışmalarımız uzaktan yürütülmektedir. Teknik SEO, GEO ve AEO ile Google&apos;da ve yapay zeka motorlarında görünür olun.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <CalendlyButton label="Ücretsiz SEO Analizi" variant="primary" />
@@ -157,7 +157,7 @@ export default function SeoAjansiPage() {
       <section className="py-20 px-6 bg-[#080D18]">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-white mb-4">
-            Nerede Olursanız Olun, Google&apos;da Zirveye Çıkalım
+            Türkiye&apos;nin Her Yerinden Google&apos;da Zirveye Çıkın
           </h2>
           <p className="text-zinc-400 text-lg mb-8">Ücretsiz SEO analiziyle başlayalım.</p>
           <CalendlyButton label="Ücretsiz SEO Analizi Al" variant="primary" />

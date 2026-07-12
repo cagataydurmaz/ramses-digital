@@ -7,7 +7,7 @@ import { Globe2, Globe, ArrowRight, CheckCircle2, Zap, Smartphone, Search, Shiel
 export const metadata: Metadata = {
   title: 'Web Tasarım Ajansı — Ramses Dijital',
   description:
-    'Türkiye genelinde web tasarım ajansı. SEO uyumlu, mobil öncelikli, hızlı yüklenen kurumsal web siteleri. Nerede olursanız olun, tamamen online süreç. Ücretsiz teklif alın.',
+    'Türkiye genelinde web tasarım ajansı. SEO uyumlu, mobil öncelikli, hızlı yüklenen kurumsal web siteleri. Türkiye\'nin her şehrindeki işletmeler için tamamen online süreç. Ücretsiz teklif alın.',
   alternates: { canonical: 'https://ramsesdigital.com/web-tasarim-ajansi' },
   openGraph: {
     title: 'Web Tasarım Ajansı | Ramses Dijital',
@@ -82,7 +82,7 @@ export default function WebTasarimAjansiPage() {
             <span className="gradient-text">Dönüşüm Odaklı Siteler</span>
           </h1>
           <p className="text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
-            Hangi şehirde olursanız olun, hızlı, mobil uyumlu ve SEO hazır web siteleri tasarlıyoruz. Tüm süreç dijital, fiziksel görüşme gerekmez.
+            Türkiye&apos;nin her şehrindeki işletmeler için hızlı, mobil uyumlu ve SEO hazır web siteleri tasarlıyoruz. Tüm süreç dijital yürütülmektedir, fiziksel görüşme gerekmemektedir.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <CalendlyButton label="Ücretsiz Teklif Al" variant="primary" />

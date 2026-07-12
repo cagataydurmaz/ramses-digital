@@ -7,7 +7,7 @@ import { Globe2, Code2, ArrowRight, CheckCircle2, Zap, Globe, BarChart3, Shield,
 export const metadata: Metadata = {
   title: 'Yazılım Ajansı — Ramses Dijital',
   description:
-    'Türkiye genelinde yazılım ajansı. Web uygulaması, otomasyon, API entegrasyonu ve yapay zeka çözümleri. Nerede olursanız olun, tamamen online süreç.',
+    'Türkiye genelinde yazılım ajansı. Web uygulaması, otomasyon, API entegrasyonu ve yapay zeka çözümleri. Türkiye\'nin her şehrindeki işletmeler için tamamen online süreç.',
   alternates: { canonical: 'https://ramsesdigital.com/yazilim-ajansi' },
   openGraph: {
     title: 'Yazılım Ajansı | Ramses Dijital',
@@ -84,7 +84,7 @@ export default function YazilimAjansiPage() {
             <span className="gradient-text">Web, Otomasyon & AI</span>
           </h1>
           <p className="text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
-            Hangi şehirde olursanız olun, web uygulaması, iş süreçleri otomasyonu ve yapay zeka çözümleri için tamamen uzaktan çalışıyoruz.
+            Türkiye&apos;nin her şehrindeki işletmelere web uygulaması, iş süreçleri otomasyonu ve yapay zeka çözümleri için tamamen uzaktan hizmet veriyoruz.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <CalendlyButton label="Ücretsiz Keşif Görüşmesi" variant="primary" />
