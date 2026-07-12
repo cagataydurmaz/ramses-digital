@@ -1,10 +1,11 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import CalendlyButton from '@/components/CalendlyButton'
+import RelatedPages from '@/components/RelatedPages'
 import { MapPin, Megaphone, ArrowRight, Target, BarChart3, Zap, TrendingUp, DollarSign, Clock, CheckCircle2 } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Kocaeli Google Ads | Tıklama Başına Reklam Yönetimi — Ramses Dijital',
+  title: 'Kocaeli Google Ads Yönetimi — Ramses Dijital',
   description:
     'Kocaeli\'de Google Ads yönetimi. İzmit, Gebze, Darıca ve tüm Kocaeli ilçelerinde hedefli arama reklamları. Bütçe israfı yok, ölçülebilir dönüşüm. Ücretsiz kampanya analizi.',
   alternates: { canonical: 'https://ramsesdigital.com/kocaeli-google-ads' },
@@ -159,6 +160,16 @@ export default function KocaeliGoogleAdsPage() {
           </div>
         </div>
       </section>
+
+      <RelatedPages
+        pages={[
+          { label: 'Kocaeli Dijital Pazarlama', href: '/kocaeli-dijital-pazarlama' },
+          { label: 'Kocaeli SEO', href: '/kocaeli-seo' },
+          { label: 'Kocaeli Web Tasarım', href: '/kocaeli-web-tasarim' },
+          { label: 'Kocaeli Yazılım Ajansı', href: '/kocaeli-yazilim-ajansi' },
+          { label: 'İzmit Google Ads', href: '/izmit-google-ads' },
+        ]}
+      />
 
       <section className="py-20 px-6 bg-[#080D18]">
         <div className="max-w-3xl mx-auto text-center">

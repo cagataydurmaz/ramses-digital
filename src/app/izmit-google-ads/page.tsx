@@ -1,10 +1,11 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import CalendlyButton from '@/components/CalendlyButton'
+import RelatedPages from '@/components/RelatedPages'
 import { MapPin, Megaphone, ArrowRight, CheckCircle2, Target, BarChart3, Zap, TrendingUp, DollarSign, Clock } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'İzmit Google Ads | Tıklama Başına Reklam Yönetimi — Ramses Dijital',
+  title: 'İzmit Google Ads Yönetimi — Ramses Dijital',
   description:
     'İzmit\'te Google Ads yönetimi. Arama, display ve yerel reklam kampanyalarıyla doğru müşteriye ulaşın. Bütçe israfı yok, ölçülebilir dönüşüm. Ücretsiz kampanya analizi.',
   alternates: { canonical: 'https://ramsesdigital.com/izmit-google-ads' },
@@ -172,6 +173,16 @@ export default function IzmitGoogleAdsPage() {
           </div>
         </div>
       </section>
+
+      <RelatedPages
+        pages={[
+          { label: 'İzmit Reklam Ajansı', href: '/izmit-reklam-ajansi' },
+          { label: 'İzmit SEO', href: '/izmit-seo' },
+          { label: 'İzmit Web Tasarım', href: '/izmit-web-tasarim' },
+          { label: 'İzmit Yazılım Ajansı', href: '/izmit-yazilim-ajansi' },
+          { label: 'Kocaeli Google Ads', href: '/kocaeli-google-ads' },
+        ]}
+      />
 
       {/* CTA */}
       <section className="py-20 px-6 bg-[#080D18]">

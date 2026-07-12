@@ -6,9 +6,9 @@ import { MapPin, Phone, Mail, Clock, Send, CheckCircle2, Loader2 } from 'lucide-
 const services = [
   'SEO & İçerik Optimizasyonu',
   'Google Ads & Performans Reklamları',
-  'Sosyal Medya Yönetimi',
   'Web Tasarımı & Geliştirme',
   'E-Posta & Otomasyon Pazarlama',
+  'n8n İş Akışı Otomasyonu',
   'Veri Analizi & Stratejik Danışmanlık',
   'Tüm Hizmetler',
   'Diğer',

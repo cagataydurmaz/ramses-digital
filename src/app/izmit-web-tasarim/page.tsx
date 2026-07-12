@@ -1,10 +1,11 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import CalendlyButton from '@/components/CalendlyButton'
+import RelatedPages from '@/components/RelatedPages'
 import { MapPin, Globe, ArrowRight, CheckCircle2, Zap, Smartphone, Search, ShieldCheck, BarChart3, Palette } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'İzmit Web Tasarım | Kurumsal & KOBİ Web Sitesi — Ramses Dijital',
+  title: 'İzmit Web Tasarım Hizmeti — Ramses Dijital',
   description:
     'İzmit\'te profesyonel web tasarım hizmeti. SEO uyumlu, mobil öncelikli, hızlı yüklenen kurumsal web siteleri. Next.js ile modern altyapı. Ücretsiz teklif alın.',
   alternates: { canonical: 'https://ramsesdigital.com/izmit-web-tasarim' },
@@ -209,6 +210,16 @@ export default function IzmitWebTasarimPage() {
           </div>
         </div>
       </section>
+
+      <RelatedPages
+        pages={[
+          { label: 'İzmit Reklam Ajansı', href: '/izmit-reklam-ajansi' },
+          { label: 'İzmit SEO', href: '/izmit-seo' },
+          { label: 'İzmit Google Ads', href: '/izmit-google-ads' },
+          { label: 'İzmit Yazılım Ajansı', href: '/izmit-yazilim-ajansi' },
+          { label: 'Kocaeli Web Tasarım', href: '/kocaeli-web-tasarim' },
+        ]}
+      />
 
       {/* CTA */}
       <section className="py-20 px-6">

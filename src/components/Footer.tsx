@@ -2,12 +2,12 @@ import Link from 'next/link'
 import { MapPin, Phone, Mail, Instagram, Linkedin, Twitter } from 'lucide-react'
 
 const services = [
-  'SEO & İçerik Optimizasyonu',
-  'Google Ads & Performans',
-  'Sosyal Medya Yönetimi',
-  'Web Tasarımı & Geliştirme',
-  'E-Posta & Otomasyon',
-  'Veri Analizi & Danışmanlık',
+  { label: 'SEO & İçerik Optimizasyonu', href: '/hizmetler/seo-kocaeli' },
+  { label: 'Google Ads & Performans', href: '/hizmetler/google-ads-kocaeli' },
+  { label: 'Web Tasarımı & Geliştirme', href: '/hizmetler/web-tasarim-kocaeli' },
+  { label: 'E-Posta & Otomasyon', href: '/hizmetler/eposta-otomasyon' },
+  { label: 'n8n İş Akışı Otomasyonu', href: '/hizmetler/n8n-otomasyon' },
+  { label: 'Veri Analizi & Danışmanlık', href: '/hizmetler/veri-analizi' },
 ]
 
 const quickLinks = [
@@ -20,6 +20,22 @@ const quickLinks = [
   { href: '/teklif-al', label: 'AI Teklif Al' },
   { href: '/seo-analiz', label: 'Ücretsiz SEO Analizi' },
 ]
+
+const localPages = [
+  { href: '/izmit-reklam-ajansi', label: 'İzmit Reklam Ajansı' },
+  { href: '/izmit-seo', label: 'İzmit SEO' },
+  { href: '/izmit-web-tasarim', label: 'İzmit Web Tasarım' },
+  { href: '/izmit-google-ads', label: 'İzmit Google Ads' },
+  { href: '/izmit-yazilim-ajansi', label: 'İzmit Yazılım Ajansı' },
+  { href: '/kocaeli-dijital-pazarlama', label: 'Kocaeli Dijital Pazarlama' },
+  { href: '/kocaeli-seo', label: 'Kocaeli SEO' },
+  { href: '/kocaeli-web-tasarim', label: 'Kocaeli Web Tasarım' },
+  { href: '/kocaeli-google-ads', label: 'Kocaeli Google Ads' },
+  { href: '/kocaeli-yazilim-ajansi', label: 'Kocaeli Yazılım Ajansı' },
+]
+
+const foundingYear = 2019
+const currentYear = new Date().getFullYear()
 
 export default function Footer() {
   return (
@@ -38,7 +54,7 @@ export default function Footer() {
             <div className="flex items-center gap-3">
               {/* Sosyal medya linkleri — aria-label ile ekran okuyucu desteği */}
               <a
-                href="https://instagram.com"
+                href="https://instagram.com/ramsesdigital"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram sayfamızı ziyaret edin"
@@ -47,7 +63,7 @@ export default function Footer() {
                 <Instagram size={14} aria-hidden="true" />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://linkedin.com/company/ramsesdigital"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn sayfamızı ziyaret edin"
@@ -56,7 +72,7 @@ export default function Footer() {
                 <Linkedin size={14} aria-hidden="true" />
               </a>
               <a
-                href="https://twitter.com"
+                href="https://twitter.com/ramsesdigital"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Twitter / X sayfamızı ziyaret edin"
@@ -89,12 +105,12 @@ export default function Footer() {
             <h3 className="text-white font-semibold text-sm mb-4">Hizmetlerimiz</h3>
             <ul className="space-y-1">
               {services.map((service) => (
-                <li key={service}>
+                <li key={service.href}>
                   <Link
-                    href="/hizmetler"
+                    href={service.href}
                     className="text-zinc-400 hover:text-white text-sm transition-colors py-2 block"
                   >
-                    {service}
+                    {service.label}
                   </Link>
                 </li>
               ))}
@@ -135,9 +151,25 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-16 pt-8 border-t border-white/[0.05] flex flex-col md:flex-row items-center justify-between gap-4">
+        {/* Local SEO — İzmit/Kocaeli sayfalarına sitewide iç link */}
+        <div className="mt-12 pt-8 border-t border-white/[0.05]">
+          <h3 className="text-white font-semibold text-sm mb-4">İzmit & Kocaeli&apos;de Hizmetlerimiz</h3>
+          <div className="flex flex-wrap gap-x-5 gap-y-2">
+            {localPages.map((page) => (
+              <Link
+                key={page.href}
+                href={page.href}
+                className="text-zinc-500 hover:text-white text-xs transition-colors"
+              >
+                {page.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        <div className="mt-10 pt-8 border-t border-white/[0.05] flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-zinc-400 text-sm">
-            © 2019 Ramses Dijital Reklam Ajansı. Tüm hakları saklıdır.
+            © {foundingYear}{currentYear > foundingYear ? `–${currentYear}` : ''} Ramses Dijital Reklam Ajansı. Tüm hakları saklıdır.
           </p>
           <div className="flex items-center gap-6">
             <Link href="/gizlilik-politikasi" className="text-zinc-400 hover:text-white text-xs transition-colors">

@@ -1,10 +1,11 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import CalendlyButton from '@/components/CalendlyButton'
+import RelatedPages from '@/components/RelatedPages'
 import { MapPin, Search, ArrowRight, CheckCircle2, FileText, Link2, BarChart3, Zap, Award, TrendingUp } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'İzmit SEO Hizmeti | Google\'da Üst Sıra — Ramses Dijital',
+  title: 'İzmit SEO Hizmeti — Ramses Dijital',
   description:
     'İzmit\'te SEO hizmeti. Yerel SEO, teknik SEO, GEO ve AEO ile Google\'da üst sıraya çıkın. Google Business Profile, içerik stratejisi ve backlink. Ücretsiz SEO analizi.',
   alternates: { canonical: 'https://ramsesdigital.com/izmit-seo' },
@@ -198,6 +199,16 @@ export default function IzmitSeoPage() {
           </div>
         </div>
       </section>
+
+      <RelatedPages
+        pages={[
+          { label: 'İzmit Reklam Ajansı', href: '/izmit-reklam-ajansi' },
+          { label: 'İzmit Web Tasarım', href: '/izmit-web-tasarim' },
+          { label: 'İzmit Google Ads', href: '/izmit-google-ads' },
+          { label: 'İzmit Yazılım Ajansı', href: '/izmit-yazilim-ajansi' },
+          { label: 'Kocaeli SEO', href: '/kocaeli-seo' },
+        ]}
+      />
 
       {/* CTA */}
       <section className="py-20 px-6">

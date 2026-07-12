@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   description:
     'Ramses Dijital Reklam Ajansı — performans odaklı dijital pazarlama ajansı. SEO, Google Ads, n8n otomasyon ve web tasarımında uzman ekibimizle gerçek sonuçlar elde edin.',
   keywords:
-    'dijital pazarlama, reklam ajansı, SEO, Google Ads, n8n otomasyon, web tasarım, sosyal medya yönetimi, dijital pazarlama Kocaeli, reklam ajansı İzmit, Ramses Dijital',
+    'dijital pazarlama, reklam ajansı, SEO, Google Ads, n8n otomasyon, web tasarım, e-posta pazarlama, veri analizi, dijital pazarlama Kocaeli, reklam ajansı İzmit, Ramses Dijital',
   applicationName: 'Ramses Dijital Reklam Ajansı',
   authors: [{ name: 'Ramses Dijital Reklam Ajansı', url: 'https://ramsesdigital.com' }],
   creator: 'Ramses Dijital Reklam Ajansı',
@@ -190,7 +190,6 @@ export default function RootLayout({
                     { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'n8n İş Akışı Otomasyonu', url: 'https://ramsesdigital.com/hizmetler/n8n-otomasyon' } },
                     { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Web Tasarım Kocaeli', url: 'https://ramsesdigital.com/hizmetler/web-tasarim-kocaeli', areaServed: 'Kocaeli' } },
                     { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'GEO & AEO Optimizasyonu' } },
-                    { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Sosyal Medya Yönetimi' } },
                     { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'E-Posta & Otomasyon' } },
                     { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Veri Analizi & Danışmanlık' } },
                   ],

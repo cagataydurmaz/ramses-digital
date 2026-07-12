@@ -8,7 +8,6 @@ import {
   Sparkles,
   Search,
   TrendingUp,
-  Share2,
   Monitor,
   Mail,
   BarChart3,

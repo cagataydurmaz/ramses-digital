@@ -1,10 +1,11 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import CalendlyButton from '@/components/CalendlyButton'
+import RelatedPages from '@/components/RelatedPages'
 import { MapPin, Globe, ArrowRight, CheckCircle2, Zap, Smartphone, Search, ShieldCheck, BarChart3, Palette } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Kocaeli Web Tasarım | Kurumsal & KOBİ Web Sitesi — Ramses Dijital',
+  title: 'Kocaeli Web Tasarım Hizmeti — Ramses Dijital',
   description:
     'Kocaeli\'de profesyonel web tasarım hizmeti. İzmit, Gebze, Darıca ve tüm Kocaeli ilçeleri için SEO uyumlu, mobil öncelikli kurumsal web siteleri. Ücretsiz teklif alın.',
   alternates: { canonical: 'https://ramsesdigital.com/kocaeli-web-tasarim' },
@@ -152,6 +153,16 @@ export default function KocaeliWebTasarimPage() {
           </div>
         </div>
       </section>
+
+      <RelatedPages
+        pages={[
+          { label: 'Kocaeli Dijital Pazarlama', href: '/kocaeli-dijital-pazarlama' },
+          { label: 'Kocaeli SEO', href: '/kocaeli-seo' },
+          { label: 'Kocaeli Google Ads', href: '/kocaeli-google-ads' },
+          { label: 'Kocaeli Yazılım Ajansı', href: '/kocaeli-yazilim-ajansi' },
+          { label: 'İzmit Web Tasarım', href: '/izmit-web-tasarim' },
+        ]}
+      />
 
       <section className="py-20 px-6 bg-[#080D18]">
         <div className="max-w-3xl mx-auto text-center">
