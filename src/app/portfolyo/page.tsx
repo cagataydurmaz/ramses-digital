@@ -35,8 +35,8 @@ const liveProjects = [
     displayUrl: 'mertanilguler.av.tr',
     category: 'Web Tasarımı + SEO',
     industry: 'Hukuk',
-    desc: 'İstanbul Barosu avukatı için premium kurumsal kimliğe sahip, içerik ağırlıklı hukuk bürosu sitesi. Blog ve makale altyapısıyla otorite inşası, Google Ads entegrasyonu.',
-    tags: ['Web Tasarım', 'Kurumsal SEO', 'Google Ads'],
+    desc: 'İstanbul Barosu avukatı için premium kurumsal kimliğe sahip, içerik ağırlıklı hukuk bürosu sitesi. Blog ve makale altyapısıyla otorite inşası.',
+    tags: ['Web Tasarım', 'Kurumsal SEO', 'İçerik Stratejisi'],
     thumb: '/portfolio/mertanilguler.png',
   },
   {

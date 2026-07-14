@@ -143,7 +143,7 @@ const testimonials = [
     name: 'Av. Mert Anıl Güler, LL.M.',
     role: 'Kurucu Avukat, Mert Anıl Güler Hukuk Bürosu',
     content:
-      'Ramses Digital, kurumsal kimliğimize uygun, içerik odaklı bir site tasarladı. Google Ads entegrasyonuyla birlikte dijitaldeki görünürlüğümüz belirgin şekilde arttı.',
+      'Ramses Digital, kurumsal kimliğimize uygun, içerik odaklı bir site tasarladı. SEO çalışmasıyla birlikte dijitaldeki görünürlüğümüz belirgin şekilde arttı.',
     rating: 5,
   },
   {

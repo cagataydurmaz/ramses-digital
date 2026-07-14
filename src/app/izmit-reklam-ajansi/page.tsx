@@ -41,7 +41,7 @@ const whyUs = [
 
 const clients = [
   { name: 'Psk. Nur Çelen', detail: 'Kocaeli psikolog — Yerel SEO & Web', url: 'https://nurcelen.com' },
-  { name: 'Av. Mert Anıl Güler', detail: 'İstanbul avukat — Web & Google Ads', url: 'https://www.mertanilguler.av.tr' },
+  { name: 'Av. Mert Anıl Güler', detail: 'İstanbul avukat — Web & SEO', url: 'https://www.mertanilguler.av.tr' },
   { name: 'Gamzeli Dermokozmetik', detail: 'E-ticaret & SEO', url: 'https://gamzelidermokozmetik.com' },
   { name: 'Veterineri Bul', detail: 'Platform & Yapay Zeka', url: 'https://www.veterineribul.com' },
   { name: 'TerapistiBul', detail: 'Platform & YZ Eşleştirme', url: 'https://terapistibul.com' },
