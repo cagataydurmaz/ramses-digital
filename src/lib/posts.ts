@@ -1367,4 +1367,101 @@ export const posts: Post[] = [
       <p>Doğru sorular sormak, yanlış ajans seçiminin maliyetli sonuçlarından sizi korur. Ramses Digital olarak Türkiye genelindeki müşterilerimize şeffaf raporlama, net Quality Score stratejisi ve dürüst zaman beklentileriyle Google Ads yönetimi sunuyoruz.</p>
     `,
   },
+  {
+    slug: 'google-ai-overviews-nasil-gorunulur',
+    coverImage: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&q=80&fit=crop',
+    title: 'Google AI Overviews\'ta Nasıl Görünülür? 2026 Rehberi',
+    excerpt:
+      'Google aramalarının önemli bir kısmında artık sonuçların en üstünde AI tarafından üretilen özet kutusu çıkıyor. Bu kutuda yer almak için içeriğinizi nasıl yapılandırmanız gerektiğini anlatıyoruz.',
+    category: 'AI & Strateji',
+    categoryColor: 'emerald',
+    emoji: '🤖',
+    coverGradient: 'from-emerald-500/10 to-emerald-900/5',
+    readTime: 8,
+    date: '2026-07-14',
+    author: 'Ramses Digital Ekibi',
+    authorRole: 'GEO & AI Arama Uzmanları',
+    tags: ['GEO', 'AI Overviews', 'Google', 'SEO 2026'],
+    content: `
+      <h2>Google AI Overviews Nedir?</h2>
+      <p>Google, klasik on mavi link listesinin üstüne artık pek çok arama sonucunda yapay zeka tarafından üretilen bir özet kutusu yerleştiriyor: AI Overviews. Bu kutu, birden fazla kaynaktan bilgiyi sentezleyip kullanıcıya doğrudan bir cevap sunuyor — kullanıcı hiçbir siteye tıklamadan sorusunun cevabını alabiliyor.</p>
+      <p>Bu, SEO dünyası için köklü bir değişim anlamına geliyor: artık hedef sadece "sıralamada 1. olmak" değil, aynı zamanda "AI'ın cevabında kaynak olarak gösterilmek." İkisi farklı şeyler ve farklı optimizasyon gerektiriyor.</p>
+
+      <h2>AI Overviews Hangi Aramalarda Çıkıyor?</h2>
+      <p>Özellikle bilgi arayan (informational) sorgularda — "nedir", "nasıl yapılır", "hangisi daha iyi" gibi — AI Overviews çıkma olasılığı yüksek. Ticari niyetli aramalarda (satın alma, fiyat karşılaştırma) daha az görülüyor ama bu oran hızla artıyor.</p>
+
+      <h2>AI Overviews'da Kaynak Olarak Gösterilmenin Yolları</h2>
+
+      <h3>1. Soruyu Doğrudan ve Erken Cevaplayın</h3>
+      <p>AI Overviews, sayfanın en başında net bir cevap bulunan içerikleri tercih ediyor. Kullanıcının sorusuna paragrafın ilk cümlesinde eksiksiz cevap verin; ardından detaylandırın. "Giriş yapıp asıl konuya sayfanın ortasında gelmek" AI motorları için işe yaramıyor.</p>
+
+      <h3>2. Başlıkları Soru Formatında Kurun</h3>
+      <p>"SEO Stratejileri" yerine "SEO Stratejisi Nasıl Oluşturulur?" gibi soru odaklı H2/H3 başlıkları kullanmak, AI'ın içeriğinizi belirli bir soruyla eşleştirmesini kolaylaştırıyor.</p>
+
+      <h3>3. Her Bölümü Kendi Başına Anlamlı Yapın</h3>
+      <p>AI motorları sayfanın tamamını değil, genellikle tek bir paragrafı veya bölümü "chunk" olarak çekiyor. Bu yüzden her bölüm, önceki paragrafa referans vermeden de anlaşılır olmalı — "yukarıda belirttiğimiz gibi" gibi bağımlı ifadelerden kaçının.</p>
+
+      <h3>4. Yapılandırılmış Veri (Schema Markup) Kullanın</h3>
+      <p>FAQPage, HowTo ve Article şemaları, AI motorlarının içeriğinizin ne hakkında olduğunu makine-okunabilir şekilde anlamasını sağlıyor. Bu, hem klasik SEO hem AI Overviews için ortak bir temel.</p>
+
+      <h3>5. Güncel ve Doğrulanabilir Veri Sunun</h3>
+      <p>AI motorları, tarih içeren, kaynak gösterilebilir, spesifik istatistikler barındıran içeriği genel geçer ifadelere tercih ediyor. "SEO önemlidir" yerine "2026'da aramaların önemli bir bölümünde AI Overviews çıkıyor" gibi somut, referanslanabilir cümleler kurun.</p>
+
+      <h3>6. E-E-A-T Sinyallerini Güçlendirin</h3>
+      <p>Yazarın kim olduğu, hangi deneyime dayandığı ve içeriğin ne zaman güncellendiği artık AI motorlarının kaynak seçiminde önemli bir faktör. Bu konuyu ayrı bir yazıda detaylandırdık.</p>
+
+      <h2>AI Overviews Trafiği Azaltır mı?</h2>
+      <p>Kısa cevap: bazı sorgularda evet, tıklama oranı düşebilir — kullanıcı cevabı kutuda görüp siteye gelmeyebilir. Ama kaynak olarak gösterilmek marka bilinirliği ve güven açısından değerli; ayrıca daha derin, karşılaştırmalı veya işlemsel sorularda kullanıcı hâlâ tıklayıp siteye geliyor. Strateji, sadece AI Overviews'a değil, hem klasik organik sıralamaya hem AI görünürlüğüne birlikte yatırım yapmak olmalı.</p>
+
+      <h3>Sonuç</h3>
+      <p>AI Overviews, SEO'yu yok etmiyor; dönüştürüyor. Doğru yapılandırılmış, soru-cevap odaklı ve E-E-A-T sinyalleri güçlü içerik üreten markalar, hem klasik aramada hem AI özetlerinde görünür olmaya devam ediyor. Ramses Digital olarak tüm içerik stratejilerimizi bu iki hedefi birlikte gözeterek kuruyoruz.</p>
+    `,
+  },
+  {
+    slug: 'eeat-yazar-kimligi-icerik-kim-yazdi',
+    coverImage: 'https://images.unsplash.com/photo-1455390582262-044cdead277a?w=800&q=80&fit=crop',
+    title: 'E-E-A-T ve Yazar Kimliği: İçeriği Kim Yazdı Neden Google İçin Kritik',
+    excerpt:
+      '2026\'da bir içeriğin kim tarafından yazıldığı ve ne kadar gerçek deneyime dayandığı, teknik SEO kadar (bazen daha fazla) önem taşıyor. E-E-A-T\'i pratikte nasıl uygulayacağınızı anlatıyoruz.',
+    category: 'SEO',
+    categoryColor: 'blue',
+    emoji: '✍️',
+    coverGradient: 'from-blue-500/10 to-blue-900/5',
+    readTime: 7,
+    date: '2026-07-14',
+    author: 'Ramses Digital Ekibi',
+    authorRole: 'SEO Uzmanları',
+    tags: ['E-E-A-T', 'SEO', 'İçerik Stratejisi', 'Google'],
+    content: `
+      <h2>E-E-A-T Nedir?</h2>
+      <p>E-E-A-T, Google'ın içerik kalitesini değerlendirirken baktığı dört unsurun kısaltması: <strong>Experience</strong> (Deneyim), <strong>Expertise</strong> (Uzmanlık), <strong>Authoritativeness</strong> (Yetkinlik/Otorite) ve <strong>Trustworthiness</strong> (Güvenilirlik). Bu bir doğrudan sıralama faktörü değil, ama Google'ın kalite değerlendirme sisteminin (Search Quality Rater Guidelines) omurgasını oluşturuyor ve dolaylı yoldan sıralamaları güçlü şekilde etkiliyor.</p>
+      <p>2026'da bu dört unsurdan özellikle ilki — Deneyim — öne çıkıyor. Google, "bu konuyu bilen biri mi yazdı" sorusunun ötesine geçip "bu konuyu gerçekten yaşamış/uygulamış biri mi yazdı" sorusunu sormaya başladı.</p>
+
+      <h2>Neden Artık Daha Kritik?</h2>
+      <p>Yapay zeka araçlarıyla içerik üretmek son derece kolaylaştı — bu da internette "hiçbir gerçek deneyime dayanmayan, genel geçer" içerik miktarını patlattı. Google bu duruma karşı, gerçek insan deneyimine dayanan, kimliği belirgin, doğrulanabilir içeriği ödüllendiren bir yönde ilerliyor. Yazarı belirsiz veya jenerik "editör ekibi" imzalı içerikler, gittikçe daha fazla rekabet dezavantajı yaşıyor.</p>
+
+      <h2>E-E-A-T'i Pratikte Nasıl Güçlendirirsiniz?</h2>
+
+      <h3>1. Gerçek Yazar Bilgisi Ekleyin</h3>
+      <p>Her blog yazısında yazarın adı, unvanı ve varsa kısa bir uzmanlık geçmişi görünür olmalı. "Ramses Digital Ekibi" gibi genel imzalar yerine mümkün olduğunca spesifik roller (SEO Uzmanları, Google Ads Uzmanları gibi) kullanmak bile küçük bir sinyal.</p>
+
+      <h3>2. Deneyime Dayalı Detaylar Kullanın</h3>
+      <p>"X yöntemi işe yarar" demek yerine, "biz Y müşterisinde X yöntemini uyguladık, Z sonucunu aldık" gibi somut, birinci elden deneyim anlatan cümleler kurun. Genel teoriden çok, gerçekten yaşanmış vaka detayları E-E-A-T'in "Deneyim" ayağını doğrudan besliyor.</p>
+
+      <h3>3. Kaynak ve Referans Gösterin</h3>
+      <p>İddialarınızı desteklemek için güvenilir kaynaklara (resmi istatistikler, sektör raporları) referans verin. Bu hem okuyucuya hem Google'a "bu bilgi havadan sallanmıyor" sinyali verir.</p>
+
+      <h3>4. İçeriği Güncel Tutun</h3>
+      <p>Yayın tarihinin yanında güncelleme tarihi göstermek, konunun aktif olarak takip edildiğini kanıtlıyor. Özellikle hızlı değişen konularda (SEO, yapay zeka gibi) eski tarihli, güncellenmemiş içerik güven kaybettiriyor.</p>
+
+      <h3>5. Şirket ve Ekip Şeffaflığı Sağlayın</h3>
+      <p>Hakkımızda sayfası, gerçek iletişim bilgileri, kuruluş tarihi ve somut başarı hikayeleri — bunların hepsi "Trustworthiness" ayağını besliyor. Anonim veya belirsiz kurumsal kimlik, Google'ın güven skorunu düşürüyor.</p>
+
+      <h2>E-E-A-T'in SEO ve GEO'ya Ortak Faydası</h2>
+      <p>İyi haber: E-E-A-T için yaptığınız çalışma tek bir kanala hizmet etmiyor. Hem klasik Google sıralamalarını hem AI Overviews'ta kaynak gösterilme ihtimalini hem de ChatGPT/Gemini gibi motorların sizi "güvenilir kaynak" olarak işaretlemesini aynı anda güçlendiriyor. Bu yüzden 2026'da E-E-A-T, tek bir SEO taktiği değil, tüm dijital görünürlük stratejisinin temeli haline geldi.</p>
+
+      <h3>Sonuç</h3>
+      <p>Teknik SEO hâlâ önemli, ama artık yeterli değil. Kim olduğunuzu, neyi gerçekten deneyimlediğinizi ve neden güvenilir olduğunuzu açıkça göstermeyen içerikler, teknik olarak kusursuz olsa bile geride kalıyor. Ramses Digital olarak tüm içerik stratejilerimizde E-E-A-T sinyallerini baştan itibaren kuruyoruz.</p>
+    `,
+  },
 ]
