@@ -81,7 +81,7 @@ export default function YazilimAjansiPage() {
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
             Yazılım Ajansı
             <br />
-            <span className="gradient-text">Web, Otomasyon & AI</span>
+            <span className="gradient-text">Uçtan Uca Teknoloji Çözümleri</span>
           </h1>
           <p className="text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
             Türkiye&apos;nin her şehrindeki işletmelere web uygulaması, iş süreçleri otomasyonu ve yapay zeka çözümleri için tamamen uzaktan hizmet veriyoruz.

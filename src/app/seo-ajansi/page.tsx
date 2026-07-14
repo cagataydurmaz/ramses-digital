@@ -80,7 +80,7 @@ export default function SeoAjansiPage() {
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
             SEO Ajansı
             <br />
-            <span className="gradient-text">Türkiye&apos;nin Her Şehrinden Erişilebilir</span>
+            <span className="gradient-text">Türkiye Genelinde Organik Büyüme</span>
           </h1>
           <p className="text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
             İstanbul, Ankara, İzmir, Antalya, Bursa dahil Türkiye&apos;nin her şehrindeki işletmelere hizmet veriyoruz; tüm çalışmalarımız uzaktan yürütülmektedir. Teknik SEO, GEO ve AEO ile Google&apos;da ve yapay zeka motorlarında görünür olun.

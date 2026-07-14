@@ -89,7 +89,7 @@ export default function KocaeliSeoPage() {
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
             Kocaeli SEO Hizmeti
             <br />
-            <span className="gradient-text">Google&apos;da Üst Sıra</span>
+            <span className="gradient-text">Organik Trafiğinizi Büyütün</span>
           </h1>
           <p className="text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto mb-4 leading-relaxed">
             İzmit&apos;ten Gebze&apos;ye, Darıca&apos;dan Körfez&apos;e tüm Kocaeli ilçelerinde yerel SEO. GEO ve AEO ile yapay zeka aramalarında da görünün.

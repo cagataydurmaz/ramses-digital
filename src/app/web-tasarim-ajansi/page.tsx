@@ -79,7 +79,7 @@ export default function WebTasarimAjansiPage() {
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
             Web Tasarım Ajansı
             <br />
-            <span className="gradient-text">Dönüşüm Odaklı Siteler</span>
+            <span className="gradient-text">Markanıza Özel, Performans Odaklı</span>
           </h1>
           <p className="text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
             Türkiye&apos;nin her şehrindeki işletmeler için hızlı, mobil uyumlu ve SEO hazır web siteleri tasarlıyoruz. Tüm süreç dijital yürütülmektedir, fiziksel görüşme gerekmemektedir.

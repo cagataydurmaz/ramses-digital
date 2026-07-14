@@ -89,7 +89,7 @@ export default function KocaeliYazilimAjansiPage() {
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
             Kocaeli Yazılım Ajansı
             <br />
-            <span className="gradient-text">Web, Otomasyon & AI</span>
+            <span className="gradient-text">Yazılım, Entegrasyon & Otomasyon</span>
           </h1>
           <p className="text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
             Kocaeli sanayi ve ticaret firmalarına özel web uygulaması, iş süreçleri otomasyonu, ERP entegrasyonu ve yapay zeka çözümleri.

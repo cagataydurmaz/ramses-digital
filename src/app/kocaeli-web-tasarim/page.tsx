@@ -83,7 +83,7 @@ export default function KocaeliWebTasarimPage() {
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
             Kocaeli Web Tasarım
             <br />
-            <span className="gradient-text">Dönüşüm Odaklı Siteler</span>
+            <span className="gradient-text">Hızlı, Modern, SEO Hazır</span>
           </h1>
           <p className="text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto mb-4 leading-relaxed">
             Kocaeli işletmeniz için hızlı, mobil uyumlu ve yerel SEO hazır web siteleri. İzmit&apos;ten Gebze&apos;ye tüm ilçelere hizmet.
