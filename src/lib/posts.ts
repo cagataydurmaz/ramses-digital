@@ -1387,8 +1387,40 @@ export const posts: Post[] = [
       <p>Google, klasik on mavi link listesinin üstüne artık pek çok arama sonucunda yapay zeka tarafından üretilen bir özet kutusu yerleştiriyor: AI Overviews. Bu kutu, birden fazla kaynaktan bilgiyi sentezleyip kullanıcıya doğrudan bir cevap sunuyor — kullanıcı hiçbir siteye tıklamadan sorusunun cevabını alabiliyor.</p>
       <p>Bu, SEO dünyası için köklü bir değişim anlamına geliyor: artık hedef sadece "sıralamada 1. olmak" değil, aynı zamanda "AI'ın cevabında kaynak olarak gösterilmek." İkisi farklı şeyler ve farklı optimizasyon gerektiriyor.</p>
 
+      <div class="stat-grid">
+        <div class="stat-card">
+          <span class="stat-number emerald">%4.5–12.5</span>
+          <span class="stat-label">Aramalarda AI Overviews görünme oranı</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number emerald">%13+</span>
+          <span class="stat-label">Niş uzmanlığın algoritmadaki ağırlığı</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number emerald">1. Cümle</span>
+          <span class="stat-label">AI'ın cevap aradığı yer — girişte netlik şart</span>
+        </div>
+      </div>
+
       <h2>AI Overviews Hangi Aramalarda Çıkıyor?</h2>
       <p>Özellikle bilgi arayan (informational) sorgularda — "nedir", "nasıl yapılır", "hangisi daha iyi" gibi — AI Overviews çıkma olasılığı yüksek. Ticari niyetli aramalarda (satın alma, fiyat karşılaştırma) daha az görülüyor ama bu oran hızla artıyor.</p>
+
+      <blockquote>
+        <p>"AI Overviews'ta hedef artık sadece sıralamada 1. olmak değil — AI'ın cevabında kaynak olarak gösterilmek. Bu, farklı bir optimizasyon disiplini gerektiriyor."</p>
+      </blockquote>
+
+      <h2>Klasik SEO ile AI Overviews Optimizasyonu Farkı</h2>
+      <table>
+        <thead>
+          <tr><th>Konu</th><th>Klasik SEO</th><th>AI Overviews için</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Hedef</td><td>Sıralamada üst sırada çıkmak</td><td>AI cevabında kaynak gösterilmek</td></tr>
+          <tr><td>İçerik yapısı</td><td>Uzun, kapsamlı sayfa</td><td>Kendi başına anlamlı, kısa bölümler</td></tr>
+          <tr><td>Başlıklar</td><td>Anahtar kelime odaklı</td><td>Soru formatında ("X nasıl yapılır?")</td></tr>
+          <tr><td>Başarı ölçütü</td><td>Tıklama oranı (CTR)</td><td>Kaynak gösterilme + marka bilinirliği</td></tr>
+        </tbody>
+      </table>
 
       <h2>AI Overviews'da Kaynak Olarak Gösterilmenin Yolları</h2>
 
@@ -1412,6 +1444,11 @@ export const posts: Post[] = [
 
       <h2>AI Overviews Trafiği Azaltır mı?</h2>
       <p>Kısa cevap: bazı sorgularda evet, tıklama oranı düşebilir — kullanıcı cevabı kutuda görüp siteye gelmeyebilir. Ama kaynak olarak gösterilmek marka bilinirliği ve güven açısından değerli; ayrıca daha derin, karşılaştırmalı veya işlemsel sorularda kullanıcı hâlâ tıklayıp siteye geliyor. Strateji, sadece AI Overviews'a değil, hem klasik organik sıralamaya hem AI görünürlüğüne birlikte yatırım yapmak olmalı.</p>
+
+      <div class="callout">
+        <span class="callout-title">Pratik İpucu</span>
+        <p>Sayfanızın en üstüne, sorunun cevabını 2-3 cümlede özetleyen bir "hızlı cevap" paragrafı ekleyin. Hem AI Overviews hem de sabırsız okuyucular için işe yarar.</p>
+      </div>
 
       <h3>Sonuç</h3>
       <p>AI Overviews, SEO'yu yok etmiyor; dönüştürüyor. Doğru yapılandırılmış, soru-cevap odaklı ve E-E-A-T sinyalleri güçlü içerik üreten markalar, hem klasik aramada hem AI özetlerinde görünür olmaya devam ediyor. Ramses Digital olarak tüm içerik stratejilerimizi bu iki hedefi birlikte gözeterek kuruyoruz.</p>
@@ -1437,8 +1474,39 @@ export const posts: Post[] = [
       <p>E-E-A-T, Google'ın içerik kalitesini değerlendirirken baktığı dört unsurun kısaltması: <strong>Experience</strong> (Deneyim), <strong>Expertise</strong> (Uzmanlık), <strong>Authoritativeness</strong> (Yetkinlik/Otorite) ve <strong>Trustworthiness</strong> (Güvenilirlik). Bu bir doğrudan sıralama faktörü değil, ama Google'ın kalite değerlendirme sisteminin (Search Quality Rater Guidelines) omurgasını oluşturuyor ve dolaylı yoldan sıralamaları güçlü şekilde etkiliyor.</p>
       <p>2026'da bu dört unsurdan özellikle ilki — Deneyim — öne çıkıyor. Google, "bu konuyu bilen biri mi yazdı" sorusunun ötesine geçip "bu konuyu gerçekten yaşamış/uygulamış biri mi yazdı" sorusunu sormaya başladı.</p>
 
+      <table>
+        <thead>
+          <tr><th>Harf</th><th>Anlamı</th><th>Google Ne Arıyor</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>E — Experience</td><td>Deneyim</td><td>Konuyu gerçekten yaşamış/uygulamış mı?</td></tr>
+          <tr><td>E — Expertise</td><td>Uzmanlık</td><td>Konuda derinlemesine bilgi var mı?</td></tr>
+          <tr><td>A — Authoritativeness</td><td>Yetkinlik</td><td>Sektörde tanınan/referans gösterilen biri mi?</td></tr>
+          <tr><td>T — Trustworthiness</td><td>Güvenilirlik</td><td>Şeffaf, doğrulanabilir, dürüst mü?</td></tr>
+        </tbody>
+      </table>
+
+      <div class="stat-grid">
+        <div class="stat-card">
+          <span class="stat-number violet">1 / 4</span>
+          <span class="stat-label">2026'da öne çıkan unsur: Deneyim (Experience)</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number violet">Dolaylı</span>
+          <span class="stat-label">Doğrudan değil ama güçlü bir sıralama etkisi</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number violet">4</span>
+          <span class="stat-label">Search Quality Rater Guidelines'ın temel unsuru</span>
+        </div>
+      </div>
+
       <h2>Neden Artık Daha Kritik?</h2>
       <p>Yapay zeka araçlarıyla içerik üretmek son derece kolaylaştı — bu da internette "hiçbir gerçek deneyime dayanmayan, genel geçer" içerik miktarını patlattı. Google bu duruma karşı, gerçek insan deneyimine dayanan, kimliği belirgin, doğrulanabilir içeriği ödüllendiren bir yönde ilerliyor. Yazarı belirsiz veya jenerik "editör ekibi" imzalı içerikler, gittikçe daha fazla rekabet dezavantajı yaşıyor.</p>
+
+      <blockquote>
+        <p>"Google artık sadece 'bu konuyu bilen biri mi yazdı' değil, 'bu konuyu gerçekten yaşamış biri mi yazdı' sorusunu soruyor."</p>
+      </blockquote>
 
       <h2>E-E-A-T'i Pratikte Nasıl Güçlendirirsiniz?</h2>
 
@@ -1459,6 +1527,11 @@ export const posts: Post[] = [
 
       <h2>E-E-A-T'in SEO ve GEO'ya Ortak Faydası</h2>
       <p>İyi haber: E-E-A-T için yaptığınız çalışma tek bir kanala hizmet etmiyor. Hem klasik Google sıralamalarını hem AI Overviews'ta kaynak gösterilme ihtimalini hem de ChatGPT/Gemini gibi motorların sizi "güvenilir kaynak" olarak işaretlemesini aynı anda güçlendiriyor. Bu yüzden 2026'da E-E-A-T, tek bir SEO taktiği değil, tüm dijital görünürlük stratejisinin temeli haline geldi.</p>
+
+      <div class="callout">
+        <span class="callout-title">Pratik İpucu</span>
+        <p>Her yazının altına gerçek bir yazar kutusu (isim, unvan, kısa deneyim özeti) ekleyin. Bu, hem okuyucu güvenini hem E-E-A-T sinyalini tek hamlede güçlendirir.</p>
+      </div>
 
       <h3>Sonuç</h3>
       <p>Teknik SEO hâlâ önemli, ama artık yeterli değil. Kim olduğunuzu, neyi gerçekten deneyimlediğinizi ve neden güvenilir olduğunuzu açıkça göstermeyen içerikler, teknik olarak kusursuz olsa bile geride kalıyor. Ramses Digital olarak tüm içerik stratejilerimizde E-E-A-T sinyallerini baştan itibaren kuruyoruz.</p>

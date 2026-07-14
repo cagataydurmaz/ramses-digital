@@ -135,57 +135,6 @@ export default function BlogPostPage({ params }: Props) {
     <div className="min-h-screen bg-[#0A0F1E]">
       <ArticleJsonLd post={post} />
       <BreadcrumbJsonLd post={post} />
-      <style>{`
-        .post-content h2 {
-          color: #60a5fa;
-          font-size: 1.375rem;
-          font-weight: 700;
-          margin-top: 2.5rem;
-          margin-bottom: 1rem;
-          line-height: 1.4;
-        }
-        .post-content h3 {
-          color: #ffffff;
-          font-size: 1.125rem;
-          font-weight: 600;
-          margin-top: 2rem;
-          margin-bottom: 0.75rem;
-          line-height: 1.4;
-        }
-        .post-content p {
-          color: #a1a1aa;
-          font-size: 1rem;
-          line-height: 1.85;
-          margin-bottom: 1.25rem;
-        }
-        .post-content ul {
-          margin-bottom: 1.25rem;
-          padding-left: 0;
-          list-style: none;
-        }
-        .post-content li {
-          color: #a1a1aa;
-          font-size: 1rem;
-          line-height: 1.85;
-          margin-bottom: 0.5rem;
-          padding-left: 1.5rem;
-          position: relative;
-        }
-        .post-content li::before {
-          content: '';
-          position: absolute;
-          left: 0;
-          top: 0.65em;
-          width: 6px;
-          height: 6px;
-          border-radius: 50%;
-          background-color: #3b82f6;
-        }
-        .post-content strong {
-          color: #e4e4e7;
-          font-weight: 600;
-        }
-      `}</style>
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 pt-24 sm:pt-32 pb-24">
         {/* Breadcrumb */}
