@@ -98,6 +98,16 @@ export default function IzmitYazilimAjansiPage() {
         </div>
       </section>
 
+      <section className="pb-16 px-6">
+        <div className="max-w-3xl mx-auto">
+          <div className="bg-white/[0.02] border border-white/[0.06] rounded-xl px-6 py-4 text-center">
+            <p className="text-zinc-400 text-sm leading-relaxed">
+              Ramses Dijital, reklam ajansı kimliğiyle başladı; bugün SEO ve Google Ads&apos;in yanında web ve yazılım geliştirme hizmetlerini de aynı mühendislik disipliniyle sunuyor.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Solutions */}
       <section className="pb-24 px-6">
         <div className="max-w-6xl mx-auto">
