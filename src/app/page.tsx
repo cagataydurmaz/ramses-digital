@@ -140,10 +140,10 @@ const stats = [
 
 const testimonials = [
   {
-    name: 'Ahmet Yılmaz',
-    role: 'CEO, Global Elektronik Pazaryeri',
+    name: 'Av. Mert Anıl Güler, LL.M.',
+    role: 'Kurucu Avukat, Mert Anıl Güler Hukuk Bürosu',
     content:
-      'Ramses Digital ile çalışmaya başladığımızdan beri organik trafiğimiz 3 katına çıktı. Gerçekten sonuç odaklı bir ekip.',
+      'Ramses Digital, kurumsal kimliğimize uygun, içerik odaklı bir site tasarladı. Google Ads entegrasyonuyla birlikte dijitaldeki görünürlüğümüz belirgin şekilde arttı.',
     rating: 5,
   },
   {
@@ -154,10 +154,10 @@ const testimonials = [
     rating: 5,
   },
   {
-    name: 'Mehmet Arslan',
-    role: 'Kurucu, FinTech App',
+    name: 'Av. Furkan Arıkan',
+    role: 'Kurucu Avukat, Furkan Arıkan Hukuk Bürosu',
     content:
-      'Sosyal medya stratejimizi komple yeniden yapılandırdılar. 6 ayda 120.000 yeni gerçek takipçi kazandık.',
+      'Sitemin hem hızlı hem de profesyonel bir görünüme kavuşmasını sağladılar. Süreç boyunca iletişim çok net ve hızlıydı.',
     rating: 5,
   },
 ]
