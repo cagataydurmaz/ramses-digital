@@ -147,10 +147,10 @@ const testimonials = [
     rating: 5,
   },
   {
-    name: 'Elif Kaya',
-    role: 'Pazarlama Direktörü, Lüks Otel Zinciri',
+    name: 'Gamzeli Dermokozmetik',
+    role: 'E-Ticaret Ekibi',
     content:
-      'Google Ads kampanyalarımızda elde ettiğimiz 4.2x ROAS sonucu beklentilerimizin çok üzerindeydi. Harika bir iş çıkardılar.',
+      'Ramses Digital, eczacı güvencesiyle sunduğumuz ürünleri doğru kitleye ulaştıran bir e-ticaret sitesi kurdu. Cilt analizi aracı sayesinde müşterilerimiz kendilerine en uygun ürünü kolayca buluyor.',
     rating: 5,
   },
   {
