@@ -35,6 +35,19 @@ export const posts: Post[] = [
       <h2>Google'da Zirveye Çıkmanın 7 Sırrı</h2>
       <p>Dijital pazarlama dünyasında Google'da üst sıralara çıkmak, her işletmenin en büyük hedeflerinden biridir. Organik arama trafiği, ücretli reklamların aksine uzun vadeli ve sürdürülebilir bir büyüme sağlar. Bu rehberde, 2024 yılında Google'da zirveye çıkmanıza yardımcı olacak 7 kritik stratejiyi detaylı şekilde ele alacağız.</p>
 
+      <table>
+        <thead><tr><th>#</th><th>Strateji</th><th>Öncelik</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Anahtar Kelime Araştırması</td><td>Temel</td></tr>
+          <tr><td>2</td><td>Teknik SEO</td><td>Yüksek</td></tr>
+          <tr><td>3</td><td>E-E-A-T & İçerik Kalitesi</td><td>Yüksek</td></tr>
+          <tr><td>4</td><td>Backlink Profili</td><td>Orta-Uzun Vade</td></tr>
+          <tr><td>5</td><td>Yerel SEO</td><td>Yerel işletmeler için kritik</td></tr>
+          <tr><td>6</td><td>Kullanıcı Deneyimi</td><td>Sürekli</td></tr>
+          <tr><td>7</td><td>Veriye Dayalı Optimizasyon</td><td>Sürekli</td></tr>
+        </tbody>
+      </table>
+
       <h2>1. Anahtar Kelime Araştırması: Temeli Doğru Atın</h2>
       <p>Başarılı bir SEO stratejisinin temelinde doğru anahtar kelime araştırması yatar. Hedef kitlenizin arama alışkanlıklarını anlamak için Google Keyword Planner, Ahrefs veya SEMrush gibi araçları kullanın. Yüksek arama hacmine sahip olmakla birlikte rekabetin düşük olduğu "uzun kuyruklu" anahtar kelimelere odaklanın.</p>
       <p>Örneğin "dijital pazarlama" yerine "İstanbul'da küçük işletmeler için dijital pazarlama" gibi daha spesifik ifadeler tercih edin. Bu yaklaşım, daha nitelikli trafik çekmenizi ve dönüşüm oranlarınızı artırmanızı sağlar.</p>
@@ -42,6 +55,11 @@ export const posts: Post[] = [
       <h2>2. Teknik SEO: Altyapınızı Güçlendirin</h2>
       <p>Google'ın web sitenizi düzgün tarayabilmesi ve indeksleyebilmesi için teknik altyapının hatasız olması şarttır. Site hızı, mobil uyumluluk, SSL sertifikası ve temiz URL yapısı gibi faktörler hem kullanıcı deneyimini hem de arama motoru sıralamalarını doğrudan etkiler.</p>
       <p>Core Web Vitals metriklerine özellikle dikkat edin: Largest Contentful Paint (LCP), First Input Delay (FID) ve Cumulative Layout Shift (CLS). Bu üç metrik, Google'ın sayfa deneyimini değerlendirme biçiminin merkezinde yer almaktadır.</p>
+
+      <div class="callout">
+        <span class="callout-title">Pratik İpucu</span>
+        <p>Site hızınızı test etmek için Google PageSpeed Insights veya Search Console'daki Core Web Vitals raporunu kullanın — sorunlu sayfaları önceliklendirerek başlayın.</p>
+      </div>
 
       <h2>3. İçerik Kalitesi: E-E-A-T Prensiplerini Benimseyin</h2>
       <p>Google'ın E-E-A-T (Deneyim, Uzmanlık, Yetkililik, Güvenilirlik) prensipleri, içerik değerlendirmesinin omurgasını oluşturur. Alanınızda gerçek deneyime sahip uzmanlar tarafından yazılmış, kapsamlı ve özgün içerikler oluşturun.</p>
@@ -86,6 +104,21 @@ export const posts: Post[] = [
       <h2>Google Ads Tam Rehberi 2024</h2>
       <p>Google Ads, işletmelerin hedef kitlelerine doğrudan ulaşmasını sağlayan en güçlü dijital reklam platformlarından biridir. Doğru stratejilerle yönetildiğinde, her harcanan lira için birden fazla lira geri kazanmanız mümkündür. Bu kapsamlı rehberde, 2024 yılında Google Ads'ten maksimum verim almanın yollarını adım adım ele alacağız.</p>
 
+      <div class="stat-grid">
+        <div class="stat-card">
+          <span class="stat-number">1-10</span>
+          <span class="stat-label">Kalite Puanı ölçeği</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">30-50</span>
+          <span class="stat-label">Akıllı teklife geçiş için aylık dönüşüm eşiği</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">5</span>
+          <span class="stat-label">Ana kampanya türü (Arama, Görüntülü, Video, Alışveriş, PMax)</span>
+        </div>
+      </div>
+
       <h2>Kampanya Türlerini Anlayın</h2>
       <p>Google Ads ekosistemi birden fazla kampanya türünü bünyesinde barındırır. Arama ağı kampanyaları, kullanıcılar belirli anahtar kelimeleri aradığında reklamlarınızın görünmesini sağlar. Görüntülü reklam ağı ise milyonlarca web sitesinde görsel reklamlar yayınlamanıza olanak tanır.</p>
       <p>Video kampanyaları YouTube'da, Alışveriş kampanyaları ise e-ticaret ürünlerinizi doğrudan arama sonuçlarında sergiler. 2024'te Performans Max (PMax) kampanyaları tüm Google kanallarında yapay zeka destekli optimizasyon sunarak ön plana çıkmaktadır.</p>
@@ -98,6 +131,16 @@ export const posts: Post[] = [
       <p>Kalite Puanı (Quality Score), Google'ın reklamlarınızı, anahtar kelimelerinizi ve açılış sayfanızı değerlendirdiği 1-10 arası bir puandır. Yüksek Kalite Puanı, daha düşük tıklama başına maliyet (CPC) ve daha iyi reklam konumu anlamına gelir.</p>
       <p>Kalite Puanını yükseltmek için reklam alaka düzeyini artırın, tıklama oranını (CTR) iyileştirin ve açılış sayfası deneyimini optimize edin. Reklam metinlerinde anahtar kelimeleri doğal biçimde kullanın ve her reklam grubunu dar temalar etrafında yapılandırın.</p>
 
+      <table>
+        <thead><tr><th>Teklif Stratejisi</th><th>Ne Zaman Kullanılır</th></tr></thead>
+        <tbody>
+          <tr><td>Manuel CPC</td><td>Yeni hesap, yetersiz dönüşüm verisi</td></tr>
+          <tr><td>Hedef EBM</td><td>Belirli bir dönüşüm maliyeti hedefi varsa</td></tr>
+          <tr><td>Hedef ROAS</td><td>E-ticaret, gelir odaklı kampanyalar</td></tr>
+          <tr><td>Performans Max</td><td>Tüm Google kanallarında otomatik optimizasyon</td></tr>
+        </tbody>
+      </table>
+
       <h2>Bütçe ve Teklif Stratejileri</h2>
       <p>Bütçenizi kampanya hedeflerinize göre dağıtın. Dönüşüm odaklı kampanyalar için "Hedef EBM" (Hedef Edinme Başına Maliyet) veya "Hedef ROAS" (Reklam Harcaması Getirisi) teklif stratejilerini tercih edin. Bu akıllı teklif stratejileri, Google'ın makine öğrenimi altyapısından yararlanarak bütçenizi en verimli şekilde kullanır.</p>
       <p>Yeni hesaplarda ve kampanyalarda önce manuel teklifle başlayın, yeterli dönüşüm verisi biriktiğinde (en az 30-50 dönüşüm/ay) akıllı teklif stratejilerine geçin. Mevsimsel ayarlamalar ve zamanlamayı ihmal etmeyin.</p>
@@ -107,6 +150,11 @@ export const posts: Post[] = [
 
       <h2>Dönüşüm Takibi: Başarıyı Ölçün</h2>
       <p>Google Ads'ten gerçek değer elde etmek için dönüşüm takibini doğru kurmanız şarttır. Telefon aramaları, form doldurmalar, ürün satışları ve mikro dönüşümleri (sayfa ziyareti, video izleme vb.) ayrı ayrı takip edin. Google Tag Manager kullanarak bu entegrasyonu kolaylaştırabilirsiniz.</p>
+
+      <div class="callout">
+        <span class="callout-title">Pratik İpucu</span>
+        <p>Dönüşüm takibi kurulmadan kampanya başlatmayın — verisiz optimizasyon, tahmine dayalı harcama demektir.</p>
+      </div>
 
       <h2>Kampanya Optimizasyon Döngüsü</h2>
       <p>Başarılı Google Ads yönetimi düzenli ve sistematik optimizasyon gerektirir. Haftalık olarak performans verilerini inceleyin: hangi reklam grupları, anahtar kelimeler ve reklamlar en iyi sonuçları veriyor? Düşük performanslı öğeleri duraklatın, yüksek performanslıları ölçeklendirin.</p>
@@ -135,6 +183,21 @@ export const posts: Post[] = [
       <h2>Instagram Algoritması: Organik Büyümenin Formülü</h2>
       <p>Instagram algoritması, milyonlarca içerik arasından hangilerinin kullanıcılara gösterileceğini belirleyen karmaşık bir sistemdir. Bu sistemi anlamak ve doğru stratejilerle yaklaşmak, organik erişiminizi dramatik biçimde artırabilir. 2024 yılında Instagram'da organik büyümeyi sağlamanın formülünü bu rehberde sizinle paylaşıyoruz.</p>
 
+      <div class="stat-grid">
+        <div class="stat-card">
+          <span class="stat-number">3-5</span>
+          <span class="stat-label">Haftalık paylaşım hedefi</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">15-30 sn</span>
+          <span class="stat-label">En yüksek tamamlanma oranına sahip Reels süresi</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">3-5</span>
+          <span class="stat-label">Hedefli hashtag, 30 genelden daha etkili</span>
+        </div>
+      </div>
+
       <h2>Instagram Algoritması Nasıl Çalışır?</h2>
       <p>Instagram birden fazla algoritmayı aynı anda çalıştırır: Ana sayfa beslemi, Keşfet sayfası, Reels ve Hikayeler için ayrı algoritmalar mevcuttur. Her biri farklı sinyallere ağırlık verse de temel prensipler ortaktır: etkileşim oranı, içerik alaka düzeyi, kullanıcı ilişkisi ve paylaşım zamanı.</p>
       <p>Algoritma, gönderilerinizi önce küçük bir takipçi grubuna gösterir. Bu grubun tepkisine göre daha geniş bir kitleye ulaşıp ulaşmayacağına karar verir. İlk saatteki etkileşim performansı kritik önem taşır.</p>
@@ -154,6 +217,10 @@ export const posts: Post[] = [
       <h2>Etkileşim Döngüsü: Topluluk Oluşturun</h2>
       <p>Organik büyümenin sürdürülebilir olması için gerçek bir topluluk oluşturmanız gerekir. Yorumlara yanıt verin, sektörünüzdeki diğer hesaplarla etkileşime geçin ve anlamlı konuşmalar başlatın. Hikayeler'deki anket, soru-cevap ve quiz özellikleri etkileşimi artırmanın kolay yollarıdır.</p>
       <p>Sizi takip eden hesapların içeriklerini beğenin ve yorum yapın. Bu karşılıklı etkileşim, Instagram'ın ilişki sinyallerini güçlendirir ve içeriklerinizin o kişilerin akışında daha sık görünmesini sağlar.</p>
+
+      <blockquote>
+        <p>"Algoritma, gönderilerinizi önce küçük bir takipçi grubuna gösterir. İlk saatteki etkileşim performansı, içeriğin ne kadar geniş bir kitleye ulaşacağını belirler."</p>
+      </blockquote>
 
       <h2>Analitik Takibi: Veriden Öğrenin</h2>
       <p>Instagram Insights ve Meta Business Suite verilerini haftalık olarak inceleyin. Hangi içerik türleri, hangi paylaşım saatleri ve hangi hashtag kombinasyonları en iyi sonucu veriyor? Bu verilere dayanarak stratejinizi sürekli rafine edin.</p>
@@ -182,6 +249,16 @@ export const posts: Post[] = [
       <h2>Neden Mühendislik Temelli Ajans Seçmelisiniz?</h2>
       <p>Dijital pazarlama dünyasında "ajans" denildiğinde çoğu zaman yaratıcı stüdyolar akla gelir. Ancak günümüz rekabet ortamında başarı, yalnızca estetik değil veri, analitik ve mühendislik disiplininin pazarlama düşüncesiyle birleşmesiyle mümkündür. Ramses Digital olarak mühendislik temelli bir yaklaşımı neden benimsediğimizi ve bunun müşterilerimize nasıl somut avantajlar sağladığını bu yazıda ele alıyoruz.</p>
 
+      <table>
+        <thead><tr><th>Yaklaşım</th><th>Geleneksel Ajans</th><th>Mühendislik Temelli Ajans</th></tr></thead>
+        <tbody>
+          <tr><td>Odak</td><td>Yaratıcılık, estetik</td><td>Ölçülebilir sonuç</td></tr>
+          <tr><td>Karar süreci</td><td>Sezgi, deneyim</td><td>Veri, test, kanıt</td></tr>
+          <tr><td>Raporlama</td><td>Genellikle görsel metrikler</td><td>ROI, dönüşüm, gelir odaklı</td></tr>
+          <tr><td>Teknik SEO</td><td>Sınırlı derinlik</td><td>Geliştirici seviyesinde çözüm</td></tr>
+        </tbody>
+      </table>
+
       <h2>Geleneksel Ajans Modeli ve Sınırları</h2>
       <p>Geleneksel dijital pazarlama ajansları genellikle yaratıcılığı ön plana çıkarır. Güzel görseller, yaratıcı kampanyalar ve etkileyici sunumlar hazırlarlar. Ancak çoğu zaman bu çalışmaların gerçek iş sonuçlarına etkisini ölçmek güçtür. "Marka bilinirliği arttı" veya "beğeni sayısı yükseldi" gibi göstergeler, işletme sahipleri için anlamlı finansal kazanımlara dönüşmeyebilir.</p>
       <p>Mühendislik temelli bir ajans ise her çalışmayı bir proje olarak ele alır: net hedefler, ölçülebilir metrikler, iteratif iyileştirme ve hesap verebilirlik bu yaklaşımın temellerini oluşturur.</p>
@@ -193,6 +270,10 @@ export const posts: Post[] = [
       <h2>Test Kültürü: Varsayım Değil Kanıt</h2>
       <p>Mühendislik disiplininin en önemli katkılarından biri, test ve deney kültürüdür. Her hipotezi test ederiz: Hangi reklam metni daha fazla tıklama alıyor? Hangi açılış sayfası düzeni daha yüksek dönüşüm sağlıyor? Hangi gönderme saati e-posta açılma oranını maksimize ediyor?</p>
       <p>A/B testleri, çok değişkenli testler ve kohort analizleri sayesinde sezgiye değil veriye dayanan kararlar alıyoruz. Bu yaklaşım, zaman içinde bileşik bir avantaj yaratır: her test bir öncekinin üzerine inşa edilir ve sistemimiz giderek daha akıllı hale gelir.</p>
+
+      <blockquote>
+        <p>"Mühendislik disiplini, pazarlama yaratıcılığıyla buluştuğunda işletmeniz için gerçek bir rekabet avantajı doğar."</p>
+      </blockquote>
 
       <h2>Otomasyon ve Ölçeklenebilirlik</h2>
       <p>Tekrarlayan görevleri otomatize etmek, hem maliyetleri düşürür hem de insan hatasını minimize eder. Programatik reklam satın alma, otomatik teklif optimizasyonu, e-posta otomasyon akışları ve CRM entegrasyonları, mühendislik yetkinliği gerektiren alanlardır.</p>
@@ -230,6 +311,15 @@ export const posts: Post[] = [
       <p>Core Web Vitals, Google'ın kullanıcı deneyimini ölçmek için belirlediği üç kritik metriktir. Largest Contentful Paint (LCP), sayfanın ana içeriğinin ne kadar sürede yüklendiğini ölçer; iyi bir LCP değeri 2,5 saniyenin altındadır. First Input Delay (FID) -yeni adıyla Interaction to Next Paint (INP)- kullanıcının sayfayla etkileşime geçtikten sonra tepki süresini ölçer. Cumulative Layout Shift (CLS) ise sayfa yüklenirken içeriklerin ne kadar kaydığını gösterir.</p>
       <p>Bu üç metriği optimize etmek, hem Google'ın gözünde hem de kullanıcı memnuniyeti açısından sitenizi öne çıkarır.</p>
 
+      <table>
+        <thead><tr><th>Metrik</th><th>Ölçtüğü</th><th>İyi Değer</th></tr></thead>
+        <tbody>
+          <tr><td>LCP</td><td>Ana içeriğin yüklenme süresi</td><td>&lt; 2.5 saniye</td></tr>
+          <tr><td>INP (eski FID)</td><td>Etkileşime tepki süresi</td><td>&lt; 200ms</td></tr>
+          <tr><td>CLS</td><td>Sayfa içeriğinin kayma miktarı</td><td>&lt; 0.1</td></tr>
+        </tbody>
+      </table>
+
       <h2>LCP Optimizasyonu: Ana İçeriği Hızlandırın</h2>
       <p>LCP genellikle sayfanın en büyük görseli, video küçük resmi veya büyük bir metin bloğudur. Bu öğenin hızla yüklenmesi için öncelikle görsel optimizasyona odaklanın: WebP veya AVIF formatlarını kullanın, görüntüleri doğru boyutlandırın ve kritik görseller için preload direktiflerini uygulayın.</p>
       <p>Sunucu yanıt süresini (Time to First Byte - TTFB) iyileştirmek için kaliteli bir hosting hizmeti seçin ve CDN (İçerik Dağıtım Ağı) kullanın. Render bloklayan kaynakları tespit ederek CSS ve JavaScript'i optimize edin. Next.js veya Nuxt.js gibi modern frameworkler otomatik görsel optimizasyonu ile LCP'yi önemli ölçüde iyileştirir.</p>
@@ -248,6 +338,17 @@ export const posts: Post[] = [
 
       <h2>Dönüşüm Oranı ile Bağlantı</h2>
       <p>Google'ın kendi araştırmaları, LCP'nin 1 saniyeden 3 saniyeye çıkmasının dönüşüm olasılığını %32 oranında düşürdüğünü ortaya koymaktadır. Amazon'un hesaplamalarına göre, sayfa yükleme süresindeki her 100ms artış yıllık satışlarda %1 kayıp anlamına gelir.</p>
+
+      <div class="stat-grid">
+        <div class="stat-card">
+          <span class="stat-number">%32</span>
+          <span class="stat-label">LCP 1sn'den 3sn'ye çıkınca dönüşüm kaybı</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">%1</span>
+          <span class="stat-label">Her 100ms gecikmede satış kaybı (Amazon)</span>
+        </div>
+      </div>
       <p>Daha hızlı yüklenen sayfalar kullanıcıları sitede daha uzun tutar, daha fazla ürün sayfasına göz atılmasını sağlar ve sepet terk oranını düşürür. Bu nedenle Core Web Vitals optimizasyonu, hem organik trafik hem de dönüşüm oranı açısından çift yönlü bir yatırımdır.</p>
 
       <h3>Sonuç</h3>
@@ -273,6 +374,16 @@ export const posts: Post[] = [
       <h2>Yapay Zeka ile Rakip Analizi: 2024 Rehberi</h2>
       <p>Rekabetçi istihbarat (competitive intelligence), her zaman başarılı pazarlama stratejisinin ayrılmaz bir parçası olmuştur. Ancak yapay zeka araçlarının yaygınlaşmasıyla birlikte, bu analizi yapmanın hızı, derinliği ve kapsamı köklü biçimde değişmiştir. 2024'te yapay zeka destekli rakip analizi, sizi rakiplerinizin adımlarının birkaç adım önünde tutabilir.</p>
 
+      <table>
+        <thead><tr><th>Analiz Alanı</th><th>Kullanılan Kaynak</th></tr></thead>
+        <tbody>
+          <tr><td>SEO & İçerik Açığı</td><td>Ahrefs Content Gap, Semrush Keyword Gap</td></tr>
+          <tr><td>Reklam Stratejisi</td><td>Google Şeffaflık Merkezi, Meta Reklam Kütüphanesi</td></tr>
+          <tr><td>Müşteri Yorumu</td><td>Google, Trustpilot, App Store yorumları</td></tr>
+          <tr><td>Fiyatlandırma</td><td>Otomatik fiyat izleme araçları</td></tr>
+        </tbody>
+      </table>
+
       <h2>Yapay Zekanın Rakip Analizine Katkısı</h2>
       <p>Geleneksel rakip analizi genellikle manuel veri toplama, sınırlı örneklem ve zaman alıcı raporlama süreçleri içerir. Yapay zeka bu süreçleri otomatize ederken çok daha büyük veri setlerini analiz etme kapasitesi sunar. Rakiplerin web sitelerini, sosyal medya içeriklerini, reklam kütüphanelerini ve müşteri yorumlarını aynı anda analiz edebilirsiniz.</p>
       <p>ChatGPT, Claude, Gemini gibi büyük dil modelleri; Semrush, Ahrefs, SimilarWeb gibi veri platformlarından elde edilen verilerle birleştirildiğinde güçlü bir rekabet analizi altyapısı oluşturur.</p>
@@ -288,6 +399,11 @@ export const posts: Post[] = [
       <h2>Müşteri Yorumu Analizi (Duygu Analizi)</h2>
       <p>Rakiplerinizin Google, Trustpilot, App Store gibi platformlardaki müşteri yorumları, değerli bir rekabetçi istihbarat kaynağıdır. Yapay zeka ile bu yorumları toplu halde analiz ederek rakiplerin güçlü ve zayıf yönlerini sistematik biçimde tespit edebilirsiniz.</p>
       <p>Müşterilerin rakip ürün veya hizmetler hakkında en sık şikayetçi olduğu konular neler? Bu "acı noktaları" kendi konumlandırma stratejinizde avantaja çevirebilirsiniz. Aynı analizi kendi yorumlarınıza uygulayarak güçlendirilmesi gereken alanları da belirleyebilirsiniz.</p>
+
+      <div class="callout">
+        <span class="callout-title">Pratik İpucu</span>
+        <p>"Bu anahtar kelime listesinden hangilerinde rakiplerime göre hızlı kazanım elde edebilirim?" gibi somut sorularla büyük dil modellerini rekabet analizinde bir yardımcı analist gibi kullanın.</p>
+      </div>
 
       <h2>Sosyal Medya Benchmarking</h2>
       <p>Rakiplerinizin sosyal medya stratejisini analiz etmek, içerik boşluklarını ve fırsatları ortaya çıkarır. Hangi içerik türleri en fazla etkileşim alıyor? Hangi konular ilgi çekiyor? Hangi post formatları rakibiniz için işe yarıyor? Bu soruların yanıtları, kendi sosyal medya stratejinizi geliştirmenize katkı sağlar.</p>
@@ -319,6 +435,21 @@ export const posts: Post[] = [
       <h2>E-Posta Pazarlamada %40 Açılma Oranı Nasıl Yakalanır?</h2>
       <p>E-posta pazarlaması, dijital kanallar arasında en yüksek yatırım getirisine (ROI) sahip olanlardan biridir. Araştırmalar, e-posta pazarlamasında harcanan her 1 dolar için ortalama 42 dolar geri kazanıldığını ortaya koymaktadır. Ancak bu potansiyeli hayata geçirmek için listenizin sizinle gerçekten etkileşim kurması gerekir. Sektör ortalaması olan %20-25 açılma oranının çok üstüne çıkmanın yollarını bu rehberde ele alıyoruz.</p>
 
+      <div class="stat-grid">
+        <div class="stat-card">
+          <span class="stat-number emerald">42x</span>
+          <span class="stat-label">Harcanan her 1$ için ortalama getiri</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number emerald">%40</span>
+          <span class="stat-label">Hedeflenen açılma oranı</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number emerald">6-10</span>
+          <span class="stat-label">En yüksek açılan konu satırı kelime sayısı</span>
+        </div>
+      </div>
+
       <h2>Konu Satırı: Açılmanın Kapı Anahtarı</h2>
       <p>E-postanızın açılıp açılmayacağını büyük ölçüde konu satırı belirler. Etkili konu satırları merak uyandırır, değer vaat eder veya aciliyet hissi yaratır. Ancak bu unsurları manipülatif biçimde değil, dürüst ve özgün bir şekilde kullanmak uzun vadeli güven inşa eder.</p>
       <p>Kısalık önemlidir: 6-10 kelimelik konu satırları en yüksek açılma oranına sahiptir. Sayılar dikkat çeker ("5 dakikada öğrenin", "3 kritik hata"). Kişiselleştirme fark yaratır: alıcının adını veya konumunu içeren konu satırları ortalama %26 daha fazla açılır. Emoji kullanımı doğru bağlamda etkili olabilir, ancak abartıdan kaçının.</p>
@@ -327,6 +458,15 @@ export const posts: Post[] = [
       <p>Tek tip e-postayı tüm listeye göndermek, hem açılma oranını düşürür hem de abonelik iptallerini artırır. Segmentasyon, listenizi demografik özellikler, satın alma geçmişi, etkileşim düzeyi veya ilgi alanlarına göre gruplara ayırarak her gruba özelleştirilmiş içerikler göndermenizi sağlar.</p>
       <p>En etkili segmentasyon kriterlerinden biri etkileşim düzeyidir. Son 90 günde e-posta açan "aktif aboneleri", 90-180 gündür açmayan "uykudaki aboneleri" ve 180 günden uzun süredir etkileşim kurmayan "kayıp aboneleri" ayrı ayrı ele alın. Her grup farklı bir yaklaşım gerektirir.</p>
 
+      <table>
+        <thead><tr><th>Segment</th><th>Tanım</th><th>Yaklaşım</th></tr></thead>
+        <tbody>
+          <tr><td>Aktif</td><td>Son 90 günde açtı</td><td>Standart kampanya akışı</td></tr>
+          <tr><td>Uykudaki</td><td>90-180 gündür açmadı</td><td>Yeniden aktivasyon e-postası</td></tr>
+          <tr><td>Kayıp</td><td>180+ gündür etkileşim yok</td><td>Son şans kampanyası veya listeden çıkarma</td></tr>
+        </tbody>
+      </table>
+
       <h2>Gönderim Zamanlaması: Doğru Anda Ulaşın</h2>
       <p>E-postanızın ne zaman gönderildiği, açılma oranını önemli ölçüde etkiler. Genel olarak Salı-Perşembe günleri ve sabah 10:00-11:00 ile öğleden sonra 14:00-15:00 saatleri arası en yüksek açılma oranlarına karşılık gelir. Ancak bu ortalamalar her liste için geçerli olmayabilir.</p>
       <p>Kendi listenizin davranışını analiz edin. Mailchimp, Klaviyo veya Mailerlite gibi araçların "gönderme zamanı optimizasyonu" özelliğinden yararlanın. Bu özellik, her aboneye bireysel olarak en uygun zamanda e-posta gönderir ve açılma oranını önemli ölçüde artırır.</p>
@@ -334,6 +474,11 @@ export const posts: Post[] = [
       <h2>Liste Sağlığı: Kalite Nicelikten Önce Gelir</h2>
       <p>Büyük ama inaktif bir liste, küçük ve aktif bir listeden çok daha az değerlidir. Düzenli liste temizliği yaparak geçersiz e-posta adreslerini, sürekli bouncing adresleri ve uzun süredir etkileşim kurmayan aboneleri listeden çıkarın. Bu işlem kısa vadede liste büyüklüğünü azaltsa da açılma oranı, tıklama oranı ve teslim edilebilirlik üzerinde olumlu etki yaratır.</p>
       <p>Yeni aboneler için çift onay (double opt-in) kullanmak, listenizin kalitesini baştan korumanın en etkili yoludur. Çift onaylı aboneler daha yüksek etkileşim ve daha az spam şikayeti anlamına gelir.</p>
+
+      <div class="callout">
+        <span class="callout-title">Pratik İpucu</span>
+        <p>Büyük ama inaktif bir liste, küçük ve aktif bir listeden daha az değerlidir. Düzenli temizlik, açılma oranınızı yükseltmenin en hızlı yoludur.</p>
+      </div>
 
       <h2>Kişiselleştirme: İnsan Gibi Konuşun</h2>
       <p>Ad kişiselleştirmenin ötesine geçin. Alıcının geçmiş satın alma davranışına, gezdiği sayfalara veya indirdiği içeriklere göre kişiselleştirilmiş öneriler sunun. "Sizi düşünerek seçtik" mesajı, "Kampanyamız başladı" mesajından çok daha etkilidir.</p>
@@ -376,20 +521,38 @@ export const posts: Post[] = [
 
       <h2>Neden GEO Artık Zorunlu?</h2>
       <p>Rakamlar net konuşuyor:</p>
-      <ul>
-        <li>ChatGPT, 2024 itibarıyla aylık <strong>100 milyondan fazla aktif kullanıcıya</strong> ulaştı (OpenAI, 2024).</li>
-        <li>Google'ın AI Overviews (SGE) özelliği, ABD'deki aramaların yaklaşık <strong>%84'ünde</strong> aktif hale geldi (BrightEdge, 2024).</li>
-        <li>Perplexity, 2024'te günlük soru sayısını <strong>10 milyona</strong> taşıdı.</li>
-        <li>B2B alıcıların <strong>%63'ü</strong> artık satın alma kararlarında AI araçlarını kullandıklarını belirtiyor (Gartner, 2024).</li>
-      </ul>
+
+      <div class="stat-grid">
+        <div class="stat-card">
+          <span class="stat-number emerald">100M+</span>
+          <span class="stat-label">ChatGPT aylık aktif kullanıcı (OpenAI, 2024)</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number emerald">%84</span>
+          <span class="stat-label">ABD aramalarında AI Overviews aktifliği (BrightEdge, 2024)</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number emerald">10M</span>
+          <span class="stat-label">Perplexity günlük soru sayısı</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number emerald">%63</span>
+          <span class="stat-label">AI araçlarını kullanan B2B alıcı oranı (Gartner, 2024)</span>
+        </div>
+      </div>
       <p>Bu sayılar gösteriyor ki klasik "10 mavi link" paradigması hızla değişiyor. Yapay zeka, kullanıcıya cevabı doğrudan veriyor ve kaynak olarak güvendiği siteleri öneriyor. Siz o kaynaklar arasında değilseniz, görünmez oluyorsunuz.</p>
 
       <h2>GEO ile SEO Arasındaki Fark</h2>
       <p>GEO, SEO'nun rakibi değil; evrimidir. İkisini birlikte kullanmak gerekir.</p>
-      <ul>
-        <li><strong>SEO hedefi:</strong> Google SERP'te üst sıra → tıklama → ziyaret</li>
-        <li><strong>GEO hedefi:</strong> AI yanıtında kaynak veya öneri olarak görünmek → marka bilinirliği + direkt yönlendirme</li>
-      </ul>
+
+      <table>
+        <thead><tr><th></th><th>SEO</th><th>GEO</th></tr></thead>
+        <tbody>
+          <tr><td>Hedef</td><td>SERP'te üst sıra → tıklama</td><td>AI yanıtında kaynak/öneri olmak</td></tr>
+          <tr><td>Motor mantığı</td><td>Sıralama algoritması</td><td>Anlam çıkarma + güvenilirlik değerlendirmesi</td></tr>
+          <tr><td>Sonuç</td><td>Ziyaret</td><td>Marka bilinirliği + direkt yönlendirme</td></tr>
+        </tbody>
+      </table>
       <p>Temel fark şudur: Google bir sıralama algoritmasıyla çalışır; LLM'ler ise <em>anlam çıkarma</em> ve <em>güvenilirlik değerlendirmesi</em> üzerine kuruludur. Dolayısıyla GEO'da içeriğin kalitesi, yapısı ve otorite sinyalleri çok daha kritik.</p>
 
       <h2>GEO İçin 7 Temel Strateji</h2>
@@ -497,9 +660,36 @@ export const posts: Post[] = [
       <h3>AEO — Answer Engine Optimization (Yanıt Motoru Optimizasyonu)</h3>
       <p>AEO, içeriğinizin hem geleneksel arama motorlarının hem de yapay zeka araçlarının sorulara doğrudan yanıt üretirken başvurduğu kaynak haline gelmesi sanatıdır. Featured snippet'lardan AI Overviews'a, sesli aramadan chatbot yanıtlarına kadar her yanıt kanalını kapsar.</p>
 
-      <blockquote><strong>Özet tablo:</strong><br/>SEO → Sıralama | GEO → Alıntılanma | AEO → Yanıt Üretme<br/>Bu üçü birbirinin rakibi değil, birbirini tamamlayan katmanlardır.</blockquote>
+      <table>
+        <thead><tr><th>Disiplin</th><th>Hedef</th></tr></thead>
+        <tbody>
+          <tr><td>SEO</td><td>Sıralama</td></tr>
+          <tr><td>GEO</td><td>Alıntılanma</td></tr>
+          <tr><td>AEO</td><td>Yanıt Üretme</td></tr>
+        </tbody>
+      </table>
+      <blockquote><p>Bu üçü birbirinin rakibi değil, birbirini tamamlayan katmanlardır.</p></blockquote>
 
       <h2>Neden Şimdi? Rakamlar Ne Diyor?</h2>
+
+      <div class="stat-grid">
+        <div class="stat-card">
+          <span class="stat-number violet">%84</span>
+          <span class="stat-label">ABD aramalarında AI Overviews tetiklenme oranı</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number violet">100M+</span>
+          <span class="stat-label">ChatGPT aylık aktif kullanıcı</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number violet">15M+</span>
+          <span class="stat-label">Perplexity günlük sorgu sayısı</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number violet">%67</span>
+          <span class="stat-label">AI araçlarını kullanan B2B alıcı oranı</span>
+        </div>
+      </div>
       <ul>
         <li>Google AI Overviews, ABD'deki aramaların <strong>%84'ünde</strong> tetikleniyor (BrightEdge, 2025).</li>
         <li>ChatGPT aylık <strong>100M+ aktif kullanıcıyla</strong> kendi başına bir arama motoru büyüklüğüne ulaştı.</li>
@@ -609,6 +799,34 @@ export const posts: Post[] = [
       <p>Kocaeli, sanayinin yoğun olduğu, hızla büyüyen ve dijitalleşen bir şehir. Tüketicilerin %78'i, yerel bir hizmet veya ürün ararken Google'a yöneliyor. "Kocaeli web tasarım", "İzmit dijital pazarlama", "İzmit reklam ajansı" gibi aramalarda ilk üçte yer almak, web sitenize gelen organik trafiğin %75'ini bir anda kazanmanız anlamına geliyor.</p>
       <p>Yerel SEO, klasik SEO'dan farklı dinamiklere sahiptir. Burada amaç sadece "SEO" gibi genel terimlerde değil, "Kocaeli + hizmet" kombinasyonunda görünür olmak ve Google Maps'in "Local Pack" alanına girmektir.</p>
 
+      <div class="stat-grid">
+        <div class="stat-card">
+          <span class="stat-number">%78</span>
+          <span class="stat-label">Yerel hizmet ararken Google'a yönelen tüketici</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">%75</span>
+          <span class="stat-label">İlk 3'te yer alınca kazanılan organik trafik payı</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">2-4 hafta</span>
+          <span class="stat-label">Local Pack'te görünme süresi</span>
+        </div>
+      </div>
+
+      <table>
+        <thead><tr><th>#</th><th>Adım</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Google Business Profile Optimizasyonu</td></tr>
+          <tr><td>2</td><td>NAP Tutarlılığı</td></tr>
+          <tr><td>3</td><td>Yerel Anahtar Kelime Stratejisi</td></tr>
+          <tr><td>4</td><td>Yerel İçerik Üretimi</td></tr>
+          <tr><td>5</td><td>Yerel Backlink İnşası</td></tr>
+          <tr><td>6</td><td>Yorumlar ve İtibar Yönetimi</td></tr>
+          <tr><td>7</td><td>Schema Markup ve LocalBusiness</td></tr>
+        </tbody>
+      </table>
+
       <h2>1. Google Business Profile (GBP) Optimizasyonu</h2>
       <p>Yerel SEO'nun temeli, Google Business Profile'dır. Profilinizi açtığınız ve doğruladığınız anda Kocaeli aramalarında görünür olma şansınız ortaya çıkar. Profili açmak için google.com/business adresine giderek işletmenizi kaydedin ve doğrulama kodunu adresinize getirin.</p>
       <p>Profilde dikkat etmeniz gerekenler: tam ve doğru NAP (İsim, Adres, Telefon), tüm hizmet kategorileri, çalışma saatleri, en az 10 kaliteli fotoğraf, haftalık güncellenen "post"lar ve müşteri yorumlarına 24 saat içinde verilen profesyonel cevaplar.</p>
@@ -616,6 +834,11 @@ export const posts: Post[] = [
       <h2>2. NAP Tutarlılığı</h2>
       <p>NAP, "Name, Address, Phone" yani işletme isminiz, adresiniz ve telefon numaranızdır. Bu üç bilgi, web sitenizden Google Business Profile'a, sektörel rehberlerden sosyal medya bio'larınıza kadar her platformda birebir aynı olmalıdır.</p>
       <p>"Atatürk Cad." yerine "Atatürk Caddesi", "+90 535 560 19 36" yerine "0535 560 19 36" gibi küçük farklılıklar bile Google'a "bu işletme tutarsız" mesajı verir ve sıralamanızı düşürür. Tutarlılığı kontrol etmek için Yext, BrightLocal veya Whitespark gibi araçlar kullanılabilir.</p>
+
+      <div class="callout">
+        <span class="callout-title">Pratik İpucu</span>
+        <p>Hedef: en az 50+ Google yorumu, 4.5+ ortalama puan ve yorumların %80'ine 24 saat içinde cevap. Bu üçü yerel sıralamanın en güçlü sinyallerinden.</p>
+      </div>
 
       <h2>3. Yerel Anahtar Kelime Stratejisi</h2>
       <p>"Dijital pazarlama ajansı" gibi geniş terimler yerine "Kocaeli dijital pazarlama ajansı", "İzmit web tasarım", "İzmit reklam ajansı" gibi şehir + hizmet kombinasyonlarına odaklanın. Bu uzun kuyruklu ifadelerde rekabet daha az, dönüşüm oranı daha yüksektir.</p>
@@ -686,12 +909,17 @@ export const posts: Post[] = [
       <p><strong>Kimin için uygun:</strong> Görsel düşünen ekipler, orta karmaşıklıkta akışlar kuran ajanslar, bütçesi sınırlı ama özellik isteyen KOBİ'ler.</p>
 
       <h2>Detaylı Karşılaştırma Tablosu</h2>
-      <p><strong>Fiyat:</strong> n8n (self-hosted): Ücretsiz · n8n Cloud: 20€/ay · Make: $9/ay · Zapier: $29.99/ay</p>
-      <p><strong>Entegrasyon Sayısı:</strong> Zapier 7.000+ · Make 1.500+ · n8n 400+ (ama API ile sınırsıza ulaşır)</p>
-      <p><strong>Self-Hosted:</strong> Sadece n8n</p>
-      <p><strong>Özel Kod:</strong> n8n (JavaScript) > Make (kısıtlı) > Zapier (Code by Zapier $29+)</p>
-      <p><strong>AI Entegrasyonu:</strong> Hepsinde mevcut, n8n yerleşik AI node'ları sunar</p>
-      <p><strong>Öğrenme Eğrisi:</strong> Zapier (kolay) < Make (orta) < n8n (zor ama güçlü)</p>
+      <table>
+        <thead><tr><th>Kriter</th><th>n8n</th><th>Make</th><th>Zapier</th></tr></thead>
+        <tbody>
+          <tr><td>Fiyat</td><td>Self-hosted ücretsiz / Cloud 20€/ay</td><td>$9/ay</td><td>$29.99/ay</td></tr>
+          <tr><td>Entegrasyon</td><td>400+ (API ile sınırsız)</td><td>1.500+</td><td>7.000+</td></tr>
+          <tr><td>Self-Hosted</td><td>Evet</td><td>Hayır</td><td>Hayır</td></tr>
+          <tr><td>Özel Kod</td><td>JavaScript, tam destek</td><td>Kısıtlı</td><td>Code by Zapier ($29+)</td></tr>
+          <tr><td>AI Entegrasyonu</td><td>Yerleşik AI node'ları</td><td>Mevcut</td><td>Mevcut</td></tr>
+          <tr><td>Öğrenme Eğrisi</td><td>Zor ama güçlü</td><td>Orta</td><td>Kolay</td></tr>
+        </tbody>
+      </table>
 
       <h2>Hangi Aracı Ne Zaman Tercih Etmeli?</h2>
       <p><strong>Hızlı sonuç istiyorsanız:</strong> Zapier. 30 dakikada ilk otomasyonunuz çalışır.</p>
@@ -699,6 +927,11 @@ export const posts: Post[] = [
       <p><strong>Veri gizliliği kritikse (sağlık, finans, KVKK):</strong> Self-hosted n8n. Veriler asla sunucularınızı terk etmez.</p>
       <p><strong>Karmaşık iş akışları gerekiyorsa:</strong> n8n veya Make. Zapier basit kalır.</p>
       <p><strong>Yüksek hacim varsa (aylık 10.000+ işlem):</strong> Self-hosted n8n. Diğerleri çok pahalılaşır.</p>
+
+      <div class="callout">
+        <span class="callout-title">Pratik İpucu</span>
+        <p>Veri gizliliği kritikse (sağlık, finans, KVKK) self-hosted n8n dışında bir seçenek değerlendirmeyin — verileriniz asla kendi sunucunuzu terk etmez.</p>
+      </div>
 
       <h3>Sık Sorulan Sorular</h3>
 
@@ -735,6 +968,19 @@ export const posts: Post[] = [
       <p>Google Search Console (GSC), Google'ın web sitesi sahiplerine ücretsiz sunduğu performans takip ve teknik SEO aracıdır. Sitenizin hangi anahtar kelimelerde, hangi sıralarda göründüğünü, kaç kez tıklandığını, hangi sayfaların indekslendiğini ve teknik hataları gerçek zamanlı olarak gösterir.</p>
       <p>GSC, hiçbir SEO çalışmasının atlanmaması gereken zorunlu bir araçtır. Google'ın size doğrudan ne düşündüğünü söylediği yegane platformdur.</p>
 
+      <table>
+        <thead><tr><th>#</th><th>Adım</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Hesap Oluşturma ve Mülk Ekleme</td></tr>
+          <tr><td>2</td><td>Site Haritası (Sitemap) Gönderimi</td></tr>
+          <tr><td>3</td><td>Performans Raporu</td></tr>
+          <tr><td>4</td><td>URL Denetleme</td></tr>
+          <tr><td>5</td><td>Sayfalar Raporu</td></tr>
+          <tr><td>6</td><td>Önemli Web Verileri (Core Web Vitals)</td></tr>
+          <tr><td>7</td><td>Bağlantılar Raporu</td></tr>
+        </tbody>
+      </table>
+
       <h2>Adım 1: Hesap Oluşturma ve Mülk Ekleme</h2>
       <p>search.google.com/search-console adresine gidin ve Gmail hesabınızla giriş yapın. "Mülk ekle" butonuna tıkladığınızda iki seçenek sunulur:</p>
       <p><strong>Domain mülkü:</strong> Tüm alt alan adlarını ve protokolleri (www, m, http, https) tek seferde kapsar. Önerilen seçenek budur. Doğrulama için DNS TXT kaydı eklemeniz gerekir.</p>
@@ -755,6 +1001,11 @@ export const posts: Post[] = [
       <p>Üst arama çubuğuna herhangi bir URL'nizi yapıştırın. Google size o sayfa hakkında her şeyi gösterir:</p>
       <p>İndekslenmiş mi? Son ne zaman tarandı? Mobil uyumlu mu? Hangi anahtar kelimelerde görünüyor? Schema markup'ı doğru çalışıyor mu? Canonical URL nedir? Bu bilgiler, sayfa bazında detaylı SEO teşhisi yapmanızı sağlar.</p>
       <p>Yeni içerik yayınladığınızda "İndeksleme iste" butonuyla Google'dan o sayfayı acilen taramasını talep edebilirsiniz.</p>
+
+      <div class="callout">
+        <span class="callout-title">Pratik İpucu</span>
+        <p>Yeni yayınlanan her önemli sayfa için URL Denetleme aracını kullanıp "İndeksleme iste"yin — sitemap'in genel taranmasını beklemekten çok daha hızlı sonuç verir.</p>
+      </div>
 
       <h2>Adım 5: Sayfalar Raporu</h2>
       <p>"Dizin > Sayfalar" raporunda hangi sayfalarınızın indekslendiğini, hangilerinin indekslenmediğini ve nedenlerini görürsünüz. Yaygın sorun türleri:</p>
@@ -807,6 +1058,17 @@ export const posts: Post[] = [
       <p>Schema markup, web sitenizdeki içeriği arama motorlarının daha iyi anlaması için kullanılan, schema.org tarafından geliştirilmiş bir kelime dağarcığıdır. Sitenizin "anlam katmanı"dır: bir sayfanın yalnızca metin değil, ürün, makale, etkinlik, yemek tarifi, işletme veya kişi gibi belirli bir varlık olduğunu Google'a söyler.</p>
       <p>Schema markup uygulanan sayfalar, arama sonuçlarında yıldız puanı, fiyat, açılış saati, etkinlik tarihi gibi "rich snippet"ler ile gösterilir. Bu da CTR'yi (tıklama oranını) %30'a kadar artırabilir.</p>
 
+      <div class="stat-grid">
+        <div class="stat-card">
+          <span class="stat-number violet">%30</span>
+          <span class="stat-label">Rich snippet ile potansiyel CTR artışı</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number violet">8</span>
+          <span class="stat-label">En önemli schema tipi</span>
+        </div>
+      </div>
+
       <h2>JSON-LD: Önerilen Format</h2>
       <p>Schema markup üç farklı formatta uygulanabilir: Microdata, RDFa ve JSON-LD. Google, JSON-LD formatını resmi olarak önerir. Avantajı: HTML'inizden ayrı bir &lt;script&gt; bloğunda durur, mevcut tasarımınızı bozmaz, kolayca eklenip kaldırılabilir.</p>
 
@@ -836,6 +1098,20 @@ export const posts: Post[] = [
       <h2>8. Review & AggregateRating</h2>
       <p>Müşteri yorumları ve toplu derecelendirme. Arama sonuçlarında yıldız puanı göstermek için kritiktir.</p>
 
+      <table>
+        <thead><tr><th>#</th><th>Schema Tipi</th><th>Kullanım Alanı</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Organization & LocalBusiness</td><td>İşletme temel bilgileri</td></tr>
+          <tr><td>2</td><td>Article & BlogPosting</td><td>Blog, haber, makale</td></tr>
+          <tr><td>3</td><td>Product</td><td>E-ticaret ürünleri</td></tr>
+          <tr><td>4</td><td>FAQPage</td><td>Sık sorulan sorular — AEO altın standardı</td></tr>
+          <tr><td>5</td><td>HowTo</td><td>Adım adım rehberler</td></tr>
+          <tr><td>6</td><td>BreadcrumbList</td><td>Sayfa hiyerarşisi</td></tr>
+          <tr><td>7</td><td>Event</td><td>Etkinlik, webinar, konser</td></tr>
+          <tr><td>8</td><td>Review & AggregateRating</td><td>Müşteri yorumu, yıldız puanı</td></tr>
+        </tbody>
+      </table>
+
       <h2>JSON-LD Nasıl Uygulanır?</h2>
       <p>JSON-LD kodunu HTML sayfanızın &lt;head&gt; veya &lt;body&gt; bölümüne &lt;script type="application/ld+json"&gt; etiketi içinde eklersiniz. Next.js gibi modern framework'lerde dangerouslySetInnerHTML ile component bazında uygulanır.</p>
       <p>Doğru çalıştığını test etmek için Google'ın "Rich Results Test" aracını (search.google.com/test/rich-results) veya Schema.org'un "Validator" aracını kullanabilirsiniz.</p>
@@ -843,6 +1119,11 @@ export const posts: Post[] = [
       <h2>Schema Markup'un GEO ve AEO İçin Önemi</h2>
       <p>ChatGPT, Gemini ve Perplexity gibi yapay zeka motorları, web içeriğini anlamak için schema markup'a güvenir. Yapısal veri olmadan AI motorları içeriği "metin yığını" olarak algılar; schema ile "bu bir ürün, bu fiyat, bu stok durumu" şeklinde net bilgilere ulaşır.</p>
       <p>GEO (Generative Engine Optimization) için en kritik schema tipleri: Organization, FAQPage, HowTo, Article ve LocalBusiness'tır.</p>
+
+      <div class="callout">
+        <span class="callout-title">Pratik İpucu</span>
+        <p>Eklediğiniz her schema'yı Google'ın Rich Results Test aracıyla doğrulayın — yanlış veya eksik şema, doğrudan ceza riski taşır.</p>
+      </div>
 
       <h3>Sık Sorulan Sorular</h3>
 
@@ -879,6 +1160,20 @@ export const posts: Post[] = [
       <p>Backlink, başka bir web sitesinin sizin sitenize verdiği bağlantıdır. SEO dünyasında bir backlink, "güven oyu" olarak değerlendirilir: ne kadar çok ve kaliteli site size link veriyorsa, Google sitenizi o kadar otoriter görür.</p>
       <p>Ancak burada anahtar kelime "kaliteli"dir. 2026 yılında Google, düşük kaliteli, satın alınmış veya manipülatif backlink'leri tespit etmekte çok başarılıdır. Yanlış strateji manuel ceza, sıralama düşüşü ve hatta deindeksleme ile sonuçlanabilir.</p>
 
+      <table>
+        <thead><tr><th>#</th><th>Yöntem</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Misafir Yazarlık (Guest Blogging)</td></tr>
+          <tr><td>2</td><td>Kırık Bağlantı İnşası</td></tr>
+          <tr><td>3</td><td>Skyscraper Tekniği</td></tr>
+          <tr><td>4</td><td>Dijital PR ve Basın Bültenleri</td></tr>
+          <tr><td>5</td><td>Sektörel Rehberler ve Dizinler</td></tr>
+          <tr><td>6</td><td>HARO ve Muhabirlerle İletişim</td></tr>
+          <tr><td>7</td><td>Orijinal Veri ve Araştırma Yayınlama</td></tr>
+          <tr><td>8</td><td>Kaynak Sayfaları</td></tr>
+        </tbody>
+      </table>
+
       <h2>1. Misafir Yazarlık (Guest Blogging)</h2>
       <p>Sektörünüzdeki saygın bloglara, sektör yayınlarına ve haber sitelerine kaliteli misafir içerik yazmak, en sürdürülebilir backlink stratejisidir. Örneğin Kocaeli Sanayi Odası dergisi, Webrazzi, Marketing Türkiye gibi yayınlara teklif gönderebilirsiniz.</p>
       <p>Önemli: pitch'iniz net olmalı, içerik gerçek değer üretmeli ve sayfada doğal yerleştirilmiş 1-2 backlink olmalı. "Buyurun yüzlerce link" mantığı çalışmaz.</p>
@@ -906,6 +1201,12 @@ export const posts: Post[] = [
       <p>"En iyi 10 SEO aracı", "Türkiye'nin en güvenilir e-ticaret platformları" gibi kaynak (resource) sayfalarına başvurun. Bu sayfaların editörlerine, sitenizin neden bu listede yer almayı hak ettiğini açıklayan profesyonel bir e-posta gönderin.</p>
 
       <h2>Kaçınılması Gerekenler</h2>
+
+      <div class="callout">
+        <span class="callout-title">Dikkat</span>
+        <p>Ani backlink artışları (1 ayda 100+) Google'a "manipülasyon" sinyali verir. Yeni bir site için ayda 3-5 kaliteli backlink, güvenli ve sürdürülebilir bir hızdır.</p>
+      </div>
+
       <p><strong>Backlink satın alma:</strong> Ucuz backlink paketleri (50 link 100 TL) %99 spam içerir. Google bunları tespit eder ve cezalandırır.</p>
       <p><strong>PBN (Private Blog Network):</strong> Sahte bloglar oluşturup kendinize backlink vermek. Google'ın algoritması bu yapıları tespit etmekte uzmandır.</p>
       <p><strong>Yorum spam'i:</strong> Forumlara veya bloglara "Harika yazı! Sitemize bekleriz" yorumlarıyla link bırakmak.</p>
@@ -946,6 +1247,37 @@ export const posts: Post[] = [
       <p>Meta açıklama (meta description), bir web sayfasının arama sonuçlarında başlığın altında gösterilen kısa özettir. Google sıralamasını doğrudan etkilemese de, kullanıcının tıklama kararını verdiği son cümledir. İyi yazılmış bir meta açıklama, CTR'yi (tıklama oranını) %30-100 arasında artırabilir.</p>
       <p>2026'da Google, meta açıklamaları yapay zeka ile yeniden yazabilir, ancak sizin yazdığınız iyi bir meta açıklamayı %70 oranında olduğu gibi kullanır.</p>
 
+      <div class="stat-grid">
+        <div class="stat-card">
+          <span class="stat-number">%30-100</span>
+          <span class="stat-label">İyi meta açıklamanın potansiyel CTR artışı</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">145-155</span>
+          <span class="stat-label">İdeal karakter uzunluğu</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">%70</span>
+          <span class="stat-label">Google'ın yazdığınızı olduğu gibi kullanma oranı</span>
+        </div>
+      </div>
+
+      <table>
+        <thead><tr><th>#</th><th>Kural</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>150-160 Karakter Sınırı</td></tr>
+          <tr><td>2</td><td>Anahtar Kelimeyi İlk 50 Karakterde Geçir</td></tr>
+          <tr><td>3</td><td>Net Bir Fayda Vurgula</td></tr>
+          <tr><td>4</td><td>Eylem Çağrısı (CTA) Ekle</td></tr>
+          <tr><td>5</td><td>Sayı ve Veri Kullan</td></tr>
+          <tr><td>6</td><td>Aktif Ses Kullan</td></tr>
+          <tr><td>7</td><td>Soruyla Başla (Bazen)</td></tr>
+          <tr><td>8</td><td>USP'yi Vurgula</td></tr>
+          <tr><td>9</td><td>Marka İsmini Sona Yerleştir</td></tr>
+          <tr><td>10</td><td>A/B Test Yap</td></tr>
+        </tbody>
+      </table>
+
       <h2>Kural 1: 150-160 Karakter Sınırı</h2>
       <p>Google mobilde ~120 karakter, masaüstünde ~155-160 karakter gösterir. 160'ı geçen açıklamalar "..." ile kesilir ve mesajınız tamamlanmadan biter. İdeal uzunluk: 145-155 karakter arası.</p>
 
@@ -953,6 +1285,10 @@ export const posts: Post[] = [
       <p>Kullanıcı arama yaptığında, sorgu kelimeleri meta açıklamada bold (kalın) olarak gösterilir. Bu da CTR'yi artırır. Ana anahtar kelimenizi açıklamanın başında kullanın.</p>
       <p><strong>Kötü:</strong> "Şirketimiz hakkında bilgi almak için web sitemizi ziyaret edin. Kocaeli'de SEO hizmetleri sunuyoruz."</p>
       <p><strong>İyi:</strong> "Kocaeli SEO hizmetleri | Yerel işletmeler için Google'da 1. sıraya çıkın. Ücretsiz analiz, ROI odaklı strateji."</p>
+
+      <blockquote>
+        <p>Kullanıcının arama sorgusuyla eşleşen kelimeler meta açıklamada otomatik olarak kalın gösterilir — anahtar kelimeyi başta kullanmak bu görsel avantajı doğrudan tetikler.</p>
+      </blockquote>
 
       <h2>Kural 3: Net Bir Fayda Vurgula</h2>
       <p>Kullanıcı "ben bunu okuyunca ne kazanırım?" sorusuna cevap arar. Açıklamanızda somut fayda olsun: "%340 trafik artışı", "5 dakikada kurulum", "ücretsiz", "garantili sonuç".</p>
@@ -1019,6 +1355,21 @@ export const posts: Post[] = [
       <p>İzmit ve Kocaeli genelinde 100'ün üzerinde dijital pazarlama ve reklam ajansı faaliyet gösteriyor. Bunların yarısı freelance, %30'u butik ajans, %20'si kurumsal yapıda. Fiyatlar aylık 1.500 TL'den 50.000 TL'ye kadar uzanıyor. Peki bu yelpazede doğru ajansı nasıl seçeceksiniz?</p>
       <p>Yanlış ajans seçimi sadece para kaybı değil; <strong class="text-white">marka itibarınıza zarar</strong>, <strong class="text-white">Google'dan ceza</strong> ve <strong class="text-white">aylar süren toparlanma süreci</strong> demek. Bu rehberde, İzmit'teki KOBİ'ler için doğru ajansı seçmenin 10 kritik adımını anlatıyoruz.</p>
 
+      <div class="stat-grid">
+        <div class="stat-card">
+          <span class="stat-number">100+</span>
+          <span class="stat-label">İzmit/Kocaeli'de faaliyet gösteren ajans sayısı</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">1.500₺ - 50.000₺</span>
+          <span class="stat-label">Aylık fiyat aralığı</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">10</span>
+          <span class="stat-label">Ajans seçerken sorulacak kritik adım</span>
+        </div>
+      </div>
+
       <h2>1. Net Hedef Belirleyin: Nereye Ulaşmak İstiyorsunuz?</h2>
       <p>Ajans aramaya başlamadan önce kendinize şu soruları sorun:</p>
       <ul>
@@ -1072,12 +1423,15 @@ export const posts: Post[] = [
 
       <h2>7. Fiyatlandırma: Ne Aldığınıza Bakın</h2>
       <p>İzmit'teki ortalama fiyat yelpazeleri:</p>
-      <ul>
-        <li><strong class="text-white">Aylık 1.500-3.000 TL:</strong> Genelde freelance, sınırlı hizmet, sosyal medya post + 1 reklam</li>
-        <li><strong class="text-white">Aylık 4.000-8.000 TL:</strong> Butik ajans, 2-3 hizmet kombinasyonu, ölçülebilir KPI'lar</li>
-        <li><strong class="text-white">Aylık 8.000-20.000 TL:</strong> Kurumsal yapı, derin uzmanlık, 4+ hizmet, dedicated account manager</li>
-        <li><strong class="text-white">Aylık 20.000+ TL:</strong> Enterprise, özel strateji, multi-disciplinary ekip</li>
-      </ul>
+      <table>
+        <thead><tr><th>Aylık Bütçe</th><th>Ne Beklenir</th></tr></thead>
+        <tbody>
+          <tr><td>1.500-3.000 TL</td><td>Genelde freelance, sınırlı hizmet</td></tr>
+          <tr><td>4.000-8.000 TL</td><td>Butik ajans, 2-3 hizmet kombinasyonu</td></tr>
+          <tr><td>8.000-20.000 TL</td><td>Kurumsal yapı, dedicated account manager</td></tr>
+          <tr><td>20.000+ TL</td><td>Enterprise, multi-disciplinary ekip</td></tr>
+        </tbody>
+      </table>
       <p>"Aylık 1.000 TL'ye SEO" gibi tekliflere asla rağbet etmeyin. Bu fiyatla içerik AI çöp üretir, backlink spam toplanır, Google cezalandırır.</p>
 
       <h2>8. Yerel Bilgi: İzmit Pazarını Tanıyor mu?</h2>
@@ -1146,6 +1500,21 @@ export const posts: Post[] = [
       <p>2026 yılında bir restoran arayan İzmitli müşterinin <strong class="text-white">%87'si önce Google'a bakıyor</strong>. "İzmit pizza", "Kocaeli kahvaltı yapılacak yerler", "İzmit en iyi kebapçı" gibi aramalar günlük binlerce kez yapılıyor.</p>
       <p>Eğer restoranınız bu aramalarda görünmüyorsa, müşteri rakibinize gidiyor. İyi haber: doğru kurgulanmış bir dijital pazarlama stratejisi 3-6 ayda restoranınızı bölgenizin "git buraya" tavsiyesine dönüştürebilir.</p>
 
+      <div class="stat-grid">
+        <div class="stat-card">
+          <span class="stat-number">%87</span>
+          <span class="stat-label">Restoran ararken önce Google'a bakan müşteri</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">30+</span>
+          <span class="stat-label">GBP için önerilen fotoğraf sayısı</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">3-6 Ay</span>
+          <span class="stat-label">Yerel SEO sonuçları için gerçekçi süre</span>
+        </div>
+      </div>
+
       <h2>1. Google Business Profile: Restoran Pazarlamasının Belkemiği</h2>
       <p>Restoranlar için Google Business Profile (GBP) en önemli kanaldır. Aramalardaki "İzmit pizza" tipi sorgularda Google, üst kısımda 3 restoran haritalı şekilde gösterir ("Local Pack"). Buraya girmek = oyunu kazanmak.</p>
       <p>GBP optimizasyonu için yapılması gerekenler:</p>
@@ -1186,6 +1555,11 @@ export const posts: Post[] = [
         <li><strong class="text-white">Yerel kampanyalar:</strong> Maps'te ve Google çevre aramalarında öncelikli görünme</li>
       </ul>
       <p>Bütçe: Aylık 3.000-8.000 TL ile başlanabilir. Daha düşük bütçelerde (örn: 1.000 TL) Google'ın algoritması yeterli veri toplayamaz.</p>
+
+      <div class="callout">
+        <span class="callout-title">Pratik İpucu</span>
+        <p>Müşteri tag'lerini (UGC — kullanıcı tarafından üretilen içerik) repost etmek, restoranlar için en güçlü ve en ucuz içerik türüdür — profesyonel çekim gerektirmez, gerçek ve güvenilir görünür.</p>
+      </div>
 
       <h2>5. Yorumlar (Reviews): En Güçlü Sosyal Kanıt</h2>
       <p>Yorumlar restoranın can damarıdır. İstatistikler:</p>
@@ -1257,11 +1631,25 @@ export const posts: Post[] = [
       <p><strong>2. Şeffaf ve ölçülebilir süreç:</strong> Uzaktan çalışan ajanslar iletişimi dijital kanallar üzerinden yürüttüğü için her şey kayıt altındadır — toplantı notları, raporlar, dashboard erişimi. Bu, hesap verebilirliği artırır.</p>
       <p><strong>3. Genellikle daha rekabetçi fiyatlandırma:</strong> Fiziksel ofis, showroom gibi maliyetleri olmayan ajanslar, bu tasarrufu genellikle müşteriye yansıtabilir.</p>
 
+      <table>
+        <thead><tr><th>Avantaj</th><th>Neden Önemli</th></tr></thead>
+        <tbody>
+          <tr><td>Geniş uzmanlık havuzu</td><td>Şehir sınırı olmadan niş uzmanlık bulma şansı</td></tr>
+          <tr><td>Şeffaf süreç</td><td>Her şey dijital kayıt altında, hesap verebilirlik yüksek</td></tr>
+          <tr><td>Rekabetçi fiyat</td><td>Ofis/showroom maliyeti yok, tasarruf müşteriye yansır</td></tr>
+        </tbody>
+      </table>
+
       <h2>Dikkat Edilmesi Gereken Noktalar</h2>
       <p><strong>1. İletişim ritmi net olmalı:</strong> Yüz yüze görüşme olmadığı için haftalık/aylık düzenli check-in toplantılarının takvime bağlı olduğundan emin olun. Belirsiz iletişim ritmi, uzaktan çalışan ilişkilerde en sık yaşanan sorundur.</p>
       <p><strong>2. Raporlama şeffaf olmalı:</strong> Canlı dashboard erişimi (Google Analytics, Search Console, Ads hesabı) talep edin. Sadece PDF rapor gönderen değil, verinin kendisine erişim sağlayan bir ajans tercih edin.</p>
       <p><strong>3. Referansları doğrulayın:</strong> Uzaktan çalışan bir ajansın gösterdiği "başarı hikayeleri"nin gerçek ve doğrulanabilir olduğundan emin olun. Canlı site linkleri isteyin, mümkünse o müşterilerle iletişime geçin.</p>
       <p><strong>4. Zaman dilimi ve dil uyumu:</strong> Türkiye içi çalışıyorsanız bu genellikle sorun değildir, ancak yanıt sürelerini netleştirin.</p>
+
+      <div class="callout">
+        <span class="callout-title">Pratik İpucu</span>
+        <p>Canlı dashboard erişimi (Google Analytics, Search Console, Ads hesabı) talep edin — sadece PDF rapor gönderen bir ajans yerine, verinin kendisine erişim sağlayanı tercih edin.</p>
+      </div>
 
       <h2>Hangi Hizmetler Uzaktan En İyi Şekilde Yürütülür?</h2>
       <p>SEO, Google Ads yönetimi, web tasarım/geliştirme, e-posta pazarlama, veri analizi ve iş süreçleri otomasyonu (n8n gibi) — bunların hepsi doğası gereği dijital hizmetlerdir ve fiziksel konum hiçbir zaman gerektirmez. Yerel SEO çalışması bile (Google Business Profile yönetimi gibi) tamamen uzaktan yürütülebilir; ajansın sizin şehrinizde ofis açmasına gerek yoktur.</p>
@@ -1289,6 +1677,18 @@ export const posts: Post[] = [
       <h2>İki Farklı Model, İki Farklı Risk Profili</h2>
       <p>SEO çalışmasına başlamaya karar verdiğinizde karşınıza iki temel seçenek çıkar: bireysel bir freelancer ile mi çalışmalısınız, yoksa bir ajansla mı? Her ikisinin de doğru olduğu senaryolar var — ama yanlış seçim, aylarca süren bir çalışmanın boşa gitmesine neden olabilir.</p>
 
+      <table>
+        <thead><tr><th>Kriter</th><th>Freelancer</th><th>Ajans</th></tr></thead>
+        <tbody>
+          <tr><td>Maliyet</td><td>Düşük</td><td>Daha yüksek</td></tr>
+          <tr><td>Süreklilik</td><td>Tek nokta arızası riski</td><td>Ekip yedeklemesi var</td></tr>
+          <tr><td>Uzmanlık kapsamı</td><td>Sınırlı, tek kişi</td><td>Çok disiplinli ekip</td></tr>
+          <tr><td>Araç erişimi</td><td>Genelde sınırlı</td><td>Profesyonel araçlar dahil</td></tr>
+          <tr><td>İletişim</td><td>Doğrudan</td><td>Bazen hesap yöneticisi üzerinden</td></tr>
+          <tr><td>En uygun durum</td><td>Tek seferlik, küçük görev</td><td>Sürekli, çok yönlü strateji</td></tr>
+        </tbody>
+      </table>
+
       <h2>Freelancer ile Çalışmanın Avantajları</h2>
       <p><strong>Düşük maliyet:</strong> Freelancer'lar genellikle ajanslardan daha düşük ücretle çalışır çünkü ofis, ekip ve operasyonel giderleri yoktur.</p>
       <p><strong>Doğrudan iletişim:</strong> Aracı olmadan doğrudan işi yapan kişiyle konuşursunuz.</p>
@@ -1307,6 +1707,11 @@ export const posts: Post[] = [
 
       <h2>Ajans ile Çalışmanın Dezavantajları</h2>
       <p>Genellikle freelancer'a göre daha yüksek maliyetlidir ve bazı ajanslarda müşteri, işi fiilen yapan kişiyle değil bir hesap yöneticisiyle iletişim kurar — bu da bilgi kaybına yol açabilir. Doğru ajans, bu iletişim mesafesini şeffaflıkla kapatır.</p>
+
+      <div class="callout">
+        <span class="callout-title">Pratik İpucu</span>
+        <p>Küçük, tek seferlik işler için freelancer mantıklı olabilir. Sürekli ve çok yönlü bir strateji için ajans modeli genellikle daha sürdürülebilirdir.</p>
+      </div>
 
       <h2>Karar Verirken Sorulması Gereken Sorular</h2>
       <ul>
@@ -1339,6 +1744,20 @@ export const posts: Post[] = [
       <h2>Google Ads Bütçeniz, Doğrudan Kâr veya Zarar Demek</h2>
       <p>SEO'nun aksine, Google Ads'te sonuçlar anında görülür — ama aynı şekilde bütçe de anında harcanır. Yanlış kurgulanmış bir kampanya, haftalar içinde binlerce liranın boşa gitmesine neden olabilir. Bu yüzden ajans seçimi, SEO'ya göre çok daha "acil" bir karardır. İşte görüşme sırasında sormanız gereken 8 soru.</p>
 
+      <table>
+        <thead><tr><th>#</th><th>Soru</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Quality Score'u nasıl yönetiyorsunuz?</td></tr>
+          <tr><td>2</td><td>Negatif anahtar kelime listesini ne sıklıkla güncelliyorsunuz?</td></tr>
+          <tr><td>3</td><td>Dönüşüm izleme nasıl kuruluyor?</td></tr>
+          <tr><td>4</td><td>Raporlamaya nasıl erişim sağlıyorsunuz?</td></tr>
+          <tr><td>5</td><td>İlk 30 günde ne bekleyebilirim?</td></tr>
+          <tr><td>6</td><td>Hangi sektörlerde deneyiminiz var?</td></tr>
+          <tr><td>7</td><td>Yönetim ücretiniz nasıl hesaplanıyor?</td></tr>
+          <tr><td>8</td><td>Sözleşme minimum süresi ve iptal koşulları nedir?</td></tr>
+        </tbody>
+      </table>
+
       <h2>1. "Quality Score'u nasıl yönetiyorsunuz?"</h2>
       <p>Doğru cevap, reklam metni-açılış sayfası uyumundan, beklenen tıklama oranından ve alaka düzeyinden bahsetmelidir. "Sadece teklifi artırırız" gibi bir cevap kırmızı bayraktır — bu, bütçeyi yakan bir yaklaşımdır.</p>
 
@@ -1353,6 +1772,11 @@ export const posts: Post[] = [
 
       <h2>5. "İlk 30 günde ne bekleyebilirim?"</h2>
       <p>Dürüst bir ajans, ilk ayın "öğrenme dönemi" olduğunu ve CPA'nın (dönüşüm başı maliyet) başlangıçta yüksek olabileceğini açıkça söyler. "İlk haftadan itibaren mükemmel sonuç" vaadi gerçekçi değildir.</p>
+
+      <div class="callout">
+        <span class="callout-title">Dikkat</span>
+        <p>"Sadece teklifi artırırız" veya "İlk haftadan itibaren mükemmel sonuç" gibi cevaplar kırmızı bayraktır — bütçenizi yakan veya gerçekçi olmayan bir yaklaşıma işaret eder.</p>
+      </div>
 
       <h2>6. "Hangi sektörlerde deneyiminiz var?"</h2>
       <p>Her sektörün kendine özgü teklif stratejisi ve kullanıcı davranışı vardır. Sizin sektörünüzde (veya benzer bir B2B/B2C dinamiğinde) deneyimi olan bir ajans, öğrenme eğrisini kısaltır.</p>
