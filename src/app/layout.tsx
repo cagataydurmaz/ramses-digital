@@ -86,7 +86,7 @@ export default function RootLayout({
         <CookieBanner />
         {/* Google Analytics GA4 */}
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-JQMD80KVTJ"
+          src="https://www.googletagmanager.com/gtag/js?id=G-JQWD80KVTJ"
           strategy="afterInteractive"
         />
         <Script id="google-analytics" strategy="afterInteractive">
@@ -94,7 +94,7 @@ export default function RootLayout({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-JQMD80KVTJ');
+            gtag('config', 'G-JQWD80KVTJ');
           `}
         </Script>
         {/* Microsoft Clarity — heatmap & session recording */}
