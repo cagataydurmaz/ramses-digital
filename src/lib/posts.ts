@@ -15,6 +15,9 @@ export interface Post {
   tags: string[]
 }
 
+// Listing sayfaları için — ağır `content` HTML'i client bundle'a taşımamak amacıyla
+export type PostMeta = Omit<Post, 'content'>
+
 export const posts: Post[] = [
   {
     slug: 'googleda-zirveye-cikmanin-7-sirri',

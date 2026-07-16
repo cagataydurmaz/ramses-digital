@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
 import Script from 'next/script'
 import dynamic from 'next/dynamic'
@@ -37,12 +37,6 @@ export const metadata: Metadata = {
   creator: 'Ramses Dijital Reklam Ajansı',
   publisher: 'Ramses Dijital Reklam Ajansı',
   category: 'Marketing & Advertising',
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    maximumScale: 5,
-  },
-  themeColor: '#0A0F1E',
   openGraph: {
     title: 'Ramses Dijital Reklam Ajansı',
     description: 'Performans odaklı reklam ajansı — SEO, Google Ads, n8n otomasyon, web tasarım. Markanızı dijitalde büyütün.',
@@ -65,6 +59,13 @@ export const metadata: Metadata = {
     description: 'SEO, Google Ads, n8n otomasyon ve web tasarımında uzman dijital pazarlama ajansı.',
     images: ['https://ramsesdigital.com/og-image.png'],
   },
+}
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: '#0A0F1E',
 }
 
 export default function RootLayout({

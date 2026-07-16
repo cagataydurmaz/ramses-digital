@@ -55,12 +55,12 @@ export default function Navbar() {
             <div className="flex items-baseline gap-1.5">
               <span className="text-blue-500 font-bold text-xl tracking-tight">RAMSES</span>
               <span className="text-white font-light text-xl tracking-tight">Dijital</span>
-              <span className="hidden md:inline text-zinc-500 font-light text-xs tracking-tight">Reklam Ajansı</span>
+              <span className="hidden lg:inline text-zinc-500 font-light text-xs tracking-tight">Reklam Ajansı</span>
             </div>
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -77,7 +77,7 @@ export default function Navbar() {
           </nav>
 
           {/* Desktop CTA */}
-          <div className="hidden md:flex items-center gap-4">
+          <div className="hidden lg:flex items-center gap-4">
             <CalendlyButton
               label="Ücretsiz Danışmanlık"
               variant="primary"
@@ -89,7 +89,7 @@ export default function Navbar() {
           {/* Mobile Menu Toggle */}
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="md:hidden text-zinc-400 hover:text-white p-2.5 -mr-1"
+            className="lg:hidden text-zinc-400 hover:text-white p-2.5 -mr-1"
             aria-label="Menü"
             aria-expanded={menuOpen}
           >
@@ -101,7 +101,7 @@ export default function Navbar() {
       {/* Mobile Menu — no Framer Motion, no opacity animation, instant render */}
       {menuOpen && (
         <div
-          className="fixed top-16 left-0 right-0 bottom-0 z-40 bg-[#080D18] md:hidden overflow-y-auto"
+          className="fixed top-16 left-0 right-0 bottom-0 z-40 bg-[#080D18] lg:hidden overflow-y-auto"
           style={{ contain: 'layout style paint' }}
         >
           <div className="px-6 py-6 flex flex-col gap-1">
