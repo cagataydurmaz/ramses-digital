@@ -2,7 +2,8 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import CalendlyButton from '@/components/CalendlyButton'
-import { ExternalLink, Globe } from 'lucide-react'
+import { ArrowRight, Globe } from 'lucide-react'
+import { projects as liveProjects } from '@/lib/portfolio'
 
 export const metadata: Metadata = {
   title: 'Portföy | Gerçek Projeler, Gerçek Sonuçlar — Ramses Dijital',
@@ -16,74 +17,6 @@ export const metadata: Metadata = {
   },
 }
 
-const liveProjects = [
-  {
-    name: 'Psk. Nur Çelen',
-    title: 'Kocaeli Psikolog — Bireysel & Çift Terapi',
-    url: 'https://nurcelen.com',
-    displayUrl: 'nurcelen.com',
-    category: 'Web Tasarımı + SEO',
-    industry: 'Sağlık & Psikoloji',
-    desc: 'Kocaeli\'nin en çok aranan psikologlarından biri için sıfırdan tasarladığımız, SEO odaklı, randevu dönüşümü yüksek web sitesi. Yerel SEO çalışmasıyla Google\'da 1. sayfaya taşındı.',
-    tags: ['Web Tasarım', 'Yerel SEO', 'WhatsApp Entegrasyonu'],
-    thumb: '/portfolio/nurcelen.png',
-  },
-  {
-    name: 'Av. Mert Anıl Güler, LL.M.',
-    title: 'Bakırköy Avukat — Hukuk Bürosu',
-    url: 'https://www.mertanilguler.av.tr',
-    displayUrl: 'mertanilguler.av.tr',
-    category: 'Web Tasarımı + SEO',
-    industry: 'Hukuk',
-    desc: 'İstanbul Barosu avukatı için premium kurumsal kimliğe sahip, içerik ağırlıklı hukuk bürosu sitesi. Blog ve makale altyapısıyla otorite inşası.',
-    tags: ['Web Tasarım', 'Kurumsal SEO', 'İçerik Stratejisi'],
-    thumb: '/portfolio/mertanilguler.png',
-  },
-  {
-    name: 'Gamzeli Eczanem',
-    title: 'Online Eczane & Güzellik — E-Ticaret',
-    url: 'https://gamzelidermokozmetik.com',
-    displayUrl: 'gamzelidermokozmetik.com',
-    category: 'E-Ticaret + SEO',
-    industry: 'Sağlık & Güzellik',
-    desc: 'Eczacı güvencesiyle makyaj, yüz, cilt ve saç bakım ürünleri sunan e-ticaret platformu. Cilt analizi aracı ve kişiselleştirilmiş ürün öneri sistemi ile dönüşüm odaklı tasarım.',
-    tags: ['E-Ticaret', 'SEO', 'Cilt Analizi Aracı'],
-    thumb: '/portfolio/gamzelieczanem.png',
-  },
-  {
-    name: 'Veterineri Bul',
-    title: 'Yapay Zeka Destekli Veteriner Platformu',
-    url: 'https://www.veterineribul.com',
-    displayUrl: 'veterineribul.com',
-    category: 'Platform + Yapay Zeka',
-    industry: 'Veterinerlik & Pet',
-    desc: 'Türkiye\'nin ilk YZ destekli veteriner bulma ve online randevu platformu. Doğrulanan diplomalı veterinerler, video görüşme ve 7/24 yapay zeka asistan ile evcil hayvan sahiplerine ulaşır.',
-    tags: ['Platform', 'Yapay Zeka', 'Online Randevu'],
-    thumb: '/portfolio/veterineribul.png',
-  },
-  {
-    name: 'TerapistBul',
-    title: 'Yapay Zeka Eşleştirmeli Terapist Platformu',
-    url: 'https://terapistibul.com',
-    displayUrl: 'terapistibul.com',
-    category: 'Platform + Yapay Zeka',
-    industry: 'Psikoloji & Sağlık',
-    desc: 'Yapay zeka ile 81 ilden seçilmiş uzman psikolog ve terapistler arasından kişiye özel eşleştirme yapan platform. KVKK uyumlu, güvenli terapi altyapısı ve psikoloji blog sistemi.',
-    tags: ['Platform', 'YZ Eşleştirme', 'Online Terapi'],
-    thumb: '/portfolio/terapistbul.png',
-  },
-  {
-    name: 'Av. Furkan Arıkan',
-    title: 'İstanbul Avukat — Hukuk Bürosu',
-    url: 'https://furkanarikan.av.tr',
-    displayUrl: 'furkanarikan.av.tr',
-    category: 'Web Tasarımı + SEO',
-    industry: 'Hukuk',
-    desc: 'İstanbul Barosu avukatı için ceza, iş ve gayrimenkul hukuku alanlarında dava takibi ve danışmanlık odaklı kurumsal web sitesi. WhatsApp ve telefon entegrasyonuyla hızlı iletişim.',
-    tags: ['Web Tasarım', 'Kurumsal SEO', 'WhatsApp Entegrasyonu'],
-    thumb: '/portfolio/furkanarikan.png',
-  },
-]
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -102,7 +35,7 @@ const jsonLd = {
           position: i + 1,
           name: p.name,
           description: p.desc,
-          url: p.url,
+          url: `https://ramsesdigital.com/portfolyo/${p.slug}`,
         })),
       },
     },
@@ -145,9 +78,7 @@ export default function PortfolioPage() {
             {liveProjects.map((project) => (
               <Link
                 key={project.name}
-                href={project.url}
-                target="_blank"
-                rel="noopener noreferrer"
+                href={`/portfolyo/${project.slug}`}
                 className="group block bg-[#0D1225] border border-white/[0.06] hover:border-blue-500/30 rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-[0_0_40px_-10px_rgba(59,130,246,0.2)]"
               >
                 {/* Browser Chrome */}
@@ -161,7 +92,7 @@ export default function PortfolioPage() {
                     <Globe size={10} className="text-zinc-500 shrink-0" />
                     <span className="text-zinc-400 text-xs font-mono truncate">{project.displayUrl}</span>
                   </div>
-                  <ExternalLink size={13} className="text-zinc-500 group-hover:text-blue-400 transition-colors shrink-0" />
+                  <ArrowRight size={13} className="text-zinc-500 group-hover:text-blue-400 group-hover:translate-x-0.5 transition-all shrink-0" />
                 </div>
 
                 {/* Screenshot */}
@@ -185,7 +116,7 @@ export default function PortfolioPage() {
                       <p className="text-zinc-400 text-sm">{project.title}</p>
                     </div>
                     <span className="shrink-0 inline-flex items-center gap-1.5 text-xs font-medium text-blue-400 group-hover:text-blue-300 bg-blue-500/10 group-hover:bg-blue-500/20 border border-blue-500/20 rounded-full px-3 py-1.5 transition-all">
-                      Siteyi Gör <ExternalLink size={11} />
+                      Vakayı İncele <ArrowRight size={11} />
                     </span>
                   </div>
                   <p className="text-zinc-400 text-sm leading-relaxed mb-4">{project.desc}</p>

@@ -1,19 +1,19 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Portföy | Gerçek Başarı Hikayeleri — Ramses Dijital Reklam Ajansı',
+  title: 'Portföy | Gerçek Vaka Çalışmaları — Ramses Dijital Reklam Ajansı',
   description:
-    'SEO\'da %340 trafik artışı, Google Ads\'de 4.2x ROAS, 120K yeni takipçi. 100+ başarılı dijital pazarlama projesi ve gerçek müşteri sonuçları.',
+    'Sağlık, hukuk, e-ticaret ve yapay zeka platformlarında tasarladığımız ve büyüttüğümüz gerçek müşteri projeleri. Canlı siteler, doğrulanabilir vaka çalışmaları.',
   openGraph: {
-    title: 'Portföy | Ramses Digital Başarı Hikayeleri',
-    description: 'E-ticaret, turizm, fintech ve daha fazlasında elde ettiğimiz somut dijital pazarlama sonuçları.',
+    title: 'Portföy | Ramses Digital Vaka Çalışmaları',
+    description: 'Sağlık, hukuk, e-ticaret ve yapay zeka platformlarında elde ettiğimiz somut sonuçlar.',
     url: 'https://ramsesdigital.com/portfolyo',
   },
   alternates: { canonical: 'https://ramsesdigital.com/portfolyo' },
   twitter: {
     card: 'summary_large_image',
-    title: 'Portföy | Ramses Digital Başarı Hikayeleri',
-    description: 'E-ticaret, turizm, fintech ve daha fazlasında somut dijital pazarlama sonuçları.',
+    title: 'Portföy | Ramses Digital Vaka Çalışmaları',
+    description: 'Sağlık, hukuk, e-ticaret ve yapay zeka platformlarında somut dijital pazarlama sonuçları.',
     images: ['https://ramsesdigital.com/og-image.png'],
   },
 }
