@@ -204,7 +204,7 @@ export default function RootLayout({
                 ],
                 knowsLanguage: ['tr', 'en'],
                 sameAs: [
-                  'https://instagram.com/ramsesdigital',
+                  'https://instagram.com/ramses.digital',
                   'https://linkedin.com/company/ramsesdigital',
                   'https://twitter.com/ramsesdigital',
                 ],

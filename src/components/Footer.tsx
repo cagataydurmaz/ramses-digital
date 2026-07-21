@@ -58,7 +58,7 @@ export default function Footer() {
             <div className="flex items-center gap-3">
               {/* Sosyal medya linkleri — aria-label ile ekran okuyucu desteği */}
               <a
-                href="https://instagram.com/ramsesdigital"
+                href="https://instagram.com/ramses.digital"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram sayfamızı ziyaret edin"
