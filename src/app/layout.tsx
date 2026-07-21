@@ -205,8 +205,6 @@ export default function RootLayout({
                 knowsLanguage: ['tr', 'en'],
                 sameAs: [
                   'https://instagram.com/ramses.digital',
-                  'https://linkedin.com/company/ramsesdigital',
-                  'https://twitter.com/ramsesdigital',
                 ],
                 foundingDate: '2019',
                 numberOfEmployees: { '@type': 'QuantitativeValue', value: 6 },

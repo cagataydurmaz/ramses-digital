@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { MapPin, Phone, Mail, Instagram, Linkedin, Twitter } from 'lucide-react'
+import { MapPin, Phone, Mail, Instagram } from 'lucide-react'
 
 const services = [
   { label: 'SEO & İçerik Optimizasyonu', href: '/hizmetler/seo-kocaeli' },
@@ -65,24 +65,6 @@ export default function Footer() {
                 className="w-11 h-11 rounded-full bg-white/5 hover:bg-blue-500/20 border border-white/[0.06] hover:border-blue-500/40 flex items-center justify-center text-zinc-400 hover:text-blue-400 transition-all"
               >
                 <Instagram size={14} aria-hidden="true" />
-              </a>
-              <a
-                href="https://linkedin.com/company/ramsesdigital"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LinkedIn sayfamızı ziyaret edin"
-                className="w-11 h-11 rounded-full bg-white/5 hover:bg-blue-500/20 border border-white/[0.06] hover:border-blue-500/40 flex items-center justify-center text-zinc-400 hover:text-blue-400 transition-all"
-              >
-                <Linkedin size={14} aria-hidden="true" />
-              </a>
-              <a
-                href="https://twitter.com/ramsesdigital"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Twitter / X sayfamızı ziyaret edin"
-                className="w-11 h-11 rounded-full bg-white/5 hover:bg-blue-500/20 border border-white/[0.06] hover:border-blue-500/40 flex items-center justify-center text-zinc-400 hover:text-blue-400 transition-all"
-              >
-                <Twitter size={14} aria-hidden="true" />
               </a>
             </div>
           </div>
