@@ -16,15 +16,15 @@ export async function POST(request: NextRequest) {
       messages: [
         {
           role: 'user',
-          content: `Sen Ramses Digital'in uzman dijital pazarlama danışmanısın. Aşağıdaki bilgilere göre müşteriye özel bir teklif paketi hazırla.
+          content: `Sen Ramses Digital'in uzman dijital pazarlama danışmanısın. Aşağıdaki bilgilere göre müşteriye özel bir strateji önerisi hazırla.
 
 Müşteri Bilgileri:
 - İşletme Tipi: ${businessType}
 - İstenen Hizmetler: ${servicesList}
-- Aylık Bütçe: ${budget}
+- Aylık Bütçe Aralığı (sadece senin için, kapsamı buna göre ayarla — yanıtta tekrar etme): ${budget}
 - ${urlInfo}
 
-Lütfen aşağıdaki formatta Türkçe ve samimi bir teklif hazırla:
+Lütfen aşağıdaki formatta Türkçe ve samimi bir öneri hazırla:
 
 ## 🎯 Önerilen Paket
 
@@ -32,7 +32,7 @@ Lütfen aşağıdaki formatta Türkçe ve samimi bir teklif hazırla:
 
 ## 📈 3-6 Ayda Beklenen Sonuçlar
 
-[Her seçilen hizmet için somut ve gerçekçi beklentiler listele. Yüzdeler ve rakamlar kullan.]
+[Her seçilen hizmet için somut ve gerçekçi beklentiler listele — nitel ifadelerle (örn. "organik trafikte belirgin artış", "daha yüksek dönüşüm oranı")]
 
 ## 🚀 Önerilen İlk Adım
 
@@ -42,7 +42,10 @@ Lütfen aşağıdaki formatta Türkçe ve samimi bir teklif hazırla:
 
 [Bu işletme tipine özel bir ipucu veya uyarı]
 
-Yanıtın samimi, profesyonel ve motive edici olsun. Türkçe yaz.`,
+ÖNEMLİ KURALLAR:
+- Yanıtta HİÇBİR ŞEKİLDE fiyat, tutar, TL, ₺ veya sayısal yüzde/oran verme — ne genel ne de bütçeye özel bir rakam yazma.
+- Kesin fiyat ve paket detaylarının WhatsApp'ta netleştirileceğini son cümlede belirt.
+- Yanıtın samimi, profesyonel ve motive edici olsun. Türkçe yaz.`,
         },
       ],
     })
