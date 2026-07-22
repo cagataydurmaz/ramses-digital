@@ -184,6 +184,38 @@ export default function HomePage() {
           }}
         />
 
+        {/* Mısır motifi — Horus Gözü, marka renklerinde çok düşük opasiteli arka plan süsü */}
+        <div
+          className="hidden lg:block absolute -right-16 top-[26%] w-[380px] h-[260px] pointer-events-none opacity-[0.07]"
+          aria-hidden="true"
+        >
+          <svg viewBox="0 0 240 160" fill="none" className="w-full h-full">
+            <defs>
+              <linearGradient id="horusGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stopColor="#93C5FD" />
+                <stop offset="50%" stopColor="#3B82F6" />
+                <stop offset="100%" stopColor="#A78BFA" />
+              </linearGradient>
+            </defs>
+            <path d="M28,48 C55,10 150,6 196,32" stroke="url(#horusGradient)" strokeWidth="3" strokeLinecap="round" />
+            <path
+              d="M18,78 C50,52 150,50 198,74 C150,96 50,100 18,78 Z"
+              stroke="url(#horusGradient)"
+              strokeWidth="3"
+              strokeLinejoin="round"
+            />
+            <circle cx="108" cy="76" r="20" stroke="url(#horusGradient)" strokeWidth="3" />
+            <path
+              d="M18,78 L34,118 C34,130 22,132 22,120 C22,110 36,108 34,118"
+              stroke="url(#horusGradient)"
+              strokeWidth="3"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+            <path d="M108,96 C108,115 100,120 100,140" stroke="url(#horusGradient)" strokeWidth="3" strokeLinecap="round" />
+          </svg>
+        </div>
+
         {/* Yüzen hizmet rozetleri — sadece geniş ekranlarda, içerikle çakışmaz */}
         <div className="hidden xl:block absolute inset-0 pointer-events-none">
           <div
