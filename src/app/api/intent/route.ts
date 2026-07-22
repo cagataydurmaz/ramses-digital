@@ -32,6 +32,16 @@ const serviceMap: Record<string, { icon: string; slug: string; color: string }> 
   quote:     { icon: '✨', slug: '/teklif-al', color: 'blue' },
 }
 
+// Model bazen açıklama metni veya ```json kod bloğuyla sarmalanmış yanıt döndürebiliyor —
+// ayrıştırma bunu tolere etmeli, aksi halde tüm istek sessizce başarısız oluyordu.
+function extractJson(raw: string): unknown {
+  const fenced = raw.match(/```(?:json)?\s*([\s\S]*?)```/i)
+  const candidate = fenced ? fenced[1] : raw
+  const jsonMatch = candidate.match(/\{[\s\S]*\}/)
+  if (!jsonMatch) throw new Error('Invalid response format')
+  return JSON.parse(jsonMatch[0])
+}
+
 export async function POST(req: NextRequest) {
   try {
     const { message } = await req.json()
@@ -41,28 +51,26 @@ export async function POST(req: NextRequest) {
 
     const response = await client.messages.create({
       model: 'claude-sonnet-4-6',
-      max_tokens: 300,
+      max_tokens: 500,
       system: SYSTEM_PROMPT,
       messages: [{ role: 'user', content: message.trim() }],
     })
 
     const raw = response.content[0].type === 'text' ? response.content[0].text : ''
-    const jsonMatch = raw.match(/\{[\s\S]*\}/)
-    if (!jsonMatch) throw new Error('Invalid response format')
-
-    const parsed = JSON.parse(jsonMatch[0])
-    const meta = serviceMap[parsed.service] ?? serviceMap.quote
+    const parsed = extractJson(raw) as { service?: string; title?: string; message?: string; whatsappHint?: string }
+    const meta = serviceMap[parsed.service ?? ''] ?? serviceMap.quote
 
     return NextResponse.json({
-      service: parsed.service,
-      title: parsed.title,
-      message: parsed.message,
-      whatsappHint: parsed.whatsappHint,
+      service: parsed.service ?? 'quote',
+      title: parsed.title ?? 'Ücretsiz Danışmanlık',
+      message: parsed.message ?? 'İhtiyacınızı en iyi bir görüşmede netleştirebiliriz — hemen WhatsApp\'tan yazın.',
+      whatsappHint: parsed.whatsappHint ?? 'Web sitesinden yazıyorum, danışmanlık almak istiyorum.',
       icon: meta.icon,
       slug: meta.slug,
       color: meta.color,
     })
-  } catch {
+  } catch (err) {
+    console.error('api/intent error:', err)
     return NextResponse.json({ error: 'Analiz yapılamadı' }, { status: 500 })
   }
 }
