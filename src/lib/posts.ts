@@ -1128,7 +1128,7 @@ export const posts: Post[] = [
   },
   {
     slug: 'n8n-vs-zapier-vs-make-karsilastirmasi',
-    coverImage: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80&fit=crop',
+    coverImage: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1200&q=80&fit=crop',
     title: 'n8n vs Zapier vs Make: 2026 Otomasyon Aracı Karşılaştırması',
     excerpt:
       'İş akışı otomasyonu için en popüler 3 araç olan n8n, Zapier ve Make\'i fiyat, özellik, esneklik ve AI entegrasyonu açısından karşılaştırdık. Hangisi sizin için doğru?',
@@ -2659,7 +2659,7 @@ export const posts: Post[] = [
   },
   {
     slug: 'avukatlar-icin-dijital-pazarlama-seo-rehberi',
-    coverImage: 'https://images.unsplash.com/photo-1589829085413-56de8ae18c73?w=1200&q=80&fit=crop',
+    coverImage: 'https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=1200&q=80&fit=crop',
     title: 'Avukatlar İçin Dijital Pazarlama: Google Ads Yasakken SEO Nasıl Kullanılır?',
     excerpt:
       'Avukatlık Kanunu reklamı yasaklıyor ama dijital görünürlüğü değil. Hukuk büroları için SEO, içerik ve yerel görünürlük odaklı, mevzuata uygun bir dijital pazarlama rehberi.',
@@ -2745,7 +2745,7 @@ export const posts: Post[] = [
   },
   {
     slug: 'e-ticaret-icin-n8n-otomasyon-ornekleri',
-    coverImage: 'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=1200&q=80&fit=crop',
+    coverImage: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&q=80&fit=crop',
     title: 'E-Ticaret İşletmeleri İçin 7 Pratik n8n Otomasyon Örneği',
     excerpt:
       'Terk edilmiş sepetten stok senkronizasyonuna, fatura otomasyonundan yorum talebine kadar — e-ticaret işletmenizde haftada saatler kazandıracak 7 somut n8n otomasyon örneği.',
