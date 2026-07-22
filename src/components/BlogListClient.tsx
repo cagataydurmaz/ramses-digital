@@ -14,6 +14,9 @@ const CATEGORIES = [
   'AI & Strateji',
   'E-Posta',
   'Strateji',
+  'Otomasyon',
+  'Sektörel',
+  'Web Tasarım',
 ]
 
 function categoryBadgeClass(color: string): string {
@@ -30,6 +33,10 @@ function categoryBadgeClass(color: string): string {
       return 'bg-cyan-500/10 text-cyan-400'
     case 'emerald':
       return 'bg-emerald-500/10 text-emerald-400'
+    case 'fuchsia':
+      return 'bg-fuchsia-500/10 text-fuchsia-400'
+    case 'indigo':
+      return 'bg-indigo-500/10 text-indigo-400'
     default:
       return 'bg-blue-500/10 text-blue-400'
   }

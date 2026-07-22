@@ -110,6 +110,10 @@ function categoryBadgeClass(color: string): string {
       return 'bg-cyan-500/10 text-cyan-400 border-cyan-500/20'
     case 'emerald':
       return 'bg-emerald-500/10 text-emerald-400 border-emerald-500/20'
+    case 'fuchsia':
+      return 'bg-fuchsia-500/10 text-fuchsia-400 border-fuchsia-500/20'
+    case 'indigo':
+      return 'bg-indigo-500/10 text-indigo-400 border-indigo-500/20'
     default:
       return 'bg-blue-500/10 text-blue-400 border-blue-500/20'
   }

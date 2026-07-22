@@ -2561,4 +2561,366 @@ export const posts: Post[] = [
       <p>Teknik SEO hâlâ önemli, ama artık yeterli değil. Kim olduğunuzu, neyi gerçekten deneyimlediğinizi ve neden güvenilir olduğunuzu açıkça göstermeyen içerikler, teknik olarak kusursuz olsa bile geride kalıyor. Ramses Digital olarak tüm içerik stratejilerimizde E-E-A-T sinyallerini baştan itibaren kuruyoruz.</p>
     `,
   },
+  {
+    slug: 'donusum-odakli-web-tasarimi-ilkeleri',
+    coverImage: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=1200&q=80&fit=crop',
+    title: 'Dönüşüm Odaklı Web Tasarımı: Ziyaretçiyi Müşteriye Çeviren 8 İlke',
+    excerpt:
+      'Güzel bir web sitesi yeterli değil. Ziyaretçiyi müşteriye çeviren tasarım kararları, kanıtlanmış 8 ilke ve gerçek örneklerle bu rehberde.',
+    category: 'Web Tasarım',
+    categoryColor: 'indigo',
+    emoji: '🎨',
+    coverGradient: 'from-indigo-500/10 to-indigo-900/5',
+    readTime: 4,
+    date: '2026-07-16',
+    author: 'Ramses Digital Ekibi',
+    authorRole: 'Web Tasarım & UX Uzmanları',
+    tags: ['Web Tasarım', 'CRO', 'UX', 'Dönüşüm Oranı'],
+    content: `
+      <h2>Tasarım Bir Sanat Değil, Bir Dönüşüm Aracıdır</h2>
+      <p>Çoğu işletme sahibi web sitesini "güzel görünsün" diye tasarlatır. Oysa web tasarımının gerçek işi estetik değil — ziyaretçiyi harekete geçirmektir. İki site aynı derecede "güzel" olabilir ama biri %1 dönüşüm oranıyla çalışırken diğeri %5 ile çalışabilir. Aradaki fark, tasarımın ardındaki niyetli kararlardır.</p>
+      <p>Stanford Üniversitesi'nin web güvenilirliği araştırmasına göre kullanıcıların %94'ü bir siteye güvenmeme kararını doğrudan tasarımla ilişkilendiriyor. Google'ın kendi araştırması ise kullanıcıların bir sayfa hakkında ilk izlenimi yaklaşık 50 milisaniyede oluşturduğunu gösteriyor. Yani tasarım kararlarınız, kullanıcı daha içeriği okumadan önce onu kazanıyor ya da kaybediyor.</p>
+
+      <div class="stat-grid">
+        <div class="stat-card">
+          <span class="stat-number">%94</span>
+          <span class="stat-label">Güvensizlik kararının tasarımla ilişkilendirilme oranı</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">50ms</span>
+          <span class="stat-label">İlk izlenimin oluştuğu süre</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number emerald">%32</span>
+          <span class="stat-label">Yükleme süresi 1'den 3 saniyeye çıkınca artan terk oranı</span>
+        </div>
+      </div>
+
+      <h2>1. Netlik Önce Gelir</h2>
+      <p>Bir ziyaretçi sayfanıza girdiğinde 5 saniye içinde "burada ne yapabilirim?" sorusuna cevap bulamıyorsa, siteden ayrılır. Tek bir net değer önerisi, tek bir net eylem çağrısı (CTA) — karmaşadan kaçının. Aynı sayfada 5 farklı buton, ziyaretçiyi hiçbirine tıklamamaya iter; buna "seçim felci" denir.</p>
+
+      <h2>2. Katlanma Çizgisi Üstünü (Above the Fold) Doğru Kurun</h2>
+      <p>Kullanıcı scroll yapmadan gördüğü ilk ekran, kalıp kalmama kararını verdiği yerdir. Başlık, kısa bir alt açıklama ve birincil CTA bu alanda net şekilde yer almalı. Uzun, süslü animasyonlu giriş bölümleri genellikle asıl mesajı geciktirip dönüşümü düşürür.</p>
+
+      <h2>3. Güven Sinyallerini Görünür Kılın</h2>
+      <p>Müşteri logoları, yıldızlı yorumlar, "X yıldır hizmet veriyoruz" gibi ifadeler, güvenlik rozetleri — bunların hepsi ziyaretçinin "bu firma gerçek ve güvenilir mi?" sorusuna sessizce cevap verir. Özellikle ilk kez sitenizi ziyaret eden biri için bu sinyaller, fiyattan bile önce gelir.</p>
+
+      <div class="callout">
+        <span class="callout-title">Pratik İpucu</span>
+        <p>Güven sinyallerini CTA'nın hemen yakınına yerleştirin — "500+ müşteri" ifadesi buton metninin 2 santim üzerinde, sayfanın en altındaki bir köşede olduğundan çok daha etkilidir.</p>
+      </div>
+
+      <h2>4. Form Sürtünmesini Azaltın</h2>
+      <p>Her ekstra form alanı, dönüşüm oranınızdan bir parça çalar. İhtiyacınız olmayan hiçbir bilgiyi (örneğin ilk temas formunda "şirket büyüklüğü" gibi ikincil detayları) zorunlu tutmayın. İsim, telefon/e-posta ve kısa bir mesaj alanı çoğu zaman yeterlidir — geri kalanını ilk görüşmede öğrenebilirsiniz.</p>
+
+      <h2>5. Mobil Öncelikli Tasarlayın</h2>
+      <p>Türkiye'de web trafiğinin önemli bir kısmı mobil cihazlardan geliyor. Masaüstünde mükemmel görünen ama mobilde metni sıkışan, butonu küçük kalan bir tasarım, trafiğinizin büyük kısmını doğrudan kaybettiriyor demektir. Tasarımı önce mobilde kurup sonra masaüstüne genişletmek, tersinden gitmekten daha güvenli sonuç verir.</p>
+
+      <h2>6. Hız, Dönüşümün Görünmeyen Ortağıdır</h2>
+      <p>En iyi tasarım bile yavaş yüklenirse hiç görülmez. Core Web Vitals metrikleri (LCP, INP, CLS) hem Google sıralaması hem gerçek kullanıcı davranışı için belirleyici. Bu konuyu <a href="/blog/core-web-vitals-donusum-orani">Core Web Vitals rehberimizde</a> detaylı işledik.</p>
+
+      <h2>7. Görsel Hiyerarşi Kurun</h2>
+      <p>Kullanıcılar bir sayfayı satır satır okumaz; genellikle F veya Z şeklinde bir göz hareketiyle tarar. Başlıkları, önemli cümleleri ve CTA'ları bu tarama yolunun üzerine yerleştirmek, mesajınızın gözden kaçmasını önler. Aşırı kalabalık, düşük kontrastlı metinler bu taramayı bozar.</p>
+
+      <h2>8. Sürekli Test Edin</h2>
+      <p>Tasarım bir kere yapılıp bırakılan bir iş değildir. Buton rengi, başlık metni, form uzunluğu gibi küçük değişiklikler A/B testleriyle sınandığında, bazen %20-30'a varan dönüşüm farkları ortaya çıkabilir. "Bize göre güzel" yerine "veriye göre çalışan" tasarım kültürü, uzun vadede fark yaratan şeydir.</p>
+
+      <table>
+        <thead><tr><th>Unsur</th><th>Zayıf Örnek</th><th>Güçlü Örnek</th></tr></thead>
+        <tbody>
+          <tr><td>CTA Metni</td><td>"Gönder"</td><td>"Ücretsiz Analiz İste"</td></tr>
+          <tr><td>Form Uzunluğu</td><td>8+ zorunlu alan</td><td>3 alan (isim, telefon, mesaj)</td></tr>
+          <tr><td>Güven Sinyali</td><td>Sayfanın en altında, tek satır</td><td>CTA'nın yanında, görsel destekli</td></tr>
+          <tr><td>Mobil Buton</td><td>Küçük, metin etrafında sıkışık</td><td>Parmak dokunuşuna uygun, belirgin</td></tr>
+        </tbody>
+      </table>
+
+      <blockquote>
+        <p>"Kullanıcı, sayfanız hakkındaki kararını içeriği okumadan önce verir — tasarım, mesajınızdan önce konuşur."</p>
+      </blockquote>
+
+      <h2>Sık Sorulan Sorular</h2>
+
+      <h3>Dönüşüm odaklı tasarım maliyeti daha mı yüksek?</h3>
+      <p>Hayır, genellikle aynı bütçeyle yapılabilir — fark, tasarım kararlarının rastgele değil niyetli verilmesidir. Asıl maliyet, dönüşümü düşük bir siteyle aylarca reklam bütçesi harcamaktan doğar.</p>
+
+      <h3>Mevcut sitemi baştan yapmadan iyileştirebilir miyim?</h3>
+      <p>Çoğu zaman evet. CTA metnini netleştirmek, form alanlarını azaltmak, güven sinyallerini yukarı taşımak gibi küçük müdahaleler bile ölçülebilir dönüşüm artışı sağlayabilir — sıfırdan yeniden tasarım şart değildir.</p>
+
+      <h3>Hangi metrikleri takip etmeliyim?</h3>
+      <p>Dönüşüm oranı (form doldurma, arama, WhatsApp tıklaması), hemen çıkma oranı ve ortalama oturum süresi başlangıç için yeterli. GA4 kurulumuyla bunları ayrı ayrı hedef olarak izleyebilirsiniz.</p>
+
+      <h3>A/B test için minimum trafik gerekir mi?</h3>
+      <p>İstatistiksel olarak anlamlı sonuç için belirli bir hacim gerekir; çok düşük trafikli sitelerde test sonuçları güvenilir olmayabilir. Bu durumda sektör genelinde kanıtlanmış prensipleri (bu yazıdaki 8 ilke gibi) uygulamak daha pratik bir başlangıçtır.</p>
+
+      <h3>Sonuç</h3>
+      <p>Güzel tasarım ile dönüşen tasarım aynı şey değildir. Netlik, hız, güven sinyalleri ve sürekli test — bu dört unsuru merkeze alan bir web sitesi, sadece göze hoş gelmekle kalmaz, işletmenize gerçek müşteri kazandırır. Ramses Digital olarak her web tasarım projemizde bu ilkeleri baştan itibaren uyguluyoruz.</p>
+    `,
+  },
+  {
+    slug: 'avukatlar-icin-dijital-pazarlama-seo-rehberi',
+    coverImage: 'https://images.unsplash.com/photo-1589829085413-56de8ae18c73?w=1200&q=80&fit=crop',
+    title: 'Avukatlar İçin Dijital Pazarlama: Google Ads Yasakken SEO Nasıl Kullanılır?',
+    excerpt:
+      'Avukatlık Kanunu reklamı yasaklıyor ama dijital görünürlüğü değil. Hukuk büroları için SEO, içerik ve yerel görünürlük odaklı, mevzuata uygun bir dijital pazarlama rehberi.',
+    category: 'Sektörel',
+    categoryColor: 'orange',
+    emoji: '⚖️',
+    coverGradient: 'from-orange-500/10 to-orange-900/5',
+    readTime: 4,
+    date: '2026-07-18',
+    author: 'Ramses Digital Ekibi',
+    authorRole: 'Hukuk Sektörü Dijital Pazarlama Uzmanları',
+    tags: ['Hukuk', 'Avukat SEO', 'Sektörel', 'İçerik Stratejisi'],
+    content: `
+      <h2>Avukatlar İçin Reklam Neden Yasak?</h2>
+      <p>1136 sayılı Avukatlık Kanunu ve Türkiye Barolar Birliği meslek kuralları, avukatların iş elde etmeye yönelik reklam yapmasını açıkça yasaklar. Bu, Google Ads, sosyal medya reklamı ve benzeri ücretli tanıtım kanallarını byrç kapatır. Ama bu yasak, dijitalde görünmezsiniz anlamına gelmez — sadece hangi kanalları kullanabileceğinizi belirler.</p>
+      <p>İyi haber şu: SEO, içerik üretimi ve Google Business Profile gibi organik kanallar bu yasağın kapsamı dışındadır. Aslında bu kısıtlama, doğru stratejiyle çalışan hukuk bürolarına rakip avukatlara karşı sürdürülebilir bir avantaj bile sağlayabilir — çünkü SEO'da öne geçmek zaman ister ve bu zamanı erken başlayan kazanır.</p>
+
+      <div class="stat-grid">
+        <div class="stat-card">
+          <span class="stat-number">0₺</span>
+          <span class="stat-label">SEO ve içerik stratejisinin reklam bütçesi maliyeti</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number emerald">3-6 Ay</span>
+          <span class="stat-label">Organik görünürlükte ilk anlamlı sonuçların alınma süresi</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number violet">YMYL</span>
+          <span class="stat-label">Google'ın hukuk içeriğini değerlendirdiği en sıkı kategori</span>
+        </div>
+      </div>
+
+      <h2>Yasak Olan ve Serbest Olan Kanallar</h2>
+      <table>
+        <thead><tr><th>Kanal</th><th>Durum</th></tr></thead>
+        <tbody>
+          <tr><td>Google Ads / arama reklamı</td><td>Yasak</td></tr>
+          <tr><td>Sosyal medya reklamı (ücretli)</td><td>Yasak</td></tr>
+          <tr><td>SEO / organik arama görünürlüğü</td><td>Serbest</td></tr>
+          <tr><td>Blog ve makale içeriği</td><td>Serbest</td></tr>
+          <tr><td>Google Business Profile</td><td>Serbest</td></tr>
+          <tr><td>Sosyal medyada organik paylaşım</td><td>Serbest (tanıtım niteliği taşımamalı)</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Yerel SEO: Bulunduğunuz İlçede Görünür Olun</h2>
+      <p>"İstanbul boşanma avukatı" veya "Bakırköy iş hukuku avukatı" gibi aramalar, doğrudan iş talebi taşıyan yüksek niyetli sorgulardır. Google Business Profile'ınızı eksiksiz doldurmak, doğru kategori seçmek ve düzenli müşteri yorumu almak, bu aramalarda haritada (Local Pack) görünmenizi sağlayan en güçlü, tamamen ücretsiz araçtır.</p>
+      <p>NAP tutarlılığı (isim, adres, telefon bilgisinin her platformda birebir aynı olması) burada da kritik önem taşır — tıpkı diğer yerel işletmelerde olduğu gibi, tutarsız bilgi Google'ın güven skorunu düşürür.</p>
+
+      <h2>İçerik ve Makale Stratejisiyle Otorite İnşası</h2>
+      <p>Uzmanlık alanınıza göre (ceza hukuku, iş hukuku, gayrimenkul, boşanma) düzenli makale yayınlamak, hem potansiyel danışanların sorularına gerçek değer sunar hem de Google'a "bu büro bu konuda derinlemesine bilgili" sinyali verir. "İş akdi feshi tazminat hesabı nasıl yapılır" gibi somut, arama niyetine uygun başlıklar, "hukuki danışmanlık" gibi genel başlıklardan çok daha etkili sonuç verir.</p>
+      <p>İçerik üretirken kesinlikle hukuki tavsiye niteliğinde kesin ifadeler yerine bilgilendirici bir dil kullanmak, hem etik açıdan hem SEO açısından (genel bilgi sitelerin sorumluluk sınırlarını netleştirmesi Google tarafından da olumlu değerlendirilir) doğru yaklaşımdır.</p>
+
+      <div class="callout">
+        <span class="callout-title">Dikkat</span>
+        <p>İçerikte "garanti sonuç", "kesin kazanırsınız" gibi ifadelerden kaçının — hem meslek kurallarına hem de gerçekçi beklenti yönetimine aykırıdır. Bilgilendirici, ölçülü bir dil hem etik hem SEO açısından daha güçlüdür.</p>
+      </div>
+
+      <h2>E-E-A-T: Hukuk İçeriğinde Kritik Öneme Sahip</h2>
+      <p>Google, hukuk ve sağlık gibi konuları "Your Money or Your Life" (YMYL) kategorisinde değerlendirir — yani yanlış bilginin kullanıcıya ciddi zarar verebileceği alanlar. Bu kategoride yazarın gerçek kimliği, baro sicil bilgisi ve uzmanlık alanı açıkça belirtilmemiş içerikler, teknik olarak iyi yazılmış olsa bile sıralamada dezavantajlı kalır. Bu konuyu <a href="/blog/eeat-yazar-kimligi-icerik-kim-yazdi">E-E-A-T rehberimizde</a> detaylı ele aldık.</p>
+
+      <blockquote>
+        <p>"Reklam yasağı bir engel değil, bir filtre — SEO'ya erken başlayan hukuk büroları, rakiplerinin asla kapatamayacağı bir organik görünürlük avantajı kazanıyor."</p>
+      </blockquote>
+
+      <h2>Sık Sorulan Sorular</h2>
+
+      <h3>Avukatlar hiçbir şekilde dijital pazarlama yapamaz mı?</h3>
+      <p>Yapabilir — yasak olan "iş elde etmeye yönelik reklam"dır, dijital varlık bulundurmak veya bilgilendirici içerik üretmek değil. Web sitesi, SEO, içerik üretimi ve Google Business Profile tamamen meslek kurallarına uygundur.</p>
+
+      <h3>Sosyal medyada hiç paylaşım yapmamalı mıyım?</h3>
+      <p>Organik paylaşım yapılabilir; sınır, bunun doğrudan tanıtım/reklam niteliği taşımamasıdır. Sektörel bilgilendirme, mevzuat güncellemeleri gibi içerikler bu sınırın içinde kalır.</p>
+
+      <h3>SEO sonuçları ne kadar sürede görülür?</h3>
+      <p>Yerel arama (Google Business Profile) için birkaç hafta içinde ilk hareket görülebilir; web sitesi organik sıralaması için 3-6 aylık tutarlı bir çalışma gerçekçi bir beklentidir. Rekabetin yoğun olduğu büyük şehir merkezlerinde bu süre biraz daha uzayabilir.</p>
+
+      <h3>Küçük bir büro büyük hukuk firmalarıyla SEO'da rekabet edebilir mi?</h3>
+      <p>Evet, özellikle niş uzmanlık alanlarında ve belirli bir ilçe/bölgede odaklanarak. Büyük firmalar genel terimlerde güçlüyken, "Kadıköy miras hukuku avukatı" gibi spesifik, yerel aramalarda küçük bir büro çok daha hızlı sonuç alabilir.</p>
+
+      <h3>Sonuç</h3>
+      <p>Avukatlar için dijital pazarlama, reklam yasağına rağmen değil, o yasağın açtığı boşlukta organik kanallarla inşa edilir. Yerel SEO, içerik otoritesi ve E-E-A-T sinyalleri güçlü bir şekilde bir araya geldiğinde, uzun vadede reklamdan çok daha kalıcı bir görünürlük sağlar. Ramses Digital olarak hukuk büroları için tamamen mevzuata uygun, SEO ve içerik odaklı stratejiler kuruyoruz.</p>
+    `,
+  },
+  {
+    slug: 'e-ticaret-icin-n8n-otomasyon-ornekleri',
+    coverImage: 'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=1200&q=80&fit=crop',
+    title: 'E-Ticaret İşletmeleri İçin 7 Pratik n8n Otomasyon Örneği',
+    excerpt:
+      'Terk edilmiş sepetten stok senkronizasyonuna, fatura otomasyonundan yorum talebine kadar — e-ticaret işletmenizde haftada saatler kazandıracak 7 somut n8n otomasyon örneği.',
+    category: 'Otomasyon',
+    categoryColor: 'fuchsia',
+    emoji: '🔄',
+    coverGradient: 'from-fuchsia-500/10 to-fuchsia-900/5',
+    readTime: 4,
+    date: '2026-07-20',
+    author: 'Ramses Digital Ekibi',
+    authorRole: 'Otomasyon Uzmanları',
+    tags: ['n8n', 'E-Ticaret', 'Otomasyon', 'CRM'],
+    content: `
+      <h2>E-Ticarette Manuel İş Yükü Nereye Gidiyor?</h2>
+      <p>Bir e-ticaret işletmesinin günlük operasyonu; sipariş takibi, stok güncelleme, müşteri iletişimi ve muhasebe kayıtları arasında sürekli el ile veri taşımayla dolar. Bu işlerin çoğu, gerçekte insan kararı gerektirmeyen, tekrar eden mekanik adımlardır — tam da n8n gibi bir otomasyon aracının çözdüğü sorun. Aşağıda, gerçek e-ticaret işletmelerinde uyguladığımız 7 somut otomasyon örneğini paylaşıyoruz.</p>
+
+      <div class="stat-grid">
+        <div class="stat-card">
+          <span class="stat-number fuchsia">7</span>
+          <span class="stat-label">Bu yazıda ele alınan somut otomasyon örneği</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number emerald">%0</span>
+          <span class="stat-label">Self-hosted n8n'de aylık lisans maliyeti</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number violet">Saatler</span>
+          <span class="stat-label">Haftalık kazanılan manuel işlem süresi</span>
+        </div>
+      </div>
+
+      <h2>1. Terk Edilmiş Sepet Hatırlatma E-postası</h2>
+      <p>Kullanıcı sepete ürün ekleyip satın almadan ayrıldığında, n8n bunu e-ticaret platformunun webhook'u üzerinden anında yakalar ve belirli bir süre sonra otomatik bir hatırlatma e-postası (isteğe bağlı indirim kodu ile) tetikler. Bu, e-ticarette en yüksek ROI'li otomasyonlardan biridir çünkü zaten satın alma niyeti göstermiş bir kullanıcıyı hedefler.</p>
+
+      <h2>2. Sipariş Durumu Bildirimi (WhatsApp/SMS)</h2>
+      <p>Sipariş alındığında, kargoya verildiğinde ve teslim edildiğinde müşteriye otomatik WhatsApp veya SMS bildirimi gönderilir. Bu, hem müşteri deneyimini iyileştirir hem de "siparişim nerede" tarzı destek taleplerini önemli ölçüde azaltır.</p>
+
+      <h2>3. Çoklu Kanal Stok Senkronizasyonu</h2>
+      <p>Aynı ürünü hem kendi sitenizde hem Trendyol/Hepsiburada gibi pazaryerlerinde satıyorsanız, stok bilgisinin tüm kanallarda anlık senkronize olması şarttır. n8n, bir kanalda satış gerçekleştiğinde diğer tüm kanallardaki stok miktarını otomatik günceller — bu olmadan "stokta yok" ürün satma riski gerçek bir gelir kaybına dönüşür.</p>
+
+      <h2>4. Müşteri Segmentasyonu ve CRM Etiketleme</h2>
+      <p>Satın alma geçmişine göre müşterileri otomatik olarak segmentlere ayırmak (sık alışveriş yapan, tek seferlik, yüksek sepet tutarlı) manuel yapıldığında saatler alır. n8n, her siparişten sonra CRM'deki müşteri kaydını otomatik güncelleyip doğru etiketi ekleyebilir — bu da sonraki pazarlama kampanyalarını çok daha isabetli hale getirir.</p>
+
+      <h2>5. Fatura ve Muhasebe Otomasyonu</h2>
+      <p>Her siparişte otomatik e-fatura kesme, muhasebe yazılımına kayıt aktarma gibi işlemler n8n ile entegre edilebilir. Bu, ay sonunda saatler süren manuel fatura eşleştirme işini ortadan kaldırır ve insan hatası kaynaklı muhasebe hatalarını azaltır.</p>
+
+      <h2>6. Satın Alma Sonrası Yorum Talebi</h2>
+      <p>Ürün teslim edildikten belirli bir süre (örneğin 5-7 gün) sonra, müşteriye otomatik bir yorum/değerlendirme talebi gönderilir. Yorumlar hem yeni müşteriler için güven sinyali oluşturur hem de bazı pazaryerlerinde sıralama algoritmasını doğrudan etkiler.</p>
+
+      <h2>7. Sosyal Medya Katalog Senkronizasyonu</h2>
+      <p>Instagram ve Meta mağaza kataloğunun, e-ticaret sitenizdeki güncel ürün/fiyat/stok bilgisiyle senkron kalması gerekir. n8n bunu otomatik yaparak, sosyal medyada gösterilen ürünlerin sitede satılmayan veya fiyatı değişmiş ürünler olmasını önler.</p>
+
+      <table>
+        <thead><tr><th>Süreç</th><th>Manuel</th><th>n8n ile Otomatik</th></tr></thead>
+        <tbody>
+          <tr><td>Terk edilmiş sepet takibi</td><td>Fark edilmeyebilir</td><td>Anında tetiklenir</td></tr>
+          <tr><td>Stok senkronizasyonu</td><td>Günlük manuel kontrol</td><td>Gerçek zamanlı</td></tr>
+          <tr><td>Fatura kesme</td><td>Ay sonu toplu, hataya açık</td><td>Sipariş anında otomatik</td></tr>
+          <tr><td>Yorum talebi</td><td>Genellikle unutulur</td><td>Her siparişte tutarlı</td></tr>
+        </tbody>
+      </table>
+
+      <blockquote>
+        <p>"Otomasyonun asıl değeri hız değil tutarlılıktır — insan unutabilir, hasta olabilir, tatile çıkabilir; doğru kurulmuş bir iş akışı hiçbir zaman aksamaz."</p>
+      </blockquote>
+
+      <div class="callout">
+        <span class="callout-title">Pratik İpucu</span>
+        <p>Otomasyona en yüksek ROI'li süreçten başlayın — çoğu e-ticaret işletmesi için bu, terk edilmiş sepet hatırlatmasıdır. Tek bir otomasyonla başlayıp sonuçları görün, sonra genişletin.</p>
+      </div>
+
+      <h2>Sık Sorulan Sorular</h2>
+
+      <h3>n8n'i mevcut e-ticaret altyapıma entegre etmek zor mu?</h3>
+      <p>Çoğu popüler e-ticaret platformu (Shopify, WooCommerce, Ticimax gibi) ve pazaryeri, webhook veya API desteği sunar; n8n bunlara doğrudan bağlanabilir. Kurulum genellikle bir geliştirici veya ajans desteğiyle birkaç gün içinde tamamlanır.</p>
+
+      <h3>Küçük bir e-ticaret sitesi için otomasyon gerekli mi?</h3>
+      <p>Sipariş hacmi düşükken manuel süreçler idare edebilir, ama işletme büyüdükçe bu yük katlanarak artar. Otomasyonu erken kurmak, büyüme sürecinde ek personel ihtiyacını geciktirir veya azaltır.</p>
+
+      <h3>n8n vs Zapier/Make hangisi e-ticaret için daha uygun?</h3>
+      <p>Yüksek hacimli işlemlerde (aylık binlerce sipariş) self-hosted n8n maliyet avantajı sağlar. Detaylı karşılaştırmayı <a href="/blog/n8n-vs-zapier-vs-make-karsilastirmasi">n8n vs Zapier vs Make yazımızda</a> ele aldık.</p>
+
+      <h3>Bu otomasyonları kurmak için teknik bilgim olmalı mı?</h3>
+      <p>n8n'in görsel arayüzü kod bilgisi gerektirmez, ama karmaşık iş akışları için otomasyon deneyimi faydalıdır. Çoğu işletme bu kurulumu bir ajansa veya freelance otomasyon uzmanına yaptırıp sonrasında kendi başına yönetir.</p>
+
+      <h3>Sonuç</h3>
+      <p>E-ticarette otomasyon, lüks değil rekabet gereğidir. Terk edilmiş sepetten stok senkronizasyonuna kadar bu 7 örnek, çoğu işletmenin haftada saatler kazanmasını sağlıyor. Ramses Digital olarak e-ticaret işletmelerine özel n8n otomasyon altyapıları kuruyoruz.</p>
+    `,
+  },
+  {
+    slug: 'linkedin-b2b-icerik-stratejisi',
+    coverImage: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=1200&q=80&fit=crop',
+    title: 'B2B Firmalar İçin LinkedIn İçerik Stratejisi: Kocaeli Sanayi Örneği',
+    excerpt:
+      'Instagram tüketiciye, LinkedIn karar vericiye konuşur. Kocaeli\'nin sanayi ağırlıklı B2B ekonomisinde LinkedIn\'i etkili kullanmanın içerik sütunları ve pratik stratejisi.',
+    category: 'Sosyal Medya',
+    categoryColor: 'pink',
+    emoji: '💼',
+    coverGradient: 'from-pink-500/10 to-pink-900/5',
+    readTime: 4,
+    date: '2026-07-22',
+    author: 'Ramses Digital Ekibi',
+    authorRole: 'Sosyal Medya Stratejistleri',
+    tags: ['LinkedIn', 'B2B', 'İçerik Stratejisi', 'Sosyal Medya'],
+    content: `
+      <h2>LinkedIn, Instagram'ın B2B Versiyonu Değildir</h2>
+      <p>Birçok işletme, Instagram'da işe yarayan içerik formatını doğrudan LinkedIn'e taşımaya çalışır ve hayal kırıklığına uğrar. Sebep basit: iki platformun kullanıcı niyeti tamamen farklı. Instagram'da kullanıcılar eğlenmek veya ilham almak için gezinirken, LinkedIn'de kullanıcılar mesleki bir bağlamda, genellikle karar verici sıfatıyla bulunur. Kocaeli gibi sanayi ve B2B ağırlıklı bir ekonomide bu fark özellikle belirleyicidir — tedarikçi seçen bir üretim müdürü, Instagram'da değil LinkedIn'de karar vericiyle karşılaşır.</p>
+
+      <div class="stat-grid">
+        <div class="stat-card">
+          <span class="stat-number">B2B</span>
+          <span class="stat-label">LinkedIn'in birincil kullanım bağlamı</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number emerald">Karar Verici</span>
+          <span class="stat-label">Platformdaki tipik kullanıcı profili</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number violet">Uzun Vadeli</span>
+          <span class="stat-label">B2B satış döngüsüne uygun içerik ritmi</span>
+        </div>
+      </div>
+
+      <h2>LinkedIn vs Instagram: B2B'de Hangisi Ne İşe Yarar?</h2>
+      <table>
+        <thead><tr><th>Boyut</th><th>Instagram</th><th>LinkedIn</th></tr></thead>
+        <tbody>
+          <tr><td>Kullanıcı bağlamı</td><td>Kişisel, eğlence odaklı</td><td>Mesleki, karar verici odaklı</td></tr>
+          <tr><td>İçerik türü</td><td>Görsel, kısa video</td><td>Metin, vaka çalışması, sektörel içgörü</td></tr>
+          <tr><td>Satış döngüsü uyumu</td><td>Kısa, dürtüsel satın alma</td><td>Uzun, çok aşamalı B2B karar süreci</td></tr>
+          <tr><td>Kocaeli sanayi için değeri</td><td>Marka bilinirliği (sınırlı)</td><td>Tedarikçi/iş ortağı bulma (yüksek)</td></tr>
+        </tbody>
+      </table>
+
+      <h2>İçerik Sütunlarınızı Belirleyin</h2>
+      <p>Rastgele paylaşım yerine, birbirini tamamlayan birkaç içerik sütunu üzerinde tutarlı çalışmak, LinkedIn'de güvenilirlik inşa etmenin en etkili yoludur:</p>
+      <p><strong>Thought leadership:</strong> Sektörünüzdeki bir gelişme, trend veya değişim hakkında kendi görüşünüzü paylaşmak. Bu, sizi "bir tedarikçi" konumundan "sektör uzmanı" konumuna taşır.</p>
+      <p><strong>Vaka çalışması:</strong> Somut bir proje veya müşteri sonucunu (isim izniyle veya anonim) paylaşmak. Rakamlarla desteklenen gerçek örnekler, LinkedIn'de en yüksek etkileşimi alan içerik türlerinden biridir.</p>
+      <p><strong>Sektörel içgörü:</strong> "Kocaeli sanayi bölgesinde X trendi neden önemli" tarzı, bölgesel ve sektörel bağlama özel analizler — hem yerel hem sektörel otorite inşa eder.</p>
+      <p><strong>Perde arkası ve çalışan savunuculuğu:</strong> Ekibinizin günlük çalışmasından kesitler, çalışanların kendi profillerinden şirket içeriğini paylaşması — bu, kurumsal sayfaların ulaşamadığı organik erişimi sağlar çünkü LinkedIn algoritması kişisel profilleri şirket sayfalarına göre önceliklendirir.</p>
+
+      <div class="callout">
+        <span class="callout-title">Pratik İpucu</span>
+        <p>Şirket sayfanızdan paylaştığınız her önemli içeriği, kurucu veya yöneticinin kişisel profilinden de paylaşın — LinkedIn algoritması kişisel profillere kurumsal sayfalardan belirgin şekilde daha fazla organik erişim veriyor.</p>
+      </div>
+
+      <h2>Kişisel Profil mi, Şirket Sayfası mı?</h2>
+      <p>İkisi birbirinin alternatifi değil, tamamlayıcısıdır. Şirket sayfası kurumsal güvenilirlik ve arşiv işlevi görürken, kurucu/yönetici kişisel profili gerçek erişim ve etkileşimi getirir. B2B'de insanlar şirketlerle değil, tanıdıkları kişilerle iş yapmak ister — bu yüzden kişisel profil yatırımını ihmal etmeyin.</p>
+
+      <h2>Yayın Sıklığı ve Zamanlama</h2>
+      <p>LinkedIn'de aşırı sık paylaşım (günde birden fazla) genellikle organik erişimi düşürür; haftada 2-3 kaliteli paylaşım, günlük düşük kaliteli içerikten daha iyi sonuç verir. B2B karar vericilerin platformda en aktif olduğu saatler genellikle hafta içi sabah ve öğle arası saatlerdir — hafta sonu paylaşımları genellikle düşük etkileşim alır.</p>
+
+      <h2>LinkedIn Ads: Organik Yeterli Olmadığında</h2>
+      <p>Organik içerik güven inşa ederken, LinkedIn Ads (özellikle Sponsored Content ve InMail) belirli bir karar verici segmentine (sektör, unvan, şirket büyüklüğü bazlı) doğrudan ulaşmak için değerlidir. Maliyeti Instagram/Facebook reklamlarından yüksektir ama B2B'de hedef kitlenin niteliği bu farkı genellikle karşılar.</p>
+
+      <blockquote>
+        <p>"LinkedIn'de insanlar şirketlerle değil, tanıdıkları ve güvendikleri kişilerle iş yapmak ister — bu yüzden kurumsal sayfa kadar kişisel profil yatırımı da gereklidir."</p>
+      </blockquote>
+
+      <h2>Sık Sorulan Sorular</h2>
+
+      <h3>Küçük bir B2B işletme LinkedIn'e ne kadar zaman ayırmalı?</h3>
+      <p>Haftada 2-3 kaliteli paylaşım artı düzenli yorum/etkileşim, çoğu küçük işletme için haftada 2-3 saatlik bir yatırımla sürdürülebilir. Kalite, sıklıktan daha belirleyicidir.</p>
+
+      <h3>LinkedIn'de takipçi sayısı önemli mi?</h3>
+      <p>Takipçi sayısından çok, takipçilerin doğru kişiler (potansiyel müşteri, karar verici, sektör paydaşı) olması önemlidir. 500 doğru takipçi, 5.000 alakasız takipçiden çok daha değerlidir.</p>
+
+      <h3>Video içerik LinkedIn'de işe yarıyor mu?</h3>
+      <p>Evet, özellikle kısa (1-2 dakikalık) uzmanlık paylaşan veya vaka çalışması anlatan videolar son dönemde LinkedIn algoritmasında öne çıkıyor — ama metin tabanlı içerik hâlâ platformun temelini oluşturuyor.</p>
+
+      <h3>Instagram'ı bırakıp tamamen LinkedIn'e mi geçmeliyiz?</h3>
+      <p>Hayır, hedef kitlenize bağlı. B2C veya karma bir müşteri kitleniz varsa Instagram hâlâ değerli; ama B2B/sanayi ağırlıklı bir işletmeyseniz kaynaklarınızın büyük kısmını LinkedIn'e yönlendirmek genellikle daha yüksek getiri sağlar.</p>
+
+      <h3>Sonuç</h3>
+      <p>Kocaeli'nin sanayi ve B2B ağırlıklı ekonomisinde LinkedIn, Instagram'ın yerini tutamayacağı bir kanal. Doğru içerik sütunları, kişisel profil yatırımı ve tutarlı bir ritimle, LinkedIn hem marka bilinirliği hem doğrudan iş fırsatı üreten güçlü bir kanala dönüşüyor. Ramses Digital olarak B2B firmalar için LinkedIn içerik stratejilerini bu prensiplerle kuruyoruz.</p>
+    `,
+  },
 ]
