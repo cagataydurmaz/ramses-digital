@@ -86,12 +86,28 @@ body {
   animation: fadein 0.35s ease both;
 }
 
-/* Gradient text */
+/* Gradient text — hafif kayan parıltı efekti */
+@keyframes gradient-shimmer {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
 .gradient-text {
-  background: linear-gradient(135deg, #3B82F6 0%, #60A5FA 50%, #93C5FD 100%);
+  background: linear-gradient(90deg, #3B82F6 0%, #A78BFA 30%, #60A5FA 60%, #93C5FD 100%);
+  background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  animation: gradient-shimmer 5s ease-in-out infinite;
+}
+
+/* Hero'da yüzen hizmet rozetleri */
+@keyframes float-chip {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-14px); }
+}
+.hero-chip {
+  animation: float-chip 5s ease-in-out infinite;
+  will-change: transform;
 }
 
 /* Card hover effect - desktop only — only compositor-friendly properties */

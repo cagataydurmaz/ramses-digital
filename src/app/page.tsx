@@ -169,6 +169,8 @@ export default function HomePage() {
         {/* Background glow */}
         <div className="absolute inset-0 pointer-events-none">
           <div className="mobile-hide-blur absolute top-1/4 left-1/2 -translate-x-1/2 w-[900px] h-[600px] bg-blue-500/8 rounded-full blur-[160px]" />
+          <div className="mobile-hide-blur absolute top-[10%] right-[8%] w-[500px] h-[500px] bg-violet-500/8 rounded-full blur-[140px]" />
+          <div className="mobile-hide-blur absolute bottom-[5%] left-[5%] w-[400px] h-[400px] bg-emerald-500/6 rounded-full blur-[120px]" />
           <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/5 to-transparent" />
         </div>
 
@@ -181,6 +183,38 @@ export default function HomePage() {
             backgroundSize: '80px 80px',
           }}
         />
+
+        {/* Yüzen hizmet rozetleri — sadece geniş ekranlarda, içerikle çakışmaz */}
+        <div className="hidden xl:block absolute inset-0 pointer-events-none">
+          <div
+            className="hero-chip absolute top-[22%] left-[6%] flex items-center gap-2 bg-white/[0.04] border border-white/[0.08] backdrop-blur-sm rounded-full px-4 py-2 shadow-lg shadow-black/20"
+            style={{ animationDelay: '0s' }}
+          >
+            <Search size={14} className="text-blue-400" />
+            <span className="text-xs font-medium text-zinc-300">SEO & GEO</span>
+          </div>
+          <div
+            className="hero-chip absolute top-[15%] right-[7%] flex items-center gap-2 bg-white/[0.04] border border-white/[0.08] backdrop-blur-sm rounded-full px-4 py-2 shadow-lg shadow-black/20"
+            style={{ animationDelay: '1.2s' }}
+          >
+            <TrendingUp size={14} className="text-violet-400" />
+            <span className="text-xs font-medium text-zinc-300">Google Ads</span>
+          </div>
+          <div
+            className="hero-chip absolute bottom-[26%] left-[9%] flex items-center gap-2 bg-white/[0.04] border border-white/[0.08] backdrop-blur-sm rounded-full px-4 py-2 shadow-lg shadow-black/20"
+            style={{ animationDelay: '0.6s' }}
+          >
+            <Sparkles size={14} className="text-emerald-400" />
+            <span className="text-xs font-medium text-zinc-300">AI & GEO</span>
+          </div>
+          <div
+            className="hero-chip absolute bottom-[20%] right-[8%] flex items-center gap-2 bg-white/[0.04] border border-white/[0.08] backdrop-blur-sm rounded-full px-4 py-2 shadow-lg shadow-black/20"
+            style={{ animationDelay: '1.8s' }}
+          >
+            <Workflow size={14} className="text-fuchsia-400" />
+            <span className="text-xs font-medium text-zinc-300">n8n Otomasyon</span>
+          </div>
+        </div>
 
         <div className="relative z-10 max-w-5xl mx-auto text-center">
           <div className="animate-fadein inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 rounded-full px-4 py-1.5 mb-6 sm:mb-10">
