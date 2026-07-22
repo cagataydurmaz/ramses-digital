@@ -37,13 +37,6 @@ const serviceOptions = [
   { id: 'Danışmanlık', label: 'Veri & Danışmanlık', icon: BarChart3 },
 ]
 
-const budgetOptions = [
-  { id: '1000-3000', label: '1.000 – 3.000 ₺', desc: 'Başlangıç paketi' },
-  { id: '3000-7000', label: '3.000 – 7.000 ₺', desc: 'Büyüme paketi' },
-  { id: '7000-15000', label: '7.000 – 15.000 ₺', desc: 'Profesyonel paket' },
-  { id: '15000+', label: '15.000 ₺+', desc: 'Kurumsal paket' },
-]
-
 function applyInline(text: string): string {
   return text
     .replace(/\*\*(.+?)\*\*/g, '<strong class="text-white font-semibold">$1</strong>')
@@ -181,7 +174,6 @@ export default function TeklifAlPage() {
   const [step, setStep] = useState(1)
   const [businessType, setBusinessType] = useState('')
   const [services, setServices] = useState<string[]>([])
-  const [budget, setBudget] = useState('')
   const [websiteUrl, setWebsiteUrl] = useState('')
   const [result, setResult] = useState('')
   const [isLoading, setIsLoading] = useState(false)
@@ -194,9 +186,9 @@ export default function TeklifAlPage() {
   }
 
   const handleSubmit = async () => {
-    if (!businessType || services.length === 0 || !budget) return
+    if (!businessType || services.length === 0) return
     setIsLoading(true)
-    setStep(5)
+    setStep(4)
     setResult('')
     setIsDone(false)
 
@@ -204,7 +196,7 @@ export default function TeklifAlPage() {
       const response = await fetch('/api/quote', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ businessType, services, budget, websiteUrl }),
+        body: JSON.stringify({ businessType, services, websiteUrl }),
       })
 
       if (!response.body) throw new Error('No body')
@@ -229,7 +221,6 @@ export default function TeklifAlPage() {
     setStep(1)
     setBusinessType('')
     setServices([])
-    setBudget('')
     setWebsiteUrl('')
     setResult('')
     setIsDone(false)
@@ -238,8 +229,7 @@ export default function TeklifAlPage() {
   const canProceed =
     (step === 1 && businessType) ||
     (step === 2 && services.length > 0) ||
-    (step === 3 && budget) ||
-    step === 4
+    step === 3
 
   return (
     <>
@@ -264,10 +254,10 @@ export default function TeklifAlPage() {
       <section className="pb-24 px-6">
         <div className="max-w-3xl mx-auto">
           {/* Progress */}
-          {step < 5 && (
+          {step < 4 && (
             <div className="mb-8">
               <div className="flex items-center justify-between mb-2">
-                {['İşletme Tipi', 'Hizmetler', 'Bütçe', 'Web Sitesi'].map((label, i) => (
+                {['İşletme Tipi', 'Hizmetler', 'Web Sitesi'].map((label, i) => (
                   <div
                     key={label}
                     className={`flex items-center gap-1.5 text-xs font-medium transition-colors ${
@@ -292,7 +282,7 @@ export default function TeklifAlPage() {
               <div className="h-1 bg-white/[0.06] rounded-full overflow-hidden">
                 <div
                   className="h-full bg-blue-500 rounded-full transition-all duration-300"
-                  style={{ width: `${((step - 1) / 4) * 100}%` }}
+                  style={{ width: `${((step - 1) / 3) * 100}%` }}
                 />
               </div>
             </div>
@@ -370,37 +360,8 @@ export default function TeklifAlPage() {
                 </div>
               )}
 
-              {/* Step 3: Budget */}
+              {/* Step 3: URL */}
               {step === 3 && (
-                <div>
-                  <h2 className="text-white font-bold text-xl mb-2">Aylık Bütçe Aralığınız</h2>
-                  <p className="text-zinc-400 text-sm mb-6">Bütçenize göre en verimli stratejiyi öneriyoruz.</p>
-                  <div className="grid grid-cols-2 gap-3">
-                    {budgetOptions.map((b) => {
-                      const selected = budget === b.id
-                      return (
-                        <button
-                          key={b.id}
-                          onClick={() => setBudget(b.id)}
-                          className={`p-5 rounded-xl border text-left transition-all ${
-                            selected
-                              ? 'border-blue-500/60 bg-blue-500/10'
-                              : 'border-white/[0.06] bg-white/[0.02] hover:border-white/20'
-                          }`}
-                        >
-                          <p className={`font-bold text-base mb-0.5 ${selected ? 'text-blue-400' : 'text-white'}`}>
-                            {b.label}
-                          </p>
-                          <p className="text-zinc-600 text-xs">{b.desc}</p>
-                        </button>
-                      )
-                    })}
-                  </div>
-                </div>
-              )}
-
-              {/* Step 4: URL */}
-              {step === 4 && (
                 <div>
                   <h2 className="text-white font-bold text-xl mb-2">Web Siteniz</h2>
                   <p className="text-zinc-400 text-sm mb-6">
@@ -416,15 +377,14 @@ export default function TeklifAlPage() {
                   <div className="bg-blue-500/5 border border-blue-500/15 rounded-xl p-4">
                     <p className="text-zinc-400 text-xs leading-relaxed">
                       <strong className="text-white">Özet:</strong> {businessType} işletmesi için{' '}
-                      <strong className="text-blue-400">{services.join(', ')}</strong> hizmetleri,{' '}
-                      <strong className="text-white">{budget} ₺/ay</strong> bütçeyle.
+                      <strong className="text-blue-400">{services.join(', ')}</strong> hizmetleri.
                     </p>
                   </div>
                 </div>
               )}
 
-              {/* Step 5: Result */}
-              {step === 5 && (
+              {/* Step 4: Result */}
+              {step === 4 && (
                 <div>
                   {isLoading && !result && (
                     <div className="py-12 flex flex-col items-center gap-4">
@@ -460,7 +420,6 @@ export default function TeklifAlPage() {
                             <div className="flex flex-wrap items-center gap-1.5 mt-1">
                               <span className="bg-white/[0.06] text-zinc-400 text-[11px] px-2 py-0.5 rounded-full capitalize">{businessType}</span>
                               <span className="bg-blue-500/10 text-blue-400 text-[11px] px-2 py-0.5 rounded-full">{services.length} hizmet</span>
-                              <span className="bg-white/[0.06] text-zinc-400 text-[11px] px-2 py-0.5 rounded-full">{budget} ₺/ay</span>
                               {websiteUrl && <span className="bg-white/[0.06] text-zinc-400 text-[11px] px-2 py-0.5 rounded-full truncate max-w-[120px]">{websiteUrl.replace(/https?:\/\//, '')}</span>}
                             </div>
                           </div>
@@ -506,7 +465,7 @@ export default function TeklifAlPage() {
             </>
 
             {/* Navigation */}
-            {step < 5 && (
+            {step < 4 && (
               <div className="flex items-center justify-between mt-8">
                 <button
                   onClick={() => setStep((s) => Math.max(1, s - 1))}
@@ -516,7 +475,7 @@ export default function TeklifAlPage() {
                   <ChevronLeft size={16} /> Geri
                 </button>
 
-                {step < 4 ? (
+                {step < 3 ? (
                   <button
                     onClick={() => setStep((s) => s + 1)}
                     disabled={!canProceed}
@@ -537,7 +496,7 @@ export default function TeklifAlPage() {
           </div>
 
           {/* Trust signals */}
-          {step < 5 && (
+          {step < 4 && (
             <div className="flex items-center justify-center gap-6 mt-6">
               {[
                 { icon: CheckCircle2, label: 'Ücretsiz & bağlayıcı değil' },

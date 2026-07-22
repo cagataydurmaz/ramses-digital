@@ -1,19 +1,19 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'AI Teklif Hesaplayıcı | Dijital Pazarlama Fiyatları — Ramses Digital Kocaeli',
+  title: 'AI Teklif Hesaplayıcı | Dijital Pazarlama Stratejisi — Ramses Digital Kocaeli',
   description:
-    'Dijital pazarlama paket fiyatını anında öğrenin. SEO, Google Ads, sosyal medya ve web tasarımı için AI destekli ücretsiz teklif hesaplayıcı.',
+    'İşletmenize özel dijital pazarlama stratejisini anında öğrenin. SEO, Google Ads, sosyal medya ve web tasarımı için AI destekli ücretsiz teklif hesaplayıcı.',
   openGraph: {
     title: 'Ücretsiz Dijital Pazarlama Teklifi | Ramses Digital',
-    description: 'Bütçenize ve hedeflerinize göre kişiselleştirilmiş dijital pazarlama paketi oluşturun.',
+    description: 'İşletme tipinize ve hedeflerinize göre kişiselleştirilmiş dijital pazarlama paketi oluşturun.',
     url: 'https://ramsesdigital.com/teklif-al',
   },
   alternates: { canonical: 'https://ramsesdigital.com/teklif-al' },
   twitter: {
     card: 'summary_large_image',
     title: 'AI Teklif Hesaplayıcı | Ramses Digital',
-    description: 'Bütçenize ve hedeflerinize göre kişiselleştirilmiş dijital pazarlama paketi.',
+    description: 'İşletme tipinize ve hedeflerinize göre kişiselleştirilmiş dijital pazarlama paketi.',
     images: ['https://ramsesdigital.com/og-image.png'],
   },
 }

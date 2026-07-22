@@ -5,7 +5,7 @@ const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY })
 
 export async function POST(request: NextRequest) {
   try {
-    const { businessType, services, budget, websiteUrl } = await request.json()
+    const { businessType, services, websiteUrl } = await request.json()
 
     const servicesList = services.join(', ')
     const urlInfo = websiteUrl ? `Web sitesi: ${websiteUrl}` : 'Web sitesi belirtilmedi'
@@ -21,7 +21,6 @@ export async function POST(request: NextRequest) {
 Müşteri Bilgileri:
 - İşletme Tipi: ${businessType}
 - İstenen Hizmetler: ${servicesList}
-- Aylık Bütçe Aralığı (sadece senin için, kapsamı buna göre ayarla — yanıtta tekrar etme): ${budget}
 - ${urlInfo}
 
 Lütfen aşağıdaki formatta Türkçe ve samimi bir öneri hazırla:
