@@ -2923,4 +2923,352 @@ export const posts: Post[] = [
       <p>Kocaeli'nin sanayi ve B2B ağırlıklı ekonomisinde LinkedIn, Instagram'ın yerini tutamayacağı bir kanal. Doğru içerik sütunları, kişisel profil yatırımı ve tutarlı bir ritimle, LinkedIn hem marka bilinirliği hem doğrudan iş fırsatı üreten güçlü bir kanala dönüşüyor. Ramses Digital olarak B2B firmalar için LinkedIn içerik stratejilerini bu prensiplerle kuruyoruz.</p>
     `,
   },
+  {
+    slug: 'psikologlar-icin-dijital-pazarlama-rehberi',
+    coverImage: 'https://images.unsplash.com/photo-1573497620053-ea5300f94f21?w=1200&q=80&fit=crop',
+    title: 'Psikologlar ve Terapistler İçin Dijital Pazarlama: Google\'da Bulunma Rehberi',
+    excerpt:
+      'Danışan arayan biri önce Google\'a bakar. Psikologlar ve terapistler için gizliliğe saygılı, etik sınırlar içinde kalan, Google\'da bulunmayı sağlayan pratik bir dijital pazarlama rehberi.',
+    category: 'Sektörel',
+    categoryColor: 'orange',
+    emoji: '🧠',
+    coverGradient: 'from-orange-500/10 to-orange-900/5',
+    readTime: 4,
+    date: '2026-07-17',
+    author: 'Ramses Digital Ekibi',
+    authorRole: 'Sağlık Sektörü Dijital Pazarlama Uzmanları',
+    tags: ['Psikoloji', 'Terapi', 'Sektörel', 'Yerel SEO'],
+    content: `
+      <h2>Danışan Arayan Biri İlk Önce Ne Yapar? Google'a Bakar.</h2>
+      <p>Bir terapist arayan kişi, çoğunlukla tanıdık tavsiyesi kadar Google aramasına da güvenir — "Kocaeli psikolog", "online terapi", "çift terapisi nasıl işler" gibi sorgular günde binlerce kez aranır. Psikolog ve terapistler için dijital pazarlamanın amacı agresif satış değil, doğru zamanda doğru kişiye görünür ve güvenilir olmaktır.</p>
+
+      <div class="stat-grid">
+        <div class="stat-card">
+          <span class="stat-number">1. Sayfa</span>
+          <span class="stat-label">Danışanların büyük kısmı arama sonuçlarının ilk sayfasını geçmez</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number emerald">2-4 Hafta</span>
+          <span class="stat-label">Google Business Profile optimizasyonunun ilk etkisini gösterme süresi</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number violet">Güven</span>
+          <span class="stat-label">Terapi kararında en belirleyici faktör</span>
+        </div>
+      </div>
+
+      <h2>Neden Bu Alan Farklı? Gizlilik ve Güven Önce Gelir</h2>
+      <p>Psikoloji ve terapi hizmetlerinde pazarlama, diğer sektörlerden farklı bir hassasiyet ister. Danışanlar kişisel ve kırılgan bir konuda karar veriyor; agresif satış dili veya abartılı vaatler güven kaybettirir. Etik açıdan da müşteri onayı olmadan tanıklık/referans paylaşmak, gizliliği tehlikeye atmak kabul edilemez.</p>
+      <ul>
+        <li>Danışan onayı olmadan hiçbir vaka detayını (isim, tanı, süreç) paylaşmayın</li>
+        <li>"Kesin iyileşme" veya "garantili sonuç" gibi ifadelerden kaçının</li>
+        <li>İçerikte bilgilendirici, sakin ve profesyonel bir dil kullanın</li>
+        <li>Randevu formunda sadece gerekli asgari bilgiyi isteyin (isim, iletişim, tercih edilen görüşme türü)</li>
+      </ul>
+
+      <h2>Google Business Profile: En Yüksek Etkili İlk Adım</h2>
+      <p>Yerel arama sonuçlarında ("Kocaeli psikolog" gibi) haritalı sonuçlarda (Local Pack) görünmek için Google Business Profile'ınızı eksiksiz doldurun:</p>
+      <ul>
+        <li>Uzmanlık alanlarınızı (bireysel terapi, çift terapisi, EMDR, çocuk-ergen vb.) net şekilde belirtin</li>
+        <li>Online ve yüz yüze seçeneklerinizi ayrı ayrı işaretleyin</li>
+        <li>Düzenli olarak (ayda birkaç kez) güncel fotoğraf ve post paylaşın</li>
+        <li>Danışan yorumlarını nazikçe isteyin ve gelen yorumlara profesyonel yanıt verin</li>
+      </ul>
+      <p>Gerçek bir örnek: <a href="/portfolyo/nur-celen">Psk. Nur Çelen</a> için sıfırdan kurduğumuz, yerel SEO odaklı site, Google'da 1. sayfaya taşındı — aynı yaklaşımı <a href="/portfolyo/terapisti-bul">TerapistiBul</a> platformunda yapay zeka destekli eşleştirme ile birleştirdik.</p>
+
+      <h2>İçerik Stratejisi: Bilgilendirici, Etik, Değerli</h2>
+      <p>"Anksiyete belirtileri nelerdir", "çift terapisi ne zaman gerekir" gibi bilgilendirici makaleler hem gerçek değer sunar hem Google'a uzmanlığınızı gösterir. Bu içerikler asla teşhis veya tedavi tavsiyesi niteliğinde olmamalı; genel bilgilendirme çerçevesinde kalmalıdır.</p>
+
+      <div class="callout">
+        <span class="callout-title">Dikkat</span>
+        <p>İçerikte "bu belirtiler görülüyorsa şu tanıyı düşünebilirsiniz" gibi teşhis niteliğinde ifadelerden kaçının — hem etik hem yasal risk taşır. Amaç bilgilendirmek, teşhis koymak değildir.</p>
+      </div>
+
+      <table>
+        <thead><tr><th>Kanal</th><th>Uygunluk</th><th>Not</th></tr></thead>
+        <tbody>
+          <tr><td>Google Business Profile</td><td>Çok Yüksek</td><td>Ücretsiz, yerel aramada en etkili araç</td></tr>
+          <tr><td>Yerel SEO / web sitesi</td><td>Yüksek</td><td>Uzun vadeli, güven inşa eder</td></tr>
+          <tr><td>Bilgilendirici blog içeriği</td><td>Yüksek</td><td>Teşhis içermeyen, genel bilgi sınırında</td></tr>
+          <tr><td>Sosyal medya reklamı</td><td>Sınırlı</td><td>Meslek örgütü kurallarına göre dikkatli kullanılmalı</td></tr>
+        </tbody>
+      </table>
+
+      <blockquote>
+        <p>"Terapi arayan biri için en güçlü pazarlama, satış dili değil — net, sakin ve güven veren bir dijital varlıktır."</p>
+      </blockquote>
+
+      <h2>Sık Sorulan Sorular</h2>
+
+      <h3>Psikologlar Google Ads kullanabilir mi?</h3>
+      <p>Meslek örgütü düzenlemeleri sıkı sınırlar koyar; agresif reklam dilinden kaçınılmalı ve her durumda etik kurallara uygunluk öncelikli olmalıdır. Çoğu durumda SEO ve içerik odaklı organik görünürlük daha güvenli ve sürdürülebilir bir yoldur.</p>
+
+      <h3>Danışan yorumlarını web sitemde paylaşabilir miyim?</h3>
+      <p>Sadece danışanın açık ve yazılı onayıyla, kimliğini ifşa etmeyecek şekilde paylaşılabilir. Onay olmadan hiçbir vaka detayı veya yorum paylaşılmamalıdır.</p>
+
+      <h3>Online terapi hizmeti SEO'da nasıl öne çıkar?</h3>
+      <p>"Online terapi", "uzaktan psikolog görüşmesi" gibi spesifik anahtar kelimelerle ayrı bir sayfa oluşturmak, coğrafi sınırlamayı ortadan kaldırıp daha geniş bir danışan kitlesine ulaşmayı sağlar.</p>
+
+      <h3>Küçük bir özel muayenehane büyük bir klinikle nasıl rekabet eder?</h3>
+      <p>Niş uzmanlık alanına (örneğin "EMDR uzmanı" veya "çift terapisi") ve belirli bir semt/ilçeye odaklanarak — büyük klinikler genel terimlerde güçlüyken, spesifik ve yerel aramalarda küçük bir muayenehane çok daha hızlı sonuç alabilir.</p>
+
+      <h3>Sonuç</h3>
+      <p>Psikolog ve terapistler için dijital pazarlama, gizliliğe ve etik sınırlara saygılı, sakin ve güven inşa eden bir yaklaşım gerektirir. Google Business Profile, yerel SEO ve bilgilendirici içerik üçlüsü, agresif reklama ihtiyaç duymadan doğru danışanlara ulaşmanın en sürdürülebilir yoludur. Ramses Digital olarak sağlık ve psikoloji sektöründe bu hassasiyetle çalışıyoruz.</p>
+    `,
+  },
+  {
+    slug: 'dis-hekimleri-icin-dijital-pazarlama-rehberi',
+    coverImage: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=1200&q=80&fit=crop',
+    title: 'Diş Hekimleri İçin Dijital Pazarlama: SEO ve Google Ads Birlikte Nasıl Kullanılır?',
+    excerpt:
+      'Diş hekimliğinde reklam avukatlık kadar kısıtlı değil. Yerel SEO, Google Ads ve önce/sonra görsellerinin gücünü doğru kullanan diş klinikleri için pratik bir rehber.',
+    category: 'Sektörel',
+    categoryColor: 'orange',
+    emoji: '🦷',
+    coverGradient: 'from-orange-500/10 to-orange-900/5',
+    readTime: 4,
+    date: '2026-07-19',
+    author: 'Ramses Digital Ekibi',
+    authorRole: 'Sağlık Sektörü Dijital Pazarlama Uzmanları',
+    tags: ['Diş Hekimliği', 'Sektörel', 'Google Ads', 'Yerel SEO'],
+    content: `
+      <h2>Diş Kliniği Ararken İnsanlar Ne Yazar?</h2>
+      <p>"İzmit diş implant fiyatları", "acil diş hekimi", "gülüş tasarımı öncesi sonrası" — bu tip aramalar hem yüksek arama hacmine hem yüksek satın alma niyetine sahiptir. Diş hekimliğinde reklam, avukatlık gibi tamamen yasak değildir; bu da SEO ile Google Ads'i birlikte, güçlü bir kombinasyonla kullanmayı mümkün kılar.</p>
+
+      <div class="stat-grid">
+        <div class="stat-card">
+          <span class="stat-number">Yüksek</span>
+          <span class="stat-label">"İmplant", "gülüş tasarımı" gibi aramaların ticari değeri</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number emerald">Anında</span>
+          <span class="stat-label">Google Ads ile elde edilen görünürlük hızı</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number violet">3-6 Ay</span>
+          <span class="stat-label">SEO ile kalıcı organik görünürlük süresi</span>
+        </div>
+      </div>
+
+      <h2>Yerel SEO: Haritada Görünmek</h2>
+      <p>Diş klinikleri için Google Business Profile ve yerel SEO, en yüksek getiri sağlayan ilk adımdır. Aşağıdaki unsurlara öncelik verin:</p>
+      <ul>
+        <li>Tüm tedavi alanlarınızı (implant, ortodonti, estetik diş hekimliği, çocuk diş hekimliği) ayrı ayrı listeleyin</li>
+        <li>Klinik içi ve öncesi/sonrası fotoğrafları düzenli paylaşın (hasta onayıyla)</li>
+        <li>Çalışma saatlerinizi ve acil durum hattınızı net gösterin</li>
+        <li>Yorumları aktif olarak isteyin — diş hekimliğinde sosyal kanıt karar sürecinde çok belirleyicidir</li>
+      </ul>
+
+      <h2>Önce/Sonra Görsellerinin SEO Değeri</h2>
+      <p>Doğru izinle paylaşılan önce/sonra fotoğrafları, hem web sitesinde güçlü bir dönüşüm aracı hem de görsel arama (Google Images) trafiği için değerli bir SEO fırsatıdır. Görsellere açıklayıcı dosya adı ve alt metin eklemek ("izmit-implant-oncesi-sonrasi.jpg" gibi), bu görsellerin arama sonuçlarında da bulunmasını sağlar.</p>
+
+      <h2>Google Ads: Acil ve Yüksek Değerli Aramalarda</h2>
+      <p>SEO sonuçları olgunlaşana kadar Google Ads, özellikle "acil diş hekimi" gibi zaman kritik aramalarda anında görünürlük sağlar. Yüksek değerli tedaviler (implant, ortodonti) için de arama reklamları genellikle güçlü bir ROI sunar — çünkü bu aramaları yapan kişiler zaten karar aşamasına yakındır.</p>
+
+      <div class="callout">
+        <span class="callout-title">Pratik İpucu</span>
+        <p>Acil diş hekimi aramaları için ayrı bir kampanya ve ayrı bir açılış sayfası kurun — bu aramalar anlık ihtiyaç taşır, genel "diş kliniği" sayfasına yönlendirmek dönüşümü düşürür.</p>
+      </div>
+
+      <table>
+        <thead><tr><th>Arama Türü</th><th>Önerilen Kanal</th><th>Neden</th></tr></thead>
+        <tbody>
+          <tr><td>"Acil diş hekimi"</td><td>Google Ads</td><td>Anlık ihtiyaç, bekleme lüksü yok</td></tr>
+          <tr><td>"İzmit diş kliniği"</td><td>Yerel SEO + GBP</td><td>Araştırma aşaması, güven önemli</td></tr>
+          <tr><td>"İmplant fiyatları"</td><td>SEO + Google Ads</td><td>Yüksek değer, hem araştırma hem karar aşaması var</td></tr>
+          <tr><td>"Diş beyazlatma nasıl yapılır"</td><td>Blog / içerik SEO</td><td>Bilgi arayışı, uzun vadeli otorite</td></tr>
+        </tbody>
+      </table>
+
+      <blockquote>
+        <p>"Diş hekimliğinde önce/sonra görselleri, bin kelimelik metinden daha ikna edicidir — ama sadece hasta onayıyla ve doğru meta verilerle paylaşıldığında SEO değeri de taşır."</p>
+      </blockquote>
+
+      <h2>Sık Sorulan Sorular</h2>
+
+      <h3>Diş hekimleri için Google Ads bütçesi ne kadar olmalı?</h3>
+      <p>Rekabetin yoğun olduğu implant ve estetik diş hekimliği gibi alanlarda aylık 5.000-15.000 TL aralığı makul bir başlangıç noktasıdır; genel muayene odaklı klinikler daha düşük bütçeyle de sonuç alabilir.</p>
+
+      <h3>Hasta onayı olmadan önce/sonra fotoğrafı kullanabilir miyim?</h3>
+      <p>Hayır, her durumda yazılı hasta onayı gereklidir. Onay alınmışsa bile kimliği ifşa etmeyecek şekilde (yüzün üst kısmı gizlenerek gibi) paylaşmak ek bir güven adımıdır.</p>
+
+      <h3>Yerel SEO mu Google Ads mi öncelikli olmalı?</h3>
+      <p>Hızlı sonuç istiyorsanız Google Ads, uzun vadeli ve sürdürülebilir görünürlük istiyorsanız SEO öncelikli olmalı. İdeal olan, ikisini birlikte yürütmek — Ads kısa vadeli talebi karşılarken SEO uzun vadeli temeli inşa eder.</p>
+
+      <h3>Diş hekimliğinde hangi anahtar kelimeler en değerli?</h3>
+      <p>"İmplant", "ortodonti", "gülüş tasarımı", "diş beyazlatma" gibi tedavi bazlı terimler genellikle en yüksek ticari niyeti taşır; bunları şehir/ilçe adıyla birleştirmek ("Kocaeli implant" gibi) rekabeti azaltıp dönüşümü artırır.</p>
+
+      <h3>Sonuç</h3>
+      <p>Diş hekimliğinde SEO ve Google Ads'in birlikte kullanılması, avukatlık gibi kısıtlı sektörlerin sahip olmadığı bir esneklik sunar. Yerel görünürlük, doğru izinle paylaşılan önce/sonra görselleri ve hedefli reklam kampanyalarını bir araya getiren klinikler, hem hızlı hem kalıcı sonuç elde ediyor. Ramses Digital olarak sağlık sektöründe bu dengeyi kuruyoruz.</p>
+    `,
+  },
+  {
+    slug: 'veteriner-klinikleri-icin-dijital-pazarlama-rehberi',
+    coverImage: 'https://images.unsplash.com/photo-1583512603805-3cc6b41f3edb?w=1200&q=80&fit=crop',
+    title: 'Veteriner Klinikleri İçin Dijital Pazarlama: Acil Aramalardan Randevuya',
+    excerpt:
+      'Evcil hayvan sahipleri panik anında Google\'a yazar. Veteriner klinikleri için acil arama optimizasyonu, yerel SEO ve online randevu stratejisi.',
+    category: 'Sektörel',
+    categoryColor: 'orange',
+    emoji: '🐾',
+    coverGradient: 'from-orange-500/10 to-orange-900/5',
+    readTime: 4,
+    date: '2026-07-21',
+    author: 'Ramses Digital Ekibi',
+    authorRole: 'Sektörel Dijital Pazarlama Uzmanları',
+    tags: ['Veterinerlik', 'Sektörel', 'Yerel SEO', 'Yapay Zeka'],
+    content: `
+      <h2>"En Yakın Veteriner" — Panik Anındaki Arama</h2>
+      <p>Evcil hayvan sahiplerinin bir kısmı sakin bir araştırma sürecinde değil, endişeli ve hızlı karar vermesi gereken bir anda arama yapar: "en yakın 7/24 veteriner", "acil veteriner İzmit". Bu aramalarda saniyeler önemlidir — yavaş yüklenen bir site veya eksik bir Google Business Profile, doğrudan kaybedilen bir hasta anlamına gelir.</p>
+
+      <div class="stat-grid">
+        <div class="stat-card">
+          <span class="stat-number">Saniyeler</span>
+          <span class="stat-label">Acil arama sonrası karar verme süresi</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number emerald">7/24</span>
+          <span class="stat-label">Acil hizmetin GBP'de açıkça belirtilmesi gereken bilgi</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number violet">Yerel</span>
+          <span class="stat-label">Veteriner aramalarının neredeyse tamamının niyeti</span>
+        </div>
+      </div>
+
+      <h2>Google Business Profile'da Acil Bilgiyi Öne Çıkarın</h2>
+      <p>Veteriner aramalarının büyük kısmı doğası gereği yereldir — kimse "İstanbul'daki en iyi veteriner" için şehir dışına gitmez, en yakın ve güvenilir seçeneği arar. Bu yüzden GBP optimizasyonu diğer sektörlere göre bile daha kritik önem taşır:</p>
+      <ul>
+        <li>7/24 hizmet veriyorsanız bunu başlıkta ve açıklamada net belirtin</li>
+        <li>Acil durum telefon hattınızı öne çıkarın</li>
+        <li>Hizmet verdiğiniz hayvan türlerini (kedi, köpek, egzotik) listeleyin</li>
+        <li>Klinik içi fotoğraflar ve ekip tanıtımı güven oluşturur</li>
+      </ul>
+      <p>Gerçek bir örnek olarak, <a href="/portfolyo/veterineri-bul">Veterineri Bul</a> platformunda doğrulanmış diplomalı veterinerleri, online randevuyu ve 7/24 yapay zeka asistanını tek çatı altında topladık — evcil hayvan sahiplerinin panik anındaki arama davranışını doğrudan hedefleyen bir yaklaşım.</p>
+
+      <h2>Online Randevu: Telefon Trafiğini Azaltın</h2>
+      <p>Rutin aşı, kontrol gibi acil olmayan randevular için online randevu sistemi hem klinik personelinin telefon yükünü azaltır hem de hasta sahiplerine 7/24 randevu alma esnekliği sunar. Bu, özellikle çalışan hasta sahipleri için önemli bir tercih sebebidir.</p>
+
+      <div class="callout">
+        <span class="callout-title">Pratik İpucu</span>
+        <p>Acil ve rutin randevuları web sitenizde ayrı ayrı yönlendirin — acil durumda olan biri, çok adımlı bir randevu formuyla karşılaşırsa telefonu arayıp sizi bulamazsa başka bir kliniğe yönelir.</p>
+      </div>
+
+      <table>
+        <thead><tr><th>Arama Niyeti</th><th>Öncelikli Kanal</th><th>Kritik Unsur</th></tr></thead>
+        <tbody>
+          <tr><td>Acil ("en yakın veteriner")</td><td>Google Business Profile</td><td>Hız, telefon numarası görünürlüğü</td></tr>
+          <tr><td>Rutin randevu</td><td>Web sitesi + online randevu</td><td>Kolay, çok adımlı olmayan form</td></tr>
+          <tr><td>Araştırma ("kedi aşı takvimi")</td><td>Blog / içerik SEO</td><td>Güvenilir, bilgilendirici içerik</td></tr>
+          <tr><td>Klinik karşılaştırma</td><td>Yorumlar / sosyal kanıt</td><td>Yüksek yıldız ortalaması, güncel yorumlar</td></tr>
+        </tbody>
+      </table>
+
+      <blockquote>
+        <p>"Evcil hayvan sahibi panik anında arama yaptığında, en hızlı yüklenen ve en net bilgi veren sonuç kazanır — tasarım güzelliği o anda ikinci plandadır."</p>
+      </blockquote>
+
+      <h2>Sık Sorulan Sorular</h2>
+
+      <h3>Veteriner klinikleri için hangi anahtar kelimeler önceliklidir?</h3>
+      <p>"[Şehir/ilçe] veteriner", "acil veteriner", "7/24 veteriner", hayvan türüne özel aramalar ("kedi veterineri") ve hizmet bazlı aramalar ("köpek aşısı") en yüksek niyetli terimlerdir.</p>
+
+      <h3>Sosyal medya veteriner klinikleri için değerli mi?</h3>
+      <p>Evet, özellikle Instagram — hayvan içerikleri organik olarak yüksek etkileşim alır ve klinik kültürünü/ekibini tanıtmak için güçlü bir araçtır. Ancak acil durum yönlendirmesi için birincil kanal olmamalı, GBP ve web sitesi bu rolü üstlenmelidir.</p>
+
+      <h3>Küçük bir veteriner kliniği büyük bir hastaneyle nasıl rekabet eder?</h3>
+      <p>Belirli bir mahalle/ilçeye ve varsa özel bir uzmanlık alanına (egzotik hayvanlar, belirli cerrahi işlemler) odaklanarak — yerel ve niş aramalarda küçük klinikler büyük hastanelerden daha hızlı sonuç alabilir.</p>
+
+      <h3>Yapay zeka destekli randevu sistemleri gerçekten fark yaratıyor mu?</h3>
+      <p>Evet — özellikle mesai saatleri dışında gelen soruları anında yanıtlayıp yönlendirebilmesi, hasta sahibinin başka bir klinik aramasını önler. Bu, özellikle 7/24 hizmet iddiasında olan klinikler için tutarlılığı garanti eder.</p>
+
+      <h3>Sonuç</h3>
+      <p>Veteriner kliniklerinde dijital pazarlamanın kalbi hız ve yerel görünürlüktür. Google Business Profile optimizasyonu, kolay online randevu ve acil durum netliği, panik anındaki evcil hayvan sahibinin sizi bulmasını ve size güvenmesini sağlar. Ramses Digital olarak bu sektörde hem geleneksel kliniklere hem yapay zeka destekli platformlara hizmet veriyoruz.</p>
+    `,
+  },
+  {
+    slug: 'mali-musavirler-icin-dijital-pazarlama-rehberi',
+    coverImage: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80&fit=crop',
+    title: 'Mali Müşavirler ve Muhasebeciler İçin B2B Dijital Pazarlama Rehberi',
+    excerpt:
+      'Mali müşavir seçimi güvene dayalı, uzun vadeli bir karardır. Muhasebe firmaları için yerel SEO, LinkedIn ve içerik stratejisiyle güven inşa etme rehberi.',
+    category: 'Sektörel',
+    categoryColor: 'orange',
+    emoji: '📋',
+    coverGradient: 'from-orange-500/10 to-orange-900/5',
+    readTime: 4,
+    date: '2026-07-23',
+    author: 'Ramses Digital Ekibi',
+    authorRole: 'B2B Dijital Pazarlama Uzmanları',
+    tags: ['Mali Müşavir', 'Muhasebe', 'B2B', 'Sektörel'],
+    content: `
+      <h2>Bir Şirket Mali Müşavir Değiştirirken Ne Arar?</h2>
+      <p>Mali müşavir seçimi, bir kerelik satın alma değil, yıllarca sürecek bir güven ilişkisidir. İşletme sahipleri "Kocaeli mali müşavir", "KOBİ muhasebe hizmeti" gibi aramalar yaptığında güvenilirlik, uzmanlık alanı ve şeffaflık ararlar — indirim veya kampanya değil. Bu da mali müşavirlik pazarlamasını, çoğu sektörden farklı, güven odaklı bir oyuna dönüştürür.</p>
+
+      <div class="stat-grid">
+        <div class="stat-card">
+          <span class="stat-number">Uzun Vadeli</span>
+          <span class="stat-label">Mali müşavir-müşteri ilişkisinin tipik süresi</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number emerald">Güven</span>
+          <span class="stat-label">Seçim kararında fiyattan önce gelen faktör</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number violet">B2B</span>
+          <span class="stat-label">Karar sürecinin tipik doğası — araştırmalı, çok aşamalı</span>
+        </div>
+      </div>
+
+      <h2>Yerel SEO: Bölgenizdeki KOBİ'lere Ulaşın</h2>
+      <p>Çoğu işletme, muhasebecisini kendi şehrinde veya en azından erişilebilir bir mesafede tercih eder. Google Business Profile'ınızı eksiksiz doldurmak ve "[İlçe] mali müşavir" gibi yerel anahtar kelimelerle içerik üretmek, bu yerel arama trafiğini yakalamanın temelidir.</p>
+      <ul>
+        <li>Hizmet verdiğiniz sektörleri (KOBİ, e-ticaret, sanayi, serbest meslek) net belirtin</li>
+        <li>Ofis fotoğrafları ve ekip tanıtımı ekleyin — güven, yüzü görünen bir hizmette artar</li>
+        <li>Müşteri yorumlarını düzenli isteyin, özellikle uzun süredir çalıştığınız müşterilerden</li>
+      </ul>
+
+      <h2>İçerik Stratejisi: Mevzuat Takibiyle Otorite İnşa Edin</h2>
+      <p>Vergi mevzuatı sık değişir ve işletme sahipleri bu değişiklikleri anlamak için arama yapar ("2026 KDV oranları", "e-fatura zorunluluğu kimleri kapsıyor"). Bu sorulara net, güncel ve anlaşılır cevaplar veren bir blog, hem gerçek değer sunar hem de sizi "güncel ve bilgili" bir mali müşavir olarak konumlandırır.</p>
+
+      <div class="callout">
+        <span class="callout-title">Pratik İpucu</span>
+        <p>Her mevzuat değişikliğinde eski içeriklerinizi güncelleyip tarih damgasını yenileyin — mali müşavirlik gibi güncelliğin kritik olduğu bir alanda, eski tarihli ve güncellenmemiş içerik ciddi bir güven kaybına yol açar.</p>
+      </div>
+
+      <h2>LinkedIn: B2B Karar Vericiye Doğrudan Ulaşın</h2>
+      <p>Mali müşavirlik tamamen B2B bir hizmettir ve karar vericiler (şirket sahibi, CFO, genel müdür) çoğunlukla LinkedIn'de aktiftir. Sektörel içgörü paylaşımı, mevzuat güncellemeleri ve gerçek vaka çalışmaları (müşteri onayıyla), bu platformda güçlü bir otorite inşa eder. Bu konuyu <a href="/blog/linkedin-b2b-icerik-stratejisi">LinkedIn B2B İçerik Stratejisi yazımızda</a> detaylı ele aldık.</p>
+
+      <table>
+        <thead><tr><th>Kanal</th><th>Öncelik</th><th>Neden</th></tr></thead>
+        <tbody>
+          <tr><td>Google Business Profile</td><td>Yüksek</td><td>Yerel arama, ücretsiz, hızlı etki</td></tr>
+          <tr><td>Mevzuat odaklı blog</td><td>Yüksek</td><td>Sürekli arama hacmi, otorite inşası</td></tr>
+          <tr><td>LinkedIn</td><td>Yüksek</td><td>B2B karar vericiye doğrudan erişim</td></tr>
+          <tr><td>Instagram</td><td>Düşük</td><td>Hedef kitle bu platformda karar vermiyor</td></tr>
+        </tbody>
+      </table>
+
+      <blockquote>
+        <p>"Mali müşavir seçimi bir fiyat karşılaştırması değil, bir güven testidir — dijital varlığınız bu testi geçmenin ilk adımıdır."</p>
+      </blockquote>
+
+      <h2>Sık Sorulan Sorular</h2>
+
+      <h3>Mali müşavirler için Google Ads mantıklı mı?</h3>
+      <p>Meslek kuralları çerçevesinde dikkatli kullanıldığında mümkündür, ancak güven odaklı bir hizmette çoğu işletme sahibi organik/SEO sonuçlarına ücretli reklamdan daha fazla güvenir. SEO ve içerik öncelikli bir strateji genellikle daha sürdürülebilir sonuç verir.</p>
+
+      <h3>Küçük bir muhasebe bürosu büyük bir firmayla nasıl rekabet eder?</h3>
+      <p>Belirli bir sektöre (örneğin e-ticaret muhasebesi veya inşaat sektörü) uzmanlaşarak ve o niş konuda derinlemesine içerik üreterek — genel "muhasebe hizmeti" yerine "e-ticaret KDV ve stopaj danışmanlığı" gibi spesifik bir konumlandırma, küçük bürolara belirgin bir avantaj sağlar.</p>
+
+      <h3>Müşteri referanslarını nasıl kullanmalıyım?</h3>
+      <p>Yalnızca açık onayla ve mümkünse şirket adıyla (kişisel mali detay ifşa etmeden) paylaşın. Somut ama genel ifadeler ("5 yıldır düzenli ve zamanında hizmet alıyoruz" gibi) hem güven verir hem gizliliği korur.</p>
+
+      <h3>İçerik üretmeye vaktim yok, ne yapmalıyım?</h3>
+      <p>Aylık bir mevzuat özeti bile (kısa, düzenli, güvenilir) uzun vadede güçlü bir SEO ve güven varlığı oluşturur. Küçük ve tutarlı bir içerik ritmi, seyrek ve büyük yayınlardan daha etkilidir.</p>
+
+      <h3>Sonuç</h3>
+      <p>Mali müşavirlik ve muhasebe hizmetlerinde dijital pazarlama, güven inşa etmek üzerine kuruludur. Yerel SEO, güncel mevzuat içeriği ve LinkedIn'de tutarlı bir B2B varlık, bu güveni dijitalde de kurmanın en sağlam yoludur. Ramses Digital olarak B2B ve profesyonel hizmet sağlayıcılar için bu stratejiyle çalışıyoruz.</p>
+    `,
+  },
 ]
