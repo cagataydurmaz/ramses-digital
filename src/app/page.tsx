@@ -15,6 +15,11 @@ import {
   ArrowRight,
   ChevronDown,
   Star,
+  Trophy,
+  Users,
+  Clock,
+  ThumbsUp,
+  Quote,
 } from 'lucide-react'
 
 // SmartIntake lazy load — hero render'ı beklemez, sonradan gelir
@@ -129,10 +134,10 @@ const services = [
 ]
 
 const stats = [
-  { value: 100, suffix: '+', label: 'Başarılı Proje' },
-  { value: 50, suffix: '+', label: 'Mutlu Müşteri' },
-  { value: 5, suffix: '+', label: 'Yıl Deneyim' },
-  { value: 94, suffix: '%', label: 'Müşteri Memnuniyeti' },
+  { icon: Trophy, value: 100, suffix: '+', label: 'Başarılı Proje' },
+  { icon: Users, value: 50, suffix: '+', label: 'Mutlu Müşteri' },
+  { icon: Clock, value: 5, suffix: '+', label: 'Yıl Deneyim' },
+  { icon: ThumbsUp, value: 94, suffix: '%', label: 'Müşteri Memnuniyeti' },
 ]
 
 
@@ -315,24 +320,38 @@ export default function HomePage() {
       </section>
 
       {/* ── STATS ────────────────────────────────────────────────────────── */}
-      <section className="py-12 sm:py-20 border-y border-white/[0.04]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-            {stats.map((stat, i) => (
-              <FadeIn key={stat.label} delay={i * 0.1} className="text-center">
-                <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-1.5">
-                  <Counter target={stat.value} suffix={stat.suffix} />
-                </div>
-                <div className="text-zinc-400 text-xs sm:text-sm">{stat.label}</div>
-              </FadeIn>
-            ))}
+      <section className="relative py-12 sm:py-20 border-y border-white/[0.04] overflow-hidden">
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="mobile-hide-blur absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[300px] bg-blue-500/5 rounded-full blur-[130px]" />
+        </div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+            {stats.map((stat, i) => {
+              const Icon = stat.icon
+              return (
+                <FadeIn key={stat.label} delay={i * 0.1}>
+                  <div className="group text-center bg-white/[0.02] border border-white/[0.06] rounded-2xl py-6 sm:py-8 px-3 card-hover">
+                    <div className="w-10 h-10 sm:w-11 sm:h-11 mx-auto mb-3 rounded-xl bg-blue-500/10 flex items-center justify-center group-hover:bg-blue-500/20 transition-colors">
+                      <Icon size={18} className="text-blue-400" />
+                    </div>
+                    <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-1.5">
+                      <Counter target={stat.value} suffix={stat.suffix} />
+                    </div>
+                    <div className="text-zinc-400 text-xs sm:text-sm">{stat.label}</div>
+                  </div>
+                </FadeIn>
+              )
+            })}
           </div>
         </div>
       </section>
 
       {/* ── SERVICES ─────────────────────────────────────────────────────── */}
-      <section className="py-24 px-6">
-        <div className="max-w-7xl mx-auto">
+      <section className="relative py-24 px-6 overflow-hidden">
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="mobile-hide-blur absolute top-0 right-[10%] w-[600px] h-[400px] bg-violet-500/5 rounded-full blur-[140px]" />
+        </div>
+        <div className="relative max-w-7xl mx-auto">
           <FadeIn className="text-center mb-16">
             <p className="text-blue-500 text-sm font-medium tracking-wider uppercase mb-3">
               Hizmetlerimiz
@@ -350,8 +369,9 @@ export default function HomePage() {
               const Icon = service.icon
               return (
                 <FadeIn key={service.title} delay={i * 0.08}>
-                  <div className="group h-full bg-[#0D1225] border border-white/[0.06] rounded-2xl p-6 card-hover cursor-default">
-                    <div className="w-11 h-11 bg-blue-500/10 rounded-xl flex items-center justify-center mb-5 group-hover:bg-blue-500/20 transition-colors">
+                  <div className="group relative h-full bg-[#0D1225] border border-white/[0.06] rounded-2xl p-6 card-hover cursor-default overflow-hidden">
+                    <div className="absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r from-blue-500 to-violet-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
+                    <div className="w-11 h-11 bg-blue-500/10 rounded-xl flex items-center justify-center mb-5 transition-all group-hover:bg-blue-500/20 group-hover:shadow-[0_0_20px_rgba(59,130,246,0.35)]">
                       <Icon size={20} className="text-blue-400" />
                     </div>
                     <h3 className="text-white font-semibold text-lg mb-2">{service.title}</h3>
@@ -385,8 +405,11 @@ export default function HomePage() {
       </section>
 
       {/* ── TESTIMONIALS ─────────────────────────────────────────────────── */}
-      <section className="py-24 px-6">
-        <div className="max-w-7xl mx-auto">
+      <section className="relative py-24 px-6 overflow-hidden">
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="mobile-hide-blur absolute bottom-0 left-[15%] w-[600px] h-[350px] bg-emerald-500/5 rounded-full blur-[130px]" />
+        </div>
+        <div className="relative max-w-7xl mx-auto">
           <FadeIn className="text-center mb-16">
             <p className="text-blue-500 text-sm font-medium tracking-wider uppercase mb-3">
               Müşteri Yorumları
@@ -399,16 +422,26 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {testimonials.map((t, i) => (
               <FadeIn key={t.name} delay={i * 0.1}>
-                <div className="bg-[#0D1225] border border-white/[0.06] rounded-2xl p-6 h-full">
-                  <div className="flex gap-0.5 mb-4">
+                <div className="group relative bg-[#0D1225] border border-white/[0.06] rounded-2xl p-6 h-full card-hover overflow-hidden">
+                  <Quote
+                    size={64}
+                    className="absolute -top-2 -right-2 text-blue-500/[0.06] group-hover:text-blue-500/10 transition-colors"
+                    fill="currentColor"
+                  />
+                  <div className="relative flex gap-0.5 mb-4">
                     {Array.from({ length: t.rating }).map((_, j) => (
                       <Star key={j} size={14} className="text-yellow-400 fill-yellow-400" />
                     ))}
                   </div>
-                  <p className="text-zinc-300 text-sm leading-relaxed mb-6">&ldquo;{t.content}&rdquo;</p>
-                  <div>
-                    <p className="text-white font-semibold text-sm">{t.name}</p>
-                    <p className="text-zinc-400 text-xs mt-0.5">{t.role}</p>
+                  <p className="relative text-zinc-300 text-sm leading-relaxed mb-6">&ldquo;{t.content}&rdquo;</p>
+                  <div className="relative flex items-center gap-3">
+                    <div className="w-9 h-9 shrink-0 rounded-full bg-gradient-to-br from-blue-500 to-violet-500 flex items-center justify-center text-white text-xs font-bold">
+                      {t.name.replace(/^Av\.\s*/, '').charAt(0)}
+                    </div>
+                    <div>
+                      <p className="text-white font-semibold text-sm">{t.name}</p>
+                      <p className="text-zinc-400 text-xs mt-0.5">{t.role}</p>
+                    </div>
                   </div>
                 </div>
               </FadeIn>
