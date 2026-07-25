@@ -110,6 +110,38 @@ body {
   will-change: transform;
 }
 
+/* Google yorumları — kayan şerit */
+@keyframes marquee-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.marquee-viewport {
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+}
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 42s linear infinite;
+}
+@media (hover: hover) {
+  .marquee-viewport:hover .marquee-track {
+    animation-play-state: paused;
+  }
+}
+@media (max-width: 768px) {
+  .marquee-viewport {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+  .marquee-track {
+    animation: none !important;
+  }
+}
+
 /* Card hover effect - desktop only — only compositor-friendly properties */
 @media (hover: hover) {
   .card-hover {
