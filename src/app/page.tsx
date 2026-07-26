@@ -155,60 +155,51 @@ function GoogleGIcon({ size = 18 }: { size?: number }) {
   )
 }
 
-const googleReviews = [
+// Google yorumları + diğer müşteri referansları tek listede birleştirildi.
+// Aynı müşterinin hem Google yorumu hem site referansı varsa (Furkan Arıkan,
+// Mert Anıl Güler) sadece Google yorumu tutuldu, ikisi tek karta harmanlandı.
+const reviews = [
   {
     name: 'Furkan Arıkan',
-    time: 'Bir hafta önce',
+    subtitle: 'Kurucu Avukat, Furkan Arıkan Hukuk Bürosu · Bir hafta önce',
     rating: 5,
     text: 'Harika bir işletme, tüm süreçlerde çok yardımcı olan bir ekibe sahipler, her şey için teşekkürler!',
+    source: 'google' as const,
   },
   {
     name: 'furkan tanır',
-    time: 'Bir hafta önce',
+    subtitle: 'Bir hafta önce',
     rating: 5,
     text: 'İşletmemizin reklam faaliyetlerini başarıyla yürütüyorlar. Çağatay bey çok yardımcı oldu, ilgili ve işini titizlikle yapıyor.',
+    source: 'google' as const,
   },
   {
     name: 'Atalay Durmaz',
-    time: '2 ay önce',
+    subtitle: '2 ay önce',
     rating: 5,
     text: 'İşini titizlikle yapan, vizyoner bir ekip.',
+    source: 'google' as const,
   },
   {
     name: 'Mert Anıl Güler',
-    time: '2 gün önce',
+    subtitle: 'Kurucu Avukat, Mert Anıl Güler Hukuk Bürosu · 2 gün önce',
     rating: 5,
     text: "Harika ötesi. Aldığım hizmetten çok memnun kaldım. Ramses'le yollarımızın kesişmesi büyük şans oldu. Kesinlikle tavsiye ediyorum. Çağatay Bey'e ne istediğinizi anlatmanız yeter. Tekrar teşekkürler.",
+    source: 'google' as const,
   },
   {
     name: 'Nur Çelen',
-    time: '2 gün önce',
+    subtitle: '2 gün önce',
     rating: 5,
     text: 'Web sitemi ve reklam süreçlerimi profesyonel bir şekilde yönetti. Süreç boyunca her konuda hızlı geri dönüş aldı, isteklerimi dikkate aldı ve ortaya tam istediğim gibi bir çalışma çıktı. Emeğiniz ve ilginiz için çok teşekkür ederim.',
-  },
-]
-
-const testimonials = [
-  {
-    name: 'Av. Mert Anıl Güler, LL.M.',
-    role: 'Kurucu Avukat, Mert Anıl Güler Hukuk Bürosu',
-    content:
-      'Ramses Digital, kurumsal kimliğimize uygun, içerik odaklı bir site tasarladı. SEO çalışmasıyla birlikte dijitaldeki görünürlüğümüz belirgin şekilde arttı.',
-    rating: 5,
+    source: 'google' as const,
   },
   {
     name: 'Gamzeli Dermokozmetik',
-    role: 'E-Ticaret Ekibi',
-    content:
-      'Ramses Digital, eczacı güvencesiyle sunduğumuz ürünleri doğru kitleye ulaştıran bir e-ticaret sitesi kurdu. Cilt analizi aracı sayesinde müşterilerimiz kendilerine en uygun ürünü kolayca buluyor.',
+    subtitle: 'E-Ticaret Ekibi',
     rating: 5,
-  },
-  {
-    name: 'Av. Furkan Arıkan',
-    role: 'Kurucu Avukat, Furkan Arıkan Hukuk Bürosu',
-    content:
-      'Sitemin hem hızlı hem de profesyonel bir görünüme kavuşmasını sağladılar. Süreç boyunca iletişim çok net ve hızlıydı.',
-    rating: 5,
+    text: 'Ramses Digital, eczacı güvencesiyle sunduğumuz ürünleri doğru kitleye ulaştıran bir e-ticaret sitesi kurdu. Cilt analizi aracı sayesinde müşterilerimiz kendilerine en uygun ürünü kolayca buluyor.',
+    source: 'site' as const,
   },
 ]
 
@@ -451,65 +442,19 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── TESTIMONIALS ─────────────────────────────────────────────────── */}
+      {/* ── MÜŞTERİ YORUMLARI ────────────────────────────────────────────── */}
       <section className="relative py-24 px-6 overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
           <div className="mobile-hide-blur absolute bottom-0 left-[15%] w-[600px] h-[350px] bg-emerald-500/5 rounded-full blur-[130px]" />
         </div>
         <div className="relative max-w-7xl mx-auto">
-          <FadeIn className="text-center mb-16">
-            <p className="text-blue-500 text-sm font-medium tracking-wider uppercase mb-3">
-              Müşteri Yorumları
-            </p>
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              Müşterilerimiz Ne Diyor?
-            </h2>
-          </FadeIn>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-            {testimonials.map((t, i) => (
-              <FadeIn key={t.name} delay={i * 0.1}>
-                <div className="group relative bg-[#0D1225] border border-white/[0.06] rounded-2xl p-6 h-full card-hover overflow-hidden">
-                  <Quote
-                    size={64}
-                    className="absolute -top-2 -right-2 text-blue-500/[0.06] group-hover:text-blue-500/10 transition-colors"
-                    fill="currentColor"
-                  />
-                  <div className="relative flex gap-0.5 mb-4">
-                    {Array.from({ length: t.rating }).map((_, j) => (
-                      <Star key={j} size={14} className="text-yellow-400 fill-yellow-400" />
-                    ))}
-                  </div>
-                  <p className="relative text-zinc-300 text-sm leading-relaxed mb-6">&ldquo;{t.content}&rdquo;</p>
-                  <div className="relative flex items-center gap-3">
-                    <div className="w-9 h-9 shrink-0 rounded-full bg-gradient-to-br from-blue-500 to-violet-500 flex items-center justify-center text-white text-xs font-bold">
-                      {t.name.replace(/^Av\.\s*/, '').charAt(0)}
-                    </div>
-                    <div>
-                      <p className="text-white font-semibold text-sm">{t.name}</p>
-                      <p className="text-zinc-400 text-xs mt-0.5">{t.role}</p>
-                    </div>
-                  </div>
-                </div>
-              </FadeIn>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── GOOGLE YORUMLARI ─────────────────────────────────────────────── */}
-      <section className="pb-24 px-6">
-        <div className="max-w-7xl mx-auto">
           <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-5 mb-10 px-1">
             <FadeIn>
-              <div className="flex items-center gap-2 mb-3">
-                <GoogleGIcon size={20} />
-                <p className="text-blue-500 text-sm font-medium tracking-wider uppercase">
-                  Google Yorumları
-                </p>
-              </div>
-              <h2 className="text-3xl sm:text-4xl font-bold text-white">
-                Google&apos;da Ne Diyorlar?
+              <p className="text-blue-500 text-sm font-medium tracking-wider uppercase mb-3">
+                Müşteri Yorumları
+              </p>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white">
+                Müşterilerimiz Ne Diyor?
               </h2>
             </FadeIn>
             <a
@@ -525,29 +470,34 @@ export default function HomePage() {
 
           <div className="marquee-viewport">
             <div className="marquee-track">
-              {[...googleReviews, ...googleReviews].map((r, i) => (
+              {[...reviews, ...reviews].map((r, i) => (
                 <div
                   key={`${r.name}-${i}`}
-                  className="shrink-0 w-[300px] sm:w-[360px] mr-5 bg-[#0D1225] border border-white/[0.06] rounded-2xl p-6 card-hover"
+                  className="group relative shrink-0 w-[300px] sm:w-[360px] mr-5 bg-[#0D1225] border border-white/[0.06] rounded-2xl p-6 card-hover overflow-hidden"
                 >
-                  <div className="flex items-center justify-between mb-4">
+                  <Quote
+                    size={64}
+                    className="absolute -top-2 -right-2 text-blue-500/[0.06] group-hover:text-blue-500/10 transition-colors"
+                    fill="currentColor"
+                  />
+                  <div className="relative flex items-center justify-between mb-4">
                     <div className="flex gap-0.5">
                       {Array.from({ length: r.rating }).map((_, j) => (
                         <Star key={j} size={14} className="text-yellow-400 fill-yellow-400" />
                       ))}
                     </div>
-                    <GoogleGIcon size={18} />
+                    {r.source === 'google' && <GoogleGIcon size={18} />}
                   </div>
-                  <p className="text-zinc-300 text-sm leading-relaxed mb-5 line-clamp-4">
+                  <p className="relative text-zinc-300 text-sm leading-relaxed mb-5 line-clamp-4">
                     &ldquo;{r.text}&rdquo;
                   </p>
-                  <div className="flex items-center gap-3">
+                  <div className="relative flex items-center gap-3">
                     <div className="w-9 h-9 shrink-0 rounded-full bg-gradient-to-br from-blue-500 to-violet-500 flex items-center justify-center text-white text-xs font-bold">
                       {r.name.charAt(0)}
                     </div>
                     <div>
                       <p className="text-white font-semibold text-sm">{r.name}</p>
-                      <p className="text-zinc-400 text-xs mt-0.5">{r.time}</p>
+                      <p className="text-zinc-400 text-xs mt-0.5">{r.subtitle}</p>
                     </div>
                   </div>
                 </div>
