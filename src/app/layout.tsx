@@ -5,6 +5,7 @@ import dynamic from 'next/dynamic'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import { reviews, aggregateRating } from '@/lib/reviews'
 
 // Lazy-load widget'lar — first paint'i engellemez
 const ChatWidget = dynamic(() => import('@/components/ChatWidget'), { ssr: false })
@@ -221,6 +222,23 @@ export default function RootLayout({
                     { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Veri Analizi & Danışmanlık' } },
                   ],
                 },
+                aggregateRating: {
+                  '@type': 'AggregateRating',
+                  ratingValue: aggregateRating.ratingValue,
+                  bestRating: aggregateRating.bestRating,
+                  reviewCount: aggregateRating.reviewCount,
+                },
+                review: reviews.map((r) => ({
+                  '@type': 'Review',
+                  author: { '@type': 'Person', name: r.name },
+                  datePublished: r.date,
+                  reviewRating: {
+                    '@type': 'Rating',
+                    ratingValue: r.rating,
+                    bestRating: 5,
+                  },
+                  reviewBody: r.text,
+                })),
               },
               {
                 '@context': 'https://schema.org',

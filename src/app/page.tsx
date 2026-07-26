@@ -4,6 +4,7 @@ import { useRef, useEffect, useState } from 'react'
 import Link from 'next/link'
 import dynamic from 'next/dynamic'
 import CalendlyButton from '@/components/CalendlyButton'
+import { reviews } from '@/lib/reviews'
 import {
   Sparkles,
   Search,
@@ -155,53 +156,8 @@ function GoogleGIcon({ size = 18 }: { size?: number }) {
   )
 }
 
-// Google yorumları + diğer müşteri referansları tek listede birleştirildi.
-// Aynı müşterinin hem Google yorumu hem site referansı varsa (Furkan Arıkan,
-// Mert Anıl Güler) sadece Google yorumu tutuldu, ikisi tek karta harmanlandı.
-const reviews = [
-  {
-    name: 'Furkan Arıkan',
-    subtitle: 'Kurucu Avukat, Furkan Arıkan Hukuk Bürosu · Bir hafta önce',
-    rating: 5,
-    text: 'Harika bir işletme, tüm süreçlerde çok yardımcı olan bir ekibe sahipler, her şey için teşekkürler!',
-    source: 'google' as const,
-  },
-  {
-    name: 'furkan tanır',
-    subtitle: 'Bir hafta önce',
-    rating: 5,
-    text: 'İşletmemizin reklam faaliyetlerini başarıyla yürütüyorlar. Çağatay bey çok yardımcı oldu, ilgili ve işini titizlikle yapıyor.',
-    source: 'google' as const,
-  },
-  {
-    name: 'Atalay Durmaz',
-    subtitle: '2 ay önce',
-    rating: 5,
-    text: 'İşini titizlikle yapan, vizyoner bir ekip.',
-    source: 'google' as const,
-  },
-  {
-    name: 'Mert Anıl Güler',
-    subtitle: 'Kurucu Avukat, Mert Anıl Güler Hukuk Bürosu · 2 gün önce',
-    rating: 5,
-    text: "Harika ötesi. Aldığım hizmetten çok memnun kaldım. Ramses'le yollarımızın kesişmesi büyük şans oldu. Kesinlikle tavsiye ediyorum. Çağatay Bey'e ne istediğinizi anlatmanız yeter. Tekrar teşekkürler.",
-    source: 'google' as const,
-  },
-  {
-    name: 'Nur Çelen',
-    subtitle: '2 gün önce',
-    rating: 5,
-    text: 'Web sitemi ve reklam süreçlerimi profesyonel bir şekilde yönetti. Süreç boyunca her konuda hızlı geri dönüş aldı, isteklerimi dikkate aldı ve ortaya tam istediğim gibi bir çalışma çıktı. Emeğiniz ve ilginiz için çok teşekkür ederim.',
-    source: 'google' as const,
-  },
-  {
-    name: 'Gamzeli Dermokozmetik',
-    subtitle: 'E-Ticaret Ekibi',
-    rating: 5,
-    text: 'Ramses Digital, eczacı güvencesiyle sunduğumuz ürünleri doğru kitleye ulaştıran bir e-ticaret sitesi kurdu. Cilt analizi aracı sayesinde müşterilerimiz kendilerine en uygun ürünü kolayca buluyor.',
-    source: 'site' as const,
-  },
-]
+// Yorum verisi src/lib/reviews.ts'te — layout.tsx'teki Review/AggregateRating
+// şemasıyla aynı kaynaktan besleniyor.
 
 // ─── Main Component ────────────────────────────────────────────────────────
 export default function HomePage() {
