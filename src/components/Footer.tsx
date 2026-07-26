@@ -36,6 +36,10 @@ const localPages = [
   { href: '/kocaeli-web-tasarim', label: 'Kocaeli Web Tasarım' },
   { href: '/kocaeli-google-ads', label: 'Kocaeli Google Ads' },
   { href: '/kocaeli-yazilim-ajansi', label: 'Kocaeli Yazılım Ajansı' },
+  { href: '/istanbul-dijital-pazarlama', label: 'İstanbul Dijital Pazarlama' },
+  { href: '/istanbul-seo', label: 'İstanbul SEO' },
+  { href: '/istanbul-web-tasarim', label: 'İstanbul Web Tasarım' },
+  { href: '/istanbul-google-ads', label: 'İstanbul Google Ads' },
 ]
 
 const foundingYear = 2019
