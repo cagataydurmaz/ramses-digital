@@ -6,7 +6,7 @@ import { Mail, Zap, Users, BarChart3, RefreshCw, Target, CheckCircle2, ArrowRigh
 export const metadata: Metadata = {
   title: 'E-Posta & Otomasyon Pazarlama | CRM Entegrasyonu, Drip Kampanyalar — Ramses Dijital',
   description:
-    'Kişiselleştirilmiş e-posta kampanyaları ve otomatik pazarlama akışları. CRM entegrasyonu, segmentasyon ve A/B test ile açılma oranlarını %40 artırın. Ramses Dijital Reklam Ajansı.',
+    'Kişiselleştirilmiş e-posta kampanyaları ve otomatik pazarlama akışları. CRM entegrasyonu, segmentasyon ve A/B test ile açılma oranlarını %40 artırın. Ramses Dijital Yazılım ve Dijital Pazarlama Ajansı.',
   alternates: { canonical: 'https://ramsesdigital.com/hizmetler/eposta-otomasyon' },
   openGraph: {
     title: 'E-Posta Pazarlama & Otomasyon | Ramses Dijital',
@@ -310,7 +310,7 @@ export default function EpostaOtomasyonPage() {
         '@type': 'Service',
         name: 'E-Posta Pazarlama & Otomasyon',
         description: 'CRM entegrasyonu, segmentasyon, drip kampanyalar ve davranışsal tetikleyicilerle e-posta pazarlama yönetimi.',
-        provider: { '@type': 'Organization', name: 'Ramses Dijital Reklam Ajansı', url: 'https://ramsesdigital.com' },
+        provider: { '@type': 'Organization', name: 'Ramses Dijital Yazılım ve Dijital Pazarlama Ajansı', url: 'https://ramsesdigital.com' },
         areaServed: [{ '@type': 'City', name: 'İzmit' }, { '@type': 'City', name: 'Kocaeli' }, { '@type': 'Country', name: 'Türkiye' }],
         serviceType: 'Email Marketing',
         url: 'https://ramsesdigital.com/hizmetler/eposta-otomasyon',

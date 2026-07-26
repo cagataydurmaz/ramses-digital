@@ -6,7 +6,7 @@ import { BarChart3, TrendingUp, Target, Search, LineChart, Lightbulb, CheckCircl
 export const metadata: Metadata = {
   title: 'Veri Analizi & Stratejik Danışmanlık | GA4, Looker Studio, Büyüme Stratejisi — Ramses Dijital',
   description:
-    'GA4 kurulumu, özel dashboard tasarımı ve dönüşüm huni analiziyle veriye dayalı büyüme stratejisi. Ramses Dijital Reklam Ajansı — ölçülemeyen büyüme olmaz.',
+    'GA4 kurulumu, özel dashboard tasarımı ve dönüşüm huni analiziyle veriye dayalı büyüme stratejisi. Ramses Dijital Yazılım ve Dijital Pazarlama Ajansı — ölçülemeyen büyüme olmaz.',
   alternates: { canonical: 'https://ramsesdigital.com/hizmetler/veri-analizi' },
   openGraph: {
     title: 'Veri Analizi & Danışmanlık | Ramses Dijital',
@@ -310,7 +310,7 @@ export default function VeriAnaliziPage() {
         '@type': 'Service',
         name: 'Veri Analizi & Stratejik Danışmanlık',
         description: 'GA4 kurulumu, Looker Studio dashboard tasarımı, dönüşüm huni analizi ve büyüme stratejisi danışmanlığı.',
-        provider: { '@type': 'Organization', name: 'Ramses Dijital Reklam Ajansı', url: 'https://ramsesdigital.com' },
+        provider: { '@type': 'Organization', name: 'Ramses Dijital Yazılım ve Dijital Pazarlama Ajansı', url: 'https://ramsesdigital.com' },
         areaServed: [{ '@type': 'City', name: 'İzmit' }, { '@type': 'City', name: 'Kocaeli' }, { '@type': 'Country', name: 'Türkiye' }],
         serviceType: 'Data Analytics Consulting',
         url: 'https://ramsesdigital.com/hizmetler/veri-analizi',

@@ -109,7 +109,7 @@ export default async function Image() {
             fontSize: '20px',
           }}
         >
-          <span>Ramses Dijital Reklam Ajansı</span>
+          <span>Ramses Dijital Yazılım ve Dijital Pazarlama Ajansı</span>
           <span>ramsesdigital.com</span>
         </div>
       </div>

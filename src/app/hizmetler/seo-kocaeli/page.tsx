@@ -4,7 +4,7 @@ import CalendlyButton from '@/components/CalendlyButton'
 import { Sparkles, CheckCircle2, ArrowRight, Search, FileText, Link2, BarChart3, Zap, Award } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'SEO Hizmeti | Yerel & Teknik SEO, GEO, AEO — Ramses Dijital Reklam Ajansı',
+  title: 'SEO Hizmeti | Yerel & Teknik SEO, GEO, AEO — Ramses Dijital Yazılım ve Dijital Pazarlama Ajansı',
   description:
     'İşletmenize özel SEO hizmeti. Yerel SEO, teknik SEO, GEO, AEO ve içerik stratejisi. Online çalışıyoruz, tüm Türkiye\'ye hizmet veriyoruz. Ücretsiz analiz.',
   alternates: { canonical: 'https://ramsesdigital.com/hizmetler/seo-kocaeli' },
@@ -138,7 +138,7 @@ export default function SeoKocaeliPage() {
             <p><strong className="text-white">Tüketicilerin %93&apos;ü</strong> bir hizmet veya ürün ararken önce Google&apos;a yöneliyor. Hedef anahtar kelimelerinizde ilk üçte yer almak, web sitenize gelen organik trafiğin <strong className="text-white">%75&apos;ini</strong> bir anda kazanmanız anlamına geliyor.</p>
             <p>SEO, sadece teknik değil; <strong className="text-white">strateji + içerik + otorite</strong> üçgenidir. Doğru anahtar kelime seçimi, kullanıcı niyetine uygun içerik üretimi ve sektörel backlink stratejileri bir araya gelmediğinde sıralama yarısında kalırsınız.</p>
             <p>2026&apos;da SEO artık sadece Google demek değil. ChatGPT, Gemini, Perplexity gibi yapay zeka motorları kullanıcının %30&apos;una hizmet veriyor. Bu yüzden modern SEO &ldquo;GEO&rdquo; (Generative Engine Optimization) ve &ldquo;AEO&rdquo; (Answer Engine Optimization) olmadan eksik kalır.</p>
-            <p>Ramses Dijital Reklam Ajansı olarak ekibimizle, klasik SEO&apos;dan AI motorlarına kadar tüm arama ekosistemini kapsayan stratejiler kuruyoruz. NAP tutarlılığı, Google Business Profile optimizasyonu, yerel ve global anahtar kelime stratejileri uzmanlık alanımızdır.</p>
+            <p>Ramses Dijital Yazılım ve Dijital Pazarlama Ajansı olarak ekibimizle, klasik SEO&apos;dan AI motorlarına kadar tüm arama ekosistemini kapsayan stratejiler kuruyoruz. NAP tutarlılığı, Google Business Profile optimizasyonu, yerel ve global anahtar kelime stratejileri uzmanlık alanımızdır.</p>
           </div>
         </div>
       </section>

@@ -90,7 +90,7 @@ export default function ContactPage() {
         '@id': 'https://ramsesdigital.com/iletisim#page',
         name: 'Ramses Dijital İletişim',
         url: 'https://ramsesdigital.com/iletisim',
-        description: 'Ramses Dijital Reklam Ajansı ile iletişime geçin. İzmit / Kocaeli\'de dijital pazarlama danışmanlığı için ücretsiz görüşme ayarlayın.',
+        description: 'Ramses Dijital Yazılım ve Dijital Pazarlama Ajansı ile iletişime geçin. İzmit / Kocaeli\'de dijital pazarlama danışmanlığı için ücretsiz görüşme ayarlayın.',
         publisher: { '@id': 'https://ramsesdigital.com/#organization' },
       },
       {

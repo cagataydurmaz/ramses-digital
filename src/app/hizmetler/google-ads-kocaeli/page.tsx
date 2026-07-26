@@ -133,7 +133,7 @@ export default function GoogleAdsKocaeliPage() {
             <p>Google Ads, doğru kurgulandığında <strong className="text-white">harcadığınızın 4-10 katını</strong> geri getirebilen en güçlü dijital pazarlama kanalıdır. Yanlış kurgulandığındaysa bütçenizi haftalar içinde tüketebilir. Aradaki fark: <strong className="text-white">veri ve disiplin</strong>.</p>
             <p>Birçok ajans &ldquo;set it and forget it&rdquo; mantığıyla çalışır: kampanyayı kurar ve aylarca dokunmaz. Biz aksine, haftalık bid optimizasyonu, negatif anahtar kelime ekleme, ad performans analizi ve A/B testlerle sürekli iyileştirme yaparız.</p>
             <p>Uzun kuyruklu anahtar kelimelerle düşük CPC&apos;li yüksek dönüşümlü kampanyalar kurabiliyoruz. Coğrafi hedefleme, saat ve cihaz optimizasyonları gibi mikro detaylar ROAS&apos;ınızı katlıyor.</p>
-            <p>Ramses Dijital Reklam Ajansı&apos;nın Google Ads ekibi, sertifikalı uzmanlardan oluşuyor. Her ay milyonlarca TL reklam bütçesi yönetiyor ve sektörel kıyaslamalarda %35 daha düşük CPA elde ediyoruz.</p>
+            <p>Ramses Dijital Yazılım ve Dijital Pazarlama Ajansı&apos;nın Google Ads ekibi, sertifikalı uzmanlardan oluşuyor. Her ay milyonlarca TL reklam bütçesi yönetiyor ve sektörel kıyaslamalarda %35 daha düşük CPA elde ediyoruz.</p>
           </div>
         </div>
       </section>

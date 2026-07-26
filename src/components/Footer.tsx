@@ -155,7 +155,7 @@ export default function Footer() {
 
         <div className="mt-10 pt-8 border-t border-white/[0.05] flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-zinc-400 text-sm">
-            © {foundingYear}{currentYear > foundingYear ? `–${currentYear}` : ''} Ramses Dijital Reklam Ajansı. Tüm hakları saklıdır.
+            © {foundingYear}{currentYear > foundingYear ? `–${currentYear}` : ''} Ramses Dijital Yazılım ve Dijital Pazarlama Ajansı. Tüm hakları saklıdır.
           </p>
           <div className="flex items-center gap-6">
             <Link href="/gizlilik-politikasi" className="text-zinc-400 hover:text-white text-xs transition-colors">

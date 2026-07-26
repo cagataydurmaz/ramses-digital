@@ -1742,7 +1742,7 @@ export const posts: Post[] = [
     coverGradient: 'from-blue-500/10 to-blue-900/5',
     readTime: 5,
     date: '2026-04-30',
-    author: 'Ramses Dijital Reklam Ajansı',
+    author: 'Ramses Dijital Yazılım ve Dijital Pazarlama Ajansı',
     authorRole: 'Strateji Uzmanları',
     tags: ['İzmit', 'Reklam Ajansı', 'KOBİ', 'Ajans Seçimi'],
     content: `
@@ -1891,7 +1891,7 @@ export const posts: Post[] = [
     coverGradient: 'from-orange-500/10 to-orange-900/5',
     readTime: 5,
     date: '2026-04-29',
-    author: 'Ramses Dijital Reklam Ajansı',
+    author: 'Ramses Dijital Yazılım ve Dijital Pazarlama Ajansı',
     authorRole: 'Sektörel Strateji Uzmanları',
     tags: ['Restoran', 'İzmit', 'Yerel SEO', 'Google Maps'],
     content: `

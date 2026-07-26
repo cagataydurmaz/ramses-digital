@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Portföy | Gerçek Vaka Çalışmaları — Ramses Dijital Reklam Ajansı',
+  title: 'Portföy | Gerçek Vaka Çalışmaları — Ramses Dijital Yazılım ve Dijital Pazarlama Ajansı',
   description:
     'Sağlık, hukuk, e-ticaret ve yapay zeka platformlarında tasarladığımız ve büyüttüğümüz gerçek müşteri projeleri. Canlı siteler, doğrulanabilir vaka çalışmaları.',
   openGraph: {
