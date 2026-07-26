@@ -448,25 +448,23 @@ export default function HomePage() {
           <div className="mobile-hide-blur absolute bottom-0 left-[15%] w-[600px] h-[350px] bg-emerald-500/5 rounded-full blur-[130px]" />
         </div>
         <div className="relative max-w-7xl mx-auto">
-          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-5 mb-10 px-1">
-            <FadeIn>
-              <p className="text-blue-500 text-sm font-medium tracking-wider uppercase mb-3">
-                Müşteri Yorumları
-              </p>
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white">
-                Müşterilerimiz Ne Diyor?
-              </h2>
-            </FadeIn>
+          <FadeIn className="text-center mb-16">
+            <p className="text-blue-500 text-sm font-medium tracking-wider uppercase mb-3">
+              Müşteri Yorumları
+            </p>
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              Müşterilerimiz Ne Diyor?
+            </h2>
             <a
               href={GOOGLE_REVIEWS_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-full text-sm font-medium transition-all hover:-translate-y-0.5 shrink-0 w-fit"
+              className="inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-full text-sm font-medium transition-all hover:-translate-y-0.5"
             >
               Tüm Yorumları Gör
               <ExternalLink size={14} />
             </a>
-          </div>
+          </FadeIn>
 
           <div className="marquee-viewport">
             <div className="marquee-track">
