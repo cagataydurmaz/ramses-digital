@@ -114,7 +114,7 @@ export default function SmartIntake() {
   const colors = result ? (colorMap[result.color] ?? colorMap.blue) : null
 
   return (
-    <div className="w-full max-w-2xl mx-auto">
+    <div className="w-full max-w-4xl mx-auto">
       <AnimatePresence mode="wait">
         {!result ? (
           <motion.div
@@ -163,8 +163,8 @@ export default function SmartIntake() {
                       if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); analyze(input) }
                     }}
                     placeholder={EXAMPLES[exampleIndex]}
-                    rows={2}
-                    className="w-full bg-transparent text-white placeholder:text-zinc-500 text-sm sm:text-base resize-none outline-none leading-relaxed min-h-[44px]"
+                    rows={3}
+                    className="w-full bg-transparent text-white placeholder:text-zinc-500 text-base sm:text-lg resize-none outline-none leading-relaxed min-h-[64px] sm:min-h-[84px]"
                   />
                 </div>
 

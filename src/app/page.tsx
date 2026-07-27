@@ -28,7 +28,7 @@ import {
 const SmartIntake = dynamic(() => import('@/components/SmartIntake'), {
   ssr: false,
   loading: () => (
-    <div className="w-full max-w-2xl mx-auto h-[120px] rounded-2xl bg-white/[0.03] border border-white/[0.06] animate-pulse" />
+    <div className="w-full max-w-4xl mx-auto h-[150px] rounded-2xl bg-white/[0.03] border border-white/[0.06] animate-pulse" />
   ),
 })
 
