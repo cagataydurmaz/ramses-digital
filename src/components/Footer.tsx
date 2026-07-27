@@ -40,6 +40,14 @@ const localPages = [
   { href: '/istanbul-seo', label: 'İstanbul SEO' },
   { href: '/istanbul-web-tasarim', label: 'İstanbul Web Tasarım' },
   { href: '/istanbul-google-ads', label: 'İstanbul Google Ads' },
+  { href: '/ankara-dijital-pazarlama', label: 'Ankara Dijital Pazarlama' },
+  { href: '/ankara-seo', label: 'Ankara SEO' },
+  { href: '/ankara-web-tasarim', label: 'Ankara Web Tasarım' },
+  { href: '/ankara-google-ads', label: 'Ankara Google Ads' },
+  { href: '/izmir-dijital-pazarlama', label: 'İzmir Dijital Pazarlama' },
+  { href: '/izmir-seo', label: 'İzmir SEO' },
+  { href: '/izmir-web-tasarim', label: 'İzmir Web Tasarım' },
+  { href: '/izmir-google-ads', label: 'İzmir Google Ads' },
 ]
 
 const foundingYear = 2019
