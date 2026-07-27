@@ -96,6 +96,43 @@ function ArticleJsonLd({ post }: { post: (typeof posts)[0] }) {
   )
 }
 
+// Her yazının içeriğindeki "Sık Sorulan Sorular" bölümünü otomatik ayrıştırır —
+// veri kaynağına dokunmadan tüm yazılara AEO/GEO için FAQPage şeması sağlar.
+function extractFaqs(html: string): { q: string; a: string }[] {
+  const marker = html.indexOf('Sık Sorulan Sorular')
+  if (marker === -1) return []
+  const after = html.slice(marker)
+  const regex = /<h3>([^<]+)<\/h3>\s*<p>([\s\S]*?)<\/p>/g
+  const faqs: { q: string; a: string }[] = []
+  let m: RegExpExecArray | null
+  while ((m = regex.exec(after)) !== null) {
+    const q = m[1].trim()
+    if (!q.endsWith('?')) continue
+    const a = m[2].replace(/<[^>]+>/g, '').trim()
+    if (a) faqs.push({ q, a })
+  }
+  return faqs
+}
+
+function FaqJsonLd({ faqs }: { faqs: { q: string; a: string }[] }) {
+  if (faqs.length === 0) return null
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map(({ q, a }) => ({
+      '@type': 'Question',
+      name: q,
+      acceptedAnswer: { '@type': 'Answer', text: a },
+    })),
+  }
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  )
+}
+
 function categoryBadgeClass(color: string): string {
   switch (color) {
     case 'blue':
@@ -135,10 +172,13 @@ export default function BlogPostPage({ params }: Props) {
     year: 'numeric',
   })
 
+  const faqs = extractFaqs(post.content)
+
   return (
     <div className="min-h-screen bg-[#0A0F1E]">
       <ArticleJsonLd post={post} />
       <BreadcrumbJsonLd post={post} />
+      <FaqJsonLd faqs={faqs} />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 pt-24 sm:pt-32 pb-24">
         {/* Breadcrumb */}
