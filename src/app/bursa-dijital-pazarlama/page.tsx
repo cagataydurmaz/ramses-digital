@@ -81,7 +81,7 @@ const sectors = [
 ]
 
 const faqs = [
-  { q: 'Bursa\'da dijital pazarlamaya ne zaman başlamalıyım?', a: 'En iyi zaman şimdi. Bursa\'daki rakiplerinizin bir kısmı zaten dijitale yatırım yapıyor; her geçen ay geciktirmek arama motoru otoritesinde geri kalmak anlamına gelir. Küçük bir bütçeyle bile Google Ads ile hemen trafik almak, SEO ile de uzun vadeli varlık inşa etmek mümkün.' },
+  { q: 'Bursa\'da dijital pazarlamaya ne zaman başlamalıyım?', a: 'SEO otorite kazanmak zaman aldığı için erken başlamak avantaj sağlar; Bursa\'daki rakiplerinizin bir kısmı zaten dijitale yatırım yapıyor. Küçük bir bütçeyle Google Ads ile kısa vadede trafik almak, SEO ile de uzun vadeli bir varlık inşa etmek mümkün.' },
   { q: 'Bursa\'daki hangi dijital kanal en hızlı sonuç verir?', a: 'Hızlı sonuç için Google Ads: 1-2 hafta içinde potansiyel müşteriler arar ve reklamınızı görür. Uzun vadeli ve düşük maliyetli büyüme için SEO: 3-6 ayda organik trafik birikmeye başlar. İkisini birlikte yürütmek en akıllıca stratejidir.' },
   { q: 'Otomotiv yan sanayi veya mobilya üreticisi olarak dijital pazarlamadan nasıl fayda görürüm?', a: 'B2B alıcılar arama motorunda tedarikçi araştırması yapıyor — "otomotiv yan sanayi tedarikçi Bursa" gibi aramalar. SEO ve LinkedIn/Google Ads kombinasyonuyla bu talebi yakalamak mümkün. Mobilya üreticileri için ise hem B2B toptan hem B2C perakende talebi ayrı stratejiler gerektiriyor.' },
   { q: 'Bursa\'da dijital pazarlama için aylık ne kadar bütçe ayırmalıyım?', a: 'Hedeflediğiniz kanal kombinasyonuna (SEO, Google Ads, web tasarım) ve sektörünüze göre değişir. Ücretsiz danışmanlıkta işletmenize özel bir bütçe planı netleştirebiliriz.' },
