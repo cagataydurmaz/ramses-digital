@@ -386,7 +386,7 @@ const definitions = [
   {
     term: 'ROAS (Reklam Harcamasının Geri Dönüşü)',
     definition:
-      'ROAS, reklam harcaması başına elde edilen gelirdir. Formülü: Gelir / Reklam Harcaması. 4x ROAS, harcadığınız her 1 TL\'nin 4 TL gelir getirdiği anlamına gelir.',
+      'ROAS, reklam harcaması başına elde edilen gelirdir. Formülü: Gelir / Reklam Harcaması. 4x ROAS, harcadığınız reklam bütçesinin 4 katı gelir getirdiği anlamına gelir.',
   },
 ]
 
@@ -397,7 +397,7 @@ const faqs = [
   },
   {
     q: 'Google Ads bütçem ne kadar olmalı?',
-    a: 'B2B ve nişe özel sektörler için aylık 5.000-15.000 TL test bütçesiyle başlamayı öneriyoruz. E-ticaret ve geniş kitleli işletmeler için 15.000-50.000 TL arası bir başlangıç bütçesi sağlıklı sonuç verir. Optimal bütçe sektör, ürün marjı ve hedef kitleye göre değişir.',
+    a: 'B2B ve nişe özel sektörler ile e-ticaret ve geniş kitleli işletmeler için farklı seviyelerde başlangıç bütçesi öneriyoruz. Optimal bütçe sektör, ürün marjı ve hedef kitleye göre değişir — ücretsiz danışmanlıkta netleştiriyoruz.',
   },
   {
     q: 'Hizmetlerinizden hangisi benim için uygun?',

@@ -106,7 +106,7 @@ const faqs = [
   },
   {
     q: 'Küçük işletmeler için veri analizi gerekli mi?',
-    a: 'Kesinlikle. KOBİ\'ler büyük firmalar kadar veri analitikçisi çalıştıramaz, bu yüzden her TL\'nin nereye gittiğini bilmek daha kritik. Küçük bir işletme için aylık 30 dakikalık doğru dashboard incelemesi, yanlış kanala giden bütçeyi kurtarabilir ve yıllık büyüme hedefini tutturabilir.',
+    a: 'Kesinlikle. KOBİ\'ler büyük firmalar kadar veri analitikçisi çalıştıramaz, bu yüzden bütçenin nereye gittiğini bilmek daha kritik. Küçük bir işletme için aylık 30 dakikalık doğru dashboard incelemesi, yanlış kanala giden bütçeyi kurtarabilir ve yıllık büyüme hedefini tutturabilir.',
   },
   {
     q: 'Danışmanlık hizmeti neleri kapsıyor?',

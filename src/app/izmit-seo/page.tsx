@@ -30,12 +30,12 @@ const results = [
   { metric: '3-6 Ay', label: 'Organik sıralama için gerçekçi süre' },
   { metric: '2-4 Hafta', label: 'Yerel harita sonuçları için' },
   { metric: '%300+', label: 'Ortalama organik trafik artışı' },
-  { metric: '0 TL', label: 'Reklam bütçesi — saf organik' },
+  { metric: 'Organik', label: 'Reklam bütçesi gerektirmez' },
 ]
 
 const faqs = [
   { q: 'İzmit\'te SEO ne kadar sürede sonuç verir?', a: 'Google Business Profile ve yerel harita için 2-4 hafta içinde iyileşme görülür. Organik web sitesi sıralamaları 3-6 ay içinde belirginleşir. Rakibinize ve anahtar kelime rekabetine göre tam etki 6-12 ayda ortaya çıkar. Sabırsızlar için Google Ads\'i paralelde yürütmek önerilir.' },
-  { q: 'İzmit\'te SEO maliyeti ne kadar?', a: 'KOBİ SEO paketleri aylık 6.000-15.000 TL. İçerik ağırlıklı kurumsal paketler 20.000+ TL. Her paket: teknik audit, anahtar kelime stratejisi, aylık içerik üretimi, backlink çalışması, GBP yönetimi ve aylık raporlama içerir. Ücretsiz danışmanlıkta işletmenize özel fiyat sunulur.' },
+  { q: 'İzmit\'te SEO maliyeti ne kadar?', a: 'İşletme büyüklüğüne ve kapsama göre değişir. Her paket: teknik audit, anahtar kelime stratejisi, aylık içerik üretimi, backlink çalışması, GBP yönetimi ve aylık raporlama içerir. Ücretsiz danışmanlıkta işletmenize özel fiyat sunulur.' },
   { q: 'İzmit\'te hangi işletmeler SEO\'dan en çok fayda görür?', a: 'Yerel hizmet veren işletmeler (psikolog, avukat, diş hekimi, oto servis, güzellik salonu, muhasebe bürosu) yerel SEO\'dan en yüksek ROI alır. E-ticaret siteleri ulusal SEO\'dan faydalanır. B2B sanayi firmaları için içerik ve teknik SEO kombinasyonu en etkili yaklaşımdır.' },
   { q: 'Google Business Profile (GBP) ile web sitesi SEO\'su farkı nedir?', a: 'GBP harita paketini (Google Maps alanı) etkiler — yerel aramalarda üst üç işletmeden biri olmak için şart. Web sitesi SEO\'su ise organik arama sonuçlarındaki sıralamayı hedefler. İzmit\'te tam görünürlük için her ikisi birlikte yürütülmelidir.' },
   { q: 'İzmit\'teki rakiplerim çok güçlü, SEO işe yarar mı?', a: 'Güçlü rakiplerin çoğu aslında yerel SEO\'yu doğru yapmıyor — GBP eksik dolu, site yavaş, içerik yüzeysel. Rakip analizi yapıp açıklarını buluyoruz. Ayrıca rakiplerin olmadığı uzun kuyruklu anahtar kelimelerde hızlı kazanımlar mümkün.' },

@@ -41,13 +41,13 @@ const process = [
 
 const faqs = [
   { q: 'Web sitem ne kadar sürede hazır olur?', a: 'Tek sayfa landing: 1-2 hafta. Kurumsal site (5-10 sayfa): 3-5 hafta. Karmaşık e-ticaret veya özel sistem: 8-16 hafta. Süreyi içerik hazırlık hızı ve revizyon sayısı belirler.' },
-  { q: 'Fiyatlandırma nasıl?', a: 'Landing sayfa: 8.000-25.000 TL. Kurumsal web sitesi: 25.000-80.000 TL. E-ticaret: 50.000-250.000 TL. Custom Next.js projeler: 80.000+ TL. Tüm paketler: SEO altyapı, mobil uyum, hosting kurulumu, 30 gün destek dahil.' },
+  { q: 'Fiyatlandırma nasıl?', a: 'Landing sayfa, kurumsal web sitesi, e-ticaret ve özel Next.js projeleri farklı kapsam ve fiyat seviyelerindedir. Tüm paketler: SEO altyapı, mobil uyum, hosting kurulumu, 30 gün destek dahil. Ücretsiz danışmanlıkta net fiyat sunuyoruz.' },
   { q: 'Hangi teknolojiyi kullanıyorsunuz?', a: 'Next.js (React 18, TypeScript) ana tercihimiz — performans ve SEO için en iyisi. WordPress (Elementor/Bricks) bütçe sınırlı projeler için. Shopify ve WooCommerce e-ticaret için. Vercel ve Hetzner üzerinde deploy ediyoruz.' },
   { q: 'İçerik yönetimi (CMS) yapılabilir mi?', a: 'Evet. Headless CMS (Sanity, Strapi) veya WordPress üzerinden içerik yönetim paneli kuruyoruz. Yönetici girişi, blog yazısı ekleme, ürün güncelleme gibi işlemleri kolayca yapabilirsiniz. 1 saatlik eğitim videosu da pakete dahil.' },
   { q: 'SEO çalışması yapıyor musunuz?', a: 'Site yapımında SEO altyapısı (schema markup, meta tag, sitemap, hız) zorunlu olarak dahildir. İçerik üretimi, anahtar kelime stratejisi ve backlink çalışması için ayrı SEO hizmet paketimiz mevcut.' },
-  { q: 'Hosting ve domain dahil mi?', a: 'İlk yıl Vercel hosting ücretsiz pakete dahildir. Domain alımında size yardımcı oluyoruz (yıllık 50-300 TL aralığında, sahipliği size ait). İkinci yıldan itibaren self-hosting veya bizim yönetimimizde devam edebilirsiniz.' },
+  { q: 'Hosting ve domain dahil mi?', a: 'İlk yıl Vercel hosting ücretsiz pakete dahildir. Domain alımında size yardımcı oluyoruz, sahipliği size ait olur. İkinci yıldan itibaren self-hosting veya bizim yönetimimizde devam edebilirsiniz.' },
   { q: 'Site sahipliği bende mi kalıyor?', a: 'Evet, %100. Tüm kod GitHub\'da size aktarılır, domain ve hosting hesapları sizin adınıza alınır. İstediğiniz an başka bir geliştiriciyle çalışabilirsiniz; teknoloji kilitli değildir.' },
-  { q: 'Bakım ve güncelleme nasıl?', a: 'İlk 30 gün ücretsiz bug-fix desteği. Sonrası için aylık 1.500-5.000 TL aralığında bakım paketleri: küçük güncellemeler, içerik girişi, hız optimizasyonu, güvenlik yamaları, yedekleme. İhtiyaca göre saatlik (1.500 TL/saat) çalışma da mümkün.' },
+  { q: 'Bakım ve güncelleme nasıl?', a: 'İlk 30 gün ücretsiz bug-fix desteği. Sonrası için aylık bakım paketleri sunuyoruz: küçük güncellemeler, içerik girişi, hız optimizasyonu, güvenlik yamaları, yedekleme. İhtiyaca göre saatlik çalışma da mümkün — ücretsiz danışmanlıkta netleştiriyoruz.' },
 ]
 
 export default function WebTasarimKocaeliPage() {

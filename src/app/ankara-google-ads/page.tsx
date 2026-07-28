@@ -27,7 +27,7 @@ const services = [
 ]
 
 const faqs = [
-  { q: 'Ankara\'da Google Ads için ne kadar bütçe gerekir?', a: 'Çankaya gibi rekabetçi ilçelerde aylık minimum 5.000-10.000 TL reklam bütçesi öneriyoruz. Diğer ilçelerde 3.000-5.000 TL ile başlanabilir. Hukuk ve danışmanlık gibi sektörler genellikle daha yüksek CPC\'ye sahip.' },
+  { q: 'Ankara\'da Google Ads için ne kadar bütçe gerekir?', a: 'Çankaya gibi rekabetçi ilçelerde diğer ilçelere göre daha yüksek bütçe gerekir. Hukuk ve danışmanlık gibi sektörler genellikle daha yüksek CPC\'ye sahip. Ücretsiz danışmanlıkta işletmenize özel bütçe önerisi sunuyoruz.' },
   { q: 'Ankara\'nın farklı ilçeleri için ayrı kampanya gerekir mi?', a: 'Evet, önerilir. Çankaya\'daki iş merkezi odaklı arama davranışı, Mamak veya Sincan\'daki daha yerel/perakende odaklı davranıştan farklı. İlçe bazlı reklam grupları daha yüksek Quality Score ve daha düşük CPC sağlar.' },
   { q: 'Ankara\'da Google Ads ne zaman sonuç verir?', a: 'Kampanya aktifleşince 1-2 hafta içinde tıklama ve trafik başlar. İlk 30 gün Google algoritmasının öğrenme dönemi sayılır. 6-8 haftadan sonra optimizasyon verimli şekilde yapılabilir.' },
   { q: 'Ankara\'daki B2B ve kurumsal firmalar için Google Ads işe yarıyor mu?', a: 'Evet, ancak strateji farklıdır. Uzun kuyruklu B2B aramalar ("Ankara endüstriyel ekipman tedarikçisi" gibi) düşük hacimli ama yüksek değerli. LinkedIn ile Google Ads kombinasyonu bu segmentte etkili olabilir.' },

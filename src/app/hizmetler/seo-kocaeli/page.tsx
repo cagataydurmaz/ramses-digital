@@ -41,7 +41,7 @@ const process = [
 
 const faqs = [
   { q: 'Kocaeli\'de SEO sonuçları ne kadar sürede görülür?', a: 'Yerel SEO için 2-4 haftada Google Business Profile ve Local Pack sonuçları görünmeye başlar. Web sitesi sıralamaları için 3-6 ay gerçekçi bir bekleme süresidir. Rekabetçi anahtar kelimelerde tam etki 6-12 ayda ortaya çıkar.' },
-  { q: 'SEO paketleriniz ne kadar?', a: 'KOBİ paketlerimiz aylık 6.000-15.000 TL aralığında. Kurumsal paketler 20.000+ TL\'den başlar. Her paket: teknik audit, anahtar kelime stratejisi, aylık içerik üretimi, backlink çalışması ve detaylı raporlama içerir. Ücretsiz danışmanlık seansında işletmenize özel teklif sunarız.' },
+  { q: 'SEO paketleriniz ne kadar?', a: 'İşletme büyüklüğüne ve kapsama göre değişir. Her paket: teknik audit, anahtar kelime stratejisi, aylık içerik üretimi, backlink çalışması ve detaylı raporlama içerir. Ücretsiz danışmanlık seansında işletmenize özel teklif sunarız.' },
   { q: 'Sözleşme süresi ne kadar?', a: 'Minimum 6 ay öneriyoruz. SEO uzun vadeli bir yatırımdır; 1-2 aylık çalışmalar gerçek sonuç vermez. 12 aylık sözleşmelerde %15 indirim sağlıyoruz.' },
   { q: 'Hangi sektörlerde uzmanlığınız var?', a: 'E-ticaret, B2B SaaS, fintech, sanayi/üretim, sağlık hizmetleri ve profesyonel hizmetlerde derin tecrübemiz var. Kocaeli\'deki yerel işletmelerde özellikle güçlü vaka çalışmalarımız bulunuyor.' },
   { q: 'Backlink satın alıyor musunuz?', a: 'Hayır. Sadece organik ve kaliteli backlink stratejileri uyguluyoruz: misafir yazılar, dijital PR, sektörel rehberler, kırık bağlantı inşası ve değer odaklı outreach. Satın alınmış backlinkler Google manuel cezası getirir.' },

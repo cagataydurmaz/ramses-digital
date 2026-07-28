@@ -30,7 +30,7 @@ const faqs = [
   { q: 'Farklı bir şehirdeyim, uzaktan web sitesi yaptırabilir miyim?', a: 'Evet, tüm sürecimiz dijital: brifing görüşmesi (Zoom/Meet), tasarım onayı, geliştirme ve teslim — hiçbiri fiziksel görüşme gerektirmiyor. İstanbul, Ankara, İzmir, Antalya dahil Türkiye\'nin her yerinden müşterimiz var.' },
   { q: 'Web sitesi ne kadar sürede teslim edilir?', a: 'Başlangıç paketleri 2-3 hafta, kurumsal projeler 4-6 hafta, e-ticaret ve özel platform projeleri 8-12 hafta sürer. Süreç: brifing → tasarım onayı → geliştirme → test → yayın.' },
   { q: 'Hangi teknolojiyi kullanıyorsunuz?', a: 'Next.js (React tabanlı) kullanıyoruz. WordPress gibi eski sistemlere kıyasla 3-5 kat daha hızlı, güvenlik açıklarına karşı daha dayanıklı ve SEO performansı çok daha yüksek siteler ortaya çıkıyor.' },
-  { q: 'Web sitesi fiyatları ne kadar?', a: 'Başlangıç paketleri 15.000 TL\'den, kurumsal 25.000 TL\'den, e-ticaret 40.000 TL\'den başlıyor. Sektör, sayfa sayısı ve özel özelliklere göre değişir — ücretsiz danışmanlıkta net fiyat alırsınız.' },
+  { q: 'Web sitesi fiyatları ne kadar?', a: 'Sektör, sayfa sayısı ve özel özelliklere göre değişir — ücretsiz danışmanlıkta net fiyat alırsınız.' },
   { q: 'Mevcut sitemi yeniden tasarlatabilir miyim?', a: 'Evet. Mevcut sitenizin SEO değerini (backlink, sıralama) koruyarak modern bir platforma taşıyoruz. 301 yönlendirmeler ve içerik migrasyonuyla kayıpsız geçiş sağlanır.' },
   { q: 'Web sitem yapıldıktan sonra kim günceller?', a: 'İçerik güncellemeleri için basit bir yönetim paneli kuruyoruz — teknik bilgi gerekmeden blog/ürün ekleyebilirsiniz. Tasarım değişiklikleri için aylık bakım paketi de sunuyoruz.' },
 ]

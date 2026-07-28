@@ -33,7 +33,7 @@ const faqs = [
   { q: 'Özel yazılım mı, hazır SaaS mi kullanmalıyım?', a: 'Çoğu durumda ikisinin kombinasyonu en akıllıcasıdır. Muhasebe, CRM gibi alanlarda hazır SaaS araçları uygun maliyetli; operasyona özgü süreçler için özel yazılım veya otomasyon daha verimlidir. Brifing aşamasında birlikte karar veriyoruz.' },
   { q: 'Proje süresi ve teslim takvimi nasıl belirleniyor?', a: 'Basit web sitesi 2-3 hafta, orta ölçekli web uygulaması 6-10 hafta, karmaşık otomasyon veya platform projeleri 3-6 ay. Şartname onaylandıktan sonra net takvim sunuyor ve buna bağlı kalıyoruz.' },
   { q: 'Yapay zeka (AI) entegrasyonu yapıyor musunuz?', a: 'Evet. Müşteri destek chatbotu, içerik üretim asistanı, belge analizi ve öneri sistemi projeleri yapıyoruz. Claude API ve GPT-4 entegrasyonlarında deneyimli ekibimiz var.' },
-  { q: 'Fiyatlandırma nasıl yapılıyor?', a: 'Proje bazlı sabit fiyat veya zaman & materyal modeli kullanıyoruz. Küçük otomasyon projeleri 5.000-15.000 TL, kurumsal web uygulamaları 30.000-100.000+ TL aralığında. Ücretsiz danışmanlıkta ihtiyaç analizi sonrası sabit fiyatlı teklif sunuyoruz.' },
+  { q: 'Fiyatlandırma nasıl yapılıyor?', a: 'Proje bazlı sabit fiyat veya zaman & materyal modeli kullanıyoruz. Küçük otomasyon projelerinden kurumsal web uygulamalarına göre kapsam ve fiyat değişir. Ücretsiz danışmanlıkta ihtiyaç analizi sonrası sabit fiyatlı teklif sunuyoruz.' },
   { q: 'Proje teslim edildikten sonra destek veriyor musunuz?', a: 'Evet. Proje sonrası 1-3 ay hata düzeltme garantisi veriyoruz. Uzun vadeli bakım için aylık destek paketi sunuyoruz: güncellemeler, küçük geliştirmeler ve teknik izleme.' },
 ]
 

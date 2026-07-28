@@ -33,7 +33,7 @@ const faqs = [
   { q: 'Ankara\'nın farklı ilçeleri için ayrı SEO çalışması gerekiyor mu?', a: 'Evet, özellikle Çankaya (iş merkezi, kurumsal firmalar) ile Keçiören veya Mamak (daha yerel/perakende odaklı) farklı arama davranışına sahip. İşinizin hedef kitlesine göre öncelikli ilçeleri belirleyip stratejiyi ona göre kuruyoruz.' },
   { q: 'Ankara\'da SEO sonuçları ne kadar sürede görülür?', a: 'Google Business Profile ve harita sonuçları 2-4 haftada görünür olabilir. Organik sıralamalar genellikle 3-6 ayda belirginleşir — Ankara\'nın rekabet seviyesi İstanbul\'a göre biraz daha yönetilebilir, bu da orta vadede daha hızlı sonuç almayı mümkün kılıyor.' },
   { q: 'Ankara\'da hangi sektörler SEO\'dan en çok fayda görüyor?', a: 'Hukuk ve danışmanlık büroları, sağlık (diş hekimi, fizyoterapi), eğitim/kurs merkezleri (üniversite şehri olması nedeniyle), B2B tedarikçiler ve kamu ihale danışmanlığı Ankara\'da yüksek arama hacmine sahip. Kurumsal güven sinyalleri bu sektörlerde belirleyici.' },
-  { q: 'Ankara SEO paketi ne kadara mal olur?', a: 'Aylık 8.000-20.000 TL aralığında paketler sunuyoruz — sektöre ve ilçe kapsamına göre değişir. Kapsam: teknik audit, anahtar kelime araştırması, aylık içerik üretimi, GBP yönetimi, backlink stratejisi ve raporlama.' },
+  { q: 'Ankara SEO paketi ne kadara mal olur?', a: 'Sektöre ve ilçe kapsamına göre değişir. Kapsam: teknik audit, anahtar kelime araştırması, aylık içerik üretimi, GBP yönetimi, backlink stratejisi ve raporlama. Ücretsiz danışmanlıkta işletmenize özel fiyat sunuyoruz.' },
   { q: 'Fiziksel olarak Ankara\'da mısınız?', a: 'Hayır, merkezimiz Kocaeli\'de — tüm çalışmalar uzaktan yürütülüyor. İstanbul Barosu\'na kayıtlı avukatlar için yürüttüğümüz canlı projeler (portföyümüzde), uzaktan çalışma modelimizin gerçek sonuç verdiğinin kanıtı. Ankara\'daki işletmeler için de aynı süreç ve aynı kalite geçerli.' },
   { q: 'GEO (Yapay Zeka Optimizasyonu) Ankara işletmesi için gerekli mi?', a: 'Evet, özellikle B2B ve kurumsal hizmetlerde. ChatGPT veya Gemini\'ye "Ankara\'da güvenilir bir X önerir misin?" diye sorulduğunda önerilmek için yapılandırılmış içerik ve otorite sinyalleri gerekiyor — bu kanal Ankara\'nın kurumsal pazarında henüz doymamış durumda.' },
 ]
@@ -110,7 +110,7 @@ export default function AnkaraSeoPage() {
             { value: '25', label: 'Ankara ilçesi — hedeflenebilir' },
             { value: '3-6 Ay', label: 'Organik sıralama için süre' },
             { value: 'Kurumsal', label: 'B2B & kamu odaklı ekonomi' },
-            { value: '0 TL', label: 'Reklam bütçesi — organik' },
+            { value: 'Organik', label: 'Reklam bütçesi gerektirmez' },
           ].map(({ value, label }) => (
             <div key={label} className="text-center bg-white/[0.03] border border-white/[0.06] rounded-xl p-5">
               <p className="text-3xl font-bold text-white mb-1">{value}</p>

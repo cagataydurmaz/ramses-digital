@@ -40,10 +40,10 @@ const process = [
 ]
 
 const faqs = [
-  { q: 'Google Ads bütçem ne kadar olmalı?', a: 'KOBİ\'ler için aylık 8.000-25.000 TL test bütçesi, e-ticaret ve geniş kitleli işletmeler için 25.000-100.000 TL aralığı sağlıklıdır. İlk ay test ve kalibre, sonraki aylar ölçeklendirme aşamasıdır. Düşük bütçelerde anlamlı veri toplamak zorlaşır.' },
-  { q: 'Yönetim ücretiniz nedir?', a: 'Reklam bütçenizin %10-20\'si arasında değişen aylık yönetim ücreti veya sabit aylık paket (5.000 TL\'den başlayan) iki seçenek de mevcuttur. Setup ücreti ilk ay tek seferlik 3.000-7.000 TL\'dir.' },
+  { q: 'Google Ads bütçem ne kadar olmalı?', a: 'İşletme büyüklüğüne ve sektöre göre değişir — KOBİ\'ler ile e-ticaret/geniş kitleli işletmeler farklı seviyelerde bütçe gerektirir. İlk ay test ve kalibre, sonraki aylar ölçeklendirme aşamasıdır. Ücretsiz danışmanlıkta size özel bütçe önerisi sunuyoruz.' },
+  { q: 'Yönetim ücretiniz nedir?', a: 'Reklam bütçenize göre değişen aylık yönetim ücreti veya sabit aylık paket — iki seçenek de mevcuttur. Setup ücreti ilk ay tek seferlik alınır. Ücretsiz danışmanlıkta net fiyat sunuyoruz.' },
   { q: 'Ne kadar sürede sonuç alırım?', a: 'Search kampanyalarında ilk dönüşümler 1-7 gün içinde gelir. Optimal ROAS\'a ulaşmak için 30-60 günlük bir öğrenme süreci gerekir. Bu sürede algoritma anahtar kelime ve kitleyi öğrenir; üçüncü aydan itibaren ölçeklendirme başlar.' },
-  { q: 'ROAS ne demek ve hedef ne olmalı?', a: 'ROAS = Gelir / Reklam Harcaması. Yani 4x ROAS, harcadığınız her 1 TL\'nin 4 TL gelir getirdiği anlamına gelir. Sektöre göre değişmekle birlikte: e-ticaret 3-5x, B2B SaaS 5-10x, profesyonel hizmetler 6-15x sağlıklı hedeflerdir.' },
+  { q: 'ROAS ne demek ve hedef ne olmalı?', a: 'ROAS = Gelir / Reklam Harcaması. Yani 4x ROAS, harcadığınız reklam bütçesinin 4 katı gelir getirdiği anlamına gelir. Sektöre göre değişmekle birlikte: e-ticaret 3-5x, B2B SaaS 5-10x, profesyonel hizmetler 6-15x sağlıklı hedeflerdir.' },
   { q: 'Reklam metnini siz mi yazıyorsunuz?', a: 'Evet, tüm reklam metni ve görsel tasarımları biz hazırlıyoruz. Sektörünüze özel 4-6 ad varyasyonu yazıp A/B testle en iyi performans göstereni belirliyoruz. Görsel ihtiyacında profesyonel grafiker desteği sağlıyoruz.' },
   { q: 'Sözleşme süresi ne kadar?', a: 'Minimum 3 ay öneriyoruz. Google Ads algoritmasının öğrenme süresi nedeniyle daha kısa süreli çalışmalar yatırımınızı tam olarak değerlendiremez. 6 ay+ taahhüt verenlere %10 yönetim indirimi sağlıyoruz.' },
   { q: 'Raporlama nasıl yapılıyor?', a: 'Aylık detaylı performans raporu (PDF) + canlı Looker Studio dashboard erişimi sağlıyoruz. Harcama, dönüşüm, ROAS, CPC, CTR ve sektörel kıyaslamalar şeffaf şekilde takip edilir. Haftalık 15 dk\'lık check-in görüşmesi de pakete dahil.' },
@@ -133,7 +133,7 @@ export default function GoogleAdsKocaeliPage() {
             <p>Google Ads, doğru kurgulandığında <strong className="text-white">harcadığınızın 4-10 katını</strong> geri getirebilen en güçlü dijital pazarlama kanalıdır. Yanlış kurgulandığındaysa bütçenizi haftalar içinde tüketebilir. Aradaki fark: <strong className="text-white">veri ve disiplin</strong>.</p>
             <p>Birçok ajans &ldquo;set it and forget it&rdquo; mantığıyla çalışır: kampanyayı kurar ve aylarca dokunmaz. Biz aksine, haftalık bid optimizasyonu, negatif anahtar kelime ekleme, ad performans analizi ve A/B testlerle sürekli iyileştirme yaparız.</p>
             <p>Uzun kuyruklu anahtar kelimelerle düşük CPC&apos;li yüksek dönüşümlü kampanyalar kurabiliyoruz. Coğrafi hedefleme, saat ve cihaz optimizasyonları gibi mikro detaylar ROAS&apos;ınızı katlıyor.</p>
-            <p>Ramses Dijital Yazılım ve Dijital Pazarlama Ajansı&apos;nın Google Ads ekibi, sertifikalı uzmanlardan oluşuyor. Her ay milyonlarca TL reklam bütçesi yönetiyor ve sektörel kıyaslamalarda %35 daha düşük CPA elde ediyoruz.</p>
+            <p>Ramses Dijital Yazılım ve Dijital Pazarlama Ajansı&apos;nın Google Ads ekibi, sertifikalı uzmanlardan oluşuyor. Yüksek hacimli reklam bütçeleri yönetiyor ve sektörel kıyaslamalarda %35 daha düşük CPA elde ediyoruz.</p>
           </div>
         </div>
       </section>

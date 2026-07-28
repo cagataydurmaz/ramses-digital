@@ -33,7 +33,7 @@ const faqs = [
   { q: 'İzmir\'in farklı ilçeleri için ayrı SEO çalışması gerekiyor mu?', a: 'Evet. Konak (şehir merkezi, kurumsal), Karşıyaka (yerleşik yerel işletmeler) ve Urla (turizm, butik işletmeler) çok farklı arama davranışlarına sahip. İşinizin hedef kitlesine göre öncelikli ilçeleri belirleyip stratejiyi ona göre kuruyoruz.' },
   { q: 'İzmir\'de SEO sonuçları ne kadar sürede görülür?', a: 'Google Business Profile ve harita sonuçları 2-4 haftada görünür olabilir. Organik sıralamalar genellikle 3-6 ayda belirginleşir — İzmir\'in rekabet seviyesi İstanbul\'a göre daha yönetilebilir.' },
   { q: 'İzmir\'de hangi sektörler SEO\'dan en çok fayda görüyor?', a: 'Turizm ve konaklama, restoran & kafe, e-ticaret (özellikle yerel üretim/zeytinyağı, tekstil gibi ihracat kalemleri), sağlık ve güzellik sektörü İzmir\'de yüksek arama hacmine sahip. Sezon öncesi içerik hazırlığı turizm sektöründe belirleyici.' },
-  { q: 'İzmir SEO paketi ne kadara mal olur?', a: 'Aylık 6.000-15.000 TL aralığında paketler sunuyoruz — sektöre ve ilçe kapsamına göre değişir. Kapsam: teknik audit, anahtar kelime araştırması, aylık içerik üretimi, GBP yönetimi, backlink stratejisi ve raporlama.' },
+  { q: 'İzmir SEO paketi ne kadara mal olur?', a: 'Sektöre ve ilçe kapsamına göre değişir. Kapsam: teknik audit, anahtar kelime araştırması, aylık içerik üretimi, GBP yönetimi, backlink stratejisi ve raporlama. Ücretsiz danışmanlıkta işletmenize özel fiyat sunuyoruz.' },
   { q: 'Fiziksel olarak İzmir\'de misiniz?', a: 'Hayır, merkezimiz Kocaeli\'de — tüm çalışmalar uzaktan yürütülüyor. İstanbul Barosu\'na kayıtlı avukatlar için yürüttüğümüz canlı projeler, uzaktan çalışma modelimizin gerçek sonuç verdiğinin kanıtı. İzmir işletmeleri için de aynı süreç ve kalite geçerli.' },
   { q: 'GEO (Yapay Zeka Optimizasyonu) İzmir işletmesi için gerekli mi?', a: 'Evet, özellikle turizm ve e-ticaret sektöründe. ChatGPT veya Gemini\'ye "İzmir\'de en iyi X" diye sorulduğunda önerilmek için yapılandırılmış içerik ve otorite sinyalleri gerekiyor — turistlerin ve yeni müşterilerin AI araçlarına giderek daha çok başvurduğu bir dönemdeyiz.' },
 ]
@@ -110,7 +110,7 @@ export default function IzmirSeoPage() {
             { value: '30', label: 'İzmir ilçesi — hedeflenebilir' },
             { value: '3-6 Ay', label: 'Organik sıralama için süre' },
             { value: 'Turizm', label: '& ihracat odaklı ekonomi' },
-            { value: '0 TL', label: 'Reklam bütçesi — organik' },
+            { value: 'Organik', label: 'Reklam bütçesi gerektirmez' },
           ].map(({ value, label }) => (
             <div key={label} className="text-center bg-white/[0.03] border border-white/[0.06] rounded-xl p-5">
               <p className="text-3xl font-bold text-white mb-1">{value}</p>

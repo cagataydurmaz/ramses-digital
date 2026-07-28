@@ -86,7 +86,7 @@ const process = [
 const faqs = [
   {
     q: 'E-posta pazarlama hâlâ işe yarıyor mu?',
-    a: 'Evet — ve diğer kanalların çoğundan daha yüksek ROI sağlıyor. Her 1 TL\'lik e-posta yatırımının ortalama 38-42 TL geri döndürdüğü raporlanıyor (Litmus, 2023). Sosyal medya algoritmalarının organik erişimi sıfırladığı çağda, e-posta doğrudan müşteriye ulaşmanın en güvenilir yolu.',
+    a: 'Evet — ve diğer kanalların çoğundan daha yüksek ROI sağlıyor. E-posta yatırımının ortalama 38-42 kat geri döndüğü raporlanıyor (Litmus, 2023). Sosyal medya algoritmalarının organik erişimi sıfırladığı çağda, e-posta doğrudan müşteriye ulaşmanın en güvenilir yolu.',
   },
   {
     q: 'Hangi e-posta platformunu kullanıyorsunuz?',
@@ -219,7 +219,7 @@ export default function EpostaOtomasyonPage() {
               Sosyal medya algoritmalarının organik erişimi neredeyse sıfırladığı günümüzde, <strong className="text-white">e-posta listeniz en değerli pazarlama varlığınızdır.</strong> Takipçileriniz bir platformun mülkü; e-posta aboneleriniz ise sizin. Hiçbir algoritma değişikliği onlara erişiminizi engelleyemez.
             </p>
             <p>
-              Litmus&apos;un 2023 araştırmasına göre e-posta pazarlama, her 1 TL yatırım için ortalama 42 TL geri döndürüyor — Google Ads veya sosyal medya reklamlarının çok üzerinde. Bu rakamın sırrı: <strong className="text-white">zaten ilgi duyan kitleye doğru zamanda doğru mesaj gönderilmesi.</strong>
+              Litmus&apos;un 2023 araştırmasına göre e-posta pazarlama, yatırımın ortalama 42 katını geri döndürüyor — Google Ads veya sosyal medya reklamlarının çok üzerinde. Bu rakamın sırrı: <strong className="text-white">zaten ilgi duyan kitleye doğru zamanda doğru mesaj gönderilmesi.</strong>
             </p>
             <p>
               Ramses Dijital&apos;in e-posta otomasyon yaklaşımı sadece kampanya göndermekle sınırlı değil. Müşteri yolculuğunun her aşamasına (farkındalık → değerlendirme → satın alma → sadakat) özgün, tetikleyici bazlı akışlar tasarlıyoruz. Bir kullanıcı sepetini terk ettiğinde, ürünü görüntülediğinde veya belirli bir sayfayı ziyaret ettiğinde otomatik devreye giren diziler kuruyoruz.

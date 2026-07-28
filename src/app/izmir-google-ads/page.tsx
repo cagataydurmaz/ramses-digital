@@ -27,7 +27,7 @@ const services = [
 ]
 
 const faqs = [
-  { q: 'İzmir\'de Google Ads için ne kadar bütçe gerekir?', a: 'Konak ve Karşıyaka gibi rekabetçi ilçelerde aylık minimum 4.000-8.000 TL reklam bütçesi öneriyoruz. Diğer ilçelerde 2.500-4.000 TL ile başlanabilir. Turizm sektöründe sezona göre bütçe artırımı öneriyoruz.' },
+  { q: 'İzmir\'de Google Ads için ne kadar bütçe gerekir?', a: 'İlçeye, sektöre ve rekabet düzeyine göre değişir — Konak ve Karşıyaka gibi merkezi ilçelerde daha yüksek bütçe gerekebilir. Turizm sektöründe sezona göre bütçe artırımı öneriyoruz. Ücretsiz danışmanlıkta işletmenize özel bütçe önerisi sunuyoruz.' },
   { q: 'İzmir\'in farklı ilçeleri için ayrı kampanya gerekir mi?', a: 'Evet, önerilir. Konak\'taki (şehir merkezi) ile Urla\'daki (turizm, butik işletmeler) arama davranışı çok farklı. İlçe bazlı reklam grupları daha yüksek Quality Score ve daha düşük CPC sağlar.' },
   { q: 'İzmir\'de Google Ads ne zaman sonuç verir?', a: 'Kampanya aktifleşince 1-2 hafta içinde tıklama ve trafik başlar. İlk 30 gün öğrenme dönemi sayılır. Turizm işletmeleri için sezon öncesi 4-6 hafta kampanya başlatmanızı öneririz.' },
   { q: 'İzmir\'deki turizm işletmeleri için Google Ads özel bir strateji gerektiriyor mu?', a: 'Evet. Sezonluk bütçe planlaması, çok dilli reklam metinleri (özellikle Avrupa pazarı için), rezervasyon odaklı dönüşüm izleme ve Google Haritalar reklamları bu sektörde kritik.' },
