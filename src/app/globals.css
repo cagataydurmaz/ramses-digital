@@ -132,13 +132,8 @@ body {
 }
 @media (max-width: 768px) {
   .marquee-viewport {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
     -webkit-mask-image: none;
     mask-image: none;
-  }
-  .marquee-track {
-    animation: none !important;
   }
 }
 
@@ -198,7 +193,7 @@ img, video {
 
 /* ── Mobile: animasyonları kapat (chatbot + whatsapp hariç) ─────────────── */
 @media (max-width: 768px) {
-  *:not([class*="chat"]):not([class*="whatsapp"]):not([class*="ChatWidget"]):not([class*="WhatsApp"]) {
+  *:not([class*="chat"]):not([class*="whatsapp"]):not([class*="ChatWidget"]):not([class*="WhatsApp"]):not([class*="marquee"]) {
     animation-duration: 0.01ms !important;
     animation-delay: 0ms !important;
     transition-duration: 0.01ms !important;

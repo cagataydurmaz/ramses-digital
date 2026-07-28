@@ -451,7 +451,7 @@ export default function HomePage() {
                     </div>
                     <div>
                       <p className="text-white font-semibold text-sm">{r.name}</p>
-                      <p className="text-zinc-400 text-xs mt-0.5">{r.subtitle}</p>
+                      {r.subtitle && <p className="text-zinc-400 text-xs mt-0.5">{r.subtitle}</p>}
                     </div>
                   </div>
                 </div>

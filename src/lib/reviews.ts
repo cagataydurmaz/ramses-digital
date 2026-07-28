@@ -15,7 +15,7 @@ export interface CustomerReview {
 export const reviews: CustomerReview[] = [
   {
     name: 'Furkan Arıkan',
-    subtitle: 'Kurucu Avukat, Furkan Arıkan Hukuk Bürosu · Bir hafta önce',
+    subtitle: 'Kurucu Avukat, Furkan Arıkan Hukuk Bürosu',
     rating: 5,
     text: 'Harika bir işletme, tüm süreçlerde çok yardımcı olan bir ekibe sahipler, her şey için teşekkürler!',
     source: 'google',
@@ -23,7 +23,7 @@ export const reviews: CustomerReview[] = [
   },
   {
     name: 'furkan tanır',
-    subtitle: 'Bir hafta önce',
+    subtitle: '',
     rating: 5,
     text: 'İşletmemizin reklam faaliyetlerini başarıyla yürütüyorlar. Çağatay bey çok yardımcı oldu, ilgili ve işini titizlikle yapıyor.',
     source: 'google',
@@ -31,7 +31,7 @@ export const reviews: CustomerReview[] = [
   },
   {
     name: 'Atalay Durmaz',
-    subtitle: '2 ay önce',
+    subtitle: '',
     rating: 5,
     text: 'İşini titizlikle yapan, vizyoner bir ekip.',
     source: 'google',
@@ -39,7 +39,7 @@ export const reviews: CustomerReview[] = [
   },
   {
     name: 'Mert Anıl Güler',
-    subtitle: 'Kurucu Avukat, Mert Anıl Güler Hukuk Bürosu · 2 gün önce',
+    subtitle: 'Kurucu Avukat, Mert Anıl Güler Hukuk Bürosu',
     rating: 5,
     text: "Harika ötesi. Aldığım hizmetten çok memnun kaldım. Ramses'le yollarımızın kesişmesi büyük şans oldu. Kesinlikle tavsiye ediyorum. Çağatay Bey'e ne istediğinizi anlatmanız yeter. Tekrar teşekkürler.",
     source: 'google',
@@ -47,7 +47,7 @@ export const reviews: CustomerReview[] = [
   },
   {
     name: 'Nur Çelen',
-    subtitle: '2 gün önce',
+    subtitle: 'Kocaeli Psikolog',
     rating: 5,
     text: 'Web sitemi ve reklam süreçlerimi profesyonel bir şekilde yönetti. Süreç boyunca her konuda hızlı geri dönüş aldı, isteklerimi dikkate aldı ve ortaya tam istediğim gibi bir çalışma çıktı. Emeğiniz ve ilginiz için çok teşekkür ederim.',
     source: 'google',
