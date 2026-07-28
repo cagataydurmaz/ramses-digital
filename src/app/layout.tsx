@@ -165,7 +165,7 @@ export default function RootLayout({
                 email: 'ramsesdigitalagency@gmail.com',
                 address: {
                   '@type': 'PostalAddress',
-                  streetAddress: 'Körfez Mah. Sanayi Cd. Berk Sk. Dolphin AVM Kat:2 No:224',
+                  streetAddress: 'Körfez Mah. Sanayi Cd. Berk Sk. Dolphin AVM Kat:2',
                   addressLocality: 'İzmit',
                   addressRegion: 'Kocaeli',
                   postalCode: '41050',

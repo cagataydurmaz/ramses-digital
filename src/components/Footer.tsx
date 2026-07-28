@@ -123,7 +123,7 @@ export default function Footer() {
                 <MapPin size={14} className="text-blue-500 mt-0.5 shrink-0" aria-hidden="true" />
                 <span className="text-zinc-400 text-sm">
                   Körfez Mah. Sanayi Cd. Berk Sk.<br />
-                  Dolphin AVM Kat:2 No:224<br />
+                  Dolphin AVM Kat:2<br />
                   41050 İzmit / Kocaeli
                 </span>
               </li>

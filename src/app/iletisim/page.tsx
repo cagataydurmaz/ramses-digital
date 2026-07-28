@@ -140,7 +140,7 @@ export default function ContactPage() {
                       <p className="text-zinc-400 text-sm leading-relaxed">
                         Körfez Mah. Sanayi Cd. Berk Sk.
                         <br />
-                        Dolphin AVM Kat:2 No:224
+                        Dolphin AVM Kat:2
                         <br />
                         41050 İzmit / Kocaeli
                       </p>
