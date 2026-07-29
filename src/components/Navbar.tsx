@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
-import { Menu, X } from 'lucide-react'
+import { Menu, X, ChevronDown } from 'lucide-react'
 import CalendlyButton from '@/components/CalendlyButton'
 
 const navLinks = [
@@ -14,6 +14,15 @@ const navLinks = [
   { href: '/portfolyo', label: 'Portföy' },
   { href: '/blog', label: 'Blog' },
   { href: '/iletisim', label: 'İletişim' },
+]
+
+const cityLinks = [
+  { href: '/istanbul-dijital-pazarlama', label: 'İstanbul' },
+  { href: '/ankara-dijital-pazarlama', label: 'Ankara' },
+  { href: '/izmir-dijital-pazarlama', label: 'İzmir' },
+  { href: '/bursa-dijital-pazarlama', label: 'Bursa' },
+  { href: '/antalya-dijital-pazarlama', label: 'Antalya' },
+  { href: '/kocaeli-dijital-pazarlama', label: 'Kocaeli' },
 ]
 
 export default function Navbar() {
@@ -74,6 +83,37 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
+
+            {/* Şehirler dropdown — hover ile açılır, CSS-only */}
+            <div className="group relative py-2 -my-2">
+              <button
+                className={`flex items-center gap-1 text-sm transition-colors duration-200 ${
+                  cityLinks.some((c) => c.href === pathname)
+                    ? 'text-white'
+                    : 'text-zinc-400 group-hover:text-white'
+                }`}
+              >
+                Şehirler
+                <ChevronDown size={14} className="transition-transform group-hover:rotate-180" />
+              </button>
+              <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-150">
+                <div className="bg-[#0D1225] border border-white/[0.08] rounded-xl p-2 min-w-[160px] shadow-xl">
+                  {cityLinks.map((city) => (
+                    <Link
+                      key={city.href}
+                      href={city.href}
+                      className={`block px-3 py-2 rounded-lg text-sm transition-colors ${
+                        pathname === city.href
+                          ? 'text-white bg-white/[0.06]'
+                          : 'text-zinc-400 hover:text-white hover:bg-white/[0.06]'
+                      }`}
+                    >
+                      {city.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
           </nav>
 
           {/* Desktop CTA */}
@@ -117,6 +157,23 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
+
+            <p className="text-zinc-600 text-xs uppercase tracking-wider pt-4 pb-1">Şehirler</p>
+            <div className="grid grid-cols-2 gap-1 pb-3 border-b border-white/[0.04]">
+              {cityLinks.map((city) => (
+                <Link
+                  key={city.href}
+                  href={city.href}
+                  onClick={() => setMenuOpen(false)}
+                  className={`text-sm py-2 ${
+                    pathname === city.href ? 'text-white' : 'text-zinc-400'
+                  }`}
+                >
+                  {city.label}
+                </Link>
+              ))}
+            </div>
+
             <div className="pt-4">
               <CalendlyButton label="Ücretsiz Danışmanlık" variant="primary" />
             </div>

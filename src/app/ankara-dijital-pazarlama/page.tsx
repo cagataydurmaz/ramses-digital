@@ -5,9 +5,9 @@ import RelatedPages from '@/components/RelatedPages'
 import { MapPin, CheckCircle2, ArrowRight, BarChart3, Search, Zap, Globe, Mail, Megaphone, TrendingUp, Shield, Clock } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Ankara Dijital Pazarlama Ajansı — Ramses Dijital',
+  title: 'Ankara Dijital Pazarlama Ajansı | 100+ Proje — Ramses Dijital',
   description:
-    'Ankara\'nın dijital pazarlama ajansı. SEO, Google Ads, web tasarım, e-posta ve otomasyon hizmetleriyle işletmenizi büyütün. Kocaeli merkezli, Ankara dahil Türkiye geneli uzaktan hizmet.',
+    'Ankara\'nın dijital pazarlama ajansı — 100+ proje deneyimi. SEO, Google Ads, web tasarım ve otomasyon ile başkentteki işletmenizi büyütün. Ücretsiz danışmanlık alın.',
   alternates: { canonical: 'https://ramsesdigital.com/ankara-dijital-pazarlama' },
   openGraph: {
     title: 'Ankara Dijital Pazarlama Ajansı | Ramses Dijital',

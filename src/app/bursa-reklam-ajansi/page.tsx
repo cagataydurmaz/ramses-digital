@@ -5,9 +5,9 @@ import RelatedPages from '@/components/RelatedPages'
 import { MapPin, CheckCircle2, ArrowRight, Megaphone, Globe, BarChart3, Search, Mail, Zap, Star, Users, TrendingUp } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Bursa Reklam Ajansı — Ramses Dijital',
+  title: 'Bursa Reklam Ajansı | 100+ Proje — Ramses Dijital',
   description:
-    'Bursa\'nın dijital reklam ajansı. Google Ads, SEO, web tasarım, e-posta pazarlama ve otomasyon. Otomotiv yan sanayi, mobilya ve tekstil sektörüne özel strateji. Ücretsiz teklif alın.',
+    'Bursa\'nın dijital reklam ajansı — otomotiv, mobilya ve tekstil sektörüne özel strateji. Google Ads, SEO ve pazarlama otomasyonu. Ücretsiz teklif alın.',
   alternates: { canonical: 'https://ramsesdigital.com/bursa-reklam-ajansi' },
   openGraph: {
     title: 'Bursa Reklam Ajansı | Ramses Dijital',
