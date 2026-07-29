@@ -823,7 +823,7 @@ export const posts: Post[] = [
 
       <h2>Ramses Digital'in GEO Yaklaşımı</h2>
       <p>Mühendislik altyapımız sayesinde GEO stratejilerini sistematik ve ölçülebilir şekilde uyguluyoruz. Schema implementasyonu, içerik mimarisi, E-E-A-T sinyallerinin güçlendirilmesi ve AI mention tracking süreçlerimizin tamamı, veri odaklı bir metodoloji çerçevesinde yürütülüyor.</p>
-      <p>Müşterilerimizden biri olan bir İstanbul merkezli hukuk bürosu, GEO odaklı içerik stratejimiz sayesinde 4 ay içinde Perplexity aramalarında 12 kez kaynak olarak gösterildi ve bu kanaldan 3 yeni müşteri edindi.</p>
+      <p>Müşterilerimizden biri olan bir <a href="/istanbul-reklam-ajansi">İstanbul merkezli hukuk bürosu</a>, GEO odaklı içerik stratejimiz sayesinde 4 ay içinde Perplexity aramalarında 12 kez kaynak olarak gösterildi ve bu kanaldan 3 yeni müşteri edindi.</p>
 
       <h2>Sık Sorulan Sorular</h2>
 
@@ -1111,7 +1111,7 @@ export const posts: Post[] = [
       <p>Yerel SEO sonuçları, klasik SEO'ya göre çok daha hızlı gelir. Google Business Profile optimizasyonu sonrası 2-4 hafta içinde Local Pack'te görünmeye başlayabilirsiniz. Web sitesi sıralamaları için 3-6 ay daha gerçekçi bir beklenti olur.</p>
 
       <h3>Sadece Kocaeli'de mi hizmet vermeliyim?</h3>
-      <p>Hayır, Kocaeli'de güçlü bir yerel varlık kurduktan sonra İstanbul, Sakarya, Yalova gibi yakın şehirlere kademeli olarak genişleyebilirsiniz. Her yeni şehir için ayrı bir hizmet sayfası ve yerel içerik stratejisi kurmak idealdir.</p>
+      <p>Hayır, Kocaeli'de güçlü bir yerel varlık kurduktan sonra <a href="/istanbul-seo">İstanbul</a>, Sakarya, Yalova gibi yakın şehirlere kademeli olarak genişleyebilirsiniz. Her yeni şehir için ayrı bir hizmet sayfası ve yerel içerik stratejisi kurmak idealdir.</p>
 
       <h3>Kocaeli'de yerel SEO ne kadara mal olur?</h3>
       <p>KOBİ'ler için aylık 4.000-12.000 TL arasında değişen paketlerle yürüyebilir. İçeriğin derinliği, GBP yönetimi, backlink çalışması ve raporlama dahil olmalıdır. Çok düşük fiyatlı paketler ("aylık 1.500 TL'ye SEO") genellikle düşük kaliteli backlink ve şablon içerik anlamına gelir.</p>
@@ -1857,7 +1857,7 @@ export const posts: Post[] = [
       <p>Profesyonel bir ajans bu paylaşımı yapmaktan çekinmez. Referans konuşmasında en değerli soru genellikle "ajans sizi hiç sürpriz bir maliyetle karşı karşıya bıraktı mı" sorusudur — bu, sözleşme şeffaflığının gerçek testidir. Ayrıca telefon görüşmesi yerine bizzat o müşterinin canlı web sitesini/kampanyasını incelemek isteyebilirsiniz; sonuçlar sözden daha ikna edicidir.</p>
 
       <h2>Ramses Dijital Reklam Ajansı: Neden Tercih Edilebilir?</h2>
-      <p>İzmit Kocaeli merkezli olarak 2019'dan bu yana 100+ projeye imza attık. Mühendislik kökenli bir ekibiz; her stratejiyi veri ve teknik disiplinle kuruyoruz.</p>
+      <p><a href="/izmit-reklam-ajansi">İzmit</a> Kocaeli merkezli olarak 2019'dan bu yana 100+ projeye imza attık. Mühendislik kökenli bir ekibiz; her stratejiyi veri ve teknik disiplinle kuruyoruz. Kocaeli genelinde hizmet veren bir ajans arıyorsanız <a href="/kocaeli-reklam-ajansi">Kocaeli reklam ajansı</a> sayfamıza da göz atabilirsiniz.</p>
       <p>Bizi farklı kılan: <strong class="text-white">şeffaf raporlama</strong>, <strong class="text-white">veri sahipliğinin tamamen müşteride kalması</strong>, <strong class="text-white">çıkış maddesi her sözleşmede mevcut</strong>, <strong class="text-white">aylık detaylı raporlama + canlı dashboard</strong> ve <strong class="text-white">Kocaeli pazarına 5+ yıllık derin tecrübe</strong>.</p>
       <p>Ücretsiz keşif görüşmesinde size özgü strateji çıkartırız ve teklif sunarız — taahhüt yok.</p>
 
@@ -2042,7 +2042,7 @@ export const posts: Post[] = [
     tags: ['Dijital Pazarlama', 'Uzaktan Çalışma', 'Ajans Seçimi', 'Türkiye'],
     content: `
       <h2>Neden Artık Şehrinizdeki Ajansla Sınırlı Değilsiniz?</h2>
-      <p>Birkaç yıl öncesine kadar bir dijital pazarlama ajansıyla çalışmak, genellikle aynı şehirde olmayı gerektiriyordu — toplantılar yüz yüze yapılır, raporlar basılı sunulurdu. Bugün durum tamamen farklı. Google Meet, Zoom, Slack ve canlı dashboard'lar sayesinde İstanbul'daki bir işletme Kocaeli'deki, Ankara'daki bir işletme İzmir'deki bir ajansla sorunsuzca çalışabiliyor.</p>
+      <p>Birkaç yıl öncesine kadar bir dijital pazarlama ajansıyla çalışmak, genellikle aynı şehirde olmayı gerektiriyordu — toplantılar yüz yüze yapılır, raporlar basılı sunulurdu. Bugün durum tamamen farklı. Google Meet, Zoom, Slack ve canlı dashboard'lar sayesinde <a href="/istanbul-dijital-pazarlama">İstanbul'daki bir işletme</a> Kocaeli'deki, <a href="/ankara-dijital-pazarlama">Ankara'daki bir işletme</a> <a href="/izmir-dijital-pazarlama">İzmir'deki</a>, <a href="/bursa-dijital-pazarlama">Bursa'daki bir imalatçı</a> ise <a href="/antalya-dijital-pazarlama">Antalya'daki bir otel</a> ile çalışan bir ajansla sorunsuzca çalışabiliyor.</p>
       <p>Bu değişim, işletmeler için seçenek havuzunu ciddi şekilde genişletiyor: artık "şehrimde hangi ajanslar var" sorusu yerine "hangi ajans benim sektörümde en iyi sonucu üretiyor" sorusunu sorabiliyorsunuz.</p>
       <p>Bu dönüşümün arkasında pandemi sonrası kalıcılaşan uzaktan çalışma kültürü kadar, dijital pazarlığın doğası gereği zaten "uzaktan yapılabilir" bir iş olması da yatıyor. Bir SEO uzmanının kodu yazması, bir Google Ads yöneticisinin kampanya kurması veya bir içerik yazarının blog metni üretmesi için fiziksel olarak aynı ofiste bulunmanız hiçbir zaman gerekmedi — sadece alışkanlık öyleydi. Bu alışkanlık kırıldıkça, coğrafi sınırların pazarlama ajansı seçiminde bir kriter olmaktan çıktığını görüyoruz.</p>
 
