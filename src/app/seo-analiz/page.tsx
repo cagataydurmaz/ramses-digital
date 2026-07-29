@@ -125,6 +125,7 @@ export default function SeoAnalizPage() {
       const data = await response.json()
       if (data.error) throw new Error(data.error)
       setResult(data)
+      window.fbq?.('trackCustom', 'SeoAnaliziTamamlandi')
     } catch {
       setError('Analiz sırasında bir hata oluştu. Lütfen geçerli bir URL girin ve tekrar deneyin.')
     } finally {

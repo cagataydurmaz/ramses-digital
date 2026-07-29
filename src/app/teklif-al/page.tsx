@@ -209,6 +209,7 @@ export default function TeklifAlPage() {
         setResult((prev) => prev + decoder.decode(value))
       }
       setIsDone(true)
+      window.fbq?.('track', 'Lead', { content_name: 'AI Teklif Al' })
     } catch {
       setResult('Bir hata oluştu. Lütfen tekrar deneyin.')
       setIsDone(true)

@@ -5,6 +5,12 @@ import { ArrowRight } from 'lucide-react'
 const WHATSAPP_NUMBER = '905355601936'
 const WHATSAPP_MESSAGE = 'Merhaba! Ücretsiz danışmanlık almak istiyorum.'
 
+declare global {
+  interface Window {
+    fbq?: (...args: unknown[]) => void
+  }
+}
+
 interface CalendlyButtonProps {
   label?: string
   variant?: 'primary' | 'secondary' | 'link' | 'outline'
@@ -19,6 +25,7 @@ export default function CalendlyButton({
   showIcon = true,
 }: CalendlyButtonProps) {
   const handleClick = () => {
+    window.fbq?.('track', 'Contact', { content_name: label })
     const msg = encodeURIComponent(WHATSAPP_MESSAGE)
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${msg}`, '_blank')
   }
