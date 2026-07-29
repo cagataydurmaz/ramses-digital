@@ -108,6 +108,7 @@ const jsonLd = {
         { '@type': 'City', name: 'İzmit' },
         { '@type': 'City', name: 'Kocaeli' },
       ],
+      telephone: '+905355601936',
       address: {
         '@type': 'PostalAddress',
         addressLocality: 'İzmit',

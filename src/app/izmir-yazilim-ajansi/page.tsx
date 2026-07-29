@@ -242,7 +242,7 @@ export default function IzmirYazilimAjansiPage() {
           { label: 'İzmir SEO', href: '/izmir-seo' },
           { label: 'İzmir Web Tasarım', href: '/izmir-web-tasarim' },
           { label: 'İzmir Dijital Pazarlama', href: '/izmir-dijital-pazarlama' },
-          { label: 'Kocaeli Yazılım Ajansı', href: '/izmit-yazilim-ajansi' },
+          { label: 'İzmit Yazılım Ajansı', href: '/izmit-yazilim-ajansi' },
         ]}
       />
 
