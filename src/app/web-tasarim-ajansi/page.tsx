@@ -33,6 +33,7 @@ const faqs = [
   { q: 'Web sitesi fiyatları ne kadar?', a: 'Sektör, sayfa sayısı ve özel özelliklere göre değişir — ücretsiz danışmanlıkta net fiyat alırsınız.' },
   { q: 'Mevcut sitemi yeniden tasarlatabilir miyim?', a: 'Evet. Mevcut sitenizin SEO değerini (backlink, sıralama) koruyarak modern bir platforma taşıyoruz. 301 yönlendirmeler ve içerik migrasyonuyla kayıpsız geçiş sağlanır.' },
   { q: 'Web sitem yapıldıktan sonra kim günceller?', a: 'İçerik güncellemeleri için basit bir yönetim paneli kuruyoruz — teknik bilgi gerekmeden blog/ürün ekleyebilirsiniz. Tasarım değişiklikleri için aylık bakım paketi de sunuyoruz.' },
+  { q: 'Ödeme sistemi, CRM, WhatsApp gibi entegrasyonlar ekleyebiliyor musunuz?', a: 'Evet. Ödeme altyapısı, kargo takibi, CRM, randevu/takvim sistemi ve WhatsApp gibi entegrasyonları ihtiyacınıza göre kuruyoruz. Her entegrasyon ayrı test ve hata yönetimi gerektirdiği için kapsamı brifing aşamasında netleştiriyoruz.' },
 ]
 
 const jsonLd = {

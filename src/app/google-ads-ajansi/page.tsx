@@ -33,6 +33,8 @@ const faqs = [
   { q: 'Mevcut Google Ads hesabım var ama sonuç almıyorum, ne yapmalıyım?', a: 'En yaygın sorunlar: geniş eşleme anahtar kelimeler, eksik negatif anahtar kelime listesi, düşük Quality Score ve zayıf açılış sayfası uyumu. Mevcut hesabınızı ücretsiz analiz edip somut iyileştirme önerileri sunuyoruz.' },
   { q: 'Hangi sektörlerde Google Ads deneyiminiz var?', a: 'E-ticaret, sağlık, B2B sanayi, eğitim ve profesyonel hizmetler dahil geniş bir yelpazede kampanya yönetiyoruz. Her sektörün kendine özgü teklif stratejisi ve hedef kitle davranışı vardır — buna göre kampanya kuruyoruz. (Avukatlık gibi reklam yasağı bulunan meslekler için Google Ads yerine SEO odaklı stratejiler öneriyoruz.)' },
   { q: 'Raporlama nasıl yapılıyor?', a: 'Aylık detaylı performans raporu: gösterim, tıklama, CPC, dönüşüm, ROAS metrikleri. Canlı Google Ads dashboard erişimi de sağlıyoruz — her kuruşun nereye gittiğini görürsünüz.' },
+  { q: 'Reklam hesabım kimin adına açılıyor?', a: 'Google Ads hesabı sizin adınıza açılır, biz sadece yönetici erişimiyle çalışırız. Hesap sizde kaldığı için bizimle çalışmayı bırakırsanız geçmiş verileriniz, dönüşüm öğrenmeleriniz ve kampanya geçmişiniz sizde kalır — kimse sizi hesabınıza rehin tutamaz.' },
+  { q: '"İlk sırada çıkmayı garanti ediyoruz" diyen ajanslara güvenmeli miyim?', a: 'Hayır, bu bir kırmızı bayraktır. Google Ads sıralaması gerçek zamanlı bir açık artırma ile belirlenir; hiçbir ajans belirli bir sırayı garanti edemez. Biz sonuç garantisi yerine şeffaf raporlama ve ölçülebilir dönüşüm verisi sunuyoruz.' },
 ]
 
 const jsonLd = {
