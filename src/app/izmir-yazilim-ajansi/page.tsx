@@ -42,6 +42,7 @@ const faqs = [
   { q: 'Mevcut yazılımımla (ERP, muhasebe, pazaryeri) entegrasyon yapabilir misiniz?', a: 'Büyük ihtimalle evet. Logo, Mikro Yazılım, WooCommerce, Shopify, Trendyol, Etsy gibi platformlarla entegrasyon deneyimimiz var. API sunan her sistemle entegrasyon mümkün; API olmayan durumlarda webhook veya dosya bazlı çözümler geliştiriyoruz.' },
   { q: 'İzmir\'de fiziksel olarak bulunuyor musunuz?', a: 'Hayır, merkezimiz Kocaeli\'de ve İzmir\'e tamamen uzaktan hizmet veriyoruz. Teknik şartname görüşmeleri, demo ve teslimler dijital ortamda (Google Meet/Zoom, ekran paylaşımı) yürütülür. Bunu saklamıyoruz — uzaktan geliştirme sürecimiz aynı titizlikle işliyor.' },
   { q: 'Yazılım projesine nasıl başlanıyor?', a: '30 dakikalık ücretsiz keşif görüşmesiyle başlıyoruz. İhtiyacınızı dinliyor, teknik çözüm önerisi ve tahmini süreyi paylaşıyoruz. Devam kararı verirseniz detaylı teknik şartname hazırlanır. Herhangi bir taahhüt olmadan görüşme yapabilirsiniz.' },
+  { q: 'Kaynak kodu bize teslim ediyor musunuz?', a: 'Evet, tamamen. Kaynak kod ve mülkiyet hakları size ait olur; ihracat odaklı firmalar için bu, yazılımı istediğiniz gibi genişletme veya başka bir ekibe devretme özgürlüğü demek.' },
 ]
 
 const jsonLd = {

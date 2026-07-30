@@ -53,6 +53,7 @@ const faqs = [
   { q: 'İzmir\'de fiziksel ofisiniz var mı?', a: 'Hayır. Merkezimiz Kocaeli\'dedir ve İzmir\'e tamamen uzaktan hizmet veriyoruz. Toplantılar Google Meet/Zoom üzerinden yapılır, raporlar dijital olarak paylaşılır. Bunu saklamıyoruz çünkü uzaktan çalışma modelimiz Türkiye genelinde gerçek sonuçlar üretiyor.' },
   { q: 'Canlı referanslarınızı nereden görebilirim?', a: 'İzmir\'de henüz canlı bir referansımız bulunmuyor ancak Türkiye genelinde farklı sektörlerden gerçek, aktif müşterilerimiz var. Portföy sayfamızdan tüm projelerimizi ve canlı sitelerimizi inceleyebilirsiniz.' },
   { q: 'Reklam yönetimi için minimum sözleşme süresi var mı?', a: 'Google Ads için anlamlı verinin toplanması ve optimizasyonun oturması adına minimum 3 ay öneriyoruz. Sezonluk kampanyalar için daha kısa süreli anlaşmalar da değerlendirilebilir — ihtiyacınıza göre esnek çözüm sunuyoruz.' },
+  { q: 'Reklam hesabı bize mi ait olacak, ajansa mı?', a: 'Size ait olacak. Hesabı kendi adınıza açıyoruz, biz sadece yönetici erişimiyle çalışıyoruz — ihracat ve turizm sektöründe sezonluk ajans değişikliklerinde veri kaybı yaşamamanız için bu önemli.' },
 ]
 
 const jsonLd = {

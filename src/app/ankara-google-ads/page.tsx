@@ -34,6 +34,7 @@ const faqs = [
   { q: 'Google Ads ile SEO\'yu birlikte mi yapmalıyım?', a: 'Kurumsal/B2B ağırlıklı Ankara pazarında kesinlikle evet. Google Ads hemen trafik getirir; SEO 3-6 ayda organik sonuç verir ve uzun vadede reklam bağımlılığını azaltır.' },
   { q: 'Raporlama nasıl yapılıyor?', a: 'Aylık Google Ads performans raporu: gösterim, tıklama, CPC, dönüşüm, ROAS ve CPA metrikleri. Canlı dashboard erişimi veriyoruz.' },
   { q: 'Ankara\'da Google Ads yönetimi için sözleşme şartı var mı?', a: 'Minimum 3 ay öneriyoruz. Google Ads öğrenme dönemi 30 gün, optimizasyon için en az 60-90 gün gerekiyor.' },
+  { q: 'Hesabın mülkiyeti kimde olur?', a: 'Sizde. Google Ads hesabı kendi adınıza açılır, biz yönetici erişimiyle bağlanırız — kamu ve kurumsal müşterilerimiz için hesap üzerinde tam şeffaflık ve denetim her zaman sizdedir.' },
 ]
 
 const jsonLd = {

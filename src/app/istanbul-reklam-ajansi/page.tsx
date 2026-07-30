@@ -58,6 +58,7 @@ const faqs = [
   { q: 'Hangi İstanbul ilçelerine hizmet veriyorsunuz?', a: 'Kadıköy, Beşiktaş, Şişli, Bakırköy, Ataşehir, Üsküdar, Beylikdüzü, Maltepe, Kartal, Pendik dahil İstanbul\'un tüm ilçelerine hizmet veriyoruz. Stratejiyi işletmenizin gerçek hizmet alanına göre önceliklendiriyoruz, 39 ilçeye aynı anda yayılmıyoruz.' },
   { q: 'Sözleşme şartlarınız nedir?', a: 'Google Ads ve SEO için minimum 3 ay, ideal olarak 6 ay öneriyoruz — dijital pazarlama birikimli sonuç verir. Tek seferlik projeler (web tasarım gibi) ayrı sözleşmeyle teslim edilir. Uzun vadeli iş birliklerinde anlamlı avantajlar sunuyoruz.' },
   { q: 'Sosyal medya hesaplarımı da yönetiyor musunuz?', a: 'Stratejik danışmanlık ve içerik planlaması sunuyoruz — hangi platformda, hangi mesajla, hangi sıklıkla paylaşım yapmanız gerektiğini netleştiriyoruz. Ancak günlük gönderi hazırlama ve moderasyon hizmetlerimiz arasında değil; odağımız ölçülebilir ROI getiren kanallar.' },
+  { q: 'Reklam hesabım kimin adına açılıyor?', a: 'Sizin adınıza. Google Ads hesabı size ait olur, biz sadece yönetici erişimiyle çalışırız. Bizimle yollarınız ayrılsa bile geçmiş verileriniz ve kampanya öğrenmeleriniz sizde kalır.' },
 ]
 
 const jsonLd = {

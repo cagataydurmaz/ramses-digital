@@ -48,6 +48,7 @@ const faqs = [
   { q: 'Antalya\'daki tüm ilçelere hizmet veriyor musunuz?', a: 'Evet. Muratpaşa, Konyaaltı, Kepez, Alanya, Manavgat, Serik, Döşemealtı, Aksu, Kaş, Side dahil tüm Antalya ilçelerine ve çevre ilçelere hizmet veriyoruz. Çalışmalarımızın tamamı uzaktan yürütülüyor.' },
   { q: 'Sözleşme şartlarınız nedir?', a: 'Google Ads ve SEO için minimum 3 ay öneriyoruz — turizm sektöründe sezonluk dalgalanmayı doğru değerlendirmek için bir sezon geçişini görmek faydalı olur. Web tasarım projeleri tek seferlik sözleşmeyle teslim edilir.' },
   { q: 'Fiziksel olarak Antalya\'da ofisiniz var mı?', a: 'Hayır, merkezimiz Kocaeli\'de — Antalya\'ya tamamen uzaktan hizmet veriyoruz. Keşif görüşmesi, strateji sunumu ve aylık raporlama Google Meet/Zoom üzerinden yapılıyor.' },
+  { q: 'Reklam hesabı kimin üzerine açılıyor?', a: 'Sizin üzerinize. Hesap size ait olur, biz yönetici erişimiyle çalışırız — sezon başı-sonu ajans değişikliği düşünüyorsanız bile geçmiş kampanya verileriniz ve öğrenmeleriniz sizde kalır.' },
 ]
 
 const jsonLd = {

@@ -37,6 +37,7 @@ const faqs = [
   { q: 'Fiyatlandırma nasıl yapılıyor?', a: 'Proje bazlı sabit fiyat (kapsam netse) veya zaman & materyal modeli kullanıyoruz. Küçük otomasyon projelerinden kurumsal web uygulamalarına göre kapsam ve fiyat değişir. Ücretsiz danışmanlıkta ihtiyaç analizi yaptıktan sonra sabit fiyatlı teklif sunuyoruz.' },
   { q: 'Mevcut yazılımımla entegrasyon yapabilir misiniz?', a: 'Büyük ihtimalle evet. Mikro Yazılım, Logo, SAP, WooCommerce, Shopify, Trendyol, Hepsiburada entegrasyonlarında deneyimimiz var. API\'si olan her yazılımla entegrasyon yapılabilir; API olmayanlarda webhook veya dosya bazlı çözümler geliştiriyoruz.' },
   { q: 'Yazılım projesine nasıl başlanıyor?', a: '30 dakikalık ücretsiz keşif görüşmesiyle başlıyoruz. İhtiyaçlarınızı dinliyor, teknik çözüm önerisi sunuyor ve ilk tahmini maliyet & süre paylaşıyoruz. Devam kararı verirseniz detaylı teknik şartname hazırlıyoruz. Herhangi bir taahhüt olmadan görüşme yapabilirsiniz.' },
+  { q: 'Kaynak kodun mülkiyeti bizde mi olacak?', a: 'Evet. Teslimle birlikte kaynak kod ve mülkiyet hakları tamamen size geçer — kapalı, size bağımlı bir sistem kurmuyoruz.' },
 ]
 
 const jsonLd = {

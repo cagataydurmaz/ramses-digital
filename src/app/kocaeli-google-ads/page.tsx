@@ -35,6 +35,7 @@ const faqs = [
   { q: 'Kocaeli\'de mevcut Google Ads kampanyam var ama sonuç almıyorum, ne yapmalıyım?', a: 'En yaygın sorunlar: geniş eşleme anahtar kelimeler (bütçeyi boşa harcıyor), eksik negatif anahtar kelime listesi, düşük Quality Score, zayıf açılış sayfası ve dönüşüm izlemenin kurulmamış olması. Mevcut hesabınızı ücretsiz analiz edip sorunları tespit ediyoruz.' },
   { q: 'Raporlama nasıl yapılıyor?', a: 'Aylık Google Ads performans raporu: gösterim, tıklama, CPC, dönüşüm, ROAS ve CPA metrikleri. Canlı Google Ads dashboard erişimi veriyoruz. Her kuruşun nereye gittiğini görürsünüz — sürpriz yok.' },
   { q: 'Kocaeli\'de Google Ads yönetimi için sözleşme şartı var mı?', a: 'Minimum 3 ay öneriyoruz. Google Ads öğrenme dönemi 30 gün, optimizasyon için en az 60-90 gün gerekiyor. İlk ayda çok yüksek CPA normal — algoritma öğreniyor. 3 ay sonunda net ROI tablonuz netleşir ve devam kararını veri bazlı alırsınız.' },
+  { q: 'Reklam hesabımız kimin mülkiyetinde olur?', a: 'Sizin. Hesabı kendi adınıza açarız, biz sadece yönetici olarak bağlanırız — Kocaeli\'deki sanayi firmalarının tedarikçi ilişkilerinde sıkça sorulan bir güven meselesi, hesap her zaman sizin kontrolünüzde kalır.' },
 ]
 
 const jsonLd = {

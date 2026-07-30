@@ -56,6 +56,7 @@ const faqs = [
   { q: 'İzmit dışındaki Kocaeli ilçelerine de hizmet veriyor musunuz?', a: 'Evet. Gebze, Darıca, Körfez, Gölcük, Başiskele, Çayırova ve tüm Kocaeli ilçelerine hizmet veriyoruz. Aynı zamanda İstanbul, Ankara ve diğer büyük şehirlerdeki müşterilerimiz de var; çalışmalarımızın tamamı uzaktan yürütülüyor.' },
   { q: 'Sözleşme şartlarınız nedir?', a: 'Google Ads ve SEO için minimum 3 ay, ideal olarak 6 ay öneriyoruz. Dijital pazarlama kısa vadede değil, birikimiyle sonuç verir. Web tasarım projeleri tek seferlik sözleşmeyle teslim edilir. Uzun vadeli sözleşmelerde anlamlı indirimler sunuyoruz.' },
   { q: 'Yapay zeka (ChatGPT, Gemini) aramalarında da görünür olabilir miyim?', a: 'Evet, bu GEO (Generative Engine Optimization) olarak adlandırılıyor. İzmit veya Kocaeli\'de sektörünüzü araştıran birinin ChatGPT\'ye sorduğunda sizi önermesi için yapılandırılmış içerik, citation-worthy veriler ve otoriter backlink profili gerekiyor. Tüm SEO paketlerimize GEO stratejisi dahildir.' },
+  { q: 'Reklam hesabımın sahibi kim olacak?', a: 'Siz. Google Ads hesabı sizin adınıza açılır, biz yalnızca yönetici erişimiyle çalışırız — ayrılsak bile hesabınız, verileriniz ve kampanya geçmişiniz sizde kalır.' },
 ]
 
 const jsonLd = {

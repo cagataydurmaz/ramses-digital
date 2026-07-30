@@ -34,6 +34,7 @@ const faqs = [
   { q: 'Google Ads ile SEO\'yu birlikte mi yapmalıyım?', a: 'İzmir\'in rekabetçi sektörlerinde kesinlikle evet. Google Ads hemen trafik getirir; SEO 3-6 ayda organik sonuç verir ve sezon dışı dönemlerde de sürekli trafik sağlar.' },
   { q: 'Raporlama nasıl yapılıyor?', a: 'Aylık Google Ads performans raporu: gösterim, tıklama, CPC, dönüşüm, ROAS ve CPA metrikleri. Canlı dashboard erişimi veriyoruz.' },
   { q: 'İzmir\'de Google Ads yönetimi için sözleşme şartı var mı?', a: 'Minimum 3 ay öneriyoruz. Turizm işletmeleri için sezon boyunca (genellikle 6 ay) sürekli yönetim daha etkili sonuç verir.' },
+  { q: 'Reklam hesabımız kimin üzerine açılacak?', a: 'Sizin üzerinize. Hesabı kendi adınıza açıyoruz, biz sadece yönetici olarak erişiyoruz — ihracat ve turizm sektöründe sezonluk ajans değişikliklerinde veri kaybı riski taşımazsınız.' },
 ]
 
 const jsonLd = {

@@ -48,6 +48,7 @@ const faqs = [
   { q: 'Yapay zeka (AI) entegrasyonu yapıyor musunuz?', a: 'Evet. Müşteri destek chatbotu, içerik üretim asistanı, belge analizi ve öneri sistemi projeleri yapıyoruz. Claude API ve GPT-4 entegrasyonlarında deneyimli ekibimiz var. İstanbul\'daki kurumsal firmalar için özellikle belge yoğun süreçlerde (hukuk, danışmanlık) AI entegrasyonu ciddi zaman tasarrufu sağlıyor.' },
   { q: 'Mevcut yazılımımla entegrasyon yapabilir misiniz?', a: 'Büyük ihtimalle evet. Mikro Yazılım, Logo, SAP, WooCommerce, Shopify, Trendyol, Hepsiburada entegrasyonlarında deneyimimiz var. API\'si olan her yazılımla entegrasyon yapılabilir; API olmayanlarda webhook veya dosya bazlı çözümler geliştiriyoruz.' },
   { q: 'Fiziksel olarak İstanbul\'da mısınız?', a: 'Hayır, merkezimiz Kocaeli\'de — İstanbul\'a tamamen uzaktan hizmet veriyoruz. Toplantılar Google Meet/Zoom üzerinden, teslimatlar dijital ortamda yapılıyor. Bu sayede İstanbul\'un trafiğine takılmadan hızlı ve şeffaf ilerliyoruz; gerçek İstanbul müşterilerimiz (İstanbul Barosu\'na kayıtlı avukatlar dahil) bunun kanıtı.' },
+  { q: 'Kaynak kodun mülkiyeti kimde olur?', a: 'Sizde. Teslimle birlikte kaynak kodun ve tüm mülkiyet haklarının tamamı size devredilir — bizi bir daha görmek zorunda kalmayacağınız bir kilit sistem kurmuyoruz.' },
 ]
 
 const jsonLd = {

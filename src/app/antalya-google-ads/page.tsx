@@ -35,6 +35,7 @@ const faqs = [
   { q: 'Mevcut Google Ads kampanyam var ama sonuç almıyorum, ne yapmalıyım?', a: 'En yaygın sorunlar: geniş eşleme anahtar kelimeler, eksik negatif anahtar kelime listesi, dil hedeflemesinin doğru kurulmamış olması ve dönüşüm izlemenin eksik olması. Mevcut hesabınızı ücretsiz analiz edip sorunları tespit ediyoruz.' },
   { q: 'Raporlama nasıl yapılıyor?', a: 'Aylık Google Ads performans raporu: gösterim, tıklama, CPC, dönüşüm ve dil/kampanya bazlı kırılım. Canlı Google Ads dashboard erişimi veriyoruz, sezonluk bütçe kararlarınızı veriyle alabilirsiniz.' },
   { q: 'Antalya\'da Google Ads yönetimi için sözleşme şartı var mı?', a: 'Minimum 3 ay öneriyoruz. Google Ads öğrenme dönemi 30 gün sürer; turizm sektöründe sezonluk dalgalanmayı doğru değerlendirmek için en az bir sezon geçişini görmek faydalı olur.' },
+  { q: 'Hesap bize mi ait olacak?', a: 'Evet. Google Ads hesabı sizin adınıza açılır, biz yönetici erişimiyle yönetiriz — sezon sonunda ajans değiştirmeyi düşünseniz bile kampanya geçmişiniz sizde kalır.' },
 ]
 
 const jsonLd = {

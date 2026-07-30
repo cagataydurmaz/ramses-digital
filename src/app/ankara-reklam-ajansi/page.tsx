@@ -52,6 +52,7 @@ const faqs = [
   { q: 'Ankara\'nın hangi ilçelerine hizmet veriyorsunuz?', a: 'Çankaya, Keçiören, Yenimahalle, Mamak, Etimesgut, Sincan, Altındağ, Gölbaşı, Pursaklar ve Polatlı dahil Ankara\'nın tamamına hizmet veriyoruz. Tüm çalışma uzaktan yürütüldüğü için ilçe farketmiyor.' },
   { q: 'Ankara\'da fiziksel ofisiniz var mı?', a: 'Hayır. Merkezimiz Kocaeli\'de ve Ankara\'ya tamamen uzaktan hizmet veriyoruz. Toplantılar Google Meet/Zoom üzerinden yapılıyor, raporlar dijital olarak paylaşılıyor. Bu model portföyümüzdeki canlı projelerle kanıtlanmış durumda.' },
   { q: 'Yapay zeka aramalarında (ChatGPT, Gemini) da görünür olabilir miyim?', a: 'Evet, buna GEO (Generative Engine Optimization) deniyor. Ankara\'da sektörünüzü araştıran birinin yapay zekaya sorduğunda önerilmeniz için yapılandırılmış içerik ve otorite sinyalleri gerekiyor. Bu kanal Ankara\'nın kurumsal pazarında henüz doymadı — erken hareket avantaj sağlıyor.' },
+  { q: 'Google Ads hesabının mülkiyeti kimde olur?', a: 'Tamamen sizde. Hesap kendi adınıza açılır, biz yönetici olarak bağlanırız. Kamu kurumu veya kurumsal firma müşterilerimiz için bu, hesap üzerinde tam denetim ve şeffaflık anlamına geliyor.' },
 ]
 
 const jsonLd = {

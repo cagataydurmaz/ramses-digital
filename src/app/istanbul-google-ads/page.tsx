@@ -35,6 +35,7 @@ const faqs = [
   { q: 'İstanbul\'da mevcut Google Ads kampanyam var ama sonuç almıyorum, ne yapmalıyım?', a: 'En yaygın sorunlar: geniş eşleme anahtar kelimeler (İstanbul\'un yüksek CPC\'sinde bu çok daha pahalıya mal olur), eksik negatif anahtar kelime listesi, düşük Quality Score, zayıf açılış sayfası ve dönüşüm izlemenin kurulmamış olması. Mevcut hesabınızı ücretsiz analiz edip sorunları tespit ediyoruz.' },
   { q: 'Raporlama nasıl yapılıyor?', a: 'Aylık Google Ads performans raporu: gösterim, tıklama, CPC, dönüşüm, ROAS ve CPA metrikleri. Canlı Google Ads dashboard erişimi veriyoruz. Her kuruşun nereye gittiğini görürsünüz — İstanbul\'un yüksek bütçelerinde bu şeffaflık özellikle önemli.' },
   { q: 'İstanbul\'da Google Ads yönetimi için sözleşme şartı var mı?', a: 'Minimum 3 ay öneriyoruz. Google Ads öğrenme dönemi 30 gün, İstanbul\'un rekabetçi ortamında optimizasyon için en az 60-90 gün gerekiyor. 3 ay sonunda net ROI tablonuz netleşir ve devam kararını veri bazlı alırsınız.' },
+  { q: 'Hesap bize mi ait olur, ajansta mı kalır?', a: 'Size ait olur. Hesabı kendi adınıza açar, sadece yönetici erişimiyle çalışırız — İstanbul\'un rekabet yoğunluğunda ajans değiştirseniz bile kampanya geçmişiniz ve öğrenmeleriniz kaybolmaz.' },
 ]
 
 const jsonLd = {

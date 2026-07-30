@@ -37,6 +37,7 @@ const faqs = [
   { q: 'Proje süresi ve teslim takvimi nasıl belirleniyor?', a: 'Brifing → teknik şartname → onay → geliştirme → test → teslim süreciyle ilerliyoruz. Basit çok dilli web sitesi 3-4 hafta, orta ölçekli rezervasyon/ilan sistemi 6-10 hafta, karmaşık otomasyon veya platform projeleri 3-6 ay. Turizm sektöründe sezon öncesi teslim için erken planlama öneriyoruz.' },
   { q: 'Mevcut yazılımımla entegrasyon yapabilir misiniz?', a: 'Büyük ihtimalle evet. Channel manager, muhasebe yazılımları, ilan portalları (Sahibinden, Emlakjet) ve e-ticaret altyapılarıyla entegrasyon deneyimimiz var. API\'si olan her yazılımla entegrasyon yapılabilir; API olmayanlarda webhook veya dosya bazlı çözümler geliştiriyoruz.' },
   { q: 'Yazılım projesine nasıl başlanıyor?', a: '30 dakikalık ücretsiz keşif görüşmesiyle başlıyoruz. İhtiyaçlarınızı dinliyor, teknik çözüm önerisi sunuyor ve ilk tahmini süreyi paylaşıyoruz. Devam kararı verirseniz detaylı teknik şartname hazırlıyoruz.' },
+  { q: 'Kaynak kod bizim mi olur, sizde mi kalır?', a: 'Sizde kalmaz — size teslim edilir. Rezervasyon/ilan sistemi gibi sezonluk kritik yazılımlarda, kodun tamamen sizin mülkiyetinizde olması sezon ortasında herhangi bir ajans değişikliğinde riskinizi sıfırlar.' },
 ]
 
 const jsonLd = {

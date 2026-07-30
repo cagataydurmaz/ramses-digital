@@ -40,6 +40,7 @@ const faqs = [
   { q: 'Kocaeli\'de yazılım projesi için bütçe ne olmalı?', a: 'Küçük otomasyon projelerinden kurumsal web uygulamalarına göre kapsam değişir. Kocaeli sanayi B2B projeleri genellikle orta-üst segmentte; yatırım geri dönüşü operasyonel verimlilikten gelir. Ücretsiz danışmanlıkta ihtiyaç analizi sonrası sabit fiyatlı teklif sunulur.' },
   { q: 'Proje teslimi ne kadar sürer?', a: 'Basit web sitesi 2-3 hafta, otomasyon entegrasyonu 3-6 hafta, kurumsal web uygulaması 6-12 hafta, karmaşık ERP entegrasyonu 3-6 ay. Kocaeli\'deki sanayi projelerinde şartname hazırlama süreci zaman zaman uzayabiliyor; esneklik gösteriyoruz.' },
   { q: 'Yazılım + dijital pazarlama birlikte çalışmak neden avantajlı?', a: 'Kocaeli\'deki çoğu yazılım ajansı siteyi kurar, bırakır. Biz aynı zamanda SEO, Google Ads ve otomasyon yapıyoruz. Web siteniz hem teknik açıdan sağlam hem de Google\'da bulunur hem de dönüşüm odaklı tasarlanır. Tek muhatap, entegre strateji, gereksiz koordinasyon yükü yok.' },
+  { q: 'Kaynak kod teslim ediliyor mu, yoksa sizde mi kalıyor?', a: 'Kaynak kod size teslim edilir, mülkiyeti tamamen sizindir. Kocaeli\'deki sanayi firmalarının ERP/üretim sistemleriyle çalışırken bu, veri ve kod üzerinde tam kontrol sahibi olmanız anlamına gelir.' },
 ]
 
 const jsonLd = {

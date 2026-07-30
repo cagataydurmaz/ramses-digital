@@ -61,6 +61,7 @@ const faqs = [
   { q: 'Birden fazla Kocaeli ilçesinde şubem var, tek kampanyada yönetebilir misiniz?', a: 'Evet, çoklu şube/lokasyon yönetimi konusunda deneyimliyiz. Her şube için ayrı Google Business Profile ve lokasyon bazlı reklam grupları kurarak, hangi şubenin hangi ilçeden performans aldığını ayrı ayrı raporlarız.' },
   { q: 'Sonuçları görmem ne kadar sürer?', a: 'Google Ads genelde 1-2 hafta içinde trafik getirmeye başlar. SEO\'da yerel (harita) sonuçlar 2-4 hafta, organik sıralama iyileşmesi 3-6 ay sürer. Kocaeli\'nin rekabet yoğun ilçelerinde (İzmit, Gebze merkez) süre biraz uzayabilir.' },
   { q: 'Yapay zeka arama motorlarında (ChatGPT, Gemini) Kocaeli işletmesi olarak görünebilir miyim?', a: 'Evet. GEO (Generative Engine Optimization) stratejimizle, birisi ChatGPT\'ye "Kocaeli\'de [hizmetiniz]" diye sorduğunda önerilme ihtimalinizi artıran yapılandırılmış içerik ve otoriter kaynak bağlantıları oluşturuyoruz. Bu çalışma SEO paketlerimize dahildir.' },
+  { q: 'Google Ads hesabı bizim adımıza mı açılıyor?', a: 'Evet, hesap sizin adınıza açılır, biz sadece yönetici olarak bağlanırız. "İlk sırada çıkmayı garanti ediyoruz" diyen ajanslara dikkat edin — Google Ads sıralaması gerçek zamanlı açık artırmadır, hiç kimse bunu garanti edemez.' },
 ]
 
 const jsonLd = {

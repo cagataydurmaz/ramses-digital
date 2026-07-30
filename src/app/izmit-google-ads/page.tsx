@@ -42,6 +42,7 @@ const faqs = [
   { q: 'Rakiplerim de Google Ads yapıyor, nasıl öne çıkabilirim?', a: 'Quality Score (Kalite Puanı) belirleyici. Reklam metni, açılış sayfası uyumu ve beklenen tıklama oranı yüksekse rakibinizden daha az ödeyerek üstte çıkarsınız. Ayrıca rakiplerinizin ihmal ettiği uzun kuyruklu anahtar kelimeleri ve negatif keyword yönetimini iyi yapmak büyük fark yaratır.' },
   { q: 'Raporlama nasıl yapılıyor?', a: 'Aylık detaylı kampanya raporu: gösterim, tıklama, dönüşüm, CPC, CPA ve ROAS metrikleri. Canlı Google Ads dashboard erişimi de veriyoruz. Şeffaf: her kuruşun nereye gittiğini görürsünüz.' },
   { q: 'Google Ads ile Google Haritalar reklamı aynı mı?', a: 'Hayır. Google Arama Reklamları web sitenize tıklama getirir. Google Haritalar\'da öne çıkmak için önce Google Business Profile optimizasyonu, ardından Google Local Services Ads veya Location Extension kullanılır. İzmit\'te harita paketine girmek için GBP çalışması şarttır.' },
+  { q: 'Reklam hesabı kimin adına açılır?', a: 'Sizin adınıza. Google Ads hesabı size ait olur, biz yönetici erişimiyle çalışırız — ayrılsanız bile hesabınız, verileriniz ve kampanya geçmişiniz sizde kalır.' },
 ]
 
 const jsonLd = {
