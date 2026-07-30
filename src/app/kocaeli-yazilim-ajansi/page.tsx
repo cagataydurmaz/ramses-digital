@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import CalendlyButton from '@/components/CalendlyButton'
+import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
 import { MapPin, Code2, ArrowRight, CheckCircle2, Zap, Globe, BarChart3, Shield, Layers, Cpu } from 'lucide-react'
 
@@ -184,6 +185,8 @@ export default function KocaeliYazilimAjansiPage() {
           </div>
         </div>
       </section>
+
+      <ReviewsMarquee />
 
       <RelatedPages
         pages={[

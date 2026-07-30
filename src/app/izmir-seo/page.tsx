@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import CalendlyButton from '@/components/CalendlyButton'
+import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
 import { MapPin, Search, ArrowRight, CheckCircle2, FileText, Link2, BarChart3, Zap, Award, TrendingUp } from 'lucide-react'
 
@@ -170,6 +171,8 @@ export default function IzmirSeoPage() {
           </div>
         </div>
       </section>
+
+      <ReviewsMarquee />
 
       <RelatedPages
         pages={[

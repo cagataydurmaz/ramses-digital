@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import CalendlyButton from '@/components/CalendlyButton'
+import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
 import { MapPin, Globe, ArrowRight, CheckCircle2, Zap, Smartphone, Search, ShieldCheck, BarChart3, Palette } from 'lucide-react'
 
@@ -210,6 +211,8 @@ export default function IzmitWebTasarimPage() {
           </div>
         </div>
       </section>
+
+      <ReviewsMarquee />
 
       <RelatedPages
         pages={[

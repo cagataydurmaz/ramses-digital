@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import CalendlyButton from '@/components/CalendlyButton'
+import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
 import { MapPin, Megaphone, ArrowRight, Target, BarChart3, Zap, TrendingUp, DollarSign, Clock, Globe2 } from 'lucide-react'
 
@@ -162,6 +163,8 @@ export default function AntalyaGoogleAdsPage() {
           </div>
         </div>
       </section>
+
+      <ReviewsMarquee />
 
       <RelatedPages
         pages={[

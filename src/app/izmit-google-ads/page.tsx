@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import CalendlyButton from '@/components/CalendlyButton'
+import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
 import { MapPin, Megaphone, ArrowRight, CheckCircle2, Target, BarChart3, Zap, TrendingUp, DollarSign, Clock } from 'lucide-react'
 
@@ -174,6 +175,8 @@ export default function IzmitGoogleAdsPage() {
           </div>
         </div>
       </section>
+
+      <ReviewsMarquee />
 
       <RelatedPages
         pages={[
