@@ -35,6 +35,7 @@ const faqs = [
   { q: 'Yapay zeka (AI) entegrasyonu yapıyor musunuz?', a: 'Evet. Müşteri destek chatbotu, içerik üretim asistanı, belge analizi ve öneri sistemi projeleri yapıyoruz. Claude API ve GPT-4 entegrasyonlarında deneyimli ekibimiz var.' },
   { q: 'Fiyatlandırma nasıl yapılıyor?', a: 'Proje bazlı sabit fiyat veya zaman & materyal modeli kullanıyoruz. Küçük otomasyon projelerinden kurumsal web uygulamalarına göre kapsam ve fiyat değişir. Ücretsiz danışmanlıkta ihtiyaç analizi sonrası sabit fiyatlı teklif sunuyoruz.' },
   { q: 'Proje teslim edildikten sonra destek veriyor musunuz?', a: 'Evet. Proje sonrası 1-3 ay hata düzeltme garantisi veriyoruz. Uzun vadeli bakım için aylık destek paketi sunuyoruz: güncellemeler, küçük geliştirmeler ve teknik izleme.' },
+  { q: 'Proje bittiğinde kaynak kodun mülkiyeti kimde olur?', a: 'Kaynak kod ve tüm mülkiyet hakları tamamen size aittir — teslimle birlikte tam erişim ve kodu size devrediyoruz. Sizi belirli bir ajansa veya platforma bağımlı bırakan kapalı/gizli bir sistem kurmuyoruz.' },
 ]
 
 const jsonLd = {
