@@ -37,15 +37,24 @@ export default function ReviewsMarqueeInner({ title = 'Müşterilerimiz Ne Diyor
     // setInterval kullanıyoruz — requestAnimationFrame, arka plana alınan/aktif
     // olmayan sekmelerde bazı tarayıcılarda tamamen durabiliyor (ölçülebilir
     // şekilde doğrulandı: 13s'de 0 tetiklenme), setInterval ise (kısıtlansa
-    // bile) her koşulda çalışmaya devam ediyor. 42s'lik yavaş bir kaydırma
-    // için 50ms'lik adımlar (20fps) gözle görülür bir fark yaratmıyor.
-    const TICK_MS = 50
+    // bile) her koşulda çalışmaya devam ediyor. Gerçek, görünür bir sekmede
+    // tarayıcı setInterval'ı kısıtlamaz — 60fps'e yakın (~16ms) çalışır.
+    // Adım süresine değil, ölçülen gerçek zaman farkına göre ilerliyoruz
+    // (setInterval'ın kendisi hassas periyodik olmadığı için) — bu, kare
+    // aralıkları düzensiz olsa bile hareketin akıcı/pürüzsüz kalmasını sağlar.
+    const TICK_MS = 16
+    let lastTime = Date.now()
+
     const intervalId = window.setInterval(() => {
+      const now = Date.now()
+      const delta = now - lastTime
+      lastTime = now
       if (pausedRef.current) return
+
       const halfWidth = track.scrollWidth / 2
       if (halfWidth <= 0) return
-      const pxPerTick = halfWidth / (LOOP_SECONDS * 1000 / TICK_MS)
-      offsetRef.current += pxPerTick
+      const pxPerMs = halfWidth / (LOOP_SECONDS * 1000)
+      offsetRef.current += pxPerMs * delta
       if (offsetRef.current >= halfWidth) offsetRef.current -= halfWidth
       track.style.transform = `translate3d(-${offsetRef.current}px, 0, 0)`
     }, TICK_MS)
