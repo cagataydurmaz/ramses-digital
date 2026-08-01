@@ -110,11 +110,10 @@ body {
   will-change: transform;
 }
 
-/* Google yorumları — kayan şerit */
-@keyframes marquee-scroll {
-  from { transform: translate3d(0, 0, 0); }
-  to { transform: translate3d(-50%, 0, 0); }
-}
+/* Google yorumları — kayan şerit. transform JS (rAF) ile sürülüyor —
+   Safari'nin uzun süreli infinite CSS animation'ları compositor'da
+   dondurduğu, evrensel çözümü olmayan bilinen WebKit hatasından kaçınmak
+   için @keyframes/animation kullanmıyoruz. Bkz. ReviewsMarquee.tsx */
 .marquee-viewport {
   overflow: hidden;
   -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
@@ -123,17 +122,9 @@ body {
 .marquee-track {
   display: flex;
   width: max-content;
-  animation: marquee-scroll 42s linear infinite;
   will-change: transform;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-@media (hover: hover) {
-  .marquee-viewport:hover .marquee-track {
-    animation-play-state: paused;
-  }
 }
 @media (max-width: 768px) {
   .marquee-viewport {

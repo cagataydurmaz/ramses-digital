@@ -1,7 +1,11 @@
+'use client'
+
+import { useEffect, useRef } from 'react'
 import { Quote, Star, ExternalLink } from 'lucide-react'
 import { reviews } from '@/lib/reviews'
 
 const GOOGLE_REVIEWS_URL = 'https://maps.app.goo.gl/xKzk4Q5VCeK4ePbz6'
+const LOOP_SECONDS = 42 // bir tam döngünün (yarım track genişliği) süresi
 
 function GoogleGIcon({ size = 18 }: { size?: number }) {
   return (
@@ -14,7 +18,46 @@ function GoogleGIcon({ size = 18 }: { size?: number }) {
   )
 }
 
+// JS (requestAnimationFrame) ile sürülen kaydırma — Safari'nin uzun süreli
+// infinite CSS animation'ları compositor'da dondurduğu, evrensel çözümü
+// olmayan bilinen WebKit hatasından tamamen kaçınmak için CSS @keyframes
+// yerine bunu kullanıyoruz. transform'u her frame'de doğrudan biz yazıyoruz.
 export default function ReviewsMarquee({ title = 'Müşterilerimiz Ne Diyor?' }: { title?: string }) {
+  const trackRef = useRef<HTMLDivElement>(null)
+  const offsetRef = useRef(0)
+  const pausedRef = useRef(false)
+  const lastTimeRef = useRef<number | null>(null)
+
+  useEffect(() => {
+    const track = trackRef.current
+    if (!track) return
+
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    if (reducedMotion) return
+
+    let rafId: number
+
+    const step = (time: number) => {
+      const halfWidth = track.scrollWidth / 2
+      if (halfWidth > 0) {
+        if (lastTimeRef.current === null) lastTimeRef.current = time
+        const delta = time - lastTimeRef.current
+        lastTimeRef.current = time
+
+        if (!pausedRef.current) {
+          const pxPerMs = halfWidth / LOOP_SECONDS / 1000
+          offsetRef.current += pxPerMs * delta
+          if (offsetRef.current >= halfWidth) offsetRef.current -= halfWidth
+          track.style.transform = `translate3d(-${offsetRef.current}px, 0, 0)`
+        }
+      }
+      rafId = requestAnimationFrame(step)
+    }
+
+    rafId = requestAnimationFrame(step)
+    return () => cancelAnimationFrame(rafId)
+  }, [])
+
   return (
     <section className="relative py-24 px-6 overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
@@ -39,8 +82,12 @@ export default function ReviewsMarquee({ title = 'Müşterilerimiz Ne Diyor?' }:
           </a>
         </div>
 
-        <div className="marquee-viewport">
-          <div className="marquee-track">
+        <div
+          className="marquee-viewport"
+          onMouseEnter={() => { pausedRef.current = true }}
+          onMouseLeave={() => { pausedRef.current = false }}
+        >
+          <div ref={trackRef} className="marquee-track">
             {[...reviews, ...reviews].map((r, i) => (
               <div
                 key={`${r.name}-${i}`}
