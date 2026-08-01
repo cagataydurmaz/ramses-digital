@@ -26,7 +26,6 @@ export default function ReviewsMarquee({ title = 'Müşterilerimiz Ne Diyor?' }:
   const trackRef = useRef<HTMLDivElement>(null)
   const offsetRef = useRef(0)
   const pausedRef = useRef(false)
-  const lastTimeRef = useRef<number | null>(null)
 
   useEffect(() => {
     const track = trackRef.current
@@ -35,27 +34,23 @@ export default function ReviewsMarquee({ title = 'Müşterilerimiz Ne Diyor?' }:
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
     if (reducedMotion) return
 
-    let rafId: number
-
-    const step = (time: number) => {
+    // setInterval kullanıyoruz — requestAnimationFrame, arka plana alınan/aktif
+    // olmayan sekmelerde bazı tarayıcılarda tamamen durabiliyor (ölçülebilir
+    // şekilde doğrulandı: 13s'de 0 tetiklenme), setInterval ise (kısıtlansa
+    // bile) her koşulda çalışmaya devam ediyor. 42s'lik yavaş bir kaydırma
+    // için 50ms'lik adımlar (20fps) gözle görülür bir fark yaratmıyor.
+    const TICK_MS = 50
+    const intervalId = window.setInterval(() => {
+      if (pausedRef.current) return
       const halfWidth = track.scrollWidth / 2
-      if (halfWidth > 0) {
-        if (lastTimeRef.current === null) lastTimeRef.current = time
-        const delta = time - lastTimeRef.current
-        lastTimeRef.current = time
+      if (halfWidth <= 0) return
+      const pxPerTick = halfWidth / (LOOP_SECONDS * 1000 / TICK_MS)
+      offsetRef.current += pxPerTick
+      if (offsetRef.current >= halfWidth) offsetRef.current -= halfWidth
+      track.style.transform = `translate3d(-${offsetRef.current}px, 0, 0)`
+    }, TICK_MS)
 
-        if (!pausedRef.current) {
-          const pxPerMs = halfWidth / LOOP_SECONDS / 1000
-          offsetRef.current += pxPerMs * delta
-          if (offsetRef.current >= halfWidth) offsetRef.current -= halfWidth
-          track.style.transform = `translate3d(-${offsetRef.current}px, 0, 0)`
-        }
-      }
-      rafId = requestAnimationFrame(step)
-    }
-
-    rafId = requestAnimationFrame(step)
-    return () => cancelAnimationFrame(rafId)
+    return () => window.clearInterval(intervalId)
   }, [])
 
   return (
