@@ -16,6 +16,7 @@ export default function RelatedPages({ pages }: { pages: RelatedPage[] }) {
             <Link
               key={href}
               href={href}
+              prefetch={false}
               className="inline-flex items-center gap-1.5 bg-white/[0.03] hover:bg-white/[0.06] border border-white/[0.06] hover:border-blue-500/30 text-zinc-400 hover:text-white text-sm rounded-full px-4 py-2 transition-all"
             >
               {label} <ArrowRight size={12} />

@@ -133,7 +133,7 @@ export default function AnkaraWebTasarimPage() {
                 </span>
               ))}
             </div>
-            <Link href="/portfolyo" className="text-blue-400 text-sm font-medium flex items-center gap-1.5 hover:gap-2.5 transition-all">
+            <Link href="/portfolyo" prefetch={false} className="text-blue-400 text-sm font-medium flex items-center gap-1.5 hover:gap-2.5 transition-all">
               Tüm Portföyü Gör <ArrowRight size={13} />
             </Link>
           </div>

@@ -172,7 +172,7 @@ export default function IzmitReklamAjansiPage() {
             {services.map(({ icon: Icon, title, desc, href }) => (
               <Link
                 key={title}
-                href={href}
+                href={href} prefetch={false}
                 className="group bg-[#0D1225] border border-white/[0.06] hover:border-blue-500/30 rounded-xl p-6 transition-all hover:shadow-[0_0_30px_-10px_rgba(59,130,246,0.2)]"
               >
                 <div className="w-10 h-10 rounded-lg bg-blue-500/10 flex items-center justify-center mb-4">

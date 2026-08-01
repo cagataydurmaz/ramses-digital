@@ -74,6 +74,7 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
+                prefetch={false}
                 className={`text-sm transition-colors duration-200 ${
                   pathname === link.href
                     ? 'text-white'
@@ -102,6 +103,7 @@ export default function Navbar() {
                     <Link
                       key={city.href}
                       href={city.href}
+                      prefetch={false}
                       className={`block px-3 py-2 rounded-lg text-sm transition-colors ${
                         pathname === city.href
                           ? 'text-white bg-white/[0.06]'
@@ -149,6 +151,7 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
+                prefetch={false}
                 onClick={() => setMenuOpen(false)}
                 className={`text-base py-3 border-b border-white/[0.04] ${
                   pathname === link.href ? 'text-white' : 'text-zinc-400'
@@ -164,6 +167,7 @@ export default function Navbar() {
                 <Link
                   key={city.href}
                   href={city.href}
+                  prefetch={false}
                   onClick={() => setMenuOpen(false)}
                   className={`text-sm py-2 ${
                     pathname === city.href ? 'text-white' : 'text-zinc-400'

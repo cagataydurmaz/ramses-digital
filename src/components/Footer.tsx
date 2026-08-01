@@ -109,6 +109,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
+                    prefetch={false}
                     className="text-zinc-400 hover:text-white text-sm transition-colors py-2 block"
                   >
                     {link.label}
@@ -126,6 +127,7 @@ export default function Footer() {
                 <li key={service.href}>
                   <Link
                     href={service.href}
+                    prefetch={false}
                     className="text-zinc-400 hover:text-white text-sm transition-colors py-2 block"
                   >
                     {service.label}
@@ -177,6 +179,7 @@ export default function Footer() {
               <Link
                 key={page.href}
                 href={page.href}
+                prefetch={false}
                 className="text-zinc-500 hover:text-white text-xs transition-colors"
               >
                 {page.label}

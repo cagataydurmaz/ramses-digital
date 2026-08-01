@@ -78,7 +78,7 @@ export default function PortfolioPage() {
             {liveProjects.map((project) => (
               <Link
                 key={project.name}
-                href={`/portfolyo/${project.slug}`}
+                href={`/portfolyo/${project.slug} prefetch={false}`}
                 className="group block bg-[#0D1225] border border-white/[0.06] hover:border-blue-500/30 rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-[0_0_40px_-10px_rgba(59,130,246,0.2)]"
               >
                 {/* Browser Chrome */}

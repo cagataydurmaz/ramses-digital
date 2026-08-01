@@ -171,7 +171,7 @@ export default function CaseStudyPage({ params }: Props) {
               {related.map((rp) => (
                 <Link
                   key={rp.slug}
-                  href={`/portfolyo/${rp.slug}`}
+                  href={`/portfolyo/${rp.slug} prefetch={false}`}
                   className="bg-[#0D1225] border border-white/[0.06] rounded-xl p-5 hover:border-white/[0.12] transition-all group"
                 >
                   <p className="text-zinc-500 text-xs uppercase tracking-wider mb-2">{rp.industry}</p>

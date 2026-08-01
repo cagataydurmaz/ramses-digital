@@ -267,7 +267,7 @@ export default function BlogPostPage({ params }: Props) {
               {related.map((rp) => (
                 <Link
                   key={rp.slug}
-                  href={`/blog/${rp.slug}`}
+                  href={`/blog/${rp.slug} prefetch={false}`}
                   className="bg-[#0D1225] border border-white/[0.06] rounded-xl p-5 hover:border-white/[0.12] transition-all group"
                 >
                   <div className="text-3xl mb-3">{rp.emoji}</div>
