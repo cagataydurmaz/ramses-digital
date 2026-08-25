@@ -18,14 +18,24 @@ import {
   Loader2,
   CheckCircle2,
   Calendar,
+  Store,
+  Building,
+  Landmark,
 } from 'lucide-react'
 import CalendlyButton from '@/components/CalendlyButton'
+import { estimateQuote, businessSizeLabels, type BusinessSize } from '@/lib/pricing'
 
 const businessTypes = [
   { id: 'eticaret', label: 'E-Ticaret', icon: ShoppingCart, desc: 'Online mağaza veya marketplace' },
   { id: 'yerel', label: 'Yerel İşletme', icon: MapPin, desc: 'Restoran, klinik, mağaza vb.' },
   { id: 'kurumsal', label: 'Kurumsal', icon: Building2, desc: 'B2B veya büyük ölçekli firma' },
   { id: 'startup', label: 'Startup', icon: Rocket, desc: 'Yeni kurulan veya büyüyen girişim' },
+]
+
+const businessSizes: { id: BusinessSize; icon: typeof Store; desc: string }[] = [
+  { id: 'kucuk', icon: Store, desc: '1-10 çalışan · tek şehir/bölgede hizmet' },
+  { id: 'orta', icon: Building, desc: '10-50 çalışan · birden fazla şehirde hizmet' },
+  { id: 'buyuk', icon: Landmark, desc: '50+ çalışan veya Türkiye geneli/kurumsal' },
 ]
 
 const serviceOptions = [
@@ -173,6 +183,7 @@ function renderMarkdown(text: string): string {
 export default function TeklifAlPage() {
   const [step, setStep] = useState(1)
   const [businessType, setBusinessType] = useState('')
+  const [businessSize, setBusinessSize] = useState<BusinessSize | ''>('')
   const [services, setServices] = useState<string[]>([])
   const [websiteUrl, setWebsiteUrl] = useState('')
   const [result, setResult] = useState('')
@@ -186,9 +197,9 @@ export default function TeklifAlPage() {
   }
 
   const handleSubmit = async () => {
-    if (!businessType || services.length === 0) return
+    if (!businessType || !businessSize || services.length === 0) return
     setIsLoading(true)
-    setStep(4)
+    setStep(5)
     setResult('')
     setIsDone(false)
 
@@ -196,7 +207,7 @@ export default function TeklifAlPage() {
       const response = await fetch('/api/quote', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ businessType, services, websiteUrl }),
+        body: JSON.stringify({ businessType, businessSize: businessSizeLabels[businessSize], services, websiteUrl }),
       })
 
       if (!response.body) throw new Error('No body')
@@ -221,6 +232,7 @@ export default function TeklifAlPage() {
   const reset = () => {
     setStep(1)
     setBusinessType('')
+    setBusinessSize('')
     setServices([])
     setWebsiteUrl('')
     setResult('')
@@ -229,8 +241,9 @@ export default function TeklifAlPage() {
 
   const canProceed =
     (step === 1 && businessType) ||
-    (step === 2 && services.length > 0) ||
-    step === 3
+    (step === 2 && businessSize) ||
+    (step === 3 && services.length > 0) ||
+    step === 4
 
   return (
     <>
@@ -246,7 +259,7 @@ export default function TeklifAlPage() {
             Anında Ücretsiz Teklif Al
           </h1>
           <p className="text-zinc-400 text-lg">
-            3 adımda işletmenize özel dijital pazarlama paketi önerisi alın.
+            4 adımda işletmenize özel dijital pazarlama paketi ve tahmini fiyat aralığı alın.
           </p>
         </div>
       </section>
@@ -255,10 +268,10 @@ export default function TeklifAlPage() {
       <section className="pb-24 px-6">
         <div className="max-w-3xl mx-auto">
           {/* Progress */}
-          {step < 4 && (
+          {step < 5 && (
             <div className="mb-8">
               <div className="flex items-center justify-between mb-2">
-                {['İşletme Tipi', 'Hizmetler', 'Web Sitesi'].map((label, i) => (
+                {['İşletme Tipi', 'Büyüklük', 'Hizmetler', 'Web Sitesi'].map((label, i) => (
                   <div
                     key={label}
                     className={`flex items-center gap-1.5 text-xs font-medium transition-colors ${
@@ -283,7 +296,7 @@ export default function TeklifAlPage() {
               <div className="h-1 bg-white/[0.06] rounded-full overflow-hidden">
                 <div
                   className="h-full bg-blue-500 rounded-full transition-all duration-300"
-                  style={{ width: `${((step - 1) / 3) * 100}%` }}
+                  style={{ width: `${((step - 1) / 4) * 100}%` }}
                 />
               </div>
             </div>
@@ -325,8 +338,42 @@ export default function TeklifAlPage() {
                 </div>
               )}
 
-              {/* Step 2: Services */}
+              {/* Step 2: Business Size */}
               {step === 2 && (
+                <div>
+                  <h2 className="text-white font-bold text-xl mb-2">İşletmenizin Büyüklüğü</h2>
+                  <p className="text-zinc-400 text-sm mb-6">Fiyat aralığını doğru hesaplayabilmemiz için gerekli.</p>
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                    {businessSizes.map((bs) => {
+                      const Icon = bs.icon
+                      const selected = businessSize === bs.id
+                      return (
+                        <button
+                          key={bs.id}
+                          onClick={() => setBusinessSize(bs.id)}
+                          className={`p-5 rounded-xl border text-left transition-all ${
+                            selected
+                              ? 'border-blue-500/60 bg-blue-500/10'
+                              : 'border-white/[0.06] bg-white/[0.02] hover:border-white/20'
+                          }`}
+                        >
+                          <Icon
+                            size={20}
+                            className={`mb-3 ${selected ? 'text-blue-400' : 'text-zinc-400'}`}
+                          />
+                          <p className={`font-semibold text-sm ${selected ? 'text-white' : 'text-zinc-300'}`}>
+                            {businessSizeLabels[bs.id]}
+                          </p>
+                          <p className="text-zinc-600 text-xs mt-0.5">{bs.desc}</p>
+                        </button>
+                      )
+                    })}
+                  </div>
+                </div>
+              )}
+
+              {/* Step 3: Services */}
+              {step === 3 && (
                 <div>
                   <h2 className="text-white font-bold text-xl mb-2">İhtiyacınız Olan Hizmetler</h2>
                   <p className="text-zinc-400 text-sm mb-6">Birden fazla seçebilirsiniz.</p>
@@ -361,8 +408,8 @@ export default function TeklifAlPage() {
                 </div>
               )}
 
-              {/* Step 3: URL */}
-              {step === 3 && (
+              {/* Step 4: URL */}
+              {step === 4 && (
                 <div>
                   <h2 className="text-white font-bold text-xl mb-2">Web Siteniz</h2>
                   <p className="text-zinc-400 text-sm mb-6">
@@ -377,15 +424,15 @@ export default function TeklifAlPage() {
                   />
                   <div className="bg-blue-500/5 border border-blue-500/15 rounded-xl p-4">
                     <p className="text-zinc-400 text-xs leading-relaxed">
-                      <strong className="text-white">Özet:</strong> {businessType} işletmesi için{' '}
+                      <strong className="text-white">Özet:</strong> {businessType} işletmesi ({businessSize && businessSizeLabels[businessSize]}) için{' '}
                       <strong className="text-blue-400">{services.join(', ')}</strong> hizmetleri.
                     </p>
                   </div>
                 </div>
               )}
 
-              {/* Step 4: Result */}
-              {step === 4 && (
+              {/* Step 5: Result */}
+              {step === 5 && (
                 <div>
                   {isLoading && !result && (
                     <div className="py-12 flex flex-col items-center gap-4">
@@ -439,6 +486,48 @@ export default function TeklifAlPage() {
                         dangerouslySetInnerHTML={{ __html: renderMarkdown(result) }}
                       />
 
+                      {/* Tahmini fiyat aralığı — PDF'teki güncel piyasa fiyatlarından hesaplanır */}
+                      {isDone && businessSize && (() => {
+                        const est = estimateQuote(services, businessSize)
+                        const hasAny = est.monthlyMin > 0 || est.oneTimeMin > 0
+                        if (!hasAny) return null
+                        const fmt = (n: number) => n.toLocaleString('tr-TR')
+                        return (
+                          <div className="mt-6 bg-gradient-to-br from-blue-500/10 to-violet-500/5 border border-blue-500/20 rounded-2xl p-6">
+                            <p className="text-blue-400 text-xs font-medium uppercase tracking-wider mb-3">Tahmini Fiyat Aralığı</p>
+                            <div className="flex flex-wrap items-end gap-x-8 gap-y-3">
+                              {est.monthlyMax > 0 && (
+                                <div>
+                                  <p className="text-2xl font-bold text-white">
+                                    {fmt(est.monthlyMin)}–{fmt(est.monthlyMax)}₺
+                                    <span className="text-sm font-normal text-zinc-500 ml-1">/ay</span>
+                                  </p>
+                                  {est.hasAdSpendShare && (
+                                    <p className="text-zinc-500 text-xs mt-1">+ reklam bütçenizin %15&apos;i (yönetim payı)</p>
+                                  )}
+                                </div>
+                              )}
+                              {est.oneTimeMax > 0 && (
+                                <div>
+                                  <p className="text-2xl font-bold text-white">
+                                    {fmt(est.oneTimeMin)}–{fmt(est.oneTimeMax)}₺
+                                    <span className="text-sm font-normal text-zinc-500 ml-1">tek seferlik</span>
+                                  </p>
+                                </div>
+                              )}
+                            </div>
+                            {est.unpriced.length > 0 && (
+                              <p className="text-zinc-500 text-xs mt-4">
+                                {est.unpriced.join(', ')} kapsamı projeye göre değiştiği için görüşmede netleştirilir.
+                              </p>
+                            )}
+                            <p className="text-zinc-500 text-xs mt-3">
+                              Bunlar güncel piyasa ortalamasıdır, kesin fiyat değildir — size özel net teklif için görüşelim.
+                            </p>
+                          </div>
+                        )
+                      })()}
+
                       {isDone && (
                         <div className="mt-8 pt-6 border-t border-white/[0.06]">
                           <p className="text-zinc-400 text-sm mb-4">
@@ -466,7 +555,7 @@ export default function TeklifAlPage() {
             </>
 
             {/* Navigation */}
-            {step < 4 && (
+            {step < 5 && (
               <div className="flex items-center justify-between mt-8">
                 <button
                   onClick={() => setStep((s) => Math.max(1, s - 1))}
@@ -476,7 +565,7 @@ export default function TeklifAlPage() {
                   <ChevronLeft size={16} /> Geri
                 </button>
 
-                {step < 3 ? (
+                {step < 4 ? (
                   <button
                     onClick={() => setStep((s) => s + 1)}
                     disabled={!canProceed}
@@ -497,7 +586,7 @@ export default function TeklifAlPage() {
           </div>
 
           {/* Trust signals */}
-          {step < 4 && (
+          {step < 5 && (
             <div className="flex items-center justify-center gap-6 mt-6">
               {[
                 { icon: CheckCircle2, label: 'Ücretsiz & bağlayıcı değil' },

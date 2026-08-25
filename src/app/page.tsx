@@ -31,6 +31,20 @@ const SmartIntake = dynamic(() => import('@/components/SmartIntake'), {
   ),
 })
 
+const QuickPriceWidget = dynamic(() => import('@/components/QuickPriceWidget'), {
+  ssr: false,
+  loading: () => (
+    <div className="w-full max-w-2xl mx-auto h-[140px] rounded-2xl bg-white/[0.03] border border-white/[0.06] animate-pulse" />
+  ),
+})
+
+const WhatsAppLeadForm = dynamic(() => import('@/components/WhatsAppLeadForm'), {
+  ssr: false,
+  loading: () => (
+    <div className="max-w-4xl mx-auto h-[520px] rounded-3xl bg-white/[0.03] border border-white/[0.06] animate-pulse" />
+  ),
+})
+
 // ─── Fade-in wrapper — CSS only, no Framer Motion ─────────────────────────
 function FadeIn({
   children,
@@ -337,6 +351,14 @@ export default function HomePage() {
             </div>
             <SmartIntake />
           </div>
+
+          {/* ── Hızlı Fiyat Al ── */}
+          <div
+            className="animate-fadein mt-6 sm:mt-8 w-full"
+            style={{ animationDelay: '0.25s' }}
+          >
+            <QuickPriceWidget />
+          </div>
         </div>
 
         {/* Scroll indicator — masaüstünde göster */}
@@ -471,6 +493,13 @@ export default function HomePage() {
               </Link>
             </div>
           </FadeIn>
+        </div>
+      </section>
+
+      {/* ── WHATSAPP LEAD FORM ──────────────────────────────────────────────── */}
+      <section className="py-24 px-6">
+        <div className="max-w-4xl mx-auto">
+          <WhatsAppLeadForm />
         </div>
       </section>
 

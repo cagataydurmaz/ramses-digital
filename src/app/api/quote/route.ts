@@ -5,46 +5,43 @@ const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY })
 
 export async function POST(request: NextRequest) {
   try {
-    const { businessType, services, websiteUrl } = await request.json()
+    const { businessType, businessSize, services, websiteUrl } = await request.json()
 
     const servicesList = services.join(', ')
     const urlInfo = websiteUrl ? `Web sitesi: ${websiteUrl}` : 'Web sitesi belirtilmedi'
+    const sizeInfo = businessSize ? `\n- İşletme Büyüklüğü: ${businessSize}` : ''
 
     const stream = client.messages.stream({
       model: 'claude-sonnet-4-6',
-      max_tokens: 1024,
+      max_tokens: 400,
       messages: [
         {
           role: 'user',
-          content: `Sen Ramses Digital'in uzman dijital pazarlama danışmanısın. Aşağıdaki bilgilere göre müşteriye özel bir strateji önerisi hazırla.
+          content: `Sen Ramses Digital'in uzman dijital pazarlama danışmanısın. Aşağıdaki bilgilere göre müşteriye özel, KISA bir strateji önerisi hazırla.
 
 Müşteri Bilgileri:
-- İşletme Tipi: ${businessType}
+- İşletme Tipi: ${businessType}${sizeInfo}
 - İstenen Hizmetler: ${servicesList}
 - ${urlInfo}
 
-Lütfen aşağıdaki formatta Türkçe ve samimi bir öneri hazırla:
+Lütfen aşağıdaki formatta, KISA ve öz Türkçe bir öneri hazırla (toplam 120-150 kelimeyi geçme):
 
 ## 🎯 Önerilen Paket
 
-[Pakete bir isim ver ve neden uygun olduğunu 2-3 cümleyle açıkla]
+[Pakete bir isim ver, tek cümlede neden uygun olduğunu açıkla]
 
-## 📈 3-6 Ayda Beklenen Sonuçlar
+## 📈 Beklenen Sonuçlar
 
-[Her seçilen hizmet için somut ve gerçekçi beklentiler listele — nitel ifadelerle (örn. "organik trafikte belirgin artış", "daha yüksek dönüşüm oranı")]
+[En fazla 3 madde, her biri tek satır, nitel ifadelerle (örn. "organik trafikte belirgin artış")]
 
-## 🚀 Önerilen İlk Adım
+## 🚀 İlk Adım
 
-[En kritik ve hızlı sonuç verecek 2-3 aksiyonu öner]
-
-## 💡 Özel Not
-
-[Bu işletme tipine özel bir ipucu veya uyarı]
+[Tek cümlede en kritik aksiyon]
 
 ÖNEMLİ KURALLAR:
-- Yanıtta HİÇBİR ŞEKİLDE fiyat, tutar, TL, ₺ veya sayısal yüzde/oran verme — ne genel ne de bütçeye özel bir rakam yazma.
+- Yanıtta HİÇBİR ŞEKİLDE fiyat, tutar, TL, ₺ veya sayısal yüzde/oran verme.
 - Kesin fiyat ve paket detaylarının WhatsApp'ta netleştirileceğini son cümlede belirt.
-- Yanıtın samimi, profesyonel ve motive edici olsun. Türkçe yaz.`,
+- Samimi, profesyonel ol ama laf kalabalığı yapma — direkt ve kısa yaz. Türkçe yaz.`,
         },
       ],
     })
