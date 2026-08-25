@@ -110,6 +110,19 @@ body {
   will-change: transform;
 }
 
+/* Hero arka plan glow'ları — video yerine yavaş, organik drift.
+   Sadece transform/scale (compositor-safe), masaüstünde çalışır;
+   mobilde .mobile-hide-blur zaten bu elemanları gizliyor. */
+@keyframes blob-drift {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33%      { transform: translate(4%, -6%) scale(1.08); }
+  66%      { transform: translate(-5%, 4%) scale(0.94); }
+}
+.blob-drift {
+  animation: blob-drift 18s ease-in-out infinite;
+  will-change: transform;
+}
+
 /* Google yorumları — kayan şerit. transform JS (rAF) ile sürülüyor —
    Safari'nin uzun süreli infinite CSS animation'ları compositor'da
    dondurduğu, evrensel çözümü olmayan bilinen WebKit hatasından kaçınmak

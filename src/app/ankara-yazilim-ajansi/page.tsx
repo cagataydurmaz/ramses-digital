@@ -129,7 +129,7 @@ export default function AnkaraYazilimAjansiPage() {
               Ankara İçin Yazılım Çözümleri
             </h2>
             <p className="text-zinc-400 max-w-xl mx-auto">
-              Her proje farklı — ihtiyacınıza göre teknoloji seçiyoruz, şablona sizi uydurmuyoruz.
+              Ankara&apos;nın kurumsal ve kamu ağırlıklı iş dünyasında güvenlik ve süreklilik önceliğimiz — teknolojiyi buna göre seçiyoruz.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">

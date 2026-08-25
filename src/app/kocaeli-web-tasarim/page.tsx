@@ -23,7 +23,7 @@ const features = [
   { icon: Search, title: 'SEO Hazır Altyapı', desc: 'Next.js ile oluşturulan siteler Kocaeli yerel SEO\'ya hazır başlar. Schema markup, canonical, sitemap otomatik.' },
   { icon: Zap, title: 'Yüksek Performans', desc: 'Lighthouse 90+ puan. Kocaeli\'deki rakiplerinizden hızlı yüklenin — Google bu metriği sıralamada kullanıyor.' },
   { icon: Palette, title: 'Kurumsal Tasarım', desc: 'Markanıza özgü, güven veren tasarım. Kocaeli\'nin sanayi ve ticaret kimliğine uygun profesyonel sunum.' },
-  { icon: BarChart3, title: 'Dönüşüm Odaklı', desc: 'Randevu formu, WhatsApp butonu, Google Maps entegrasyonu — Kocaeli müşterisi kolayca ulaşsın.' },
+  { icon: BarChart3, title: 'Dönüşüm Odaklı', desc: 'WhatsApp butonu ve randevu formuyla ziyaretçi aradığı bilgiye hızlıca ulaşsın, iletişim engeli kalmasın.' },
   { icon: ShieldCheck, title: 'Güvenli & Bakımlı', desc: 'SSL, güvenlik güncellemeleri, yedekleme ve teknik destek. Kocaeli\'den müşteri kaçırmayın.' },
 ]
 

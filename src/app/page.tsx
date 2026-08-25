@@ -5,6 +5,7 @@ import Link from 'next/link'
 import dynamic from 'next/dynamic'
 import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
+import { reviews, aggregateRating } from '@/lib/reviews'
 import {
   Sparkles,
   Search,
@@ -147,13 +148,54 @@ const stats = [
 export default function HomePage() {
   return (
     <>
+      {/* Review/AggregateRating şeması — Google'ın "review has multiple
+          aggregate ratings" hatasına yol açmaması için SADECE anasayfada,
+          tek yerde tanımlanıyor (bkz. layout.tsx'in Organization şeması —
+          orada artık review/aggregateRating alanı yok). */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': ['MarketingAgency', 'LocalBusiness'],
+            '@id': 'https://ramsesdigital.com/#organization',
+            aggregateRating: {
+              '@type': 'AggregateRating',
+              ratingValue: aggregateRating.ratingValue,
+              bestRating: aggregateRating.bestRating,
+              reviewCount: aggregateRating.reviewCount,
+            },
+            review: reviews.map((r) => ({
+              '@type': 'Review',
+              author: { '@type': 'Person', name: r.name },
+              datePublished: r.date,
+              reviewRating: {
+                '@type': 'Rating',
+                ratingValue: r.rating,
+                bestRating: 5,
+              },
+              reviewBody: r.text,
+            })),
+          }),
+        }}
+      />
+
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
       <section className="relative min-h-screen flex flex-col items-center overflow-hidden px-4 sm:px-6 pt-24 sm:pt-32 md:pt-44 pb-12 sm:pb-16">
         {/* Background glow */}
         <div className="absolute inset-0 pointer-events-none">
-          <div className="mobile-hide-blur absolute top-1/4 left-1/2 -translate-x-1/2 w-[900px] h-[600px] bg-blue-500/8 rounded-full blur-[160px]" />
-          <div className="mobile-hide-blur absolute top-[10%] right-[8%] w-[500px] h-[500px] bg-violet-500/8 rounded-full blur-[140px]" />
-          <div className="mobile-hide-blur absolute bottom-[5%] left-[5%] w-[400px] h-[400px] bg-emerald-500/6 rounded-full blur-[120px]" />
+          <div
+            className="mobile-hide-blur blob-drift absolute top-1/4 left-1/2 -translate-x-1/2 w-[900px] h-[600px] bg-blue-500/8 rounded-full blur-[160px]"
+            style={{ animationDelay: '0s' }}
+          />
+          <div
+            className="mobile-hide-blur blob-drift absolute top-[10%] right-[8%] w-[500px] h-[500px] bg-violet-500/8 rounded-full blur-[140px]"
+            style={{ animationDelay: '4s' }}
+          />
+          <div
+            className="mobile-hide-blur blob-drift absolute bottom-[5%] left-[5%] w-[400px] h-[400px] bg-emerald-500/6 rounded-full blur-[120px]"
+            style={{ animationDelay: '8s' }}
+          />
           <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/5 to-transparent" />
         </div>
 
@@ -386,7 +428,7 @@ export default function HomePage() {
       <ReviewsMarquee />
 
       {/* ── AI TOOLS TEASER ──────────────────────────────────────────────── */}
-      <section className="py-20 px-6">
+      <section className="py-24 px-6">
         <div className="max-w-5xl mx-auto">
           <FadeIn>
             <div className="grid md:grid-cols-2 gap-5">

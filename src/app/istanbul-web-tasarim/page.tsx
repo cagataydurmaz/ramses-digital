@@ -19,11 +19,11 @@ export const metadata: Metadata = {
 }
 
 const features = [
-  { icon: Smartphone, title: 'Mobil Öncelikli', desc: 'İstanbul\'daki kullanıcıların büyük çoğunluğu mobil cihazdan geliyor. Tam responsive, hızlı ve parmak dostu tasarım.' },
+  { icon: Smartphone, title: 'Mobil Öncelikli', desc: 'Yoğun mobil kullanımı göz önünde bulundurarak tam responsive, hızlı yüklenen arayüzler tasarlıyoruz.' },
   { icon: Search, title: 'SEO Hazır Altyapı', desc: 'Next.js ile oluşturulan siteler İstanbul\'un yoğun rekabetli yerel SEO ortamına hazır başlar. Schema markup, canonical, sitemap otomatik.' },
   { icon: Zap, title: 'Yüksek Performans', desc: 'Lighthouse 90+ puan. İstanbul\'daki rakiplerinizden hızlı yüklenin — Google bu metriği sıralamada kullanıyor.' },
   { icon: Palette, title: 'Kurumsal Tasarım', desc: 'İstanbul\'un kurumsal ve profesyonel hizmet standardına uygun, güven veren, premium görünümlü tasarım.' },
-  { icon: BarChart3, title: 'Dönüşüm Odaklı', desc: 'Randevu formu, WhatsApp butonu, Google Maps entegrasyonu — İstanbul müşterisi kolayca ulaşsın.' },
+  { icon: BarChart3, title: 'Dönüşüm Odaklı', desc: 'Google Maps entegrasyonu, WhatsApp butonu ve randevu formuyla iletişimin önündeki engelleri kaldırıyoruz.' },
   { icon: ShieldCheck, title: 'Güvenli & Bakımlı', desc: 'SSL, güvenlik güncellemeleri, yedekleme ve teknik destek. Rekabetçi İstanbul pazarında müşteri kaçırmayın.' },
 ]
 

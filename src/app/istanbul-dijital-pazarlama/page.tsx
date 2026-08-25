@@ -169,7 +169,7 @@ export default function IstanbulDijitalPazarlamaPage() {
             <span className="gradient-text">Pazarlama Ajansı</span>
           </h1>
           <p className="text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto mb-4 leading-relaxed">
-            SEO&apos;dan Google Ads&apos;e, web tasarımdan pazarlama otomasyonuna — İstanbul işletmelerini dijitalde büyüten tam kapsamlı ajans.
+İstanbul&apos;un aşırı rekabetçi dijital pazarında öne çıkmak için SEO, Google Ads, web tasarım ve otomasyonu tek stratejide birleştiriyoruz.
           </p>
           <p className="text-zinc-500 text-sm mb-10">
             Kadıköy · Beşiktaş · Şişli · Bakırköy · Ataşehir · Üsküdar · Beylikdüzü
@@ -191,7 +191,7 @@ export default function IstanbulDijitalPazarlamaPage() {
               İstanbul İşletmenizi Büyütecek Kanallar
             </h2>
             <p className="text-zinc-400 max-w-xl mx-auto">
-              Her kanal kendi başına güçlü — doğru kombinasyon işletmenize göre belirlenir.
+              15+ milyonluk pazarda görünürlük tek kanalla gelmiyor — doğru kombinasyon rekabette öne çıkarır.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -226,7 +226,7 @@ export default function IstanbulDijitalPazarlamaPage() {
       <section className="py-16 px-6 bg-[#080D18]">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-2xl font-bold text-white mb-3">İstanbul&apos;da Hizmet Verdiğimiz Sektörler</h2>
-          <p className="text-zinc-500 text-sm mb-8">Her sektörün dijital pazarlama dinamikleri farklı — uzmanlık önemli.</p>
+          <p className="text-zinc-500 text-sm mb-8">Portföyümüzdeki İstanbul Barosu&apos;na kayıtlı avukat müşterilerimiz, reklamı kısıtlı sektörlerde bile sonuç aldığımızın kanıtı.</p>
           <div className="flex flex-wrap justify-center gap-3">
             {sectors.map((sector) => (
               <span key={sector} className="bg-white/[0.04] border border-white/[0.08] text-zinc-300 text-sm rounded-full px-4 py-2">

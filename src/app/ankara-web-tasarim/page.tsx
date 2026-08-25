@@ -19,11 +19,11 @@ export const metadata: Metadata = {
 }
 
 const features = [
-  { icon: Smartphone, title: 'Mobil Öncelikli', desc: 'Ankara\'daki kullanıcıların büyük çoğunluğu mobil cihazdan geliyor. Tam responsive, hızlı ve parmak dostu tasarım.' },
+  { icon: Smartphone, title: 'Mobil Öncelikli', desc: 'Ziyaretçilerin büyük kısmı mobil cihazdan geliyor — tam responsive, hızlı ve parmak dostu bir tasarım kuruyoruz.' },
   { icon: Search, title: 'SEO Hazır Altyapı', desc: 'Next.js ile oluşturulan siteler Ankara\'nın yerel SEO ortamına hazır başlar. Schema markup, canonical, sitemap otomatik.' },
   { icon: Zap, title: 'Yüksek Performans', desc: 'Lighthouse 90+ puan. Ankara\'daki rakiplerinizden hızlı yüklenin — Google bu metriği sıralamada kullanıyor.' },
   { icon: Palette, title: 'Kurumsal & Güven Odaklı Tasarım', desc: 'Ankara\'nın kamu, hukuk ve danışmanlık ağırlıklı iş dünyasına uygun, ciddi ve güven veren tasarım dili.' },
-  { icon: BarChart3, title: 'Dönüşüm Odaklı', desc: 'Randevu formu, WhatsApp butonu, Google Maps entegrasyonu — Ankara müşterisi kolayca ulaşsın.' },
+  { icon: BarChart3, title: 'Dönüşüm Odaklı', desc: 'Randevu formu, WhatsApp butonu ve Google Maps entegrasyonuyla ziyaretçi tek tıkla iletişime geçsin.' },
   { icon: ShieldCheck, title: 'Güvenli & Bakımlı', desc: 'SSL, güvenlik güncellemeleri, yedekleme ve teknik destek. Kurumsal itibarınızı koruyun.' },
 ]
 

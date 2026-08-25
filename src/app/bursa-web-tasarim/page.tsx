@@ -19,11 +19,11 @@ export const metadata: Metadata = {
 }
 
 const features = [
-  { icon: Smartphone, title: 'Mobil Öncelikli', desc: 'Bursa\'daki kullanıcıların büyük çoğunluğu mobil cihazdan geliyor. Tam responsive, hızlı ve parmak dostu tasarım.' },
+  { icon: Smartphone, title: 'Mobil Öncelikli', desc: 'Mobil trafik ağırlıklı bugünün pazarında responsive ve hızlı yüklenen bir tasarım artık zorunluluk.' },
   { icon: Search, title: 'SEO Hazır Altyapı', desc: 'Next.js ile oluşturulan siteler Bursa\'nın yerel SEO ortamına hazır başlar. Schema markup, canonical, sitemap otomatik.' },
   { icon: Zap, title: 'Yüksek Performans', desc: 'Lighthouse 90+ puan. Bursa\'daki rakiplerinizden hızlı yüklenin — Google bu metriği sıralamada kullanıyor.' },
   { icon: Palette, title: 'Sektöre Özel Tasarım', desc: 'Otomotiv yan sanayi ve mobilya üreticileri için kurumsal/katalog odaklı; klinik ve hukuk büroları için güven veren, sade tasarım.' },
-  { icon: BarChart3, title: 'Dönüşüm Odaklı', desc: 'Randevu formu, WhatsApp butonu, Google Maps entegrasyonu — Bursa müşterisi kolayca ulaşsın.' },
+  { icon: BarChart3, title: 'Dönüşüm Odaklı', desc: 'WhatsApp butonu, randevu formu ve Google Maps entegrasyonuyla müşteri sizi kolayca bulsun.' },
   { icon: ShieldCheck, title: 'Güvenli & Bakımlı', desc: 'SSL, güvenlik güncellemeleri, yedekleme ve teknik destek. Rekabetçi Bursa pazarında müşteri kaçırmayın.' },
 ]
 

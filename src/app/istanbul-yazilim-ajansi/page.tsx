@@ -142,7 +142,7 @@ export default function IstanbulYazilimAjansiPage() {
               İstanbul İçin Yazılım Çözümleri
             </h2>
             <p className="text-zinc-400 max-w-xl mx-auto">
-              Her proje farklı — ihtiyacınıza göre teknoloji seçiyoruz, şablona sizi uydurmuyoruz.
+              İstanbul&apos;un yoğun rekabet ortamında ölçeklenebilirlik kritik — büyümeye hazır bir mimariyle başlıyoruz.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">

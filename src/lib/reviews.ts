@@ -1,6 +1,6 @@
 // Google yorumları + diğer müşteri referansları — tek kaynak.
-// Hem anasayfadaki kayan yorum şeridi hem de layout.tsx'teki
-// AggregateRating/Review şeması bu diziyi kullanır.
+// Hem anasayfadaki kayan yorum şeridi hem de page.tsx'teki
+// AggregateRating/Review şeması (sadece anasayfada, tek yerde) bu diziyi kullanır.
 // Aynı müşterinin hem Google yorumu hem site referansı olduğu durumlarda
 // (Furkan Arıkan, Mert Anıl Güler) sadece Google yorumu tutuldu.
 export interface CustomerReview {
