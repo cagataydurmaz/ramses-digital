@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/hizmetler/web-tasarim-kocaeli', priority: 0.9,  freq: 'monthly' },
     { path: '/hizmetler/eposta-otomasyon',    priority: 0.9,  freq: 'monthly' },
     { path: '/hizmetler/veri-analizi',        priority: 0.9,  freq: 'monthly' },
+    { path: '/hizmetler/sosyal-medya',        priority: 0.9,  freq: 'monthly' },
     { path: '/izmit-reklam-ajansi',        priority: 0.95, freq: 'monthly' },
     { path: '/izmit-dijital-pazarlama',    priority: 0.95, freq: 'monthly' },
     { path: '/kocaeli-dijital-pazarlama',  priority: 0.95, freq: 'monthly' },

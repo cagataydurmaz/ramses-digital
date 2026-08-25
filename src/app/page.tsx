@@ -20,6 +20,7 @@ import {
   Users,
   Clock,
   ThumbsUp,
+  Share2,
 } from 'lucide-react'
 
 // SmartIntake lazy load — hero render'ı beklemez, sonradan gelir
@@ -106,6 +107,12 @@ const services = [
     title: 'Google Ads & Performans',
     desc: 'YouTube, Remarketing ve Display reklamlarıyla ROI odaklı kampanyalar yürütün.',
     tags: ['Search Ads', 'YouTube Ads', 'Remarketing'],
+  },
+  {
+    icon: Share2,
+    title: 'Sosyal Medya İçerik Üretimi',
+    desc: 'Post, story ve video içeriklerinizi marka kimliğinize uygun tasarlıyor, paylaşım stratejinizi kuruyoruz.',
+    tags: ['Post & Story Tasarımı', 'Video İçerik', 'İçerik Takvimi'],
   },
   {
     icon: Monitor,

@@ -5,6 +5,7 @@ const services = [
   { label: 'SEO & İçerik Optimizasyonu', href: '/hizmetler/seo-kocaeli' },
   { label: 'Google Ads & Performans', href: '/hizmetler/google-ads-kocaeli' },
   { label: 'Web Tasarımı & Geliştirme', href: '/hizmetler/web-tasarim-kocaeli' },
+  { label: 'Sosyal Medya İçerik Üretimi', href: '/hizmetler/sosyal-medya' },
   { label: 'E-Posta & Otomasyon', href: '/hizmetler/eposta-otomasyon' },
   { label: 'n8n İş Akışı Otomasyonu', href: '/hizmetler/n8n-otomasyon' },
   { label: 'Veri Analizi & Danışmanlık', href: '/hizmetler/veri-analizi' },

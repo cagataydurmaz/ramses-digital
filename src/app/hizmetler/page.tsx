@@ -3,13 +3,13 @@ import Link from 'next/link'
 import CalendlyButton from '@/components/CalendlyButton'
 
 export const metadata: Metadata = {
-  title: 'Hizmetlerimiz | SEO, Google Ads, Web Tasarım & n8n Otomasyon — Ramses Dijital',
+  title: 'Hizmetlerimiz | SEO, Google Ads, Sosyal Medya & n8n Otomasyon — Ramses Dijital',
   description:
-    'SEO/GEO/AEO, Google Ads, web tasarımı, e-posta otomasyonu, n8n iş akışı ve veri analizi. Performans odaklı dijital pazarlama hizmetleri.',
+    'SEO/GEO/AEO, Google Ads, sosyal medya içerik üretimi, web tasarımı, e-posta otomasyonu, n8n iş akışı ve veri analizi. Performans odaklı dijital pazarlama hizmetleri.',
   alternates: { canonical: 'https://ramsesdigital.com/hizmetler' },
   openGraph: {
     title: 'Dijital Pazarlama Hizmetleri | Ramses Dijital',
-    description: 'SEO/GEO/AEO, Google Ads, web tasarımı, e-posta otomasyonu, n8n iş akışı ve veri analizi — tüm dijital büyüme araçları tek çatı altında.',
+    description: 'SEO/GEO/AEO, Google Ads, sosyal medya içerik üretimi, web tasarımı, e-posta otomasyonu, n8n iş akışı ve veri analizi — tüm dijital büyüme araçları tek çatı altında.',
     url: 'https://ramsesdigital.com/hizmetler',
     images: ['https://ramsesdigital.com/og-image.png'],
   },
@@ -29,6 +29,7 @@ import {
   CheckCircle2,
   Workflow,
   ArrowRight,
+  Share2,
 } from 'lucide-react'
 
 const services = [
@@ -63,6 +64,22 @@ const services = [
     ],
     color: 'violet',
     href: '/hizmetler/google-ads-kocaeli',
+  },
+  {
+    icon: Share2,
+    title: 'Sosyal Medya İçerik Üretimi',
+    tagline: 'Post, Story, Video Tasarımı & Strateji',
+    desc: 'Marka kimliğinize uygun post, story ve video içerikleri tasarlıyor, paylaşım takvimi ve strateji kuruyoruz. Odağımız ölçülebilir sonuç — hesap yönetimi ve günlük moderasyon kapsamımız dışında.',
+    features: [
+      'Feed Post Tasarımı',
+      'Story & Reels İçerikleri',
+      'Video İçerik Prodüksiyonu',
+      'İçerik Takvimi & Planlama',
+      'Marka Sesi & Görsel Kimlik',
+      'Caption & Hashtag Stratejisi',
+    ],
+    color: 'pink',
+    href: '/hizmetler/sosyal-medya',
   },
   {
     icon: Monitor,
