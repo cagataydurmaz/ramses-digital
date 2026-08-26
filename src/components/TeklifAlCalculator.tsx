@@ -17,7 +17,6 @@ import {
   Sparkles,
   Loader2,
   CheckCircle2,
-  Calendar,
   Store,
   Building,
   Landmark,
@@ -42,10 +41,10 @@ const businessSizes: { id: BusinessSize; icon: typeof Store; desc: string }[] = 
 ]
 
 const serviceOptions = [
-  { id: 'SEO', label: 'SEO & İçerik', icon: Search },
+  { id: 'SEO', label: 'SEO, AEO & GEO', icon: Search },
   { id: 'Google Ads', label: 'Google Ads', icon: TrendingUp },
   { id: 'Sosyal Medya', label: 'Sosyal Medya', icon: Share2 },
-  { id: 'Web Tasarım', label: 'Web Tasarımı', icon: Monitor },
+  { id: 'Web Tasarım', label: 'Web Sitesi Tasarımı', icon: Monitor },
   { id: 'E-posta', label: 'E-posta & Otomasyon', icon: Mail },
   { id: 'Danışmanlık', label: 'Veri & Danışmanlık', icon: BarChart3 },
 ]
@@ -623,24 +622,6 @@ export default function TeklifAlCalculator() {
           </div>
         )}
       </div>
-
-      {/* Trust signals */}
-      {step < 5 && (
-        <div className="flex items-center justify-center gap-6 mt-6">
-          {[
-            { icon: CheckCircle2, label: 'Ücretsiz & bağlayıcı değil' },
-            { icon: Calendar, label: 'Anında sonuç' },
-          ].map((item) => {
-            const Icon = item.icon
-            return (
-              <div key={item.label} className="flex items-center gap-1.5 text-zinc-600 text-xs">
-                <Icon size={12} className="text-blue-500" />
-                {item.label}
-              </div>
-            )
-          })}
-        </div>
-      )}
     </div>
   )
 }

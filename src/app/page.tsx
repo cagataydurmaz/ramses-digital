@@ -17,6 +17,8 @@ import {
   ArrowRight,
   ChevronDown,
   Trophy,
+  Mic,
+  Bot,
   Users,
   Clock,
   ThumbsUp,
@@ -518,6 +520,49 @@ export default function HomePage() {
               <ArrowRight size={14} />
             </Link>
           </FadeIn>
+        </div>
+      </section>
+
+      {/* ── SEO / AEO / GEO — EN BASİT ANLATIM ──────────────────────────────── */}
+      <section className="py-16 sm:py-24 px-6 bg-[#080D18]">
+        <div className="max-w-5xl mx-auto">
+          <FadeIn className="text-center mb-14">
+            <p className="text-blue-500 text-sm font-medium tracking-wider uppercase mb-3">Bunlar Ne Anlama Geliyor?</p>
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">SEO, AEO ve GEO Basitçe</h2>
+            <p className="text-zinc-400 max-w-xl mx-auto">İnsanlar artık markanızı üç farklı yerde arıyor — üçünde de bulunmanız için çalışıyoruz.</p>
+          </FadeIn>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <FadeIn delay={0}>
+              <div className="h-full bg-[#0D1225] border border-white/[0.06] rounded-2xl p-6">
+                <div className="w-11 h-11 bg-blue-500/10 rounded-xl flex items-center justify-center mb-4">
+                  <Search size={20} className="text-blue-400" />
+                </div>
+                <p className="text-blue-400 text-xs font-semibold uppercase tracking-wider mb-1">SEO</p>
+                <h3 className="text-white font-semibold text-lg mb-2">Google&apos;da Bulunmak</h3>
+                <p className="text-zinc-400 text-sm leading-relaxed">Biri &ldquo;Kocaeli SEO ajansı&rdquo; diye arattığında ilk sayfada sizin çıkmanız.</p>
+              </div>
+            </FadeIn>
+            <FadeIn delay={0.08}>
+              <div className="h-full bg-[#0D1225] border border-white/[0.06] rounded-2xl p-6">
+                <div className="w-11 h-11 bg-violet-500/10 rounded-xl flex items-center justify-center mb-4">
+                  <Mic size={20} className="text-violet-400" />
+                </div>
+                <p className="text-violet-400 text-xs font-semibold uppercase tracking-wider mb-1">AEO</p>
+                <h3 className="text-white font-semibold text-lg mb-2">Doğrudan Cevap Olmak</h3>
+                <p className="text-zinc-400 text-sm leading-relaxed">Sesli asistana soru sorulduğunda ya da Google&apos;da öne çıkan cevap kutusunda kaynağın siz olmanız.</p>
+              </div>
+            </FadeIn>
+            <FadeIn delay={0.16}>
+              <div className="h-full bg-[#0D1225] border border-white/[0.06] rounded-2xl p-6">
+                <div className="w-11 h-11 bg-fuchsia-500/10 rounded-xl flex items-center justify-center mb-4">
+                  <Bot size={20} className="text-fuchsia-400" />
+                </div>
+                <p className="text-fuchsia-400 text-xs font-semibold uppercase tracking-wider mb-1">GEO</p>
+                <h3 className="text-white font-semibold text-lg mb-2">Yapay Zekânın Önerisi Olmak</h3>
+                <p className="text-zinc-400 text-sm leading-relaxed">Birisi ChatGPT&apos;ye &ldquo;bana iyi bir dijital pazarlama ajansı öner&rdquo; dediğinde önerilenlerden biri sizin olmanız.</p>
+              </div>
+            </FadeIn>
+          </div>
         </div>
       </section>
 

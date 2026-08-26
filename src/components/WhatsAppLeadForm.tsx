@@ -6,10 +6,10 @@ import { Search, TrendingUp, Share2, Monitor, Mail, BarChart3, Workflow, Send } 
 const WHATSAPP_NUMBER = '905355601936'
 
 const interestOptions = [
-  { id: 'SEO', label: 'SEO & GEO', icon: Search },
+  { id: 'SEO', label: 'SEO, AEO & GEO', icon: Search },
   { id: 'Google Ads', label: 'Google Ads', icon: TrendingUp },
   { id: 'Sosyal Medya', label: 'Sosyal Medya', icon: Share2 },
-  { id: 'Web Tasarım', label: 'Web Tasarımı', icon: Monitor },
+  { id: 'Web Tasarım', label: 'Web Sitesi Tasarımı', icon: Monitor },
   { id: 'E-posta', label: 'E-posta & Otomasyon', icon: Mail },
   { id: 'n8n Otomasyon', label: 'n8n Otomasyon', icon: Workflow },
   { id: 'Veri Analizi', label: 'Veri Analizi', icon: BarChart3 },
