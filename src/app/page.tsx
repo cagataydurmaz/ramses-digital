@@ -396,7 +396,7 @@ export default function HomePage() {
       </section>
 
       {/* ── SERVICES ─────────────────────────────────────────────────────── */}
-      <section className="relative py-24 px-6 overflow-hidden">
+      <section className="relative py-16 sm:py-24 px-6 overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
           <div className="mobile-hide-blur absolute top-0 right-[10%] w-[600px] h-[400px] bg-violet-500/5 rounded-full blur-[140px]" />
         </div>
@@ -457,7 +457,7 @@ export default function HomePage() {
       <ReviewsMarquee />
 
       {/* ── AI TOOLS TEASER ──────────────────────────────────────────────── */}
-      <section className="py-24 px-6">
+      <section className="py-16 sm:py-24 px-6">
         <div className="max-w-5xl mx-auto">
           <FadeIn>
             <div className="grid md:grid-cols-2 gap-5">
@@ -497,14 +497,14 @@ export default function HomePage() {
       </section>
 
       {/* ── WHATSAPP LEAD FORM ──────────────────────────────────────────────── */}
-      <section className="py-24 px-6">
+      <section className="py-16 sm:py-24 px-6">
         <div className="max-w-4xl mx-auto">
           <WhatsAppLeadForm />
         </div>
       </section>
 
       {/* ── FINAL CTA ────────────────────────────────────────────────────── */}
-      <section className="py-24 px-6 bg-[#080D18]">
+      <section className="py-16 sm:py-24 px-6 bg-[#080D18]">
         <div className="max-w-4xl mx-auto text-center">
           <FadeIn>
             <div className="relative bg-gradient-to-b from-blue-500/10 to-transparent border border-blue-500/20 rounded-3xl p-6 sm:p-10 md:p-16 overflow-hidden text-center">
