@@ -348,14 +348,20 @@ export default function HomePage() {
             className="animate-fadein text-base sm:text-xl md:text-2xl text-zinc-400 max-w-2xl mx-auto mb-8 sm:mb-10 font-light"
             style={{ animationDelay: '0.1s' }}
           >
-            Gerçek sonuçlar elde edin
+            5.0/5 Google puanı, gerçek müşteri projeleri.
           </p>
 
           <div
             className="animate-fadein flex flex-col sm:flex-row items-center justify-center gap-4"
             style={{ animationDelay: '0.15s' }}
           >
-            <CalendlyButton label="Ücretsiz Danışmanlık Al" variant="primary" />
+            <a
+              href="#teklif-hesapla"
+              className="group inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 rounded-full font-medium transition-all hover:shadow-xl hover:shadow-blue-500/25 hover:-translate-y-0.5"
+            >
+              30 Saniyede Fiyat Teklifi Al
+              <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+            </a>
             <Link
               href="/portfolyo"
               className="flex items-center gap-2 text-zinc-400 hover:text-white border border-white/10 hover:border-white/20 px-6 sm:px-8 py-3 sm:py-4 rounded-full text-sm sm:text-base transition-all hover:-translate-y-0.5"
@@ -393,7 +399,7 @@ export default function HomePage() {
       </section>
 
       {/* ── AI TEKLİF HESAPLAYICI (inline, hero'nun hemen altında) ─────────── */}
-      <section className="py-16 sm:py-24 px-6 bg-[#080D18]">
+      <section id="teklif-hesapla" className="py-16 sm:py-24 px-6 bg-[#080D18] scroll-mt-24">
         <div className="max-w-3xl mx-auto text-center mb-10">
           <p className="text-blue-500 text-sm font-medium tracking-wider uppercase mb-3">AI Destekli Teklif Hesaplayıcı</p>
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Anında Ücretsiz Teklif Alın</h2>
