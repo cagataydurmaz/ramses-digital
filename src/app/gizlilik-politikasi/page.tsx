@@ -19,11 +19,11 @@ export default function GizlilikPolitikasiPage() {
             <h2 className="text-white font-semibold text-lg mb-3">1. Veri Sorumlusu</h2>
             <p>
               6698 sayılı Kişisel Verilerin Korunması Kanunu (&quot;KVKK&quot;) kapsamında veri sorumlusu sıfatıyla
-              Ramses Digital (&quot;Şirket&quot;), kişisel verilerinizin işlenmesine ilişkin bu Gizlilik Politikasını
+              Ramses Digital, kişisel verilerinizin işlenmesine ilişkin bu Gizlilik Politikasını
               yayımlamaktadır.
             </p>
             <div className="mt-3 bg-white/[0.03] border border-white/[0.06] rounded-xl p-4">
-              <p><strong className="text-white">Ticaret Unvanı:</strong> Ramses Dijital Yazılım ve Dijital Pazarlama Ajansı</p>
+              <p><strong className="text-white">İşletme Adı:</strong> Ramses Dijital Yazılım ve Dijital Pazarlama Ajansı</p>
               <p className="mt-1"><strong className="text-white">Adres:</strong> Körfez Mah. Sanayi Cd. Berk Sk. Dolphin AVM Kat:2, 41050 İzmit / Kocaeli</p>
               <p className="mt-1"><strong className="text-white">E-posta:</strong> ramsesdigitalagency@gmail.com</p>
               <p className="mt-1"><strong className="text-white">Telefon:</strong> +90 (535) 560 19 36</p>
