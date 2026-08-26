@@ -25,30 +25,29 @@ import {
   Share2,
 } from 'lucide-react'
 
-// SmartIntake lazy load — hero render'ı beklemez, sonradan gelir
+// Bileşen kodu ayrı chunk olarak lazy-load edilir (bundle boyutu için) ama
+// ssr:false KULLANMIYORUZ — bu içerikler (hizmet açıklamaları, form etiketleri,
+// adım başlıkları) Google/AI botları için de HTML'de görünür kalsın istiyoruz.
+// ssr:false verirsek JS çalıştırmayan botlar (çoğu AI crawler dahil) bu metni hiç göremez.
 const SmartIntake = dynamic(() => import('@/components/SmartIntake'), {
-  ssr: false,
   loading: () => (
     <div className="w-full max-w-4xl mx-auto h-[150px] rounded-2xl bg-white/[0.03] border border-white/[0.06] animate-pulse" />
   ),
 })
 
 const TeklifAlCalculator = dynamic(() => import('@/components/TeklifAlCalculator'), {
-  ssr: false,
   loading: () => (
     <div className="max-w-3xl mx-auto h-[420px] rounded-2xl bg-white/[0.03] border border-white/[0.06] animate-pulse" />
   ),
 })
 
 const WhatsAppLeadForm = dynamic(() => import('@/components/WhatsAppLeadForm'), {
-  ssr: false,
   loading: () => (
     <div className="max-w-4xl mx-auto h-[520px] rounded-3xl bg-white/[0.03] border border-white/[0.06] animate-pulse" />
   ),
 })
 
 const QuickSeoWidget = dynamic(() => import('@/components/QuickSeoWidget'), {
-  ssr: false,
   loading: () => (
     <div className="max-w-2xl mx-auto h-[200px] rounded-3xl bg-white/[0.03] border border-white/[0.06] animate-pulse" />
   ),
