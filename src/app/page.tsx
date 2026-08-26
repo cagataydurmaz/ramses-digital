@@ -569,7 +569,7 @@ export default function HomePage() {
       <ReviewsMarquee />
 
       {/* ── ÜCRETSİZ SEO ANALİZİ (inline) ──────────────────────────────────── */}
-      <section className="py-16 sm:py-24 px-6">
+      <section className="py-16 sm:py-24 px-6 bg-[#080D18]">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-10">
             <p className="text-violet-500 text-sm font-medium tracking-wider uppercase mb-3">Ücretsiz Araç</p>
