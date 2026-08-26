@@ -45,6 +45,13 @@ const WhatsAppLeadForm = dynamic(() => import('@/components/WhatsAppLeadForm'), 
   ),
 })
 
+const QuickSeoWidget = dynamic(() => import('@/components/QuickSeoWidget'), {
+  ssr: false,
+  loading: () => (
+    <div className="max-w-2xl mx-auto h-[200px] rounded-3xl bg-white/[0.03] border border-white/[0.06] animate-pulse" />
+  ),
+})
+
 // ─── Fade-in wrapper — CSS only, no Framer Motion ─────────────────────────
 function FadeIn({
   children,
@@ -458,40 +465,32 @@ export default function HomePage() {
 
       {/* ── AI TOOLS TEASER ──────────────────────────────────────────────── */}
       <section className="py-16 sm:py-24 px-6">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-2xl mx-auto">
           <FadeIn>
-            <div className="grid md:grid-cols-2 gap-5">
-              <Link
-                href="/teklif-al"
-                className="group bg-[#0D1225] border border-white/[0.06] hover:border-blue-500/30 rounded-2xl p-7 transition-all duration-300 hover:-translate-y-1"
-              >
-                <div className="w-11 h-11 bg-blue-500/10 rounded-xl flex items-center justify-center mb-4">
-                  <TrendingUp size={20} className="text-blue-400" />
-                </div>
-                <h3 className="text-white font-bold text-xl mb-2">AI Teklif Hesaplayıcı</h3>
-                <p className="text-zinc-400 text-sm leading-relaxed mb-4">
-                  İşletmenize özel dijital pazarlama paketini saniyeler içinde oluşturun. Bütçenize ve hedeflerinize göre AI destekli öneri alın.
-                </p>
-                <span className="inline-flex items-center gap-1.5 text-blue-400 text-sm font-medium group-hover:gap-2.5 transition-all">
-                  Teklif Al <ArrowRight size={14} />
-                </span>
-              </Link>
-              <Link
-                href="/seo-analiz"
-                className="group bg-[#0D1225] border border-white/[0.06] hover:border-violet-500/30 rounded-2xl p-7 transition-all duration-300 hover:-translate-y-1"
-              >
-                <div className="w-11 h-11 bg-violet-500/10 rounded-xl flex items-center justify-center mb-4">
-                  <Search size={20} className="text-violet-400" />
-                </div>
-                <h3 className="text-white font-bold text-xl mb-2">Ücretsiz SEO Analizi</h3>
-                <p className="text-zinc-400 text-sm leading-relaxed mb-4">
-                  Web sitenizin URL'sini girin, AI destekli kapsamlı SEO raporunuzu anında alın. Hız, mobil uyum, teknik SEO puanlarınızı görün.
-                </p>
-                <span className="inline-flex items-center gap-1.5 text-violet-400 text-sm font-medium group-hover:gap-2.5 transition-all">
-                  Siteyi Analiz Et <ArrowRight size={14} />
-                </span>
-              </Link>
-            </div>
+            <Link
+              href="/teklif-al"
+              className="group block bg-[#0D1225] border border-white/[0.06] hover:border-blue-500/30 rounded-2xl p-7 transition-all duration-300 hover:-translate-y-1"
+            >
+              <div className="w-11 h-11 bg-blue-500/10 rounded-xl flex items-center justify-center mb-4">
+                <TrendingUp size={20} className="text-blue-400" />
+              </div>
+              <h3 className="text-white font-bold text-xl mb-2">AI Teklif Hesaplayıcı</h3>
+              <p className="text-zinc-400 text-sm leading-relaxed mb-4">
+                İşletmenize özel dijital pazarlama paketini saniyeler içinde oluşturun. Bütçenize ve hedeflerinize göre AI destekli öneri alın.
+              </p>
+              <span className="inline-flex items-center gap-1.5 text-blue-400 text-sm font-medium group-hover:gap-2.5 transition-all">
+                Teklif Al <ArrowRight size={14} />
+              </span>
+            </Link>
+          </FadeIn>
+        </div>
+      </section>
+
+      {/* ── ÜCRETSİZ SEO ANALİZİ (inline) ──────────────────────────────────── */}
+      <section className="py-16 sm:py-24 px-6 bg-[#080D18]">
+        <div className="max-w-2xl mx-auto">
+          <FadeIn>
+            <QuickSeoWidget />
           </FadeIn>
         </div>
       </section>

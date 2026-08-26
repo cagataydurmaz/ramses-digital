@@ -126,7 +126,7 @@ export default function QuickPriceWidget() {
             )}
           </div>
           {est.hasAdSpendShare && (
-            <p className="text-zinc-500 text-xs mb-3">+ reklam bütçenizin %15&apos;i (yönetim payı)</p>
+            <p className="text-zinc-500 text-xs mb-3">+ reklam bütçenizin %15&apos;i (bu sadece bizim yönetim ücretimiz — reklam bütçesi bize hiç uğramaz, doğrudan sizin Google hesabınızdan gider)</p>
           )}
           <a
             href={whatsappHref}
