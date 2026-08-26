@@ -538,7 +538,7 @@ export default function HomePage() {
                 </div>
                 <p className="text-blue-400 text-xs font-semibold uppercase tracking-wider mb-1">SEO</p>
                 <h3 className="text-white font-semibold text-lg mb-2">Google&apos;da Bulunmak</h3>
-                <p className="text-zinc-400 text-sm leading-relaxed">Biri &ldquo;Kocaeli SEO ajansı&rdquo; diye arattığında ilk sayfada sizin çıkmanız.</p>
+                <p className="text-zinc-400 text-sm leading-relaxed">Potansiyel müşteriniz Google&apos;da arama yaptığında markanızın ilk sayfada, üst sıralarda görünmesi.</p>
               </div>
             </FadeIn>
             <FadeIn delay={0.08}>
@@ -548,7 +548,7 @@ export default function HomePage() {
                 </div>
                 <p className="text-violet-400 text-xs font-semibold uppercase tracking-wider mb-1">AEO</p>
                 <h3 className="text-white font-semibold text-lg mb-2">Doğrudan Cevap Olmak</h3>
-                <p className="text-zinc-400 text-sm leading-relaxed">Sesli asistana soru sorulduğunda ya da Google&apos;da öne çıkan cevap kutusunda kaynağın siz olmanız.</p>
+                <p className="text-zinc-400 text-sm leading-relaxed">Sesli asistanlara yöneltilen sorularda veya Google&apos;ın öne çıkan cevap kutusunda markanızın referans gösterilmesi.</p>
               </div>
             </FadeIn>
             <FadeIn delay={0.16}>
@@ -558,7 +558,7 @@ export default function HomePage() {
                 </div>
                 <p className="text-fuchsia-400 text-xs font-semibold uppercase tracking-wider mb-1">GEO</p>
                 <h3 className="text-white font-semibold text-lg mb-2">Yapay Zekânın Önerisi Olmak</h3>
-                <p className="text-zinc-400 text-sm leading-relaxed">Birisi ChatGPT&apos;ye &ldquo;bana iyi bir dijital pazarlama ajansı öner&rdquo; dediğinde önerilenlerden biri sizin olmanız.</p>
+                <p className="text-zinc-400 text-sm leading-relaxed">Kullanıcılar ChatGPT veya Gemini&apos;den öneri istediğinde yapay zekânın önerdiği markalar arasında yer almanız.</p>
               </div>
             </FadeIn>
           </div>
