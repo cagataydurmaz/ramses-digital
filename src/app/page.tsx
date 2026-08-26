@@ -31,10 +31,10 @@ const SmartIntake = dynamic(() => import('@/components/SmartIntake'), {
   ),
 })
 
-const QuickPriceWidget = dynamic(() => import('@/components/QuickPriceWidget'), {
+const TeklifAlCalculator = dynamic(() => import('@/components/TeklifAlCalculator'), {
   ssr: false,
   loading: () => (
-    <div className="w-full max-w-2xl mx-auto h-[140px] rounded-2xl bg-white/[0.03] border border-white/[0.06] animate-pulse" />
+    <div className="max-w-3xl mx-auto h-[420px] rounded-2xl bg-white/[0.03] border border-white/[0.06] animate-pulse" />
   ),
 })
 
@@ -358,14 +358,6 @@ export default function HomePage() {
             </div>
             <SmartIntake />
           </div>
-
-          {/* ── Hızlı Fiyat Al ── */}
-          <div
-            className="animate-fadein mt-6 sm:mt-8 w-full"
-            style={{ animationDelay: '0.25s' }}
-          >
-            <QuickPriceWidget />
-          </div>
         </div>
 
         {/* Scroll indicator — masaüstünde göster */}
@@ -373,6 +365,16 @@ export default function HomePage() {
           <span className="text-zinc-600 text-xs tracking-widest uppercase">Keşfet</span>
           <ChevronDown size={18} className="text-zinc-600 animate-bounce" />
         </div>
+      </section>
+
+      {/* ── AI TEKLİF HESAPLAYICI (inline, hero'nun hemen altında) ─────────── */}
+      <section className="py-16 sm:py-24 px-6 bg-[#080D18]">
+        <div className="max-w-3xl mx-auto text-center mb-10">
+          <p className="text-blue-500 text-sm font-medium tracking-wider uppercase mb-3">AI Destekli Teklif Hesaplayıcı</p>
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Anında Ücretsiz Teklif Alın</h2>
+          <p className="text-zinc-400 max-w-xl mx-auto">4 adımda işletmenize özel dijital pazarlama paketi ve tahmini fiyat aralığı görün.</p>
+        </div>
+        <TeklifAlCalculator />
       </section>
 
       {/* ── STATS ────────────────────────────────────────────────────────── */}
@@ -463,31 +465,8 @@ export default function HomePage() {
       {/* ── MÜŞTERİ YORUMLARI ────────────────────────────────────────────── */}
       <ReviewsMarquee />
 
-      {/* ── AI TOOLS TEASER ──────────────────────────────────────────────── */}
-      <section className="py-16 sm:py-24 px-6">
-        <div className="max-w-2xl mx-auto">
-          <FadeIn>
-            <Link
-              href="/teklif-al"
-              className="group block bg-[#0D1225] border border-white/[0.06] hover:border-blue-500/30 rounded-2xl p-7 transition-all duration-300 hover:-translate-y-1"
-            >
-              <div className="w-11 h-11 bg-blue-500/10 rounded-xl flex items-center justify-center mb-4">
-                <TrendingUp size={20} className="text-blue-400" />
-              </div>
-              <h3 className="text-white font-bold text-xl mb-2">AI Teklif Hesaplayıcı</h3>
-              <p className="text-zinc-400 text-sm leading-relaxed mb-4">
-                İşletmenize özel dijital pazarlama paketini saniyeler içinde oluşturun. Bütçenize ve hedeflerinize göre AI destekli öneri alın.
-              </p>
-              <span className="inline-flex items-center gap-1.5 text-blue-400 text-sm font-medium group-hover:gap-2.5 transition-all">
-                Teklif Al <ArrowRight size={14} />
-              </span>
-            </Link>
-          </FadeIn>
-        </div>
-      </section>
-
       {/* ── ÜCRETSİZ SEO ANALİZİ (inline) ──────────────────────────────────── */}
-      <section className="py-16 sm:py-24 px-6 bg-[#080D18]">
+      <section className="py-16 sm:py-24 px-6">
         <div className="max-w-2xl mx-auto">
           <FadeIn>
             <QuickSeoWidget />
