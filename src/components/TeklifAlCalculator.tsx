@@ -21,9 +21,12 @@ import {
   Store,
   Building,
   Landmark,
+  MessageCircle,
 } from 'lucide-react'
 import CalendlyButton from '@/components/CalendlyButton'
 import { estimateQuote, businessSizeLabels, type BusinessSize } from '@/lib/pricing'
+
+const WHATSAPP_NUMBER = '905355601936'
 
 const businessTypes = [
   { id: 'eticaret', label: 'E-Ticaret', icon: ShoppingCart, desc: 'Online mağaza veya marketplace' },
@@ -46,6 +49,14 @@ const serviceOptions = [
   { id: 'E-posta', label: 'E-posta & Otomasyon', icon: Mail },
   { id: 'Danışmanlık', label: 'Veri & Danışmanlık', icon: BarChart3 },
 ]
+
+// Fiyatın karşılığında ne aldığını göstermek için — "sadece rakam" hissini kırmak amaçlı
+const serviceIncludes: Record<string, string[]> = {
+  'SEO': ['Teknik SEO denetimi', 'Anahtar kelime stratejisi', 'Aylık içerik üretimi', 'Backlink çalışması', 'Aylık rapor'],
+  'Google Ads': ['Kampanya kurulumu', 'Haftalık optimizasyon', 'Negatif kelime & bid yönetimi', 'Aylık performans raporu'],
+  'Sosyal Medya': ['Post & story tasarımı', 'İçerik takvimi', 'Caption & hashtag stratejisi'],
+  'Web Tasarım': ['UI/UX tasarım', 'Geliştirme & yayına alma', 'Mobil uyumluluk & hız optimizasyonu'],
+}
 
 function applyInline(text: string): string {
   return text
@@ -232,6 +243,29 @@ export default function TeklifAlCalculator() {
     (step === 2 && businessSize) ||
     (step === 3 && services.length > 0) ||
     step === 4
+
+  const whatsappHref = (() => {
+    const businessTypeLabel = businessTypes.find((bt) => bt.id === businessType)?.label ?? businessType
+    const sizeLabel = businessSize ? businessSizeLabels[businessSize] : ''
+    let priceText = ''
+    if (businessSize) {
+      const est = estimateQuote(services, businessSize)
+      if (est.monthlyMax > 0) priceText += ` (~${est.monthlyMin.toLocaleString('tr-TR')}-${est.monthlyMax.toLocaleString('tr-TR')}₺/ay)`
+      if (est.oneTimeMax > 0) priceText += ` (~${est.oneTimeMin.toLocaleString('tr-TR')}-${est.oneTimeMax.toLocaleString('tr-TR')}₺ tek seferlik)`
+    }
+    const lines = [
+      `Merhaba! AI teklif hesaplayıcıdan geliyorum:`,
+      ``,
+      `İşletme Tipi: ${businessTypeLabel}`,
+      sizeLabel ? `Büyüklük: ${sizeLabel}` : null,
+      `İlgilendiğim hizmetler: ${services.join(', ')}`,
+      websiteUrl ? `Web sitem: ${websiteUrl}` : null,
+      priceText ? `Tahmini aralık: ${priceText.trim()}` : null,
+      ``,
+      `Detaylı görüşmek istiyorum.`,
+    ].filter(Boolean)
+    return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(lines.join('\n'))}`
+  })()
 
   return (
     <div className="max-w-3xl mx-auto">
@@ -471,7 +505,12 @@ export default function TeklifAlCalculator() {
                                 <span className="text-sm font-normal text-zinc-500 ml-1">/ay</span>
                               </p>
                               {est.hasAdSpendShare && (
-                                <p className="text-zinc-500 text-xs mt-1">+ reklam bütçenizin %15&apos;i (bu sadece bizim yönetim ücretimiz — reklam bütçesi bize hiç uğramaz, doğrudan sizin Google hesabınızdan gider)</p>
+                                <>
+                                  <p className="text-zinc-500 text-xs mt-1">+ reklam bütçenizin %15&apos;i (yönetim ücretimiz)</p>
+                                  <p className="text-zinc-600 text-[11px] mt-1.5 leading-relaxed">
+                                    Örnek: Google&apos;a aylık 20.000₺ reklam bütçesi ayırırsanız, bizim payımız +3.000₺ olur (20.000 × %15). Bu 20.000₺ bize hiç uğramaz — doğrudan sizin Google hesabınızdan gider, sadece 3.000₺&apos;lik kısım bizim yönetim ücretimizdir.
+                                  </p>
+                                </>
                               )}
                             </div>
                           )}
@@ -489,7 +528,30 @@ export default function TeklifAlCalculator() {
                             {est.unpriced.join(', ')} kapsamı projeye göre değiştiği için görüşmede netleştirilir.
                           </p>
                         )}
-                        <p className="text-zinc-500 text-xs mt-3">
+
+                        {/* Bu fiyata dahil olanlar — karşılığı görünür olsun */}
+                        {services.some((s) => serviceIncludes[s]) && (
+                          <div className="mt-5 pt-5 border-t border-white/[0.08]">
+                            <p className="text-zinc-400 text-xs font-medium uppercase tracking-wider mb-3">Bu Ücrete Dahil Olanlar</p>
+                            <div className="grid sm:grid-cols-2 gap-x-6 gap-y-3">
+                              {services.filter((s) => serviceIncludes[s]).map((s) => (
+                                <div key={s}>
+                                  <p className="text-white text-xs font-semibold mb-1.5">{s}</p>
+                                  <ul className="space-y-1">
+                                    {serviceIncludes[s].map((item) => (
+                                      <li key={item} className="flex items-start gap-1.5 text-zinc-500 text-[11px]">
+                                        <CheckCircle2 size={11} className="text-blue-400 mt-0.5 shrink-0" />
+                                        {item}
+                                      </li>
+                                    ))}
+                                  </ul>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                        )}
+
+                        <p className="text-zinc-500 text-xs mt-4">
                           Bunlar güncel piyasa ortalamasıdır, kesin fiyat değildir — size özel net teklif için görüşelim.
                         </p>
                       </div>
@@ -499,11 +561,20 @@ export default function TeklifAlCalculator() {
                   {isDone && (
                     <div className="mt-8 pt-6 border-t border-white/[0.06]">
                       <p className="text-zinc-400 text-sm mb-4">
-                        Teklifinizi beğendiniz mi? Hemen randevu alın, detayları konuşalım.
+                        Teklifinizi beğendiniz mi? Bilgilerinizi WhatsApp&apos;tan bize gönderin, ya da randevu alıp detayları konuşalım.
                       </p>
                       <div className="flex flex-col sm:flex-row gap-3">
+                        <a
+                          href={whatsappHref}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={() => window.fbq?.('track', 'Lead', { content_name: 'AI Teklif Al — WhatsApp' })}
+                          className="inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20bd5a] text-white px-6 py-3.5 rounded-full text-sm font-semibold transition-colors"
+                        >
+                          <MessageCircle size={16} /> WhatsApp&apos;tan Gönder
+                        </a>
                         <CalendlyButton
-                          label="Şimdi Randevu Al"
+                          label="Randevu Al"
                           variant="primary"
                           className="justify-center"
                         />

@@ -41,7 +41,7 @@ const process = [
 
 const faqs = [
   { q: 'Google Ads bütçem ne kadar olmalı?', a: 'İşletme büyüklüğüne ve sektöre göre değişir — KOBİ\'ler ile e-ticaret/geniş kitleli işletmeler farklı seviyelerde bütçe gerektirir. İlk ay test ve kalibre, sonraki aylar ölçeklendirme aşamasıdır. Ücretsiz danışmanlıkta size özel bütçe önerisi sunuyoruz.' },
-  { q: 'Yönetim ücretiniz nedir?', a: 'Reklam bütçenize göre değişen aylık yönetim ücreti veya sabit aylık paket — iki seçenek de mevcuttur. Setup ücreti ilk ay tek seferlik alınır. Ücretsiz danışmanlıkta net fiyat sunuyoruz.' },
+  { q: 'Yönetim ücretiniz nedir?', a: 'İki ayrı ödeme var: reklam bütçeniz (doğrudan Google\'a gider, bize hiç uğramaz) ve bizim yönetim ücretimiz (sabit aylık ücret + reklam bütçenizin %15\'i). Örnek: aylık 20.000₺ reklam bütçeniz varsa, bizim payımız sabit ücrete ek +3.000₺ olur (20.000 × %15). İlk ay ayrıca tek seferlik kurulum ücreti alınır.' },
   { q: 'Ne kadar sürede sonuç alırım?', a: 'Search kampanyalarında ilk dönüşümler 1-7 gün içinde gelir. Optimal ROAS\'a ulaşmak için 30-60 günlük bir öğrenme süreci gerekir. Bu sürede algoritma anahtar kelime ve kitleyi öğrenir; üçüncü aydan itibaren ölçeklendirme başlar.' },
   { q: 'ROAS ne demek ve hedef ne olmalı?', a: 'ROAS = Gelir / Reklam Harcaması. Yani 4x ROAS, harcadığınız reklam bütçesinin 4 katı gelir getirdiği anlamına gelir. Sektöre göre değişmekle birlikte: e-ticaret 3-5x, B2B SaaS 5-10x, profesyonel hizmetler 6-15x sağlıklı hedeflerdir.' },
   { q: 'Reklam metnini siz mi yazıyorsunuz?', a: 'Evet, tüm reklam metni ve görsel tasarımları biz hazırlıyoruz. Sektörünüze özel 4-6 ad varyasyonu yazıp A/B testle en iyi performans göstereni belirliyoruz. Görsel ihtiyacında profesyonel grafiker desteği sağlıyoruz.' },
