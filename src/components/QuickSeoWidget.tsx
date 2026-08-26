@@ -64,11 +64,6 @@ export default function QuickSeoWidget() {
   return (
     <div className="relative bg-gradient-to-b from-white/[0.04] to-white/[0.02] border border-white/[0.08] rounded-3xl p-6 sm:p-7 overflow-hidden">
       <div className="absolute -top-16 right-0 w-[300px] h-[160px] bg-violet-500/10 rounded-full blur-[90px] pointer-events-none" />
-      <div className="relative flex items-center justify-center gap-2 mb-5">
-        <span className="w-1.5 h-1.5 bg-violet-400 rounded-full animate-pulse" />
-        <p className="text-violet-400 text-xs font-medium uppercase tracking-wider">Ücretsiz SEO Analizi — Anında</p>
-      </div>
-
       <div className="relative flex flex-col sm:flex-row gap-3 max-w-xl mx-auto mb-2">
         <input
           type="url"

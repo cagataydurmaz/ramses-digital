@@ -275,7 +275,7 @@ export default function TeklifAlCalculator() {
           {/* Step 1: Business Type */}
           {step === 1 && (
             <div>
-              <h2 className="text-white font-bold text-xl mb-2">İşletme Tipinizi Seçin</h2>
+              <h3 className="text-white font-bold text-xl mb-2">İşletme Tipinizi Seçin</h3>
               <p className="text-zinc-400 text-sm mb-6">Size en uygun paketi hazırlayabilmemiz için işletme tipinizi seçin.</p>
               <div className="grid grid-cols-2 gap-3">
                 {businessTypes.map((bt) => {
@@ -309,7 +309,7 @@ export default function TeklifAlCalculator() {
           {/* Step 2: Business Size */}
           {step === 2 && (
             <div>
-              <h2 className="text-white font-bold text-xl mb-2">İşletmenizin Büyüklüğü</h2>
+              <h3 className="text-white font-bold text-xl mb-2">İşletmenizin Büyüklüğü</h3>
               <p className="text-zinc-400 text-sm mb-6">Fiyat aralığını doğru hesaplayabilmemiz için gerekli.</p>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                 {businessSizes.map((bs) => {
@@ -343,7 +343,7 @@ export default function TeklifAlCalculator() {
           {/* Step 3: Services */}
           {step === 3 && (
             <div>
-              <h2 className="text-white font-bold text-xl mb-2">İhtiyacınız Olan Hizmetler</h2>
+              <h3 className="text-white font-bold text-xl mb-2">İhtiyacınız Olan Hizmetler</h3>
               <p className="text-zinc-400 text-sm mb-6">Birden fazla seçebilirsiniz.</p>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
                 {serviceOptions.map((svc) => {
@@ -379,7 +379,7 @@ export default function TeklifAlCalculator() {
           {/* Step 4: URL */}
           {step === 4 && (
             <div>
-              <h2 className="text-white font-bold text-xl mb-2">Web Siteniz</h2>
+              <h3 className="text-white font-bold text-xl mb-2">Web Siteniz</h3>
               <p className="text-zinc-400 text-sm mb-6">
                 Opsiyoneldir. Girmeniz durumunda daha kişiselleştirilmiş bir teklif alırsınız.
               </p>

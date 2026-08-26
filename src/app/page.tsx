@@ -468,6 +468,11 @@ export default function HomePage() {
       {/* ── ÜCRETSİZ SEO ANALİZİ (inline) ──────────────────────────────────── */}
       <section className="py-16 sm:py-24 px-6">
         <div className="max-w-2xl mx-auto">
+          <div className="text-center mb-10">
+            <p className="text-violet-500 text-sm font-medium tracking-wider uppercase mb-3">Ücretsiz Araç</p>
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Sitenizin SEO Puanını Öğrenin</h2>
+            <p className="text-zinc-400 max-w-xl mx-auto">URL&apos;nizi girin, yapay zeka anında hız, mobil uyum, içerik ve teknik SEO puanlarınızı çıkarsın.</p>
+          </div>
           <FadeIn>
             <QuickSeoWidget />
           </FadeIn>
