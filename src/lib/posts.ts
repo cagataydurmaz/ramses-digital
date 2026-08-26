@@ -3271,4 +3271,82 @@ export const posts: Post[] = [
       <p>Mali müşavirlik ve muhasebe hizmetlerinde dijital pazarlama, güven inşa etmek üzerine kuruludur. Yerel SEO, güncel mevzuat içeriği ve LinkedIn'de tutarlı bir B2B varlık, bu güveni dijitalde de kurmanın en sağlam yoludur. Ramses Digital olarak B2B ve profesyonel hizmet sağlayıcılar için bu stratejiyle çalışıyoruz.</p>
     `,
   },
+  {
+    slug: 'ieyp-vaka-analizi-egitim-platformu-geo-aeo',
+    coverImage: 'https://image.thum.io/get/width/1200/https://eypeducation.com/tr/',
+    title: "Vaka Analizi: IEYP International'ı Hem Google'da Hem ChatGPT'de Görünür Kılmak",
+    excerpt:
+      'Yapay zeka destekli bir eğitim platformu için klasik SEO yeterli değildi. IEYP International projesinde web tasarımı, SEO ve GEO/AEO\'yu birlikte nasıl kurduğumuzu gerçek adımlarla anlatıyoruz.',
+    category: 'Vaka Analizi',
+    categoryColor: 'fuchsia',
+    emoji: '🎓',
+    coverGradient: 'from-fuchsia-500/10 to-fuchsia-900/5',
+    readTime: 5,
+    date: '2026-08-27',
+    author: 'Ramses Digital Ekibi',
+    authorRole: 'GEO & AEO Uzmanları',
+    tags: ['Vaka Analizi', 'GEO', 'AEO', 'Eğitim Teknolojisi', 'Web Tasarım'],
+    content: `
+      <h2>Müşteri: IEYP International</h2>
+      <p><a href="https://eypeducation.com/tr/" target="_blank" rel="noopener noreferrer">IEYP International</a>, 2-6 yaş erken çocukluk eğitimi için yapay zeka destekli, çok dilli bir müfredat platformu. Hedef kitlesi okullar, öğretmenler ve aileler — yani hem kurumsal karar vericiler hem de bireysel araştırmacılar. Projeyi <a href="/portfolyo/ieyp-international">portföyümüzde</a> de inceleyebilirsiniz.</p>
+
+      <div class="stat-grid">
+        <div class="stat-card">
+          <span class="stat-number">Web Tasarımı</span>
+          <span class="stat-label">+ SEO + GEO/AEO — üç katmanlı tek proje</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number emerald">Çok Dilli</span>
+          <span class="stat-label">Ürün ve müfredat yapısını yansıtan site mimarisi</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number violet">AI-Native</span>
+          <span class="stat-label">Platformun kendisi yapay zeka destekli — görünürlük stratejisi de öyle olmalıydı</span>
+        </div>
+      </div>
+
+      <h2>Zorluk: İki Farklı Arama Davranışını Aynı Anda Kazanmak</h2>
+      <p>IEYP'nin hedef kitlesi araştırmasını iki farklı şekilde yapıyor. Bir kısmı hâlâ klasik Google araması yapıyor ("erken çocukluk eğitimi müfredatı", "AI destekli okul öncesi program"). Ama giderek büyüyen bir kısım artık doğrudan ChatGPT, Gemini veya Perplexity'ye soruyor: "2-6 yaş için yapay zeka destekli eğitim platformu önerir misin?" Bu iki kanal farklı kurallarla çalışıyor — biri klasik SEO sinyallerine (backlink, teknik performans, anahtar kelime), diğeri AI motorlarının güvenilir, yapılandırılmış ve net kaynak olarak seçtiği içeriğe bakıyor. Sadece birine odaklanmak, diğer kanalı tamamen boş bırakmak anlamına gelirdi.</p>
+
+      <h2>Yaklaşımımız: Üç Katmanı Birlikte Kurmak</h2>
+      <p>Projeye ayrı ayrı "önce web sitesi, sonra SEO, sonra belki GEO" şeklinde değil, üçünü baştan tek bir strateji olarak kurgulayarak başladık.</p>
+
+      <h3>1. Web Tasarımı</h3>
+      <p>Platformun çok dilli müfredat yapısını doğru yansıtan, hem okul/kurum ziyaretçisine hem veli/öğretmen ziyaretçisine net yol gösteren bir site mimarisi kurduk. Teknik temel sağlam olmadan ne SEO ne GEO çalışması kalıcı sonuç verir — bu yüzden bu adımı atlamadık.</p>
+
+      <h3>2. SEO</h3>
+      <p>Eğitim teknolojisi alanına özel anahtar kelime stratejisi ve teknik optimizasyon uyguladık — sayfa hızı, yapılandırılmış veri (schema markup), başlık hiyerarşisi ve içerik netliği gibi Google'ın klasik sıralama sinyallerinin hepsi.</p>
+
+      <h3>3. GEO & AEO</h3>
+      <p>ChatGPT, Gemini ve Perplexity gibi AI motorlarının bir soruya yanıt üretirken hangi kaynağa güvendiğini göz önünde bulundurarak, platformun net, yapılandırılmış ve doğrudan alıntılanabilir içerikle bu motorlara "kaynak" olarak görünmesini hedefleyen bir içerik ve veri stratejisi kurduk. Bu, GEO/AEO'nun ne olduğunu <a href="/blog/geo-nedir-chatgpt-yapay-zeka-aramalarda-gorunurluk">GEO Nedir? yazımızda</a> daha detaylı anlattığımız yaklaşımın birebir uygulaması.</p>
+
+      <div class="callout">
+        <span class="callout-title">Neden Ayırmadık</span>
+        <p>SEO ve GEO/AEO'yu iki ayrı proje gibi ele almadık, çünkü teknik temelleri büyük ölçüde örtüşüyor: temiz HTML yapısı, net başlıklar ve yapılandırılmış veri hem Google'ın hem AI motorlarının işine yarıyor. Ayrı kurgulamak hem bütçe hem zaman israfı olurdu.</p>
+      </div>
+
+      <h2>Sonuç: Çift Kanallı Görünürlük İçin Konumlandırma</h2>
+      <p>Platform, hem geleneksel arama motorlarında hem de yeni nesil AI arama kanallarında görünürlük kazanacak şekilde konumlandırıldı. Proje nispeten yeni olduğu için burada abartılı, kesinleşmiş büyüme rakamları paylaşmayacağız — GEO/AEO gibi yeni bir alanda dürüst olmak, uydurma istatistik vermekten daha değerlidir. Bunun yerine sürecin kendisini, yani "SEO ve GEO'yu nasıl birlikte kurarsınız" sorusuna verdiğimiz gerçek yanıtı paylaştık.</p>
+
+      <table>
+        <thead><tr><th>Katman</th><th>Odak</th><th>Örnek Sinyal</th></tr></thead>
+        <tbody>
+          <tr><td>Web Tasarımı</td><td>Teknik temel</td><td>Hız, mimari, çok dilli yapı</td></tr>
+          <tr><td>SEO</td><td>Google sıralaması</td><td>Anahtar kelime, schema, teknik optimizasyon</td></tr>
+          <tr><td>GEO & AEO</td><td>AI motor görünürlüğü</td><td>Yapılandırılmış, net, alıntılanabilir içerik</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Sık Sorulan Sorular</h2>
+
+      <h3>GEO/AEO çalışması SEO'nun yerine mi geçiyor?</h3>
+      <p>Hayır — ikisi birbirini tamamlıyor. Google hâlâ en büyük arama kanalı; GEO/AEO, üzerine eklenen bir katman, SEO'nun yerine geçen bir alternatif değil.</p>
+
+      <h3>Her sektör için GEO/AEO gerekli mi?</h3>
+      <p>Hedef kitlesi araştırma sürecinde AI asistanlara başvuran her sektör için giderek daha önemli hale geliyor — özellikle IEYP gibi kendisi de "yapay zeka" ile anılan ürünlerde bu beklenti daha da yüksek.</p>
+
+      <h3>Bu süreç ne kadar sürdü?</h3>
+      <p>Web tasarımı, SEO ve GEO/AEO'yu paralel kurguladığımız için üç ayrı proje gibi sırayla değil, tek bir bütünleşik süreç olarak ilerledi. Kesin bir "genel ortalama süre" vermek yerine, her projeyi kendi kapsamına göre değerlendiriyoruz.</p>
+    `,
+  },
 ]
