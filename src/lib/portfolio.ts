@@ -4,6 +4,8 @@ export interface Testimonial {
   role: string
 }
 
+export type ProjectColor = 'blue' | 'violet' | 'pink' | 'emerald' | 'orange' | 'cyan' | 'fuchsia'
+
 export interface CaseStudy {
   slug: string
   name: string
@@ -15,6 +17,7 @@ export interface CaseStudy {
   desc: string
   tags: string[]
   thumb: string
+  color: ProjectColor
   challenge: string
   approach: string[]
   outcome: string
@@ -33,6 +36,7 @@ export const projects: CaseStudy[] = [
     desc: 'Kocaeli\'nin en çok aranan psikologlarından biri için sıfırdan tasarladığımız, SEO odaklı, randevu dönüşümü yüksek web sitesi. Yerel SEO çalışmasıyla Google\'da 1. sayfaya taşındı.',
     tags: ['Web Tasarım', 'Yerel SEO', 'WhatsApp Entegrasyonu'],
     thumb: '/portfolio/nurcelen.png',
+    color: 'blue',
     challenge:
       'Kocaeli\'de bireysel ve çift terapisi veren bir psikolog olarak dijital bir varlığı yoktu; potansiyel danışanlar "Kocaeli psikolog" gibi aramalarda onu bulamıyordu ve randevu talebi tamamen mevcut hasta yönlendirmelerine bağımlıydı.',
     approach: [
@@ -54,6 +58,7 @@ export const projects: CaseStudy[] = [
     desc: 'İstanbul Barosu avukatı için premium kurumsal kimliğe sahip, içerik ağırlıklı hukuk bürosu sitesi. Blog ve makale altyapısıyla otorite inşası.',
     tags: ['Web Tasarım', 'Kurumsal SEO', 'İçerik Stratejisi'],
     thumb: '/portfolio/mertanilguler.png',
+    color: 'violet',
     challenge:
       'Avukatlık Kanunu, avukatların Google Ads gibi ücretli reklam yöntemlerini kullanmasını yasaklıyor — bu yüzden görünürlük tamamen organik SEO ve içerik otoritesi üzerinden inşa edilmek zorundaydı, kurumsal kimliğe yakışan bir tasarımla birlikte.',
     approach: [
@@ -80,6 +85,7 @@ export const projects: CaseStudy[] = [
     desc: 'Eczacı güvencesiyle makyaj, yüz, cilt ve saç bakım ürünleri sunan e-ticaret platformu. Cilt analizi aracı ve kişiselleştirilmiş ürün öneri sistemi ile dönüşüm odaklı tasarım.',
     tags: ['E-Ticaret', 'SEO', 'Cilt Analizi Aracı'],
     thumb: '/portfolio/gamzelieczanem.png',
+    color: 'pink',
     challenge:
       'Eczacı güvencesiyle satılan cilt ve güzellik ürünlerinin geniş kataloğunda, müşterilerin kendi cilt tipine uygun ürünü bulması zordu — bu da sepet terk oranını artıran ve dönüşümü düşüren bir sürtünme noktasıydı.',
     approach: [
@@ -107,6 +113,7 @@ export const projects: CaseStudy[] = [
     desc: 'Türkiye\'nin ilk YZ destekli veteriner bulma ve online randevu platformu. Doğrulanan diplomalı veterinerler, video görüşme ve 7/24 yapay zeka asistan ile evcil hayvan sahiplerine ulaşır.',
     tags: ['Platform', 'Yapay Zeka', 'Online Randevu'],
     thumb: '/portfolio/veterineribul.png',
+    color: 'emerald',
     challenge:
       'Evcil hayvan sahiplerinin güvenilir, diplomalı bir veterineri bulup randevu alması dağınık bir süreçti; pazarda bunu tek bir platformda, yapay zeka destekli bir asistanla birleştiren bir çözüm yoktu.',
     approach: [
@@ -128,6 +135,7 @@ export const projects: CaseStudy[] = [
     desc: 'Yapay zeka ile 81 ilden seçilmiş uzman psikolog ve terapistler arasından kişiye özel eşleştirme yapan platform. KVKK uyumlu, güvenli terapi altyapısı ve psikoloji blog sistemi.',
     tags: ['Platform', 'YZ Eşleştirme', 'Online Terapi'],
     thumb: '/portfolio/terapistbul.png',
+    color: 'cyan',
     challenge:
       'Terapi arayan kullanıcılar için 81 ildeki uzman havuzundan kendi ihtiyacına en uygun terapisti bulmak zaman alıcı ve rastgele bir süreçti; ayrıca ruh sağlığı verisi taşıyan bir platformun KVKK uyumu baştan tasarlanmak zorundaydı.',
     approach: [
@@ -149,6 +157,7 @@ export const projects: CaseStudy[] = [
     desc: 'İstanbul Barosu avukatı için ceza, iş ve gayrimenkul hukuku alanlarında dava takibi ve danışmanlık odaklı kurumsal web sitesi. WhatsApp ve telefon entegrasyonuyla hızlı iletişim.',
     tags: ['Web Tasarım', 'Kurumsal SEO', 'WhatsApp Entegrasyonu'],
     thumb: '/portfolio/furkanarikan.png',
+    color: 'violet',
     challenge:
       'Ceza, iş ve gayrimenkul hukuku alanlarında hizmet veren bir avukat için mevcut dijital varlık yoktu; danışanların hızlıca iletişime geçebileceği, profesyonel ve hızlı bir site gerekiyordu.',
     approach: [
@@ -163,5 +172,27 @@ export const projects: CaseStudy[] = [
       author: 'Av. Furkan Arıkan',
       role: 'Kurucu Avukat, Furkan Arıkan Hukuk Bürosu',
     },
+  },
+  {
+    slug: 'ieyp-international',
+    name: 'IEYP International',
+    title: 'Yapay Zeka Destekli Erken Çocukluk Eğitimi Platformu',
+    url: 'https://eypeducation.com/tr/',
+    displayUrl: 'eypeducation.com',
+    category: 'Web Tasarımı + SEO + GEO/AEO',
+    industry: 'Eğitim Teknolojisi',
+    desc: '2-6 yaş erken çocukluk eğitimi için yapay zeka destekli, çok dilli müfredat platformu. Okullar, öğretmenler ve ailelere yönelik dijital varlık; hem Google\'da hem ChatGPT/Gemini gibi AI arama motorlarında görünürlük odaklı.',
+    tags: ['Web Tasarım', 'SEO', 'GEO & AEO'],
+    thumb: 'https://image.thum.io/get/width/800/https://eypeducation.com/tr/',
+    color: 'fuchsia',
+    challenge:
+      'AI destekli bir eğitim platformu olarak IEYP\'nin hedef kitlesi (okullar, öğretmenler, aileler) hem klasik Google aramasında hem de artan oranda ChatGPT/Gemini gibi AI motorlarında araştırma yapıyor. Sadece geleneksel SEO yeterli değildi — platformun kendisi AI-native olduğu için görünürlük stratejisinin de aynı çağa uygun kurulması gerekiyordu.',
+    approach: [
+      'Çok dilli müfredat ve ürün yapısını yansıtan web tasarımı',
+      'Eğitim teknolojisi alanına özel SEO çalışması (anahtar kelime stratejisi, teknik optimizasyon)',
+      'GEO & AEO çalışmasıyla ChatGPT, Gemini ve Perplexity gibi AI motorlarında platformun kaynak olarak gösterilmesini hedefleyen yapılandırılmış veri ve içerik stratejisi',
+    ],
+    outcome:
+      'Platform hem geleneksel arama motorlarında hem de yeni nesil AI arama kanallarında görünürlük kazanacak şekilde konumlandırıldı.',
   },
 ]

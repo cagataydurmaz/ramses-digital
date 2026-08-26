@@ -3,7 +3,17 @@ import Image from 'next/image'
 import Link from 'next/link'
 import CalendlyButton from '@/components/CalendlyButton'
 import { ArrowRight, Globe } from 'lucide-react'
-import { projects as liveProjects } from '@/lib/portfolio'
+import { projects as liveProjects, type ProjectColor } from '@/lib/portfolio'
+
+const colorMap: Record<ProjectColor, { border: string; shadow: string; badge: string; badgeHover: string; iconHover: string }> = {
+  blue: { border: 'hover:border-blue-500/30', shadow: 'hover:shadow-[0_0_40px_-10px_rgba(59,130,246,0.2)]', badge: 'text-blue-400 bg-blue-500/10 border-blue-500/20', badgeHover: 'group-hover:text-blue-300 group-hover:bg-blue-500/20', iconHover: 'group-hover:text-blue-400' },
+  violet: { border: 'hover:border-violet-500/30', shadow: 'hover:shadow-[0_0_40px_-10px_rgba(139,92,246,0.2)]', badge: 'text-violet-400 bg-violet-500/10 border-violet-500/20', badgeHover: 'group-hover:text-violet-300 group-hover:bg-violet-500/20', iconHover: 'group-hover:text-violet-400' },
+  pink: { border: 'hover:border-pink-500/30', shadow: 'hover:shadow-[0_0_40px_-10px_rgba(236,72,153,0.2)]', badge: 'text-pink-400 bg-pink-500/10 border-pink-500/20', badgeHover: 'group-hover:text-pink-300 group-hover:bg-pink-500/20', iconHover: 'group-hover:text-pink-400' },
+  emerald: { border: 'hover:border-emerald-500/30', shadow: 'hover:shadow-[0_0_40px_-10px_rgba(16,185,129,0.2)]', badge: 'text-emerald-400 bg-emerald-500/10 border-emerald-500/20', badgeHover: 'group-hover:text-emerald-300 group-hover:bg-emerald-500/20', iconHover: 'group-hover:text-emerald-400' },
+  orange: { border: 'hover:border-orange-500/30', shadow: 'hover:shadow-[0_0_40px_-10px_rgba(249,115,22,0.2)]', badge: 'text-orange-400 bg-orange-500/10 border-orange-500/20', badgeHover: 'group-hover:text-orange-300 group-hover:bg-orange-500/20', iconHover: 'group-hover:text-orange-400' },
+  cyan: { border: 'hover:border-cyan-500/30', shadow: 'hover:shadow-[0_0_40px_-10px_rgba(34,211,238,0.2)]', badge: 'text-cyan-400 bg-cyan-500/10 border-cyan-500/20', badgeHover: 'group-hover:text-cyan-300 group-hover:bg-cyan-500/20', iconHover: 'group-hover:text-cyan-400' },
+  fuchsia: { border: 'hover:border-fuchsia-500/30', shadow: 'hover:shadow-[0_0_40px_-10px_rgba(217,70,239,0.2)]', badge: 'text-fuchsia-400 bg-fuchsia-500/10 border-fuchsia-500/20', badgeHover: 'group-hover:text-fuchsia-300 group-hover:bg-fuchsia-500/20', iconHover: 'group-hover:text-fuchsia-400' },
+}
 
 export const metadata: Metadata = {
   title: 'Portföy | Gerçek Projeler, Gerçek Sonuçlar — Ramses Dijital',
@@ -75,11 +85,14 @@ export default function PortfolioPage() {
       <section className="pb-24 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {liveProjects.map((project) => (
+            {liveProjects.map((project) => {
+              const c = colorMap[project.color]
+              return (
               <Link
                 key={project.name}
-                href={`/portfolyo/${project.slug} prefetch={false}`}
-                className="group block bg-[#0D1225] border border-white/[0.06] hover:border-blue-500/30 rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-[0_0_40px_-10px_rgba(59,130,246,0.2)]"
+                href={`/portfolyo/${project.slug}`}
+                prefetch={false}
+                className={`group block bg-[#0D1225] border border-white/[0.06] ${c.border} rounded-2xl overflow-hidden transition-all duration-300 ${c.shadow}`}
               >
                 {/* Browser Chrome */}
                 <div className="bg-[#080D18] border-b border-white/[0.06] px-4 py-3 flex items-center gap-3">
@@ -92,7 +105,7 @@ export default function PortfolioPage() {
                     <Globe size={10} className="text-zinc-500 shrink-0" />
                     <span className="text-zinc-400 text-xs font-mono truncate">{project.displayUrl}</span>
                   </div>
-                  <ArrowRight size={13} className="text-zinc-500 group-hover:text-blue-400 group-hover:translate-x-0.5 transition-all shrink-0" />
+                  <ArrowRight size={13} className={`text-zinc-500 ${c.iconHover} group-hover:translate-x-0.5 transition-all shrink-0`} />
                 </div>
 
                 {/* Screenshot */}
@@ -115,7 +128,7 @@ export default function PortfolioPage() {
                       <h3 className="text-white font-bold text-lg leading-snug">{project.name}</h3>
                       <p className="text-zinc-400 text-sm">{project.title}</p>
                     </div>
-                    <span className="shrink-0 inline-flex items-center gap-1.5 text-xs font-medium text-blue-400 group-hover:text-blue-300 bg-blue-500/10 group-hover:bg-blue-500/20 border border-blue-500/20 rounded-full px-3 py-1.5 transition-all">
+                    <span className={`shrink-0 inline-flex items-center gap-1.5 text-xs font-medium border rounded-full px-3 py-1.5 transition-all ${c.badge} ${c.badgeHover}`}>
                       Vakayı İncele <ArrowRight size={11} />
                     </span>
                   </div>
@@ -129,13 +142,9 @@ export default function PortfolioPage() {
                   </div>
                 </div>
               </Link>
-            ))}
+              )
+            })}
           </div>
-
-          {/* Coming soon note */}
-          <p className="text-center text-zinc-600 text-sm mt-10">
-            Daha fazla referans yakında ekleniyor.
-          </p>
         </div>
       </section>
 

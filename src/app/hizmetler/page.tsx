@@ -147,48 +147,55 @@ const services = [
   },
 ]
 
-const colorMap: Record<string, { bg: string; border: string; icon: string; tag: string }> = {
+const colorMap: Record<string, { bg: string; border: string; icon: string; tag: string; dot: string }> = {
   blue: {
     bg: 'from-blue-500/5 to-transparent',
     border: 'border-blue-500/20 hover:border-blue-500/40',
     icon: 'bg-blue-500/10 text-blue-400',
     tag: 'bg-blue-500/10 text-blue-400',
+    dot: 'bg-blue-400',
   },
   violet: {
     bg: 'from-violet-500/5 to-transparent',
     border: 'border-violet-500/20 hover:border-violet-500/40',
     icon: 'bg-violet-500/10 text-violet-400',
     tag: 'bg-violet-500/10 text-violet-400',
+    dot: 'bg-violet-400',
   },
   pink: {
     bg: 'from-pink-500/5 to-transparent',
     border: 'border-pink-500/20 hover:border-pink-500/40',
     icon: 'bg-pink-500/10 text-pink-400',
     tag: 'bg-pink-500/10 text-pink-400',
+    dot: 'bg-pink-400',
   },
   emerald: {
     bg: 'from-emerald-500/5 to-transparent',
     border: 'border-emerald-500/20 hover:border-emerald-500/40',
     icon: 'bg-emerald-500/10 text-emerald-400',
     tag: 'bg-emerald-500/10 text-emerald-400',
+    dot: 'bg-emerald-400',
   },
   orange: {
     bg: 'from-orange-500/5 to-transparent',
     border: 'border-orange-500/20 hover:border-orange-500/40',
     icon: 'bg-orange-500/10 text-orange-400',
     tag: 'bg-orange-500/10 text-orange-400',
+    dot: 'bg-orange-400',
   },
   cyan: {
     bg: 'from-cyan-500/5 to-transparent',
     border: 'border-cyan-500/20 hover:border-cyan-500/40',
     icon: 'bg-cyan-500/10 text-cyan-400',
     tag: 'bg-cyan-500/10 text-cyan-400',
+    dot: 'bg-cyan-400',
   },
   fuchsia: {
     bg: 'from-fuchsia-500/5 to-transparent',
     border: 'border-fuchsia-500/20 hover:border-fuchsia-500/40',
     icon: 'bg-fuchsia-500/10 text-fuchsia-400',
     tag: 'bg-fuchsia-500/10 text-fuchsia-400',
+    dot: 'bg-fuchsia-400',
   },
 }
 
@@ -277,12 +284,18 @@ export default function ServicesPage() {
             </p>
           </div>
           <div className="space-y-5">
-            {definitions.map((item) => (
-              <div key={item.term} className="bg-[#0D1225] border border-white/[0.06] rounded-2xl p-6">
-                <h3 className="text-white font-semibold text-lg mb-2">{item.term} nedir?</h3>
-                <p className="text-zinc-400 text-sm leading-relaxed">{item.definition}</p>
-              </div>
-            ))}
+            {definitions.map((item) => {
+              const c = colorMap[item.color]
+              return (
+                <div key={item.term} className={`bg-[#0D1225] border-l-2 border-y border-r border-white/[0.06] ${c.border.split(' ')[0]} rounded-2xl p-6`}>
+                  <h3 className="text-white font-semibold text-lg mb-2">
+                    <span className={`inline-block w-1.5 h-1.5 rounded-full mr-2 ${c.dot}`} />
+                    {item.term} nedir?
+                  </h3>
+                  <p className="text-zinc-400 text-sm leading-relaxed">{item.definition}</p>
+                </div>
+              )
+            })}
           </div>
         </div>
       </section>
@@ -404,31 +417,37 @@ const definitions = [
     term: 'SEO (Arama Motoru Optimizasyonu)',
     definition:
       'SEO, web sitenizin Google, Bing gibi arama motorlarında daha üst sıralarda çıkmasını sağlayan teknik ve içerik optimizasyon sürecidir. Anahtar kelime araştırması, teknik düzenlemeler, içerik üretimi ve backlink stratejilerini içerir.',
+    color: 'blue',
   },
   {
     term: 'GEO (Generative Engine Optimization)',
     definition:
       'GEO, ChatGPT, Gemini ve Perplexity gibi yapay zeka destekli arama motorlarında markanızın güvenilir kaynak olarak gösterilmesini sağlayan optimizasyon türüdür. Yapılandırılmış veri, EEAT prensipleri ve semantik içerik mimarisi temelinde çalışır.',
+    color: 'blue',
   },
   {
     term: 'AEO (Answer Engine Optimization)',
     definition:
       'AEO, kullanıcıların doğrudan yanıt aradığı sorularda (sesli arama, öne çıkan snippet\'lar) markanızın cevap kaynağı olarak görünmesini sağlar. Soru-cevap formatı, FAQ schema ve net tanımlar AEO\'nun temelidir.',
+    color: 'blue',
   },
   {
     term: 'Google Ads',
     definition:
       'Google Ads, Google\'ın arama sonuçlarında, YouTube\'da ve Display Network\'te ücretli reklam vermenizi sağlayan platformdur. Tıklama başı ödeme (CPC) modeliyle çalışır ve doğru kurgulandığında yüksek ROI getirebilir.',
+    color: 'violet',
   },
   {
     term: 'n8n İş Akışı Otomasyonu',
     definition:
       'n8n, kod yazmadan veya minimum kodla farklı uygulamaları (CRM, e-posta, sosyal medya, AI araçları) birbirine bağlayıp tekrarlanan iş akışlarını otomatize etmenizi sağlayan açık kaynak bir platformdur.',
+    color: 'fuchsia',
   },
   {
     term: 'ROAS (Reklam Harcamasının Geri Dönüşü)',
     definition:
       'ROAS, reklam harcaması başına elde edilen gelirdir. Formülü: Gelir / Reklam Harcaması. 4x ROAS, harcadığınız reklam bütçesinin 4 katı gelir getirdiği anlamına gelir.',
+    color: 'violet',
   },
 ]
 
