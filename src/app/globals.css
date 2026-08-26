@@ -167,6 +167,7 @@ body {
     transition-duration: 0.01ms !important;
   }
   html { scroll-behavior: auto; }
+  .hero-bg-video { display: none; }
 }
 
 /* Mobile touch targets */
