@@ -2,13 +2,13 @@ import Link from 'next/link'
 import { MapPin, Phone, Mail, Instagram } from 'lucide-react'
 
 const services = [
-  { label: 'SEO & İçerik Optimizasyonu', href: '/hizmetler/seo-kocaeli' },
-  { label: 'Google Ads & Performans', href: '/hizmetler/google-ads-kocaeli' },
-  { label: 'Web Tasarımı & Geliştirme', href: '/hizmetler/web-tasarim-kocaeli' },
-  { label: 'Sosyal Medya İçerik Üretimi', href: '/hizmetler/sosyal-medya' },
-  { label: 'E-Posta & Otomasyon', href: '/hizmetler/eposta-otomasyon' },
-  { label: 'n8n İş Akışı Otomasyonu', href: '/hizmetler/n8n-otomasyon' },
-  { label: 'Veri Analizi & Danışmanlık', href: '/hizmetler/veri-analizi' },
+  { label: 'SEO & İçerik Optimizasyonu', href: '/hizmetler/seo-kocaeli', hoverClass: 'hover:text-blue-400' },
+  { label: 'Google Ads & Performans', href: '/hizmetler/google-ads-kocaeli', hoverClass: 'hover:text-violet-400' },
+  { label: 'Web Tasarımı & Geliştirme', href: '/hizmetler/web-tasarim-kocaeli', hoverClass: 'hover:text-emerald-400' },
+  { label: 'Sosyal Medya İçerik Üretimi', href: '/hizmetler/sosyal-medya', hoverClass: 'hover:text-pink-400' },
+  { label: 'E-Posta & Otomasyon', href: '/hizmetler/eposta-otomasyon', hoverClass: 'hover:text-orange-400' },
+  { label: 'n8n İş Akışı Otomasyonu', href: '/hizmetler/n8n-otomasyon', hoverClass: 'hover:text-fuchsia-400' },
+  { label: 'Veri Analizi & Danışmanlık', href: '/hizmetler/veri-analizi', hoverClass: 'hover:text-cyan-400' },
 ]
 
 const quickLinks = [
@@ -129,7 +129,7 @@ export default function Footer() {
                   <Link
                     href={service.href}
                     prefetch={false}
-                    className="text-zinc-400 hover:text-white text-sm transition-colors py-2 block"
+                    className={`text-zinc-400 ${service.hoverClass} text-sm transition-colors py-2 block`}
                   >
                     {service.label}
                   </Link>

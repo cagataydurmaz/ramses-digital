@@ -3,8 +3,18 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Metadata } from 'next'
 import { ExternalLink, Globe, CheckCircle2 } from 'lucide-react'
-import { projects } from '@/lib/portfolio'
+import { projects, type ProjectColor } from '@/lib/portfolio'
 import CalendlyButton from '@/components/CalendlyButton'
+
+const colorMap: Record<ProjectColor, { text: string; badge: string; icon: string; border: string; blockquoteBorder: string; blockquoteBg: string }> = {
+  blue: { text: 'text-blue-400', badge: 'text-blue-400 hover:text-blue-300 bg-blue-500/10 hover:bg-blue-500/20 border-blue-500/20', icon: 'text-blue-400', border: 'border-blue-500', blockquoteBorder: 'border-blue-500', blockquoteBg: 'bg-blue-500/[0.04]' },
+  violet: { text: 'text-violet-400', badge: 'text-violet-400 hover:text-violet-300 bg-violet-500/10 hover:bg-violet-500/20 border-violet-500/20', icon: 'text-violet-400', border: 'border-violet-500', blockquoteBorder: 'border-violet-500', blockquoteBg: 'bg-violet-500/[0.04]' },
+  pink: { text: 'text-pink-400', badge: 'text-pink-400 hover:text-pink-300 bg-pink-500/10 hover:bg-pink-500/20 border-pink-500/20', icon: 'text-pink-400', border: 'border-pink-500', blockquoteBorder: 'border-pink-500', blockquoteBg: 'bg-pink-500/[0.04]' },
+  emerald: { text: 'text-emerald-400', badge: 'text-emerald-400 hover:text-emerald-300 bg-emerald-500/10 hover:bg-emerald-500/20 border-emerald-500/20', icon: 'text-emerald-400', border: 'border-emerald-500', blockquoteBorder: 'border-emerald-500', blockquoteBg: 'bg-emerald-500/[0.04]' },
+  orange: { text: 'text-orange-400', badge: 'text-orange-400 hover:text-orange-300 bg-orange-500/10 hover:bg-orange-500/20 border-orange-500/20', icon: 'text-orange-400', border: 'border-orange-500', blockquoteBorder: 'border-orange-500', blockquoteBg: 'bg-orange-500/[0.04]' },
+  cyan: { text: 'text-cyan-400', badge: 'text-cyan-400 hover:text-cyan-300 bg-cyan-500/10 hover:bg-cyan-500/20 border-cyan-500/20', icon: 'text-cyan-400', border: 'border-cyan-500', blockquoteBorder: 'border-cyan-500', blockquoteBg: 'bg-cyan-500/[0.04]' },
+  fuchsia: { text: 'text-fuchsia-400', badge: 'text-fuchsia-400 hover:text-fuchsia-300 bg-fuchsia-500/10 hover:bg-fuchsia-500/20 border-fuchsia-500/20', icon: 'text-fuchsia-400', border: 'border-fuchsia-500', blockquoteBorder: 'border-fuchsia-500', blockquoteBg: 'bg-fuchsia-500/[0.04]' },
+}
 
 interface Props {
   params: { slug: string }
@@ -60,6 +70,7 @@ export default function CaseStudyPage({ params }: Props) {
   const project = projects.find((p) => p.slug === params.slug)
   if (!project) notFound()
 
+  const c = colorMap[project.color]
   const related = projects.filter((p) => p.slug !== project.slug).slice(0, 2)
 
   return (
@@ -103,7 +114,7 @@ export default function CaseStudyPage({ params }: Props) {
 
         {/* Header */}
         <header className="mb-12">
-          <p className="text-blue-400 text-xs uppercase tracking-wider mb-2">{project.industry} · {project.category}</p>
+          <p className={`${c.text} text-xs uppercase tracking-wider mb-2`}>{project.industry} · {project.category}</p>
           <h1 className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-3">{project.name}</h1>
           <p className="text-zinc-400 text-lg mb-6">{project.title}</p>
           <div className="flex flex-wrap items-center gap-3">
@@ -111,7 +122,7 @@ export default function CaseStudyPage({ params }: Props) {
               href={project.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-sm font-medium text-blue-400 hover:text-blue-300 bg-blue-500/10 hover:bg-blue-500/20 border border-blue-500/20 rounded-full px-4 py-2 transition-all"
+              className={`inline-flex items-center gap-1.5 text-sm font-medium border rounded-full px-4 py-2 transition-all ${c.badge}`}
             >
               Canlı Siteyi Ziyaret Et <ExternalLink size={13} />
             </a>
@@ -135,7 +146,7 @@ export default function CaseStudyPage({ params }: Props) {
           <ul className="space-y-3">
             {project.approach.map((item) => (
               <li key={item} className="flex items-start gap-3">
-                <CheckCircle2 size={18} className="text-blue-400 shrink-0 mt-0.5" />
+                <CheckCircle2 size={18} className={`${c.icon} shrink-0 mt-0.5`} />
                 <span className="text-zinc-400 leading-relaxed">{item}</span>
               </li>
             ))}
@@ -153,7 +164,7 @@ export default function CaseStudyPage({ params }: Props) {
         {/* Testimonial */}
         {project.testimonial && (
           <section className="mb-16">
-            <blockquote className="border-l-2 border-blue-500 bg-blue-500/[0.04] rounded-r-xl px-6 py-5">
+            <blockquote className={`border-l-2 ${c.blockquoteBorder} ${c.blockquoteBg} rounded-r-xl px-6 py-5`}>
               <p className="text-zinc-200 text-lg leading-relaxed italic mb-4">&ldquo;{project.testimonial.quote}&rdquo;</p>
               <footer className="text-sm">
                 <span className="text-white font-medium">{project.testimonial.author}</span>

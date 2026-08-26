@@ -179,11 +179,18 @@ const serviceColorMap: Record<string, { bg: string; bgHover: string; text: strin
 }
 
 const stats = [
-  { icon: Trophy, value: 100, suffix: '+', label: 'Başarılı Proje' },
-  { icon: Users, value: 50, suffix: '+', label: 'Mutlu Müşteri' },
-  { icon: Clock, value: 5, suffix: '+', label: 'Yıl Deneyim' },
-  { icon: ThumbsUp, value: 94, suffix: '%', label: 'Müşteri Memnuniyeti' },
+  { icon: Trophy, value: 100, suffix: '+', label: 'Başarılı Proje', color: 'blue' },
+  { icon: Users, value: 50, suffix: '+', label: 'Mutlu Müşteri', color: 'violet' },
+  { icon: Clock, value: 5, suffix: '+', label: 'Yıl Deneyim', color: 'emerald' },
+  { icon: ThumbsUp, value: 94, suffix: '%', label: 'Müşteri Memnuniyeti', color: 'fuchsia' },
 ]
+
+const statColorMap: Record<string, { bg: string; bgHover: string; text: string }> = {
+  blue: { bg: 'bg-blue-500/10', bgHover: 'group-hover:bg-blue-500/20', text: 'text-blue-400' },
+  violet: { bg: 'bg-violet-500/10', bgHover: 'group-hover:bg-violet-500/20', text: 'text-violet-400' },
+  emerald: { bg: 'bg-emerald-500/10', bgHover: 'group-hover:bg-emerald-500/20', text: 'text-emerald-400' },
+  fuchsia: { bg: 'bg-fuchsia-500/10', bgHover: 'group-hover:bg-fuchsia-500/20', text: 'text-fuchsia-400' },
+}
 
 
 // Yorum verisi src/lib/reviews.ts'te — layout.tsx'teki Review/AggregateRating
@@ -403,11 +410,12 @@ export default function HomePage() {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {stats.map((stat, i) => {
               const Icon = stat.icon
+              const c = statColorMap[stat.color]
               return (
                 <FadeIn key={stat.label} delay={i * 0.1}>
                   <div className="group text-center bg-white/[0.02] border border-white/[0.06] rounded-2xl py-6 sm:py-8 px-3 card-hover">
-                    <div className="w-10 h-10 sm:w-11 sm:h-11 mx-auto mb-3 rounded-xl bg-blue-500/10 flex items-center justify-center group-hover:bg-blue-500/20 transition-colors">
-                      <Icon size={18} className="text-blue-400" />
+                    <div className={`w-10 h-10 sm:w-11 sm:h-11 mx-auto mb-3 rounded-xl ${c.bg} flex items-center justify-center ${c.bgHover} transition-colors`}>
+                      <Icon size={18} className={c.text} />
                     </div>
                     <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-1.5">
                       <Counter target={stat.value} suffix={stat.suffix} />
