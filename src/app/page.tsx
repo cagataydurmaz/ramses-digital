@@ -122,44 +122,61 @@ const services = [
     title: 'SEO, GEO & AEO',
     desc: "Markanızı Google'da değil; ChatGPT, Gemini ve Perplexity'de de güvenilir kaynak yapıyoruz.",
     tags: ['GEO & LLM Görünürlüğü', 'EEAT & Otorite', 'Schema Markup'],
+    color: 'blue',
   },
   {
     icon: TrendingUp,
     title: 'Google Ads & Performans',
     desc: 'YouTube, Remarketing ve Display reklamlarıyla ROI odaklı kampanyalar yürütün.',
     tags: ['Search Ads', 'YouTube Ads', 'Remarketing'],
+    color: 'violet',
   },
   {
     icon: Share2,
     title: 'Sosyal Medya İçerik Üretimi',
     desc: 'Post, story ve video içeriklerinizi marka kimliğinize uygun tasarlıyor, paylaşım stratejinizi kuruyoruz.',
     tags: ['Post & Story Tasarımı', 'Video İçerik', 'İçerik Takvimi'],
+    color: 'pink',
   },
   {
     icon: Monitor,
     title: 'Web Tasarımı & Geliştirme',
     desc: 'Modern, hızlı ve mobil uyumlu web siteleri ile dönüşüm oranlarınızı artırın.',
     tags: ['UI/UX Tasarım', 'Next.js', 'WordPress'],
+    color: 'emerald',
   },
   {
     icon: Mail,
     title: 'E-Posta & Otomasyon',
     desc: 'CRM entegrasyonu ve otomatik akışlarla müşteri sadakatini ve geliri artırın.',
     tags: ['CRM Entegrasyonu', 'Drip Kampanyalar', 'A/B Test'],
+    color: 'orange',
   },
   {
     icon: BarChart3,
     title: 'Veri Analizi & Danışmanlık',
     desc: 'Google Analytics ve Data Studio raporlarıyla veriye dayalı kararlar alın.',
     tags: ['GA4', 'Data Studio', 'Strateji'],
+    color: 'cyan',
   },
   {
     icon: Workflow,
     title: 'n8n İş Akışı Otomasyonu',
-    desc: 'CRM, e-posta ve yapay zeka araçlarını birbirine bağlayıp tekrar eden işleri otomatize edin.',
-    tags: ['AI İş Akışları', 'CRM Otomasyonu', 'Webhook & API'],
+    desc: 'CRM, e-posta ve yapay zeka araçlarını birbirine bağlayıp tekrar eden işleri otomatize edin — manuel süreçlerden kurtulun, ekibiniz asıl işe odaklansın.',
+    tags: ['AI İş Akışları', 'CRM Otomasyonu', 'Webhook & API', 'Self-Hosted', 'Çoklu Platform Senkronizasyonu'],
+    color: 'fuchsia',
   },
 ]
+
+const serviceColorMap: Record<string, { bg: string; bgHover: string; text: string; glow: string; bar: string }> = {
+  blue: { bg: 'bg-blue-500/10', bgHover: 'group-hover:bg-blue-500/20', text: 'text-blue-400', glow: 'group-hover:shadow-[0_0_20px_rgba(59,130,246,0.35)]', bar: 'from-blue-500 to-blue-400' },
+  violet: { bg: 'bg-violet-500/10', bgHover: 'group-hover:bg-violet-500/20', text: 'text-violet-400', glow: 'group-hover:shadow-[0_0_20px_rgba(139,92,246,0.35)]', bar: 'from-violet-500 to-violet-400' },
+  pink: { bg: 'bg-pink-500/10', bgHover: 'group-hover:bg-pink-500/20', text: 'text-pink-400', glow: 'group-hover:shadow-[0_0_20px_rgba(236,72,153,0.35)]', bar: 'from-pink-500 to-pink-400' },
+  emerald: { bg: 'bg-emerald-500/10', bgHover: 'group-hover:bg-emerald-500/20', text: 'text-emerald-400', glow: 'group-hover:shadow-[0_0_20px_rgba(16,185,129,0.35)]', bar: 'from-emerald-500 to-emerald-400' },
+  orange: { bg: 'bg-orange-500/10', bgHover: 'group-hover:bg-orange-500/20', text: 'text-orange-400', glow: 'group-hover:shadow-[0_0_20px_rgba(249,115,22,0.35)]', bar: 'from-orange-500 to-orange-400' },
+  cyan: { bg: 'bg-cyan-500/10', bgHover: 'group-hover:bg-cyan-500/20', text: 'text-cyan-400', glow: 'group-hover:shadow-[0_0_20px_rgba(34,211,238,0.35)]', bar: 'from-cyan-500 to-cyan-400' },
+  fuchsia: { bg: 'bg-fuchsia-500/10', bgHover: 'group-hover:bg-fuchsia-500/20', text: 'text-fuchsia-400', glow: 'group-hover:shadow-[0_0_20px_rgba(217,70,239,0.35)]', bar: 'from-fuchsia-500 to-fuchsia-400' },
+}
 
 const stats = [
   { icon: Trophy, value: 100, suffix: '+', label: 'Başarılı Proje' },
@@ -423,14 +440,15 @@ export default function HomePage() {
           </FadeIn>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {services.map((service, i) => {
+            {services.slice(0, -1).map((service, i) => {
               const Icon = service.icon
+              const c = serviceColorMap[service.color]
               return (
                 <FadeIn key={service.title} delay={i * 0.08}>
                   <div className="group relative h-full bg-[#0D1225] border border-white/[0.06] rounded-2xl p-6 card-hover cursor-default overflow-hidden">
-                    <div className="absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r from-blue-500 to-violet-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
-                    <div className="w-11 h-11 bg-blue-500/10 rounded-xl flex items-center justify-center mb-5 transition-all group-hover:bg-blue-500/20 group-hover:shadow-[0_0_20px_rgba(59,130,246,0.35)]">
-                      <Icon size={20} className="text-blue-400" />
+                    <div className={`absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r ${c.bar} scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left`} />
+                    <div className={`w-11 h-11 ${c.bg} rounded-xl flex items-center justify-center mb-5 transition-all ${c.bgHover} ${c.glow}`}>
+                      <Icon size={20} className={c.text} />
                     </div>
                     <h3 className="text-white font-semibold text-lg mb-2">{service.title}</h3>
                     <p className="text-zinc-400 text-sm leading-relaxed mb-4">{service.desc}</p>
@@ -448,6 +466,39 @@ export default function HomePage() {
                 </FadeIn>
               )
             })}
+
+            {/* n8n — son kart, tam genişlikte, yatay düzen */}
+            {(() => {
+              const n8n = services[services.length - 1]
+              const Icon = n8n.icon
+              const c = serviceColorMap[n8n.color]
+              return (
+                <FadeIn delay={services.length * 0.08} className="md:col-span-2 lg:col-span-3">
+                  <div className="group relative bg-[#0D1225] border border-white/[0.06] rounded-2xl p-6 sm:p-8 card-hover cursor-default overflow-hidden">
+                    <div className={`absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r ${c.bar} scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left`} />
+                    <div className="flex flex-col sm:flex-row sm:items-center gap-6">
+                      <div className={`w-14 h-14 shrink-0 ${c.bg} rounded-2xl flex items-center justify-center transition-all ${c.bgHover} ${c.glow}`}>
+                        <Icon size={26} className={c.text} />
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="text-white font-semibold text-xl mb-2">{n8n.title}</h3>
+                        <p className="text-zinc-400 text-sm leading-relaxed mb-4 sm:mb-0 max-w-2xl">{n8n.desc}</p>
+                      </div>
+                      <div className="flex flex-wrap gap-2 sm:max-w-[280px] sm:justify-end">
+                        {n8n.tags.map((tag) => (
+                          <span
+                            key={tag}
+                            className="text-xs text-zinc-400 bg-white/[0.04] px-2.5 py-1 rounded-full whitespace-nowrap"
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </FadeIn>
+              )
+            })()}
           </div>
 
           <FadeIn className="text-center mt-10">
