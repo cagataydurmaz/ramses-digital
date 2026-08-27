@@ -244,7 +244,7 @@ export default function HomePage() {
         {/* Arka plan videosu — soyut, marka renklerinde döngü. prefers-reduced-motion'da CSS ile gizleniyor, poster her durumda anında gösteriliyor. */}
         <video
           ref={heroVideoRef}
-          className="hero-bg-video absolute inset-0 w-full h-full object-cover opacity-40 pointer-events-none"
+          className="hero-bg-video absolute inset-0 w-full h-full object-cover mix-blend-screen pointer-events-none"
           autoPlay
           muted
           loop
@@ -255,7 +255,7 @@ export default function HomePage() {
         >
           <source src="/video/hero-bg.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-b from-[#080D18] via-[#080D18]/60 to-[#080D18] pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#080D18]/20 via-transparent to-[#080D18] pointer-events-none" />
 
         {/* Background glow */}
         <div className="absolute inset-0 pointer-events-none">
@@ -274,15 +274,7 @@ export default function HomePage() {
           <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/5 to-transparent" />
         </div>
 
-        {/* Grid overlay */}
-        <div
-          className="hidden sm:block absolute inset-0 opacity-[0.03] pointer-events-none"
-          style={{
-            backgroundImage:
-              'linear-gradient(rgba(255,255,255,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.5) 1px, transparent 1px)',
-            backgroundSize: '80px 80px',
-          }}
-        />
+        {/* Statik grid deseni kaldırıldı — arka plan videosu kendi hareketli grid'ini taşıyor, ikisi üst üste redundanttı. */}
 
         {/* Mısır motifi — Horus Gözü, marka renklerinde çok düşük opasiteli arka plan süsü */}
         <div
