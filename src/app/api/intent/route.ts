@@ -1,7 +1,22 @@
 import Anthropic from '@anthropic-ai/sdk'
 import { NextRequest, NextResponse } from 'next/server'
+import { pricing } from '@/lib/pricing'
 
 const client = new Anthropic()
+
+// teklif-al hesaplayıcısıyla aynı kaynak veri (src/lib/pricing.ts) — burada da
+// tek doğru fiyat kümesi bu olsun diye import ediyoruz, ayrı bir kopya tutmuyoruz.
+const PRICING_BLOCK = Object.entries(pricing)
+  .map(([service, sizes]) => {
+    const lines = (['kucuk', 'orta', 'buyuk'] as const).map((size) => {
+      const r = sizes[size]
+      const label = size === 'kucuk' ? 'Küçük işletme' : size === 'orta' ? 'Orta işletme' : 'Büyük/Kurumsal'
+      const noteText = r.note ? ` (${r.note})` : ''
+      return `  - ${label}: ${r.min.toLocaleString('tr-TR')}-${r.max.toLocaleString('tr-TR')}₺ ${r.unit}${noteText}`
+    })
+    return `${service}:\n${lines.join('\n')}`
+  })
+  .join('\n')
 
 const SYSTEM_PROMPT = `Sen Ramses Digital'in AI asistanısın. Kullanıcının yazdığı mesajı analiz et ve en uygun hizmeti belirle.
 
@@ -14,11 +29,19 @@ Mevcut hizmetler:
 - analytics: Veri Analizi & Stratejik Danışmanlık (GA4, büyüme stratejisi)
 - quote: Genel danışmanlık / birden fazla hizmet (teklif hesaplayıcıya yönlendir)
 
+Güncel fiyat aralıklarımız (işletme büyüklüğüne göre, KDV hariç):
+${PRICING_BLOCK}
+
+Fiyat/ücret/ne kadar/bütçe/teklif gibi bir şey soruluyorsa:
+- Kullanıcının mesajından işletme büyüklüğü belli değilse "Orta işletme" aralığını referans al ve bunun ortalama bir tahmin olduğunu, kesin teklifin ihtiyaca göre değişeceğini belirt.
+- Yukarıdaki tabloda olmayan bir hizmet (email, analytics, quote) sorulursa kesin rakam uydurma; "kapsam projeye göre değiştiği için özel teklif" de.
+- Google Ads özelinde MUTLAKA şunu netleştir: bizim aldığımız sabit bir yönetim ücreti vardır, reklam bütçesinin kendisi ise bize değil doğrudan Google'a ödenir; bizim payımız (%15) bu bütçenin üzerine eklenen ayrı bir yönetim ücretidir. Kim kime ne ödüyor karışmasın, açıkça yaz.
+
 Şu JSON formatında yanıt ver, başka hiçbir şey yazma:
 {
   "service": "<seo|ads|social|web|email|analytics|quote>",
   "title": "<hizmet başlığı>",
-  "message": "<kullanıcının isteğine özel, samimi, 2 cümlelik Türkçe yanıt. 'Size özel' veya 'tam aradığınız' gibi kişisel bir dille yaz.>",
+  "message": "<kullanıcının isteğine özel, samimi Türkçe yanıt. Fiyat sorulmadıysa 2 cümle. Fiyat sorulduysa 2-3 cümle: biri ihtiyacı özetlesin, biri güncel fiyat aralığını versin (Google Ads'te ödeme akışını netleştirerek). 'Size özel' veya 'tam aradığınız' gibi kişisel bir dille yaz.>",
   "whatsappHint": "<WhatsApp mesajında ne söyleyeceğini özetle, 1 kısa cümle>"
 }`
 
