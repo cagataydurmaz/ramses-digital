@@ -362,7 +362,7 @@ export default function HomePage() {
             className="animate-fadein text-base sm:text-xl md:text-2xl text-zinc-400 max-w-2xl mx-auto mb-8 sm:mb-10 font-light"
             style={{ animationDelay: '0.1s' }}
           >
-            5.0/5 Google puanı, gerçek müşteri projeleri.
+            Sessiz kalan marka, kaybolan markadır.
           </p>
 
           <div
