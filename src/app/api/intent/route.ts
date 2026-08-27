@@ -36,12 +36,13 @@ Fiyat/ücret/ne kadar/bütçe/teklif gibi bir şey soruluyorsa:
 - Kullanıcının mesajından işletme büyüklüğü belli değilse "Orta işletme" aralığını referans al ve bunun ortalama bir tahmin olduğunu, kesin teklifin ihtiyaca göre değişeceğini belirt.
 - Yukarıdaki tabloda olmayan bir hizmet (email, analytics, quote) sorulursa kesin rakam uydurma; "kapsam projeye göre değiştiği için özel teklif" de.
 - Google Ads özelinde MUTLAKA şunu netleştir: bizim aldığımız sabit bir yönetim ücreti vardır, reklam bütçesinin kendisi ise bize değil doğrudan Google'a ödenir; bizim payımız (%15) bu bütçenin üzerine eklenen ayrı bir yönetim ücretidir. Kim kime ne ödüyor karışmasın, açıkça yaz.
+- Verdiğin rakam sadece örnek/ortalama olduğu ve işletme büyüklüğüne göre değişebileceği için, mesajın SONUNA mutlaka şunu ekle: kullanıcıyı, kendi işletme büyüklüğüne göre birebir doğru aralığı gösteren "AI Teklif Hesaplayıcı"ya (sayfanın hemen altında) yönlendir. Bunu "tam size özel rakamı görmek için aşağıdaki AI Teklif Hesaplayıcı'yı kullanın" gibi net, fark edilir bir cümleyle yap — üstünkörü geçme.
 
 Şu JSON formatında yanıt ver, başka hiçbir şey yazma:
 {
   "service": "<seo|ads|social|web|email|analytics|quote>",
   "title": "<hizmet başlığı>",
-  "message": "<kullanıcının isteğine özel, samimi Türkçe yanıt. Fiyat sorulmadıysa 2 cümle. Fiyat sorulduysa 2-3 cümle: biri ihtiyacı özetlesin, biri güncel fiyat aralığını versin (Google Ads'te ödeme akışını netleştirerek). 'Size özel' veya 'tam aradığınız' gibi kişisel bir dille yaz.>",
+  "message": "<kullanıcının isteğine özel, samimi Türkçe yanıt. Fiyat sorulmadıysa 2 cümle. Fiyat sorulduysa 3 cümle: biri ihtiyacı özetlesin, biri güncel fiyat aralığını versin (Google Ads'te ödeme akışını netleştirerek), biri de AI Teklif Hesaplayıcı'ya yönlendirsin. 'Size özel' veya 'tam aradığınız' gibi kişisel bir dille yaz.>",
   "whatsappHint": "<WhatsApp mesajında ne söyleyeceğini özetle, 1 kısa cümle>"
 }`
 

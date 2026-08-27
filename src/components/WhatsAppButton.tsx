@@ -13,7 +13,7 @@ export default function WhatsAppButton() {
       transition={{ delay: 0.6, duration: 0.4, ease: 'easeOut' }}
       whileHover={{ scale: 1.06 }}
       whileTap={{ scale: 0.95 }}
-      className="fixed bottom-4 left-4 sm:bottom-6 sm:left-6 z-40 w-14 h-14 rounded-full flex items-center justify-center shadow-2xl transition-shadow hover:shadow-[0_0_24px_rgba(37,211,102,0.45)]"
+      className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-40 w-14 h-14 rounded-full flex items-center justify-center shadow-2xl transition-shadow hover:shadow-[0_0_24px_rgba(37,211,102,0.45)]"
       style={{ background: '#25D366' }}
       aria-label="WhatsApp ile iletişime geç"
     >

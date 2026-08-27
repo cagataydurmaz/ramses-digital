@@ -7,8 +7,8 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
 // Lazy-load widget'lar — first paint'i engellemez
-const SearchWidget = dynamic(() => import('@/components/SearchWidget'), { ssr: false })
 const WhatsAppButton = dynamic(() => import('@/components/WhatsAppButton'), { ssr: false })
+const PhoneButton = dynamic(() => import('@/components/PhoneButton'), { ssr: false })
 const CookieBanner = dynamic(() => import('@/components/CookieBanner'), { ssr: false })
 
 const inter = Inter({
@@ -82,8 +82,8 @@ export default function RootLayout({
         <Navbar />
         <main>{children}</main>
         <Footer />
-        <SearchWidget />
         <WhatsAppButton />
+        <PhoneButton />
         <CookieBanner />
         {/* Google Analytics GA4 */}
         <Script
