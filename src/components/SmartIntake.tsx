@@ -126,19 +126,21 @@ export default function SmartIntake() {
           >
             {/* Input card */}
             <div
-              className={`rounded-2xl border transition-colors duration-300 ${
+              className={`rounded-2xl border-2 transition-colors duration-300 ${
                 isFocused
-                  ? 'border-blue-500/40 shadow-[0_0_32px_rgba(59,130,246,0.18)]'
+                  ? 'border-blue-400/70 shadow-[0_0_36px_rgba(59,130,246,0.25)]'
                   : 'breathe-glow'
               } bg-[#0D1525]/95 backdrop-blur-sm`}
             >
               <form onSubmit={handleSubmit}>
                 {/* Top bar */}
                 <div className="flex items-center gap-2.5 px-4 pt-4 pb-1">
-                  <div className="w-7 h-7 bg-blue-500/15 rounded-lg flex items-center justify-center shrink-0">
-                    <Sparkles size={14} className="text-blue-400" />
+                  <div className="flex items-center gap-2 bg-blue-500/15 border border-blue-500/30 rounded-full pl-2 pr-3.5 py-1.5">
+                    <div className="w-5 h-5 bg-blue-500/20 rounded-full flex items-center justify-center shrink-0">
+                      <Sparkles size={12} className="text-blue-300" />
+                    </div>
+                    <span className="text-blue-300 text-xs font-bold tracking-wider uppercase">AI Asistan</span>
                   </div>
-                  <span className="text-blue-400 text-xs font-semibold tracking-wider uppercase">AI Asistan</span>
                   <div className="flex items-center gap-1 ml-auto">
                     {[0, 1, 2].map(i => (
                       <motion.span
