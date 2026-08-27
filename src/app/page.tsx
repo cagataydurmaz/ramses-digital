@@ -390,16 +390,16 @@ export default function HomePage() {
             style={{ animationDelay: '0.2s' }}
           >
             {/* Section label */}
-            <div className="flex items-center justify-center gap-3 mb-3 sm:mb-5">
-              <div className="h-px flex-1 bg-gradient-to-r from-transparent to-white/10 max-w-[80px]" />
-              <div className="flex items-center gap-2 bg-white/[0.04] border border-white/[0.08] rounded-full px-4 py-1.5">
-                <span className="relative flex h-2 w-2">
+            <div className="flex items-center justify-center gap-3 mb-4 sm:mb-6">
+              <div className="h-px flex-1 bg-gradient-to-r from-transparent to-blue-500/20 max-w-[80px]" />
+              <div className="flex items-center gap-2.5 bg-blue-500/10 border border-blue-500/25 rounded-full px-5 py-2 shadow-[0_0_20px_rgba(59,130,246,0.15)]">
+                <span className="relative flex h-2.5 w-2.5">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75" />
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500" />
+                  <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-blue-400" />
                 </span>
-                <span className="text-[11px] sm:text-xs font-medium text-zinc-400 tracking-wide">AI Asistan — Hedefinizi yazın, sizi yönlendirelim</span>
+                <span className="text-xs sm:text-sm font-semibold text-blue-300 tracking-wide">Hedefinizi yazın, saniyeler içinde size özel yönlendirme alın</span>
               </div>
-              <div className="h-px flex-1 bg-gradient-to-l from-transparent to-white/10 max-w-[80px]" />
+              <div className="h-px flex-1 bg-gradient-to-l from-transparent to-blue-500/20 max-w-[80px]" />
             </div>
             <SmartIntake />
           </div>

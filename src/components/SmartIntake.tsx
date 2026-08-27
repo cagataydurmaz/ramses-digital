@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Link from 'next/link'
-import { ArrowRight, Loader2, Sparkles, RotateCcw, Send } from 'lucide-react'
+import { ArrowRight, Loader2, Sparkles, RotateCcw, Send, Edit3 } from 'lucide-react'
 
 const WHATSAPP_NUMBER = '905355601936'
 
@@ -128,15 +128,15 @@ export default function SmartIntake() {
             <div
               className={`rounded-2xl border transition-colors duration-300 ${
                 isFocused
-                  ? 'border-blue-500/30 shadow-[0_0_24px_rgba(59,130,246,0.08)]'
-                  : 'border-white/[0.07]'
-              } bg-[#0D1525]`}
+                  ? 'border-blue-500/40 shadow-[0_0_32px_rgba(59,130,246,0.18)]'
+                  : 'breathe-glow'
+              } bg-[#0D1525]/95 backdrop-blur-sm`}
             >
               <form onSubmit={handleSubmit}>
                 {/* Top bar */}
-                <div className="flex items-center gap-2.5 px-4 pt-4 pb-2">
-                  <div className="w-6 h-6 bg-blue-500/10 rounded-lg flex items-center justify-center shrink-0">
-                    <Sparkles size={13} className="text-blue-400" />
+                <div className="flex items-center gap-2.5 px-4 pt-4 pb-1">
+                  <div className="w-7 h-7 bg-blue-500/15 rounded-lg flex items-center justify-center shrink-0">
+                    <Sparkles size={14} className="text-blue-400" />
                   </div>
                   <span className="text-blue-400 text-xs font-semibold tracking-wider uppercase">AI Asistan</span>
                   <div className="flex items-center gap-1 ml-auto">
@@ -150,9 +150,13 @@ export default function SmartIntake() {
                     ))}
                   </div>
                 </div>
+                <p className="px-4 pb-2.5 text-zinc-500 text-xs sm:text-sm">
+                  İhtiyacınızı birkaç kelimeyle yazın — size en uygun hizmeti ve tahmini fiyatı anında gösterelim.
+                </p>
 
                 {/* Textarea */}
-                <div className="px-4 pb-1">
+                <div className="px-4 pb-1 flex gap-2.5">
+                  <Edit3 size={18} className="text-blue-400/70 shrink-0 mt-1" />
                   <textarea
                     ref={inputRef}
                     value={input}
@@ -162,9 +166,9 @@ export default function SmartIntake() {
                     onKeyDown={e => {
                       if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); analyze(input) }
                     }}
-                    placeholder={EXAMPLES[exampleIndex]}
+                    placeholder={`"${EXAMPLES[exampleIndex]}"`}
                     rows={3}
-                    className="w-full bg-transparent text-white placeholder:text-zinc-500 text-base sm:text-lg resize-none outline-none leading-relaxed min-h-[64px] sm:min-h-[84px]"
+                    className="w-full bg-transparent text-white placeholder:text-zinc-400 text-base sm:text-lg resize-none outline-none leading-relaxed min-h-[64px] sm:min-h-[84px]"
                   />
                 </div>
 

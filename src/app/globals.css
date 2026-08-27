@@ -110,6 +110,15 @@ body {
   will-change: transform;
 }
 
+/* AI Asistan kartı — dikkat çekmesi için yavaş, hafif nefes alan glow. */
+@keyframes breathe-glow {
+  0%, 100% { box-shadow: 0 0 24px rgba(59,130,246,0.10); border-color: rgba(59,130,246,0.20); }
+  50%      { box-shadow: 0 0 40px rgba(59,130,246,0.22); border-color: rgba(59,130,246,0.35); }
+}
+.breathe-glow {
+  animation: breathe-glow 3.5s ease-in-out infinite;
+}
+
 /* Hero arka plan glow'ları — video yerine yavaş, organik drift.
    Sadece transform/scale (compositor-safe), masaüstünde çalışır;
    mobilde .mobile-hide-blur zaten bu elemanları gizliyor. */
