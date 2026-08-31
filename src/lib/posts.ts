@@ -3349,4 +3349,177 @@ export const posts: Post[] = [
       <p>Web tasarımı, SEO ve GEO/AEO'yu paralel kurguladığımız için üç ayrı proje gibi sırayla değil, tek bir bütünleşik süreç olarak ilerledi. Kesin bir "genel ortalama süre" vermek yerine, her projeyi kendi kapsamına göre değerlendiriyoruz.</p>
     `,
   },
+  {
+    slug: 'dijital-pazarlama-ajansi-fiyatlari-2026',
+    coverImage: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=80&fit=crop',
+    title: 'Dijital Pazarlama Ajansı Fiyatları Ne Kadar? (2026 Güncel Rehber)',
+    excerpt:
+      'SEO, Google Ads, sosyal medya ve web tasarım için işletme büyüklüğüne göre güncel fiyat aralıkları. Google Ads\'te kim kime ne ödüyor, en şeffaf şekilde anlattık.',
+    category: 'Strateji',
+    categoryColor: 'blue',
+    emoji: '💰',
+    coverGradient: 'from-blue-500/10 to-blue-900/5',
+    readTime: 5,
+    date: '2026-08-29',
+    author: 'Ramses Digital Ekibi',
+    authorRole: 'Strateji Ekibi',
+    tags: ['Fiyatlandırma', 'SEO', 'Google Ads', 'Web Tasarım', 'Şeffaflık'],
+    content: `
+      <h2>Neden Herkes Farklı Bir Fiyat Söylüyor?</h2>
+      <p>"Dijital pazarlama ajansı fiyatları ne kadar?" sorusuna internet üzerinde onlarca farklı rakam bulursunuz — çünkü fiyat, işletmenizin büyüklüğüne, hedeflerinize ve seçtiğiniz hizmet kombinasyonuna göre gerçekten değişir. Bu yazıda uydurma bir "ortalama rakam" vermek yerine, kendi güncel fiyat aralıklarımızı işletme büyüklüğüne göre açık şekilde paylaşıyoruz — aynı veriyi sitemizdeki <a href="/teklif-al">AI Teklif Hesaplayıcı</a> da kullanıyor.</p>
+
+      <div class="stat-grid">
+        <div class="stat-card">
+          <span class="stat-number">3</span>
+          <span class="stat-label">İşletme büyüklüğü kategorisi (küçük / orta / büyük)</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number emerald">4</span>
+          <span class="stat-label">Sabit fiyat aralığı olan hizmet (SEO, Ads, Sosyal Medya, Web)</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number violet">%15</span>
+          <span class="stat-label">Google Ads'te reklam bütçesi üzerinden alınan yönetim payı</span>
+        </div>
+      </div>
+
+      <h2>Güncel Fiyat Aralıklarımız</h2>
+      <p>Aşağıdaki rakamlar KDV hariç, aylık (Web Tasarım hariç — o tek seferlik) ve güncel piyasa koşullarına göre belirlenmiş aralıklardır. Kesin teklif, kapsam netleştikten sonra verilir.</p>
+
+      <table>
+        <thead><tr><th>Hizmet</th><th>Küçük İşletme</th><th>Orta İşletme</th><th>Büyük / Kurumsal</th></tr></thead>
+        <tbody>
+          <tr><td>SEO</td><td>10.000-15.000₺/ay</td><td>15.000-25.000₺/ay</td><td>25.000-40.000₺/ay</td></tr>
+          <tr><td>Google Ads (yönetim)</td><td>5.000-8.000₺/ay</td><td>8.000-15.000₺/ay</td><td>15.000-30.000₺/ay</td></tr>
+          <tr><td>Sosyal Medya</td><td>8.000-14.000₺/ay</td><td>14.000-22.000₺/ay</td><td>22.000-35.000₺/ay</td></tr>
+          <tr><td>Web Tasarım</td><td>25.000-45.000₺ (tek seferlik)</td><td>60.000-110.000₺ (tek seferlik)</td><td>130.000-250.000₺ (tek seferlik)</td></tr>
+        </tbody>
+      </table>
+
+      <p>E-posta pazarlama ve veri analizi/danışmanlık gibi hizmetlerin kapsamı projeye göre çok değiştiği için sabit bir aralık yerine görüşme sonrası özel teklif veriyoruz.</p>
+
+      <h2>Google Ads'te Neden İki Ayrı Rakam Var?</h2>
+      <p>Google Ads fiyatlandırması, diğer hizmetlerden farklı çalışır ve karışıklık en sık burada yaşanır. İki tamamen ayrı ödeme akışı vardır:</p>
+      <ul>
+        <li><strong>Bize ödenen yönetim ücreti</strong> — yukarıdaki tablodaki sabit aylık rakam. Kampanya kurulumu, optimizasyon ve raporlama karşılığı.</li>
+        <li><strong>Google'a ödenen reklam bütçesi</strong> — bu para bize hiç uğramaz, doğrudan sizin Google Ads hesabınızdan Google'a gider. Biz bu bütçenin <strong>%15'i kadar</strong> ek bir yönetim payı alırız.</li>
+      </ul>
+
+      <div class="callout">
+        <span class="callout-title">Somut Örnek</span>
+        <p>Aylık 20.000₺ reklam bütçeniz varsa: bu 20.000₺'nin tamamı doğrudan Google'a gider. Buna ek olarak bize %15'lik yönetim payı olarak +3.000₺ ödersiniz — yani toplam maliyetiniz reklam bütçesi + yönetim ücreti + bu %15'lik pay olur. Reklam bütçesini büyütmek "bize daha çok para ödemek" anlamına gelmez, sadece Google'a giden kısmı büyütür.</p>
+      </div>
+
+      <h2>Fiyatı Asıl Belirleyen Nedir?</h2>
+      <p>Yukarıdaki aralıklar geniş çünkü gerçek fiyat şu faktörlere göre netleşir:</p>
+      <ul>
+        <li>Sektörünüzdeki rekabet seviyesi (örneğin hukuk veya sağlık gibi rekabetçi sektörler daha fazla emek gerektirir)</li>
+        <li>Mevcut dijital altyapınızın durumu (sıfırdan mı başlıyorsunuz, yoksa optimize mi ediyoruz)</li>
+        <li>Hedeflediğiniz coğrafya (tek şehir mi, Türkiye geneli mi)</li>
+        <li>Kaç hizmeti birlikte aldığınız (paket halinde alınan hizmetlerde genelde daha verimli bir fiyatlandırma mümkün olur)</li>
+      </ul>
+
+      <blockquote>
+        <p>"Fiyat sorusuna dürüst cevap, tek bir rakam değil bir aralıktır — ama en azından o aralığın nereden geldiğini bilmelisiniz."</p>
+      </blockquote>
+
+      <h2>Sık Sorulan Sorular</h2>
+
+      <h3>En ucuz seçenek hangisi?</h3>
+      <p>Tek bir hizmete (örneğin sadece SEO) odaklanmak, birden fazla hizmeti aynı anda almaktan başlangıçta daha ucuzdur — ama sonuç almanız da o kadar uzun sürebilir. Hangi kombinasyonun size uygun olduğu hedefinize bağlı.</p>
+
+      <h3>Fiyatlar neden "aylık" gösteriliyor, tek seferlik ödeme yok mu?</h3>
+      <p>SEO, Google Ads ve sosyal medya sürekli emek gerektiren, sürdürülebilir hizmetlerdir — bu yüzden aylık ücretlendirilir. Web tasarım ise bir kere teslim edilen bir proje olduğu için tek seferlik ücretlendirilir.</p>
+
+      <h3>Bu rakamlar kesin teklif mi?</h3>
+      <p>Hayır, bunlar güncel piyasa aralıklarımız. Kesin teklif için işletmenize özel ihtiyacı netleştirmemiz gerekiyor — bunu hem <a href="/teklif-al">AI Teklif Hesaplayıcı</a> üzerinden anında, hem de bizimle doğrudan konuşarak yapabilirsiniz.</p>
+
+      <h3>Sonuç</h3>
+      <p>Dijital pazarlama fiyatlandırmasında şeffaflık, güven inşa etmenin ilk adımı. Yukarıdaki aralıklar ve Google Ads'in iki ayrı ödeme akışı netliği ile, bütçenizi neyin oluşturduğunu tam olarak biliyorsunuz. Size özel, işletme büyüklüğünüze göre hesaplanmış bir teklif için <a href="/teklif-al">AI Teklif Hesaplayıcı'yı</a> 30 saniyede deneyebilirsiniz.</p>
+    `,
+  },
+  {
+    slug: 'e-ticaret-icin-dijital-pazarlama-rehberi',
+    coverImage: 'https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=1200&q=80&fit=crop',
+    title: 'E-Ticaret İşletmeleri İçin Dijital Pazarlama Rehberi',
+    excerpt:
+      'SEO, Google Ads ve e-posta otomasyonunu birlikte kurgulamayan bir e-ticaret sitesi, trafiği de dönüşümü de masada bırakır. Kanalları nasıl bir arada yönetmeniz gerektiğini anlattık.',
+    category: 'Sektörel',
+    categoryColor: 'orange',
+    emoji: '🛒',
+    coverGradient: 'from-orange-500/10 to-orange-900/5',
+    readTime: 5,
+    date: '2026-08-31',
+    author: 'Ramses Digital Ekibi',
+    authorRole: 'Sektörel Dijital Pazarlama Uzmanları',
+    tags: ['E-Ticaret', 'SEO', 'Google Ads', 'E-Posta Pazarlama', 'Sektörel'],
+    content: `
+      <h2>E-Ticarette Dijital Pazarlama Neden Farklı Çalışır?</h2>
+      <p>Bir e-ticaret sitesinde tek bir kanal yeterli olmaz — çünkü müşteri yolculuğu tek bir noktadan ilerlemez. Biri ürününüzü Google'da arayarak bulur, biri terk ettiği sepeti bir e-posta hatırlatmasıyla tamamlar, biri de Google Shopping'de gördüğü bir reklamla karar verir. Bu yazıda SEO, Google Ads ve e-posta otomasyonunu e-ticaret için nasıl birlikte kurguladığımızı anlatıyoruz.</p>
+
+      <div class="stat-grid">
+        <div class="stat-card">
+          <span class="stat-number orange">3 Kanal</span>
+          <span class="stat-label">SEO, Google Ads ve e-posta — birlikte çalışması gereken üçlü</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number emerald">Ürün + Kategori</span>
+          <span class="stat-label">E-ticaret SEO'sunun iki temel optimizasyon katmanı</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number violet">Otomatik</span>
+          <span class="stat-label">Terk edilmiş sepet ve sadakat akışlarının çalışma şekli</span>
+        </div>
+      </div>
+
+      <h2>SEO: Ürün ve Kategori Sayfası Optimizasyonu</h2>
+      <p>E-ticarette SEO, kurumsal bir web sitesindekinden farklı çalışır — çünkü optimize edilmesi gereken yüzlerce, bazen binlerce ürün sayfası vardır. Öncelik sırası şöyle olmalı:</p>
+      <ul>
+        <li><strong>Kategori sayfaları:</strong> En yüksek arama hacmine sahip, genellikle en çok trafiği kategori sayfaları çeker — bu sayfaların başlık, açıklama ve iç link yapısı özenle kurgulanmalı.</li>
+        <li><strong>Ürün sayfaları:</strong> Otomatik/şablon açıklamalar yerine gerçek, özgün ürün açıklamaları — hem SEO hem dönüşüm için.</li>
+        <li><strong>Schema markup (Ürün şeması):</strong> Fiyat, stok durumu ve yıldız puanının Google arama sonuçlarında doğrudan görünmesini sağlar — tıklama oranını doğrudan etkiler.</li>
+      </ul>
+
+      <h2>Google Ads: Shopping ve Arama Kampanyaları Birlikte</h2>
+      <p>E-ticarette Google Ads'in en güçlü formatı Shopping kampanyalarıdır — ürün görseli, fiyatı ve markanız doğrudan arama sonucunda görünür. Ancak Shopping tek başına yeterli değildir; markalı olmayan, araştırma aşamasındaki aramalar için klasik arama kampanyaları da gerekir. İkisini birlikte yönetmek, hem "hazır alıcıyı" hem "henüz karar vermemiş araştırmacıyı" aynı anda hedeflemenizi sağlar.</p>
+
+      <div class="callout">
+        <span class="callout-title">Bütçe Netliği</span>
+        <p>Google Ads'te reklam bütçesinin tamamı doğrudan Google'a gider, ajansa değil — yönetim ücreti bunun ayrı ve üzerine eklenen bir kalemdir. Detaylı örnek için <a href="/blog/dijital-pazarlama-ajansi-fiyatlari-2026">güncel fiyatlandırma rehberimize</a> bakabilirsiniz.</p>
+      </div>
+
+      <h2>E-Posta Otomasyonu: Terk Edilmiş Sepet ve Sadakat</h2>
+      <p>E-ticarette e-posta, en yüksek getiri sağlayan kanallardan biridir çünkü zaten sizi tanıyan, bir kez alışveriş yapmış veya sepete ürün eklemiş kişilere ulaşır. İki akış özellikle kritik:</p>
+      <ul>
+        <li><strong>Terk edilmiş sepet hatırlatması:</strong> Kullanıcı sepete ürün ekleyip ayrıldığında otomatik tetiklenir — bu konuyu <a href="/blog/e-ticaret-icin-n8n-otomasyon-ornekleri">n8n otomasyon örnekleri yazımızda</a> teknik olarak detaylandırdık.</li>
+        <li><strong>Satın alma sonrası sadakat akışı:</strong> İlk alışverişten sonra otomatik gönderilen, tekrar alışverişi teşvik eden e-posta dizisi.</li>
+      </ul>
+      <p>E-posta pazarlamanın genel prensipleri için <a href="/blog/email-pazarlama-acilma-orani">e-posta pazarlama yazımıza</a> göz atabilirsiniz.</p>
+
+      <table>
+        <thead><tr><th>Kanal</th><th>Öncelik</th><th>Neden</th></tr></thead>
+        <tbody>
+          <tr><td>SEO (kategori + ürün)</td><td>Yüksek</td><td>Sürdürülebilir, uzun vadeli organik trafik</td></tr>
+          <tr><td>Google Ads (Shopping)</td><td>Yüksek</td><td>Hazır alıcıya anında görünürlük</td></tr>
+          <tr><td>E-posta otomasyonu</td><td>Yüksek</td><td>En düşük maliyetli, en yüksek dönüşümlü kanal</td></tr>
+          <tr><td>Sosyal medya</td><td>Orta</td><td>Marka bilinirliği, doğrudan satıştan çok farkındalık</td></tr>
+        </tbody>
+      </table>
+
+      <blockquote>
+        <p>"E-ticarette tek kanal yoktur — müşteri sizi Google'da bulur, sepette tereddüt eder, e-postayla ikna olur."</p>
+      </blockquote>
+
+      <h2>Sık Sorulan Sorular</h2>
+
+      <h3>Küçük bir e-ticaret sitesi için hangi kanalla başlamalıyım?</h3>
+      <p>Bütçeniz kısıtlıysa önce SEO (özellikle kategori sayfası optimizasyonu) ve terk edilmiş sepet e-postası ile başlayın — ikisi de görece düşük maliyetli, sürdürülebilir kanallardır. Google Ads, bütçe büyüdükçe eklenmesi mantıklı bir sonraki adımdır.</p>
+
+      <h3>Marketplace'te (Trendyol, Hepsiburada vb.) satış yapıyorum, kendi sitem gerekli mi?</h3>
+      <p>Marketplace'ler hızlı erişim sağlar ama marka kontrolü ve müşteri verisi sunmaz — komisyon oranları da yüksektir. Kendi siteniz, uzun vadede marka değeri ve daha düşük maliyetli tekrar satış imkânı sağlar; ikisi birbirini dışlamaz, birlikte kullanılabilir.</p>
+
+      <h3>Sonuç</h3>
+      <p>E-ticarette dijital pazarlama, tek bir kanala yatırım yapmak değil, SEO/Google Ads/e-posta üçlüsünü birbirini besleyecek şekilde kurgulamaktır. Ramses Digital olarak e-ticaret işletmeleri için bu üç kanalı bütünleşik bir strateji olarak yönetiyoruz.</p>
+    `,
+  },
 ]
