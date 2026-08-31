@@ -434,7 +434,7 @@ export default function HomePage() {
               const c = statColorMap[stat.color]
               return (
                 <FadeIn key={stat.label} delay={i * 0.1}>
-                  <div className="group text-center bg-white/[0.02] border border-white/[0.06] rounded-2xl py-6 sm:py-8 px-3 card-hover">
+                  <div className="group text-center bg-white/[0.02] border border-white/[0.14] rounded-2xl py-6 sm:py-8 px-3 card-hover">
                     <div className={`w-10 h-10 sm:w-11 sm:h-11 mx-auto mb-3 rounded-xl ${c.bg} flex items-center justify-center ${c.bgHover} transition-colors`}>
                       <Icon size={18} className={c.text} />
                     </div>
@@ -474,7 +474,7 @@ export default function HomePage() {
               const c = serviceColorMap[service.color]
               return (
                 <FadeIn key={service.title} delay={i * 0.08}>
-                  <div className="group relative h-full bg-[#0D1225] border border-white/[0.06] rounded-2xl p-6 card-hover cursor-default overflow-hidden">
+                  <div className="group relative h-full bg-[#0D1225] border border-white/[0.14] rounded-2xl p-6 card-hover cursor-default overflow-hidden">
                     <div className={`absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r ${c.bar} scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left`} />
                     <div className={`w-11 h-11 ${c.bg} rounded-xl flex items-center justify-center mb-5 transition-all ${c.bgHover} ${c.glow}`}>
                       <Icon size={20} className={c.text} />
@@ -503,7 +503,7 @@ export default function HomePage() {
               const c = serviceColorMap[n8n.color]
               return (
                 <FadeIn delay={services.length * 0.08} className="md:col-span-2 lg:col-span-3">
-                  <div className="group relative bg-[#0D1225] border border-white/[0.06] rounded-2xl p-6 sm:p-8 card-hover cursor-default overflow-hidden">
+                  <div className="group relative bg-[#0D1225] border border-white/[0.14] rounded-2xl p-6 sm:p-8 card-hover cursor-default overflow-hidden">
                     <div className={`absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r ${c.bar} scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left`} />
                     <div className="flex flex-col sm:flex-row sm:items-center gap-6">
                       <div className={`w-14 h-14 shrink-0 ${c.bg} rounded-2xl flex items-center justify-center transition-all ${c.bgHover} ${c.glow}`}>
@@ -552,7 +552,7 @@ export default function HomePage() {
           </FadeIn>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             <FadeIn delay={0}>
-              <div className="h-full bg-[#0D1225] border border-white/[0.06] rounded-2xl p-6">
+              <div className="h-full bg-[#0D1225] border border-white/[0.14] rounded-2xl p-6">
                 <div className="w-11 h-11 bg-blue-500/10 rounded-xl flex items-center justify-center mb-4">
                   <Search size={20} className="text-blue-400" />
                 </div>
@@ -562,7 +562,7 @@ export default function HomePage() {
               </div>
             </FadeIn>
             <FadeIn delay={0.08}>
-              <div className="h-full bg-[#0D1225] border border-white/[0.06] rounded-2xl p-6">
+              <div className="h-full bg-[#0D1225] border border-white/[0.14] rounded-2xl p-6">
                 <div className="w-11 h-11 bg-violet-500/10 rounded-xl flex items-center justify-center mb-4">
                   <Mic size={20} className="text-violet-400" />
                 </div>
@@ -572,7 +572,7 @@ export default function HomePage() {
               </div>
             </FadeIn>
             <FadeIn delay={0.16}>
-              <div className="h-full bg-[#0D1225] border border-white/[0.06] rounded-2xl p-6">
+              <div className="h-full bg-[#0D1225] border border-white/[0.14] rounded-2xl p-6">
                 <div className="w-11 h-11 bg-fuchsia-500/10 rounded-xl flex items-center justify-center mb-4">
                   <Bot size={20} className="text-fuchsia-400" />
                 </div>
