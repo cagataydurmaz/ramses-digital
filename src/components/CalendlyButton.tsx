@@ -16,6 +16,7 @@ interface CalendlyButtonProps {
   variant?: 'primary' | 'secondary' | 'link' | 'outline'
   className?: string
   showIcon?: boolean
+  message?: string
 }
 
 export default function CalendlyButton({
@@ -23,10 +24,11 @@ export default function CalendlyButton({
   variant = 'primary',
   className = '',
   showIcon = true,
+  message = WHATSAPP_MESSAGE,
 }: CalendlyButtonProps) {
   const handleClick = () => {
     window.fbq?.('track', 'Contact', { content_name: label })
-    const msg = encodeURIComponent(WHATSAPP_MESSAGE)
+    const msg = encodeURIComponent(message)
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${msg}`, '_blank')
   }
 

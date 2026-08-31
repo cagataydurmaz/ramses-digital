@@ -25,7 +25,10 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://ramsesdigital.com'),
-  alternates: { canonical: 'https://ramsesdigital.com' },
+  alternates: {
+    canonical: 'https://ramsesdigital.com',
+    languages: { 'tr-TR': 'https://ramsesdigital.com', 'en': 'https://ramsesdigital.com/en' },
+  },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   title: 'Ramses Dijital Yazılım ve Dijital Pazarlama Ajansı | SEO, Google Ads, n8n Otomasyon, Web Tasarım',
   description:

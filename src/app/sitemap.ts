@@ -7,6 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const statics = [
     { path: '',             priority: 1.0, freq: 'weekly'  },
+    { path: '/en',          priority: 0.8, freq: 'weekly'  },
     { path: '/hizmetler',  priority: 0.9, freq: 'monthly' },
     { path: '/hizmetler/seo-kocaeli',         priority: 0.95, freq: 'monthly' },
     { path: '/hizmetler/google-ads-kocaeli',  priority: 0.95, freq: 'monthly' },

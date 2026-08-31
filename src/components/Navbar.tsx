@@ -6,6 +6,7 @@ import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { Menu, X, ChevronDown } from 'lucide-react'
 import CalendlyButton from '@/components/CalendlyButton'
+import LanguageSwitcher from '@/components/LanguageSwitcher'
 
 const navLinks = [
   { href: '/', label: 'Anasayfa' },
@@ -120,6 +121,7 @@ export default function Navbar() {
 
           {/* Desktop CTA */}
           <div className="hidden lg:flex items-center gap-4">
+            <LanguageSwitcher />
             <CalendlyButton
               label="Ücretsiz Danışmanlık"
               variant="primary"
@@ -178,7 +180,8 @@ export default function Navbar() {
               ))}
             </div>
 
-            <div className="pt-4">
+            <div className="pt-4 flex items-center gap-3">
+              <LanguageSwitcher />
               <CalendlyButton label="Ücretsiz Danışmanlık" variant="primary" />
             </div>
           </div>
