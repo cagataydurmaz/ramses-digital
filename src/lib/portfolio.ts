@@ -183,7 +183,7 @@ export const projects: CaseStudy[] = [
     industry: 'Üretim / Mühendislik',
     desc: '1989\'dan beri faaliyet gösteren, 60.000 m² tesise sahip bir yay (spring) üreticisi için sıfırdan tasarlanmış kurumsal web sitesi. ISO 9001 ve IATF 16949 gibi mühendislik/kalite sertifikalarını, üretim sürecini ve kapasiteyi B2B alıcılara net şekilde anlatan, İngilizce/Türkçe çok dilli bir yapı.',
     tags: ['Web Tasarım', 'Kurumsal Kimlik', 'B2B', 'Çok Dilli'],
-    thumb: 'https://image.thum.io/get/width/800/https://www.tenvorsprings.com.tr/',
+    thumb: 'https://image.thum.io/get/width/1400/crop/900/https://www.tenvorsprings.com.tr/',
     color: 'orange',
     challenge:
       'Tenvor Springs, 35 yılı aşkın mühendislik geçmişine ve ISO 9001/IATF 16949 sertifikalarına sahip olmasına rağmen, bu teknik güvenilirliği dijitalde yansıtan bir web sitesine sahip değildi. B2B alıcıların (özellikle otomotiv ve sanayi sektöründen) tedarikçi değerlendirirken aradığı somut bilgiler — üretim süreci, kapasite, sertifikalar, kalite kontrol — sitede net ve profesyonel bir şekilde sunulmalıydı.',

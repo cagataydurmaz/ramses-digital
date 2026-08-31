@@ -180,7 +180,7 @@ const serviceColorMap: Record<string, { bg: string; bgHover: string; text: strin
 }
 
 const stats = [
-  { icon: Trophy, value: 100, suffix: '+', label: 'Başarılı Proje', color: 'blue' },
+  { icon: Trophy, value: 50, suffix: '+', label: 'Başarılı Proje', color: 'blue' },
   { icon: Users, value: 50, suffix: '+', label: 'Mutlu Müşteri', color: 'violet' },
   { icon: Clock, value: 5, suffix: '+', label: 'Yıl Deneyim', color: 'emerald' },
   { icon: ThumbsUp, value: 94, suffix: '%', label: 'Müşteri Memnuniyeti', color: 'fuchsia' },
