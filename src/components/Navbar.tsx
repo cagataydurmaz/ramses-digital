@@ -51,9 +51,9 @@ export default function Navbar() {
             : 'bg-transparent'
         }`}
       >
-        <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2.5" aria-label="Ramses Dijital Yazılım ve Dijital Pazarlama Ajansı">
+          <Link href="/" className="flex items-center gap-2.5 shrink-0" aria-label="Ramses Dijital Yazılım ve Dijital Pazarlama Ajansı">
             <Image
               src="/logo.png"
               alt="Ramses Dijital Yazılım ve Dijital Pazarlama Ajansı"
@@ -62,15 +62,15 @@ export default function Navbar() {
               priority
               className="rounded-md"
             />
-            <div className="flex items-baseline gap-1.5">
+            <div className="flex items-baseline gap-1.5 whitespace-nowrap">
               <span className="text-blue-500 font-bold text-xl tracking-tight">RAMSES</span>
               <span className="text-white font-light text-xl tracking-tight">Dijital</span>
-              <span className="hidden lg:inline text-zinc-500 font-light text-xs tracking-tight">Yazılım & Pazarlama</span>
+              <span className="hidden xl:inline text-zinc-500 font-light text-xs tracking-tight">Yazılım & Pazarlama</span>
             </div>
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden lg:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-5 xl:gap-7">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -120,7 +120,7 @@ export default function Navbar() {
           </nav>
 
           {/* Desktop CTA */}
-          <div className="hidden lg:flex items-center gap-4">
+          <div className="hidden lg:flex items-center gap-3 shrink-0">
             <LanguageSwitcher />
             <CalendlyButton
               label="Ücretsiz Danışmanlık"
