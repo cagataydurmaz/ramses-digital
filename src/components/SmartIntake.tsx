@@ -7,13 +7,56 @@ import { ArrowRight, Loader2, Sparkles, RotateCcw, Send, Edit3 } from 'lucide-re
 
 const WHATSAPP_NUMBER = '905355601936'
 
-const EXAMPLES = [
+const EXAMPLES_TR = [
   'Google\'da üst sıralara çıkmak istiyorum',
   'Instagram hesabımı büyütmek istiyorum',
   'Web sitem çok yavaş, yenileyelim',
   'Google Ads ile satış artırmak istiyorum',
   'Rakiplerimden neden geride kalıyoruz?',
 ]
+
+const EXAMPLES_EN = [
+  'I want to rank higher on Google',
+  'I want to grow my Instagram account',
+  'My website is too slow, let\'s rebuild it',
+  'I want to increase sales with Google Ads',
+  'Why are we falling behind our competitors?',
+]
+
+const STRINGS = {
+  tr: {
+    badge: 'AI Asistan',
+    intro: 'İhtiyacınızı birkaç kelimeyle yazın — size en uygun hizmeti ve tahmini fiyatı anında gösterelim.',
+    enterHint: 'ile gönder',
+    submit: 'Analiz Et',
+    exampleLabel: 'Örnek:',
+    analyzing: 'AI analiz ediyor...',
+    error: 'Bir hata oluştu, tekrar deneyin.',
+    resetLabel: 'Tekrar sor',
+    youAsked: 'Siz sordunuz',
+    aiAnalysis: 'AI Analiz',
+    whatsappCta: 'WhatsApp\'tan Devam Et',
+    detailsCta: 'Detaylı Bilgi Al',
+    whatsappMessage: (message: string, input: string) =>
+      `Merhaba! Web sitenizdeki asistan şunları söyledi:\n"${message}"\n\nBenim ihtiyacım: ${input}\n\nBenimle iletişime geçebilir misiniz?`,
+  },
+  en: {
+    badge: 'AI Assistant',
+    intro: 'Describe what you need in a few words — we\'ll instantly show you the right service and an estimated price.',
+    enterHint: 'to send',
+    submit: 'Analyze',
+    exampleLabel: 'Example:',
+    analyzing: 'AI is analyzing...',
+    error: 'Something went wrong, please try again.',
+    resetLabel: 'Ask again',
+    youAsked: 'You asked',
+    aiAnalysis: 'AI Analysis',
+    whatsappCta: 'Continue on WhatsApp',
+    detailsCta: 'Get More Details',
+    whatsappMessage: (message: string, input: string) =>
+      `Hello! Your site's assistant said:\n"${message}"\n\nWhat I need: ${input}\n\nCould you get in touch with me?`,
+  },
+}
 
 const colorMap: Record<string, { badge: string; btn: string; accent: string }> = {
   blue:    { badge: 'bg-blue-500/10 text-blue-400 border border-blue-500/15',    btn: 'bg-blue-600 hover:bg-blue-700',    accent: 'text-blue-400' },
@@ -34,7 +77,9 @@ interface IntentResult {
   color: string
 }
 
-export default function SmartIntake() {
+export default function SmartIntake({ lang = 'tr' }: { lang?: 'tr' | 'en' }) {
+  const t = STRINGS[lang]
+  const EXAMPLES = lang === 'en' ? EXAMPLES_EN : EXAMPLES_TR
   const [input, setInput] = useState('')
   const [loading, setLoading] = useState(false)
   const [result, setResult] = useState<IntentResult | null>(null)
@@ -49,7 +94,7 @@ export default function SmartIntake() {
       setExampleIndex(i => (i + 1) % EXAMPLES.length)
     }, 3000)
     return () => clearInterval(interval)
-  }, [])
+  }, [EXAMPLES.length])
 
   useEffect(() => {
     if (!result) { setDisplayed(''); return }
@@ -74,13 +119,13 @@ export default function SmartIntake() {
       const res = await fetch('/api/intent', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ message: trimmed }),
+        body: JSON.stringify({ message: trimmed, lang }),
       })
       if (!res.ok) throw new Error()
       const data = await res.json()
       setResult(data)
     } catch {
-      setError('Bir hata oluştu, tekrar deneyin.')
+      setError(t.error)
     } finally {
       setLoading(false)
     }
@@ -105,9 +150,7 @@ export default function SmartIntake() {
   }
 
   const openWhatsApp = () => {
-    const msg = encodeURIComponent(
-      `Merhaba! Web sitenizdeki asistan şunları söyledi:\n"${result?.message}"\n\nBenim ihtiyacım: ${input}\n\nBenimle iletişime geçebilir misiniz?`
-    )
+    const msg = encodeURIComponent(t.whatsappMessage(result?.message ?? '', input))
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${msg}`, '_blank')
   }
 
@@ -139,7 +182,7 @@ export default function SmartIntake() {
                     <div className="w-5 h-5 bg-blue-500/20 rounded-full flex items-center justify-center shrink-0">
                       <Sparkles size={12} className="text-blue-300" />
                     </div>
-                    <span className="text-blue-300 text-xs font-bold tracking-wider uppercase">AI Asistan</span>
+                    <span className="text-blue-300 text-xs font-bold tracking-wider uppercase">{t.badge}</span>
                   </div>
                   <div className="flex items-center gap-1 ml-auto">
                     {[0, 1, 2].map(i => (
@@ -153,7 +196,7 @@ export default function SmartIntake() {
                   </div>
                 </div>
                 <p className="px-4 pb-2.5 text-zinc-500 text-xs sm:text-sm">
-                  İhtiyacınızı birkaç kelimeyle yazın — size en uygun hizmeti ve tahmini fiyatı anında gösterelim.
+                  {t.intro}
                 </p>
 
                 {/* Textarea */}
@@ -180,7 +223,7 @@ export default function SmartIntake() {
                 <div className="flex items-center justify-between px-4 py-3">
                   <span className="text-zinc-500 text-xs hidden sm:block">
                     <kbd className="bg-white/[0.05] border border-white/[0.10] rounded px-1.5 py-0.5 text-[10px] font-mono mr-1 text-zinc-400">Enter</kbd>
-                    ile gönder
+                    {t.enterHint}
                   </span>
                   <button
                     type="submit"
@@ -191,7 +234,7 @@ export default function SmartIntake() {
                       <Loader2 size={14} className="animate-spin" />
                     ) : (
                       <>
-                        <span>Analiz Et</span>
+                        <span>{t.submit}</span>
                         <Send size={13} />
                       </>
                     )}
@@ -203,7 +246,7 @@ export default function SmartIntake() {
             {/* Example chips */}
             {!loading && (
               <div className="hidden sm:flex flex-wrap gap-2 mt-3 justify-center">
-                <span className="text-zinc-600 text-xs self-center mr-1">Örnek:</span>
+                <span className="text-zinc-600 text-xs self-center mr-1">{t.exampleLabel}</span>
                 {EXAMPLES.slice(0, 3).map((ex) => (
                   <button
                     key={ex}
@@ -223,7 +266,7 @@ export default function SmartIntake() {
             {loading && (
               <div className="mt-4 flex items-center justify-center gap-3 text-zinc-500 text-sm">
                 <Loader2 size={14} className="animate-spin text-blue-400" />
-                <span>AI analiz ediyor...</span>
+                <span>{t.analyzing}</span>
               </div>
             )}
           </motion.div>
@@ -248,13 +291,13 @@ export default function SmartIntake() {
                     className="text-zinc-500 hover:text-zinc-300 transition-colors flex items-center gap-1.5 text-xs border border-white/[0.06] hover:border-white/[0.12] rounded-full px-3 py-1.5"
                   >
                     <RotateCcw size={11} />
-                    <span>Tekrar sor</span>
+                    <span>{t.resetLabel}</span>
                   </button>
                 </div>
 
                 {/* User message echo */}
                 <div className="bg-white/[0.03] rounded-xl px-4 py-3 mb-4 border border-white/[0.05]">
-                  <p className="text-zinc-500 text-[11px] mb-1 uppercase tracking-wider font-medium">Siz sordunuz</p>
+                  <p className="text-zinc-500 text-[11px] mb-1 uppercase tracking-wider font-medium">{t.youAsked}</p>
                   <p className="text-zinc-300 text-sm leading-relaxed">{input}</p>
                 </div>
 
@@ -264,7 +307,7 @@ export default function SmartIntake() {
                     <Sparkles size={14} className={colors!.accent} />
                   </div>
                   <div className="flex-1">
-                    <p className="text-zinc-500 text-[11px] mb-1.5 uppercase tracking-wider font-medium">AI Analiz</p>
+                    <p className="text-zinc-500 text-[11px] mb-1.5 uppercase tracking-wider font-medium">{t.aiAnalysis}</p>
                     <p className="text-zinc-100 text-sm leading-relaxed">
                       {displayed}
                       {displayed.length < result.message.length && (
@@ -283,13 +326,14 @@ export default function SmartIntake() {
                     <svg viewBox="0 0 24 24" className="w-4 h-4 fill-current shrink-0">
                       <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
                     </svg>
-                    WhatsApp&apos;tan Devam Et
+                    {t.whatsappCta}
                   </button>
                   <Link
                     href={result.slug}
+                    prefetch={false}
                     className="flex-1 flex items-center justify-center gap-2 bg-white/[0.04] hover:bg-white/[0.07] border border-white/[0.07] hover:border-white/[0.14] text-zinc-400 hover:text-white py-3 rounded-xl text-sm transition-all"
                   >
-                    Detaylı Bilgi Al
+                    {t.detailsCta}
                     <ArrowRight size={13} />
                   </Link>
                 </div>

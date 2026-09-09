@@ -1,6 +1,15 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
+import dynamic from 'next/dynamic'
 import CalendlyButton from '@/components/CalendlyButton'
+
+// ssr:false VERMİYORUZ — bu Türkçe homepage'de de böyle: bileşen içeriği
+// (etiketler, örnek cümleler) crawler'lar için HTML'de görünür kalsın istiyoruz.
+const SmartIntake = dynamic(() => import('@/components/SmartIntake'), {
+  loading: () => (
+    <div className="w-full max-w-4xl mx-auto h-[150px] rounded-2xl bg-white/[0.03] border border-white/[0.06] animate-pulse" />
+  ),
+})
 import {
   Sparkles,
   TrendingUp,
@@ -155,6 +164,22 @@ export default function EnglishHomePage() {
             >
               View Our Work
             </Link>
+          </div>
+
+          {/* ── AI Smart Intake ── */}
+          <div className="mt-8 sm:mt-14 w-full">
+            <div className="flex items-center justify-center gap-3 mb-4 sm:mb-6">
+              <div className="h-px flex-1 bg-gradient-to-r from-transparent to-blue-500/20 max-w-[80px]" />
+              <div className="flex items-center gap-2.5 bg-blue-500/10 border border-blue-500/25 rounded-full px-5 py-2 shadow-[0_0_20px_rgba(59,130,246,0.15)]">
+                <span className="relative flex h-2.5 w-2.5">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75" />
+                  <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-blue-400" />
+                </span>
+                <span className="text-xs sm:text-sm font-semibold text-blue-300 tracking-wide">Describe your goal, get instant guidance</span>
+              </div>
+              <div className="h-px flex-1 bg-gradient-to-l from-transparent to-blue-500/20 max-w-[80px]" />
+            </div>
+            <SmartIntake lang="en" />
           </div>
         </div>
       </section>
