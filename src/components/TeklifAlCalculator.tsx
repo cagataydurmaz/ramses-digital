@@ -52,6 +52,7 @@ const serviceOptions = [
 // Fiyatın karşılığında ne aldığını göstermek için — "sadece rakam" hissini kırmak amaçlı
 const serviceIncludes: Record<string, string[]> = {
   'SEO': ['Teknik SEO denetimi', 'Anahtar kelime stratejisi', 'Aylık içerik üretimi', 'Backlink çalışması', 'Aylık rapor'],
+  'SEO Başlangıç Paketi': ['Teknik SEO denetimi', 'Anahtar kelime stratejisi', 'On-page kurulum', 'Schema markup kurulumu'],
   'Google Ads': ['Kampanya kurulumu', 'Haftalık optimizasyon', 'Negatif kelime & bid yönetimi', 'Aylık performans raporu'],
   'Sosyal Medya': ['Post & story tasarımı', 'İçerik takvimi', 'Caption & hashtag stratejisi'],
   'Web Tasarım': ['UI/UX tasarım', 'Geliştirme & yayına alma', 'Mobil uyumluluk & hız optimizasyonu'],
@@ -183,6 +184,8 @@ export default function TeklifAlCalculator() {
   const [businessType, setBusinessType] = useState('')
   const [businessSize, setBusinessSize] = useState<BusinessSize | ''>('')
   const [services, setServices] = useState<string[]>([])
+  // SEO seçildiğinde: aylık (sürekli yönetim) mı, tek seferlik (sadece kurulum) mi?
+  const [seoBillingMode, setSeoBillingMode] = useState<'aylik' | 'tek'>('aylik')
   const [websiteUrl, setWebsiteUrl] = useState('')
   const [result, setResult] = useState('')
   const [isLoading, setIsLoading] = useState(false)
@@ -193,6 +196,13 @@ export default function TeklifAlCalculator() {
       prev.includes(id) ? prev.filter((s) => s !== id) : [...prev, id]
     )
   }
+
+  // Fiyatlandırma/kapsam için gerçek pricing.ts anahtarları — SEO seçiliyse ve
+  // tek seferlik tercih edildiyse 'SEO' yerine 'SEO Başlangıç Paketi' kullanılır.
+  // UI'daki `services` (checkbox id'leri) bundan ayrı tutulur.
+  const effectiveServices = services.map((s) =>
+    s === 'SEO' && seoBillingMode === 'tek' ? 'SEO Başlangıç Paketi' : s
+  )
 
   const handleSubmit = async () => {
     if (!businessType || !businessSize || services.length === 0) return
@@ -205,7 +215,7 @@ export default function TeklifAlCalculator() {
       const response = await fetch('/api/quote', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ businessType, businessSize: businessSizeLabels[businessSize], services, websiteUrl }),
+        body: JSON.stringify({ businessType, businessSize: businessSizeLabels[businessSize], services: effectiveServices, websiteUrl }),
       })
 
       if (!response.body) throw new Error('No body')
@@ -232,6 +242,7 @@ export default function TeklifAlCalculator() {
     setBusinessType('')
     setBusinessSize('')
     setServices([])
+    setSeoBillingMode('aylik')
     setWebsiteUrl('')
     setResult('')
     setIsDone(false)
@@ -248,7 +259,7 @@ export default function TeklifAlCalculator() {
     const sizeLabel = businessSize ? businessSizeLabels[businessSize] : ''
     let priceText = ''
     if (businessSize) {
-      const est = estimateQuote(services, businessSize)
+      const est = estimateQuote(effectiveServices, businessSize)
       if (est.monthlyMax > 0) priceText += ` (~${est.monthlyMin.toLocaleString('tr-TR')}-${est.monthlyMax.toLocaleString('tr-TR')}₺/ay)`
       if (est.oneTimeMax > 0) priceText += ` (~${est.oneTimeMin.toLocaleString('tr-TR')}-${est.oneTimeMax.toLocaleString('tr-TR')}₺ tek seferlik)`
     }
@@ -257,7 +268,7 @@ export default function TeklifAlCalculator() {
       ``,
       `İşletme Tipi: ${businessTypeLabel}`,
       sizeLabel ? `Büyüklük: ${sizeLabel}` : null,
-      `İlgilendiğim hizmetler: ${services.join(', ')}`,
+      `İlgilendiğim hizmetler: ${effectiveServices.join(', ')}`,
       websiteUrl ? `Web sitem: ${websiteUrl}` : null,
       priceText ? `Tahmini aralık: ${priceText.trim()}` : null,
       ``,
@@ -406,6 +417,45 @@ export default function TeklifAlCalculator() {
                   )
                 })}
               </div>
+
+              {/* SEO seçildiyse: aylık yönetim mi, tek seferlik kurulum mu? */}
+              {services.includes('SEO') && (
+                <div className="mt-5 p-4 rounded-xl border border-white/[0.06] bg-white/[0.02]">
+                  <p className="text-zinc-300 text-xs font-medium mb-3">SEO, AEO & GEO için ödeme şekli</p>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <button
+                      onClick={() => setSeoBillingMode('aylik')}
+                      className={`p-3 rounded-lg border text-left transition-all ${
+                        seoBillingMode === 'aylik'
+                          ? 'border-blue-500/60 bg-blue-500/10'
+                          : 'border-white/[0.06] bg-transparent hover:border-white/20'
+                      }`}
+                    >
+                      <p className={`text-xs font-semibold mb-1 ${seoBillingMode === 'aylik' ? 'text-white' : 'text-zinc-400'}`}>
+                        Aylık Yönetim <span className="text-blue-400 font-normal">(Önerilen)</span>
+                      </p>
+                      <p className="text-zinc-500 text-[11px] leading-relaxed">
+                        Sürekli içerik, teknik takip ve sıralama yönetimi — sonuçlar zamanla artar.
+                      </p>
+                    </button>
+                    <button
+                      onClick={() => setSeoBillingMode('tek')}
+                      className={`p-3 rounded-lg border text-left transition-all ${
+                        seoBillingMode === 'tek'
+                          ? 'border-blue-500/60 bg-blue-500/10'
+                          : 'border-white/[0.06] bg-transparent hover:border-white/20'
+                      }`}
+                    >
+                      <p className={`text-xs font-semibold mb-1 ${seoBillingMode === 'tek' ? 'text-white' : 'text-zinc-400'}`}>
+                        Tek Seferlik Başlangıç Paketi
+                      </p>
+                      <p className="text-zinc-500 text-[11px] leading-relaxed">
+                        Denetim + kurulum, bir kerelik. Devam eden aylık takip dahil değil.
+                      </p>
+                    </button>
+                  </div>
+                </div>
+              )}
             </div>
           )}
 
@@ -489,7 +539,7 @@ export default function TeklifAlCalculator() {
 
                   {/* Tahmini fiyat aralığı — PDF'teki güncel piyasa fiyatlarından hesaplanır */}
                   {isDone && businessSize && (() => {
-                    const est = estimateQuote(services, businessSize)
+                    const est = estimateQuote(effectiveServices, businessSize)
                     const hasAny = est.monthlyMin > 0 || est.oneTimeMin > 0
                     if (!hasAny) return null
                     const fmt = (n: number) => n.toLocaleString('tr-TR')
@@ -529,13 +579,16 @@ export default function TeklifAlCalculator() {
                         )}
 
                         {/* Bu fiyata dahil olanlar — karşılığı görünür olsun */}
-                        {services.some((s) => serviceIncludes[s]) && (
+                        {effectiveServices.some((s) => serviceIncludes[s]) && (
                           <div className="mt-5 pt-5 border-t border-white/[0.08]">
                             <p className="text-zinc-400 text-xs font-medium uppercase tracking-wider mb-3">Bu Ücrete Dahil Olanlar</p>
                             <div className="grid sm:grid-cols-2 gap-x-6 gap-y-3">
-                              {services.filter((s) => serviceIncludes[s]).map((s) => (
+                              {effectiveServices.filter((s) => serviceIncludes[s]).map((s) => (
                                 <div key={s}>
                                   <p className="text-white text-xs font-semibold mb-1.5">{s}</p>
+                                  {s === 'SEO Başlangıç Paketi' && (
+                                    <p className="text-amber-400/80 text-[10px] mb-1.5">Devam eden aylık takip dahil değil — sadece kurulum.</p>
+                                  )}
                                   <ul className="space-y-1">
                                     {serviceIncludes[s].map((item) => (
                                       <li key={item} className="flex items-start gap-1.5 text-zinc-500 text-[11px]">
