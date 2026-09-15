@@ -589,7 +589,7 @@ export default function TeklifAlCalculator() {
                                 {fmt(est.monthlyMin)}–{fmt(est.monthlyMax)}₺
                                 <span className="text-sm font-normal text-zinc-500 ml-1">/ay</span>
                               </p>
-                              {monthlyItems.length > 1 && (
+                              {monthlyItems.length > 0 && (
                                 <ul className="mt-1.5 space-y-0.5">
                                   {monthlyItems.map(({ s, range }) => (
                                     <li key={s} className="text-zinc-500 text-[11px]">
@@ -617,7 +617,7 @@ export default function TeklifAlCalculator() {
                                 {fmt(est.oneTimeMin)}–{fmt(est.oneTimeMax)}₺
                                 <span className="text-sm font-normal text-zinc-500 ml-1">tek seferlik</span>
                               </p>
-                              {oneTimeItems.length > 1 && (
+                              {oneTimeItems.length > 0 && (
                                 <ul className="mt-1.5 space-y-0.5">
                                   {oneTimeItems.map(({ s, range }) => (
                                     <li key={s} className="text-zinc-500 text-[11px]">
