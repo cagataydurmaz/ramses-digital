@@ -23,6 +23,17 @@ export const pricing: Record<string, Record<BusinessSize, PriceRange>> = {
     orta: { min: 8000, max: 15000, unit: 'aylık', note: '+ reklam bütçesinin %15\'i (yönetim ücreti)' },
     buyuk: { min: 15000, max: 30000, unit: 'aylık', note: '+ reklam bütçesinin %15\'i (yönetim ücreti)' },
   },
+  // Google Ads seçilince aylık yönetim ücretinin YANINA otomatik eklenen tek seferlik
+  // kurulum bedeli — hesap yapısı, dönüşüm izleme (conversion tracking), ilk kampanya
+  // kurulumu için. İlk ay ayrılan müşteride bu emek karşılıksız kalmasın diye eklendi.
+  // İlk ay için ayrıca aylık yönetim ücreti ALINMAZ — kurulum bedeli o ayın yerine geçer,
+  // yönetim ücreti 2. aydan itibaren başlar. 'Google Ads' ile birlikte toplanır, alternatif
+  // değil — bkz. effectiveServices.
+  'Google Ads Kurulum': {
+    kucuk: { min: 8000, max: 10000, unit: 'tek seferlik', note: 'tek seferlik — ilk ay yönetim ücreti alınmaz, yönetim ücreti 2. aydan başlar' },
+    orta: { min: 15000, max: 20000, unit: 'tek seferlik', note: 'tek seferlik — ilk ay yönetim ücreti alınmaz, yönetim ücreti 2. aydan başlar' },
+    buyuk: { min: 25000, max: 35000, unit: 'tek seferlik', note: 'tek seferlik — ilk ay yönetim ücreti alınmaz, yönetim ücreti 2. aydan başlar' },
+  },
   'Sosyal Medya': {
     kucuk: { min: 5000, max: 8000, unit: 'aylık' },
     orta: { min: 14000, max: 22000, unit: 'aylık' },

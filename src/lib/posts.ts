@@ -3390,24 +3390,27 @@ export const posts: Post[] = [
         <thead><tr><th>Hizmet</th><th>Küçük İşletme</th><th>Orta İşletme</th><th>Büyük / Kurumsal</th></tr></thead>
         <tbody>
           <tr><td>SEO</td><td>6.000-9.000₺/ay</td><td>15.000-25.000₺/ay</td><td>25.000-40.000₺/ay</td></tr>
+          <tr><td>SEO Başlangıç Paketi</td><td>7.000-12.000₺ (tek seferlik)</td><td>20.000-35.000₺ (tek seferlik)</td><td>35.000-55.000₺ (tek seferlik)</td></tr>
           <tr><td>Google Ads (yönetim)</td><td>3.000-5.000₺/ay</td><td>8.000-15.000₺/ay</td><td>15.000-30.000₺/ay</td></tr>
+          <tr><td>Google Ads Kurulum</td><td>8.000-10.000₺ (tek seferlik)</td><td>15.000-20.000₺ (tek seferlik)</td><td>25.000-35.000₺ (tek seferlik)</td></tr>
           <tr><td>Sosyal Medya</td><td>5.000-8.000₺/ay</td><td>14.000-22.000₺/ay</td><td>22.000-35.000₺/ay</td></tr>
           <tr><td>Web Tasarım</td><td>15.000-40.000₺ (tek seferlik)</td><td>60.000-110.000₺ (tek seferlik)</td><td>130.000-250.000₺ (tek seferlik)</td></tr>
         </tbody>
       </table>
 
-      <p>E-posta pazarlama ve veri analizi/danışmanlık gibi hizmetlerin kapsamı projeye göre çok değiştiği için sabit bir aralık yerine görüşme sonrası özel teklif veriyoruz.</p>
+      <p>E-posta pazarlama ve veri analizi/danışmanlık gibi hizmetlerin kapsamı projeye göre çok değiştiği için sabit bir aralık yerine görüşme sonrası özel teklif veriyoruz. SEO için aylık yönetim yerine tek seferlik bir başlangıç istiyorsanız "SEO Başlangıç Paketi" bir denetim + kurulumdur, devam eden aylık takibi içermez.</p>
 
-      <h2>Google Ads'te Neden İki Ayrı Rakam Var?</h2>
-      <p>Google Ads fiyatlandırması, diğer hizmetlerden farklı çalışır ve karışıklık en sık burada yaşanır. İki tamamen ayrı ödeme akışı vardır:</p>
+      <h2>Google Ads'te Neden Birden Fazla Rakam Var?</h2>
+      <p>Google Ads fiyatlandırması, diğer hizmetlerden farklı çalışır ve karışıklık en sık burada yaşanır. Üç ayrı kalem vardır:</p>
       <ul>
-        <li><strong>Bize ödenen yönetim ücreti</strong> — yukarıdaki tablodaki sabit aylık rakam. Kampanya kurulumu, optimizasyon ve raporlama karşılığı.</li>
+        <li><strong>Tek seferlik kurulum ücreti</strong> — hesabınızı ilk kez açtığımızda, bir kereliğine alınır: hesap yapısı, dönüşüm izleme (conversion tracking) ve ilk kampanyanın kurulumu için. İlk ay için ayrıca aylık yönetim ücreti alınmaz — kurulum bedeli o ayın yerine geçer, yönetim ücreti 2. aydan itibaren başlar.</li>
+        <li><strong>Bize ödenen aylık yönetim ücreti</strong> — yukarıdaki tablodaki sabit aylık rakam, 2. aydan itibaren. Haftalık optimizasyon, negatif kelime/bid yönetimi ve aylık raporlama karşılığı.</li>
         <li><strong>Google'a ödenen reklam bütçesi</strong> — bu para bize hiç uğramaz, doğrudan sizin Google Ads hesabınızdan Google'a gider. Biz bu bütçenin <strong>%15'i kadar</strong> ek bir yönetim payı alırız.</li>
       </ul>
 
       <div class="callout">
         <span class="callout-title">Somut Örnek</span>
-        <p>Aylık 20.000₺ reklam bütçeniz varsa: bu 20.000₺'nin tamamı doğrudan Google'a gider. Buna ek olarak bize %15'lik yönetim payı olarak +3.000₺ ödersiniz — yani toplam maliyetiniz reklam bütçesi + yönetim ücreti + bu %15'lik pay olur. Reklam bütçesini büyütmek "bize daha çok para ödemek" anlamına gelmez, sadece Google'a giden kısmı büyütür.</p>
+        <p>Aylık 20.000₺ reklam bütçeniz varsa: bu 20.000₺'nin tamamı doğrudan Google'a gider. Buna ek olarak bize %15'lik yönetim payı olarak +3.000₺ ödersiniz — yani toplam maliyetiniz reklam bütçesi + yönetim ücreti + bu %15'lik pay olur. Reklam bütçesini büyütmek "bize daha çok para ödemek" anlamına gelmez, sadece Google'a giden kısmı büyütür. İlk ay ayrıca kurulum ücreti öderken yönetim ücreti alınmaz; yönetim ücreti 2. aydan başlar.</p>
       </div>
 
       <h2>Fiyatı Asıl Belirleyen Nedir?</h2>

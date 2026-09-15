@@ -49,18 +49,21 @@ const serviceOptions = [
   { id: 'Danışmanlık', label: 'Veri & Danışmanlık', icon: BarChart3 },
 ]
 
-// Rapor başlığında "seçilen hizmetler" satırı için — effectiveServices bazen
+// Rapor başlığında "seçilen hizmetler" satırı için — displayServices bazen
 // serviceOptions'ta olmayan 'SEO Başlangıç Paketi' anahtarını taşıyabilir.
 const serviceLabels: Record<string, string> = {
   ...Object.fromEntries(serviceOptions.map((s) => [s.id, s.label])),
   'SEO Başlangıç Paketi': 'SEO Başlangıç Paketi (Tek Seferlik)',
 }
 
-// Fiyatın karşılığında ne aldığını göstermek için — "sadece rakam" hissini kırmak amaçlı
+// Fiyatın karşılığında ne aldığını göstermek için — "sadece rakam" hissini kırmak amaçlı.
+// 'Google Ads Kurulum' effectiveServices'e otomatik eklenir (bkz. yukarısı), bu yüzden
+// "Kampanya kurulumu" artık aylık 'Google Ads' kapsamında değil, ayrı tek seferlik kalemde.
 const serviceIncludes: Record<string, string[]> = {
   'SEO': ['Teknik SEO denetimi', 'Anahtar kelime stratejisi', 'Aylık içerik üretimi', 'Backlink çalışması', 'Aylık rapor'],
   'SEO Başlangıç Paketi': ['Teknik SEO denetimi', 'Anahtar kelime stratejisi', 'On-page kurulum', 'Schema markup kurulumu'],
-  'Google Ads': ['Kampanya kurulumu', 'Haftalık optimizasyon', 'Negatif kelime & bid yönetimi', 'Aylık performans raporu'],
+  'Google Ads': ['Haftalık optimizasyon', 'Negatif kelime & bid yönetimi', 'Aylık performans raporu'],
+  'Google Ads Kurulum': ['Hesap yapısı kurulumu', 'Dönüşüm izleme (conversion tracking)', 'İlk kampanya kurulumu'],
   'Sosyal Medya': ['Post & story tasarımı', 'İçerik takvimi', 'Caption & hashtag stratejisi'],
   'Web Tasarım': ['UI/UX tasarım', 'Geliştirme & yayına alma', 'Mobil uyumluluk & hız optimizasyonu'],
 }
@@ -204,11 +207,19 @@ export default function TeklifAlCalculator() {
     )
   }
 
-  // Fiyatlandırma/kapsam için gerçek pricing.ts anahtarları — SEO seçiliyse ve
-  // tek seferlik tercih edildiyse 'SEO' yerine 'SEO Başlangıç Paketi' kullanılır.
-  // UI'daki `services` (checkbox id'leri) bundan ayrı tutulur.
-  const effectiveServices = services.map((s) =>
+  // Kullanıcının GÖRDÜĞÜ/seçtiği hizmet listesi — SEO ödeme modu değişse bile
+  // hâlâ tek bir "SEO" seçimidir, kullanıcıya ayrıca "kurulum" diye bir şey
+  // seçtirmedik. Rapor başlığı, WhatsApp özeti ve AI'ya gönderilen liste bunu kullanır.
+  const displayServices = services.map((s) =>
     s === 'SEO' && seoBillingMode === 'tek' ? 'SEO Başlangıç Paketi' : s
+  )
+
+  // Fiyatlandırma/kapsam için gerçek pricing.ts anahtarları — displayServices'in
+  // üzerine, Google Ads seçiliyse aylık yönetimin YANINA otomatik olarak tek
+  // seferlik kurulum bedeli de eklenir (estimateQuote ve "Bu Ücrete Dahil
+  // Olanlar" bunu kullanır; kullanıcıya ayrı bir seçenek olarak sunulmaz).
+  const effectiveServices = displayServices.flatMap((s) =>
+    s === 'Google Ads' ? ['Google Ads', 'Google Ads Kurulum'] : [s]
   )
 
   const handleSubmit = async () => {
@@ -222,7 +233,7 @@ export default function TeklifAlCalculator() {
       const response = await fetch('/api/quote', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ businessType, businessSize: businessSizeLabels[businessSize], services: effectiveServices, websiteUrl }),
+        body: JSON.stringify({ businessType, businessSize: businessSizeLabels[businessSize], services: displayServices, websiteUrl }),
       })
 
       if (!response.body) throw new Error('No body')
@@ -275,7 +286,7 @@ export default function TeklifAlCalculator() {
       ``,
       `İşletme Tipi: ${businessTypeLabel}`,
       sizeLabel ? `Büyüklük: ${sizeLabel}` : null,
-      `İlgilendiğim hizmetler: ${effectiveServices.join(', ')}`,
+      `İlgilendiğim hizmetler: ${displayServices.join(', ')}`,
       websiteUrl ? `Web sitem: ${websiteUrl}` : null,
       priceText ? `Tahmini aralık: ${priceText.trim()}` : null,
       ``,
@@ -540,11 +551,11 @@ export default function TeklifAlCalculator() {
 
                   {/* Teklifin hangi hizmet(ler) için hazırlandığı en üstte net yazsın —
                       kullanıcı raporu okumadan önce fiyatın neyi kapsadığını görmeli. */}
-                  {effectiveServices.length > 0 && (
+                  {displayServices.length > 0 && (
                     <p className="text-zinc-400 text-xs mb-5 -mt-2">
                       <span className="text-zinc-500">Seçilen hizmetler: </span>
                       <span className="text-zinc-200 font-medium">
-                        {effectiveServices.map((s) => serviceLabels[s] ?? s).join(', ')}
+                        {displayServices.map((s) => serviceLabels[s] ?? s).join(', ')}
                       </span>
                     </p>
                   )}
@@ -606,6 +617,9 @@ export default function TeklifAlCalculator() {
                                   <p className="text-white text-xs font-semibold mb-1.5">{s}</p>
                                   {s === 'SEO Başlangıç Paketi' && (
                                     <p className="text-amber-400/80 text-[10px] mb-1.5">Devam eden aylık takip dahil değil — sadece kurulum.</p>
+                                  )}
+                                  {s === 'Google Ads Kurulum' && (
+                                    <p className="text-amber-400/80 text-[10px] mb-1.5">Tek seferlik — ilk ay için ayrıca yönetim ücreti alınmaz, yönetim ücreti 2. aydan başlar.</p>
                                   )}
                                   <ul className="space-y-1">
                                     {serviceIncludes[s].map((item) => (
