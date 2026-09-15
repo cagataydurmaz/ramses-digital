@@ -23,7 +23,7 @@ import {
   MessageCircle,
 } from 'lucide-react'
 import CalendlyButton from '@/components/CalendlyButton'
-import { estimateQuote, businessSizeLabels, type BusinessSize } from '@/lib/pricing'
+import { estimateQuote, businessSizeLabels, pricing, type BusinessSize } from '@/lib/pricing'
 
 const WHATSAPP_NUMBER = '905355601936'
 
@@ -572,6 +572,13 @@ export default function TeklifAlCalculator() {
                     const hasAny = est.monthlyMin > 0 || est.oneTimeMin > 0
                     if (!hasAny) return null
                     const fmt = (n: number) => n.toLocaleString('tr-TR')
+                    // Birden fazla hizmet seçiliyse toplam rakamın altında hangi hizmetin
+                    // ne kadarını oluşturduğu görünsün — "hangi ücrete hangisi dahil" net olsun.
+                    const priceItems = effectiveServices
+                      .map((s) => ({ s, range: pricing[s]?.[businessSize] }))
+                      .filter((x): x is { s: string; range: NonNullable<typeof x.range> } => !!x.range)
+                    const monthlyItems = priceItems.filter((x) => x.range.unit === 'aylık')
+                    const oneTimeItems = priceItems.filter((x) => x.range.unit === 'tek seferlik')
                     return (
                       <div className="mt-6 bg-gradient-to-br from-blue-500/10 to-violet-500/5 border border-blue-500/20 rounded-2xl p-6">
                         <p className="text-blue-400 text-xs font-medium uppercase tracking-wider mb-3">Tahmini Fiyat Aralığı</p>
@@ -582,6 +589,15 @@ export default function TeklifAlCalculator() {
                                 {fmt(est.monthlyMin)}–{fmt(est.monthlyMax)}₺
                                 <span className="text-sm font-normal text-zinc-500 ml-1">/ay</span>
                               </p>
+                              {monthlyItems.length > 1 && (
+                                <ul className="mt-1.5 space-y-0.5">
+                                  {monthlyItems.map(({ s, range }) => (
+                                    <li key={s} className="text-zinc-500 text-[11px]">
+                                      {serviceLabels[s] ?? s}: {fmt(range.min)}–{fmt(range.max)}₺/ay
+                                    </li>
+                                  ))}
+                                </ul>
+                              )}
                               {est.hasAdSpendShare && (
                                 <>
                                   <p className="text-zinc-500 text-xs mt-1">+ reklam bütçenizin %15&apos;i (yönetim ücretimiz)</p>
@@ -601,6 +617,15 @@ export default function TeklifAlCalculator() {
                                 {fmt(est.oneTimeMin)}–{fmt(est.oneTimeMax)}₺
                                 <span className="text-sm font-normal text-zinc-500 ml-1">tek seferlik</span>
                               </p>
+                              {oneTimeItems.length > 1 && (
+                                <ul className="mt-1.5 space-y-0.5">
+                                  {oneTimeItems.map(({ s, range }) => (
+                                    <li key={s} className="text-zinc-500 text-[11px]">
+                                      {serviceLabels[s] ?? s}: {fmt(range.min)}–{fmt(range.max)}₺
+                                    </li>
+                                  ))}
+                                </ul>
+                              )}
                             </div>
                           )}
                         </div>
