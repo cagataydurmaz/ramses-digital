@@ -3389,10 +3389,10 @@ export const posts: Post[] = [
       <table>
         <thead><tr><th>Hizmet</th><th>Küçük İşletme</th><th>Orta İşletme</th><th>Büyük / Kurumsal</th></tr></thead>
         <tbody>
-          <tr><td>SEO</td><td>10.000-15.000₺/ay</td><td>15.000-25.000₺/ay</td><td>25.000-40.000₺/ay</td></tr>
-          <tr><td>Google Ads (yönetim)</td><td>5.000-8.000₺/ay</td><td>8.000-15.000₺/ay</td><td>15.000-30.000₺/ay</td></tr>
-          <tr><td>Sosyal Medya</td><td>8.000-14.000₺/ay</td><td>14.000-22.000₺/ay</td><td>22.000-35.000₺/ay</td></tr>
-          <tr><td>Web Tasarım</td><td>25.000-45.000₺ (tek seferlik)</td><td>60.000-110.000₺ (tek seferlik)</td><td>130.000-250.000₺ (tek seferlik)</td></tr>
+          <tr><td>SEO</td><td>6.000-9.000₺/ay</td><td>15.000-25.000₺/ay</td><td>25.000-40.000₺/ay</td></tr>
+          <tr><td>Google Ads (yönetim)</td><td>3.000-5.000₺/ay</td><td>8.000-15.000₺/ay</td><td>15.000-30.000₺/ay</td></tr>
+          <tr><td>Sosyal Medya</td><td>5.000-8.000₺/ay</td><td>14.000-22.000₺/ay</td><td>22.000-35.000₺/ay</td></tr>
+          <tr><td>Web Tasarım</td><td>15.000-40.000₺ (tek seferlik)</td><td>60.000-110.000₺ (tek seferlik)</td><td>130.000-250.000₺ (tek seferlik)</td></tr>
         </tbody>
       </table>
 

@@ -14,22 +14,22 @@ export interface PriceRange {
 // bu ikisi seçilirse "özel teklif" notu gösterilir.
 export const pricing: Record<string, Record<BusinessSize, PriceRange>> = {
   'SEO': {
-    kucuk: { min: 10000, max: 15000, unit: 'aylık' },
+    kucuk: { min: 6000, max: 9000, unit: 'aylık' },
     orta: { min: 15000, max: 25000, unit: 'aylık' },
     buyuk: { min: 25000, max: 40000, unit: 'aylık' },
   },
   'Google Ads': {
-    kucuk: { min: 5000, max: 8000, unit: 'aylık', note: '+ reklam bütçesinin %15\'i (yönetim ücreti)' },
+    kucuk: { min: 3000, max: 5000, unit: 'aylık', note: '+ reklam bütçesinin %15\'i (yönetim ücreti)' },
     orta: { min: 8000, max: 15000, unit: 'aylık', note: '+ reklam bütçesinin %15\'i (yönetim ücreti)' },
     buyuk: { min: 15000, max: 30000, unit: 'aylık', note: '+ reklam bütçesinin %15\'i (yönetim ücreti)' },
   },
   'Sosyal Medya': {
-    kucuk: { min: 8000, max: 14000, unit: 'aylık' },
+    kucuk: { min: 5000, max: 8000, unit: 'aylık' },
     orta: { min: 14000, max: 22000, unit: 'aylık' },
     buyuk: { min: 22000, max: 35000, unit: 'aylık' },
   },
   'Web Tasarım': {
-    kucuk: { min: 25000, max: 45000, unit: 'tek seferlik' },
+    kucuk: { min: 15000, max: 40000, unit: 'tek seferlik' },
     orta: { min: 60000, max: 110000, unit: 'tek seferlik' },
     buyuk: { min: 130000, max: 250000, unit: 'tek seferlik' },
   },
