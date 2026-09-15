@@ -33,6 +33,14 @@ export const pricing: Record<string, Record<BusinessSize, PriceRange>> = {
     orta: { min: 60000, max: 110000, unit: 'tek seferlik' },
     buyuk: { min: 130000, max: 250000, unit: 'tek seferlik' },
   },
+  // Aylık SEO/AEO/GEO yönetiminin tek seferlik alternatifi — devam eden takip
+  // içermez, sadece denetim + kurulumdan oluşur. Bkz. estimateQuote çağrılarında
+  // 'SEO' ile birlikte DEĞİL, onun yerine seçilir (ikisi aynı anda toplanmaz).
+  'SEO Başlangıç Paketi': {
+    kucuk: { min: 7000, max: 12000, unit: 'tek seferlik', note: 'devam eden aylık takip dahil değil' },
+    orta: { min: 20000, max: 35000, unit: 'tek seferlik', note: 'devam eden aylık takip dahil değil' },
+    buyuk: { min: 35000, max: 55000, unit: 'tek seferlik', note: 'devam eden aylık takip dahil değil' },
+  },
 }
 
 export const businessSizeLabels: Record<BusinessSize, string> = {
