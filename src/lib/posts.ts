@@ -3405,7 +3405,7 @@ export const posts: Post[] = [
       <ul>
         <li><strong>Tek seferlik kurulum ücreti</strong> — hesabınızı ilk kez açtığımızda, bir kereliğine alınır: hesap yapısı, dönüşüm izleme (conversion tracking) ve ilk kampanyanın kurulumu için. İlk ay için ayrıca aylık yönetim ücreti alınmaz — kurulum bedeli o ayın yerine geçer, yönetim ücreti 2. aydan itibaren başlar.</li>
         <li><strong>Bize ödenen aylık yönetim ücreti</strong> — yukarıdaki tablodaki sabit aylık rakam, 2. aydan itibaren. Haftalık optimizasyon, negatif kelime/bid yönetimi ve aylık raporlama karşılığı.</li>
-        <li><strong>Google'a ödenen reklam bütçesi</strong> — bu para bize hiç uğramaz, doğrudan sizin Google Ads hesabınızdan Google'a gider. Biz bu bütçenin <strong>%15'i kadar</strong> ek bir yönetim payı alırız.</li>
+        <li><strong>Google'a ödenen reklam bütçesi</strong> — bu para bize ödenmez, doğrudan sizin Google Ads hesabınızdan Google'a gider. Biz bu bütçenin <strong>%15'i kadar</strong> ek bir yönetim payı alırız.</li>
       </ul>
 
       <div class="callout">

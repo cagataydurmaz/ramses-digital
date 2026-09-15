@@ -586,7 +586,10 @@ export default function TeklifAlCalculator() {
                                 <>
                                   <p className="text-zinc-500 text-xs mt-1">+ reklam bütçenizin %15&apos;i (yönetim ücretimiz)</p>
                                   <p className="text-zinc-600 text-[11px] mt-1.5 leading-relaxed">
-                                    Örnek: Google&apos;a aylık 20.000₺ reklam bütçesi ayırırsanız, bizim payımız +3.000₺ olur (20.000 × %15). Bu 20.000₺ bize hiç uğramaz — doğrudan sizin Google hesabınızdan gider, sadece 3.000₺&apos;lik kısım bizim yönetim ücretimizdir.
+                                    Örnek: Google&apos;a aylık 20.000₺ reklam bütçesi ayırırsanız, bizim payımız +3.000₺ olur (20.000 × %15). Bu 20.000₺ bize ödenmez — doğrudan sizin Google hesabınızdan gider, sadece 3.000₺&apos;lik kısım bizim yönetim ücretimizdir.
+                                  </p>
+                                  <p className="text-zinc-600 text-[11px] mt-1.5 leading-relaxed">
+                                    Sabit ücret, yönetim emeğimizin karşılığıdır; %15&apos;lik pay ise bütçe büyüdükçe artan iş yüküyle orantılıdır — ikisi birlikte dengeli ve şeffaf bir fiyatlandırma sağlar.
                                   </p>
                                 </>
                               )}
