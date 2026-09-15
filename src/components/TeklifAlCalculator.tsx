@@ -49,6 +49,13 @@ const serviceOptions = [
   { id: 'Danışmanlık', label: 'Veri & Danışmanlık', icon: BarChart3 },
 ]
 
+// Rapor başlığında "seçilen hizmetler" satırı için — effectiveServices bazen
+// serviceOptions'ta olmayan 'SEO Başlangıç Paketi' anahtarını taşıyabilir.
+const serviceLabels: Record<string, string> = {
+  ...Object.fromEntries(serviceOptions.map((s) => [s.id, s.label])),
+  'SEO Başlangıç Paketi': 'SEO Başlangıç Paketi (Tek Seferlik)',
+}
+
 // Fiyatın karşılığında ne aldığını göstermek için — "sadece rakam" hissini kırmak amaçlı
 const serviceIncludes: Record<string, string[]> = {
   'SEO': ['Teknik SEO denetimi', 'Anahtar kelime stratejisi', 'Aylık içerik üretimi', 'Backlink çalışması', 'Aylık rapor'],
@@ -530,6 +537,17 @@ export default function TeklifAlCalculator() {
                       }
                     </div>
                   </div>
+
+                  {/* Teklifin hangi hizmet(ler) için hazırlandığı en üstte net yazsın —
+                      kullanıcı raporu okumadan önce fiyatın neyi kapsadığını görmeli. */}
+                  {effectiveServices.length > 0 && (
+                    <p className="text-zinc-400 text-xs mb-5 -mt-2">
+                      <span className="text-zinc-500">Seçilen hizmetler: </span>
+                      <span className="text-zinc-200 font-medium">
+                        {effectiveServices.map((s) => serviceLabels[s] ?? s).join(', ')}
+                      </span>
+                    </p>
+                  )}
 
                   {/* Rendered content */}
                   <div
