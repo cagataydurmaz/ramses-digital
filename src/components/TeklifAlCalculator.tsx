@@ -21,6 +21,7 @@ import {
   Building,
   Landmark,
   MessageCircle,
+  AlertTriangle,
 } from 'lucide-react'
 import CalendlyButton from '@/components/CalendlyButton'
 import { estimateQuote, businessSizeLabels, pricing, type BusinessSize } from '@/lib/pricing'
@@ -644,7 +645,16 @@ export default function TeklifAlCalculator() {
                                 <div key={s}>
                                   <p className="text-white text-xs font-semibold mb-1.5">{s}</p>
                                   {s === 'SEO Başlangıç Paketi' && (
-                                    <p className="text-amber-400/80 text-[10px] mb-1.5">Devam eden aylık takip dahil değil — sadece kurulum.</p>
+                                    <div className="flex items-start gap-1.5 bg-amber-400/10 border border-amber-400/25 rounded-lg px-2.5 py-2 mb-2">
+                                      <AlertTriangle size={12} className="text-amber-400 mt-0.5 shrink-0" />
+                                      <p className="text-amber-300 text-[10px] font-medium leading-relaxed">Devam eden aylık takip dahil değil — sadece kurulum. <strong className="text-amber-200">Bu fiyat tek bir site içindir</strong> — her ilçe/şehir için ayrı sayfa (pSEO) gibi geniş kapsamlı talepler fiyatı artırır, ayrı teklif gerekir.</p>
+                                    </div>
+                                  )}
+                                  {s === 'SEO' && (
+                                    <div className="flex items-start gap-1.5 bg-amber-400/10 border border-amber-400/25 rounded-lg px-2.5 py-2 mb-2">
+                                      <AlertTriangle size={12} className="text-amber-400 mt-0.5 shrink-0" />
+                                      <p className="text-amber-300 text-[10px] font-medium leading-relaxed"><strong className="text-amber-200">Bu fiyat tek bir site içindir</strong> — her ilçe/şehir için ayrı sayfa (pSEO) gibi geniş kapsamlı talepler fiyatı artırır, ayrı teklif gerekir.</p>
+                                    </div>
                                   )}
                                   {s === 'Google Ads Kurulum' && (
                                     <p className="text-amber-400/80 text-[10px] mb-1.5">Tek seferlik — ilk ay için ayrıca yönetim ücreti alınmaz, yönetim ücreti 2. aydan başlar.</p>

@@ -47,10 +47,13 @@ export const pricing: Record<string, Record<BusinessSize, PriceRange>> = {
   // Aylık SEO/AEO/GEO yönetiminin tek seferlik alternatifi — devam eden takip
   // içermez, sadece denetim + kurulumdan oluşur. Bkz. estimateQuote çağrılarında
   // 'SEO' ile birlikte DEĞİL, onun yerine seçilir (ikisi aynı anda toplanmaz).
+  // Bu fiyat TEK site içindir. Çoklu ilçe/şehir sayfası (pSEO) gibi geniş kapsamlı
+  // talepler işletme büyüklüğünden bağımsızdır (küçük bir işletme de 39 ilçe için
+  // sayfa isteyebilir) — bu yüzden aralığa dahil edilmiyor, ayrı özel teklif gerektiriyor.
   'SEO Başlangıç Paketi': {
-    kucuk: { min: 7000, max: 12000, unit: 'tek seferlik', note: 'devam eden aylık takip dahil değil' },
-    orta: { min: 20000, max: 35000, unit: 'tek seferlik', note: 'devam eden aylık takip dahil değil' },
-    buyuk: { min: 35000, max: 55000, unit: 'tek seferlik', note: 'devam eden aylık takip dahil değil' },
+    kucuk: { min: 7000, max: 12000, unit: 'tek seferlik', note: 'devam eden aylık takip dahil değil, tek site için — çoklu ilçe/pSEO talepleri kapsam dışı, özel teklif gerektirir' },
+    orta: { min: 20000, max: 35000, unit: 'tek seferlik', note: 'devam eden aylık takip dahil değil, tek site için — çoklu ilçe/pSEO talepleri kapsam dışı, özel teklif gerektirir' },
+    buyuk: { min: 35000, max: 55000, unit: 'tek seferlik', note: 'devam eden aylık takip dahil değil, tek site için — çoklu ilçe/pSEO talepleri kapsam dışı, özel teklif gerektirir' },
   },
 }
 
