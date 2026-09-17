@@ -14,6 +14,7 @@ const services = [
 const quickLinks = [
   { href: '/', label: 'Ana Sayfa' },
   { href: '/hizmetler', label: 'Hizmetler' },
+  { href: '/sehirler', label: 'Şehirler' },
   { href: '/hakkimizda', label: 'Hakkımızda' },
   { href: '/portfolyo', label: 'Portföy' },
   { href: '/blog', label: 'Blog' },

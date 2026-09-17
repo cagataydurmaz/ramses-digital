@@ -105,21 +105,30 @@ export default function Navbar() {
                 <ChevronDown size={14} className="transition-transform group-hover:rotate-180" />
               </button>
               <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-150">
-                <div className="bg-[#0D1225] border border-white/[0.08] rounded-xl p-2 min-w-[280px] shadow-xl grid grid-cols-2 gap-0.5">
-                  {cityLinks.map((city) => (
-                    <Link
-                      key={city.href}
-                      href={city.href}
-                      prefetch={false}
-                      className={`block px-3 py-2 rounded-lg text-sm transition-colors ${
-                        pathname === city.href
-                          ? 'text-white bg-white/[0.06]'
-                          : 'text-zinc-400 hover:text-white hover:bg-white/[0.06]'
-                      }`}
-                    >
-                      {city.label}
-                    </Link>
-                  ))}
+                <div className="bg-[#0D1225] border border-white/[0.08] rounded-xl p-2 min-w-[280px] shadow-xl">
+                  <div className="grid grid-cols-2 gap-0.5">
+                    {cityLinks.map((city) => (
+                      <Link
+                        key={city.href}
+                        href={city.href}
+                        prefetch={false}
+                        className={`block px-3 py-2 rounded-lg text-sm transition-colors ${
+                          pathname === city.href
+                            ? 'text-white bg-white/[0.06]'
+                            : 'text-zinc-400 hover:text-white hover:bg-white/[0.06]'
+                        }`}
+                      >
+                        {city.label}
+                      </Link>
+                    ))}
+                  </div>
+                  <Link
+                    href="/sehirler"
+                    prefetch={false}
+                    className="block mt-1 px-3 py-2 rounded-lg text-sm text-center text-blue-400 hover:text-blue-300 hover:bg-white/[0.06] border-t border-white/[0.06] transition-colors"
+                  >
+                    Tüm Şehirler & Hizmetler →
+                  </Link>
                 </div>
               </div>
             </div>
@@ -185,6 +194,14 @@ export default function Navbar() {
                 </Link>
               ))}
             </div>
+            <Link
+              href="/sehirler"
+              prefetch={false}
+              onClick={() => setMenuOpen(false)}
+              className="text-sm py-2 text-blue-400 border-b border-white/[0.04]"
+            >
+              Tüm Şehirler & Hizmetler →
+            </Link>
 
             <div className="pt-4 flex items-center gap-3">
               <LanguageSwitcher />
