@@ -18,12 +18,18 @@ const navLinks = [
 ]
 
 const cityLinks = [
+  { href: '/izmit-dijital-pazarlama', label: 'İzmit' },
+  { href: '/kocaeli-dijital-pazarlama', label: 'Kocaeli' },
   { href: '/istanbul-dijital-pazarlama', label: 'İstanbul' },
   { href: '/ankara-dijital-pazarlama', label: 'Ankara' },
   { href: '/izmir-dijital-pazarlama', label: 'İzmir' },
   { href: '/bursa-dijital-pazarlama', label: 'Bursa' },
   { href: '/antalya-dijital-pazarlama', label: 'Antalya' },
-  { href: '/kocaeli-dijital-pazarlama', label: 'Kocaeli' },
+  { href: '/gaziantep-dijital-pazarlama', label: 'Gaziantep' },
+  { href: '/konya-dijital-pazarlama', label: 'Konya' },
+  { href: '/mersin-dijital-pazarlama', label: 'Mersin' },
+  { href: '/kayseri-dijital-pazarlama', label: 'Kayseri' },
+  { href: '/eskisehir-dijital-pazarlama', label: 'Eskişehir' },
 ]
 
 export default function Navbar() {
@@ -99,7 +105,7 @@ export default function Navbar() {
                 <ChevronDown size={14} className="transition-transform group-hover:rotate-180" />
               </button>
               <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-150">
-                <div className="bg-[#0D1225] border border-white/[0.08] rounded-xl p-2 min-w-[160px] shadow-xl">
+                <div className="bg-[#0D1225] border border-white/[0.08] rounded-xl p-2 min-w-[280px] shadow-xl grid grid-cols-2 gap-0.5">
                   {cityLinks.map((city) => (
                     <Link
                       key={city.href}
