@@ -3402,7 +3402,7 @@ export const posts: Post[] = [
 
       <div class="callout">
         <span class="callout-title">Önemli: Tablodaki SEO fiyatları tek bir site içindir</span>
-        <p>Her ilçe veya şehir için ayrı sayfa isteyen (programatik SEO / pSEO) projeler bu aralığın kapsamı dışındadır — onlarca hatta yüzlerce sayfayı içeren bu tür işler işletme büyüklüğünden bağımsız olarak ayrı bir teklif gerektirir. Örneğin küçük bir işletme bile Türkiye'nin tüm illeri için sayfa isteyebilir; bu durumda kapsam netleşmeden gerçekçi bir rakam vermemiz mümkün olmaz.</p>
+        <p><strong>pSEO (programatik SEO)</strong> ne demek: "İzmit SEO", "Kocaeli SEO", "İstanbul SEO" gibi her şehir/ilçe için ayrı, o bölgeye özel bir sayfa üretmek — tek bir sayfa yerine onlarca hatta yüzlerce sayfalık bir yapı. Böyle bir talep bu aralığın kapsamı dışındadır ve işletme büyüklüğünden bağımsız olarak ayrı bir teklif gerektirir. Örneğin küçük bir işletme bile Türkiye'nin tüm illeri için sayfa isteyebilir; bu durumda kapsam netleşmeden gerçekçi bir rakam vermemiz mümkün olmaz.</p>
       </div>
 
       <h2>Google Ads'te Neden Birden Fazla Rakam Var?</h2>
