@@ -23,6 +23,7 @@ import {
   Clock,
   ThumbsUp,
   Share2,
+  MapPin,
 } from 'lucide-react'
 
 // Bileşen kodu ayrı chunk olarak lazy-load edilir (bundle boyutu için) ama
@@ -606,6 +607,51 @@ export default function HomePage() {
       <section className="py-16 sm:py-24 px-6">
         <div className="max-w-4xl mx-auto">
           <WhatsAppLeadForm />
+        </div>
+      </section>
+
+      {/* ── ŞEHİRLER (iç link — ana sayfadan şehir kümesine gerçek içerik linki) ── */}
+      <section className="py-16 sm:py-24 px-6 bg-[#080D18]">
+        <div className="max-w-4xl mx-auto text-center">
+          <div className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 rounded-full px-4 py-1.5 mb-6">
+            <MapPin size={13} className="text-blue-400" />
+            <span className="text-blue-400 text-sm font-medium">Türkiye Geneli — 12 Şehir</span>
+          </div>
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Türkiye Genelinde Hizmet Veriyoruz</h2>
+          <p className="text-zinc-400 max-w-xl mx-auto mb-8">
+            Merkezimiz Kocaeli&apos;de olsa da tüm hizmetlerimizi uzaktan, Türkiye genelinde yürütüyoruz.
+          </p>
+          <div className="flex flex-wrap justify-center gap-2.5 mb-8">
+            {[
+              { href: '/istanbul-dijital-pazarlama', label: 'İstanbul' },
+              { href: '/ankara-dijital-pazarlama', label: 'Ankara' },
+              { href: '/izmir-dijital-pazarlama', label: 'İzmir' },
+              { href: '/bursa-dijital-pazarlama', label: 'Bursa' },
+              { href: '/antalya-dijital-pazarlama', label: 'Antalya' },
+              { href: '/gaziantep-dijital-pazarlama', label: 'Gaziantep' },
+              { href: '/konya-dijital-pazarlama', label: 'Konya' },
+              { href: '/mersin-dijital-pazarlama', label: 'Mersin' },
+              { href: '/kayseri-dijital-pazarlama', label: 'Kayseri' },
+              { href: '/eskisehir-dijital-pazarlama', label: 'Eskişehir' },
+              { href: '/kocaeli-dijital-pazarlama', label: 'Kocaeli' },
+            ].map(({ href, label }) => (
+              <Link
+                key={href}
+                href={href}
+                prefetch={false}
+                className="text-sm bg-white/[0.03] hover:bg-blue-500/10 border border-white/[0.06] hover:border-blue-500/30 text-zinc-400 hover:text-blue-400 rounded-full px-4 py-2 transition-all"
+              >
+                {label}
+              </Link>
+            ))}
+          </div>
+          <Link
+            href="/sehirler"
+            prefetch={false}
+            className="inline-flex items-center gap-1.5 text-blue-400 hover:text-blue-300 text-sm font-medium transition-colors"
+          >
+            Tüm Şehirleri Gör <ArrowRight size={14} />
+          </Link>
         </div>
       </section>
 
