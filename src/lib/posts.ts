@@ -3400,6 +3400,11 @@ export const posts: Post[] = [
 
       <p>E-posta pazarlama ve veri analizi/danışmanlık gibi hizmetlerin kapsamı projeye göre çok değiştiği için sabit bir aralık yerine görüşme sonrası özel teklif veriyoruz. SEO için aylık yönetim yerine tek seferlik bir başlangıç istiyorsanız "SEO Başlangıç Paketi" bir denetim + kurulumdur, devam eden aylık takibi içermez.</p>
 
+      <div class="callout">
+        <span class="callout-title">Önemli: Tablodaki SEO fiyatları tek bir site içindir</span>
+        <p>Her ilçe veya şehir için ayrı sayfa isteyen (programatik SEO / pSEO) projeler bu aralığın kapsamı dışındadır — onlarca hatta yüzlerce sayfayı içeren bu tür işler işletme büyüklüğünden bağımsız olarak ayrı bir teklif gerektirir. Örneğin küçük bir işletme bile Türkiye'nin tüm illeri için sayfa isteyebilir; bu durumda kapsam netleşmeden gerçekçi bir rakam vermemiz mümkün olmaz.</p>
+      </div>
+
       <h2>Google Ads'te Neden Birden Fazla Rakam Var?</h2>
       <p>Google Ads fiyatlandırması, diğer hizmetlerden farklı çalışır ve karışıklık en sık burada yaşanır. Üç ayrı kalem vardır:</p>
       <ul>
