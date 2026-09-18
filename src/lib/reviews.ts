@@ -63,8 +63,13 @@ export const reviews: CustomerReview[] = [
   },
 ]
 
+// Google Business Profile'daki gerçek toplam yorum sayısı — burada metniyle
+// gösterilen `reviews` dizisinden bağımsız, elle güncellenir (Google'da yorum
+// arttıkça buradan güncellenmeli).
+const GOOGLE_REVIEW_COUNT = 18
+
 export const aggregateRating = {
   ratingValue: (reviews.reduce((sum, r) => sum + r.rating, 0) / reviews.length).toFixed(1),
-  reviewCount: reviews.length,
+  reviewCount: GOOGLE_REVIEW_COUNT,
   bestRating: '5',
 }

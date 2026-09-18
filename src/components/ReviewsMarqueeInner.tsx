@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from 'react'
 import { Quote, Star, ExternalLink } from 'lucide-react'
-import { reviews } from '@/lib/reviews'
+import { reviews, aggregateRating } from '@/lib/reviews'
 
 const GOOGLE_REVIEWS_URL = 'https://maps.app.goo.gl/xKzk4Q5VCeK4ePbz6'
 const LOOP_SECONDS = 42 // bir tam döngünün (yarım track genişliği) süresi
@@ -69,21 +69,23 @@ export default function ReviewsMarqueeInner({ title = 'Müşterilerimiz Ne Diyor
       </div>
       <div className="relative max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <p className="text-blue-500 text-sm font-medium tracking-wider uppercase mb-3">
-            Müşteri Yorumları
+          <p className="flex items-center justify-center gap-2 text-blue-500 text-sm font-medium tracking-wider uppercase mb-3">
+            <GoogleGIcon size={16} />
+            Google Yorumları
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             {title}
           </h2>
-          <a
-            href={GOOGLE_REVIEWS_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-full text-sm font-medium transition-all hover:-translate-y-0.5"
-          >
-            Tüm Yorumları Gör
-            <ExternalLink size={14} />
-          </a>
+          <div className="flex items-center justify-center gap-2">
+            <div className="flex gap-0.5">
+              {Array.from({ length: Number(aggregateRating.bestRating) }).map((_, i) => (
+                <Star key={i} size={18} className="text-yellow-400 fill-yellow-400" />
+              ))}
+            </div>
+            <span className="text-zinc-300 text-sm">
+              {aggregateRating.ratingValue} · {aggregateRating.reviewCount} Google yorumu
+            </span>
+          </div>
         </div>
 
         <div
@@ -125,6 +127,19 @@ export default function ReviewsMarqueeInner({ title = 'Müşterilerimiz Ne Diyor
               </div>
             ))}
           </div>
+        </div>
+
+        <div className="text-center mt-12">
+          <a
+            href={GOOGLE_REVIEWS_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-flex items-center gap-2 border border-blue-500/40 hover:border-blue-500 text-blue-400 hover:text-blue-300 px-8 py-4 rounded-full font-medium transition-all"
+          >
+            <GoogleGIcon size={16} />
+            Google&apos;da Tüm Yorumları Gör
+            <ExternalLink size={14} className="group-hover:translate-x-1 transition-transform" />
+          </a>
         </div>
       </div>
     </section>
