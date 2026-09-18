@@ -97,7 +97,7 @@ export default function IzmitSeoPage() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <CalendlyButton label="Ücretsiz SEO Analizi" variant="primary" />
-            <Link href="/hizmetler/seo-kocaeli" className="text-zinc-400 hover:text-white text-sm font-medium transition-colors flex items-center gap-1.5">
+            <Link href="/hizmetler/seo" className="text-zinc-400 hover:text-white text-sm font-medium transition-colors flex items-center gap-1.5">
               SEO Hizmet Detayları <ArrowRight size={14} />
             </Link>
           </div>

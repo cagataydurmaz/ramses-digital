@@ -254,7 +254,7 @@ export default function SosyalMedyaPage() {
               <p className="text-pink-400 text-xs font-medium uppercase tracking-wider mb-2">Hizmet</p>
               <h3 className="text-white font-medium leading-snug group-hover:text-pink-300 transition-colors">E-Posta & Otomasyon Pazarlama <ArrowRight size={14} className="inline ml-1" /></h3>
             </Link>
-            <Link href="/hizmetler/web-tasarim-kocaeli" className="group bg-[#0D1225] border border-white/[0.06] hover:border-pink-500/30 rounded-xl p-5 transition-all">
+            <Link href="/hizmetler/web-tasarim" className="group bg-[#0D1225] border border-white/[0.06] hover:border-pink-500/30 rounded-xl p-5 transition-all">
               <p className="text-pink-400 text-xs font-medium uppercase tracking-wider mb-2">Hizmet</p>
               <h3 className="text-white font-medium leading-snug group-hover:text-pink-300 transition-colors">Web Tasarımı & Geliştirme <ArrowRight size={14} className="inline ml-1" /></h3>
             </Link>

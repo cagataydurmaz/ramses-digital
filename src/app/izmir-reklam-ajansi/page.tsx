@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 }
 
 const services = [
-  { icon: Megaphone, title: 'Google Ads Yönetimi', desc: 'İzmir\'de "hizmetiniz + ilçe" aramalarında tam doğru anda karşılarına çıkın. Turizm sezonunda bütçe optimizasyonu dahil.', href: '/hizmetler/google-ads-kocaeli' },
+  { icon: Megaphone, title: 'Google Ads Yönetimi', desc: 'İzmir\'de "hizmetiniz + ilçe" aramalarında tam doğru anda karşılarına çıkın. Turizm sezonunda bütçe optimizasyonu dahil.', href: '/hizmetler/google-ads' },
   { icon: Search, title: 'SEO & Yerel SEO', desc: 'Konak, Karşıyaka, Bornova gibi ilçe bazlı aramalarda Google Haritalar ve organik sonuçlarda üst sıralarda yer alın.', href: '/izmir-seo' },
   { icon: Globe, title: 'Dönüşüm Odaklı Web Sitesi', desc: 'Reklama gelen ziyaretçiyi kaçırmayan, hızlı ve mobil uyumlu iniş sayfaları.', href: '/izmir-web-tasarim' },
   { icon: Zap, title: 'Pazarlama Otomasyonu', desc: 'n8n ile lead\'leri otomatik takip edin, hiçbir talebi kaçırmayın. Sezonluk kampanyalarda özellikle değerli.', href: '/hizmetler/n8n-otomasyon' },

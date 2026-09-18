@@ -217,10 +217,10 @@ export default function RootLayout({
                   '@type': 'OfferCatalog',
                   name: 'Dijital Pazarlama Hizmetleri',
                   itemListElement: [
-                    { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'SEO Kocaeli', url: 'https://ramsesdigital.com/hizmetler/seo-kocaeli', areaServed: 'Kocaeli' } },
-                    { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Google Ads Kocaeli', url: 'https://ramsesdigital.com/hizmetler/google-ads-kocaeli', areaServed: 'Kocaeli' } },
+                    { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'SEO Kocaeli', url: 'https://ramsesdigital.com/kocaeli-seo', areaServed: 'Kocaeli' } },
+                    { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Google Ads Kocaeli', url: 'https://ramsesdigital.com/kocaeli-google-ads', areaServed: 'Kocaeli' } },
                     { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'n8n İş Akışı Otomasyonu', url: 'https://ramsesdigital.com/hizmetler/n8n-otomasyon' } },
-                    { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Web Tasarım Kocaeli', url: 'https://ramsesdigital.com/hizmetler/web-tasarim-kocaeli', areaServed: 'Kocaeli' } },
+                    { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Web Tasarım Kocaeli', url: 'https://ramsesdigital.com/kocaeli-web-tasarim', areaServed: 'Kocaeli' } },
                     { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'GEO & AEO Optimizasyonu' } },
                     { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'E-Posta & Otomasyon' } },
                     { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Veri Analizi & Danışmanlık' } },

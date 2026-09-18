@@ -47,7 +47,7 @@ const services = [
       'AI Performans Analitiği',
     ],
     color: 'blue',
-    href: '/hizmetler/seo-kocaeli',
+    href: '/hizmetler/seo',
   },
   {
     icon: TrendingUp,
@@ -63,7 +63,7 @@ const services = [
       'Dönüşüm Takibi & Optimizasyon',
     ],
     color: 'violet',
-    href: '/hizmetler/google-ads-kocaeli',
+    href: '/hizmetler/google-ads',
   },
   {
     icon: Share2,
@@ -95,7 +95,7 @@ const services = [
       'Hız & Performans Optimizasyonu',
     ],
     color: 'emerald',
-    href: '/hizmetler/web-tasarim-kocaeli',
+    href: '/hizmetler/web-tasarim',
   },
   {
     icon: Mail,

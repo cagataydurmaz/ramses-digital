@@ -25,9 +25,9 @@ export const metadata: Metadata = {
 }
 
 const services = [
-  { icon: Search, title: 'SEO & Yerel SEO', desc: 'Google\'da "İzmit + sektörünüz" aramalarında üst sıralarda çıkın. Google Business Profile yönetimi dahil.', href: '/hizmetler/seo-kocaeli' },
-  { icon: Megaphone, title: 'Google Ads', desc: 'İzmit ve Kocaeli\'de potansiyel müşterilere tam doğru anda ulaşın. Reklam bütçenizi boşa harcamayın.', href: '/hizmetler/google-ads-kocaeli' },
-  { icon: Globe, title: 'Web Tasarım', desc: 'Dönüşüm odaklı, hızlı yüklenen web siteleri. Mobil uyumlu, SEO hazır.', href: '/hizmetler/web-tasarim-kocaeli' },
+  { icon: Search, title: 'SEO & Yerel SEO', desc: 'Google\'da "İzmit + sektörünüz" aramalarında üst sıralarda çıkın. Google Business Profile yönetimi dahil.', href: '/kocaeli-seo' },
+  { icon: Megaphone, title: 'Google Ads', desc: 'İzmit ve Kocaeli\'de potansiyel müşterilere tam doğru anda ulaşın. Reklam bütçenizi boşa harcamayın.', href: '/kocaeli-google-ads' },
+  { icon: Globe, title: 'Web Tasarım', desc: 'Dönüşüm odaklı, hızlı yüklenen web siteleri. Mobil uyumlu, SEO hazır.', href: '/kocaeli-web-tasarim' },
   { icon: Zap, title: 'Pazarlama Otomasyonu', desc: 'n8n ve e-posta otomasyonuyla müşteri süreçlerinizi otomatikleştirin. Uyurken satış yapın.', href: '/hizmetler/n8n-otomasyon' },
   { icon: Mail, title: 'E-posta Pazarlama', desc: 'Listenizi müşteriye dönüştüren e-posta serileri. Ortalama %42 ROI.', href: '/hizmetler/eposta-otomasyon' },
   { icon: BarChart3, title: 'Veri Analizi', desc: 'GA4 ve Looker Studio\'yla hangi kanalın işe yaradığını kesin olarak görün.', href: '/hizmetler/veri-analizi' },

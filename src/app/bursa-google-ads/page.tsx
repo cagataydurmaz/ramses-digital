@@ -93,7 +93,7 @@ export default function BursaGoogleAdsPage() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <CalendlyButton label="Ücretsiz Kampanya Analizi" variant="primary" />
-            <Link href="/hizmetler/google-ads-kocaeli" className="text-zinc-400 hover:text-white text-sm font-medium transition-colors flex items-center gap-1.5">
+            <Link href="/hizmetler/google-ads" className="text-zinc-400 hover:text-white text-sm font-medium transition-colors flex items-center gap-1.5">
               Detaylı Hizmet Bilgisi <ArrowRight size={14} />
             </Link>
           </div>

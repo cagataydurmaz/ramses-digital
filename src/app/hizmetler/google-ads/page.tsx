@@ -7,11 +7,11 @@ export const metadata: Metadata = {
   title: 'Google Ads Yönetimi | ROI Odaklı Performans Reklamcılığı — Ramses Dijital',
   description:
     'Profesyonel Google Ads kampanya yönetimi. Search, Display, YouTube, Shopping ve Remarketing kampanyalarıyla 4.2x ortalama ROAS. Şeffaf raporlama.',
-  alternates: { canonical: 'https://ramsesdigital.com/hizmetler/google-ads-kocaeli' },
+  alternates: { canonical: 'https://ramsesdigital.com/hizmetler/google-ads' },
   openGraph: {
-    title: 'Google Ads Kocaeli | Ramses Digital',
-    description: 'Kocaeli\'de ROI odaklı Google Ads kampanya yönetimi. 4.2x ortalama ROAS.',
-    url: 'https://ramsesdigital.com/hizmetler/google-ads-kocaeli',
+    title: 'Google Ads Yönetimi | Ramses Digital',
+    description: 'ROI odaklı Google Ads kampanya yönetimi. Search, Display, YouTube ve Remarketing.',
+    url: 'https://ramsesdigital.com/hizmetler/google-ads',
     images: ['https://ramsesdigital.com/og-image.png'],
   },
   twitter: {
@@ -184,12 +184,12 @@ export default function GoogleAdsKocaeliPage() {
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org', '@type': 'Service',
-        name: 'Google Ads Yönetimi — Kocaeli',
+        name: 'Google Ads Yönetimi',
         description: 'Kocaeli işletmeleri için Search, Display, YouTube, Shopping ve Remarketing kampanya yönetimi.',
         provider: { '@type': 'Organization', name: 'Ramses Digital', url: 'https://ramsesdigital.com' },
         areaServed: [{ '@type': 'City', name: 'İzmit' }, { '@type': 'City', name: 'Kocaeli' }, { '@type': 'Country', name: 'Türkiye' }],
         serviceType: 'Pay Per Click Advertising',
-        url: 'https://ramsesdigital.com/hizmetler/google-ads-kocaeli',
+        url: 'https://ramsesdigital.com/hizmetler/google-ads',
       })}} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org', '@type': 'FAQPage',
@@ -200,7 +200,7 @@ export default function GoogleAdsKocaeliPage() {
         itemListElement: [
           { '@type': 'ListItem', position: 1, name: 'Anasayfa', item: 'https://ramsesdigital.com' },
           { '@type': 'ListItem', position: 2, name: 'Hizmetler', item: 'https://ramsesdigital.com/hizmetler' },
-          { '@type': 'ListItem', position: 3, name: 'Google Ads Kocaeli', item: 'https://ramsesdigital.com/hizmetler/google-ads-kocaeli' },
+          { '@type': 'ListItem', position: 3, name: 'Google Ads Yönetimi', item: 'https://ramsesdigital.com/hizmetler/google-ads' },
         ],
       })}} />
     </>

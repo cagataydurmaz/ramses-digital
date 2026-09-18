@@ -7,11 +7,11 @@ export const metadata: Metadata = {
   title: 'Web Tasarım & Geliştirme | Modern, Hızlı, SEO Uyumlu — Ramses Dijital',
   description:
     'Modern, hızlı ve SEO uyumlu web tasarım. Next.js, WordPress, Shopify. Core Web Vitals optimize, mobil uyumlu, dönüşüm odaklı tasarım.',
-  alternates: { canonical: 'https://ramsesdigital.com/hizmetler/web-tasarim-kocaeli' },
+  alternates: { canonical: 'https://ramsesdigital.com/hizmetler/web-tasarim' },
   openGraph: {
-    title: 'Web Tasarım Kocaeli | Ramses Digital',
+    title: 'Web Tasarım Hizmeti | Ramses Digital',
     description: 'Performans odaklı, modern, SEO uyumlu web siteleri. Next.js, WordPress, Shopify.',
-    url: 'https://ramsesdigital.com/hizmetler/web-tasarim-kocaeli',
+    url: 'https://ramsesdigital.com/hizmetler/web-tasarim',
     images: ['https://ramsesdigital.com/og-image.png'],
   },
   twitter: {
@@ -191,12 +191,12 @@ export default function WebTasarimKocaeliPage() {
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org', '@type': 'Service',
-        name: 'Web Tasarım & Geliştirme — Kocaeli',
+        name: 'Web Tasarım & Geliştirme',
         description: 'Kocaeli işletmeleri için modern, hızlı ve SEO uyumlu web tasarım hizmeti.',
         provider: { '@type': 'Organization', name: 'Ramses Digital', url: 'https://ramsesdigital.com' },
         areaServed: [{ '@type': 'City', name: 'İzmit' }, { '@type': 'City', name: 'Kocaeli' }, { '@type': 'Country', name: 'Türkiye' }],
         serviceType: 'Web Design and Development',
-        url: 'https://ramsesdigital.com/hizmetler/web-tasarim-kocaeli',
+        url: 'https://ramsesdigital.com/hizmetler/web-tasarim',
       })}} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org', '@type': 'FAQPage',
@@ -207,7 +207,7 @@ export default function WebTasarimKocaeliPage() {
         itemListElement: [
           { '@type': 'ListItem', position: 1, name: 'Anasayfa', item: 'https://ramsesdigital.com' },
           { '@type': 'ListItem', position: 2, name: 'Hizmetler', item: 'https://ramsesdigital.com/hizmetler' },
-          { '@type': 'ListItem', position: 3, name: 'Web Tasarım Kocaeli', item: 'https://ramsesdigital.com/hizmetler/web-tasarim-kocaeli' },
+          { '@type': 'ListItem', position: 3, name: 'Web Tasarım Hizmeti', item: 'https://ramsesdigital.com/hizmetler/web-tasarim' },
         ],
       })}} />
     </>

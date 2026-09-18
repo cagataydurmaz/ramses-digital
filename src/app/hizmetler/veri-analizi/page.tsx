@@ -279,11 +279,11 @@ export default function VeriAnaliziPage() {
         <div className="max-w-5xl mx-auto">
           <h2 className="text-2xl font-bold text-white mb-6 text-center">İlgili Hizmetler & Rehberler</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <Link href="/hizmetler/seo-kocaeli" className="group bg-[#0D1225] border border-white/[0.06] hover:border-cyan-500/30 rounded-xl p-5 transition-all">
+            <Link href="/hizmetler/seo" className="group bg-[#0D1225] border border-white/[0.06] hover:border-cyan-500/30 rounded-xl p-5 transition-all">
               <p className="text-cyan-400 text-xs font-medium uppercase tracking-wider mb-2">Hizmet</p>
               <h3 className="text-white font-medium leading-snug group-hover:text-cyan-300 transition-colors">SEO, GEO ve AEO <ArrowRight size={14} className="inline ml-1" /></h3>
             </Link>
-            <Link href="/hizmetler/google-ads-kocaeli" className="group bg-[#0D1225] border border-white/[0.06] hover:border-cyan-500/30 rounded-xl p-5 transition-all">
+            <Link href="/hizmetler/google-ads" className="group bg-[#0D1225] border border-white/[0.06] hover:border-cyan-500/30 rounded-xl p-5 transition-all">
               <p className="text-cyan-400 text-xs font-medium uppercase tracking-wider mb-2">Hizmet</p>
               <h3 className="text-white font-medium leading-snug group-hover:text-cyan-300 transition-colors">Google Ads Yönetimi <ArrowRight size={14} className="inline ml-1" /></h3>
             </Link>

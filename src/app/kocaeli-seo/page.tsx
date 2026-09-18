@@ -6,9 +6,9 @@ import RelatedPages from '@/components/RelatedPages'
 import { MapPin, Search, ArrowRight, CheckCircle2, FileText, Link2, BarChart3, Zap, Award, TrendingUp } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Kocaeli SEO Hizmeti — Ramses Dijital',
+  title: 'Kocaeli SEO Ajansı | Yerel & Kurumsal SEO — Ramses Dijital',
   description:
-    'Kocaeli\'de SEO hizmeti. Yerel SEO, teknik SEO, GEO ve AEO ile Google\'da üst sıraya çıkın. İzmit, Gebze, Darıca, Körfez ve tüm Kocaeli\'ye hizmet. Ücretsiz SEO analizi.',
+    'Kocaeli SEO ajansı: yerel SEO, kurumsal SEO, teknik SEO, GEO ve AEO. İzmit, Gebze, Dilovası, Körfez, Kartepe ve tüm Kocaeli ilçelerine hizmet. SEO paketleri için ücretsiz analiz.',
   alternates: { canonical: 'https://ramsesdigital.com/kocaeli-seo' },
   openGraph: {
     title: 'Kocaeli SEO Hizmeti | Ramses Dijital',
@@ -27,7 +27,16 @@ const features = [
   { icon: Award, title: 'İlçe Bazlı Optimizasyon', desc: 'İzmit, Gebze, Darıca, Körfez, Gölcük, Başiskele — her ilçeye özel sayfa ve GBP stratejisi.' },
 ]
 
-const ilceler = ['İzmit', 'Gebze', 'Darıca', 'Körfez', 'Gölcük', 'Başiskele', 'Çayırova', 'Karamürsel', 'Kandıra', 'Dilovası']
+const ilceler = ['İzmit', 'Gebze', 'Darıca', 'Körfez', 'Gölcük', 'Başiskele', 'Çayırova', 'Karamürsel', 'Kandıra', 'Dilovası', 'Kartepe', 'Derince']
+
+const ilceStratejileri = [
+  { ilce: 'Dilovası', not: 'Sanayi ve lojistik ağırlıklı bir ilçe. Aramalar genellikle kurumsal ve B2B niteliğinde: üretici, tedarikçi ve kurumsal hizmet arayanlar. Ürün/hizmet sayfaları, teknik SEO ve referans içerikleri öne çıkar.' },
+  { ilce: 'Gebze', not: 'Kocaeli\'nin en rekabetli ilçelerinden biri. Sanayi, teknoloji ve hizmet sektörü bir arada; sektör + ilçe odaklı uzun kuyruklu aramalar ve Google harita paketi belirleyici.' },
+  { ilce: 'İzmit', not: 'Şehir merkezi ve en yüksek arama hacmi. Hukuk, sağlık, eğitim ve perakende rekabetçi; Google Business Profile ve gerçek müşteri yorumları en büyük farkı yaratır.' },
+  { ilce: 'Körfez & Derince', not: 'Liman ve sanayi tesislerine yakın, iş odaklı bir bölge. Servis, nakliye, esnaf ve B2B hizmet aramaları için yerel SEO ve harita görünürlüğü.' },
+  { ilce: 'Başiskele & Kartepe', not: 'Hızlı büyüyen konut bölgeleri ve Kartepe\'nin turizm merkezi. Emlak, sağlık, eğitim ve hizmet işletmeleri için harita ağırlıklı yerel SEO, sezonluk içerik.' },
+  { ilce: 'Gölcük, Karamürsel, Kandıra', not: 'Sahil ve kırsal ilçeler; rekabet genellikle daha düşük. Yerel esnaf ve turizm işletmeleri için yorum ve harita odaklı, daha hızlı sonuç veren çalışma.' },
+]
 
 const faqs = [
   { q: 'Kocaeli\'de SEO hizmeti neden önemli?', a: 'Kocaeli, Türkiye\'nin en büyük sanayi ve ticaret merkezlerinden biri. İzmit, Gebze ve Darıca\'da yoğun ticari rekabet var. Google\'da "Kocaeli [hizmet]" veya "İzmit [hizmet]" aramasında üst sırada çıkmak, rakipler arası farkındalık yaratmanın en düşük maliyetli ve sürdürülebilir yolu.' },
@@ -100,7 +109,7 @@ export default function KocaeliSeoPage() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <CalendlyButton label="Ücretsiz SEO Analizi" variant="primary" />
-            <Link href="/hizmetler/seo-kocaeli" className="text-zinc-400 hover:text-white text-sm font-medium transition-colors flex items-center gap-1.5">
+            <Link href="/hizmetler/seo" className="text-zinc-400 hover:text-white text-sm font-medium transition-colors flex items-center gap-1.5">
               SEO Hizmet Detayları <ArrowRight size={14} />
             </Link>
           </div>
@@ -110,7 +119,7 @@ export default function KocaeliSeoPage() {
       <section className="pb-16 px-6">
         <div className="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-5">
           {[
-            { value: '10', label: 'Kocaeli ilçesi — tam kapsam' },
+            { value: '12', label: 'Kocaeli ilçesi — tam kapsam' },
             { value: '3-6 Ay', label: 'Organik sıralama için süre' },
             { value: '%300+', label: 'Ortalama trafik artışı' },
             { value: 'Organik', label: 'Reklam bütçesi gerektirmez' },
@@ -156,6 +165,26 @@ export default function KocaeliSeoPage() {
             <Link href="/portfolyo" className="text-blue-400 text-sm font-medium flex items-center gap-1.5 hover:gap-2.5 transition-all">
               Tüm Referanslar <ArrowRight size={13} />
             </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 px-6">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Kocaeli İlçelerine Göre SEO Stratejisi</h2>
+            <p className="text-zinc-400 max-w-2xl mx-auto">Aynı SEO planı her ilçede işlemez. İlçenin ekonomisi, insanların ne ve nasıl aradığını belirler; stratejiyi ona göre kurarız.</p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {ilceStratejileri.map(({ ilce, not }) => (
+              <div key={ilce} className="bg-[#0D1225] border border-white/[0.06] rounded-2xl p-6">
+                <div className="flex items-center gap-2 mb-3">
+                  <MapPin size={15} className="text-blue-400" />
+                  <h3 className="text-white font-semibold">{ilce}</h3>
+                </div>
+                <p className="text-zinc-400 text-sm leading-relaxed">{not}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

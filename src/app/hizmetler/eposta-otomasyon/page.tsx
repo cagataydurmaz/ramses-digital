@@ -283,7 +283,7 @@ export default function EpostaOtomasyonPage() {
               <p className="text-orange-400 text-xs font-medium uppercase tracking-wider mb-2">Hizmet</p>
               <h3 className="text-white font-medium leading-snug group-hover:text-orange-300 transition-colors">n8n İş Akışı Otomasyonu <ArrowRight size={14} className="inline ml-1" /></h3>
             </Link>
-            <Link href="/hizmetler/google-ads-kocaeli" className="group bg-[#0D1225] border border-white/[0.06] hover:border-orange-500/30 rounded-xl p-5 transition-all">
+            <Link href="/hizmetler/google-ads" className="group bg-[#0D1225] border border-white/[0.06] hover:border-orange-500/30 rounded-xl p-5 transition-all">
               <p className="text-orange-400 text-xs font-medium uppercase tracking-wider mb-2">Hizmet</p>
               <h3 className="text-white font-medium leading-snug group-hover:text-orange-300 transition-colors">Google Ads Yönetimi <ArrowRight size={14} className="inline ml-1" /></h3>
             </Link>

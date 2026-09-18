@@ -7,11 +7,11 @@ export const metadata: Metadata = {
   title: 'SEO Hizmeti | Yerel & Teknik SEO, GEO, AEO — Ramses Dijital Yazılım ve Dijital Pazarlama Ajansı',
   description:
     'İşletmenize özel SEO hizmeti. Yerel SEO, teknik SEO, GEO, AEO ve içerik stratejisi. Online çalışıyoruz, tüm Türkiye\'ye hizmet veriyoruz. Ücretsiz analiz.',
-  alternates: { canonical: 'https://ramsesdigital.com/hizmetler/seo-kocaeli' },
+  alternates: { canonical: 'https://ramsesdigital.com/hizmetler/seo' },
   openGraph: {
-    title: 'SEO Kocaeli | Ramses Digital',
-    description: 'Kocaeli\'deki işletmeler için ROI odaklı SEO hizmeti. Google\'da 1. sayfaya çıkın.',
-    url: 'https://ramsesdigital.com/hizmetler/seo-kocaeli',
+    title: 'SEO Hizmeti | Ramses Digital',
+    description: 'ROI odaklı SEO hizmeti: yerel, teknik SEO, GEO ve AEO. Tüm Türkiye\'ye hizmet.',
+    url: 'https://ramsesdigital.com/hizmetler/seo',
     images: ['https://ramsesdigital.com/og-image.png'],
   },
   twitter: {
@@ -203,12 +203,12 @@ export default function SeoKocaeliPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'Service',
-        name: 'SEO Hizmeti — Kocaeli',
+        name: 'SEO Hizmeti',
         description: 'Kocaeli ve İzmit işletmeleri için yerel SEO, GEO, AEO ve teknik SEO hizmetleri.',
         provider: { '@type': 'Organization', name: 'Ramses Digital', url: 'https://ramsesdigital.com' },
         areaServed: [{ '@type': 'City', name: 'İzmit' }, { '@type': 'City', name: 'Kocaeli' }, { '@type': 'Country', name: 'Türkiye' }],
         serviceType: 'Search Engine Optimization',
-        url: 'https://ramsesdigital.com/hizmetler/seo-kocaeli',
+        url: 'https://ramsesdigital.com/hizmetler/seo',
       })}} />
 
       {/* FAQ Schema */}
@@ -225,7 +225,7 @@ export default function SeoKocaeliPage() {
         itemListElement: [
           { '@type': 'ListItem', position: 1, name: 'Anasayfa', item: 'https://ramsesdigital.com' },
           { '@type': 'ListItem', position: 2, name: 'Hizmetler', item: 'https://ramsesdigital.com/hizmetler' },
-          { '@type': 'ListItem', position: 3, name: 'SEO Kocaeli', item: 'https://ramsesdigital.com/hizmetler/seo-kocaeli' },
+          { '@type': 'ListItem', position: 3, name: 'SEO Hizmeti', item: 'https://ramsesdigital.com/hizmetler/seo' },
         ],
       })}} />
     </>

@@ -29,12 +29,12 @@ const districts = [
 ]
 
 const services = [
-  { icon: Megaphone, title: 'Google Ads Yönetimi', desc: 'Kocaeli\'nin hangi ilçesinde faaliyet gösterirseniz gösterin, aramaya çıkan potansiyel müşteriye tam doğru anda ulaşırız.', href: '/hizmetler/google-ads-kocaeli' },
-  { icon: Search, title: 'SEO & Google Haritalar', desc: 'İlçenize özel yerel arama sonuçlarında ve Google Haritalar paketinde üst sıralarda yer alın.', href: '/hizmetler/seo-kocaeli' },
-  { icon: Globe, title: 'Web Tasarım', desc: 'Kocaeli sanayisinin B2B ihtiyaçlarından mahalle esnafının yerel müşteri arayışına kadar her ölçekte web sitesi.', href: '/hizmetler/web-tasarim-kocaeli' },
+  { icon: Megaphone, title: 'Google Ads Yönetimi', desc: 'Kocaeli\'nin hangi ilçesinde faaliyet gösterirseniz gösterin, aramaya çıkan potansiyel müşteriye tam doğru anda ulaşırız.', href: '/kocaeli-google-ads' },
+  { icon: Search, title: 'SEO & Google Haritalar', desc: 'İlçenize özel yerel arama sonuçlarında ve Google Haritalar paketinde üst sıralarda yer alın.', href: '/kocaeli-seo' },
+  { icon: Globe, title: 'Web Tasarım', desc: 'Kocaeli sanayisinin B2B ihtiyaçlarından mahalle esnafının yerel müşteri arayışına kadar her ölçekte web sitesi.', href: '/kocaeli-web-tasarim' },
   { icon: Zap, title: 'Pazarlama Otomasyonu', desc: 'n8n tabanlı otomasyonlarla teklif takibi, lead yönlendirme ve müşteri iletişimini otomatikleştirin.', href: '/hizmetler/n8n-otomasyon' },
   { icon: BarChart3, title: 'Veri Analizi & Raporlama', desc: 'Hangi ilçeden, hangi kanaldan gelen trafiğin satışa döndüğünü net biçimde görün.', href: '/hizmetler/veri-analizi' },
-  { icon: LineChart, title: 'Marka Bilinirliği Kampanyaları', desc: 'Kocaeli genelinde marka görünürlüğünü artıran display ve retargeting kampanyaları.', href: '/hizmetler/google-ads-kocaeli' },
+  { icon: LineChart, title: 'Marka Bilinirliği Kampanyaları', desc: 'Kocaeli genelinde marka görünürlüğünü artıran display ve retargeting kampanyaları.', href: '/kocaeli-google-ads' },
 ]
 
 const whyUs = [
