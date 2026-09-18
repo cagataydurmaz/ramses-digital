@@ -216,7 +216,7 @@ export default function IzmirYazilimAjansiPage() {
               Uydurma vaka çalışması sunmuyoruz. Türkiye genelinde farklı sektörlerden gerçek, canlı yazılım ve web
               projelerimiz var — hepsi ziyaret edilebilir. Aynı mühendislik disiplinini İzmir işletmeleri için de uyguluyoruz.
             </p>
-            <Link href="/portfolyo" className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 text-blue-400 hover:text-blue-300 text-sm font-medium rounded-full px-5 py-2.5 transition-all">
+            <Link href="/portfolyo" className="inline-flex items-center gap-2 group border border-blue-500/40 hover:border-blue-500 text-blue-400 hover:text-blue-300 text-sm font-medium rounded-full px-6 py-3 transition-all">
               Portföyümüzü İnceleyin <ArrowRight size={13} />
             </Link>
           </div>

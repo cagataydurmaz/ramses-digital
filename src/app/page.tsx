@@ -534,10 +534,10 @@ export default function HomePage() {
           <FadeIn className="text-center mt-10">
             <Link
               href="/hizmetler"
-              className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 text-sm font-medium transition-colors"
+              className="group inline-flex items-center gap-2 border border-blue-500/40 hover:border-blue-500 text-blue-400 hover:text-blue-300 text-sm font-medium rounded-full px-6 py-3 transition-all"
             >
               Tüm hizmetleri görüntüle
-              <ArrowRight size={14} />
+              <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
             </Link>
           </FadeIn>
         </div>
@@ -648,9 +648,9 @@ export default function HomePage() {
           <Link
             href="/sehirler"
             prefetch={false}
-            className="inline-flex items-center gap-1.5 text-blue-400 hover:text-blue-300 text-sm font-medium transition-colors"
+            className="group inline-flex items-center gap-2 border border-blue-500/40 hover:border-blue-500 text-blue-400 hover:text-blue-300 text-sm font-medium rounded-full px-6 py-3 transition-all"
           >
-            Tüm Şehirleri Gör <ArrowRight size={14} />
+            Tüm Şehirleri Gör <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
           </Link>
         </div>
       </section>

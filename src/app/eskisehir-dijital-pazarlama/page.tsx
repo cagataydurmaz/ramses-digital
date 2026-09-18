@@ -270,7 +270,7 @@ export default function EskisehirDijitalPazarlamaPage() {
               disipliniyle Eskişehir işletmeniz için nasıl çalışacağımızı görebilirsiniz.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <Link href="/portfolyo" className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 text-blue-400 hover:text-blue-300 text-sm font-medium rounded-full px-5 py-2.5 transition-all">
+              <Link href="/portfolyo" className="inline-flex items-center gap-2 group border border-blue-500/40 hover:border-blue-500 text-blue-400 hover:text-blue-300 text-sm font-medium rounded-full px-6 py-3 transition-all">
                 Portföyü Gör <ArrowRight size={13} />
               </Link>
               <CalendlyButton label="Görüşme Ayarla" variant="secondary" />

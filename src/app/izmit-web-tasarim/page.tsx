@@ -191,8 +191,8 @@ export default function IzmitWebTasarimPage() {
               </div>
             ))}
           </div>
-          <Link href="/portfolyo" className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 text-sm font-medium transition-colors">
-            Tüm Portföyü Gör <ArrowRight size={13} />
+          <Link href="/portfolyo" className="group inline-flex items-center gap-2 border border-blue-500/40 hover:border-blue-500 text-blue-400 hover:text-blue-300 text-sm font-medium rounded-full px-6 py-3 transition-all">
+            Tüm Portföyü Gör <ArrowRight size={13} className="group-hover:translate-x-1 transition-transform" />
           </Link>
         </div>
       </section>
