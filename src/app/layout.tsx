@@ -99,6 +99,7 @@ export default function RootLayout({
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-JQWD80KVTJ');
+            gtag('config', 'AW-18459249890');
           `}
         </Script>
         {/* Microsoft Clarity — heatmap & session recording */}
