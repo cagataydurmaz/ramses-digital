@@ -236,14 +236,6 @@ export default function RootLayout({
                 url: 'https://ramsesdigital.com',
                 inLanguage: 'tr-TR',
                 publisher: { '@id': 'https://ramsesdigital.com/#organization' },
-                potentialAction: {
-                  '@type': 'SearchAction',
-                  target: {
-                    '@type': 'EntryPoint',
-                    urlTemplate: 'https://ramsesdigital.com/blog?q={search_term_string}',
-                  },
-                  'query-input': 'required name=search_term_string',
-                },
               },
             ]),
           }}
