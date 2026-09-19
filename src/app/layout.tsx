@@ -5,6 +5,7 @@ import dynamic from 'next/dynamic'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import LeadTracker from '@/components/LeadTracker'
 
 // Lazy-load widget'lar — first paint'i engellemez
 const WhatsAppButton = dynamic(() => import('@/components/WhatsAppButton'), { ssr: false })
@@ -88,6 +89,7 @@ export default function RootLayout({
         <WhatsAppButton />
         <PhoneButton />
         <CookieBanner />
+        <LeadTracker />
         {/* Google Analytics GA4 */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-JQWD80KVTJ"

@@ -1,6 +1,7 @@
 'use client'
 
 import { ArrowRight } from 'lucide-react'
+import { trackLead } from '@/lib/tracking'
 
 const WHATSAPP_NUMBER = '905355601936'
 const WHATSAPP_MESSAGE = 'Merhaba! Ücretsiz danışmanlık almak istiyorum.'
@@ -28,6 +29,7 @@ export default function CalendlyButton({
 }: CalendlyButtonProps) {
   const handleClick = () => {
     window.fbq?.('track', 'Contact', { content_name: label })
+    trackLead()
     const msg = encodeURIComponent(message)
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${msg}`, '_blank')
   }

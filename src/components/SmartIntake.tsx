@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Link from 'next/link'
+import { trackLead } from '@/lib/tracking'
 import { ArrowRight, Loader2, Sparkles, RotateCcw, Send, Edit3 } from 'lucide-react'
 
 const WHATSAPP_NUMBER = '905355601936'
@@ -150,6 +151,7 @@ export default function SmartIntake({ lang = 'tr' }: { lang?: 'tr' | 'en' }) {
   }
 
   const openWhatsApp = () => {
+    trackLead()
     const msg = encodeURIComponent(t.whatsappMessage(result?.message ?? '', input))
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${msg}`, '_blank')
   }

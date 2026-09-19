@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { trackLead } from '@/lib/tracking'
 import { Search, TrendingUp, Share2, Monitor, Mail, BarChart3, Workflow, Send } from 'lucide-react'
 
 const WHATSAPP_NUMBER = '905355601936'
@@ -46,6 +47,7 @@ export default function WhatsAppLeadForm() {
 
     const msg = encodeURIComponent(lines.join('\n'))
     window.fbq?.('track', 'Lead', { content_name: 'WhatsApp Lead Form' })
+    trackLead()
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${msg}`, '_blank')
   }
 
