@@ -2,10 +2,14 @@
 
 import { motion } from 'framer-motion'
 
+const WHATSAPP_HREF = `https://wa.me/905355601936?text=${encodeURIComponent(
+  'Merhaba! Web sitenizden yazıyorum, dijital pazarlama hizmetleriniz hakkında bilgi almak istiyorum.'
+)}`
+
 export default function WhatsAppButton() {
   return (
     <motion.a
-      href="https://wa.me/905355601936"
+      href={WHATSAPP_HREF}
       target="_blank"
       rel="noopener noreferrer"
       initial={{ opacity: 0 }}

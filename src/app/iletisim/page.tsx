@@ -205,7 +205,7 @@ export default function ContactPage() {
               </div>
 
               <a
-                href="https://wa.me/905355601936"
+                href={`https://wa.me/905355601936?text=${encodeURIComponent('Merhaba! Web sitenizden yazıyorum, dijital pazarlama hizmetleriniz hakkında bilgi almak istiyorum.')}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 bg-[#25D366]/10 hover:bg-[#25D366]/20 border border-[#25D366]/20 hover:border-[#25D366]/40 rounded-2xl p-5 transition-all"
