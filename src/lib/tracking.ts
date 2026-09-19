@@ -1,6 +1,6 @@
 const ADS_ID = 'AW-18459249890'
 // Google Ads > Goals > Conversions'daki dönüşüm eyleminin etiketi ("AW-.../ETIKET" içindeki ETIKET kısmı).
-const LEAD_CONVERSION_LABEL = ''
+const LEAD_CONVERSION_LABEL = '1AUUCOelqv0cEOKZh-JE'
 
 declare global {
   interface Window {
