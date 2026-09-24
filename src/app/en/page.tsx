@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 import dynamic from 'next/dynamic'
 import CalendlyButton from '@/components/CalendlyButton'
+import HeroBackgroundVideo from '@/components/HeroBackgroundVideo'
 
 // ssr:false VERMİYORUZ — bu Türkçe homepage'de de böyle: bileşen içeriği
 // (etiketler, örnek cümleler) crawler'lar için HTML'de görünür kalsın istiyoruz.
@@ -124,18 +125,7 @@ export default function EnglishHomePage() {
     <div lang="en">
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
       <section className="relative min-h-screen flex flex-col items-center overflow-hidden px-4 sm:px-6 pt-24 sm:pt-32 md:pt-44 pb-12 sm:pb-16">
-        <video
-          className="hero-bg-video absolute inset-0 w-full h-full object-cover mix-blend-screen pointer-events-none"
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="auto"
-          poster="/video/hero-bg-poster.jpg"
-          aria-hidden="true"
-        >
-          <source src="/video/hero-bg.mp4" type="video/mp4" />
-        </video>
+        <HeroBackgroundVideo />
         <div className="absolute inset-0 bg-gradient-to-b from-[#080D18]/20 via-transparent to-[#080D18] pointer-events-none" />
 
         <div className="relative z-10 max-w-5xl mx-auto text-center">

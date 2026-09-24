@@ -5,6 +5,7 @@ import Link from 'next/link'
 import dynamic from 'next/dynamic'
 import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
+import HeroBackgroundVideo from '@/components/HeroBackgroundVideo'
 import { reviews, aggregateRating } from '@/lib/reviews'
 import {
   Sparkles,
@@ -200,12 +201,6 @@ const statColorMap: Record<string, { bg: string; bgHover: string; text: string }
 
 // ─── Main Component ────────────────────────────────────────────────────────
 export default function HomePage() {
-  const heroVideoRef = useRef<HTMLVideoElement>(null)
-
-  useEffect(() => {
-    heroVideoRef.current?.play().catch(() => {})
-  }, [])
-
   return (
     <>
       {/* Review/AggregateRating şeması — Google'ın "review has multiple
@@ -242,20 +237,7 @@ export default function HomePage() {
 
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
       <section className="relative min-h-screen flex flex-col items-center overflow-hidden px-4 sm:px-6 pt-24 sm:pt-32 md:pt-44 pb-12 sm:pb-16">
-        {/* Arka plan videosu — soyut, marka renklerinde döngü. prefers-reduced-motion'da CSS ile gizleniyor, poster her durumda anında gösteriliyor. */}
-        <video
-          ref={heroVideoRef}
-          className="hero-bg-video absolute inset-0 w-full h-full object-cover mix-blend-screen pointer-events-none"
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="auto"
-          poster="/video/hero-bg-poster.jpg"
-          aria-hidden="true"
-        >
-          <source src="/video/hero-bg.mp4" type="video/mp4" />
-        </video>
+        <HeroBackgroundVideo />
         <div className="absolute inset-0 bg-gradient-to-b from-[#080D18]/20 via-transparent to-[#080D18] pointer-events-none" />
 
         {/* Background glow */}
