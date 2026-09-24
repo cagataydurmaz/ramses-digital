@@ -34,10 +34,14 @@ export const pricing: Record<string, Record<BusinessSize, PriceRange>> = {
     orta: { min: 15000, max: 20000, unit: 'tek seferlik', note: 'tek seferlik — ilk ay yönetim ücreti alınmaz, yönetim ücreti 2. aydan başlar' },
     buyuk: { min: 25000, max: 35000, unit: 'tek seferlik', note: 'tek seferlik — ilk ay yönetim ücreti alınmaz, yönetim ücreti 2. aydan başlar' },
   },
+  // Bu hizmet ÜRETİM odaklıdır — hesap yönetimi, paylaşım ve topluluk moderasyonu
+  // kapsam dışıdır (bkz. /hizmetler/sosyal-medya SSS). 2026 piyasa karşılaştırması
+  // (sadece tasarım/üretim hizmeti veren sağlayıcılar) sonrası güncellendi — en alt
+  // tier piyasanın belirgin altındaydı, orta/üst tier'lar zaten makuldü.
   'Sosyal Medya': {
-    kucuk: { min: 5000, max: 8000, unit: 'aylık' },
-    orta: { min: 14000, max: 22000, unit: 'aylık' },
-    buyuk: { min: 22000, max: 35000, unit: 'aylık' },
+    kucuk: { min: 8000, max: 14000, unit: 'aylık', note: 'haftada 3-4 içerik tasarımı, 1-2 platform formatı' },
+    orta: { min: 15000, max: 24000, unit: 'aylık', note: 'haftada 5-6 içerik tasarımı + reels, 2-3 platform formatı' },
+    buyuk: { min: 25000, max: 38000, unit: 'aylık', note: 'çoklu platform, video prodüksiyon desteği, yoğun içerik hacmi' },
   },
   'Web Tasarım': {
     kucuk: { min: 15000, max: 40000, unit: 'tek seferlik' },
@@ -93,7 +97,11 @@ export function estimateQuote(services: string[], size: BusinessSize): QuoteEsti
       oneTimeMin += range.min
       oneTimeMax += range.max
     }
-    if (range.note) hasAdSpendShare = true
+    // Sadece Google Ads/Google Ads Kurulum "+ reklam bütçesinin %15'i" notuna sahip —
+    // diğer hizmetlerin (Sosyal Medya, SEO Başlangıç Paketi vb.) notları farklı bir
+    // konuda (kapsam/istisna); "herhangi bir not var mı" kontrolü onları da yanlışlıkla
+    // reklam bütçesi paylı gösterirdi.
+    if ((service === 'Google Ads' || service === 'Google Ads Kurulum') && range.note) hasAdSpendShare = true
   }
 
   return { monthlyMin, monthlyMax, oneTimeMin, oneTimeMax, hasAdSpendShare, unpriced }
