@@ -170,10 +170,8 @@ export default function RootLayout({
                 email: 'ramsesdigitalagency@gmail.com',
                 address: {
                   '@type': 'PostalAddress',
-                  streetAddress: 'Körfez Mah. Sanayi Cd. Berk Sk. Dolphin AVM Kat:2',
                   addressLocality: 'İzmit',
                   addressRegion: 'Kocaeli',
-                  postalCode: '41050',
                   addressCountry: 'TR',
                 },
                 geo: {
@@ -181,7 +179,7 @@ export default function RootLayout({
                   latitude: 40.7588,
                   longitude: 29.9320,
                 },
-                hasMap: 'https://www.google.com/maps?q=Dolphin+AVM+Sanayi+Cad+Berk+Sk+%C4%B0zmit+Kocaeli',
+                hasMap: 'https://www.google.com/maps?q=%C4%B0zmit+Kocaeli',
                 openingHoursSpecification: [
                   {
                     '@type': 'OpeningHoursSpecification',

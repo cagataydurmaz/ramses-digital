@@ -138,11 +138,7 @@ export default function ContactPage() {
                     <div>
                       <p className="text-white text-sm font-medium mb-0.5">Adres</p>
                       <p className="text-zinc-400 text-sm leading-relaxed">
-                        Körfez Mah. Sanayi Cd. Berk Sk.
-                        <br />
-                        Dolphin AVM Kat:2
-                        <br />
-                        41050 İzmit / Kocaeli
+                        Kocaeli / İzmit
                       </p>
                     </div>
                   </div>
@@ -347,7 +343,7 @@ export default function ContactPage() {
               </p>
             </div>
             <iframe
-              src="https://www.google.com/maps?q=Dolphin+AVM+Sanayi+Cad+Berk+Sk+%C4%B0zmit+Kocaeli&output=embed"
+              src="https://www.google.com/maps?q=%C4%B0zmit+Kocaeli&output=embed"
               width="100%"
               height="400"
               style={{ border: 0 }}

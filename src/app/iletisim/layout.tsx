@@ -38,10 +38,8 @@ export default function IletisimLayout({ children }: { children: React.ReactNode
               email: 'ramsesdigitalagency@gmail.com',
               address: {
                 '@type': 'PostalAddress',
-                streetAddress: 'Körfez Mah. Sanayi Cd. Berk Sk. Dolphin AVM Kat:2',
                 addressLocality: 'İzmit',
                 addressRegion: 'Kocaeli',
-                postalCode: '41050',
                 addressCountry: 'TR',
               },
               openingHoursSpecification: [
