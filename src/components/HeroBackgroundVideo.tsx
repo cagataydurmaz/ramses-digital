@@ -15,6 +15,16 @@ export default function HeroBackgroundVideo() {
   useEffect(() => {
     const video = videoRef.current
     if (!video) return
+    // Mobil, Veri Tasarrufu ve "hareketi azalt" kullanıcılarında 2+ MB'lık videoyu
+    // hiç indirmiyoruz; sadece poster görünür. Masaüstünde kaynak sonradan atanıyor.
+    const conn = (navigator as Navigator & { connection?: { saveData?: boolean } }).connection
+    const wantsVideo =
+      window.matchMedia('(min-width: 768px)').matches &&
+      !window.matchMedia('(prefers-reduced-motion: reduce)').matches &&
+      !conn?.saveData
+    if (!wantsVideo) return
+
+    video.src = '/video/hero-bg.mp4'
     video.muted = true
     video.play()?.catch(() => {
       video.style.display = 'none'
@@ -32,15 +42,12 @@ export default function HeroBackgroundVideo() {
     <video
       ref={videoRef}
       className="hero-bg-video absolute inset-0 w-full h-full object-cover mix-blend-screen pointer-events-none"
-      autoPlay
       muted
       loop
       playsInline
-      preload="auto"
+      preload="none"
       poster="/video/hero-bg-poster.jpg"
       aria-hidden="true"
-    >
-      <source src="/video/hero-bg.mp4" type="video/mp4" />
-    </video>
+    />
   )
 }
