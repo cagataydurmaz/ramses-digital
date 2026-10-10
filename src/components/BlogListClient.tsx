@@ -42,7 +42,7 @@ function categoryBadgeClass(color: string): string {
   }
 }
 
-function BlogCard({ post }: { post: PostMeta }) {
+function BlogCard({ post, priority = false }: { post: PostMeta; priority?: boolean }) {
   return (
     <Link
       href={`/blog/${post.slug}`}
@@ -54,6 +54,7 @@ function BlogCard({ post }: { post: PostMeta }) {
           src={post.coverImage}
           alt={post.title}
           fill
+          priority={priority}
           className="object-cover transition-transform duration-500 group-hover:scale-105"
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
         />
@@ -152,8 +153,8 @@ export default function BlogListClient({ posts }: { posts: PostMeta[] }) {
             </div>
           ) : (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {filtered.map((post) => (
-                <BlogCard key={post.slug} post={post} />
+              {filtered.map((post, idx) => (
+                <BlogCard key={post.slug} post={post} priority={idx < 3} />
               ))}
             </div>
           )}

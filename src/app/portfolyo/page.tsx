@@ -85,7 +85,7 @@ export default function PortfolioPage() {
       <section className="pb-24 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {liveProjects.map((project) => {
+            {liveProjects.map((project, idx) => {
               const c = colorMap[project.color]
               return (
               <Link
@@ -114,6 +114,7 @@ export default function PortfolioPage() {
                     src={project.thumb}
                     alt={`${project.name} web sitesi ekran görüntüsü`}
                     fill
+                    priority={idx < 2}
                     className="object-cover object-top group-hover:scale-[1.03] transition-transform duration-500"
                     sizes="(max-width: 1024px) 100vw, 50vw"
                   />
