@@ -243,15 +243,15 @@ export default function HomePage() {
         {/* Background glow */}
         <div className="absolute inset-0 pointer-events-none">
           <div
-            className="mobile-hide-blur blob-drift absolute top-1/4 left-1/2 -translate-x-1/2 w-[900px] h-[600px] bg-blue-500/8 rounded-full blur-[160px]"
+            className="mobile-hide-blur absolute top-1/4 left-1/2 -translate-x-1/2 w-[900px] h-[600px] bg-blue-500/8 rounded-full blur-[160px]"
             style={{ animationDelay: '0s' }}
           />
           <div
-            className="mobile-hide-blur blob-drift absolute top-[10%] right-[8%] w-[500px] h-[500px] bg-violet-500/8 rounded-full blur-[140px]"
+            className="mobile-hide-blur absolute top-[10%] right-[8%] w-[500px] h-[500px] bg-violet-500/8 rounded-full blur-[140px]"
             style={{ animationDelay: '4s' }}
           />
           <div
-            className="mobile-hide-blur blob-drift absolute bottom-[5%] left-[5%] w-[400px] h-[400px] bg-emerald-500/6 rounded-full blur-[120px]"
+            className="mobile-hide-blur absolute bottom-[5%] left-[5%] w-[400px] h-[400px] bg-emerald-500/6 rounded-full blur-[120px]"
             style={{ animationDelay: '8s' }}
           />
           <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/5 to-transparent" />
@@ -294,28 +294,28 @@ export default function HomePage() {
         {/* Yüzen hizmet rozetleri — sadece geniş ekranlarda, içerikle çakışmaz */}
         <div className="hidden xl:block absolute inset-0 pointer-events-none">
           <div
-            className="hero-chip absolute top-[22%] left-[6%] flex items-center gap-2 bg-white/[0.04] border border-white/[0.08] backdrop-blur-sm rounded-full px-4 py-2 shadow-lg shadow-black/20"
+            className="hero-chip absolute top-[22%] left-[6%] flex items-center gap-2 bg-[#0d1424]/80 border border-white/[0.08] rounded-full px-4 py-2 shadow-lg shadow-black/20"
             style={{ animationDelay: '0s' }}
           >
             <Search size={14} className="text-blue-400" />
             <span className="text-xs font-medium text-zinc-300">SEO & GEO</span>
           </div>
           <div
-            className="hero-chip absolute top-[15%] right-[7%] flex items-center gap-2 bg-white/[0.04] border border-white/[0.08] backdrop-blur-sm rounded-full px-4 py-2 shadow-lg shadow-black/20"
+            className="hero-chip absolute top-[15%] right-[7%] flex items-center gap-2 bg-[#0d1424]/80 border border-white/[0.08] rounded-full px-4 py-2 shadow-lg shadow-black/20"
             style={{ animationDelay: '1.2s' }}
           >
             <TrendingUp size={14} className="text-violet-400" />
             <span className="text-xs font-medium text-zinc-300">Google Ads</span>
           </div>
           <div
-            className="hero-chip absolute bottom-[26%] left-[9%] flex items-center gap-2 bg-white/[0.04] border border-white/[0.08] backdrop-blur-sm rounded-full px-4 py-2 shadow-lg shadow-black/20"
+            className="hero-chip absolute bottom-[26%] left-[9%] flex items-center gap-2 bg-[#0d1424]/80 border border-white/[0.08] rounded-full px-4 py-2 shadow-lg shadow-black/20"
             style={{ animationDelay: '0.6s' }}
           >
             <Sparkles size={14} className="text-emerald-400" />
             <span className="text-xs font-medium text-zinc-300">AI & GEO</span>
           </div>
           <div
-            className="hero-chip absolute bottom-[20%] right-[8%] flex items-center gap-2 bg-white/[0.04] border border-white/[0.08] backdrop-blur-sm rounded-full px-4 py-2 shadow-lg shadow-black/20"
+            className="hero-chip absolute bottom-[20%] right-[8%] flex items-center gap-2 bg-[#0d1424]/80 border border-white/[0.08] rounded-full px-4 py-2 shadow-lg shadow-black/20"
             style={{ animationDelay: '1.8s' }}
           >
             <Workflow size={14} className="text-fuchsia-400" />

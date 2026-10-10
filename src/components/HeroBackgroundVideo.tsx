@@ -19,6 +19,13 @@ export default function HeroBackgroundVideo() {
     video.play()?.catch(() => {
       video.style.display = 'none'
     })
+    // Hero görünmüyorken videoyu durdur — aşağıda kaydırırken GPU/CPU boşa gitmesin.
+    const io = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) video.play()?.catch(() => {})
+      else video.pause()
+    })
+    io.observe(video)
+    return () => io.disconnect()
   }, [])
 
   return (
