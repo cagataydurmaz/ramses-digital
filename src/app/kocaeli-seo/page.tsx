@@ -105,7 +105,15 @@ export default function KocaeliSeoPage() {
             İzmit&apos;ten Gebze&apos;ye, Darıca&apos;dan Körfez&apos;e tüm Kocaeli ilçelerinde yerel SEO. GEO ve AEO ile yapay zeka aramalarında da görünün.
           </p>
           <p className="text-zinc-500 text-sm mb-10">
-            {ilceler.join(' · ')}
+            {ilceler.map((n, idx) => {
+              const slug = { Gebze: 'gebze', Darıca: 'darica', Körfez: 'korfez', Gölcük: 'golcuk', Başiskele: 'basiskele', Çayırova: 'cayirova', Karamürsel: 'karamursel', Kandıra: 'kandira', Dilovası: 'dilovasi', Kartepe: 'kartepe', Derince: 'derince' }[n]
+              return (
+                <span key={n}>
+                  {slug ? <Link href={`/ilceler/${slug}`} prefetch={false} className="hover:text-blue-400 transition-colors">{n}</Link> : n}
+                  {idx < ilceler.length - 1 ? ' · ' : ''}
+                </span>
+              )
+            })}
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <CalendlyButton label="Ücretsiz SEO Analizi" variant="primary" />

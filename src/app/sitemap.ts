@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next'
 import { posts } from '@/lib/posts'
 import { projects } from '@/lib/portfolio'
+import { ilceler } from '@/lib/ilceler'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = 'https://ramsesdigital.com'
@@ -106,6 +107,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority,
   }))
 
+  const ilcePages = [
+    { url: `${base}/ilceler`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.85 },
+    ...ilceler.map(i => ({
+      url: `${base}/ilceler/${i.slug}`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.85,
+    })),
+  ]
+
   const blogPages = posts.map(p => ({
     url: `${base}/blog/${p.slug}`,
     lastModified: new Date(p.date),
@@ -120,5 +131,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }))
 
-  return [...statics, ...blogPages, ...caseStudyPages]
+  return [...statics, ...ilcePages, ...blogPages, ...caseStudyPages]
 }

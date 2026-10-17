@@ -122,6 +122,18 @@ export default function SehirlerPage() {
         </div>
       </section>
 
+      <section className="pb-16 px-6">
+        <div className="max-w-6xl mx-auto bg-blue-500/5 border border-blue-500/15 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div>
+            <h2 className="text-white font-semibold text-lg mb-1">Kocaeli, Sakarya, Yalova ve Düzce İlçeleri</h2>
+            <p className="text-zinc-400 text-sm">Gebze, Darıca, Körfez, Adapazarı, Sapanca ve daha fazlası için bölgeye özel rehber sayfalar.</p>
+          </div>
+          <Link href="/ilceler" prefetch={false} className="text-blue-400 text-sm font-medium flex items-center gap-1.5 shrink-0">
+            Bölgeleri Gör <ArrowRight size={13} />
+          </Link>
+        </div>
+      </section>
+
       <section className="py-16 px-6 bg-[#080D18]">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-2xl font-bold text-white mb-3">Şehriniz Listede Yok mu?</h2>
