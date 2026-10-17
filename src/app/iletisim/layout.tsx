@@ -36,12 +36,6 @@ export default function IletisimLayout({ children }: { children: React.ReactNode
               name: 'Ramses Digital',
               telephone: '+905355601936',
               email: 'ramsesdigitalagency@gmail.com',
-              address: {
-                '@type': 'PostalAddress',
-                addressLocality: 'İzmit',
-                addressRegion: 'Kocaeli',
-                addressCountry: 'TR',
-              },
               openingHoursSpecification: [
                 {
                   '@type': 'OpeningHoursSpecification',

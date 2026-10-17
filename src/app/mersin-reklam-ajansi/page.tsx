@@ -70,12 +70,6 @@ const jsonLd = {
         { '@type': 'City', name: 'Tarsus' },
       ],
       telephone: '+905355601936',
-      address: {
-        '@type': 'PostalAddress',
-        addressLocality: 'İzmit',
-        addressRegion: 'Kocaeli',
-        addressCountry: 'TR',
-      },
       knowsAbout: ['SEO', 'Google Ads', 'Web Tasarım', 'Dijital Pazarlama', 'E-posta Pazarlama', 'Pazarlama Otomasyonu'],
       sameAs: ['https://ramsesdigital.com'],
     },

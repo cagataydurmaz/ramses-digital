@@ -77,12 +77,6 @@ const jsonLd = {
         { '@type': 'City', name: 'Körfez' },
         { '@type': 'City', name: 'Gölcük' },
       ],
-      address: {
-        '@type': 'PostalAddress',
-        addressLocality: 'İzmit',
-        addressRegion: 'Kocaeli',
-        addressCountry: 'TR',
-      },
       knowsAbout: ['SEO', 'Google Ads', 'Web Tasarım', 'Dijital Pazarlama', 'E-posta Pazarlama', 'Pazarlama Otomasyonu'],
       sameAs: ['https://ramsesdigital.com'],
     },

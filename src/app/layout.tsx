@@ -168,18 +168,6 @@ export default function RootLayout({
                 image: 'https://ramsesdigital.com/og-image.png',
                 telephone: '+905355601936',
                 email: 'ramsesdigitalagency@gmail.com',
-                address: {
-                  '@type': 'PostalAddress',
-                  addressLocality: 'İzmit',
-                  addressRegion: 'Kocaeli',
-                  addressCountry: 'TR',
-                },
-                geo: {
-                  '@type': 'GeoCoordinates',
-                  latitude: 40.7588,
-                  longitude: 29.9320,
-                },
-                hasMap: 'https://www.google.com/maps?q=%C4%B0zmit+Kocaeli',
                 openingHoursSpecification: [
                   {
                     '@type': 'OpeningHoursSpecification',

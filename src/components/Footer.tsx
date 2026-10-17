@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { MapPin, Phone, Mail, Instagram } from 'lucide-react'
+import { Phone, Mail, Instagram } from 'lucide-react'
 
 const services = [
   { label: 'SEO & İçerik Optimizasyonu', href: '/hizmetler/seo', hoverClass: 'hover:text-blue-400' },
@@ -173,12 +173,6 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-semibold text-sm mb-4">İletişim</h3>
             <ul className="space-y-4">
-              <li className="flex items-start gap-3">
-                <MapPin size={14} className="text-blue-500 mt-0.5 shrink-0" aria-hidden="true" />
-                <span className="text-zinc-400 text-sm">
-                  Kocaeli / İzmit
-                </span>
-              </li>
               <li>
                 <a
                   href="tel:+905355601936"

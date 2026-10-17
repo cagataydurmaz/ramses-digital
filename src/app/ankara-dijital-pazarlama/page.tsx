@@ -109,12 +109,6 @@ const jsonLd = {
         { '@type': 'City', name: 'Mamak' },
         { '@type': 'City', name: 'Etimesgut' },
       ],
-      address: {
-        '@type': 'PostalAddress',
-        addressLocality: 'İzmit',
-        addressRegion: 'Kocaeli',
-        addressCountry: 'TR',
-      },
       hasOfferCatalog: {
         '@type': 'OfferCatalog',
         name: 'Dijital Pazarlama Hizmetleri',

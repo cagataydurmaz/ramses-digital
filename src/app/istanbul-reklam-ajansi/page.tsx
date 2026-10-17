@@ -82,12 +82,6 @@ const jsonLd = {
         { '@type': 'City', name: 'Beylikdüzü' },
       ],
       telephone: '+905355601936',
-      address: {
-        '@type': 'PostalAddress',
-        addressLocality: 'İzmit',
-        addressRegion: 'Kocaeli',
-        addressCountry: 'TR',
-      },
       knowsAbout: ['Google Ads', 'SEO', 'Sosyal Medya Pazarlama', 'E-posta Pazarlama', 'Pazarlama Otomasyonu'],
       sameAs: ['https://ramsesdigital.com'],
     },

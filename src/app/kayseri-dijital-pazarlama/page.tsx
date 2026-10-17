@@ -109,12 +109,6 @@ const jsonLd = {
         { '@type': 'City', name: 'Develi' },
       ],
       telephone: '+905355601936',
-      address: {
-        '@type': 'PostalAddress',
-        addressLocality: 'İzmit',
-        addressRegion: 'Kocaeli',
-        addressCountry: 'TR',
-      },
       hasOfferCatalog: {
         '@type': 'OfferCatalog',
         name: 'Dijital Pazarlama Hizmetleri',
