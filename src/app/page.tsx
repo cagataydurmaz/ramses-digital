@@ -601,7 +601,7 @@ export default function HomePage() {
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Türkiye Genelinde Hizmet Veriyoruz</h2>
           <p className="text-zinc-400 max-w-xl mx-auto mb-8">
-            Merkezimiz Kocaeli&apos;de olsa da tüm hizmetlerimizi uzaktan, Türkiye genelinde yürütüyoruz.
+            Tüm hizmetlerimizi tamamen uzaktan, Türkiye genelinde yürütüyoruz.
           </p>
           <div className="flex flex-wrap justify-center gap-2.5 mb-8">
             {[
@@ -634,6 +634,26 @@ export default function HomePage() {
           >
             Tüm Şehirleri Gör <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
           </Link>
+          <div className="mt-10 pt-8 border-t border-white/[0.06]">
+            <p className="text-zinc-500 text-xs font-medium uppercase tracking-wider mb-4">Kocaeli, Sakarya ve Çevresi — İlçe Rehberleri</p>
+            <div className="flex flex-wrap justify-center gap-2">
+              {[
+                ['Gebze', 'gebze'], ['Darıca', 'darica'], ['Körfez', 'korfez'], ['Gölcük', 'golcuk'],
+                ['Başiskele', 'basiskele'], ['Kartepe', 'kartepe'], ['Çayırova', 'cayirova'], ['Dilovası', 'dilovasi'],
+                ['Adapazarı', 'adapazari'], ['Serdivan', 'serdivan'], ['Sapanca', 'sapanca'], ['Yalova', 'yalova'], ['Düzce', 'duzce'],
+              ].map(([label, slug]) => (
+                <Link
+                  key={slug}
+                  href={`/ilceler/${slug}`}
+                  prefetch={false}
+                  className="text-xs bg-white/[0.03] hover:bg-blue-500/10 border border-white/[0.06] hover:border-blue-500/30 text-zinc-500 hover:text-blue-400 rounded-full px-3 py-1.5 transition-all"
+                >
+                  {label}
+                </Link>
+              ))}
+              <Link href="/ilceler" prefetch={false} className="text-xs text-blue-400 hover:text-blue-300 px-3 py-1.5">Tümünü gör →</Link>
+            </div>
+          </div>
         </div>
       </section>
 

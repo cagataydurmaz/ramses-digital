@@ -3530,4 +3530,148 @@ export const posts: Post[] = [
       <p>E-ticarette dijital pazarlama, tek bir kanala yatırım yapmak değil, SEO/Google Ads/e-posta üçlüsünü birbirini besleyecek şekilde kurgulamaktır. Ramses Digital olarak e-ticaret işletmeleri için bu üç kanalı bütünleşik bir strateji olarak yönetiyoruz.</p>
     `,
   },
+  {
+    slug: 'ilce-bazli-seo-sablon-sayfa-mi-gercek-icerik-mi',
+    coverImage: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=80&fit=crop',
+    title: 'İlçe Bazlı SEO: Şablon Sayfa mı, Gerçek İçerik mi?',
+    excerpt:
+      '"Gebze web tasarım", "Darıca su deposu temizliği" gibi ilçe aramalarında çıkmak için her ilçeye sayfa açmak işe yarar mı? Şablon sayfa ile özgün sayfa arasındaki fark, risk ve doğru yöntem.',
+    category: 'SEO',
+    categoryColor: 'blue',
+    emoji: '📍',
+    coverGradient: 'from-blue-500/10 to-blue-900/5',
+    readTime: 5,
+    date: '2026-10-28',
+    author: 'Ramses Digital Ekibi',
+    authorRole: 'SEO Uzmanları',
+    tags: ['Yerel SEO', 'İlçe SEO', 'pSEO', 'Google Haritalar'],
+    content: `
+      <h2>İlçe Bazlı SEO Neden Çalışıyor?</h2>
+      <p>İnsanların büyük kısmı yerel hizmeti "şehir + hizmet" ya da "ilçe + hizmet" diye arıyor. "Kocaeli web tasarım" geniş ve rekabetli bir arama, "Başiskele web tasarım" ise çok daha dar ve çoğu zaman az rekabetli. İlçe sayfaları bu dar aramaları yakalamak için kuruluyor.</p>
+
+      <table>
+        <thead><tr><th>Arama</th><th>Kapsam</th><th>Rekabet</th></tr></thead>
+        <tbody>
+          <tr><td>kocaeli web tasarım</td><td>Geniş</td><td>Yüksek</td></tr>
+          <tr><td>gebze web tasarım</td><td>İlçe</td><td>Orta</td></tr>
+          <tr><td>kartepe otel web sitesi</td><td>İlçe + sektör</td><td>Düşük</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Şablon Sayfa ile Gerçek Sayfa Arasındaki Fark</h2>
+      <p>En sık yapılan hata, aynı metni kopyalayıp sadece ilçe adını değiştirmek. Google bunu fark edebiliyor ve bu tür sayfaları az değerli sayabiliyor.</p>
+
+      <table>
+        <thead><tr><th>Özellik</th><th>Şablon sayfa</th><th>Gerçek ilçe sayfası</th></tr></thead>
+        <tbody>
+          <tr><td>İçerik</td><td>Aynı metin, sadece ilçe adı değişir</td><td>O ilçeye özgü bölümler ve sorular</td></tr>
+          <tr><td>Sektör bilgisi</td><td>Yok</td><td>İlçenin ekonomisine göre sektör önerileri</td></tr>
+          <tr><td>SSS</td><td>Genel, her sayfada aynı</td><td>İlçeye özel cevaplar</td></tr>
+          <tr><td>Uzun vadede</td><td>Düşme riski</td><td>Daha sürdürülebilir</td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout">
+        <span class="callout-title">Pratik Kural</span>
+        <p>Bir ilçe sayfasından ilçe adını silip başka bir ilçe adını yazdığınızda sayfa hâlâ anlamlıysa, o sayfa yeterince özgün değil demektir.</p>
+      </div>
+
+      <h2>Bir İlçe Sayfasında Bulunması Gerekenler</h2>
+      <table>
+        <thead><tr><th>Bölüm</th><th>Neden önemli</th></tr></thead>
+        <tbody>
+          <tr><td>İlçenin ekonomisi ve aramalar</td><td>Sayfayı o ilçeye bağlayan özgün içerik</td></tr>
+          <tr><td>Sektöre göre öneriler</td><td>Ziyaretçiye kendini bulduracağı bilgi</td></tr>
+          <tr><td>İlçeye özel sık sorulan sorular</td><td>Google cevap kutuları ve yapay zekâ araçları bunları alıntılayabilir</td></tr>
+          <tr><td>Komşu ilçelere iç linkler</td><td>Sayfalar arasında bağ kurar</td></tr>
+          <tr><td>Telefon / WhatsApp düğmesi</td><td>Aramayı müşteriye dönüştürür</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Kaç İlçeyle Başlanmalı?</h2>
+      <p>Önce hedef kitlenizin gerçekten bulunduğu 5-10 ilçeyle başlayıp sonuçları görmek, yüzlerce sayfa üretmekten daha güvenli. Sonuç gelen ilçelerin modelini diğerlerine yaymak mümkün.</p>
+
+      <h2>Sık Sorulan Sorular</h2>
+
+      <h3>Her ilçe için ayrı sayfa şart mı?</h3>
+      <p>Hayır. Çok küçük ve birbirine çok yakın ilçeleri tek sayfada toplamak da mümkün. Ama farklı arama kitlesi olan ilçeler ayrı sayfa kazanır.</p>
+
+      <h3>İlçe sayfaları sıralamayı garanti eder mi?</h3>
+      <p>Hayır. Sıralama ilçedeki rekabete, sitenin Google nezdindeki güvenine ve yorumlar gibi sinyallere bağlıdır. Doğru kurulduğunda, özellikle rekabetin düşük olduğu ilçelerde ilk sayfaya girme şansı artar.</p>
+
+      <h3>Sonuç</h3>
+      <p>İlçe bazlı SEO, doğru yapıldığında yerel işletmeler için en uygun maliyetli yöntemlerden biri. Kritik nokta, her sayfanın gerçekten o ilçeye özgü içerik taşıması. İlçe sayfası örneklerimizi <a href="/ilceler">bölgeler sayfasında</a> inceleyebilirsiniz.</p>
+    `,
+  },
+  {
+    slug: 'yerel-isletme-aeo-geo-kontrol-listesi',
+    coverImage: 'https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=1200&q=80&fit=crop',
+    title: 'Yerel İşletme İçin AEO ve GEO Kontrol Listesi',
+    excerpt:
+      'Google cevap kutuları ve ChatGPT gibi yapay zekâ araçları işletmenizi öneriyor mu? Yerel bir işletmenin AEO ve GEO için sitesinde kontrol etmesi gereken maddeler.',
+    category: 'AI & Strateji',
+    categoryColor: 'violet',
+    emoji: '🤖',
+    coverGradient: 'from-violet-500/10 to-violet-900/5',
+    readTime: 5,
+    date: '2026-10-28',
+    author: 'Ramses Digital Ekibi',
+    authorRole: 'SEO Uzmanları',
+    tags: ['AEO', 'GEO', 'Yerel SEO', 'Yapay Zekâ'],
+    content: `
+      <h2>AEO ve GEO Nedir?</h2>
+      <p>İnsanlar artık sadece "su deposu temizliği" yazmıyor, "su deposu ne sıklıkla temizlenir?" diye soruyor ve cevabı doğrudan istiyor. Cevap kutuları ve yapay zekâ araçları bu sorulara site içeriklerinden yanıt üretiyor.</p>
+
+      <table>
+        <thead><tr><th>Kısaltma</th><th>Anlamı</th><th>Hedef</th></tr></thead>
+        <tbody>
+          <tr><td>SEO</td><td>Arama motoru optimizasyonu</td><td>Google sonuç listesinde görünmek</td></tr>
+          <tr><td>AEO</td><td>Cevap motoru optimizasyonu</td><td>Cevap kutularında ve sesli aramada yer almak</td></tr>
+          <tr><td>GEO</td><td>Üretken motor optimizasyonu</td><td>ChatGPT gibi yapay zekâ araçlarının sizi önermesi</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Kontrol Listesi</h2>
+      <table>
+        <thead><tr><th>#</th><th>Madde</th><th>Kontrol edin</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Sık sorulan sorular bölümü</td><td>Her hizmet sayfasında 3-5 gerçek müşteri sorusu ve net cevap var mı?</td></tr>
+          <tr><td>2</td><td>Şema işaretlemesi</td><td>İşletme, hizmet ve SSS için yapılandırılmış veri ekli mi?</td></tr>
+          <tr><td>3</td><td>Net hizmet tanımı</td><td>İlk paragrafta ne yaptığınız, kime ve nerede hizmet verdiğiniz tek cümlede yazıyor mu?</td></tr>
+          <tr><td>4</td><td>Google işletme profili</td><td>Bilgiler eksiksiz, yorumlar güncel, site adresi bağlı mı?</td></tr>
+          <tr><td>5</td><td>Gerçek yorum ve referans</td><td>Fotoğraflı gerçek müşteri yorumları sitede görünüyor mu?</td></tr>
+          <tr><td>6</td><td>Tutarlı bilgi</td><td>İsim, telefon ve hizmet bölgesi her yerde aynı mı?</td></tr>
+          <tr><td>7</td><td>Yapay zekâ botlarına erişim</td><td>robots.txt GPTBot gibi botları engelliyor mu? llms.txt dosyası var mı?</td></tr>
+          <tr><td>8</td><td>Güncel içerik</td><td>Blog ve sayfalar düzenli güncelleniyor mu?</td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout">
+        <span class="callout-title">Önemli Not</span>
+        <p>AEO ve GEO sonuçlarını ölçmek SEO kadar kolay değil. Hiçbir yapay zekâ aracının sizi mutlaka önereceği garanti edilemez. Yapılabilecek şey, sitenizi bu araçların okuyup güvenebileceği şekilde hazırlamak.</p>
+      </div>
+
+      <h2>Yerel İşletme İçin Öncelik Sırası</h2>
+      <table>
+        <thead><tr><th>Öncelik</th><th>Adım</th><th>Süre</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Google işletme profilini tamamlamak</td><td>1 gün</td></tr>
+          <tr><td>2</td><td>Hizmet sayfalarına SSS eklemek</td><td>1 hafta</td></tr>
+          <tr><td>3</td><td>Şema işaretlemesi eklemek</td><td>Teknik destek gerekir</td></tr>
+          <tr><td>4</td><td>Yorum toplama düzeni kurmak</td><td>Sürekli</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Sık Sorulan Sorular</h2>
+
+      <h3>AEO için ayrı bir sayfa mı gerekiyor?</h3>
+      <p>Hayır. Mevcut hizmet sayfalarının içine eklenen net soru ve cevaplar çoğu zaman yeterli. Ayrı sayfa açmak yerine mevcut sayfaları güçlendirmek daha verimli.</p>
+
+      <h3>ChatGPT beni önerecek mi?</h3>
+      <p>Garanti edilemez. Ama sitenizin net, güvenilir ve yapılandırılmış olması, bu araçların sizden alıntı yapma olasılığını artırır.</p>
+
+      <h3>Sonuç</h3>
+      <p>Yerel bir işletme için AEO ve GEO, karmaşık teknik bir iş değil; net cevaplar, düzenli profil ve gerçek yorumlarla başlayan bir hazırlık. Ramses Digital olarak bu yapıyı SEO çalışmasının içine entegre ediyoruz.</p>
+    `,
+  },
 ]
