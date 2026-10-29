@@ -3,12 +3,15 @@ import Link from 'next/link'
 import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
+import SeoChecklist from '@/components/SeoChecklist'
+import SeoPriceTable from '@/components/SeoPriceTable'
+import { pricing } from '@/lib/pricing'
 import { MapPin, Search, ArrowRight, CheckCircle2, FileText, Link2, BarChart3, Zap, Award, TrendingUp } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Kocaeli SEO Ajansı | Yerel & Kurumsal SEO — Ramses Dijital',
+  title: 'Kocaeli SEO Ajansı | SEO Hizmeti ve Paketleri — Ramses Dijital',
   description:
-    'Kocaeli SEO ajansı: yerel SEO, kurumsal SEO, teknik SEO, GEO ve AEO. İzmit, Gebze, Dilovası, Körfez, Kartepe ve tüm Kocaeli ilçelerine hizmet. SEO paketleri için ücretsiz analiz.',
+    'Kocaeli SEO ajansı: SEO hizmeti, uzmanı ve danışmanlığı. Kurumsal ve yerel SEO paketleri, teknik SEO, GEO ve AEO. İzmit, Gebze, Körfez dahil tüm ilçeler. Ücretsiz analiz.',
   alternates: { canonical: 'https://ramsesdigital.com/kocaeli-seo' },
   openGraph: {
     title: 'Kocaeli SEO Hizmeti | Ramses Dijital',
@@ -17,6 +20,9 @@ export const metadata: Metadata = {
     images: ['https://ramsesdigital.com/og-image.png'],
   },
 }
+
+const fmt = (n: number) => n.toLocaleString('tr-TR')
+const range = (service: string, size: 'kucuk' | 'orta' | 'buyuk' = 'kucuk') => `${fmt(pricing[service][size].min)}–${fmt(pricing[service][size].max)} ₺`
 
 const features = [
   { icon: Search, title: 'Kocaeli Yerel SEO', desc: '"Kocaeli + hizmetiniz" ve "İzmit + hizmetiniz" aramalarında Google harita paketine girin. İlçe bazlı anahtar kelime stratejisi.' },
@@ -39,6 +45,9 @@ const ilceStratejileri = [
 ]
 
 const faqs = [
+  { q: 'Kocaeli SEO uzmanı ile SEO ajansı arasındaki fark nedir?', a: 'SEO uzmanı genellikle tek kişidir ve çoğunlukla teknik ya da içerik tarafına odaklanır. SEO ajansı ise teknik SEO, içerik, yerel görünürlük, raporlama ve gerektiğinde web geliştirmeyi bir arada yürütür. Küçük bir yerel işletme için iyi çalışan tek kişilik bir uzman da yeterli olabilir; çok hizmetli ya da çok ilçeli işletmelerde ajans yapısı daha sürdürülebilir olur. Önemli olan kimin yaptığından çok neyi, nasıl ölçerek yaptığıdır.' },
+  { q: 'Kocaeli SEO paketleri ve İzmit SEO fiyatları ne kadar?', a: `Fiyat işletme büyüklüğüne ve kapsama göre değişir. Tek seferlik SEO Başlangıç Paketi küçük işletmeler için ${range('SEO Başlangıç Paketi')} aralığında, aylık SEO ise küçük işletmelerde ${range('SEO')} / ay civarında başlar. Çoklu ilçe sayfası gibi geniş kapsamlı işler ayrı teklif gerektirir. Kendi aralığınızı teklif aracımızdan hesaplayabilir ya da ücretsiz görüşmede netleştirebilirsiniz.` },
+  { q: 'Kurumsal SEO nedir, Kocaeli firmaları için ne zaman gerekir?', a: 'Kurumsal SEO; birden fazla hizmeti, ürün grubunu ya da yöneticisi olan, satın alma kararı birden çok kişiden geçen firmalar için kurgulanan SEO çalışmasıdır. Kocaeli\'ndeki üretici, tedarikçi ve B2B firmalarında ürün/hizmet sayfası yapısı, teknik altyapı, referans ve güven içerikleri öne çıkar. Tek lokasyonlu, tek hizmetli bir esnaf için yerel SEO çoğu zaman yeterlidir.' },
   { q: 'Kocaeli\'de SEO hizmeti neden önemli?', a: 'Kocaeli, Türkiye\'nin en büyük sanayi ve ticaret merkezlerinden biri. İzmit, Gebze ve Darıca\'da yoğun ticari rekabet var. Google\'da "Kocaeli [hizmet]" veya "İzmit [hizmet]" aramasında üst sırada çıkmak, rakipler arası farkındalık yaratmanın en düşük maliyetli ve sürdürülebilir yolu.' },
   { q: 'Kocaeli\'nin farklı ilçeleri için ayrı SEO çalışması gerekiyor mu?', a: 'Kocaeli içinde ilçe bazlı arama hacimleri farklı. "Gebze avukat" ile "İzmit avukat" farklı kitleler ve farklı rekabet seviyeleri demek. Etki alanınıza göre her ilçe için ayrı açılış sayfası ve GBP girişi oluşturmak yerel SEO\'da büyük avantaj sağlar.' },
   { q: 'Kocaeli\'de SEO sonuçları ne kadar sürede görülür?', a: 'Google Business Profile ve yerel harita sonuçları 2-4 haftada görünür. Organik web sitesi sıralamaları 3-6 ayda belirginleşir. Gebze gibi rekabetçi ilçelerde tam etki 6-12 ay alabilir. Düzenli içerik üretimi ve backlink kazanımıyla süreç hızlanır.' },
@@ -210,6 +219,21 @@ export default function KocaeliSeoPage() {
           </div>
         </div>
       </section>
+
+      <SeoPriceTable place="Kocaeli" />
+
+      <SeoChecklist
+        title="Kocaeli'de SEO Ajansı ya da Uzmanı Seçerken Kontrol Listesi"
+        intro="Hangi ajansla çalışırsanız çalışın, işe başlamadan önce bu altı noktaya bakın."
+        rows={[
+          { kriter: 'Canlı referans', bakin: 'Ekran görüntüsü değil, canlı siteler ve Google\'daki gerçek sıralamaları', dikkat: 'Referans sektörünüze yakın mı' },
+          { kriter: 'Sıralama garantisi', bakin: 'Garanti yerine hedef ve ölçüm sunuyor mu', dikkat: 'Google sıralamayı kimseye garanti etmez' },
+          { kriter: 'Raporlama', bakin: 'Aylık, anlaşılır; tıklama, gösterim ve gelen arama sayısı', dikkat: 'Sadece "sıralamanız arttı" yeterli değil' },
+          { kriter: 'Yerel bilgi', bakin: 'İzmit ile Gebze ya da Kandıra\'nın farklı arama davranışını biliyor mu', dikkat: 'Hepsine aynı şablon uygulanmamalı' },
+          { kriter: 'Erişim ve sahiplik', bakin: 'Alan adı, Search Console, Analytics erişimi sizde kalıyor mu', dikkat: 'Sözleşme bitince her şey size ait olmalı' },
+          { kriter: 'Kapsam netliği', bakin: 'Neyin dahil, neyin hariç olduğu yazılı mı', dikkat: 'Belirsiz paket sonradan ek ücrete dönüşür' },
+        ]}
+      />
 
       <ReviewsMarquee />
 

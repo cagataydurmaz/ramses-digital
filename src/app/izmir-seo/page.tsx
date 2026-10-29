@@ -3,12 +3,13 @@ import Link from 'next/link'
 import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
+import SeoChecklist from '@/components/SeoChecklist'
 import { MapPin, Search, ArrowRight, CheckCircle2, FileText, Link2, BarChart3, Zap, Award, TrendingUp } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'İzmir SEO Ajansı — Ramses Dijital',
+  title: 'İzmir SEO Ajansı | İzmir SEO Hizmeti — Ramses Dijital',
   description:
-    'İzmir\'de SEO hizmeti. Yerel SEO, teknik SEO, GEO ve AEO ile Google\'da üst sıraya çıkın. Konak, Karşıyaka, Bornova ve tüm İzmir\'e uzaktan hizmet. Ücretsiz SEO analizi.',
+    'İzmir SEO ajansı: İzmir SEO hizmeti, yerel SEO, teknik SEO, GEO ve AEO. Konak, Karşıyaka, Bornova ve tüm İzmir için ilçe bazlı strateji. Ücretsiz SEO analizi.',
   alternates: { canonical: 'https://ramsesdigital.com/izmir-seo' },
   openGraph: {
     title: 'İzmir SEO Ajansı | Ramses Dijital',
@@ -30,6 +31,8 @@ const features = [
 const ilceler = ['Konak', 'Karşıyaka', 'Bornova', 'Buca', 'Çiğli', 'Bayraklı', 'Balçova', 'Gaziemir', 'Menemen', 'Urla']
 
 const faqs = [
+  { q: 'İzmir SEO ajansı seçerken nelere dikkat etmeliyim?', a: 'Referansların canlı olarak kontrol edilebilmesi, sıralama garantisi yerine hedef ve ölçüm sunulması, ilçe bazlı strateji ve aylık raporlama başlıca kriterlerdir. İzmir\'de Konak, Karşıyaka ve Bornova gibi ilçelerin arama davranışı birbirinden farklıdır; tek şablonla çalışan ajanstan kaçının.' },
+  { q: 'İzmir\'de turizm ve ihracat odaklı işletmeler için SEO farklı mı?', a: 'Evet. Urla, Çeşme gibi turizm bölgelerinde mevsimsellik ve yabancı dilde arama önemlidir; ihracat yapan üreticilerde ise ürün sayfaları, teknik doküman ve İngilizce içerik öne çıkar. Yerel esnaf içinse harita görünürlüğü ve yorum belirleyicidir.' },
   { q: 'İzmir\'de SEO hizmeti diğer şehirlerden farklı mı?', a: 'İzmir\'in ekonomisi ihracat/dış ticaret, turizm ve büyüyen bir e-ticaret sektörü etrafında şekilleniyor. Bu, mevsimsel arama trendlerini (özellikle turizm sektöründe) ve uluslararası pazara açık işletmeler için çok dilli SEO ihtiyaçlarını hesaba katan bir strateji gerektiriyor.' },
   { q: 'İzmir\'in farklı ilçeleri için ayrı SEO çalışması gerekiyor mu?', a: 'Evet. Konak (şehir merkezi, kurumsal), Karşıyaka (yerleşik yerel işletmeler) ve Urla (turizm, butik işletmeler) çok farklı arama davranışlarına sahip. İşinizin hedef kitlesine göre öncelikli ilçeleri belirleyip stratejiyi ona göre kuruyoruz.' },
   { q: 'İzmir\'de SEO sonuçları ne kadar sürede görülür?', a: 'Google Business Profile ve harita sonuçları 2-4 haftada görünür olabilir. Organik sıralamalar genellikle 3-6 ayda belirginleşir — İzmir\'in rekabet seviyesi İstanbul\'a göre daha yönetilebilir.' },
@@ -171,6 +174,18 @@ export default function IzmirSeoPage() {
           </div>
         </div>
       </section>
+
+      <SeoChecklist
+        title="İzmir'de SEO Ajansı Seçerken Kontrol Listesi"
+        intro="İzmir'in farklı ilçeleri ve sektörleri için doğru yaklaşımı ayırt etmeye yardımcı olacak kriterler."
+        rows={[
+          { kriter: 'İlçe farkı', bakin: 'Konak, Karşıyaka, Bornova için ayrı strateji var mı', dikkat: 'Aynı metnin ilçe adı değiştirilmiş hâli yetersizdir' },
+          { kriter: 'Sektör uyumu', bakin: 'Turizm, ihracat ya da yerel hizmet için farklı yol haritası sunuyor mu', dikkat: 'Her sektöre aynı paket uymaz' },
+          { kriter: 'Dil desteği', bakin: 'Yabancı müşteriye hitap edecekseniz İngilizce içerik planı var mı', dikkat: 'Turizm ve ihracatta kritik' },
+          { kriter: 'Canlı sonuç', bakin: 'Referansların Google\'daki durumunu kendiniz kontrol edebiliyor musunuz', dikkat: 'Ekran görüntüsüne güvenmeyin' },
+          { kriter: 'Raporlama', bakin: 'Aylık ilçe bazlı tıklama, gösterim ve talep raporu', dikkat: 'Sadece "trafik arttı" yeterli değildir' },
+        ]}
+      />
 
       <ReviewsMarquee />
 

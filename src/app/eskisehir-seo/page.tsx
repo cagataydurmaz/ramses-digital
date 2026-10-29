@@ -6,9 +6,9 @@ import RelatedPages from '@/components/RelatedPages'
 import { MapPin, Search, ArrowRight, CheckCircle2, FileText, Link2, BarChart3, Zap, Award, TrendingUp } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Eskişehir SEO Ajansı — Ramses Dijital',
+  title: 'Eskişehir SEO Ajansı | Eskişehir SEO Hizmeti — Ramses Dijital',
   description:
-    'Eskişehir\'de SEO hizmeti. Yerel SEO, teknik SEO, GEO ve AEO ile Google\'da üst sıraya çıkın. Odunpazarı, Tepebaşı ve tüm Eskişehir\'e uzaktan hizmet. Ücretsiz SEO analizi.',
+    'Eskişehir SEO ajansı: Eskişehir SEO hizmeti, yerel SEO, teknik SEO, GEO ve AEO. Odunpazarı ve Tepebaşı için ilçe bazlı strateji. Ücretsiz SEO analizi.',
   alternates: { canonical: 'https://ramsesdigital.com/eskisehir-seo' },
   openGraph: {
     title: 'Eskişehir SEO Ajansı | Ramses Dijital',

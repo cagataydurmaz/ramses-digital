@@ -6,9 +6,9 @@ import RelatedPages from '@/components/RelatedPages'
 import { MapPin, Globe, ArrowRight, CheckCircle2, Zap, Smartphone, Search, ShieldCheck, BarChart3, Palette } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'İzmit Web Tasarım Hizmeti — Ramses Dijital',
+  title: 'İzmit Web Tasarım Ajansı | Kurumsal Web Sitesi — Ramses Dijital',
   description:
-    'İzmit\'te profesyonel web tasarım hizmeti. SEO uyumlu, mobil öncelikli, hızlı yüklenen kurumsal web siteleri. Next.js ile modern altyapı. Ücretsiz teklif alın.',
+    'İzmit web tasarım ajansı: SEO uyumlu, mobil öncelikli, hızlı yüklenen kurumsal web siteleri. Web tasarım firması arayan İzmit işletmeleri için ücretsiz teklif.',
   alternates: { canonical: 'https://ramsesdigital.com/izmit-web-tasarim' },
   openGraph: {
     title: 'İzmit Web Tasarım | Ramses Dijital',

@@ -3,12 +3,13 @@ import Link from 'next/link'
 import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
+import SeoChecklist from '@/components/SeoChecklist'
 import { MapPin, Search, ArrowRight, CheckCircle2, FileText, Link2, BarChart3, Zap, Award, TrendingUp } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'İstanbul SEO Ajansı — Ramses Dijital',
+  title: 'İstanbul SEO Ajansı | İstanbul SEO Hizmeti — Ramses Dijital',
   description:
-    'İstanbul\'da SEO hizmeti. Yerel SEO, teknik SEO, GEO ve AEO ile Google\'da üst sıraya çıkın. Kadıköy, Beşiktaş, Şişli, Bakırköy ve tüm İstanbul\'a uzaktan hizmet. Ücretsiz SEO analizi.',
+    'İstanbul SEO ajansı: İstanbul SEO hizmeti, yerel SEO, teknik SEO, GEO ve AEO. Kadıköy, Beşiktaş, Şişli, Bakırköy dahil ilçe bazlı strateji. Ücretsiz SEO analizi.',
   alternates: { canonical: 'https://ramsesdigital.com/istanbul-seo' },
   openGraph: {
     title: 'İstanbul SEO Ajansı | Ramses Dijital',
@@ -30,6 +31,8 @@ const features = [
 const ilceler = ['Kadıköy', 'Beşiktaş', 'Şişli', 'Bakırköy', 'Ataşehir', 'Üsküdar', 'Beylikdüzü', 'Maltepe', 'Kartal', 'Pendik']
 
 const faqs = [
+  { q: 'İstanbul SEO ajansı seçerken büyük ve küçük ajans arasında fark var mı?', a: 'Büyük ajanslar çok sayıda müşteriyle çalıştığı için küçük ve orta ölçekli projelere çoğunlukla standart bir süreç uygular. Küçük ajanslarda strateji kişiye özel kurulabilir ama kapasite sınırlıdır. İki durumda da sorulması gereken aynı: işi kim yapacak, neyi ölçecek ve raporu nasıl verecek?' },
+  { q: 'İstanbul SEO hizmetinin kapsamı nedir?', a: 'Teknik SEO denetimi ve düzeltmeleri, anahtar kelime ve ilçe önceliklendirmesi, sayfa içi optimizasyon, içerik üretimi, Google İşletme Profili, yorum stratejisi, bağlantı çalışması ve aylık raporlama. GEO ve AEO için sık sorulan sorular ve yapılandırılmış veri de kapsama girer.' },
   { q: 'İstanbul\'da SEO hizmeti neden bu kadar rekabetçi?', a: 'İstanbul, Türkiye\'nin en yüksek arama hacmine ve en yoğun ajans rekabetine sahip pazarı. Hemen her sektörde onlarca köklü rakip zaten SEO\'ya yatırım yapıyor. Bu, tek kelimelik genel terimlerde (örn. "SEO ajansı") hızlı sonuç almayı zorlaştırır — ama ilçe bazlı ve niş odaklı stratejilerle hâlâ gerçek fırsatlar var.' },
   { q: 'İstanbul\'un 39 ilçesinin hepsi için mi çalışma yapılır?', a: 'Hayır, işletmenizin gerçek hizmet alanına göre önceliklendirme yapıyoruz. Bir hukuk bürosu için Bakırköy veya Kadıköy adliyesine yakınlık önemliyken, bir e-ticaret markası için ilçe fark etmeksizin genel İstanbul/Türkiye hedeflemesi daha mantıklı olabilir. Stratejiyi işinize göre kuruyoruz, şablon uygulamıyoruz.' },
   { q: 'İstanbul\'da SEO sonuçları ne kadar sürede görülür?', a: 'Google Business Profile ve harita sonuçları 2-4 haftada görünür olabilir. Organik web sitesi sıralamaları rekabetin yoğunluğuna göre 4-8 ay arasında belirginleşir — İstanbul\'daki rekabet Kocaeli\'ye göre daha uzun bir ufuk gerektirebilir, özellikle "İstanbul SEO ajansı" gibi genel terimlerde.' },
@@ -173,6 +176,18 @@ export default function IstanbulSeoPage() {
           </div>
         </div>
       </section>
+
+      <SeoChecklist
+        title="İstanbul'da SEO Ajansı Seçerken Kontrol Listesi"
+        intro="İstanbul'da rekabet yüksek olduğu için gerçekçi beklenti ve şeffaf süreç en önemli ayrım noktası."
+        rows={[
+          { kriter: 'Gerçekçi süre', bakin: 'Rekabetli aramalarda 4-8 ay gibi dürüst bir takvim veriyor mu', dikkat: '"1 ayda ilk sayfa" vaadi şüpheli' },
+          { kriter: 'İlçe önceliği', bakin: '39 ilçenin hepsi yerine gerçek hizmet alanınıza odaklanıyor mu', dikkat: 'Bakırköy ile Pendik farklı arama kitleleridir' },
+          { kriter: 'Geniş ve dar kelime dengesi', bakin: '"İstanbul SEO" gibi geniş kelimeyle birlikte ilçe + sektör aramaları da hedefleniyor mu', dikkat: 'Geniş kelime tek başına maliyetli ve yavaştır' },
+          { kriter: 'Ölçüm', bakin: 'İlçe bazlı gösterim, tıklama ve gelen arama raporu var mı', dikkat: 'Sadece sıralama raporu yeterli değildir' },
+          { kriter: 'Şeffaflık', bakin: 'Kim çalışıyor, ne yapılıyor, erişimler kimde', dikkat: 'Alan adı ve analiz erişimi sizde kalmalı' },
+        ]}
+      />
 
       <ReviewsMarquee />
 

@@ -3,12 +3,15 @@ import Link from 'next/link'
 import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
+import SeoChecklist from '@/components/SeoChecklist'
+import SeoPriceTable from '@/components/SeoPriceTable'
+import { pricing } from '@/lib/pricing'
 import { MapPin, Search, ArrowRight, CheckCircle2, FileText, Link2, BarChart3, Zap, Award, TrendingUp } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'İzmit SEO Hizmeti — Ramses Dijital',
+  title: 'İzmit SEO Ajansı | SEO Hizmeti ve Fiyatları — Ramses Dijital',
   description:
-    'İzmit\'te SEO hizmeti. Yerel SEO, teknik SEO, GEO ve AEO ile Google\'da üst sıraya çıkın. Google Business Profile, içerik stratejisi ve backlink. Ücretsiz SEO analizi.',
+    'İzmit SEO ajansı: yerel ve kurumsal SEO, SEO firması hizmetleri, paketler ve fiyat aralıkları. Google İşletme Profili, teknik SEO, GEO ve AEO. Ücretsiz SEO analizi.',
   alternates: { canonical: 'https://ramsesdigital.com/izmit-seo' },
   openGraph: {
     title: 'İzmit SEO Hizmeti | Ramses Dijital',
@@ -17,6 +20,9 @@ export const metadata: Metadata = {
     images: ['https://ramsesdigital.com/og-image.png'],
   },
 }
+
+const fmt = (n: number) => n.toLocaleString('tr-TR')
+const range = (service: string, size: 'kucuk' | 'orta' | 'buyuk' = 'kucuk') => `${fmt(pricing[service][size].min)}–${fmt(pricing[service][size].max)} ₺`
 
 const features = [
   { icon: Search, title: 'Yerel SEO & Google Business', desc: '"İzmit + hizmetiniz" aramalarında harita paketine girin. GBP optimizasyonu, yerel dizinler, müşteri yorum stratejisi.' },
@@ -35,6 +41,8 @@ const results = [
 ]
 
 const faqs = [
+  { q: 'İzmit SEO fiyatları ve SEO paketleri nelerdir?', a: `Fiyat işletme büyüklüğüne ve kapsama göre değişir. Tek seferlik SEO Başlangıç Paketi küçük işletmeler için ${range('SEO Başlangıç Paketi')}, aylık SEO ise küçük işletmelerde ${range('SEO')} / ay civarında başlar. Yukarıdaki tablodan kendi işletmenize uygun paketi görebilir, teklif aracımızla aralığınızı hesaplayabilirsiniz.` },
+  { q: 'İzmit\'te kurumsal SEO ile yerel SEO arasındaki fark nedir?', a: 'Yerel SEO, "İzmit + hizmet" aramalarında Google haritasında ve sonuçlarda görünmeyi hedefler; psikolog, avukat, klinik ya da oto servis gibi tek lokasyonlu işletmeler için uygundur. Kurumsal SEO ise çok hizmetli, B2B ya da çok lokasyonlu firmalarda ürün/hizmet sayfası mimarisi, teknik altyapı ve güven içeriklerine odaklanır.' },
   { q: 'İzmit\'te SEO ne kadar sürede sonuç verir?', a: 'Google Business Profile ve yerel harita için 2-4 hafta içinde iyileşme görülür. Organik web sitesi sıralamaları 3-6 ay içinde belirginleşir. Rakibinize ve anahtar kelime rekabetine göre tam etki 6-12 ayda ortaya çıkar. Sabırsızlar için Google Ads\'i paralelde yürütmek önerilir.' },
   { q: 'İzmit\'te SEO maliyeti ne kadar?', a: 'İşletme büyüklüğüne ve kapsama göre değişir. Her paket: teknik audit, anahtar kelime stratejisi, aylık içerik üretimi, backlink çalışması, GBP yönetimi ve aylık raporlama içerir. Ücretsiz danışmanlıkta işletmenize özel fiyat sunulur.' },
   { q: 'İzmit\'te hangi işletmeler SEO\'dan en çok fayda görür?', a: 'Yerel hizmet veren işletmeler (psikolog, avukat, diş hekimi, oto servis, güzellik salonu, muhasebe bürosu) yerel SEO\'dan en yüksek ROI alır. E-ticaret siteleri ulusal SEO\'dan faydalanır. B2B sanayi firmaları için içerik ve teknik SEO kombinasyonu en etkili yaklaşımdır.' },
@@ -200,6 +208,20 @@ export default function IzmitSeoPage() {
           </div>
         </div>
       </section>
+
+      <SeoPriceTable place="İzmit" />
+
+      <SeoChecklist
+        title="İzmit'te SEO Firması Seçerken Neye Bakmalı?"
+        intro="İzmit merkezde yoğun rekabet var; doğru ortağı seçmek için şu kriterlere bakın."
+        rows={[
+          { kriter: 'Harita görünürlüğü', bakin: 'Google İşletme Profili yönetimi ve yorum stratejisi paket içinde mi', dikkat: 'İzmit\'te yerel aramalarda harita paketi belirleyicidir' },
+          { kriter: 'Gerçek yorum', bakin: 'Yorum toplama düzeni var mı, sahte yorum teklif ediyor mu', dikkat: 'Sahte yorum profilinizi askıya aldırabilir' },
+          { kriter: 'Sektör örneği', bakin: 'Sağlık, hukuk ya da hizmet sektöründe canlı sonuç gösterebiliyor mu', dikkat: 'Örnek sektörünüze yakın olmalı' },
+          { kriter: 'Mahalle/semt hedefi', bakin: 'Sadece "İzmit" değil, semt ve ilçe bazlı aramaları da planlıyor mu', dikkat: 'Geniş kelime yerine dar ve ulaşılabilir aramalar daha hızlı sonuç verir' },
+          { kriter: 'Şeffaf fiyat', bakin: 'Paket kapsamı ve fiyat aralığı yazılı mı', dikkat: 'Aylık sürpriz ek ücret olmamalı' },
+        ]}
+      />
 
       <ReviewsMarquee />
 

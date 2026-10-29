@@ -1012,7 +1012,7 @@ export const posts: Post[] = [
   {
     slug: 'kocaeli-seo-yerel-isletmeler-rehberi',
     coverImage: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1200&q=80&fit=crop',
-    title: 'Kocaeli\'de SEO: Yerel İşletmeler İçin 2026 Tam Rehberi',
+    title: 'Kocaeli SEO Rehberi 2026: Yerel İşletmeler Google\'da Nasıl Üst Sıraya Çıkar?',
     excerpt:
       'Kocaeli\'de işletmenizin Google\'da üst sıralarda çıkması için bilmeniz gereken her şey: Google Business Profile, yerel anahtar kelimeler, NAP tutarlılığı ve gerçek vaka örnekleri.',
     category: 'SEO',

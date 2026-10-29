@@ -14,9 +14,9 @@ const nextConfig = {
   },
   async redirects() {
     return [
-      { source: '/hizmetler/seo-kocaeli', destination: '/hizmetler/seo', permanent: true },
-      { source: '/hizmetler/web-tasarim-kocaeli', destination: '/hizmetler/web-tasarim', permanent: true },
-      { source: '/hizmetler/google-ads-kocaeli', destination: '/hizmetler/google-ads', permanent: true },
+      { source: '/hizmetler/seo-kocaeli', destination: '/kocaeli-seo', permanent: true },
+      { source: '/hizmetler/web-tasarim-kocaeli', destination: '/kocaeli-web-tasarim', permanent: true },
+      { source: '/hizmetler/google-ads-kocaeli', destination: '/kocaeli-google-ads', permanent: true },
     ]
   },
   experimental: {
