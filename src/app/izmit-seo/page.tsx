@@ -27,7 +27,7 @@ const range = (service: string, size: 'kucuk' | 'orta' | 'buyuk' = 'kucuk') => `
 const features = [
   { icon: Search, title: 'Yerel SEO & Google Business', desc: '"İzmit + hizmetiniz" aramalarında harita paketine girin. GBP optimizasyonu, yerel dizinler, müşteri yorum stratejisi.' },
   { icon: FileText, title: 'Teknik SEO Audit', desc: 'Site hızı, Core Web Vitals, mobil uyum, crawlability ve index optimizasyonu. Teknik engelleri kaldırın.' },
-  { icon: Zap, title: 'GEO & AEO Optimizasyonu', desc: 'ChatGPT, Gemini ve Perplexity\'de "İzmit\'teki [sektörünüz]" aramasında önerilmek için yapılandırılmış içerik.' },
+  { icon: Zap, title: 'GEO & AEO Optimizasyonu', desc: 'ChatGPT, Gemini ve Perplexity\'de "İzmit\'teki [sektörünüz]" aramasında alıntılanma olasılığını artıran yapılandırılmış içerik.' },
   { icon: Link2, title: 'Backlink İnşası', desc: 'İzmit ve Kocaeli\'deki yerel kaynaklardan, sektörel sitelerden kaliteli backlink. Spam yok, organik otorite.' },
   { icon: BarChart3, title: 'İçerik Stratejisi', desc: 'İzmit\'teki potansiyel müşterilerin aradığı sorulara cevap veren blog ve pillar content. Aylık 4-8 yazı.' },
   { icon: Award, title: 'Rakip Analizi', desc: 'İzmit\'teki rakiplerinizin neden üstte olduğunu analiz edip açıklarını dolduruyoruz.' },
@@ -36,7 +36,7 @@ const features = [
 const results = [
   { metric: '3-6 Ay', label: 'Organik sıralama için gerçekçi süre' },
   { metric: '2-4 Hafta', label: 'Yerel harita sonuçları için' },
-  { metric: '%300+', label: 'Ortalama organik trafik artışı' },
+  { metric: 'Aylık', label: 'Şeffaf raporlama' },
   { metric: 'Organik', label: 'Reklam bütçesi gerektirmez' },
 ]
 
@@ -49,7 +49,7 @@ const faqs = [
   { q: 'Google Business Profile (GBP) ile web sitesi SEO\'su farkı nedir?', a: 'GBP harita paketini (Google Maps alanı) etkiler — yerel aramalarda üst üç işletmeden biri olmak için şart. Web sitesi SEO\'su ise organik arama sonuçlarındaki sıralamayı hedefler. İzmit\'te tam görünürlük için her ikisi birlikte yürütülmelidir.' },
   { q: 'İzmit\'teki rakiplerim çok güçlü, SEO işe yarar mı?', a: 'Güçlü rakiplerin çoğu aslında yerel SEO\'yu doğru yapmıyor — GBP eksik dolu, site yavaş, içerik yüzeysel. Rakip analizi yapıp açıklarını buluyoruz. Ayrıca rakiplerin olmadığı uzun kuyruklu anahtar kelimelerde hızlı kazanımlar mümkün.' },
   { q: 'SEO çalışmanızı nasıl raporluyorsunuz?', a: 'Aylık detaylı rapor (PDF) + canlı Looker Studio dashboard erişimi. Organik trafik, anahtar kelime sıralamaları, backlink kazanımları, teknik SEO sağlığı ve dönüşümler şeffaf şekilde paylaşılır. Gizli bir şey yok.' },
-  { q: 'GEO (yapay zeka optimizasyonu) nedir, neden önemli?', a: 'GEO, ChatGPT veya Gemini\'ye "İzmit\'te SEO ajansı önerir misin?" denildiğinde sizi önermesi için yapılan optimizasyondur. Citation-worthy içerik, entity-based yazı ve otoriter backlink profili gerektirir. 2025\'te aramaların önemli bir kısmı AI motorlarına kayıyor.' },
+  { q: 'GEO (yapay zeka optimizasyonu) nedir, neden önemli?', a: 'GEO, ChatGPT veya Gemini\'ye "İzmit\'te SEO ajansı önerir misin?" denildiğinde sizi kaynak göstermesi olasılığını artıran içerik çalışmasıdır. Citation-worthy içerik, entity-based yazı ve otoriter backlink profili gerektirir. 2025\'te aramaların önemli bir kısmı AI motorlarına kayıyor.' },
   { q: 'Sözleşme süresi ve iptal koşulları nedir?', a: 'Minimum 3 ay, ideal 6 ay öneriyoruz — SEO kısa vadede değil birikimiyle çalışır. 12 aylık sözleşmelerde %15 indirim sunuyoruz. İptal için 30 gün önceden bildirim yeterli; ceza yok.' },
 ]
 

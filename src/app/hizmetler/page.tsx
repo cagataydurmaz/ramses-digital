@@ -37,7 +37,7 @@ const services = [
     icon: Sparkles,
     title: 'SEO, GEO ve Yanıt Motoru Optimizasyonu (AEO)',
     tagline: 'AI-Native Görünürlük & Organik Otorite',
-    desc: "Markanızı sadece Google'da değil; ChatGPT, Gemini ve Perplexity gibi yapay zeka motorlarının \"güvenilir kaynağı\" haline getiriyoruz. Veri odaklı içerik stratejileriyle, yapay zekanın kullanıcıya önerdiği ilk marka olun.",
+    desc: "Markanızı sadece Google'da değil; ChatGPT, Gemini ve Perplexity gibi yapay zeka motorlarının alıntılayabileceği güvenilir bir kaynak olması için çalışıyoruz. Veri odaklı içerik stratejileriyle yapay zekâ özetlerinde alıntılanma olasılığınızı artırmayı hedefliyoruz. Sonuç garanti edilmez.",
     features: [
       'LLM & Chatbot Görünürlüğü (GEO)',
       'Semantic Content Architecture',
@@ -478,7 +478,7 @@ const faqs = [
   },
   {
     q: 'GEO ve AEO neden önemli?',
-    a: 'Kullanıcıların %30\'u artık ChatGPT, Perplexity gibi AI motorları üzerinden arama yapıyor. GEO, bu yeni platformlarda görünür olmanızı sağlar. AEO ise sesli arama ve "öne çıkan yanıt" kutucuklarında markanızı ön plana çıkarır.',
+    a: 'GEO, bu yeni platformlarda görünme olasılığınızı artırmayı hedefler. AEO ise sesli arama ve "öne çıkan yanıt" kutucuklarında markanızı ön plana çıkarır.',
   },
   {
     q: 'n8n otomasyonu ile ne tür süreçler otomatize edilebilir?',

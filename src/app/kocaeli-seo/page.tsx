@@ -27,7 +27,7 @@ const range = (service: string, size: 'kucuk' | 'orta' | 'buyuk' = 'kucuk') => `
 const features = [
   { icon: Search, title: 'Kocaeli Yerel SEO', desc: '"Kocaeli + hizmetiniz" ve "İzmit + hizmetiniz" aramalarında Google harita paketine girin. İlçe bazlı anahtar kelime stratejisi.' },
   { icon: FileText, title: 'Teknik SEO & Core Web Vitals', desc: 'Site hızı, mobil uyum, indexlenebilirlik ve Core Web Vitals optimizasyonu. Teknik engeller kaldırılır.' },
-  { icon: Zap, title: 'GEO & AEO', desc: 'ChatGPT, Gemini ve Perplexity\'de Kocaeli\'deki sektörünüz aramasında önerilmek için entity-based içerik.' },
+  { icon: Zap, title: 'GEO & AEO', desc: 'Yapay zekâ araçlarının ve arama özetlerinin alıntılayabileceği net, yapılandırılmış içerik. Sonuç garanti edilmez.' },
   { icon: Link2, title: 'Yerel Backlink İnşası', desc: 'Kocaeli ticaret odaları, yerel medya ve sektörel dizinlerden kaliteli link profili.' },
   { icon: BarChart3, title: 'Kocaeli İçerik Stratejisi', desc: '"Gebze\'de X nasıl yapılır", "Kocaeli en iyi Y" gibi yerel amaçlı içeriklerle uzun kuyruklu trafik.' },
   { icon: Award, title: 'İlçe Bazlı Optimizasyon', desc: 'İzmit, Gebze, Darıca, Körfez, Gölcük, Başiskele — her ilçeye özel sayfa ve GBP stratejisi.' },
@@ -53,7 +53,7 @@ const faqs = [
   { q: 'Kocaeli\'de SEO sonuçları ne kadar sürede görülür?', a: 'Google Business Profile ve yerel harita sonuçları 2-4 haftada görünür. Organik web sitesi sıralamaları 3-6 ayda belirginleşir. Gebze gibi rekabetçi ilçelerde tam etki 6-12 ay alabilir. Düzenli içerik üretimi ve backlink kazanımıyla süreç hızlanır.' },
   { q: 'Kocaeli\'de hangi sektörler en çok SEO\'dan fayda görüyor?', a: 'Sağlık (psikolog, diş hekimi, fizyoterapist), hukuk, otomotiv servisi, güzellik & estetik, inşaat & müteahhit, B2B sanayi tedarikçileri ve e-ticaret sektörleri Kocaeli\'de yüksek yerel arama hacmine sahip. Sanayi ağırlıklı B2B için içerik + teknik SEO kombinasyonu kritik.' },
   { q: 'Kocaeli SEO paketi ne kadara mal olur?', a: 'İşletme büyüklüğüne ve kapsama göre değişir. Paket kapsamı: teknik audit, anahtar kelime araştırması, aylık içerik üretimi, GBP yönetimi, backlink stratejisi ve aylık raporlama. Sektör ve ilçeye göre ücretsiz danışmanlıkta netleşir.' },
-  { q: 'GEO (Yapay Zeka Optimizasyonu) Kocaeli işletmesi için gerekli mi?', a: 'Evet, özellikle B2B ve profesyonel hizmetlerde. ChatGPT veya Gemini\'ye "Kocaeli\'de güvenilir muhasebe bürosu önerir misin?" diye sorulduğunda sizi önermesi için yapılandırılmış içerik, citation-worthy veri ve yerel otorite sinyalleri gerekiyor. Bu GEO çalışması, geleneksel SEO\'yla eş zamanlı yürütülür.' },
+  { q: 'GEO (Yapay Zeka Optimizasyonu) Kocaeli işletmesi için gerekli mi?', a: 'Evet, özellikle B2B ve profesyonel hizmetlerde. ChatGPT veya Gemini\'ye "Kocaeli\'de güvenilir muhasebe bürosu önerir misin?" diye sorulduğunda sizi kaynak göstermesi olasılığını artıran yapılandırılmış içerik, citation-worthy veri ve yerel otorite sinyalleri gerekiyor. Bu GEO çalışması, geleneksel SEO\'yla eş zamanlı yürütülür.' },
   { q: 'Kocaeli\'deki rakiplerim büyük firmaların bayisi, SEO nasıl işe yarar?', a: 'Büyük bayi zincirleri genellikle yerel içeriğe ve ilçe bazlı sayfaya yatırım yapmaz — şablon site kullanır. Bu sizin için büyük bir fırsat. "Gebze\'de güvenilir X" veya "İzmit\'te yerel Y" aramaları genellikle bağımsız yerel işletmelere kapı açar. Uzun kuyruklu yerel aramalar en yüksek dönüşüm oranına sahip.' },
   { q: 'Kocaeli\'de SEO çalışması için ofiste görüşme gerekiyor mu?', a: 'Hayır. Tüm çalışmalar uzaktan yürütülüyor. Keşif görüşmesi, strateji sunumu ve aylık raporlar Google Meet / Zoom üzerinden yapılır. Kocaeli\'de yerel varlığımız olmasına rağmen fiziksel görüşme zorunluluğu yok.' },
 ]
@@ -138,7 +138,7 @@ export default function KocaeliSeoPage() {
           {[
             { value: '12', label: 'Kocaeli ilçesi — tam kapsam' },
             { value: '3-6 Ay', label: 'Organik sıralama için süre' },
-            { value: '%300+', label: 'Ortalama trafik artışı' },
+            { value: 'Aylık', label: 'Şeffaf raporlama' },
             { value: 'Organik', label: 'Reklam bütçesi gerektirmez' },
           ].map(({ value, label }) => (
             <div key={label} className="text-center bg-white/[0.03] border border-white/[0.06] rounded-xl p-5">

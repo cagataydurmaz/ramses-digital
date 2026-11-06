@@ -6,7 +6,7 @@ import RelatedPages from '@/components/RelatedPages'
 import { MapPin, CheckCircle2, ArrowRight, Megaphone, Globe, BarChart3, Search, Mail, Zap, Star, Users, TrendingUp } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'İzmit Reklam Ajansı | 100+ Proje — Ramses Dijital',
+  title: 'İzmit Reklam Ajansı — Ramses Dijital',
   description:
     'İzmit ve Kocaeli\'nin dijital reklam ajansı — gerçek müşteri, gerçek sonuç. Google Ads, SEO, web tasarım ve sosyal medya pazarlama. Ücretsiz teklif alın.',
   alternates: { canonical: 'https://ramsesdigital.com/izmit-reklam-ajansi' },
@@ -56,7 +56,7 @@ const faqs = [
   { q: 'Sonuçları ne zaman görmeye başlarım?', a: 'Google Ads 1-2 hafta içinde trafik getirir. SEO için yerel sonuçlar (harita) 2-4 haftada görünür; organik sıralamalar 3-6 ay içinde belirginleşir. Web sitesi hemen yayına girer. Sabırsız olanlar için hızlı sonuç almak amacıyla Google Ads\'i başlangıç stratejisi olarak öneriyoruz.' },
   { q: 'İzmit dışındaki Kocaeli ilçelerine de hizmet veriyor musunuz?', a: 'Evet. Gebze, Darıca, Körfez, Gölcük, Başiskele, Çayırova ve tüm Kocaeli ilçelerine hizmet veriyoruz. Aynı zamanda İstanbul, Ankara ve diğer büyük şehirlerdeki müşterilerimiz de var; çalışmalarımızın tamamı uzaktan yürütülüyor.' },
   { q: 'Sözleşme şartlarınız nedir?', a: 'Google Ads ve SEO için minimum 3 ay, ideal olarak 6 ay öneriyoruz. Dijital pazarlama kısa vadede değil, birikimiyle sonuç verir. Web tasarım projeleri tek seferlik sözleşmeyle teslim edilir. Uzun vadeli sözleşmelerde anlamlı indirimler sunuyoruz.' },
-  { q: 'Yapay zeka (ChatGPT, Gemini) aramalarında da görünür olabilir miyim?', a: 'Evet, bu GEO (Generative Engine Optimization) olarak adlandırılıyor. İzmit veya Kocaeli\'de sektörünüzü araştıran birinin ChatGPT\'ye sorduğunda sizi önermesi için yapılandırılmış içerik, citation-worthy veriler ve otoriter backlink profili gerekiyor. Tüm SEO paketlerimize GEO stratejisi dahildir.' },
+  { q: 'Yapay zeka (ChatGPT, Gemini) aramalarında da görünür olabilir miyim?', a: 'Evet, bu GEO (Generative Engine Optimization) olarak adlandırılıyor. İzmit veya Kocaeli\'de sektörünüzü araştıran birinin ChatGPT\'ye sorduğunda sizi kaynak göstermesi olasılığını artıran yapılandırılmış içerik, citation-worthy veriler ve otoriter backlink profili gerekiyor. Tüm SEO paketlerimize GEO stratejisi dahildir.' },
   { q: 'Reklam hesabımın sahibi kim olacak?', a: 'Siz. Google Ads hesabı sizin adınıza açılır, biz yalnızca yönetici erişimiyle çalışırız — ayrılsak bile hesabınız, verileriniz ve kampanya geçmişiniz sizde kalır.' },
 ]
 
@@ -139,7 +139,7 @@ export default function IzmitReklamAjansiPage() {
         <div className="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6">
           {[
             { value: '5+', label: 'Canlı Referans' },
-            { value: '%300+', label: 'Ortalama Trafik Artışı' },
+            { value: 'Aylık', label: 'Şeffaf Raporlama' },
             { value: '3x', label: 'Dönüşüm İyileştirmesi' },
             { value: '6+', label: 'Hizmet Kategorisi' },
           ].map(({ value, label }) => (

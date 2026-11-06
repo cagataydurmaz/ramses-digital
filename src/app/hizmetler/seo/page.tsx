@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 const features = [
   { icon: Search, title: 'Anahtar Kelime Araştırması', desc: 'Sektörünüze özel, dönüşüm odaklı yerel ve uzun kuyruklu anahtar kelime stratejisi.' },
   { icon: FileText, title: 'Teknik SEO Auditi', desc: 'Site hızı, mobil uyum, schema markup, indexlenebilirlik ve Core Web Vitals optimizasyonu.' },
-  { icon: Sparkles, title: 'GEO & AEO Optimizasyonu', desc: 'ChatGPT, Gemini, Perplexity ve sesli aramalarda görünür olun.' },
+  { icon: Sparkles, title: 'GEO & AEO Optimizasyonu', desc: 'Yapay zekâ özetlerinde ve sesli aramalarda alıntılanma olasılığınızı artırın.' },
   { icon: Link2, title: 'Backlink İnşası', desc: 'Sektörel ve yerel kaliteli backlink stratejisi. Spam yok, sadece organik otorite.' },
   { icon: BarChart3, title: 'İçerik Stratejisi', desc: 'Aylık 4-8 SEO uyumlu blog yazısı. Pillar content ve cluster yapısı.' },
   { icon: Award, title: 'Yerel SEO (GBP)', desc: 'Google Business Profile yönetimi, NAP tutarlılığı, yerel dizin kayıtları.' },
@@ -47,7 +47,7 @@ const faqs = [
   { q: 'Backlink satın alıyor musunuz?', a: 'Hayır. Sadece organik ve kaliteli backlink stratejileri uyguluyoruz: misafir yazılar, dijital PR, sektörel rehberler, kırık bağlantı inşası ve değer odaklı outreach. Satın alınmış backlinkler Google manuel cezası getirir.' },
   { q: 'Raporlama nasıl yapılıyor?', a: 'Aylık detaylı performans raporu (PDF) + canlı Looker Studio dashboard erişimi. Organik trafik, sıralamalar, dönüşümler, backlink kazanımları ve teknik SEO sağlığı şeffaf şekilde takip edilir.' },
   { q: 'Yerel SEO ile klasik SEO farkı nedir?', a: 'Yerel SEO, Google Maps ve "Local Pack" alanında öne çıkmaya odaklanır. Google Business Profile, yerel anahtar kelimeler, müşteri yorumları ve NAP tutarlılığı kritiktir. Klasik SEO ise organik arama sonuçlarındaki sıralamayı hedefler. Kocaeli işletmeleri için ikisi birlikte uygulanmalıdır.' },
-  { q: 'GEO ve AEO nedir, neden önemli?', a: 'GEO (Generative Engine Optimization) ChatGPT, Gemini ve Perplexity gibi AI motorlarında görünür olmayı sağlar. AEO (Answer Engine Optimization) sesli arama ve öne çıkan snippet alanlarına odaklanır. Kullanıcıların %30\'u artık AI motorlarını kullanıyor — geleneksel SEO\'ya ek olarak ikisi de zorunlu.' },
+  { q: 'GEO ve AEO nedir, neden önemli?', a: 'GEO (Generative Engine Optimization) ChatGPT, Gemini ve Perplexity gibi AI motorlarında alıntılanma olasılığını artırmayı hedefler. AEO (Answer Engine Optimization) sesli arama ve öne çıkan snippet alanlarına odaklanır. ' },
 ]
 
 export default function SeoKocaeliPage() {

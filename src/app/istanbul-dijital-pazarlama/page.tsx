@@ -6,9 +6,9 @@ import RelatedPages from '@/components/RelatedPages'
 import { MapPin, CheckCircle2, ArrowRight, BarChart3, Search, Zap, Globe, Mail, Megaphone, TrendingUp, Shield, Clock } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'İstanbul Dijital Pazarlama Ajansı | 100+ Proje — Ramses Dijital',
+  title: 'İstanbul Dijital Pazarlama Ajansı — Ramses Dijital',
   description:
-    'İstanbul\'un dijital pazarlama ajansı — 100+ proje, gerçek referanslar. SEO, Google Ads, web tasarım ve otomasyon ile işletmenizi büyütün. Ücretsiz danışmanlık alın.',
+    'İstanbul\'un dijital pazarlama ajansı. SEO, Google Ads, web tasarım ve otomasyon ile işletmenizi büyütün. Ücretsiz danışmanlık alın.',
   alternates: { canonical: 'https://ramsesdigital.com/istanbul-dijital-pazarlama' },
   openGraph: {
     title: 'İstanbul Dijital Pazarlama Ajansı | Ramses Dijital',
@@ -89,7 +89,7 @@ const faqs = [
   { q: 'Sosyal medya yönetimi de yapıyor musunuz?', a: 'Post, story ve video içerikleri üretiyor, içerik takvimi ve strateji kuruyoruz — ancak hesap yönetimi ve günlük yorum/DM moderasyonu hizmetlerimiz arasında değil. Odak noktamız ölçülebilir ROI getiren kanallar: Google arama, SEO ve e-posta pazarlama.' },
   { q: 'İstanbul\'daki hukuk büroları ve profesyonel hizmet firmaları için özel bir yaklaşımınız var mı?', a: 'Evet. Portföyümüzde İstanbul Barosu\'na kayıtlı iki avukat müşterimiz var (Av. Furkan Arıkan, Av. Mert Anıl Güler). Avukatlık Kanunu\'nun reklam yasağı nedeniyle bu sektörde tamamen SEO ve içerik otoritesine dayalı, kurumsal kimliğe uygun bir strateji uyguluyoruz.' },
   { q: 'Uzaktan çalışıyor musunuz, yoksa İstanbul\'da yerinde mi?', a: 'Tüm hizmetlerimiz uzaktan yürütülüyor. Toplantılar Google Meet/Zoom üzerinden, raporlar dijital dashboard ve PDF ile paylaşılıyor. İstanbul\'un trafiğinde fiziksel toplantıya gitme zorunluluğu olmadan, aynı kalitede hizmet alıyorsunuz.' },
-  { q: 'Yapay zeka reklamcılığı ve GEO nedir, İstanbul işletmesi için gerekli mi?', a: 'GEO (Generative Engine Optimization), ChatGPT veya Gemini\'de "İstanbul\'da [sektörünüz]" aramasında önerilmek için yapılan optimizasyondur. İstanbul\'un aşırı rekabetçi geleneksel SEO ortamında, GEO henüz doymamış bir kanal — erken hareket eden işletmeler önemli bir avantaj kazanıyor.' },
+  { q: 'Yapay zeka reklamcılığı ve GEO nedir, İstanbul işletmesi için gerekli mi?', a: 'GEO (Generative Engine Optimization), ChatGPT veya Gemini\'de "İstanbul\'da [sektörünüz]" aramasında alıntılanma olasılığını artırmak için yapılan içerik ve yapı çalışmasıdır. İstanbul\'un aşırı rekabetçi geleneksel SEO ortamında, GEO henüz doymamış bir kanal — erken hareket eden işletmeler önemli bir avantaj kazanıyor.' },
 ]
 
 const jsonLd = {

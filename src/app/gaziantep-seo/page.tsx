@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const features = [
   { icon: Search, title: 'Gaziantep Yerel SEO', desc: '"Şahinbey + hizmetiniz", "Şehitkamil + hizmetiniz" gibi ilçe bazlı aramalarda Google harita paketine girin. İhracatçı firmalardan gıda üreticilerine ilçe bazlı anahtar kelime stratejisi.' },
   { icon: FileText, title: 'Teknik SEO & Core Web Vitals', desc: 'Site hızı, mobil uyum, indexlenebilirlik ve Core Web Vitals optimizasyonu — Gaziantep\'in ihracat ağırlıklı rekabetinde teknik fark belirleyici.' },
-  { icon: Zap, title: 'GEO & AEO', desc: 'ChatGPT, Gemini ve Perplexity\'de "Gaziantep\'te güvenilir X" aramasında önerilmek için entity-based, otorite odaklı içerik.' },
+  { icon: Zap, title: 'GEO & AEO', desc: 'Yapay zekâ araçlarının ve arama özetlerinin alıntılayabileceği net, yapılandırılmış içerik. Sonuç garanti edilmez.' },
   { icon: Link2, title: 'İhracat Odaklı Backlink İnşası', desc: 'Gaziantep\'in tekstil/halıcılık, gıda sanayii ve plastik/ambalaj sektörlerine özgü ticaret odaları, sektörel medya ve dizinlerden yüksek otoriteli link profili.' },
   { icon: BarChart3, title: 'Sektöre Özel İçerik Stratejisi', desc: 'Tekstil ihracatçınız için B2B içerik, baklava/gıda üreticiniz için ürün odaklı SEO — jenerik değil, sektöre özel mimari.' },
   { icon: Award, title: 'İlçe Bazlı Optimizasyon', desc: 'Şahinbey, Şehitkamil, Nizip, İslahiye, Oğuzeli, Nurdağı — her ilçeye özel sayfa ve GBP stratejisi.' },
@@ -37,7 +37,7 @@ const faqs = [
   { q: 'Gaziantep SEO paketi ne kadara mal olur?', a: 'Kapsam sektöre ve rekabet seviyesine göre değişir: teknik audit, anahtar kelime araştırması, aylık içerik üretimi, GBP yönetimi, backlink stratejisi ve raporlama. Net fiyat bilgisini ücretsiz danışmanlıkta netleştiriyoruz.' },
   { q: 'Fiziksel olarak Gaziantep\'te misiniz?', a: 'Hayır, merkezimiz Kocaeli\'de — Gaziantep\'e tamamen uzaktan hizmet veriyoruz. Keşif görüşmesi, strateji onayı ve raporlama Google Meet/Zoom üzerinden yürütülüyor. Türkiye genelinde canlı, ziyaret edilebilir referanslarımızı portföyümüzde inceleyebilirsiniz.' },
   { q: 'Gaziantep\'teki yerleşik ajanslarla nasıl rekabet edebilirim?', a: 'Yerleşik ajansların çoğu şablon strateji uyguluyor ve ihracat/gıda gibi sektörlere jenerik içerikle yaklaşıyor. Biz her müşteriye sektörüne özel strateji kuran, mühendislik disipliniyle çalışan bir ekibiz — bu da daha hızlı iletişim ve daha isabetli anahtar kelime hedeflemesi anlamına geliyor.' },
-  { q: 'GEO (Yapay Zeka Optimizasyonu) Gaziantep işletmesi için neden kritik?', a: 'GEO, ChatGPT ve Gemini gibi araçlarda "Gaziantep\'te güvenilir X önerir misin?" sorusuna cevap olarak çıkmayı hedefliyor. Bu kanal henüz doymamış durumda — özellikle Gaziantep\'in niş B2B sektörlerinde (tekstil ihracatı, gıda üretimi) erken hareket edenler avantajlı.' },
+  { q: 'GEO (Yapay Zeka Optimizasyonu) Gaziantep işletmesi için neden kritik?', a: 'GEO, ChatGPT ve Gemini gibi araçlarda "Gaziantep\'te güvenilir X önerir misin?" sorusuna verilen cevaplarda kaynak olarak yer alma olasılığını artırmayı hedefler. Bu kanal henüz doymamış durumda — özellikle Gaziantep\'in niş B2B sektörlerinde (tekstil ihracatı, gıda üretimi) erken hareket edenler avantajlı.' },
 ]
 
 const jsonLd = {

@@ -6,7 +6,6 @@ import dynamic from 'next/dynamic'
 import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import HeroBackgroundVideo from '@/components/HeroBackgroundVideo'
-import { reviews, aggregateRating } from '@/lib/reviews'
 import {
   Sparkles,
   Search,
@@ -196,45 +195,13 @@ const statColorMap: Record<string, { bg: string; bgHover: string; text: string }
 }
 
 
-// Yorum verisi src/lib/reviews.ts'te — layout.tsx'teki Review/AggregateRating
-// şemasıyla aynı kaynaktan besleniyor. Marquee bileşeni ReviewsMarquee'de.
+// Yorum verisi src/lib/reviews.ts'te; görünür yorum şeridi ReviewsMarquee'de.
+// Yorumlar için makine okunabilir şema (Review/AggregateRating) kullanılmaz.
 
 // ─── Main Component ────────────────────────────────────────────────────────
 export default function HomePage() {
   return (
     <>
-      {/* Review/AggregateRating şeması — Google'ın "review has multiple
-          aggregate ratings" hatasına yol açmaması için SADECE anasayfada,
-          tek yerde tanımlanıyor (bkz. layout.tsx'in Organization şeması —
-          orada artık review/aggregateRating alanı yok). */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': ['MarketingAgency', 'LocalBusiness'],
-            '@id': 'https://ramsesdigital.com/#organization',
-            aggregateRating: {
-              '@type': 'AggregateRating',
-              ratingValue: aggregateRating.ratingValue,
-              bestRating: aggregateRating.bestRating,
-              reviewCount: aggregateRating.reviewCount,
-            },
-            review: reviews.map((r) => ({
-              '@type': 'Review',
-              author: { '@type': 'Person', name: r.name },
-              datePublished: r.date,
-              reviewRating: {
-                '@type': 'Rating',
-                ratingValue: r.rating,
-                bestRating: 5,
-              },
-              reviewBody: r.text,
-            })),
-          }),
-        }}
-      />
-
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
       <section className="relative min-h-screen flex flex-col items-center overflow-hidden px-4 sm:px-6 pt-24 sm:pt-32 md:pt-44 pb-12 sm:pb-16">
         <HeroBackgroundVideo />
@@ -561,7 +528,7 @@ export default function HomePage() {
                 </div>
                 <p className="text-fuchsia-400 text-xs font-semibold uppercase tracking-wider mb-1">GEO</p>
                 <h3 className="text-white font-semibold text-lg mb-2">Yapay Zekânın Önerisi Olmak</h3>
-                <p className="text-zinc-400 text-sm leading-relaxed">Kullanıcılar ChatGPT veya Gemini&apos;den öneri istediğinde yapay zekânın önerdiği markalar arasında yer almanız.</p>
+                <p className="text-zinc-400 text-sm leading-relaxed">Yapay zekâ araçlarının ve arama özetlerinin sizi kaynak olarak alıntılama olasılığının artması (garanti edilmez).</p>
               </div>
             </FadeIn>
           </div>

@@ -132,27 +132,45 @@ body {
   will-change: transform;
 }
 
-/* Google yorumları — kayan şerit. transform JS (rAF) ile sürülüyor —
-   Safari'nin uzun süreli infinite CSS animation'ları compositor'da
-   dondurduğu, evrensel çözümü olmayan bilinen WebKit hatasından kaçınmak
-   için @keyframes/animation kullanmıyoruz. Bkz. ReviewsMarquee.tsx */
-.marquee-viewport {
+/* Müşteri yorumları — saf CSS kayan şerit. İçerik iki kez yinelenir ve track
+   translateX(-50%) ile kesintisiz döngü yapar. Fare/odak üzerine gelince durur.
+   Sınıf adları "marquee" içerir: mobil animasyon sıfırlama kuralı (aşağıda)
+   bu elemanları kapsam dışı bırakır. Bkz. ReviewsMarqueeInner.tsx */
+.reviews-marquee {
   overflow: hidden;
   -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
   mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
 }
-.marquee-track {
+.reviews-marquee-track {
   display: flex;
   width: max-content;
+  animation: reviews-marquee-scroll 60s linear infinite;
   will-change: transform;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+}
+.reviews-marquee:hover .reviews-marquee-track,
+.reviews-marquee:focus-within .reviews-marquee-track,
+.reviews-marquee:focus .reviews-marquee-track {
+  animation-play-state: paused;
+}
+@keyframes reviews-marquee-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
 }
 @media (max-width: 768px) {
-  .marquee-viewport {
+  .reviews-marquee {
     -webkit-mask-image: none;
     mask-image: none;
   }
+}
+@media (prefers-reduced-motion: reduce) {
+  .reviews-marquee {
+    overflow-x: auto;
+    -webkit-mask-image: none;
+    mask-image: none;
+    scroll-snap-type: x proximity;
+  }
+  .reviews-marquee-track { animation: none !important; transform: none; }
+  .reviews-marquee-dup { display: none; }
 }
 
 /* Card hover effect - desktop only — only compositor-friendly properties */

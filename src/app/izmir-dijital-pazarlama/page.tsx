@@ -6,9 +6,9 @@ import RelatedPages from '@/components/RelatedPages'
 import { MapPin, CheckCircle2, ArrowRight, BarChart3, Search, Zap, Globe, Mail, Megaphone, TrendingUp, Shield, Clock } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'İzmir Dijital Pazarlama Ajansı | 100+ Proje — Ramses Dijital',
+  title: 'İzmir Dijital Pazarlama Ajansı — Ramses Dijital',
   description:
-    'İzmir\'in dijital pazarlama ajansı — 100+ proje deneyimi. SEO, Google Ads, web tasarım ve otomasyon ile işletmenizi büyütün. Ücretsiz danışmanlık alın.',
+    'İzmir\'in dijital pazarlama ajansı. SEO, Google Ads, web tasarım ve otomasyon ile işletmenizi büyütün. Ücretsiz danışmanlık alın.',
   alternates: { canonical: 'https://ramsesdigital.com/izmir-dijital-pazarlama' },
   openGraph: {
     title: 'İzmir Dijital Pazarlama Ajansı | Ramses Dijital',
@@ -89,7 +89,7 @@ const faqs = [
   { q: 'Sosyal medya yönetimi de yapıyor musunuz?', a: 'Post, story ve video içerikleri üretiyor, içerik takvimi ve strateji kuruyoruz — ancak hesap yönetimi ve günlük yorum/DM moderasyonu hizmetlerimiz arasında değil. Odak noktamız ölçülebilir ROI getiren kanallar: Google arama, SEO ve e-posta pazarlama.' },
   { q: 'İzmir\'deki turizm ve e-ticaret işletmeleri için özel bir yaklaşımınız var mı?', a: 'Evet. Turizm için sezonluk kampanya planlaması ve çok dilli SEO; e-ticaret için ürün/kategori sayfası optimizasyonu ve dönüşüm odaklı tasarım — portföyümüzdeki e-ticaret projemizde uyguladığımız yaklaşımlar bunlar.' },
   { q: 'Uzaktan çalışıyor musunuz, yoksa İzmir\'de yerinde mi?', a: 'Tüm hizmetlerimiz uzaktan yürütülüyor. Toplantılar Google Meet/Zoom üzerinden, raporlar dijital dashboard ve PDF ile paylaşılıyor.' },
-  { q: 'Yapay zeka reklamcılığı ve GEO nedir, İzmir işletmesi için gerekli mi?', a: 'GEO (Generative Engine Optimization), ChatGPT veya Gemini\'de "İzmir\'de [sektörünüz]" aramasında önerilmek için yapılan optimizasyondur. Turistler ve yeni müşteriler artık AI araçlarına da danışıyor — bu kanal henüz doymamış, erken hareket edenler avantajlı.' },
+  { q: 'Yapay zeka reklamcılığı ve GEO nedir, İzmir işletmesi için gerekli mi?', a: 'GEO (Generative Engine Optimization), ChatGPT veya Gemini\'de "İzmir\'de [sektörünüz]" aramasında alıntılanma olasılığını artırmak için yapılan içerik ve yapı çalışmasıdır. Turistler ve yeni müşteriler artık AI araçlarına da danışıyor — bu kanal henüz doymamış, erken hareket edenler avantajlı.' },
 ]
 
 const jsonLd = {

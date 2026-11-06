@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const features = [
   { icon: Search, title: 'Kayseri Yerel SEO', desc: '"Melikgazi + hizmetiniz", "Kocasinan + hizmetiniz" gibi ilçe bazlı aramalarda Google harita paketine girin. Mobilya üreticisinden pastırma/sucuk üreticisine ilçe bazlı anahtar kelime stratejisi.' },
   { icon: FileText, title: 'Teknik SEO & Core Web Vitals', desc: 'Site hızı, mobil uyum, indexlenebilirlik ve Core Web Vitals optimizasyonu — Kayseri\'nin sanayi ve esnaf ağırlıklı rekabetinde teknik fark belirleyici.' },
-  { icon: Zap, title: 'GEO & AEO', desc: 'ChatGPT, Gemini ve Perplexity\'de "Kayseri\'de güvenilir X" aramasında önerilmek için entity-based, otorite odaklı içerik.' },
+  { icon: Zap, title: 'GEO & AEO', desc: 'Yapay zekâ araçlarının ve arama özetlerinin alıntılayabileceği net, yapılandırılmış içerik. Sonuç garanti edilmez.' },
   { icon: Link2, title: 'Sanayi Odaklı Backlink İnşası', desc: 'Kayseri\'nin mobilya üretimi, gıda sanayii ve tekstil sektörlerine özgü ticaret odaları, sektörel medya ve dizinlerden yüksek otoriteli link profili.' },
   { icon: BarChart3, title: 'Sektöre Özel İçerik Stratejisi', desc: 'Mobilya üreticiniz için B2B içerik, pastırma/sucuk üreticiniz için ürün odaklı SEO — jenerik değil, sektöre özel mimari.' },
   { icon: Award, title: 'İlçe Bazlı Optimizasyon', desc: 'Melikgazi, Kocasinan, Talas, Develi, Yahyalı, İncesu, Hacılar — her ilçeye özel sayfa ve GBP stratejisi.' },
@@ -37,7 +37,7 @@ const faqs = [
   { q: 'Kayseri SEO paketi ne kadara mal olur?', a: 'Kapsam sektöre ve rekabet seviyesine göre değişir: teknik audit, anahtar kelime araştırması, aylık içerik üretimi, GBP yönetimi, backlink stratejisi ve raporlama. Net fiyat bilgisini ücretsiz danışmanlıkta netleştiriyoruz.' },
   { q: 'Fiziksel olarak Kayseri\'de misiniz?', a: 'Hayır, merkezimiz Kocaeli\'de — Kayseri\'ye tamamen uzaktan hizmet veriyoruz. Keşif görüşmesi, strateji onayı ve raporlama Google Meet/Zoom üzerinden yürütülüyor. Türkiye genelinde canlı, ziyaret edilebilir referanslarımızı portföyümüzde inceleyebilirsiniz.' },
   { q: 'Kayseri\'deki yerleşik ajanslarla nasıl rekabet edebilirim?', a: 'Yerleşik ajansların çoğu şablon strateji uyguluyor ve mobilya/gıda gibi sektörlere jenerik içerikle yaklaşıyor. Biz her müşteriye sektörüne özel strateji kuran, mühendislik disipliniyle çalışan bir ekibiz — bu da daha hızlı iletişim ve daha isabetli anahtar kelime hedeflemesi anlamına geliyor.' },
-  { q: 'GEO (Yapay Zeka Optimizasyonu) Kayseri işletmesi için neden kritik?', a: 'GEO, ChatGPT ve Gemini gibi araçlarda "Kayseri\'de güvenilir X önerir misin?" sorusuna cevap olarak çıkmayı hedefliyor. Bu kanal henüz doymamış durumda — özellikle Kayseri\'nin niş B2B sektörlerinde (mobilya üretimi, gıda üretimi) erken hareket edenler avantajlı.' },
+  { q: 'GEO (Yapay Zeka Optimizasyonu) Kayseri işletmesi için neden kritik?', a: 'GEO, ChatGPT ve Gemini gibi araçlarda "Kayseri\'de güvenilir X önerir misin?" sorusuna verilen cevaplarda kaynak olarak yer alma olasılığını artırmayı hedefler. Bu kanal henüz doymamış durumda — özellikle Kayseri\'nin niş B2B sektörlerinde (mobilya üretimi, gıda üretimi) erken hareket edenler avantajlı.' },
 ]
 
 const jsonLd = {

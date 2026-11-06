@@ -1435,7 +1435,7 @@ export const posts: Post[] = [
 
       <h2>8. Review & AggregateRating</h2>
       <p>Müşteri yorumları ve toplu derecelendirme. Arama sonuçlarında yıldız puanı göstermek için kritiktir.</p>
-      <p>Google, kendi web sitenizde yayınladığınız kendi yorumlarınız için AggregateRating'i kısıtlı biçimde destekler — üçüncü parti bir platformdan (Google, Trustpilot) doğrulanmış yorumlar olmadan bu schema'yı kullanmak riskli olabilir. En güvenli yaklaşım, gerçek ve doğrulanabilir müşteri yorumlarını schema'ya yansıtmaktır.</p>
+      <p>Google'ın yönergesine göre, yorumlanan işletme yorumları kendisi kontrol ediyorsa, LocalBusiness veya Organization türündeki sayfalar yıldızlı sonuç için uygun değildir; bu, gömülü üçüncü taraf yorum widget'larını da kapsar. Yani kendi işletmeniz için kendi sitenizde yayınladığınız yorumları Review/AggregateRating ile işaretlemek yıldız sonucu getirmez. Bu işaretleme daha çok başka işletmeler hakkında yorum toplayan siteler (ürün, kitap, yerel işletme dizinleri) için anlamlıdır.</p>
 
       <table>
         <thead><tr><th>#</th><th>Schema Tipi</th><th>Kullanım Alanı</th></tr></thead>
@@ -3627,7 +3627,7 @@ export const posts: Post[] = [
         <tbody>
           <tr><td>SEO</td><td>Arama motoru optimizasyonu</td><td>Google sonuç listesinde görünmek</td></tr>
           <tr><td>AEO</td><td>Cevap motoru optimizasyonu</td><td>Cevap kutularında ve sesli aramada yer almak</td></tr>
-          <tr><td>GEO</td><td>Üretken motor optimizasyonu</td><td>ChatGPT gibi yapay zekâ araçlarının sizi önermesi</td></tr>
+          <tr><td>GEO</td><td>Üretken motor optimizasyonu</td><td>ChatGPT gibi yapay zekâ araçlarının sizi kaynak göstermesi olasılığını artırmak</td></tr>
         </tbody>
       </table>
 

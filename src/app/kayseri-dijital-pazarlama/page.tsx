@@ -6,9 +6,9 @@ import RelatedPages from '@/components/RelatedPages'
 import { MapPin, CheckCircle2, ArrowRight, BarChart3, Search, Zap, Globe, Mail, Megaphone, TrendingUp, Shield, Clock } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Kayseri Dijital Pazarlama Ajansı | 100+ Proje — Ramses Dijital',
+  title: 'Kayseri Dijital Pazarlama Ajansı — Ramses Dijital',
   description:
-    'Kayseri\'nin dijital pazarlama ajansı — 100+ proje deneyimi. SEO, Google Ads, web tasarım ve otomasyon ile mobilya, gıda ve tekstil sektörünü büyütün. Ücretsiz danışmanlık alın.',
+    'Kayseri\'nin dijital pazarlama ajansı. SEO, Google Ads, web tasarım ve otomasyon ile mobilya, gıda ve tekstil sektörünü büyütün. Ücretsiz danışmanlık alın.',
   alternates: { canonical: 'https://ramsesdigital.com/kayseri-dijital-pazarlama' },
   openGraph: {
     title: 'Kayseri Dijital Pazarlama Ajansı | Ramses Dijital',
@@ -89,7 +89,7 @@ const faqs = [
   { q: 'Sosyal medya yönetimi de yapıyor musunuz?', a: 'Post, story ve video içerikleri üretiyor, içerik takvimi ve strateji kuruyoruz — ancak hesap yönetimi ve günlük yorum/DM moderasyonu hizmetlerimiz arasında değil. Odak noktamız ölçülebilir ROI getiren kanallar: Google arama, SEO ve e-posta pazarlama.' },
   { q: 'Kayseri\'deki hukuk büroları, klinikler ve estetik merkezleri için özel bir yaklaşımınız var mı?', a: 'Evet. Hukuk büroları için Avukatlık Kanunu\'nun reklam yasağı nedeniyle SEO ve içerik otoritesine dayalı strateji uyguluyoruz. Diş hekimi ve estetik merkezleri için ise güven inşa eden içerik ve yerel SEO ağırlıklı bir yaklaşım kuruyoruz.' },
   { q: 'Uzaktan çalışıyor musunuz, yoksa Kayseri\'de yerinde mi?', a: 'Tüm hizmetlerimiz uzaktan yürütülüyor. Merkezimiz Kocaeli\'de, fiziksel ofisimiz Kayseri\'de yok. Toplantılar Google Meet/Zoom üzerinden, raporlar dijital dashboard ve PDF ile paylaşılıyor.' },
-  { q: 'Yapay zeka reklamcılığı ve GEO nedir, Kayseri işletmesi için gerekli mi?', a: 'GEO (Generative Engine Optimization), ChatGPT veya Gemini\'de "Kayseri\'de [sektörünüz]" aramasında önerilmek için yapılan optimizasyondur. Bu henüz doymamış bir kanal — erken hareket eden işletmeler önemli bir avantaj kazanıyor.' },
+  { q: 'Yapay zeka reklamcılığı ve GEO nedir, Kayseri işletmesi için gerekli mi?', a: 'GEO (Generative Engine Optimization), ChatGPT veya Gemini\'de "Kayseri\'de [sektörünüz]" aramasında alıntılanma olasılığını artırmak için yapılan içerik ve yapı çalışmasıdır. Bu henüz doymamış bir kanal — erken hareket eden işletmeler önemli bir avantaj kazanıyor.' },
 ]
 
 const jsonLd = {

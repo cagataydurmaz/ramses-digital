@@ -7,7 +7,7 @@ import dynamic from 'next/dynamic'
 // bu bileşen 40+ sayfada müşteri yorumu (E-E-A-T sinyali) taşıyor — ssr:false
 // olsaydı bu metin hiçbir sayfada JS çalıştırmayan bot/crawler'a görünmezdi.
 const ReviewsMarqueeInner = dynamic(() => import('./ReviewsMarqueeInner'), {
-  loading: () => <div className="h-[520px]" aria-hidden="true" />,
+  loading: () => <div className="h-[440px]" aria-hidden="true" />,
 })
 
 export default function ReviewsMarquee(props: { title?: string }) {

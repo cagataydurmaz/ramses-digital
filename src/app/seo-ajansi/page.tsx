@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 const features = [
   { icon: Search, title: 'Anahtar Kelime Stratejisi', desc: 'Sektörünüze ve hedef kitlenize özel, dönüşüm odaklı anahtar kelime araştırması — bulunduğunuz şehirden bağımsız olarak.' },
   { icon: FileText, title: 'Teknik SEO Audit', desc: 'Site hızı, Core Web Vitals, mobil uyum ve indexlenebilirlik. Teknik engeller Google\'ın önündeki en büyük bariyerdir.' },
-  { icon: Zap, title: 'GEO & AEO Optimizasyonu', desc: 'ChatGPT, Gemini ve Perplexity\'de markanızın referans kaynağı olmasını sağlıyoruz — coğrafi sınır tanımayan bir görünürlük.' },
+  { icon: Zap, title: 'GEO & AEO Optimizasyonu', desc: 'Yapay zekâ araçlarının ve arama özetlerinin alıntılayabileceği net, yapılandırılmış içerik. Sonuç garanti edilmez.' },
   { icon: Link2, title: 'Backlink İnşası', desc: 'Sektörel otorite sitelerden, dijital PR ve misafir yazılarla kaliteli backlink profili.' },
   { icon: BarChart3, title: 'İçerik Stratejisi', desc: 'Hedef kitlenizin arama davranışına uygun, pillar-cluster yapıda aylık içerik üretimi.' },
   { icon: Award, title: 'Şeffaf Raporlama', desc: 'Aylık detaylı rapor + canlı dashboard. Trafik, sıralama, dönüşüm — her şey görünür.' },

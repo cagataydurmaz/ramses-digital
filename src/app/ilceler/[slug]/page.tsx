@@ -161,9 +161,9 @@ export default function IlcePage({ params }: { params: { slug: string } }) {
 
       <RelatedPages
         pages={[
-          ...komsular.map((k) => ({ label: `${k.name} Web Tasarım`, href: `/ilceler/${k.slug}` })),
+        ...komsular.map((k) => ({ label: `${k.name} Web Tasarım`, href: `/ilceler/${k.slug}` })),
           { label: 'Tüm Bölgeler', href: '/ilceler' },
-          ...(ilce.il === 'Kocaeli'
+        ...(ilce.il === 'Kocaeli'
             ? [
                 { label: 'Kocaeli SEO', href: '/kocaeli-seo' },
                 { label: 'Kocaeli Web Tasarım', href: '/kocaeli-web-tasarim' },

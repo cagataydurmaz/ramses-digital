@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const features = [
   { icon: Search, title: 'Bursa Yerel SEO', desc: '"Nilüfer + hizmetiniz", "Osmangazi + hizmetiniz" gibi ilçe bazlı aramalarda Google harita paketine girin. İnegöl\'den Gemlik\'e ilçe bazlı anahtar kelime stratejisi.' },
   { icon: FileText, title: 'Teknik SEO & Core Web Vitals', desc: 'Site hızı, mobil uyum, indexlenebilirlik ve Core Web Vitals optimizasyonu — Bursa\'nın sanayi ve hizmet sektöründeki rekabette teknik fark belirleyici.' },
-  { icon: Zap, title: 'GEO & AEO', desc: 'ChatGPT, Gemini ve Perplexity\'de "Bursa\'da güvenilir X" aramasında önerilmek için entity-based, otorite odaklı içerik.' },
+  { icon: Zap, title: 'GEO & AEO', desc: 'Yapay zekâ araçlarının ve arama özetlerinin alıntılayabileceği net, yapılandırılmış içerik. Sonuç garanti edilmez.' },
   { icon: Link2, title: 'B2B Odaklı Backlink İnşası', desc: 'Bursa\'nın otomotiv yan sanayi, mobilya ve tekstil sektörlerine özgü ticaret odaları, sektörel medya ve dizinlerden yüksek otoriteli link profili.' },
   { icon: BarChart3, title: 'Sektöre Özel İçerik Stratejisi', desc: 'Otomotiv yan sanayi firmanız için B2B içerik, İnegöl mobilya üreticiniz için ürün odaklı SEO — jenerik değil, sektöre özel mimari.' },
   { icon: Award, title: 'İlçe Bazlı Optimizasyon', desc: 'Osmangazi, Nilüfer, Yıldırım, Gemlik, İnegöl, Mudanya, Gürsu, Kestel, Orhangazi — her ilçeye özel sayfa ve GBP stratejisi.' },
@@ -37,7 +37,7 @@ const faqs = [
   { q: 'Bursa SEO paketi ne kadara mal olur?', a: 'Kapsam sektöre ve rekabet seviyesine göre değişir: teknik audit, anahtar kelime araştırması, aylık içerik üretimi, GBP yönetimi, backlink stratejisi ve raporlama. Net fiyat bilgisini ücretsiz danışmanlıkta netleştiriyoruz.' },
   { q: 'Fiziksel olarak Bursa\'da mısınız?', a: 'Hayır, merkezimiz Kocaeli\'de — Bursa\'ya tamamen uzaktan hizmet veriyoruz. Keşif görüşmesi, strateji onayı ve raporlama Google Meet/Zoom üzerinden yürütülüyor. Türkiye genelinde canlı, ziyaret edilebilir referanslarımızı portföyümüzde inceleyebilirsiniz.' },
   { q: 'Bursa\'daki yerleşik ajanslarla nasıl rekabet edebilirim?', a: 'Yerleşik ajansların çoğu şablon strateji uyguluyor ve otomotiv/mobilya gibi B2B sektörlere jenerik içerikle yaklaşıyor. Biz her müşteriye sektörüne özel strateji kuran, mühendislik disipliniyle çalışan bir ekibiz — bu da daha hızlı iletişim ve daha isabetli anahtar kelime hedeflemesi anlamına geliyor.' },
-  { q: 'GEO (Yapay Zeka Optimizasyonu) Bursa işletmesi için neden kritik?', a: 'GEO, ChatGPT ve Gemini gibi araçlarda "Bursa\'da güvenilir X önerir misin?" sorusuna cevap olarak çıkmayı hedefliyor. Bu kanal henüz doymamış durumda — özellikle Bursa\'nın niş B2B sektörlerinde (otomotiv yan sanayi, mobilya üretimi) erken hareket edenler avantajlı.' },
+  { q: 'GEO (Yapay Zeka Optimizasyonu) Bursa işletmesi için neden kritik?', a: 'GEO, ChatGPT ve Gemini gibi araçlarda "Bursa\'da güvenilir X önerir misin?" sorusuna verilen cevaplarda kaynak olarak yer alma olasılığını artırmayı hedefler. Bu kanal henüz doymamış durumda — özellikle Bursa\'nın niş B2B sektörlerinde (otomotiv yan sanayi, mobilya üretimi) erken hareket edenler avantajlı.' },
 ]
 
 const jsonLd = {

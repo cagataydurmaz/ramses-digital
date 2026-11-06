@@ -6,9 +6,9 @@ import RelatedPages from '@/components/RelatedPages'
 import { MapPin, CheckCircle2, ArrowRight, BarChart3, Search, Zap, Globe, Mail, Megaphone, TrendingUp, Shield, Clock } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Konya Dijital Pazarlama Ajansı | 100+ Proje — Ramses Dijital',
+  title: 'Konya Dijital Pazarlama Ajansı — Ramses Dijital',
   description:
-    'Konya\'nın dijital pazarlama ajansı — 100+ proje deneyimi. SEO, Google Ads, web tasarım ve otomasyon ile tarım makineleri, gıda ve turizm sektörünü büyütün. Ücretsiz danışmanlık alın.',
+    'Konya\'nın dijital pazarlama ajansı. SEO, Google Ads, web tasarım ve otomasyon ile tarım makineleri, gıda ve turizm sektörünü büyütün. Ücretsiz danışmanlık alın.',
   alternates: { canonical: 'https://ramsesdigital.com/konya-dijital-pazarlama' },
   openGraph: {
     title: 'Konya Dijital Pazarlama Ajansı | Ramses Dijital',
@@ -89,7 +89,7 @@ const faqs = [
   { q: 'Sosyal medya yönetimi de yapıyor musunuz?', a: 'Post, story ve video içerikleri üretiyor, içerik takvimi ve strateji kuruyoruz — ancak hesap yönetimi ve günlük yorum/DM moderasyonu hizmetlerimiz arasında değil. Odak noktamız ölçülebilir ROI getiren kanallar: Google arama, SEO ve e-posta pazarlama.' },
   { q: 'Konya\'daki hukuk büroları, klinikler ve turizm işletmeleri için özel bir yaklaşımınız var mı?', a: 'Evet. Hukuk büroları için Avukatlık Kanunu\'nun reklam yasağı nedeniyle SEO ve içerik otoritesine dayalı strateji uyguluyoruz. Turizm işletmeleri için ise görsel ağırlıklı içerik ve yerel/uluslararası SEO kombinasyonu kuruyoruz.' },
   { q: 'Uzaktan çalışıyor musunuz, yoksa Konya\'da yerinde mi?', a: 'Tüm hizmetlerimiz uzaktan yürütülüyor. Merkezimiz Kocaeli\'de, fiziksel ofisimiz Konya\'da yok. Toplantılar Google Meet/Zoom üzerinden, raporlar dijital dashboard ve PDF ile paylaşılıyor.' },
-  { q: 'Yapay zeka reklamcılığı ve GEO nedir, Konya işletmesi için gerekli mi?', a: 'GEO (Generative Engine Optimization), ChatGPT veya Gemini\'de "Konya\'da [sektörünüz]" aramasında önerilmek için yapılan optimizasyondur. Bu henüz doymamış bir kanal — erken hareket eden işletmeler önemli bir avantaj kazanıyor.' },
+  { q: 'Yapay zeka reklamcılığı ve GEO nedir, Konya işletmesi için gerekli mi?', a: 'GEO (Generative Engine Optimization), ChatGPT veya Gemini\'de "Konya\'da [sektörünüz]" aramasında alıntılanma olasılığını artırmak için yapılan içerik ve yapı çalışmasıdır. Bu henüz doymamış bir kanal — erken hareket eden işletmeler önemli bir avantaj kazanıyor.' },
 ]
 
 const jsonLd = {

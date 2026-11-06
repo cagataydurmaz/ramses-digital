@@ -6,9 +6,9 @@ import RelatedPages from '@/components/RelatedPages'
 import { MapPin, CheckCircle2, ArrowRight, BarChart3, Search, Zap, Globe, Mail, Megaphone, TrendingUp, Shield, Clock } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Ankara Dijital Pazarlama Ajansı | 100+ Proje — Ramses Dijital',
+  title: 'Ankara Dijital Pazarlama Ajansı — Ramses Dijital',
   description:
-    'Ankara\'nın dijital pazarlama ajansı — 100+ proje deneyimi. SEO, Google Ads, web tasarım ve otomasyon ile başkentteki işletmenizi büyütün. Ücretsiz danışmanlık alın.',
+    'Ankara\'nın dijital pazarlama ajansı. SEO, Google Ads, web tasarım ve otomasyon ile başkentteki işletmenizi büyütün. Ücretsiz danışmanlık alın.',
   alternates: { canonical: 'https://ramsesdigital.com/ankara-dijital-pazarlama' },
   openGraph: {
     title: 'Ankara Dijital Pazarlama Ajansı | Ramses Dijital',
@@ -89,7 +89,7 @@ const faqs = [
   { q: 'Sosyal medya yönetimi de yapıyor musunuz?', a: 'Post, story ve video içerikleri üretiyor, içerik takvimi ve strateji kuruyoruz — ancak hesap yönetimi ve günlük yorum/DM moderasyonu hizmetlerimiz arasında değil. Odak noktamız ölçülebilir ROI getiren kanallar: Google arama, SEO ve e-posta pazarlama.' },
   { q: 'Ankara\'daki hukuk büroları ve danışmanlık firmaları için özel bir yaklaşımınız var mı?', a: 'Evet. Portföyümüzde İstanbul Barosu\'na kayıtlı avukat müşterilerimiz var. Avukatlık Kanunu\'nun reklam yasağı nedeniyle bu sektörde tamamen SEO ve içerik otoritesine dayalı, kurumsal kimliğe uygun bir strateji uyguluyoruz — Ankara\'daki benzer sektörler için de aynı yaklaşım geçerli.' },
   { q: 'Uzaktan çalışıyor musunuz, yoksa Ankara\'da yerinde mi?', a: 'Tüm hizmetlerimiz uzaktan yürütülüyor. Toplantılar Google Meet/Zoom üzerinden, raporlar dijital dashboard ve PDF ile paylaşılıyor.' },
-  { q: 'Yapay zeka reklamcılığı ve GEO nedir, Ankara işletmesi için gerekli mi?', a: 'GEO (Generative Engine Optimization), ChatGPT veya Gemini\'de "Ankara\'da [sektörünüz]" aramasında önerilmek için yapılan optimizasyondur. Ankara\'nın kurumsal/B2B pazarında bu kanal henüz doymamış — erken hareket eden işletmeler avantajlı.' },
+  { q: 'Yapay zeka reklamcılığı ve GEO nedir, Ankara işletmesi için gerekli mi?', a: 'GEO (Generative Engine Optimization), ChatGPT veya Gemini\'de "Ankara\'da [sektörünüz]" aramasında alıntılanma olasılığını artırmak için yapılan içerik ve yapı çalışmasıdır. Ankara\'nın kurumsal/B2B pazarında bu kanal henüz doymamış — erken hareket eden işletmeler avantajlı.' },
 ]
 
 const jsonLd = {

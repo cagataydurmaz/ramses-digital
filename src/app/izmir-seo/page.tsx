@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 const features = [
   { icon: Search, title: 'İzmir Yerel SEO', desc: '"Konak + hizmetiniz", "Karşıyaka + hizmetiniz" gibi ilçe bazlı aramalarda Google harita paketine girin.' },
   { icon: FileText, title: 'Teknik SEO & Core Web Vitals', desc: 'Site hızı, mobil uyum, indexlenebilirlik ve Core Web Vitals optimizasyonu — turizm sezonunda trafik artışını sorunsuz karşılar.' },
-  { icon: Zap, title: 'GEO & AEO', desc: 'ChatGPT, Gemini ve Perplexity\'de "İzmir\'de güvenilir X" aramasında önerilmek için entity-based, otorite odaklı içerik.' },
+  { icon: Zap, title: 'GEO & AEO', desc: 'Yapay zekâ araçlarının ve arama özetlerinin alıntılayabileceği net, yapılandırılmış içerik. Sonuç garanti edilmez.' },
   { icon: Link2, title: 'Yerel & İhracat Odaklı Backlink İnşası', desc: 'İzmir\'in ihracat ve dış ticaret ağırlıklı ekonomisine uygun, sektörel dizin ve ticaret odası linkleri.' },
   { icon: BarChart3, title: 'Turizm & E-ticaret İçerik Stratejisi', desc: 'İzmir\'in turizm ve e-ticaret potansiyeline uygun, mevsimsel arama trendlerini hesaba katan içerik takvimi.' },
   { icon: Award, title: 'İlçe Bazlı Optimizasyon', desc: 'Konak, Karşıyaka, Bornova, Buca, Çiğli, Bayraklı — her ilçeye özel sayfa ve GBP stratejisi.' },
@@ -39,7 +39,7 @@ const faqs = [
   { q: 'İzmir\'de hangi sektörler SEO\'dan en çok fayda görüyor?', a: 'Turizm ve konaklama, restoran & kafe, e-ticaret (özellikle yerel üretim/zeytinyağı, tekstil gibi ihracat kalemleri), sağlık ve güzellik sektörü İzmir\'de yüksek arama hacmine sahip. Sezon öncesi içerik hazırlığı turizm sektöründe belirleyici.' },
   { q: 'İzmir SEO paketi ne kadara mal olur?', a: 'Sektöre ve ilçe kapsamına göre değişir. Kapsam: teknik audit, anahtar kelime araştırması, aylık içerik üretimi, GBP yönetimi, backlink stratejisi ve raporlama. Ücretsiz danışmanlıkta işletmenize özel fiyat sunuyoruz.' },
   { q: 'Fiziksel olarak İzmir\'de misiniz?', a: 'Hayır, merkezimiz Kocaeli\'de — tüm çalışmalar uzaktan yürütülüyor. İstanbul Barosu\'na kayıtlı avukatlar için yürüttüğümüz canlı projeler, uzaktan çalışma modelimizin gerçek sonuç verdiğinin kanıtı. İzmir işletmeleri için de aynı süreç ve kalite geçerli.' },
-  { q: 'GEO (Yapay Zeka Optimizasyonu) İzmir işletmesi için gerekli mi?', a: 'Evet, özellikle turizm ve e-ticaret sektöründe. ChatGPT veya Gemini\'ye "İzmir\'de en iyi X" diye sorulduğunda önerilmek için yapılandırılmış içerik ve otorite sinyalleri gerekiyor — turistlerin ve yeni müşterilerin AI araçlarına giderek daha çok başvurduğu bir dönemdeyiz.' },
+  { q: 'GEO (Yapay Zeka Optimizasyonu) İzmir işletmesi için gerekli mi?', a: 'Evet, özellikle turizm ve e-ticaret sektöründe. ChatGPT veya Gemini\'ye "İzmir\'de en iyi X" diye sorulduğunda alıntılanma olasılığını artıran yapılandırılmış içerik ve otorite sinyalleri gerekiyor — turistlerin ve yeni müşterilerin AI araçlarına giderek daha çok başvurduğu bir dönemdeyiz.' },
 ]
 
 const jsonLd = {

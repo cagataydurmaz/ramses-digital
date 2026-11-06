@@ -53,7 +53,7 @@ const serviceOptions = [
 // Rapor başlığında "seçilen hizmetler" satırı için — displayServices bazen
 // serviceOptions'ta olmayan 'SEO Başlangıç Paketi' anahtarını taşıyabilir.
 const serviceLabels: Record<string, string> = {
-  ...Object.fromEntries(serviceOptions.map((s) => [s.id, s.label])),
+...Object.fromEntries(serviceOptions.map((s) => [s.id, s.label])),
   'SEO Başlangıç Paketi': 'SEO Başlangıç Paketi (Tek Seferlik)',
 }
 
@@ -71,9 +71,9 @@ const serviceIncludes: Record<string, string[]> = {
 
 function applyInline(text: string): string {
   return text
-    .replace(/\*\*(.+?)\*\*/g, '<strong class="text-white font-semibold">$1</strong>')
-    .replace(/\*([^*]+?)\*/g, '<em class="text-zinc-300 not-italic">$1</em>')
-    .replace(/`(.+?)`/g, '<code class="bg-white/[0.06] px-1.5 py-0.5 rounded text-blue-300 text-xs font-mono">$1</code>')
+  .replace(/\*\*(.+?)\*\*/g, '<strong class="text-white font-semibold">$1</strong>')
+  .replace(/\*([^*]+?)\*/g, '<em class="text-zinc-300 not-italic">$1</em>')
+  .replace(/`(.+?)`/g, '<code class="bg-white/[0.06] px-1.5 py-0.5 rounded text-blue-300 text-xs font-mono">$1</code>')
 }
 
 function buildTable(rows: string[]): string {
@@ -576,8 +576,8 @@ export default function TeklifAlCalculator() {
                     // Birden fazla hizmet seçiliyse toplam rakamın altında hangi hizmetin
                     // ne kadarını oluşturduğu görünsün — "hangi ücrete hangisi dahil" net olsun.
                     const priceItems = effectiveServices
-                      .map((s) => ({ s, range: pricing[s]?.[businessSize] }))
-                      .filter((x): x is { s: string; range: NonNullable<typeof x.range> } => !!x.range)
+                    .map((s) => ({ s, range: pricing[s]?.[businessSize] }))
+                    .filter((x): x is { s: string; range: NonNullable<typeof x.range> } => !!x.range)
                     const monthlyItems = priceItems.filter((x) => x.range.unit === 'aylık')
                     const oneTimeItems = priceItems.filter((x) => x.range.unit === 'tek seferlik')
                     return (

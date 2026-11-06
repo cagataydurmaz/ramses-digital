@@ -6,7 +6,7 @@ import RelatedPages from '@/components/RelatedPages'
 import { MapPin, CheckCircle2, ArrowRight, Megaphone, Globe, BarChart3, Search, Mail, Zap, Star, Users, TrendingUp } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Konya Reklam Ajansı | 100+ Proje — Ramses Dijital',
+  title: 'Konya Reklam Ajansı — Ramses Dijital',
   description:
     'Konya\'nın dijital reklam ajansı — tarım makineleri, gıda ve turizm sektörüne özel strateji. Google Ads, SEO ve pazarlama otomasyonu. Ücretsiz teklif alın.',
   alternates: { canonical: 'https://ramsesdigital.com/konya-reklam-ajansi' },
@@ -48,7 +48,7 @@ const faqs = [
   { q: 'Sonuçları ne zaman görmeye başlarım?', a: 'Google Ads 1-2 hafta içinde trafik getirir. SEO için yerel sonuçlar (harita) 2-4 haftada görünür; organik sıralamalar 3-6 ay içinde belirginleşir. Web sitesi hemen yayına girer. Hızlı sonuç almak isteyenler için Google Ads\'i başlangıç stratejisi olarak öneriyoruz.' },
   { q: 'Konya\'nın hangi ilçelerine hizmet veriyorsunuz?', a: 'Selçuklu, Meram, Karatay, Ereğli, Akşehir, Beyşehir, Çumra, Seydişehir ve Ilgın dahil Konya\'nın tüm ilçelerine uzaktan hizmet veriyoruz.' },
   { q: 'Sözleşme şartlarınız nedir?', a: 'Google Ads ve SEO için minimum 3 ay, ideal olarak 6 ay öneriyoruz. Dijital pazarlama kısa vadede değil, birikimiyle sonuç verir. Web tasarım projeleri tek seferlik sözleşmeyle teslim edilir.' },
-  { q: 'Yapay zeka (ChatGPT, Gemini) aramalarında da görünür olabilir miyim?', a: 'Evet, bu GEO (Generative Engine Optimization) olarak adlandırılıyor. Konya\'da sektörünüzü araştıran birinin ChatGPT\'ye sorduğunda sizi önermesi için yapılandırılmış içerik, citation-worthy veriler ve otoriter backlink profili gerekiyor. Tüm SEO paketlerimize GEO stratejisi dahildir.' },
+  { q: 'Yapay zeka (ChatGPT, Gemini) aramalarında da görünür olabilir miyim?', a: 'Evet, bu GEO (Generative Engine Optimization) olarak adlandırılıyor. Konya\'da sektörünüzü araştıran birinin ChatGPT\'ye sorduğunda sizi kaynak göstermesi olasılığını artıran yapılandırılmış içerik, citation-worthy veriler ve otoriter backlink profili gerekiyor. Tüm SEO paketlerimize GEO stratejisi dahildir.' },
   { q: 'Fiziksel olarak Konya\'da ofisiniz var mı?', a: 'Hayır, merkezimiz Kocaeli\'de — Konya\'ya tamamen uzaktan hizmet veriyoruz. Keşif görüşmesi, strateji onayı ve raporlama Google Meet/Zoom üzerinden yürütülüyor.' },
   { q: 'Reklam hesabımız kimin adına açılır?', a: 'Firmanızın adına. Google Ads hesabı sizde açılır, biz yönetici olarak erişiriz. B2B bayi ilişkilerinde sıkça sorulan bir güven meselesi — hesap üzerinde tam kontrol her zaman sizde kalır.' },
 ]

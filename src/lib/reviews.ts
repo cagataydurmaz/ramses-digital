@@ -1,6 +1,6 @@
 // Google yorumları + diğer müşteri referansları — tek kaynak.
-// Hem anasayfadaki kayan yorum şeridi hem de page.tsx'teki
-// AggregateRating/Review şeması (sadece anasayfada, tek yerde) bu diziyi kullanır.
+// Anasayfadaki kayan yorum şeridi bu diziyi kullanır (sadece görünür içerik;
+// Review/AggregateRating şeması YAYINLANMAZ — işletme kendi yorumları için uygun değil).
 // Aynı müşterinin hem Google yorumu hem site referansı olduğu durumlarda
 // (Furkan Arıkan, Mert Anıl Güler) sadece Google yorumu tutuldu.
 export interface CustomerReview {
@@ -62,14 +62,3 @@ export const reviews: CustomerReview[] = [
     date: '2026-04-15',
   },
 ]
-
-// Google Business Profile'daki gerçek toplam yorum sayısı — burada metniyle
-// gösterilen `reviews` dizisinden bağımsız, elle güncellenir (Google'da yorum
-// arttıkça buradan güncellenmeli).
-const GOOGLE_REVIEW_COUNT = 18
-
-export const aggregateRating = {
-  ratingValue: (reviews.reduce((sum, r) => sum + r.rating, 0) / reviews.length).toFixed(1),
-  reviewCount: GOOGLE_REVIEW_COUNT,
-  bestRating: '5',
-}

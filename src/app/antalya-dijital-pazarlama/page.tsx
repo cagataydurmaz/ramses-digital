@@ -6,7 +6,7 @@ import RelatedPages from '@/components/RelatedPages'
 import { MapPin, CheckCircle2, ArrowRight, BarChart3, Search, Zap, Globe, Mail, Megaphone, TrendingUp, Shield, Clock } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Antalya Dijital Pazarlama Ajansı | 100+ Proje — Ramses Dijital',
+  title: 'Antalya Dijital Pazarlama Ajansı — Ramses Dijital',
   description:
     'Antalya\'nın dijital pazarlama ajansı — turizm, gayrimenkul ve tarım ihracatına özel strateji. SEO, Google Ads, web tasarım ve otomasyon. Ücretsiz danışmanlık alın.',
   alternates: { canonical: 'https://ramsesdigital.com/antalya-dijital-pazarlama' },
@@ -89,7 +89,7 @@ const faqs = [
   { q: 'Sosyal medya yönetimi de yapıyor musunuz?', a: 'Post, story ve video içerikleri üretiyor, içerik takvimi ve strateji kuruyoruz — ancak hesap yönetimi ve günlük yorum/DM moderasyonu hizmetlerimiz arasında değil. Odak noktamız ölçülebilir ROI getiren kanallar: Google arama, SEO ve e-posta pazarlama.' },
   { q: 'Antalya\'da referanslarınız var mı?', a: 'Antalya\'da henüz canlı bir referansımız yok — sahte veya abartılı iddialarda bulunmak istemiyoruz. Türkiye genelinde ziyaret edilebilir, gerçek müşteri çalışmalarımızı portföyümüzde görebilirsiniz; hukuk bürosundan e-ticarete, platform projelerinden yerel hizmet işletmelerine kadar.' },
   { q: 'Uzaktan çalışıyor musunuz, yoksa Antalya\'da yerinde mi?', a: 'Tüm hizmetlerimiz uzaktan yürütülüyor. Merkezimiz Kocaeli\'de, fiziksel ofisimiz Antalya\'da yok. Toplantılar Google Meet/Zoom üzerinden, raporlar dijital dashboard ve PDF ile paylaşılıyor.' },
-  { q: 'Yapay zeka reklamcılığı ve GEO nedir, Antalya turizm işletmesi için gerekli mi?', a: 'GEO (Generative Engine Optimization), yabancı turistlerin ChatGPT veya Gemini\'ye "best hotel in Antalya" gibi sorular sorduğunda önerilmek için yapılan optimizasyondur. Bu kanal henüz doymamış — erken hareket eden işletmeler önemli bir avantaj kazanıyor.' },
+  { q: 'Yapay zeka reklamcılığı ve GEO nedir, Antalya turizm işletmesi için gerekli mi?', a: 'GEO (Generative Engine Optimization), yabancı turistlerin ChatGPT veya Gemini\'ye "best hotel in Antalya" gibi sorular sorduğunda alıntılanma olasılığını artırmak için yapılan içerik ve yapı çalışmasıdır. Bu kanal henüz doymamış — erken hareket eden işletmeler önemli bir avantaj kazanıyor.' },
 ]
 
 const jsonLd = {

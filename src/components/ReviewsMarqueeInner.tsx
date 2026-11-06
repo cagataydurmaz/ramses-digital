@@ -1,11 +1,7 @@
-'use client'
-
-import { useEffect, useRef } from 'react'
-import { Quote, Star, ExternalLink } from 'lucide-react'
-import { reviews, aggregateRating } from '@/lib/reviews'
+import { Star, ExternalLink } from 'lucide-react'
+import { reviews } from '@/lib/reviews'
 
 const GOOGLE_REVIEWS_URL = 'https://maps.app.goo.gl/xKzk4Q5VCeK4ePbz6'
-const LOOP_SECONDS = 42 // bir tam döngünün (yarım track genişliği) süresi
 
 function GoogleGIcon({ size = 18 }: { size?: number }) {
   return (
@@ -18,127 +14,80 @@ function GoogleGIcon({ size = 18 }: { size?: number }) {
   )
 }
 
-// JS (requestAnimationFrame) ile sürülen kaydırma — Safari'nin uzun süreli
-// infinite CSS animation'ları compositor'da dondurduğu, evrensel çözümü
-// olmayan bilinen WebKit hatasından tamamen kaçınmak için CSS @keyframes
-// yerine bunu kullanıyoruz. transform'u her frame'de doğrudan biz yazıyoruz.
-export default function ReviewsMarqueeInner({ title = 'Müşterilerimiz Ne Diyor?' }: { title?: string }) {
-  const trackRef = useRef<HTMLDivElement>(null)
-  const offsetRef = useRef(0)
-  const pausedRef = useRef(false)
-
-  useEffect(() => {
-    const track = trackRef.current
-    if (!track) return
-
-    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
-    if (reducedMotion) return
-
-    // setInterval kullanıyoruz — requestAnimationFrame, arka plana alınan/aktif
-    // olmayan sekmelerde bazı tarayıcılarda tamamen durabiliyor (ölçülebilir
-    // şekilde doğrulandı: 13s'de 0 tetiklenme), setInterval ise (kısıtlansa
-    // bile) her koşulda çalışmaya devam ediyor. Gerçek, görünür bir sekmede
-    // tarayıcı setInterval'ı kısıtlamaz — 60fps'e yakın (~16ms) çalışır.
-    // Adım süresine değil, ölçülen gerçek zaman farkına göre ilerliyoruz
-    // (setInterval'ın kendisi hassas periyodik olmadığı için) — bu, kare
-    // aralıkları düzensiz olsa bile hareketin akıcı/pürüzsüz kalmasını sağlar.
-    const TICK_MS = 16
-    let lastTime = Date.now()
-
-    const intervalId = window.setInterval(() => {
-      const now = Date.now()
-      const delta = now - lastTime
-      lastTime = now
-      if (pausedRef.current) return
-
-      const halfWidth = track.scrollWidth / 2
-      if (halfWidth <= 0) return
-      const pxPerMs = halfWidth / (LOOP_SECONDS * 1000)
-      offsetRef.current += pxPerMs * delta
-      if (offsetRef.current >= halfWidth) offsetRef.current -= halfWidth
-      track.style.transform = `translate3d(-${offsetRef.current}px, 0, 0)`
-    }, TICK_MS)
-
-    return () => window.clearInterval(intervalId)
-  }, [])
-
+// Saf CSS kaydırma: içerik iki kez yinelenir, track translateX(-50%) ile kesintisiz
+// döngü yapar (bkz. globals.css.reviews-marquee*). JavaScript gerektirmez.
+// Fare/odak üzerine gelince durur; "prefers-reduced-motion" tercihinde animasyon
+// kapanır ve şerit yatay kaydırılabilir hale gelir.
+function ReviewCards({ hidden = false }: { hidden?: boolean }) {
   return (
-    <section className="relative py-16 sm:py-24 px-6 overflow-hidden">
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="mobile-hide-blur absolute bottom-0 left-[15%] w-[600px] h-[350px] bg-emerald-500/5 rounded-full blur-[130px]" />
-      </div>
+    <div className={`flex shrink-0 ${hidden ? 'reviews-marquee-dup' : ''}`} aria-hidden={hidden || undefined}>
+      {reviews.map((r) => (
+        <figure
+          key={r.name}
+          className="shrink-0 w-[280px] sm:w-[300px] mr-4 bg-[#0D1225] border border-white/[0.06] rounded-xl px-4 py-4 text-center"
+        >
+          <div className="flex items-center justify-center gap-1.5 mb-2.5">
+            <div className="flex gap-0.5">
+              {Array.from({ length: r.rating }).map((_, j) => (
+                <Star key={j} size={11} className="text-yellow-400 fill-yellow-400" />
+              ))}
+            </div>
+            {r.source === 'google' && <GoogleGIcon size={13} />}
+          </div>
+          <blockquote className="text-zinc-300 text-[12.5px] leading-relaxed mb-3">
+            &ldquo;{r.text}&rdquo;
+          </blockquote>
+          <figcaption>
+            <p className="text-white font-semibold text-xs">{r.name}</p>
+            {r.subtitle && <p className="text-zinc-500 text-[11px] mt-0.5 leading-snug">{r.subtitle}</p>}
+          </figcaption>
+        </figure>
+      ))}
+    </div>
+  )
+}
+
+export default function ReviewsMarqueeInner({ title = 'Müşterilerimiz Ne Diyor?' }: { title?: string }) {
+  return (
+    <section className="relative py-14 sm:py-20 px-6 overflow-hidden">
       <div className="relative max-w-7xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-10">
           <p className="flex items-center justify-center gap-2 text-blue-500 text-sm font-medium tracking-wider uppercase mb-3">
             <GoogleGIcon size={16} />
             Google Yorumları
           </p>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-5">
             {title}
           </h2>
           <div className="flex items-center justify-center gap-2">
             <div className="flex gap-0.5">
-              {Array.from({ length: Number(aggregateRating.bestRating) }).map((_, i) => (
-                <Star key={i} size={18} className="text-yellow-400 fill-yellow-400" />
+              {Array.from({ length: 5 }).map((_, i) => (
+                <Star key={i} size={16} className="text-yellow-400 fill-yellow-400" />
               ))}
             </div>
             <span className="text-zinc-300 text-sm">
-              {aggregateRating.ratingValue} · {aggregateRating.reviewCount} Google yorumu
+              Google&apos;dan müşteri yorumları
             </span>
           </div>
         </div>
 
-        <div
-          className="marquee-viewport"
-          onMouseEnter={() => { pausedRef.current = true }}
-          onMouseLeave={() => { pausedRef.current = false }}
-        >
-          <div ref={trackRef} className="marquee-track">
-            {[...reviews, ...reviews].map((r, i) => (
-              <div
-                key={`${r.name}-${i}`}
-                className="group relative shrink-0 w-[300px] sm:w-[360px] mr-5 bg-[#0D1225] border border-white/[0.06] rounded-2xl p-6 card-hover overflow-hidden"
-              >
-                <Quote
-                  size={64}
-                  className="absolute -top-2 -right-2 text-blue-500/[0.06] group-hover:text-blue-500/10 transition-colors"
-                  fill="currentColor"
-                />
-                <div className="relative flex items-center justify-between mb-4">
-                  <div className="flex gap-0.5">
-                    {Array.from({ length: r.rating }).map((_, j) => (
-                      <Star key={j} size={14} className="text-yellow-400 fill-yellow-400" />
-                    ))}
-                  </div>
-                  {r.source === 'google' && <GoogleGIcon size={18} />}
-                </div>
-                <p className="relative text-zinc-300 text-sm leading-relaxed mb-5 line-clamp-4">
-                  &ldquo;{r.text}&rdquo;
-                </p>
-                <div className="relative flex items-center gap-3">
-                  <div className="w-9 h-9 shrink-0 rounded-full bg-gradient-to-br from-blue-500 to-violet-500 flex items-center justify-center text-white text-xs font-bold">
-                    {r.name.charAt(0)}
-                  </div>
-                  <div>
-                    <p className="text-white font-semibold text-sm">{r.name}</p>
-                    {r.subtitle && <p className="text-zinc-400 text-xs mt-0.5">{r.subtitle}</p>}
-                  </div>
-                </div>
-              </div>
-            ))}
+        <div className="reviews-marquee" tabIndex={0} role="region" aria-label="Müşteri yorumları">
+          <div className="reviews-marquee-track">
+            <ReviewCards />
+            <ReviewCards hidden />
           </div>
         </div>
 
-        <div className="text-center mt-12">
+        <div className="text-center mt-8">
           <a
             href={GOOGLE_REVIEWS_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="group inline-flex items-center gap-2 border border-blue-500/40 hover:border-blue-500 text-blue-400 hover:text-blue-300 px-8 py-4 rounded-full font-medium transition-all"
+            className="group inline-flex items-center gap-2 border border-blue-500/40 hover:border-blue-500 text-blue-400 hover:text-blue-300 px-6 py-3 rounded-full text-sm font-medium transition-all"
           >
-            <GoogleGIcon size={16} />
-            Google&apos;da Tüm Yorumları Gör
-            <ExternalLink size={14} className="group-hover:translate-x-1 transition-transform" />
+            <GoogleGIcon size={15} />
+            Google&apos;daki tüm yorumlar
+            <ExternalLink size={13} className="group-hover:translate-x-0.5 transition-transform" />
           </a>
         </div>
       </div>

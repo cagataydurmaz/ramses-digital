@@ -6,7 +6,7 @@ import RelatedPages from '@/components/RelatedPages'
 import { MapPin, CheckCircle2, ArrowRight, Megaphone, Globe, BarChart3, Search, Mail, Zap, Star, Users, TrendingUp } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'İstanbul Reklam Ajansı | 100+ Proje — Ramses Dijital',
+  title: 'İstanbul Reklam Ajansı — Ramses Dijital',
   description:
     'İstanbul\'un dijital reklam ajansı — gerçek müşteri, gerçek sonuç. Google Ads, SEO ve sosyal medya danışmanlığı. Kadıköy, Beşiktaş, Şişli dahil tüm İstanbul\'a hizmet. Ücretsiz danışmanlık alın.',
   alternates: { canonical: 'https://ramsesdigital.com/istanbul-reklam-ajansi' },

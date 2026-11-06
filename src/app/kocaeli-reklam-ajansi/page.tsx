@@ -150,7 +150,7 @@ export default function KocaeliReklamAjansiPage() {
         <div className="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6">
           {[
             { value: '10', label: 'Kocaeli İlçesine Hizmet' },
-            { value: '%300+', label: 'Ortalama Trafik Artışı' },
+            { value: 'Aylık', label: 'Şeffaf Raporlama' },
             { value: '6+', label: 'Gerçek Referans' },
             { value: '6+', label: 'Hizmet Kategorisi' },
           ].map(({ value, label }) => (

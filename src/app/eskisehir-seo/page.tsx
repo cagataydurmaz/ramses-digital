@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const features = [
   { icon: Search, title: 'Eskişehir Yerel SEO', desc: '"Odunpazarı + hizmetiniz", "Tepebaşı + hizmetiniz" gibi ilçe bazlı aramalarda Google harita paketine girin. İki büyük üniversitenin öğrenci nüfusuna ve sanayi firmalarına özel anahtar kelime stratejisi.' },
   { icon: FileText, title: 'Teknik SEO & Core Web Vitals', desc: 'Site hızı, mobil uyum, indexlenebilirlik ve Core Web Vitals optimizasyonu — Eskişehir\'in genç, mobil-öncelikli kullanıcı kitlesinde teknik fark belirleyici.' },
-  { icon: Zap, title: 'GEO & AEO', desc: 'ChatGPT, Gemini ve Perplexity\'de "Eskişehir\'de güvenilir X" aramasında önerilmek için entity-based, otorite odaklı içerik.' },
+  { icon: Zap, title: 'GEO & AEO', desc: 'Yapay zekâ araçlarının ve arama özetlerinin alıntılayabileceği net, yapılandırılmış içerik. Sonuç garanti edilmez.' },
   { icon: Link2, title: 'Sanayi & Eğitim Odaklı Backlink İnşası', desc: 'Eskişehir\'in demiryolu/havacılık sanayii ve eğitim sektörüne özgü ticaret odaları, sektörel medya ve dizinlerden yüksek otoriteli link profili.' },
   { icon: BarChart3, title: 'Sektöre Özel İçerik Stratejisi', desc: 'Öğrenciye hitap eden işletmeniz için genç kitle odaklı içerik, sanayi firmanız için B2B SEO — jenerik değil, sektöre özel mimari.' },
   { icon: Award, title: 'İlçe Bazlı Optimizasyon', desc: 'Odunpazarı, Tepebaşı, Sivrihisar, Çifteler, Alpu — her ilçeye özel sayfa ve GBP stratejisi.' },
@@ -37,7 +37,7 @@ const faqs = [
   { q: 'Eskişehir SEO paketi ne kadara mal olur?', a: 'Kapsam sektöre ve rekabet seviyesine göre değişir: teknik audit, anahtar kelime araştırması, aylık içerik üretimi, GBP yönetimi, backlink stratejisi ve raporlama. Net fiyat bilgisini ücretsiz danışmanlıkta netleştiriyoruz.' },
   { q: 'Fiziksel olarak Eskişehir\'de misiniz?', a: 'Hayır, merkezimiz Kocaeli\'de — Eskişehir\'e tamamen uzaktan hizmet veriyoruz. Keşif görüşmesi, strateji onayı ve raporlama Google Meet/Zoom üzerinden yürütülüyor. Türkiye genelinde canlı, ziyaret edilebilir referanslarımızı portföyümüzde inceleyebilirsiniz.' },
   { q: 'Eskişehir\'deki yerleşik ajanslarla nasıl rekabet edebilirim?', a: 'Yerleşik ajansların çoğu şablon strateji uyguluyor ve öğrenci pazarı/sanayi gibi farklı sektörlere jenerik içerikle yaklaşıyor. Biz her müşteriye sektörüne özel strateji kuran, mühendislik disipliniyle çalışan bir ekibiz — bu da daha hızlı iletişim ve daha isabetli anahtar kelime hedeflemesi anlamına geliyor.' },
-  { q: 'GEO (Yapay Zeka Optimizasyonu) Eskişehir işletmesi için neden kritik?', a: 'GEO, ChatGPT ve Gemini gibi araçlarda "Eskişehir\'de güvenilir X önerir misin?" sorusuna cevap olarak çıkmayı hedefliyor. Eskişehir\'in genç, teknolojiye yatkın nüfusu göz önüne alındığında bu kanal özellikle değerli — öğrenciler AI araçlarını yoğun kullanıyor, erken hareket edenler avantajlı.' },
+  { q: 'GEO (Yapay Zeka Optimizasyonu) Eskişehir işletmesi için neden kritik?', a: 'GEO, ChatGPT ve Gemini gibi araçlarda "Eskişehir\'de güvenilir X önerir misin?" sorusuna verilen cevaplarda kaynak olarak yer alma olasılığını artırmayı hedefler. Eskişehir\'in genç, teknolojiye yatkın nüfusu göz önüne alındığında bu kanal özellikle değerli — öğrenciler AI araçlarını yoğun kullanıyor, erken hareket edenler avantajlı.' },
 ]
 
 const jsonLd = {

@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const features = [
   { icon: Search, title: 'Ankara Yerel SEO', desc: '"Çankaya + hizmetiniz", "Keçiören + hizmetiniz" gibi ilçe bazlı aramalarda Google harita paketine girin.' },
   { icon: FileText, title: 'Teknik SEO & Core Web Vitals', desc: 'Site hızı, mobil uyum, indexlenebilirlik ve Core Web Vitals optimizasyonu — kurumsal ve kamu odaklı ziyaretçi kitlesinde güven inşa eder.' },
-  { icon: Zap, title: 'GEO & AEO', desc: 'ChatGPT, Gemini ve Perplexity\'de "Ankara\'da güvenilir X" aramasında önerilmek için entity-based, otorite odaklı içerik.' },
+  { icon: Zap, title: 'GEO & AEO', desc: 'Yapay zekâ araçlarının ve arama özetlerinin alıntılayabileceği net, yapılandırılmış içerik. Sonuç garanti edilmez.' },
   { icon: Link2, title: 'Kurumsal Backlink İnşası', desc: 'Ankara merkezli sektörel dernekler, meslek odaları ve B2B dizinlerinden yüksek otoriteli link profili.' },
   { icon: BarChart3, title: 'B2B & Kurumsal İçerik Stratejisi', desc: 'Ankara\'nın kamu, savunma sanayi ve eğitim ağırlıklı ekonomisine uygun, otorite inşa eden içerik mimarisi.' },
   { icon: Award, title: 'İlçe Bazlı Optimizasyon', desc: 'Çankaya, Keçiören, Yenimahalle, Mamak, Etimesgut, Sincan — her ilçeye özel sayfa ve GBP stratejisi.' },
@@ -36,7 +36,7 @@ const faqs = [
   { q: 'Ankara\'da hangi sektörler SEO\'dan en çok fayda görüyor?', a: 'Hukuk ve danışmanlık büroları, sağlık (diş hekimi, fizyoterapi), eğitim/kurs merkezleri (üniversite şehri olması nedeniyle), B2B tedarikçiler ve kamu ihale danışmanlığı Ankara\'da yüksek arama hacmine sahip. Kurumsal güven sinyalleri bu sektörlerde belirleyici.' },
   { q: 'Ankara SEO paketi ne kadara mal olur?', a: 'Sektöre ve ilçe kapsamına göre değişir. Kapsam: teknik audit, anahtar kelime araştırması, aylık içerik üretimi, GBP yönetimi, backlink stratejisi ve raporlama. Ücretsiz danışmanlıkta işletmenize özel fiyat sunuyoruz.' },
   { q: 'Fiziksel olarak Ankara\'da mısınız?', a: 'Hayır, merkezimiz Kocaeli\'de — tüm çalışmalar uzaktan yürütülüyor. İstanbul Barosu\'na kayıtlı avukatlar için yürüttüğümüz canlı projeler (portföyümüzde), uzaktan çalışma modelimizin gerçek sonuç verdiğinin kanıtı. Ankara\'daki işletmeler için de aynı süreç ve aynı kalite geçerli.' },
-  { q: 'GEO (Yapay Zeka Optimizasyonu) Ankara işletmesi için gerekli mi?', a: 'Evet, özellikle B2B ve kurumsal hizmetlerde. ChatGPT veya Gemini\'ye "Ankara\'da güvenilir bir X önerir misin?" diye sorulduğunda önerilmek için yapılandırılmış içerik ve otorite sinyalleri gerekiyor — bu kanal Ankara\'nın kurumsal pazarında henüz doymamış durumda.' },
+  { q: 'GEO (Yapay Zeka Optimizasyonu) Ankara işletmesi için gerekli mi?', a: 'Evet, özellikle B2B ve kurumsal hizmetlerde. ChatGPT veya Gemini\'ye "Ankara\'da güvenilir bir X önerir misin?" diye sorulduğunda alıntılanma olasılığını artıran yapılandırılmış içerik ve otorite sinyalleri gerekiyor — bu kanal Ankara\'nın kurumsal pazarında henüz doymamış durumda.' },
 ]
 
 const jsonLd = {

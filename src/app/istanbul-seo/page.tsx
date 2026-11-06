@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 const features = [
   { icon: Search, title: 'İstanbul Yerel SEO', desc: '"Kadıköy + hizmetiniz", "Beşiktaş + hizmetiniz" gibi ilçe bazlı aramalarda Google harita paketine girin. 39 ilçeye özel anahtar kelime stratejisi.' },
   { icon: FileText, title: 'Teknik SEO & Core Web Vitals', desc: 'Site hızı, mobil uyum, indexlenebilirlik ve Core Web Vitals optimizasyonu — İstanbul\'un yoğun rekabetinde teknik fark belirleyici.' },
-  { icon: Zap, title: 'GEO & AEO', desc: 'ChatGPT, Gemini ve Perplexity\'de "İstanbul\'da güvenilir X" aramasında önerilmek için entity-based, otorite odaklı içerik.' },
+  { icon: Zap, title: 'GEO & AEO', desc: 'Yapay zekâ araçlarının ve arama özetlerinin alıntılayabileceği net, yapılandırılmış içerik. Sonuç garanti edilmez.' },
   { icon: Link2, title: 'Kurumsal Backlink İnşası', desc: 'İstanbul merkezli sektörel medya, ticaret odaları ve dizinlerden yüksek otoriteli link profili.' },
   { icon: BarChart3, title: 'Yüksek Hacimli İçerik Stratejisi', desc: 'İstanbul\'un arama hacmi Türkiye\'nin en yükseği — doğru içerik mimarisiyle bu hacmi organik trafiğe çevirin.' },
   { icon: Award, title: 'İlçe Bazlı Optimizasyon', desc: 'Kadıköy, Beşiktaş, Şişli, Bakırköy, Ataşehir, Üsküdar, Beylikdüzü — her ilçeye özel sayfa ve GBP stratejisi.' },
@@ -40,7 +40,7 @@ const faqs = [
   { q: 'İstanbul SEO paketi ne kadara mal olur?', a: 'İstanbul\'daki rekabet seviyesi nedeniyle paketler genellikle Kocaeli\'ye göre daha kapsamlı kurgulanır. Kapsam: teknik audit, anahtar kelime araştırması, aylık içerik üretimi, GBP yönetimi, backlink stratejisi ve raporlama. Ücretsiz danışmanlıkta net fiyat sunuyoruz.' },
   { q: 'Fiziksel olarak İstanbul\'da mısınız?', a: 'Hayır, merkezimiz Kocaeli\'de — ama gerçek İstanbul müşterilerimiz var. Bakırköy ve İstanbul Barosu\'na kayıtlı avukatlar için web tasarım ve SEO çalışması yürüttük (portföyümüzde canlı örnekleri var). Tüm süreç uzaktan yürütülüyor; Kadıköy\'den Beylikdüzü\'ne İstanbul\'un her ilçesinden müşterimiz olabilir.' },
   { q: 'Büyük İstanbul ajanslarıyla nasıl rekabet edebilirim?', a: 'Büyük ajansların çoğu şablon strateji uyguluyor ve küçük/orta ölçekli müşterilere düşük öncelik veriyor. Biz mühendislik disipliniyle çalışan, her müşteriye özel strateji kuran daha küçük bir ekibiz — bu da daha hızlı iletişim, daha esnek strateji ve şeffaf raporlama anlamına geliyor.' },
-  { q: 'GEO (Yapay Zeka Optimizasyonu) İstanbul işletmesi için neden kritik?', a: 'İstanbul\'daki yoğun rekabet nedeniyle geleneksel Google SEO\'da üst sıraya çıkmak zaman alıyor. GEO, ChatGPT ve Gemini gibi araçlarda "İstanbul\'da güvenilir X önerir misin?" sorusuna cevap olarak çıkmayı hedefliyor — bu kanal henüz doymamış durumda, erken hareket edenler avantajlı.' },
+  { q: 'GEO (Yapay Zeka Optimizasyonu) İstanbul işletmesi için neden kritik?', a: 'İstanbul\'daki yoğun rekabet nedeniyle geleneksel Google SEO\'da üst sıraya çıkmak zaman alıyor. GEO, ChatGPT ve Gemini gibi araçlarda "İstanbul\'da güvenilir X önerir misin?" sorusuna verilen cevaplarda kaynak olarak yer alma olasılığını artırmayı hedefler — bu kanal henüz doymamış durumda, erken hareket edenler avantajlı.' },
 ]
 
 const jsonLd = {

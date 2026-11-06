@@ -22,7 +22,7 @@ const features = [
   { icon: Globe2, title: 'Çok Dilli Turizm SEO\'su', desc: 'Butik otel, tatil köyü ve tur operatörleri için İngilizce, Rusça ve Almanca hedefli sayfa yapısı — sezonluk arama hacmini organik trafiğe çevirin.' },
   { icon: Search, title: 'Antalya Yerel SEO', desc: '"Muratpaşa + hizmetiniz", "Alanya + hizmetiniz" gibi ilçe bazlı aramalarda Google harita paketine girin. Turizm sezonuna göre kampanyalı içerik takvimi.' },
   { icon: FileText, title: 'Gayrimenkul SEO İçeriği', desc: 'Yabancıya gayrimenkul satışı yapan ofisler için İngilizce/Rusça anahtar kelime araştırması ve emlak ilan sayfası SEO\'su.' },
-  { icon: Zap, title: 'GEO & AEO', desc: 'ChatGPT, Gemini ve Perplexity\'de "Antalya\'da güvenilir X" veya "best real estate agency in Antalya" aramasında önerilmek için entity-based içerik.' },
+  { icon: Zap, title: 'GEO & AEO', desc: 'Yapay zekâ araçlarının ve arama özetlerinin alıntılayabileceği net, yapılandırılmış içerik. Sonuç garanti edilmez.' },
   { icon: Link2, title: 'Sektörel Backlink İnşası', desc: 'Turizm dizinleri, seyahat blogları ve yerel ticaret odalarından yüksek otoriteli, sektöre özel link profili.' },
   { icon: Award, title: 'İlçe Bazlı Optimizasyon', desc: 'Muratpaşa, Konyaaltı, Kepez, Alanya, Manavgat, Serik, Kaş, Side — her ilçeye özel sayfa ve Google Business Profile stratejisi.' },
 ]

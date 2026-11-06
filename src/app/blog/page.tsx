@@ -3,7 +3,7 @@ import BlogListClient from '@/components/BlogListClient'
 
 export default function BlogPage() {
   // `content` HTML alanı listelemede kullanılmıyor — client bundle'a taşınmasın diye burada ayıklanıyor.
-  const postsMeta: PostMeta[] = posts.map(({ content: _content, ...meta }) => meta)
+  const postsMeta: PostMeta[] = posts.map(({ content: _content,...meta }) => meta)
 
   const jsonLd = {
     '@context': 'https://schema.org',

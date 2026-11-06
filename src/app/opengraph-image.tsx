@@ -114,6 +114,6 @@ export default async function Image() {
         </div>
       </div>
     ),
-    { ...size }
+    {...size }
   )
 }
