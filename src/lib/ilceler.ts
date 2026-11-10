@@ -362,11 +362,132 @@ export const ilceler: Ilce[] = [
       { ad: 'Restoran ve yerel esnaf', oneri: 'Menü, konum ve harita profili.' },
     ],
     aramalar: ['yalova web tasarım', 'yalova seo', 'çınarcık otel web sitesi', 'yalova termal otel'],
-    komsular: ['karamursel', 'gebze', 'golcuk'],
+    komsular: ['cinarcik', 'armutlu', 'altinova', 'ciftlikkoy', 'yalova-termal', 'karamursel'],
     sss: [
       { q: 'Yalova\'da nüfus az, internetten müşteri bulunur mu?', a: 'Yerel nüfustan çok turist ve İstanbul\'dan gelen ziyaretçiyi hedeflemek gerekir. Bu kitle internetten arama yaparak karar veriyor.' },
       { q: 'Termal turizmde rakipler kimler?', a: 'Rezervasyon platformları ve büyük otel zincirleri. Ancak dar ve özgün aramalarda (örn. belirli bir hizmet veya konum) küçük işletmeler de öne çıkabiliyor.' },
-      { q: 'Çınarcık, Armutlu ve Altınova için ayrı sayfa gerekir mi?', a: 'Her biri farklı bir arama kitlesine sahip. Gerçek içerik hazırlanacaksa ayrı sayfalar iyi çalışır.' },
+      { q: 'Çınarcık, Armutlu ve Altınova için ayrı sayfa gerekir mi?', a: 'Her biri farklı bir arama kitlesine sahip: Çınarcık ve Armutlu tatil, Altınova sanayi, Termal ise sağlık ve dinlenme odaklı. Bu yüzden her ilçe için ayrı bir rehber sayfamız var, bu sayfalardan işletmenize uygun olanı inceleyebilirsiniz.' },
+    ],
+  },
+  {
+    slug: 'cinarcik',
+    name: 'Çınarcık',
+    il: 'Yalova',
+    tur: 'Yalova ilçesi',
+    intro:
+      'Çınarcık, Marmara kıyısındaki sahil beldesi kimliğiyle yaz aylarında nüfusu belirgin biçimde artan bir ilçe. İstanbul ve çevre illerden gelen tatilciler karar vermeden önce internette arama yapıyor; rezervasyonu ve ilk izlenimi sitesi ve harita profili belirliyor.',
+    ekonomi:
+      'Otel, pansiyon, apart ve yazlık siteleri ilçenin ana gelir kaynağı. Bunlara kıyı restoranları, balık lokantaları, günübirlik tesisler ve emlak ofisleri eşlik ediyor. Talep sezonluk: ilkbaharda tatil kararı ve rezervasyon aramaları başlıyor, bu yüzden içeriklerin sezondan önce yayında olması gerekiyor.',
+    sektorler: [
+      { ad: 'Otel, pansiyon ve apart konaklama', oneri: 'Oda sayfaları, doğrudan rezervasyon formu, "çocuklu aileye uygun", "denize sıfır" gibi özelliklere göre içerik ve yorum akışı.' },
+      { ad: 'Yazlık satış ve kiralama', oneri: 'Mahalle ve site bazlı ilan sayfaları, dönemsel kiralama bilgisi, sezon öncesi içerik yayını.' },
+      { ad: 'Restoran, balık lokantası ve plaj işletmeleri', oneri: 'Menü ve rezervasyon sayfası, harita fotoğrafları, hafta sonu ve yaz sezonu için güncel içerik.' },
+      { ad: 'Tekne turu, spor ve aktivite hizmetleri', oneri: 'Paket ve fiyat talep sayfaları, mevsimlik takvim, WhatsApp ile hızlı iletişim.' },
+      { ad: 'Yerel esnaf ve hizmet', oneri: 'Hızlı açılan tanıtım sitesi, doğru Google profili, telefonla tek dokunuşla arama.' },
+    ],
+    aramalar: ['çınarcık web tasarım', 'çınarcık otel web sitesi', 'çınarcık emlak sitesi', 'çınarcık yazlık kiralama'],
+    komsular: ['yalova', 'armutlu', 'yalova-termal'],
+    sss: [
+      { q: 'Çınarcık\'ta sezon dışında site gerekli mi?', a: 'Evet, çünkü tatil kararı ve rezervasyon aramaları sezondan aylar önce başlıyor. Sitenin ve Google profilinin ilkbahardan önce hazır olması, sezonun ilk haftasında dolu olmayı etkiliyor.' },
+      { q: 'Rezervasyon platformlarına komisyon veriyorum, siteyle azalır mı?', a: 'Tamamen ortadan kalkmaz ama doğrudan rezervasyon payı artırılabilir. Güçlü bir site, doğru bilgi ve yorumlar misafirin sizi doğrudan aramasını kolaylaştırır.' },
+      { q: 'Çınarcık için hangi aramaları hedeflemek mantıklı?', a: 'Geniş aramalar ("Çınarcık otel") rekabetli; özellik ve konum odaklı aramalar (denize sıfır, çocuklu aile, belirli bir mahalle) daha ulaşılabilir. Hedefler işletmenin gerçek özelliklerine göre seçilir.' },
+      { q: 'Yazlık satan bir emlakçıyım, ne tür sayfalar işe yarar?', a: 'Mahalle ve site rehberleri, gerçek fotoğraflı ilanlar, ulaşım ve çevre bilgisi. Şablon metinle çoğaltılmış sayfalar yerine, her biri için gerçek bilgi içeren sayfalar tercih edilir.' },
+    ],
+  },
+  {
+    slug: 'armutlu',
+    name: 'Armutlu',
+    il: 'Yalova',
+    tur: 'Yalova ilçesi',
+    intro:
+      'Armutlu, deniz ve ormanın bir arada olduğu, tatil ve yazlık odaklı bir yarımada ilçesi. Sakin ve doğa odaklı tatil arayanlar ilçeyi internetteki fotoğraflar, yorumlar ve rezervasyon bilgileriyle seçiyor.',
+    ekonomi:
+      'Yazlık siteler, butik otel ve pansiyonlar, kamp ve günübirlik alanlar, kıyıdaki restoranlar ve emlak ilçenin ekonomisini oluşturuyor. Yerel nüfus azken yaz nüfusu hızla artıyor; müşteri çoğunlukla ilçe dışından geliyor ve karar verirken internete güveniyor.',
+    sektorler: [
+      { ad: 'Butik otel, pansiyon ve kamp', oneri: 'Doğal ortamı öne çıkaran fotoğraf ağırlıklı sayfalar, rezervasyon formu, ulaşım ve çevre bilgisi.' },
+      { ad: 'Yazlık satış ve kiralama', oneri: 'Mahalle ve site bazlı ilan sayfaları, dönemsel kiralama ve çevre rehberi.' },
+      { ad: 'Restoran ve kıyı işletmeleri', oneri: 'Menü, konum ve rezervasyon, hafta sonu için güncel harita fotoğrafları.' },
+      { ad: 'Doğa ve açık hava hizmetleri', oneri: 'Yürüyüş, tekne ve etkinlik paketleri için talep sayfaları ve mevsimlik içerik takvimi.' },
+      { ad: 'Yerel esnaf ve hizmet', oneri: 'Basit ama hızlı bir tanıtım sitesi ve doğrulanmış Google profili.' },
+    ],
+    aramalar: ['armutlu web tasarım', 'armutlu otel web sitesi', 'armutlu emlak', 'armutlu yazlık kiralama'],
+    komsular: ['cinarcik', 'yalova', 'karamursel'],
+    sss: [
+      { q: 'Armutlu gibi küçük bir ilçede internetten müşteri gelir mi?', a: 'Müşterinin büyük kısmı ilçe dışından geliyor: İstanbul, Bursa ve çevre iller. Bu kitle tatil yerini internette araştırarak seçtiği için ilçe adının geçtiği aramalarda görünmek doğrudan rezervasyona dönüşebilir.' },
+      { q: 'Fotoğrafın önemi ne kadar?', a: 'Doğa odaklı tatilde fotoğraf kararın ana belirleyicisi. Gerçek, güncel ve işletmeye ait fotoğraflar hem site hem Google profili için önceliklidir; stok veya yapay zekâ görselleri güven kaybettirir.' },
+      { q: 'Sezon öncesi ne zaman başlamalıyım?', a: 'Yaz sezonu için kış sonunda ya da ilkbahar başında. Arama motorlarının yeni içeriği indeksleyip güven kazanması haftalar sürebiliyor.' },
+    ],
+  },
+  {
+    slug: 'altinova',
+    name: 'Altınova',
+    il: 'Yalova',
+    tur: 'Yalova ilçesi',
+    intro:
+      'Altınova, Yalova\'nın İstanbul tarafındaki kapısı ve ilin sanayi ile tersane faaliyetlerinin yoğun olduğu ilçesi. Burada aramalar tatilden çok iş odaklı: tedarikçi, servis ve kurumsal hizmet arayan firmalar ilçe adıyla arama yapıyor.',
+    ekonomi:
+      'Gemi inşa ve tersane faaliyetleri ile bunlara bağlı yan sanayi, metal işleme ve lojistik ilçenin iş yapısında öne çıkıyor. Hersek Lagünü çevresi günübirlik ziyaret ve doğa turizmi için de arama çekiyor. Tarım ve sera üretimi de ilçenin geleneksel gelir kalemleri arasında.',
+    sektorler: [
+      { ad: 'Tersane yan sanayi ve metal işleme', oneri: 'Hizmet ve kapasite sayfaları, referans ve sertifika bölümü, teklif talep formu; İngilizce özet sayfa ihracat için faydalı.' },
+      { ad: 'Endüstriyel servis ve bakım', oneri: 'Acil servis ve çağrı sayfaları, telefon ve WhatsApp ile hızlı iletişim, harita kaydı.' },
+      { ad: 'Lojistik ve nakliye', oneri: 'Hizmet bölgeleri, araç ve kapasite bilgisi, "Altınova nakliye" gibi yerel aramalara yönelik içerik.' },
+      { ad: 'Tarım ve sera ürünleri', oneri: 'Ürün katalogu, toptan satış talep formu, hikâye odaklı üretici sayfası.' },
+      { ad: 'Yerel esnaf ve hizmet', oneri: 'Hızlı tanıtım sitesi ve doğrulanmış Google profili.' },
+    ],
+    aramalar: ['altınova web tasarım', 'altınova kurumsal web sitesi', 'altınova nakliye firması', 'altınova sanayi seo'],
+    komsular: ['yalova', 'ciftlikkoy', 'gebze'],
+    sss: [
+      { q: 'B2B bir firmayım, hangi sayfalar şart?', a: 'Hizmet ve ürün sayfaları, kapasite ve sertifika bilgisi, gerçek referanslar ve teklif formu. Alıcı karar vermeden önce firmanın gerçek ve kurumsal olduğunu görmek ister.' },
+      { q: 'İngilizce sayfa gerekli mi?', a: 'Yurt dışı alıcıyla çalışıyorsanız evet. Aksi halde önce güçlü bir Türkçe yapı kurup sonra İngilizce özet ya da hizmet sayfaları eklemek daha verimli.' },
+      { q: 'Gebze ve İstanbul tarafındaki rakiplerle nasıl yarışırım?', a: 'Genel aramalarda büyük şehirlerin rakipleriyle yarışmak zor; ama "Altınova + hizmet" gibi dar aramalarda daha az rekabet var. Hedef kitleniz Altınova çevresindeyse yerel sayfa ve harita kaydı en hızlı yol.' },
+    ],
+  },
+  {
+    slug: 'ciftlikkoy',
+    name: 'Çiftlikköy',
+    il: 'Yalova',
+    tur: 'Yalova ilçesi',
+    intro:
+      'Çiftlikköy, Yalova merkeze komşu, konut, küçük sanayi ve tarımın bir arada olduğu ilçe. Yerel hizmet aramaları (usta, servis, klinik, kurs) mahalle düzeyinde yapılıyor ve bu aramalarda rekabet çok düşük.',
+    ekonomi:
+      'Konut bölgeleri büyüdükçe sağlık, eğitim, güzellik, oto servis ve ev hizmetleri gibi gündelik ihtiyaçlar için ilçe adıyla arama artıyor. Bunun yanında küçük üretim atölyeleri ve tarımsal faaliyetler de ilçenin ekonomisinde yer alıyor.',
+    sektorler: [
+      { ad: 'Sağlık, güzellik ve eğitim', oneri: 'Randevu sayfası, hizmet başına ayrı sayfa, yorum yönetimi ve harita profili.' },
+      { ad: 'Oto servis ve teknik hizmetler', oneri: 'Hizmet ve fiyat bilgisi sayfaları, çalışma saatleri, WhatsApp ile hızlı randevu.' },
+      { ad: 'Emlak ve inşaat', oneri: 'Mahalle rehberi, proje ve ilan sayfaları, gerçek fotoğraflar.' },
+      { ad: 'Küçük üretim ve tarım', oneri: 'Ürün sayfaları, katalog ve toptan satış talep formu.' },
+      { ad: 'Yerel esnaf', oneri: 'Hızlı tanıtım sitesi, doğrulanmış Google profili ve telefonla tek dokunuşla arama.' },
+    ],
+    aramalar: ['çiftlikköy web tasarım', 'çiftlikköy oto servis', 'çiftlikköy emlak', 'çiftlikköy klinik web sitesi'],
+    komsular: ['yalova', 'altinova', 'yalova-termal'],
+    sss: [
+      { q: 'Küçük bir ilçede arama hacmi çok düşük değil mi?', a: 'Hacim büyük şehirlerden düşük, ama rekabet de çok az. Birkaç iyi hazırlanmış sayfa ve doğru Google profiliyle ilk sayfaya girmek, rekabetli ilçelere göre çok daha ulaşılabilir.' },
+      { q: 'Sadece Google haritada görünmek yeter mi?', a: 'Yerel hizmetlerde haritadaki görünürlük önemli ama sitesi olmayan bir profil zayıf kalır. İkisi birlikte çalışınca ilçe aramalarında daha güçlü sonuç alınır.' },
+      { q: 'Site ne kadar sürede yayına girer?', a: 'Basit bir kurumsal tanıtım sitesi genelde 2-3 hafta içinde yayına alınır; kapsama göre bu süre değişir.' },
+    ],
+  },
+  {
+    slug: 'yalova-termal',
+    name: 'Yalova Termal',
+    il: 'Yalova',
+    tur: 'Yalova ilçesi',
+    intro:
+      'Termal, kaplıcaları ve sağlık-dinlenme turizmiyle Yalova\'nın en bilinen ilçelerinden biri. Misafirler genellikle "termal otel", "kaplıca" ve "spa" aramalarıyla geliyor; arama kararı fiyattan çok bilgi, fotoğraf ve yorumlara dayanıyor.',
+    ekonomi:
+      'Termal oteller, kaplıca tesisleri, spa merkezleri, restoranlar ve butik konaklama ilçenin ana iş kolları. İstanbul, Bursa, Kocaeli ve çevre illerden hafta sonu ve kış sezonunda gelen ziyaretçiler önemli bir talep yaratıyor; kış aylarında da arama hacmi yüksek kalıyor.',
+    sektorler: [
+      { ad: 'Termal otel ve kaplıca tesisleri', oneri: 'Paket, oda ve hizmet sayfaları, doğrudan rezervasyon, sağlık ve dinlenme odaklı bilgilendirici içerik, SSS.' },
+      { ad: 'Spa ve masaj merkezleri', oneri: 'Hizmet başına ayrı sayfa, randevu formu, gerçek fotoğraflar ve yorum yönetimi.' },
+      { ad: 'Restoran ve kafeler', oneri: 'Menü ve rezervasyon sayfası, harita fotoğrafları, hafta sonu kampanyalarının güncel yayını.' },
+      { ad: 'Günübirlik ve etkinlik hizmetleri', oneri: 'Paket sayfaları, mevsimlik takvim ve WhatsApp ile hızlı iletişim.' },
+      { ad: 'Emlak ve konaklama kiralama', oneri: 'Bölge rehberi, gerçek fotoğraflı ilan sayfaları ve ulaşım bilgisi.' },
+    ],
+    aramalar: ['yalova termal otel', 'termal otel web sitesi', 'yalova kaplıca', 'termal spa randevu'],
+    komsular: ['yalova', 'cinarcik', 'ciftlikkoy'],
+    sss: [
+      { q: 'Termal bir otelin sitesinde ilk olarak ne olmalı?', a: 'Net oda ve paket bilgisi, gerçek fotoğraflar, konum ve ulaşım, rezervasyon yolu ve sık sorulan sorular. Misafir karar verirken bu bilgileri hızlıca bulabilmeli.' },
+      { q: 'Kış sezonunda da arama oluyor mu?', a: 'Evet, termal turizm yıl boyu talep görür ve kış hafta sonlarında da arama hacmi yüksek kalır. İçerik sezonlara göre planlanmalı ve yıl boyunca güncel tutulmalı.' },
+      { q: 'Rezervasyon platformları yerine doğrudan rezervasyon alabilir miyim?', a: 'Tamamen platformlardan bağımsız olmak zor ama doğrudan payı artırmak mümkün. Güçlü site, doğru bilgi ve Google profilindeki yorumlar misafirin sizi doğrudan aramasını sağlar.' },
     ],
   },
   {
