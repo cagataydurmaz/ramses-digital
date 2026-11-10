@@ -121,9 +121,9 @@ function Counter({ target, suffix = '' }: { target: number; suffix?: string }) {
 const services = [
   {
     icon: Sparkles,
-    title: 'SEO, GEO & AEO',
-    desc: "Markanızı Google'da değil; ChatGPT, Gemini ve Perplexity'de de güvenilir kaynak yapıyoruz.",
-    tags: ['GEO & LLM Görünürlüğü', 'EEAT & Otorite', 'Schema Markup'],
+    title: 'SEO & Yapay Zekâ Görünürlüğü',
+    desc: "Google'da üst sıralar için çalışıyor; ChatGPT ve Gemini gibi yapay zekâ araçlarında da alıntılanma olasılığınızı artırıyoruz.",
+    tags: ['Google\'da Üst Sıralar', 'Yapay Zekâ Görünürlüğü', 'Yerel SEO'],
     color: 'blue',
   },
   {
@@ -265,7 +265,7 @@ export default function HomePage() {
             style={{ animationDelay: '0s' }}
           >
             <Search size={14} className="text-blue-400" />
-            <span className="text-xs font-medium text-zinc-300">SEO & GEO</span>
+            <span className="text-xs font-medium text-zinc-300">SEO</span>
           </div>
           <div
             className="hero-chip absolute top-[15%] right-[7%] flex items-center gap-2 bg-[#0d1424]/80 border border-white/[0.08] rounded-full px-4 py-2 shadow-lg shadow-black/20"
@@ -279,7 +279,7 @@ export default function HomePage() {
             style={{ animationDelay: '0.6s' }}
           >
             <Sparkles size={14} className="text-emerald-400" />
-            <span className="text-xs font-medium text-zinc-300">AI & GEO</span>
+            <span className="text-xs font-medium text-zinc-300">Yapay Zekâ</span>
           </div>
           <div
             className="hero-chip absolute bottom-[20%] right-[8%] flex items-center gap-2 bg-[#0d1424]/80 border border-white/[0.08] rounded-full px-4 py-2 shadow-lg shadow-black/20"
@@ -497,7 +497,7 @@ export default function HomePage() {
         <div className="max-w-5xl mx-auto">
           <FadeIn className="text-center mb-14">
             <p className="text-blue-500 text-sm font-medium tracking-wider uppercase mb-3">Bunlar Ne Anlama Geliyor?</p>
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">SEO, AEO ve GEO Basitçe</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Google&apos;da ve Yapay Zekâda Görünürlük, Basitçe</h2>
             <p className="text-zinc-400 max-w-xl mx-auto">İnsanlar artık markanızı üç farklı yerde arıyor — üçünde de bulunmanız için çalışıyoruz.</p>
           </FadeIn>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">

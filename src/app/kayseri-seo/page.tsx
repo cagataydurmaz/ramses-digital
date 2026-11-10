@@ -8,7 +8,7 @@ import { MapPin, Search, ArrowRight, CheckCircle2, FileText, Link2, BarChart3, Z
 export const metadata: Metadata = {
   title: 'Kayseri SEO Ajansı | Kayseri SEO Hizmeti — Ramses Dijital',
   description:
-    'Kayseri SEO ajansı: Kayseri SEO hizmeti, yerel SEO, teknik SEO, GEO ve AEO. Melikgazi, Kocasinan ve Talas için ilçe bazlı strateji. Ücretsiz SEO analizi.',
+    'Kayseri SEO ajansı: Kayseri SEO hizmeti, yerel SEO, teknik SEO, Google ve yapay zekâ aramalarında görünürlük. Melikgazi, Kocasinan ve Talas için ilçe bazlı strateji. Ücretsiz SEO analizi.',
   alternates: { canonical: 'https://ramsesdigital.com/kayseri-seo' },
   openGraph: {
     title: 'Kayseri SEO Ajansı | Ramses Dijital',

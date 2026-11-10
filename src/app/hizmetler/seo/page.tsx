@@ -4,7 +4,7 @@ import CalendlyButton from '@/components/CalendlyButton'
 import { Sparkles, CheckCircle2, ArrowRight, Search, FileText, Link2, BarChart3, Zap, Award } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'SEO Hizmeti | Yerel, Teknik SEO, GEO ve AEO — Ramses Dijital',
+  title: 'SEO Hizmeti | Google\'da Üst Sıralara Çıkın — Ramses Dijital',
   description:
     'İşletmenize özel SEO hizmeti. Yerel SEO, teknik SEO, GEO, AEO ve içerik stratejisi. Online çalışıyoruz, tüm Türkiye\'ye hizmet veriyoruz. Ücretsiz analiz.',
   alternates: { canonical: 'https://ramsesdigital.com/hizmetler/seo' },

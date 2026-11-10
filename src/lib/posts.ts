@@ -709,7 +709,7 @@ export const posts: Post[] = [
   {
     slug: 'geo-nedir-chatgpt-yapay-zeka-aramalarda-gorunurluk',
     coverImage: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&q=80&fit=crop',
-    title: 'GEO Nedir? ChatGPT ve Yapay Zeka Aramalarında Nasıl Görünür Olunur?',
+    title: 'ChatGPT ve Yapay Zekâ Aramalarında Nasıl Görünür Olunur? (GEO Rehberi)',
     excerpt: 'Generative Engine Optimization (GEO), markanızın ChatGPT, Perplexity ve Google AI Overviews gibi yapay zeka araçları tarafından önerilmesini sağlayan yeni nesil SEO stratejisidir. 2025\'te dijitalde var olmak istiyorsanız GEO\'yu anlamanız şart.',
     category: 'AI & Strateji',
     categoryColor: 'emerald',
@@ -852,7 +852,7 @@ export const posts: Post[] = [
   {
     slug: 'seo-geo-aeo-arama-motorundan-yanit-motoruna',
     coverImage: 'https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=800&q=80&fit=crop',
-    title: "Arama Motorundan Yanıt Motoruna: SEO, GEO ve AEO'yu Birlikte Anlamak",
+    title: "SEO'nun Yeni Hali: Google'dan Yapay Zekâ Cevaplarına (GEO ve AEO)",
     excerpt: "Klasik SEO artık tek başına yetmiyor. ChatGPT, Gemini ve Perplexity'nin yükselişiyle birlikte GEO ve AEO kavramları dijital pazarlamanın merkezine oturdu. Bu rehberde üç disiplini nasıl birlikte uygulayacağınızı öğrenin.",
     category: 'AI & Strateji',
     categoryColor: 'violet',
@@ -3606,7 +3606,7 @@ export const posts: Post[] = [
   {
     slug: 'yerel-isletme-aeo-geo-kontrol-listesi',
     coverImage: 'https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=1200&q=80&fit=crop',
-    title: 'Yerel İşletme İçin AEO ve GEO Kontrol Listesi',
+    title: 'Yerel İşletmeler İçin Google ve Yapay Zekâ Görünürlüğü Kontrol Listesi',
     excerpt:
       'Google cevap kutuları ve ChatGPT gibi yapay zekâ araçları işletmenizi öneriyor mu? Yerel bir işletmenin AEO ve GEO için sitesinde kontrol etmesi gereken maddeler.',
     category: 'AI & Strateji',

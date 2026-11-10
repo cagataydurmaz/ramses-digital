@@ -31,7 +31,7 @@ import {
 export const metadata: Metadata = {
   title: 'Ramses Digital | Performance-Driven Digital Marketing & Software Agency',
   description:
-    'Ramses Digital — SEO, GEO & AEO, Google Ads, web design and n8n automation. An engineering-led digital marketing agency delivering real, measurable results.',
+    'Ramses Digital — SEO and AI search visibility, Google Ads, web design and n8n automation. An engineering-led digital marketing agency delivering real, measurable results.',
   alternates: {
     canonical: 'https://ramsesdigital.com/en',
     languages: { 'tr-TR': 'https://ramsesdigital.com', en: 'https://ramsesdigital.com/en' },
@@ -51,9 +51,9 @@ const WHATSAPP_EN_MESSAGE = 'Hello! I would like to get a free consultation.'
 const services = [
   {
     icon: Sparkles,
-    title: 'SEO, GEO & AEO',
-    desc: 'We make your brand a trusted source not just on Google, but on ChatGPT, Gemini and Perplexity too.',
-    tags: ['GEO & LLM Visibility', 'E-E-A-T & Authority', 'Schema Markup'],
+    title: 'SEO & AI Search Visibility',
+    desc: 'We work to rank you on Google and to increase the chance that AI tools like ChatGPT and Gemini cite you.',
+    tags: ['Google Rankings', 'AI Search Visibility', 'Local SEO'],
     color: 'blue',
   },
   {
@@ -226,7 +226,7 @@ export default function EnglishHomePage() {
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-14">
             <p className="text-blue-500 text-sm font-medium tracking-wider uppercase mb-3">What Do These Mean?</p>
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">SEO, AEO and GEO, Simply</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Visibility on Google and AI, Simply</h2>
             <p className="text-zinc-400 max-w-xl mx-auto">People now look for your brand in three different places — we work to get you found in all three.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">

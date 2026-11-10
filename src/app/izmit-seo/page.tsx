@@ -11,7 +11,7 @@ import { MapPin, Search, ArrowRight, CheckCircle2, FileText, Link2, BarChart3, Z
 export const metadata: Metadata = {
   title: 'İzmit SEO Ajansı | SEO Hizmeti ve Fiyatları — Ramses Dijital',
   description:
-    'İzmit SEO ajansı: yerel ve kurumsal SEO, SEO firması hizmetleri, paketler ve fiyat aralıkları. Google İşletme Profili, teknik SEO, GEO ve AEO. Ücretsiz SEO analizi.',
+    'İzmit SEO ajansı: yerel ve kurumsal SEO, SEO firması hizmetleri, paketler ve fiyat aralıkları. Google İşletme Profili, teknik SEO ve yapay zekâ aramalarında görünürlük. Ücretsiz SEO analizi.',
   alternates: { canonical: 'https://ramsesdigital.com/izmit-seo' },
   openGraph: {
     title: 'İzmit SEO Hizmeti | Ramses Dijital',

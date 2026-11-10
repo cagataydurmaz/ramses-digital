@@ -5,11 +5,11 @@ import CalendlyButton from '@/components/CalendlyButton'
 export const metadata: Metadata = {
   title: 'Dijital Pazarlama Hizmetleri — Ramses Dijital',
   description:
-    'SEO/GEO/AEO, Google Ads, sosyal medya içerik üretimi, web tasarımı, e-posta otomasyonu, n8n iş akışı ve veri analizi. Performans odaklı dijital pazarlama hizmetleri.',
+    'SEO (Google ve yapay zekâ aramalarında görünürlük), Google Ads, sosyal medya içerik üretimi, web tasarımı, e-posta otomasyonu, n8n iş akışı ve veri analizi. Performans odaklı dijital pazarlama hizmetleri.',
   alternates: { canonical: 'https://ramsesdigital.com/hizmetler' },
   openGraph: {
     title: 'Dijital Pazarlama Hizmetleri | Ramses Dijital',
-    description: 'SEO/GEO/AEO, Google Ads, sosyal medya içerik üretimi, web tasarımı, e-posta otomasyonu, n8n iş akışı ve veri analizi — tüm dijital büyüme araçları tek çatı altında.',
+    description: 'SEO (Google ve yapay zekâ aramalarında görünürlük), Google Ads, sosyal medya içerik üretimi, web tasarımı, e-posta otomasyonu, n8n iş akışı ve veri analizi — tüm dijital büyüme araçları tek çatı altında.',
     url: 'https://ramsesdigital.com/hizmetler',
     images: ['https://ramsesdigital.com/og-image.png'],
   },
@@ -35,11 +35,11 @@ import {
 const services = [
   {
     icon: Sparkles,
-    title: 'SEO, GEO ve Yanıt Motoru Optimizasyonu (AEO)',
-    tagline: 'AI-Native Görünürlük & Organik Otorite',
+    title: 'SEO: Google ve Yapay Zekâ Aramalarında Görünürlük',
+    tagline: 'Google\'da Üst Sıralar, Yapay Zekâda Görünürlük',
     desc: "Markanızı sadece Google'da değil; ChatGPT, Gemini ve Perplexity gibi yapay zeka motorlarının alıntılayabileceği güvenilir bir kaynak olması için çalışıyoruz. Veri odaklı içerik stratejileriyle yapay zekâ özetlerinde alıntılanma olasılığınızı artırmayı hedefliyoruz. Sonuç garanti edilmez.",
     features: [
-      'LLM & Chatbot Görünürlüğü (GEO)',
+      'ChatGPT Gibi Yapay Zekâ Araçlarında Görünürlük (GEO)',
       'Semantic Content Architecture',
       'Structured Data & Schema Markup (JSON-LD)',
       'EEAT Odaklı Otorite İnşası',
@@ -422,7 +422,7 @@ const definitions = [
   {
     term: 'GEO (Generative Engine Optimization)',
     definition:
-      'GEO, ChatGPT, Gemini ve Perplexity gibi yapay zeka destekli arama motorlarında markanızın güvenilir kaynak olarak gösterilmesini sağlayan optimizasyon türüdür. Yapılandırılmış veri, EEAT prensipleri ve semantik içerik mimarisi temelinde çalışır.',
+      'GEO, ChatGPT, Gemini ve Perplexity gibi yapay zeka destekli arama motorlarında markanızın güvenilir bir kaynak olarak gösterilme olasılığını artırmaya yönelik çalışmadır. Yapılandırılmış veri, EEAT prensipleri ve semantik içerik mimarisi temelinde çalışır.',
     color: 'blue',
   },
   {

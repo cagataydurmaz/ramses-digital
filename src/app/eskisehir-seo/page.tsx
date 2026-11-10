@@ -8,7 +8,7 @@ import { MapPin, Search, ArrowRight, CheckCircle2, FileText, Link2, BarChart3, Z
 export const metadata: Metadata = {
   title: 'Eskişehir SEO Ajansı | Eskişehir SEO Hizmeti — Ramses Dijital',
   description:
-    'Eskişehir SEO ajansı: Eskişehir SEO hizmeti, yerel SEO, teknik SEO, GEO ve AEO. Odunpazarı ve Tepebaşı için ilçe bazlı strateji. Ücretsiz SEO analizi.',
+    'Eskişehir SEO ajansı: Eskişehir SEO hizmeti, yerel SEO, teknik SEO, Google ve yapay zekâ aramalarında görünürlük. Odunpazarı ve Tepebaşı için ilçe bazlı strateji. Ücretsiz SEO analizi.',
   alternates: { canonical: 'https://ramsesdigital.com/eskisehir-seo' },
   openGraph: {
     title: 'Eskişehir SEO Ajansı | Ramses Dijital',

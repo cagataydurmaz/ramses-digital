@@ -9,7 +9,7 @@ import { MapPin, Search, ArrowRight, CheckCircle2, FileText, Link2, BarChart3, Z
 export const metadata: Metadata = {
   title: 'İstanbul SEO Ajansı | İstanbul SEO Hizmeti — Ramses Dijital',
   description:
-    'İstanbul SEO ajansı: İstanbul SEO hizmeti, yerel SEO, teknik SEO, GEO ve AEO. Kadıköy, Beşiktaş, Şişli, Bakırköy dahil ilçe bazlı strateji. Ücretsiz SEO analizi.',
+    'İstanbul SEO ajansı: İstanbul SEO hizmeti, yerel SEO, teknik SEO, Google ve yapay zekâ aramalarında görünürlük. Kadıköy, Beşiktaş, Şişli, Bakırköy dahil ilçe bazlı strateji. Ücretsiz SEO analizi.',
   alternates: { canonical: 'https://ramsesdigital.com/istanbul-seo' },
   openGraph: {
     title: 'İstanbul SEO Ajansı | Ramses Dijital',

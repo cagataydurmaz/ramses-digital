@@ -8,7 +8,7 @@ import { MapPin, Search, ArrowRight, CheckCircle2, FileText, Link2, BarChart3, Z
 export const metadata: Metadata = {
   title: 'Gaziantep SEO Ajansı | Gaziantep SEO Hizmeti — Ramses Dijital',
   description:
-    'Gaziantep SEO ajansı: Gaziantep SEO hizmeti, yerel SEO, teknik SEO, GEO ve AEO. Şahinbey, Şehitkamil ve Nizip için ilçe bazlı strateji. Ücretsiz SEO analizi.',
+    'Gaziantep SEO ajansı: Gaziantep SEO hizmeti, yerel SEO, teknik SEO, Google ve yapay zekâ aramalarında görünürlük. Şahinbey, Şehitkamil ve Nizip için ilçe bazlı strateji. Ücretsiz SEO analizi.',
   alternates: { canonical: 'https://ramsesdigital.com/gaziantep-seo' },
   openGraph: {
     title: 'Gaziantep SEO Ajansı | Ramses Dijital',
