@@ -4,7 +4,7 @@ import { notFound } from 'next/navigation'
 import CalendlyButton from '@/components/CalendlyButton'
 import RelatedPages from '@/components/RelatedPages'
 import { MapPin, ArrowRight, CheckCircle2, Search, Globe, Smartphone, Zap } from 'lucide-react'
-import { ilceler, getIlce } from '@/lib/ilceler'
+import { ilceler, getIlce, isIl, getIlRehberi, bulunma } from '@/lib/ilceler'
 
 export function generateStaticParams() {
   return ilceler.map((i) => ({ slug: i.slug }))
@@ -30,6 +30,14 @@ export default function IlcePage({ params }: { params: { slug: string } }) {
 
   const url = `https://ramsesdigital.com/ilceler/${ilce.slug}`
   const komsular = ilce.komsular.map((s) => getIlce(s)).filter((x): x is NonNullable<typeof x> => !!x)
+  const ilSayfasi = isIl(ilce)
+  const ilRehberi = getIlRehberi(ilce)
+  const bolgeEtiketi = ilSayfasi
+    ? `${ilce.il} — İl Rehberi`
+    : ilce.name.startsWith(ilce.il)
+      ? `${ilce.name} — İlçe Rehberi`
+      : `${ilce.il} / ${ilce.name} — İlçe Rehberi`
+  const rehberAdi = (k: typeof ilce) => (isIl(k) ? `${k.name} İl Rehberi` : `${k.name} Web Tasarım`)
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -37,9 +45,11 @@ export default function IlcePage({ params }: { params: { slug: string } }) {
       {
         '@type': 'Service',
         name: `${ilce.name} Web Tasarım ve SEO Hizmeti`,
-        description: `${ilce.name} (${ilce.il}) işletmeleri için web tasarım, yerel SEO ve Google görünürlüğü hizmeti.`,
+        description: `${ilSayfasi ? ilce.name : `${ilce.name} (${ilce.il})`} işletmeleri için web tasarım, yerel SEO ve Google görünürlüğü hizmeti.`,
         provider: { '@type': 'ProfessionalService', name: 'Ramses Dijital', url: 'https://ramsesdigital.com', telephone: '+905355601936' },
-        areaServed: { '@type': 'AdministrativeArea', name: `${ilce.name}, ${ilce.il}` },
+        areaServed: ilSayfasi
+          ? { '@type': 'AdministrativeArea', name: ilce.il }
+          : { '@type': 'AdministrativeArea', name: ilce.name, containedInPlace: { '@type': 'AdministrativeArea', name: ilce.il } },
         url,
       },
       {
@@ -47,7 +57,12 @@ export default function IlcePage({ params }: { params: { slug: string } }) {
         itemListElement: [
           { '@type': 'ListItem', position: 1, name: 'Ana Sayfa', item: 'https://ramsesdigital.com' },
           { '@type': 'ListItem', position: 2, name: 'Bölgeler', item: 'https://ramsesdigital.com/ilceler' },
-          { '@type': 'ListItem', position: 3, name: ilce.name, item: url },
+          ...(ilRehberi
+            ? [
+                { '@type': 'ListItem', position: 3, name: ilRehberi.name, item: `https://ramsesdigital.com/ilceler/${ilRehberi.slug}` },
+                { '@type': 'ListItem', position: 4, name: ilce.name, item: url },
+              ]
+            : [{ '@type': 'ListItem', position: 3, name: ilce.name, item: url }]),
         ],
       },
       {
@@ -70,14 +85,23 @@ export default function IlcePage({ params }: { params: { slug: string } }) {
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <div className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 rounded-full px-4 py-1.5 mb-6">
             <MapPin size={13} className="text-blue-400" />
-            <span className="text-blue-400 text-sm font-medium">{ilce.tur}</span>
+            <span className="text-blue-400 text-sm font-medium">{bolgeEtiketi}</span>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
             {ilce.name} Web Tasarım
             <br />
             <span className="gradient-text">ve Yerel SEO</span>
           </h1>
-          <p className="text-zinc-400 text-lg max-w-2xl mx-auto mb-10 leading-relaxed">{ilce.intro}</p>
+          <p className="text-zinc-400 text-lg max-w-2xl mx-auto mb-6 leading-relaxed">{ilce.intro}</p>
+          {ilRehberi && (
+            <p className="text-zinc-500 text-sm mb-8">
+              Bu sayfa {ilRehberi.name} iline bağlı {ilce.name} ilçesi içindir.{' '}
+              <Link href={`/ilceler/${ilRehberi.slug}`} prefetch={false} className="text-blue-400 hover:underline">
+                {ilRehberi.name} il rehberine gidin
+              </Link>
+            </p>
+          )}
+          {!ilRehberi && <div className="mb-4" />}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <CalendlyButton label="Ücretsiz Ön Görüşme" variant="primary" />
             <Link href="/portfolyo" prefetch={false} className="text-zinc-400 hover:text-white text-sm font-medium transition-colors flex items-center gap-1.5">
@@ -96,7 +120,7 @@ export default function IlcePage({ params }: { params: { slug: string } }) {
 
       <section className="pb-16 px-6">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-3 text-center">{ilce.name}&apos;de Sektöre Göre Yaklaşım</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-3 text-center">{bulunma(ilce.name)} Sektöre Göre Yaklaşım</h2>
           <p className="text-zinc-400 text-center max-w-2xl mx-auto mb-10">Aynı site her sektöre uymaz. {ilce.name} için öncelik verdiğimiz alanlar:</p>
           <div className="grid sm:grid-cols-2 gap-5">
             {ilce.sektorler.map(({ ad, oneri }) => (
@@ -116,7 +140,7 @@ export default function IlcePage({ params }: { params: { slug: string } }) {
         <div className="max-w-3xl mx-auto bg-blue-500/5 border border-blue-500/15 rounded-2xl p-8">
           <div className="flex items-center gap-2 mb-3">
             <Search size={18} className="text-blue-400" />
-            <h2 className="text-xl font-bold text-white">{ilce.name}&apos;de Aranan Örnek Sorgular</h2>
+            <h2 className="text-xl font-bold text-white">{bulunma(ilce.name)} Aranan Örnek Sorgular</h2>
           </div>
           <p className="text-zinc-400 text-sm mb-4">Bu bölgedeki işletmelerin görünür olması gereken, rekabeti nispeten düşük arama örnekleri:</p>
           <div className="flex flex-wrap gap-2">
@@ -161,7 +185,8 @@ export default function IlcePage({ params }: { params: { slug: string } }) {
 
       <RelatedPages
         pages={[
-        ...komsular.map((k) => ({ label: `${k.name} Web Tasarım`, href: `/ilceler/${k.slug}` })),
+        ...(ilRehberi ? [{ label: `${ilRehberi.name} İl Rehberi`, href: `/ilceler/${ilRehberi.slug}` }] : []),
+        ...komsular.filter((k) => k.slug !== ilRehberi?.slug).map((k) => ({ label: rehberAdi(k), href: `/ilceler/${k.slug}` })),
           { label: 'Tüm Bölgeler', href: '/ilceler' },
         ...(ilce.il === 'Kocaeli'
             ? [
@@ -174,7 +199,7 @@ export default function IlcePage({ params }: { params: { slug: string } }) {
 
       <section className="py-20 px-6 bg-[#080D18]">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-white mb-4">{ilce.name}&apos;de Görünür Olmaya Başlayın</h2>
+          <h2 className="text-4xl font-bold text-white mb-4">{bulunma(ilce.name)} Görünür Olmaya Başlayın</h2>
           <p className="text-zinc-400 text-lg mb-8">30 dakikalık ücretsiz görüşmede işletmenizi ve aramaları birlikte inceleyelim.</p>
           <CalendlyButton label="Ücretsiz Ön Görüşme" variant="primary" />
           <p className="text-zinc-600 text-xs mt-4">Taahhüt yok · Ücretsiz danışmanlık</p>

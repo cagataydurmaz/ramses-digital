@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import CalendlyButton from '@/components/CalendlyButton'
 import { MapPin, ArrowRight } from 'lucide-react'
-import { ilceler } from '@/lib/ilceler'
+import { ilceler, isIl } from '@/lib/ilceler'
 
 export const metadata: Metadata = {
   title: 'Marmara Bölgesi Web Tasarım ve Yerel SEO Rehberleri | Ramses Dijital',
@@ -29,7 +29,7 @@ export default function IlcelerPage() {
             <span className="gradient-text">Web Tasarım ve Yerel SEO</span>
           </h1>
           <p className="text-zinc-400 text-lg max-w-2xl mx-auto leading-relaxed">
-            Her bölgenin ekonomisi ve arama alışkanlığı farklı. İşletmenizin bulunduğu yere göre hazırladığımız rehber sayfaları inceleyin.
+            Her il ve ilçenin ekonomisi ve arama alışkanlığı farklı. İşletmenizin bulunduğu il ya da ilçeye göre hazırladığımız rehberleri inceleyin.
           </p>
         </div>
       </section>
@@ -37,26 +37,44 @@ export default function IlcelerPage() {
       <section className="pb-20 px-6">
         <div className="max-w-5xl mx-auto space-y-12">
           {iller.map((il) => {
-            const liste = ilceler.filter((i) => i.il === il)
-            if (!liste.length) return null
+            const ilRehberi = ilceler.find((i) => i.il === il && isIl(i))
+            const ilceListesi = ilceler.filter((i) => i.il === il && !isIl(i))
+            if (!ilRehberi && !ilceListesi.length) return null
             return (
               <div key={il}>
-                <h2 className="text-2xl font-bold text-white mb-5">{il}</h2>
-                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                  {liste.map((i) => (
-                    <Link
-                      key={i.slug}
-                      href={`/ilceler/${i.slug}`}
-                      className="group bg-[#0D1225] border border-white/[0.06] hover:border-blue-500/30 rounded-xl p-5 transition-all"
-                    >
-                      <p className="text-white font-semibold mb-1">{i.name} Web Tasarım</p>
-                      <p className="text-zinc-500 text-sm mb-3">{i.tur}</p>
-                      <span className="text-blue-400 text-sm flex items-center gap-1.5 group-hover:gap-2.5 transition-all">
-                        Sayfayı Gör <ArrowRight size={13} />
-                      </span>
+                <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-2 mb-5">
+                  <h2 className="text-2xl font-bold text-white">{il}</h2>
+                  {il === 'Kocaeli' && (
+                    <Link href="/kocaeli-seo" prefetch={false} className="text-blue-400 text-sm font-medium flex items-center gap-1.5 hover:gap-2.5 transition-all">
+                      Kocaeli Geneli SEO <ArrowRight size={13} />
                     </Link>
-                  ))}
+                  )}
+                  {ilRehberi && (
+                    <Link href={`/ilceler/${ilRehberi.slug}`} prefetch={false} className="text-blue-400 text-sm font-medium flex items-center gap-1.5 hover:gap-2.5 transition-all">
+                      {il} İl Rehberi <ArrowRight size={13} />
+                    </Link>
+                  )}
                 </div>
+                {ilceListesi.length > 0 ? (
+                  <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    {ilceListesi.map((i) => (
+                      <Link
+                        key={i.slug}
+                        href={`/ilceler/${i.slug}`}
+                        prefetch={false}
+                        className="group bg-[#0D1225] border border-white/[0.06] hover:border-blue-500/30 rounded-xl p-5 transition-all"
+                      >
+                        <p className="text-white font-semibold mb-1">{i.name} Web Tasarım ve SEO</p>
+                        <p className="text-zinc-500 text-sm mb-3">{il} ilçesi</p>
+                        <span className="text-blue-400 text-sm flex items-center gap-1.5 group-hover:gap-2.5 transition-all">
+                          İlçe Rehberini Gör <ArrowRight size={13} />
+                        </span>
+                      </Link>
+                    ))}
+                  </div>
+                ) : (
+                  <p className="text-zinc-500 text-sm">İlçe rehberleri hazırlanıyor; şimdilik il rehberini inceleyebilirsiniz.</p>
+                )}
               </div>
             )
           })}

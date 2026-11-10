@@ -278,6 +278,30 @@ export const ilceler: Ilce[] = [
     ],
   },
   {
+    slug: 'sakarya',
+    name: 'Sakarya',
+    il: 'Sakarya',
+    tur: 'Sakarya ili',
+    intro:
+      'Sakarya, Kocaeli ile Düzce arasında, sanayi, eğitim ve turizmin bir arada bulunduğu bir il. "Sakarya" ile başlayan aramalar il genelindeki hizmetleri, ilçe adlarıyla yapılan aramalar ise daha yerel ihtiyaçları ifade ediyor; iki arama biçimini birlikte ele almak gerekiyor.',
+    ekonomi:
+      'Otomotiv ve yan sanayi, makine ve metal işleme, gıda ve tarım ilin ekonomik omurgasını oluşturuyor. Sakarya Üniversitesi çevresindeki öğrenci ve akademik nüfus hizmet sektörünü canlı tutarken Sapanca Gölü ve Karadeniz kıyısı turizm talebi yaratıyor. Bu çeşitlilik, her sektör için ayrı bir dijital yaklaşım gerektiriyor.',
+    sektorler: [
+      { ad: 'Otomotiv yan sanayi ve üretim', oneri: 'Kapasite, sertifika ve ürün grubu sayfaları; teklif talep formu ve yurt dışı alıcılar için İngilizce özet.' },
+      { ad: 'Sağlık ve klinikler', oneri: 'Tedavi ve hekim sayfaları, randevu akışı, Google İşletme Profili ve teşviksiz gerçek yorum stratejisi.' },
+      { ad: 'Eğitim ve kurs merkezleri', oneri: 'Program, takvim ve kayıt sayfaları; öğrenci ve veli sorularına net cevaplar.' },
+      { ad: 'Turizm ve konaklama', oneri: 'Sapanca ve kıyı bölgesi için rezervasyon odaklı sayfalar, sezon öncesi içerik planı.' },
+      { ad: 'Perakende ve yerel hizmetler', oneri: 'Hizmet bölgesi bilgisi, hızlı iletişim ve doğrulanmış harita kaydı.' },
+    ],
+    aramalar: ['sakarya web tasarım', 'sakarya seo', 'sakarya dijital ajans', 'sakarya kurumsal web sitesi'],
+    komsular: ['adapazari', 'serdivan', 'sapanca', 'duzce'],
+    sss: [
+      { q: 'Sakarya ve Adapazarı için ayrı sayfa gerekir mi?', a: '"Sakarya" il genelindeki, "Adapazarı" ise merkez ilçedeki aramaları karşılar. Hizmet alanınız ilin tamamını kapsıyorsa il sayfası, belirli ilçelerdeyse ilçe sayfaları öne çıkarılmalıdır.' },
+      { q: 'Sakarya\'da dijital rekabet nasıl?', a: 'İstanbul ve Kocaeli ile karşılaştırıldığında belirgin şekilde daha düşük. Sektör ve ilçe odaklı aramalarda iyi kurgulanmış sayfalarla görece kısa sürede görünürlük elde etmek mümkündür; süre rekabete göre değişir.' },
+      { q: 'Sanayi firması olarak sosyal medya mı, web sitesi mi öncelikli?', a: 'B2B alıcılar tedarikçi ararken çoğunlukla arama motorunu ve firma web sitesini kullanır. Bu nedenle kurumsal, ürün ve kapasite bilgisi net bir web sitesi önceliklidir; sosyal medya bunu destekleyen bir kanaldır.' },
+    ],
+  },
+  {
     slug: 'adapazari',
     name: 'Adapazarı',
     il: 'Sakarya',
@@ -491,30 +515,6 @@ export const ilceler: Ilce[] = [
     ],
   },
   {
-    slug: 'sakarya',
-    name: 'Sakarya',
-    il: 'Sakarya',
-    tur: 'Sakarya ili',
-    intro:
-      'Sakarya, Kocaeli ile Düzce arasında, sanayi, eğitim ve turizmin bir arada bulunduğu bir il. "Sakarya" ile başlayan aramalar il genelindeki hizmetleri, ilçe adlarıyla yapılan aramalar ise daha yerel ihtiyaçları ifade ediyor; iki arama biçimini birlikte ele almak gerekiyor.',
-    ekonomi:
-      'Otomotiv ve yan sanayi, makine ve metal işleme, gıda ve tarım ilin ekonomik omurgasını oluşturuyor. Sakarya Üniversitesi çevresindeki öğrenci ve akademik nüfus hizmet sektörünü canlı tutarken Sapanca Gölü ve Karadeniz kıyısı turizm talebi yaratıyor. Bu çeşitlilik, her sektör için ayrı bir dijital yaklaşım gerektiriyor.',
-    sektorler: [
-      { ad: 'Otomotiv yan sanayi ve üretim', oneri: 'Kapasite, sertifika ve ürün grubu sayfaları; teklif talep formu ve yurt dışı alıcılar için İngilizce özet.' },
-      { ad: 'Sağlık ve klinikler', oneri: 'Tedavi ve hekim sayfaları, randevu akışı, Google İşletme Profili ve teşviksiz gerçek yorum stratejisi.' },
-      { ad: 'Eğitim ve kurs merkezleri', oneri: 'Program, takvim ve kayıt sayfaları; öğrenci ve veli sorularına net cevaplar.' },
-      { ad: 'Turizm ve konaklama', oneri: 'Sapanca ve kıyı bölgesi için rezervasyon odaklı sayfalar, sezon öncesi içerik planı.' },
-      { ad: 'Perakende ve yerel hizmetler', oneri: 'Hizmet bölgesi bilgisi, hızlı iletişim ve doğrulanmış harita kaydı.' },
-    ],
-    aramalar: ['sakarya web tasarım', 'sakarya seo', 'sakarya dijital ajans', 'sakarya kurumsal web sitesi'],
-    komsular: ['adapazari', 'serdivan', 'sapanca', 'duzce'],
-    sss: [
-      { q: 'Sakarya ve Adapazarı için ayrı sayfa gerekir mi?', a: '"Sakarya" il genelindeki, "Adapazarı" ise merkez ilçedeki aramaları karşılar. Hizmet alanınız ilin tamamını kapsıyorsa il sayfası, belirli ilçelerdeyse ilçe sayfaları öne çıkarılmalıdır.' },
-      { q: 'Sakarya\'da dijital rekabet nasıl?', a: 'İstanbul ve Kocaeli ile karşılaştırıldığında belirgin şekilde daha düşük. Sektör ve ilçe odaklı aramalarda iyi kurgulanmış sayfalarla görece kısa sürede görünürlük elde etmek mümkündür; süre rekabete göre değişir.' },
-      { q: 'Sanayi firması olarak sosyal medya mı, web sitesi mi öncelikli?', a: 'B2B alıcılar tedarikçi ararken çoğunlukla arama motorunu ve firma web sitesini kullanır. Bu nedenle kurumsal, ürün ve kapasite bilgisi net bir web sitesi önceliklidir; sosyal medya bunu destekleyen bir kanaldır.' },
-    ],
-  },
-  {
     slug: 'tekirdag',
     name: 'Tekirdağ',
     il: 'Tekirdağ',
@@ -610,6 +610,34 @@ export const ilceler: Ilce[] = [
     ],
   },
 ]
+
+// İl düzeyindeki rehberler (ad = il adı) ile ilçe rehberlerini ayırt eder.
+export function isIl(i: Ilce) {
+  return i.name === i.il
+}
+
+// Bağlı olunan ilin rehber sayfası (varsa).
+export function getIlRehberi(i: Ilce) {
+  if (isIl(i)) return undefined
+  return ilceler.find((x) => isIl(x) && x.il === i.il)
+}
+
+// Türkçe bulunma eki (-da/-de/-ta/-te), özel ad için kesme işaretiyle.
+const BULUNMA_ISTISNA: Record<string, string> = {
+  'Adapazarı': "Adapazarı'nda",
+  'Dilovası': "Dilovası'nda",
+  'Yalova Termal': "Yalova Termal'de",
+}
+export function bulunma(ad: string) {
+  if (BULUNMA_ISTISNA[ad]) return BULUNMA_ISTISNA[ad]
+  const kelime = ad.split(' ').pop() || ad
+  const kucuk = kelime.toLocaleLowerCase('tr-TR')
+  const unluler = kucuk.match(/[aeıioöuü]/g) || []
+  const son = unluler[unluler.length - 1] || 'e'
+  const kalin = 'aıou'.includes(son)
+  const sert = 'fstkçşhp'.includes(kucuk[kucuk.length - 1])
+  return `${ad}'${sert ? 't' : 'd'}${kalin ? 'a' : 'e'}`
+}
 
 export function getIlce(slug: string) {
   return ilceler.find((i) => i.slug === slug)
