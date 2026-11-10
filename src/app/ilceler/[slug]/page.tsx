@@ -5,6 +5,7 @@ import CalendlyButton from '@/components/CalendlyButton'
 import RelatedPages from '@/components/RelatedPages'
 import { MapPin, ArrowRight, CheckCircle2, Search, Globe, Smartphone, Zap } from 'lucide-react'
 import { ilceler, getIlce, isIl, getIlRehberi, bulunma } from '@/lib/ilceler'
+import { ilceDetay } from '@/lib/ilceDetay'
 
 export function generateStaticParams() {
   return ilceler.map((i) => ({ slug: i.slug }))
@@ -30,6 +31,8 @@ export default function IlcePage({ params }: { params: { slug: string } }) {
 
   const url = `https://ramsesdigital.com/ilceler/${ilce.slug}`
   const komsular = ilce.komsular.map((s) => getIlce(s)).filter((x): x is NonNullable<typeof x> => !!x)
+  const detay = ilceDetay[ilce.slug]
+  const sss = detay ? [...ilce.sss, ...detay.ekSss] : ilce.sss
   const ilSayfasi = isIl(ilce)
   const ilRehberi = getIlRehberi(ilce)
   const bolgeEtiketi = ilSayfasi
@@ -67,7 +70,7 @@ export default function IlcePage({ params }: { params: { slug: string } }) {
       },
       {
         '@type': 'FAQPage',
-        mainEntity: ilce.sss.map(({ q, a }) => ({
+        mainEntity: sss.map(({ q, a }) => ({
           '@type': 'Question',
           name: q,
           acceptedAnswer: { '@type': 'Answer', text: a },
@@ -136,6 +139,48 @@ export default function IlcePage({ params }: { params: { slug: string } }) {
         </div>
       </section>
 
+      {detay && (
+        <section className="pb-16 px-6">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-3 text-center">Örnek Senaryo: {bulunma(ilce.name)} Bir İşletme</h2>
+            <p className="text-zinc-500 text-sm text-center max-w-2xl mx-auto mb-8">
+              Bu örnek gerçek bir müşteri değildir; bölgedeki tipik bir işletme için nasıl bir yol izlediğimizi göstermek amacıyla hazırlanmıştır.
+            </p>
+            <div className="bg-[#0D1225] border border-white/[0.06] rounded-2xl p-6 md:p-8">
+              <p className="text-blue-400 text-sm font-semibold mb-1">İşletme</p>
+              <p className="text-white font-semibold mb-5">{detay.senaryo.isletme}</p>
+              <p className="text-blue-400 text-sm font-semibold mb-1">Mevcut durum</p>
+              <p className="text-zinc-400 text-sm leading-relaxed mb-5">{detay.senaryo.durum}</p>
+              <p className="text-blue-400 text-sm font-semibold mb-3">Önerdiğimiz yaklaşım</p>
+              <ol className="space-y-3">
+                {detay.senaryo.adimlar.map((a, i) => (
+                  <li key={a} className="flex gap-3 text-zinc-300 text-sm leading-relaxed">
+                    <span className="shrink-0 w-6 h-6 rounded-full bg-blue-500/10 text-blue-400 text-xs font-semibold flex items-center justify-center">{i + 1}</span>
+                    <span>{a}</span>
+                  </li>
+                ))}
+              </ol>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {detay && (
+        <section className="pb-16 px-6">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-8 text-center">{ilce.name} İçin Yerel Görünürlükte 3 Öncelik</h2>
+            <div className="grid md:grid-cols-3 gap-5">
+              {detay.oncelikler.map((o, i) => (
+                <div key={o} className="bg-[#0D1225] border border-white/[0.06] rounded-xl p-6">
+                  <p className="text-blue-400 text-sm font-semibold mb-2">0{i + 1}</p>
+                  <p className="text-zinc-300 text-sm leading-relaxed">{o}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       <section className="pb-16 px-6">
         <div className="max-w-3xl mx-auto bg-blue-500/5 border border-blue-500/15 rounded-2xl p-8">
           <div className="flex items-center gap-2 mb-3">
@@ -173,7 +218,7 @@ export default function IlcePage({ params }: { params: { slug: string } }) {
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-10 text-center">{ilce.name} İçin Sık Sorulan Sorular</h2>
           <div className="space-y-4">
-            {ilce.sss.map(({ q, a }) => (
+            {sss.map(({ q, a }) => (
               <div key={q} className="bg-[#0D1225] border border-white/[0.06] rounded-xl p-6">
                 <h3 className="text-white font-semibold mb-2 text-sm md:text-base">{q}</h3>
                 <p className="text-zinc-400 text-sm leading-relaxed">{a}</p>
