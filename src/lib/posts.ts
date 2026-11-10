@@ -1123,7 +1123,7 @@ export const posts: Post[] = [
       <p>Sağlık hizmetleri (diş hekimi, fizyoterapist, psikolog), hukuk büroları, oto servisleri, güzellik salonları ve restoranlar en yüksek faydayı görüyor çünkü bu sektörlerde kullanıcılar doğrudan "yakınımda" veya "İzmit'te" ifadeleriyle arama yapıyor. B2B sanayi firmaları için yerel SEO'nun etkisi daha sınırlı, çünkü müşteri arama davranışı farklı işliyor.</p>
 
       <h3>Sonuç</h3>
-      <p>Kocaeli'de yerel SEO, sabır ve sistematik çalışma gerektiren stratejik bir yatırımdır. Doğru kurgulanırsa, ücretli reklamlardan çok daha sürdürülebilir ve düşük maliyetli müşteri akışı sağlar. Ramses Digital olarak Kocaeli merkezli ekibimizle bu sürece eşlik etmekten mutluluk duyarız.</p>
+      <p>Kocaeli'de yerel SEO, sabır ve sistematik çalışma gerektiren stratejik bir yatırımdır. Doğru kurgulanırsa, ücretli reklamlardan çok daha sürdürülebilir ve düşük maliyetli müşteri akışı sağlar. Ramses Digital olarak Kocaeli kökenli ekibimizle bu sürece eşlik etmekten mutluluk duyarız.</p>
     `,
   },
   {
@@ -1857,7 +1857,7 @@ export const posts: Post[] = [
       <p>Profesyonel bir ajans bu paylaşımı yapmaktan çekinmez. Referans konuşmasında en değerli soru genellikle "ajans sizi hiç sürpriz bir maliyetle karşı karşıya bıraktı mı" sorusudur — bu, sözleşme şeffaflığının gerçek testidir. Ayrıca telefon görüşmesi yerine bizzat o müşterinin canlı web sitesini/kampanyasını incelemek isteyebilirsiniz; sonuçlar sözden daha ikna edicidir.</p>
 
       <h2>Ramses Dijital Reklam Ajansı: Neden Tercih Edilebilir?</h2>
-      <p><a href="/izmit-reklam-ajansi">İzmit</a> Kocaeli merkezli olarak 2019'dan bu yana 100+ projeye imza attık. Mühendislik kökenli bir ekibiz; her stratejiyi veri ve teknik disiplinle kuruyoruz. Kocaeli genelinde hizmet veren bir ajans arıyorsanız <a href="/kocaeli-reklam-ajansi">Kocaeli reklam ajansı</a> sayfamıza da göz atabilirsiniz.</p>
+      <p><a href="/izmit-reklam-ajansi">İzmit</a> Kocaeli kökenli olarak 2019'dan bu yana 100+ projeye imza attık. Mühendislik kökenli bir ekibiz; her stratejiyi veri ve teknik disiplinle kuruyoruz. Kocaeli genelinde hizmet veren bir ajans arıyorsanız <a href="/kocaeli-reklam-ajansi">Kocaeli reklam ajansı</a> sayfamıza da göz atabilirsiniz.</p>
       <p>Bizi farklı kılan: <strong class="text-white">şeffaf raporlama</strong>, <strong class="text-white">veri sahipliğinin tamamen müşteride kalması</strong>, <strong class="text-white">çıkış maddesi her sözleşmede mevcut</strong>, <strong class="text-white">aylık detaylı raporlama + canlı dashboard</strong> ve <strong class="text-white">Kocaeli pazarına 5+ yıllık derin tecrübe</strong>.</p>
       <p>Ücretsiz keşif görüşmesinde size özgü strateji çıkartırız ve teklif sunarız — taahhüt yok.</p>
 

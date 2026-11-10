@@ -4,7 +4,7 @@ import CalendlyButton from '@/components/CalendlyButton'
 import { Mail, Zap, Users, BarChart3, RefreshCw, Target, CheckCircle2, ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'E-Posta & Otomasyon Pazarlama | CRM Entegrasyonu, Drip Kampanyalar — Ramses Dijital',
+  title: 'E-Posta Pazarlama ve Otomasyon — Ramses Dijital',
   description:
     'Kişiselleştirilmiş e-posta kampanyaları ve otomatik pazarlama akışları. CRM entegrasyonu, segmentasyon ve A/B test ile açılma oranlarını %40 artırın. Ramses Dijital Yazılım ve Dijital Pazarlama Ajansı.',
   alternates: { canonical: 'https://ramsesdigital.com/hizmetler/eposta-otomasyon' },

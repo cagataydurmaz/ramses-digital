@@ -8,7 +8,7 @@ import { MapPin, Code2, ArrowRight, CheckCircle2, Zap, Globe, BarChart3, Shield,
 export const metadata: Metadata = {
   title: 'Kocaeli Yazılım Ajansı — Ramses Dijital',
   description:
-    'Kocaeli\'nin yazılım ajansı. Web uygulaması, iş süreçleri otomasyonu, API entegrasyonu ve yapay zeka çözümleri. İzmit merkezli, Gebze, Darıca ve tüm Kocaeli\'ye hizmet.',
+    'Kocaeli\'nin yazılım ajansı. Web uygulaması, iş süreçleri otomasyonu, API entegrasyonu ve yapay zeka çözümleri. İzmit ve Kocaeli odaklı, Gebze, Darıca ve tüm Kocaeli\'ye hizmet.',
   alternates: { canonical: 'https://ramsesdigital.com/kocaeli-yazilim-ajansi' },
   openGraph: {
     title: 'Kocaeli Yazılım Ajansı | Ramses Dijital',
@@ -34,7 +34,7 @@ const sektorler = [
 
 const faqs = [
   { q: 'Kocaeli\'deki sanayi firmalarına özel yazılım çözümleriniz var mı?', a: 'Evet. Kocaeli\'nin sanayi dokusunu tanıyoruz: tedarik zinciri yönetimi, saha operasyonu takibi, bayii portal sistemi, üretim raporlama ve kalite kontrol formları gibi B2B yazılım ihtiyaçları bize yabancı değil. Logo veya SAP gibi ERP sistemleriyle entegrasyon da yapıyoruz.' },
-  { q: 'Gebze\'deki işletmem için de yazılım hizmeti veriyor musunuz?', a: 'Evet. Kocaeli\'nin tüm ilçelerine (Gebze, Darıca, Körfez, Gölcük, Başiskele vb.) hizmet veriyoruz. Tüm çalışmalar uzaktan yürütülür; fiziksel görüşme zorunluluğu yok. Kocaeli\'de yerel varlığımız olması yerel dinamikleri anlamamızı sağlıyor.' },
+  { q: 'Gebze\'deki işletmem için de yazılım hizmeti veriyor musunuz?', a: 'Evet. Kocaeli\'nin tüm ilçelerine (Gebze, Darıca, Körfez, Gölcük, Başiskele vb.) hizmet veriyoruz. Tüm çalışmalar uzaktan yürütülür; fiziksel görüşme zorunluluğu yok. Kocaeli kökenli olmamız yerel dinamikleri anlamamızı sağlıyor.' },
   { q: 'Kocaeli\'de hangi yazılım ajansıyla çalışmalıyım?', a: 'Dikkat etmeniz gereken kriterler: canlı referansları olan, teknoloji seçimini şeffaf açıklayan, proje sonrası destek veren ve dijital pazarlama da yapabilen ajans. Yalnızca kod yazan bir ajansla çalışmak web sitenizi canlı eder ama müşteri getirmez. Bizimle çalışırken hem yazılım hem SEO/Ads entegre yürütülür.' },
   { q: 'Kocaeli\'de n8n otomasyonu için hangi süreçleri otomatikleştirebilirim?', a: 'En yaygın Kocaeli B2B senaryoları: müşteri teklif akışı (CRM → PDF oluştur → mail gönder), stok uyarı sistemi, satış siparişi → muhasebe entegrasyonu, saha teknisyeni iş emri yönetimi, müşteri memnuniyet formu otomasyonu. Her süreç analiz edilerek fayda/maliyet hesabı yapılır.' },
   { q: 'Yapay zeka (AI) Kocaeli işletmesine nasıl katkı sağlar?', a: 'Pratik kullanım senaryoları: müşteri destek chatbotu (7/24 ön sorulara cevap), ürün açıklaması/teklif yazma asistanı, hukuk bürosu için belge analizi, sanayi firması için teknik şartname özeti, e-ticaret için ürün öneri motoru. Her proje için önce fizibilite analizi yapıyoruz.' },
@@ -86,7 +86,7 @@ export default function KocaeliYazilimAjansiPage() {
         <div className="max-w-5xl mx-auto text-center relative z-10">
           <div className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 rounded-full px-4 py-1.5 mb-6">
             <MapPin size={13} className="text-blue-400" />
-            <span className="text-blue-400 text-sm font-medium">Kocaeli — İzmit Merkezli</span>
+            <span className="text-blue-400 text-sm font-medium">Kocaeli — İzmit</span>
           </div>
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
             Kocaeli Yazılım Ajansı

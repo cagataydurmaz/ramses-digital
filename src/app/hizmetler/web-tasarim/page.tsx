@@ -4,7 +4,7 @@ import CalendlyButton from '@/components/CalendlyButton'
 import { Monitor, Code2, Smartphone, Gauge, Search, ShoppingCart, ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Web Tasarım & Geliştirme | Modern, Hızlı, SEO Uyumlu — Ramses Dijital',
+  title: 'Web Tasarım ve Geliştirme | SEO Uyumlu — Ramses Dijital',
   description:
     'Modern, hızlı ve SEO uyumlu web tasarım. Next.js, WordPress, Shopify. Core Web Vitals optimize, mobil uyumlu, dönüşüm odaklı tasarım.',
   alternates: { canonical: 'https://ramsesdigital.com/hizmetler/web-tasarim' },

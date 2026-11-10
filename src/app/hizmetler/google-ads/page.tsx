@@ -4,7 +4,7 @@ import CalendlyButton from '@/components/CalendlyButton'
 import { TrendingUp, Target, BarChart3, ShoppingBag, Youtube, Repeat, ArrowRight, CheckCircle2 } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Google Ads Yönetimi | ROI Odaklı Performans Reklamcılığı — Ramses Dijital',
+  title: 'Google Ads Yönetimi | Performans Reklamcılığı — Ramses Dijital',
   description:
     'Profesyonel Google Ads kampanya yönetimi. Search, Display, YouTube, Shopping ve Remarketing kampanyalarıyla 4.2x ortalama ROAS. Şeffaf raporlama.',
   alternates: { canonical: 'https://ramsesdigital.com/hizmetler/google-ads' },

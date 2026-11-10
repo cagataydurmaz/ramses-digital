@@ -87,7 +87,7 @@ export default function SehirlerPage() {
             <span className="gradient-text">Şehirler</span>
           </h1>
           <p className="text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
-            Merkezimiz Kocaeli&apos;de olsa da tüm hizmetlerimizi tamamen uzaktan, Türkiye genelinde yürütüyoruz. Şehrinizi seçin, o şehre özel SEO, Google Ads, web tasarım ve yazılım sayfalarımızı görün.
+            Kocaeli kökenli olsak da tüm hizmetlerimizi tamamen uzaktan, Türkiye genelinde yürütüyoruz. Şehrinizi seçin, o şehre özel SEO, Google Ads, web tasarım ve yazılım sayfalarımızı görün.
           </p>
           <CalendlyButton label="Ücretsiz Danışmanlık Al" variant="primary" />
         </div>

@@ -94,6 +94,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/eskisehir-reklam-ajansi' },
     { path: '/eskisehir-yazilim-ajansi' },
     { path: '/seo-ajansi' },
+    { path: '/geo-ajansi' },
+    { path: '/aeo-hizmeti' },
     { path: '/google-ads-ajansi' },
     { path: '/web-tasarim-ajansi' },
     { path: '/yazilim-ajansi' },

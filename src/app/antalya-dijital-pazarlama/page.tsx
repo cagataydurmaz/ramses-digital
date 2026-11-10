@@ -70,7 +70,7 @@ const channels = [
 ]
 
 const advantages = [
-  { icon: MapPin, title: 'Uzaktan Çalışma Modeli', desc: 'Kocaeli merkezli olsak da tüm süreç uzaktan yürütülüyor — Antalya\'nın sezonluk yoğunluğunda toplantıya gitmenize gerek yok.' },
+  { icon: MapPin, title: 'Uzaktan Çalışma Modeli', desc: 'Kocaeli kökenli olsak da tüm süreç uzaktan yürütülüyor — Antalya\'nın sezonluk yoğunluğunda toplantıya gitmenize gerek yok.' },
   { icon: TrendingUp, title: 'Sonuç Garantisi Değil, Şeffaflık', desc: 'Her ay gerçek verilerle raporlama. Trafik, sıralama, dönüşüm — hepsini göreceksiniz.' },
   { icon: Shield, title: 'Yalnızca White-Hat Yöntemler', desc: 'Google\'ın kurallarını çiğneyen kısa yol yok. Uzun vadeli, sürdürülebilir büyüme.' },
   { icon: Clock, title: 'Sezona Uygun Hızlı Başlangıç', desc: 'Anlaşma sonrası 5 iş günü içinde ilk çalışmalar başlar. Turizm sezonu öncesi kısıtlı zamanınızı boşa harcamayız.' },
@@ -88,7 +88,7 @@ const faqs = [
   { q: 'Antalya\'da dijital pazarlama için bütçe nasıl belirlenir?', a: 'Hedeflediğiniz kanal kombinasyonuna (SEO, Google Ads, web tasarım), dil sayısına ve sezonluk yoğunluğa göre değişir. Sektöre göre ücretsiz danışmanlıkta işletmenize özel bir bütçe planı netleştirebiliriz.' },
   { q: 'Sosyal medya yönetimi de yapıyor musunuz?', a: 'Post, story ve video içerikleri üretiyor, içerik takvimi ve strateji kuruyoruz — ancak hesap yönetimi ve günlük yorum/DM moderasyonu hizmetlerimiz arasında değil. Odak noktamız ölçülebilir ROI getiren kanallar: Google arama, SEO ve e-posta pazarlama.' },
   { q: 'Antalya\'da referanslarınız var mı?', a: 'Antalya\'da henüz canlı bir referansımız yok — sahte veya abartılı iddialarda bulunmak istemiyoruz. Türkiye genelinde ziyaret edilebilir, gerçek müşteri çalışmalarımızı portföyümüzde görebilirsiniz; hukuk bürosundan e-ticarete, platform projelerinden yerel hizmet işletmelerine kadar.' },
-  { q: 'Uzaktan çalışıyor musunuz, yoksa Antalya\'da yerinde mi?', a: 'Tüm hizmetlerimiz uzaktan yürütülüyor. Merkezimiz Kocaeli\'de, fiziksel ofisimiz Antalya\'da yok. Toplantılar Google Meet/Zoom üzerinden, raporlar dijital dashboard ve PDF ile paylaşılıyor.' },
+  { q: 'Uzaktan çalışıyor musunuz, yoksa Antalya\'da yerinde mi?', a: 'Tüm hizmetlerimiz uzaktan yürütülüyor. Kocaeli kökenliyiz, fiziksel ofisimiz Antalya\'da yok. Toplantılar Google Meet/Zoom üzerinden, raporlar dijital dashboard ve PDF ile paylaşılıyor.' },
   { q: 'Yapay zeka reklamcılığı ve GEO nedir, Antalya turizm işletmesi için gerekli mi?', a: 'GEO (Generative Engine Optimization), yabancı turistlerin ChatGPT veya Gemini\'ye "best hotel in Antalya" gibi sorular sorduğunda alıntılanma olasılığını artırmak için yapılan içerik ve yapı çalışmasıdır. Bu kanal henüz doymamış — erken hareket eden işletmeler önemli bir avantaj kazanıyor.' },
 ]
 

@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     languages: { 'tr-TR': 'https://ramsesdigital.com', 'en': 'https://ramsesdigital.com/en' },
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
-  title: 'Ramses Dijital Yazılım ve Dijital Pazarlama Ajansı | SEO, Google Ads, n8n Otomasyon, Web Tasarım',
+  title: 'Ramses Dijital | SEO, Google Ads ve Web Tasarım Ajansı',
   description:
     'Ramses Dijital Yazılım ve Dijital Pazarlama Ajansı — web tasarımı, yazılım geliştirme ve performans odaklı dijital pazarlama. SEO, Google Ads, n8n otomasyon uzmanı ekibimizle gerçek sonuçlar elde edin.',
   keywords:

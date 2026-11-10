@@ -38,7 +38,7 @@ const faqs = [
   { q: 'Fiyatlandırma nasıl yapılıyor?', a: 'Proje bazlı sabit fiyat (kapsam netse) veya zaman & materyal modeli kullanıyoruz. Küçük otomasyon projelerinden kurumsal web uygulamalarına göre kapsam değişir. Ücretsiz danışmanlıkta ihtiyaç analizi yaptıktan sonra sabit fiyatlı teklif sunuyoruz.' },
   { q: 'Mevcut yazılımımla entegrasyon yapabilir misiniz?', a: 'Büyük ihtimalle evet. Mikro Yazılım, Logo, SAP, WooCommerce, Shopify, Trendyol, Hepsiburada entegrasyonlarında deneyimimiz var. Konya\'nın tarım makineleri üreticilerinin kullandığı ERP sistemleriyle de API veya webhook bazlı entegrasyon kurabiliriz.' },
   { q: 'Yazılım projesine nasıl başlanıyor?', a: 'Önce 30 dakikalık ücretsiz bir görüşmeyle mevcut iş akışınızı ve hangi sistemle (ERP, üretim takip, bayi portalı, rezervasyon vb.) entegre çalışacağımızı netleştiriyoruz. Ardından teknik şartname ve tahmini süreyi paylaşıyor, onayınızla geliştirmeye başlıyoruz. Taahhüt gerektirmez.' },
-  { q: 'Fiziksel olarak Konya\'da ofisiniz var mı?', a: 'Hayır, merkezimiz Kocaeli\'de — Konya\'ya tamamen uzaktan hizmet veriyoruz. Keşif görüşmesi ve teknik şartname süreci Google Meet/Zoom üzerinden yürütülüyor.' },
+  { q: 'Fiziksel olarak Konya\'da ofisiniz var mı?', a: 'Hayır, Kocaeli kökenliyiz — Konya\'ya tamamen uzaktan hizmet veriyoruz. Keşif görüşmesi ve teknik şartname süreci Google Meet/Zoom üzerinden yürütülüyor.' },
   { q: 'Kaynak kod kimin mülkiyetinde olur?', a: 'Sizin. ERP/bayi entegrasyonu gibi kritik sistemlerde bu özellikle önemli — kodun ve verinin size ait olduğundan emin olmanızı sağlıyoruz, bizimle çalışmaya devam etmek zorunda kalmazsınız.' },
 ]
 

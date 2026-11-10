@@ -4,7 +4,7 @@ import CalendlyButton from '@/components/CalendlyButton'
 import { Share2, Image as ImageIcon, Video, Calendar, Palette, Hash, CheckCircle2, ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Sosyal Medya İçerik Üretimi | Post, Story, Video Tasarımı — Ramses Dijital',
+  title: 'Sosyal Medya İçerik Üretimi — Ramses Dijital',
   description:
     'Instagram, LinkedIn ve diğer platformlar için post, story ve video içerik üretimi. Marka kimliğinize uygun tasarım, içerik takvimi ve strateji. Ramses Dijital Yazılım ve Dijital Pazarlama Ajansı.',
   alternates: { canonical: 'https://ramsesdigital.com/hizmetler/sosyal-medya' },

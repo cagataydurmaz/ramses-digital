@@ -55,7 +55,7 @@ const faqs = [
   { q: 'Kocaeli SEO paketi ne kadara mal olur?', a: 'İşletme büyüklüğüne ve kapsama göre değişir. Paket kapsamı: teknik audit, anahtar kelime araştırması, aylık içerik üretimi, GBP yönetimi, backlink stratejisi ve aylık raporlama. Sektör ve ilçeye göre ücretsiz danışmanlıkta netleşir.' },
   { q: 'GEO (Yapay Zeka Optimizasyonu) Kocaeli işletmesi için gerekli mi?', a: 'Evet, özellikle B2B ve profesyonel hizmetlerde. ChatGPT veya Gemini\'ye "Kocaeli\'de güvenilir muhasebe bürosu önerir misin?" diye sorulduğunda sizi kaynak göstermesi olasılığını artıran yapılandırılmış içerik, citation-worthy veri ve yerel otorite sinyalleri gerekiyor. Bu GEO çalışması, geleneksel SEO\'yla eş zamanlı yürütülür.' },
   { q: 'Kocaeli\'deki rakiplerim büyük firmaların bayisi, SEO nasıl işe yarar?', a: 'Büyük bayi zincirleri genellikle yerel içeriğe ve ilçe bazlı sayfaya yatırım yapmaz — şablon site kullanır. Bu sizin için büyük bir fırsat. "Gebze\'de güvenilir X" veya "İzmit\'te yerel Y" aramaları genellikle bağımsız yerel işletmelere kapı açar. Uzun kuyruklu yerel aramalar en yüksek dönüşüm oranına sahip.' },
-  { q: 'Kocaeli\'de SEO çalışması için ofiste görüşme gerekiyor mu?', a: 'Hayır. Tüm çalışmalar uzaktan yürütülüyor. Keşif görüşmesi, strateji sunumu ve aylık raporlar Google Meet / Zoom üzerinden yapılır. Kocaeli\'de yerel varlığımız olmasına rağmen fiziksel görüşme zorunluluğu yok.' },
+  { q: 'Kocaeli\'de SEO çalışması için ofiste görüşme gerekiyor mu?', a: 'Hayır. Tüm çalışmalar uzaktan yürütülüyor. Keşif görüşmesi, strateji sunumu ve aylık raporlar Google Meet / Zoom üzerinden yapılır. Tüm süreç online yürütüldüğü için fiziksel görüşme gerekmiyor.' },
 ]
 
 const jsonLd = {
@@ -239,6 +239,8 @@ export default function KocaeliSeoPage() {
 
       <RelatedPages
         pages={[
+          { label: 'GEO Ajansı', href: '/geo-ajansi' },
+          { label: 'AEO Hizmeti', href: '/aeo-hizmeti' },
           { label: 'Kocaeli Dijital Pazarlama', href: '/kocaeli-dijital-pazarlama' },
           { label: 'Kocaeli Web Tasarım', href: '/kocaeli-web-tasarim' },
           { label: 'Kocaeli Google Ads', href: '/kocaeli-google-ads' },

@@ -104,7 +104,7 @@ export default function IzmitYazilimAjansiPage() {
         <div className="max-w-3xl mx-auto">
           <div className="bg-white/[0.02] border border-white/[0.06] rounded-xl px-6 py-4 text-center">
             <p className="text-zinc-400 text-sm leading-relaxed">
-              Ramses Dijital, reklam ajansı kimliğiyle başladı; bugün SEO ve Google Ads&apos;in yanında yazılım geliştirmeyi de aynı disiplinle sunuyor. Merkezimiz İzmit&apos;te olduğu için Kocaeli bölgesindeki işletmeleri yerinde tanıyor, ihtiyaçlarına hızlı cevap veriyoruz.
+              Ramses Dijital, reklam ajansı kimliğiyle başladı; bugün SEO ve Google Ads&apos;in yanında yazılım geliştirmeyi de aynı disiplinle sunuyor. Kocaeli kökenli olduğumuz için bölgedeki işletmelerin ihtiyaçlarını tanıyor, hızlı cevap veriyoruz.
             </p>
           </div>
         </div>
@@ -118,7 +118,7 @@ export default function IzmitYazilimAjansiPage() {
               İzmit İçin Yazılım Çözümleri
             </h2>
             <p className="text-zinc-400 max-w-xl mx-auto">
-              Merkezimiz İzmit&apos;te olduğu için proje boyunca yerinde görüşme yapabiliyoruz — mimariyi bu yakın takiple şekillendiriyoruz.
+              Proje boyunca düzenli online görüşmelerle ilerliyoruz — mimariyi bu yakın takiple şekillendiriyoruz.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">

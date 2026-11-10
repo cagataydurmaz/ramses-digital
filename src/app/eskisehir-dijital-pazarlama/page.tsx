@@ -70,7 +70,7 @@ const channels = [
 ]
 
 const advantages = [
-  { icon: MapPin, title: 'Uzaktan Çalışma Modeli', desc: 'Kocaeli merkezli olsak da tüm süreç uzaktan yürütülüyor — Eskişehir\'in trafiğinde toplantıya gitmenize gerek yok.' },
+  { icon: MapPin, title: 'Uzaktan Çalışma Modeli', desc: 'Kocaeli kökenli olsak da tüm süreç uzaktan yürütülüyor — Eskişehir\'in trafiğinde toplantıya gitmenize gerek yok.' },
   { icon: TrendingUp, title: 'Sonuç Garantisi Değil, Şeffaflık', desc: 'Her ay gerçek verilerle raporlama. Trafik, sıralama, dönüşüm — hepsini göreceksiniz.' },
   { icon: Shield, title: 'Yalnızca White-Hat Yöntemler', desc: 'Google\'ın kurallarını çiğneyen kısa yol yok. Uzun vadeli, sürdürülebilir büyüme.' },
   { icon: Clock, title: 'Sektöre Özel Hızlı Başlangıç', desc: 'Anlaşma sonrası 5 iş günü içinde ilk çalışmalar başlar. Eskişehir\'in öğrenci pazarına ve sanayi sektörüne hakim strateji kurgusu.' },
@@ -88,7 +88,7 @@ const faqs = [
   { q: 'Eskişehir\'de dijital pazarlama için aylık ne kadar bütçe ayırmalıyım?', a: 'Hedeflediğiniz kanal kombinasyonuna (SEO, Google Ads, web tasarım) ve sektörünüze göre değişir. Ücretsiz danışmanlıkta işletmenize özel bir bütçe planı netleştirebiliriz.' },
   { q: 'Sosyal medya yönetimi de yapıyor musunuz?', a: 'Post, story ve video içerikleri üretiyor, içerik takvimi ve strateji kuruyoruz — ancak hesap yönetimi ve günlük yorum/DM moderasyonu hizmetlerimiz arasında değil. Odak noktamız ölçülebilir ROI getiren kanallar: Google arama, SEO ve e-posta pazarlama.' },
   { q: 'Eskişehir\'deki hukuk büroları ve klinikler için özel bir yaklaşımınız var mı?', a: 'Evet. Hukuk büroları için Avukatlık Kanunu\'nun reklam yasağı nedeniyle SEO ve içerik otoritesine dayalı strateji uyguluyoruz. Diş hekimi ve estetik merkezleri için ise güven inşa eden içerik ve yerel SEO ağırlıklı bir yaklaşım kuruyoruz.' },
-  { q: 'Uzaktan çalışıyor musunuz, yoksa Eskişehir\'de yerinde mi?', a: 'Tüm hizmetlerimiz uzaktan yürütülüyor. Merkezimiz Kocaeli\'de, fiziksel ofisimiz Eskişehir\'de yok. Toplantılar Google Meet/Zoom üzerinden, raporlar dijital dashboard ve PDF ile paylaşılıyor.' },
+  { q: 'Uzaktan çalışıyor musunuz, yoksa Eskişehir\'de yerinde mi?', a: 'Tüm hizmetlerimiz uzaktan yürütülüyor. Kocaeli kökenliyiz, fiziksel ofisimiz Eskişehir\'de yok. Toplantılar Google Meet/Zoom üzerinden, raporlar dijital dashboard ve PDF ile paylaşılıyor.' },
   { q: 'Yapay zeka reklamcılığı ve GEO nedir, Eskişehir işletmesi için gerekli mi?', a: 'GEO (Generative Engine Optimization), ChatGPT veya Gemini\'de "Eskişehir\'de [sektörünüz]" aramasında alıntılanma olasılığını artırmak için yapılan içerik ve yapı çalışmasıdır. Eskişehir\'in genç, teknolojiye yatkın nüfusu göz önüne alınca bu kanal özellikle değerli — erken hareket eden işletmeler önemli bir avantaj kazanıyor.' },
 ]
 

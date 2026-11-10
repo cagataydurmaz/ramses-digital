@@ -13,7 +13,7 @@ export interface IlceFaq {
 export interface Ilce {
   slug: string
   name: string
-  il: 'Kocaeli' | 'Sakarya' | 'Yalova' | 'Düzce'
+  il: 'Kocaeli' | 'Sakarya' | 'Yalova' | 'Düzce' | 'Tekirdağ'
   tur: string
   intro: string
   ekonomi: string
@@ -293,7 +293,7 @@ export const ilceler: Ilce[] = [
       { ad: 'Eğitim ve kurs merkezleri', oneri: 'Program sayfaları ve kayıt formu.' },
     ],
     aramalar: ['adapazarı web tasarım', 'sakarya seo', 'adapazarı kurumsal web sitesi', 'sakarya web tasarım ajansı'],
-    komsular: ['serdivan', 'sapanca', 'kartepe'],
+    komsular: ['sakarya', 'serdivan', 'sapanca', 'kartepe'],
     sss: [
       { q: 'Sakarya mı Adapazarı mı hedeflemeliyim?', a: 'İkisi de aranıyor. Genel şehir hedefi için "Sakarya", ilçe düzeyi için "Adapazarı" kullanılıyor; sayfa içeriğinde ikisi de doğal şekilde geçmeli.' },
       { q: 'Sakarya\'da rekabet nasıl?', a: 'İstanbul ve Kocaeli\'ye göre çok daha düşük. Az sayıda ajans yerel kelimelere odaklı çalışıyor, bu yüzden iyi hazırlanmış sayfalar kısa sürede öne çıkabiliyor.' },
@@ -316,7 +316,7 @@ export const ilceler: Ilce[] = [
       { ad: 'Emlak ve öğrenci evi', oneri: 'Bölge rehberi içerikleri ve ilan sayfaları.' },
     ],
     aramalar: ['serdivan web tasarım', 'serdivan kafe', 'serdivan kurs merkezi', 'serdivan seo'],
-    komsular: ['adapazari', 'sapanca', 'kartepe'],
+    komsular: ['sakarya', 'adapazari', 'sapanca', 'kartepe'],
     sss: [
       { q: 'Öğrenci hedef kitlesi için site tasarımı farklı mı?', a: 'Evet. Mobil öncelikli, hızlı yüklenen, fiyat ve konumu hemen gösteren bir yapı gerekir. Uzun metin yerine kısa ve net bilgi daha iyi çalışır.' },
       { q: 'Instagram varken site gerekli mi?', a: 'Sosyal medya keşif için iyi ama Google aramasından gelen müşteriyi sadece web sitesi ve harita profili yakalar. İkisi birbirini tamamlar.' },
@@ -339,7 +339,7 @@ export const ilceler: Ilce[] = [
       { ad: 'Yerel gıda ve hediyelik ürünler', oneri: 'Hikâye odaklı ürün sayfaları ve basit sipariş akışı.' },
     ],
     aramalar: ['sapanca web tasarım', 'sapanca bungalov', 'sapanca otel web sitesi', 'sapanca villa kiralama'],
-    komsular: ['kartepe', 'serdivan', 'adapazari'],
+    komsular: ['sakarya', 'kartepe', 'serdivan', 'adapazari'],
     sss: [
       { q: 'Rezervasyon platformlarından bağımsız olabilir miyim?', a: 'Tamamen bağımsız olmak zor ama doğrudan rezervasyon payını artırmak mümkün. Site ve Google profili güçlendikçe komisyon veren aracılara bağımlılık azalır.' },
       { q: 'Rekabet ne kadar yüksek?', a: 'Sapanca\'da konaklama aramaları rekabetli, o yüzden dar ve özgün aramalar (mekân türü, özellik, konum) üzerinden başlamak daha mantıklı.' },
@@ -488,6 +488,102 @@ export const ilceler: Ilce[] = [
       { q: 'Termal bir otelin sitesinde ilk olarak ne olmalı?', a: 'Net oda ve paket bilgisi, gerçek fotoğraflar, konum ve ulaşım, rezervasyon yolu ve sık sorulan sorular. Misafir karar verirken bu bilgileri hızlıca bulabilmeli.' },
       { q: 'Kış sezonunda da arama oluyor mu?', a: 'Evet, termal turizm yıl boyu talep görür ve kış hafta sonlarında da arama hacmi yüksek kalır. İçerik sezonlara göre planlanmalı ve yıl boyunca güncel tutulmalı.' },
       { q: 'Rezervasyon platformları yerine doğrudan rezervasyon alabilir miyim?', a: 'Tamamen platformlardan bağımsız olmak zor ama doğrudan payı artırmak mümkün. Güçlü site, doğru bilgi ve Google profilindeki yorumlar misafirin sizi doğrudan aramasını sağlar.' },
+    ],
+  },
+  {
+    slug: 'sakarya',
+    name: 'Sakarya',
+    il: 'Sakarya',
+    tur: 'Sakarya ili',
+    intro:
+      'Sakarya, Kocaeli ile Düzce arasında, sanayi, eğitim ve turizmin bir arada bulunduğu bir il. "Sakarya" ile başlayan aramalar il genelindeki hizmetleri, ilçe adlarıyla yapılan aramalar ise daha yerel ihtiyaçları ifade ediyor; iki arama biçimini birlikte ele almak gerekiyor.',
+    ekonomi:
+      'Otomotiv ve yan sanayi, makine ve metal işleme, gıda ve tarım ilin ekonomik omurgasını oluşturuyor. Sakarya Üniversitesi çevresindeki öğrenci ve akademik nüfus hizmet sektörünü canlı tutarken Sapanca Gölü ve Karadeniz kıyısı turizm talebi yaratıyor. Bu çeşitlilik, her sektör için ayrı bir dijital yaklaşım gerektiriyor.',
+    sektorler: [
+      { ad: 'Otomotiv yan sanayi ve üretim', oneri: 'Kapasite, sertifika ve ürün grubu sayfaları; teklif talep formu ve yurt dışı alıcılar için İngilizce özet.' },
+      { ad: 'Sağlık ve klinikler', oneri: 'Tedavi ve hekim sayfaları, randevu akışı, Google İşletme Profili ve teşviksiz gerçek yorum stratejisi.' },
+      { ad: 'Eğitim ve kurs merkezleri', oneri: 'Program, takvim ve kayıt sayfaları; öğrenci ve veli sorularına net cevaplar.' },
+      { ad: 'Turizm ve konaklama', oneri: 'Sapanca ve kıyı bölgesi için rezervasyon odaklı sayfalar, sezon öncesi içerik planı.' },
+      { ad: 'Perakende ve yerel hizmetler', oneri: 'Hizmet bölgesi bilgisi, hızlı iletişim ve doğrulanmış harita kaydı.' },
+    ],
+    aramalar: ['sakarya web tasarım', 'sakarya seo', 'sakarya dijital ajans', 'sakarya kurumsal web sitesi'],
+    komsular: ['adapazari', 'serdivan', 'sapanca', 'duzce'],
+    sss: [
+      { q: 'Sakarya ve Adapazarı için ayrı sayfa gerekir mi?', a: '"Sakarya" il genelindeki, "Adapazarı" ise merkez ilçedeki aramaları karşılar. Hizmet alanınız ilin tamamını kapsıyorsa il sayfası, belirli ilçelerdeyse ilçe sayfaları öne çıkarılmalıdır.' },
+      { q: 'Sakarya\'da dijital rekabet nasıl?', a: 'İstanbul ve Kocaeli ile karşılaştırıldığında belirgin şekilde daha düşük. Sektör ve ilçe odaklı aramalarda iyi kurgulanmış sayfalarla görece kısa sürede görünürlük elde etmek mümkündür; süre rekabete göre değişir.' },
+      { q: 'Sanayi firması olarak sosyal medya mı, web sitesi mi öncelikli?', a: 'B2B alıcılar tedarikçi ararken çoğunlukla arama motorunu ve firma web sitesini kullanır. Bu nedenle kurumsal, ürün ve kapasite bilgisi net bir web sitesi önceliklidir; sosyal medya bunu destekleyen bir kanaldır.' },
+    ],
+  },
+  {
+    slug: 'tekirdag',
+    name: 'Tekirdağ',
+    il: 'Tekirdağ',
+    tur: 'Tekirdağ ili',
+    intro:
+      'Tekirdağ, İstanbul\'a yakınlığı, organize sanayi bölgeleri, limanları ve kıyı turizmiyle Trakya\'nın en hareketli illerinden biri. Sanayi, lojistik ve hizmet sektöründeki işletmeler için hem kurumsal hem yerel aramalar önemli bir müşteri kaynağı.',
+    ekonomi:
+      'Çorlu ve Çerkezköy çevresindeki organize sanayi bölgeleri tekstil, gıda, makine ve kimya üretimiyle ilin sanayi kapasitesini oluşturuyor. Liman ve lojistik faaliyetleri, Süleymanpaşa merkezindeki ticaret ve hizmet sektörü, Şarköy ve Mürefte çevresindeki bağcılık ve kıyı turizmi ilin diğer önemli alanları.',
+    sektorler: [
+      { ad: 'Organize sanayi ve üretim', oneri: 'Ürün ve kapasite sayfaları, kalite belgeleri, teklif talep formu; ihracat için İngilizce sayfa yapısı.' },
+      { ad: 'Lojistik, liman ve nakliye', oneri: 'Hizmet ve rota sayfaları, kapasite bilgisi, kurumsal referanslar ve hızlı teklif akışı.' },
+      { ad: 'Bağcılık, gıda ve yöresel ürünler', oneri: 'Hikâye odaklı üretici sayfaları, ürün katalogu, toptan ve perakende satış ayrımı.' },
+      { ad: 'Kıyı turizmi ve konaklama', oneri: 'Sezon öncesi yayınlanan rezervasyon odaklı sayfalar, gerçek fotoğraflar ve yorum yönetimi.' },
+      { ad: 'Sağlık, eğitim ve yerel hizmetler', oneri: 'Randevu ve kayıt sayfaları, hizmet bölgesi bilgisi ve doğrulanmış Google İşletme Profili.' },
+    ],
+    aramalar: ['tekirdağ web tasarım', 'tekirdağ seo', 'tekirdağ dijital ajans', 'süleymanpaşa web tasarım'],
+    komsular: ['corlu', 'cerkezkoy'],
+    sss: [
+      { q: 'Tekirdağ\'daki işletmelerle uzaktan çalışabilir misiniz?', a: 'Evet. Keşif görüşmesi, strateji sunumu ve aylık raporlar video görüşme ve yazılı raporlarla yürütülür; konum, çalışmanın kalitesini etkilemez.' },
+      { q: 'Çorlu ve Çerkezköy için ayrı çalışma gerekir mi?', a: 'Bu ilçelerin sanayi yapısı ve arama davranışı Süleymanpaşa merkezden farklıdır. Hizmet bölgenize göre il sayfasının yanında ilçe sayfaları oluşturmak daha isabetli sonuç verir.' },
+      { q: 'İstanbul\'daki ajanslar yerine neden yerel odaklı çalışmalıyım?', a: 'Genel İstanbul aramalarında rekabet çok yüksektir. Tekirdağ ve ilçe adlarıyla yapılan aramalara odaklanmak, hedef müşteriye daha düşük maliyetle ulaşmayı sağlar.' },
+    ],
+  },
+  {
+    slug: 'corlu',
+    name: 'Çorlu',
+    il: 'Tekirdağ',
+    tur: 'Tekirdağ ilçesi',
+    intro:
+      'Çorlu, Tekirdağ\'ın en kalabalık ve ticari açıdan en hareketli ilçelerinden biri. Sanayi işletmelerinin yanı sıra büyüyen kent nüfusu sağlık, eğitim, perakende ve hizmet sektörlerinde sürekli bir yerel arama talebi oluşturuyor.',
+    ekonomi:
+      'Tekstil başta olmak üzere imalat sanayi ilçenin ekonomik temelini oluşturuyor. Sanayi çalışanlarının oluşturduğu kent nüfusu, konut, sağlık, eğitim, oto servis ve perakende işletmelerine yönelik yerel aramaları artırıyor. Hem kurumsal (B2B) hem bireysel (B2C) talep bir arada bulunuyor.',
+    sektorler: [
+      { ad: 'Tekstil ve imalat', oneri: 'Üretim kapasitesi, ürün grupları ve kalite belgeleri sayfaları; fason üretim ve ihracat odaklı teklif formu.' },
+      { ad: 'Sağlık ve klinikler', oneri: 'Tedavi ve uzman sayfaları, randevu akışı, harita profili ve gerçek hasta yorumları.' },
+      { ad: 'Emlak ve inşaat', oneri: 'Mahalle ve proje rehberleri, gerçek fotoğraflı ilan sayfaları.' },
+      { ad: 'Oto servis ve teknik hizmetler', oneri: 'Hizmet ve çalışma saatleri sayfaları, telefon ve WhatsApp ile hızlı randevu.' },
+      { ad: 'Eğitim ve kurslar', oneri: 'Program ve kayıt sayfaları, veli ve öğrenci sorularına yönelik SSS.' },
+    ],
+    aramalar: ['çorlu web tasarım', 'çorlu seo', 'çorlu tekstil firması web sitesi', 'çorlu klinik web sitesi'],
+    komsular: ['cerkezkoy', 'tekirdag'],
+    sss: [
+      { q: 'Çorlu\'da tekstil firması olarak web sitesi yeni müşteri getirir mi?', a: 'Yeni tedarikçi arayan alıcılar çoğunlukla arama motorunu kullanır. Kapasite, ürün grupları, belgeler ve referansları net sunan bir site, bu aramalardan teklif talebi almayı mümkün kılar.' },
+      { q: 'Hem kurumsal hem bireysel müşterim var, tek site yeterli mi?', a: 'Tek site yeterli olabilir; ancak kurumsal ve bireysel müşteriye yönelik sayfaların ve iletişim yollarının ayrılması gerekir. Böylece her ziyaretçi aradığı bilgiye doğrudan ulaşır.' },
+      { q: 'Çorlu\'da harita sonuçlarında görünmek için ne gerekir?', a: 'Doğrulanmış ve eksiksiz bir Google İşletme Profili, doğru kategori ve hizmet bölgesi, düzenli güncellemeler ve teşviksiz gerçek yorumlar. Web sitesi bu profili destekleyen temel unsurdur.' },
+    ],
+  },
+  {
+    slug: 'cerkezkoy',
+    name: 'Çerkezköy',
+    il: 'Tekirdağ',
+    tur: 'Tekirdağ ilçesi',
+    intro:
+      'Çerkezköy, organize sanayi bölgesiyle Trakya\'nın önemli üretim merkezlerinden biri. İlçede aramaların önemli bir bölümü kurumsal nitelikte: tedarikçi, yan sanayi, servis ve lojistik hizmeti arayan firmalar ilçe adıyla arama yapıyor.',
+    ekonomi:
+      'Organize sanayi bölgesindeki tekstil, gıda, kimya, metal ve makine üreticileri ile bunlara hizmet veren yan sanayi, lojistik ve teknik servis firmaları ilçenin ekonomisini belirliyor. Kapaklı ile birlikte büyüyen konut bölgeleri ise yerel hizmet talebini artırıyor.',
+    sektorler: [
+      { ad: 'OSB üreticileri', oneri: 'Kurumsal tanıtım, ürün ve kapasite sayfaları, sertifikalar ve ihracat için çok dilli yapı.' },
+      { ad: 'Yan sanayi ve tedarik', oneri: 'Hizmet kapsamı, referanslar ve hızlı teklif formu; "Çerkezköy + hizmet" aramalarına yönelik içerik.' },
+      { ad: 'Endüstriyel servis ve bakım', oneri: 'Acil servis ve bakım sayfaları, telefon ve WhatsApp ile hızlı iletişim, harita kaydı.' },
+      { ad: 'Lojistik ve depolama', oneri: 'Kapasite, araç ve hizmet bölgesi sayfaları, kurumsal referanslar.' },
+      { ad: 'Yerel hizmetler ve perakende', oneri: 'Hızlı açılan tanıtım sitesi, doğrulanmış Google İşletme Profili ve yorum yönetimi.' },
+    ],
+    aramalar: ['çerkezköy web tasarım', 'çerkezköy osb firma web sitesi', 'çerkezköy seo', 'çerkezköy endüstriyel servis'],
+    komsular: ['corlu', 'tekirdag'],
+    sss: [
+      { q: 'OSB\'deki bir üretici için hangi sayfalar önceliklidir?', a: 'Kurumsal tanıtım, ürün ve kapasite bilgisi, kalite belgeleri, referanslar ve teklif formu. Alıcı, firmanın gerçek ve güvenilir olduğunu kısa sürede görebilmelidir.' },
+      { q: 'İhracat yapıyorum, çok dilli site gerekir mi?', a: 'Yurt dışı alıcılarla çalışıyorsanız en azından İngilizce ürün ve iletişim sayfaları gerekir. Dil sürümlerinin doğru teknik yapıyla (hreflang) kurulması arama motorlarının doğru sürümü göstermesini sağlar.' },
+      { q: 'Çerkezköy\'de rekabet yüksek mi?', a: 'Genel sanayi aramalarında büyük firmalar öne çıkar; ancak "Çerkezköy + belirli hizmet ya da ürün" aramalarında rekabet görece düşüktür. Doğru hedeflenmiş sayfalarla bu aramalarda görünürlük kazanmak mümkündür.' },
     ],
   },
   {

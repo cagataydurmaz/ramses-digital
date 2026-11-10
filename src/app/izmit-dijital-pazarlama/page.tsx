@@ -8,7 +8,7 @@ import { MapPin, CheckCircle2, ArrowRight, BarChart3, Search, Zap, Globe, Mail, 
 export const metadata: Metadata = {
   title: 'İzmit Dijital Pazarlama Ajansı — Ramses Dijital',
   description:
-    'İzmit merkezli dijital pazarlama ajansı. SEO, Google Ads, web tasarım ve otomasyon ile işletmenizi büyütün. Ücretsiz danışmanlık alın.',
+    'İzmit ve Kocaeli odaklı dijital pazarlama ajansı. SEO, Google Ads, web tasarım ve otomasyon ile işletmenizi büyütün. Ücretsiz danışmanlık alın.',
   alternates: { canonical: 'https://ramsesdigital.com/izmit-dijital-pazarlama' },
   openGraph: {
     title: 'İzmit Dijital Pazarlama Ajansı | Ramses Dijital',
@@ -74,7 +74,7 @@ const channels = [
 ]
 
 const advantages = [
-  { icon: MapPin, title: 'Merkezimiz İzmit', desc: 'Kocaeli\'nin idari merkezinde yerleşik bir ekibiz — şehri, mahalleleri ve iş çevresini uzaktan değil, içeriden biliyoruz.' },
+  { icon: MapPin, title: 'İzmit\'i Tanıyoruz', desc: 'Kocaeli kökenli bir ekibiz — şehri, mahalleleri ve iş çevresini uzaktan değil, içeriden biliyoruz.' },
   { icon: Building, title: 'Merkez İlçe Rekabetini Biliyoruz', desc: 'İzmit, Kocaeli\'nin en yoğun rekabetli ilçesi. Kalabalık pazarda öne çıkmak için genel SEO şablonu yetmez, kesin hedefleme gerekir.' },
   { icon: Users, title: 'Yerel İş Ağına Erişim', desc: 'İzmit\'teki ticaret odası, esnaf ve meslek gruplarının dinamiklerini takip ediyor, stratejimizi buna göre kuruyoruz.' },
   { icon: Clock, title: 'Hızlı Yanıt Süresi', desc: 'Aynı şehirde olmanın avantajıyla soru ve taleplerinize hızlı dönüş yapıyoruz.' },
@@ -90,9 +90,9 @@ const faqs = [
   { q: 'İzmit çarşı merkezindeki bir işletme ile mahalle esnafının stratejisi farklı mı?', a: 'Evet. Çarşı merkezindeki işletmeler için rekabet yoğun anahtar kelimelerde öne çıkmak ve Google Haritalar\'da net konum bilgisi önemli. Mahalle işletmeleri içinse dar bir yarıçapta hedeflenmiş yerel SEO ve komşu mahallelere yönelik reklam daha verimli sonuç veriyor.' },
   { q: 'İzmit\'te hangi hizmetle başlamalıyım: SEO mu, Google Ads mi?', a: 'Hemen sonuç istiyorsanız Google Ads 1-2 hafta içinde trafik getirir. Uzun vadeli ve sürdürülebilir büyüme istiyorsanız SEO\'ya paralel yatırım yapın; 3-6 ay içinde organik trafik reklam bütçesi olmadan gelmeye başlar. Çoğu İzmit müşterimiz ikisini birlikte yürütüyor.' },
   { q: 'İzmit\'te dijital pazarlama bütçesi ne kadar olmalı?', a: 'Sektörünüze ve İzmit merkezdeki rekabet düzeyine göre değişir. Ücretsiz danışmanlık seansında işletmenize özel bütçe planını netleştiriyoruz.' },
-  { q: 'İzmit dışındaki Kocaeli ilçelerine de hizmet veriyor musunuz?', a: 'Evet, Gebze, Darıca, Körfez, Gölcük, Başiskele, Çayırova, Kandıra, Karamürsel ve Dilovası dahil Kocaeli\'nin tamamına hizmet veriyoruz. İzmit\'te yerleşik olmamız yalnızca merkez ilçeye özel avantaj sağlıyor, hizmet alanımızı sınırlamıyor.' },
+  { q: 'İzmit dışındaki Kocaeli ilçelerine de hizmet veriyor musunuz?', a: 'Evet, Gebze, Darıca, Körfez, Gölcük, Başiskele, Çayırova, Kandıra, Karamürsel ve Dilovası dahil Kocaeli\'nin tamamına hizmet veriyoruz. Kocaeli kökenli olmamız bölgeyi tanımamızı sağlıyor, hizmet alanımızı sınırlamıyor.' },
   { q: 'İzmit\'teki müşteri referanslarınız var mı?', a: 'Evet, portföyümüzdeki Psk. Nur Çelen Kocaeli\'de faaliyet gösteren gerçek bir müşterimiz; SEO ve web çalışması sonrası organik aramadan randevu almaya başladı. Sitesini doğrudan ziyaret edebilirsiniz.' },
-  { q: 'Yerinde toplantı yapabiliyor musunuz, yoksa yalnızca uzaktan mı çalışıyorsunuz?', a: 'İzmit\'te yerleşik olduğumuz için talep halinde yüz yüze görüşme mümkün. Ancak sürecin büyük kısmı — raporlama, güncelleme, iletişim — dijital ortamda hızlı biçimde yürütülüyor.' },
+  { q: 'Yerinde toplantı yapabiliyor musunuz, yoksa yalnızca uzaktan mı çalışıyorsunuz?', a: 'Görüşmelerin tamamı online yapılıyor; video görüşme, ekran paylaşımı ve yazılı raporlarla ilerliyoruz. Ancak sürecin büyük kısmı — raporlama, güncelleme, iletişim — dijital ortamda hızlı biçimde yürütülüyor.' },
   { q: 'İzmit\'teki işletmem yapay zeka aramalarında (ChatGPT, Gemini) çıkabilir mi?', a: 'Evet. GEO (Generative Engine Optimization) çalışmasıyla, biri ChatGPT\'ye "İzmit\'te [hizmetiniz]" diye sorduğunda önerilme ihtimalinizi artırıyoruz. Bu, yapılandırılmış içerik ve güvenilir kaynak bağlantılarıyla oluşturuluyor ve SEO paketlerimize dahil.' },
 ]
 
@@ -103,7 +103,7 @@ const jsonLd = {
       '@type': 'ProfessionalService',
       '@id': 'https://ramsesdigital.com/#business',
       name: 'Ramses Dijital',
-      description: 'İzmit merkezli dijital pazarlama ajansı. SEO, Google Ads, web tasarım ve otomasyon.',
+      description: 'İzmit ve Kocaeli odaklı dijital pazarlama ajansı. SEO, Google Ads, web tasarım ve otomasyon.',
       url: 'https://ramsesdigital.com',
       areaServed: [
         { '@type': 'City', name: 'İzmit' },
@@ -154,7 +154,7 @@ export default function IzmitDijitalPazarlamaPage() {
         <div className="max-w-5xl mx-auto text-center relative z-10">
           <div className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 rounded-full px-4 py-1.5 mb-6">
             <MapPin size={13} className="text-blue-400" />
-            <span className="text-blue-400 text-sm font-medium">İzmit Merkezli</span>
+            <span className="text-blue-400 text-sm font-medium">İzmit &amp; Kocaeli</span>
           </div>
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
             İzmit Dijital
@@ -162,7 +162,7 @@ export default function IzmitDijitalPazarlamaPage() {
             <span className="gradient-text">Pazarlama Ajansı</span>
           </h1>
           <p className="text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto mb-4 leading-relaxed">
-            Kocaeli&apos;nin idari merkezinde yerleşik ekibimizle, İzmit&apos;teki işletmenizi SEO, Google Ads, web tasarım ve otomasyonla büyütüyoruz.
+            Kocaeli kökenli ekibimizle, İzmit&apos;teki işletmenizi SEO, Google Ads, web tasarım ve otomasyonla büyütüyoruz.
           </p>
           <p className="text-zinc-500 text-sm mb-10">
             {neighborhoods.join(' · ')} ve İzmit&apos;in tüm mahalleleri

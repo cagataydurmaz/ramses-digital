@@ -35,7 +35,7 @@ const faqs = [
   { q: 'Ankara\'daki hukuk büroları ve danışmanlık firmaları için web sitesi farklı mı?', a: 'Evet. Güven inşa eden, kurumsal kimliğe uygun, içerik ağırlıklı bir yaklaşım gerekiyor. Portföyümüzdeki İstanbul Barosu avukatları için uyguladığımız yaklaşım — reklam değil, otorite ve profesyonellik — Ankara\'daki benzer sektörler için de doğrudan uygulanabilir.' },
   { q: 'Mevcut sitem var, yenileme mi yoksa sıfırdan mı yapmalıyım?', a: 'Mevcut sitenizin Google\'daki birikimi (backlink, sıralama) varsa taşıma yaparız — SEO değeri korunur. Yavaş, eski altyapılı veya mobil uyumsuz siteler için sıfırdan Next.js geçişi çok daha etkili.' },
   { q: 'Ankara\'da web sitesi fiyatları ne kadar?', a: 'Sektör, sayfa sayısı ve özel özelliklere göre değişir. Domain ve hosting ayrıca ücretlendirilir. Ücretsiz danışmanlıkta net fiyat alırsınız.' },
-  { q: 'Fiziksel olarak Ankara\'da ofisiniz var mı?', a: 'Hayır, merkezimiz Kocaeli\'de — tüm süreç uzaktan yönetiliyor. Keşif görüşmesi, tasarım onayı ve teslimat Google Meet/Zoom üzerinden yapılır. Uzaktan çalışma modelimiz portföyümüzdeki canlı projelerle kanıtlı.' },
+  { q: 'Fiziksel olarak Ankara\'da ofisiniz var mı?', a: 'Hayır, Kocaeli kökenliyiz — tüm süreç uzaktan yönetiliyor. Keşif görüşmesi, tasarım onayı ve teslimat Google Meet/Zoom üzerinden yapılır. Uzaktan çalışma modelimiz portföyümüzdeki canlı projelerle kanıtlı.' },
   { q: 'Web sitem yapıldıktan sonra kim günceller?', a: 'İçerik güncellemeleri için basit panel kuruyoruz. Blog, ürün ve haber güncellemelerini kendiniz yapabilirsiniz. Tasarım ve teknik değişiklikler için aylık bakım paketi sunuyoruz.' },
 ]
 

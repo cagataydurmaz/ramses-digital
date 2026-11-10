@@ -27,12 +27,12 @@ const features = [
 ]
 
 const faqs = [
-  { q: 'Fiziksel olarak İzmit/Kocaeli\'de değilim, yine de çalışabilir miyiz?', a: 'Kesinlikle. Merkezimiz Kocaeli\'de olsa da tüm SEO çalışmalarımız uzaktan yürütülüyor. İstanbul, Ankara, İzmir, Antalya, Bursa — Türkiye\'nin her şehrinden müşterimiz var. Görüşmeler Google Meet/Zoom üzerinden yapılıyor, raporlar dijital olarak paylaşılıyor.' },
+  { q: 'Fiziksel olarak İzmit/Kocaeli\'de değilim, yine de çalışabilir miyiz?', a: 'Kesinlikle. Kocaeli kökenli olsak da tüm SEO çalışmalarımız uzaktan yürütülüyor. İstanbul, Ankara, İzmir, Antalya, Bursa — Türkiye\'nin her şehrinden müşterimiz var. Görüşmeler Google Meet/Zoom üzerinden yapılıyor, raporlar dijital olarak paylaşılıyor.' },
   { q: 'SEO ajansı seçerken nelere dikkat etmeliyim?', a: 'Canlı referansları olan, backlink satın almayan (yalnızca organik stratejiler kullanan), şeffaf raporlama yapan ve minimum 3-6 aylık gerçekçi süre veren bir ajans seçin. "1 haftada 1. sayfa" gibi vaatler genellikle Google cezasıyla sonuçlanan riskli tekniklere işaret eder.' },
   { q: 'SEO sonuçları ne kadar sürede görülür?', a: 'Yerel/harita sonuçları 2-4 haftada, organik web sitesi sıralamaları 3-6 ayda belirginleşir. Rekabetçi ulusal anahtar kelimelerde tam etki 6-12 ay alabilir. Süreç boyunca aylık ilerleme raporlarıyla takip edersiniz.' },
   { q: 'SEO paketleriniz ne kadar?', a: 'Sektör, rekabet düzeyi ve hedef şehir sayısına göre kapsam ve fiyat değişir. Ücretsiz danışmanlıkta işletmenize özel teklif sunuyoruz.' },
   { q: 'Hangi sektörlerde deneyiminiz var?', a: 'Sağlık, hukuk, e-ticaret, B2B sanayi, güzellik & estetik, eğitim ve profesyonel hizmetler dahil geniş bir yelpazede çalışıyoruz. Portföyümüzde farklı şehirlerden ve sektörlerden canlı, doğrulanabilir projeler var.' },
-  { q: 'GEO ve AEO neden ulusal SEO için de önemli?', a: 'ChatGPT veya Gemini\'ye "İstanbul\'da güvenilir bir SEO ajansı önerir misin?" sorulduğunda, coğrafi sınır olmadan yapılandırılmış içerik ve otorite sinyalleri olan markalar öneriliyor. GEO çalışması, hangi şehirden arama gelirse gelsin sizi görünür kılıyor.' },
+  { q: 'GEO ve AEO neden ulusal SEO için de önemli?', a: 'Yapay zekâ araçları ve arama özetleri, kullanıcının bulunduğu şehirden bağımsız olarak net, güvenilir ve iyi yapılandırılmış kaynaklardan yararlanır. GEO ve AEO çalışmaları içeriğinizi bu kaynaklar arasında yer alma olasılığını artıracak şekilde hazırlamayı hedefler; Google\'ın resmî açıklamasına göre bunun için özel bir dosya ya da işaretleme gerekmez ve sonuç garanti edilemez.' },
   { q: 'Sözleşme süresi ne kadar?', a: 'Minimum 3 ay, ideal olarak 6 ay öneriyoruz — SEO birikimli çalışır, 1-2 aylık taahhütlerde anlamlı sonuç almak zordur. 12 aylık sözleşmelerde indirim sağlıyoruz.' },
 ]
 
@@ -146,6 +146,8 @@ export default function SeoAjansiPage() {
 
       <RelatedPages
         pages={[
+          { label: 'GEO Ajansı', href: '/geo-ajansi' },
+          { label: 'AEO Hizmeti', href: '/aeo-hizmeti' },
           { label: 'Google Ads Ajansı', href: '/google-ads-ajansi' },
           { label: 'Web Tasarım Ajansı', href: '/web-tasarim-ajansi' },
           { label: 'Yazılım Ajansı', href: '/yazilim-ajansi' },

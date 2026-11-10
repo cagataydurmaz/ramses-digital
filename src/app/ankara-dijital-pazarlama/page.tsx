@@ -70,7 +70,7 @@ const channels = [
 ]
 
 const advantages = [
-  { icon: MapPin, title: 'Uzaktan Çalışma Modeli', desc: 'Kocaeli merkezli olsak da tüm süreç uzaktan yürütülüyor — Ankara toplantıları için trafiğe çıkmanıza gerek yok.' },
+  { icon: MapPin, title: 'Uzaktan Çalışma Modeli', desc: 'Kocaeli kökenli olsak da tüm süreç uzaktan yürütülüyor — Ankara toplantıları için trafiğe çıkmanıza gerek yok.' },
   { icon: TrendingUp, title: 'Sonuç Garantisi Değil, Şeffaflık', desc: 'Her ay gerçek verilerle raporlama. Trafik, sıralama, dönüşüm — hepsini göreceksiniz.' },
   { icon: Shield, title: 'Yalnızca White-Hat Yöntemler', desc: 'Google\'ın kurallarını çiğneyen kısa yol yok. Uzun vadeli, sürdürülebilir büyüme.' },
   { icon: Clock, title: 'Hızlı Başlangıç', desc: 'Anlaşma sonrası 5 iş günü içinde ilk çalışmalar başlar. Uzun bekleme yok.' },

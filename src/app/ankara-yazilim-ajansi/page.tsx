@@ -39,7 +39,7 @@ const faqs = [
   { q: 'Proje süresi ve teslim takvimi nasıl belirleniyor?', a: 'Brifing → teknik şartname → onay → geliştirme → test → teslim süreciyle ilerliyoruz. Basit kurumsal web sitesi 2-3 hafta, orta ölçekli web uygulaması 6-10 hafta, karmaşık otomasyon veya platform projeleri 3-6 ay sürüyor. Şartname onaylandıktan sonra net bir takvime bağlı kalıyoruz.' },
   { q: 'Mevcut yazılımımla entegrasyon yapabilir misiniz?', a: 'Büyük ihtimalle evet. Mikro Yazılım, Logo, e-imza sistemleri, WooCommerce ve çeşitli CRM/ERP araçlarıyla entegrasyon deneyimimiz var. API\'si olan her sistemle entegrasyon mümkün; olmayanlarda webhook veya dosya bazlı çözümler geliştiriyoruz.' },
   { q: 'Fiyatlandırma nasıl yapılıyor?', a: 'Kapsamı netse proje bazlı sabit fiyat, değilse zaman & materyal modeli kullanıyoruz. Ücretsiz keşif görüşmesinde ihtiyaç analizi yaptıktan sonra size özel bir teklif çıkarıyoruz.' },
-  { q: 'Ankara\'da fiziksel ofisiniz var mı?', a: 'Hayır. Merkezimiz Kocaeli\'de ve Ankara\'ya tamamen uzaktan hizmet veriyoruz. Teknik şartname görüşmeleri, demo teslimleri ve destek süreçlerinin tamamı Google Meet/Zoom ve dijital araçlar üzerinden yürütülüyor.' },
+  { q: 'Ankara\'da fiziksel ofisiniz var mı?', a: 'Hayır. Kocaeli kökenliyiz ve Ankara\'ya tamamen uzaktan hizmet veriyoruz. Teknik şartname görüşmeleri, demo teslimleri ve destek süreçlerinin tamamı Google Meet/Zoom ve dijital araçlar üzerinden yürütülüyor.' },
   { q: 'Proje sonunda kaynak kod bize mi ait olur?', a: 'Evet. Kaynak kod ve tüm mülkiyet hakları teslimle birlikte tamamen size geçer. Kurumsal ve kamu kurumu müşterilerimiz için bu, denetim/uyum açısından da önemli bir güvence.' },
 ]
 

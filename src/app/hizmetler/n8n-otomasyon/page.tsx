@@ -4,7 +4,7 @@ import CalendlyButton from '@/components/CalendlyButton'
 import { Workflow, Bot, GitMerge, Webhook, Zap, Shield, ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'n8n İş Akışı Otomasyonu | AI Entegrasyonlu No-Code Otomasyon — Ramses Digital',
+  title: 'n8n İş Akışı Otomasyonu | AI Entegrasyonu — Ramses Dijital',
   description:
     'n8n ile CRM, e-posta, AI ve sosyal medya araçlarını birbirine bağlayın. Self-hosted, KVKK uyumlu, sınırsız iş akışı. Lead capture\'dan AI agent\'lara kadar.',
   alternates: { canonical: 'https://ramsesdigital.com/hizmetler/n8n-otomasyon' },

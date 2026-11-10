@@ -49,7 +49,7 @@ const faqs = [
   { q: 'Eskişehir\'in hangi ilçelerine hizmet veriyorsunuz?', a: 'Odunpazarı, Tepebaşı, Sivrihisar, Mihalıççık, Çifteler, Sarıcakaya, Alpu ve Mihalgazi dahil Eskişehir\'in tüm ilçelerine uzaktan hizmet veriyoruz.' },
   { q: 'Sözleşme şartlarınız nedir?', a: 'Google Ads ve SEO için minimum 3 ay, ideal olarak 6 ay öneriyoruz. Dijital pazarlama kısa vadede değil, birikimiyle sonuç verir. Web tasarım projeleri tek seferlik sözleşmeyle teslim edilir.' },
   { q: 'Yapay zeka (ChatGPT, Gemini) aramalarında da görünür olabilir miyim?', a: 'Evet, bu GEO (Generative Engine Optimization) olarak adlandırılıyor. Eskişehir\'de sektörünüzü araştıran birinin ChatGPT\'ye sorduğunda sizi kaynak göstermesi olasılığını artıran yapılandırılmış içerik, citation-worthy veriler ve otoriter backlink profili gerekiyor. Tüm SEO paketlerimize GEO stratejisi dahildir.' },
-  { q: 'Fiziksel olarak Eskişehir\'de ofisiniz var mı?', a: 'Hayır, merkezimiz Kocaeli\'de — Eskişehir\'e tamamen uzaktan hizmet veriyoruz. Keşif görüşmesi, strateji onayı ve raporlama Google Meet/Zoom üzerinden yürütülüyor.' },
+  { q: 'Fiziksel olarak Eskişehir\'de ofisiniz var mı?', a: 'Hayır, Kocaeli kökenliyiz — Eskişehir\'e tamamen uzaktan hizmet veriyoruz. Keşif görüşmesi, strateji onayı ve raporlama Google Meet/Zoom üzerinden yürütülüyor.' },
   { q: 'Reklam hesabımız kimin adına açılır?', a: 'Firmanızın adına. Google Ads hesabı sizde açılır, biz yönetici olarak erişiriz. Hesap üzerinde tam kontrol her zaman sizde kalır.' },
 ]
 

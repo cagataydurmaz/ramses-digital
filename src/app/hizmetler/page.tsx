@@ -3,7 +3,7 @@ import Link from 'next/link'
 import CalendlyButton from '@/components/CalendlyButton'
 
 export const metadata: Metadata = {
-  title: 'Hizmetlerimiz | SEO, Google Ads, Sosyal Medya & n8n Otomasyon — Ramses Dijital',
+  title: 'Dijital Pazarlama Hizmetleri — Ramses Dijital',
   description:
     'SEO/GEO/AEO, Google Ads, sosyal medya içerik üretimi, web tasarımı, e-posta otomasyonu, n8n iş akışı ve veri analizi. Performans odaklı dijital pazarlama hizmetleri.',
   alternates: { canonical: 'https://ramsesdigital.com/hizmetler' },
@@ -470,7 +470,7 @@ const faqs = [
   },
   {
     q: 'Kocaeli dışından çalışıyor musunuz?',
-    a: 'Evet, tüm Türkiye ve uluslararası pazarda online çalışıyoruz. Merkezimiz Kocaeli\'de olmakla birlikte İstanbul, Ankara, İzmir başta olmak üzere her şehirden müşteri kabul ediyoruz. Görüşmeleri Google Meet veya Zoom üzerinden yapıyoruz.',
+    a: 'Evet, tüm Türkiye ve uluslararası pazarda online çalışıyoruz. Kocaeli kökenli olmakla birlikte İstanbul, Ankara, İzmir başta olmak üzere her şehirden müşteri kabul ediyoruz. Görüşmeleri Google Meet veya Zoom üzerinden yapıyoruz.',
   },
   {
     q: 'Raporlama nasıl yapılıyor?',

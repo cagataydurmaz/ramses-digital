@@ -274,7 +274,7 @@ const aboutFaqs = [
   },
   {
     q: 'Nerede konumlanıyorsunuz?',
-    a: 'Merkezimiz Kocaeli\'de. İstanbul, Ankara, İzmir başta olmak üzere Türkiye genelinde ve uluslararası pazarda online olarak hizmet veriyoruz.',
+    a: 'Kocaeli kökenliyiz. İstanbul, Ankara, İzmir başta olmak üzere Türkiye genelinde ve uluslararası pazarda online olarak hizmet veriyoruz.',
   },
   {
     q: 'Ramses Digital\'i diğer ajanslardan ayıran ne?',
