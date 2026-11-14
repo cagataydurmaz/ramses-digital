@@ -33,7 +33,7 @@ export const projects: CaseStudy[] = [
     displayUrl: 'depodez.com',
     category: 'Web Tasarımı + SEO + Google Ads',
     industry: 'Su Deposu Temizliği & Hijyen',
-    desc: 'İstanbul\'da su deposu temizliği, dezenfeksiyonu ve izolasyonu yapan firma için eski WordPress sitesinden yeni nesil, hızlı bir siteye geçiş. Web tasarım, SEO, ilçe sayfaları ve Google Ads tek elden.',
+    desc: 'İstanbul\'da su deposu temizliği, dezenfeksiyonu ve izolasyonu yapan firma için eski WordPress sitesinden yeni nesil, hızlı bir siteye geçiş. Web tasarım, SEO, ilçe sayfaları ve Google Ads bakımı tek elden.',
     tags: ['Web Tasarım', 'Yerel SEO', 'İlçe Sayfaları', 'Google Ads', 'İçerik'],
     thumb: '/portfolio/depodez.png',
     color: 'cyan',
@@ -46,7 +46,7 @@ export const projects: CaseStudy[] = [
       'İstanbul\'un 16 ilçesi/semti için özgün içerikli hizmet bölgesi sayfaları',
       'Blog altyapısı ve 40\'ı aşkın bilgilendirici içerik, yapılandırılmış veri ve teknik SEO',
       'İSKİ ve Sağlık Bakanlığı belgeleri, kurumsal referanslar ve Google yorumlarıyla güven bölümleri',
-      'Google Ads kampanya kurulumu ve dönüşüm takibi',
+      'Mevcut Google Ads hesabının bakımı ve optimizasyonu',
     ],
     outcome:
       'Firma artık hizmet ve ilçe bazında ayrı sayfalarla aranabilen, belgeleri ve referanslarıyla güven veren, telefon ve WhatsApp üzerinden doğrudan talep toplayan modern bir dijital altyapıya sahip.',
