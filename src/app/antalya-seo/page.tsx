@@ -1,5 +1,9 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import CitySeoSections from '@/components/CitySeoSections'
+import { sehirSeo } from '@/lib/sehirSeo'
+import SeoPriceTable from '@/components/SeoPriceTable'
+import SeoChecklist from '@/components/SeoChecklist'
 import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
@@ -38,6 +42,7 @@ const faqs = [
   { q: 'Fiziksel olarak Antalya\'da ofisiniz var mı?', a: 'Hayır, Kocaeli kökenliyiz — Antalya\'ya tamamen uzaktan hizmet veriyoruz. Keşif görüşmesi, strateji sunumu ve aylık raporlama Google Meet/Zoom üzerinden yapılıyor; bu süreç fiziksel mesafeyi ortadan kaldırıyor.' },
   { q: 'Sera sebzeciliği ve tarım ihracatı yapan işletmeler için SEO anlamlı mı?', a: 'Evet, özellikle B2B alıcı bulma ve kurumsal görünürlük açısından. İngilizce ürün katalog sayfaları, ihracat sertifikaları ve üretim kapasitesi gibi bilgileri içeren kurumsal içerik, yurt dışından alıcıların ilk araştırma aşamasında bulunmanızı sağlıyor.' },
   { q: 'GEO (Yapay Zeka Optimizasyonu) Antalya turizm işletmesi için neden önemli?', a: 'Yabancı turistlerin bir kısmı artık ChatGPT veya Gemini\'ye "Antalya\'da güvenilir tur operatörü" gibi sorular soruyor. Bu kanal henüz doymamış durumda — erken hareket eden butik otel ve tur operatörleri rakiplerinden önce bu aramalarda önerilme şansı yakalıyor.' },
+  ...sehirSeo['antalya'].ekSss,
 ]
 
 const jsonLd = {
@@ -160,6 +165,8 @@ export default function AntalyaSeoPage() {
         </div>
       </section>
 
+      <CitySeoSections city="antalya" />
+
       <section className="py-20 px-6">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-10 text-center">Sık Sorulan Sorular</h2>
@@ -175,6 +182,20 @@ export default function AntalyaSeoPage() {
       </section>
 
       <ReviewsMarquee />
+
+      <SeoPriceTable place="Antalya" />
+
+      <SeoChecklist
+        title="Antalya'da SEO Firması Seçerken Neye Bakmalı?"
+        intro="Uzaktan çalışan ya da yerel bir ajansla görüşürken şu kriterleri sorun."
+        rows={[
+          { kriter: 'Gerçek referans', bakin: 'Canlı sitesini ziyaret edebileceğiniz örnek işler var mı', dikkat: 'Ekran görüntüsü yerine canlı site ve ölçülebilir çıktı isteyin' },
+          { kriter: 'Harita görünürlüğü', bakin: 'Google İşletme Profili yönetimi pakete dahil mi', dikkat: 'Yerel aramalarda harita sonuçları belirleyicidir' },
+          { kriter: 'İlçe hedefi', bakin: 'Sadece "Antalya" değil, ilçe ve sektör aramalarını da planlıyor mu', dikkat: 'Dar ve ulaşılabilir aramalar daha hızlı sonuç verir' },
+          { kriter: 'Garanti iddiası', bakin: 'Sıralama garantisi veriyor mu', dikkat: 'Google, sıralama garantisi verilemeyeceğini açıkça belirtir' },
+          { kriter: 'Raporlama', bakin: 'Search Console verisiyle düzenli rapor sunuyor mu', dikkat: 'Raporlar gösterim, tıklama ve dönüşüm içermeli' },
+        ]}
+      />
 
       <RelatedPages
         pages={[

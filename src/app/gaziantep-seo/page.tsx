@@ -1,5 +1,9 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import CitySeoSections from '@/components/CitySeoSections'
+import { sehirSeo } from '@/lib/sehirSeo'
+import SeoPriceTable from '@/components/SeoPriceTable'
+import SeoChecklist from '@/components/SeoChecklist'
 import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
@@ -38,6 +42,7 @@ const faqs = [
   { q: 'Fiziksel olarak Gaziantep\'te misiniz?', a: 'Hayır, Kocaeli kökenliyiz — Gaziantep\'e tamamen uzaktan hizmet veriyoruz. Keşif görüşmesi, strateji onayı ve raporlama Google Meet/Zoom üzerinden yürütülüyor. Türkiye genelinde canlı, ziyaret edilebilir referanslarımızı portföyümüzde inceleyebilirsiniz.' },
   { q: 'Gaziantep\'teki yerleşik ajanslarla nasıl rekabet edebilirim?', a: 'Yerleşik ajansların çoğu şablon strateji uyguluyor ve ihracat/gıda gibi sektörlere jenerik içerikle yaklaşıyor. Biz her müşteriye sektörüne özel strateji kuran, mühendislik disipliniyle çalışan bir ekibiz — bu da daha hızlı iletişim ve daha isabetli anahtar kelime hedeflemesi anlamına geliyor.' },
   { q: 'GEO (Yapay Zeka Optimizasyonu) Gaziantep işletmesi için neden kritik?', a: 'GEO, ChatGPT ve Gemini gibi araçlarda "Gaziantep\'te güvenilir X önerir misin?" sorusuna verilen cevaplarda kaynak olarak yer alma olasılığını artırmayı hedefler. Bu kanal henüz doymamış durumda — özellikle Gaziantep\'in niş B2B sektörlerinde (tekstil ihracatı, gıda üretimi) erken hareket edenler avantajlı.' },
+  ...sehirSeo['gaziantep'].ekSss,
 ]
 
 const jsonLd = {
@@ -159,6 +164,8 @@ export default function GaziantepSeoPage() {
         </div>
       </section>
 
+      <CitySeoSections city="gaziantep" />
+
       <section className="py-20 px-6">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-10 text-center">Sık Sorulan Sorular</h2>
@@ -174,6 +181,20 @@ export default function GaziantepSeoPage() {
       </section>
 
       <ReviewsMarquee />
+
+      <SeoPriceTable place="Gaziantep" />
+
+      <SeoChecklist
+        title="Gaziantep'te SEO Firması Seçerken Neye Bakmalı?"
+        intro="Uzaktan çalışan ya da yerel bir ajansla görüşürken şu kriterleri sorun."
+        rows={[
+          { kriter: 'Gerçek referans', bakin: 'Canlı sitesini ziyaret edebileceğiniz örnek işler var mı', dikkat: 'Ekran görüntüsü yerine canlı site ve ölçülebilir çıktı isteyin' },
+          { kriter: 'Harita görünürlüğü', bakin: 'Google İşletme Profili yönetimi pakete dahil mi', dikkat: 'Yerel aramalarda harita sonuçları belirleyicidir' },
+          { kriter: 'İlçe hedefi', bakin: 'Sadece "Gaziantep" değil, ilçe ve sektör aramalarını da planlıyor mu', dikkat: 'Dar ve ulaşılabilir aramalar daha hızlı sonuç verir' },
+          { kriter: 'Garanti iddiası', bakin: 'Sıralama garantisi veriyor mu', dikkat: 'Google, sıralama garantisi verilemeyeceğini açıkça belirtir' },
+          { kriter: 'Raporlama', bakin: 'Search Console verisiyle düzenli rapor sunuyor mu', dikkat: 'Raporlar gösterim, tıklama ve dönüşüm içermeli' },
+        ]}
+      />
 
       <RelatedPages
         pages={[

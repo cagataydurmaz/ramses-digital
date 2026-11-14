@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import CitySeoSections from '@/components/CitySeoSections'
+import { sehirSeo } from '@/lib/sehirSeo'
 import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
@@ -56,6 +58,7 @@ const faqs = [
   { q: 'GEO (Yapay Zeka Optimizasyonu) Kocaeli işletmesi için gerekli mi?', a: 'Evet, özellikle B2B ve profesyonel hizmetlerde. ChatGPT veya Gemini\'ye "Kocaeli\'de güvenilir muhasebe bürosu önerir misin?" diye sorulduğunda sizi kaynak göstermesi olasılığını artıran yapılandırılmış içerik, citation-worthy veri ve yerel otorite sinyalleri gerekiyor. Bu GEO çalışması, geleneksel SEO\'yla eş zamanlı yürütülür.' },
   { q: 'Kocaeli\'deki rakiplerim büyük firmaların bayisi, SEO nasıl işe yarar?', a: 'Büyük bayi zincirleri genellikle yerel içeriğe ve ilçe bazlı sayfaya yatırım yapmaz — şablon site kullanır. Bu sizin için büyük bir fırsat. "Gebze\'de güvenilir X" veya "İzmit\'te yerel Y" aramaları genellikle bağımsız yerel işletmelere kapı açar. Uzun kuyruklu yerel aramalar en yüksek dönüşüm oranına sahip.' },
   { q: 'Kocaeli\'de SEO çalışması için ofiste görüşme gerekiyor mu?', a: 'Hayır. Tüm çalışmalar uzaktan yürütülüyor. Keşif görüşmesi, strateji sunumu ve aylık raporlar Google Meet / Zoom üzerinden yapılır. Tüm süreç online yürütüldüğü için fiziksel görüşme gerekmiyor.' },
+  ...sehirSeo['kocaeli'].ekSss,
 ]
 
 const jsonLd = {
@@ -176,7 +179,7 @@ export default function KocaeliSeoPage() {
             <h2 className="text-xl font-bold text-white mb-2">Gerçek Kocaeli Referansı</h2>
             <p className="text-zinc-400 text-sm leading-relaxed mb-4">
               Psk. Nur Çelen (Kocaeli psikolog) için yaptığımız yerel SEO ve web çalışması sonrası
-              &quot;Kocaeli psikolog&quot; aramasında üst sıralara çıktı, organik randevu almaya başladı.
+              site Google&apos;da 1. sayfaya taşındı ve yeni randevu talepleri getirmeye başladı.
               Canlı görün: <a href="https://nurcelen.com" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">nurcelen.com</a>
             </p>
             <Link href="/portfolyo" className="text-blue-400 text-sm font-medium flex items-center gap-1.5 hover:gap-2.5 transition-all">
@@ -205,6 +208,8 @@ export default function KocaeliSeoPage() {
           </div>
         </div>
       </section>
+
+      <CitySeoSections city="kocaeli" />
 
       <section className="py-20 px-6">
         <div className="max-w-3xl mx-auto">

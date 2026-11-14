@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import CitySeoSections from '@/components/CitySeoSections'
+import { sehirSeo } from '@/lib/sehirSeo'
 import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
@@ -51,6 +53,7 @@ const faqs = [
   { q: 'SEO çalışmanızı nasıl raporluyorsunuz?', a: 'Aylık detaylı rapor (PDF) + canlı Looker Studio dashboard erişimi. Organik trafik, anahtar kelime sıralamaları, backlink kazanımları, teknik SEO sağlığı ve dönüşümler şeffaf şekilde paylaşılır. Gizli bir şey yok.' },
   { q: 'GEO (yapay zeka optimizasyonu) nedir, neden önemli?', a: 'GEO, ChatGPT veya Gemini\'ye "İzmit\'te SEO ajansı önerir misin?" denildiğinde sizi kaynak göstermesi olasılığını artıran içerik çalışmasıdır. Citation-worthy içerik, entity-based yazı ve otoriter backlink profili gerektirir. 2025\'te aramaların önemli bir kısmı AI motorlarına kayıyor.' },
   { q: 'Sözleşme süresi ve iptal koşulları nedir?', a: 'Minimum 3 ay, ideal 6 ay öneriyoruz — SEO kısa vadede değil birikimiyle çalışır. 12 aylık sözleşmelerde %15 indirim sunuyoruz. İptal için 30 gün önceden bildirim yeterli; ceza yok.' },
+  ...sehirSeo['izmit'].ekSss,
 ]
 
 const jsonLd = {
@@ -159,7 +162,7 @@ export default function IzmitSeoPage() {
                 <h2 className="text-xl font-bold text-white mb-2">Kocaeli&apos;den Gerçek SEO Sonucu</h2>
                 <p className="text-zinc-400 text-sm leading-relaxed mb-4">
                   Psk. Nur Çelen (Kocaeli psikolog) için yaptığımız web ve yerel SEO çalışması sonrası site
-                  Google&apos;da &quot;Kocaeli psikolog&quot; aramasında üst sıralara çıktı ve organik randevu almaya başladı.
+                  Google&apos;da 1. sayfaya taşındı ve yeni randevu talepleri getirmeye başladı.
                   İddia değil — <a href="https://nurcelen.com" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">nurcelen.com</a> adresini ziyaret edebilirsiniz.
                 </p>
                 <Link href="/portfolyo" className="text-blue-400 text-sm font-medium flex items-center gap-1.5 hover:gap-2.5 transition-all">
@@ -195,6 +198,8 @@ export default function IzmitSeoPage() {
       </section>
 
       {/* FAQ */}
+      <CitySeoSections city="izmit" />
+
       <section className="py-20 px-6 bg-[#080D18]">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-10 text-center">Sık Sorulan Sorular</h2>

@@ -1,5 +1,8 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import CitySeoSections from '@/components/CitySeoSections'
+import { sehirSeo } from '@/lib/sehirSeo'
+import SeoPriceTable from '@/components/SeoPriceTable'
 import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
@@ -40,6 +43,7 @@ const faqs = [
   { q: 'İzmir SEO paketi ne kadara mal olur?', a: 'Sektöre ve ilçe kapsamına göre değişir. Kapsam: teknik audit, anahtar kelime araştırması, aylık içerik üretimi, GBP yönetimi, backlink stratejisi ve raporlama. Ücretsiz danışmanlıkta işletmenize özel fiyat sunuyoruz.' },
   { q: 'Fiziksel olarak İzmir\'de misiniz?', a: 'Hayır, Kocaeli kökenliyiz — tüm çalışmalar uzaktan yürütülüyor. İstanbul Barosu\'na kayıtlı avukatlar için yürüttüğümüz canlı projeler, uzaktan çalışma modelimizin gerçek sonuç verdiğinin kanıtı. İzmir işletmeleri için de aynı süreç ve kalite geçerli.' },
   { q: 'GEO (Yapay Zeka Optimizasyonu) İzmir işletmesi için gerekli mi?', a: 'Evet, özellikle turizm ve e-ticaret sektöründe. ChatGPT veya Gemini\'ye "İzmir\'de en iyi X" diye sorulduğunda alıntılanma olasılığını artıran yapılandırılmış içerik ve otorite sinyalleri gerekiyor — turistlerin ve yeni müşterilerin AI araçlarına giderek daha çok başvurduğu bir dönemdeyiz.' },
+  ...sehirSeo['izmir'].ekSss,
 ]
 
 const jsonLd = {
@@ -161,6 +165,8 @@ export default function IzmirSeoPage() {
         </div>
       </section>
 
+      <CitySeoSections city="izmir" />
+
       <section className="py-20 px-6">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-10 text-center">Sık Sorulan Sorular</h2>
@@ -188,6 +194,8 @@ export default function IzmirSeoPage() {
       />
 
       <ReviewsMarquee />
+
+      <SeoPriceTable place="İzmir" />
 
       <RelatedPages
         pages={[
