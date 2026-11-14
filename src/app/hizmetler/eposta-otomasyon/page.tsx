@@ -311,7 +311,7 @@ export default function EpostaOtomasyonPage() {
         name: 'E-Posta Pazarlama & Otomasyon',
         description: 'CRM entegrasyonu, segmentasyon, drip kampanyalar ve davranışsal tetikleyicilerle e-posta pazarlama yönetimi.',
         provider: { '@type': 'Organization', name: 'Ramses Dijital Yazılım ve Dijital Pazarlama Ajansı', url: 'https://ramsesdigital.com' },
-        areaServed: [{ '@type': 'City', name: 'İzmit' }, { '@type': 'City', name: 'Kocaeli' }, { '@type': 'Country', name: 'Türkiye' }],
+        areaServed: { '@type': 'Country', name: 'Türkiye' },
         serviceType: 'Email Marketing',
         url: 'https://ramsesdigital.com/hizmetler/eposta-otomasyon',
         hasOfferCatalog: {

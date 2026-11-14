@@ -159,6 +159,7 @@ export default function KocaeliWebTasarimPage() {
 
       <RelatedPages
         pages={[
+          { label: 'Web Tasarım Hizmeti (Genel)', href: '/hizmetler/web-tasarim' },
           { label: 'Kocaeli Dijital Pazarlama', href: '/kocaeli-dijital-pazarlama' },
           { label: 'Kocaeli SEO', href: '/kocaeli-seo' },
           { label: 'Kocaeli Google Ads', href: '/kocaeli-google-ads' },

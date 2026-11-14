@@ -188,7 +188,7 @@ export default function N8nOtomasyonPage() {
         name: 'n8n İş Akışı Otomasyonu',
         description: 'n8n ile no-code/low-code AI entegrasyonlu iş akışı otomasyonu hizmeti.',
         provider: { '@type': 'Organization', name: 'Ramses Digital', url: 'https://ramsesdigital.com' },
-        areaServed: [{ '@type': 'City', name: 'İzmit' }, { '@type': 'City', name: 'Kocaeli' }, { '@type': 'Country', name: 'Türkiye' }],
+        areaServed: { '@type': 'Country', name: 'Türkiye' },
         serviceType: 'Workflow Automation',
         url: 'https://ramsesdigital.com/hizmetler/n8n-otomasyon',
       })}} />

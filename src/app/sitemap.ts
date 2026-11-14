@@ -105,6 +105,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/iletisim' },
     { path: '/teklif-al' },
     { path: '/seo-analiz' },
+    { path: '/gizlilik-politikasi' },
+    { path: '/cerez-politikasi' },
   ].map(({ path }) => ({
     url: base + path,
   }))

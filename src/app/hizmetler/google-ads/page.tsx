@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Google Ads Kocaeli — Ramses Digital',
+    title: 'Google Ads Yönetimi — Ramses Dijital',
     description: 'Search, Display, YouTube, Shopping. ROI odaklı reklam yönetimi.',
     images: ['https://ramsesdigital.com/og-image.png'],
   },
@@ -50,7 +50,7 @@ const faqs = [
   { q: 'Mevcut Google Ads hesabımı devralabilir misiniz?', a: 'Evet, mevcut hesabınızın sahipliğini değiştirmeden, manager (MCC) hesabımız üzerinden erişim alıyoruz. Hesabınız tamamen size ait kalır; istediğiniz an erişimi geri çekebilirsiniz. Geçmiş veriler ve dönüşüm geçmişi korunur.' },
 ]
 
-export default function GoogleAdsKocaeliPage() {
+export default function GoogleAdsHizmetPage() {
   return (
     <>
       <section className="relative pt-32 pb-16 px-6 overflow-hidden">
@@ -185,9 +185,9 @@ export default function GoogleAdsKocaeliPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org', '@type': 'Service',
         name: 'Google Ads Yönetimi',
-        description: 'Kocaeli işletmeleri için Search, Display, YouTube, Shopping ve Remarketing kampanya yönetimi.',
+        description: 'Türkiye genelindeki işletmeler için Search, Display, YouTube, Shopping ve Remarketing kampanya yönetimi.',
         provider: { '@type': 'Organization', name: 'Ramses Digital', url: 'https://ramsesdigital.com' },
-        areaServed: [{ '@type': 'City', name: 'İzmit' }, { '@type': 'City', name: 'Kocaeli' }, { '@type': 'Country', name: 'Türkiye' }],
+        areaServed: { '@type': 'Country', name: 'Türkiye' },
         serviceType: 'Pay Per Click Advertising',
         url: 'https://ramsesdigital.com/hizmetler/google-ads',
       })}} />

@@ -16,8 +16,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'SEO Kocaeli — Ramses Digital',
-    description: 'Kocaeli\'de yerel SEO, teknik SEO, içerik stratejisi.',
+    title: 'SEO Hizmeti — Ramses Dijital',
+    description: 'Türkiye genelinde yerel ve teknik SEO, içerik stratejisi.',
     images: ['https://ramsesdigital.com/og-image.png'],
   },
 }
@@ -40,17 +40,17 @@ const process = [
 ]
 
 const faqs = [
-  { q: 'Kocaeli\'de SEO sonuçları ne kadar sürede görülür?', a: 'Yerel SEO için 2-4 haftada Google Business Profile ve Local Pack sonuçları görünmeye başlar. Web sitesi sıralamaları için 3-6 ay gerçekçi bir bekleme süresidir. Rekabetçi anahtar kelimelerde tam etki 6-12 ayda ortaya çıkar.' },
+  { q: 'SEO sonuçları ne kadar sürede görülür?', a: 'Yerel SEO için 2-4 haftada Google Business Profile ve Local Pack sonuçları görünmeye başlar. Web sitesi sıralamaları için 3-6 ay gerçekçi bir bekleme süresidir. Rekabetçi anahtar kelimelerde tam etki 6-12 ayda ortaya çıkar.' },
   { q: 'SEO paketleriniz ne kadar?', a: 'İşletme büyüklüğüne ve kapsama göre değişir. Her paket: teknik audit, anahtar kelime stratejisi, aylık içerik üretimi, backlink çalışması ve detaylı raporlama içerir. Ücretsiz danışmanlık seansında işletmenize özel teklif sunarız.' },
   { q: 'Sözleşme süresi ne kadar?', a: 'Minimum 6 ay öneriyoruz. SEO uzun vadeli bir yatırımdır; 1-2 aylık çalışmalar gerçek sonuç vermez. 12 aylık sözleşmelerde %15 indirim sağlıyoruz.' },
-  { q: 'Hangi sektörlerde uzmanlığınız var?', a: 'E-ticaret, B2B SaaS, fintech, sanayi/üretim, sağlık hizmetleri ve profesyonel hizmetlerde derin tecrübemiz var. Kocaeli\'deki yerel işletmelerde özellikle güçlü vaka çalışmalarımız bulunuyor.' },
+  { q: 'Hangi sektörlerde uzmanlığınız var?', a: 'E-ticaret, B2B SaaS, fintech, sanayi/üretim, sağlık hizmetleri ve profesyonel hizmetlerde derin tecrübemiz var.' },
   { q: 'Backlink satın alıyor musunuz?', a: 'Hayır. Sadece organik ve kaliteli backlink stratejileri uyguluyoruz: misafir yazılar, dijital PR, sektörel rehberler, kırık bağlantı inşası ve değer odaklı outreach. Satın alınmış backlinkler Google manuel cezası getirir.' },
   { q: 'Raporlama nasıl yapılıyor?', a: 'Aylık detaylı performans raporu (PDF) + canlı Looker Studio dashboard erişimi. Organik trafik, sıralamalar, dönüşümler, backlink kazanımları ve teknik SEO sağlığı şeffaf şekilde takip edilir.' },
-  { q: 'Yerel SEO ile klasik SEO farkı nedir?', a: 'Yerel SEO, Google Maps ve "Local Pack" alanında öne çıkmaya odaklanır. Google Business Profile, yerel anahtar kelimeler, müşteri yorumları ve NAP tutarlılığı kritiktir. Klasik SEO ise organik arama sonuçlarındaki sıralamayı hedefler. Kocaeli işletmeleri için ikisi birlikte uygulanmalıdır.' },
+  { q: 'Yerel SEO ile klasik SEO farkı nedir?', a: 'Yerel SEO, Google Maps ve "Local Pack" alanında öne çıkmaya odaklanır. Google Business Profile, yerel anahtar kelimeler, müşteri yorumları ve NAP tutarlılığı kritiktir. Klasik SEO ise organik arama sonuçlarındaki sıralamayı hedefler. Yerel müşteriye hizmet veren işletmeler için ikisi birlikte uygulanmalıdır.' },
   { q: 'GEO ve AEO nedir, neden önemli?', a: 'GEO (Generative Engine Optimization) ChatGPT, Gemini ve Perplexity gibi AI motorlarında alıntılanma olasılığını artırmayı hedefler. AEO (Answer Engine Optimization) sesli arama ve öne çıkan snippet alanlarına odaklanır. ' },
 ]
 
-export default function SeoKocaeliPage() {
+export default function SeoHizmetPage() {
   return (
     <>
       {/* Hero */}
@@ -204,9 +204,9 @@ export default function SeoKocaeliPage() {
         '@context': 'https://schema.org',
         '@type': 'Service',
         name: 'SEO Hizmeti',
-        description: 'Kocaeli ve İzmit işletmeleri için yerel SEO, GEO, AEO ve teknik SEO hizmetleri.',
+        description: 'Türkiye genelindeki işletmeler için yerel SEO, teknik SEO ve yapay zekâ aramalarında görünürlük hizmetleri.',
         provider: { '@type': 'Organization', name: 'Ramses Digital', url: 'https://ramsesdigital.com' },
-        areaServed: [{ '@type': 'City', name: 'İzmit' }, { '@type': 'City', name: 'Kocaeli' }, { '@type': 'Country', name: 'Türkiye' }],
+        areaServed: { '@type': 'Country', name: 'Türkiye' },
         serviceType: 'Search Engine Optimization',
         url: 'https://ramsesdigital.com/hizmetler/seo',
       })}} />

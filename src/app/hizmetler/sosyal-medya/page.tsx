@@ -282,7 +282,7 @@ export default function SosyalMedyaPage() {
         name: 'Sosyal Medya İçerik Üretimi',
         description: 'Post, story ve video içerik tasarımı, içerik takvimi ve marka sesi stratejisi ile sosyal medya içerik üretimi.',
         provider: { '@type': 'Organization', name: 'Ramses Dijital Yazılım ve Dijital Pazarlama Ajansı', url: 'https://ramsesdigital.com' },
-        areaServed: [{ '@type': 'City', name: 'İzmit' }, { '@type': 'City', name: 'Kocaeli' }, { '@type': 'Country', name: 'Türkiye' }],
+        areaServed: { '@type': 'Country', name: 'Türkiye' },
         serviceType: 'Social Media Content Production',
         url: 'https://ramsesdigital.com/hizmetler/sosyal-medya',
         hasOfferCatalog: {

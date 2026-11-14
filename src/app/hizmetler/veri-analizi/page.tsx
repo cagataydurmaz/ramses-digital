@@ -311,7 +311,7 @@ export default function VeriAnaliziPage() {
         name: 'Veri Analizi & Stratejik Danışmanlık',
         description: 'GA4 kurulumu, Looker Studio dashboard tasarımı, dönüşüm huni analizi ve büyüme stratejisi danışmanlığı.',
         provider: { '@type': 'Organization', name: 'Ramses Dijital Yazılım ve Dijital Pazarlama Ajansı', url: 'https://ramsesdigital.com' },
-        areaServed: [{ '@type': 'City', name: 'İzmit' }, { '@type': 'City', name: 'Kocaeli' }, { '@type': 'Country', name: 'Türkiye' }],
+        areaServed: { '@type': 'Country', name: 'Türkiye' },
         serviceType: 'Data Analytics Consulting',
         url: 'https://ramsesdigital.com/hizmetler/veri-analizi',
         hasOfferCatalog: {

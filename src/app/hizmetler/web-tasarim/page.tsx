@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Web Tasarım Kocaeli — Ramses Digital',
+    title: 'Web Tasarım Hizmeti — Ramses Dijital',
     description: 'Modern, hızlı, SEO uyumlu web siteleri.',
     images: ['https://ramsesdigital.com/og-image.png'],
   },
@@ -50,7 +50,7 @@ const faqs = [
   { q: 'Bakım ve güncelleme nasıl?', a: 'İlk 30 gün ücretsiz bug-fix desteği. Sonrası için aylık bakım paketleri sunuyoruz: küçük güncellemeler, içerik girişi, hız optimizasyonu, güvenlik yamaları, yedekleme. İhtiyaca göre saatlik çalışma da mümkün — ücretsiz danışmanlıkta netleştiriyoruz.' },
 ]
 
-export default function WebTasarimKocaeliPage() {
+export default function WebTasarimHizmetPage() {
   return (
     <>
       <section className="relative pt-32 pb-16 px-6 overflow-hidden">
@@ -192,9 +192,9 @@ export default function WebTasarimKocaeliPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org', '@type': 'Service',
         name: 'Web Tasarım & Geliştirme',
-        description: 'Kocaeli işletmeleri için modern, hızlı ve SEO uyumlu web tasarım hizmeti.',
+        description: 'Türkiye genelindeki işletmeler için modern, hızlı ve SEO uyumlu web tasarım hizmeti.',
         provider: { '@type': 'Organization', name: 'Ramses Digital', url: 'https://ramsesdigital.com' },
-        areaServed: [{ '@type': 'City', name: 'İzmit' }, { '@type': 'City', name: 'Kocaeli' }, { '@type': 'Country', name: 'Türkiye' }],
+        areaServed: { '@type': 'Country', name: 'Türkiye' },
         serviceType: 'Web Design and Development',
         url: 'https://ramsesdigital.com/hizmetler/web-tasarim',
       })}} />
