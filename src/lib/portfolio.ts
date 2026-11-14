@@ -26,6 +26,32 @@ export interface CaseStudy {
 
 export const projects: CaseStudy[] = [
   {
+    slug: 'depodez',
+    name: 'DepoDez',
+    title: 'İstanbul Su Deposu Temizliği — Uçtan Uca Dijital Dönüşüm',
+    url: 'https://www.depodez.com',
+    displayUrl: 'depodez.com',
+    category: 'Web Tasarımı + SEO + Google Ads',
+    industry: 'Su Deposu Temizliği & Hijyen',
+    desc: 'İstanbul\'da su deposu temizliği, dezenfeksiyonu ve izolasyonu yapan firma için eski WordPress sitesinden yeni nesil, hızlı bir siteye geçiş. Web tasarım, SEO, ilçe sayfaları ve Google Ads tek elden.',
+    tags: ['Web Tasarım', 'Yerel SEO', 'İlçe Sayfaları', 'Google Ads', 'İçerik'],
+    thumb: '/portfolio/depodez.png',
+    color: 'cyan',
+    challenge:
+      'Firma eski bir WordPress temasıyla çalışıyordu; site yavaştı, hizmetler ve hizmet bölgeleri net ayrışmıyordu ve İSKİ ile Sağlık Bakanlığı onayları, kurumsal referanslar gibi güven unsurları ziyaretçiye yeterince gösterilmiyordu. Rekabetin yoğun olduğu İstanbul aramalarında hizmet ve ilçe bazında görünür olmak gerekiyordu.',
+    approach: [
+      'Sıfırdan, hızlı ve mobil öncelikli Next.js web sitesi; telefon, WhatsApp ve teklif formu her ekranda erişilebilir',
+      'Eski site yapısından yeni yapıya kayıpsız geçiş: URL eşleştirmesi ve yönlendirmeler',
+      '9 ana hizmet ve tamir, fiyat, sektör (otel, okul, site) odaklı ayrı sayfalar',
+      'İstanbul\'un 16 ilçesi/semti için özgün içerikli hizmet bölgesi sayfaları',
+      'Blog altyapısı ve 40\'ı aşkın bilgilendirici içerik, yapılandırılmış veri ve teknik SEO',
+      'İSKİ ve Sağlık Bakanlığı belgeleri, kurumsal referanslar ve Google yorumlarıyla güven bölümleri',
+      'Google Ads kampanya kurulumu ve dönüşüm takibi',
+    ],
+    outcome:
+      'Firma artık hizmet ve ilçe bazında ayrı sayfalarla aranabilen, belgeleri ve referanslarıyla güven veren, telefon ve WhatsApp üzerinden doğrudan talep toplayan modern bir dijital altyapıya sahip.',
+  },
+  {
     slug: 'nur-celen',
     name: 'Psk. Nur Çelen',
     title: 'Kocaeli Psikolog — Bireysel & Çift Terapi',
