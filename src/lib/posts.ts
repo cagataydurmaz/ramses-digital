@@ -2706,7 +2706,7 @@ export const posts: Post[] = [
       </table>
 
       <h2>Yerel SEO: Bulunduğunuz İlçede Görünür Olun</h2>
-      <p>"İstanbul boşanma avukatı" veya "Bakırköy iş hukuku avukatı" gibi aramalar, doğrudan iş talebi taşıyan yüksek niyetli sorgulardır. Google Business Profile'ınızı eksiksiz doldurmak, doğru kategori seçmek ve düzenli müşteri yorumu almak, bu aramalarda haritada (Local Pack) görünmenizi sağlayan en güçlü, tamamen ücretsiz araçtır.</p>
+      <p>"İstanbul boşanma avukatı" veya "Bakırköy iş hukuku avukatı" gibi aramalar (bkz. <a href="/istanbul-seo">İstanbul SEO</a>), doğrudan iş talebi taşıyan yüksek niyetli sorgulardır. Google Business Profile'ınızı eksiksiz doldurmak, doğru kategori seçmek ve düzenli müşteri yorumu almak, bu aramalarda haritada (Local Pack) görünmenizi sağlayan en güçlü, tamamen ücretsiz araçtır.</p>
       <p>NAP tutarlılığı (isim, adres, telefon bilgisinin her platformda birebir aynı olması) burada da kritik önem taşır — tıpkı diğer yerel işletmelerde olduğu gibi, tutarsız bilgi Google'ın güven skorunu düşürür.</p>
 
       <h2>İçerik ve Makale Stratejisiyle Otorite İnşası</h2>

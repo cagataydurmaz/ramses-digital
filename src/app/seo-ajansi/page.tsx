@@ -151,6 +151,7 @@ export default function SeoAjansiPage() {
           { label: 'Google Ads Ajansı', href: '/google-ads-ajansi' },
           { label: 'Web Tasarım Ajansı', href: '/web-tasarim-ajansi' },
           { label: 'Yazılım Ajansı', href: '/yazilim-ajansi' },
+          { label: 'İstanbul SEO', href: '/istanbul-seo' },
           { label: 'İzmit SEO', href: '/izmit-seo' },
           { label: 'Kocaeli SEO', href: '/kocaeli-seo' },
         ]}

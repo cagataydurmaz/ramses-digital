@@ -4,12 +4,13 @@ import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
 import SeoChecklist from '@/components/SeoChecklist'
+import SeoPriceTable from '@/components/SeoPriceTable'
 import { MapPin, Search, ArrowRight, CheckCircle2, FileText, Link2, BarChart3, Zap, Award, TrendingUp } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'İstanbul SEO Ajansı | İstanbul SEO Hizmeti — Ramses Dijital',
   description:
-    'İstanbul SEO ajansı: İstanbul SEO hizmeti, yerel SEO, teknik SEO, Google ve yapay zekâ aramalarında görünürlük. Kadıköy, Beşiktaş, Şişli, Bakırköy dahil ilçe bazlı strateji. Ücretsiz SEO analizi.',
+    'İstanbul SEO ajansı: Kadıköy, Beşiktaş, Bakırköy, Pendik ve tüm ilçeler için yerel ve teknik SEO. Gerçek İstanbul referansları, şeffaf fiyat aralıkları ve ücretsiz SEO analizi.',
   alternates: { canonical: 'https://ramsesdigital.com/istanbul-seo' },
   openGraph: {
     title: 'İstanbul SEO Ajansı | Ramses Dijital',
@@ -30,7 +31,27 @@ const features = [
 
 const ilceler = ['Kadıköy', 'Beşiktaş', 'Şişli', 'Bakırköy', 'Ataşehir', 'Üsküdar', 'Beylikdüzü', 'Maltepe', 'Kartal', 'Pendik']
 
+const ilceRehberi = [
+  { ad: 'Kadıköy', not: 'Hizmet, sağlık, eğitim ve yeme-içme işletmelerinin yoğun olduğu, yerel aramaların çok canlı olduğu ilçe. Harita sonuçları ve gerçek yorumlar belirleyici; Moda, Fenerbahçe, Göztepe gibi semt adlarıyla yapılan aramalar daha ulaşılabilir.' },
+  { ad: 'Beşiktaş', not: 'Hukuk büroları, danışmanlık firmaları ve kurumsal hizmetler öne çıkıyor. Uzmanlık alanı başına ayrı sayfa ve güven unsurları (belgeler, referanslar, yazar bilgisi) sıralamada fark yaratıyor.' },
+  { ad: 'Şişli', not: 'Ofis yoğunluğu nedeniyle B2B ve profesyonel hizmet aramaları ağırlıkta. Mecidiyeköy ve Nişantaşı gibi alt bölgeler ayrı arama kitleleri oluşturuyor; rekabet yüksek olduğu için dar ve hizmete özgü kelimelerle başlamak gerekiyor.' },
+  { ad: 'Bakırköy', not: 'Adliye çevresi nedeniyle hukuk aramaları belirgin; sağlık ve perakende de güçlü. "Bakırköy + hizmet" aramalarında rekabet genel İstanbul aramalarına göre daha düşük.' },
+  { ad: 'Ataşehir', not: 'Finans ve kurumsal ofislerin yanında yeni konut bölgeleri hizmet aramalarını artırıyor. Kurumsal sayfa yapısı ile yerel harita görünürlüğünün birlikte kurulması öneriliyor.' },
+  { ad: 'Üsküdar', not: 'Köklü yerleşim ve aile odaklı nüfus; sağlık, eğitim, kurs ve esnaf aramaları öne çıkıyor. Semt adlarıyla yapılan aramalar ve doğru Google İşletme Profili hızlı sonuç verebiliyor.' },
+  { ad: 'Pendik & Kartal', not: 'Anadolu yakasının doğusunda sanayi, lojistik ve hızla büyüyen konut bölgeleri bir arada. Kocaeli\'ye yakın olduğu için Gebze çevresiyle birlikte hedeflenebilecek, rekabeti merkez ilçelere göre daha düşük bir alan.' },
+  { ad: 'Beylikdüzü & Esenyurt', not: 'Avrupa yakasının batısında yoğun konut ve hizmet işletmesi var. Mahalle ve site adlarıyla yapılan yerel aramalarda iyi kurgulanmış sayfalarla görünürlük kazanmak mümkün.' },
+]
+
+const aramaStratejisi = [
+  { tur: 'Genel şehir araması', ornek: 'istanbul seo ajansı', rekabet: 'Çok yüksek', yaklasim: 'Uzun vadeli hedef; güçlü içerik, referans ve bağlantı birikimi gerektirir.' },
+  { tur: 'İlçe + hizmet', ornek: 'bakırköy seo ajansı', rekabet: 'Orta', yaklasim: 'İlçeye özgü içerik ve doğru harita kaydıyla daha kısa sürede ulaşılabilir.' },
+  { tur: 'Sektör + şehir', ornek: 'istanbul avukat web sitesi', rekabet: 'Orta', yaklasim: 'Sektörün aradığı bilgiyi veren, uzmanlık odaklı sayfalar.' },
+  { tur: 'Soru odaklı', ornek: 'seo ne kadar sürede sonuç verir', rekabet: 'Değişken', yaklasim: 'Net cevap veren rehber içerikler; güven ve marka bilinirliği sağlar.' },
+]
+
 const faqs = [
+  { q: 'Bakırköy, Pendik gibi ilçeler için ayrı SEO çalışması mı gerekir?', a: 'İşletmeniz belirli ilçelere hizmet veriyorsa evet. "İlçe + hizmet" aramalarında rekabet genel İstanbul aramalarına göre daha düşüktür; ilçeye özgü içerik ve doğru Google İşletme Profili ile bu aramalarda daha kısa sürede görünürlük kazanmak mümkündür.' },
+  { q: 'Avukatlar ve hukuk büroları İstanbul\'da nasıl görünür olur?', a: 'Avukatlık mesleğinde reklam yasağı bulunduğu için görünürlük büyük ölçüde organik SEO ve bilgilendirici içerikle sağlanır. Çalışma alanı başına ayrı sayfalar, mesleki kurallara uygun bilgilendirici yazılar ve güven unsurları bu süreçte belirleyicidir.' },
   { q: 'İstanbul SEO ajansı seçerken büyük ve küçük ajans arasında fark var mı?', a: 'Büyük ajanslar çok sayıda müşteriyle çalıştığı için küçük ve orta ölçekli projelere çoğunlukla standart bir süreç uygular. Küçük ajanslarda strateji kişiye özel kurulabilir ama kapasite sınırlıdır. İki durumda da sorulması gereken aynı: işi kim yapacak, neyi ölçecek ve raporu nasıl verecek?' },
   { q: 'İstanbul SEO hizmetinin kapsamı nedir?', a: 'Teknik SEO denetimi ve düzeltmeleri, anahtar kelime ve ilçe önceliklendirmesi, sayfa içi optimizasyon, içerik üretimi, Google İşletme Profili, yorum stratejisi, bağlantı çalışması ve aylık raporlama. GEO ve AEO için sık sorulan sorular ve yapılandırılmış veri de kapsama girer.' },
   { q: 'İstanbul\'da SEO hizmeti neden bu kadar rekabetçi?', a: 'İstanbul, Türkiye\'nin en yüksek arama hacmine ve en yoğun ajans rekabetine sahip pazarı. Hemen her sektörde onlarca köklü rakip zaten SEO\'ya yatırım yapıyor. Bu, tek kelimelik genel terimlerde (örn. "SEO ajansı") hızlı sonuç almayı zorlaştırır — ama ilçe bazlı ve niş odaklı stratejilerle hâlâ gerçek fırsatlar var.' },
@@ -96,7 +117,7 @@ export default function IstanbulSeoPage() {
             <span className="gradient-text">Organik Trafiğinizi Büyütün</span>
           </h1>
           <p className="text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto mb-4 leading-relaxed">
-            Kadıköy&apos;den Beşiktaş&apos;a, Bakırköy&apos;den Ataşehir&apos;e İstanbul&apos;un her ilçesinde yerel SEO. GEO ve AEO ile yapay zeka aramalarında da görünün.
+            Kadıköy&apos;den Beşiktaş&apos;a, Bakırköy&apos;den Pendik&apos;e İstanbul işletmeleri için yerel ve teknik SEO. Google&apos;da ve yapay zekâ aramalarında görünürlüğünüzü artırmak için çalışıyoruz.
           </p>
           <p className="text-zinc-500 text-sm mb-10">
             {ilceler.join(' · ')}
@@ -147,21 +168,88 @@ export default function IstanbulSeoPage() {
       </section>
 
       <section className="py-16 px-6 bg-[#080D18]">
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-blue-500/5 border border-blue-500/15 rounded-2xl p-8">
-            <CheckCircle2 size={24} className="text-blue-400 mb-4" />
-            <h2 className="text-xl font-bold text-white mb-2">Gerçek İstanbul Referansı</h2>
-            <p className="text-zinc-400 text-sm leading-relaxed mb-4">
-              İstanbul Barosu&apos;na kayıtlı Av. Furkan Arıkan için tasarladığımız web sitesi ve yürüttüğümüz
-              SEO çalışması, ceza, iş ve gayrimenkul hukuku alanlarında organik görünürlük sağladı.
-              Canlı görün: <a href="https://furkanarikan.av.tr" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">furkanarikan.av.tr</a>
-            </p>
-            <Link href="/portfolyo/furkan-arikan" className="text-blue-400 text-sm font-medium flex items-center gap-1.5 hover:gap-2.5 transition-all">
-              Vaka Çalışmasını İncele <ArrowRight size={13} />
-            </Link>
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">İstanbul&apos;dan Gerçek Referanslar</h2>
+            <p className="text-zinc-400 max-w-2xl mx-auto">İstanbul Barosu&apos;na kayıtlı iki hukuk bürosu için yürüttüğümüz web ve SEO çalışmaları. İki site de yayında, kendiniz inceleyebilirsiniz.</p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-5">
+            <div className="bg-[#0D1225] border border-white/[0.06] rounded-2xl p-6">
+              <p className="text-blue-400 text-xs font-semibold uppercase tracking-wider mb-2">Beşiktaş · Hukuk</p>
+              <h3 className="text-white font-semibold text-lg mb-3">Av. Furkan Arıkan</h3>
+              <p className="text-zinc-400 text-sm leading-relaxed mb-3">Ceza, iş ve gayrimenkul hukuku alanlarında çalışan bir avukat için sıfırdan kurumsal web sitesi: uzmanlık alanlarına göre yapılandırılmış içerik, WhatsApp ve telefonla hızlı iletişim.</p>
+              <p className="text-zinc-300 text-sm italic mb-4">&ldquo;Sitemin hem hızlı hem de profesyonel bir görünüme kavuşmasını sağladılar. Süreç boyunca iletişim çok net ve hızlıydı.&rdquo;</p>
+              <div className="flex flex-wrap gap-4 text-sm">
+                <a href="https://furkanarikan.av.tr" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">furkanarikan.av.tr</a>
+                <Link href="/portfolyo/furkan-arikan" prefetch={false} className="text-blue-400 hover:underline">Vaka çalışması</Link>
+              </div>
+            </div>
+            <div className="bg-[#0D1225] border border-white/[0.06] rounded-2xl p-6">
+              <p className="text-blue-400 text-xs font-semibold uppercase tracking-wider mb-2">Bakırköy · Hukuk</p>
+              <h3 className="text-white font-semibold text-lg mb-3">Av. Mert Anıl Güler, LL.M.</h3>
+              <p className="text-zinc-400 text-sm leading-relaxed mb-3">Reklam yasağı nedeniyle görünürlüğün tamamen organik SEO ve içerikle kurulması gereken bir hukuk bürosu: kurumsal tasarım, blog ve makale altyapısı, mevzuata uygun içerik stratejisi.</p>
+              <p className="text-zinc-300 text-sm italic mb-4">&ldquo;Kurumsal kimliğimize uygun, içerik odaklı bir site tasarladı. SEO çalışmasıyla birlikte dijitaldeki görünürlüğümüz belirgin şekilde arttı.&rdquo;</p>
+              <div className="flex flex-wrap gap-4 text-sm">
+                <a href="https://www.mertanilguler.av.tr" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">mertanilguler.av.tr</a>
+                <Link href="/portfolyo/mert-anil-guler" prefetch={false} className="text-blue-400 hover:underline">Vaka çalışması</Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+
+      <section className="py-16 px-6">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">İlçelere Göre İstanbul SEO</h2>
+            <p className="text-zinc-400 max-w-2xl mx-auto">İstanbul tek bir pazar değil. İlçelerin iş yapısı ve arama alışkanlıkları farklı; stratejiyi işletmenizin gerçekten hizmet verdiği bölgeye göre kuruyoruz.</p>
+          </div>
+          <div className="grid sm:grid-cols-2 gap-5">
+            {ilceRehberi.map(({ ad, not }) => (
+              <div key={ad} className="bg-[#0D1225] border border-white/[0.06] rounded-xl p-6">
+                <div className="flex items-center gap-2 mb-2">
+                  <MapPin size={15} className="text-blue-400" />
+                  <h3 className="text-white font-semibold">{ad} SEO</h3>
+                </div>
+                <p className="text-zinc-400 text-sm leading-relaxed">{not}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="pb-16 px-6">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">İstanbul&apos;da Hangi Aramalarla Başlamalı?</h2>
+            <p className="text-zinc-400 max-w-2xl mx-auto">Rekabetin en yüksek olduğu genel aramalar uzun vadeli hedeftir. Sonucu daha hızlı getiren, ilçe ve sektör odaklı aramalarla başlamak gerekir.</p>
+          </div>
+          <div className="overflow-x-auto rounded-2xl border border-white/[0.06] bg-[#0D1225]">
+            <table className="w-full text-left text-sm">
+              <thead>
+                <tr className="border-b border-white/[0.06] text-zinc-400">
+                  <th className="p-4 font-medium">Arama türü</th>
+                  <th className="p-4 font-medium">Örnek</th>
+                  <th className="p-4 font-medium">Rekabet</th>
+                  <th className="p-4 font-medium">Yaklaşım</th>
+                </tr>
+              </thead>
+              <tbody>
+                {aramaStratejisi.map((r) => (
+                  <tr key={r.tur} className="border-b border-white/[0.04] last:border-0 align-top">
+                    <td className="p-4 text-white font-medium">{r.tur}</td>
+                    <td className="p-4 text-zinc-300">&ldquo;{r.ornek}&rdquo;</td>
+                    <td className="p-4 text-zinc-300 whitespace-nowrap">{r.rekabet}</td>
+                    <td className="p-4 text-zinc-400">{r.yaklasim}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <SeoPriceTable place="İstanbul" />
 
       <section className="py-20 px-6">
         <div className="max-w-3xl mx-auto">
@@ -193,6 +281,7 @@ export default function IstanbulSeoPage() {
 
       <RelatedPages
         pages={[
+          { label: 'Avukatlar İçin SEO Rehberi', href: '/blog/avukatlar-icin-dijital-pazarlama-seo-rehberi' },
           { label: 'İstanbul Dijital Pazarlama', href: '/istanbul-dijital-pazarlama' },
           { label: 'İstanbul Web Tasarım', href: '/istanbul-web-tasarim' },
           { label: 'İstanbul Google Ads', href: '/istanbul-google-ads' },
