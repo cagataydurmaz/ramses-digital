@@ -224,7 +224,7 @@ export default function SmartIntake({ lang = 'tr' }: { lang?: 'tr' | 'en' }) {
                 {/* Bottom bar */}
                 <div className="flex items-center justify-between px-4 py-3">
                   <span className="text-zinc-500 text-xs hidden sm:block">
-                    <kbd className="bg-white/[0.05] border border-white/[0.10] rounded px-1.5 py-0.5 text-[10px] font-mono mr-1 text-zinc-400">Enter</kbd>
+                    <kbd className="bg-white/[0.05] border border-white/[0.10] rounded px-1.5 py-0.5 text-xs font-mono mr-1 text-zinc-400">Enter</kbd>
                     {t.enterHint}
                   </span>
                   <button
@@ -299,7 +299,7 @@ export default function SmartIntake({ lang = 'tr' }: { lang?: 'tr' | 'en' }) {
 
                 {/* User message echo */}
                 <div className="bg-white/[0.03] rounded-xl px-4 py-3 mb-4 border border-white/[0.05]">
-                  <p className="text-zinc-500 text-[11px] mb-1 uppercase tracking-wider font-medium">{t.youAsked}</p>
+                  <p className="text-zinc-500 text-xs mb-1 uppercase tracking-wider font-medium">{t.youAsked}</p>
                   <p className="text-zinc-300 text-sm leading-relaxed">{input}</p>
                 </div>
 
@@ -309,7 +309,7 @@ export default function SmartIntake({ lang = 'tr' }: { lang?: 'tr' | 'en' }) {
                     <Sparkles size={14} className={colors!.accent} />
                   </div>
                   <div className="flex-1">
-                    <p className="text-zinc-500 text-[11px] mb-1.5 uppercase tracking-wider font-medium">{t.aiAnalysis}</p>
+                    <p className="text-zinc-500 text-xs mb-1.5 uppercase tracking-wider font-medium">{t.aiAnalysis}</p>
                     <p className="text-zinc-100 text-sm leading-relaxed">
                       {displayed}
                       {displayed.length < result.message.length && (

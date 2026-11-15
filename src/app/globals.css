@@ -289,9 +289,9 @@ img, video {
   line-height: 1.4;
 }
 .post-content p {
-  color: #a1a1aa;
-  font-size: 1rem;
-  line-height: 1.85;
+  color: #d4d4d8;
+  font-size: 1.0625rem;
+  line-height: 1.8;
   margin-bottom: 1.25rem;
 }
 .post-content ul {
@@ -300,9 +300,9 @@ img, video {
   list-style: none;
 }
 .post-content li {
-  color: #a1a1aa;
-  font-size: 1rem;
-  line-height: 1.85;
+  color: #d4d4d8;
+  font-size: 1.0625rem;
+  line-height: 1.8;
   margin-bottom: 0.5rem;
   padding-left: 1.5rem;
   position: relative;
@@ -328,7 +328,7 @@ img, video {
   -webkit-overflow-scrolling: touch;
   border-collapse: collapse;
   margin: 1.75rem 0;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   border-radius: 0.75rem;
   border: 1px solid rgba(255,255,255,0.08);
 }
@@ -342,7 +342,7 @@ img, video {
   min-width: 110px;
 }
 .post-content td {
-  color: #a1a1aa;
+  color: #d4d4d8;
   padding: 0.75rem 1rem;
   border-bottom: 1px solid rgba(255,255,255,0.05);
   min-width: 110px;
@@ -414,3 +414,13 @@ img, video {
   margin-bottom: 0.4rem;
   display: block;
 }
+
+/* Okunabilirlik: blog yazılarında satır uzunluğu, kelime bölme ve mobil boyutlar */
+.post-content { max-width: 70ch; overflow-wrap: break-word; hyphens: manual; }
+.post-content a { color: #93c5fd; text-decoration: underline; text-underline-offset: 3px; }
+@media (max-width: 640px) {
+  .post-content h2 { font-size: 1.3rem; margin-top: 2rem; }
+  .post-content p, .post-content li { font-size: 1.0625rem; line-height: 1.75; }
+  .post-content th, .post-content td { padding: 0.6rem 0.75rem; }
+}
+html { -webkit-text-size-adjust: 100%; text-rendering: optimizeLegibility; }

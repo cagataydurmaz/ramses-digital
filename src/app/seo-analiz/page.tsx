@@ -93,7 +93,7 @@ function OverallScore({ score }: { score: number }) {
         </svg>
         <div className="absolute inset-0 flex flex-col items-center justify-center">
           <span className="text-white font-bold text-2xl">{score}</span>
-          <span className="text-zinc-400 text-[10px]">/ 100</span>
+          <span className="text-zinc-400 text-xs">/ 100</span>
         </div>
       </div>
       <span className="text-sm font-semibold" style={{ color: getColor() }}>{getLabel()}</span>

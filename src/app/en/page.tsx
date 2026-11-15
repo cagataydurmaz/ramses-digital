@@ -209,7 +209,7 @@ export default function EnglishHomePage() {
                   <p className="text-zinc-400 text-sm leading-relaxed mb-4">{s.desc}</p>
                   <div className="flex flex-wrap gap-1.5">
                     {s.tags.map((tag) => (
-                      <span key={tag} className="text-[11px] text-zinc-500 bg-white/[0.04] border border-white/[0.06] rounded-full px-2.5 py-1">
+                      <span key={tag} className="text-xs text-zinc-500 bg-white/[0.04] border border-white/[0.06] rounded-full px-2.5 py-1">
                         {tag}
                       </span>
                     ))}

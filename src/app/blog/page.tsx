@@ -40,7 +40,7 @@ export default function BlogPage() {
       {/* Hero */}
       <section className="pt-28 sm:pt-36 pb-12 sm:pb-16 px-4 sm:px-6 text-center">
         <div className="max-w-3xl mx-auto">
-          <span className="inline-block text-[11px] font-medium px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20 mb-5 tracking-wider uppercase">
+          <span className="inline-block text-xs font-medium px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20 mb-5 tracking-wider uppercase">
             Ramses Digital Blog
           </span>
           <h1 className="text-3xl sm:text-5xl font-bold text-white leading-tight mb-4">

@@ -273,7 +273,7 @@ export default function BlogPostPage({ params }: Props) {
                 >
                   <div className="text-3xl mb-3">{rp.emoji}</div>
                   <span
-                    className={`inline-block rounded-full px-2 py-0.5 text-[10px] font-medium border mb-2 ${categoryBadgeClass(rp.categoryColor)}`}
+                    className={`inline-block rounded-full px-2 py-0.5 text-xs font-medium border mb-2 ${categoryBadgeClass(rp.categoryColor)}`}
                   >
                     {rp.category}
                   </span>

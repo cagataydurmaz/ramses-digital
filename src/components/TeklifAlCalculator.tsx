@@ -310,7 +310,7 @@ export default function TeklifAlCalculator() {
                 }`}
               >
                 <span
-                  className={`w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-bold ${
+                  className={`w-5 h-5 rounded-full flex items-center justify-center text-xs font-bold ${
                     step > i + 1
                       ? 'bg-blue-500 text-white'
                       : step === i + 1
@@ -453,7 +453,7 @@ export default function TeklifAlCalculator() {
                       <p className={`text-xs font-semibold mb-1 ${seoBillingMode === 'aylik' ? 'text-white' : 'text-zinc-400'}`}>
                         Aylık Yönetim <span className="text-blue-400 font-normal">(Önerilen)</span>
                       </p>
-                      <p className="text-zinc-500 text-[11px] leading-relaxed">
+                      <p className="text-zinc-500 text-xs leading-relaxed">
                         Sürekli içerik, teknik takip ve sıralama yönetimi — sonuçlar zamanla artar.
                       </p>
                     </button>
@@ -468,7 +468,7 @@ export default function TeklifAlCalculator() {
                       <p className={`text-xs font-semibold mb-1 ${seoBillingMode === 'tek' ? 'text-white' : 'text-zinc-400'}`}>
                         Tek Seferlik Başlangıç Paketi
                       </p>
-                      <p className="text-zinc-500 text-[11px] leading-relaxed">
+                      <p className="text-zinc-500 text-xs leading-relaxed">
                         Denetim + kurulum, bir kerelik. Devam eden aylık takip dahil değil.
                       </p>
                     </button>
@@ -536,9 +536,9 @@ export default function TeklifAlCalculator() {
                       <div>
                         <p className="text-white font-bold">AI Teklif Raporu</p>
                         <div className="flex flex-wrap items-center gap-1.5 mt-1">
-                          <span className="bg-white/[0.06] text-zinc-400 text-[11px] px-2 py-0.5 rounded-full capitalize">{businessType}</span>
-                          <span className="bg-blue-500/10 text-blue-400 text-[11px] px-2 py-0.5 rounded-full">{services.length} hizmet</span>
-                          {websiteUrl && <span className="bg-white/[0.06] text-zinc-400 text-[11px] px-2 py-0.5 rounded-full truncate max-w-[120px]">{websiteUrl.replace(/https?:\/\//, '')}</span>}
+                          <span className="bg-white/[0.06] text-zinc-400 text-xs px-2 py-0.5 rounded-full capitalize">{businessType}</span>
+                          <span className="bg-blue-500/10 text-blue-400 text-xs px-2 py-0.5 rounded-full">{services.length} hizmet</span>
+                          {websiteUrl && <span className="bg-white/[0.06] text-zinc-400 text-xs px-2 py-0.5 rounded-full truncate max-w-[120px]">{websiteUrl.replace(/https?:\/\//, '')}</span>}
                         </div>
                       </div>
                     </div>
@@ -593,7 +593,7 @@ export default function TeklifAlCalculator() {
                               {monthlyItems.length > 0 && (
                                 <ul className="mt-1.5 space-y-0.5">
                                   {monthlyItems.map(({ s, range }) => (
-                                    <li key={s} className="text-zinc-500 text-[11px]">
+                                    <li key={s} className="text-zinc-500 text-xs">
                                       {serviceLabels[s] ?? s}: {fmt(range.min)}–{fmt(range.max)}₺/ay
                                     </li>
                                   ))}
@@ -602,10 +602,10 @@ export default function TeklifAlCalculator() {
                               {est.hasAdSpendShare && (
                                 <>
                                   <p className="text-zinc-500 text-xs mt-1">+ reklam bütçenizin %15&apos;i (yönetim ücretimiz)</p>
-                                  <p className="text-zinc-600 text-[11px] mt-1.5 leading-relaxed">
+                                  <p className="text-zinc-600 text-xs mt-1.5 leading-relaxed">
                                     Örnek: Google&apos;a aylık 20.000₺ reklam bütçesi ayırırsanız, bizim payımız +3.000₺ olur (20.000 × %15). Bu 20.000₺ bize ödenmez — doğrudan sizin Google hesabınızdan gider, sadece 3.000₺&apos;lik kısım bizim yönetim ücretimizdir.
                                   </p>
-                                  <p className="text-zinc-600 text-[11px] mt-1.5 leading-relaxed">
+                                  <p className="text-zinc-600 text-xs mt-1.5 leading-relaxed">
                                     Sabit ücret, yönetim emeğimizin karşılığıdır; %15&apos;lik pay ise bütçe büyüdükçe artan iş yüküyle orantılıdır — ikisi birlikte dengeli ve şeffaf bir fiyatlandırma sağlar.
                                   </p>
                                 </>
@@ -621,7 +621,7 @@ export default function TeklifAlCalculator() {
                               {oneTimeItems.length > 0 && (
                                 <ul className="mt-1.5 space-y-0.5">
                                   {oneTimeItems.map(({ s, range }) => (
-                                    <li key={s} className="text-zinc-500 text-[11px]">
+                                    <li key={s} className="text-zinc-500 text-xs">
                                       {serviceLabels[s] ?? s}: {fmt(range.min)}–{fmt(range.max)}₺
                                     </li>
                                   ))}
@@ -647,21 +647,21 @@ export default function TeklifAlCalculator() {
                                   {s === 'SEO Başlangıç Paketi' && (
                                     <div className="flex items-start gap-1.5 bg-amber-400/10 border border-amber-400/25 rounded-lg px-2.5 py-2 mb-2">
                                       <AlertTriangle size={12} className="text-amber-400 mt-0.5 shrink-0" />
-                                      <p className="text-amber-300 text-[10px] font-medium leading-relaxed">Devam eden aylık takip dahil değil — sadece kurulum. <strong className="text-amber-200">Bu fiyat tek bir site içindir</strong> — her ilçe/şehir için ayrı sayfa (pSEO) gibi geniş kapsamlı talepler fiyatı artırır, ayrı teklif gerekir.</p>
+                                      <p className="text-amber-300 text-xs font-medium leading-relaxed">Devam eden aylık takip dahil değil — sadece kurulum. <strong className="text-amber-200">Bu fiyat tek bir site içindir</strong> — her ilçe/şehir için ayrı sayfa (pSEO) gibi geniş kapsamlı talepler fiyatı artırır, ayrı teklif gerekir.</p>
                                     </div>
                                   )}
                                   {s === 'SEO' && (
                                     <div className="flex items-start gap-1.5 bg-amber-400/10 border border-amber-400/25 rounded-lg px-2.5 py-2 mb-2">
                                       <AlertTriangle size={12} className="text-amber-400 mt-0.5 shrink-0" />
-                                      <p className="text-amber-300 text-[10px] font-medium leading-relaxed"><strong className="text-amber-200">Bu fiyat tek bir site içindir</strong> — her ilçe/şehir için ayrı sayfa (pSEO) gibi geniş kapsamlı talepler fiyatı artırır, ayrı teklif gerekir.</p>
+                                      <p className="text-amber-300 text-xs font-medium leading-relaxed"><strong className="text-amber-200">Bu fiyat tek bir site içindir</strong> — her ilçe/şehir için ayrı sayfa (pSEO) gibi geniş kapsamlı talepler fiyatı artırır, ayrı teklif gerekir.</p>
                                     </div>
                                   )}
                                   {s === 'Google Ads Kurulum' && (
-                                    <p className="text-amber-400/80 text-[10px] mb-1.5">Tek seferlik — ilk ay için ayrıca yönetim ücreti alınmaz, yönetim ücreti 2. aydan başlar.</p>
+                                    <p className="text-amber-400/80 text-xs mb-1.5">Tek seferlik — ilk ay için ayrıca yönetim ücreti alınmaz, yönetim ücreti 2. aydan başlar.</p>
                                   )}
                                   <ul className="space-y-1">
                                     {serviceIncludes[s].map((item) => (
-                                      <li key={item} className="flex items-start gap-1.5 text-zinc-500 text-[11px]">
+                                      <li key={item} className="flex items-start gap-1.5 text-zinc-500 text-xs">
                                         <CheckCircle2 size={11} className="text-blue-400 mt-0.5 shrink-0" />
                                         {item}
                                       </li>

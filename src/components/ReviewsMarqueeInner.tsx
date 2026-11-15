@@ -39,7 +39,7 @@ function ReviewCards({ hidden = false }: { hidden?: boolean }) {
           </blockquote>
           <figcaption>
             <p className="text-white font-semibold text-xs">{r.name}</p>
-            {r.subtitle && <p className="text-zinc-500 text-[11px] mt-0.5 leading-snug">{r.subtitle}</p>}
+            {r.subtitle && <p className="text-zinc-500 text-xs mt-0.5 leading-snug">{r.subtitle}</p>}
           </figcaption>
         </figure>
       ))}

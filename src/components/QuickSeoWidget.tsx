@@ -21,7 +21,7 @@ function MiniScore({ label, score, icon: Icon }: { label: string; score: number;
       <div className="flex items-center justify-between mb-2">
         <div className="flex items-center gap-1.5">
           <Icon size={13} className="text-zinc-500" />
-          <span className="text-zinc-400 text-[11px]">{label}</span>
+          <span className="text-zinc-400 text-xs">{label}</span>
         </div>
         <span className={`font-bold text-sm ${color}`}>{score}</span>
       </div>
@@ -82,7 +82,7 @@ export default function QuickSeoWidget() {
           Analiz Et
         </button>
       </div>
-      <p className="relative text-zinc-600 text-[11px] text-center mb-1">
+      <p className="relative text-zinc-600 text-xs text-center mb-1">
         AI, URL yapısına ve domain bilgisine göre olası SEO sorunlarını analiz eder.
       </p>
 

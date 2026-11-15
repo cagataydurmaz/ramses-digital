@@ -66,7 +66,7 @@ function BlogCard({ post, priority = false }: { post: PostMeta; priority?: boole
       <div className="p-5 flex flex-col flex-1">
         {/* Category badge */}
         <span
-          className={`inline-block rounded-full px-2.5 py-1 text-[11px] font-medium mb-3 w-fit ${categoryBadgeClass(post.categoryColor)}`}
+          className={`inline-block rounded-full px-2.5 py-1 text-xs font-medium mb-3 w-fit ${categoryBadgeClass(post.categoryColor)}`}
         >
           {post.category}
         </span>
@@ -86,7 +86,7 @@ function BlogCard({ post, priority = false }: { post: PostMeta; priority?: boole
           {post.tags.slice(0, 3).map((tag) => (
             <span
               key={tag}
-              className="text-[10px] px-2 py-0.5 rounded-full bg-white/[0.04] text-zinc-400 border border-white/[0.06]"
+              className="text-xs px-2 py-0.5 rounded-full bg-white/[0.04] text-zinc-400 border border-white/[0.06]"
             >
               {tag}
             </span>
