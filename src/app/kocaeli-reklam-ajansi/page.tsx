@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import CityServiceSections, { cityServiceFaqs } from '@/components/CityServiceSections'
 import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
@@ -63,6 +64,7 @@ const faqs = [
   { q: 'Sonuçları görmem ne kadar sürer?', a: 'Google Ads genelde 1-2 hafta içinde trafik getirmeye başlar. SEO\'da yerel (harita) sonuçlar 2-4 hafta, organik sıralama iyileşmesi 3-6 ay sürer. Kocaeli\'nin rekabet yoğun ilçelerinde (İzmit, Gebze merkez) süre biraz uzayabilir.' },
   { q: 'Yapay zeka arama motorlarında (ChatGPT, Gemini) Kocaeli işletmesi olarak görünebilir miyim?', a: 'Evet. GEO (Generative Engine Optimization) stratejimizle, birisi ChatGPT\'ye "Kocaeli\'de [hizmetiniz]" diye sorduğunda önerilme ihtimalinizi artıran yapılandırılmış içerik ve otoriter kaynak bağlantıları oluşturuyoruz. Bu çalışma SEO paketlerimize dahildir.' },
   { q: 'Google Ads hesabı bizim adımıza mı açılıyor?', a: 'Evet, hesap sizin adınıza açılır, biz sadece yönetici olarak bağlanırız. "İlk sırada çıkmayı garanti ediyoruz" diyen ajanslara dikkat edin — Google Ads sıralaması gerçek zamanlı açık artırmadır, hiç kimse bunu garanti edemez.' },
+  ...cityServiceFaqs('kocaeli', 'reklam'),
 ]
 
 const jsonLd = {
@@ -267,6 +269,8 @@ export default function KocaeliReklamAjansiPage() {
       </section>
 
       {/* FAQ */}
+      <CityServiceSections city="kocaeli" hizmet="reklam" />
+
       <section className="py-20 px-6">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-10 text-center">

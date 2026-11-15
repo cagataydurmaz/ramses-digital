@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import CityServiceSections, { cityServiceFaqs } from '@/components/CityServiceSections'
 import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
@@ -30,13 +31,11 @@ const features = [
 const ilceler = ['Çankaya', 'Keçiören', 'Yenimahalle', 'Mamak', 'Etimesgut', 'Sincan', 'Gölbaşı', 'Pursaklar']
 
 const faqs = [
-  { q: 'Ankara\'da web sitesi yaptırmak ne kadar sürer?', a: 'Başlangıç kurumsal siteler 2-3 haftada teslim edilir. Orta ölçekli projeler 4-6 hafta, e-ticaret ve platform projeleri 8-12 hafta alır.' },
-  { q: 'Ankara işletmem için web sitesinde yerel SEO nasıl kurulur?', a: 'İlçe bazlı anahtar kelimeler, Google Business Profile entegrasyonu, NAP (isim-adres-telefon) tutarlılığı ve yerel schema markup temel adımlardır. Çankaya gibi iş merkezi ilçelerde kurumsal odaklı, diğer ilçelerde daha yerel odaklı içerik stratejisi kuruyoruz.' },
   { q: 'Ankara\'daki hukuk büroları ve danışmanlık firmaları için web sitesi farklı mı?', a: 'Evet. Güven inşa eden, kurumsal kimliğe uygun, içerik ağırlıklı bir yaklaşım gerekiyor. Portföyümüzdeki İstanbul Barosu avukatları için uyguladığımız yaklaşım — reklam değil, otorite ve profesyonellik — Ankara\'daki benzer sektörler için de doğrudan uygulanabilir.' },
-  { q: 'Mevcut sitem var, yenileme mi yoksa sıfırdan mı yapmalıyım?', a: 'Mevcut sitenizin Google\'daki birikimi (backlink, sıralama) varsa taşıma yaparız — SEO değeri korunur. Yavaş, eski altyapılı veya mobil uyumsuz siteler için sıfırdan Next.js geçişi çok daha etkili.' },
   { q: 'Ankara\'da web sitesi fiyatları ne kadar?', a: 'Sektör, sayfa sayısı ve özel özelliklere göre değişir. Domain ve hosting ayrıca ücretlendirilir. Ücretsiz danışmanlıkta net fiyat alırsınız.' },
   { q: 'Fiziksel olarak Ankara\'da ofisiniz var mı?', a: 'Hayır, Kocaeli kökenliyiz — tüm süreç uzaktan yönetiliyor. Keşif görüşmesi, tasarım onayı ve teslimat Google Meet/Zoom üzerinden yapılır. Uzaktan çalışma modelimiz portföyümüzdeki canlı projelerle kanıtlı.' },
   { q: 'Web sitem yapıldıktan sonra kim günceller?', a: 'İçerik güncellemeleri için basit panel kuruyoruz. Blog, ürün ve haber güncellemelerini kendiniz yapabilirsiniz. Tasarım ve teknik değişiklikler için aylık bakım paketi sunuyoruz.' },
+  ...cityServiceFaqs('ankara', 'web'),
 ]
 
 const jsonLd = {
@@ -139,6 +138,8 @@ export default function AnkaraWebTasarimPage() {
           </div>
         </div>
       </section>
+
+      <CityServiceSections city="ankara" hizmet="web" />
 
       <section className="py-20 px-6">
         <div className="max-w-3xl mx-auto">

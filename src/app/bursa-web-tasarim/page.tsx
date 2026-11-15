@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import CityServiceSections, { cityServiceFaqs } from '@/components/CityServiceSections'
 import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
@@ -30,14 +31,11 @@ const features = [
 const ilceler = ['Osmangazi', 'Nilüfer', 'Yıldırım', 'Gemlik', 'İnegöl', 'Mudanya', 'Gürsu', 'Kestel']
 
 const faqs = [
-  { q: 'Bursa\'da web sitesi yaptırmak ne kadar sürer?', a: 'Başlangıç kurumsal siteler 2-3 haftada teslim edilir. Orta ölçekli projeler 4-6 hafta, e-ticaret ve katalog ağırlıklı projeler (örn. mobilya üreticileri için) 6-10 hafta alır. Rekabetçi Bursa pazarında hızlı lansmanı öneriyoruz.' },
-  { q: 'Bursa işletmem için web sitesinde yerel SEO nasıl kurulur?', a: 'İlçe bazlı anahtar kelimeler, Google Business Profile entegrasyonu, NAP (isim-adres-telefon) tutarlılığı, yerel schema markup ve "Nilüfer\'de X hizmeti" gibi sayfalar oluşturmak temel adımlardır. Bursa\'nın 10\'dan fazla ilçesi arasından işinize en uygun olanlara öncelik veriyoruz.' },
   { q: 'Otomotiv yan sanayi ve mobilya üreticileri için web sitesi farklı mı?', a: 'Evet. Otomotiv yan sanayi firmaları için teknik yeterlilik belgeleri, üretim kapasitesi ve B2B iletişim formu ön planda olmalı. İnegöl mobilya üreticileri için ürün kataloğu, galeri ve toptan/perakende ayrımı kritik. Genel bir kurumsal şablon yerine sektöre özel bilgi mimarisi kuruyoruz.' },
-  { q: 'Mevcut sitem var, yenileme mi yoksa sıfırdan mı yapmalıyım?', a: 'Mevcut sitenizin Google\'daki birikimi (backlink, sıralama) varsa taşıma yaparız — SEO değeri korunur. Yavaş, eski altyapılı veya mobil uyumsuz siteler için sıfırdan Next.js geçişi daha etkili. Ücretsiz danışmanlıkta sitenizi inceleyip öneri sunarız.' },
-  { q: 'Bursa\'da web sitesi fiyatları ne kadar?', a: 'Sayfa sayısı, özel özellikler (katalog, çoklu dil, B2B form) ve sektöre göre kapsam değişir. Domain ve hosting ayrıca ücretlendirilir. Net fiyatı ücretsiz danışmanlıkta netleştiriyoruz.' },
   { q: 'Fiziksel olarak Bursa\'da ofisiniz var mı?', a: 'Hayır, Kocaeli kökenliyiz — Bursa\'ya tamamen uzaktan hizmet veriyoruz. Keşif görüşmesi, tasarım onayı ve teslimat Google Meet/Zoom üzerinden yapılır. Türkiye genelinde canlı referanslarımızı portföyümüzde inceleyebilirsiniz.' },
   { q: 'Web sitem yapıldıktan sonra kim günceller?', a: 'İçerik güncellemeleri için basit panel kuruyoruz. Blog, ürün ve haber güncellemelerini kendiniz yapabilirsiniz. Tasarım ve teknik değişiklikler için aylık bakım paketi sunuyoruz. Projeyi teslim edip kaybolan bir ajans değiliz.' },
   { q: 'Bursa\'daki yerleşik ajanslara kıyasla neden sizi tercih etmeliyim?', a: 'Yerleşik ajanslarda küçük/orta ölçekli projeler genellikle düşük öncelik alır, iletişim yavaşlar. Biz her projeye mühendislik disipliniyle, doğrudan kurucu ortak seviyesinde ilgi gösteriyoruz — daha hızlı iletişim, daha esnek süreç, aynı kalite.' },
+  ...cityServiceFaqs('bursa', 'web'),
 ]
 
 const jsonLd = {
@@ -134,6 +132,8 @@ export default function BursaWebTasarimPage() {
           </div>
         </div>
       </section>
+
+      <CityServiceSections city="bursa" hizmet="web" />
 
       <section className="py-20 px-6">
         <div className="max-w-3xl mx-auto">

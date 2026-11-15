@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import CityServiceSections, { cityServiceFaqs } from '@/components/CityServiceSections'
 import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
@@ -29,21 +30,21 @@ const services = [
 
 const metrics = [
   { value: '1-2 Hafta', label: 'Kampanya başlangıcı' },
-  { value: '%15-40', label: 'Ortalama CTR iyileştirmesi' },
-  { value: '%30', label: 'Ortalama CPA düşüşü' },
+  { value: 'Aylık', label: 'Şeffaf performans raporu' },
+  { value: 'Dahil', label: 'Dönüşüm takibi kurulumu' },
   { value: '7/24', label: 'Reklam takibi' },
 ]
 
 const faqs = [
   { q: 'İzmit\'te Google Ads ne kadar bütçe gerektirir?', a: 'Gebze veya İzmit merkez gibi rekabetçi bölgelerde diğer bölgelere göre daha yüksek bütçe daha etkili sonuç verir. Reklam bütçeniz doğrudan Google\'a gider, bize ödenmez — bizim ücretimiz ayrı bir kalem: sabit aylık ücret + bütçenizin %15\'i (örnek: 20.000₺ bütçede +3.000₺). Ücretsiz danışmanlıkta sektörünüze özel bütçe önerisi sunarız.' },
   { q: 'Google Ads\'in SEO\'dan farkı nedir?', a: 'Google Ads anlık sonuç verir: bugün kampanya kursanız yarın trafik gelir. SEO ise 3-6 ayda sonuç verir ama uzun vadede reklam bütçesi ödemeden trafik sağlar. İzmit\'te en iyi strateji ikisini birlikte yürütmek: Google Ads hızlı satış getirirken SEO uzun vadeli büyüme inşa eder.' },
-  { q: 'Kendi Google Ads hesabımı neden yönetemiyorum?', a: 'Teknik olarak yönetebilirsiniz. Ancak Quality Score optimizasyonu, negatif anahtar kelime yönetimi, teklif stratejisi ve A/B testi uzmanlık gerektiriyor. Deneyimsiz yönetimde aynı bütçeyle %40-60 daha az dönüşüm alınması çok yaygın. Profesyonel yönetim kendini genellikle ilk 2-3 ayda çıkarıyor.' },
+  { q: 'Kendi Google Ads hesabımı neden yönetemiyorum?', a: 'Teknik olarak yönetebilirsiniz. Ancak Quality Score optimizasyonu, negatif anahtar kelime yönetimi, teklif stratejisi ve A/B testi uzmanlık gerektiriyor. Deneyimsiz yönetimde aynı bütçe çoğu zaman alakasız tıklamalara harcanır. Profesyonel yönetim kendini genellikle ilk 2-3 ayda çıkarıyor.' },
   { q: 'İzmit\'te hangi sektörler Google Ads\'ten en çok fayda görür?', a: 'Aciliyet taşıyan hizmetler en yüksek ROI alır: oto servis, çilingir, su tesisatçısı, klima servisi. Bunun yanı sıra yüksek değerli hizmetler (muhasebe, estetik klinik, diş hekimliği) ve yerel e-ticaret Google Ads\'den çok iyi sonuç alır. B2B sanayi için LinkedIn Ads veya arama kampanyaları değerlendirilir. Not: avukatlık gibi reklam yasağı bulunan meslekler için Google Ads yerine SEO ve içerik stratejisi öneriyoruz.' },
   { q: 'Google Ads kampanyası ne zaman sonuç verir?', a: 'Kampanya aktifleştirmeden 1-2 hafta sonra tıklama ve trafik başlar. Anlamlı dönüşüm verisi için 4-6 hafta, optimizasyon için 2-3 ay gerekmektedir. İlk ay öğrenme dönemi sayılır — Google algoritması hedef kitleyi öğrenirken CPA yüksek olabilir, sonra stabilize olur.' },
   { q: 'Rakiplerim de Google Ads yapıyor, nasıl öne çıkabilirim?', a: 'Quality Score (Kalite Puanı) belirleyici. Reklam metni, açılış sayfası uyumu ve beklenen tıklama oranı yüksekse rakibinizden daha az ödeyerek üstte çıkarsınız. Ayrıca rakiplerinizin ihmal ettiği uzun kuyruklu anahtar kelimeleri ve negatif keyword yönetimini iyi yapmak büyük fark yaratır.' },
-  { q: 'Raporlama nasıl yapılıyor?', a: 'Aylık detaylı kampanya raporu: gösterim, tıklama, dönüşüm, CPC, CPA ve ROAS metrikleri. Canlı Google Ads dashboard erişimi de veriyoruz. Şeffaf: her kuruşun nereye gittiğini görürsünüz.' },
   { q: 'Google Ads ile Google Haritalar reklamı aynı mı?', a: 'Hayır. Google Arama Reklamları web sitenize tıklama getirir. Google Haritalar\'da öne çıkmak için önce Google Business Profile optimizasyonu, ardından Google Local Services Ads veya Location Extension kullanılır. İzmit\'te harita paketine girmek için GBP çalışması şarttır.' },
   { q: 'Reklam hesabı kimin adına açılır?', a: 'Sizin adınıza. Google Ads hesabı size ait olur, biz yönetici erişimiyle çalışırız — ayrılsanız bile hesabınız, verileriniz ve kampanya geçmişiniz sizde kalır.' },
+  ...cityServiceFaqs('izmit', 'ads'),
 ]
 
 const jsonLd = {
@@ -162,6 +163,8 @@ export default function IzmitGoogleAdsPage() {
       </section>
 
       {/* FAQ */}
+      <CityServiceSections city="izmit" hizmet="ads" />
+
       <section className="py-20 px-6">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-10 text-center">Sık Sorulan Sorular</h2>

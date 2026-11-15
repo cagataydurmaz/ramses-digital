@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import CityServiceSections, { cityServiceFaqs } from '@/components/CityServiceSections'
 import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
@@ -28,15 +29,11 @@ const services = [
 ]
 
 const faqs = [
-  { q: 'Kocaeli\'de Google Ads için ne kadar bütçe gerekir?', a: 'İzmit ve Gebze gibi rekabetçi ilçelerde daha yüksek, Körfez ve Gölcük gibi ilçelerde daha düşük bütçeyle başlanabilir. Sektöre göre de değişir — otomotiv ve hukuk genellikle daha yüksek CPC\'ye sahip. Reklam bütçeniz doğrudan Google\'a gider, bize ödenmez — bizim ücretimiz ayrı bir kalem: sabit aylık ücret + bütçenizin %15\'i (örnek: 20.000₺ bütçede +3.000₺). Ücretsiz danışmanlıkta işletmenize özel bütçe önerisi sunuyoruz.' },
-  { q: 'Kocaeli\'nin farklı ilçeleri için ayrı kampanya gerekir mi?', a: 'Evet, önerilir. "Gebze oto servis" araması ile "İzmit oto servis" araması farklı kullanıcılar ve potansiyel farklı rekabet. İlçe bazlı reklam grupları daha yüksek Quality Score, daha düşük CPC ve daha yüksek dönüşüm sağlar. Kocaeli\'nin 10 ilçesini kapsayan kampanya mimarisi kuruyoruz.' },
-  { q: 'Kocaeli\'de Google Ads ne zaman sonuç verir?', a: 'Kampanya aktifleşince 1-2 hafta içinde tıklama ve trafik başlar. İlk 30 gün Google algoritmasının öğrenme dönemi sayılır. 6-8 haftadan sonra optimizasyon verimli şekilde yapılabilir. Kocaeli\'deki arama trendleri mevsimsel değişim gösterdiği için aylık bütçe ve teklif revizyonları kritiktir.' },
   { q: 'Kocaeli sanayi ve B2B firmaları için Google Ads işe yarıyor mu?', a: 'Evet, ancak B2B için strateji farklıdır. "Kocaeli paslanmaz çelik tedarikçi" veya "Gebze endüstriyel boya" gibi uzun kuyruklu B2B aramaları düşük hacimli ama çok yüksek değerli. Bu segmentte düşük trafik yüksek sipariş değeri anlamına gelir. Display + LinkedIn kombinasyonu da önerebiliriz.' },
-  { q: 'Google Ads ile SEO\'yu birlikte mi yapmalıyım?', a: 'Kocaeli\'deki rekabetçi sektörler için kesinlikle evet. Google Ads hemen trafik getirir; SEO 3-6 ayda organik sonuç verir. İkisini birlikte yürütmek hem kısa vadeli hem uzun vadeli büyümeyi destekler. Reklam durduğunda SEO organik trafiği sürdürür — yalnızca Ads\'e bağımlı kalmaz.' },
-  { q: 'Kocaeli\'de mevcut Google Ads kampanyam var ama sonuç almıyorum, ne yapmalıyım?', a: 'En yaygın sorunlar: geniş eşleme anahtar kelimeler (bütçeyi boşa harcıyor), eksik negatif anahtar kelime listesi, düşük Quality Score, zayıf açılış sayfası ve dönüşüm izlemenin kurulmamış olması. Mevcut hesabınızı ücretsiz analiz edip sorunları tespit ediyoruz.' },
   { q: 'Raporlama nasıl yapılıyor?', a: 'Aylık Google Ads performans raporu: gösterim, tıklama, CPC, dönüşüm, ROAS ve CPA metrikleri. Canlı Google Ads dashboard erişimi veriyoruz. Her kuruşun nereye gittiğini görürsünüz — sürpriz yok.' },
   { q: 'Kocaeli\'de Google Ads yönetimi için sözleşme şartı var mı?', a: 'Minimum 3 ay öneriyoruz. Google Ads öğrenme dönemi 30 gün, optimizasyon için en az 60-90 gün gerekiyor. İlk ayda çok yüksek CPA normal — algoritma öğreniyor. 3 ay sonunda net ROI tablonuz netleşir ve devam kararını veri bazlı alırsınız.' },
   { q: 'Reklam hesabımız kimin mülkiyetinde olur?', a: 'Sizin. Hesabı kendi adınıza açarız, biz sadece yönetici olarak bağlanırız — Kocaeli\'deki sanayi firmalarının tedarikçi ilişkilerinde sıkça sorulan bir güven meselesi, hesap her zaman sizin kontrolünüzde kalır.' },
+  ...cityServiceFaqs('kocaeli', 'ads'),
 ]
 
 const jsonLd = {
@@ -105,7 +102,7 @@ export default function KocaeliGoogleAdsPage() {
           {[
             { value: '10', label: 'Kocaeli ilçesi — tam kapsam' },
             { value: '1-2 Hafta', label: 'Kampanya başlangıcı' },
-            { value: '%30', label: 'Ortalama CPA düşüşü' },
+            { value: 'Dahil', label: 'Dönüşüm takibi kurulumu' },
             { value: '7/24', label: 'Reklam izleme' },
           ].map(({ value, label }) => (
             <div key={label} className="text-center bg-white/[0.03] border border-white/[0.06] rounded-xl p-5">
@@ -148,6 +145,8 @@ export default function KocaeliGoogleAdsPage() {
           </div>
         </div>
       </section>
+
+      <CityServiceSections city="kocaeli" hizmet="ads" />
 
       <section className="py-20 px-6">
         <div className="max-w-3xl mx-auto">

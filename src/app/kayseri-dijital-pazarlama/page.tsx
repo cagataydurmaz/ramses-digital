@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import CityServiceSections, { cityServiceFaqs } from '@/components/CityServiceSections'
 import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
@@ -82,14 +83,11 @@ const sectors = [
 ]
 
 const faqs = [
-  { q: 'Kayseri\'de dijital pazarlamaya ne zaman başlamalıyım?', a: 'SEO otorite kazanmak zaman aldığı için erken başlamak avantaj sağlar; Kayseri\'deki rakiplerinizin bir kısmı zaten dijitale yatırım yapıyor. Küçük bir bütçeyle Google Ads ile kısa vadede trafik almak, SEO ile de uzun vadeli bir varlık inşa etmek mümkün.' },
   { q: 'Kayseri\'deki hangi dijital kanal en hızlı sonuç verir?', a: 'Hızlı sonuç için Google Ads: 1-2 hafta içinde potansiyel müşteriler arar ve reklamınızı görür. Uzun vadeli ve düşük maliyetli büyüme için SEO: 3-6 ayda organik trafik birikmeye başlar. İkisini birlikte yürütmek en akıllıca stratejidir.' },
   { q: 'Mobilya üreticisi veya gıda firması olarak dijital pazarlamadan nasıl fayda görürüm?', a: 'B2B alıcılar arama motorunda toptan/bayi araştırması yapıyor — "mobilya üretici Kayseri" veya "pastırma toptan üretici" gibi aramalar. SEO ve LinkedIn/Google Ads kombinasyonuyla bu talebi yakalamak mümkün. Gıda üreticileri için ise hem B2B toptan hem B2C e-ticaret talebi ayrı stratejiler gerektiriyor.' },
-  { q: 'Kayseri\'de dijital pazarlama için aylık ne kadar bütçe ayırmalıyım?', a: 'Hedeflediğiniz kanal kombinasyonuna (SEO, Google Ads, web tasarım) ve sektörünüze göre değişir. Ücretsiz danışmanlıkta işletmenize özel bir bütçe planı netleştirebiliriz.' },
-  { q: 'Sosyal medya yönetimi de yapıyor musunuz?', a: 'Post, story ve video içerikleri üretiyor, içerik takvimi ve strateji kuruyoruz — ancak hesap yönetimi ve günlük yorum/DM moderasyonu hizmetlerimiz arasında değil. Odak noktamız ölçülebilir ROI getiren kanallar: Google arama, SEO ve e-posta pazarlama.' },
   { q: 'Kayseri\'deki hukuk büroları, klinikler ve estetik merkezleri için özel bir yaklaşımınız var mı?', a: 'Evet. Hukuk büroları için Avukatlık Kanunu\'nun reklam yasağı nedeniyle SEO ve içerik otoritesine dayalı strateji uyguluyoruz. Diş hekimi ve estetik merkezleri için ise güven inşa eden içerik ve yerel SEO ağırlıklı bir yaklaşım kuruyoruz.' },
-  { q: 'Uzaktan çalışıyor musunuz, yoksa Kayseri\'de yerinde mi?', a: 'Tüm hizmetlerimiz uzaktan yürütülüyor. Kocaeli kökenliyiz, fiziksel ofisimiz Kayseri\'de yok. Toplantılar Google Meet/Zoom üzerinden, raporlar dijital dashboard ve PDF ile paylaşılıyor.' },
   { q: 'Yapay zeka reklamcılığı ve GEO nedir, Kayseri işletmesi için gerekli mi?', a: 'GEO (Generative Engine Optimization), ChatGPT veya Gemini\'de "Kayseri\'de [sektörünüz]" aramasında alıntılanma olasılığını artırmak için yapılan içerik ve yapı çalışmasıdır. Bu henüz doymamış bir kanal — erken hareket eden işletmeler önemli bir avantaj kazanıyor.' },
+  ...cityServiceFaqs('kayseri', 'pazarlama'),
 ]
 
 const jsonLd = {
@@ -275,6 +273,8 @@ export default function KayseriDijitalPazarlamaPage() {
       </section>
 
       {/* FAQ */}
+      <CityServiceSections city="kayseri" hizmet="pazarlama" />
+
       <section className="py-20 px-6">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-10 text-center">Sık Sorulan Sorular</h2>

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import CityServiceSections, { cityServiceFaqs } from '@/components/CityServiceSections'
 import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
@@ -28,15 +29,11 @@ const services = [
 ]
 
 const faqs = [
-  { q: 'Gaziantep\'te Google Ads için ne kadar bütçe gerekir?', a: 'Sektöre göre değişir — hukuk, diş hekimliği ve estetik gibi alanlarda rekabet daha yüksek, tekstil/gıda ihracatı gibi B2B alanlarda arama hacmi daha düşük ama dönüşüm değeri daha yüksek olabilir. Reklam bütçeniz doğrudan Google\'a gider, bize ödenmez — bizim ücretimiz ayrı bir kalem: sabit aylık ücret + bütçenizin %15\'i (örnek: 20.000₺ bütçede +3.000₺). Ücretsiz danışmanlıkta işletmenize özel bütçe önerisi sunuyoruz.' },
-  { q: 'Gaziantep\'in farklı ilçeleri için ayrı kampanya gerekir mi?', a: 'Kesinlikle önerilir. "Şahinbey diş hekimi" ile "Şehitkamil diş hekimi" farklı kullanıcılar ve farklı rekabet seviyeleri demek. İlçe bazlı reklam grupları daha yüksek Quality Score, daha düşük CPC ve daha yüksek dönüşüm sağlar.' },
-  { q: 'Gaziantep\'te Google Ads ne zaman sonuç verir?', a: 'Kampanya aktifleşince 1-2 hafta içinde tıklama ve trafik başlar. İlk 30 gün Google algoritmasının öğrenme dönemi sayılır. İhracat odaklı kampanyalarda (örn. tekstil/gıda) satış döngüsü daha uzun olduğu için dönüşüm değerlendirmesi biraz daha zaman alabilir.' },
   { q: 'Tekstil ihracatçısı veya gıda üreticisi olarak Google Ads işe yarar mı?', a: 'Evet, ancak strateji farklı kurgulanır. B2B alıcılar genellikle "toptan", "üretici", "ihracatçı firma" gibi terimlerle arama yapar. Bu terimlere özel, düşük hacimli ama yüksek niyetli anahtar kelime kampanyaları daha etkili sonuç verir.' },
-  { q: 'Google Ads ile SEO\'yu birlikte mi yapmalıyım?', a: 'Gaziantep\'in rekabetçi pazarında evet. Google Ads hemen trafik getirir; SEO 3-6 ayda organik sonuç verir. İkisini birlikte yürütmek hem kısa vadeli hem uzun vadeli büyümeyi destekler.' },
-  { q: 'Gaziantep\'te mevcut Google Ads kampanyam var ama sonuç almıyorum, ne yapmalıyım?', a: 'En yaygın sorunlar: geniş eşleme anahtar kelimeler, eksik negatif anahtar kelime listesi, düşük Quality Score, zayıf açılış sayfası ve dönüşüm izlemenin kurulmamış olması. Mevcut hesabınızı ücretsiz analiz edip sorunları tespit ediyoruz.' },
   { q: 'Raporlama nasıl yapılıyor?', a: 'Aylık Google Ads performans raporu: gösterim, tıklama, CPC, dönüşüm, ROAS ve CPA metrikleri. Canlı Google Ads dashboard erişimi veriyoruz. Her kuruşun nereye gittiğini görürsünüz.' },
   { q: 'Gaziantep\'te Google Ads yönetimi için sözleşme şartı var mı?', a: 'Minimum 3 ay öneriyoruz. Google Ads öğrenme dönemi 30 gün, optimizasyon için en az 60-90 gün gerekiyor. 3 ay sonunda net ROI tablonuz netleşir ve devam kararını veri bazlı alırsınız.' },
   { q: 'Hesap kimin adına açılıyor, bizim mi ajansın mı?', a: 'Sizin adınıza. Google Ads hesabını siz sahiplenirsiniz, biz yönetici erişimiyle çalışırız — ihracat firmalarının B2B tedarikçi ilişkilerinde bu, hesap üzerinde her zaman söz sahibi olduğunuz anlamına gelir.' },
+  ...cityServiceFaqs('gaziantep', 'ads'),
 ]
 
 const jsonLd = {
@@ -149,6 +146,8 @@ export default function GaziantepGoogleAdsPage() {
           </div>
         </div>
       </section>
+
+      <CityServiceSections city="gaziantep" hizmet="ads" />
 
       <section className="py-20 px-6">
         <div className="max-w-3xl mx-auto">

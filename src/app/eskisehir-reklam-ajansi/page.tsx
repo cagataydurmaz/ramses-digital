@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import CityServiceSections, { cityServiceFaqs } from '@/components/CityServiceSections'
 import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
@@ -41,16 +42,11 @@ const whyUs = [
 ]
 
 const faqs = [
-  { q: 'Eskişehir\'de reklam ajansı seçerken nelere dikkat etmeliyim?', a: 'En önemli kriter gerçek referanslar ve şeffaf raporlamadır. Ajansın sektörünüze (örneğin öğrenci pazarı veya sanayi) daha önce çalışıp çalışmadığını, somut sonuçlar sunup sunamadığını ve aylık raporlama yapıp yapmadığını sormalısınız. Sözleşme imzalamadan önce canlı müşteri sitelerine mutlaka bakın.' },
-  { q: 'Eskişehir\'de dijital reklamın maliyeti nedir?', a: 'Google Ads reklam bütçesi, SEO yönetim ücreti ve web sitesi maliyeti işletmenizin büyüklüğüne ve hedeflerinize göre değişir. Ücretsiz danışmanlık seansında size özel bilgi paylaşıyoruz.' },
   { q: 'Eskişehir\'deki işletmem için Google\'da nasıl üst sıralara çıkarım?', a: 'İki paralel strateji gerekli: Google Business Profile optimizasyonu (harita paketi için) ve web sitesi SEO\'su (organik arama için). GBP için işletme bilgilerini eksiksiz doldurmak, müşteri yorumları toplamak ve yerel dizinlere kayıt olmak kritiktir. Web sitesi için Eskişehir\'e özel içerik üretmek şarttır.' },
-  { q: 'Eskişehir\'de hangi sektörlere hizmet veriyorsunuz?', a: 'Eskişehir\'in güçlü sektörleri olan öğrenciye hitap eden işletmeler (kafe, kırtasiye, kurs merkezi), demiryolu/havacılık yan sanayi ve kültür-sanat işletmelerinin yanında hukuk, diş hekimliği ve güzellik & estetik gibi alanlarda da çalışıyoruz. Sektöre özel strateji kuruyoruz, şablon uygulamıyoruz.' },
-  { q: 'Sonuçları ne zaman görmeye başlarım?', a: 'Google Ads 1-2 hafta içinde trafik getirir. SEO için yerel sonuçlar (harita) 2-4 haftada görünür; organik sıralamalar 3-6 ay içinde belirginleşir. Web sitesi hemen yayına girer. Hızlı sonuç almak isteyenler için Google Ads\'i başlangıç stratejisi olarak öneriyoruz.' },
-  { q: 'Eskişehir\'in hangi ilçelerine hizmet veriyorsunuz?', a: 'Odunpazarı, Tepebaşı, Sivrihisar, Mihalıççık, Çifteler, Sarıcakaya, Alpu ve Mihalgazi dahil Eskişehir\'in tüm ilçelerine uzaktan hizmet veriyoruz.' },
-  { q: 'Sözleşme şartlarınız nedir?', a: 'Google Ads ve SEO için minimum 3 ay, ideal olarak 6 ay öneriyoruz. Dijital pazarlama kısa vadede değil, birikimiyle sonuç verir. Web tasarım projeleri tek seferlik sözleşmeyle teslim edilir.' },
   { q: 'Yapay zeka (ChatGPT, Gemini) aramalarında da görünür olabilir miyim?', a: 'Evet, bu GEO (Generative Engine Optimization) olarak adlandırılıyor. Eskişehir\'de sektörünüzü araştıran birinin ChatGPT\'ye sorduğunda sizi kaynak göstermesi olasılığını artıran yapılandırılmış içerik, citation-worthy veriler ve otoriter backlink profili gerekiyor. Tüm SEO paketlerimize GEO stratejisi dahildir.' },
   { q: 'Fiziksel olarak Eskişehir\'de ofisiniz var mı?', a: 'Hayır, Kocaeli kökenliyiz — Eskişehir\'e tamamen uzaktan hizmet veriyoruz. Keşif görüşmesi, strateji onayı ve raporlama Google Meet/Zoom üzerinden yürütülüyor.' },
   { q: 'Reklam hesabımız kimin adına açılır?', a: 'Firmanızın adına. Google Ads hesabı sizde açılır, biz yönetici olarak erişiriz. Hesap üzerinde tam kontrol her zaman sizde kalır.' },
+  ...cityServiceFaqs('eskisehir', 'reklam'),
 ]
 
 const jsonLd = {
@@ -203,6 +199,8 @@ export default function EskisehirReklamAjansiPage() {
       </section>
 
       {/* FAQ */}
+      <CityServiceSections city="eskisehir" hizmet="reklam" />
+
       <section className="py-20 px-6 bg-[#080D18]">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-10 text-center">

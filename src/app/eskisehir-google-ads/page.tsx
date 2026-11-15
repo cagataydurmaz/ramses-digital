@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import CityServiceSections, { cityServiceFaqs } from '@/components/CityServiceSections'
 import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
@@ -28,15 +29,11 @@ const services = [
 ]
 
 const faqs = [
-  { q: 'Eskişehir\'de Google Ads için ne kadar bütçe gerekir?', a: 'Sektöre göre değişir — hukuk, diş hekimliği ve estetik gibi alanlarda rekabet daha yüksek, öğrenciye hitap eden işletmelerde (kafe, kırtasiye) düşük bütçeyle bile yüksek görünürlük mümkün. Reklam bütçeniz doğrudan Google\'a gider, bize ödenmez — bizim ücretimiz ayrı bir kalem: sabit aylık ücret + bütçenizin %15\'i (örnek: 20.000₺ bütçede +3.000₺). Ücretsiz danışmanlıkta işletmenize özel bütçe önerisi sunuyoruz.' },
-  { q: 'Eskişehir\'in farklı ilçeleri için ayrı kampanya gerekir mi?', a: 'Kesinlikle önerilir. "Odunpazarı diş hekimi" ile "Tepebaşı diş hekimi" farklı kullanıcılar ve farklı rekabet seviyeleri demek. İlçe bazlı reklam grupları daha yüksek Quality Score, daha düşük CPC ve daha yüksek dönüşüm sağlar.' },
-  { q: 'Eskişehir\'de Google Ads ne zaman sonuç verir?', a: 'Kampanya aktifleşince 1-2 hafta içinde tıklama ve trafik başlar. İlk 30 gün Google algoritmasının öğrenme dönemi sayılır. Öğrenciye hitap eden işletmelerde (kafe, kırtasiye) hızlı sonuç alınırken, B2B sanayi kampanyalarında satış döngüsü daha uzun sürer.' },
   { q: 'Öğrenciye hitap eden bir işletme veya sanayi firması olarak Google Ads işe yarar mı?', a: 'Evet, ancak strateji tamamen farklı kurgulanır. Öğrenci pazarı için mobil-öncelikli, hızlı dönüşümlü kampanyalar (kafe, kırtasiye, özel ders) etkili olurken, sanayi firmaları için "tedarikçi", "bayi", "üretici firma" gibi B2B terimlere özel, düşük hacimli ama yüksek niyetli kampanyalar daha etkili sonuç verir.' },
-  { q: 'Google Ads ile SEO\'yu birlikte mi yapmalıyım?', a: 'Eskişehir\'in rekabetçi pazarında evet. Google Ads hemen trafik getirir; SEO 3-6 ayda organik sonuç verir. İkisini birlikte yürütmek hem kısa vadeli hem uzun vadeli büyümeyi destekler.' },
-  { q: 'Eskişehir\'de mevcut Google Ads kampanyam var ama sonuç almıyorum, ne yapmalıyım?', a: 'En yaygın sorunlar: geniş eşleme anahtar kelimeler, eksik negatif anahtar kelime listesi, düşük Quality Score, zayıf açılış sayfası ve dönüşüm izlemenin kurulmamış olması. Mevcut hesabınızı ücretsiz analiz edip sorunları tespit ediyoruz.' },
   { q: 'Raporlama nasıl yapılıyor?', a: 'Aylık Google Ads performans raporu: gösterim, tıklama, CPC, dönüşüm, ROAS ve CPA metrikleri. Canlı Google Ads dashboard erişimi veriyoruz. Her kuruşun nereye gittiğini görürsünüz.' },
   { q: 'Eskişehir\'de Google Ads yönetimi için sözleşme şartı var mı?', a: 'Minimum 3 ay öneriyoruz. Google Ads öğrenme dönemi 30 gün, optimizasyon için en az 60-90 gün gerekiyor. 3 ay sonunda net ROI tablonuz netleşir ve devam kararını veri bazlı alırsınız.' },
   { q: 'Hesap kimin adına açılıyor, bizim mi ajansın mı?', a: 'Sizin adınıza. Google Ads hesabını siz sahiplenirsiniz, biz yönetici erişimiyle çalışırız — hesap üzerinde her zaman söz sahibi olduğunuz anlamına gelir.' },
+  ...cityServiceFaqs('eskisehir', 'ads'),
 ]
 
 const jsonLd = {
@@ -149,6 +146,8 @@ export default function EskisehirGoogleAdsPage() {
           </div>
         </div>
       </section>
+
+      <CityServiceSections city="eskisehir" hizmet="ads" />
 
       <section className="py-20 px-6">
         <div className="max-w-3xl mx-auto">

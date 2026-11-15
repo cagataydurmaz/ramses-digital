@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import CityServiceSections, { cityServiceFaqs } from '@/components/CityServiceSections'
 import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
@@ -30,14 +31,11 @@ const features = [
 const ilceler = ['Odunpazarı', 'Tepebaşı', 'Sivrihisar', 'Mihalıççık', 'Çifteler', 'Sarıcakaya', 'Alpu']
 
 const faqs = [
-  { q: 'Eskişehir\'de web sitesi yaptırmak ne kadar sürer?', a: 'Başlangıç kurumsal siteler 2-3 haftada teslim edilir. Orta ölçekli projeler 4-6 hafta, özel özellikli (rezervasyon sistemi, e-ticaret) projeler 6-10 hafta alır. Rekabetçi Eskişehir pazarında hızlı lansmanı öneriyoruz.' },
-  { q: 'Eskişehir işletmem için web sitesinde yerel SEO nasıl kurulur?', a: 'İlçe bazlı anahtar kelimeler, Google Business Profile entegrasyonu, NAP (isim-adres-telefon) tutarlılığı, yerel schema markup ve "Odunpazarı\'nda X hizmeti" gibi sayfalar oluşturmak temel adımlardır. Eskişehir\'in ilçeleri arasından işinize en uygun olanlara öncelik veriyoruz.' },
   { q: 'Öğrenciye hitap eden işletmeler ve sanayi firmaları için web sitesi farklı mı?', a: 'Evet. Öğrenciye hitap eden işletmeler (kafe, kırtasiye, kurs merkezi) için hızlı yüklenen, mobil-öncelikli, sosyal medya entegre bir tasarım gerekir. Sanayi/kurumsal firmalar için teknik özellik tabloları ve B2B iletişim formu ön planda olmalı. Genel bir kurumsal şablon yerine sektöre özel bilgi mimarisi kuruyoruz.' },
-  { q: 'Mevcut sitem var, yenileme mi yoksa sıfırdan mı yapmalıyım?', a: 'Mevcut sitenizin Google\'daki birikimi (backlink, sıralama) varsa taşıma yaparız — SEO değeri korunur. Yavaş, eski altyapılı veya mobil uyumsuz siteler için sıfırdan Next.js geçişi daha etkili. Ücretsiz danışmanlıkta sitenizi inceleyip öneri sunarız.' },
-  { q: 'Eskişehir\'de web sitesi fiyatları ne kadar?', a: 'Sayfa sayısı, özel özellikler (rezervasyon, e-ticaret, çoklu dil) ve sektöre göre kapsam değişir. Domain ve hosting ayrıca ücretlendirilir. Net fiyatı ücretsiz danışmanlıkta netleştiriyoruz.' },
   { q: 'Fiziksel olarak Eskişehir\'de ofisiniz var mı?', a: 'Hayır, Kocaeli kökenliyiz — Eskişehir\'e tamamen uzaktan hizmet veriyoruz. Keşif görüşmesi, tasarım onayı ve teslimat Google Meet/Zoom üzerinden yapılır. Türkiye genelinde canlı referanslarımızı portföyümüzde inceleyebilirsiniz.' },
   { q: 'Web sitem yapıldıktan sonra kim günceller?', a: 'İçerik güncellemeleri için basit panel kuruyoruz. Blog, ürün ve haber güncellemelerini kendiniz yapabilirsiniz. Tasarım ve teknik değişiklikler için aylık bakım paketi sunuyoruz. Projeyi teslim edip kaybolan bir ajans değiliz.' },
   { q: 'Eskişehir\'deki yerleşik ajanslara kıyasla neden sizi tercih etmeliyim?', a: 'Yerleşik ajanslarda küçük/orta ölçekli projeler genellikle düşük öncelik alır, iletişim yavaşlar. Biz her projeye mühendislik disipliniyle, doğrudan kurucu ortak seviyesinde ilgi gösteriyoruz — daha hızlı iletişim, daha esnek süreç, aynı kalite.' },
+  ...cityServiceFaqs('eskisehir', 'web'),
 ]
 
 const jsonLd = {
@@ -134,6 +132,8 @@ export default function EskisehirWebTasarimPage() {
           </div>
         </div>
       </section>
+
+      <CityServiceSections city="eskisehir" hizmet="web" />
 
       <section className="py-20 px-6">
         <div className="max-w-3xl mx-auto">

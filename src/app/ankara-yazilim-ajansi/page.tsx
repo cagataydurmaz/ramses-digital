@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import CityServiceSections, { cityServiceFaqs } from '@/components/CityServiceSections'
 import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
@@ -32,15 +33,11 @@ const solutions = [
 const stack = ['Next.js', 'TypeScript', 'React', 'Node.js', 'n8n', 'PostgreSQL', 'Vercel', 'Supabase', 'Claude API', 'Stripe']
 
 const faqs = [
-  { q: 'Ankara\'da yazılım ajansı ile çalışmanın avantajı ne?', a: 'Uzaktan çalışıyoruz, dolayısıyla coğrafi mesafe sorun değil. Ancak Ankara\'nın kamu, hukuk ve profesyonel hizmetler ağırlıklı ekonomisini bilmek fark yaratıyor — hukuk bürosu için evrak/randevu akışı, danışmanlık firması için teklif yönetimi gibi ihtiyaçlar İstanbul merkezli e-ticaret odaklı ajansların standart çözümlerinden farklı.' },
-  { q: 'Özel yazılım mı, hazır SaaS mi kullanmalıyım?', a: 'Genelde ikisinin kombinasyonu en verimlisi. Muhasebe, e-posta, randevu gibi standart ihtiyaçlar için Parasut, Google Calendar gibi hazır araçlar yeterli. Sektöre özgü süreçler (dava takibi, hasta/danışan yönetimi, teklif otomasyonu) için özel yazılım veya n8n otomasyonu daha verimli çalışır. Keşif görüşmesinde birlikte karar veriyoruz.' },
   { q: 'Hukuk büroları ve klinikler için özel çözümleriniz var mı?', a: 'Evet. Randevu/dava takip panelleri, güvenli evrak paylaşım akışları, danışan/müşteri CRM entegrasyonları ve kurumsal kimliğe uygun web siteleri geliştiriyoruz. Sektörel reklam kısıtlarını (Avukatlık Kanunu, sağlık reklam yönetmeliği) da göz önünde bulundurarak tasarlıyoruz.' },
-  { q: 'Projeyi teslim ettikten sonra destek veriyor musunuz?', a: 'Evet. Proje sonrası 1-3 ay hata düzeltme garantisi veriyoruz. Uzun vadeli bakım için aylık destek paketi sunuyoruz: güncellemeler, küçük geliştirmeler, teknik izleme ve hızlı müdahale.' },
-  { q: 'Proje süresi ve teslim takvimi nasıl belirleniyor?', a: 'Brifing → teknik şartname → onay → geliştirme → test → teslim süreciyle ilerliyoruz. Basit kurumsal web sitesi 2-3 hafta, orta ölçekli web uygulaması 6-10 hafta, karmaşık otomasyon veya platform projeleri 3-6 ay sürüyor. Şartname onaylandıktan sonra net bir takvime bağlı kalıyoruz.' },
-  { q: 'Mevcut yazılımımla entegrasyon yapabilir misiniz?', a: 'Büyük ihtimalle evet. Mikro Yazılım, Logo, e-imza sistemleri, WooCommerce ve çeşitli CRM/ERP araçlarıyla entegrasyon deneyimimiz var. API\'si olan her sistemle entegrasyon mümkün; olmayanlarda webhook veya dosya bazlı çözümler geliştiriyoruz.' },
   { q: 'Fiyatlandırma nasıl yapılıyor?', a: 'Kapsamı netse proje bazlı sabit fiyat, değilse zaman & materyal modeli kullanıyoruz. Ücretsiz keşif görüşmesinde ihtiyaç analizi yaptıktan sonra size özel bir teklif çıkarıyoruz.' },
   { q: 'Ankara\'da fiziksel ofisiniz var mı?', a: 'Hayır. Kocaeli kökenliyiz ve Ankara\'ya tamamen uzaktan hizmet veriyoruz. Teknik şartname görüşmeleri, demo teslimleri ve destek süreçlerinin tamamı Google Meet/Zoom ve dijital araçlar üzerinden yürütülüyor.' },
   { q: 'Proje sonunda kaynak kod bize mi ait olur?', a: 'Evet. Kaynak kod ve tüm mülkiyet hakları teslimle birlikte tamamen size geçer. Kurumsal ve kamu kurumu müşterilerimiz için bu, denetim/uyum açısından da önemli bir güvence.' },
+  ...cityServiceFaqs('ankara', 'yazilim'),
 ]
 
 const jsonLd = {
@@ -192,6 +189,8 @@ export default function AnkaraYazilimAjansiPage() {
       </section>
 
       {/* FAQ */}
+      <CityServiceSections city="ankara" hizmet="yazilim" />
+
       <section className="py-20 px-6 bg-[#080D18]">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-10 text-center">Sık Sorulan Sorular</h2>

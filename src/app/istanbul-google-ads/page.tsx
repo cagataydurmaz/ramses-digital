@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import CityServiceSections, { cityServiceFaqs } from '@/components/CityServiceSections'
 import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
@@ -28,15 +29,11 @@ const services = [
 ]
 
 const faqs = [
-  { q: 'İstanbul\'da Google Ads için ne kadar bütçe gerekir?', a: 'İstanbul, Türkiye\'nin en yüksek CPC\'li pazarı — özellikle hukuk, finans ve gayrimenkul gibi sektörlerde. Rekabetçi ilçelerde (Kadıköy, Şişli, Beşiktaş) diğer ilçelere göre daha yüksek bütçe gerekir. Reklam bütçeniz doğrudan Google\'a gider, bize ödenmez — bizim ücretimiz ayrı bir kalem: sabit aylık ücret + bütçenizin %15\'i (örnek: 20.000₺ bütçede +3.000₺). Ücretsiz danışmanlıkta işletmenize özel bütçe önerisi sunuyoruz.' },
-  { q: 'İstanbul\'un farklı ilçeleri için ayrı kampanya gerekir mi?', a: 'Kesinlikle önerilir. "Kadıköy diş hekimi" ile "Beşiktaş diş hekimi" farklı kullanıcılar ve farklı rekabet seviyeleri demek. İlçe bazlı reklam grupları daha yüksek Quality Score, daha düşük CPC ve daha yüksek dönüşüm sağlar. İşinize göre öncelikli ilçeleri belirleyip o kampanya mimarisini kuruyoruz.' },
-  { q: 'İstanbul\'da Google Ads ne zaman sonuç verir?', a: 'Kampanya aktifleşince 1-2 hafta içinde tıklama ve trafik başlar. İlk 30 gün Google algoritmasının öğrenme dönemi sayılır. İstanbul\'un yüksek rekabeti nedeniyle optimizasyon süreci Kocaeli\'ye göre biraz daha uzun sürebilir, ancak trafik hacmi de çok daha yüksek.' },
   { q: 'İstanbul\'daki büyük ajanslarla rekabet eden bir işletme için Google Ads işe yarar mı?', a: 'Evet, hatta genellikle daha da kritik. Büyük rakiplerin yüksek teklif verdiği ortamda Quality Score optimizasyonu ve niş anahtar kelime stratejisi ("Kadıköy\'de gayrimenkul avukatı" gibi) daha düşük maliyetle rekabet etmenizi sağlar.' },
-  { q: 'Google Ads ile SEO\'yu birlikte mi yapmalıyım?', a: 'İstanbul\'un rekabetçi pazarında kesinlikle evet. Google Ads hemen trafik getirir; SEO 4-8 ayda organik sonuç verir. İkisini birlikte yürütmek hem kısa vadeli hem uzun vadeli büyümeyi destekler. Reklam bütçesi yüksekken bile SEO yatırımı, uzun vadede reklam bağımlılığını azaltır.' },
-  { q: 'İstanbul\'da mevcut Google Ads kampanyam var ama sonuç almıyorum, ne yapmalıyım?', a: 'En yaygın sorunlar: geniş eşleme anahtar kelimeler (İstanbul\'un yüksek CPC\'sinde bu çok daha pahalıya mal olur), eksik negatif anahtar kelime listesi, düşük Quality Score, zayıf açılış sayfası ve dönüşüm izlemenin kurulmamış olması. Mevcut hesabınızı ücretsiz analiz edip sorunları tespit ediyoruz.' },
   { q: 'Raporlama nasıl yapılıyor?', a: 'Aylık Google Ads performans raporu: gösterim, tıklama, CPC, dönüşüm, ROAS ve CPA metrikleri. Canlı Google Ads dashboard erişimi veriyoruz. Her kuruşun nereye gittiğini görürsünüz — İstanbul\'un yüksek bütçelerinde bu şeffaflık özellikle önemli.' },
   { q: 'İstanbul\'da Google Ads yönetimi için sözleşme şartı var mı?', a: 'Minimum 3 ay öneriyoruz. Google Ads öğrenme dönemi 30 gün, İstanbul\'un rekabetçi ortamında optimizasyon için en az 60-90 gün gerekiyor. 3 ay sonunda net ROI tablonuz netleşir ve devam kararını veri bazlı alırsınız.' },
   { q: 'Hesap bize mi ait olur, ajansta mı kalır?', a: 'Size ait olur. Hesabı kendi adınıza açar, sadece yönetici erişimiyle çalışırız — İstanbul\'un rekabet yoğunluğunda ajans değiştirseniz bile kampanya geçmişiniz ve öğrenmeleriniz kaybolmaz.' },
+  ...cityServiceFaqs('istanbul', 'ads'),
 ]
 
 const jsonLd = {
@@ -148,6 +145,8 @@ export default function IstanbulGoogleAdsPage() {
           </div>
         </div>
       </section>
+
+      <CityServiceSections city="istanbul" hizmet="ads" />
 
       <section className="py-20 px-6">
         <div className="max-w-3xl mx-auto">

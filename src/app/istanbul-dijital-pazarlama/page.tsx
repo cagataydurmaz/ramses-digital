@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import CityServiceSections, { cityServiceFaqs } from '@/components/CityServiceSections'
 import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
@@ -82,14 +83,11 @@ const sectors = [
 ]
 
 const faqs = [
-  { q: 'İstanbul\'da dijital pazarlamaya ne zaman başlamalıyım?', a: 'En iyi zaman şimdi. İstanbul\'daki rakiplerinizin büyük bölümü zaten dijitale yatırım yapıyor; her geçen ay geciktirmek arama motoru otoritesinde geri kalmak anlamına gelir. Küçük bir bütçeyle bile Google Ads ile hemen trafik almak, SEO ile de uzun vadeli varlık inşa etmek mümkün.' },
-  { q: 'İstanbul\'da hangi dijital kanal en hızlı sonuç verir?', a: 'Hızlı sonuç için Google Ads: 1-2 hafta içinde potansiyel müşteriler arar ve reklamınızı görür — ancak İstanbul\'un yüksek CPC\'si nedeniyle bütçe planlaması kritik. Uzun vadeli ve düşük maliyetli büyüme için SEO: 4-8 ayda organik trafik birikmeye başlar. İkisini birlikte yürütmek en akıllıca stratejidir.' },
   { q: 'İstanbul\'daki büyük ajanslara ve rakiplerime karşı nasıl öne çıkabilirim?', a: 'Üç odak noktası: (1) İlçe bazlı niş konumlanma — "İstanbul\'da avukat" yerine "Kadıköy\'de gayrimenkul avukatı" gibi daha spesifik, daha az rekabetli aramalarda üstünlük kurmak. (2) Google Haritalar\'da üst sıra — büyük firmalar genellikle GBP\'yi eksik dolduruyor. (3) Kullanıcı yorumları — yerel aramalarda en belirleyici faktörlerden biri.' },
-  { q: 'İstanbul\'da dijital pazarlama için aylık ne kadar bütçe ayırmalıyım?', a: 'İstanbul\'un rekabet seviyesi nedeniyle Kocaeli\'ye göre daha yüksek bütçe gerekir. Hedeflediğiniz kanal kombinasyonuna (SEO, Google Ads, web tasarım) göre değişir. Sektöre göre ücretsiz danışmanlıkta işletmenize özel bir bütçe planı netleştirebiliriz.' },
-  { q: 'Sosyal medya yönetimi de yapıyor musunuz?', a: 'Post, story ve video içerikleri üretiyor, içerik takvimi ve strateji kuruyoruz — ancak hesap yönetimi ve günlük yorum/DM moderasyonu hizmetlerimiz arasında değil. Odak noktamız ölçülebilir ROI getiren kanallar: Google arama, SEO ve e-posta pazarlama.' },
   { q: 'İstanbul\'daki hukuk büroları ve profesyonel hizmet firmaları için özel bir yaklaşımınız var mı?', a: 'Evet. Portföyümüzde İstanbul Barosu\'na kayıtlı iki avukat müşterimiz var (Av. Furkan Arıkan, Av. Mert Anıl Güler). Avukatlık Kanunu\'nun reklam yasağı nedeniyle bu sektörde tamamen SEO ve içerik otoritesine dayalı, kurumsal kimliğe uygun bir strateji uyguluyoruz.' },
   { q: 'Uzaktan çalışıyor musunuz, yoksa İstanbul\'da yerinde mi?', a: 'Tüm hizmetlerimiz uzaktan yürütülüyor. Toplantılar Google Meet/Zoom üzerinden, raporlar dijital dashboard ve PDF ile paylaşılıyor. İstanbul\'un trafiğinde fiziksel toplantıya gitme zorunluluğu olmadan, aynı kalitede hizmet alıyorsunuz.' },
   { q: 'Yapay zeka reklamcılığı ve GEO nedir, İstanbul işletmesi için gerekli mi?', a: 'GEO (Generative Engine Optimization), ChatGPT veya Gemini\'de "İstanbul\'da [sektörünüz]" aramasında alıntılanma olasılığını artırmak için yapılan içerik ve yapı çalışmasıdır. İstanbul\'un aşırı rekabetçi geleneksel SEO ortamında, GEO henüz doymamış bir kanal — erken hareket eden işletmeler önemli bir avantaj kazanıyor.' },
+  ...cityServiceFaqs('istanbul', 'pazarlama'),
 ]
 
 const jsonLd = {
@@ -276,6 +274,8 @@ export default function IstanbulDijitalPazarlamaPage() {
       </section>
 
       {/* FAQ */}
+      <CityServiceSections city="istanbul" hizmet="pazarlama" />
+
       <section className="py-20 px-6">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-10 text-center">Sık Sorulan Sorular</h2>

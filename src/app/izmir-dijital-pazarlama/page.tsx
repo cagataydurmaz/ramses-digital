@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import CityServiceSections, { cityServiceFaqs } from '@/components/CityServiceSections'
 import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
@@ -82,14 +83,11 @@ const sectors = [
 ]
 
 const faqs = [
-  { q: 'İzmir\'de dijital pazarlamaya ne zaman başlamalıyım?', a: 'Turizm sektöründeyseniz sezon öncesi (en az 2-3 ay önce) başlamak kritik — SEO ve kampanya hazırlığı zaman alır. Diğer sektörlerde en iyi zaman şimdi; her geçen ay rakiplerinize karşı geride kalmak demek.' },
-  { q: 'İzmir\'de hangi dijital kanal en hızlı sonuç verir?', a: 'Hızlı sonuç için Google Ads: 1-2 hafta içinde potansiyel müşteriler arar ve reklamınızı görür. Uzun vadeli ve düşük maliyetli büyüme için SEO: 3-6 ayda organik trafik birikmeye başlar. İkisini birlikte yürütmek en akıllıca stratejidir.' },
   { q: 'İzmir\'deki rakiplerime karşı nasıl öne çıkabilirim?', a: 'Üç odak noktası: (1) Google Haritalar\'da üst sıra. (2) Sezonluk/yerel içerik üstünlüğü — "İzmir\'de yaz tatili X" gibi zamanında yayınlanan içerik. (3) Kullanıcı yorumları — turizm ve hizmet sektöründe en belirleyici faktörlerden biri.' },
-  { q: 'İzmir\'de dijital pazarlama için aylık ne kadar bütçe ayırmalıyım?', a: 'Hedeflediğiniz kanal kombinasyonuna (SEO, Google Ads, web tasarım) göre değişir. Turizm işletmeleri sezon içinde bütçeyi artırmayı değerlendirmeli. Ücretsiz danışmanlıkta işletmenize özel bir bütçe planı çıkarıyoruz.' },
-  { q: 'Sosyal medya yönetimi de yapıyor musunuz?', a: 'Post, story ve video içerikleri üretiyor, içerik takvimi ve strateji kuruyoruz — ancak hesap yönetimi ve günlük yorum/DM moderasyonu hizmetlerimiz arasında değil. Odak noktamız ölçülebilir ROI getiren kanallar: Google arama, SEO ve e-posta pazarlama.' },
   { q: 'İzmir\'deki turizm ve e-ticaret işletmeleri için özel bir yaklaşımınız var mı?', a: 'Evet. Turizm için sezonluk kampanya planlaması ve çok dilli SEO; e-ticaret için ürün/kategori sayfası optimizasyonu ve dönüşüm odaklı tasarım — portföyümüzdeki e-ticaret projemizde uyguladığımız yaklaşımlar bunlar.' },
   { q: 'Uzaktan çalışıyor musunuz, yoksa İzmir\'de yerinde mi?', a: 'Tüm hizmetlerimiz uzaktan yürütülüyor. Toplantılar Google Meet/Zoom üzerinden, raporlar dijital dashboard ve PDF ile paylaşılıyor.' },
   { q: 'Yapay zeka reklamcılığı ve GEO nedir, İzmir işletmesi için gerekli mi?', a: 'GEO (Generative Engine Optimization), ChatGPT veya Gemini\'de "İzmir\'de [sektörünüz]" aramasında alıntılanma olasılığını artırmak için yapılan içerik ve yapı çalışmasıdır. Turistler ve yeni müşteriler artık AI araçlarına da danışıyor — bu kanal henüz doymamış, erken hareket edenler avantajlı.' },
+  ...cityServiceFaqs('izmir', 'pazarlama'),
 ]
 
 const jsonLd = {
@@ -274,6 +272,8 @@ export default function IzmirDijitalPazarlamaPage() {
       </section>
 
       {/* FAQ */}
+      <CityServiceSections city="izmir" hizmet="pazarlama" />
+
       <section className="py-20 px-6">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-10 text-center">Sık Sorulan Sorular</h2>

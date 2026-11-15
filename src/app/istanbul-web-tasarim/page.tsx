@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import CityServiceSections, { cityServiceFaqs } from '@/components/CityServiceSections'
 import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
@@ -30,14 +31,11 @@ const features = [
 const ilceler = ['Kadıköy', 'Beşiktaş', 'Şişli', 'Bakırköy', 'Ataşehir', 'Üsküdar', 'Beylikdüzü', 'Maltepe']
 
 const faqs = [
-  { q: 'İstanbul\'da web sitesi yaptırmak ne kadar sürer?', a: 'Başlangıç kurumsal siteler 2-3 haftada teslim edilir. Orta ölçekli projeler 4-6 hafta, e-ticaret ve platform projeleri 8-12 hafta alır. İstanbul\'daki yoğun rekabet nedeniyle hızlı lansmanı öneriyoruz — her geçen hafta rakibiniz sizdeki müşteriyi alıyor olabilir.' },
-  { q: 'İstanbul işletmem için web sitesinde yerel SEO nasıl kurulur?', a: 'İlçe bazlı anahtar kelimeler, Google Business Profile entegrasyonu, NAP (isim-adres-telefon) tutarlılığı, yerel schema markup ve "Kadıköy\'de X hizmeti" gibi sayfalar oluşturmak temel adımlardır. İstanbul\'un 39 ilçesi arasından işinize en uygun olanlara öncelik veriyoruz.' },
   { q: 'İstanbul\'daki kurumsal ve profesyonel hizmet firmaları için web sitesi farklı mı?', a: 'Evet. Hukuk büroları, danışmanlık firmaları ve finans sektörü için güven inşa eden, kurumsal kimliğe uygun, içerik ağırlıklı bir yaklaşım gerekiyor — reklam değil, otorite ve profesyonellik ön planda. Portföyümüzdeki İstanbul Barosu avukatları için tam olarak bu yaklaşımı uyguladık.' },
-  { q: 'Mevcut sitem var, yenileme mi yoksa sıfırdan mı yapmalıyım?', a: 'Mevcut sitenizin Google\'daki birikimi (backlink, sıralama) varsa taşıma yaparız — SEO değeri korunur. Yavaş, eski altyapılı veya mobil uyumsuz siteler için sıfırdan Next.js geçişi İstanbul\'un rekabetçi ortamında çok daha etkili. Ücretsiz danışmanlıkta sitenizi inceleyip öneri sunarız.' },
-  { q: 'İstanbul\'da web sitesi fiyatları ne kadar?', a: 'Sayfa sayısı, özel özellikler ve sektöre göre kapsam değişir. Domain ve hosting ayrıca ücretlendirilir. İstanbul\'daki büyük ajanslara göre daha esnek ve şeffaf fiyatlandırıyoruz — ücretsiz danışmanlıkta net fiyat alırsınız.' },
   { q: 'Fiziksel olarak İstanbul\'da ofisiniz var mı?', a: 'Hayır, Kocaeli kökenliyiz — ama gerçek İstanbul müşterilerimiz var: Bakırköy ve İstanbul Barosu\'na kayıtlı avukatlar için web tasarım yürüttük. Tüm süreç uzaktan yönetiliyor; keşif görüşmesi, tasarım onayı ve teslimat Google Meet/Zoom üzerinden yapılır.' },
   { q: 'Web sitem yapıldıktan sonra kim günceller?', a: 'İçerik güncellemeleri için basit panel kuruyoruz. Blog, ürün ve haber güncellemelerini kendiniz yapabilirsiniz. Tasarım ve teknik değişiklikler için aylık bakım paketi sunuyoruz. Projeyi teslim edip kaybolan bir ajans değiliz.' },
   { q: 'İstanbul\'daki büyük ajanslara kıyasla neden sizi tercih etmeliyim?', a: 'Büyük ajanslarda küçük/orta ölçekli projeler genellikle düşük öncelik alır, iletişim yavaşlar. Biz her projeye mühendislik disipliniyle, doğrudan kurucu ortak seviyesinde ilgi gösteriyoruz — daha hızlı iletişim, daha esnek süreç, aynı kalite.' },
+  ...cityServiceFaqs('istanbul', 'web'),
 ]
 
 const jsonLd = {
@@ -140,6 +138,8 @@ export default function IstanbulWebTasarimPage() {
           </div>
         </div>
       </section>
+
+      <CityServiceSections city="istanbul" hizmet="web" />
 
       <section className="py-20 px-6">
         <div className="max-w-3xl mx-auto">

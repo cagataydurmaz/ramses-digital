@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import CityServiceSections, { cityServiceFaqs } from '@/components/CityServiceSections'
 import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
@@ -94,6 +95,7 @@ const faqs = [
   { q: 'İzmit\'teki müşteri referanslarınız var mı?', a: 'Evet, portföyümüzdeki Psk. Nur Çelen Kocaeli\'de faaliyet gösteren gerçek bir müşterimiz; SEO ve web çalışması sonrası organik aramadan randevu almaya başladı. Sitesini doğrudan ziyaret edebilirsiniz.' },
   { q: 'Yerinde toplantı yapabiliyor musunuz, yoksa yalnızca uzaktan mı çalışıyorsunuz?', a: 'Görüşmelerin tamamı online yapılıyor; video görüşme, ekran paylaşımı ve yazılı raporlarla ilerliyoruz. Ancak sürecin büyük kısmı — raporlama, güncelleme, iletişim — dijital ortamda hızlı biçimde yürütülüyor.' },
   { q: 'İzmit\'teki işletmem yapay zeka aramalarında (ChatGPT, Gemini) çıkabilir mi?', a: 'Evet. GEO (Generative Engine Optimization) çalışmasıyla, biri ChatGPT\'ye "İzmit\'te [hizmetiniz]" diye sorduğunda önerilme ihtimalinizi artırıyoruz. Bu, yapılandırılmış içerik ve güvenilir kaynak bağlantılarıyla oluşturuluyor ve SEO paketlerimize dahil.' },
+  ...cityServiceFaqs('izmit', 'pazarlama'),
 ]
 
 const jsonLd = {
@@ -275,6 +277,8 @@ export default function IzmitDijitalPazarlamaPage() {
       </section>
 
       {/* FAQ */}
+      <CityServiceSections city="izmit" hizmet="pazarlama" />
+
       <section className="py-20 px-6">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-10 text-center">Sık Sorulan Sorular</h2>

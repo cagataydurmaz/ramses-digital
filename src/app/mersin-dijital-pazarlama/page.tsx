@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import CityServiceSections, { cityServiceFaqs } from '@/components/CityServiceSections'
 import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
@@ -82,14 +83,11 @@ const sectors = [
 ]
 
 const faqs = [
-  { q: 'Mersin\'de dijital pazarlamaya ne zaman başlamalıyım?', a: 'SEO otorite kazanmak zaman aldığı için erken başlamak avantaj sağlar; Mersin\'deki lojistik/ihracat rakiplerinizin bir kısmı zaten dijitale yatırım yapıyor. Küçük bir bütçeyle Google Ads ile kısa vadede trafik almak, SEO ile de uzun vadeli bir varlık inşa etmek mümkün.' },
   { q: 'Mersin\'deki hangi dijital kanal en hızlı sonuç verir?', a: 'Hızlı sonuç için Google Ads: 1-2 hafta içinde potansiyel müşteriler arar ve reklamınızı görür. Uzun vadeli ve düşük maliyetli büyüme için SEO: 3-6 ayda organik trafik birikmeye başlar. İkisini birlikte yürütmek en akıllıca stratejidir.' },
   { q: 'Lojistik firması veya narenciye ihracatçısı olarak dijital pazarlamadan nasıl fayda görürüm?', a: 'B2B alıcılar arama motorunda tedarikçi/nakliye ortağı araştırması yapıyor — "lojistik firma Mersin" veya "narenciye ihracatçı" gibi aramalar. SEO ve LinkedIn/Google Ads kombinasyonuyla bu talebi yakalamak mümkün. Sahil turizmi işletmeleri için ise görsel içerik ve rezervasyon dönüşümü ayrı bir strateji gerektiriyor.' },
-  { q: 'Mersin\'de dijital pazarlama için aylık ne kadar bütçe ayırmalıyım?', a: 'Hedeflediğiniz kanal kombinasyonuna (SEO, Google Ads, web tasarım) ve sektörünüze göre değişir. Ücretsiz danışmanlıkta işletmenize özel bir bütçe planı netleştirebiliriz.' },
-  { q: 'Sosyal medya yönetimi de yapıyor musunuz?', a: 'Post, story ve video içerikleri üretiyor, içerik takvimi ve strateji kuruyoruz — ancak hesap yönetimi ve günlük yorum/DM moderasyonu hizmetlerimiz arasında değil. Odak noktamız ölçülebilir ROI getiren kanallar: Google arama, SEO ve e-posta pazarlama.' },
   { q: 'Mersin\'deki hukuk büroları, klinikler ve turizm işletmeleri için özel bir yaklaşımınız var mı?', a: 'Evet. Hukuk büroları için Avukatlık Kanunu\'nun reklam yasağı nedeniyle SEO ve içerik otoritesine dayalı strateji uyguluyoruz. Turizm işletmeleri için ise görsel ağırlıklı içerik ve mevsimsel kampanya planlaması kuruyoruz.' },
-  { q: 'Uzaktan çalışıyor musunuz, yoksa Mersin\'de yerinde mi?', a: 'Tüm hizmetlerimiz uzaktan yürütülüyor. Kocaeli kökenliyiz, fiziksel ofisimiz Mersin\'de yok. Toplantılar Google Meet/Zoom üzerinden, raporlar dijital dashboard ve PDF ile paylaşılıyor.' },
   { q: 'Yapay zeka reklamcılığı ve GEO nedir, Mersin işletmesi için gerekli mi?', a: 'GEO (Generative Engine Optimization), ChatGPT veya Gemini\'de "Mersin\'de [sektörünüz]" aramasında alıntılanma olasılığını artırmak için yapılan içerik ve yapı çalışmasıdır. Bu henüz doymamış bir kanal — özellikle lojistik ve ihracat firmaları için erken hareket eden işletmeler önemli bir avantaj kazanıyor.' },
+  ...cityServiceFaqs('mersin', 'pazarlama'),
 ]
 
 const jsonLd = {
@@ -276,6 +274,8 @@ export default function MersinDijitalPazarlamaPage() {
       </section>
 
       {/* FAQ */}
+      <CityServiceSections city="mersin" hizmet="pazarlama" />
+
       <section className="py-20 px-6">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-10 text-center">Sık Sorulan Sorular</h2>

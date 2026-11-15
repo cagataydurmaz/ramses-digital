@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import CityServiceSections, { cityServiceFaqs } from '@/components/CityServiceSections'
 import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
@@ -30,15 +31,11 @@ const solutions = [
 const stack = ['Next.js', 'TypeScript', 'React', 'Node.js', 'n8n', 'PostgreSQL', 'Vercel', 'Supabase', 'Claude API', 'Stripe']
 
 const faqs = [
-  { q: 'İzmit\'te yazılım ajansı ile çalışmanın avantajı ne?', a: 'Uzaktan çalışıyoruz, dolayısıyla coğrafi mesafe kısıtımız yok. Ancak İzmit ve Kocaeli\'deki B2B sanayi dinamiklerini, yerel rekabet yapısını ve KOBİ ihtiyaçlarını bilmek önemli bir fark yaratıyor. İzmit\'teki işletmelerin yazılım ihtiyaçları — tedarik zinciri, saha operasyonları, bayii yönetimi — İstanbul merkezli ajansların prototiplerinden farklı.' },
-  { q: 'Özel yazılım mı, hazır SaaS mi kullanmalıyım?', a: 'Çoğu durumda ikisinin kombinasyonu en akıllıcasıdır. Muhasebe, CRM, e-posta gibi alanlarda Parasut, HubSpot, Mailchimp gibi SaaS araçları uygun maliyetli. Operasyona özgü süreçler (sipariş yönetimi, saha takibi, özel raporlama) için özel yazılım veya otomasyon daha verimli. Brifing aşamasında birlikte karar veriyoruz.' },
-  { q: 'Projeyi teslim ettikten sonra destek veriyor musunuz?', a: 'Evet. Proje sonrası 1-3 ay hata düzeltme garantisi veriyoruz. Uzun vadeli bakım için aylık destek paketi sunuyoruz: güncellemeler, küçük geliştirmeler, teknik izleme ve hızlı müdahale. Projeniz sahipsiz kalmaz.' },
-  { q: 'Proje süresi ve teslim takvimi nasıl belirleniyor?', a: 'Brifing→ teknik şartname → onay → geliştirme → test → teslim süreciyle ilerliyoruz. Basit web sitesi 2-3 hafta, orta ölçekli web uygulaması 6-10 hafta, karmaşık otomasyon veya platform projeleri 3-6 ay. Şartname onaylandıktan sonra net takvim sunuyoruz ve bağlı kalıyoruz.' },
-  { q: 'Yapay zeka (AI) entegrasyonu yapıyor musunuz?', a: 'Evet. Müşteri destek chatbotu, içerik üretim asistanı, belge analizi, ürün öneri sistemi ve görüntü işleme projeleri yapıyoruz. Claude API ve GPT-4 entegrasyonlarında deneyimli ekibimiz var. AI projeleri için kullanım senaryosu netleştirip fizibilite analizi yapıyoruz.' },
   { q: 'Fiyatlandırma nasıl yapılıyor?', a: 'Proje bazlı sabit fiyat (kapsam netse) veya zaman & materyal modeli kullanıyoruz. Küçük otomasyon projelerinden kurumsal web uygulamalarına göre kapsam ve fiyat değişir. Ücretsiz danışmanlıkta ihtiyaç analizi yaptıktan sonra sabit fiyatlı teklif sunuyoruz.' },
   { q: 'Mevcut yazılımımla entegrasyon yapabilir misiniz?', a: 'Büyük ihtimalle evet. Mikro Yazılım, Logo, SAP, WooCommerce, Shopify, Trendyol, Hepsiburada entegrasyonlarında deneyimimiz var. API\'si olan her yazılımla entegrasyon yapılabilir; API olmayanlarda webhook veya dosya bazlı çözümler geliştiriyoruz.' },
   { q: 'Yazılım projesine nasıl başlanıyor?', a: '30 dakikalık ücretsiz keşif görüşmesiyle başlıyoruz. İhtiyaçlarınızı dinliyor, teknik çözüm önerisi sunuyor ve ilk tahmini maliyet & süre paylaşıyoruz. Devam kararı verirseniz detaylı teknik şartname hazırlıyoruz. Herhangi bir taahhüt olmadan görüşme yapabilirsiniz.' },
   { q: 'Kaynak kodun mülkiyeti bizde mi olacak?', a: 'Evet. Teslimle birlikte kaynak kod ve mülkiyet hakları tamamen size geçer — kapalı, size bağımlı bir sistem kurmuyoruz.' },
+  ...cityServiceFaqs('izmit', 'yazilim'),
 ]
 
 const jsonLd = {
@@ -181,6 +178,8 @@ export default function IzmitYazilimAjansiPage() {
       </section>
 
       {/* FAQ */}
+      <CityServiceSections city="izmit" hizmet="yazilim" />
+
       <section className="py-20 px-6 bg-[#080D18]">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-10 text-center">Sık Sorulan Sorular</h2>

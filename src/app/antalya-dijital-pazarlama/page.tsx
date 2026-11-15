@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import CityServiceSections, { cityServiceFaqs } from '@/components/CityServiceSections'
 import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
@@ -82,14 +83,11 @@ const sectors = [
 ]
 
 const faqs = [
-  { q: 'Antalya\'da dijital pazarlamaya ne zaman başlamalıyım?', a: 'Turizm işletmeleri için en iyi zaman sezon başlamadan 2-3 ay öncesi — içerik ve kampanya altyapısı sezon başladığında hazır olmalı. Gayrimenkul ve tarım ihracatı gibi yıl boyu istikrarlı talep gören sektörlerde ise başlangıç zamanı daha esnek, önemli olan geciktirmemek.' },
-  { q: 'Antalya\'da hangi dijital kanal en hızlı sonuç verir?', a: 'Hızlı sonuç için Google Ads: 1-2 hafta içinde potansiyel müşteriler reklamınızı görür. Uzun vadeli ve düşük maliyetli büyüme için SEO: çok dilli sayfalar için genellikle 4-6 ayda organik trafik birikmeye başlar. Sezonluk işletmeler için ikisini birlikte yürütmek en akıllıca stratejidir.' },
   { q: 'Antalya\'daki rakiplerime karşı nasıl öne çıkabilirim?', a: 'Üç odak noktası: (1) Dil bazlı niş konumlanma — "Antalya\'da otel" yerine "boutique hotel in Kaş" gibi daha spesifik, hedef kitleye uygun aramalarda üstünlük kurmak. (2) Google Haritalar\'da üst sıra — küçük işletmeler genellikle GBP\'yi eksik dolduruyor. (3) Çok dilli kullanıcı yorumları — yabancı turist ve alıcı kararlarında en belirleyici faktörlerden biri.' },
   { q: 'Antalya\'da dijital pazarlama için bütçe nasıl belirlenir?', a: 'Hedeflediğiniz kanal kombinasyonuna (SEO, Google Ads, web tasarım), dil sayısına ve sezonluk yoğunluğa göre değişir. Sektöre göre ücretsiz danışmanlıkta işletmenize özel bir bütçe planı netleştirebiliriz.' },
-  { q: 'Sosyal medya yönetimi de yapıyor musunuz?', a: 'Post, story ve video içerikleri üretiyor, içerik takvimi ve strateji kuruyoruz — ancak hesap yönetimi ve günlük yorum/DM moderasyonu hizmetlerimiz arasında değil. Odak noktamız ölçülebilir ROI getiren kanallar: Google arama, SEO ve e-posta pazarlama.' },
   { q: 'Antalya\'da referanslarınız var mı?', a: 'Antalya\'da henüz canlı bir referansımız yok — sahte veya abartılı iddialarda bulunmak istemiyoruz. Türkiye genelinde ziyaret edilebilir, gerçek müşteri çalışmalarımızı portföyümüzde görebilirsiniz; hukuk bürosundan e-ticarete, platform projelerinden yerel hizmet işletmelerine kadar.' },
-  { q: 'Uzaktan çalışıyor musunuz, yoksa Antalya\'da yerinde mi?', a: 'Tüm hizmetlerimiz uzaktan yürütülüyor. Kocaeli kökenliyiz, fiziksel ofisimiz Antalya\'da yok. Toplantılar Google Meet/Zoom üzerinden, raporlar dijital dashboard ve PDF ile paylaşılıyor.' },
   { q: 'Yapay zeka reklamcılığı ve GEO nedir, Antalya turizm işletmesi için gerekli mi?', a: 'GEO (Generative Engine Optimization), yabancı turistlerin ChatGPT veya Gemini\'ye "best hotel in Antalya" gibi sorular sorduğunda alıntılanma olasılığını artırmak için yapılan içerik ve yapı çalışmasıdır. Bu kanal henüz doymamış — erken hareket eden işletmeler önemli bir avantaj kazanıyor.' },
+  ...cityServiceFaqs('antalya', 'pazarlama'),
 ]
 
 const jsonLd = {
@@ -278,6 +276,8 @@ export default function AntalyaDijitalPazarlamaPage() {
       </section>
 
       {/* FAQ */}
+      <CityServiceSections city="antalya" hizmet="pazarlama" />
+
       <section className="py-20 px-6">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-10 text-center">Sık Sorulan Sorular</h2>

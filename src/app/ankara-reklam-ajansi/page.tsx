@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import CityServiceSections, { cityServiceFaqs } from '@/components/CityServiceSections'
 import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
@@ -45,15 +46,11 @@ const whyUs = [
 const sectors = ['Hukuk Bürosu', 'Psikolog & Terapist', 'Diş Hekimi & Klinik', 'Güzellik Merkezi & Estetik', 'Danışmanlık', 'Eğitim & Kurs', 'B2B Tedarikçiler', 'İnşaat & Gayrimenkul']
 
 const faqs = [
-  { q: 'Ankara\'da reklam ajansı seçerken nelere dikkat etmeliyim?', a: 'Ankara\'nın kamu, hukuk ve kurumsal hizmet ağırlıklı ekonomisini anlayan bir ajans seçmek önemli. İstanbul\'daki e-ticaret şablonunu Ankara\'ya uygulamak genelde işe yaramaz. Referanslara, raporlama şeffaflığına ve sektörel deneyime bakın.' },
-  { q: 'Ankara\'da dijital reklamın maliyeti nedir?', a: 'Google Ads bütçesi, SEO yönetimi ve web sitesi maliyeti sektörünüze ve hedeflerinize göre değişir. Ücretsiz danışmanlık seansında işletmenize özel bir plan çıkarıyoruz — rakam vermeden önce ihtiyacınızı netleştiriyoruz.' },
   { q: 'Ankara\'daki hukuk büroları ve klinikler için reklam kısıtı var mı?', a: 'Evet. Avukatlık Kanunu avukatların doğrudan reklam yapmasını yasaklıyor; bu sektörde SEO ve içerik otoritesi ağırlıklı bir strateji kuruyoruz. Sağlık sektöründe de Sağlık Bakanlığı reklam yönetmeliğine uygun, bilgilendirici içerik odaklı çalışıyoruz.' },
-  { q: 'Ankara\'da hangi sektörlere hizmet veriyorsunuz?', a: 'Hukuk bürosu, psikolog & terapist, diş hekimi & klinik, güzellik merkezi & estetik, danışmanlık, eğitim & kurs, B2B tedarikçiler ve inşaat & gayrimenkul sektörlerinde çalışıyoruz. Başkentin kurumsal kimliğine uygun sektörlere odaklanıyoruz.' },
-  { q: 'Sonuçları ne zaman görmeye başlarım?', a: 'Google Ads genelde 1-2 hafta içinde ilk talepleri getirir. SEO için Google Haritalar sonuçları 2-4 haftada, organik sıralamalar ise 3-6 ay içinde belirginleşir. Web sitesi yayına girdiği anda çalışmaya başlar.' },
-  { q: 'Ankara\'nın hangi ilçelerine hizmet veriyorsunuz?', a: 'Çankaya, Keçiören, Yenimahalle, Mamak, Etimesgut, Sincan, Altındağ, Gölbaşı, Pursaklar ve Polatlı dahil Ankara\'nın tamamına hizmet veriyoruz. Tüm çalışma uzaktan yürütüldüğü için ilçe farketmiyor.' },
   { q: 'Ankara\'da fiziksel ofisiniz var mı?', a: 'Hayır. Kocaeli kökenliyiz ve Ankara\'ya tamamen uzaktan hizmet veriyoruz. Toplantılar Google Meet/Zoom üzerinden yapılıyor, raporlar dijital olarak paylaşılıyor. Bu model portföyümüzdeki canlı projelerle kanıtlanmış durumda.' },
   { q: 'Yapay zeka aramalarında (ChatGPT, Gemini) da görünür olabilir miyim?', a: 'Evet, buna GEO (Generative Engine Optimization) deniyor. Ankara\'da sektörünüzü araştıran birinin yapay zekaya sorduğunda önerilmeniz için yapılandırılmış içerik ve otorite sinyalleri gerekiyor. Bu kanal Ankara\'nın kurumsal pazarında henüz doymadı — erken hareket avantaj sağlıyor.' },
   { q: 'Google Ads hesabının mülkiyeti kimde olur?', a: 'Tamamen sizde. Hesap kendi adınıza açılır, biz yönetici olarak bağlanırız. Kamu kurumu veya kurumsal firma müşterilerimiz için bu, hesap üzerinde tam denetim ve şeffaflık anlamına geliyor.' },
+  ...cityServiceFaqs('ankara', 'reklam'),
 ]
 
 const jsonLd = {
@@ -241,6 +238,8 @@ export default function AnkaraReklamAjansiPage() {
       </section>
 
       {/* FAQ */}
+      <CityServiceSections city="ankara" hizmet="reklam" />
+
       <section className="py-20 px-6">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-10 text-center">

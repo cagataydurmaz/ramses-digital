@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import CityServiceSections, { cityServiceFaqs } from '@/components/CityServiceSections'
 import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
@@ -30,14 +31,11 @@ const features = [
 const ilceler = ['İzmit', 'Gebze', 'Darıca', 'Körfez', 'Gölcük', 'Başiskele', 'Çayırova', 'Karamürsel']
 
 const faqs = [
-  { q: 'Kocaeli\'de web sitesi yaptırmak ne kadar sürer?', a: 'Başlangıç kurumsal siteler 2-3 haftada teslim edilir. Orta ölçekli projeler 4-6 hafta, e-ticaret ve platform projeleri 8-12 hafta alır. Gebze veya İzmit\'te yoğun rekabet varsa hızlı lansmanı öneriyoruz — her geçen hafta rakibiniz sizdeki müşteriyi alıyor olabilir.' },
-  { q: 'Kocaeli işletmem için web sitesinde yerel SEO nasıl kurulur?', a: 'İlçe bazlı anahtar kelimeler, Google Business Profile entegrasyonu, NAP (isim-adres-telefon) tutarlılığı, yerel schema markup ve "Gebze\'de X hizmeti" gibi sayfalar oluşturmak temel adımlardır. Tüm projelerimizde bu yapı standart olarak kurulur.' },
   { q: 'Kocaeli\'deki sanayi ve B2B firmaları için web sitesi farklı mı?', a: 'Evet. B2B firmalar için ürün kataloğu, teknik özellik sayfaları, PDF indirme, talep formu ve LinkedIn entegrasyonu kritiktir. B2C işletmelere kıyasla içerik mimarisi ve CTA yapısı farklı kurulur. Kocaeli\'nin sanayi kimliğini iyi tanıdığımız için bu ayrımı yapabiliyoruz.' },
-  { q: 'Mevcut sitem var, yenileme mi yoksa sıfırdan mı yapmalıyım?', a: 'Mevcut sitenizin Google\'daki birikimi (backlink, sıralama) varsa taşıma yaparız — SEO değeri korunur. Yavaş, eski altyapılı (WordPress 5+ yıl) veya mobil uyumsuz siteler için sıfırdan Next.js geçişi çok daha etkili. Ücretsiz danışmanlıkta sitenizi inceleyip öneri sunarız.' },
-  { q: 'Kocaeli\'de web sitesi fiyatları ne kadar?', a: 'Sektör, sayfa sayısı ve özel özelliklere göre değişir. Domain ve hosting ayrıca ücretlendirilir. Ücretsiz danışmanlıkta net fiyat alırsınız.' },
   { q: 'Gebze\'de web sitesi için de hizmet veriyor musunuz?', a: 'Evet. Gebze, Darıca, Körfez, Gölcük, Başiskele, Çayırova ve tüm Kocaeli ilçelerine hizmet veriyoruz. Tüm çalışmalar uzaktan yürütülür; fiziksel görüşme zorunluluğu yok.' },
   { q: 'Web sitem yapıldıktan sonra kim günceller?', a: 'İçerik güncellemeleri için basit panel kuruyoruz. Blog, ürün ve haber güncellemelerini kendiniz yapabilirsiniz. Tasarım ve teknik değişiklikler için aylık bakım paketi sunuyoruz. Projeyi teslim edip kaybolan bir ajans değiliz.' },
   { q: 'Kocaeli\'deki rakiplerimden nasıl öne çıkarız?', a: 'Çoğu Kocaeli işletmesinin sitesi eski, yavaş veya mobil uyumsuz. Modern Next.js altyapı, yerel SEO optimizasyonu ve dönüşüm odaklı tasarım kombinasyonu sizi rakiplerinizden belirgin şekilde ayırır. Hız farkı bile Google sıralamalarında anlamlı avantaj sağlıyor.' },
+  ...cityServiceFaqs('kocaeli', 'web'),
 ]
 
 const jsonLd = {
@@ -140,6 +138,8 @@ export default function KocaeliWebTasarimPage() {
           </div>
         </div>
       </section>
+
+      <CityServiceSections city="kocaeli" hizmet="web" />
 
       <section className="py-20 px-6">
         <div className="max-w-3xl mx-auto">

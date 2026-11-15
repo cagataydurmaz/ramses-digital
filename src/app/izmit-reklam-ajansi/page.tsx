@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import CityServiceSections, { cityServiceFaqs } from '@/components/CityServiceSections'
 import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
@@ -49,15 +50,11 @@ const clients = [
 ]
 
 const faqs = [
-  { q: 'İzmit\'te reklam ajansı seçerken nelere dikkat etmeliyim?', a: 'En önemli kriter gerçek referanslar ve şeffaf raporlamadır. Ajansın daha önce İzmit veya Kocaeli\'de çalışıp çalışmadığını, somut sonuçlar sunup sunamadığını ve aylık raporlama yapıp yapmadığını sormalısınız. Sözleşme imzalamadan önce canlı müşteri sitelerine mutlaka bakın.' },
-  { q: 'İzmit\'te dijital reklamın maliyeti nedir?', a: 'Google Ads reklam bütçesi, SEO yönetim ücreti ve web sitesi maliyeti işletmenizin büyüklüğüne ve hedeflerinize göre değişir. Ücretsiz danışmanlık seansında size özel fiyat sunuyoruz.' },
   { q: 'Kocaeli\'deki işletmem için Google\'da nasıl üst sıralara çıkarım?', a: 'İki paralel strateji gerekli: Google Business Profile optimizasyonu (harita paketi için) ve web sitesi SEO\'su (organik arama için). GBP için işletme bilgilerini eksiksiz doldurmak, müşteri yorumları toplamak ve yerel dizinlere kayıt olmak kritiktir. Web sitesi için İzmit ve Kocaeli\'ye özel içerik üretmek şarttır.' },
-  { q: 'İzmit\'te hangi sektörlere hizmet veriyorsunuz?', a: 'Sağlık (psikolog, diş hekimi, veteriner), hukuk, e-ticaret, sanayi/üretim B2B, restoran & kafe, güzellik & estetik, inşaat ve gayrimenkul sektörlerinde aktif referanslarımız var. İzmit\'in sanayi ağırlıklı yapısı nedeniyle B2B dijital pazarlamada güçlü deneyimimiz bulunuyor.' },
-  { q: 'Sonuçları ne zaman görmeye başlarım?', a: 'Google Ads 1-2 hafta içinde trafik getirir. SEO için yerel sonuçlar (harita) 2-4 haftada görünür; organik sıralamalar 3-6 ay içinde belirginleşir. Web sitesi hemen yayına girer. Sabırsız olanlar için hızlı sonuç almak amacıyla Google Ads\'i başlangıç stratejisi olarak öneriyoruz.' },
   { q: 'İzmit dışındaki Kocaeli ilçelerine de hizmet veriyor musunuz?', a: 'Evet. Gebze, Darıca, Körfez, Gölcük, Başiskele, Çayırova ve tüm Kocaeli ilçelerine hizmet veriyoruz. Aynı zamanda İstanbul, Ankara ve diğer büyük şehirlerdeki müşterilerimiz de var; çalışmalarımızın tamamı uzaktan yürütülüyor.' },
-  { q: 'Sözleşme şartlarınız nedir?', a: 'Google Ads ve SEO için minimum 3 ay, ideal olarak 6 ay öneriyoruz. Dijital pazarlama kısa vadede değil, birikimiyle sonuç verir. Web tasarım projeleri tek seferlik sözleşmeyle teslim edilir. Uzun vadeli sözleşmelerde anlamlı indirimler sunuyoruz.' },
   { q: 'Yapay zeka (ChatGPT, Gemini) aramalarında da görünür olabilir miyim?', a: 'Evet, bu GEO (Generative Engine Optimization) olarak adlandırılıyor. İzmit veya Kocaeli\'de sektörünüzü araştıran birinin ChatGPT\'ye sorduğunda sizi kaynak göstermesi olasılığını artıran yapılandırılmış içerik, citation-worthy veriler ve otoriter backlink profili gerekiyor. Tüm SEO paketlerimize GEO stratejisi dahildir.' },
   { q: 'Reklam hesabımın sahibi kim olacak?', a: 'Siz. Google Ads hesabı sizin adınıza açılır, biz yalnızca yönetici erişimiyle çalışırız — ayrılsak bile hesabınız, verileriniz ve kampanya geçmişiniz sizde kalır.' },
+  ...cityServiceFaqs('izmit', 'reklam'),
 ]
 
 const jsonLd = {
@@ -241,6 +238,8 @@ export default function IzmitReklamAjansiPage() {
       </section>
 
       {/* FAQ */}
+      <CityServiceSections city="izmit" hizmet="reklam" />
+
       <section className="py-20 px-6 bg-[#080D18]">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-10 text-center">

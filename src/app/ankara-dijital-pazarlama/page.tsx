@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import CityServiceSections, { cityServiceFaqs } from '@/components/CityServiceSections'
 import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
@@ -82,14 +83,11 @@ const sectors = [
 ]
 
 const faqs = [
-  { q: 'Ankara\'da dijital pazarlamaya ne zaman başlamalıyım?', a: 'En iyi zaman şimdi. Ankara\'daki kurumsal ve profesyonel hizmet sektöründe dijital varlık artık beklenen bir standart — geciktirmek arama motoru otoritesinde geri kalmak anlamına gelir.' },
-  { q: 'Ankara\'da hangi dijital kanal en hızlı sonuç verir?', a: 'Hızlı sonuç için Google Ads: 1-2 hafta içinde potansiyel müşteriler arar ve reklamınızı görür. Uzun vadeli ve düşük maliyetli büyüme için SEO: 3-6 ayda organik trafik birikmeye başlar. İkisini birlikte yürütmek en akıllıca stratejidir.' },
   { q: 'Ankara\'daki rakiplerime karşı nasıl öne çıkabilirim?', a: 'Üç odak noktası: (1) Google Haritalar\'da üst sıra. (2) Yerel/sektörel anahtar kelimede içerik üstünlüğü. (3) Kurumsal güven sinyalleri — Ankara\'nın B2B ağırlıklı pazarında referanslar ve otorite içeriği belirleyici.' },
-  { q: 'Ankara\'da dijital pazarlama için aylık ne kadar bütçe ayırmalıyım?', a: 'Hedeflediğiniz kanal kombinasyonuna (SEO, Google Ads, web tasarım) ve rekabet düzeyine göre değişir. Ücretsiz danışmanlıkta işletmenize özel bir bütçe planı çıkarıyoruz.' },
-  { q: 'Sosyal medya yönetimi de yapıyor musunuz?', a: 'Post, story ve video içerikleri üretiyor, içerik takvimi ve strateji kuruyoruz — ancak hesap yönetimi ve günlük yorum/DM moderasyonu hizmetlerimiz arasında değil. Odak noktamız ölçülebilir ROI getiren kanallar: Google arama, SEO ve e-posta pazarlama.' },
   { q: 'Ankara\'daki hukuk büroları ve danışmanlık firmaları için özel bir yaklaşımınız var mı?', a: 'Evet. Portföyümüzde İstanbul Barosu\'na kayıtlı avukat müşterilerimiz var. Avukatlık Kanunu\'nun reklam yasağı nedeniyle bu sektörde tamamen SEO ve içerik otoritesine dayalı, kurumsal kimliğe uygun bir strateji uyguluyoruz — Ankara\'daki benzer sektörler için de aynı yaklaşım geçerli.' },
   { q: 'Uzaktan çalışıyor musunuz, yoksa Ankara\'da yerinde mi?', a: 'Tüm hizmetlerimiz uzaktan yürütülüyor. Toplantılar Google Meet/Zoom üzerinden, raporlar dijital dashboard ve PDF ile paylaşılıyor.' },
   { q: 'Yapay zeka reklamcılığı ve GEO nedir, Ankara işletmesi için gerekli mi?', a: 'GEO (Generative Engine Optimization), ChatGPT veya Gemini\'de "Ankara\'da [sektörünüz]" aramasında alıntılanma olasılığını artırmak için yapılan içerik ve yapı çalışmasıdır. Ankara\'nın kurumsal/B2B pazarında bu kanal henüz doymamış — erken hareket eden işletmeler avantajlı.' },
+  ...cityServiceFaqs('ankara', 'pazarlama'),
 ]
 
 const jsonLd = {
@@ -274,6 +272,8 @@ export default function AnkaraDijitalPazarlamaPage() {
       </section>
 
       {/* FAQ */}
+      <CityServiceSections city="ankara" hizmet="pazarlama" />
+
       <section className="py-20 px-6">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-10 text-center">Sık Sorulan Sorular</h2>

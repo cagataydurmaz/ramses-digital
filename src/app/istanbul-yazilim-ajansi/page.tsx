@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import CityServiceSections, { cityServiceFaqs } from '@/components/CityServiceSections'
 import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
@@ -41,15 +42,11 @@ const sectors = [
 ]
 
 const faqs = [
-  { q: 'İstanbul\'da yazılım ajansı ile çalışmanın avantajı ne?', a: 'Tüm sürecimiz uzaktan yürütüldüğü için coğrafi kısıt yok — ama İstanbul\'un kurumsal beklentilerini, yoğun rekabet ortamını ve sektörel ihtiyaçlarını (özellikle hukuk, sağlık, kurumsal B2B) biliyoruz. İstanbul Barosu\'na kayıtlı avukatlar için geliştirdiğimiz projeler, kurumsal kimliğe uygun teknik standardı gösteriyor.' },
-  { q: 'Özel yazılım mı, hazır SaaS mi kullanmalıyım?', a: 'Çoğu durumda ikisinin kombinasyonu en akıllıcasıdır. Muhasebe, CRM, e-posta pazarlaması gibi alanlarda hazır SaaS araçları uygun maliyetli. Operasyona özgü süreçler (özel raporlama, saha yönetimi, sipariş takibi) için özel yazılım veya n8n otomasyonu daha verimli. Keşif görüşmesinde birlikte karar veriyoruz.' },
   { q: 'İstanbul\'daki kurumsal firmalar için özel bir yaklaşımınız var mı?', a: 'Evet. Kurumsal B2B firmalar, hukuk büroları ve sağlık sektörü (diş kliniği, güzellik merkezi) için kimlik ve güven unsurunu ön planda tutan, teknik olarak sağlam ve hızlı yüklenen web uygulamaları geliştiriyoruz. İstanbul Barosu\'na kayıtlı avukatlar için yürüttüğümüz projeler canlı örnek olarak portföyümüzde.' },
-  { q: 'Projeyi teslim ettikten sonra destek veriyor musunuz?', a: 'Evet. Teslim sonrası 1-3 ay hata düzeltme garantimiz var. İstanbul\'daki kurumsal müşterilerimizin çoğu aylık bakım paketine geçiyor: güncelleme, küçük geliştirme, teknik izleme ve öncelikli destek hattı. Ekip değişse de projenizin sahibi biz olmaya devam ediyoruz.' },
-  { q: 'Proje süresi ve teslim takvimi nasıl belirleniyor?', a: 'Brifing → teknik şartname → onay → geliştirme → test → teslim süreciyle ilerliyoruz. Basit kurumsal web sitesi 2-3 hafta, orta ölçekli web uygulaması 6-10 hafta, karmaşık otomasyon veya platform projeleri 3-6 ay sürer. Şartname onaylandıktan sonra net takvim sunuyor ve bağlı kalıyoruz.' },
-  { q: 'Yapay zeka (AI) entegrasyonu yapıyor musunuz?', a: 'Evet. Müşteri destek chatbotu, içerik üretim asistanı, belge analizi ve öneri sistemi projeleri yapıyoruz. Claude API ve GPT-4 entegrasyonlarında deneyimli ekibimiz var. İstanbul\'daki kurumsal firmalar için özellikle belge yoğun süreçlerde (hukuk, danışmanlık) AI entegrasyonu ciddi zaman tasarrufu sağlıyor.' },
   { q: 'Mevcut yazılımımla entegrasyon yapabilir misiniz?', a: 'Büyük ihtimalle evet. Mikro Yazılım, Logo, SAP, WooCommerce, Shopify, Trendyol, Hepsiburada entegrasyonlarında deneyimimiz var. API\'si olan her yazılımla entegrasyon yapılabilir; API olmayanlarda webhook veya dosya bazlı çözümler geliştiriyoruz.' },
   { q: 'Fiziksel olarak İstanbul\'da mısınız?', a: 'Hayır, Kocaeli kökenliyiz — İstanbul\'a tamamen uzaktan hizmet veriyoruz. Toplantılar Google Meet/Zoom üzerinden, teslimatlar dijital ortamda yapılıyor. Bu sayede İstanbul\'un trafiğine takılmadan hızlı ve şeffaf ilerliyoruz; gerçek İstanbul müşterilerimiz (İstanbul Barosu\'na kayıtlı avukatlar dahil) bunun kanıtı.' },
   { q: 'Kaynak kodun mülkiyeti kimde olur?', a: 'Sizde. Teslimle birlikte kaynak kodun ve tüm mülkiyet haklarının tamamı size devredilir — bizi bir daha görmek zorunda kalmayacağınız bir kilit sistem kurmuyoruz.' },
+  ...cityServiceFaqs('istanbul', 'yazilim'),
 ]
 
 const jsonLd = {
@@ -246,6 +243,8 @@ export default function IstanbulYazilimAjansiPage() {
       </section>
 
       {/* FAQ */}
+      <CityServiceSections city="istanbul" hizmet="yazilim" />
+
       <section className="py-20 px-6 bg-[#080D18]">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-10 text-center">Sık Sorulan Sorular</h2>

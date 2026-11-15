@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import CityServiceSections, { cityServiceFaqs } from '@/components/CityServiceSections'
 import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
@@ -46,15 +47,14 @@ const sectors = [
 ]
 
 const faqs = [
-  { q: 'İzmir\'de reklam ajansı seçerken nelere dikkat etmeliyim?', a: 'Şeffaf raporlama yapan, somut sonuçları gösterebilen ve reklam bütçenizin nereye gittiğini net anlatabilen bir ajans seçin. Canlı referanslara bakmak, ajansın gerçekten sonuç üretip üretmediğini anlamanın en iyi yoludur.' },
   { q: 'İzmir\'de Google Ads reklamı vermenin maliyeti nedir?', a: 'Reklam bütçesi tamamen sektörünüze, hedef kitlenize ve rekabet yoğunluğuna göre değişir. Turizm ve hizmet sektöründe tıklama maliyetleri farklılık gösterir. Ücretsiz danışmanlıkta işletmenize özel bir bütçe planı çıkarıyoruz.' },
-  { q: 'İzmir\'in hangi ilçelerine hizmet veriyorsunuz?', a: 'Konak, Karşıyaka, Bornova, Buca, Çiğli, Bayraklı, Balçova, Gaziemir, Menemen, Urla dahil İzmir\'in tüm ilçelerine hizmet veriyoruz. Reklam hedeflemesi ilçe bazlı yapılabilir, böylece bütçenizi doğru bölgeye yönlendirirsiniz.' },
   { q: 'İzmir\'de hangi sektörlere reklam hizmeti veriyorsunuz?', a: 'Hukuk bürosu, psikolog/terapist, diş hekimi ve diş klinikleri, güzellik merkezi/estetik, turizm ve konaklama, restoran & kafe, e-ticaret ve ihracat/dış ticaret sektörlerinde aktif çalışmalarımız var. İzmir\'in ihracat ve turizm ağırlıklı yapısına özellikle hakimiz.' },
   { q: 'Reklam kampanyamın sonuçlarını ne zaman görmeye başlarım?', a: 'Google Ads genellikle ilk 1-2 hafta içinde trafik ve talep getirmeye başlar. İlk 4-6 hafta veri toplama ve optimizasyon dönemidir; bu süreçte kampanya sürekli iyileştirilir. Turizm sektöründe sezon öncesi başlamak kritik önem taşır.' },
   { q: 'İzmir\'de fiziksel ofisiniz var mı?', a: 'Hayır. Kocaeli kökenliyizdir ve İzmir\'e tamamen uzaktan hizmet veriyoruz. Toplantılar Google Meet/Zoom üzerinden yapılır, raporlar dijital olarak paylaşılır. Bunu saklamıyoruz çünkü uzaktan çalışma modelimiz Türkiye genelinde gerçek sonuçlar üretiyor.' },
   { q: 'Canlı referanslarınızı nereden görebilirim?', a: 'İzmir\'de henüz canlı bir referansımız bulunmuyor ancak Türkiye genelinde farklı sektörlerden gerçek, aktif müşterilerimiz var. Portföy sayfamızdan tüm projelerimizi ve canlı sitelerimizi inceleyebilirsiniz.' },
   { q: 'Reklam yönetimi için minimum sözleşme süresi var mı?', a: 'Google Ads için anlamlı verinin toplanması ve optimizasyonun oturması adına minimum 3 ay öneriyoruz. Sezonluk kampanyalar için daha kısa süreli anlaşmalar da değerlendirilebilir — ihtiyacınıza göre esnek çözüm sunuyoruz.' },
   { q: 'Reklam hesabı bize mi ait olacak, ajansa mı?', a: 'Size ait olacak. Hesabı kendi adınıza açıyoruz, biz sadece yönetici erişimiyle çalışıyoruz — ihracat ve turizm sektöründe sezonluk ajans değişikliklerinde veri kaybı yaşamamanız için bu önemli.' },
+  ...cityServiceFaqs('izmir', 'reklam'),
 ]
 
 const jsonLd = {
@@ -241,6 +241,8 @@ export default function IzmirReklamAjansiPage() {
       </section>
 
       {/* FAQ */}
+      <CityServiceSections city="izmir" hizmet="reklam" />
+
       <section className="py-20 px-6">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-10 text-center">

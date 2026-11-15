@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import CityServiceSections, { cityServiceFaqs } from '@/components/CityServiceSections'
 import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
@@ -30,14 +31,11 @@ const features = [
 const ilceler = ['Selçuklu', 'Meram', 'Karatay', 'Ereğli', 'Akşehir', 'Beyşehir', 'Çumra', 'Seydişehir']
 
 const faqs = [
-  { q: 'Konya\'da web sitesi yaptırmak ne kadar sürer?', a: 'Başlangıç kurumsal siteler 2-3 haftada teslim edilir. Orta ölçekli projeler 4-6 hafta, katalog/teknik doküman ağırlıklı projeler (örn. tarım makineleri üreticileri için) 6-10 hafta alır. Rekabetçi Konya pazarında hızlı lansmanı öneriyoruz.' },
-  { q: 'Konya işletmem için web sitesinde yerel SEO nasıl kurulur?', a: 'İlçe bazlı anahtar kelimeler, Google Business Profile entegrasyonu, NAP (isim-adres-telefon) tutarlılığı, yerel schema markup ve "Selçuklu\'da X hizmeti" gibi sayfalar oluşturmak temel adımlardır. Konya\'nın geniş ilçe ağı arasından işinize en uygun olanlara öncelik veriyoruz.' },
   { q: 'Tarım makineleri üreticileri ve turizm işletmeleri için web sitesi farklı mı?', a: 'Evet. Tarım makineleri üreticileri için teknik özellik tabloları, yedek parça kataloğu ve bayi/tedarikçi iletişim formu ön planda olmalı. Dini turizm işletmeleri (otel, tur operatörü) için görsel galeri, rezervasyon sistemi ve çoklu dil desteği kritik. Genel bir kurumsal şablon yerine sektöre özel bilgi mimarisi kuruyoruz.' },
-  { q: 'Mevcut sitem var, yenileme mi yoksa sıfırdan mı yapmalıyım?', a: 'Mevcut sitenizin Google\'daki birikimi (backlink, sıralama) varsa taşıma yaparız — SEO değeri korunur. Yavaş, eski altyapılı veya mobil uyumsuz siteler için sıfırdan Next.js geçişi daha etkili. Ücretsiz danışmanlıkta sitenizi inceleyip öneri sunarız.' },
-  { q: 'Konya\'da web sitesi fiyatları ne kadar?', a: 'Sayfa sayısı, özel özellikler (katalog, çoklu dil, rezervasyon formu) ve sektöre göre kapsam değişir. Domain ve hosting ayrıca ücretlendirilir. Net fiyatı ücretsiz danışmanlıkta netleştiriyoruz.' },
   { q: 'Fiziksel olarak Konya\'da ofisiniz var mı?', a: 'Hayır, Kocaeli kökenliyiz — Konya\'ya tamamen uzaktan hizmet veriyoruz. Keşif görüşmesi, tasarım onayı ve teslimat Google Meet/Zoom üzerinden yapılır. Türkiye genelinde canlı referanslarımızı portföyümüzde inceleyebilirsiniz.' },
   { q: 'Web sitem yapıldıktan sonra kim günceller?', a: 'İçerik güncellemeleri için basit panel kuruyoruz. Blog, ürün ve haber güncellemelerini kendiniz yapabilirsiniz. Tasarım ve teknik değişiklikler için aylık bakım paketi sunuyoruz. Projeyi teslim edip kaybolan bir ajans değiliz.' },
   { q: 'Konya\'daki yerleşik ajanslara kıyasla neden sizi tercih etmeliyim?', a: 'Yerleşik ajanslarda küçük/orta ölçekli projeler genellikle düşük öncelik alır, iletişim yavaşlar. Biz her projeye mühendislik disipliniyle, doğrudan kurucu ortak seviyesinde ilgi gösteriyoruz — daha hızlı iletişim, daha esnek süreç, aynı kalite.' },
+  ...cityServiceFaqs('konya', 'web'),
 ]
 
 const jsonLd = {
@@ -134,6 +132,8 @@ export default function KonyaWebTasarimPage() {
           </div>
         </div>
       </section>
+
+      <CityServiceSections city="konya" hizmet="web" />
 
       <section className="py-20 px-6">
         <div className="max-w-3xl mx-auto">

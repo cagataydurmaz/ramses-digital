@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import CityServiceSections, { cityServiceFaqs } from '@/components/CityServiceSections'
 import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
@@ -30,13 +31,9 @@ const services = [
 const faqs = [
   { q: 'Antalya\'da Google Ads için sezonluk bütçe planlaması nasıl yapılır?', a: 'Otel, tur operatörü ve transfer/rent a car firmaları için yaz sezonu öncesinde (Mart-Nisan) bütçe artışı, sezon dışında ise marka bilinirliği ve erken rezervasyon odaklı düşük bütçeli kampanyalar öneriyoruz. Gayrimenkul sektöründe ise sezonluk dalgalanma daha az, yıl boyunca istikrarlı bütçe daha etkili.' },
   { q: 'Yabancı dilde (İngilizce, Rusça) reklam kampanyası kurabiliyor musunuz?', a: 'Evet. Otel, tur operatörü ve gayrimenkul ofisleri için hedef pazara göre (İngiliz, Rus, Alman, Orta Doğulu alıcı/turist) ayrı dilde reklam metni, açılış sayfası ve anahtar kelime grupları oluşturuyoruz.' },
-  { q: 'Antalya\'nın farklı ilçeleri için ayrı kampanya gerekir mi?', a: 'Sektöre bağlı. Bir gayrimenkul ofisi için Alanya, Kaş ve Side\'deki alıcı profili farklı olabileceğinden ilçe bazlı kampanya faydalı. Bir tur operatörü içinse genellikle "Antalya" genel hedeflemesi ve dil bazlı ayrım daha mantıklı. Stratejiyi işinize göre kuruyoruz.' },
-  { q: 'Antalya\'da Google Ads ne zaman sonuç verir?', a: 'Kampanya aktifleşince 1-2 hafta içinde tıklama ve trafik başlar. Turizm sezonuna denk gelen kampanyalarda talep zaten yüksek olduğu için erken sonuç görülebilir; sezon dışı kampanyalarda optimizasyon biraz daha uzun sürebilir.' },
-  { q: 'Google Ads ile SEO\'yu birlikte mi yapmalıyım?', a: 'Antalya\'nın sezonluk yapısında kesinlikle önerilir. Google Ads sezon öncesi ve sezon içi hemen trafik getirir; SEO ise uzun vadede reklam bağımlılığını azaltan, çok dilli organik görünürlük sağlayan kalıcı bir varlıktır.' },
   { q: 'Mevcut Google Ads kampanyam var ama sonuç almıyorum, ne yapmalıyım?', a: 'En yaygın sorunlar: geniş eşleme anahtar kelimeler, eksik negatif anahtar kelime listesi, dil hedeflemesinin doğru kurulmamış olması ve dönüşüm izlemenin eksik olması. Mevcut hesabınızı ücretsiz analiz edip sorunları tespit ediyoruz.' },
-  { q: 'Raporlama nasıl yapılıyor?', a: 'Aylık Google Ads performans raporu: gösterim, tıklama, CPC, dönüşüm ve dil/kampanya bazlı kırılım. Canlı Google Ads dashboard erişimi veriyoruz, sezonluk bütçe kararlarınızı veriyle alabilirsiniz.' },
-  { q: 'Antalya\'da Google Ads yönetimi için sözleşme şartı var mı?', a: 'Minimum 3 ay öneriyoruz. Google Ads öğrenme dönemi 30 gün sürer; turizm sektöründe sezonluk dalgalanmayı doğru değerlendirmek için en az bir sezon geçişini görmek faydalı olur.' },
   { q: 'Hesap bize mi ait olacak?', a: 'Evet. Google Ads hesabı sizin adınıza açılır, biz yönetici erişimiyle yönetiriz — sezon sonunda ajans değiştirmeyi düşünseniz bile kampanya geçmişiniz sizde kalır.' },
+  ...cityServiceFaqs('antalya', 'ads'),
 ]
 
 const jsonLd = {
@@ -149,6 +146,8 @@ export default function AntalyaGoogleAdsPage() {
           </div>
         </div>
       </section>
+
+      <CityServiceSections city="antalya" hizmet="ads" />
 
       <section className="py-20 px-6">
         <div className="max-w-3xl mx-auto">

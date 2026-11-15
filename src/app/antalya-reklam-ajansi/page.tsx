@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import CityServiceSections, { cityServiceFaqs } from '@/components/CityServiceSections'
 import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
@@ -41,15 +42,11 @@ const whyUs = [
 ]
 
 const faqs = [
-  { q: 'Antalya\'da reklam ajansı seçerken nelere dikkat etmeliyim?', a: 'En önemli kriter sektörünüze özel strateji sunup sunmadığıdır. Turizm, gayrimenkul ve tarım ihracatı çok farklı dinamiklere sahip — genel bir "reklam paketi" satan ajanslardan kaçının. Şeffaf raporlama yapıp yapmadığını da mutlaka sorun.' },
-  { q: 'Antalya\'da dijital reklamın maliyeti nedir?', a: 'Google Ads reklam bütçesi, SEO yönetim ücreti ve web sitesi maliyeti işletmenizin büyüklüğüne, hedef dile ve sezonluk yoğunluğa göre değişir. Ücretsiz danışmanlık seansında size özel net fiyat sunuyoruz.' },
   { q: 'Antalya\'daki işletmem için Google\'da nasıl üst sıralara çıkarım?', a: 'İki paralel strateji gerekli: Google Business Profile optimizasyonu (harita paketi için) ve web sitesi SEO\'su (organik arama için). Turizm ve gayrimenkul işletmeleri için buna çok dilli içerik üretimi de eklenmeli.' },
-  { q: 'Antalya\'da hangi sektörlere hizmet veriyorsunuz?', a: 'Otelcilik ve tatil köyü işletmeciliği, tur operatörleri ve transfer/rent a car firmaları, yabancıya gayrimenkul satışı yapan ofisler, seracılık/tarım ihracatı (özellikle Kumluca ve Finike bölgesi), ayrıca hukuk bürosu, diş hekimi/diş kliniği, psikolog/terapist ve güzellik merkezi gibi yerel hizmet sektörleri.' },
-  { q: 'Sonuçları ne zaman görmeye başlarım?', a: 'Google Ads 1-2 hafta içinde trafik getirir. SEO için yerel sonuçlar (harita) 2-4 haftada görünür; çok dilli organik sıralamalar genellikle 4-6 ay içinde belirginleşir. Web sitesi hemen yayına girer.' },
   { q: 'Antalya\'daki tüm ilçelere hizmet veriyor musunuz?', a: 'Evet. Muratpaşa, Konyaaltı, Kepez, Alanya, Manavgat, Serik, Döşemealtı, Aksu, Kaş, Side dahil tüm Antalya ilçelerine ve çevre ilçelere hizmet veriyoruz. Çalışmalarımızın tamamı uzaktan yürütülüyor.' },
-  { q: 'Sözleşme şartlarınız nedir?', a: 'Google Ads ve SEO için minimum 3 ay öneriyoruz — turizm sektöründe sezonluk dalgalanmayı doğru değerlendirmek için bir sezon geçişini görmek faydalı olur. Web tasarım projeleri tek seferlik sözleşmeyle teslim edilir.' },
   { q: 'Fiziksel olarak Antalya\'da ofisiniz var mı?', a: 'Hayır, Kocaeli kökenliyiz — Antalya\'ya tamamen uzaktan hizmet veriyoruz. Keşif görüşmesi, strateji sunumu ve aylık raporlama Google Meet/Zoom üzerinden yapılıyor.' },
   { q: 'Reklam hesabı kimin üzerine açılıyor?', a: 'Sizin üzerinize. Hesap size ait olur, biz yönetici erişimiyle çalışırız — sezon başı-sonu ajans değişikliği düşünüyorsanız bile geçmiş kampanya verileriniz ve öğrenmeleriniz sizde kalır.' },
+  ...cityServiceFaqs('antalya', 'reklam'),
 ]
 
 const jsonLd = {
@@ -222,6 +219,8 @@ export default function AntalyaReklamAjansiPage() {
       </section>
 
       {/* FAQ */}
+      <CityServiceSections city="antalya" hizmet="reklam" />
+
       <section className="py-20 px-6 bg-[#080D18]">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-10 text-center">

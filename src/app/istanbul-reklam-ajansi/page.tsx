@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import CityServiceSections, { cityServiceFaqs } from '@/components/CityServiceSections'
 import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
@@ -51,15 +52,12 @@ const clients = [
 ]
 
 const faqs = [
-  { q: 'İstanbul\'da reklam ajansı seçerken nelere dikkat etmeliyim?', a: 'En önemli kriter gerçek referanslar ve şeffaf raporlamadır. İstanbul\'da onlarca ajans var, ancak çoğu şablon strateji uyguluyor. Ajansın canlı müşteri sitelerini gösterip gösteremediğini, aylık raporlama yapıp yapmadığını ve ilçe bazlı strateji kurup kurmadığını sorgulayın.' },
   { q: 'İstanbul\'da Google Ads maliyeti neden daha yüksek?', a: 'İstanbul, Türkiye\'nin en yüksek CPC (tıklama başı maliyet) seviyesine sahip pazarı — çünkü rekabet ve arama hacmi en yüksek. Bu, bütçe yönetiminin daha kritik olduğu anlamına gelir. Doğru anahtar kelime seçimi, negatif kelime filtreleme ve ilçe bazlı hedeflemeyle bütçenizi verimli kullanıyoruz.' },
-  { q: 'İstanbul\'da hangi sektörlere hizmet veriyorsunuz?', a: 'Hukuk bürosu, psikolog ve terapist, diş hekimi ve diş kliniği, güzellik merkezi ve estetik, e-ticaret, gayrimenkul, kurumsal B2B hizmetler ve finans/danışmanlık sektörlerinde aktif deneyimimiz var. Her sektörün reklam dinamiği farklı; örneğin hukuk sektöründe Avukatlık Kanunu\'nun reklam kısıtları nedeniyle SEO ağırlıklı strateji uyguluyoruz.' },
   { q: 'Fiziksel olarak İstanbul\'da bir ofisiniz var mı?', a: 'Hayır, Kocaeli kökenliyiz — İstanbul\'a tamamen uzaktan hizmet veriyoruz. Ancak gerçek, canlı İstanbul müşterilerimiz var: İstanbul Barosu\'na kayıtlı Av. Furkan Arıkan (Beşiktaş) ve Bakırköy\'de Av. Mert Anıl Güler için web tasarım ve SEO çalışması yürüttük. Süreç tamamen dijital: görüşmeler Google Meet/Zoom, raporlar dashboard üzerinden.' },
-  { q: 'Sonuçları ne zaman görmeye başlarım?', a: 'Google Ads 1-2 hafta içinde trafik ve potansiyel müşteri getirir. SEO için yerel/harita sonuçları 2-4 haftada, organik sıralamalar İstanbul\'un rekabet yoğunluğu nedeniyle 4-8 ay içinde belirginleşir. Hızlı sonuç istiyorsanız Google Ads\'i başlangıç stratejisi olarak öneriyoruz.' },
   { q: 'Hangi İstanbul ilçelerine hizmet veriyorsunuz?', a: 'Kadıköy, Beşiktaş, Şişli, Bakırköy, Ataşehir, Üsküdar, Beylikdüzü, Maltepe, Kartal, Pendik dahil İstanbul\'un tüm ilçelerine hizmet veriyoruz. Stratejiyi işletmenizin gerçek hizmet alanına göre önceliklendiriyoruz, 39 ilçeye aynı anda yayılmıyoruz.' },
-  { q: 'Sözleşme şartlarınız nedir?', a: 'Google Ads ve SEO için minimum 3 ay, ideal olarak 6 ay öneriyoruz — dijital pazarlama birikimli sonuç verir. Tek seferlik projeler (web tasarım gibi) ayrı sözleşmeyle teslim edilir. Uzun vadeli iş birliklerinde anlamlı avantajlar sunuyoruz.' },
   { q: 'Sosyal medya hesaplarımı da yönetiyor musunuz?', a: 'Stratejik danışmanlık ve içerik planlaması sunuyoruz — hangi platformda, hangi mesajla, hangi sıklıkla paylaşım yapmanız gerektiğini netleştiriyoruz. Ancak günlük gönderi hazırlama ve moderasyon hizmetlerimiz arasında değil; odağımız ölçülebilir ROI getiren kanallar.' },
   { q: 'Reklam hesabım kimin adına açılıyor?', a: 'Sizin adınıza. Google Ads hesabı size ait olur, biz sadece yönetici erişimiyle çalışırız. Bizimle yollarınız ayrılsa bile geçmiş verileriniz ve kampanya öğrenmeleriniz sizde kalır.' },
+  ...cityServiceFaqs('istanbul', 'reklam'),
 ]
 
 const jsonLd = {
@@ -261,6 +259,8 @@ export default function IstanbulReklamAjansiPage() {
       </section>
 
       {/* FAQ */}
+      <CityServiceSections city="istanbul" hizmet="reklam" />
+
       <section className="py-20 px-6">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-10 text-center">

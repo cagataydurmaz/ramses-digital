@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import CityServiceSections, { cityServiceFaqs } from '@/components/CityServiceSections'
 import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
@@ -19,7 +20,7 @@ export const metadata: Metadata = {
 }
 
 const features = [
-  { icon: Smartphone, title: 'Mobil Öncelikli Tasarım', desc: 'İzmit\'teki kullanıcıların %70\'i mobil cihazdan geliyor. Responsive, hızlı ve parmak dostu tasarım.' },
+  { icon: Smartphone, title: 'Mobil Öncelikli Tasarım', desc: 'Yerel aramaların önemli bir kısmı mobil cihazlardan yapılıyor. Responsive, hızlı ve parmak dostu tasarım.' },
   { icon: Search, title: 'SEO Hazır Altyapı', desc: 'Teknik SEO, schema markup, hızlı yükleme ve Core Web Vitals\'ı geçen kod. Lansmanından itibaren Google\'a hazır.' },
   { icon: Zap, title: 'Yüksek Performans', desc: 'Next.js ile oluşturulan siteler Lighthouse\'da 90+ puan alır. Rakiplerinizden hızlı yüklenin.' },
   { icon: Palette, title: 'Kurumsal Tasarım', desc: 'Markanıza özel, profesyonel ve güven veren tasarım. Şablon değil, özgün.' },
@@ -50,7 +51,6 @@ const packages = [
 ]
 
 const faqs = [
-  { q: 'İzmit\'te web sitesi yaptırmak ne kadar sürer?', a: 'Başlangıç paketleri 2-3 haftada, kurumsal projeler 4-6 haftada teslim edilir. E-ticaret ve özel platform projeleri 8-12 hafta alabilir. Süreç: brifing → tasarım onayı → geliştirme → içerik entegrasyonu → test → yayın.' },
   { q: 'Web sitesi için hangi teknolojiyi kullanıyorsunuz?', a: 'Next.js (React tabanlı) kullanıyoruz. WordPress gibi eski sistemlere kıyasla 3-5 kat daha hızlı yüklenen, güvenlik açıklarına karşı çok daha dayanıklı ve SEO performansı çok daha yüksek siteler ortaya çıkıyor. Hosting olarak Vercel veya özel sunucu kullanıyoruz.' },
   { q: 'Web sitemi kendim güncelleyebilir miyim?', a: 'Evet. Blog ve içerik güncellemeleri için basit bir yönetim paneli kuruyoruz. Tasarım değişiklikleri için bizimle iletişime geçmeniz yeterli. Teknik bilgi gerekmeden içerik ekleyip düzenleyebilirsiniz.' },
   { q: 'SEO uyumlu web sitesi ne demek?', a: 'Teknik olarak doğru HTML yapısı, hızlı yükleme, schema markup, canonical URL\'ler, XML sitemap, robots.txt ve Core Web Vitals optimizasyonu demek. Tüm projelerimiz bu standartlarla teslim edilir. Ayrı bir SEO hizmeti almadan da Google\'a hazır başlarsınız.' },
@@ -58,6 +58,7 @@ const faqs = [
   { q: 'Hosting ve domain ayrı mı ücretlendirilir?', a: 'Domain müşteri üzerine kaydedilir; siz sahipsiniz. Hosting Vercel üzerinde ise temel plan ücretsiz, ihtiyaç halinde üst plana geçilebilir. Özel sunucu tercih edilirse fiyat ayrıca belirlenir.' },
   { q: 'Web sitesi yapıldıktan sonra ne olur?', a: 'Yayına alımdan sonra 1-3 ay teknik destek veriyoruz. Sonrasında aylık bakım paketi (güncelleme, yedekleme, takip) talep üzerine sunulur. SEO ve dijital pazarlama hizmetleriyle birlikte alındığında siteniz sürekli optimize edilir.' },
   { q: 'İzmit dışındaki ilçeler için de web sitesi yapıyor musunuz?', a: 'Evet, tüm çalışmalar uzaktan yürütülüyor. Gebze, Darıca, Körfez, Gölcük, Başiskele ve Türkiye\'nin her şehrine hizmet veriyoruz. Fiziksel görüşme zorunluluğu yok.' },
+  ...cityServiceFaqs('izmit', 'web'),
 ]
 
 const jsonLd = {
@@ -198,6 +199,8 @@ export default function IzmitWebTasarimPage() {
       </section>
 
       {/* FAQ */}
+      <CityServiceSections city="izmit" hizmet="web" />
+
       <section className="py-20 px-6 bg-[#080D18]">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-10 text-center">Sık Sorulan Sorular</h2>

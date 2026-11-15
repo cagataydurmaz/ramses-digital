@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import CityServiceSections, { cityServiceFaqs } from '@/components/CityServiceSections'
 import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
@@ -30,13 +31,11 @@ const features = [
 const ilceler = ['Konak', 'Karşıyaka', 'Bornova', 'Buca', 'Çiğli', 'Bayraklı', 'Balçova', 'Urla']
 
 const faqs = [
-  { q: 'İzmir\'de web sitesi yaptırmak ne kadar sürer?', a: 'Başlangıç kurumsal siteler 2-3 haftada teslim edilir. Orta ölçekli projeler 4-6 hafta, e-ticaret ve platform projeleri 8-12 hafta alır. Turizm sektöründeyseniz sezon öncesi lansmanı öneriyoruz.' },
-  { q: 'İzmir işletmem için web sitesinde yerel SEO nasıl kurulur?', a: 'İlçe bazlı anahtar kelimeler, Google Business Profile entegrasyonu, NAP (isim-adres-telefon) tutarlılığı ve yerel schema markup temel adımlardır. Turizm işletmeleri için ayrıca çok dilli SEO (İngilizce, Almanca) değerlendiriyoruz.' },
   { q: 'İzmir\'deki turizm ve konaklama işletmeleri için web sitesi farklı mı?', a: 'Evet. Rezervasyon sistemi entegrasyonu, çok dilli içerik, görsel ağırlıklı tasarım ve mobil öncelikli hız kritik. Sezonluk kampanya sayfaları ve hızlı içerik güncelleme paneli bu sektörde standart olarak kuruyoruz.' },
-  { q: 'Mevcut sitem var, yenileme mi yoksa sıfırdan mı yapmalıyım?', a: 'Mevcut sitenizin Google\'daki birikimi varsa taşıma yaparız — SEO değeri korunur. Yavaş, eski altyapılı veya mobil uyumsuz siteler için sıfırdan Next.js geçişi çok daha etkili.' },
   { q: 'İzmir\'de web sitesi fiyatları ne kadar?', a: 'Sektör, sayfa sayısı ve özel özelliklere göre değişir. Domain ve hosting ayrıca ücretlendirilir. Ücretsiz danışmanlıkta net fiyat alırsınız.' },
   { q: 'Fiziksel olarak İzmir\'de ofisiniz var mı?', a: 'Hayır, Kocaeli kökenliyiz — tüm süreç uzaktan yönetiliyor. Keşif görüşmesi, tasarım onayı ve teslimat Google Meet/Zoom üzerinden yapılır. Uzaktan çalışma modelimiz portföyümüzdeki canlı projelerle kanıtlı.' },
   { q: 'Web sitem yapıldıktan sonra kim günceller?', a: 'İçerik güncellemeleri için basit panel kuruyoruz. Blog, ürün, kampanya ve haber güncellemelerini kendiniz yapabilirsiniz. Tasarım ve teknik değişiklikler için aylık bakım paketi sunuyoruz.' },
+  ...cityServiceFaqs('izmir', 'web'),
 ]
 
 const jsonLd = {
@@ -139,6 +138,8 @@ export default function IzmirWebTasarimPage() {
           </div>
         </div>
       </section>
+
+      <CityServiceSections city="izmir" hizmet="web" />
 
       <section className="py-20 px-6">
         <div className="max-w-3xl mx-auto">

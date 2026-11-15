@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import CityServiceSections, { cityServiceFaqs } from '@/components/CityServiceSections'
 import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
@@ -35,15 +36,11 @@ const sectors = [
 ]
 
 const faqs = [
-  { q: 'İzmir\'de yazılım ajansı ile çalışmanın avantajı ne?', a: 'Uzaktan çalışıyoruz; coğrafi mesafe teknik açıdan bir kısıt değil. Ancak İzmir\'in ihracat, liman/lojistik ve turizm ağırlıklı ekonomisinin getirdiği ihtiyaçları — çok dilli altyapı, gümrük/lojistik entegrasyonları, sezonluk trafik dalgalanmaları — biliyoruz. Bu, İstanbul veya Ankara odaklı bir ajanstan farklı bir bakış açısı sağlıyor.' },
   { q: 'İhracat yapan bir firma için hangi yazılım ihtiyaçları öne çıkar?', a: 'Çok dilli web sitesi (İngilizce, Almanca gibi hedef pazar dilleri), ürün kataloğu yönetimi, gümrük evrakı ve sevkiyat takibinde otomasyon, ve uluslararası müşterilerle iletişimi kolaylaştıran CRM entegrasyonları en sık talep ettiğimiz çözümler arasında.' },
-  { q: 'Özel yazılım mı, hazır SaaS mi kullanmalıyım?', a: 'Genellikle ikisinin kombinasyonu en verimlisi. Muhasebe, CRM gibi standart alanlarda hazır SaaS araçları yeterli olabilir. Sevkiyat takibi, ürün kataloğu senkronizasyonu gibi operasyona özgü süreçlerde özel yazılım veya otomasyon daha etkili sonuç verir. Keşif görüşmesinde birlikte karar veriyoruz.' },
-  { q: 'Proje süresi ve teslim takvimi nasıl belirleniyor?', a: 'Brifing → teknik şartname → onay → geliştirme → test → teslim sürecini izliyoruz. Basit kurumsal site 2-3 hafta, orta ölçekli web uygulaması veya e-ticaret altyapısı 6-10 hafta, karmaşık otomasyon/entegrasyon projeleri 3-6 ay sürebilir. Şartname onaylandıktan sonra net takvime bağlı kalıyoruz.' },
-  { q: 'Projeyi teslim ettikten sonra destek veriyor musunuz?', a: 'Evet. Teslim sonrası 1-3 ay hata düzeltme garantisi sunuyoruz. Uzun vadeli ihtiyaçlar için aylık bakım paketi mevcut: güncellemeler, küçük geliştirmeler, teknik izleme. Projeniz teslim sonrası sahipsiz kalmaz.' },
   { q: 'Mevcut yazılımımla (ERP, muhasebe, pazaryeri) entegrasyon yapabilir misiniz?', a: 'Büyük ihtimalle evet. Logo, Mikro Yazılım, WooCommerce, Shopify, Trendyol, Etsy gibi platformlarla entegrasyon deneyimimiz var. API sunan her sistemle entegrasyon mümkün; API olmayan durumlarda webhook veya dosya bazlı çözümler geliştiriyoruz.' },
   { q: 'İzmir\'de fiziksel olarak bulunuyor musunuz?', a: 'Hayır, Kocaeli kökenliyiz ve İzmir\'e tamamen uzaktan hizmet veriyoruz. Teknik şartname görüşmeleri, demo ve teslimler dijital ortamda (Google Meet/Zoom, ekran paylaşımı) yürütülür. Bunu saklamıyoruz — uzaktan geliştirme sürecimiz aynı titizlikle işliyor.' },
-  { q: 'Yazılım projesine nasıl başlanıyor?', a: '30 dakikalık ücretsiz keşif görüşmesiyle başlıyoruz. İhtiyacınızı dinliyor, teknik çözüm önerisi ve tahmini süreyi paylaşıyoruz. Devam kararı verirseniz detaylı teknik şartname hazırlanır. Herhangi bir taahhüt olmadan görüşme yapabilirsiniz.' },
   { q: 'Kaynak kodu bize teslim ediyor musunuz?', a: 'Evet, tamamen. Kaynak kod ve mülkiyet hakları size ait olur; ihracat odaklı firmalar için bu, yazılımı istediğiniz gibi genişletme veya başka bir ekibe devretme özgürlüğü demek.' },
+  ...cityServiceFaqs('izmir', 'yazilim'),
 ]
 
 const jsonLd = {
@@ -224,6 +221,8 @@ export default function IzmirYazilimAjansiPage() {
       </section>
 
       {/* FAQ */}
+      <CityServiceSections city="izmir" hizmet="yazilim" />
+
       <section className="py-20 px-6 bg-[#080D18]">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-10 text-center">Sık Sorulan Sorular</h2>

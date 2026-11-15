@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import CityServiceSections, { cityServiceFaqs } from '@/components/CityServiceSections'
 import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
@@ -82,14 +83,11 @@ const sectors = [
 ]
 
 const faqs = [
-  { q: 'Kocaeli\'de dijital pazarlamaya ne zaman başlamalıyım?', a: 'En iyi zaman şimdi. Rakiplerinizin büyük bölümü dijitale yatırım yapıyor; her geçen ay geciktirmek arama motoru otoritesinde geri kalmak anlamına gelir. Küçük bir bütçeyle bile Google Ads ile hemen trafik almak, SEO ile de uzun vadeli varlık inşa etmek mümkün.' },
-  { q: 'Kocaeli\'de hangi dijital kanal en hızlı sonuç verir?', a: 'Hızlı sonuç için Google Ads: 1-2 hafta içinde potansiyel müşteriler arar ve reklamınızı görür. Uzun vadeli ve düşük maliyetli büyüme için SEO: 3-6 ayda organik trafik birikmeye başlar ve reklam bütçesi ödemeden sürekli ziyaretçi getirir. İkisini birlikte yürütmek en akıllıca stratejidir.' },
   { q: 'Kocaeli\'deki rakiplerime karşı nasıl öne çıkabilirim?', a: 'Üç odak noktası: (1) Google Haritalar\'da üst sıra — çoğu yerel rakip GBP\'yi hâlâ eksik dolduruyor. (2) Yerel anahtar kelimede içerik üstünlüğü — "İzmit + hizmetiniz" aramasında bilgi veren tek site olmak. (3) Kullanıcı yorumları — yerel aramalarda en belirleyici faktörlerden biri.' },
-  { q: 'Kocaeli\'de dijital pazarlama için aylık ne kadar bütçe ayırmalıyım?', a: 'Hedeflediğiniz kanal kombinasyonuna (SEO, Google Ads, web tasarım) ve rekabet düzeyine göre değişir. Sektör ve rekabete göre ücretsiz danışmanlıkta işletmenize özel bir bütçe planı netleştirebiliriz.' },
-  { q: 'Sosyal medya yönetimi de yapıyor musunuz?', a: 'Post, story ve video içerikleri üretiyor, içerik takvimi ve strateji kuruyoruz — ancak hesap yönetimi ve günlük yorum/DM moderasyonu hizmetlerimiz arasında değil. Odak noktamız ölçülebilir ROI getiren kanallar: Google arama, SEO ve e-posta pazarlama.' },
   { q: 'Kocaeli\'deki KOBİ\'ler dijital pazarlamadan gerçekten fayda görüyor mu?', a: 'Kesinlikle. Portföyümüzdeki Kocaeli merkezli Psk. Nur Çelen\'in sitesi SEO çalışması sonrası organik aramadan düzenli randevu almaya başladı. Yerel işletmeler için dijital pazarlama; reklam panolarından ve gazetelerden çok daha ölçülebilir ve maliyet etkin sonuçlar verir.' },
   { q: 'Uzaktan çalışıyor musunuz, yoksa yerinde mi?', a: 'Tüm hizmetlerimiz uzaktan yürütülüyor. Toplantılar Google Meet/Zoom üzerinden, raporlar dijital dashboard ve PDF ile paylaşılıyor. Kocaeli kökenli olmamız yerel pazarı anlamamızı sağlıyor; fiziksel ofis gerekliliği ortadan kalktı.' },
-  { q: 'Yapay zeka reklamcılığı ve GEO nedir, Kocaeli işletmesi için gerekli mi?', a: 'GEO (Generative Engine Optimization), ChatGPT veya Gemini\'de "Kocaeli\'de [sektörünüz]" aramasında alıntılanma olasılığını artırmak için yapılan içerik ve yapı çalışmasıdır. AEO (Answer Engine Optimization) ise Google\'da direkt cevap kutusuna girmektir. 2025\'te aramaların %30\'u artık AI motorlarından geliyor — bugün başlayan işletmeler yarın önemli bir avantaja sahip olacak.' },
+  { q: 'Yapay zeka reklamcılığı ve GEO nedir, Kocaeli işletmesi için gerekli mi?', a: 'GEO (Generative Engine Optimization), ChatGPT veya Gemini\'de "Kocaeli\'de [sektörünüz]" aramasında alıntılanma olasılığını artırmak için yapılan içerik ve yapı çalışmasıdır. AEO (Answer Engine Optimization) ise Google\'da direkt cevap kutusuna girmektir. Yapay zekâ destekli arama özellikleri yaygınlaşıyor; bugün başlayan işletmeler yarın önemli bir avantaja sahip olacak.' },
+  ...cityServiceFaqs('kocaeli', 'pazarlama'),
 ]
 
 const jsonLd = {
@@ -276,6 +274,8 @@ export default function KocaeliDijitalPazarlamaPage() {
       </section>
 
       {/* FAQ */}
+      <CityServiceSections city="kocaeli" hizmet="pazarlama" />
+
       <section className="py-20 px-6">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-10 text-center">Sık Sorulan Sorular</h2>

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import CityServiceSections, { cityServiceFaqs } from '@/components/CityServiceSections'
 import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
@@ -28,14 +29,11 @@ const services = [
 ]
 
 const faqs = [
-  { q: 'Ankara\'da Google Ads için ne kadar bütçe gerekir?', a: 'Çankaya gibi rekabetçi ilçelerde diğer ilçelere göre daha yüksek bütçe gerekir. Hukuk ve danışmanlık gibi sektörler genellikle daha yüksek CPC\'ye sahip. Ücretsiz danışmanlıkta işletmenize özel bütçe önerisi sunuyoruz.' },
-  { q: 'Ankara\'nın farklı ilçeleri için ayrı kampanya gerekir mi?', a: 'Evet, önerilir. Çankaya\'daki iş merkezi odaklı arama davranışı, Mamak veya Sincan\'daki daha yerel/perakende odaklı davranıştan farklı. İlçe bazlı reklam grupları daha yüksek Quality Score ve daha düşük CPC sağlar.' },
-  { q: 'Ankara\'da Google Ads ne zaman sonuç verir?', a: 'Kampanya aktifleşince 1-2 hafta içinde tıklama ve trafik başlar. İlk 30 gün Google algoritmasının öğrenme dönemi sayılır. 6-8 haftadan sonra optimizasyon verimli şekilde yapılabilir.' },
   { q: 'Ankara\'daki B2B ve kurumsal firmalar için Google Ads işe yarıyor mu?', a: 'Evet, ancak strateji farklıdır. Uzun kuyruklu B2B aramalar ("Ankara endüstriyel ekipman tedarikçisi" gibi) düşük hacimli ama yüksek değerli. LinkedIn ile Google Ads kombinasyonu bu segmentte etkili olabilir.' },
-  { q: 'Google Ads ile SEO\'yu birlikte mi yapmalıyım?', a: 'Kurumsal/B2B ağırlıklı Ankara pazarında kesinlikle evet. Google Ads hemen trafik getirir; SEO 3-6 ayda organik sonuç verir ve uzun vadede reklam bağımlılığını azaltır.' },
   { q: 'Raporlama nasıl yapılıyor?', a: 'Aylık Google Ads performans raporu: gösterim, tıklama, CPC, dönüşüm, ROAS ve CPA metrikleri. Canlı dashboard erişimi veriyoruz.' },
   { q: 'Ankara\'da Google Ads yönetimi için sözleşme şartı var mı?', a: 'Minimum 3 ay öneriyoruz. Google Ads öğrenme dönemi 30 gün, optimizasyon için en az 60-90 gün gerekiyor.' },
   { q: 'Hesabın mülkiyeti kimde olur?', a: 'Sizde. Google Ads hesabı kendi adınıza açılır, biz yönetici erişimiyle bağlanırız — kamu ve kurumsal müşterilerimiz için hesap üzerinde tam şeffaflık ve denetim her zaman sizdedir.' },
+  ...cityServiceFaqs('ankara', 'ads'),
 ]
 
 const jsonLd = {
@@ -104,7 +102,7 @@ export default function AnkaraGoogleAdsPage() {
           {[
             { value: '25', label: 'Ankara ilçesi — hedeflenebilir' },
             { value: '1-2 Hafta', label: 'Kampanya başlangıcı' },
-            { value: '%30', label: 'Ortalama CPA düşüşü' },
+            { value: 'Dahil', label: 'Dönüşüm takibi kurulumu' },
             { value: '7/24', label: 'Reklam izleme' },
           ].map(({ value, label }) => (
             <div key={label} className="text-center bg-white/[0.03] border border-white/[0.06] rounded-xl p-5">
@@ -147,6 +145,8 @@ export default function AnkaraGoogleAdsPage() {
           </div>
         </div>
       </section>
+
+      <CityServiceSections city="ankara" hizmet="ads" />
 
       <section className="py-20 px-6">
         <div className="max-w-3xl mx-auto">
