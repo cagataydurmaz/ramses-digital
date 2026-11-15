@@ -46,12 +46,12 @@ export default function WhatsAppButton() {
           exit={{ opacity: 0, y: 8, scale: 0.9 }}
           transition={{ duration: 0.25, ease: 'easeOut' }}
           role="status"
-          className="fixed bottom-[84px] right-4 sm:bottom-[92px] sm:right-6 z-40 bg-white text-[#0A0F1E] text-sm font-semibold rounded-2xl rounded-br-md px-4 py-2.5 shadow-2xl whitespace-nowrap"
+          className="fixed bottom-[26px] right-[84px] sm:bottom-[34px] sm:right-[92px] z-40 bg-white text-[#0A0F1E] text-sm font-semibold rounded-2xl px-4 py-2.5 shadow-2xl whitespace-nowrap"
         >
           Hemen fiyat al 💬
           <span
             aria-hidden="true"
-            className="absolute -bottom-1.5 right-5 w-3 h-3 bg-white rotate-45"
+            className="absolute top-1/2 -right-1.5 -translate-y-1/2 w-3 h-3 bg-white rotate-45"
           />
         </motion.a>
       )}

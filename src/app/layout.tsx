@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import Script from 'next/script'
 import dynamic from 'next/dynamic'
 import './globals.css'
+import ConsentScripts from '@/components/ConsentScripts'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import LeadTracker from '@/components/LeadTracker'
@@ -99,51 +100,25 @@ export default function RootLayout({
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
+            gtag('consent', 'default', {
+              ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied',
+              analytics_storage: 'denied', wait_for_update: 500
+            });
+            try {
+              if (localStorage.getItem('ramses_cookie_consent') === 'accepted') {
+                gtag('consent', 'update', {
+                  ad_storage: 'granted', ad_user_data: 'granted', ad_personalization: 'granted',
+                  analytics_storage: 'granted'
+                });
+              }
+            } catch (e) {}
             gtag('js', new Date());
             gtag('config', 'G-JQWD80KVTJ');
             gtag('config', 'AW-18459249890');
           `}
         </Script>
-        {/* Microsoft Clarity — heatmap & session recording */}
-        {process.env.NEXT_PUBLIC_CLARITY_ID && (
-          <Script id="microsoft-clarity" strategy="afterInteractive">
-            {`
-              (function(c,l,a,r,i,t,y){
-                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-              })(window, document, "clarity", "script", "${process.env.NEXT_PUBLIC_CLARITY_ID}");
-            `}
-          </Script>
-        )}
-        {/* Meta (Facebook) Pixel — reklam dönüşüm izleme ve retargeting */}
-        {process.env.NEXT_PUBLIC_META_PIXEL_ID && (
-          <>
-            <Script id="meta-pixel" strategy="afterInteractive">
-              {`
-                !function(f,b,e,v,n,t,s)
-                {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-                n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-                if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-                n.queue=[];t=b.createElement(e);t.async=!0;
-                t.src=v;s=b.getElementsByTagName(e)[0];
-                s.parentNode.insertBefore(t,s)}(window, document,'script',
-                'https://connect.facebook.net/en_US/fbevents.js');
-                fbq('init', '${process.env.NEXT_PUBLIC_META_PIXEL_ID}');
-                fbq('track', 'PageView');
-              `}
-            </Script>
-            <noscript>
-              <img
-                height="1"
-                width="1"
-                style={{ display: 'none' }}
-                src={`https://www.facebook.com/tr?id=${process.env.NEXT_PUBLIC_META_PIXEL_ID}&ev=PageView&noscript=1`}
-                alt=""
-              />
-            </noscript>
-          </>
-        )}
+        {/* Clarity ve Meta Pixel: yalnızca çerez onayından sonra */}
+        <ConsentScripts />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

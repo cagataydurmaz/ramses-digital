@@ -4,24 +4,40 @@ import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Link from 'next/link'
 import { Cookie } from 'lucide-react'
+import { CONSENT_KEY, CONSENT_EVENT } from '@/components/ConsentScripts'
+
+type Gtag = (...args: unknown[]) => void
 
 export default function CookieBanner() {
   const [visible, setVisible] = useState(false)
 
   useEffect(() => {
-    const consent = localStorage.getItem('ramses_cookie_consent')
-    if (!consent) setVisible(true)
+    try {
+      if (!localStorage.getItem(CONSENT_KEY)) setVisible(true)
+    } catch {
+      setVisible(true)
+    }
   }, [])
 
-  const accept = () => {
-    localStorage.setItem('ramses_cookie_consent', 'accepted')
+  const kaydet = (deger: 'accepted' | 'rejected') => {
+    try {
+      localStorage.setItem(CONSENT_KEY, deger)
+    } catch {}
+    if (deger === 'accepted') {
+      const gtag = (window as unknown as { gtag?: Gtag }).gtag
+      gtag?.('consent', 'update', {
+        ad_storage: 'granted',
+        ad_user_data: 'granted',
+        ad_personalization: 'granted',
+        analytics_storage: 'granted',
+      })
+    }
+    window.dispatchEvent(new Event(CONSENT_EVENT))
     setVisible(false)
   }
 
-  const reject = () => {
-    localStorage.setItem('ramses_cookie_consent', 'rejected')
-    setVisible(false)
-  }
+  const accept = () => kaydet('accepted')
+  const reject = () => kaydet('rejected')
 
   return (
     <AnimatePresence>
@@ -31,7 +47,7 @@ export default function CookieBanner() {
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: 100, opacity: 0 }}
           transition={{ type: 'spring', stiffness: 300, damping: 30 }}
-          className="fixed bottom-0 left-0 right-0 z-[60] p-4"
+          className="fixed bottom-[76px] sm:bottom-[84px] lg:bottom-0 left-0 right-0 z-[60] px-3 sm:px-4 lg:p-4"
         >
           <div className="max-w-2xl mx-auto bg-[#0D1225] border border-white/[0.08] rounded-2xl px-4 py-3 shadow-2xl flex items-center gap-3">
             <Cookie size={14} className="text-blue-400 shrink-0" />

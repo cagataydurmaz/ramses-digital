@@ -16,19 +16,11 @@ export default function FeaturedWork() {
   return (
     <section aria-labelledby="canli-projeler" className="py-14 sm:py-20 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto">
-        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3 mb-8">
-          <div>
-            <p className="text-blue-400 text-sm font-medium tracking-wider uppercase mb-2">Canlı Projeler</p>
-            <h2 id="canli-projeler" className="text-2xl sm:text-3xl font-bold text-white">
-              Yaptığımız işleri kendiniz ziyaret edin
-            </h2>
-          </div>
-          <Link
-            href="/portfolyo"
-            className="text-blue-400 hover:text-blue-300 text-sm font-medium inline-flex items-center gap-1.5"
-          >
-            Tüm portföy <ArrowRight size={14} />
-          </Link>
+        <div className="text-center mb-10">
+          <p className="text-blue-400 text-sm font-medium tracking-wider uppercase mb-2">Canlı Projeler</p>
+          <h2 id="canli-projeler" className="text-2xl sm:text-3xl font-bold text-white">
+            Yaptığımız işleri kendiniz ziyaret edin
+          </h2>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -72,6 +64,16 @@ export default function FeaturedWork() {
               </div>
             </article>
           ))}
+        </div>
+
+        <div className="text-center mt-10">
+          <Link
+            href="/portfolyo"
+            className="group inline-flex items-center gap-2 border border-blue-500/40 hover:border-blue-500 text-blue-400 hover:text-blue-300 text-sm font-medium rounded-full px-6 py-3 transition-all"
+          >
+            Tüm portföyü görüntüle
+            <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+          </Link>
         </div>
       </div>
     </section>
