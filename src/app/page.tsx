@@ -5,6 +5,7 @@ import Link from 'next/link'
 import dynamic from 'next/dynamic'
 import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
+import FeaturedWork from '@/components/FeaturedWork'
 import HeroBackgroundVideo from '@/components/HeroBackgroundVideo'
 import {
   Sparkles,
@@ -361,6 +362,9 @@ export default function HomePage() {
           <ChevronDown size={18} className="text-zinc-600 animate-bounce" />
         </div>
       </section>
+
+      {/* ── CANLI PROJELER (güven: hero'nun hemen altında) ─────────── */}
+      <FeaturedWork />
 
       {/* ── AI TEKLİF HESAPLAYICI (inline, hero'nun hemen altında) ─────────── */}
       <section id="teklif-hesapla" className="py-16 sm:py-24 px-6 bg-[#080D18] scroll-mt-24">

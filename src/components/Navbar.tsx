@@ -57,7 +57,7 @@ export default function Navbar() {
             : 'bg-transparent'
         }`}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
+        <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10 h-16 flex items-center justify-between gap-4 xl:gap-10">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2.5 shrink-0" aria-label="Ramses Dijital Yazılım ve Dijital Pazarlama Ajansı">
             <Image
@@ -71,12 +71,12 @@ export default function Navbar() {
             <div className="flex items-baseline gap-1.5 whitespace-nowrap">
               <span className="text-blue-500 font-bold text-xl tracking-tight">RAMSES</span>
               <span className="text-white font-light text-xl tracking-tight">Dijital</span>
-              <span className="hidden xl:inline text-zinc-500 font-light text-xs tracking-tight">Yazılım & Pazarlama</span>
+              <span className="hidden 2xl:inline text-zinc-500 font-light text-xs tracking-tight">Yazılım & Pazarlama</span>
             </div>
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden lg:flex items-center gap-5 xl:gap-7">
+          <nav className="hidden xl:flex items-center gap-6 2xl:gap-7">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -135,7 +135,7 @@ export default function Navbar() {
           </nav>
 
           {/* Desktop CTA */}
-          <div className="hidden lg:flex items-center gap-3 shrink-0">
+          <div className="hidden xl:flex items-center gap-3 shrink-0">
             <LanguageSwitcher />
             <CalendlyButton
               label="Ücretsiz Danışmanlık"
@@ -148,7 +148,7 @@ export default function Navbar() {
           {/* Mobile Menu Toggle */}
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="lg:hidden text-zinc-400 hover:text-white p-2.5 -mr-1"
+            className="xl:hidden text-zinc-400 hover:text-white p-2.5 -mr-1"
             aria-label="Menü"
             aria-expanded={menuOpen}
           >
@@ -160,7 +160,7 @@ export default function Navbar() {
       {/* Mobile Menu — no Framer Motion, no opacity animation, instant render */}
       {menuOpen && (
         <div
-          className="fixed top-16 left-0 right-0 bottom-0 z-40 bg-[#080D18] lg:hidden overflow-y-auto"
+          className="fixed top-16 left-0 right-0 bottom-0 z-40 bg-[#080D18] xl:hidden overflow-y-auto"
           style={{ contain: 'layout style paint' }}
         >
           <div className="px-6 py-6 flex flex-col gap-1">
