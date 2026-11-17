@@ -112,11 +112,11 @@ export default function CerezPolitikasiPage() {
           </section>
 
           <section>
-            <h2 className="text-white font-semibold text-lg mb-3">5. Onayınız</h2>
+            <h2 className="text-white font-semibold text-lg mb-3">5. Çerezleri Engelleme</h2>
             <p>
-              Web sitemizi ilk ziyaretinizde çerez kullanımına ilişkin bir bildirim gösterilmektedir.
-              &quot;Kabul Et&quot; butonuna tıklayarak analitik ve işlevsel çerezlerin kullanımına onay
-              vermiş olursunuz. Onayınızı dilediğiniz zaman tarayıcı ayarlarından geri alabilirsiniz.
+              Sitemizde analitik ve reklam ölçümü amacıyla Google Analytics, Google Ads, Microsoft Clarity ve
+              Meta Pixel çerezleri kullanılmaktadır. Bu çerezleri dilediğiniz zaman tarayıcı ayarlarınızdan
+              engelleyebilir veya silebilirsiniz; bu durumda sitenin temel işlevleri çalışmaya devam eder.
             </p>
           </section>
 

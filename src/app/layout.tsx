@@ -11,7 +11,6 @@ import LeadTracker from '@/components/LeadTracker'
 // Lazy-load widget'lar — first paint'i engellemez
 const WhatsAppButton = dynamic(() => import('@/components/WhatsAppButton'), { ssr: false })
 const PhoneButton = dynamic(() => import('@/components/PhoneButton'), { ssr: false })
-const CookieBanner = dynamic(() => import('@/components/CookieBanner'), { ssr: false })
 
 const inter = Inter({
   subsets: ['latin'],
@@ -89,7 +88,6 @@ export default function RootLayout({
         <Footer />
         <WhatsAppButton />
         <PhoneButton />
-        <CookieBanner />
         <LeadTracker />
         {/* Google Analytics GA4 */}
         <Script
@@ -100,24 +98,12 @@ export default function RootLayout({
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
-            gtag('consent', 'default', {
-              ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied',
-              analytics_storage: 'denied', wait_for_update: 500
-            });
-            try {
-              if (localStorage.getItem('ramses_cookie_consent') === 'accepted') {
-                gtag('consent', 'update', {
-                  ad_storage: 'granted', ad_user_data: 'granted', ad_personalization: 'granted',
-                  analytics_storage: 'granted'
-                });
-              }
-            } catch (e) {}
             gtag('js', new Date());
             gtag('config', 'G-JQWD80KVTJ');
             gtag('config', 'AW-18459249890');
           `}
         </Script>
-        {/* Clarity ve Meta Pixel: yalnızca çerez onayından sonra */}
+        {/* Clarity ve Meta Pixel */}
         <ConsentScripts />
         <script
           type="application/ld+json"
