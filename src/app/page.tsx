@@ -211,15 +211,15 @@ export default function HomePage() {
         {/* Background glow */}
         <div className="absolute inset-0 pointer-events-none">
           <div
-            className="mobile-hide-blur absolute top-1/4 left-1/2 -translate-x-1/2 w-[900px] h-[600px] bg-blue-500/8 rounded-full blur-[160px]"
+            className="mobile-hide-blur absolute top-1/4 left-1/2 -translate-x-1/2 w-[900px] h-[600px] bg-[radial-gradient(ellipse_at_center,rgba(59,130,246,0.144)_0%,rgba(59,130,246,0.048)_40%,transparent_70%)] rounded-full"
             style={{ animationDelay: '0s' }}
           />
           <div
-            className="mobile-hide-blur absolute top-[10%] right-[8%] w-[500px] h-[500px] bg-violet-500/8 rounded-full blur-[140px]"
+            className="mobile-hide-blur absolute top-[10%] right-[8%] w-[500px] h-[500px] bg-[radial-gradient(ellipse_at_center,rgba(139,92,246,0.144)_0%,rgba(139,92,246,0.048)_40%,transparent_70%)] rounded-full"
             style={{ animationDelay: '4s' }}
           />
           <div
-            className="mobile-hide-blur absolute bottom-[5%] left-[5%] w-[400px] h-[400px] bg-emerald-500/6 rounded-full blur-[120px]"
+            className="mobile-hide-blur absolute bottom-[5%] left-[5%] w-[400px] h-[400px] bg-[radial-gradient(ellipse_at_center,rgba(16,185,129,0.108)_0%,rgba(16,185,129,0.036)_40%,transparent_70%)] rounded-full"
             style={{ animationDelay: '8s' }}
           />
           <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/5 to-transparent" />
@@ -292,7 +292,7 @@ export default function HomePage() {
         </div>
 
         <div className="relative z-10 max-w-5xl mx-auto text-center">
-          <div className="animate-fadein inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 rounded-full px-4 py-1.5 mb-6 sm:mb-10">
+          <div className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 rounded-full px-4 py-1.5 mb-6 sm:mb-10">
             <span className="w-1.5 h-1.5 bg-blue-400 rounded-full animate-pulse" />
             <span className="text-blue-400 text-xs font-medium tracking-wider uppercase">
               Performans Odaklı Dijital Pazarlama
@@ -300,7 +300,7 @@ export default function HomePage() {
           </div>
 
           <h1
-            className="animate-fadein text-[2rem] xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.08] tracking-tight mb-6 sm:mb-8"
+            className="text-[2rem] xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.08] tracking-tight mb-6 sm:mb-8"
             style={{ animationDelay: '0.05s' }}
           >
             Markanızı{' '}
@@ -310,14 +310,14 @@ export default function HomePage() {
           </h1>
 
           <p
-            className="animate-fadein text-base sm:text-xl md:text-2xl text-zinc-400 max-w-2xl mx-auto mb-8 sm:mb-10 font-light"
+            className="text-base sm:text-xl md:text-2xl text-zinc-400 max-w-2xl mx-auto mb-8 sm:mb-10 font-light"
             style={{ animationDelay: '0.1s' }}
           >
             Sessiz kalan marka, kaybolan markadır.
           </p>
 
           <div
-            className="animate-fadein flex flex-col sm:flex-row items-center justify-center gap-4"
+            className="flex flex-col sm:flex-row items-center justify-center gap-4"
             style={{ animationDelay: '0.15s' }}
           >
             <a
@@ -337,7 +337,7 @@ export default function HomePage() {
 
           {/* ── AI Smart Intake ── */}
           <div
-            className="animate-fadein mt-8 sm:mt-14 w-full"
+            className="mt-8 sm:mt-14 w-full"
             style={{ animationDelay: '0.2s' }}
           >
             {/* Section label */}
@@ -379,7 +379,7 @@ export default function HomePage() {
       {/* ── STATS ────────────────────────────────────────────────────────── */}
       <section className="relative py-12 sm:py-20 border-y border-white/[0.04] overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="mobile-hide-blur absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[300px] bg-blue-500/5 rounded-full blur-[130px]" />
+          <div className="mobile-hide-blur absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[300px] bg-[radial-gradient(ellipse_at_center,rgba(59,130,246,0.09)_0%,rgba(59,130,246,0.03)_40%,transparent_70%)] rounded-full" />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
@@ -407,7 +407,7 @@ export default function HomePage() {
       {/* ── SERVICES ─────────────────────────────────────────────────────── */}
       <section className="relative py-16 sm:py-24 px-6 overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="mobile-hide-blur absolute top-0 right-[10%] w-[600px] h-[400px] bg-violet-500/5 rounded-full blur-[140px]" />
+          <div className="mobile-hide-blur absolute top-0 right-[10%] w-[600px] h-[400px] bg-[radial-gradient(ellipse_at_center,rgba(139,92,246,0.09)_0%,rgba(139,92,246,0.03)_40%,transparent_70%)] rounded-full" />
         </div>
         <div className="relative max-w-7xl mx-auto">
           <FadeIn className="text-center mb-16">
@@ -633,7 +633,7 @@ export default function HomePage() {
         <div className="max-w-4xl mx-auto text-center">
           <FadeIn>
             <div className="relative bg-gradient-to-b from-blue-500/10 to-transparent border border-blue-500/20 rounded-3xl p-6 sm:p-10 md:p-16 overflow-hidden text-center">
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[200px] bg-blue-500/10 rounded-full blur-[80px] pointer-events-none" />
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[200px] bg-[radial-gradient(ellipse_at_center,rgba(59,130,246,0.18)_0%,rgba(59,130,246,0.06)_40%,transparent_70%)] rounded-full pointer-events-none" />
               <div className="relative z-10">
                 <p className="text-blue-400 text-sm font-medium tracking-wider uppercase mb-4">
                   Ücretsiz Danışmanlık

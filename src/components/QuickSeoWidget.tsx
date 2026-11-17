@@ -63,7 +63,7 @@ export default function QuickSeoWidget() {
 
   return (
     <div className="relative bg-gradient-to-b from-white/[0.04] to-white/[0.02] border border-white/[0.08] rounded-3xl p-6 sm:p-7 overflow-hidden">
-      <div className="absolute -top-16 right-0 w-[300px] h-[160px] bg-violet-500/10 rounded-full blur-[90px] pointer-events-none" />
+      <div className="absolute -top-16 right-0 w-[300px] h-[160px] bg-[radial-gradient(ellipse_at_center,rgba(139,92,246,0.18)_0%,rgba(139,92,246,0.06)_40%,transparent_70%)] rounded-full pointer-events-none" />
       <div className="relative flex flex-col sm:flex-row gap-3 max-w-xl mx-auto mb-2">
         <input
           type="url"

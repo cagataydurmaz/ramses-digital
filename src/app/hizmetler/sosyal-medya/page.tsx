@@ -119,7 +119,7 @@ export default function SosyalMedyaPage() {
     <>
       {/* Hero */}
       <section className="relative pt-32 pb-16 px-6 overflow-hidden">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-pink-500/10 rounded-full blur-[140px] pointer-events-none" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-[radial-gradient(ellipse_at_center,rgba(236,72,153,0.18)_0%,rgba(236,72,153,0.06)_40%,transparent_70%)] rounded-full pointer-events-none" />
         <div className="max-w-5xl mx-auto text-center relative z-10">
           <div className="inline-flex items-center gap-2 bg-pink-500/10 border border-pink-500/20 rounded-full px-4 py-1.5 mb-6">
             <Share2 size={14} className="text-pink-400" />

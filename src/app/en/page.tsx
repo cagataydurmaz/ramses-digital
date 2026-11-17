@@ -262,7 +262,7 @@ export default function EnglishHomePage() {
       <section className="py-16 sm:py-24 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <div className="relative bg-gradient-to-b from-blue-500/10 to-transparent border border-blue-500/20 rounded-3xl p-6 sm:p-10 md:p-16 overflow-hidden text-center">
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[200px] bg-blue-500/10 rounded-full blur-[80px] pointer-events-none" />
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[200px] bg-[radial-gradient(ellipse_at_center,rgba(59,130,246,0.18)_0%,rgba(59,130,246,0.06)_40%,transparent_70%)] rounded-full pointer-events-none" />
             <div className="relative z-10">
               <p className="text-blue-400 text-sm font-medium tracking-wider uppercase mb-4">Free Consultation</p>
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 text-center">

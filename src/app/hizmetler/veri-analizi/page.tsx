@@ -123,7 +123,7 @@ export default function VeriAnaliziPage() {
     <>
       {/* Hero */}
       <section className="relative pt-32 pb-16 px-6 overflow-hidden">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-cyan-500/10 rounded-full blur-[140px] pointer-events-none" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-[radial-gradient(ellipse_at_center,rgba(6,182,212,0.18)_0%,rgba(6,182,212,0.06)_40%,transparent_70%)] rounded-full pointer-events-none" />
         <div className="max-w-5xl mx-auto text-center relative z-10">
           <div className="inline-flex items-center gap-2 bg-cyan-500/10 border border-cyan-500/20 rounded-full px-4 py-1.5 mb-6">
             <BarChart3 size={14} className="text-cyan-400" />

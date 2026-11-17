@@ -53,7 +53,7 @@ export default function WhatsAppLeadForm() {
 
   return (
     <div className="relative bg-[#0D1225] border border-white/[0.08] rounded-3xl p-6 sm:p-10 overflow-hidden">
-      <div className="absolute top-0 right-0 w-[300px] h-[300px] bg-blue-500/8 rounded-full blur-[100px] pointer-events-none" />
+      <div className="absolute top-0 right-0 w-[300px] h-[300px] bg-[radial-gradient(ellipse_at_center,rgba(59,130,246,0.144)_0%,rgba(59,130,246,0.048)_40%,transparent_70%)] rounded-full pointer-events-none" />
       <div className="relative z-10">
         <div className="text-center mb-8">
           <p className="text-blue-400 text-sm font-medium tracking-wider uppercase mb-3">Bize Ulaşın</p>

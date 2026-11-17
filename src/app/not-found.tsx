@@ -22,7 +22,7 @@ export default function NotFound() {
     <section className="relative min-h-[80vh] flex items-center justify-center px-6 py-24 overflow-hidden">
       {/* Glow background */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[700px] h-[500px] bg-blue-500/8 rounded-full blur-[140px]" />
+        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[700px] h-[500px] bg-[radial-gradient(ellipse_at_center,rgba(59,130,246,0.144)_0%,rgba(59,130,246,0.048)_40%,transparent_70%)] rounded-full" />
       </div>
 
       <div className="relative z-10 max-w-4xl mx-auto w-full">
