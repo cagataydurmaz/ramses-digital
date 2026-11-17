@@ -109,7 +109,7 @@ export default function IzmitWebTasarimPage() {
             <span className="gradient-text">Dönüşüm Odaklı Siteler</span>
           </h1>
           <p className="text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
-            Hızlı, mobil uyumlu ve SEO hazır web siteleri. İzmit işletmenizi dijitalde profesyonelce temsil edin — ziyaretçiyi müşteriye çeviren tasarım.
+            İzmit merkez ve çevresindeki işletmeler için hızlı, mobil uyumlu, SEO hazır web siteleri; ziyaretçiyi müşteriye çeviren tasarım. Tüm Kocaeli için <Link href="/kocaeli-web-tasarim" className="text-blue-400 hover:text-blue-300 underline underline-offset-4">Kocaeli Web Tasarım</Link>.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <CalendlyButton label="Ücretsiz Teklif Al" variant="primary" />

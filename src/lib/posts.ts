@@ -1012,7 +1012,7 @@ export const posts: Post[] = [
   {
     slug: 'kocaeli-seo-yerel-isletmeler-rehberi',
     coverImage: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1200&q=80&fit=crop',
-    title: 'Kocaeli SEO Rehberi 2026: Yerel İşletmeler Google\'da Nasıl Üst Sıraya Çıkar?',
+    title: 'Kocaeli\'de Yerel İşletmeler Google\'da Nasıl Üst Sıraya Çıkar? (Adım Adım Rehber)',
     excerpt:
       'Kocaeli\'de işletmenizin Google\'da üst sıralarda çıkması için bilmeniz gereken her şey: Google Business Profile, yerel anahtar kelimeler, NAP tutarlılığı ve gerçek vaka örnekleri.',
     category: 'SEO',
@@ -1026,7 +1026,7 @@ export const posts: Post[] = [
     tags: ['Yerel SEO', 'Kocaeli', 'Google Business Profile', 'KOBİ'],
     content: `
       <h2>Kocaeli'de SEO Neden Önemli?</h2>
-      <p>Kocaeli, sanayinin yoğun olduğu, hızla büyüyen ve dijitalleşen bir şehir. Tüketicilerin %78'i, yerel bir hizmet veya ürün ararken Google'a yöneliyor. "Kocaeli web tasarım", "İzmit dijital pazarlama", "İzmit reklam ajansı" gibi aramalarda ilk üçte yer almak, web sitenize gelen organik trafiğin %75'ini bir anda kazanmanız anlamına geliyor.</p>
+      <p>Kocaeli, sanayinin yoğun olduğu, hızla büyüyen ve dijitalleşen bir şehir. Yerel bir hizmet arayan müşteri büyük çoğunlukla Google'da "Kocaeli + hizmet" ya da "ilçe + hizmet" şeklinde arama yapar ve ilk sıralardaki işletmelerle iletişime geçer. Bu rehber, bunu kendiniz uygulayabilmeniz için adımları anlatıyor. Profesyonel destek arıyorsanız <a href="/kocaeli-seo">Kocaeli SEO hizmetimizi</a>, yalnızca İzmit merkez için <a href="/izmit-seo">İzmit SEO sayfamızı</a> inceleyebilirsiniz.</p>
       <p>Yerel SEO, klasik SEO'dan farklı dinamiklere sahiptir. Burada amaç sadece "SEO" gibi genel terimlerde değil, "Kocaeli + hizmet" kombinasyonunda görünür olmak ve Google Maps'in "Local Pack" alanına girmektir.</p>
 
       <table>
@@ -1041,12 +1041,12 @@ export const posts: Post[] = [
 
       <div class="stat-grid">
         <div class="stat-card">
-          <span class="stat-number">%78</span>
-          <span class="stat-label">Yerel hizmet ararken Google'a yönelen tüketici</span>
+          <span class="stat-number">3</span>
+          <span class="stat-label">Google Haritalar sonuçlarında öne çıkan işletme sayısı</span>
         </div>
         <div class="stat-card">
-          <span class="stat-number">%75</span>
-          <span class="stat-label">İlk 3'te yer alınca kazanılan organik trafik payı</span>
+          <span class="stat-number">12</span>
+          <span class="stat-label">Kocaeli'deki ilçe — her biri ayrı bir yerel pazar</span>
         </div>
         <div class="stat-card">
           <span class="stat-number">2-4 hafta</span>
@@ -3672,6 +3672,150 @@ export const posts: Post[] = [
 
       <h3>Sonuç</h3>
       <p>Yerel bir işletme için AEO ve GEO, karmaşık teknik bir iş değil; net cevaplar, düzenli profil ve gerçek yorumlarla başlayan bir hazırlık. Ramses Digital olarak bu yapıyı SEO çalışmasının içine entegre ediyoruz.</p>
+    `,
+  },
+  {
+    slug: 'kayseri-mobilya-ve-sanayi-firmalari-icin-seo-google-ads',
+    coverImage: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80&fit=crop',
+    title: 'Kayseri\'de Mobilya ve Sanayi Firmaları İçin SEO ve Google Ads Rehberi',
+    excerpt:
+      'Kayseri\'de mobilya, yatak ve metal sanayi firmaları alıcıya Google\'da nasıl ulaşır? Bayi, toptan ve son tüketici aramalarını ayırmak, ürün sayfaları ve doğru reklam yapısı için adım adım rehber.',
+    category: 'SEO',
+    categoryColor: 'blue',
+    emoji: '🏭',
+    coverGradient: 'from-blue-500/10 to-blue-900/5',
+    readTime: 7,
+    date: '2026-11-17',
+    author: 'Ramses Digital Ekibi',
+    authorRole: 'SEO ve Google Ads Uzmanları',
+    tags: ['Kayseri', 'B2B SEO', 'Google Ads', 'Mobilya', 'Sanayi'],
+    content: `
+      <h2>Kayseri'de Üretici Firmaların Dijital Durumu</h2>
+      <p>Kayseri; mobilya, yatak, metal ve makine üretiminin güçlü olduğu bir şehir. Bu firmaların müşterisi tek tip değildir: aynı üreticiyi bir bayi, bir toptancı, bir mimar ya da son tüketici arayabilir. Her biri Google'da farklı kelimelerle arama yapar ve farklı bir sayfa görmek ister. Dijitalde ilk hata genellikle burada yapılır: tüm bu kitleler tek bir "Hakkımızda" sayfasına gönderilir.</p>
+      <p>Bu rehber, Kayseri'deki üretici firmaların SEO ve Google Ads'i bu farklı kitlelere göre nasıl kurabileceğini anlatıyor. Kendi işletmeniz için destek isterseniz <a href="/kayseri-seo">Kayseri SEO</a>, <a href="/kayseri-google-ads">Kayseri Google Ads</a> ve <a href="/kayseri-dijital-pazarlama">Kayseri dijital pazarlama</a> sayfalarımıza bakabilirsiniz.</p>
+
+      <h2>Kim, Ne Arar?</h2>
+      <table>
+        <thead><tr><th>Arayan</th><th>Örnek arama</th><th>Görmek istediği sayfa</th></tr></thead>
+        <tbody>
+          <tr><td>Bayi / mağaza</td><td>"kayseri yatak üreticisi bayilik"</td><td>Bayilik koşulları, koleksiyon katalogu, başvuru formu</td></tr>
+          <tr><td>Toptan alıcı</td><td>"toptan koltuk takımı kayseri"</td><td>Ürün grupları, minimum sipariş, teslim süresi, teklif formu</td></tr>
+          <tr><td>Mimar / proje firması</td><td>"otel mobilyası üreticisi"</td><td>Proje referansları, özel üretim kapasitesi, malzeme bilgisi</td></tr>
+          <tr><td>Son tüketici</td><td>"kayseri mobilya mağazası"</td><td>Mağaza konumu, ürünler, fiyat aralığı, WhatsApp</td></tr>
+          <tr><td>Satın almacı (metal/makine)</td><td>"cnc lazer kesim fason kayseri"</td><td>Makine parkuru, tolerans, kalite belgeleri, teklif formu</td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout">
+        <span class="callout-title">Pratik kural</span>
+        <p>Her kitle için ayrı bir giriş sayfası olmalı. "Bayilik", "Toptan Satış", "Proje ve Otel Mobilyası" ve "Mağaza" sayfaları birbirinden ayrıldığında hem Google hangi sayfayı göstereceğini bilir hem de ziyaretçi aradığını ilk ekranda bulur.</p>
+      </div>
+
+      <h2>SEO: Üretici Sitesinde Olması Gerekenler</h2>
+      <table>
+        <thead><tr><th>Bölüm</th><th>Neden önemli</th><th>Öncelik</th></tr></thead>
+        <tbody>
+          <tr><td>Ürün grubu sayfaları</td><td>Alıcılar ürün adıyla arar; her grubun kendi sayfası olmalı</td><td>Yüksek</td></tr>
+          <tr><td>Kapasite ve makine parkuru</td><td>B2B alıcının ilk sorusu "bu siparişi kaldırabilir mi?"</td><td>Yüksek</td></tr>
+          <tr><td>Kalite belgeleri</td><td>Güven ve tedarikçi onay süreçleri için şart</td><td>Yüksek</td></tr>
+          <tr><td>Teklif formu</td><td>Ölçü, adet ve teslim tarihini soran kısa form dönüşümü artırır</td><td>Yüksek</td></tr>
+          <tr><td>İngilizce sürüm</td><td>İhracat yapılıyorsa yabancı alıcı için gerekli</td><td>Orta</td></tr>
+          <tr><td>Gerçek fotoğraflar</td><td>Stok görsel yerine üretim alanı ve ürün fotoğrafları güven verir</td><td>Orta</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Google Ads: Bütçeyi Doğru Kitleye Harcamak</h2>
+      <p>Üretici firmalarda Google Ads bütçesinin en sık boşa gittiği yer, toptan alıcı hedeflenirken perakende aramalara gösterilen reklamlardır. "Ucuz koltuk takımı" arayan bir son tüketici, toptan satış sayfanıza tıkladığında bütçe harcanır ama satış gelmez.</p>
+      <table>
+        <thead><tr><th>Kampanya</th><th>Hedef</th><th>Dikkat</th></tr></thead>
+        <tbody>
+          <tr><td>B2B arama</td><td>Toptan, bayi, fason ve proje aramaları</td><td>"ucuz", "indirim", "ikinci el" gibi kelimeler negatif listede olmalı</td></tr>
+          <tr><td>Yerel mağaza</td><td>Kayseri içindeki son tüketici</td><td>Melikgazi, Kocasinan, Talas gibi bölgelere konum hedefi</td></tr>
+          <tr><td>Marka koruma</td><td>Firma adınızı arayanlar</td><td>Düşük bütçe, rakiplerin marka aramanızda görünmesini engeller</td></tr>
+          <tr><td>Yeniden pazarlama</td><td>Katalog sayfasını ziyaret edenler</td><td>Yalnızca çerez onayı veren ziyaretçilerle çalışır</td></tr>
+        </tbody>
+      </table>
+
+      <h2>İlk 30 Günlük Plan</h2>
+      <table>
+        <thead><tr><th>Hafta</th><th>Yapılacak</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Kitleleri belirlemek, her kitle için giriş sayfası planlamak</td></tr>
+          <tr><td>2</td><td>Ürün grubu sayfaları, kapasite ve belge bölümlerini yayına almak</td></tr>
+          <tr><td>3</td><td>Google İşletme Profili, teklif formu ve dönüşüm takibini kurmak</td></tr>
+          <tr><td>4</td><td>B2B arama kampanyasını negatif kelime listesiyle başlatmak</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Sık Sorulan Sorular</h2>
+      <h3>B2B firması için SEO mu Google Ads mi önce gelmeli?</h3>
+      <p>Satış döngüsü uzun olan B2B firmalarda ikisi birlikte en iyi sonucu verir. Google Ads kısa sürede talep getirir ve hangi aramaların satışa dönüştüğünü gösterir; SEO bu aramalarda kalıcı görünürlük sağlar.</p>
+      <h3>Bayilerimiz kendi sitelerinde ürünlerimizi satıyor, bu sorun olur mu?</h3>
+      <p>Aynı ürün metinleri birden fazla sitede kullanıldığında Google hangisini göstereceğini seçmekte zorlanabilir. Kendi sitenizde ürün metinlerini daha ayrıntılı ve özgün tutmak, üretici olarak öne çıkmanızı sağlar.</p>
+      <h3>Sonuç</h3>
+      <p>Kayseri'deki üretici firmalar için dijitalde fark yaratan şey, kitleyi doğru ayırmaktır: her alıcı tipine ayrı sayfa, ayrı reklam ve ayrı mesaj. Bu yapı kurulduğunda hem organik sıralamalar hem de reklam bütçesi daha verimli çalışır.</p>
+    `,
+  },
+  {
+    slug: 'kayseri-yerel-isletmeler-google-haritalar-rehberi',
+    coverImage: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=80&fit=crop',
+    title: 'Kayseri\'de Yerel İşletmeler Google Haritalar\'da Nasıl Öne Çıkar?',
+    excerpt:
+      'Melikgazi, Kocasinan ve Talas\'taki işletmeler için Google İşletme Profili, yorumlar ve ilçe bazlı arama rehberi. Kayseri\'de yerel müşteriye ulaşmanın en hızlı yolu.',
+    category: 'SEO',
+    categoryColor: 'blue',
+    emoji: '📍',
+    coverGradient: 'from-blue-500/10 to-blue-900/5',
+    readTime: 5,
+    date: '2026-11-17',
+    author: 'Ramses Digital Ekibi',
+    authorRole: 'Yerel SEO Uzmanları',
+    tags: ['Kayseri', 'Yerel SEO', 'Google İşletme Profili', 'KOBİ'],
+    content: `
+      <h2>Kayseri'de Yerel Arama Nasıl Çalışır?</h2>
+      <p>Kayseri'de bir diş hekimi, kuaför, oto servis ya da kafe arayan kişi çoğu zaman "Talas diş hekimi" veya "Melikgazi oto servis" gibi ilçe adıyla ya da sadece "yakınımdaki" diye arama yapar. Google bu aramalarda önce haritada üç işletme gösterir. Bu üç işletme, telefon aramalarının ve yol tariflerinin büyük kısmını alır.</p>
+      <p>Google, yerel sıralamada üç şeye baktığını açıklıyor: <strong>alaka</strong> (işletme aranan hizmeti sunuyor mu), <strong>uzaklık</strong> (arayan kişiye ne kadar yakın) ve <strong>bilinirlik</strong> (yorumlar, bağlantılar, genel tanınırlık). Uzaklığı değiştiremezsiniz ama diğer ikisini güçlendirebilirsiniz.</p>
+
+      <h2>İlçelere Göre Yerel Pazar</h2>
+      <table>
+        <thead><tr><th>Bölge</th><th>Öne çıkan aramalar</th><th>Öneri</th></tr></thead>
+        <tbody>
+          <tr><td>Melikgazi</td><td>Sağlık, ticaret, eğitim hizmetleri</td><td>Hizmet başına ayrı sayfa, yoğun rekabet nedeniyle yorumlar kritik</td></tr>
+          <tr><td>Kocasinan</td><td>Sanayi, servis, yedek parça</td><td>Çalışma saatleri ve iletişim bilgisi her zaman güncel olmalı</td></tr>
+          <tr><td>Talas</td><td>Öğrenci ve aile hizmetleri, kafe, kurs</td><td>Mobil hızlı site, fiyat ve konum bilgisi ilk ekranda</td></tr>
+          <tr><td>Erciyes çevresi</td><td>Konaklama, kayak, yeme-içme</td><td>Kış sezonundan önce profil fotoğrafları ve rezervasyon bağlantısı</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Google İşletme Profili Kontrol Listesi</h2>
+      <table>
+        <thead><tr><th>Adım</th><th>Durum kontrolü</th></tr></thead>
+        <tbody>
+          <tr><td>Doğru ana kategori</td><td>"Diş Kliniği" gibi en dar ve doğru kategori seçili mi?</td></tr>
+          <tr><td>Hizmet bölgesi</td><td>Hizmet verdiğiniz ilçeler eklendi mi?</td></tr>
+          <tr><td>Gerçek fotoğraflar</td><td>Dükkan, ekip ve işten güncel fotoğraflar var mı?</td></tr>
+          <tr><td>Çalışma saatleri</td><td>Bayram ve tatil saatleri güncellendi mi?</td></tr>
+          <tr><td>Web sitesi bağlantısı</td><td>İlgili hizmet sayfasına mı gidiyor?</td></tr>
+          <tr><td>Yorum yanıtları</td><td>Olumlu ve olumsuz tüm yorumlara cevap verildi mi?</td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout">
+        <span class="callout-title">Yorumlar hakkında</span>
+        <p>Google, yorum karşılığında indirim veya hediye vermeyi ve yalnızca memnun müşterilerden seçerek yorum istemeyi yasaklar. Doğru yöntem, hizmet sonrası tüm müşterilere kısa bir mesajla yorum bağlantısını göndermektir.</p>
+      </div>
+
+      <h2>Web Sitesinin Rolü</h2>
+      <p>Harita sonuçları işletme profilinden beslenir ama web siteniz bilinirliğin önemli bir parçasıdır. Her hizmet için ayrı sayfa, sayfalarda Kayseri ve ilçe bilgisi, hızlı açılan mobil tasarım ve tek tıkla arama ya da WhatsApp butonu, profilden gelen ziyaretçinin müşteriye dönüşmesini sağlar.</p>
+      <p>Bu adımlarda destek isterseniz <a href="/kayseri-seo">Kayseri SEO</a> ve <a href="/kayseri-web-tasarim">Kayseri web tasarım</a> sayfalarımızı inceleyebilir, reklamla hızlı sonuç için <a href="/kayseri-reklam-ajansi">Kayseri reklam ajansı</a> sayfamıza bakabilirsiniz.</p>
+
+      <h2>Sık Sorulan Sorular</h2>
+      <h3>Google Haritalar'da çıkmak ne kadar sürer?</h3>
+      <p>Profil doğrulandıktan ve eksiksiz doldurulduktan sonra birkaç hafta içinde değişiklik görülebilir. Rekabetin yüksek olduğu sektörlerde ilk üçe girmek daha uzun sürer ve düzenli yorum gerektirir.</p>
+      <h3>Fiziksel dükkanım yoksa haritada çıkabilir miyim?</h3>
+      <p>Evet. Müşteriye giden işletmeler adresini gizleyip hizmet bölgesi belirleyerek profil açabilir. Google bu durumda adresin gösterilmemesini istiyor.</p>
+      <h3>Sonuç</h3>
+      <p>Kayseri'de yerel müşteriye ulaşmanın en hızlı yolu eksiksiz bir işletme profili, düzenli gerçek yorumlar ve hizmet başına net bir web sayfasıdır. Bu üçü birlikte çalıştığında harita ve organik sonuçlarda kalıcı görünürlük sağlar.</p>
     `,
   },
 ]

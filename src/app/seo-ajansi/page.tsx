@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import CityLinksGrid from '@/components/CityLinksGrid'
 import CalendlyButton from '@/components/CalendlyButton'
 import RelatedPages from '@/components/RelatedPages'
 import { Globe2, Search, ArrowRight, CheckCircle2, FileText, Link2, BarChart3, Zap, Award } from 'lucide-react'
@@ -129,6 +130,8 @@ export default function SeoAjansiPage() {
           </div>
         </div>
       </section>
+
+      <CityLinksGrid servis="seo" />
 
       <section className="py-20 px-6">
         <div className="max-w-3xl mx-auto">

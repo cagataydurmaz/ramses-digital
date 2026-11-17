@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import CityLinksGrid from '@/components/CityLinksGrid'
 import CalendlyButton from '@/components/CalendlyButton'
 import { Monitor, Code2, Smartphone, Gauge, Search, ShoppingCart, ArrowRight } from 'lucide-react'
 
@@ -144,6 +145,8 @@ export default function WebTasarimHizmetPage() {
           </div>
         </div>
       </section>
+
+      <CityLinksGrid servis="web-tasarim" />
 
       <section className="py-20 px-6 bg-[#080D18]">
         <div className="max-w-4xl mx-auto">

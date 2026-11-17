@@ -104,7 +104,7 @@ export default function IzmitSeoPage() {
             <span className="gradient-text">Google&apos;da Üst Sıra</span>
           </h1>
           <p className="text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
-            Yerel SEO, teknik SEO, GEO ve AEO stratejileriyle İzmit&apos;teki potansiyel müşterileriniz sizi bulsun. Reklam bütçesi ödemeden organik büyüme.
+            İzmit merkez ve çevresindeki işletmeler için yerel SEO: Google Haritalar, hizmet sayfaları ve gerçek müşteri yorumlarıyla müşterileriniz sizi bulsun. Tüm Kocaeli ilçeleri için <Link href="/kocaeli-seo" className="text-blue-400 hover:text-blue-300 underline underline-offset-4">Kocaeli SEO</Link>.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <CalendlyButton label="Ücretsiz SEO Analizi" variant="primary" />

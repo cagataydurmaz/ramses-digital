@@ -203,6 +203,8 @@ export default function KayseriSeoPage() {
           { label: 'Kayseri Google Ads', href: '/kayseri-google-ads' },
           { label: 'Kayseri Reklam Ajansı', href: '/kayseri-reklam-ajansi' },
           { label: 'Kayseri Yazılım Ajansı', href: '/kayseri-yazilim-ajansi' },
+          { label: "Kayseri'de Google Haritalar Rehberi", href: '/blog/kayseri-yerel-isletmeler-google-haritalar-rehberi' },
+          { label: "Mobilya ve Sanayi Firmaları İçin SEO", href: '/blog/kayseri-mobilya-ve-sanayi-firmalari-icin-seo-google-ads' },
         ]}
       />
 

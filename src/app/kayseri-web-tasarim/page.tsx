@@ -158,6 +158,7 @@ export default function KayseriWebTasarimPage() {
           { label: 'Kayseri Google Ads', href: '/kayseri-google-ads' },
           { label: 'Kayseri Yazılım Ajansı', href: '/kayseri-yazilim-ajansi' },
           { label: 'Web Tasarım Ajansı (Türkiye Geneli)', href: '/web-tasarim-ajansi' },
+          { label: "Kayseri'de Google Haritalar Rehberi", href: '/blog/kayseri-yerel-isletmeler-google-haritalar-rehberi' },
         ]}
       />
 

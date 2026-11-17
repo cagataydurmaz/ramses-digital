@@ -7,7 +7,7 @@ import RelatedPages from '@/components/RelatedPages'
 import { MapPin, Megaphone, ArrowRight, Target, BarChart3, Zap, TrendingUp, DollarSign, Clock } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'İzmir Google Ads Yönetimi — Ramses Dijital',
+  title: 'İzmir Google Ads Ajansı | Reklam Yönetimi — Ramses Dijital',
   description:
     'İzmir\'de Google Ads yönetimi. Konak, Karşıyaka, Bornova ve tüm İzmir ilçelerinde hedefli arama reklamları. Bütçe israfı yok, ölçülebilir dönüşüm. Ücretsiz kampanya analizi.',
   alternates: { canonical: 'https://ramsesdigital.com/izmir-google-ads' },

@@ -298,6 +298,7 @@ export default function KayseriDijitalPazarlamaPage() {
           { label: 'Kayseri Google Ads', href: '/kayseri-google-ads' },
           { label: 'Kayseri Reklam Ajansı', href: '/kayseri-reklam-ajansi' },
           { label: 'Kayseri Yazılım Ajansı', href: '/kayseri-yazilim-ajansi' },
+          { label: "Mobilya ve Sanayi Firmaları İçin SEO ve Google Ads", href: '/blog/kayseri-mobilya-ve-sanayi-firmalari-icin-seo-google-ads' },
         ]}
       />
 

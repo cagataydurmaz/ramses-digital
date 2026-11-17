@@ -114,7 +114,7 @@ export default function KocaeliSeoPage() {
             <span className="gradient-text">Organik Trafiğinizi Büyütün</span>
           </h1>
           <p className="text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto mb-4 leading-relaxed">
-            İzmit&apos;ten Gebze&apos;ye, Darıca&apos;dan Körfez&apos;e tüm Kocaeli ilçelerinde yerel SEO. GEO ve AEO ile yapay zeka aramalarında da görünün.
+            Gebze, Darıca, Çayırova, Körfez, Gölcük ve tüm Kocaeli ilçelerinde yerel SEO; sanayi ve B2B firmaları için kurumsal SEO. Yalnızca İzmit merkeze hizmet veriyorsanız <Link href="/izmit-seo" className="text-blue-400 hover:text-blue-300 underline underline-offset-4">İzmit SEO</Link> sayfamıza bakın.
           </p>
           <p className="text-zinc-500 text-sm mb-10">
             {ilceler.map((n, idx) => {

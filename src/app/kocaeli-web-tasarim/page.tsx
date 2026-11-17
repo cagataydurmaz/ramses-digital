@@ -85,7 +85,7 @@ export default function KocaeliWebTasarimPage() {
             <span className="gradient-text">Hızlı, Modern, SEO Hazır</span>
           </h1>
           <p className="text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto mb-4 leading-relaxed">
-            Kocaeli işletmeniz için hızlı, mobil uyumlu ve yerel SEO hazır web siteleri. İzmit&apos;ten Gebze&apos;ye tüm ilçelere hizmet.
+            Gebze&apos;den Gölcük&apos;e tüm Kocaeli ilçelerindeki işletmeler ve sanayi firmaları için hızlı, mobil uyumlu, SEO hazır web siteleri. İzmit merkez için <Link href="/izmit-web-tasarim" className="text-blue-400 hover:text-blue-300 underline underline-offset-4">İzmit Web Tasarım</Link>.
           </p>
           <p className="text-zinc-500 text-sm mb-10">{ilceler.join(' · ')}</p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

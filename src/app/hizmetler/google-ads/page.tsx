@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import CityLinksGrid from '@/components/CityLinksGrid'
 import CalendlyButton from '@/components/CalendlyButton'
 import { TrendingUp, Target, BarChart3, ShoppingBag, Youtube, Repeat, ArrowRight, CheckCircle2 } from 'lucide-react'
 
@@ -137,6 +138,8 @@ export default function GoogleAdsHizmetPage() {
           </div>
         </div>
       </section>
+
+      <CityLinksGrid servis="google-ads" />
 
       <section className="py-20 px-6 bg-[#080D18]">
         <div className="max-w-4xl mx-auto">
