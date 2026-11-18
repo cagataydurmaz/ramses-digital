@@ -49,7 +49,7 @@ function ReviewCards({ hidden = false }: { hidden?: boolean }) {
 
 export default function ReviewsMarqueeInner({ title = 'Müşterilerimiz Ne Diyor?' }: { title?: string }) {
   return (
-    <section className="relative py-14 sm:py-20 px-6 overflow-hidden">
+    <section className="relative py-12 sm:py-16 px-6 overflow-hidden">
       <div className="relative max-w-7xl mx-auto">
         <div className="text-center mb-10">
           <p className="flex items-center justify-center gap-2 text-blue-500 text-sm font-medium tracking-wider uppercase mb-3">

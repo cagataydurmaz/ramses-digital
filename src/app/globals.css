@@ -424,3 +424,23 @@ img, video {
   .post-content th, .post-content td { padding: 0.6rem 0.75rem; }
 }
 html { -webkit-text-size-adjust: 100%; text-rendering: optimizeLegibility; }
+
+/* ── Ana sayfa hero altı akış arka planı ─────────────────────────────────────
+   Hero'daki mavi-mor ışığın aşağı doğru devamı. Tek eleman, yalnızca
+   background-image (blur/filter yok) — mobilde ek GPU yükü yok. Işıklar
+   bölüm sınırlarına denk gelecek şekilde dağıtıldı; geçişler yumuşak kalır. */
+.home-flow-bg {
+  background-color: #090E1C;
+  background-image:
+    radial-gradient(ellipse 760px 520px at 12% 4%,  rgba(59,130,246,.15), transparent 70%),
+    radial-gradient(ellipse 680px 520px at 90% 13%, rgba(139,92,246,.14), transparent 70%),
+    radial-gradient(ellipse 760px 560px at 8% 25%,  rgba(59,130,246,.13), transparent 70%),
+    radial-gradient(ellipse 680px 520px at 92% 37%, rgba(139,92,246,.13), transparent 70%),
+    radial-gradient(ellipse 720px 520px at 15% 49%, rgba(34,211,238,.09), transparent 70%),
+    radial-gradient(ellipse 680px 520px at 88% 60%, rgba(59,130,246,.14), transparent 70%),
+    radial-gradient(ellipse 760px 560px at 10% 72%, rgba(139,92,246,.13), transparent 70%),
+    radial-gradient(ellipse 720px 520px at 90% 84%, rgba(59,130,246,.14), transparent 70%),
+    radial-gradient(ellipse 900px 480px at 50% 97%, rgba(59,130,246,.10), transparent 70%),
+    linear-gradient(180deg, #080D18 0%, #0A0F1E 12%, #0A0F1E 88%, #080D18 100%);
+  background-repeat: no-repeat;
+}

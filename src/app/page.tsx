@@ -363,11 +363,15 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Hero altı: tek parça arka plan — renk ışıkları bölüm sınırlarının üzerinden
+          geçer, bölümler arasında keskin çizgi oluşmaz (globals.css .home-flow-bg). */}
+      <div className="relative home-flow-bg">
+
       {/* ── CANLI PROJELER (güven: hero'nun hemen altında) ─────────── */}
       <FeaturedWork />
 
       {/* ── AI TEKLİF HESAPLAYICI (inline, hero'nun hemen altında) ─────────── */}
-      <section id="teklif-hesapla" className="py-12 sm:py-16 px-6 bg-[#080D18] scroll-mt-24">
+      <section id="teklif-hesapla" className="py-12 sm:py-16 px-6 scroll-mt-24">
         <div className="max-w-3xl mx-auto text-center mb-10">
           <p className="text-blue-500 text-sm font-medium tracking-wider uppercase mb-3">AI Destekli Teklif Hesaplayıcı</p>
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Anında Ücretsiz Teklif Alın</h2>
@@ -377,7 +381,7 @@ export default function HomePage() {
       </section>
 
       {/* ── STATS ────────────────────────────────────────────────────────── */}
-      <section className="relative py-10 sm:py-14 border-y border-white/[0.04] overflow-hidden">
+      <section className="relative py-10 sm:py-14 overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
           <div className="mobile-hide-blur absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[300px] bg-[radial-gradient(ellipse_at_center,rgba(59,130,246,0.09)_0%,rgba(59,130,246,0.03)_40%,transparent_70%)] rounded-full" />
         </div>
@@ -497,7 +501,7 @@ export default function HomePage() {
       </section>
 
       {/* ── SEO / AEO / GEO — EN BASİT ANLATIM ──────────────────────────────── */}
-      <section className="py-12 sm:py-16 px-6 bg-[#080D18]">
+      <section className="py-12 sm:py-16 px-6">
         <div className="max-w-5xl mx-auto">
           <FadeIn className="text-center mb-14">
             <p className="text-blue-500 text-sm font-medium tracking-wider uppercase mb-3">Bunlar Ne Anlama Geliyor?</p>
@@ -543,7 +547,7 @@ export default function HomePage() {
       <ReviewsMarquee />
 
       {/* ── ÜCRETSİZ SEO ANALİZİ (inline) ──────────────────────────────────── */}
-      <section className="py-12 sm:py-16 px-6 bg-[#080D18]">
+      <section className="py-12 sm:py-16 px-6">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-10">
             <p className="text-violet-500 text-sm font-medium tracking-wider uppercase mb-3">Ücretsiz Araç</p>
@@ -564,7 +568,7 @@ export default function HomePage() {
       </section>
 
       {/* ── ŞEHİRLER (iç link — ana sayfadan şehir kümesine gerçek içerik linki) ── */}
-      <section className="py-12 sm:py-16 px-6 bg-[#080D18]">
+      <section className="py-12 sm:py-16 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 rounded-full px-4 py-1.5 mb-6">
             <MapPin size={13} className="text-blue-400" />
@@ -629,7 +633,7 @@ export default function HomePage() {
       </section>
 
       {/* ── FINAL CTA ────────────────────────────────────────────────────── */}
-      <section className="py-12 sm:py-16 px-6 bg-[#080D18]">
+      <section className="py-12 sm:py-16 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <FadeIn>
             <div className="relative bg-gradient-to-b from-blue-500/10 to-transparent border border-blue-500/20 rounded-3xl p-6 sm:p-10 md:p-16 overflow-hidden text-center">
@@ -660,6 +664,7 @@ export default function HomePage() {
           </FadeIn>
         </div>
       </section>
+      </div>
     </>
   )
 }
