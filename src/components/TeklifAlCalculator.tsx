@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { trackEvent } from '@/lib/tracking'
 import {
   ShoppingCart,
   MapPin,
@@ -247,6 +248,7 @@ export default function TeklifAlCalculator() {
         setResult((prev) => prev + decoder.decode(value))
       }
       setIsDone(true)
+      trackEvent('teklif_hesaplandi', { hizmet_sayisi: displayServices.length })
       window.fbq?.('track', 'Lead', { content_name: 'AI Teklif Al' })
     } catch {
       setResult('Bir hata oluştu. Lütfen tekrar deneyin.')

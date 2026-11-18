@@ -47,7 +47,7 @@ export default function WhatsAppLeadForm() {
 
     const msg = encodeURIComponent(lines.join('\n'))
     window.fbq?.('track', 'Lead', { content_name: 'WhatsApp Lead Form' })
-    trackLead()
+    trackLead('whatsapp_form')
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${msg}`, '_blank')
   }
 

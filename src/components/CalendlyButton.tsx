@@ -29,7 +29,7 @@ export default function CalendlyButton({
 }: CalendlyButtonProps) {
   const handleClick = () => {
     window.fbq?.('track', 'Contact', { content_name: label })
-    trackLead()
+    trackLead('whatsapp')
     const msg = encodeURIComponent(message)
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${msg}`, '_blank')
   }

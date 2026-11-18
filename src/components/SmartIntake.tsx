@@ -151,7 +151,7 @@ export default function SmartIntake({ lang = 'tr' }: { lang?: 'tr' | 'en' }) {
   }
 
   const openWhatsApp = () => {
-    trackLead()
+    trackLead('whatsapp_ai')
     const msg = encodeURIComponent(t.whatsappMessage(result?.message ?? '', input))
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${msg}`, '_blank')
   }

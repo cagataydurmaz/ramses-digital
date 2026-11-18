@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { trackLead } from '@/lib/tracking'
 import { Phone, Mail, Clock, Send, CheckCircle2, Loader2 } from 'lucide-react'
 
 const services = [
@@ -61,6 +62,7 @@ export default function ContactPage() {
         }),
       })
       if (res.ok) {
+        trackLead('iletisim_formu')
         setIsSubmitted(true)
       } else {
         alert('Mesaj gönderilemedi, lütfen tekrar deneyin.')

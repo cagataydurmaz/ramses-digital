@@ -8,7 +8,25 @@ declare global {
   }
 }
 
-export function trackLead() {
-  if (!LEAD_CONVERSION_LABEL || typeof window === 'undefined') return
-  window.gtag?.('event', 'conversion', { send_to: `${ADS_ID}/${LEAD_CONVERSION_LABEL}` })
+// Müşterinin bize ulaştığı yol. GA4'te "method" parametresi olarak görünür.
+export type LeadYontem =
+  | 'whatsapp'
+  | 'telefon'
+  | 'whatsapp_form'
+  | 'whatsapp_ai'
+  | 'iletisim_formu'
+
+// GA4'e etkinlik gönderir (sayfa yolu eklenir; hangi sayfanın müşteri getirdiği görülsün).
+export function trackEvent(ad: string, params: Record<string, unknown> = {}) {
+  if (typeof window === 'undefined') return
+  window.gtag?.('event', ad, { page_path: window.location.pathname, ...params })
+}
+
+// Gerçek iletişim talebi: GA4'te generate_lead + Google Ads dönüşümü.
+export function trackLead(yontem: LeadYontem) {
+  if (typeof window === 'undefined') return
+  trackEvent('generate_lead', { method: yontem })
+  if (LEAD_CONVERSION_LABEL) {
+    window.gtag?.('event', 'conversion', { send_to: `${ADS_ID}/${LEAD_CONVERSION_LABEL}` })
+  }
 }
