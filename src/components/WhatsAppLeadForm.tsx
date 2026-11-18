@@ -22,14 +22,13 @@ export default function WhatsAppLeadForm() {
   const [phone, setPhone] = useState('')
   const [interests, setInterests] = useState<string[]>([])
   const [note, setNote] = useState('')
-  const [kvkk, setKvkk] = useState(false)
   const [touched, setTouched] = useState(false)
 
   const toggleInterest = (id: string) => {
     setInterests((prev) => (prev.includes(id) ? prev.filter((i) => i !== id) : [...prev, id]))
   }
 
-  const isValid = name.trim() && phone.trim() && interests.length > 0 && kvkk
+  const isValid = name.trim() && phone.trim() && interests.length > 0
 
   const handleSubmit = () => {
     setTouched(true)
@@ -136,21 +135,6 @@ export default function WhatsAppLeadForm() {
             />
           </div>
 
-          <label className="flex items-start gap-2.5 mb-6 cursor-pointer">
-            <input
-              type="checkbox"
-              checked={kvkk}
-              onChange={(e) => setKvkk(e.target.checked)}
-              className="mt-0.5 w-4 h-4 rounded border-white/20 bg-[#111827] accent-blue-500 shrink-0"
-            />
-            <span className="text-zinc-400 text-sm">
-              <a href="/gizlilik-politikasi" className="text-blue-400 hover:text-blue-300 underline">
-                Gizlilik Politikası
-              </a>
-              &apos;nı okudum ve kabul ediyorum.
-            </span>
-          </label>
-          {touched && !kvkk && <p className="text-red-400 text-xs -mt-4 mb-4">Devam etmek için onaylamanız gerekiyor</p>}
 
           <button
             onClick={handleSubmit}
