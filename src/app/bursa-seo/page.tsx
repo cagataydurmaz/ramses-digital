@@ -10,12 +10,12 @@ import RelatedPages from '@/components/RelatedPages'
 import { MapPin, Search, ArrowRight, CheckCircle2, FileText, Link2, BarChart3, Zap, Award, TrendingUp } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Bursa SEO Ajansı | Bursa SEO Hizmeti — Ramses Dijital',
+  title: 'Bursa SEO Ajansı – Ücretsiz Site Analizi | Ramses Dijital',
   description:
-    'Bursa SEO ajansı: Bursa SEO hizmeti, yerel SEO, teknik SEO, Google ve yapay zekâ aramalarında görünürlük. Osmangazi, Nilüfer, Yıldırım ve İnegöl için ilçe bazlı strateji. Ücretsiz SEO analizi.',
+    "Bursa'da Google'da müşteri bulmak isteyen işletmelere SEO hizmeti. Ücretsiz site analizi, net fiyat, aylık şeffaf rapor, taahhüt yok. Google'da 5.0 puan.",
   alternates: { canonical: 'https://ramsesdigital.com/bursa-seo' },
   openGraph: {
-    title: 'Bursa SEO Ajansı | Ramses Dijital',
+    title: 'Bursa SEO Ajansı – Ücretsiz Site Analizi | Ramses Dijital',
     description: 'Bursa işletmeleri için yerel SEO, teknik SEO ve GEO/AEO optimizasyonu.',
     url: 'https://ramsesdigital.com/bursa-seo',
     images: ['https://ramsesdigital.com/og-image.png'],

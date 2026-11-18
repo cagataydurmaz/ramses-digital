@@ -10,12 +10,12 @@ import RelatedPages from '@/components/RelatedPages'
 import { MapPin, Search, ArrowRight, CheckCircle2, FileText, Link2, BarChart3, Zap, Award, TrendingUp } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Gaziantep SEO Ajansı | Gaziantep SEO Hizmeti — Ramses Dijital',
+  title: 'Gaziantep SEO Ajansı – Ücretsiz Site Analizi | Ramses Dijital',
   description:
-    'Gaziantep SEO ajansı: Gaziantep SEO hizmeti, yerel SEO, teknik SEO, Google ve yapay zekâ aramalarında görünürlük. Şahinbey, Şehitkamil ve Nizip için ilçe bazlı strateji. Ücretsiz SEO analizi.',
+    "Gaziantep'te Google'da müşteri bulmak isteyen işletmelere SEO hizmeti. Şahinbey ve Şehitkamil dahil; ücretsiz site analizi, net fiyat, aylık rapor, taahhüt yok.",
   alternates: { canonical: 'https://ramsesdigital.com/gaziantep-seo' },
   openGraph: {
-    title: 'Gaziantep SEO Ajansı | Ramses Dijital',
+    title: 'Gaziantep SEO Ajansı – Ücretsiz Site Analizi | Ramses Dijital',
     description: 'Gaziantep işletmeleri için yerel SEO, teknik SEO ve GEO/AEO optimizasyonu.',
     url: 'https://ramsesdigital.com/gaziantep-seo',
     images: ['https://ramsesdigital.com/og-image.png'],
