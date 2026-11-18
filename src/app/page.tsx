@@ -555,7 +555,7 @@ export default function HomePage() {
           <FadeIn className="text-center mb-10 sm:mb-12">
             <p className="text-blue-500 text-sm font-medium tracking-wider uppercase mb-3">Nasıl Çalışıyoruz</p>
             <h2 id="nasil-calisiyoruz" className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              4 Adımda Şeffaf Çalışma Süreci
+              Projeniz Nasıl İlerler?
             </h2>
             <p className="text-zinc-400 max-w-xl mx-auto">Kapsam, süre ve ücret çalışmaya başlamadan önce yazılı olarak netleşir.</p>
           </FadeIn>
