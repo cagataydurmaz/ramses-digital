@@ -25,6 +25,10 @@ import {
   ThumbsUp,
   Share2,
   MapPin,
+  MessageCircle,
+  FileText,
+  Rocket,
+  Star,
 } from 'lucide-react'
 
 // Bileşen kodu ayrı chunk olarak lazy-load edilir (bundle boyutu için) ama
@@ -199,6 +203,34 @@ const statColorMap: Record<string, { bg: string; bgHover: string; text: string }
 // Yorum verisi src/lib/reviews.ts'te; görünür yorum şeridi ReviewsMarquee'de.
 // Yorumlar için makine okunabilir şema (Review/AggregateRating) kullanılmaz.
 
+// Google İşletme Profili puanı — Google'da değiştikçe elle güncellenir (18 Kasım 2026: 5.0, 18 yorum).
+const GOOGLE_PUAN = '5.0'
+const GOOGLE_YORUM_SAYISI = 18
+const GOOGLE_YORUMLAR_URL = 'https://maps.app.goo.gl/xKzk4Q5VCeK4ePbz6'
+
+const surecAdimlari = [
+  {
+    icon: MessageCircle,
+    baslik: 'Ücretsiz görüşme',
+    aciklama: 'İşinizi ve hedefinizi 30 dakikada dinliyoruz. Taahhüt yok.',
+  },
+  {
+    icon: FileText,
+    baslik: 'Net teklif',
+    aciklama: 'Ne yapılacağı, süresi ve fiyatı yazılı olarak elinizde.',
+  },
+  {
+    icon: Rocket,
+    baslik: 'Kurulum ve yayın',
+    aciklama: 'Siteniz, SEO veya reklamlarınız kurulur, onayınızla yayına alınır.',
+  },
+  {
+    icon: BarChart3,
+    baslik: 'Aylık şeffaf rapor',
+    aciklama: 'Ziyaretçi, arama ve iletişim sayılarını her ay açıkça görürsünüz.',
+  },
+]
+
 // ─── Main Component ────────────────────────────────────────────────────────
 export default function HomePage() {
   return (
@@ -334,6 +366,23 @@ export default function HomePage() {
               Projelerimizi İncele
             </Link>
           </div>
+
+          {/* Google puanı — gerçek İşletme Profili verisi, tıklayınca yorumlar açılır */}
+          <a
+            href={GOOGLE_YORUMLAR_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-5 inline-flex items-center gap-2 text-sm text-zinc-400 hover:text-white transition-colors"
+            aria-label={`Google'da ${GOOGLE_PUAN} puan, ${GOOGLE_YORUM_SAYISI} yorum — yorumları gör`}
+          >
+            <span className="flex gap-0.5" aria-hidden="true">
+              {[0, 1, 2, 3, 4].map((i) => (
+                <Star key={i} size={15} className="fill-amber-400 text-amber-400" />
+              ))}
+            </span>
+            <span className="font-semibold text-white">{GOOGLE_PUAN}</span>
+            <span>· Google&apos;da {GOOGLE_YORUM_SAYISI} yorum</span>
+          </a>
 
           {/* ── AI Smart Intake ── */}
           <div
@@ -497,6 +546,38 @@ export default function HomePage() {
               <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
             </Link>
           </FadeIn>
+        </div>
+      </section>
+
+      {/* ── NASIL ÇALIŞIYORUZ (güven: süreç baştan belli) ────────────────── */}
+      <section aria-labelledby="nasil-calisiyoruz" className="py-12 sm:py-16 px-6">
+        <div className="max-w-6xl mx-auto">
+          <FadeIn className="text-center mb-10 sm:mb-12">
+            <p className="text-blue-500 text-sm font-medium tracking-wider uppercase mb-3">Nasıl Çalışıyoruz</p>
+            <h2 id="nasil-calisiyoruz" className="text-3xl sm:text-4xl font-bold text-white mb-4">
+              4 Adımda Şeffaf Çalışma Süreci
+            </h2>
+            <p className="text-zinc-400 max-w-xl mx-auto">Kapsam, süre ve ücret çalışmaya başlamadan önce yazılı olarak netleşir.</p>
+          </FadeIn>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
+            {surecAdimlari.map((a, i) => {
+              const Icon = a.icon
+              return (
+                <FadeIn key={a.baslik} delay={i * 0.08}>
+                  <div className="h-full bg-white/[0.02] border border-white/[0.14] rounded-2xl p-6 card-hover">
+                    <div className="flex items-center justify-between mb-4">
+                      <div className="w-10 h-10 rounded-xl bg-blue-500/10 flex items-center justify-center">
+                        <Icon size={18} className="text-blue-400" />
+                      </div>
+                      <span className="text-3xl font-bold text-white/10">{i + 1}</span>
+                    </div>
+                    <h3 className="text-white font-semibold text-lg mb-2">{a.baslik}</h3>
+                    <p className="text-zinc-400 text-sm leading-relaxed">{a.aciklama}</p>
+                  </div>
+                </FadeIn>
+              )
+            })}
+          </div>
         </div>
       </section>
 
