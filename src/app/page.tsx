@@ -203,9 +203,8 @@ const statColorMap: Record<string, { bg: string; bgHover: string; text: string }
 // Yorum verisi src/lib/reviews.ts'te; görünür yorum şeridi ReviewsMarquee'de.
 // Yorumlar için makine okunabilir şema (Review/AggregateRating) kullanılmaz.
 
-// Google İşletme Profili puanı — Google'da değiştikçe elle güncellenir (18 Kasım 2026: 5.0, 18 yorum).
+// Google İşletme Profili puanı — Google'da değiştikçe elle güncellenir (18 Kasım 2026: 5.0).
 const GOOGLE_PUAN = '5.0'
-const GOOGLE_YORUM_SAYISI = 18
 const GOOGLE_YORUMLAR_URL = 'https://maps.app.goo.gl/xKzk4Q5VCeK4ePbz6'
 
 const surecAdimlari = [
@@ -373,15 +372,15 @@ export default function HomePage() {
             target="_blank"
             rel="noopener noreferrer"
             className="mt-5 inline-flex items-center gap-2 text-sm text-zinc-400 hover:text-white transition-colors"
-            aria-label={`Google'da ${GOOGLE_PUAN} puan, ${GOOGLE_YORUM_SAYISI} yorum — yorumları gör`}
+            aria-label={`Google yorumlarında ${GOOGLE_PUAN}/5 puan — yorumları gör`}
           >
             <span className="flex gap-0.5" aria-hidden="true">
               {[0, 1, 2, 3, 4].map((i) => (
                 <Star key={i} size={15} className="fill-amber-400 text-amber-400" />
               ))}
             </span>
-            <span className="font-semibold text-white">{GOOGLE_PUAN}</span>
-            <span>· Google&apos;da {GOOGLE_YORUM_SAYISI} yorum</span>
+            <span className="font-semibold text-white">{GOOGLE_PUAN}/5</span>
+            <span>· Google Yorumu</span>
           </a>
 
           {/* ── AI Smart Intake ── */}
