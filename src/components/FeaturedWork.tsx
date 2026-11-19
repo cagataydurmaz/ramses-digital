@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowRight, ExternalLink } from 'lucide-react'
 import { projects } from '@/lib/portfolio'
+import KayanSerit from './KayanSerit'
 
 // Öne çıkan projeler için özel kısa özet; diğerlerinde portföydeki kategori yazılır.
 const OZET: Record<string, string> = {
@@ -58,8 +59,7 @@ function Kart({ p, gizli }: { p: Proje; gizli?: boolean }) {
   )
 }
 
-// Yorumlar şeridiyle aynı CSS döngüsü (globals.css .reviews-marquee*): JS gerektirmez,
-// üzerine gelince durur, "hareketi azalt" tercihinde elle kaydırılır.
+// Kendiliğinden kayan, dokunarak/kaydırarak da gezilebilen şerit (bkz. KayanSerit).
 export default function FeaturedWork() {
   return (
     <section aria-labelledby="canli-projeler" className="py-10 sm:py-14">
@@ -70,20 +70,18 @@ export default function FeaturedWork() {
         </h2>
       </div>
 
-      <div className="reviews-marquee" tabIndex={0} role="region" aria-label="Canlı projeler">
-        <div className="reviews-marquee-track" style={{ animationDuration: `${projects.length * 7}s` }}>
-          <div className="flex shrink-0">
-            {projects.map((p) => (
-              <Kart key={p.slug} p={p} />
-            ))}
-          </div>
-          <div className="flex shrink-0 reviews-marquee-dup" aria-hidden="true">
-            {projects.map((p) => (
-              <Kart key={`dup-${p.slug}`} p={p} gizli />
-            ))}
-          </div>
+      <KayanSerit sure={projects.length * 7} ariaLabel="Canlı projeler">
+        <div className="flex shrink-0">
+          {projects.map((p) => (
+            <Kart key={p.slug} p={p} />
+          ))}
         </div>
-      </div>
+        <div className="flex shrink-0" aria-hidden="true">
+          {projects.map((p) => (
+            <Kart key={`dup-${p.slug}`} p={p} gizli />
+          ))}
+        </div>
+      </KayanSerit>
 
       <div className="text-center mt-8 sm:mt-10 px-4">
         <Link

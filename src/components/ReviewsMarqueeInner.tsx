@@ -1,5 +1,6 @@
 import { Star, ExternalLink } from 'lucide-react'
 import { reviews } from '@/lib/reviews'
+import KayanSerit from './KayanSerit'
 
 const GOOGLE_REVIEWS_URL = 'https://maps.app.goo.gl/xKzk4Q5VCeK4ePbz6'
 
@@ -14,13 +15,11 @@ function GoogleGIcon({ size = 18 }: { size?: number }) {
   )
 }
 
-// Saf CSS kaydırma: içerik iki kez yinelenir, track translateX(-50%) ile kesintisiz
-// döngü yapar (bkz. globals.css.reviews-marquee*). JavaScript gerektirmez.
-// Fare/odak üzerine gelince durur; "prefers-reduced-motion" tercihinde animasyon
-// kapanır ve şerit yatay kaydırılabilir hale gelir.
+// İçerik iki kez verilir; KayanSerit kendiliğinden kaydırır, dokunarak da
+// kaydırılabilir, bırakınca otomatik kayma devam eder.
 function ReviewCards({ hidden = false }: { hidden?: boolean }) {
   return (
-    <div className={`flex shrink-0 ${hidden ? 'reviews-marquee-dup' : ''}`} aria-hidden={hidden || undefined}>
+    <div className="flex shrink-0" aria-hidden={hidden || undefined}>
       {reviews.map((r) => (
         <figure
           key={r.name}
@@ -71,12 +70,10 @@ export default function ReviewsMarqueeInner({ title = 'Müşterilerimiz Ne Diyor
           </div>
         </div>
 
-        <div className="reviews-marquee" tabIndex={0} role="region" aria-label="Müşteri yorumları">
-          <div className="reviews-marquee-track">
-            <ReviewCards />
-            <ReviewCards hidden />
-          </div>
-        </div>
+        <KayanSerit sure={60} ariaLabel="Müşteri yorumları">
+          <ReviewCards />
+          <ReviewCards hidden />
+        </KayanSerit>
 
         <div className="text-center mt-8">
           <a
