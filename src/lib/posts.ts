@@ -1,3 +1,5 @@
+import { kasim2026Postlari } from './postsKasim2026'
+
 export interface Post {
   slug: string
   title: string
@@ -141,7 +143,7 @@ export const posts: Post[] = [
   {
     slug: 'google-ads-tam-rehberi-2024',
     coverImage: 'https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=800&q=80&fit=crop',
-    title: 'Google Ads Tam Rehberi 2024',
+    title: 'Google Ads Tam Rehberi: Kampanya Türleri, Bütçe ve Optimizasyon',
     excerpt:
       "Google Ads kampanyalarınızdan maksimum ROI elde etmek için ihtiyaç duyduğunuz her şey: kampanya kurulumundan optimizasyona, bütçe yönetiminden dönüşüm takibine kadar.",
     category: 'Google Ads',
@@ -154,7 +156,12 @@ export const posts: Post[] = [
     authorRole: 'Google Ads Uzmanları',
     tags: ['Google Ads', 'PPC', 'ROI', 'Kampanya Optimizasyonu'],
     content: `
-      <h2>Google Ads Tam Rehberi 2024</h2>
+      <div class="callout">
+        <span class="callout-title">Fiyat ve bütçe arıyorsanız</span>
+        <p>Tıklama başı maliyet, aylık bütçe hesaplama ve ajans ücretleri için güncel <a href="/blog/google-ads-fiyatlari-2026">Google Ads Fiyatları 2026</a> rehberimize bakın.</p>
+      </div>
+
+      <h2>Google Ads Tam Rehberi</h2>
       <p>Google Ads, işletmelerin hedef kitlelerine doğrudan ulaşmasını sağlayan en güçlü dijital reklam platformlarından biridir. Doğru stratejilerle yönetildiğinde, her harcanan lira için birden fazla lira geri kazanmanız mümkündür. Bu kapsamlı rehberde, 2024 yılında Google Ads'ten maksimum verim almanın yollarını adım adım ele alacağız.</p>
 
       <div class="stat-grid">
@@ -3393,10 +3400,12 @@ export const posts: Post[] = [
           <tr><td>SEO Başlangıç Paketi</td><td>7.000-12.000₺ (tek seferlik)</td><td>20.000-35.000₺ (tek seferlik)</td><td>35.000-55.000₺ (tek seferlik)</td></tr>
           <tr><td>Google Ads (yönetim)</td><td>3.000-5.000₺/ay</td><td>8.000-15.000₺/ay</td><td>15.000-30.000₺/ay</td></tr>
           <tr><td>Google Ads Kurulum</td><td>8.000-10.000₺ (tek seferlik)</td><td>15.000-20.000₺ (tek seferlik)</td><td>25.000-35.000₺ (tek seferlik)</td></tr>
-          <tr><td>Sosyal Medya</td><td>5.000-8.000₺/ay</td><td>14.000-22.000₺/ay</td><td>22.000-35.000₺/ay</td></tr>
+          <tr><td>Sosyal Medya</td><td>8.000-14.000₺/ay</td><td>15.000-24.000₺/ay</td><td>25.000-38.000₺/ay</td></tr>
           <tr><td>Web Tasarım</td><td>15.000-40.000₺ (tek seferlik)</td><td>60.000-110.000₺ (tek seferlik)</td><td>130.000-250.000₺ (tek seferlik)</td></tr>
         </tbody>
       </table>
+
+      <p>Hizmet bazında ayrıntılı anlatım için: <a href="/blog/seo-fiyatlari-2026">SEO Fiyatları 2026</a>, <a href="/blog/google-ads-fiyatlari-2026">Google Ads Fiyatları 2026</a> ve <a href="/blog/web-sitesi-fiyatlari-2026">Web Sitesi Fiyatları 2026</a>.</p>
 
       <p>E-posta pazarlama ve veri analizi/danışmanlık gibi hizmetlerin kapsamı projeye göre çok değiştiği için sabit bir aralık yerine görüşme sonrası özel teklif veriyoruz. SEO için aylık yönetim yerine tek seferlik bir başlangıç istiyorsanız "SEO Başlangıç Paketi" bir denetim + kurulumdur, devam eden aylık takibi içermez.</p>
 
@@ -3818,4 +3827,5 @@ export const posts: Post[] = [
       <p>Kayseri'de yerel müşteriye ulaşmanın en hızlı yolu eksiksiz bir işletme profili, düzenli gerçek yorumlar ve hizmet başına net bir web sayfasıdır. Bu üçü birlikte çalıştığında harita ve organik sonuçlarda kalıcı görünürlük sağlar.</p>
     `,
   },
+  ...kasim2026Postlari,
 ]
