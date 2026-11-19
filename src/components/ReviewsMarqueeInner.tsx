@@ -48,8 +48,9 @@ function ReviewCards({ hidden = false }: { hidden?: boolean }) {
 
 export default function ReviewsMarqueeInner({ title = 'Müşterilerimiz Ne Diyor?' }: { title?: string }) {
   return (
-    <section className="relative py-12 sm:py-16 px-6 overflow-hidden">
-      <div className="relative max-w-7xl mx-auto">
+    <section className="relative py-12 sm:py-16 overflow-hidden">
+      {/* Başlık ortalı ve dar; şerit ise ekranın bir ucundan diğerine tam genişlik akar. */}
+      <div className="relative max-w-7xl mx-auto px-6">
         <div className="text-center mb-10">
           <p className="flex items-center justify-center gap-2 text-blue-500 text-sm font-medium tracking-wider uppercase mb-3">
             <GoogleGIcon size={16} />
@@ -69,12 +70,14 @@ export default function ReviewsMarqueeInner({ title = 'Müşterilerimiz Ne Diyor
             </span>
           </div>
         </div>
+      </div>
 
-        <KayanSerit sure={60} ariaLabel="Müşteri yorumları">
-          <ReviewCards />
-          <ReviewCards hidden />
-        </KayanSerit>
+      <KayanSerit sure={60} ariaLabel="Müşteri yorumları">
+        <ReviewCards />
+        <ReviewCards hidden />
+      </KayanSerit>
 
+      <div className="relative max-w-7xl mx-auto px-6">
         <div className="text-center mt-8">
           <a
             href={GOOGLE_REVIEWS_URL}
