@@ -136,6 +136,12 @@ body {
    translateX(-50%) ile kesintisiz döngü yapar. Fare/odak üzerine gelince durur.
    Sınıf adları "marquee" içerir: mobil animasyon sıfırlama kuralı (aşağıda)
    bu elemanları kapsam dışı bırakır. Bkz. ReviewsMarqueeInner.tsx */
+/* Hero yazı bloğunun arkasındaki koyu hale (bkz. page.tsx) — kenarları tamamen
+   saydama iner, görünür bir kutu oluşturmaz. */
+.hero-yazi-hale {
+  background: radial-gradient(closest-side, rgba(8,13,24,.78), rgba(8,13,24,.55) 55%, rgba(8,13,24,0) 100%);
+}
+
 .kayan-serit {
   overflow-x: auto;
   overflow-y: hidden;

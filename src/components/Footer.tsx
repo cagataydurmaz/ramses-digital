@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Phone, Mail, Instagram } from 'lucide-react'
+import { Phone, Mail, Instagram, MapPin, ChevronDown } from 'lucide-react'
 
 const services = [
   { label: 'SEO & İçerik Optimizasyonu', href: '/hizmetler/seo', hoverClass: 'hover:text-blue-400' },
@@ -102,6 +102,21 @@ const localPages = [
   { href: '/eskisehir-yazilim-ajansi', label: 'Eskişehir Yazılım Ajansı' },
 ]
 
+// Şehir sayfalarını şehir şehir grupla: "Kayseri SEO" → Kayseri / SEO.
+const sehirGruplari = localPages.reduce<[string, { href: string; sehir: string; hizmet: string }[]][]>(
+  (gruplar, page) => {
+    const genel = page.label.includes('(Türkiye Geneli)')
+    const sehir = genel ? 'Türkiye Geneli' : page.label.split(' ')[0]
+    const hizmet = genel ? page.label.replace(' (Türkiye Geneli)', '') : page.label.slice(sehir.length + 1)
+    const grup = gruplar.find(([ad]) => ad === sehir)
+    const oge = { href: page.href, sehir: genel ? '' : sehir, hizmet }
+    if (grup) grup[1].push(oge)
+    else gruplar.push([sehir, [oge]])
+    return gruplar
+  },
+  []
+)
+
 const foundingYear = 2019
 const currentYear = new Date().getFullYear()
 
@@ -195,22 +210,35 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Local SEO — İzmit/Kocaeli sayfalarına sitewide iç link */}
-        <div className="mt-12 pt-8 border-t border-white/[0.05]">
-          <h3 className="text-white font-semibold text-sm mb-4">Türkiye Geneli & İzmit/Kocaeli&apos;de Hizmetlerimiz</h3>
-          <div className="flex flex-wrap gap-x-5 gap-y-2">
-            {localPages.map((page) => (
-              <Link
-                key={page.href}
-                href={page.href}
-                prefetch={false}
-                className="text-zinc-500 hover:text-white text-xs transition-colors"
-              >
-                {page.label}
-              </Link>
+        {/* Şehir sayfaları — tek butonla açılır. Bağlantılar HTML'de her zaman var
+            (details kapalıyken de), Google tüm şehir sayfalarını görmeye devam eder. */}
+        <details className="group mt-12 pt-8 border-t border-white/[0.05]">
+          <summary className="list-none [&::-webkit-details-marker]:hidden cursor-pointer inline-flex items-center gap-2 border border-white/10 hover:border-white/20 rounded-full px-5 py-2.5 text-sm text-zinc-300 hover:text-white transition-colors select-none">
+            <MapPin size={14} className="text-blue-400" />
+            Hizmet Verdiğimiz Şehirler
+            <ChevronDown size={14} className="transition-transform group-open:rotate-180" />
+          </summary>
+          <div className="mt-6 grid lg:grid-cols-2 gap-x-12 gap-y-4">
+            {sehirGruplari.map(([sehir, sayfalar]) => (
+              <div key={sehir} className="sm:flex sm:gap-4">
+                <p className="text-zinc-300 text-xs font-semibold sm:w-28 shrink-0 mb-1.5 sm:mb-0">{sehir}</p>
+                <div className="flex flex-wrap gap-x-4 sm:gap-y-1.5">
+                  {sayfalar.map((sayfa) => (
+                    <Link
+                      key={sayfa.href}
+                      href={sayfa.href}
+                      prefetch={false}
+                      className="inline-flex items-center text-zinc-500 hover:text-white text-xs transition-colors"
+                    >
+                      {sayfa.sehir && <span className="sr-only">{sayfa.sehir} </span>}
+                      {sayfa.hizmet}
+                    </Link>
+                  ))}
+                </div>
+              </div>
             ))}
           </div>
-        </div>
+        </details>
 
         <div className="mt-10 pt-8 border-t border-white/[0.05] flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-zinc-400 text-sm">

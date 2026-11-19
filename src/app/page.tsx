@@ -323,65 +323,70 @@ export default function HomePage() {
         </div>
 
         <div className="relative z-10 max-w-5xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 rounded-full px-4 py-1.5 mb-6 sm:mb-10">
-            <span className="w-1.5 h-1.5 bg-blue-400 rounded-full animate-pulse" />
-            <span className="text-blue-400 text-xs font-medium tracking-wider uppercase">
-              Performans Odaklı Dijital Pazarlama
-            </span>
-          </div>
+          {/* Yazı bloğu: arkasında yumuşak koyu hale — video ışıkları yazının üstüne
+              gelince başlık/alt yazı okunur kalsın (mobil, tablet, masaüstü). */}
+          <div className="relative">
+            <div aria-hidden="true" className="hero-yazi-hale absolute -inset-x-6 -inset-y-12 sm:-inset-x-20 lg:-inset-x-32 -z-10 pointer-events-none" />
+            <div className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 rounded-full px-4 py-1.5 mb-6 sm:mb-10">
+              <span className="w-1.5 h-1.5 bg-blue-400 rounded-full animate-pulse" />
+              <span className="text-blue-400 text-xs font-medium tracking-wider uppercase">
+                Performans Odaklı Dijital Pazarlama
+              </span>
+            </div>
 
-          <h1
-            className="text-[2rem] xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.08] tracking-tight mb-6 sm:mb-8"
-            style={{ animationDelay: '0.05s' }}
-          >
-            Markanızı{' '}
-            <span className="gradient-text">Dijitalde</span>
-            <br />
-            Büyütün
-          </h1>
+            <h1
+              className="text-[2rem] xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.08] tracking-tight mb-6 sm:mb-8"
+              style={{ animationDelay: '0.05s' }}
+            >
+              Markanızı{' '}
+              <span className="gradient-text">Dijitalde</span>
+              <br />
+              Büyütün
+            </h1>
 
-          <p
-            className="text-base sm:text-xl md:text-2xl text-zinc-400 max-w-2xl mx-auto mb-8 sm:mb-10 font-light"
-            style={{ animationDelay: '0.1s' }}
-          >
-            Sessiz kalan marka, kaybolan markadır.
-          </p>
+            <p
+              className="text-base sm:text-xl md:text-2xl text-zinc-400 max-w-2xl mx-auto mb-8 sm:mb-10 font-light"
+              style={{ animationDelay: '0.1s' }}
+            >
+              Sessiz kalan marka, kaybolan markadır.
+            </p>
 
-          <div
-            className="flex flex-col sm:flex-row items-center justify-center gap-4"
-            style={{ animationDelay: '0.15s' }}
-          >
+            <div
+              className="flex flex-col sm:flex-row items-center justify-center gap-4"
+              style={{ animationDelay: '0.15s' }}
+            >
+              <a
+                href="#teklif-hesapla"
+                className="group inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 rounded-full font-medium transition-all hover:shadow-xl hover:shadow-blue-500/25 hover:-translate-y-0.5"
+              >
+                30 Saniyede Fiyat Teklifi Al
+                <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+              </a>
+              <Link
+                href="/portfolyo"
+                className="flex items-center gap-2 text-zinc-400 hover:text-white border border-white/10 hover:border-white/20 px-6 sm:px-8 py-3 sm:py-4 rounded-full text-sm sm:text-base transition-all hover:-translate-y-0.5"
+              >
+                Projelerimizi İncele
+              </Link>
+            </div>
+
+            {/* Google puanı — gerçek İşletme Profili verisi, tıklayınca yorumlar açılır */}
             <a
-              href="#teklif-hesapla"
-              className="group inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 rounded-full font-medium transition-all hover:shadow-xl hover:shadow-blue-500/25 hover:-translate-y-0.5"
+              href={GOOGLE_YORUMLAR_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-5 inline-flex items-center gap-2 text-sm text-zinc-400 hover:text-white transition-colors"
+              aria-label={`Google yorumlarında ${GOOGLE_PUAN}/5 puan — yorumları gör`}
             >
-              30 Saniyede Fiyat Teklifi Al
-              <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+              <span className="flex gap-0.5" aria-hidden="true">
+                {[0, 1, 2, 3, 4].map((i) => (
+                  <Star key={i} size={15} className="fill-amber-400 text-amber-400" />
+                ))}
+              </span>
+              <span className="font-semibold text-white">{GOOGLE_PUAN}/5</span>
+              <span>· Google Yorumu</span>
             </a>
-            <Link
-              href="/portfolyo"
-              className="flex items-center gap-2 text-zinc-400 hover:text-white border border-white/10 hover:border-white/20 px-6 sm:px-8 py-3 sm:py-4 rounded-full text-sm sm:text-base transition-all hover:-translate-y-0.5"
-            >
-              Projelerimizi İncele
-            </Link>
           </div>
-
-          {/* Google puanı — gerçek İşletme Profili verisi, tıklayınca yorumlar açılır */}
-          <a
-            href={GOOGLE_YORUMLAR_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-5 inline-flex items-center gap-2 text-sm text-zinc-400 hover:text-white transition-colors"
-            aria-label={`Google yorumlarında ${GOOGLE_PUAN}/5 puan — yorumları gör`}
-          >
-            <span className="flex gap-0.5" aria-hidden="true">
-              {[0, 1, 2, 3, 4].map((i) => (
-                <Star key={i} size={15} className="fill-amber-400 text-amber-400" />
-              ))}
-            </span>
-            <span className="font-semibold text-white">{GOOGLE_PUAN}/5</span>
-            <span>· Google Yorumu</span>
-          </a>
 
           {/* ── AI Smart Intake ── */}
           <div
