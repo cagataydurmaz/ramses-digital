@@ -62,7 +62,7 @@ function ArticleJsonLd({ post }: { post: (typeof posts)[0] }) {
     '@type': 'Article',
     headline: post.title,
     description: post.excerpt,
-    image: post.coverImage,
+    image: post.coverImage.startsWith('/') ? `https://ramsesdigital.com${post.coverImage}` : post.coverImage,
     datePublished: post.date,
     dateModified: post.date,
     author: {

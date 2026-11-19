@@ -143,15 +143,18 @@ body {
 }
 
 .kayan-serit {
-  overflow-x: auto;
-  overflow-y: hidden;
-  scrollbar-width: none;
-  overscroll-behavior-x: contain;
-  -webkit-overflow-scrolling: touch;
+  overflow: hidden;
+  touch-action: pan-y; /* yatay sürüklemeyi biz yönetiriz, dikey sayfa kaydırması serbest */
+  cursor: grab;
+  user-select: none;
+  -webkit-user-select: none;
   -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
   mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
 }
-.kayan-serit::-webkit-scrollbar { display: none; }
+.kayan-serit.surukleniyor { cursor: grabbing; }
+.kayan-serit.surukleniyor a { pointer-events: none; }
+.kayan-serit img { -webkit-user-drag: none; }
+.kayan-serit-iz { will-change: transform; }
 .kayan-serit:focus-visible { outline: 2px solid rgba(59,130,246,.5); outline-offset: 4px; }
 @media (max-width: 768px) {
   .kayan-serit {

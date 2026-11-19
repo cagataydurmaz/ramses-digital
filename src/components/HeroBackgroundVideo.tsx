@@ -1,16 +1,19 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 // Hero arka plan videosu — soyut, marka renklerinde döngü.
 // autoPlay/muted/playsInline yeterli olmadığı durumlarda (ör. iOS Düşük Güç
 // Modu, Veri Tasarrufu) bazı tarayıcılar otomatik oynatmayı engelleyip
 // poster üzerine tıklanabilir bir "oynat" ikonu gösteriyor — bu sadece
 // dekoratif bir arka plan olduğu için o buton kullanıcıya anlamsız görünüyor.
-// play() reddedilirse videoyu tamamen gizleyip düz degrade arka plana
-// düşüyoruz, böylece o buton hiçbir zaman görünmüyor.
+// Bu yüzden durağan kare (poster) ayrı bir katmanda HER ZAMAN görünür; video
+// görünmez başlar ve ancak gerçekten oynamaya başlayınca yumuşakça belirir.
+// Oynatma engellenirse video hiç görünmez, poster yerinde kalır — arka plan
+// hiçbir cihazda boş kalmaz ve "oynat" butonu çıkmaz.
 export default function HeroBackgroundVideo() {
   const videoRef = useRef<HTMLVideoElement>(null)
+  const [oynuyor, setOynuyor] = useState(false)
 
   useEffect(() => {
     const video = videoRef.current
@@ -26,8 +29,9 @@ export default function HeroBackgroundVideo() {
     const baslat = () => {
       video.src = mobil ? '/video/hero-bg-mobile.mp4' : '/video/hero-bg.mp4'
       video.muted = true
+      video.addEventListener('playing', () => setOynuyor(true), { once: true })
       video.play()?.catch(() => {
-        video.style.display = 'none'
+        video.style.display = 'none' // poster katmanı görünür kalır
       })
       // Hero görünmüyorken videoyu durdur — aşağıda kaydırırken GPU/CPU boşa gitmesin.
       io = new IntersectionObserver(([entry]) => {
@@ -51,15 +55,21 @@ export default function HeroBackgroundVideo() {
   }, [])
 
   return (
-    <video
-      ref={videoRef}
-      className="hero-bg-video absolute inset-0 w-full h-full object-cover mix-blend-screen pointer-events-none"
-      muted
-      loop
-      playsInline
-      preload="none"
-      poster="/video/hero-bg-poster.jpg"
-      aria-hidden="true"
-    />
+    <>
+      <div
+        aria-hidden="true"
+        className={`absolute inset-0 bg-cover bg-center mix-blend-screen pointer-events-none transition-opacity duration-700 ${oynuyor ? 'opacity-0' : 'opacity-100'}`}
+        style={{ backgroundImage: "url('/video/hero-bg-poster.jpg')" }}
+      />
+      <video
+        ref={videoRef}
+        className={`hero-bg-video absolute inset-0 w-full h-full object-cover mix-blend-screen pointer-events-none transition-opacity duration-700 ${oynuyor ? 'opacity-100' : 'opacity-0'}`}
+        muted
+        loop
+        playsInline
+        preload="none"
+        aria-hidden="true"
+      />
+    </>
   )
 }
