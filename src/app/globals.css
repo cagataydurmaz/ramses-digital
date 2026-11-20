@@ -434,3 +434,8 @@ html { -webkit-text-size-adjust: 100%; text-rendering: optimizeLegibility; }
     linear-gradient(180deg, #080D18 0%, #0A0F1E 12%, #0A0F1E 88%, #080D18 100%);
   background-repeat: no-repeat;
 }
+
+/* Mobil alt iletişim çubuğu içeriğin üstüne binmesin (bkz. MobileContactBar) */
+@media (max-width: 767px) {
+  body { padding-bottom: calc(3.75rem + env(safe-area-inset-bottom)); }
+}

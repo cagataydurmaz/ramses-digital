@@ -11,6 +11,7 @@ import LeadTracker from '@/components/LeadTracker'
 // Lazy-load widget'lar — first paint'i engellemez
 const WhatsAppButton = dynamic(() => import('@/components/WhatsAppButton'), { ssr: false })
 const PhoneButton = dynamic(() => import('@/components/PhoneButton'), { ssr: false })
+const MobileContactBar = dynamic(() => import('@/components/MobileContactBar'), { ssr: false })
 
 const inter = Inter({
   subsets: ['latin'],
@@ -88,6 +89,7 @@ export default function RootLayout({
         <Footer />
         <WhatsAppButton />
         <PhoneButton />
+        <MobileContactBar />
         <LeadTracker />
         {/* Google Analytics GA4 */}
         <Script

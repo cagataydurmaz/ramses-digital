@@ -46,7 +46,7 @@ export default function WhatsAppButton() {
           exit={{ opacity: 0, y: 8, scale: 0.9 }}
           transition={{ duration: 0.25, ease: 'easeOut' }}
           role="status"
-          className="fixed bottom-[26px] right-[84px] sm:bottom-[34px] sm:right-[92px] z-40 bg-white text-[#0A0F1E] text-sm font-semibold rounded-2xl px-4 py-2.5 shadow-2xl whitespace-nowrap"
+          className="hidden md:block fixed bottom-[34px] right-[92px] z-40 bg-white text-[#0A0F1E] text-sm font-semibold rounded-2xl px-4 py-2.5 shadow-2xl whitespace-nowrap"
         >
           Hemen fiyat al 💬
           <span
@@ -65,7 +65,7 @@ export default function WhatsAppButton() {
       transition={{ delay: 0.6, duration: 0.4, ease: 'easeOut' }}
       whileHover={{ scale: 1.06 }}
       whileTap={{ scale: 0.95 }}
-      className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-40 w-14 h-14 rounded-full flex items-center justify-center shadow-2xl transition-shadow hover:shadow-[0_0_24px_rgba(37,211,102,0.45)]"
+      className="hidden md:flex fixed bottom-6 right-6 z-40 w-14 h-14 rounded-full items-center justify-center shadow-2xl transition-shadow hover:shadow-[0_0_24px_rgba(37,211,102,0.45)]"
       style={{ background: '#25D366' }}
       aria-label="WhatsApp ile iletişime geç"
     >
