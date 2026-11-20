@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import CitySeoSections from '@/components/CitySeoSections'
 import { sehirSeo } from '@/lib/sehirSeo'
-import SeoPriceTable from '@/components/SeoPriceTable'
+import SehirTeklifBolumu from '@/components/SehirTeklifBolumu'
 import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
@@ -195,7 +195,7 @@ export default function IzmirSeoPage() {
 
       <ReviewsMarquee />
 
-      <SeoPriceTable place="İzmir" />
+      <SehirTeklifBolumu place="İzmir" />
 
       <RelatedPages
         pages={[

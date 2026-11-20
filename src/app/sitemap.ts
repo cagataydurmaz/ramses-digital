@@ -2,6 +2,7 @@ import { MetadataRoute } from 'next'
 import { posts } from '@/lib/posts'
 import { projects } from '@/lib/portfolio'
 import { ilceler } from '@/lib/ilceler'
+import { ilSeo } from '@/lib/ilSeo'
 
 // Google lastmod'u yalnızca tutarlı ve doğrulanabilir biçimde doğruysa kullanır;
 // priority/changefreq yok sayılır. Gerçek değişiklik tarihi bilinmeyen sayfalara
@@ -127,5 +128,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${base}/portfolyo/${p.slug}`,
   }))
 
-  return [...statics, ...ilcePages, ...blogPages, ...caseStudyPages]
+  const ilSeoPages = ilSeo.map((i) => ({ url: `${base}/${i.slug}-seo` }))
+
+  return [...statics, ...ilSeoPages, ...ilcePages, ...blogPages, ...caseStudyPages]
 }

@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import CitySeoSections from '@/components/CitySeoSections'
 import { sehirSeo } from '@/lib/sehirSeo'
-import SeoPriceTable from '@/components/SeoPriceTable'
+import SehirTeklifBolumu from '@/components/SehirTeklifBolumu'
 import SeoChecklist from '@/components/SeoChecklist'
 import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
@@ -181,7 +181,7 @@ export default function EskisehirSeoPage() {
 
       <ReviewsMarquee />
 
-      <SeoPriceTable place="Eskişehir" />
+      <SehirTeklifBolumu place="Eskişehir" />
 
       <SeoChecklist
         title="Eskişehir'de SEO Firması Seçerken Neye Bakmalı?"

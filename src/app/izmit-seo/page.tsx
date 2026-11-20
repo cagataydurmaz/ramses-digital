@@ -6,8 +6,7 @@ import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
 import SeoChecklist from '@/components/SeoChecklist'
-import SeoPriceTable from '@/components/SeoPriceTable'
-import { pricing } from '@/lib/pricing'
+import SehirTeklifBolumu from '@/components/SehirTeklifBolumu'
 import { MapPin, Search, ArrowRight, CheckCircle2, FileText, Link2, BarChart3, Zap, Award, TrendingUp } from 'lucide-react'
 
 export const metadata: Metadata = {
@@ -23,8 +22,6 @@ export const metadata: Metadata = {
   },
 }
 
-const fmt = (n: number) => n.toLocaleString('tr-TR')
-const range = (service: string, size: 'kucuk' | 'orta' | 'buyuk' = 'kucuk') => `${fmt(pricing[service][size].min)}–${fmt(pricing[service][size].max)} ₺`
 
 const features = [
   { icon: Search, title: 'Yerel SEO & Google Business', desc: '"İzmit + hizmetiniz" aramalarında harita paketine girin. GBP optimizasyonu, yerel dizinler, müşteri yorum stratejisi.' },
@@ -43,7 +40,7 @@ const results = [
 ]
 
 const faqs = [
-  { q: 'İzmit SEO fiyatları ve SEO paketleri nelerdir?', a: `Fiyat işletme büyüklüğüne ve kapsama göre değişir. Tek seferlik SEO Başlangıç Paketi küçük işletmeler için ${range('SEO Başlangıç Paketi')}, aylık SEO ise küçük işletmelerde ${range('SEO')} / ay civarında başlar. Yukarıdaki tablodan kendi işletmenize uygun paketi görebilir, teklif aracımızla aralığınızı hesaplayabilirsiniz.` },
+  { q: 'İzmit SEO fiyatları ve SEO paketleri nelerdir?', a: 'Fiyat işletme büyüklüğüne, sektördeki rekabete ve hedeflenen bölgeye göre değişir. Sayfadaki AI teklif hesaplayıcı ile işletmenize özel tahmini teklifi hemen görebilirsiniz; kesin fiyat ücretsiz site analizinden sonra netleşir.' },
   { q: 'İzmit\'te kurumsal SEO ile yerel SEO arasındaki fark nedir?', a: 'Yerel SEO, "İzmit + hizmet" aramalarında Google haritasında ve sonuçlarda görünmeyi hedefler; psikolog, avukat, klinik ya da oto servis gibi tek lokasyonlu işletmeler için uygundur. Kurumsal SEO ise çok hizmetli, B2B ya da çok lokasyonlu firmalarda ürün/hizmet sayfası mimarisi, teknik altyapı ve güven içeriklerine odaklanır.' },
   { q: 'İzmit\'te SEO ne kadar sürede sonuç verir?', a: 'Google Business Profile ve yerel harita için 2-4 hafta içinde iyileşme görülür. Organik web sitesi sıralamaları 3-6 ay içinde belirginleşir. Rakibinize ve anahtar kelime rekabetine göre tam etki 6-12 ayda ortaya çıkar. Sabırsızlar için Google Ads\'i paralelde yürütmek önerilir.' },
   { q: 'İzmit\'te SEO maliyeti ne kadar?', a: 'İşletme büyüklüğüne ve kapsama göre değişir. Her paket: teknik audit, anahtar kelime stratejisi, aylık içerik üretimi, backlink çalışması, GBP yönetimi ve aylık raporlama içerir. Ücretsiz danışmanlıkta işletmenize özel fiyat sunulur.' },
@@ -214,7 +211,7 @@ export default function IzmitSeoPage() {
         </div>
       </section>
 
-      <SeoPriceTable place="İzmit" />
+      <SehirTeklifBolumu place="İzmit" />
 
       <SeoChecklist
         title="İzmit'te SEO Firması Seçerken Neye Bakmalı?"

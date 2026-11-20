@@ -2,6 +2,7 @@ import { readFileSync } from 'fs'
 import { join } from 'path'
 import { posts } from '@/lib/posts'
 import { projects } from '@/lib/portfolio'
+import { ilSeo } from '@/lib/ilSeo'
 
 // llms.txt — yapay zekâ araçları (ChatGPT, Claude, Perplexity vb.) için site özeti.
 // Sabit kısım src/content/llms-temel.md'de; blog yazıları ve portföy her derlemede
@@ -17,6 +18,10 @@ export function GET() {
     .map((p) => `- [${p.name}](${SITE}/portfolyo/${p.slug}): ${p.industry} — ${p.category}`)
     .join('\n')
 
+  const iller = ilSeo
+    .map((i) => `- [${i.ad} SEO](${SITE}/${i.slug}-seo): ${i.ozet}`)
+    .join('\n')
+
   const blog = [...posts]
     .sort((a, b) => b.date.localeCompare(a.date))
     .map((p) => `- [${p.title}](${SITE}/blog/${p.slug}): ${p.excerpt.replace(/\s+/g, ' ').trim()}`)
@@ -25,6 +30,10 @@ export function GET() {
   // "## Optional" bölümü llms.txt kuralına göre en sonda kalmalı; yeni bölümler onun önüne girer.
   const [ana, opsiyonel = ''] = temel.split('\n## Optional')
   const metin = `${ana.trimEnd()}
+
+## Diğer İl ve İlçeler (uzaktan hizmet)
+
+${iller}
 
 ## Portföy (canlı müşteri projeleri)
 

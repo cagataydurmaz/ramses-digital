@@ -6,8 +6,7 @@ import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
 import SeoChecklist from '@/components/SeoChecklist'
-import SeoPriceTable from '@/components/SeoPriceTable'
-import { pricing } from '@/lib/pricing'
+import SehirTeklifBolumu from '@/components/SehirTeklifBolumu'
 import { MapPin, Search, ArrowRight, CheckCircle2, FileText, Link2, BarChart3, Zap, Award, TrendingUp } from 'lucide-react'
 
 export const metadata: Metadata = {
@@ -23,8 +22,6 @@ export const metadata: Metadata = {
   },
 }
 
-const fmt = (n: number) => n.toLocaleString('tr-TR')
-const range = (service: string, size: 'kucuk' | 'orta' | 'buyuk' = 'kucuk') => `${fmt(pricing[service][size].min)}–${fmt(pricing[service][size].max)} ₺`
 
 const features = [
   { icon: Search, title: 'Kocaeli Yerel SEO', desc: '"Kocaeli + hizmetiniz" ve "İzmit + hizmetiniz" aramalarında Google harita paketine girin. İlçe bazlı anahtar kelime stratejisi.' },
@@ -48,7 +45,7 @@ const ilceStratejileri = [
 
 const faqs = [
   { q: 'Kocaeli SEO uzmanı ile SEO ajansı arasındaki fark nedir?', a: 'SEO uzmanı genellikle tek kişidir ve çoğunlukla teknik ya da içerik tarafına odaklanır. SEO ajansı ise teknik SEO, içerik, yerel görünürlük, raporlama ve gerektiğinde web geliştirmeyi bir arada yürütür. Küçük bir yerel işletme için iyi çalışan tek kişilik bir uzman da yeterli olabilir; çok hizmetli ya da çok ilçeli işletmelerde ajans yapısı daha sürdürülebilir olur. Önemli olan kimin yaptığından çok neyi, nasıl ölçerek yaptığıdır.' },
-  { q: 'Kocaeli SEO paketleri ve İzmit SEO fiyatları ne kadar?', a: `Fiyat işletme büyüklüğüne ve kapsama göre değişir. Tek seferlik SEO Başlangıç Paketi küçük işletmeler için ${range('SEO Başlangıç Paketi')} aralığında, aylık SEO ise küçük işletmelerde ${range('SEO')} / ay civarında başlar. Çoklu ilçe sayfası gibi geniş kapsamlı işler ayrı teklif gerektirir. Kendi aralığınızı teklif aracımızdan hesaplayabilir ya da ücretsiz görüşmede netleştirebilirsiniz.` },
+  { q: 'Kocaeli SEO paketleri ve İzmit SEO fiyatları ne kadar?', a: 'Fiyat işletme büyüklüğüne, sektördeki rekabete ve hedeflenen bölgeye göre değişir. Sayfadaki AI teklif hesaplayıcı ile işletmenize özel tahmini teklifi hemen görebilirsiniz; kesin fiyat ücretsiz site analizinden sonra netleşir.' },
   { q: 'Kurumsal SEO nedir, Kocaeli firmaları için ne zaman gerekir?', a: 'Kurumsal SEO; birden fazla hizmeti, ürün grubunu ya da yöneticisi olan, satın alma kararı birden çok kişiden geçen firmalar için kurgulanan SEO çalışmasıdır. Kocaeli\'ndeki üretici, tedarikçi ve B2B firmalarında ürün/hizmet sayfası yapısı, teknik altyapı, referans ve güven içerikleri öne çıkar. Tek lokasyonlu, tek hizmetli bir esnaf için yerel SEO çoğu zaman yeterlidir.' },
   { q: 'Kocaeli\'de SEO hizmeti neden önemli?', a: 'Kocaeli, Türkiye\'nin en büyük sanayi ve ticaret merkezlerinden biri. İzmit, Gebze ve Darıca\'da yoğun ticari rekabet var. Google\'da "Kocaeli [hizmet]" veya "İzmit [hizmet]" aramasında üst sırada çıkmak, rakipler arası farkındalık yaratmanın en düşük maliyetli ve sürdürülebilir yolu.' },
   { q: 'Kocaeli\'nin farklı ilçeleri için ayrı SEO çalışması gerekiyor mu?', a: 'Kocaeli içinde ilçe bazlı arama hacimleri farklı. "Gebze avukat" ile "İzmit avukat" farklı kitleler ve farklı rekabet seviyeleri demek. Etki alanınıza göre her ilçe için ayrı açılış sayfası ve GBP girişi oluşturmak yerel SEO\'da büyük avantaj sağlar.' },
@@ -225,7 +222,7 @@ export default function KocaeliSeoPage() {
         </div>
       </section>
 
-      <SeoPriceTable place="Kocaeli" />
+      <SehirTeklifBolumu place="Kocaeli" />
 
       <SeoChecklist
         title="Kocaeli'de SEO Ajansı ya da Uzmanı Seçerken Kontrol Listesi"

@@ -4,7 +4,7 @@ import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
 import SeoChecklist from '@/components/SeoChecklist'
-import SeoPriceTable from '@/components/SeoPriceTable'
+import SehirTeklifBolumu from '@/components/SehirTeklifBolumu'
 import { MapPin, Search, ArrowRight, CheckCircle2, FileText, Link2, BarChart3, Zap, Award, TrendingUp } from 'lucide-react'
 
 export const metadata: Metadata = {
@@ -249,7 +249,7 @@ export default function IstanbulSeoPage() {
         </div>
       </section>
 
-      <SeoPriceTable place="İstanbul" />
+      <SehirTeklifBolumu place="İstanbul" />
 
       <section className="py-20 px-6">
         <div className="max-w-3xl mx-auto">

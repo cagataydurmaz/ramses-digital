@@ -31,13 +31,13 @@ const features = [
 const packages = [
   {
     name: 'Başlangıç',
-    price: '15.000',
+    price: 'Teklif Alın',
     desc: 'Yerel hizmet işletmeleri için',
     items: ['5 sayfa', 'Mobil uyumlu', 'SEO temel kurulum', 'İletişim formu', 'Google Analytics', '1 ay destek'],
   },
   {
     name: 'Kurumsal',
-    price: '25.000',
+    price: 'Teklif Alın',
     desc: 'Büyüyen KOBİ\'ler için',
     items: ['10 sayfa', 'Blog sistemi', 'Gelişmiş SEO', 'WhatsApp entegrasyonu', 'Hız optimizasyonu', '3 ay destek'],
     highlight: true,

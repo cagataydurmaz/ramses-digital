@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { ilSeo } from '@/lib/ilSeo'
 import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import { MapPin, ArrowRight, TrendingUp, Search, Megaphone, Globe, Sparkles, Code2 } from 'lucide-react'
@@ -131,6 +132,25 @@ export default function SehirlerPage() {
           <Link href="/ilceler" prefetch={false} className="text-blue-400 text-sm font-medium flex items-center gap-1.5 shrink-0">
             Bölgeleri Gör <ArrowRight size={13} />
           </Link>
+        </div>
+      </section>
+
+      <section className="pb-16 px-6">
+        <div className="max-w-6xl mx-auto bg-[#0D1225] border border-white/[0.06] rounded-2xl p-6">
+          <h2 className="text-white font-semibold text-lg mb-1">Diğer İl ve İlçeler</h2>
+          <p className="text-zinc-400 text-sm mb-4">Uzaktan hizmet verdiğimiz diğer il ve ilçeler için SEO sayfaları.</p>
+          <div className="flex flex-wrap gap-2">
+            {ilSeo.map((il) => (
+              <Link
+                key={il.slug}
+                href={`/${il.slug}-seo`}
+                prefetch={false}
+                className="text-xs bg-white/[0.04] hover:bg-blue-500/10 border border-white/[0.06] hover:border-blue-500/30 text-zinc-400 hover:text-blue-400 rounded-full px-3 py-1.5 transition-all"
+              >
+                {il.ad} SEO
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 
