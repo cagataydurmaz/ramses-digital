@@ -1,13 +1,6 @@
 import type { Post } from './posts'
-import { pricing, type BusinessSize } from './pricing'
 
-// Kasım 2026 blog yazıları. Fiyatlar pricing.ts'den gelir — teklif hesaplayıcıyla
-// her zaman aynı kalsın, fiyat değişince yazılar da kendiliğinden güncellensin.
-const tl = (n: number) => n.toLocaleString('tr-TR')
-const aralik = (hizmet: string, boy: BusinessSize) => {
-  const p = pricing[hizmet][boy]
-  return `${tl(p.min)}–${tl(p.max)}₺`
-}
+// Kasım 2026 blog yazıları. Sitede açık fiyat yazılmaz; fiyat için AI teklif hesaplayıcıya yönlendirilir.
 
 const YAZAR = 'Ramses Digital Ekibi'
 const TARIH = '2026-11-19'
@@ -19,7 +12,7 @@ export const kasim2026Postlari: Post[] = [
     coverImage: 'https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=1200&q=80&fit=crop',
     title: 'SEO Fiyatları 2026: Aylık SEO Hizmeti Ne Kadar?',
     excerpt:
-      'Aylık SEO hizmeti fiyatları işletme büyüklüğüne göre ne kadar, fiyata neler dahil, tek seferlik SEO paketi ile aylık SEO arasındaki fark ne? Güncel fiyat aralıkları ve ucuz SEO tuzakları.',
+      'Aylık SEO hizmeti fiyatı neye göre belirlenir, fiyata neler dahil, tek seferlik SEO paketi ile aylık SEO arasındaki fark ne? Fiyatı belirleyen etkenler ve ucuz SEO tuzakları.',
     category: 'SEO',
     categoryColor: 'blue',
     emoji: '💰',
@@ -32,36 +25,14 @@ export const kasim2026Postlari: Post[] = [
     content: `
       <div class="callout">
         <span class="callout-title">Kısa cevap</span>
-        <p>2026'da aylık SEO hizmeti bizde küçük işletmeler için <strong>${aralik('SEO', 'kucuk')}</strong>, orta ölçekli işletmeler için <strong>${aralik('SEO', 'orta')}</strong>, büyük/kurumsal firmalar için <strong>${aralik('SEO', 'buyuk')}</strong> aralığındadır (aylık, KDV hariç). Aylık takip istemeyenler için tek seferlik SEO Başlangıç Paketi ${aralik('SEO Başlangıç Paketi', 'kucuk')}'den başlar.</p>
+        <p>SEO fiyatı tek bir rakam değildir; sektörünüzdeki rekabete, hedeflediğiniz bölgeye, sitenizin bugünkü durumuna ve aylık içerik ihtiyacına göre değişir. İşletmenize özel tahmini teklifi <strong><a href="/teklif-al">AI Teklif Hesaplayıcı</a></strong> ile 30 saniyede görebilirsiniz.</p>
       </div>
 
       <h2>SEO Fiyatları Neden Bu Kadar Farklı?</h2>
-      <p>"SEO ne kadar?" diye aradığınızda aylık birkaç bin liradan on binlerce liraya kadar rakam görürsünüz. Bunun sebebi aynı adın çok farklı işleri anlatmasıdır: Bir ajans için SEO sadece başlık ve açıklama düzeltmektir, bir başkası için içerik üretimi, teknik altyapı, yerel SEO ve aylık raporlamanın tamamıdır. Bu yazıda kendi güncel fiyat aralıklarımızı ve bu aralığı neyin belirlediğini açıkça paylaşıyoruz.</p>
+      <p>"SEO ne kadar?" diye aradığınızda aylık birkaç bin liradan on binlerce liraya kadar rakam görürsünüz. Bunun sebebi aynı adın çok farklı işleri anlatmasıdır: Bir ajans için SEO sadece başlık ve açıklama düzeltmektir, bir başkası için içerik üretimi, teknik altyapı, yerel SEO ve aylık raporlamanın tamamıdır. Bu yazıda SEO fiyatını neyin belirlediğini ve teklif alırken nelere dikkat etmeniz gerektiğini anlatıyoruz.</p>
 
-      <div class="stat-grid">
-        <div class="stat-card">
-          <span class="stat-number">${aralik('SEO', 'kucuk')}</span>
-          <span class="stat-label">Küçük işletme, aylık</span>
-        </div>
-        <div class="stat-card">
-          <span class="stat-number emerald">${aralik('SEO', 'orta')}</span>
-          <span class="stat-label">Orta işletme, aylık</span>
-        </div>
-        <div class="stat-card">
-          <span class="stat-number violet">${aralik('SEO', 'buyuk')}</span>
-          <span class="stat-label">Büyük / kurumsal, aylık</span>
-        </div>
-      </div>
-
-      <h2>Güncel SEO Fiyat Tablosu (2026)</h2>
-      <table>
-        <thead><tr><th>Paket</th><th>Küçük İşletme</th><th>Orta İşletme</th><th>Büyük / Kurumsal</th></tr></thead>
-        <tbody>
-          <tr><td><strong>Aylık SEO</strong> (sürekli takip)</td><td>${aralik('SEO', 'kucuk')}/ay</td><td>${aralik('SEO', 'orta')}/ay</td><td>${aralik('SEO', 'buyuk')}/ay</td></tr>
-          <tr><td><strong>SEO Başlangıç Paketi</strong> (tek seferlik)</td><td>${aralik('SEO Başlangıç Paketi', 'kucuk')}</td><td>${aralik('SEO Başlangıç Paketi', 'orta')}</td><td>${aralik('SEO Başlangıç Paketi', 'buyuk')}</td></tr>
-        </tbody>
-      </table>
-      <p>Rakamlar KDV hariçtir ve tek bir web sitesi içindir. Kesin fiyat, sitenizi inceleyip kapsamı netleştirdikten sonra verilir. Kendi işletmenize göre tahmini fiyatı <a href="/teklif-al">AI Teklif Hesaplayıcı</a> ile 30 saniyede görebilirsiniz.</p>
+      <h2>Kendi SEO Teklifinizi Hesaplayın</h2>
+      <p>İşletme türünüzü, büyüklüğünüzü ve istediğiniz hizmetleri seçin; <a href="/teklif-al">AI Teklif Hesaplayıcı</a> size özel tahmini paketi ve fiyat aralığını 4 adımda göstersin. Kesin teklif, sitenizi inceleyip kapsamı netleştirdikten sonra verilir.</p>
 
       <h2>Aylık SEO mu, Tek Seferlik Paket mi?</h2>
       <table>
@@ -110,9 +81,6 @@ export const kasim2026Postlari: Post[] = [
 
       <h2>Sık Sorulan Sorular</h2>
 
-      <h3>SEO fiyatlarına KDV dahil mi?</h3>
-      <p>Hayır, tablodaki tüm rakamlar KDV hariçtir.</p>
-
       <h3>Sadece birkaç ay SEO yaptırıp bırakabilir miyim?</h3>
       <p>Bırakabilirsiniz; yapılan teknik düzeltmeler ve içerikler sitenizde kalır. Ancak rakipler çalışmaya devam ettiği için sıralamalar zamanla gerileyebilir. Kısa süreli bir çalışma düşünüyorsanız tek seferlik SEO Başlangıç Paketi daha uygun olabilir.</p>
 
@@ -133,7 +101,7 @@ export const kasim2026Postlari: Post[] = [
     coverImage: 'https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=1200&q=80&fit=crop',
     title: 'Google Ads Fiyatları 2026: Tıklama Başı Maliyet ve Bütçe Rehberi',
     excerpt:
-      'Google Ads reklam maliyeti nasıl oluşur, tıklama başı maliyet nasıl hesaplanır, aylık bütçe ne olmalı ve ajans ücreti ne kadar? Formüllü bütçe hesaplama ve boşa harcamayı önleme listesi.',
+      'Google Ads reklam maliyeti nasıl oluşur, tıklama başı maliyet nasıl hesaplanır, aylık bütçe ne olmalı ve ajans ücreti nasıl belirlenir? Formüllü bütçe hesaplama ve boşa harcamayı önleme listesi.',
     category: 'Google Ads',
     categoryColor: 'orange',
     emoji: '📢',
@@ -146,22 +114,21 @@ export const kasim2026Postlari: Post[] = [
     content: `
       <div class="callout">
         <span class="callout-title">Kısa cevap</span>
-        <p>Google Ads'in toplam maliyeti üç parçadan oluşur: <strong>(1)</strong> doğrudan Google'a ödenen reklam bütçesi (tutarı siz belirlersiniz, Google'ın zorunlu bir alt sınırı yoktur), <strong>(2)</strong> ajansın aylık yönetim ücreti (bizde küçük işletmeler için ${aralik('Google Ads', 'kucuk')}/ay) ve <strong>(3)</strong> reklam bütçesinin %15'i oranında yönetim payı. İlk ay yönetim ücreti yerine tek seferlik kurulum ücreti alınır.</p>
+        <p>Google Ads'in maliyeti iki parçadan oluşur: <strong>(1)</strong> doğrudan Google'a ödenen reklam bütçesi (tutarı siz belirlersiniz, Google'ın zorunlu bir alt sınırı yoktur) ve <strong>(2)</strong> kampanyayı kuran ve yöneten ajansın ücreti. Ajans ücreti işletmenize ve kampanya kapsamına göre değişir; tahmini teklifi <a href="/teklif-al">AI Teklif Hesaplayıcı</a> ile görebilirsiniz.</p>
       </div>
 
       <h2>Google Ads'te Para Nereye Gider?</h2>
       <p>Google Ads'te karışıklığın çoğu, iki ayrı ödemenin birbirine karıştırılmasından çıkar. Reklam bütçesi ajansa değil, doğrudan sizin Google Ads hesabınızdan Google'a ödenir. Ajansa ödediğiniz ücret ise kampanyayı kurma, yönetme ve iyileştirme emeğinin karşılığıdır.</p>
 
       <table>
-        <thead><tr><th>Kalem</th><th>Kime ödenir?</th><th>Ne kadar?</th></tr></thead>
+        <thead><tr><th>Kalem</th><th>Kime ödenir?</th><th>Ne için?</th></tr></thead>
         <tbody>
           <tr><td>Reklam bütçesi</td><td>Google</td><td>Siz belirlersiniz; sadece tıklama (veya seçtiğiniz sonuç) için ödersiniz</td></tr>
-          <tr><td>Kurulum (ilk ay, tek seferlik)</td><td>Ajans</td><td>Küçük: ${aralik('Google Ads Kurulum', 'kucuk')} · Orta: ${aralik('Google Ads Kurulum', 'orta')} · Büyük: ${aralik('Google Ads Kurulum', 'buyuk')}</td></tr>
-          <tr><td>Aylık yönetim (2. aydan itibaren)</td><td>Ajans</td><td>Küçük: ${aralik('Google Ads', 'kucuk')} · Orta: ${aralik('Google Ads', 'orta')} · Büyük: ${aralik('Google Ads', 'buyuk')}</td></tr>
-          <tr><td>Yönetim payı</td><td>Ajans</td><td>Reklam bütçesinin %15'i</td></tr>
+          <tr><td>Kurulum (ilk ay, tek seferlik)</td><td>Ajans</td><td>Hesap yapısı, dönüşüm takibi ve ilk kampanyaların kurulumu</td></tr>
+          <tr><td>Aylık yönetim (2. aydan itibaren)</td><td>Ajans</td><td>Haftalık optimizasyon, negatif kelime yönetimi, raporlama</td></tr>
         </tbody>
       </table>
-      <p>Ajans ücretleri KDV hariçtir. Google'ın faturasına da yasal vergiler eklenir; güncel tutarları Google Ads hesabınızdaki <em>Faturalandırma</em> bölümünde görürsünüz.</p>
+      <p>Google'ın faturasına yasal vergiler eklenir; güncel tutarları Google Ads hesabınızdaki <em>Faturalandırma</em> bölümünde görürsünüz. Ajans ücretinin tahmini için <a href="/teklif-al">AI Teklif Hesaplayıcı</a>'yı kullanabilirsiniz.</p>
 
       <h2>Tıklama Başı Maliyet (TBM) Nasıl Belirlenir?</h2>
       <p>Google Ads bir açık artırma sistemidir. Biri bir kelimeyi her aradığında, o kelimeye reklam veren işletmeler arasında anlık bir sıralama yapılır. Ödediğiniz tıklama fiyatını belirleyen başlıca etkenler:</p>
@@ -196,18 +163,6 @@ export const kasim2026Postlari: Post[] = [
         <span class="callout-title">Günlük bütçe neden bazen aşılıyor?</span>
         <p>Google, trafiğin yoğun olduğu günlerde günlük bütçenizin <strong>2 katına kadar</strong> harcayabilir; ancak bir ay içinde <strong>günlük bütçe × 30,4</strong> tutarından fazlasını faturalandırmaz. Yani bir gün fazla, bir gün az harcanır ama ay toplamı sabittir.</p>
       </div>
-
-      <h2>Toplam Maliyet Örneği</h2>
-      <p>Aylık 12.000₺ reklam bütçesiyle çalışan küçük bir işletme için:</p>
-      <table>
-        <thead><tr><th>Kalem</th><th>1. ay</th><th>2. aydan itibaren</th></tr></thead>
-        <tbody>
-          <tr><td>Google'a reklam bütçesi</td><td>12.000₺</td><td>12.000₺</td></tr>
-          <tr><td>%15 yönetim payı</td><td>1.800₺</td><td>1.800₺</td></tr>
-          <tr><td>Kurulum (tek seferlik)</td><td>${aralik('Google Ads Kurulum', 'kucuk')}</td><td>—</td></tr>
-          <tr><td>Aylık yönetim ücreti</td><td>— (ilk ay alınmaz)</td><td>${aralik('Google Ads', 'kucuk')}</td></tr>
-        </tbody>
-      </table>
 
       <h2>Bütçenin Boşa Gitmemesi İçin Kontrol Listesi</h2>
       <ul>
@@ -634,7 +589,7 @@ export const kasim2026Postlari: Post[] = [
     coverImage: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=1200&q=80&fit=crop',
     title: 'Web Sitesi Fiyatları 2026: Kurumsal Web Sitesi Ne Kadar?',
     excerpt:
-      'Kurumsal web sitesi ve web tasarım fiyatları işletme büyüklüğüne göre ne kadar? Fiyata dahil olanlar, yıllık ek giderler, hazır şablon ile özel tasarım farkı ve teklif alırken sorulacak sorular.',
+      'Kurumsal web sitesi fiyatı neye göre belirlenir? Fiyata dahil olanlar, yıllık ek giderler, hazır şablon ile özel tasarım farkı ve teklif alırken sorulacak sorular.',
     category: 'Web Tasarım',
     categoryColor: 'indigo',
     emoji: '🖥️',
@@ -647,19 +602,19 @@ export const kasim2026Postlari: Post[] = [
     content: `
       <div class="callout">
         <span class="callout-title">Kısa cevap</span>
-        <p>2026'da web tasarım fiyatlarımız küçük işletmeler için <strong>${aralik('Web Tasarım', 'kucuk')}</strong>, orta ölçekli işletmeler için <strong>${aralik('Web Tasarım', 'orta')}</strong>, büyük/kurumsal projeler için <strong>${aralik('Web Tasarım', 'buyuk')}</strong> aralığındadır (tek seferlik, KDV hariç). Bunun dışında alan adı ve barındırma gibi yıllık giderler vardır.</p>
+        <p>Web sitesi fiyatı; sayfa sayısına, özel tasarım ihtiyacına, dil sayısına ve entegrasyonlara göre değişir. Tasarım ücretinin dışında alan adı ve barındırma gibi yıllık giderler de vardır. İşletmenize özel tahmini teklifi <a href="/teklif-al">AI Teklif Hesaplayıcı</a> ile 30 saniyede görebilirsiniz.</p>
       </div>
 
-      <h2>Web Sitesi Fiyat Tablosu (2026)</h2>
+      <h2>İşletme Ölçeğine Göre Tipik Kapsam</h2>
       <table>
-        <thead><tr><th>Ölçek</th><th>Fiyat (tek seferlik)</th><th>Tipik kapsam</th></tr></thead>
+        <thead><tr><th>Ölçek</th><th>Tipik kapsam</th></tr></thead>
         <tbody>
-          <tr><td>Küçük işletme</td><td>${aralik('Web Tasarım', 'kucuk')}</td><td>Tanıtım sitesi: ana sayfa, hizmetler, hakkımızda, iletişim; mobil uyum, temel SEO</td></tr>
-          <tr><td>Orta işletme</td><td>${aralik('Web Tasarım', 'orta')}</td><td>Çok sayfalı kurumsal site, hizmet/şehir sayfaları, blog, form ve ölçüm kurulumları</td></tr>
-          <tr><td>Büyük / kurumsal</td><td>${aralik('Web Tasarım', 'buyuk')}</td><td>Çok dilli yapı, entegrasyonlar, özel modüller, yüksek trafik altyapısı</td></tr>
+          <tr><td>Küçük işletme</td><td>Tanıtım sitesi: ana sayfa, hizmetler, hakkımızda, iletişim; mobil uyum, temel SEO</td></tr>
+          <tr><td>Orta işletme</td><td>Çok sayfalı kurumsal site, hizmet/şehir sayfaları, blog, form ve ölçüm kurulumları</td></tr>
+          <tr><td>Büyük / kurumsal</td><td>Çok dilli yapı, entegrasyonlar, özel modüller, yüksek trafik altyapısı</td></tr>
         </tbody>
       </table>
-      <p>Kesin fiyat sayfa sayısı, tasarım ihtiyacı ve entegrasyonlara göre netleşir. Tahmini fiyatı <a href="/teklif-al">AI Teklif Hesaplayıcı</a> ile hemen görebilirsiniz.</p>
+      <p>Kendi projenizin tahmini fiyatını <a href="/teklif-al">AI Teklif Hesaplayıcı</a> ile hemen görebilirsiniz; kesin fiyat sayfa sayısı ve ihtiyaçlar netleşince verilir.</p>
 
       <h2>Fiyatı Belirleyen 6 Etken</h2>
       <table>

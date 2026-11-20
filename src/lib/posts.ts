@@ -1763,8 +1763,8 @@ export const posts: Post[] = [
           <span class="stat-label">İzmit/Kocaeli'de faaliyet gösteren ajans sayısı</span>
         </div>
         <div class="stat-card">
-          <span class="stat-number">1.500₺ - 50.000₺</span>
-          <span class="stat-label">Aylık fiyat aralığı</span>
+          <span class="stat-number">30 sn</span>
+          <span class="stat-label">AI hesaplayıcıyla tahmini teklif süresi</span>
         </div>
         <div class="stat-card">
           <span class="stat-number">10</span>
@@ -3361,7 +3361,7 @@ export const posts: Post[] = [
     coverImage: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=80&fit=crop',
     title: 'Dijital Pazarlama Ajansı Fiyatları Ne Kadar? (2026 Güncel Rehber)',
     excerpt:
-      'SEO, Google Ads, sosyal medya ve web tasarım için işletme büyüklüğüne göre güncel fiyat aralıkları. Google Ads\'te kim kime ne ödüyor, en şeffaf şekilde anlattık.',
+      'SEO, Google Ads, sosyal medya ve web tasarım için ücret nasıl oluşur, fiyatı neler belirler? Google Ads\'te kim kime ne ödüyor, en şeffaf şekilde anlattık.',
     category: 'Strateji',
     categoryColor: 'blue',
     emoji: '💰',
@@ -3372,87 +3372,65 @@ export const posts: Post[] = [
     authorRole: 'Strateji Ekibi',
     tags: ['Fiyatlandırma', 'SEO', 'Google Ads', 'Web Tasarım', 'Şeffaflık'],
     content: `
-      <h2>Neden Herkes Farklı Bir Fiyat Söylüyor?</h2>
-      <p>"Dijital pazarlama ajansı fiyatları ne kadar?" sorusuna internet üzerinde onlarca farklı rakam bulursunuz — çünkü fiyat, işletmenizin büyüklüğüne, hedeflerinize ve seçtiğiniz hizmet kombinasyonuna göre gerçekten değişir. Bu yazıda uydurma bir "ortalama rakam" vermek yerine, kendi güncel fiyat aralıklarımızı işletme büyüklüğüne göre açık şekilde paylaşıyoruz — aynı veriyi sitemizdeki <a href="/teklif-al">AI Teklif Hesaplayıcı</a> da kullanıyor.</p>
-
-      <div class="stat-grid">
-        <div class="stat-card">
-          <span class="stat-number">3</span>
-          <span class="stat-label">İşletme büyüklüğü kategorisi (küçük / orta / büyük)</span>
-        </div>
-        <div class="stat-card">
-          <span class="stat-number emerald">4</span>
-          <span class="stat-label">Sabit fiyat aralığı olan hizmet (SEO, Ads, Sosyal Medya, Web)</span>
-        </div>
-        <div class="stat-card">
-          <span class="stat-number violet">%15</span>
-          <span class="stat-label">Google Ads'te reklam bütçesi üzerinden alınan yönetim payı</span>
-        </div>
+      <div class="callout">
+        <span class="callout-title">Kısa cevap</span>
+        <p>Dijital pazarlama ajansı fiyatı; işletmenizin büyüklüğüne, seçtiğiniz hizmetlere (SEO, Google Ads, sosyal medya, web tasarım), sektörünüzdeki rekabete ve hedeflediğiniz bölgeye göre değişir. Tek bir "ortalama rakam" yanıltıcı olur. İşletmenize özel tahmini teklifi <a href="/teklif-al">AI Teklif Hesaplayıcı</a> ile 30 saniyede görebilirsiniz.</p>
       </div>
 
-      <h2>Güncel Fiyat Aralıklarımız</h2>
-      <p>Aşağıdaki rakamlar KDV hariç, aylık (Web Tasarım hariç — o tek seferlik) ve güncel piyasa koşullarına göre belirlenmiş aralıklardır. Kesin teklif, kapsam netleştikten sonra verilir.</p>
+      <h2>Neden Herkes Farklı Bir Fiyat Söylüyor?</h2>
+      <p>"Dijital pazarlama ajansı fiyatları ne kadar?" sorusuna internette onlarca farklı rakam bulursunuz. Çünkü aynı hizmet adı çok farklı işleri anlatabilir: Bir ajans için SEO sadece başlık düzeltmekken, bir başkası için içerik, teknik altyapı, yerel SEO ve aylık raporlamanın tamamıdır. Fiyatları karşılaştırmadan önce neyin karşılaştırıldığını bilmek gerekir.</p>
 
+      <h2>Hizmetlere Göre Ücret Nasıl Oluşur?</h2>
       <table>
-        <thead><tr><th>Hizmet</th><th>Küçük İşletme</th><th>Orta İşletme</th><th>Büyük / Kurumsal</th></tr></thead>
+        <thead><tr><th>Hizmet</th><th>Ödeme şekli</th><th>Fiyatı ne belirler?</th></tr></thead>
         <tbody>
-          <tr><td>SEO</td><td>6.000-9.000₺/ay</td><td>15.000-25.000₺/ay</td><td>25.000-40.000₺/ay</td></tr>
-          <tr><td>SEO Başlangıç Paketi</td><td>7.000-12.000₺ (tek seferlik)</td><td>20.000-35.000₺ (tek seferlik)</td><td>35.000-55.000₺ (tek seferlik)</td></tr>
-          <tr><td>Google Ads (yönetim)</td><td>3.000-5.000₺/ay</td><td>8.000-15.000₺/ay</td><td>15.000-30.000₺/ay</td></tr>
-          <tr><td>Google Ads Kurulum</td><td>8.000-10.000₺ (tek seferlik)</td><td>15.000-20.000₺ (tek seferlik)</td><td>25.000-35.000₺ (tek seferlik)</td></tr>
-          <tr><td>Sosyal Medya</td><td>8.000-14.000₺/ay</td><td>15.000-24.000₺/ay</td><td>25.000-38.000₺/ay</td></tr>
-          <tr><td>Web Tasarım</td><td>15.000-40.000₺ (tek seferlik)</td><td>60.000-110.000₺ (tek seferlik)</td><td>130.000-250.000₺ (tek seferlik)</td></tr>
+          <tr><td>SEO</td><td>Aylık (ya da tek seferlik başlangıç paketi)</td><td>Rekabet, hedef bölge sayısı, içerik ihtiyacı, sitenin teknik durumu</td></tr>
+          <tr><td>Google Ads</td><td>İlk ay kurulum, sonrasında aylık yönetim</td><td>Kampanya sayısı, hedeflenen bölge, sektörün reklam kuralları</td></tr>
+          <tr><td>Sosyal medya içerik üretimi</td><td>Aylık</td><td>Haftalık içerik sayısı, video/reels ihtiyacı, platform sayısı</td></tr>
+          <tr><td>Web tasarım</td><td>Tek seferlik</td><td>Sayfa sayısı, özel tasarım, dil sayısı, entegrasyonlar</td></tr>
+          <tr><td>E-posta, veri analizi, otomasyon</td><td>Projeye göre</td><td>Kapsam görüşmede netleşir</td></tr>
         </tbody>
       </table>
-
       <p>Hizmet bazında ayrıntılı anlatım için: <a href="/blog/seo-fiyatlari-2026">SEO Fiyatları 2026</a>, <a href="/blog/google-ads-fiyatlari-2026">Google Ads Fiyatları 2026</a> ve <a href="/blog/web-sitesi-fiyatlari-2026">Web Sitesi Fiyatları 2026</a>.</p>
 
-      <p>E-posta pazarlama ve veri analizi/danışmanlık gibi hizmetlerin kapsamı projeye göre çok değiştiği için sabit bir aralık yerine görüşme sonrası özel teklif veriyoruz. SEO için aylık yönetim yerine tek seferlik bir başlangıç istiyorsanız "SEO Başlangıç Paketi" bir denetim + kurulumdur, devam eden aylık takibi içermez.</p>
-
-      <div class="callout">
-        <span class="callout-title">Önemli: Tablodaki SEO fiyatları tek bir site içindir</span>
-        <p><strong>pSEO (programatik SEO)</strong> ne demek: "İzmit SEO", "Kocaeli SEO", "İstanbul SEO" gibi her şehir/ilçe için ayrı, o bölgeye özel bir sayfa üretmek — tek bir sayfa yerine onlarca hatta yüzlerce sayfalık bir yapı. Böyle bir talep bu aralığın kapsamı dışındadır ve işletme büyüklüğünden bağımsız olarak ayrı bir teklif gerektirir. Örneğin küçük bir işletme bile Türkiye'nin tüm illeri için sayfa isteyebilir; bu durumda kapsam netleşmeden gerçekçi bir rakam vermemiz mümkün olmaz.</p>
-      </div>
-
-      <h2>Google Ads'te Neden Birden Fazla Rakam Var?</h2>
-      <p>Google Ads fiyatlandırması, diğer hizmetlerden farklı çalışır ve karışıklık en sık burada yaşanır. Üç ayrı kalem vardır:</p>
+      <h2>Google Ads'te Neden Birden Fazla Kalem Var?</h2>
+      <p>Google Ads'te karışıklık en çok burada yaşanır. İki ayrı ödeme vardır:</p>
       <ul>
-        <li><strong>Tek seferlik kurulum ücreti</strong> — hesabınızı ilk kez açtığımızda, bir kereliğine alınır: hesap yapısı, dönüşüm izleme (conversion tracking) ve ilk kampanyanın kurulumu için. İlk ay için ayrıca aylık yönetim ücreti alınmaz — kurulum bedeli o ayın yerine geçer, yönetim ücreti 2. aydan itibaren başlar.</li>
-        <li><strong>Bize ödenen aylık yönetim ücreti</strong> — yukarıdaki tablodaki sabit aylık rakam, 2. aydan itibaren. Haftalık optimizasyon, negatif kelime/bid yönetimi ve aylık raporlama karşılığı.</li>
-        <li><strong>Google'a ödenen reklam bütçesi</strong> — bu para bize ödenmez, doğrudan sizin Google Ads hesabınızdan Google'a gider. Biz bu bütçenin <strong>%15'i kadar</strong> ek bir yönetim payı alırız.</li>
+        <li><strong>Reklam bütçesi:</strong> Ajansa değil, doğrudan sizin Google Ads hesabınızdan Google'a ödenir. Tutarını siz belirlersiniz.</li>
+        <li><strong>Ajans ücreti:</strong> Hesap kurulumu, dönüşüm takibi, kampanya yönetimi, haftalık optimizasyon ve raporlama emeğinin karşılığıdır.</li>
       </ul>
-
-      <div class="callout">
-        <span class="callout-title">Somut Örnek</span>
-        <p>Aylık 20.000₺ reklam bütçeniz varsa: bu 20.000₺'nin tamamı doğrudan Google'a gider. Buna ek olarak bize %15'lik yönetim payı olarak +3.000₺ ödersiniz — yani toplam maliyetiniz reklam bütçesi + yönetim ücreti + bu %15'lik pay olur. Reklam bütçesini büyütmek "bize daha çok para ödemek" anlamına gelmez, sadece Google'a giden kısmı büyütür. İlk ay ayrıca kurulum ücreti öderken yönetim ücreti alınmaz; yönetim ücreti 2. aydan başlar.</p>
-      </div>
+      <p>Reklam bütçenizi büyütmek "ajansa daha çok para ödemek" değil, Google'a giden kısmı büyütmek demektir. Hesap ve tüm veriler her zaman sizin adınıza olmalıdır.</p>
 
       <h2>Fiyatı Asıl Belirleyen Nedir?</h2>
-      <p>Yukarıdaki aralıklar geniş çünkü gerçek fiyat şu faktörlere göre netleşir:</p>
       <ul>
-        <li>Sektörünüzdeki rekabet seviyesi (örneğin hukuk veya sağlık gibi rekabetçi sektörler daha fazla emek gerektirir)</li>
-        <li>Mevcut dijital altyapınızın durumu (sıfırdan mı başlıyorsunuz, yoksa optimize mi ediyoruz)</li>
-        <li>Hedeflediğiniz coğrafya (tek şehir mi, Türkiye geneli mi)</li>
-        <li>Kaç hizmeti birlikte aldığınız (paket halinde alınan hizmetlerde genelde daha verimli bir fiyatlandırma mümkün olur)</li>
+        <li>Sektörünüzdeki rekabet (hukuk ve sağlık gibi alanlar daha fazla emek ister)</li>
+        <li>Mevcut dijital altyapınızın durumu (sıfırdan mı başlıyorsunuz, optimize mi ediyoruz)</li>
+        <li>Hedeflediğiniz coğrafya (tek şehir mi, birden fazla şehir mi, Türkiye geneli mi)</li>
+        <li>Kaç hizmeti birlikte aldığınız (paket halinde genelde daha verimli fiyatlandırma mümkün olur)</li>
       </ul>
 
+      <div class="callout">
+        <span class="callout-title">Çok şehirli çalışmalar ayrıca planlanır</span>
+        <p>Her şehir veya ilçe için ayrı sayfa (programatik SEO) gibi geniş kapsamlı talepler işletme büyüklüğünden bağımsızdır ve kapsam netleştikten sonra fiyatlandırılır.</p>
+      </div>
+
       <blockquote>
-        <p>"Fiyat sorusuna dürüst cevap, tek bir rakam değil bir aralıktır — ama en azından o aralığın nereden geldiğini bilmelisiniz."</p>
+        <p>"Fiyat sorusuna dürüst cevap tek bir rakam değil, sizin işletmenize göre hesaplanmış bir tekliftir."</p>
       </blockquote>
 
       <h2>Sık Sorulan Sorular</h2>
 
       <h3>En ucuz seçenek hangisi?</h3>
-      <p>Tek bir hizmete (örneğin sadece SEO) odaklanmak, birden fazla hizmeti aynı anda almaktan başlangıçta daha ucuzdur — ama sonuç almanız da o kadar uzun sürebilir. Hangi kombinasyonun size uygun olduğu hedefinize bağlı.</p>
+      <p>Tek bir hizmete (örneğin sadece SEO) odaklanmak başlangıçta daha az maliyetlidir, ama sonuç almanız da o kadar uzun sürebilir. Hangi kombinasyonun size uygun olduğu hedefinize bağlıdır.</p>
 
-      <h3>Fiyatlar neden "aylık" gösteriliyor, tek seferlik ödeme yok mu?</h3>
-      <p>SEO, Google Ads ve sosyal medya sürekli emek gerektiren, sürdürülebilir hizmetlerdir — bu yüzden aylık ücretlendirilir. Web tasarım ise bir kere teslim edilen bir proje olduğu için tek seferlik ücretlendirilir.</p>
+      <h3>Fiyatlar neden aylık?</h3>
+      <p>SEO, Google Ads ve sosyal medya sürekli emek gerektiren hizmetlerdir, bu yüzden aylık ücretlendirilir. Web tasarım ise bir kez teslim edilen bir proje olduğu için tek seferliktir.</p>
 
-      <h3>Bu rakamlar kesin teklif mi?</h3>
-      <p>Hayır, bunlar güncel piyasa aralıklarımız. Kesin teklif için işletmenize özel ihtiyacı netleştirmemiz gerekiyor — bunu hem <a href="/teklif-al">AI Teklif Hesaplayıcı</a> üzerinden anında, hem de bizimle doğrudan konuşarak yapabilirsiniz.</p>
+      <h3>Kesin fiyatı nasıl öğrenirim?</h3>
+      <p><a href="/teklif-al">AI Teklif Hesaplayıcı</a> ile 4 adımda işletmenize özel tahmini teklifi görebilir, ardından ücretsiz görüşmede kapsamı netleştirebilirsiniz.</p>
 
       <h3>Sonuç</h3>
-      <p>Dijital pazarlama fiyatlandırmasında şeffaflık, güven inşa etmenin ilk adımı. Yukarıdaki aralıklar ve Google Ads'in iki ayrı ödeme akışı netliği ile, bütçenizi neyin oluşturduğunu tam olarak biliyorsunuz. Size özel, işletme büyüklüğünüze göre hesaplanmış bir teklif için <a href="/teklif-al">AI Teklif Hesaplayıcı'yı</a> 30 saniyede deneyebilirsiniz.</p>
+      <p>Bütçenizi neyin oluşturduğunu bilmek, doğru ajansı seçmenin ilk adımıdır. İşletmenize özel teklif için <a href="/teklif-al">AI Teklif Hesaplayıcı'yı</a> 30 saniyede deneyin.</p>
     `,
   },
   {
