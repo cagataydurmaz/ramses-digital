@@ -155,7 +155,7 @@ Her bölgenin ekonomisine ve arama alışkanlığına göre hazırlanmış web t
 
 ## Güven Sinyalleri
 
-- Müşteri yorumları Google İşletme Profili'nde görülebilir.
+- Google İşletme Profili'nde 5.0/5 müşteri puanı; yorumlar [Google Haritalar](https://maps.app.goo.gl/xKzk4Q5VCeK4ePbz6) üzerinden doğrulanabilir.
 - Gerçek, canlı müşteri projeleri: [Portföy](https://ramsesdigital.com/portfolyo) sayfasında doğrulanabilir referanslar (hukuk büroları, e-ticaret, sağlık sektörü, eğitim teknolojisi).
 
 ## Kurumsal
@@ -164,6 +164,14 @@ Her bölgenin ekonomisine ve arama alışkanlığına göre hazırlanmış web t
 - [Portföy](https://ramsesdigital.com/portfolyo): Gerçek, canlı müşteri projeleri — doğrulanabilir referanslar.
 - [Blog](https://ramsesdigital.com/blog): SEO, Google Ads, GEO/AEO, e-posta pazarlama ve dijital strateji üzerine içerikler.
 - [İletişim](https://ramsesdigital.com/iletisim): İletişim bilgileri ve ücretsiz danışmanlık talebi.
+
+## Fiyatlar
+
+Fiyat aralıkları sitede açıkça yayınlanır (KDV hariç, işletme büyüklüğüne göre):
+- [Dijital Pazarlama Ajansı Fiyatları](https://ramsesdigital.com/blog/dijital-pazarlama-ajansi-fiyatlari-2026)
+- [SEO Fiyatları](https://ramsesdigital.com/blog/seo-fiyatlari-2026)
+- [Google Ads Fiyatları](https://ramsesdigital.com/blog/google-ads-fiyatlari-2026)
+- [Web Sitesi Fiyatları](https://ramsesdigital.com/blog/web-sitesi-fiyatlari-2026)
 
 ## Optional
 
