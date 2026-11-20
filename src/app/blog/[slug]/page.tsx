@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Metadata } from 'next'
 import { posts } from '@/lib/posts'
+import { blogIcLinkler } from '@/lib/blogIcLinkler'
 import CalendlyButton from '@/components/CalendlyButton'
 
 interface Props {
@@ -173,6 +174,7 @@ export default function BlogPostPage({ params }: Props) {
   })
 
   const faqs = extractFaqs(post.content)
+  const icLinkler = blogIcLinkler(post, posts)
 
   return (
     <div className="min-h-screen bg-[#0A0F1E]">
@@ -258,6 +260,23 @@ export default function BlogPostPage({ params }: Props) {
             </span>
           ))}
         </div>
+
+        {/* İlgili hizmet ve şehir sayfaları (konuya göre otomatik, bkz. lib/blogIcLinkler) */}
+        <section className="mb-12">
+          <h2 className="text-xl font-bold text-white mb-4">İlgili Hizmetler ve Şehirler</h2>
+          <div className="flex flex-wrap gap-2">
+            {icLinkler.map((l) => (
+              <Link
+                key={l.href}
+                href={l.href}
+                prefetch={false}
+                className="text-xs bg-white/[0.04] hover:bg-blue-500/10 border border-white/[0.06] hover:border-blue-500/30 text-zinc-400 hover:text-blue-400 rounded-full px-3 py-1.5 transition-all"
+              >
+                {l.label}
+              </Link>
+            ))}
+          </div>
+        </section>
 
         {/* Related Posts */}
         {related.length > 0 && (
