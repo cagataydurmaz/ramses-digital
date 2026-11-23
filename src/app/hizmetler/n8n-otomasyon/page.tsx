@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { WhatsAppTelefonBolumu } from '@/components/telefon/TelefonBolumleri'
+import { WhatsAppTelefonBolumu, ChatbotTelefonBolumu } from '@/components/telefon/TelefonBolumleri'
 import KapakGorseli from '@/components/KapakGorseli'
 import KisaOzet from '@/components/KisaOzet'
 import Link from 'next/link'
@@ -82,6 +82,7 @@ export default function N8nOtomasyonPage() {
 
       <KapakGorseli src="/gorseller/n8n-otomasyon.webp" alt="Beyaz tahtaya iş akışı şeması çizen kişi" />
       <WhatsAppTelefonBolumu />
+      <ChatbotTelefonBolumu ters />
 
       <section className="py-12 px-6 border-y border-white/[0.04]">
         <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">

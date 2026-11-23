@@ -2,6 +2,7 @@ import TelefonBolumu from './TelefonBolumu'
 import SiteKaydirmaTelefon from './SiteKaydirmaTelefon'
 import WhatsAppTelefon from './WhatsAppTelefon'
 import HaritaTelefon from './HaritaTelefon'
+import ChatbotTelefon from './ChatbotTelefon'
 
 // Hazır telefon animasyonlu bölümler; sayfalara tek satırla eklenir.
 export function WebSitesiTelefonBolumu({ ters = false }: { ters?: boolean }) {
@@ -42,6 +43,25 @@ export function HaritaTelefonBolumu({ arama, yer, ters = false }: { arama?: stri
       maddeler={['Doğru kategori, hizmet bölgesi ve çalışma saatleri', 'Teşviksiz, düzenli müşteri yorumu düzeni', 'Profil ile web sitesinin birbirini desteklemesi']}
     >
       <HaritaTelefon arama={arama} />
+    </TelefonBolumu>
+  )
+}
+
+export function ChatbotTelefonBolumu({ ters = false }: { ters?: boolean }) {
+  return (
+    <TelefonBolumu
+      ters={ters}
+      ust="Yeni Hizmet · Yapay Zekâ"
+      baslik="Sitenize Yapay Zekâ Asistanı Kuruyoruz"
+      metin="Sitenizi ziyaret eden müşterinin sorularını gece gündüz yanıtlayan, işletmenizi tanıyan bir asistan. Randevu ve teklif taleplerini toplayıp doğrudan WhatsApp'ınıza iletir; siz sadece dönüş yaparsınız."
+      maddeler={[
+        'İşletmenizin hizmetlerini, çalışma saatlerini ve sık sorulan sorularını bilir',
+        'Ad, telefon ve ihtiyacı toplayıp onayla WhatsApp’ınıza özet gönderir',
+        'Sizin kurallarınıza göre konuşur: fiyat vermez, söz vermez, uydurmaz',
+        'Sağlık, hukuk gibi kurallı sektörlerde iddiasız, mevzuata uygun dil',
+      ]}
+    >
+      <ChatbotTelefon />
     </TelefonBolumu>
   )
 }

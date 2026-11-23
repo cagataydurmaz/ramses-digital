@@ -45,9 +45,15 @@ export default function SiteKaydirmaTelefon() {
               key={x.src}
               src={x.src}
               alt=""
-              loading="lazy"
+              loading={i === 0 ? 'lazy' : aktif ? 'eager' : 'lazy'}
+              decoding="async"
               className={`absolute top-0 left-0 w-full transition-opacity duration-700 ${i === sira ? 'opacity-100' : 'opacity-0'}`}
-              style={i === sira && aktif ? { animation: `siteKaydir ${SURE}ms ease-in-out forwards` } : undefined}
+              style={{
+                willChange: 'transform',
+                backfaceVisibility: 'hidden',
+                transform: 'translate3d(0,0,0)',
+                ...(i === sira && aktif ? { animation: `siteKaydir ${SURE}ms cubic-bezier(.45,.05,.55,.95) forwards` } : {}),
+              }}
             />
           ))}
         </div>
@@ -56,7 +62,7 @@ export default function SiteKaydirmaTelefon() {
         <span className="text-white font-medium">{s.ad}</span>
         <span className="text-zinc-500"> · {s.alan}</span>
       </p>
-      <style>{`@keyframes siteKaydir{0%,8%{transform:translateY(0)}92%,100%{transform:translateY(calc(-100% + 495px))}}`}</style>
+      <style>{`@keyframes siteKaydir{0%,8%{transform:translate3d(0,0,0)}92%,100%{transform:translate3d(0,calc(-100% + 495px),0)}}`}</style>
     </div>
   )
 }

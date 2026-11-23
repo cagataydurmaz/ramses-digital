@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { WebSitesiTelefonBolumu, WhatsAppTelefonBolumu } from '@/components/telefon/TelefonBolumleri'
+import { WebSitesiTelefonBolumu, WhatsAppTelefonBolumu, ChatbotTelefonBolumu } from '@/components/telefon/TelefonBolumleri'
 import KapakGorseli from '@/components/KapakGorseli'
 import KisaOzet from '@/components/KisaOzet'
 import Link from 'next/link'
@@ -84,6 +84,7 @@ export default function WebTasarimHizmetPage() {
       <KapakGorseli src="/gorseller/web-tasarim.webp" alt="Masada açık dizüstü bilgisayarda web sitesi tasarımı" />
       <WebSitesiTelefonBolumu />
       <WhatsAppTelefonBolumu ters />
+      <ChatbotTelefonBolumu />
 
       <section className="py-12 px-6 border-y border-white/[0.04]">
         <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">

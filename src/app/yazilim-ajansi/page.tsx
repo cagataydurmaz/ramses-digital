@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { ChatbotTelefonBolumu } from '@/components/telefon/TelefonBolumleri'
 import AjansDetayBolumu, { type AjansDetay } from '@/components/AjansDetayBolumu'
 import SiziArayalimFormu from '@/components/SiziArayalimFormu'
 import Link from 'next/link'
@@ -177,6 +178,7 @@ export default function YazilimAjansiPage() {
         </div>
       </section>
 
+      <ChatbotTelefonBolumu />
       <AjansDetayBolumu d={detay} />
       <section className="py-20 px-6 bg-[#080D18]">
         <div className="max-w-3xl mx-auto">
