@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { HaritaTelefonBolumu } from '@/components/telefon/TelefonBolumleri'
 import RaporOrnegi from '@/components/RaporOrnegi'
 import KurumsalSeoBolumu from '@/components/KurumsalSeoBolumu'
 import ProjeGalerisi from '@/components/ProjeGalerisi'
@@ -233,6 +234,7 @@ export default function IzmitSeoPage() {
         ]}
       />
 
+      <HaritaTelefonBolumu yer="İzmit" arama="izmit diş kliniği" />
       <RaporOrnegi />
       <KurumsalSeoBolumu yer="İzmit" />
       <ProjeGalerisi baslik="SEO Çalıştığımız Sitelerden Örnekler" />

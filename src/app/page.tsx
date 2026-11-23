@@ -11,6 +11,7 @@ import AnaSayfaSektorAraclar from '@/components/AnaSayfaSektorAraclar'
 import MarkaSeridi from '@/components/MarkaSeridi'
 import GoogleAramaAnimasyonu from '@/components/GoogleAramaAnimasyonu'
 import ArkaPlanVideo from '@/components/ArkaPlanVideo'
+import { WebSitesiTelefonBolumu, WhatsAppTelefonBolumu } from '@/components/telefon/TelefonBolumleri'
 import HeroBackgroundVideo from '@/components/HeroBackgroundVideo'
 import {
   Sparkles,
@@ -562,6 +563,7 @@ export default function HomePage() {
       {/* ── SEKTÖRLER + ÜCRETSİZ ARAÇLAR ─────────────────────────────────── */}
       <AnaSayfaSektorAraclar />
 
+      <WebSitesiTelefonBolumu ters />
       {/* ── NASIL ÇALIŞIYORUZ (güven: süreç baştan belli) ────────────────── */}
       <section aria-labelledby="nasil-calisiyoruz" className="py-12 sm:py-16 px-6">
         <div className="max-w-6xl mx-auto">
@@ -593,6 +595,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <WhatsAppTelefonBolumu />
 
       {/* ── SEO / AEO / GEO — EN BASİT ANLATIM ──────────────────────────────── */}
       <section className="py-12 sm:py-16 px-6">

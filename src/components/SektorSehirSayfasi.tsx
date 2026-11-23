@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { HaritaTelefonBolumu } from '@/components/telefon/TelefonBolumleri'
 import KapakGorseli from '@/components/KapakGorseli'
 import Link from 'next/link'
 import { MapPin, ArrowRight, ShieldCheck, CheckCircle2 } from 'lucide-react'
@@ -197,6 +198,7 @@ export default function SektorSehirSayfasi({ slug }: { slug: string }) {
         </div>
       </section>
 
+      <HaritaTelefonBolumu yer={v.sehir.ad} arama={`${v.sehir.ad} ${v.meslek.ad}`.toLocaleLowerCase('tr-TR')} />
       <ReviewsMarquee />
 
       <SehirTeklifBolumu place={s.teklifAd} />

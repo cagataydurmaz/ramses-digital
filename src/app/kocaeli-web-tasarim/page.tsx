@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { WebSitesiTelefonBolumu } from '@/components/telefon/TelefonBolumleri'
 import SiziArayalimFormu from '@/components/SiziArayalimFormu'
 import ProjeGalerisi from '@/components/ProjeGalerisi'
 import Link from 'next/link'
@@ -157,6 +158,7 @@ export default function KocaeliWebTasarimPage() {
         </div>
       </section>
 
+      <WebSitesiTelefonBolumu />
       <ProjeGalerisi />
       <SiziArayalimFormu />
       <ReviewsMarquee />

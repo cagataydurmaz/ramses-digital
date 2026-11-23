@@ -91,12 +91,39 @@ export default function SmartIntake({ lang = 'tr' }: { lang?: 'tr' | 'en' }) {
   const [isFocused, setIsFocused] = useState(false)
   const inputRef = useRef<HTMLTextAreaElement>(null)
 
+  // Kutu boşken örnek cümleler harf harf yazılıp silinir; ziyaretçi buraya yazması gerektiğini anlar.
+  const [yazilan, setYazilan] = useState('')
   useEffect(() => {
-    const interval = setInterval(() => {
-      setExampleIndex(i => (i + 1) % EXAMPLES.length)
-    }, 3000)
-    return () => clearInterval(interval)
-  }, [EXAMPLES.length])
+    if (input || isFocused) return
+    const hedef = EXAMPLES[exampleIndex]
+    let i = 0
+    let siliniyor = false
+    let bekle: ReturnType<typeof setTimeout> | undefined
+    const adim = setInterval(() => {
+      if (!siliniyor) {
+        i++
+        setYazilan(hedef.slice(0, i))
+        if (i >= hedef.length) {
+          siliniyor = true
+          clearInterval(adim)
+          bekle = setTimeout(() => {
+            const sil = setInterval(() => {
+              i--
+              setYazilan(hedef.slice(0, Math.max(i, 0)))
+              if (i <= 0) {
+                clearInterval(sil)
+                setExampleIndex((k) => (k + 1) % EXAMPLES.length)
+              }
+            }, 25)
+          }, 1600)
+        }
+      }
+    }, 55)
+    return () => {
+      clearInterval(adim)
+      if (bekle) clearTimeout(bekle)
+    }
+  }, [exampleIndex, input, isFocused, EXAMPLES])
 
   useEffect(() => {
     if (!result) { setDisplayed(''); return }
@@ -214,7 +241,7 @@ export default function SmartIntake({ lang = 'tr' }: { lang?: 'tr' | 'en' }) {
                     onKeyDown={e => {
                       if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); analyze(input) }
                     }}
-                    placeholder={`"${EXAMPLES[exampleIndex]}"`}
+                    placeholder={isFocused ? EXAMPLES[exampleIndex] : yazilan ? `${yazilan}|` : '|'}
                     rows={3}
                     className="w-full bg-transparent text-white placeholder:text-zinc-400 text-base sm:text-lg resize-none outline-none leading-relaxed min-h-[64px] sm:min-h-[84px]"
                   />

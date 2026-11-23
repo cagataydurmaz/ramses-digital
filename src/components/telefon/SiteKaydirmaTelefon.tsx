@@ -1,0 +1,62 @@
+'use client'
+
+import { useEffect, useRef, useState } from 'react'
+import TelefonKasa from './TelefonKasa'
+
+// Gerçek müşteri sitelerinin telefon görünümü ekranda yavaşça aşağı kayar, sonra sıradaki siteye geçer.
+const SITELER = [
+  { src: '/portfolio/uzun/depodez.webp', ad: 'DepoDez', alan: 'depodez.com' },
+  { src: '/portfolio/uzun/nur-celen.webp', ad: 'Psk. Nur Çelen', alan: 'nurcelen.com' },
+  { src: '/portfolio/uzun/tenvor-springs.webp', ad: 'Tenvor Springs', alan: 'tenvorsprings.com.tr' },
+  { src: '/portfolio/uzun/mert-anil-guler.webp', ad: 'Av. Mert Anıl Güler', alan: 'mertanilguler.av.tr' },
+  { src: '/portfolio/uzun/gamzeli-dermokozmetik.webp', ad: 'Gamzeli Eczanem', alan: 'gamzelidermokozmetik.com' },
+  { src: '/portfolio/uzun/furkan-arikan.webp', ad: 'Av. Furkan Arıkan', alan: 'furkanarikan.av.tr' },
+]
+const SURE = 9000 // her site için ms
+
+export default function SiteKaydirmaTelefon() {
+  const kutu = useRef<HTMLDivElement>(null)
+  const [aktif, setAktif] = useState(false)
+  const [sira, setSira] = useState(0)
+
+  useEffect(() => {
+    const el = kutu.current
+    if (!el || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
+    const io = new IntersectionObserver(([e]) => setAktif(e.isIntersecting), { threshold: 0.25 })
+    io.observe(el)
+    return () => io.disconnect()
+  }, [])
+
+  useEffect(() => {
+    if (!aktif) return
+    const t = setInterval(() => setSira((s) => (s + 1) % SITELER.length), SURE)
+    return () => clearInterval(t)
+  }, [aktif])
+
+  const s = SITELER[sira]
+  return (
+    <div ref={kutu}>
+      <TelefonKasa alt="">
+        <div className="absolute top-0 inset-x-0 h-9 bg-[#0B1022] z-20" />
+        <div className="absolute top-9 inset-x-0 bottom-0 overflow-hidden">
+          {SITELER.map((x, i) => (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              key={x.src}
+              src={x.src}
+              alt=""
+              loading="lazy"
+              className={`absolute top-0 left-0 w-full transition-opacity duration-700 ${i === sira ? 'opacity-100' : 'opacity-0'}`}
+              style={i === sira && aktif ? { animation: `siteKaydir ${SURE}ms ease-in-out forwards` } : undefined}
+            />
+          ))}
+        </div>
+      </TelefonKasa>
+      <p className="text-center text-sm mt-3">
+        <span className="text-white font-medium">{s.ad}</span>
+        <span className="text-zinc-500"> · {s.alan}</span>
+      </p>
+      <style>{`@keyframes siteKaydir{0%,8%{transform:translateY(0)}92%,100%{transform:translateY(calc(-100% + 495px))}}`}</style>
+    </div>
+  )
+}

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { HaritaTelefonBolumu } from '@/components/telefon/TelefonBolumleri'
 import KapakGorseli from '@/components/KapakGorseli'
 import KisaOzet from '@/components/KisaOzet'
 import Link from 'next/link'
@@ -82,6 +83,7 @@ export default function SeoHizmetPage() {
       </KisaOzet>
 
       <KapakGorseli src="/gorseller/seo.webp" alt="Dizüstü bilgisayarda arama ve analiz ekranı üzerinde çalışan kişi" />
+      <HaritaTelefonBolumu />
 
       {/* Stats */}
       <section className="py-12 px-6 border-y border-white/[0.04]">

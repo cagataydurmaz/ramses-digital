@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { HaritaTelefonBolumu } from '@/components/telefon/TelefonBolumleri'
 import RaporOrnegi from '@/components/RaporOrnegi'
 import KurumsalSeoBolumu from '@/components/KurumsalSeoBolumu'
 import ProjeGalerisi from '@/components/ProjeGalerisi'
@@ -245,6 +246,7 @@ export default function KocaeliSeoPage() {
         ]}
       />
 
+      <HaritaTelefonBolumu yer="Kocaeli" arama="kocaeli diş kliniği" />
       <RaporOrnegi />
       <KurumsalSeoBolumu yer="Kocaeli" />
       <ProjeGalerisi baslik="SEO Çalıştığımız Sitelerden Örnekler" />

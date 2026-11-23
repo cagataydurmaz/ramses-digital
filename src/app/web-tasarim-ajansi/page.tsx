@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { WebSitesiTelefonBolumu } from '@/components/telefon/TelefonBolumleri'
 import ProjeGalerisi from '@/components/ProjeGalerisi'
 import AjansDetayBolumu, { type AjansDetay } from '@/components/AjansDetayBolumu'
 import SiziArayalimFormu from '@/components/SiziArayalimFormu'
@@ -163,6 +164,7 @@ export default function WebTasarimAjansiPage() {
         </div>
       </section>
 
+      <WebSitesiTelefonBolumu />
       <AjansDetayBolumu d={detay} />
       <ProjeGalerisi />
       <section className="py-20 px-6">

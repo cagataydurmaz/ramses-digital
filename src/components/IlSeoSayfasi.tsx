@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { HaritaTelefonBolumu } from '@/components/telefon/TelefonBolumleri'
 import { seoBaslik } from '@/lib/seoBaslik'
 import Link from 'next/link'
 import { MapPin, Search, ArrowRight, CheckCircle2, TrendingUp, Briefcase } from 'lucide-react'
@@ -208,6 +209,7 @@ export default function IlSeoSayfasi({ v }: { v: IlSeoVeri }) {
         </div>
       </section>
 
+      <HaritaTelefonBolumu yer={v.ad} arama={`${v.ad.toLocaleLowerCase('tr-TR')} diş kliniği`} />
       <ReviewsMarquee />
 
       <SehirTeklifBolumu place={v.ad} />
