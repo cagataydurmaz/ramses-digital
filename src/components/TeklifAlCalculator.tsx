@@ -709,6 +709,7 @@ export default function TeklifAlCalculator() {
                           Yeni Teklif Hesapla
                         </button>
                       </div>
+                      <p className="text-zinc-500 text-xs mt-3">Ortalama 2 saat içinde dönüş yapıyoruz.</p>
                     </div>
                   )}
                 </div>

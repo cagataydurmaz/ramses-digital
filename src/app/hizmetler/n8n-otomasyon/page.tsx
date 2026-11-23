@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import KisaOzet from '@/components/KisaOzet'
 import Link from 'next/link'
 import CalendlyButton from '@/components/CalendlyButton'
 import { Workflow, Bot, GitMerge, Webhook, Zap, Shield, ArrowRight } from 'lucide-react'
@@ -72,6 +73,10 @@ export default function N8nOtomasyonPage() {
           <CalendlyButton label="Otomasyon Danışmanlığı Al" variant="primary" />
         </div>
       </section>
+
+      <KisaOzet>
+        n8n ile form, CRM, e-posta, tablo ve yapay zekâ araçları arasında tekrar eden işleri otomatik hale getiriyoruz. İşletmenizdeki zaman alan süreçleri birlikte belirliyor, kurulumu ve bakımını üstleniyoruz.
+      </KisaOzet>
 
       <section className="py-12 px-6 border-y border-white/[0.04]">
         <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">

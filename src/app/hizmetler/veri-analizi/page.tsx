@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import KisaOzet from '@/components/KisaOzet'
 import Link from 'next/link'
 import CalendlyButton from '@/components/CalendlyButton'
 import { BarChart3, TrendingUp, Target, Search, LineChart, Lightbulb, CheckCircle2, ArrowRight } from 'lucide-react'
@@ -141,6 +142,10 @@ export default function VeriAnaliziPage() {
           <CalendlyButton label="Ücretsiz Analitik Auditi" variant="primary" />
         </div>
       </section>
+
+      <KisaOzet>
+        GA4, Search Console ve reklam verilerinizi tek panelde toplayıp hangi kanalın gerçekten müşteri getirdiğini görünür kılıyoruz. Doğru ölçüm kurulmadan yapılan pazarlama tahmine dayanır; ilk adım takip altyapısıdır.
+      </KisaOzet>
 
       {/* Stats */}
       <section className="py-12 px-6 border-y border-white/[0.04]">

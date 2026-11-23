@@ -6,6 +6,7 @@ import dynamic from 'next/dynamic'
 import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import FeaturedWork from '@/components/FeaturedWork'
+import AnaSayfaSss from '@/components/AnaSayfaSss'
 import HeroBackgroundVideo from '@/components/HeroBackgroundVideo'
 import {
   Sparkles,
@@ -716,6 +717,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* ── SSS ──────────────────────────────────────────────────────────── */}
+      <AnaSayfaSss />
 
       {/* ── FINAL CTA ────────────────────────────────────────────────────── */}
       <section className="py-12 sm:py-16 px-6">

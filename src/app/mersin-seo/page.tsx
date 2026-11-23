@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import KisaOzet from '@/components/KisaOzet'
 import Link from 'next/link'
 import CitySeoSections from '@/components/CitySeoSections'
 import { sehirSeo } from '@/lib/sehirSeo'
@@ -110,6 +111,10 @@ export default function MersinSeoPage() {
           </div>
         </div>
       </section>
+
+      <KisaOzet>
+        Mersin’de lojistik, gümrük ve narenciye ihracatı yapan firmalar için kurumsal B2B görünürlük; Yenişehir ve Mezitli’deki yerel işletmeler için harita sonuçları önemlidir. Çalışmayı işletmenizin hedef müşterisine göre uzaktan planlıyoruz.
+      </KisaOzet>
 
       <section className="pb-16 px-6">
         <div className="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-5">

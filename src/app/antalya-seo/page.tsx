@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import KisaOzet from '@/components/KisaOzet'
 import Link from 'next/link'
 import CitySeoSections from '@/components/CitySeoSections'
 import { sehirSeo } from '@/lib/sehirSeo'
@@ -111,6 +112,10 @@ export default function AntalyaSeoPage() {
           </div>
         </div>
       </section>
+
+      <KisaOzet>
+        Antalya’da turizm ve gayrimenkul işletmelerinin müşterisi çoğu zaman şehir dışından ve yurt dışından arar; bu yüzden çok dilli içerik ve harita görünürlüğü birlikte planlanır. Hizmeti uzaktan veriyor, sıralama garantisi vermiyoruz.
+      </KisaOzet>
 
       <section className="pb-16 px-6">
         <div className="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-5">

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import KisaOzet from '@/components/KisaOzet'
 import Link from 'next/link'
 import CitySeoSections from '@/components/CitySeoSections'
 import { sehirSeo } from '@/lib/sehirSeo'
@@ -109,6 +110,10 @@ export default function EskisehirSeoPage() {
           </div>
         </div>
       </section>
+
+      <KisaOzet>
+        Eskişehir’de üniversite nüfusu kafe, kurs ve kiralık konut gibi aramaları canlı tutar; sanayi firmaları ise kurumsal B2B görünürlük ister. Stratejiyi Odunpazarı ve Tepebaşı’ndaki hedef kitlenize göre kuruyor, uzaktan yürütüyoruz.
+      </KisaOzet>
 
       <section className="pb-16 px-6">
         <div className="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-5">

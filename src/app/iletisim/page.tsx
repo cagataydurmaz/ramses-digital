@@ -314,6 +314,7 @@ export default function ContactPage() {
                           <><Send size={16} />Mesaj Gönder</>
                         )}
                       </button>
+                      <p className="text-zinc-500 text-xs text-center">Ortalama 2 saat içinde dönüş yapıyoruz.</p>
                     </form>
                   </>
                 )}

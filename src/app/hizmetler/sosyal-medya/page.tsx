@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import KisaOzet from '@/components/KisaOzet'
 import Link from 'next/link'
 import CalendlyButton from '@/components/CalendlyButton'
 import { Share2, Image as ImageIcon, Video, Calendar, Palette, Hash, CheckCircle2, ArrowRight } from 'lucide-react'
@@ -137,6 +138,10 @@ export default function SosyalMedyaPage() {
           <CalendlyButton label="Ücretsiz Strateji Görüşmesi" variant="primary" />
         </div>
       </section>
+
+      <KisaOzet>
+        Markanızın diline uygun post, story ve kısa video içerikleri ile içerik takvimini hazırlıyoruz. Hesap yönetimi ve reklam kampanyaları bu hizmete dahil değildir; içerik üretimine odaklanır.
+      </KisaOzet>
 
       {/* Format bilgi şeridi */}
       <section className="py-12 px-6 border-y border-white/[0.04]">

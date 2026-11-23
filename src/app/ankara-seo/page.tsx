@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import KisaOzet from '@/components/KisaOzet'
 import Link from 'next/link'
 import CitySeoSections from '@/components/CitySeoSections'
 import { sehirSeo } from '@/lib/sehirSeo'
@@ -109,6 +110,10 @@ export default function AnkaraSeoPage() {
           </div>
         </div>
       </section>
+
+      <KisaOzet>
+        Ankara’da kamu, sağlık, hukuk ve eğitim ağırlıklı bir arama pazarı var; stratejiyi Çankaya, Yenimahalle gibi ilçe aramaları ve sektörünüze göre kuruyoruz. Hizmet uzaktan verilir, fiyat için aşağıdaki AI teklif hesaplayıcıyı kullanabilirsiniz.
+      </KisaOzet>
 
       <section className="pb-16 px-6">
         <div className="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-5">

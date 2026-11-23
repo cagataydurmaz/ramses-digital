@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import KisaOzet from '@/components/KisaOzet'
 import Link from 'next/link'
 import CityLinksGrid from '@/components/CityLinksGrid'
 import CalendlyButton from '@/components/CalendlyButton'
@@ -74,6 +75,10 @@ export default function SeoHizmetPage() {
           <CalendlyButton label="Ücretsiz SEO Analizi Al" variant="primary" />
         </div>
       </section>
+
+      <KisaOzet>
+        SEO, işletmenizin Google’da ücretli reklam olmadan bulunmasını sağlayan teknik, içerik ve yerel çalışmaların bütünüdür; buna yapay zekâ aramaları için GEO/AEO da dahildir. Google’a göre etkisini görmek genellikle 4 ay ile 1 yıl arasında sürer ve sıralama garanti edilemez.
+      </KisaOzet>
 
       {/* Stats */}
       <section className="py-12 px-6 border-y border-white/[0.04]">

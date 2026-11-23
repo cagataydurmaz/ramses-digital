@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import KisaOzet from '@/components/KisaOzet'
 import Link from 'next/link'
 import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
@@ -130,6 +131,10 @@ export default function IstanbulSeoPage() {
           </div>
         </div>
       </section>
+
+      <KisaOzet>
+        İstanbul’da rekabet ilçe ve semt düzeyinde kazanılır; genel “İstanbul + hizmet” aramaları yerine işletmenizin gerçekten hizmet verdiği bölgeye odaklanıyoruz. Yerel SEO, teknik SEO ve yapay zekâ aramalarında görünürlük çalışmasını uzaktan yürütüyoruz; sıralama garantisi vermiyoruz.
+      </KisaOzet>
 
       <section className="pb-16 px-6">
         <div className="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-5">

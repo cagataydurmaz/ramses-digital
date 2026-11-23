@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import KisaOzet from '@/components/KisaOzet'
 import Link from 'next/link'
 import CitySeoSections from '@/components/CitySeoSections'
 import { sehirSeo } from '@/lib/sehirSeo'
@@ -110,6 +111,10 @@ export default function GaziantepSeoPage() {
           </div>
         </div>
       </section>
+
+      <KisaOzet>
+        Gaziantep’te halı, tekstil ve gıda üreticileri için ihracat ve toptan alıcıya yönelik B2B içerik; Şahinbey ve Şehitkamil’deki yerel işletmeler için harita görünürlüğü öncelikli. Planı sektörünüze göre kuruyor, uzaktan yürütüyoruz.
+      </KisaOzet>
 
       <section className="pb-16 px-6">
         <div className="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-5">

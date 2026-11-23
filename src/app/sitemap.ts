@@ -3,6 +3,8 @@ import { posts } from '@/lib/posts'
 import { projects } from '@/lib/portfolio'
 import { ilceler } from '@/lib/ilceler'
 import { ilSeo } from '@/lib/ilSeo'
+import { araclar } from '@/lib/araclar'
+import { sektorler } from '@/lib/sektorler'
 
 // Google lastmod'u yalnızca tutarlı ve doğrulanabilir biçimde doğruysa kullanır;
 // priority/changefreq yok sayılır. Gerçek değişiklik tarihi bilinmeyen sayfalara
@@ -130,5 +132,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const ilSeoPages = ilSeo.map((i) => ({ url: `${base}/${i.slug}-seo` }))
 
-  return [...statics, ...ilSeoPages, ...ilcePages, ...blogPages, ...caseStudyPages]
+  const aracPages = [{ url: `${base}/araclar` }, ...araclar.map((a) => ({ url: `${base}/araclar/${a.slug}` }))]
+  const sektorPages = [{ url: `${base}/sektorler` }, ...sektorler.map((s) => ({ url: `${base}/sektorler/${s.slug}` }))]
+
+  return [...statics, ...aracPages, ...sektorPages, ...ilSeoPages, ...ilcePages, ...blogPages, ...caseStudyPages]
 }

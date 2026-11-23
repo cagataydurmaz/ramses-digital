@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import KisaOzet from '@/components/KisaOzet'
 import Link from 'next/link'
 import CitySeoSections from '@/components/CitySeoSections'
 import { sehirSeo } from '@/lib/sehirSeo'
@@ -111,6 +112,10 @@ export default function IzmitSeoPage() {
           </div>
         </div>
       </section>
+
+      <KisaOzet>
+        İzmit merkezde müşteriler çoğunlukla Google Haritalar’dan ve “yakınımdaki” aramalarından gelir; işletme profili, hizmet sayfaları ve gerçek yorumlar burada belirleyicidir. Kocaeli kökenli bir ekip olarak yerel SEO çalışmasını sade ve ölçülebilir biçimde yürütüyoruz.
+      </KisaOzet>
 
       {/* Results */}
       <section className="pb-16 px-6">

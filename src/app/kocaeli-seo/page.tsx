@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import KisaOzet from '@/components/KisaOzet'
 import Link from 'next/link'
 import CitySeoSections from '@/components/CitySeoSections'
 import { sehirSeo } from '@/lib/sehirSeo'
@@ -132,6 +133,10 @@ export default function KocaeliSeoPage() {
           </div>
         </div>
       </section>
+
+      <KisaOzet>
+        Kocaeli’de Gebze’den Gölcük’e her ilçe ayrı bir pazar; sanayi firmaları için kurumsal SEO, yerel işletmeler için ilçe bazlı harita görünürlüğü çalışıyoruz. Yalnızca İzmit merkezde hizmet veriyorsanız İzmit SEO sayfamız size daha uygun olabilir.
+      </KisaOzet>
 
       <section className="pb-16 px-6">
         <div className="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-5">

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import KisaOzet from '@/components/KisaOzet'
 import Link from 'next/link'
 import CityLinksGrid from '@/components/CityLinksGrid'
 import CalendlyButton from '@/components/CalendlyButton'
@@ -73,6 +74,10 @@ export default function WebTasarimHizmetPage() {
           <CalendlyButton label="Tasarım Görüşmesi Al" variant="primary" />
         </div>
       </section>
+
+      <KisaOzet>
+        Hızlı açılan, mobilde rahat kullanılan ve ziyaretçiyi aramaya ya da mesaja yönlendiren web siteleri tasarlıyoruz. Siteler SEO uyumlu altyapıyla kurulur; böylece sonradan Google görünürlüğü için baştan yapılması gerekmez.
+      </KisaOzet>
 
       <section className="py-12 px-6 border-y border-white/[0.04]">
         <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">

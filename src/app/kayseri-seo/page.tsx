@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import KisaOzet from '@/components/KisaOzet'
 import Link from 'next/link'
 import CitySeoSections from '@/components/CitySeoSections'
 import { sehirSeo } from '@/lib/sehirSeo'
@@ -110,6 +111,10 @@ export default function KayseriSeoPage() {
           </div>
         </div>
       </section>
+
+      <KisaOzet>
+        Kayseri’de mobilya ve gıda üreticileri hem toptan alıcıya hem son kullanıcıya ulaşmak ister; bu iki kitleye ayrı sayfa ve içerik kurguluyoruz. Melikgazi ve Kocasinan’daki hizmet işletmeleri için yerel SEO’yu da uzaktan yürütüyoruz.
+      </KisaOzet>
 
       <section className="pb-16 px-6">
         <div className="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-5">

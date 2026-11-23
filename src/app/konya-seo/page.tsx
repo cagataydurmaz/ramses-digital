@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import KisaOzet from '@/components/KisaOzet'
 import Link from 'next/link'
 import CitySeoSections from '@/components/CitySeoSections'
 import { sehirSeo } from '@/lib/sehirSeo'
@@ -110,6 +111,10 @@ export default function KonyaSeoPage() {
           </div>
         </div>
       </section>
+
+      <KisaOzet>
+        Konya’da tarım makineleri ve sanayi firmaları ürün odaklı B2B aramalarla, Selçuklu ve Meram’daki hizmet işletmeleri ise yerel aramalarla müşteri bulur. Her iki yapı için ayrı içerik stratejisi kuruyor, hizmeti uzaktan veriyoruz.
+      </KisaOzet>
 
       <section className="pb-16 px-6">
         <div className="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-5">

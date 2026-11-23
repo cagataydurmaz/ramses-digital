@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import KisaOzet from '@/components/KisaOzet'
 import Link from 'next/link'
 import CitySeoSections from '@/components/CitySeoSections'
 import { sehirSeo } from '@/lib/sehirSeo'
@@ -111,6 +112,10 @@ export default function IzmirSeoPage() {
           </div>
         </div>
       </section>
+
+      <KisaOzet>
+        İzmir’de ilçeler arasında arama alışkanlıkları belirgin biçimde farklıdır; Bornova’daki bir klinikle Urla’daki bir butik otelin planı aynı olmaz. Yerel SEO, Google haritalar ve GEO/AEO çalışmasını işletmenizin bölgesine göre uzaktan yürütüyoruz.
+      </KisaOzet>
 
       <section className="pb-16 px-6">
         <div className="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-5">

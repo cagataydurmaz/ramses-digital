@@ -22,6 +22,8 @@ const quickLinks = [
   { href: '/iletisim', label: 'İletişim' },
   { href: '/teklif-al', label: 'AI Teklif Al' },
   { href: '/seo-analiz', label: 'Ücretsiz SEO Analizi' },
+  { href: '/araclar', label: 'Ücretsiz Araçlar' },
+  { href: '/sektorler', label: 'Sektörler' },
 ]
 
 const localPages = [

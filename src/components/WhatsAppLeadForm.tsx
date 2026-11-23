@@ -142,6 +142,7 @@ export default function WhatsAppLeadForm() {
           >
             <Send size={16} /> WhatsApp&apos;tan Gönder
           </button>
+          <p className="text-zinc-500 text-xs text-center mt-2">Ortalama 2 saat içinde dönüş yapıyoruz.</p>
           <p className="text-zinc-600 text-xs text-center mt-3">
             Gönder&apos;e bastığınızda bilgileriniz WhatsApp&apos;ta hazır bir mesaj olarak açılır.
           </p>

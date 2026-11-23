@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import KisaOzet from '@/components/KisaOzet'
 import Link from 'next/link'
 import CityLinksGrid from '@/components/CityLinksGrid'
 import CalendlyButton from '@/components/CalendlyButton'
@@ -73,6 +74,10 @@ export default function GoogleAdsHizmetPage() {
           <CalendlyButton label="Ücretsiz Hesap Auditi" variant="primary" />
         </div>
       </section>
+
+      <KisaOzet>
+        Google Ads, arama yapan kişinin karşısına hemen çıkmanızı sağlar; bütçe durunca görünürlük de durur. Kampanya kurulumu, dönüşüm takibi ve düzenli optimizasyonu biz yürütüyoruz; reklam bütçesi doğrudan Google’a ödenir, yönetim ücretimiz ayrıdır.
+      </KisaOzet>
 
       <section className="py-12 px-6 border-y border-white/[0.04]">
         <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">

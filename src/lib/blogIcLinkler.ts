@@ -1,5 +1,6 @@
 import type { Post } from './posts'
 import { ilSeo } from './ilSeo'
+import { sektorler, blogSektor } from './sektorler'
 
 // Her blog yazısının sonuna konusuna göre hizmet + şehir sayfası bağlantıları üretir.
 // Amaç: (1) okuyanı ilgili hizmete yönlendirmek, (2) Google'ın şehir sayfalarını
@@ -45,7 +46,12 @@ function sehirSayfalari(tur: Tur): { label: string; href: string }[] {
 
 export function blogIcLinkler(post: Post, tumYazilar: Post[]) {
   const tur = turBul(post)
-  const linkler: { label: string; href: string }[] = [HUB[tur]]
+  const linkler: { label: string; href: string }[] = []
+
+  // Sektör yazısıysa önce ilgili sektör sayfası
+  const sektor = sektorler.find((s) => s.slug === blogSektor[post.slug])
+  if (sektor) linkler.push({ label: `${sektor.ad} İçin Dijital Pazarlama`, href: `/sektorler/${sektor.slug}` })
+  linkler.push(HUB[tur])
 
   // Yazı belirli bir şehirle ilgiliyse önce o şehrin sayfaları
   const sehir = Object.keys(SEHIRLER).find((s) => post.slug.includes(s))

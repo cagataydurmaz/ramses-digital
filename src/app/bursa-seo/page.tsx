@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import KisaOzet from '@/components/KisaOzet'
 import Link from 'next/link'
 import CitySeoSections from '@/components/CitySeoSections'
 import { sehirSeo } from '@/lib/sehirSeo'
@@ -111,6 +112,10 @@ export default function BursaSeoPage() {
           </div>
         </div>
       </section>
+
+      <KisaOzet>
+        Bursa’da otomotiv yan sanayi, tekstil ve mobilya firmaları için B2B aramalar, Nilüfer ve Osmangazi’deki hizmet işletmeleri için harita sonuçları öne çıkar. İkisine de ayrı strateji kuruyor, hizmeti uzaktan veriyoruz.
+      </KisaOzet>
 
       <section className="pb-16 px-6">
         <div className="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-5">

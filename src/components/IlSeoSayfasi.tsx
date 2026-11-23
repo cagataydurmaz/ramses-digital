@@ -6,6 +6,7 @@ import SeoChecklist from '@/components/SeoChecklist'
 import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
+import KisaOzet from '@/components/KisaOzet'
 import type { IlSeoVeri } from '@/lib/ilSeo'
 
 // Veri odaklı il/ilçe SEO sayfası (src/lib/ilSeo.ts). Görünüm mevcut şehir SEO
@@ -31,6 +32,8 @@ export default function IlSeoSayfasi({ v }: { v: IlSeoVeri }) {
     { q: 'GEO ve AEO nedir, işletmeme ne kazandırır?', a: `GEO ve AEO, ChatGPT ve Gemini gibi yapay zekâ araçlarında ve Google'ın cevap kutularında kaynak olarak gösterilme olasılığını artırmaya yönelik içerik ve yapı çalışmasıdır. "${v.bulunma} güvenilir X önerir misin?" gibi sorularda görünürlük hedeflenir; sonuç garanti edilmez.` },
   ]
   const faqs = [...v.sss, ...genelSss]
+  const sektorListe = v.sektorler.slice(0, 3).map((s) => s.ad.toLocaleLowerCase('tr-TR'))
+  const kisaOzet = `${v.bulunma} Google'da ve haritalarda bulunmak isteyen işletmelere yerel SEO, teknik SEO ve GEO/AEO hizmetini uzaktan veriyoruz. ${v.icin} öne çıkan alanlarını (${sektorListe.join(', ')}) ve ${v.ilceler.slice(0, 2).map((i) => i.ad).join(', ')} gibi bölgeleri ayrı ele alıyoruz. Fiyat için aşağıdaki AI teklif hesaplayıcıyı kullanabilirsiniz; sıralama garantisi verilmez.`
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -92,6 +95,8 @@ export default function IlSeoSayfasi({ v }: { v: IlSeoVeri }) {
           </div>
         </div>
       </section>
+
+      <KisaOzet>{kisaOzet}</KisaOzet>
 
       <section className="pb-24 px-6">
         <div className="max-w-6xl mx-auto">

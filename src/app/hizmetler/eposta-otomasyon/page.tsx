@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import KisaOzet from '@/components/KisaOzet'
 import Link from 'next/link'
 import CalendlyButton from '@/components/CalendlyButton'
 import { Mail, Zap, Users, BarChart3, RefreshCw, Target, CheckCircle2, ArrowRight } from 'lucide-react'
@@ -141,6 +142,10 @@ export default function EpostaOtomasyonPage() {
           <CalendlyButton label="Ücretsiz Strateji Görüşmesi" variant="primary" />
         </div>
       </section>
+
+      <KisaOzet>
+        E-posta pazarlamada amaç doğru kişiye doğru zamanda mesaj göndermektir: hoş geldin serileri, sepet hatırlatmaları ve segmentli kampanyalar. Kurulumu ve otomasyonları yapıyor, onaylı alıcı listesiyle mevzuata uygun çalışıyoruz.
+      </KisaOzet>
 
       {/* Stats */}
       <section className="py-12 px-6 border-y border-white/[0.04]">
