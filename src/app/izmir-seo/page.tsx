@@ -46,6 +46,9 @@ const faqs = [
   { q: 'Fiziksel olarak İzmir\'de misiniz?', a: 'Hayır, Kocaeli kökenliyiz — tüm çalışmalar uzaktan yürütülüyor. İstanbul Barosu\'na kayıtlı avukatlar için yürüttüğümüz canlı projeler, uzaktan çalışma modelimizin gerçek sonuç verdiğinin kanıtı. İzmir işletmeleri için de aynı süreç ve kalite geçerli.' },
   { q: 'GEO (Yapay Zeka Optimizasyonu) İzmir işletmesi için gerekli mi?', a: 'Evet, özellikle turizm ve e-ticaret sektöründe. ChatGPT veya Gemini\'ye "İzmir\'de en iyi X" diye sorulduğunda alıntılanma olasılığını artıran yapılandırılmış içerik ve otorite sinyalleri gerekiyor — turistlerin ve yeni müşterilerin AI araçlarına giderek daha çok başvurduğu bir dönemdeyiz.' },
   ...sehirSeo['izmir'].ekSss,
+  { q: "İzmir'de SEO ajansı seçerken nelere dikkat etmeliyim?", a: "Canlı ve ziyaret edilebilir referanslar, Search Console verisiyle aylık rapor, sitenin ve hesapların sizin adınıza kalması ve sıralama garantisi vermemesi. 'Garantili 1. sıra' vaadi ya da toplu backlink paketi sunan ajanslardan uzak durun." },
+  { q: "İzmir'de hangi aramalarla başlamak daha hızlı sonuç verir?", a: "'izmir seo ajansı' gibi genel aramalar uzun vadeli hedeftir. 'bornova diş kliniği', 'karşıyaka emlak ofisi' gibi ilçe ve hizmet birleşimli aramalar daha az rekabetlidir ve daha hızlı sonuç verir. Turizm işletmelerinde ise Çeşme, Urla gibi ilçe adlarıyla ve yabancı dilde yapılan aramalar ayrıca planlanır." },
+  { q: "İzmir'de SEO ile Google Ads birlikte mi yürütülmeli?", a: 'Hızlı müşteri gerekiyorsa evet. Google Ads ilk günden görünürlük sağlarken SEO zamanla birikir; reklam verisi hangi aramaların gerçekten müşteri getirdiğini gösterir ve SEO önceliklerini belirlemeye yardım eder. İzmir Google Ads sayfamızda reklam tarafını ayrıca anlatıyoruz.' },
 ]
 
 const jsonLd = {
