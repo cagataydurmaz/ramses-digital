@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation'
+import { seoBaslik, seoAciklama } from '@/lib/seoBaslik'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Metadata } from 'next'
@@ -29,12 +30,12 @@ export function generateMetadata({ params }: Props): Metadata {
   const project = projects.find((p) => p.slug === params.slug)
   if (!project) return { title: 'Vaka Çalışması Bulunamadı' }
   return {
-    title: `${project.name} Vaka Çalışması — ${project.industry} | Ramses Digital`,
-    description: project.desc,
+    title: seoBaslik(`${project.name} Vaka Çalışması`),
+    description: seoAciklama(project.desc),
     alternates: { canonical: `https://ramsesdigital.com/portfolyo/${project.slug}` },
     openGraph: {
       title: `${project.name} — ${project.title}`,
-      description: project.desc,
+      description: seoAciklama(project.desc),
       type: 'article',
       images: ['https://ramsesdigital.com/og-image.png'],
     },
@@ -48,7 +49,7 @@ function JsonLd({ project }: { project: (typeof projects)[0] }) {
       {
         '@type': 'Article',
         headline: `${project.name} Vaka Çalışması`,
-        description: project.desc,
+        description: seoAciklama(project.desc),
         about: project.industry,
         author: { '@id': 'https://ramsesdigital.com/#organization' },
         publisher: { '@id': 'https://ramsesdigital.com/#organization' },

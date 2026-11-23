@@ -9,7 +9,7 @@ import { MapPin, Globe, ArrowRight, CheckCircle2, Zap, Smartphone, Search, Shiel
 export const metadata: Metadata = {
   title: 'Antalya Web Tasarım Ajansı — Ramses Dijital',
   description:
-    'Antalya\'da profesyonel web tasarım hizmeti. Otel, tur operatörü, gayrimenkul ofisi ve klinikler için çok dilli, mobil öncelikli, SEO uyumlu web siteleri. Muratpaşa, Alanya, Manavgat ve tüm Antalya\'ya uzaktan hizmet.',
+    'Antalya\'da profesyonel web tasarım hizmeti. Otel, tur operatörü, gayrimenkul ofisi ve klinikler için çok dilli, mobil öncelikli, SEO uyumlu web siteleri.',
   alternates: { canonical: 'https://ramsesdigital.com/antalya-web-tasarim' },
   openGraph: {
     title: 'Antalya Web Tasarım | Ramses Dijital',

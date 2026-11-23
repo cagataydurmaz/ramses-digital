@@ -8,7 +8,7 @@ const v: GebzeHizmetVeri = {
   h1Vurgu: 'Site, SEO ve Reklam Tek Elde',
   giris: "Gebze'deki üretici, tedarikçi ve yerel işletmeler için web sitesi, SEO, Google Ads ve Google İşletme Profili'ni birlikte planlayan, İzmit merkezli dijital pazarlama ekibi.",
   kisaOzet: "Gebze'de dijital pazarlamayı tek bir plan olarak yürütüyoruz: hızlı ve güven veren bir web sitesi, 'gebze + hizmet' aramaları için SEO, gerekiyorsa Google Ads ve haritada görünürlük. Her ay hangi kanalın talep getirdiğini raporluyoruz. Fiyat için aşağıdaki AI teklif hesaplayıcıyı kullanabilirsiniz; sıralama garantisi verilmez.",
-  metaTitle: 'Gebze Dijital Pazarlama Ajansı – SEO, Reklam, Web | Ramses Dijital',
+  metaTitle: 'Gebze Dijital Pazarlama – SEO, Reklam, Web | Ramses',
   metaDesc: "Gebze'de dijital pazarlama ajansı: web sitesi, SEO, Google Ads ve Google İşletme Profili tek planda. İzmit merkezli ekip, taahhüt yok. Google'da 5.0 puan.",
   hizmetAdi: 'Gebze Dijital Pazarlama Hizmeti',
   kartlar: [

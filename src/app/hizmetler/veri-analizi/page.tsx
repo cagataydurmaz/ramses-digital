@@ -5,9 +5,9 @@ import CalendlyButton from '@/components/CalendlyButton'
 import { BarChart3, TrendingUp, Target, Search, LineChart, Lightbulb, CheckCircle2, ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Veri Analizi ve Danışmanlık | GA4, Looker Studio — Ramses Dijital',
+  title: 'Veri Analizi: GA4 ve Looker Studio | Ramses Dijital',
   description:
-    'GA4 kurulumu, özel dashboard tasarımı ve dönüşüm huni analiziyle veriye dayalı büyüme stratejisi. Ramses Dijital Yazılım ve Dijital Pazarlama Ajansı — ölçülemeyen büyüme olmaz.',
+    'GA4 kurulumu, özel dashboard tasarımı ve dönüşüm huni analiziyle veriye dayalı büyüme stratejisi.',
   alternates: { canonical: 'https://ramsesdigital.com/hizmetler/veri-analizi' },
   openGraph: {
     title: 'Veri Analizi & Danışmanlık | Ramses Dijital',

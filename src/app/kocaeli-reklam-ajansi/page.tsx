@@ -7,7 +7,7 @@ import RelatedPages from '@/components/RelatedPages'
 import { MapPin, CheckCircle2, ArrowRight, Megaphone, Globe, BarChart3, Search, Zap, Building2, Factory, ShieldCheck, LineChart } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Kocaeli Reklam Ajansı | Google Reklam ve Online Reklam — Ramses Dijital',
+  title: 'Kocaeli Reklam Ajansı – Google ve Online Reklam | Ramses',
   description:
     'Kocaeli reklam ajansı: Google reklam yönetimi, online reklam, SEO ve web tasarım. İzmit, Gebze, Darıca, Körfez, Gölcük, Başiskele için ücretsiz danışmanlık.',
   alternates: { canonical: 'https://ramsesdigital.com/kocaeli-reklam-ajansi' },

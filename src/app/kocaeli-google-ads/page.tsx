@@ -7,9 +7,9 @@ import RelatedPages from '@/components/RelatedPages'
 import { MapPin, Megaphone, ArrowRight, Target, BarChart3, Zap, TrendingUp, DollarSign, Clock, CheckCircle2 } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Kocaeli Google Ads Ajansı | AdWords Yönetimi — Ramses Dijital',
+  title: 'Kocaeli Google Ads (AdWords) Ajansı | Ramses Dijital',
   description:
-    'Kocaeli Google Ads ajansı ve AdWords danışmanlığı. İzmit, Gebze, Darıca ve tüm Kocaeli ilçelerinde hedefli arama reklamları. Bütçe israfı yok, ölçülebilir dönüşüm. Ücretsiz kampanya analizi.',
+    'Kocaeli Google Ads ajansı ve AdWords danışmanlığı. İzmit, Gebze, Darıca ve tüm Kocaeli ilçelerinde hedefli arama reklamları.',
   alternates: { canonical: 'https://ramsesdigital.com/kocaeli-google-ads' },
   openGraph: {
     title: 'Kocaeli Google Ads Yönetimi | Ramses Dijital',

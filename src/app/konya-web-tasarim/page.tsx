@@ -9,7 +9,7 @@ import { MapPin, ArrowRight, CheckCircle2, Zap, Smartphone, Search, ShieldCheck,
 export const metadata: Metadata = {
   title: 'Konya Web Tasarım Ajansı — Ramses Dijital',
   description:
-    'Konya\'da profesyonel web tasarım hizmeti. Selçuklu, Meram, Karatay ve tüm Konya ilçeleri için SEO uyumlu, mobil öncelikli kurumsal web siteleri. Ücretsiz teklif alın.',
+    'Konya\'da profesyonel web tasarım hizmeti. Selçuklu, Meram, Karatay ve tüm Konya ilçeleri için SEO uyumlu, mobil öncelikli kurumsal web siteleri.',
   alternates: { canonical: 'https://ramsesdigital.com/konya-web-tasarim' },
   openGraph: {
     title: 'Konya Web Tasarım | Ramses Dijital',

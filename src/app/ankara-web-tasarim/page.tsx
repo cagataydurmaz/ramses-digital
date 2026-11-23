@@ -9,7 +9,7 @@ import { MapPin, Globe, ArrowRight, CheckCircle2, Zap, Smartphone, Search, Shiel
 export const metadata: Metadata = {
   title: 'Ankara Web Tasarım Ajansı — Ramses Dijital',
   description:
-    'Ankara\'da profesyonel web tasarım hizmeti. Çankaya, Keçiören, Yenimahalle ve tüm Ankara ilçeleri için SEO uyumlu, mobil öncelikli kurumsal web siteleri. Ücretsiz teklif alın.',
+    'Ankara\'da profesyonel web tasarım hizmeti. Çankaya, Keçiören, Yenimahalle ve tüm Ankara ilçeleri için SEO uyumlu, mobil öncelikli kurumsal web siteleri.',
   alternates: { canonical: 'https://ramsesdigital.com/ankara-web-tasarim' },
   openGraph: {
     title: 'Ankara Web Tasarım | Ramses Dijital',

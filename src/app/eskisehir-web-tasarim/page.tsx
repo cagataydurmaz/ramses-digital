@@ -9,7 +9,7 @@ import { MapPin, ArrowRight, CheckCircle2, Zap, Smartphone, Search, ShieldCheck,
 export const metadata: Metadata = {
   title: 'Eskişehir Web Tasarım Ajansı — Ramses Dijital',
   description:
-    'Eskişehir\'de profesyonel web tasarım hizmeti. Odunpazarı, Tepebaşı ve tüm Eskişehir ilçeleri için SEO uyumlu, mobil öncelikli kurumsal web siteleri. Ücretsiz teklif alın.',
+    'Eskişehir\'de profesyonel web tasarım hizmeti. Odunpazarı, Tepebaşı ve tüm Eskişehir ilçeleri için SEO uyumlu, mobil öncelikli kurumsal web siteleri.',
   alternates: { canonical: 'https://ramsesdigital.com/eskisehir-web-tasarim' },
   openGraph: {
     title: 'Eskişehir Web Tasarım | Ramses Dijital',

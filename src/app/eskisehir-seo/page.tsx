@@ -11,12 +11,12 @@ import RelatedPages from '@/components/RelatedPages'
 import { MapPin, Search, ArrowRight, CheckCircle2, FileText, Link2, BarChart3, Zap, Award, TrendingUp } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Eskişehir SEO Ajansı – Ücretsiz Site Analizi | Ramses Dijital',
+  title: 'Eskişehir SEO Ajansı – Ücretsiz Site Analizi | Ramses',
   description:
     "Eskişehir'de Google'da bulunmak isteyen işletmelere SEO hizmeti. Odunpazarı ve Tepebaşı dahil; ücretsiz site analizi, net fiyat, aylık rapor, taahhüt yok.",
   alternates: { canonical: 'https://ramsesdigital.com/eskisehir-seo' },
   openGraph: {
-    title: 'Eskişehir SEO Ajansı – Ücretsiz Site Analizi | Ramses Dijital',
+    title: 'Eskişehir SEO Ajansı – Ücretsiz Site Analizi | Ramses',
     description: 'Eskişehir işletmeleri için yerel SEO, teknik SEO ve GEO/AEO optimizasyonu.',
     url: 'https://ramsesdigital.com/eskisehir-seo',
     images: ['https://ramsesdigital.com/og-image.png'],

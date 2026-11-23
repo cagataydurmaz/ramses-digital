@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Blog | Dijital Pazarlama & SEO Rehberleri — Ramses Digital Kocaeli',
+  title: 'Blog: Dijital Pazarlama ve SEO Rehberleri | Ramses Dijital',
   description:
     'SEO, Google Ads, sosyal medya ve yapay zeka üzerine güncel rehberler ve uzman içerikleri. Dijital pazarlama dünyasından en iyi kaynaklar.',
   openGraph: {

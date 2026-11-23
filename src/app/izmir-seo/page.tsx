@@ -14,7 +14,7 @@ import { MapPin, Search, ArrowRight, CheckCircle2, FileText, Link2, BarChart3, Z
 export const metadata: Metadata = {
   title: 'İzmir SEO Ajansı – Ücretsiz Site Analizi | Ramses Dijital',
   description:
-    "İzmir'de Google'da müşteri bulmak isteyen işletmelere SEO hizmeti. Konak, Karşıyaka, Bornova dahil; ücretsiz site analizi, aylık rapor, taahhüt yok. Google'da 5.0 puan.",
+    "İzmir'de Google'da müşteri bulmak isteyen işletmelere SEO hizmeti. Konak, Karşıyaka, Bornova dahil; ücretsiz site analizi, aylık rapor, taahhüt yok.",
   alternates: { canonical: 'https://ramsesdigital.com/izmir-seo' },
   openGraph: {
     title: 'İzmir SEO Ajansı – Ücretsiz Site Analizi | Ramses Dijital',

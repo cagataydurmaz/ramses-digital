@@ -8,7 +8,7 @@ import { Globe2, Search, ArrowRight, CheckCircle2, FileText, Link2, BarChart3, Z
 export const metadata: Metadata = {
   title: 'SEO Ajansı — Ramses Dijital',
   description:
-    'Türkiye genelinde hizmet veren SEO ajansı. Teknik SEO, içerik stratejisi, GEO ve AEO ile Türkiye\'nin her şehrindeki işletmeler için Google\'da üst sıraya çıkın. Tamamen online çalışıyoruz. Ücretsiz SEO analizi.',
+    'Türkiye genelinde hizmet veren SEO ajansı. Teknik SEO, içerik stratejisi, GEO ve AEO ile Türkiye\'nin her şehrindeki işletmeler için Google\'da üst sıraya çıkın.',
   alternates: { canonical: 'https://ramsesdigital.com/seo-ajansi' },
   openGraph: {
     title: 'SEO Ajansı | Ramses Dijital',

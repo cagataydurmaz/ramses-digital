@@ -9,7 +9,7 @@ import { MapPin, Megaphone, ArrowRight, Target, BarChart3, Zap, TrendingUp, Doll
 export const metadata: Metadata = {
   title: 'Konya Google Ads Yönetimi — Ramses Dijital',
   description:
-    'Konya\'da Google Ads yönetimi. Selçuklu, Meram, Karatay ve tüm Konya ilçelerinde hedefli arama reklamları. Bütçe israfı yok, ölçülebilir dönüşüm. Ücretsiz kampanya analizi.',
+    'Konya\'da Google Ads yönetimi. Selçuklu, Meram, Karatay ve tüm Konya ilçelerinde hedefli arama reklamları. Bütçe israfı yok, ölçülebilir dönüşüm.',
   alternates: { canonical: 'https://ramsesdigital.com/konya-google-ads' },
   openGraph: {
     title: 'Konya Google Ads Yönetimi | Ramses Dijital',

@@ -9,7 +9,7 @@ import { MapPin, Code2, ArrowRight, CheckCircle2, Zap, Globe, BarChart3, Shield,
 export const metadata: Metadata = {
   title: 'Bursa Yazılım Ajansı — Ramses Dijital',
   description:
-    'Bursa\'da yazılım ajansı. Web uygulaması, otomasyon, API entegrasyonu ve dijital pazarlama yazılımları. Otomotiv yan sanayi, mobilya üreticileri ve KOBİ\'ler için özel yazılım çözümleri.',
+    'Bursa\'da yazılım ajansı. Web uygulaması, otomasyon, API entegrasyonu ve dijital pazarlama yazılımları.',
   alternates: { canonical: 'https://ramsesdigital.com/bursa-yazilim-ajansi' },
   openGraph: {
     title: 'Bursa Yazılım Ajansı | Ramses Dijital',

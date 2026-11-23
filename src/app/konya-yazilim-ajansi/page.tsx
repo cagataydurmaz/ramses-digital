@@ -9,7 +9,7 @@ import { MapPin, Code2, ArrowRight, CheckCircle2, Zap, Globe, BarChart3, Shield,
 export const metadata: Metadata = {
   title: 'Konya Yazılım Ajansı — Ramses Dijital',
   description:
-    'Konya\'da yazılım ajansı. Web uygulaması, otomasyon, API entegrasyonu ve dijital pazarlama yazılımları. Tarım makineleri üreticileri, gıda firmaları ve KOBİ\'ler için özel yazılım çözümleri.',
+    'Konya\'da yazılım ajansı. Web uygulaması, otomasyon, API entegrasyonu ve dijital pazarlama yazılımları.',
   alternates: { canonical: 'https://ramsesdigital.com/konya-yazilim-ajansi' },
   openGraph: {
     title: 'Konya Yazılım Ajansı | Ramses Dijital',

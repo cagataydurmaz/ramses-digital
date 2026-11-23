@@ -9,7 +9,7 @@ import { MapPin, Megaphone, ArrowRight, CheckCircle2, Target, BarChart3, Zap, Tr
 export const metadata: Metadata = {
   title: 'İzmit Google Ads Yönetimi — Ramses Dijital',
   description:
-    'İzmit\'te Google Ads yönetimi. Arama, display ve yerel reklam kampanyalarıyla doğru müşteriye ulaşın. Bütçe israfı yok, ölçülebilir dönüşüm. Ücretsiz kampanya analizi.',
+    'İzmit\'te Google Ads yönetimi. Arama, display ve yerel reklam kampanyalarıyla doğru müşteriye ulaşın. Bütçe israfı yok, ölçülebilir dönüşüm.',
   alternates: { canonical: 'https://ramsesdigital.com/izmit-google-ads' },
   openGraph: {
     title: 'İzmit Google Ads Yönetimi | Ramses Dijital',

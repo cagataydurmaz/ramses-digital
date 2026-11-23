@@ -9,7 +9,7 @@ import { MapPin, Megaphone, ArrowRight, Target, BarChart3, Zap, TrendingUp, Doll
 export const metadata: Metadata = {
   title: 'Gaziantep Google Ads Yönetimi — Ramses Dijital',
   description:
-    'Gaziantep\'te Google Ads yönetimi. Şahinbey, Şehitkamil, Nizip ve tüm Gaziantep ilçelerinde hedefli arama reklamları. Bütçe israfı yok, ölçülebilir dönüşüm. Ücretsiz kampanya analizi.',
+    'Gaziantep\'te Google Ads yönetimi. Şahinbey, Şehitkamil, Nizip ve tüm Gaziantep ilçelerinde hedefli arama reklamları. Bütçe israfı yok, ölçülebilir dönüşüm.',
   alternates: { canonical: 'https://ramsesdigital.com/gaziantep-google-ads' },
   openGraph: {
     title: 'Gaziantep Google Ads Yönetimi | Ramses Dijital',

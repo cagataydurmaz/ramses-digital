@@ -29,15 +29,15 @@ import {
 } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Ramses Digital | Performance-Driven Digital Marketing & Software Agency',
+  title: 'Ramses Digital | SEO, Google Ads & Web Design Agency',
   description:
-    'Ramses Digital — SEO and AI search visibility, Google Ads, web design and n8n automation. An engineering-led digital marketing agency delivering real, measurable results.',
+    'Ramses Digital — SEO and AI search visibility, Google Ads, web design and n8n automation. An engineering-led digital marketing agency delivering real…',
   alternates: {
     canonical: 'https://ramsesdigital.com/en',
     languages: { 'tr-TR': 'https://ramsesdigital.com', en: 'https://ramsesdigital.com/en' },
   },
   openGraph: {
-    title: 'Ramses Digital | Performance-Driven Digital Marketing & Software Agency',
+    title: 'Ramses Digital | SEO, Google Ads & Web Design Agency',
     description: 'SEO, GEO & AEO, Google Ads, web design and n8n automation — grow your brand with real, measurable results.',
     locale: 'en_US',
     type: 'website',

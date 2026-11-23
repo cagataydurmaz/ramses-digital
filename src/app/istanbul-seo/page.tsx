@@ -12,7 +12,7 @@ import { MapPin, Search, ArrowRight, CheckCircle2, FileText, Link2, BarChart3, Z
 export const metadata: Metadata = {
   title: 'İstanbul SEO Ajansı – Ücretsiz Site Analizi | Ramses Dijital',
   description:
-    "İstanbul'da Google'da müşteri bulmak isteyen işletmelere SEO hizmeti. Gerçek İstanbul referansları, ücretsiz site analizi, aylık rapor, taahhüt yok. Google'da 5.0 puan.",
+    "İstanbul'da Google'da müşteri bulmak isteyen işletmelere SEO hizmeti. Gerçek İstanbul referansları, ücretsiz site analizi, aylık rapor, taahhüt yok.",
   alternates: { canonical: 'https://ramsesdigital.com/istanbul-seo' },
   openGraph: {
     title: 'İstanbul SEO Ajansı – Ücretsiz Site Analizi | Ramses Dijital',

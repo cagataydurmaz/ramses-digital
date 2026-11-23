@@ -9,7 +9,7 @@ import { MapPin, Code2, ArrowRight, CheckCircle2, Zap, Globe, BarChart3, Shield,
 export const metadata: Metadata = {
   title: 'Eskişehir Yazılım Ajansı — Ramses Dijital',
   description:
-    'Eskişehir\'de yazılım ajansı. Web uygulaması, otomasyon, API entegrasyonu ve dijital pazarlama yazılımları. Öğrenciye hitap eden işletmeler, sanayi firmaları ve KOBİ\'ler için özel yazılım çözümleri.',
+    'Eskişehir\'de yazılım ajansı. Web uygulaması, otomasyon, API entegrasyonu ve dijital pazarlama yazılımları.',
   alternates: { canonical: 'https://ramsesdigital.com/eskisehir-yazilim-ajansi' },
   openGraph: {
     title: 'Eskişehir Yazılım Ajansı | Ramses Dijital',

@@ -9,7 +9,7 @@ import { MapPin, CheckCircle2, ArrowRight, Megaphone, Globe, BarChart3, Search, 
 export const metadata: Metadata = {
   title: 'İstanbul Reklam Ajansı — Ramses Dijital',
   description:
-    'İstanbul\'un dijital reklam ajansı — gerçek müşteri, gerçek sonuç. Google Ads, SEO ve sosyal medya danışmanlığı. Kadıköy, Beşiktaş, Şişli dahil tüm İstanbul\'a hizmet. Ücretsiz danışmanlık alın.',
+    'İstanbul\'un dijital reklam ajansı — gerçek müşteri, gerçek sonuç. Google Ads, SEO ve sosyal medya danışmanlığı.',
   alternates: { canonical: 'https://ramsesdigital.com/istanbul-reklam-ajansi' },
   openGraph: {
     title: 'İstanbul Reklam Ajansı | Ramses Dijital',

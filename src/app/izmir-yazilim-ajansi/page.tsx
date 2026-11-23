@@ -9,7 +9,7 @@ import { MapPin, Code2, ArrowRight, CheckCircle2, Zap, Globe, BarChart3, Shield,
 export const metadata: Metadata = {
   title: 'İzmir Yazılım Ajansı — Ramses Dijital',
   description:
-    'İzmir\'de yazılım ajansı. Next.js ile web uygulaması, n8n otomasyonu, API entegrasyonu ve yapay zeka çözümleri. İhracatçı ve e-ticaret firmaları için özel yazılım. Ücretsiz keşif görüşmesi.',
+    'İzmir\'de yazılım ajansı. Next.js ile web uygulaması, n8n otomasyonu, API entegrasyonu ve yapay zeka çözümleri.',
   alternates: { canonical: 'https://ramsesdigital.com/izmir-yazilim-ajansi' },
   openGraph: {
     title: 'İzmir Yazılım Ajansı | Ramses Dijital',

@@ -9,7 +9,7 @@ import { MapPin, Code2, ArrowRight, CheckCircle2, Zap, Globe, BarChart3, Shield,
 export const metadata: Metadata = {
   title: 'Kocaeli Yazılım Ajansı — Ramses Dijital',
   description:
-    'Kocaeli\'nin yazılım ajansı. Web uygulaması, iş süreçleri otomasyonu, API entegrasyonu ve yapay zeka çözümleri. İzmit ve Kocaeli odaklı, Gebze, Darıca ve tüm Kocaeli\'ye hizmet.',
+    'Kocaeli\'nin yazılım ajansı. Web uygulaması, iş süreçleri otomasyonu, API entegrasyonu ve yapay zeka çözümleri.',
   alternates: { canonical: 'https://ramsesdigital.com/kocaeli-yazilim-ajansi' },
   openGraph: {
     title: 'Kocaeli Yazılım Ajansı | Ramses Dijital',

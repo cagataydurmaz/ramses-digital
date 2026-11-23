@@ -9,7 +9,7 @@ import { MapPin, Code2, ArrowRight, CheckCircle2, Zap, Globe, BarChart3, Shield,
 export const metadata: Metadata = {
   title: 'Antalya Yazılım Ajansı — Ramses Dijital',
   description:
-    'Antalya\'da yazılım ajansı. Rezervasyon sistemleri, çok dilli web uygulamaları, gayrimenkul ilan platformları ve otomasyon. Otelcilik, gayrimenkul ve tarım ihracatı sektörlerine özel yazılım çözümleri.',
+    'Antalya\'da yazılım ajansı. Rezervasyon sistemleri, çok dilli web uygulamaları, gayrimenkul ilan platformları ve otomasyon.',
   alternates: { canonical: 'https://ramsesdigital.com/antalya-yazilim-ajansi' },
   openGraph: {
     title: 'Antalya Yazılım Ajansı | Ramses Dijital',

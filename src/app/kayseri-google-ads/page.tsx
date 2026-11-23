@@ -9,7 +9,7 @@ import { MapPin, Megaphone, ArrowRight, Target, BarChart3, Zap, TrendingUp, Doll
 export const metadata: Metadata = {
   title: 'Kayseri Google Ads Yönetimi — Ramses Dijital',
   description:
-    'Kayseri\'de Google Ads yönetimi. Melikgazi, Kocasinan, Talas ve tüm Kayseri ilçelerinde hedefli arama reklamları. Bütçe israfı yok, ölçülebilir dönüşüm. Ücretsiz kampanya analizi.',
+    'Kayseri\'de Google Ads yönetimi. Melikgazi, Kocasinan, Talas ve tüm Kayseri ilçelerinde hedefli arama reklamları. Bütçe israfı yok, ölçülebilir dönüşüm.',
   alternates: { canonical: 'https://ramsesdigital.com/kayseri-google-ads' },
   openGraph: {
     title: 'Kayseri Google Ads Yönetimi | Ramses Dijital',

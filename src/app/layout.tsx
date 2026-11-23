@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   title: 'Ramses Dijital | SEO, Google Ads ve Web Tasarım Ajansı',
   description:
-    'Ramses Dijital Yazılım ve Dijital Pazarlama Ajansı — web tasarımı, yazılım geliştirme ve performans odaklı dijital pazarlama. SEO, Google Ads, n8n otomasyon uzmanı ekibimizle gerçek sonuçlar elde edin.',
+    'Ramses Dijital Yazılım ve Dijital Pazarlama Ajansı — web tasarımı, yazılım geliştirme ve performans odaklı dijital pazarlama.',
   keywords:
     'dijital pazarlama, yazılım ajansı, reklam ajansı, SEO, Google Ads, n8n otomasyon, web tasarım, e-posta pazarlama, veri analizi, dijital pazarlama Kocaeli, reklam ajansı İzmit, Ramses Dijital',
   applicationName: 'Ramses Dijital Yazılım ve Dijital Pazarlama Ajansı',

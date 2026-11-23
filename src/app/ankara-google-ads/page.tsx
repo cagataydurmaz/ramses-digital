@@ -9,7 +9,7 @@ import { MapPin, Megaphone, ArrowRight, Target, BarChart3, Zap, TrendingUp, Doll
 export const metadata: Metadata = {
   title: 'Ankara Google Ads Yönetimi — Ramses Dijital',
   description:
-    'Ankara\'da Google Ads yönetimi. Çankaya, Keçiören, Yenimahalle ve tüm Ankara ilçelerinde hedefli arama reklamları. Bütçe israfı yok, ölçülebilir dönüşüm. Ücretsiz kampanya analizi.',
+    'Ankara\'da Google Ads yönetimi. Çankaya, Keçiören, Yenimahalle ve tüm Ankara ilçelerinde hedefli arama reklamları. Bütçe israfı yok, ölçülebilir dönüşüm.',
   alternates: { canonical: 'https://ramsesdigital.com/ankara-google-ads' },
   openGraph: {
     title: 'Ankara Google Ads Yönetimi | Ramses Dijital',

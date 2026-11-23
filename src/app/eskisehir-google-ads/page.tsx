@@ -9,7 +9,7 @@ import { MapPin, Megaphone, ArrowRight, Target, BarChart3, Zap, TrendingUp, Doll
 export const metadata: Metadata = {
   title: 'Eskişehir Google Ads Yönetimi — Ramses Dijital',
   description:
-    'Eskişehir\'de Google Ads yönetimi. Odunpazarı, Tepebaşı ve tüm Eskişehir ilçelerinde hedefli arama reklamları. Bütçe israfı yok, ölçülebilir dönüşüm. Ücretsiz kampanya analizi.',
+    'Eskişehir\'de Google Ads yönetimi. Odunpazarı, Tepebaşı ve tüm Eskişehir ilçelerinde hedefli arama reklamları. Bütçe israfı yok, ölçülebilir dönüşüm.',
   alternates: { canonical: 'https://ramsesdigital.com/eskisehir-google-ads' },
   openGraph: {
     title: 'Eskişehir Google Ads Yönetimi | Ramses Dijital',

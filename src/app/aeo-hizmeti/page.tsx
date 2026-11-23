@@ -8,9 +8,9 @@ import { ArrowRight, Sparkles, ShieldCheck } from 'lucide-react'
 const URL = 'https://ramsesdigital.com/aeo-hizmeti'
 
 export const metadata: Metadata = {
-  title: 'AEO Hizmeti | Cevap Kutuları ve Soru Odaklı SEO — Ramses Dijital',
+  title: 'AEO Hizmeti: Cevap Kutuları ve Soru Odaklı SEO | Ramses',
   description:
-    'AEO hizmeti: cevap kutuları, sesli arama ve yapay zekâ özetlerinde cevabın sizden gelme olasılığını artıran soru odaklı içerik çalışması. Güncel Google bilgileriyle şeffaf süreç.',
+    'AEO hizmeti: cevap kutuları, sesli arama ve yapay zekâ özetlerinde cevabın sizden gelme olasılığını artıran soru odaklı içerik çalışması.',
   alternates: { canonical: URL },
   openGraph: {
     title: 'AEO Hizmeti | Ramses Dijital',

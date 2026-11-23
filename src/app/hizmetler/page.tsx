@@ -5,7 +5,7 @@ import CalendlyButton from '@/components/CalendlyButton'
 export const metadata: Metadata = {
   title: 'Dijital Pazarlama Hizmetleri — Ramses Dijital',
   description:
-    'SEO (Google ve yapay zekâ aramalarında görünürlük), Google Ads, sosyal medya içerik üretimi, web tasarımı, e-posta otomasyonu, n8n iş akışı ve veri analizi. Performans odaklı dijital pazarlama hizmetleri.',
+    'SEO (Google ve yapay zekâ aramalarında görünürlük), Google Ads, sosyal medya içerik üretimi, web tasarımı, e-posta otomasyonu, n8n iş akışı ve veri analizi.',
   alternates: { canonical: 'https://ramsesdigital.com/hizmetler' },
   openGraph: {
     title: 'Dijital Pazarlama Hizmetleri | Ramses Dijital',

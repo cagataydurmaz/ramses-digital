@@ -9,7 +9,7 @@ import { MapPin, Megaphone, ArrowRight, Target, BarChart3, Zap, TrendingUp, Doll
 export const metadata: Metadata = {
   title: 'Mersin Google Ads Yönetimi — Ramses Dijital',
   description:
-    'Mersin\'de Google Ads yönetimi. Yenişehir, Akdeniz, Toroslar ve tüm Mersin ilçelerinde hedefli arama reklamları. Bütçe israfı yok, ölçülebilir dönüşüm. Ücretsiz kampanya analizi.',
+    'Mersin\'de Google Ads yönetimi. Yenişehir, Akdeniz, Toroslar ve tüm Mersin ilçelerinde hedefli arama reklamları. Bütçe israfı yok, ölçülebilir dönüşüm.',
   alternates: { canonical: 'https://ramsesdigital.com/mersin-google-ads' },
   openGraph: {
     title: 'Mersin Google Ads Yönetimi | Ramses Dijital',

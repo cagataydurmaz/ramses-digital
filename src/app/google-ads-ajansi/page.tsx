@@ -7,7 +7,7 @@ import { Globe2, Megaphone, ArrowRight, CheckCircle2, Target, BarChart3, Trendin
 export const metadata: Metadata = {
   title: 'Google Ads Ajansı — Ramses Dijital',
   description:
-    'Türkiye genelinde Google Ads yönetimi. Türkiye\'nin her şehrindeki işletmeler için doğru kitleye ulaşan arama, display ve remarketing kampanyaları. Tamamen online çalışıyoruz. Ücretsiz kampanya analizi.',
+    'Türkiye genelinde Google Ads yönetimi. Türkiye\'nin her şehrindeki işletmeler için doğru kitleye ulaşan arama, display ve remarketing kampanyaları.',
   alternates: { canonical: 'https://ramsesdigital.com/google-ads-ajansi' },
   openGraph: {
     title: 'Google Ads Ajansı | Ramses Dijital',

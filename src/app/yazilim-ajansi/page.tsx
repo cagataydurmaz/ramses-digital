@@ -7,7 +7,7 @@ import { Globe2, Code2, ArrowRight, CheckCircle2, Zap, Globe, BarChart3, Shield,
 export const metadata: Metadata = {
   title: 'Yazılım Ajansı — Ramses Dijital',
   description:
-    'Türkiye genelinde yazılım ajansı. Web uygulaması, otomasyon, API entegrasyonu ve yapay zeka çözümleri. Türkiye\'nin her şehrindeki işletmeler için tamamen online süreç.',
+    'Türkiye genelinde yazılım ajansı. Web uygulaması, otomasyon, API entegrasyonu ve yapay zeka çözümleri.',
   alternates: { canonical: 'https://ramsesdigital.com/yazilim-ajansi' },
   openGraph: {
     title: 'Yazılım Ajansı | Ramses Dijital',

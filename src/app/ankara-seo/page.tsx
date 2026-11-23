@@ -13,7 +13,7 @@ import { MapPin, Search, ArrowRight, CheckCircle2, FileText, Link2, BarChart3, Z
 export const metadata: Metadata = {
   title: 'Ankara SEO Ajansı — Ramses Dijital',
   description:
-    'Ankara\'da SEO hizmeti. Yerel SEO, teknik SEO, GEO ve AEO ile Google\'da üst sıraya çıkın. Çankaya, Keçiören, Yenimahalle ve tüm Ankara\'ya uzaktan hizmet. Ücretsiz SEO analizi.',
+    'Ankara\'da SEO hizmeti. Yerel SEO, teknik SEO, GEO ve AEO ile Google\'da üst sıraya çıkın. Çankaya, Keçiören, Yenimahalle ve tüm Ankara\'ya uzaktan hizmet.',
   alternates: { canonical: 'https://ramsesdigital.com/ankara-seo' },
   openGraph: {
     title: 'Ankara SEO Ajansı | Ramses Dijital',

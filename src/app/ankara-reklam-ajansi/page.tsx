@@ -9,7 +9,7 @@ import { MapPin, CheckCircle2, ArrowRight, Megaphone, Globe, BarChart3, Search, 
 export const metadata: Metadata = {
   title: 'Ankara Reklam Ajansı — Ramses Dijital',
   description:
-    'Ankara\'nın dijital reklam ajansı — ölçülebilir büyüme, ücretsiz danışmanlık. Google Ads, SEO ve pazarlama otomasyonu ile başkentteki hukuk büroları, klinikler ve kurumsal firmalar için.',
+    'Ankara\'nın dijital reklam ajansı — ölçülebilir büyüme, ücretsiz danışmanlık. Google Ads, SEO ve pazarlama otomasyonu ile başkentteki hukuk büroları…',
   alternates: { canonical: 'https://ramsesdigital.com/ankara-reklam-ajansi' },
   openGraph: {
     title: 'Ankara Reklam Ajansı | Ramses Dijital',

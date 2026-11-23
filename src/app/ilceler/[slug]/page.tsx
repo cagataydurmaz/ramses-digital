@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { seoBaslik } from '@/lib/seoBaslik'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import CalendlyButton from '@/components/CalendlyButton'
@@ -17,7 +18,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   const ilce = getIlce(params.slug)
   if (!ilce) return {}
   const url = `https://ramsesdigital.com/ilceler/${ilce.slug}`
-  const title = `${ilce.name} Web Tasarım | Kurumsal Web Sitesi – Ramses Dijital`
+  const title = seoBaslik(`${ilce.name} Web Tasarım – Kurumsal Web Sitesi`)
   const description = `${ilce.name} işletmeleri için web tasarım, yerel SEO ve Google görünürlüğü. ${ilce.name} ekonomisine göre hazırlanan sektör önerileri ve ücretsiz ön görüşme.`
   return {
     title,

@@ -12,12 +12,12 @@ import RelatedPages from '@/components/RelatedPages'
 import { MapPin, Search, ArrowRight, CheckCircle2, FileText, Link2, BarChart3, Zap, Award, TrendingUp } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Kayseri SEO Hizmeti & Ajansı – Ücretsiz Analiz | Ramses Dijital',
+  title: 'Kayseri SEO Ajansı – Ücretsiz Site Analizi | Ramses',
   description:
     "Kayseri'de Google'da müşteri bulmak isteyen işletmelere SEO hizmeti. Ücretsiz site analizi, net fiyat, aylık rapor, taahhüt yok. Google'da 5.0 puan.",
   alternates: { canonical: 'https://ramsesdigital.com/kayseri-seo' },
   openGraph: {
-    title: 'Kayseri SEO Hizmeti & Ajansı – Ücretsiz Analiz | Ramses Dijital',
+    title: 'Kayseri SEO Ajansı – Ücretsiz Site Analizi | Ramses',
     description: 'Kayseri işletmeleri için yerel SEO, teknik SEO ve GEO/AEO optimizasyonu.',
     url: 'https://ramsesdigital.com/kayseri-seo',
     images: ['https://ramsesdigital.com/og-image.png'],

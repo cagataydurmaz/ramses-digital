@@ -7,7 +7,7 @@ import RelatedPages from '@/components/RelatedPages'
 import { MapPin, Globe, ArrowRight, CheckCircle2, Zap, Smartphone, Search, ShieldCheck, BarChart3, Palette } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Kocaeli Web Tasarım Ajansı | Kurumsal Web Sitesi — Ramses Dijital',
+  title: 'Kocaeli Web Tasarım Ajansı – Kurumsal Site | Ramses Dijital',
   description:
     'Kocaeli web tasarım ajansı: İzmit, Gebze, Darıca ve tüm Kocaeli için kurumsal web sitesi, SEO uyumlu ve mobil öncelikli web tasarım. Ücretsiz teklif alın.',
   alternates: { canonical: 'https://ramsesdigital.com/kocaeli-web-tasarim' },

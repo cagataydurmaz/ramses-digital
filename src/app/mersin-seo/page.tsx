@@ -13,7 +13,7 @@ import { MapPin, Search, ArrowRight, CheckCircle2, FileText, Link2, BarChart3, Z
 export const metadata: Metadata = {
   title: 'Mersin SEO Ajansı — Ramses Dijital',
   description:
-    'Mersin\'de SEO hizmeti. Yerel SEO, teknik SEO, GEO ve AEO ile Google\'da üst sıraya çıkın. Yenişehir, Akdeniz, Toroslar ve tüm Mersin\'e uzaktan hizmet. Ücretsiz SEO analizi.',
+    'Mersin\'de SEO hizmeti. Yerel SEO, teknik SEO, GEO ve AEO ile Google\'da üst sıraya çıkın. Yenişehir, Akdeniz, Toroslar ve tüm Mersin\'e uzaktan hizmet.',
   alternates: { canonical: 'https://ramsesdigital.com/mersin-seo' },
   openGraph: {
     title: 'Mersin SEO Ajansı | Ramses Dijital',

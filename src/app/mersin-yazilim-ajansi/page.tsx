@@ -9,7 +9,7 @@ import { MapPin, Code2, ArrowRight, CheckCircle2, Zap, Globe, BarChart3, Shield,
 export const metadata: Metadata = {
   title: 'Mersin Yazılım Ajansı — Ramses Dijital',
   description:
-    'Mersin\'de yazılım ajansı. Web uygulaması, otomasyon, API entegrasyonu ve dijital pazarlama yazılımları. Lojistik firmaları, ihracatçılar ve KOBİ\'ler için özel yazılım çözümleri.',
+    'Mersin\'de yazılım ajansı. Web uygulaması, otomasyon, API entegrasyonu ve dijital pazarlama yazılımları.',
   alternates: { canonical: 'https://ramsesdigital.com/mersin-yazilim-ajansi' },
   openGraph: {
     title: 'Mersin Yazılım Ajansı | Ramses Dijital',

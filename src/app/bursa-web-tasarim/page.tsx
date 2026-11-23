@@ -9,7 +9,7 @@ import { MapPin, ArrowRight, CheckCircle2, Zap, Smartphone, Search, ShieldCheck,
 export const metadata: Metadata = {
   title: 'Bursa Web Tasarım Ajansı — Ramses Dijital',
   description:
-    'Bursa\'da profesyonel web tasarım hizmeti. Osmangazi, Nilüfer, Yıldırım, İnegöl ve tüm Bursa ilçeleri için SEO uyumlu, mobil öncelikli kurumsal web siteleri. Ücretsiz teklif alın.',
+    'Bursa\'da profesyonel web tasarım hizmeti. Osmangazi, Nilüfer, Yıldırım, İnegöl ve tüm Bursa ilçeleri için SEO uyumlu, mobil öncelikli kurumsal web siteleri.',
   alternates: { canonical: 'https://ramsesdigital.com/bursa-web-tasarim' },
   openGraph: {
     title: 'Bursa Web Tasarım | Ramses Dijital',

@@ -9,7 +9,7 @@ import { MapPin, Globe, ArrowRight, CheckCircle2, Zap, Smartphone, Search, Shiel
 export const metadata: Metadata = {
   title: 'İzmir Web Tasarım Ajansı — Ramses Dijital',
   description:
-    'İzmir\'de profesyonel web tasarım hizmeti. Konak, Karşıyaka, Bornova ve tüm İzmir ilçeleri için SEO uyumlu, mobil öncelikli kurumsal ve e-ticaret web siteleri. Ücretsiz teklif alın.',
+    'İzmir\'de profesyonel web tasarım hizmeti. Konak, Karşıyaka, Bornova ve tüm İzmir ilçeleri için SEO uyumlu, mobil öncelikli kurumsal ve e-ticaret web siteleri.',
   alternates: { canonical: 'https://ramsesdigital.com/izmir-web-tasarim' },
   openGraph: {
     title: 'İzmir Web Tasarım | Ramses Dijital',

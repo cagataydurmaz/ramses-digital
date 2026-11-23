@@ -9,7 +9,7 @@ import { MapPin, CheckCircle2, ArrowRight, Megaphone, Globe, BarChart3, Search, 
 export const metadata: Metadata = {
   title: 'İzmir Reklam Ajansı — Ramses Dijital',
   description:
-    'İzmir\'in dijital reklam ajansı — ücretsiz danışmanlık, ölçülebilir sonuç. Google Ads, SEO ve pazarlama otomasyonu. Konak, Karşıyaka, Bornova dahil tüm İzmir\'e hizmet.',
+    'İzmir\'in dijital reklam ajansı — ücretsiz danışmanlık, ölçülebilir sonuç. Google Ads, SEO ve pazarlama otomasyonu.',
   alternates: { canonical: 'https://ramsesdigital.com/izmir-reklam-ajansi' },
   openGraph: {
     title: 'İzmir Reklam Ajansı | Ramses Dijital',

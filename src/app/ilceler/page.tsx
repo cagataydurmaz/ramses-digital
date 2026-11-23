@@ -5,9 +5,9 @@ import { MapPin, ArrowRight } from 'lucide-react'
 import { ilceler, isIl } from '@/lib/ilceler'
 
 export const metadata: Metadata = {
-  title: 'Marmara Bölgesi Web Tasarım ve Yerel SEO Rehberleri | Ramses Dijital',
+  title: 'Marmara İlçe Web Tasarım ve Yerel SEO Rehberleri | Ramses',
   description:
-    'Kocaeli, Sakarya, Yalova, Tekirdağ ve Düzce için ilçe bazlı web tasarım ve yerel SEO rehberleri: Gebze, Çorlu, Çerkezköy, Adapazarı, Sapanca, Çınarcık ve daha fazlası.',
+    'Kocaeli, Sakarya, Yalova, Tekirdağ ve Düzce için ilçe bazlı web tasarım ve yerel SEO rehberleri: Gebze, Çorlu, Çerkezköy, Adapazarı, Sapanca, Çınarcık ve…',
   alternates: { canonical: 'https://ramsesdigital.com/ilceler' },
 }
 

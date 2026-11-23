@@ -8,7 +8,7 @@ import { MapPin, ArrowRight, TrendingUp, Search, Megaphone, Globe, Sparkles, Cod
 export const metadata: Metadata = {
   title: 'Hizmet Verdiğimiz Şehirler — Ramses Dijital',
   description:
-    'Ramses Dijital, Türkiye genelinde 12 şehirde (İzmit, Kocaeli, İstanbul, Ankara, İzmir, Bursa, Antalya, Gaziantep, Konya, Mersin, Kayseri, Eskişehir) SEO, Google Ads, web tasarım ve yazılım hizmeti veriyor — tamamen uzaktan.',
+    'Ramses Dijital, Türkiye genelinde 12 şehirde (İzmit, Kocaeli, İstanbul, Ankara, İzmir, Bursa, Antalya, Gaziantep, Konya, Mersin, Kayseri, Eskişehir) SEO…',
   alternates: { canonical: 'https://ramsesdigital.com/sehirler' },
   openGraph: {
     title: 'Hizmet Verdiğimiz Şehirler | Ramses Dijital',

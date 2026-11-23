@@ -7,7 +7,7 @@ import { Share2, Image as ImageIcon, Video, Calendar, Palette, Hash, CheckCircle
 export const metadata: Metadata = {
   title: 'Sosyal Medya İçerik Üretimi — Ramses Dijital',
   description:
-    'Instagram, LinkedIn ve diğer platformlar için post, story ve video içerik üretimi. Marka kimliğinize uygun tasarım, içerik takvimi ve strateji. Ramses Dijital Yazılım ve Dijital Pazarlama Ajansı.',
+    'Instagram, LinkedIn ve diğer platformlar için post, story ve video içerik üretimi. Marka kimliğinize uygun tasarım, içerik takvimi ve strateji.',
   alternates: { canonical: 'https://ramsesdigital.com/hizmetler/sosyal-medya' },
   openGraph: {
     title: 'Sosyal Medya İçerik Üretimi | Ramses Dijital',

@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'AI Teklif Hesaplayıcı | Dijital Pazarlama Stratejisi — Ramses Digital Kocaeli',
+  title: 'AI Teklif Hesaplayıcı – Ücretsiz Teklif | Ramses Dijital',
   description:
     'İşletmenize özel dijital pazarlama stratejisini anında öğrenin. SEO, Google Ads, sosyal medya ve web tasarımı için AI destekli ücretsiz teklif hesaplayıcı.',
   openGraph: {

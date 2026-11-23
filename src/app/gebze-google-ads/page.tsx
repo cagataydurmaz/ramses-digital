@@ -8,7 +8,7 @@ const v: GebzeHizmetVeri = {
   h1Vurgu: 'Ölçülebilir Reklam Yönetimi',
   giris: "Gebze'de hizmetinizi ya da ürününüzü arayan müşteriye tam o anda ulaşın. Yerel hizmetlerden sanayi tedarikçilerine, her tıklamanın neye dönüştüğünü ölçen Google Ads yönetimi.",
   kisaOzet: "Gebze'deki işletmeler için Google Ads kampanyalarını kuruyor ve yönetiyoruz: arama reklamları, mobilde arama butonu ve yalnızca hizmet verdiğiniz bölgeye konum hedeflemesi. Telefon, WhatsApp ve form talepleri ölçülür; reklam bütçesi doğrudan Google'a ödenir. Fiyat için aşağıdaki AI teklif hesaplayıcıyı kullanabilirsiniz.",
-  metaTitle: 'Gebze Google Ads Yönetimi – Ücretsiz Ön Görüşme | Ramses Dijital',
+  metaTitle: 'Gebze Google Ads (AdWords) Yönetimi | Ramses Dijital',
   metaDesc: "Gebze'de Google Ads yönetimi: arama reklamları, konum hedefleme ve ölçülebilir dönüşüm. İzmit merkezli ekip, taahhüt yok. Google'da 5.0 puan.",
   hizmetAdi: 'Gebze Google Ads Yönetimi',
   kartlar: [

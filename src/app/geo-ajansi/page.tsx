@@ -8,9 +8,9 @@ import { ArrowRight, Sparkles, ShieldCheck } from 'lucide-react'
 const URL = 'https://ramsesdigital.com/geo-ajansi'
 
 export const metadata: Metadata = {
-  title: 'GEO Ajansı | Yapay Zekâ Aramalarında Görünürlük — Ramses Dijital',
+  title: 'GEO Ajansı: Yapay Zekâ Aramalarında Görünürlük | Ramses',
   description:
-    'GEO ajansı: ChatGPT, Gemini ve Google yapay zekâ özetlerinde alıntılanma olasılığını artıran içerik ve yapı çalışması. Dürüst çerçeve, ölçüm ve sonuç garantisi verilmeyen şeffaf süreç.',
+    'GEO ajansı: ChatGPT, Gemini ve Google yapay zekâ özetlerinde alıntılanma olasılığını artıran içerik ve yapı çalışması.',
   alternates: { canonical: URL },
   openGraph: {
     title: 'GEO Ajansı | Ramses Dijital',

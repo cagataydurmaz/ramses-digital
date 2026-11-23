@@ -9,7 +9,7 @@ import { MapPin, Code2, ArrowRight, CheckCircle2, Zap, Globe, BarChart3, Shield,
 export const metadata: Metadata = {
   title: 'Ankara Yazılım Ajansı — Ramses Dijital',
   description:
-    'Ankara\'da yazılım ajansı. Kurumsal web uygulaması, süreç otomasyonu, API entegrasyonu ve özel yazılım çözümleri. Hukuk büroları, klinikler ve B2B firmalar için Next.js ile geliştirme.',
+    'Ankara\'da yazılım ajansı. Kurumsal web uygulaması, süreç otomasyonu, API entegrasyonu ve özel yazılım çözümleri.',
   alternates: { canonical: 'https://ramsesdigital.com/ankara-yazilim-ajansi' },
   openGraph: {
     title: 'Ankara Yazılım Ajansı | Ramses Dijital',

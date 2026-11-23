@@ -9,7 +9,7 @@ import { MapPin, Megaphone, ArrowRight, Target, BarChart3, Zap, TrendingUp, Doll
 export const metadata: Metadata = {
   title: 'Antalya Google Ads Yönetimi — Ramses Dijital',
   description:
-    'Antalya\'da Google Ads yönetimi. Otel, tur operatörü ve gayrimenkul ofisleri için İngilizce/Rusça hedefli reklam kampanyaları. Muratpaşa, Alanya, Manavgat ve tüm Antalya\'ya uzaktan hizmet. Ücretsiz kampanya analizi.',
+    'Antalya\'da Google Ads yönetimi. Otel, tur operatörü ve gayrimenkul ofisleri için İngilizce/Rusça hedefli reklam kampanyaları.',
   alternates: { canonical: 'https://ramsesdigital.com/antalya-google-ads' },
   openGraph: {
     title: 'Antalya Google Ads Yönetimi | Ramses Dijital',

@@ -13,7 +13,7 @@ import { MapPin, Search, ArrowRight, CheckCircle2, FileText, Link2, BarChart3, Z
 export const metadata: Metadata = {
   title: 'Konya SEO Ajansı — Ramses Dijital',
   description:
-    'Konya\'da SEO hizmeti. Yerel SEO, teknik SEO, GEO ve AEO ile Google\'da üst sıraya çıkın. Selçuklu, Meram, Karatay ve tüm Konya\'ya uzaktan hizmet. Ücretsiz SEO analizi.',
+    'Konya\'da SEO hizmeti. Yerel SEO, teknik SEO, GEO ve AEO ile Google\'da üst sıraya çıkın. Selçuklu, Meram, Karatay ve tüm Konya\'ya uzaktan hizmet.',
   alternates: { canonical: 'https://ramsesdigital.com/konya-seo' },
   openGraph: {
     title: 'Konya SEO Ajansı | Ramses Dijital',

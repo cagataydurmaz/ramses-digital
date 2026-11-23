@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation'
+import { seoAciklama } from '@/lib/seoBaslik'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Metadata } from 'next'
@@ -21,11 +22,11 @@ export function generateMetadata({ params }: Props): Metadata {
   return {
     // Google ~60 karakterden sonrasını keser; uzun başlıklarda marka ekini atla
     title: blogSeoBasliklari[post.slug] ?? (post.title.length <= 38 ? `${post.title} | Ramses Dijital Blog` : post.title.length <= 43 ? `${post.title} | Ramses Dijital` : post.title),
-    description: post.excerpt,
+    description: seoAciklama(post.excerpt),
     alternates: { canonical: `https://ramsesdigital.com/blog/${post.slug}` },
     openGraph: {
       title: post.title,
-      description: post.excerpt,
+      description: seoAciklama(post.excerpt),
       type: 'article',
       publishedTime: post.date,
       authors: [post.author],
@@ -35,7 +36,7 @@ export function generateMetadata({ params }: Props): Metadata {
     twitter: {
       card: 'summary_large_image',
       title: post.title,
-      description: post.excerpt,
+      description: seoAciklama(post.excerpt),
       images: [post.coverImage],
     },
   }
@@ -64,7 +65,7 @@ function ArticleJsonLd({ post }: { post: (typeof posts)[0] }) {
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: post.title,
-    description: post.excerpt,
+    description: seoAciklama(post.excerpt),
     image: post.coverImage.startsWith('/') ? `https://ramsesdigital.com${post.coverImage}` : post.coverImage,
     datePublished: post.date,
     dateModified: post.date,

@@ -9,7 +9,7 @@ import { MapPin, Megaphone, ArrowRight, Target, BarChart3, Zap, TrendingUp, Doll
 export const metadata: Metadata = {
   title: 'Bursa Google Ads Yönetimi — Ramses Dijital',
   description:
-    'Bursa\'da Google Ads yönetimi. Osmangazi, Nilüfer, Yıldırım, İnegöl ve tüm Bursa ilçelerinde hedefli arama reklamları. Bütçe israfı yok, ölçülebilir dönüşüm. Ücretsiz kampanya analizi.',
+    'Bursa\'da Google Ads yönetimi. Osmangazi, Nilüfer, Yıldırım, İnegöl ve tüm Bursa ilçelerinde hedefli arama reklamları. Bütçe israfı yok, ölçülebilir dönüşüm.',
   alternates: { canonical: 'https://ramsesdigital.com/bursa-google-ads' },
   openGraph: {
     title: 'Bursa Google Ads Yönetimi | Ramses Dijital',

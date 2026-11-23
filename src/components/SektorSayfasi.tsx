@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { seoBaslik } from '@/lib/seoBaslik'
 import Link from 'next/link'
 import { Briefcase, ArrowRight, ShieldCheck, BookOpen, ExternalLink, TrendingUp } from 'lucide-react'
 import SehirTeklifBolumu from '@/components/SehirTeklifBolumu'
@@ -14,7 +15,7 @@ import { sektorSehir } from '@/lib/sektorSehir'
 const SITE = 'https://ramsesdigital.com'
 
 export function sektorMetadata(v: SektorVeri): Metadata {
-  const title = `${v.ad} İçin SEO ve Dijital Pazarlama | Ramses Dijital`
+  const title = seoBaslik(`${v.ad} İçin SEO ve Dijital Pazarlama`.length > 52 ? `${v.kisaAd} İçin SEO ve Dijital Pazarlama` : `${v.ad} İçin SEO ve Dijital Pazarlama`)
   const url = `${SITE}/sektorler/${v.slug}`
   return {
     title,

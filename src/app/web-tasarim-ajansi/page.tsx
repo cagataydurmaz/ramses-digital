@@ -7,7 +7,7 @@ import { Globe2, Globe, ArrowRight, CheckCircle2, Zap, Smartphone, Search, Shiel
 export const metadata: Metadata = {
   title: 'Web Tasarım Ajansı — Ramses Dijital',
   description:
-    'Türkiye genelinde web tasarım ajansı. SEO uyumlu, mobil öncelikli, hızlı yüklenen kurumsal web siteleri. Türkiye\'nin her şehrindeki işletmeler için tamamen online süreç. Ücretsiz teklif alın.',
+    'Türkiye genelinde web tasarım ajansı. SEO uyumlu, mobil öncelikli, hızlı yüklenen kurumsal web siteleri.',
   alternates: { canonical: 'https://ramsesdigital.com/web-tasarim-ajansi' },
   openGraph: {
     title: 'Web Tasarım Ajansı | Ramses Dijital',

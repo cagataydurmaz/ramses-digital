@@ -10,9 +10,9 @@ import RelatedPages from '@/components/RelatedPages'
 import { MapPin, Megaphone, ArrowRight, Target, BarChart3, Zap, TrendingUp, DollarSign, Clock } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'İstanbul Google Ads Ajansı – Ücretsiz Kampanya Analizi | Ramses Dijital',
+  title: 'İstanbul Google Ads Ajansı – Ücretsiz Analiz | Ramses',
   description:
-    'İstanbul\'da Google Ads yönetimi. Kadıköy, Beşiktaş, Şişli ve tüm İstanbul ilçelerinde hedefli arama reklamları. Bütçe israfı yok, ölçülebilir dönüşüm. Ücretsiz kampanya analizi.',
+    'İstanbul\'da Google Ads yönetimi. Kadıköy, Beşiktaş, Şişli ve tüm İstanbul ilçelerinde hedefli arama reklamları. Bütçe israfı yok, ölçülebilir dönüşüm.',
   alternates: { canonical: 'https://ramsesdigital.com/istanbul-google-ads' },
   openGraph: {
     title: 'İstanbul Google Ads Yönetimi | Ramses Dijital',

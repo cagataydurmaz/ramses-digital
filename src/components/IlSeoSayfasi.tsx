@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { seoBaslik } from '@/lib/seoBaslik'
 import Link from 'next/link'
 import { MapPin, Search, ArrowRight, CheckCircle2, TrendingUp, Briefcase } from 'lucide-react'
 import SehirTeklifBolumu from '@/components/SehirTeklifBolumu'
@@ -14,7 +15,7 @@ import type { IlSeoVeri } from '@/lib/ilSeo'
 const SITE = 'https://ramsesdigital.com'
 
 export function ilSeoMetadata(v: IlSeoVeri): Metadata {
-  const title = `${v.ad} SEO Ajansı – Ücretsiz Site Analizi | Ramses Dijital`
+  const title = seoBaslik(`${v.ad} SEO Ajansı – Ücretsiz Site Analizi`)
   const description = `${v.bulunma} Google'da müşteri bulmak isteyen işletmelere SEO hizmeti. Ücretsiz site analizi, net fiyat, aylık rapor, taahhüt yok. Google'da 5.0 puan.`
   const url = `${SITE}/${v.slug}-seo`
   return {

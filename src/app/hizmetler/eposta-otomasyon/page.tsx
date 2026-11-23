@@ -7,7 +7,7 @@ import { Mail, Zap, Users, BarChart3, RefreshCw, Target, CheckCircle2, ArrowRigh
 export const metadata: Metadata = {
   title: 'E-Posta Pazarlama ve Otomasyon — Ramses Dijital',
   description:
-    'Kişiselleştirilmiş e-posta kampanyaları ve otomatik pazarlama akışları. CRM entegrasyonu, segmentasyon ve A/B test ile açılma oranlarını %40 artırın. Ramses Dijital Yazılım ve Dijital Pazarlama Ajansı.',
+    'Kişiselleştirilmiş e-posta kampanyaları ve otomatik pazarlama akışları. CRM entegrasyonu, segmentasyon ve A/B test ile açılma oranlarını %40 artırın.',
   alternates: { canonical: 'https://ramsesdigital.com/hizmetler/eposta-otomasyon' },
   openGraph: {
     title: 'E-Posta Pazarlama & Otomasyon | Ramses Dijital',

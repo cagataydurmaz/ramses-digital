@@ -11,9 +11,9 @@ import SehirTeklifBolumu from '@/components/SehirTeklifBolumu'
 import { MapPin, Search, ArrowRight, CheckCircle2, FileText, Link2, BarChart3, Zap, Award, TrendingUp } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Kocaeli SEO Ajansı | SEO Hizmeti ve Paketleri — Ramses Dijital',
+  title: 'Kocaeli SEO Ajansı – Kurumsal SEO Hizmeti | Ramses Dijital',
   description:
-    'Kocaeli SEO ajansı: SEO hizmeti, uzmanı ve danışmanlığı. Kurumsal ve yerel SEO paketleri, teknik SEO, Google ve yapay zekâ aramalarında görünürlük. İzmit, Gebze, Körfez dahil tüm ilçeler. Ücretsiz analiz.',
+    'Kocaeli SEO ajansı: SEO hizmeti, uzmanı ve danışmanlığı. Kurumsal ve yerel SEO paketleri, teknik SEO, Google ve yapay zekâ aramalarında görünürlük.',
   alternates: { canonical: 'https://ramsesdigital.com/kocaeli-seo' },
   openGraph: {
     title: 'Kocaeli SEO Hizmeti | Ramses Dijital',

@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Ücretsiz SEO Analizi | Web Sitenizi Anında Analiz Et — Ramses Digital Kocaeli',
+  title: 'Ücretsiz SEO Analizi – Sitenizi Anında Test Edin | Ramses',
   description:
     'URL\'nizi girin, saniyeler içinde kapsamlı SEO raporunuzu alın. Hız skoru, mobil uyum ve teknik SEO analizi — tamamen ücretsiz, AI destekli.',
   openGraph: {

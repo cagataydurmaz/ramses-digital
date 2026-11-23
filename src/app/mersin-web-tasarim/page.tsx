@@ -9,7 +9,7 @@ import { MapPin, ArrowRight, CheckCircle2, Zap, Smartphone, Search, ShieldCheck,
 export const metadata: Metadata = {
   title: 'Mersin Web Tasarım Ajansı — Ramses Dijital',
   description:
-    'Mersin\'de profesyonel web tasarım hizmeti. Yenişehir, Akdeniz, Toroslar ve tüm Mersin ilçeleri için SEO uyumlu, mobil öncelikli kurumsal web siteleri. Ücretsiz teklif alın.',
+    'Mersin\'de profesyonel web tasarım hizmeti. Yenişehir, Akdeniz, Toroslar ve tüm Mersin ilçeleri için SEO uyumlu, mobil öncelikli kurumsal web siteleri.',
   alternates: { canonical: 'https://ramsesdigital.com/mersin-web-tasarim' },
   openGraph: {
     title: 'Mersin Web Tasarım | Ramses Dijital',

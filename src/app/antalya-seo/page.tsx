@@ -13,7 +13,7 @@ import { MapPin, Search, ArrowRight, CheckCircle2, FileText, Link2, BarChart3, Z
 export const metadata: Metadata = {
   title: 'Antalya SEO Ajansı — Ramses Dijital',
   description:
-    'Antalya\'da SEO hizmeti. Otelcilik, gayrimenkul ve turizm sektörüne özel çok dilli SEO, yerel SEO ve GEO/AEO. Muratpaşa, Konyaaltı, Alanya, Manavgat ve tüm Antalya\'ya uzaktan hizmet. Ücretsiz SEO analizi.',
+    'Antalya\'da SEO hizmeti. Otelcilik, gayrimenkul ve turizm sektörüne özel çok dilli SEO, yerel SEO ve GEO/AEO.',
   alternates: { canonical: 'https://ramsesdigital.com/antalya-seo' },
   openGraph: {
     title: 'Antalya SEO Ajansı | Ramses Dijital',

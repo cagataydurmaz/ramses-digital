@@ -9,7 +9,7 @@ import { MapPin, Code2, ArrowRight, CheckCircle2, Zap, Globe, BarChart3, Shield,
 export const metadata: Metadata = {
   title: 'Kayseri Yazılım Ajansı — Ramses Dijital',
   description:
-    'Kayseri\'de yazılım ajansı. Web uygulaması, otomasyon, API entegrasyonu ve dijital pazarlama yazılımları. Mobilya üreticileri, gıda firmaları ve KOBİ\'ler için özel yazılım çözümleri.',
+    'Kayseri\'de yazılım ajansı. Web uygulaması, otomasyon, API entegrasyonu ve dijital pazarlama yazılımları.',
   alternates: { canonical: 'https://ramsesdigital.com/kayseri-yazilim-ajansi' },
   openGraph: {
     title: 'Kayseri Yazılım Ajansı | Ramses Dijital',
