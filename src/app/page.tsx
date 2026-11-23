@@ -7,6 +7,7 @@ import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import FeaturedWork from '@/components/FeaturedWork'
 import AnaSayfaSss from '@/components/AnaSayfaSss'
+import AnaSayfaSektorAraclar from '@/components/AnaSayfaSektorAraclar'
 import HeroBackgroundVideo from '@/components/HeroBackgroundVideo'
 import {
   Sparkles,
@@ -553,6 +554,9 @@ export default function HomePage() {
           </FadeIn>
         </div>
       </section>
+
+      {/* ── SEKTÖRLER + ÜCRETSİZ ARAÇLAR ─────────────────────────────────── */}
+      <AnaSayfaSektorAraclar />
 
       {/* ── NASIL ÇALIŞIYORUZ (güven: süreç baştan belli) ────────────────── */}
       <section aria-labelledby="nasil-calisiyoruz" className="py-12 sm:py-16 px-6">
