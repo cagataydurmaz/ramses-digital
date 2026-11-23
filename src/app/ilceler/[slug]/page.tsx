@@ -7,6 +7,7 @@ import { ilSeoBul } from '@/lib/ilSeo'
 import { MapPin, ArrowRight, CheckCircle2, Search, Globe, Smartphone, Zap } from 'lucide-react'
 import { ilceler, getIlce, isIl, getIlRehberi, bulunma } from '@/lib/ilceler'
 import { ilceDetay } from '@/lib/ilceDetay'
+import { ilceSayfaPlani } from '@/lib/ilceSayfaPlani'
 
 export function generateStaticParams() {
   return ilceler.map((i) => ({ slug: i.slug }))
@@ -33,7 +34,9 @@ export default function IlcePage({ params }: { params: { slug: string } }) {
   const url = `https://ramsesdigital.com/ilceler/${ilce.slug}`
   const komsular = ilce.komsular.map((s) => getIlce(s)).filter((x): x is NonNullable<typeof x> => !!x)
   const detay = ilceDetay[ilce.slug]
-  const sss = detay ? [...ilce.sss, ...detay.ekSss] : ilce.sss
+  const plan = ilceSayfaPlani[ilce.slug]
+  const sss = [...ilce.sss, ...(detay ? detay.ekSss : []), ...(plan ? [plan.sss] : [])]
+  const kocaeli = ilce.il === 'Kocaeli'
   const ilSayfasi = isIl(ilce)
   const ilRehberi = getIlRehberi(ilce)
   const bolgeEtiketi = ilSayfasi
@@ -182,6 +185,35 @@ export default function IlcePage({ params }: { params: { slug: string } }) {
         </section>
       )}
 
+      {plan && (
+        <section className="pb-16 px-6">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-3 text-center">{ilce.name} İçin İlk Sayfa Planı</h2>
+            <p className="text-zinc-400 text-center max-w-2xl mx-auto mb-8">Hangi sayfa, hangi aramayı karşılar ve içinde ne olmalı? {bulunma(ilce.name)} işletmeler için örnek bir başlangıç:</p>
+            <div className="overflow-x-auto rounded-xl border border-white/[0.06]">
+              <table className="w-full text-sm text-left min-w-[640px]">
+                <thead className="bg-[#0D1225] text-white">
+                  <tr>
+                    <th className="p-4 font-semibold">Sayfa</th>
+                    <th className="p-4 font-semibold">Hedef arama örneği</th>
+                    <th className="p-4 font-semibold">Sayfada olması gerekenler</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {plan.sayfalar.map((s) => (
+                    <tr key={s.sayfa} className="border-t border-white/[0.06]">
+                      <td className="p-4 text-white font-medium align-top">{s.sayfa}</td>
+                      <td className="p-4 text-blue-400 align-top">&ldquo;{s.arama}&rdquo;</td>
+                      <td className="p-4 text-zinc-400 align-top leading-relaxed">{s.icerik}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+      )}
+
       <section className="pb-16 px-6">
         <div className="max-w-3xl mx-auto bg-blue-500/5 border border-blue-500/15 rounded-2xl p-8">
           <div className="flex items-center gap-2 mb-3">
@@ -202,7 +234,9 @@ export default function IlcePage({ params }: { params: { slug: string } }) {
           {[
             { icon: Smartphone, title: 'Mobil öncelikli', desc: 'Yerel aramaların çoğu telefondan yapılıyor; site hızlı açılır, tek dokunuşla arama ve WhatsApp sağlar.' },
             { icon: Zap, title: 'Hızlı ve SEO hazır', desc: 'Sayfa hızı, başlık yapısı, schema ve sitemap baştan doğru kurulur.' },
-            { icon: Globe, title: 'Uzaktan çalışma', desc: 'Tüm süreç video görüşme ve WhatsApp ile yürür; konumunuz fark yaratmaz.' },
+            kocaeli
+              ? { icon: Globe, title: 'Kocaeli merkezli ekip', desc: 'İzmit merkezli çalışıyoruz; gerektiğinde yüz yüze görüşebilir, süreci WhatsApp ve video görüşmeyle de yürütebiliriz.' }
+              : { icon: Globe, title: 'Uzaktan çalışma', desc: 'Tüm süreç video görüşme ve WhatsApp ile yürür; konumunuz fark yaratmaz.' },
           ].map(({ icon: Icon, title, desc }) => (
             <div key={title} className="bg-[#0D1225] border border-white/[0.06] rounded-xl p-6">
               <div className="w-10 h-10 rounded-lg bg-blue-500/10 flex items-center justify-center mb-4">
