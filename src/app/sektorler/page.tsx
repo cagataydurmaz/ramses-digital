@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { ArrowRight, Scale, Stethoscope, Brain, PawPrint, Calculator, ShoppingCart, Coffee, Briefcase } from 'lucide-react'
+import { ArrowRight, Scale, Stethoscope, Brain, PawPrint, Calculator, ShoppingCart, Coffee, Briefcase, Hospital, Smile, Sparkles, Home, Car } from 'lucide-react'
 import { sektorler } from '@/lib/sektorler'
 import RelatedPages from '@/components/RelatedPages'
 import KisaOzet from '@/components/KisaOzet'
@@ -25,6 +25,11 @@ const ikon: Record<string, typeof Briefcase> = {
   'mali-musavirler': Calculator,
   'e-ticaret': ShoppingCart,
   'restoran-kafe': Coffee,
+  'ozel-hastane-poliklinik': Hospital,
+  'agiz-dis-sagligi-merkezleri': Smile,
+  'guzellik-merkezleri': Sparkles,
+  'emlak-ofisleri': Home,
+  'oto-servis': Car,
 }
 
 const sss = [
@@ -98,6 +103,11 @@ export default function SektorlerPage() {
                   ['Mali müşavirler', 'Sınırlı', 'SEO, B2B içerik, LinkedIn'],
                   ['E-ticaret', 'Uygun (alışveriş reklamları)', 'Google Ads + ürün SEO'],
                   ['Restoran ve kafe', 'Uygun (yakınımdaki aramalar)', 'Google İşletme Profili, yorumlar, harita'],
+                  ['Özel hastane ve poliklinik', 'Mevzuata uygun dille', 'Branş ve hekim sayfaları, SEO'],
+                  ['Ağız ve diş sağlığı merkezi', 'Mevzuata uygun dille', 'Tedavi, hekim ve şube sayfaları'],
+                  ['Güzellik ve estetik merkezi', 'Uygun (tıbbi estetikte sınırlı)', 'Yerel SEO, Instagram, Google Ads'],
+                  ['Emlak ve inşaat', 'Uygun', 'Bölge ve proje sayfaları, Google Ads'],
+                  ['Oto servis ve ekspertiz', 'Uygun (acil aramalar)', 'Harita görünürlüğü + Google Ads'],
                 ].map(([a, b, c]) => (
                   <tr key={a} className="border-t border-white/[0.05]">
                     <td className="px-4 py-3 text-white">{a}</td>

@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { Metadata } from 'next'
 import { posts } from '@/lib/posts'
 import { blogIcLinkler } from '@/lib/blogIcLinkler'
+import { blogSeoBasliklari } from '@/lib/blogSeoBasliklari'
 import CalendlyButton from '@/components/CalendlyButton'
 
 interface Props {
@@ -19,7 +20,7 @@ export function generateMetadata({ params }: Props): Metadata {
   if (!post) return { title: 'Yazı Bulunamadı' }
   return {
     // Google ~60 karakterden sonrasını keser; uzun başlıklarda marka ekini atla
-    title: post.title.length <= 42 ? `${post.title} | Ramses Dijital Blog` : post.title.length <= 60 ? `${post.title} | Ramses Dijital` : post.title,
+    title: blogSeoBasliklari[post.slug] ?? (post.title.length <= 38 ? `${post.title} | Ramses Dijital Blog` : post.title.length <= 43 ? `${post.title} | Ramses Dijital` : post.title),
     description: post.excerpt,
     alternates: { canonical: `https://ramsesdigital.com/blog/${post.slug}` },
     openGraph: {
