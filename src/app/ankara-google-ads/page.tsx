@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 }
 
 const services = [
-  { icon: Target, title: 'İlçe Bazlı Arama Reklamları', desc: '"Çankaya avukat", "Keçiören diş hekimi" — her ilçe için özel kampanya yapısı.' },
+  { icon: Target, title: 'İlçe Bazlı Arama Reklamları', desc: '"Çankaya oto servis", "Keçiören diş hekimi" — her ilçe için özel kampanya yapısı.' },
   { icon: Megaphone, title: 'Google Haritalar Reklamları', desc: 'Ankara\'da konuma dayalı "yakınımdaki X" aramalarında öne çıkın.' },
   { icon: TrendingUp, title: 'Remarketing', desc: 'Ankara\'dan sitenizi ziyaret edip ayrılanları geri getirin. Satın alma niyeti en yüksek kitle.' },
   { icon: BarChart3, title: 'Dönüşüm İzleme', desc: 'Telefon araması, form gönderimi, WhatsApp tıklaması — her aksiyonu izliyoruz.' },

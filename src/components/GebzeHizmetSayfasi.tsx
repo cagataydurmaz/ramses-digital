@@ -7,7 +7,7 @@ import RelatedPages from '@/components/RelatedPages'
 import KisaOzet from '@/components/KisaOzet'
 import SehirTeklifBolumu from '@/components/SehirTeklifBolumu'
 
-// Gebze'ye özel hizmet sayfaları (Google Ads, dijital pazarlama). Görünüm mevcut
+// Kocaeli ilçelerine özel hizmet sayfaları (varsayılan Gebze) (Google Ads, dijital pazarlama). Görünüm mevcut
 // şehir hizmet sayfalarıyla aynı sınıfları kullanır; açık fiyat yok, teklif hesaplayıcı var.
 const SITE = 'https://ramsesdigital.com'
 
@@ -27,6 +27,7 @@ export interface GebzeHizmetVeri {
   sss: { q: string; a: string }[]
   ilgili: { label: string; href: string }[]
   cta: string
+  yer?: { ad: string; seoSlug: string } // varsayılan Gebze
 }
 
 export function gebzeMetadata(v: GebzeHizmetVeri): Metadata {
@@ -41,6 +42,7 @@ export function gebzeMetadata(v: GebzeHizmetVeri): Metadata {
 
 export default function GebzeHizmetSayfasi({ v }: { v: GebzeHizmetVeri }) {
   const url = `${SITE}/${v.slug}`
+  const yer = v.yer ?? { ad: 'Gebze', seoSlug: 'gebze-seo' }
   const jsonLd = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -48,14 +50,14 @@ export default function GebzeHizmetSayfasi({ v }: { v: GebzeHizmetVeri }) {
         '@type': 'Service',
         name: v.hizmetAdi,
         provider: { '@type': 'LocalBusiness', name: 'Ramses Dijital', url: SITE },
-        areaServed: [{ '@type': 'Place', name: 'Gebze' }, { '@type': 'City', name: 'Kocaeli' }],
+        areaServed: [{ '@type': 'Place', name: yer.ad }, { '@type': 'City', name: 'Kocaeli' }],
         url,
       },
       {
         '@type': 'BreadcrumbList',
         itemListElement: [
           { '@type': 'ListItem', position: 1, name: 'Ana Sayfa', item: SITE },
-          { '@type': 'ListItem', position: 2, name: 'Gebze SEO', item: `${SITE}/gebze-seo` },
+          { '@type': 'ListItem', position: 2, name: `${yer.ad} SEO`, item: `${SITE}/${yer.seoSlug}` },
           { '@type': 'ListItem', position: 3, name: v.baslik, item: url },
         ],
       },
@@ -75,7 +77,7 @@ export default function GebzeHizmetSayfasi({ v }: { v: GebzeHizmetVeri }) {
         <div className="max-w-5xl mx-auto text-center relative z-10">
           <div className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 rounded-full px-4 py-1.5 mb-6">
             <MapPin size={13} className="text-blue-400" />
-            <span className="text-blue-400 text-sm font-medium">Gebze, Kocaeli</span>
+            <span className="text-blue-400 text-sm font-medium">{yer.ad}, Kocaeli</span>
           </div>
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
             {v.h1}
@@ -85,8 +87,8 @@ export default function GebzeHizmetSayfasi({ v }: { v: GebzeHizmetVeri }) {
           <p className="text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">{v.giris}</p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <CalendlyButton label="Ücretsiz Ön Görüşme" variant="primary" />
-            <Link href="/gebze-seo" className="text-zinc-400 hover:text-white text-sm font-medium transition-colors flex items-center gap-1.5">
-              Gebze SEO <ArrowRight size={14} />
+            <Link href={`/${yer.seoSlug}`} className="text-zinc-400 hover:text-white text-sm font-medium transition-colors flex items-center gap-1.5">
+              {yer.ad} SEO <ArrowRight size={14} />
             </Link>
           </div>
         </div>
@@ -134,7 +136,7 @@ export default function GebzeHizmetSayfasi({ v }: { v: GebzeHizmetVeri }) {
 
       <ReviewsMarquee />
 
-      <SehirTeklifBolumu place="Gebze" />
+      <SehirTeklifBolumu place={yer.ad} />
 
       <RelatedPages pages={v.ilgili} />
 

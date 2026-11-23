@@ -1,4 +1,6 @@
 import type { Metadata } from 'next'
+import KurumsalSeoBolumu from '@/components/KurumsalSeoBolumu'
+import ProjeGalerisi from '@/components/ProjeGalerisi'
 import KisaOzet from '@/components/KisaOzet'
 import Link from 'next/link'
 import CitySeoSections from '@/components/CitySeoSections'
@@ -242,6 +244,8 @@ export default function KocaeliSeoPage() {
         ]}
       />
 
+      <KurumsalSeoBolumu yer="Kocaeli" />
+      <ProjeGalerisi baslik="SEO Çalıştığımız Sitelerden Örnekler" />
       <ReviewsMarquee />
 
       <RelatedPages

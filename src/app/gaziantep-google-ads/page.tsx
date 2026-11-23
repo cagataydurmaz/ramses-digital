@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 }
 
 const services = [
-  { icon: Target, title: 'İlçe Bazlı Arama Reklamları', desc: '"Şahinbey diş hekimi", "Şehitkamil avukat", "Nizip gıda toptancısı" — her ilçe için özel kampanya yapısı.' },
+  { icon: Target, title: 'İlçe Bazlı Arama Reklamları', desc: '"Şahinbey diş hekimi", "Şehitkamil oto servis", "Nizip gıda toptancısı" — her ilçe için özel kampanya yapısı.' },
   { icon: Megaphone, title: 'Google Haritalar Reklamları', desc: 'Gaziantep\'te konuma dayalı "yakınımdaki X" aramalarında öne çıkın. En yüksek yerel dönüşüm.' },
   { icon: TrendingUp, title: 'İhracat Odaklı Kampanyalar', desc: 'Tekstil ve gıda ihracatçı firmaları için yurt içi/yurt dışı toptan alıcı arayan işletmeleri hedefleyen özel kampanya yapısı.' },
   { icon: BarChart3, title: 'Dönüşüm İzleme', desc: 'Telefon araması, form gönderimi, WhatsApp tıklaması — her aksiyonu izliyoruz.' },
@@ -138,7 +138,7 @@ export default function GaziantepGoogleAdsPage() {
             <Clock size={24} className="text-blue-400 mb-4" />
             <h2 className="text-xl font-bold text-white mb-3">Gaziantep&apos;te Quality Score Neden Kritik?</h2>
             <p className="text-zinc-400 text-sm leading-relaxed">
-              Gaziantep&apos;te rekabetçi sektörlerde (avukat, diş hekimi, estetik) en yüksek teklifi vermek üstte çıkmayı garantilemez.
+              Gaziantep&apos;te rekabetçi sektörlerde (diş kliniği, estetik, oto servis) en yüksek teklifi vermek üstte çıkmayı garantilemez.
               <strong className="text-white"> Quality Score</strong> belirleyicidir:
               reklam metni, açılış sayfası uyumu ve beklenen tıklama oranı yüksekse rakibinizden daha az ödeyip daha üstte çıkarsınız.
               İhracat odaklı B2B kampanyalarda ise doğru hedef kitle ve niş anahtar kelime seçimi daha da önemlidir.

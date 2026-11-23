@@ -906,7 +906,37 @@ export const ilSeo: IlSeoVeri[] = [
       { q: "Çayırova'daki B2B firmalar için web sitesi neden önemli?", a: 'Fabrikaların satın alma ekipleri tedarikçi ararken önce Google\'a bakar. Kapasite, belge, referans ve hızlı teklif yolu sunan bir site, telefonla aranmayı bekleyen firmaların önüne geçer.' },
       { q: 'Yüz yüze görüşebilir miyiz?', a: "Evet. İzmit merkezli bir ekibiz; Çayırova'daki işletmelerle gerektiğinde yüz yüze görüşme ayarlayabiliyoruz." },
     ],
-    ilgili: [{ label: 'Gebze SEO', href: '/gebze-seo' }, { label: 'Dilovası SEO', href: '/dilovasi-seo' }],
+    ilgili: [{ label: 'Gebze SEO', href: '/gebze-seo' }, { label: 'Dilovası SEO', href: '/dilovasi-seo' }, { label: 'Şekerpınar SEO', href: '/sekerpinar-seo' }],
+  },
+  {
+    slug: 'sekerpinar', ad: 'Şekerpınar', bulunma: "Şekerpınar'da", icin: "Şekerpınar'ın", yonelme: "Şekerpınar'a",
+    ust: { ad: 'Kocaeli', slug: 'kocaeli' }, yerel: true,
+    ozet: "TOSB çevresindeki otomotiv tedarikçileri, lojistik depoları ve Şekerpınar'daki yerel işletmeler için SEO, web sitesi ve dijital pazarlama. Ürün ve hizmet aramalarında Google'da görünür olun.",
+    bolgeler: ['TOSB', 'Şekerpınar merkez', 'Lojistik depolar', 'Yeni konut siteleri', 'Çayırova sınırı'],
+    ilceler: [
+      { ad: 'TOSB (Otomotiv Yan Sanayi OSB)', not: 'Otomotiv tedarikçileri; parça ve süreç sayfaları, kalite belgeleri, İngilizce sürüm ve teklif formu.' },
+      { ad: 'Lojistik ve depo alanları', not: 'Depolama, dağıtım ve nakliye firmaları; kapasite, güzergâh ve hizmet sayfaları.' },
+      { ad: 'Yeni konut siteleri', not: 'Hızla büyüyen konut nüfusu; klinik, kurs, kreş, güzellik ve ev hizmetleri için harita görünürlüğü.' },
+      { ad: 'Çayırova ve Gebze sınırı', not: 'Sanayiye hizmet veren bakım, servis, yemek ve personel taşımacılığı firmaları.' },
+    ],
+    sektorler: [
+      { ad: 'Otomotiv tedarikçileri', not: 'Satın almacıların aradığı parça, malzeme, kapasite ve belge bilgisini sunan kurumsal site; "şekerpınar + ürün" aramaları.' },
+      { ad: 'Lojistik ve depolama', not: 'Depo kiralama, dağıtım ve nakliye için hizmet sayfaları ve hızlı teklif yolu.' },
+      { ad: 'Sanayiye hizmet verenler', not: 'Bakım, iş güvenliği, yemek ve servis firmaları için B2B hizmet sayfaları.' },
+      { ad: 'Yerel hizmetler', not: 'Konut sitelerine hizmet veren klinik, kurs ve esnaf için Google İşletme Profili ve kısa hizmet sayfaları.' },
+    ],
+    aramalar: [
+      { tur: 'Semt araması', ornek: 'şekerpınar seo ajansı', rekabet: 'Düşük', yaklasim: 'Bu sayfa ve güçlü bir Google İşletme Profili ile ilk sayfa hedeflenebilir.' },
+      { tur: 'Hizmet + semt', ornek: 'şekerpınar web tasarım', rekabet: 'Düşük', yaklasim: 'Kurumsal site ve sektöre göre sayfa yapısı.' },
+      { tur: 'Ürün + bölge', ornek: 'tosb otomotiv yan sanayi', rekabet: 'Orta', yaklasim: 'Ürün ve süreç başına sayfa, İngilizce sürüm.' },
+      soruSatiri,
+    ],
+    sss: [
+      { q: "Şekerpınar'daki bir otomotiv tedarikçisi için SEO işe yarar mı?", a: 'Evet, özellikle parça ve süreç adlarıyla yapılan aramalarda. Satın alma ekipleri yeni tedarikçiyi araştırırken firma sitesine bakar; kapasite, belge ve teklif yolu net olan siteler öne çıkar. Sıralama garantisi verilmez.' },
+      { q: 'Şekerpınar için ayrı sayfa mı, Çayırova sayfası mı?', a: "Müşterileriniz 'Şekerpınar' adıyla arıyorsa bu adı kullanan içerik daha isabetlidir. Çayırova genelinde de hizmet veriyorsanız her iki adı da sayfa içinde doğal biçimde kullanmak gerekir." },
+      { q: 'Yüz yüze görüşebilir miyiz?', a: "Evet. İzmit merkezli bir ekibiz; Şekerpınar'daki işletmelerle gerektiğinde yüz yüze görüşme ayarlayabiliyoruz." },
+    ],
+    ilgili: [{ label: 'Çayırova SEO', href: '/cayirova-seo' }, { label: 'Gebze SEO', href: '/gebze-seo' }, { label: 'Dilovası SEO', href: '/dilovasi-seo' }, { label: 'Gebze Google Ads', href: '/gebze-google-ads' }],
   },
   {
     slug: 'dilovasi', ad: 'Dilovası', bulunma: "Dilovası'nda", icin: "Dilovası'nın", yonelme: "Dilovası'na",
@@ -935,7 +965,7 @@ export const ilSeo: IlSeoVeri[] = [
       { q: 'Sanayi firmasıyız, SEO bize müşteri getirir mi?', a: 'Evet, özellikle ürün ve hizmet adına göre yapılan aramalarda. Satın almacılar yeni tedarikçiyi çoğunlukla Google\'da bulur; ürün, kapasite ve belge bilgisini net veren sayfalar teklif talebine dönüşür. Sıralama garantisi verilmez.' },
       { q: 'Yüz yüze görüşebilir miyiz?', a: "Evet. İzmit merkezli bir ekibiz; Dilovası'ndaki firmalarla gerektiğinde yüz yüze görüşme ayarlayabiliyoruz." },
     ],
-    ilgili: [{ label: 'Gebze SEO', href: '/gebze-seo' }, { label: 'Çayırova SEO', href: '/cayirova-seo' }],
+    ilgili: [{ label: 'Dilovası Dijital Pazarlama', href: '/dilovasi-dijital-pazarlama' }, { label: 'Gebze SEO', href: '/gebze-seo' }, { label: 'Çayırova SEO', href: '/cayirova-seo' }, { label: 'Şekerpınar SEO', href: '/sekerpinar-seo' }],
   },
   {
     slug: 'basiskele', ad: 'Başiskele', bulunma: "Başiskele'de", icin: "Başiskele'nin", yonelme: "Başiskele'ye",

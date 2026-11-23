@@ -135,6 +135,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...ilSeo.map((i) => ({ url: `${base}/${i.slug}-seo` })),
     { url: `${base}/gebze-google-ads` },
     { url: `${base}/gebze-dijital-pazarlama` },
+    { url: `${base}/dilovasi-dijital-pazarlama` },
     ...sektorSehir.map((s) => ({ url: `${base}/${s.slug}` })),
   ]
 

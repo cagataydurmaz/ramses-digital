@@ -138,7 +138,7 @@ export default function EskisehirGoogleAdsPage() {
             <Clock size={24} className="text-blue-400 mb-4" />
             <h2 className="text-xl font-bold text-white mb-3">Eskişehir&apos;de Quality Score Neden Kritik?</h2>
             <p className="text-zinc-400 text-sm leading-relaxed">
-              Eskişehir&apos;de rekabetçi sektörlerde (avukat, diş hekimi, estetik) en yüksek teklifi vermek üstte çıkmayı garantilemez.
+              Eskişehir&apos;de rekabetçi sektörlerde (diş kliniği, estetik, oto servis) en yüksek teklifi vermek üstte çıkmayı garantilemez.
               <strong className="text-white"> Quality Score</strong> belirleyicidir:
               reklam metni, açılış sayfası uyumu ve beklenen tıklama oranı yüksekse rakibinizden daha az ödeyip daha üstte çıkarsınız.
               Öğrenci pazarında mobil uyumluluk özellikle önemlidir — bu kitle neredeyse tamamen telefondan arama yapıyor.

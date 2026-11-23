@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 }
 
 const services = [
-  { icon: Target, title: 'İlçe Bazlı Arama Reklamları', desc: '"Melikgazi diş hekimi", "Kocasinan mobilya mağazası", "Talas avukat" — her ilçe için özel kampanya yapısı.' },
+  { icon: Target, title: 'İlçe Bazlı Arama Reklamları', desc: '"Melikgazi diş hekimi", "Kocasinan mobilya mağazası", "Talas oto servis" — her ilçe için özel kampanya yapısı.' },
   { icon: Megaphone, title: 'Google Haritalar Reklamları', desc: 'Kayseri\'de konuma dayalı "yakınımdaki X" aramalarında öne çıkın. En yüksek yerel dönüşüm.' },
   { icon: TrendingUp, title: 'B2B Odaklı Kampanyalar', desc: 'Mobilya ve gıda üreticileri için toptan alıcı/bayi arayan işletmeleri hedefleyen özel kampanya yapısı.' },
   { icon: BarChart3, title: 'Dönüşüm İzleme', desc: 'Telefon araması, form gönderimi, WhatsApp tıklaması — her aksiyonu izliyoruz.' },
@@ -138,7 +138,7 @@ export default function KayseriGoogleAdsPage() {
             <Clock size={24} className="text-blue-400 mb-4" />
             <h2 className="text-xl font-bold text-white mb-3">Kayseri&apos;de Quality Score Neden Kritik?</h2>
             <p className="text-zinc-400 text-sm leading-relaxed">
-              Kayseri&apos;de rekabetçi sektörlerde (avukat, diş hekimi, estetik) en yüksek teklifi vermek üstte çıkmayı garantilemez.
+              Kayseri&apos;de rekabetçi sektörlerde (diş kliniği, estetik, oto servis) en yüksek teklifi vermek üstte çıkmayı garantilemez.
               <strong className="text-white"> Quality Score</strong> belirleyicidir:
               reklam metni, açılış sayfası uyumu ve beklenen tıklama oranı yüksekse rakibinizden daha az ödeyip daha üstte çıkarsınız.
               B2B kampanyalarda ise doğru hedef kitle ve niş anahtar kelime seçimi daha da önemlidir.

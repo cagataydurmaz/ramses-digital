@@ -107,6 +107,7 @@ const localPages = [
   ...ilSeo.map((il) => ({ href: `/${il.slug}-seo`, label: `${il.ad} SEO` })),
   { href: '/gebze-google-ads', label: 'Gebze Google Ads' },
   { href: '/gebze-dijital-pazarlama', label: 'Gebze Dijital Pazarlama' },
+  { href: '/dilovasi-dijital-pazarlama', label: 'Dilovası Dijital Pazarlama' },
   ...sektorSehir.map((s) => ({ href: `/${s.slug}`, label: `${s.sehir.ad} ${s.meslek.baslik}` })),
 ]
 

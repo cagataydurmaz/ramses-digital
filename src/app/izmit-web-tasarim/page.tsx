@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import ProjeGalerisi from '@/components/ProjeGalerisi'
 import Link from 'next/link'
 import CityServiceSections, { cityServiceFaqs } from '@/components/CityServiceSections'
 import CalendlyButton from '@/components/CalendlyButton'
@@ -215,6 +216,7 @@ export default function IzmitWebTasarimPage() {
         </div>
       </section>
 
+      <ProjeGalerisi />
       <ReviewsMarquee />
 
       <RelatedPages

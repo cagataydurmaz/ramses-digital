@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 }
 
 const services = [
-  { icon: Target, title: 'İlçe Bazlı Arama Reklamları', desc: '"Gebze avukat", "İzmit oto servis", "Darıca muhasebe" — her ilçe için özel kampanya yapısı.' },
+  { icon: Target, title: 'İlçe Bazlı Arama Reklamları', desc: '"Gebze oto servis", "İzmit oto servis", "Darıca muhasebe" — her ilçe için özel kampanya yapısı.' },
   { icon: Megaphone, title: 'Google Haritalar Reklamları', desc: 'Kocaeli\'de konuma dayalı "yakınımdaki X" aramalarında öne çıkın. En yüksek yerel dönüşüm.' },
   { icon: TrendingUp, title: 'Remarketing', desc: 'Kocaeli\'den sitenizi ziyaret edip ayrılanları geri getirin. Satın alma niyeti en yüksek kitle.' },
   { icon: BarChart3, title: 'Dönüşüm İzleme', desc: 'Telefon araması, form gönderimi, WhatsApp tıklaması — her aksiyonu izliyoruz.' },
@@ -136,13 +136,48 @@ export default function KocaeliGoogleAdsPage() {
         <div className="max-w-4xl mx-auto">
           <div className="bg-blue-500/5 border border-blue-500/15 rounded-2xl p-8">
             <Clock size={24} className="text-blue-400 mb-4" />
-            <h2 className="text-xl font-bold text-white mb-3">Kocaeli\'de Quality Score Neden Kritik?</h2>
+            <h2 className="text-xl font-bold text-white mb-3">Kocaeli&apos;de Quality Score Neden Kritik?</h2>
             <p className="text-zinc-400 text-sm leading-relaxed">
-              Kocaeli&apos;de rekabetçi sektörlerde (avukat, diş hekimi, oto servis) en yüksek teklifi vermek üstte çıkmayı garantilemez.
+              Kocaeli&apos;de rekabetçi sektörlerde (diş kliniği, oto servis, nakliyat) en yüksek teklifi vermek üstte çıkmayı garantilemez.
               <strong className="text-white"> Quality Score</strong> belirleyicidir: reklam metni, açılış sayfası uyumu ve beklenen tıklama oranı yüksekse
               rakibinizden daha az ödeyip daha üstte çıkarsınız. Tüm kampanyalarımızda bu optimizasyon önceliklidir.
             </p>
           </div>
+        </div>
+      </section>
+
+      <section className="pb-16 px-6">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-3 text-center">İlçelere Göre Google Ads (AdWords) Yaklaşımı</h2>
+          <p className="text-zinc-400 text-center max-w-2xl mx-auto mb-8">Kocaeli&apos;de her ilçenin müşterisi ve araması farklı. Kampanyayı yalnızca hizmet verdiğiniz bölgeye göre kuruyoruz.</p>
+          <div className="overflow-x-auto rounded-xl border border-white/[0.06]">
+            <table className="w-full text-sm text-left min-w-[640px]">
+              <thead className="bg-[#0D1225] text-white">
+                <tr>
+                  <th className="p-4 font-semibold">İlçe</th>
+                  <th className="p-4 font-semibold">Öne çıkan işletmeler</th>
+                  <th className="p-4 font-semibold">Kampanya yaklaşımı</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  ['İzmit', 'Klinik, oto servis, eğitim, esnaf', 'Merkez ve mahalle hedefli arama reklamları, mobilde arama düğmesi.', '/izmit-google-ads'],
+                  ['Gebze, Darıca, Çayırova', 'Sanayi tedarikçileri, klinik, emlak', 'Ürün adlarıyla B2B kampanyalar; yerel hizmetlerde dar konum hedefi.', '/gebze-google-ads'],
+                  ['Dilovası, Şekerpınar', 'Kimya, metal, otomotiv tedarikçileri, lojistik', 'Ürün ve hizmet adlarıyla, satın almacılara yönelik arama kampanyaları.', '/dilovasi-dijital-pazarlama'],
+                  ['Körfez, Derince', 'Lojistik, liman hizmetleri, teknik servis', 'Hizmet bazlı kampanyalar; iş ilanı aramaları negatif kelimeyle ayıklanır.', ''],
+                  ['Kartepe, Başiskele', 'Otel, bungalov, restoran, etkinlik', 'Sezona göre bütçe; İstanbul ve çevre illerden gelen aramalara konum hedefi.', ''],
+                  ['Gölcük, Karamürsel, Kandıra', 'Sahil işletmeleri, yerel hizmetler', 'Düşük bütçeli, dar bölgeli kampanyalar ve Google İşletme Profili desteği.', ''],
+                ].map(([ilce, isletme, yaklasim, href]) => (
+                  <tr key={ilce} className="border-t border-white/[0.06]">
+                    <td className="p-4 text-white font-medium align-top">{href ? <Link href={href} className="hover:text-blue-300">{ilce}</Link> : ilce}</td>
+                    <td className="p-4 text-zinc-400 align-top">{isletme}</td>
+                    <td className="p-4 text-zinc-400 align-top leading-relaxed">{yaklasim}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="text-zinc-500 text-xs text-center mt-4">Avukatlık gibi reklam kısıtı olan mesleklerde Google Ads yerine SEO öneriyoruz.</p>
         </div>
       </section>
 
