@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import KapakGorseli from '@/components/KapakGorseli'
 import KisaOzet from '@/components/KisaOzet'
 import Link from 'next/link'
 import CityLinksGrid from '@/components/CityLinksGrid'
@@ -80,13 +81,15 @@ export default function SeoHizmetPage() {
         SEO, işletmenizin Google’da ücretli reklam olmadan bulunmasını sağlayan teknik, içerik ve yerel çalışmaların bütünüdür; buna yapay zekâ aramaları için GEO/AEO da dahildir. Google’a göre etkisini görmek genellikle 4 ay ile 1 yıl arasında sürer ve sıralama garanti edilemez.
       </KisaOzet>
 
+      <KapakGorseli src="/gorseller/seo.webp" alt="Dizüstü bilgisayarda arama ve analiz ekranı üzerinde çalışan kişi" />
+
       {/* Stats */}
       <section className="py-12 px-6 border-y border-white/[0.04]">
         <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-          <div><div className="text-3xl md:text-4xl font-bold text-white">100+</div><div className="text-zinc-400 text-sm mt-1">Başarılı Proje</div></div>
-          <div><div className="text-3xl md:text-4xl font-bold text-white">%340</div><div className="text-zinc-400 text-sm mt-1">Ortalama Trafik Artışı</div></div>
-          <div><div className="text-3xl md:text-4xl font-bold text-white">6 ay</div><div className="text-zinc-400 text-sm mt-1">Ortalama Sonuç Süresi</div></div>
-          <div><div className="text-3xl md:text-4xl font-bold text-white">5+</div><div className="text-zinc-400 text-sm mt-1">Yıl Tecrübe</div></div>
+          <div><div className="text-3xl md:text-4xl font-bold text-white">50+</div><div className="text-zinc-400 text-sm mt-1">Tamamlanan Proje</div></div>
+          <div><div className="text-3xl md:text-4xl font-bold text-white">%94</div><div className="text-zinc-400 text-sm mt-1">Müşteri Memnuniyeti</div></div>
+          <div><div className="text-3xl md:text-4xl font-bold text-white">Aylık</div><div className="text-zinc-400 text-sm mt-1">Şeffaf Rapor</div></div>
+          <div><div className="text-3xl md:text-4xl font-bold text-white">5+</div><div className="text-zinc-400 text-sm mt-1">Yıl Deneyim</div></div>
         </div>
       </section>
 

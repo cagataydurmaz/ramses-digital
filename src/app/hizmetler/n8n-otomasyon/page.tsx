@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import KapakGorseli from '@/components/KapakGorseli'
 import KisaOzet from '@/components/KisaOzet'
 import Link from 'next/link'
 import CalendlyButton from '@/components/CalendlyButton'
@@ -78,12 +79,14 @@ export default function N8nOtomasyonPage() {
         n8n ile form, CRM, e-posta, tablo ve yapay zekâ araçları arasında tekrar eden işleri otomatik hale getiriyoruz. İşletmenizdeki zaman alan süreçleri birlikte belirliyor, kurulumu ve bakımını üstleniyoruz.
       </KisaOzet>
 
+      <KapakGorseli src="/gorseller/n8n-otomasyon.webp" alt="Beyaz tahtaya iş akışı şeması çizen kişi" />
+
       <section className="py-12 px-6 border-y border-white/[0.04]">
         <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-          <div><div className="text-3xl md:text-4xl font-bold text-white">200+</div><div className="text-zinc-400 text-sm mt-1">Otomasyon Senaryosu</div></div>
-          <div><div className="text-3xl md:text-4xl font-bold text-white">%70</div><div className="text-zinc-400 text-sm mt-1">Manuel İş Azalması</div></div>
+          <div><div className="text-3xl md:text-4xl font-bold text-white">5+</div><div className="text-zinc-400 text-sm mt-1">Yıl Deneyim</div></div>
+          <div><div className="text-3xl md:text-4xl font-bold text-white">50+</div><div className="text-zinc-400 text-sm mt-1">Tamamlanan Proje</div></div>
           <div><div className="text-3xl md:text-4xl font-bold text-white">7/24</div><div className="text-zinc-400 text-sm mt-1">Çalışma Süresi</div></div>
-          <div><div className="text-3xl md:text-4xl font-bold text-white">100%</div><div className="text-zinc-400 text-sm mt-1">KVKK Uyumlu</div></div>
+          <div><div className="text-3xl md:text-4xl font-bold text-white">KVKK</div><div className="text-zinc-400 text-sm mt-1">Uyumlu Kurulum</div></div>
         </div>
       </section>
 

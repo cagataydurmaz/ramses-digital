@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { trackLead } from '@/lib/tracking'
 import { Phone, Mail, Clock, Send, CheckCircle2, Loader2 } from 'lucide-react'
+import { waMesaj, waLink } from '@/lib/whatsapp'
 
 const services = [
   'SEO & İçerik Optimizasyonu',
@@ -49,16 +50,19 @@ export default function ContactPage() {
     e.preventDefault()
     if (!validate()) return
     // Form e-posta yerine doğrudan WhatsApp mesajı olarak gelir.
-    const satirlar = [
-      'Merhaba, iletişim formundan yazıyorum.',
-      `Ad Soyad: ${form.name}`,
-      form.email ? `E-posta: ${form.email}` : null,
-      form.phone ? `Telefon: ${form.phone}` : null,
-      form.service ? `Hizmet: ${form.service}` : null,
-      form.message ? `Mesaj: ${form.message}` : null,
-    ].filter(Boolean)
     trackLead('iletisim_formu')
-    window.open(`https://wa.me/905355601936?text=${encodeURIComponent(satirlar.join('\n'))}`, '_blank')
+    window.open(
+      waLink(
+        waMesaj('İletişim formu', [
+          `Ad Soyad: ${form.name}`,
+          form.phone && `Telefon: ${form.phone}`,
+          form.email && `E-posta: ${form.email}`,
+          form.service && `İlgilendiğim hizmet: ${form.service}`,
+          form.message && `Mesajım: ${form.message}`,
+        ]),
+      ),
+      '_blank',
+    )
     setIsSubmitted(true)
   }
 
@@ -180,7 +184,7 @@ export default function ContactPage() {
               </div>
 
               <a
-                href={`https://wa.me/905355601936?text=${encodeURIComponent('Merhaba! Web sitenizden yazıyorum, dijital pazarlama hizmetleriniz hakkında bilgi almak istiyorum.')}`}
+                href={waLink('Merhaba Ramses Dijital,\n\n*Bilgi talebi*\nWeb sitenizden yazıyorum; hizmetleriniz hakkında bilgi almak istiyorum.')}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 bg-[#25D366]/10 hover:bg-[#25D366]/20 border border-[#25D366]/20 hover:border-[#25D366]/40 rounded-2xl p-5 transition-all"

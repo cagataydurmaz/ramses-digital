@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import KapakGorseli from '@/components/KapakGorseli'
 import { seoBaslik } from '@/lib/seoBaslik'
 import Link from 'next/link'
 import { Briefcase, ArrowRight, ShieldCheck, BookOpen, ExternalLink, TrendingUp } from 'lucide-react'
@@ -95,6 +96,8 @@ export default function SektorSayfasi({ v }: { v: SektorVeri }) {
       </section>
 
       <KisaOzet>{v.kisaOzet}</KisaOzet>
+
+      <KapakGorseli src={`/gorseller/${v.slug}.webp`} alt={`${v.ad} için dijital pazarlama`} />
 
       <section className="pb-20 px-6">
         <div className="max-w-6xl mx-auto">

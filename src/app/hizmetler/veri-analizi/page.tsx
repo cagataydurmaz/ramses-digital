@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import KapakGorseli from '@/components/KapakGorseli'
 import KisaOzet from '@/components/KisaOzet'
 import Link from 'next/link'
 import CalendlyButton from '@/components/CalendlyButton'
@@ -146,6 +147,8 @@ export default function VeriAnaliziPage() {
       <KisaOzet>
         GA4, Search Console ve reklam verilerinizi tek panelde toplayıp hangi kanalın gerçekten müşteri getirdiğini görünür kılıyoruz. Doğru ölçüm kurulmadan yapılan pazarlama tahmine dayanır; ilk adım takip altyapısıdır.
       </KisaOzet>
+
+      <KapakGorseli src="/gorseller/veri-analizi.webp" alt="Veri analizi grafikleri ve göstergeleri" />
 
       {/* Stats */}
       <section className="py-12 px-6 border-y border-white/[0.04]">

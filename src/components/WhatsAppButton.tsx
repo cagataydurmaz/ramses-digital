@@ -4,11 +4,11 @@ import { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
 const WHATSAPP_HREF = `https://wa.me/905355601936?text=${encodeURIComponent(
-  'Merhaba! Web sitenizden yazıyorum, dijital pazarlama hizmetleriniz hakkında bilgi almak istiyorum.'
+  'Merhaba Ramses Dijital,\n\n*Bilgi talebi*\nWeb sitenizden yazıyorum; hizmetleriniz hakkında bilgi almak istiyorum.'
 )}`
 
 const FIYAT_HREF = `https://wa.me/905355601936?text=${encodeURIComponent(
-  'Merhaba! Web sitenizden yazıyorum, fiyat almak istiyorum.'
+  'Merhaba Ramses Dijital,\n\n*Fiyat talebi*\nWeb sitenizden yazıyorum; işletmem için fiyat almak istiyorum.'
 )}`
 
 // Site açıldıktan 2 sn sonra "Hemen fiyat al" baloncuğu, 3 sn görünür kalır.

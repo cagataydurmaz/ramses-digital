@@ -5,7 +5,7 @@ import { Phone } from 'lucide-react'
 
 const TEL_HREF = 'tel:+905355601936'
 const WA_HREF = `https://wa.me/905355601936?text=${encodeURIComponent(
-  'Merhaba! Web sitenizden yazıyorum, dijital pazarlama hizmetleriniz hakkında bilgi almak istiyorum.'
+  'Merhaba Ramses Dijital,\n\n*Bilgi talebi*\nWeb sitenizden yazıyorum; hizmetleriniz hakkında bilgi almak istiyorum.'
 )}`
 
 // Sadece mobilde: sayfanın altında yan yana "Ara" ve "WhatsApp" butonları.

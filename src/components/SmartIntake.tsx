@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import Link from 'next/link'
 import { trackLead } from '@/lib/tracking'
 import { ArrowRight, Loader2, Sparkles, RotateCcw, Send, Edit3 } from 'lucide-react'
+import { waMesaj, waLink } from '@/lib/whatsapp'
 
 const WHATSAPP_NUMBER = '905355601936'
 
@@ -39,7 +40,7 @@ const STRINGS = {
     whatsappCta: 'WhatsApp\'tan Devam Et',
     detailsCta: 'Detaylı Bilgi Al',
     whatsappMessage: (message: string, input: string) =>
-      `Merhaba! Web sitenizdeki asistan şunları söyledi:\n"${message}"\n\nBenim ihtiyacım: ${input}\n\nBenimle iletişime geçebilir misiniz?`,
+      waMesaj('Yapay zekâ asistanı', [`İhtiyacım: ${input}`, message && `Asistanın önerisi: ${message}`], 'Benimle iletişime geçebilir misiniz?'),
   },
   en: {
     badge: 'AI Assistant',

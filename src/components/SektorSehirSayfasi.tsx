@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import KapakGorseli from '@/components/KapakGorseli'
 import Link from 'next/link'
 import { MapPin, ArrowRight, ShieldCheck, CheckCircle2 } from 'lucide-react'
 import SehirTeklifBolumu from '@/components/SehirTeklifBolumu'
@@ -96,6 +97,8 @@ export default function SektorSehirSayfasi({ slug }: { slug: string }) {
       </section>
 
       <KisaOzet>{v.kisaOzet}</KisaOzet>
+
+      <KapakGorseli src={`/gorseller/${s.slug}.webp`} alt={`${v.sehir.ad} ${s.ad.toLocaleLowerCase('tr-TR')} için SEO`} />
 
       <section className="pb-16 px-6">
         <div className="max-w-3xl mx-auto">

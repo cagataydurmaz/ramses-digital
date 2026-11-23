@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import KapakGorseli from '@/components/KapakGorseli'
 import KisaOzet from '@/components/KisaOzet'
 import Link from 'next/link'
 import CityLinksGrid from '@/components/CityLinksGrid'
@@ -26,7 +27,7 @@ export const metadata: Metadata = {
 
 const features = [
   { icon: Gauge, title: 'Core Web Vitals Optimize', desc: 'LCP < 2.5s, INP < 200ms, CLS < 0.1. Google\'ın hız kriterlerini geçen siteler.' },
-  { icon: Smartphone, title: 'Mobil Öncelikli Tasarım', desc: '%65 trafik mobilden geliyor. Önce mobil, sonra masaüstü tasarlanır.' },
+  { icon: Smartphone, title: 'Mobil Öncelikli Tasarım', desc: 'Ziyaretçilerin çoğu mobilden geliyor. Önce mobil, sonra masaüstü tasarlanır.' },
   { icon: Search, title: 'SEO Hazır Altyapı', desc: 'Schema markup, semantic HTML, meta tag yapısı, sitemap, robots.txt — temelde mevcut.' },
   { icon: Code2, title: 'Modern Teknoloji', desc: 'Next.js 14, React 18, TypeScript, Tailwind. Geliştirilebilir, ölçeklenebilir altyapı.' },
   { icon: ShoppingCart, title: 'E-Ticaret Hazır', desc: 'Shopify, WooCommerce, Medusa veya Next.js Commerce ile özel e-ticaret çözümleri.' },
@@ -79,11 +80,13 @@ export default function WebTasarimHizmetPage() {
         Hızlı açılan, mobilde rahat kullanılan ve ziyaretçiyi aramaya ya da mesaja yönlendiren web siteleri tasarlıyoruz. Siteler SEO uyumlu altyapıyla kurulur; böylece sonradan Google görünürlüğü için baştan yapılması gerekmez.
       </KisaOzet>
 
+      <KapakGorseli src="/gorseller/web-tasarim.webp" alt="Masada açık dizüstü bilgisayarda web sitesi tasarımı" />
+
       <section className="py-12 px-6 border-y border-white/[0.04]">
         <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-          <div><div className="text-3xl md:text-4xl font-bold text-white">95+</div><div className="text-zinc-400 text-sm mt-1">Lighthouse Skoru</div></div>
-          <div><div className="text-3xl md:text-4xl font-bold text-white">&lt;2s</div><div className="text-zinc-400 text-sm mt-1">Sayfa Yüklenme</div></div>
-          <div><div className="text-3xl md:text-4xl font-bold text-white">%50</div><div className="text-zinc-400 text-sm mt-1">Dönüşüm Artışı</div></div>
+          <div><div className="text-3xl md:text-4xl font-bold text-white">95+</div><div className="text-zinc-400 text-sm mt-1">Hedef Lighthouse Skoru</div></div>
+          <div><div className="text-3xl md:text-4xl font-bold text-white">&lt;2s</div><div className="text-zinc-400 text-sm mt-1">Hedef Açılış Süresi</div></div>
+          <div><div className="text-3xl md:text-4xl font-bold text-white">%94</div><div className="text-zinc-400 text-sm mt-1">Müşteri Memnuniyeti</div></div>
           <div><div className="text-3xl md:text-4xl font-bold text-white">3-5 hf</div><div className="text-zinc-400 text-sm mt-1">Ortalama Teslim</div></div>
         </div>
       </section>

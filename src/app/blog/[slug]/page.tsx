@@ -321,7 +321,7 @@ export default function BlogPostPage({ params }: Props) {
           <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
             <CalendlyButton label="Ücretsiz Danışmanlık Al" variant="primary" />
             <a
-              href={`https://wa.me/905355601936?text=${encodeURIComponent(`Merhaba! "${post.title}" yazınızı okudum, danışmanlık almak istiyorum.`)}`}
+              href={`https://wa.me/905355601936?text=${encodeURIComponent(`Merhaba Ramses Dijital,\n\n*Blog yazısından geliyorum*\n"${post.title}" yazınızı okudum; bu konuda destek almak istiyorum.`)}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#20BD5A] text-white px-7 py-3.5 rounded-full text-sm font-medium transition-all hover:-translate-y-0.5 hover:shadow-lg hover:shadow-green-500/25"

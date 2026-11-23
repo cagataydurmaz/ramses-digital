@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { trackLead } from '@/lib/tracking'
 import { Search, TrendingUp, Share2, Monitor, Mail, BarChart3, Workflow, Send } from 'lucide-react'
+import { waMesaj, waLink } from '@/lib/whatsapp'
 
 const WHATSAPP_NUMBER = '905355601936'
 
@@ -34,20 +35,16 @@ export default function WhatsAppLeadForm() {
     setTouched(true)
     if (!isValid) return
 
-    const lines = [
-      `Merhaba! Aşağıdaki bilgilerle iletişime geçmek istiyorum:`,
-      ``,
-      `İsim: ${name}`,
-      company ? `Firma: ${company}` : null,
+    const metin = waMesaj('Hizmet talebi', [
+      `Ad: ${name}`,
+      company && `Firma: ${company}`,
       `Telefon: ${phone}`,
       `İlgilendiğim hizmetler: ${interests.join(', ')}`,
-      note ? `Notlar: ${note}` : null,
-    ].filter(Boolean)
-
-    const msg = encodeURIComponent(lines.join('\n'))
+      note && `Not: ${note}`,
+    ])
     window.fbq?.('track', 'Lead', { content_name: 'WhatsApp Lead Form' })
     trackLead('whatsapp_form')
-    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${msg}`, '_blank')
+    window.open(waLink(metin), '_blank')
   }
 
   return (

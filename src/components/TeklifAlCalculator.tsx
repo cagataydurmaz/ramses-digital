@@ -26,6 +26,7 @@ import {
 } from 'lucide-react'
 import CalendlyButton from '@/components/CalendlyButton'
 import { estimateQuote, businessSizeLabels, pricing, type BusinessSize } from '@/lib/pricing'
+import { waMesaj, waLink } from '@/lib/whatsapp'
 
 const WHATSAPP_NUMBER = '905355601936'
 
@@ -284,18 +285,19 @@ export default function TeklifAlCalculator() {
       if (est.monthlyMax > 0) priceText += ` (~${est.monthlyMin.toLocaleString('tr-TR')}-${est.monthlyMax.toLocaleString('tr-TR')}₺/ay)`
       if (est.oneTimeMax > 0) priceText += ` (~${est.oneTimeMin.toLocaleString('tr-TR')}-${est.oneTimeMax.toLocaleString('tr-TR')}₺ tek seferlik)`
     }
-    const lines = [
-      `Merhaba! AI teklif hesaplayıcıdan geliyorum:`,
-      ``,
-      `İşletme Tipi: ${businessTypeLabel}`,
-      sizeLabel ? `Büyüklük: ${sizeLabel}` : null,
-      `İlgilendiğim hizmetler: ${displayServices.join(', ')}`,
-      websiteUrl ? `Web sitem: ${websiteUrl}` : null,
-      priceText ? `Tahmini aralık: ${priceText.trim()}` : null,
-      ``,
-      `Detaylı görüşmek istiyorum.`,
-    ].filter(Boolean)
-    return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(lines.join('\n'))}`
+    return waLink(
+      waMesaj(
+        'AI teklif hesaplayıcı',
+        [
+          `İşletme: ${businessTypeLabel}`,
+          sizeLabel && `Büyüklük: ${sizeLabel}`,
+          `Hizmetler: ${displayServices.join(', ')}`,
+          websiteUrl && `Web sitem: ${websiteUrl}`,
+          priceText && `Hesaplayıcının tahmini: ${priceText.trim()}`,
+        ],
+        'Teklifi detaylı konuşmak istiyorum.',
+      ),
+    )
   })()
 
   return (

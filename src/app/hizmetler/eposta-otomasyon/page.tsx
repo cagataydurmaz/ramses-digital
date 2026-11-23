@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import KapakGorseli from '@/components/KapakGorseli'
 import KisaOzet from '@/components/KisaOzet'
 import Link from 'next/link'
 import CalendlyButton from '@/components/CalendlyButton'
@@ -146,6 +147,8 @@ export default function EpostaOtomasyonPage() {
       <KisaOzet>
         E-posta pazarlamada amaç doğru kişiye doğru zamanda mesaj göndermektir: hoş geldin serileri, sepet hatırlatmaları ve segmentli kampanyalar. Kurulumu ve otomasyonları yapıyor, onaylı alıcı listesiyle mevzuata uygun çalışıyoruz.
       </KisaOzet>
+
+      <KapakGorseli src="/gorseller/eposta-otomasyon.webp" alt="Masada dizüstü bilgisayarla e-posta kampanyası hazırlayan kişi" />
 
       {/* Stats */}
       <section className="py-12 px-6 border-y border-white/[0.04]">

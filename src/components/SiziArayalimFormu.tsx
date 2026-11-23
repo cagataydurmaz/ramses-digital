@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { PhoneCall, CheckCircle2 } from 'lucide-react'
 import { trackLead } from '@/lib/tracking'
+import { waMesaj, waLink } from '@/lib/whatsapp'
 
 // WhatsApp yazmak istemeyenler için 2 alanlı geri arama formu.
 export default function SiziArayalimFormu() {
@@ -14,9 +15,8 @@ export default function SiziArayalimFormu() {
   function gonder(e: React.FormEvent) {
     e.preventDefault()
     if (tuzak) return
-    const mesaj = encodeURIComponent(`Merhaba, beni arar mısınız?\nAd: ${ad}\nTelefon: ${telefon}\nSayfa: ${window.location.pathname}`)
     trackLead('geri_arama')
-    window.open(`https://wa.me/905355601936?text=${mesaj}`, '_blank')
+    window.open(waLink(waMesaj('Geri arama talebi', [`Ad: ${ad}`, `Telefon: ${telefon}`], 'Uygun olduğunuzda beni arayabilir misiniz?')), '_blank')
     setDurum('tamam')
   }
 

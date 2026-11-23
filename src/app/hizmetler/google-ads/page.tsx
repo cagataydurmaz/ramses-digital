@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import KapakGorseli from '@/components/KapakGorseli'
 import KisaOzet from '@/components/KisaOzet'
 import Link from 'next/link'
 import CityLinksGrid from '@/components/CityLinksGrid'
@@ -8,7 +9,7 @@ import { TrendingUp, Target, BarChart3, ShoppingBag, Youtube, Repeat, ArrowRight
 export const metadata: Metadata = {
   title: 'Google Ads Yönetimi ve Performans Reklamı | Ramses Dijital',
   description:
-    'Profesyonel Google Ads kampanya yönetimi. Search, Display, YouTube, Shopping ve Remarketing kampanyalarıyla 4.2x ortalama ROAS. Şeffaf raporlama.',
+    'Profesyonel Google Ads kampanya yönetimi. Search, Display, YouTube, Shopping ve Remarketing kampanyaları; dönüşüm ölçümü ve şeffaf raporlama.',
   alternates: { canonical: 'https://ramsesdigital.com/hizmetler/google-ads' },
   openGraph: {
     title: 'Google Ads Yönetimi | Ramses Digital',
@@ -79,12 +80,14 @@ export default function GoogleAdsHizmetPage() {
         Google Ads, arama yapan kişinin karşısına hemen çıkmanızı sağlar; bütçe durunca görünürlük de durur. Kampanya kurulumu, dönüşüm takibi ve düzenli optimizasyonu biz yürütüyoruz; reklam bütçesi doğrudan Google’a ödenir, yönetim ücretimiz ayrıdır.
       </KisaOzet>
 
+      <KapakGorseli src="/gorseller/google-ads.webp" alt="Dizüstü bilgisayar ekranında reklam performans grafikleri" />
+
       <section className="py-12 px-6 border-y border-white/[0.04]">
         <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-          <div><div className="text-3xl md:text-4xl font-bold text-white">4.2x</div><div className="text-zinc-400 text-sm mt-1">Ortalama ROAS</div></div>
-          <div><div className="text-3xl md:text-4xl font-bold text-white">%65</div><div className="text-zinc-400 text-sm mt-1">CPA Düşüşü</div></div>
-          <div><div className="text-3xl md:text-4xl font-bold text-white">7 gün</div><div className="text-zinc-400 text-sm mt-1">İlk Dönüşüm Süresi</div></div>
-          <div><div className="text-3xl md:text-4xl font-bold text-white">100+</div><div className="text-zinc-400 text-sm mt-1">Yönetilen Kampanya</div></div>
+          <div><div className="text-3xl md:text-4xl font-bold text-white">50+</div><div className="text-zinc-400 text-sm mt-1">Tamamlanan Proje</div></div>
+          <div><div className="text-3xl md:text-4xl font-bold text-white">%94</div><div className="text-zinc-400 text-sm mt-1">Müşteri Memnuniyeti</div></div>
+          <div><div className="text-3xl md:text-4xl font-bold text-white">Aylık</div><div className="text-zinc-400 text-sm mt-1">Şeffaf Rapor</div></div>
+          <div><div className="text-3xl md:text-4xl font-bold text-white">5.0/5</div><div className="text-zinc-400 text-sm mt-1">Google Puanı</div></div>
         </div>
       </section>
 

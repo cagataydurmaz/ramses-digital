@@ -107,7 +107,7 @@ export default function AboutPage() {
             <div className="grid grid-cols-2 gap-4">
               {[
                 { icon: Users, label: '50+ Mutlu Müşteri', value: 'Global & Yerel' },
-                { icon: Award, label: '100+ Başarılı Proje', value: 'Her Sektörden' },
+                { icon: Award, label: '50+ Tamamlanan Proje', value: 'Her Sektörden' },
                 { icon: Globe, label: '5+ Yıl Deneyim', value: 'Sürekli Gelişim' },
                 { icon: Target, label: '%94 Memnuniyet', value: 'Gerçek Sonuçlar' },
               ].map((item) => {

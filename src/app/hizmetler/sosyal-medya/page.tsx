@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import KapakGorseli from '@/components/KapakGorseli'
 import KisaOzet from '@/components/KisaOzet'
 import Link from 'next/link'
 import CalendlyButton from '@/components/CalendlyButton'
@@ -142,6 +143,8 @@ export default function SosyalMedyaPage() {
       <KisaOzet>
         Markanızın diline uygun post, story ve kısa video içerikleri ile içerik takvimini hazırlıyoruz. Hesap yönetimi ve reklam kampanyaları bu hizmete dahil değildir; içerik üretimine odaklanır.
       </KisaOzet>
+
+      <KapakGorseli src="/gorseller/sosyal-medya.webp" alt="Akıllı telefonda sosyal medya uygulamaları" />
 
       {/* Format bilgi şeridi */}
       <section className="py-12 px-6 border-y border-white/[0.04]">

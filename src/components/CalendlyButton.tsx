@@ -2,9 +2,10 @@
 
 import { ArrowRight } from 'lucide-react'
 import { trackLead } from '@/lib/tracking'
+import { waMesaj, waLink } from '@/lib/whatsapp'
 
 const WHATSAPP_NUMBER = '905355601936'
-const WHATSAPP_MESSAGE = 'Merhaba! Ücretsiz danışmanlık almak istiyorum.'
+const WHATSAPP_MESSAGE = 'Ücretsiz ön görüşme'
 
 declare global {
   interface Window {
@@ -30,8 +31,7 @@ export default function CalendlyButton({
   const handleClick = () => {
     window.fbq?.('track', 'Contact', { content_name: label })
     trackLead('whatsapp')
-    const msg = encodeURIComponent(message)
-    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${msg}`, '_blank')
+    window.open(waLink(waMesaj(message, [], 'Uygun bir zamanda görüşmek istiyorum.')), '_blank')
   }
 
   const buttonContent = (

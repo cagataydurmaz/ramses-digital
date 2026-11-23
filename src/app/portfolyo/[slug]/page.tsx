@@ -213,7 +213,7 @@ export default function CaseStudyPage({ params }: Props) {
           <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
             <CalendlyButton label="Ücretsiz Danışmanlık Al" variant="primary" />
             <a
-              href={`https://wa.me/905355601936?text=${encodeURIComponent(`Merhaba! ${project.name} vaka çalışmanızı inceledim, benzer bir proje için görüşmek istiyorum.`)}`}
+              href={`https://wa.me/905355601936?text=${encodeURIComponent(`Merhaba Ramses Dijital,\n\n*Portföyden geliyorum*\n${project.name} projenizi inceledim; benzer bir çalışma için görüşmek istiyorum.`)}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#20BD5A] text-white px-7 py-3.5 rounded-full text-sm font-medium transition-all hover:-translate-y-0.5 hover:shadow-lg hover:shadow-green-500/25"
