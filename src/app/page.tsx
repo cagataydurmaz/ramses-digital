@@ -9,6 +9,8 @@ import FeaturedWork from '@/components/FeaturedWork'
 import AnaSayfaSss from '@/components/AnaSayfaSss'
 import AnaSayfaSektorAraclar from '@/components/AnaSayfaSektorAraclar'
 import MarkaSeridi from '@/components/MarkaSeridi'
+import GoogleAramaAnimasyonu from '@/components/GoogleAramaAnimasyonu'
+import ArkaPlanVideo from '@/components/ArkaPlanVideo'
 import HeroBackgroundVideo from '@/components/HeroBackgroundVideo'
 import {
   Sparkles,
@@ -594,13 +596,15 @@ export default function HomePage() {
 
       {/* ── SEO / AEO / GEO — EN BASİT ANLATIM ──────────────────────────────── */}
       <section className="py-12 sm:py-16 px-6">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <FadeIn className="text-center mb-14">
             <p className="text-blue-500 text-sm font-medium tracking-wider uppercase mb-3">Bunlar Ne Anlama Geliyor?</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Google&apos;da ve Yapay Zekâda Görünürlük, Basitçe</h2>
             <p className="text-zinc-400 max-w-xl mx-auto">İnsanlar artık markanızı üç farklı yerde arıyor — üçünde de bulunmanız için çalışıyoruz.</p>
           </FadeIn>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <div className="grid grid-cols-1 lg:grid-cols-[340px_1fr] gap-10 lg:gap-14 items-center">
+          <GoogleAramaAnimasyonu />
+          <div className="grid grid-cols-1 gap-5">
             <FadeIn delay={0}>
               <div className="h-full bg-[#0D1225] border border-white/[0.14] rounded-2xl p-6">
                 <div className="w-11 h-11 bg-blue-500/10 rounded-xl flex items-center justify-center mb-4">
@@ -631,6 +635,7 @@ export default function HomePage() {
                 <p className="text-zinc-400 text-sm leading-relaxed">Yapay zekâ araçlarının ve arama özetlerinin sizi kaynak olarak alıntılama olasılığının artması (garanti edilmez).</p>
               </div>
             </FadeIn>
+          </div>
           </div>
         </div>
       </section>
@@ -732,6 +737,7 @@ export default function HomePage() {
         <div className="max-w-4xl mx-auto text-center">
           <FadeIn>
             <div className="relative bg-gradient-to-b from-blue-500/10 to-transparent border border-blue-500/20 rounded-3xl p-6 sm:p-10 md:p-16 overflow-hidden text-center">
+              <ArkaPlanVideo src="/video/cta-sehir.mp4" mobilSrc="/video/cta-sehir-mobil.mp4" poster="/video/cta-sehir-poster.jpg" />
               <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[200px] bg-[radial-gradient(ellipse_at_center,rgba(59,130,246,0.18)_0%,rgba(59,130,246,0.06)_40%,transparent_70%)] rounded-full pointer-events-none" />
               <div className="relative z-10">
                 <p className="text-blue-400 text-sm font-medium tracking-wider uppercase mb-4">

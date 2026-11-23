@@ -74,5 +74,9 @@
  "n8n-otomasyon": {
   "kaynak": "Unsplash (Unsplash Lisansı, ticari kullanım serbest)",
   "url": "https://images.unsplash.com/photo-1542744094-24638eff58bb"
+ },
+ "video/cta-sehir": {
+  "kaynak": "Pexels (Pexels Lisansı, ücretsiz ticari kullanım)",
+  "url": "https://www.pexels.com/video/stunning-aerial-timelapse-of-city-lights-at-night-33637800/"
  }
 }
