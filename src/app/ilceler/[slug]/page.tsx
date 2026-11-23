@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import CalendlyButton from '@/components/CalendlyButton'
 import RelatedPages from '@/components/RelatedPages'
+import { ilSeoBul } from '@/lib/ilSeo'
 import { MapPin, ArrowRight, CheckCircle2, Search, Globe, Smartphone, Zap } from 'lucide-react'
 import { ilceler, getIlce, isIl, getIlRehberi, bulunma } from '@/lib/ilceler'
 import { ilceDetay } from '@/lib/ilceDetay'
@@ -15,7 +16,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   const ilce = getIlce(params.slug)
   if (!ilce) return {}
   const url = `https://ramsesdigital.com/ilceler/${ilce.slug}`
-  const title = `${ilce.name} Web Tasarım ve SEO | Ramses Dijital`
+  const title = `${ilce.name} Web Tasarım | Kurumsal Web Sitesi – Ramses Dijital`
   const description = `${ilce.name} işletmeleri için web tasarım, yerel SEO ve Google görünürlüğü. ${ilce.name} ekonomisine göre hazırlanan sektör önerileri ve ücretsiz ön görüşme.`
   return {
     title,
@@ -230,6 +231,7 @@ export default function IlcePage({ params }: { params: { slug: string } }) {
 
       <RelatedPages
         pages={[
+        ...(ilSeoBul(ilce.slug) ? [{ label: `${ilce.name} SEO`, href: `/${ilce.slug}-seo` }] : []),
         ...(ilRehberi ? [{ label: `${ilRehberi.name} İl Rehberi`, href: `/ilceler/${ilRehberi.slug}` }] : []),
         ...komsular.filter((k) => k.slug !== ilRehberi?.slug).map((k) => ({ label: rehberAdi(k), href: `/ilceler/${k.slug}` })),
           { label: 'Tüm Bölgeler', href: '/ilceler' },

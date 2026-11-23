@@ -130,7 +130,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${base}/portfolyo/${p.slug}`,
   }))
 
-  const ilSeoPages = ilSeo.map((i) => ({ url: `${base}/${i.slug}-seo` }))
+  const ilSeoPages = [
+    ...ilSeo.map((i) => ({ url: `${base}/${i.slug}-seo` })),
+    { url: `${base}/gebze-google-ads` },
+    { url: `${base}/gebze-dijital-pazarlama` },
+  ]
 
   const aracPages = [{ url: `${base}/araclar` }, ...araclar.map((a) => ({ url: `${base}/araclar/${a.slug}` }))]
   const sektorPages = [{ url: `${base}/sektorler` }, ...sektorler.map((s) => ({ url: `${base}/sektorler/${s.slug}` }))]

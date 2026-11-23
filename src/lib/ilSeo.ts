@@ -12,6 +12,8 @@ export interface IlSeoVeri {
   icin: string // iyelik: "Ağrı'nın"
   yonelme: string // "Ağrı'ya"
   ust?: { ad: string; slug: string } // ilçe ise bağlı olduğu il (sayfası varsa)
+  yerel?: boolean // Kocaeli ilçeleri: İzmit merkezli ekip, yüz yüze görüşme mümkün
+  rehber?: string // varsa mevcut /ilceler/{rehber} (web tasarım) sayfası
   ozet: string // hero altı açıklama
   bolgeler: string[] // hero altında listelenen ilçe/bölgeler
   ilceler: { ad: string; not: string }[]
@@ -729,6 +731,327 @@ export const ilSeo: IlSeoVeri[] = [
       { q: "Fiziksel olarak Uşak'ta mısınız?", a: "Hayır, Kocaeli kökenliyiz ve Uşak'taki işletmelere uzaktan hizmet veriyoruz. Tüm süreç online yürütülür." },
       { q: 'Sonuç ne kadar sürede alınır?', a: 'Yerel aramalarda rekabet düşük olduğu için birkaç hafta ile birkaç ay içinde görünürlük oluşabilir; ihracat aramalarında süre daha uzundur. Sıralama garantisi verilemez.' },
     ],
+  },
+  // ─── Kocaeli ilçeleri (23 Kasım 2026) — İzmit merkezli ekip, yüz yüze görüşme mümkün ───
+  {
+    slug: 'gebze', ad: 'Gebze', bulunma: "Gebze'de", icin: "Gebze'nin", yonelme: "Gebze'ye",
+    ust: { ad: 'Kocaeli', slug: 'kocaeli' }, yerel: true, rehber: 'gebze',
+    ozet: "Organize sanayi bölgelerinden Bilişim Vadisi'ne, Gebze'deki üretici, tedarikçi ve yerel işletmeler için SEO. 'Gebze + ürün/hizmet' aramalarında Google'da ve yapay zekâ aramalarında öne çıkın.",
+    bolgeler: ['Merkez', 'Gebze OSB', 'Muallimköy (Bilişim Vadisi)', 'Pelitli', 'Kirazpınar', 'Eskihisar', 'Tavşanlı'],
+    ilceler: [
+      { ad: 'Organize sanayi bölgeleri', not: 'Üretim, makine, kimya ve yan sanayi firmaları; satın almacıların bulabileceği ürün, kapasite ve belge sayfaları, İngilizce sürüm.' },
+      { ad: 'Muallimköy ve üniversite çevresi', not: 'Teknoloji, Ar-Ge ve yazılım firmaları; kurumsal güven veren, referans ve proje odaklı sayfalar.' },
+      { ad: 'Gebze merkez', not: 'Sağlık, eğitim, hukuk ve esnaf; hizmet başına sayfa ve harita görünürlüğü belirleyici.' },
+      { ad: 'Eskihisar ve sahil', not: 'Yeme-içme ve tarihi alanlara gelen ziyaretçiler; restoran ve kafeler için harita kaydı ve yorum yönetimi.' },
+    ],
+    sektorler: [
+      { ad: 'Sanayi ve üretim', not: "Ürün başına sayfa, teknik tablo, kalite belgeleri ve teklif formu; 'gebze + ürün adı' ve tedarikçi aramalarında görünürlük." },
+      { ad: 'Teknoloji ve yazılım', not: 'Proje, referans ve ekip sayfaları; B2B karar vericilere yönelik net içerik.' },
+      { ad: 'Lojistik ve depolama', not: 'Otoyol ve liman bağlantılı firmalar için hizmet, kapasite ve güzergâh sayfaları.' },
+      { ad: 'Sağlık, eğitim ve esnaf', not: 'Klinik, kurs ve yerel işletmeler için hizmet sayfaları ve Google İşletme Profili.' },
+    ],
+    aramalar: [
+      { tur: 'İlçe araması', ornek: 'gebze seo ajansı', rekabet: 'Orta', yaklasim: "Bu arama gerçekten yapılıyor; Gebze'ye özel güçlü bir SEO sayfası ile hedeflenir." },
+      { tur: 'İlçe + hizmet', ornek: 'dijital pazarlama ajansı gebze', rekabet: 'Orta', yaklasim: 'Hizmet sayfası, harita kaydı ve yerel referans.' },
+      { tur: 'Ürün + ilçe', ornek: 'gebze cnc işleme', rekabet: 'Düşük', yaklasim: 'Ürün/hizmet başına sayfa; daha hızlı sonuç verir.' },
+      soruSatiri,
+    ],
+    sss: [
+      { q: "Gebze'deki sanayi firmaları için SEO neden önemli?", a: "Satın alma ekipleri yeni tedarikçiyi çoğunlukla Google'da 'gebze + ürün' ya da ürün adıyla arayarak bulur. Ürün, kapasite ve belge bilgisini net veren, gerekirse İngilizce sürümü olan bir site teklif taleplerini artırır." },
+      { q: 'Yüz yüze görüşebilir miyiz?', a: "Evet. İzmit merkezli bir ekibiz; Gebze'deki işletmelerle gerektiğinde yüz yüze görüşme ayarlayabiliyoruz. Süreç büyük ölçüde online yürür." },
+      { q: "Gebze'de rekabet yüksek, küçük işletme için SEO mantıklı mı?", a: "Genel 'gebze …' aramalarında rekabet yüksek olabilir, ama 'gebze + hizmet/ürün' gibi dar aramalarda küçük bir işletme de görece hızlı öne çıkabilir. Strateji bu dar aramalarla başlar." },
+    ],
+    ilgili: [{ label: 'Gebze Google Ads', href: '/gebze-google-ads' }, { label: 'Gebze Dijital Pazarlama', href: '/gebze-dijital-pazarlama' }, { label: 'Kocaeli SEO', href: '/kocaeli-seo' }],
+  },
+  {
+    slug: 'darica', ad: 'Darıca', bulunma: "Darıca'da", icin: "Darıca'nın", yonelme: "Darıca'ya",
+    ust: { ad: 'Kocaeli', slug: 'kocaeli' }, yerel: true, rehber: 'darica',
+    ozet: "Bayramoğlu'ndan Darıca merkeze, konut ve hizmet işletmeleri için yerel SEO. Klinik, kurs, restoran ve esnaf aramalarında Google'da ve haritalarda öne çıkın.",
+    bolgeler: ['Merkez', 'Bayramoğlu', 'Kazım Karabekir', 'Osmangazi', 'Sırasöğütler', 'Sahil'],
+    ilceler: [
+      { ad: 'Darıca merkez', not: 'Yoğun konut nüfusu; sağlık, eğitim, hukuk ve esnaf hizmetleri. Mahalle bazlı aramalarda harita görünürlüğü belirleyici.' },
+      { ad: 'Bayramoğlu', not: 'Sahil, yeme-içme ve konut; restoran, kafe ve emlak işletmeleri için harita ve yorum yönetimi.' },
+      { ad: 'Sahil ve hayvanat bahçesi çevresi', not: 'Hafta sonu ziyaretçileri; yeme-içme ve aktivite işletmeleri için menü, konum ve yorum.' },
+      { ad: 'Gebze sınırı', not: 'Sanayiye yakın konut bölgeleri; servis, bakım ve günlük ihtiyaç işletmeleri.' },
+    ],
+    sektorler: [
+      { ad: 'Sağlık ve güzellik', not: 'Diş, estetik ve klinikler için hizmet başına sayfa, mevzuata uygun dil ve yorum yönetimi.' },
+      { ad: 'Eğitim ve kurslar', not: 'Kurs ve etüt merkezleri için program, kayıt ve konum sayfaları.' },
+      { ad: 'Restoran ve kafe', not: 'Menü, rezervasyon ve harita sonuçlarında görünürlük.' },
+      { ad: 'Emlak ve yerel hizmetler', not: 'İlan ve hizmet sayfaları, tek dokunuşla arama ve WhatsApp.' },
+    ],
+    aramalar: [
+      { tur: 'İlçe araması', ornek: 'darıca seo', rekabet: 'Düşük', yaklasim: 'Güçlü bir hizmet sayfasıyla ilk sayfa hedeflenebilir.' },
+      { tur: 'İlçe + hizmet', ornek: 'darıca diş kliniği', rekabet: 'Orta', yaklasim: 'Hizmet sayfası ve harita kaydı.' },
+      { tur: 'Semt + hizmet', ornek: 'bayramoğlu restoran', rekabet: 'Düşük', yaklasim: 'Menü ve konum sayfası, yorum yönetimi.' },
+      soruSatiri,
+    ],
+    sss: [
+      { q: "Darıca'daki yerel işletmeler için en önemli şey ne?", a: 'Google İşletme Profili ve haritada doğru, eksiksiz kayıt. Darıca\'da müşteriler çoğunlukla yakındaki işletmeyi haritadan bulur; düzenli gerçek yorumlar ve hızlı bir site bunu destekler.' },
+      { q: 'Yüz yüze görüşebilir miyiz?', a: "Evet. İzmit merkezli bir ekibiz; gerektiğinde Darıca'daki işletmelerle yüz yüze görüşme ayarlayabiliyoruz." },
+    ],
+    ilgili: [{ label: 'Gebze SEO', href: '/gebze-seo' }, { label: 'Kocaeli SEO', href: '/kocaeli-seo' }],
+  },
+  {
+    slug: 'korfez', ad: 'Körfez', bulunma: "Körfez'de", icin: "Körfez'in", yonelme: "Körfez'e",
+    ust: { ad: 'Kocaeli', slug: 'kocaeli' }, yerel: true, rehber: 'korfez',
+    ozet: "Hereke'den Yarımca'ya Körfez işletmeleri için yerel SEO. Liman, lojistik, sanayi tedarikçileri, Hereke halıcıları ve yerel hizmet aramalarında Google'da görünür olun.",
+    bolgeler: ['Merkez', 'Hereke', 'Yarımca', 'Kirazlıyalı', 'Tütünçiftlik', 'Körfez sanayi bölgesi'],
+    ilceler: [
+      { ad: 'Yarımca ve liman çevresi', not: 'Liman, lojistik ve büyük sanayi tesislerine hizmet veren firmalar; B2B hizmet ve kapasite sayfaları.' },
+      { ad: 'Hereke', not: "Hereke halısı ve ipek dokumacılığıyla bilinir; halı satıcıları ve atölyeler için ürün, hikâye ve online satış sayfaları." },
+      { ad: 'Körfez merkez', not: 'Sağlık, eğitim ve esnaf; hizmet başına sayfa ve harita görünürlüğü.' },
+      { ad: 'Kirazlıyalı ve sahil', not: 'Konut ve yeme-içme; restoran ve kafeler için harita ve yorum yönetimi.' },
+    ],
+    sektorler: [
+      { ad: 'Lojistik ve liman hizmetleri', not: 'Nakliye, gümrük, depolama ve liman hizmeti firmaları için hizmet ve güzergâh sayfaları; İngilizce sürüm.' },
+      { ad: 'Sanayi tedarikçileri', not: 'Bakım, montaj, iş güvenliği ve yedek parça firmaları için hizmet ve referans sayfaları.' },
+      { ad: 'Hereke halısı ve el sanatları', not: "Ürün kataloğu, menşe ve sertifika bilgisi, yurt içi ve yurt dışı online satış; 'hereke halısı' aramalarında görünürlük." },
+      { ad: 'Yerel hizmetler', not: 'Klinik, kurs ve esnaf için hizmet sayfaları ve Google İşletme Profili.' },
+    ],
+    aramalar: [
+      { tur: 'İlçe araması', ornek: 'körfez seo', rekabet: 'Düşük', yaklasim: 'Güçlü bir hizmet sayfasıyla ilk sayfa hedeflenebilir.' },
+      { tur: 'Ürün + bölge', ornek: 'hereke halısı satın al', rekabet: 'Orta', yaklasim: 'Ürün sayfası, menşe bilgisi, online satış ve İngilizce sürüm.' },
+      { tur: 'Sektör + ilçe', ornek: 'körfez nakliye firması', rekabet: 'Düşük', yaklasim: 'Hizmet ve güzergâh sayfaları.' },
+      soruSatiri,
+    ],
+    sss: [
+      { q: 'Hereke halısı satan işletmeler internetten nasıl öne çıkar?', a: 'Gerçek ürün fotoğrafları, düğüm sayısı, malzeme ve ölçü bilgisi, menşe ve sertifika belgeleri içeren ürün sayfaları ve yabancı alıcılar için İngilizce sürüm. Sahte ürün endişesi yüksek olduğu için şeffaflık en güçlü satış argümanıdır.' },
+      { q: 'Yüz yüze görüşebilir miyiz?', a: "Evet. İzmit merkezli bir ekibiz; Körfez'deki işletmelerle gerektiğinde yüz yüze görüşme ayarlayabiliyoruz." },
+    ],
+    ilgili: [{ label: 'Derince SEO', href: '/derince-seo' }, { label: 'Kocaeli SEO', href: '/kocaeli-seo' }],
+  },
+  {
+    slug: 'derince', ad: 'Derince', bulunma: "Derince'de", icin: "Derince'nin", yonelme: "Derince'ye",
+    ust: { ad: 'Kocaeli', slug: 'kocaeli' }, yerel: true, rehber: 'derince',
+    ozet: "Derince limanı çevresindeki lojistik firmalarından mahalle esnafına, Derince işletmeleri için yerel SEO. Yerel hizmet ve B2B aramalarında Google'da öne çıkın.",
+    bolgeler: ['Merkez', 'Çenedağ', 'Liman çevresi', 'Yenikent', 'Çınarlı', 'Sahil'],
+    ilceler: [
+      { ad: 'Liman çevresi', not: 'Liman, lojistik ve depolama firmaları; B2B hizmet, kapasite ve iletişim sayfaları.' },
+      { ad: 'Derince merkez', not: 'Konut, sağlık, eğitim ve esnaf; hizmet başına sayfa ve harita görünürlüğü.' },
+      { ad: 'Çenedağ ve yeni konut bölgeleri', not: 'Genç aile nüfusu; kurs, klinik, kafe ve günlük hizmet aramaları güçlü.' },
+      { ad: 'Sahil', not: 'Yeme-içme ve sosyal tesisler; restoranlar için menü, konum ve yorum yönetimi.' },
+    ],
+    sektorler: [
+      { ad: 'Lojistik ve depolama', not: 'Liman bağlantılı firmalar için hizmet, kapasite ve belge sayfaları; teklif formu.' },
+      { ad: 'Temizlik ve ev hizmetleri', not: "Halı yıkama, temizlik ve tadilat gibi hizmetler için ilçe ve hizmet sayfaları; 'derince + hizmet' aramalarında harita görünürlüğü." },
+      { ad: 'Sağlık ve eğitim', not: 'Klinik ve kurslar için hizmet sayfaları ve yorum yönetimi.' },
+      { ad: 'Restoran ve esnaf', not: 'Menü, konum ve tek dokunuşla arama; Google İşletme Profili.' },
+    ],
+    aramalar: [
+      { tur: 'İlçe araması', ornek: 'derince seo', rekabet: 'Düşük', yaklasim: 'Güçlü bir hizmet sayfasıyla ilk sayfa hedeflenebilir.' },
+      { tur: 'Hizmet + ilçe', ornek: 'derince halı yıkama', rekabet: 'Orta', yaklasim: 'Hizmet sayfası, harita kaydı ve gerçek yorumlar.' },
+      { tur: 'Sektör + ilçe', ornek: 'derince lojistik firması', rekabet: 'Düşük', yaklasim: 'Hizmet ve kapasite sayfaları.' },
+      soruSatiri,
+    ],
+    sss: [
+      { q: "Derince'deki hizmet işletmeleri (temizlik, tadilat vb.) nasıl öne çıkar?", a: "Müşteriler bu hizmetleri çoğunlukla 'derince + hizmet' diye ve haritadan arar. Eksiksiz Google İşletme Profili, düzenli gerçek yorumlar ve hizmet başına sayfa içeren hızlı bir site belirleyicidir." },
+      { q: 'Yüz yüze görüşebilir miyiz?', a: "Evet. İzmit merkezli bir ekibiz; Derince İzmit'e çok yakın olduğu için yüz yüze görüşme kolayca ayarlanabilir." },
+    ],
+    ilgili: [{ label: 'Körfez SEO', href: '/korfez-seo' }, { label: 'İzmit SEO', href: '/izmit-seo' }],
+  },
+  {
+    slug: 'golcuk', ad: 'Gölcük', bulunma: "Gölcük'te", icin: "Gölcük'ün", yonelme: "Gölcük'e",
+    ust: { ad: 'Kocaeli', slug: 'kocaeli' }, yerel: true, rehber: 'golcuk',
+    ozet: "Değirmendere'den İhsaniye'ye Gölcük işletmeleri için yerel SEO. Otomotiv ve denizcilik çevresindeki tedarikçiler, sahil işletmeleri ve yerel hizmetler için Google'da görünür olun.",
+    bolgeler: ['Merkez', 'Değirmendere', 'Halıdere', 'İhsaniye', 'Ulaşlı', 'Hisareyn'],
+    ilceler: [
+      { ad: 'Gölcük merkez', not: 'Sağlık, eğitim, hukuk ve esnaf; hizmet başına sayfa ve harita görünürlüğü.' },
+      { ad: 'Değirmendere ve Halıdere', not: 'Sahil, yeme-içme ve konut; restoran ve kafeler için harita kaydı ve yorumlar.' },
+      { ad: 'İhsaniye ve sanayi çevresi', not: 'Otomotiv ve yan sanayi tedarikçileri; ürün, kapasite ve belge sayfaları.' },
+      { ad: 'Ulaşlı ve Hisareyn', not: 'Konut ve yazlık; günlük hizmet ve emlak işletmeleri.' },
+    ],
+    sektorler: [
+      { ad: 'Otomotiv yan sanayi', not: 'Tedarikçiler için ürün ve kalite belgesi sayfaları, B2B teklif formu, İngilizce sürüm.' },
+      { ad: 'Denizcilik ve tersane hizmetleri', not: 'Gemi bakım, makine ve teknik hizmet firmaları için hizmet ve referans sayfaları.' },
+      { ad: 'Sahil yeme-içme', not: 'Menü, konum ve yorum yönetimi; harita sonuçlarında görünürlük.' },
+      { ad: 'Yerel hizmetler', not: 'Klinik, kurs ve esnaf için hizmet sayfaları ve Google İşletme Profili.' },
+    ],
+    aramalar: [
+      { tur: 'İlçe araması', ornek: 'gölcük seo', rekabet: 'Düşük', yaklasim: 'Güçlü bir hizmet sayfasıyla ilk sayfa hedeflenebilir.' },
+      { tur: 'Semt + hizmet', ornek: 'değirmendere restoran', rekabet: 'Düşük', yaklasim: 'Menü ve konum sayfası, yorum yönetimi.' },
+      { tur: 'Sektör + ilçe', ornek: 'gölcük gemi bakım', rekabet: 'Düşük', yaklasim: 'Hizmet ve referans sayfaları.' },
+      soruSatiri,
+    ],
+    sss: [
+      { q: "Gölcük'teki tedarikçi firmalar yeni müşteriye nasıl ulaşır?", a: "Satın almacılar tedarikçiyi Google'da ürün ve hizmet adıyla arar. Ürün, kapasite, kalite belgesi ve referans bilgisini net veren kurumsal bir site, gerekirse İngilizce sürümle, teklif taleplerini artırır." },
+      { q: 'Yüz yüze görüşebilir miyiz?', a: "Evet. İzmit merkezli bir ekibiz; Gölcük'teki işletmelerle gerektiğinde yüz yüze görüşme ayarlayabiliyoruz." },
+    ],
+    ilgili: [{ label: 'Başiskele SEO', href: '/basiskele-seo' }, { label: 'Kocaeli SEO', href: '/kocaeli-seo' }],
+  },
+  {
+    slug: 'cayirova', ad: 'Çayırova', bulunma: "Çayırova'da", icin: "Çayırova'nın", yonelme: "Çayırova'ya",
+    ust: { ad: 'Kocaeli', slug: 'kocaeli' }, yerel: true, rehber: 'cayirova',
+    ozet: "Şekerpınar'dan Akse'ye Çayırova işletmeleri için yerel SEO. Otomotiv yan sanayi, lojistik depoları ve yerel hizmet aramalarında Google'da öne çıkın.",
+    bolgeler: ['Merkez', 'Şekerpınar', 'Akse', 'Özgürlük', 'İnönü', 'Emek'],
+    ilceler: [
+      { ad: 'Şekerpınar', not: 'Otomotiv yan sanayi ve lojistik depolarının yoğun olduğu bölge; B2B ürün, kapasite ve iletişim sayfaları.' },
+      { ad: 'Akse', not: 'Konut ve ticaret; sağlık, eğitim ve esnaf aramaları güçlü.' },
+      { ad: 'Çayırova merkez', not: 'Yerel hizmetler ve perakende; harita görünürlüğü ve hizmet sayfaları.' },
+      { ad: 'Gebze sınırı', not: 'Sanayiye hizmet veren servis, bakım ve tedarik firmaları.' },
+    ],
+    sektorler: [
+      { ad: 'Otomotiv yan sanayi', not: 'Ürün kataloğu, kalite belgeleri ve teklif formu; satın almacıların bulabileceği yapı.' },
+      { ad: 'Lojistik ve depolama', not: 'Depo, nakliye ve dağıtım firmaları için kapasite ve hizmet sayfaları.' },
+      { ad: 'Sanayi hizmetleri', not: 'Bakım, iş güvenliği, yemek ve personel servisi gibi hizmetler için B2B sayfalar.' },
+      { ad: 'Yerel hizmetler', not: 'Klinik, kurs ve esnaf için hizmet sayfaları ve Google İşletme Profili.' },
+    ],
+    aramalar: [
+      { tur: 'İlçe araması', ornek: 'çayırova seo', rekabet: 'Düşük', yaklasim: 'Güçlü bir hizmet sayfasıyla ilk sayfa hedeflenebilir.' },
+      { tur: 'Semt + sektör', ornek: 'şekerpınar depo kiralama', rekabet: 'Düşük', yaklasim: 'Hizmet ve kapasite sayfası.' },
+      { tur: 'Sektör + ilçe', ornek: 'çayırova yemek firması', rekabet: 'Düşük', yaklasim: 'B2B hizmet sayfası ve teklif formu.' },
+      soruSatiri,
+    ],
+    sss: [
+      { q: "Çayırova'daki B2B firmalar için web sitesi neden önemli?", a: 'Fabrikaların satın alma ekipleri tedarikçi ararken önce Google\'a bakar. Kapasite, belge, referans ve hızlı teklif yolu sunan bir site, telefonla aranmayı bekleyen firmaların önüne geçer.' },
+      { q: 'Yüz yüze görüşebilir miyiz?', a: "Evet. İzmit merkezli bir ekibiz; Çayırova'daki işletmelerle gerektiğinde yüz yüze görüşme ayarlayabiliyoruz." },
+    ],
+    ilgili: [{ label: 'Gebze SEO', href: '/gebze-seo' }, { label: 'Dilovası SEO', href: '/dilovasi-seo' }],
+  },
+  {
+    slug: 'dilovasi', ad: 'Dilovası', bulunma: "Dilovası'nda", icin: "Dilovası'nın", yonelme: "Dilovası'na",
+    ust: { ad: 'Kocaeli', slug: 'kocaeli' }, yerel: true, rehber: 'dilovasi',
+    ozet: "Dilovası organize sanayi bölgesi ve liman çevresindeki üretici, tedarikçi ve lojistik firmaları için SEO. Tedarikçi ve ürün aramalarında Google'da görünür olun.",
+    bolgeler: ['Dilovası OSB', 'Diliskelesi', 'Tavşancıl', 'Merkez', 'Liman çevresi'],
+    ilceler: [
+      { ad: 'Dilovası OSB', not: 'Kimya, metal, makine ve üretim firmaları; ürün, kapasite, belge ve ihracat odaklı kurumsal sayfalar.' },
+      { ad: 'Diliskelesi ve liman çevresi', not: 'Liman, lojistik ve depolama; hizmet, kapasite ve güzergâh sayfaları.' },
+      { ad: 'Tavşancıl', not: 'Sanayiye yakın konut; yerel hizmet ve esnaf işletmeleri.' },
+      { ad: 'Merkez', not: 'Küçük ama sanayiye hizmet veren işletmeler: yemek, servis, bakım, iş güvenliği.' },
+    ],
+    sektorler: [
+      { ad: 'Kimya ve metal sanayi', not: 'Ürün ve teknik özellik sayfaları, belge ve sertifikalar, İngilizce sürüm; satın almacılara yönelik net içerik.' },
+      { ad: 'Lojistik ve liman', not: 'Nakliye, depolama ve gümrük firmaları için hizmet sayfaları.' },
+      { ad: 'Sanayi hizmetleri', not: 'Bakım, montaj, iş güvenliği, atık yönetimi gibi B2B hizmetler için sayfalar ve teklif formu.' },
+      { ad: 'İhracat', not: 'Yabancı alıcılar için İngilizce ürün kataloğu ve teklif yolu.' },
+    ],
+    aramalar: [
+      { tur: 'İlçe araması', ornek: 'dilovası seo', rekabet: 'Düşük', yaklasim: 'Güçlü bir hizmet sayfasıyla ilk sayfa hedeflenebilir.' },
+      { tur: 'Ürün + bölge', ornek: 'dilovası metal işleme', rekabet: 'Düşük', yaklasim: 'Ürün/hizmet başına sayfa.' },
+      { tur: 'İngilizce tedarikçi araması', ornek: 'chemical manufacturer turkey', rekabet: 'Yüksek', yaklasim: 'İngilizce sayfalar ve uzun vadeli içerik.' },
+      soruSatiri,
+    ],
+    sss: [
+      { q: 'Sanayi firmasıyız, SEO bize müşteri getirir mi?', a: 'Evet, özellikle ürün ve hizmet adına göre yapılan aramalarda. Satın almacılar yeni tedarikçiyi çoğunlukla Google\'da bulur; ürün, kapasite ve belge bilgisini net veren sayfalar teklif talebine dönüşür. Sıralama garantisi verilmez.' },
+      { q: 'Yüz yüze görüşebilir miyiz?', a: "Evet. İzmit merkezli bir ekibiz; Dilovası'ndaki firmalarla gerektiğinde yüz yüze görüşme ayarlayabiliyoruz." },
+    ],
+    ilgili: [{ label: 'Gebze SEO', href: '/gebze-seo' }, { label: 'Çayırova SEO', href: '/cayirova-seo' }],
+  },
+  {
+    slug: 'basiskele', ad: 'Başiskele', bulunma: "Başiskele'de", icin: "Başiskele'nin", yonelme: "Başiskele'ye",
+    ust: { ad: 'Kocaeli', slug: 'kocaeli' }, yerel: true, rehber: 'basiskele',
+    ozet: "Yuvacık'tan Kullar'a, Başiskele'deki konut, sahil ve hizmet işletmeleri için yerel SEO. Klinik, kurs, restoran ve emlak aramalarında Google'da öne çıkın.",
+    bolgeler: ['Merkez', 'Yuvacık', 'Kullar', 'Seymen', 'Bahçecik', 'Sahil'],
+    ilceler: [
+      { ad: 'Yuvacık', not: 'Baraj ve doğa çevresinde konut ve hafta sonu ziyaretçileri; yeme-içme ve aktivite işletmeleri.' },
+      { ad: 'Kullar ve Seymen', not: 'Yeni konut bölgeleri; kurs, klinik, kafe ve günlük hizmet aramaları.' },
+      { ad: 'Sahil şeridi', not: 'Yeme-içme ve sosyal alanlar; restoranlar için menü, konum ve yorum yönetimi.' },
+      { ad: 'Bahçecik', not: 'Konut ve yerel ticaret; esnaf için harita kaydı ve basit, hızlı siteler.' },
+    ],
+    sektorler: [
+      { ad: 'Emlak ve inşaat', not: 'Yeni konut projeleri ve emlak ofisleri için proje ve ilan sayfaları.' },
+      { ad: 'Sağlık ve eğitim', not: 'Klinik, kurs ve anaokulları için hizmet sayfaları ve yorum yönetimi.' },
+      { ad: 'Yeme-içme ve doğa', not: 'Yuvacık ve sahil işletmeleri için menü, konum ve gerçek fotoğraf.' },
+      { ad: 'Yerel hizmetler', not: 'Esnaf ve ev hizmetleri için Google İşletme Profili ve hizmet sayfaları.' },
+    ],
+    aramalar: [
+      { tur: 'İlçe araması', ornek: 'başiskele seo', rekabet: 'Düşük', yaklasim: 'Güçlü bir hizmet sayfasıyla ilk sayfa hedeflenebilir.' },
+      { tur: 'Semt + hizmet', ornek: 'yuvacık kahvaltı', rekabet: 'Düşük', yaklasim: 'Menü ve konum sayfası, yorumlar.' },
+      { tur: 'Sektör + ilçe', ornek: 'başiskele emlak', rekabet: 'Düşük', yaklasim: 'İlan ve proje sayfaları.' },
+      soruSatiri,
+    ],
+    sss: [
+      { q: "Başiskele'deki küçük işletmeler için nereden başlamalı?", a: 'Eksiksiz bir Google İşletme Profili, düzenli gerçek yorumlar ve telefonla tek dokunuşla aranabilen hızlı bir site. Çoğu müşteri yakındaki işletmeyi haritadan bulur.' },
+      { q: 'Yüz yüze görüşebilir miyiz?', a: "Evet. İzmit merkezli bir ekibiz; Başiskele'deki işletmelerle yüz yüze görüşme kolayca ayarlanabilir." },
+    ],
+    ilgili: [{ label: 'Kartepe SEO', href: '/kartepe-seo' }, { label: 'İzmit SEO', href: '/izmit-seo' }],
+  },
+  {
+    slug: 'kartepe', ad: 'Kartepe', bulunma: "Kartepe'de", icin: "Kartepe'nin", yonelme: "Kartepe'ye",
+    ust: { ad: 'Kocaeli', slug: 'kocaeli' }, yerel: true, rehber: 'kartepe',
+    ozet: "Kayak merkezinden Maşukiye'ye, Kartepe'deki otel, bungalov, restoran ve yerel işletmeler için SEO. Doğa ve kış turizmi aramalarında, sezon başlamadan Google'da görünür olun.",
+    bolgeler: ['Kayak merkezi', 'Maşukiye', 'Uzuntarla', 'Köseköy', 'Sapanca Gölü kıyısı', 'Merkez'],
+    ilceler: [
+      { ad: 'Kayak merkezi', not: 'Kış turizmi; otel ve konaklama işletmeleri için sezon öncesi yayınlanan, rezervasyon odaklı sayfalar.' },
+      { ad: 'Maşukiye', not: 'Doğa, şelale ve yeme-içme; restoran, bungalov ve kahvaltı mekânları için gerçek fotoğraf, menü ve yorum yönetimi.' },
+      { ad: 'Köseköy', not: 'Sanayi ve konut; üretici ve yerel hizmet işletmeleri için kurumsal ve hizmet sayfaları.' },
+      { ad: 'Göl kıyısı ve Uzuntarla', not: 'Hafta sonu turizmi ve konut; konaklama ve yeme-içme işletmeleri.' },
+    ],
+    sektorler: [
+      { ad: 'Otel, bungalov ve konaklama', not: 'Gerçek fotoğraflar, doğrudan rezervasyon, sezon bilgisi ve Google yorum yönetimi.' },
+      { ad: 'Restoran ve kahvaltı mekânları', not: "Menü, konum ve yorumlar; 'maşukiye kahvaltı' gibi aramalarda harita görünürlüğü." },
+      { ad: 'Kış sporları ve aktiviteler', not: 'Kayak okulu, ekipman kiralama ve tur işletmeleri için hizmet ve rezervasyon sayfaları.' },
+      { ad: 'Sanayi ve yerel hizmetler', not: 'Köseköy çevresindeki üreticiler ve esnaf için kurumsal sayfalar ve işletme profili.' },
+    ],
+    aramalar: [
+      { tur: 'İlçe araması', ornek: 'kartepe seo', rekabet: 'Düşük', yaklasim: 'Güçlü bir hizmet sayfasıyla ilk sayfa hedeflenebilir.' },
+      { tur: 'Turizm', ornek: 'kartepe bungalov', rekabet: 'Orta', yaklasim: 'Gerçek fotoğraflı, rezervasyon odaklı sayfa ve yorum yönetimi.' },
+      { tur: 'Semt + hizmet', ornek: 'maşukiye kahvaltı', rekabet: 'Orta', yaklasim: 'Menü, konum ve harita kaydı.' },
+      soruSatiri,
+    ],
+    sss: [
+      { q: "Kartepe'deki konaklama işletmeleri SEO'ya ne zaman başlamalı?", a: 'Kış sezonu için en geç sonbahar başında, yaz ve hafta sonu turizmi için ilkbaharda. Ziyaretçiler konaklamayı haftalar öncesinden araştırır; sayfaların o zamana kadar Google\'da yer edinmiş olması gerekir.' },
+      { q: 'Yüz yüze görüşebilir miyiz?', a: "Evet. İzmit merkezli bir ekibiz; Kartepe'deki işletmelerle yüz yüze görüşme kolayca ayarlanabilir." },
+    ],
+    ilgili: [{ label: 'Başiskele SEO', href: '/basiskele-seo' }, { label: 'İzmit SEO', href: '/izmit-seo' }],
+  },
+  {
+    slug: 'karamursel', ad: 'Karamürsel', bulunma: "Karamürsel'de", icin: "Karamürsel'in", yonelme: "Karamürsel'e",
+    ust: { ad: 'Kocaeli', slug: 'kocaeli' }, yerel: true, rehber: 'karamursel',
+    ozet: "Karamürsel'deki sahil, yazlık, tarım ve yerel hizmet işletmeleri için SEO. Konaklama, yeme-içme, emlak ve esnaf aramalarında Google'da görünür olun.",
+    bolgeler: ['Merkez', 'Sahil', 'Kızderbent', 'Ereğli (Karamürsel)', 'Yalakdere'],
+    ilceler: [
+      { ad: 'Karamürsel merkez ve sahil', not: 'Yazlık nüfus ve yeme-içme; restoran, kafe ve emlak işletmeleri için harita ve yorum yönetimi.' },
+      { ad: 'Yazlık siteler', not: 'Yaz aylarında artan nüfus; günlük hizmet, market ve tadilat işletmeleri için sezonluk görünürlük.' },
+      { ad: 'Köyler ve tarım alanları', not: 'Yerel üreticiler için ürün sayfaları ve online satış.' },
+      { ad: 'Yalova sınırı', not: 'Termal ve doğa turizmine yakın; konaklama ve tur işletmeleri.' },
+    ],
+    sektorler: [
+      { ad: 'Emlak ve yazlık', not: 'Yazlık satış ve kiralama için ilan, bölge rehberi ve iletişim sayfaları.' },
+      { ad: 'Yeme-içme ve konaklama', not: 'Menü, konum, gerçek fotoğraf ve yorum yönetimi; sezon öncesi görünürlük.' },
+      { ad: 'Yerel üretim', not: 'Tarım ve el yapımı ürünler için ürün sayfaları ve online satış.' },
+      { ad: 'Yerel hizmetler', not: 'Esnaf ve ev hizmetleri için Google İşletme Profili ve hizmet sayfaları.' },
+    ],
+    aramalar: [
+      { tur: 'İlçe araması', ornek: 'karamürsel seo', rekabet: 'Düşük', yaklasim: 'Güçlü bir hizmet sayfasıyla ilk sayfa hedeflenebilir.' },
+      { tur: 'Sektör + ilçe', ornek: 'karamürsel satılık yazlık', rekabet: 'Orta', yaklasim: 'İlan ve bölge rehberi sayfaları.' },
+      { tur: 'Hizmet + ilçe', ornek: 'karamürsel restoran', rekabet: 'Düşük', yaklasim: 'Menü ve konum sayfası.' },
+      soruSatiri,
+    ],
+    sss: [
+      { q: 'Yazlık bölgede sezonluk çalışan işletmeler için ne önerirsiniz?', a: 'Sezondan önce Google İşletme Profili ve sitenin güncellenmesi, çalışma saatlerinin doğru girilmesi ve sezon boyunca yorumların düzenli toplanması. Ziyaretçiler genellikle haritadan ve yorumlara bakarak seçer.' },
+      { q: 'Yüz yüze görüşebilir miyiz?', a: "Evet. İzmit merkezli bir ekibiz; Karamürsel'deki işletmelerle gerektiğinde yüz yüze görüşme ayarlayabiliyoruz." },
+    ],
+    ilgili: [{ label: 'Gölcük SEO', href: '/golcuk-seo' }, { label: 'Kocaeli SEO', href: '/kocaeli-seo' }],
+  },
+  {
+    slug: 'kandira', ad: 'Kandıra', bulunma: "Kandıra'da", icin: "Kandıra'nın", yonelme: "Kandıra'ya",
+    ust: { ad: 'Kocaeli', slug: 'kocaeli' }, yerel: true, rehber: 'kandira',
+    ozet: "Kerpe'den Kefken'e, Cebeci'den Kandıra merkeze; sahil turizmi, tarım ve yerel işletmeler için SEO. Karadeniz kıyısındaki konaklama ve yeme-içme aramalarında Google'da görünür olun.",
+    bolgeler: ['Merkez', 'Kerpe', 'Kefken', 'Cebeci', 'Sarısu', 'Bağırganlı'],
+    ilceler: [
+      { ad: 'Kerpe ve Kefken', not: 'Karadeniz sahilinde yazlık ve günübirlik turizm; pansiyon, kamp, restoran işletmeleri için gerçek fotoğraf ve harita kaydı.' },
+      { ad: 'Cebeci ve sahil köyleri', not: 'Doğa ve deniz turizmi; konaklama ve yeme-içme işletmeleri için rezervasyon ve menü sayfaları.' },
+      { ad: 'Kandıra merkez', not: 'Tarım, hayvancılık ve yerel ticaret; esnaf ve hizmet işletmeleri için harita görünürlüğü.' },
+      { ad: 'Köyler', not: 'Süt ürünleri, bal ve doğal ürün üreticileri için ürün sayfaları ve online satış.' },
+    ],
+    sektorler: [
+      { ad: 'Sahil turizmi', not: 'Pansiyon, kamp ve bungalov işletmeleri için gerçek fotoğraf, doğrudan rezervasyon ve yorum yönetimi.' },
+      { ad: 'Yeme-içme', not: 'Balık restoranları ve kahvaltı mekânları için menü, konum ve harita sonuçlarında görünürlük.' },
+      { ad: 'Doğal ürünler', not: "Süt ürünleri, bal ve köy ürünleri için online satış ve 'kandıra + ürün' aramalarında görünürlük." },
+      { ad: 'Yerel hizmetler', not: 'Esnaf ve tarım işletmeleri için Google İşletme Profili ve basit siteler.' },
+    ],
+    aramalar: [
+      { tur: 'İlçe araması', ornek: 'kandıra seo', rekabet: 'Düşük', yaklasim: 'Güçlü bir hizmet sayfasıyla ilk sayfa hedeflenebilir.' },
+      { tur: 'Turizm', ornek: 'kerpe pansiyon', rekabet: 'Orta', yaklasim: 'Gerçek fotoğraflı, rezervasyon odaklı sayfa.' },
+      { tur: 'Ürün + ilçe', ornek: 'kandıra köy ürünleri', rekabet: 'Düşük', yaklasim: 'Ürün sayfası ve online sipariş.' },
+      soruSatiri,
+    ],
+    sss: [
+      { q: 'Kandıra sahilindeki işletmeler ne zaman hazırlanmalı?', a: 'Yaz sezonundan en az 2–3 ay önce. Ziyaretçiler konaklama ve yeme-içme yerlerini haftalar öncesinden araştırır; site ve Google İşletme Profili o zamana kadar güncel olmalıdır.' },
+      { q: 'Yüz yüze görüşebilir miyiz?', a: "Evet. İzmit merkezli bir ekibiz; Kandıra'daki işletmelerle gerektiğinde yüz yüze görüşme ayarlayabiliyoruz." },
+    ],
+    ilgili: [{ label: 'İzmit SEO', href: '/izmit-seo' }, { label: 'Kocaeli SEO', href: '/kocaeli-seo' }],
   },
 ]
 

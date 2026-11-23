@@ -33,7 +33,7 @@ export default function IlSeoSayfasi({ v }: { v: IlSeoVeri }) {
   ]
   const faqs = [...v.sss, ...genelSss]
   const sektorListe = v.sektorler.slice(0, 3).map((s) => s.ad.toLocaleLowerCase('tr-TR'))
-  const kisaOzet = `${v.bulunma} Google'da ve haritalarda bulunmak isteyen işletmelere yerel SEO, teknik SEO ve GEO/AEO hizmetini uzaktan veriyoruz. ${v.icin} öne çıkan alanlarını (${sektorListe.join(', ')}) ve ${v.ilceler.slice(0, 2).map((i) => i.ad).join(', ')} gibi bölgeleri ayrı ele alıyoruz. Fiyat için aşağıdaki AI teklif hesaplayıcıyı kullanabilirsiniz; sıralama garantisi verilmez.`
+  const kisaOzet = `${v.bulunma} Google'da ve haritalarda bulunmak isteyen işletmelere yerel SEO, teknik SEO ve GEO/AEO hizmetini ${v.yerel ? 'İzmit merkezli ekibimizle veriyoruz; gerektiğinde yüz yüze görüşebiliriz' : 'uzaktan veriyoruz'}. ${v.icin} öne çıkan alanlarını (${sektorListe.join(', ')}) ve ${v.ilceler.slice(0, 2).map((i) => i.ad).join(', ')} gibi bölgeleri ayrı ele alıyoruz. Fiyat için aşağıdaki AI teklif hesaplayıcıyı kullanabilirsiniz; sıralama garantisi verilmez.`
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -62,6 +62,7 @@ export default function IlSeoSayfasi({ v }: { v: IlSeoVeri }) {
   }
 
   const ilgili = [
+    ...(v.rehber ? [{ label: `${v.ad} Web Tasarım`, href: `/ilceler/${v.rehber}` }] : []),
     ...(v.ilgili ?? []),
     { label: 'Google Yorumları Nasıl Artırılır?', href: '/blog/google-yorumlari-nasil-artirilir' },
     { label: 'Tüm Şehirler', href: '/sehirler' },
@@ -177,10 +178,13 @@ export default function IlSeoSayfasi({ v }: { v: IlSeoVeri }) {
         <div className="max-w-4xl mx-auto">
           <div className="bg-blue-500/5 border border-blue-500/15 rounded-2xl p-8">
             <CheckCircle2 size={24} className="text-blue-400 mb-4" />
-            <h2 className="text-xl font-bold text-white mb-2">Türkiye Genelinde Canlı Referanslarımız Var</h2>
+            <h2 className="text-xl font-bold text-white mb-2">{v.yerel ? 'Kocaeli Merkezli Bir Ekibiz' : 'Türkiye Genelinde Canlı Referanslarımız Var'}</h2>
             <p className="text-zinc-400 text-sm leading-relaxed mb-4">
-              {v.yonelme} özel bir vaka çalışmamız henüz yok; {v.ad} işletmelerine uzaktan hizmet veriyoruz. Türkiye genelinde
-              ziyaret edilebilir, canlı SEO ve web tasarım projelerimizi portföyümüzde inceleyebilirsiniz.
+              {v.yerel ? (
+                <>İzmit merkezli bir ekibiz; {v.yonelme} yakınız ve gerektiğinde yüz yüze görüşme ayarlayabiliriz. Kocaeli&apos;de ve Türkiye genelinde ziyaret edilebilir, canlı SEO ve web tasarım projelerimizi portföyümüzde inceleyebilirsiniz.</>
+              ) : (
+                <>{v.yonelme} özel bir vaka çalışmamız henüz yok; {v.ad} işletmelerine uzaktan hizmet veriyoruz. Türkiye genelinde ziyaret edilebilir, canlı SEO ve web tasarım projelerimizi portföyümüzde inceleyebilirsiniz.</>
+              )}
             </p>
             <Link href="/portfolyo" className="text-blue-400 text-sm font-medium flex items-center gap-1.5 hover:gap-2.5 transition-all">
               Portföyü İncele <ArrowRight size={13} />

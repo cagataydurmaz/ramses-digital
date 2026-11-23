@@ -104,6 +104,8 @@ const localPages = [
   { href: '/eskisehir-google-ads', label: 'Eskişehir Google Ads' },
   { href: '/eskisehir-yazilim-ajansi', label: 'Eskişehir Yazılım Ajansı' },
   ...ilSeo.map((il) => ({ href: `/${il.slug}-seo`, label: `${il.ad} SEO` })),
+  { href: '/gebze-google-ads', label: 'Gebze Google Ads' },
+  { href: '/gebze-dijital-pazarlama', label: 'Gebze Dijital Pazarlama' },
 ]
 
 // Şehir sayfalarını şehir şehir grupla: "Kayseri SEO" → Kayseri / SEO.
