@@ -210,7 +210,6 @@ export default function BlogPostPage({ params }: Props) {
             sizes="(max-width: 768px) 100vw, 896px"
           />
           <div className={`absolute inset-0 bg-gradient-to-t ${post.coverGradient} opacity-50`} />
-          <span className="absolute bottom-4 left-4 text-5xl drop-shadow-xl">{post.emoji}</span>
         </div>
 
         {/* Article Header */}
@@ -293,7 +292,6 @@ export default function BlogPostPage({ params }: Props) {
                   prefetch={false}
                   className="bg-[#0D1225] border border-white/[0.06] rounded-xl p-5 hover:border-white/[0.12] transition-all group"
                 >
-                  <div className="text-3xl mb-3">{rp.emoji}</div>
                   <span
                     className={`inline-block rounded-full px-2 py-0.5 text-xs font-medium border mb-2 ${categoryBadgeClass(rp.categoryColor)}`}
                   >

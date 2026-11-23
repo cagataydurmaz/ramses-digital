@@ -59,7 +59,6 @@ function BlogCard({ post, priority = false }: { post: PostMeta; priority?: boole
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
         />
         <div className={`absolute inset-0 bg-gradient-to-t ${post.coverGradient} opacity-60`} />
-        <span className="absolute bottom-3 left-3 text-3xl drop-shadow-lg">{post.emoji}</span>
       </div>
 
       {/* Body */}
