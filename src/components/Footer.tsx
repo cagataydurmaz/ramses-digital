@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Phone, Mail, Instagram, MapPin, ChevronDown } from 'lucide-react'
+import { Phone, MessageCircle, Instagram, MapPin, ChevronDown } from 'lucide-react'
 import { ilSeo } from '@/lib/ilSeo'
 import { sektorSehir } from '@/lib/sektorSehir'
 
@@ -210,11 +210,11 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:ramsesdigitalagency@gmail.com"
+                  href="https://wa.me/905355601936"
                   className="flex items-center gap-3 text-zinc-400 hover:text-white text-sm transition-colors"
                 >
-                  <Mail size={14} className="text-blue-500 shrink-0" aria-hidden="true" />
-                  ramsesdigitalagency@gmail.com
+                  <MessageCircle size={14} className="text-blue-500 shrink-0" aria-hidden="true" />
+                  WhatsApp: 0535 560 19 36
                 </a>
               </li>
             </ul>

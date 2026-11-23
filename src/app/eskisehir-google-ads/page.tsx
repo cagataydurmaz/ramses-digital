@@ -104,7 +104,7 @@ export default function EskisehirGoogleAdsPage() {
             { value: '8+', label: 'Eskişehir ilçesi — hedeflenebilir' },
             { value: '1-2 Hafta', label: 'Kampanya başlangıcı' },
             { value: 'Öğrenci + B2B', label: 'Genç kitle ve sanayi odaklı' },
-            { value: '7/24', label: 'Reklam izleme' },
+            { value: 'Aylık', label: 'Şeffaf performans raporu' },
           ].map(({ value, label }) => (
             <div key={label} className="text-center bg-white/[0.03] border border-white/[0.06] rounded-xl p-5">
               <p className="text-3xl font-bold text-white mb-1">{value}</p>

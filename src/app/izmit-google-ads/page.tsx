@@ -33,7 +33,7 @@ const metrics = [
   { value: '1-2 Hafta', label: 'Kampanya başlangıcı' },
   { value: 'Aylık', label: 'Şeffaf performans raporu' },
   { value: 'Dahil', label: 'Dönüşüm takibi kurulumu' },
-  { value: '7/24', label: 'Reklam takibi' },
+  { value: 'Aylık', label: 'Şeffaf performans raporu' },
 ]
 
 const faqs = [

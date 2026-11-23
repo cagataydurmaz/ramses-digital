@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     'Dijital pazarlama projeniz için ücretsiz danışmanlık alın. WhatsApp\'tan yazın veya formu doldurun — 24 saat içinde geri dönüyoruz.',
   openGraph: {
     title: 'İletişim | Ramses Digital',
-    description: 'Ücretsiz danışmanlık için bize ulaşın. +90 (535) 560 19 36 · ramsesdigitalagency@gmail.com',
+    description: 'Ücretsiz danışmanlık için bize ulaşın. +90 (535) 560 19 36 · WhatsApp ile hızlı dönüş',
     url: 'https://ramsesdigital.com/iletisim',
   },
   alternates: { canonical: 'https://ramsesdigital.com/iletisim' },
