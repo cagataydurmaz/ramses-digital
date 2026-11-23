@@ -3,6 +3,7 @@ import { posts } from '@/lib/posts'
 import { projects } from '@/lib/portfolio'
 import { ilceler } from '@/lib/ilceler'
 import { ilSeo } from '@/lib/ilSeo'
+import { sektorSehir } from '@/lib/sektorSehir'
 import { araclar } from '@/lib/araclar'
 import { sektorler } from '@/lib/sektorler'
 
@@ -134,6 +135,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...ilSeo.map((i) => ({ url: `${base}/${i.slug}-seo` })),
     { url: `${base}/gebze-google-ads` },
     { url: `${base}/gebze-dijital-pazarlama` },
+    ...sektorSehir.map((s) => ({ url: `${base}/${s.slug}` })),
   ]
 
   const aracPages = [{ url: `${base}/araclar` }, ...araclar.map((a) => ({ url: `${base}/araclar/${a.slug}` }))]

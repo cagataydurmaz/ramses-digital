@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { Phone, Mail, Instagram, MapPin, ChevronDown } from 'lucide-react'
 import { ilSeo } from '@/lib/ilSeo'
+import { sektorSehir } from '@/lib/sektorSehir'
 
 const services = [
   { label: 'SEO & İçerik Optimizasyonu', href: '/hizmetler/seo', hoverClass: 'hover:text-blue-400' },
@@ -106,6 +107,7 @@ const localPages = [
   ...ilSeo.map((il) => ({ href: `/${il.slug}-seo`, label: `${il.ad} SEO` })),
   { href: '/gebze-google-ads', label: 'Gebze Google Ads' },
   { href: '/gebze-dijital-pazarlama', label: 'Gebze Dijital Pazarlama' },
+  ...sektorSehir.map((s) => ({ href: `/${s.slug}`, label: `${s.sehir.ad} ${s.meslek.baslik}` })),
 ]
 
 // Şehir sayfalarını şehir şehir grupla: "Kayseri SEO" → Kayseri / SEO.

@@ -1,5 +1,6 @@
 import type { Post } from './posts'
 import { ilSeo } from './ilSeo'
+import { sektorSehir } from './sektorSehir'
 import { sektorler, blogSektor } from './sektorler'
 
 // Her blog yazısının sonuna konusuna göre hizmet + şehir sayfası bağlantıları üretir.
@@ -50,7 +51,11 @@ export function blogIcLinkler(post: Post, tumYazilar: Post[]) {
 
   // Sektör yazısıysa önce ilgili sektör sayfası
   const sektor = sektorler.find((s) => s.slug === blogSektor[post.slug])
-  if (sektor) linkler.push({ label: `${sektor.ad} İçin Dijital Pazarlama`, href: `/sektorler/${sektor.slug}` })
+  if (sektor) {
+    linkler.push({ label: `${sektor.ad} İçin Dijital Pazarlama`, href: `/sektorler/${sektor.slug}` })
+    for (const s of sektorSehir.filter((x) => x.meslek.sektorSlug === sektor.slug))
+      linkler.push({ label: `${s.sehir.ad} ${s.meslek.baslik}`, href: `/${s.slug}` })
+  }
   linkler.push(HUB[tur])
 
   // İlgili ücretsiz araç (konuya göre)

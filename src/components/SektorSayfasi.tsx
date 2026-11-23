@@ -8,6 +8,7 @@ import RelatedPages from '@/components/RelatedPages'
 import KisaOzet from '@/components/KisaOzet'
 import { projects } from '@/lib/portfolio'
 import type { SektorVeri } from '@/lib/sektorler'
+import { sektorSehir } from '@/lib/sektorSehir'
 
 // Veri odaklı sektör sayfası (src/lib/sektorler.ts). IlSeoSayfasi ile aynı görsel dil.
 const SITE = 'https://ramsesdigital.com'
@@ -59,6 +60,7 @@ export default function SektorSayfasi({ v }: { v: SektorVeri }) {
   }
 
   const ilgili = [
+    ...sektorSehir.filter((x) => x.meslek.sektorSlug === v.slug).map((x) => ({ label: `${x.sehir.ad} ${x.meslek.baslik}`, href: `/${x.slug}` })),
     ...v.hizmetler.map((h) => ({ label: h.ad.replace(' (uygunsa)', ''), href: h.href })),
     ...v.bloglar,
     { label: 'Ücretsiz Araçlar', href: '/araclar' },

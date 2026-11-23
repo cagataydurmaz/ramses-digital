@@ -5,6 +5,7 @@ import { projects } from '@/lib/portfolio'
 import { ilSeo } from '@/lib/ilSeo'
 import { araclar } from '@/lib/araclar'
 import { sektorler } from '@/lib/sektorler'
+import { sektorSehir } from '@/lib/sektorSehir'
 
 // llms.txt — yapay zekâ araçları (ChatGPT, Claude, Perplexity vb.) için site özeti.
 // Sabit kısım src/content/llms-temel.md'de; blog yazıları ve portföy her derlemede
@@ -32,6 +33,9 @@ export function GET() {
   const sektorMetin = [
     `- [Sektörler](${SITE}/sektorler): Sektöre özel SEO, web tasarım ve Google Ads yaklaşımı.`,
     ...sektorler.map((s) => `- [${s.ad}](${SITE}/sektorler/${s.slug}): ${s.kisaOzet}`),
+    '',
+    '### Şehre göre sektör sayfaları',
+    ...sektorSehir.map((s) => `- [${s.sehir.ad} ${s.meslek.baslik}](${SITE}/${s.slug}): ${s.kisaOzet}`),
   ].join('\n')
 
   const blog = [...posts]
