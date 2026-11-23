@@ -53,6 +53,13 @@ export function blogIcLinkler(post: Post, tumYazilar: Post[]) {
   if (sektor) linkler.push({ label: `${sektor.ad} İçin Dijital Pazarlama`, href: `/sektorler/${sektor.slug}` })
   linkler.push(HUB[tur])
 
+  // İlgili ücretsiz araç (konuya göre)
+  const metin = `${post.slug} ${post.title} ${post.tags.join(' ')}`.toLocaleLowerCase('tr-TR')
+  if (/yorum|haritalar|işletme profili|yerel/.test(metin)) linkler.push({ label: 'Ücretsiz Google Yorum Linki Aracı', href: '/araclar/google-yorum-linki' })
+  if (/whatsapp|satış|instagram|sosyal/.test(metin)) linkler.push({ label: 'Ücretsiz WhatsApp Link Oluşturucu', href: '/araclar/whatsapp-link-olusturucu' })
+  if (tur === 'google-ads' || /google ads|reklam|bütçe/.test(metin)) linkler.push({ label: 'Google Ads Bütçe Hesaplayıcı', href: '/araclar/google-ads-butce-hesaplayici' })
+  if (/meta|başlık|serp|search console|seo/.test(metin) && tur === 'seo') linkler.push({ label: 'Meta Başlık ve Açıklama Kontrolü', href: '/araclar/meta-baslik-kontrol' })
+
   // Yazı belirli bir şehirle ilgiliyse önce o şehrin sayfaları
   const sehir = Object.keys(SEHIRLER).find((s) => post.slug.includes(s))
   if (sehir)

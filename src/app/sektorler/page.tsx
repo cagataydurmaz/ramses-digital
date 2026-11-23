@@ -27,6 +27,13 @@ const ikon: Record<string, typeof Briefcase> = {
   'restoran-kafe': Coffee,
 }
 
+const sss = [
+  { q: 'Hangi sektörlerde Google reklamı verilemez?', a: 'Avukatlar meslek kuralları gereği reklam veremez; mali müşavirlikte de tanıtım sınırlıdır. Sağlıkta (diş hekimi, psikolog, klinik) reklam mümkün olsa da sağlık mevzuatına uygun, iddiasız bir dil zorunludur. Bu sektörlerde asıl kanal SEO, içerik ve Google İşletme Profili olur.' },
+  { q: 'Hangi sektörler Google Ads\'ten en hızlı sonuç alır?', a: 'Müşterinin hemen ihtiyaç duyduğu ve aradığı hizmetler: veteriner klinikleri (acil aramalar), e-ticaret (ürün aramaları), restoran ve kafeler (yakınımdaki aramaları). Bu sektörlerde reklam ilk günden görünürlük sağlar; SEO ise zamanla maliyeti düşürür.' },
+  { q: 'Sektöre özel SEO neden genel SEO\'dan farklı?', a: 'Her sektörde müşteri farklı kelimelerle arar, farklı sorular sorar ve farklı güven unsurlarına bakar: avukatta uzmanlık alanı ve makaleler, klinikte hekim bilgisi ve yorumlar, e-ticarette ürün ve kargo bilgisi. Sayfa yapısı ve içerik buna göre kurulmazsa sıralama da talep de zayıf kalır.' },
+  { q: 'Sektörüm listede yok, yine çalışabilir miyiz?', a: 'Evet. Listelenen sektörler en çok çalıştığımız alanlar; farklı sektörlerden işletmelerle de çalışıyoruz. Ücretsiz görüşmede sektörünüzün kurallarını ve müşteri davranışını birlikte çıkarıyoruz.' },
+]
+
 const jsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -36,6 +43,7 @@ const jsonLd = {
       { '@type': 'ListItem', position: 1, name: 'Ana Sayfa', item: SITE },
       { '@type': 'ListItem', position: 2, name: 'Sektörler', item: `${SITE}/sektorler` },
     ] },
+    { '@type': 'FAQPage', mainEntity: sss.map(({ q, a }) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) },
   ],
 }
 
@@ -67,6 +75,52 @@ export default function SektorlerPage() {
               </Link>
             )
           })}
+        </div>
+      </section>
+      <section className="pb-20 px-6">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-6 text-center">Sektörlere Göre Öncelikli Kanallar</h2>
+          <div className="overflow-x-auto rounded-xl border border-white/[0.08]">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="bg-blue-500/10 text-blue-300 text-left">
+                  <th className="px-4 py-3 font-semibold">Sektör</th>
+                  <th className="px-4 py-3 font-semibold">Google reklamı</th>
+                  <th className="px-4 py-3 font-semibold">Öncelikli kanal</th>
+                </tr>
+              </thead>
+              <tbody className="text-zinc-300">
+                {[
+                  ['Avukat ve hukuk büroları', 'Verilemez (meslek kuralı)', 'SEO, makale içerik, Google İşletme Profili'],
+                  ['Diş hekimleri ve klinikler', 'Mevzuata uygun dille', 'Yerel SEO, yorumlar, hekim sayfaları'],
+                  ['Psikolog ve terapistler', 'Mevzuata uygun dille', 'SEO, bilgilendirici içerik, online randevu'],
+                  ['Veteriner klinikleri', 'Uygun (acil aramalar)', 'Google Ads + harita görünürlüğü'],
+                  ['Mali müşavirler', 'Sınırlı', 'SEO, B2B içerik, LinkedIn'],
+                  ['E-ticaret', 'Uygun (alışveriş reklamları)', 'Google Ads + ürün SEO'],
+                  ['Restoran ve kafe', 'Uygun (yakınımdaki aramalar)', 'Google İşletme Profili, yorumlar, harita'],
+                ].map(([a, b, c]) => (
+                  <tr key={a} className="border-t border-white/[0.05]">
+                    <td className="px-4 py-3 text-white">{a}</td>
+                    <td className="px-4 py-3">{b}</td>
+                    <td className="px-4 py-3">{c}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <section className="pb-20 px-6">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-8 text-center">Sık Sorulan Sorular</h2>
+          <div className="space-y-4">
+            {sss.map(({ q, a }) => (
+              <div key={q} className="bg-[#0D1225] border border-white/[0.06] rounded-xl p-6">
+                <h3 className="text-white font-semibold mb-2 text-sm md:text-base">{q}</h3>
+                <p className="text-zinc-400 text-sm leading-relaxed">{a}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
       <section className="py-16 px-6 bg-[#080D18]">

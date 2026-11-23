@@ -18,7 +18,8 @@ export function generateMetadata({ params }: Props): Metadata {
   const post = posts.find((p) => p.slug === params.slug)
   if (!post) return { title: 'Yazı Bulunamadı' }
   return {
-    title: `${post.title} | Ramses Digital Blog`,
+    // Google ~60 karakterden sonrasını keser; uzun başlıklarda marka ekini atla
+    title: post.title.length <= 42 ? `${post.title} | Ramses Dijital Blog` : post.title.length <= 60 ? `${post.title} | Ramses Dijital` : post.title,
     description: post.excerpt,
     alternates: { canonical: `https://ramsesdigital.com/blog/${post.slug}` },
     openGraph: {
