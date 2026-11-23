@@ -61,12 +61,11 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2.5 shrink-0" aria-label="Ramses Dijital Yazılım ve Dijital Pazarlama Ajansı">
             <Image
-              src="/logo.png"
+              src="/amblem.png"
               alt="Ramses Dijital Yazılım ve Dijital Pazarlama Ajansı"
-              width={36}
-              height={36}
+              width={38}
+              height={38}
               priority
-              className="rounded-md"
             />
             <div className="flex items-baseline gap-1.5 whitespace-nowrap">
               <span className="text-blue-500 font-bold text-xl tracking-tight">RAMSES</span>

@@ -134,8 +134,10 @@ export default function Footer() {
           {/* Brand */}
           <div className="col-span-2 md:col-span-2 lg:col-span-1">
             <Link href="/" className="flex items-center gap-1 mb-4">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/amblem.png" alt="" width={44} height={44} loading="lazy" className="mr-2" />
               <span className="text-blue-500 font-bold text-xl tracking-tight">RAMSES</span>
-              <span className="text-white font-light text-xl tracking-tight">Digital</span>
+              <span className="text-white font-light text-xl tracking-tight">Dijital</span>
             </Link>
             <p className="text-zinc-400 text-sm leading-relaxed mb-6">
               Performans odaklı dijital pazarlama ajansı. SEO, Google Ads ve n8n otomasyon ile markanızı dijitalde büyütüyoruz.
