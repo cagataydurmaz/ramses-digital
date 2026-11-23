@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import KisaOzet from '@/components/KisaOzet'
 import Link from 'next/link'
 import CalendlyButton from '@/components/CalendlyButton'
+import GooglePuanSatiri from '@/components/GooglePuanSatiri'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
 import SeoChecklist from '@/components/SeoChecklist'
@@ -9,12 +10,12 @@ import SehirTeklifBolumu from '@/components/SehirTeklifBolumu'
 import { MapPin, Search, ArrowRight, CheckCircle2, FileText, Link2, BarChart3, Zap, Award, TrendingUp } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'İstanbul SEO Ajansı | İstanbul SEO Hizmeti — Ramses Dijital',
+  title: 'İstanbul SEO Ajansı – Ücretsiz Site Analizi | Ramses Dijital',
   description:
-    'İstanbul SEO ajansı: Kadıköy, Beşiktaş, Bakırköy, Pendik ve tüm ilçeler için yerel ve teknik SEO. Gerçek İstanbul referansları, şeffaf fiyat aralıkları ve ücretsiz SEO analizi.',
+    "İstanbul'da Google'da müşteri bulmak isteyen işletmelere SEO hizmeti. Gerçek İstanbul referansları, ücretsiz site analizi, aylık rapor, taahhüt yok. Google'da 5.0 puan.",
   alternates: { canonical: 'https://ramsesdigital.com/istanbul-seo' },
   openGraph: {
-    title: 'İstanbul SEO Ajansı | Ramses Dijital',
+    title: 'İstanbul SEO Ajansı – Ücretsiz Site Analizi | Ramses Dijital',
     description: 'İstanbul işletmeleri için yerel SEO, teknik SEO ve GEO/AEO optimizasyonu.',
     url: 'https://ramsesdigital.com/istanbul-seo',
     images: ['https://ramsesdigital.com/og-image.png'],
@@ -129,6 +130,7 @@ export default function IstanbulSeoPage() {
               SEO Hizmet Detayları <ArrowRight size={14} />
             </Link>
           </div>
+          <GooglePuanSatiri />
         </div>
       </section>
 

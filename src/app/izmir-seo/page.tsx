@@ -5,18 +5,19 @@ import CitySeoSections from '@/components/CitySeoSections'
 import { sehirSeo } from '@/lib/sehirSeo'
 import SehirTeklifBolumu from '@/components/SehirTeklifBolumu'
 import CalendlyButton from '@/components/CalendlyButton'
+import GooglePuanSatiri from '@/components/GooglePuanSatiri'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
 import SeoChecklist from '@/components/SeoChecklist'
 import { MapPin, Search, ArrowRight, CheckCircle2, FileText, Link2, BarChart3, Zap, Award, TrendingUp } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'İzmir SEO Ajansı | İzmir SEO Hizmeti — Ramses Dijital',
+  title: 'İzmir SEO Ajansı – Ücretsiz Site Analizi | Ramses Dijital',
   description:
-    'İzmir SEO ajansı: İzmir SEO hizmeti, yerel SEO, teknik SEO, Google ve yapay zekâ aramalarında görünürlük. Konak, Karşıyaka, Bornova ve tüm İzmir için ilçe bazlı strateji. Ücretsiz SEO analizi.',
+    "İzmir'de Google'da müşteri bulmak isteyen işletmelere SEO hizmeti. Konak, Karşıyaka, Bornova dahil; ücretsiz site analizi, aylık rapor, taahhüt yok. Google'da 5.0 puan.",
   alternates: { canonical: 'https://ramsesdigital.com/izmir-seo' },
   openGraph: {
-    title: 'İzmir SEO Ajansı | Ramses Dijital',
+    title: 'İzmir SEO Ajansı – Ücretsiz Site Analizi | Ramses Dijital',
     description: 'İzmir işletmeleri için yerel SEO, teknik SEO ve GEO/AEO optimizasyonu.',
     url: 'https://ramsesdigital.com/izmir-seo',
     images: ['https://ramsesdigital.com/og-image.png'],
@@ -110,6 +111,7 @@ export default function IzmirSeoPage() {
               SEO Hizmet Detayları <ArrowRight size={14} />
             </Link>
           </div>
+          <GooglePuanSatiri />
         </div>
       </section>
 

@@ -6,6 +6,7 @@ import { sehirSeo } from '@/lib/sehirSeo'
 import SehirTeklifBolumu from '@/components/SehirTeklifBolumu'
 import SeoChecklist from '@/components/SeoChecklist'
 import CalendlyButton from '@/components/CalendlyButton'
+import GooglePuanSatiri from '@/components/GooglePuanSatiri'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
 import { MapPin, Search, ArrowRight, CheckCircle2, FileText, Link2, BarChart3, Zap, Award, TrendingUp } from 'lucide-react'
@@ -109,6 +110,7 @@ export default function KayseriSeoPage() {
               SEO Hizmet Detayları <ArrowRight size={14} />
             </Link>
           </div>
+          <GooglePuanSatiri />
         </div>
       </section>
 

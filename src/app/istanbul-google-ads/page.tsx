@@ -2,12 +2,15 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import CityServiceSections, { cityServiceFaqs } from '@/components/CityServiceSections'
 import CalendlyButton from '@/components/CalendlyButton'
+import GooglePuanSatiri from '@/components/GooglePuanSatiri'
+import KisaOzet from '@/components/KisaOzet'
+import SehirTeklifBolumu from '@/components/SehirTeklifBolumu'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
 import { MapPin, Megaphone, ArrowRight, Target, BarChart3, Zap, TrendingUp, DollarSign, Clock } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'İstanbul Google Ads Yönetimi — Ramses Dijital',
+  title: 'İstanbul Google Ads Ajansı – Ücretsiz Kampanya Analizi | Ramses Dijital',
   description:
     'İstanbul\'da Google Ads yönetimi. Kadıköy, Beşiktaş, Şişli ve tüm İstanbul ilçelerinde hedefli arama reklamları. Bütçe israfı yok, ölçülebilir dönüşüm. Ücretsiz kampanya analizi.',
   alternates: { canonical: 'https://ramsesdigital.com/istanbul-google-ads' },
@@ -20,7 +23,7 @@ export const metadata: Metadata = {
 }
 
 const services = [
-  { icon: Target, title: 'İlçe Bazlı Arama Reklamları', desc: '"Kadıköy avukat", "Şişli diş hekimi", "Bakırköy muhasebe" — her ilçe için özel kampanya yapısı.' },
+  { icon: Target, title: 'İlçe Bazlı Arama Reklamları', desc: '"Kadıköy diş hekimi", "Şişli estetik klinik", "Bakırköy muhasebe" — her ilçe için özel kampanya yapısı.' },
   { icon: Megaphone, title: 'Google Haritalar Reklamları', desc: 'İstanbul\'da konuma dayalı "yakınımdaki X" aramalarında öne çıkın. En yüksek yerel dönüşüm.' },
   { icon: TrendingUp, title: 'Remarketing', desc: 'İstanbul\'dan sitenizi ziyaret edip ayrılanları geri getirin. Satın alma niyeti en yüksek kitle.' },
   { icon: BarChart3, title: 'Dönüşüm İzleme', desc: 'Telefon araması, form gönderimi, WhatsApp tıklaması — her aksiyonu izliyoruz.' },
@@ -94,8 +97,13 @@ export default function IstanbulGoogleAdsPage() {
               Detaylı Hizmet Bilgisi <ArrowRight size={14} />
             </Link>
           </div>
+          <GooglePuanSatiri />
         </div>
       </section>
+
+      <KisaOzet>
+        {"İstanbul'da rekabet ilçe düzeyinde kazanılır: Google Ads kampanyalarınızı işletmenizin gerçekten hizmet verdiği ilçelere göre kuruyor, telefon, WhatsApp ve form taleplerini ölçüyoruz. Reklam bütçesi doğrudan Google'a ödenir; yönetim ücretimiz ayrı bir kalemdir. Fiyat için aşağıdaki AI teklif hesaplayıcıyı kullanabilirsiniz."}
+      </KisaOzet>
 
       <section className="pb-16 px-6">
         <div className="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-5">
@@ -103,7 +111,7 @@ export default function IstanbulGoogleAdsPage() {
             { value: '39', label: 'İstanbul ilçesi — hedeflenebilir' },
             { value: '1-2 Hafta', label: 'Kampanya başlangıcı' },
             { value: 'En Yüksek', label: 'Türkiye\'deki CPC seviyesi' },
-            { value: '7/24', label: 'Reklam izleme' },
+            { value: 'Aylık', label: 'Şeffaf performans raporu' },
           ].map(({ value, label }) => (
             <div key={label} className="text-center bg-white/[0.03] border border-white/[0.06] rounded-xl p-5">
               <p className="text-3xl font-bold text-white mb-1">{value}</p>
@@ -138,7 +146,7 @@ export default function IstanbulGoogleAdsPage() {
             <Clock size={24} className="text-blue-400 mb-4" />
             <h2 className="text-xl font-bold text-white mb-3">İstanbul&apos;da Quality Score Neden Kritik?</h2>
             <p className="text-zinc-400 text-sm leading-relaxed">
-              İstanbul&apos;da rekabetçi sektörlerde (avukat, diş hekimi, gayrimenkul) en yüksek teklifi vermek üstte çıkmayı garantilemez —
+              İstanbul&apos;da rekabetçi sektörlerde (sağlık, gayrimenkul, eğitim) en yüksek teklifi vermek üstte çıkmayı garantilemez —
               üstelik İstanbul&apos;un CPC seviyesi Türkiye&apos;nin en yükseği. <strong className="text-white">Quality Score</strong> belirleyicidir:
               reklam metni, açılış sayfası uyumu ve beklenen tıklama oranı yüksekse rakibinizden daha az ödeyip daha üstte çıkarsınız.
             </p>
@@ -163,6 +171,8 @@ export default function IstanbulGoogleAdsPage() {
       </section>
 
       <ReviewsMarquee />
+
+      <SehirTeklifBolumu place="İstanbul" />
 
       <RelatedPages
         pages={[

@@ -2,12 +2,15 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import CityServiceSections, { cityServiceFaqs } from '@/components/CityServiceSections'
 import CalendlyButton from '@/components/CalendlyButton'
+import GooglePuanSatiri from '@/components/GooglePuanSatiri'
+import KisaOzet from '@/components/KisaOzet'
+import SehirTeklifBolumu from '@/components/SehirTeklifBolumu'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
 import { MapPin, Megaphone, ArrowRight, Target, BarChart3, Zap, TrendingUp, DollarSign, Clock } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'İzmir Google Ads Ajansı | Reklam Yönetimi — Ramses Dijital',
+  title: 'İzmir Google Ads Ajansı – Ücretsiz Kampanya Analizi | Ramses Dijital',
   description:
     'İzmir\'de Google Ads yönetimi. Konak, Karşıyaka, Bornova ve tüm İzmir ilçelerinde hedefli arama reklamları. Bütçe israfı yok, ölçülebilir dönüşüm. Ücretsiz kampanya analizi.',
   alternates: { canonical: 'https://ramsesdigital.com/izmir-google-ads' },
@@ -20,7 +23,7 @@ export const metadata: Metadata = {
 }
 
 const services = [
-  { icon: Target, title: 'İlçe Bazlı Arama Reklamları', desc: '"Konak diş hekimi", "Karşıyaka avukat" — her ilçe için özel kampanya yapısı.' },
+  { icon: Target, title: 'İlçe Bazlı Arama Reklamları', desc: '"Konak diş hekimi", "Karşıyaka klima servisi" — her ilçe için özel kampanya yapısı.' },
   { icon: Megaphone, title: 'Google Haritalar Reklamları', desc: 'İzmir\'de konuma dayalı "yakınımdaki X" aramalarında öne çıkın. Turizm sektöründe özellikle etkili.' },
   { icon: TrendingUp, title: 'Sezonluk Kampanya Yönetimi', desc: 'Turizm ve tatil sezonuna göre bütçe ve hedefleme ayarları — İzmir\'in mevsimsel talep dalgalanmasına uygun.' },
   { icon: BarChart3, title: 'Dönüşüm İzleme', desc: 'Telefon araması, form gönderimi, rezervasyon, WhatsApp tıklaması — her aksiyonu izliyoruz.' },
@@ -94,8 +97,13 @@ export default function IzmirGoogleAdsPage() {
               Detaylı Hizmet Bilgisi <ArrowRight size={14} />
             </Link>
           </div>
+          <GooglePuanSatiri />
         </div>
       </section>
+
+      <KisaOzet>
+        {"İzmir'deki işletmeler için Google Ads kampanyalarını kuruyor ve yönetiyoruz: ilçe bazlı arama reklamları, mobilde arama butonu ve yalnızca hizmet verdiğiniz bölgeye konum hedeflemesi. Telefon, WhatsApp ve form talepleri ölçülür; reklam bütçesi doğrudan Google'a ödenir. Fiyat için aşağıdaki AI teklif hesaplayıcıyı kullanabilirsiniz."}
+      </KisaOzet>
 
       <section className="pb-16 px-6">
         <div className="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-5">
@@ -103,7 +111,7 @@ export default function IzmirGoogleAdsPage() {
             { value: '30', label: 'İzmir ilçesi — hedeflenebilir' },
             { value: '1-2 Hafta', label: 'Kampanya başlangıcı' },
             { value: 'Sezonluk', label: 'Bütçe optimizasyonu' },
-            { value: '7/24', label: 'Reklam izleme' },
+            { value: 'Aylık', label: 'Şeffaf performans raporu' },
           ].map(({ value, label }) => (
             <div key={label} className="text-center bg-white/[0.03] border border-white/[0.06] rounded-xl p-5">
               <p className="text-3xl font-bold text-white mb-1">{value}</p>
@@ -163,6 +171,8 @@ export default function IzmirGoogleAdsPage() {
       </section>
 
       <ReviewsMarquee />
+
+      <SehirTeklifBolumu place="İzmir" />
 
       <RelatedPages
         pages={[
