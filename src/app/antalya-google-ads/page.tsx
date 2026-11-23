@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import SiziArayalimFormu from '@/components/SiziArayalimFormu'
 import Link from 'next/link'
 import CityServiceSections, { cityServiceFaqs } from '@/components/CityServiceSections'
 import CalendlyButton from '@/components/CalendlyButton'
@@ -163,6 +164,7 @@ export default function AntalyaGoogleAdsPage() {
         </div>
       </section>
 
+      <SiziArayalimFormu />
       <ReviewsMarquee />
 
       <RelatedPages

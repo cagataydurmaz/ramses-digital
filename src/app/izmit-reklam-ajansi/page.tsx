@@ -265,6 +265,9 @@ export default function IzmitReklamAjansiPage() {
           { label: 'İzmit Google Ads', href: '/izmit-google-ads' },
           { label: 'İzmit Yazılım Ajansı', href: '/izmit-yazilim-ajansi' },
           { label: 'Kocaeli Dijital Pazarlama', href: '/kocaeli-dijital-pazarlama' },
+          { label: 'İzmit’te Reklam Ajansı Nasıl Seçilir?', href: '/blog/izmit-reklam-ajansi-nasil-secilir' },
+          { label: 'İzmit Restoranları İçin Dijital Pazarlama', href: '/blog/izmit-restoran-dijital-pazarlama-rehberi' },
+          { label: 'Uzaktan Çalışan Ajans Rehberi', href: '/blog/uzaktan-calisan-dijital-pazarlama-ajansi-rehberi' },
         ]}
       />
 

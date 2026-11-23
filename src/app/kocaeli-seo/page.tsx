@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import RaporOrnegi from '@/components/RaporOrnegi'
 import KurumsalSeoBolumu from '@/components/KurumsalSeoBolumu'
 import ProjeGalerisi from '@/components/ProjeGalerisi'
 import KisaOzet from '@/components/KisaOzet'
@@ -244,6 +245,7 @@ export default function KocaeliSeoPage() {
         ]}
       />
 
+      <RaporOrnegi />
       <KurumsalSeoBolumu yer="Kocaeli" />
       <ProjeGalerisi baslik="SEO Çalıştığımız Sitelerden Örnekler" />
       <ReviewsMarquee />
@@ -257,6 +259,8 @@ export default function KocaeliSeoPage() {
           { label: 'Kocaeli Google Ads', href: '/kocaeli-google-ads' },
           { label: 'Kocaeli Yazılım Ajansı', href: '/kocaeli-yazilim-ajansi' },
           { label: 'İzmit SEO', href: '/izmit-seo' },
+          { label: 'Kocaeli’de Yerel SEO Rehberi', href: '/blog/kocaeli-seo-yerel-isletmeler-rehberi' },
+          { label: 'Google Search Console Rehberi', href: '/blog/google-search-console-rehberi' },
         ]}
       />
 

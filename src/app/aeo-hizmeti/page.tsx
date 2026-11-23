@@ -166,6 +166,8 @@ export default function Page() {
           { label: 'SEO Ajansı', href: '/seo-ajansi' },
           { label: 'Kocaeli SEO', href: '/kocaeli-seo' },
           { label: 'Blog', href: '/blog' },
+          { label: 'SEO, GEO ve AEO Farkı', href: '/blog/seo-geo-aeo-arama-motorundan-yanit-motoruna' },
+          { label: 'Meta Açıklama Yazma Rehberi', href: '/blog/meta-aciklama-yazma-rehberi' },
         ]}
       />
 

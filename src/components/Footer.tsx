@@ -262,6 +262,9 @@ export default function Footer() {
             <Link href="/cerez-politikasi" className="text-zinc-400 hover:text-white text-xs transition-colors">
               Çerez Politikası
             </Link>
+            <Link href="/en" hrefLang="en" className="text-zinc-400 hover:text-white text-xs transition-colors">
+              English
+            </Link>
           </div>
         </div>
       </div>

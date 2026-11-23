@@ -1,4 +1,6 @@
 import type { Metadata } from 'next'
+import RaporOrnegi from '@/components/RaporOrnegi'
+import SiziArayalimFormu from '@/components/SiziArayalimFormu'
 import Link from 'next/link'
 import CityLinksGrid from '@/components/CityLinksGrid'
 import CalendlyButton from '@/components/CalendlyButton'
@@ -133,6 +135,7 @@ export default function SeoAjansiPage() {
 
       <CityLinksGrid servis="seo" />
 
+      <RaporOrnegi />
       <section className="py-20 px-6">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-10 text-center">Sık Sorulan Sorular</h2>
@@ -147,6 +150,7 @@ export default function SeoAjansiPage() {
         </div>
       </section>
 
+      <SiziArayalimFormu />
       <RelatedPages
         pages={[
           { label: 'GEO Ajansı', href: '/geo-ajansi' },
@@ -157,6 +161,9 @@ export default function SeoAjansiPage() {
           { label: 'İstanbul SEO', href: '/istanbul-seo' },
           { label: 'İzmit SEO', href: '/izmit-seo' },
           { label: 'Kocaeli SEO', href: '/kocaeli-seo' },
+          { label: 'SEO Ajansı mı Freelancer mı?', href: '/blog/seo-ajansi-mi-freelancer-mi' },
+          { label: 'Kaliteli Backlink Rehberi', href: '/blog/kaliteli-backlink-alma-yontemleri' },
+          { label: 'Meta Açıklama Yazma Rehberi', href: '/blog/meta-aciklama-yazma-rehberi' },
         ]}
       />
 

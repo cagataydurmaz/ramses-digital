@@ -166,6 +166,8 @@ export default function Page() {
           { label: 'SEO Ajansı', href: '/seo-ajansi' },
           { label: 'Kocaeli SEO', href: '/kocaeli-seo' },
           { label: 'SEO Analizi', href: '/seo-analiz' },
+          { label: 'GEO Rehberi: ChatGPT Aramaları', href: '/blog/geo-nedir-chatgpt-yapay-zeka-aramalarda-gorunurluk' },
+          { label: 'SEO, GEO ve AEO Farkı', href: '/blog/seo-geo-aeo-arama-motorundan-yanit-motoruna' },
         ]}
       />
 

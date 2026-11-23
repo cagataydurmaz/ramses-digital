@@ -1,4 +1,6 @@
 import type { Metadata } from 'next'
+import AjansDetayBolumu, { type AjansDetay } from '@/components/AjansDetayBolumu'
+import SiziArayalimFormu from '@/components/SiziArayalimFormu'
 import Link from 'next/link'
 import CalendlyButton from '@/components/CalendlyButton'
 import RelatedPages from '@/components/RelatedPages'
@@ -36,6 +38,28 @@ const faqs = [
   { q: 'Reklam hesabım kimin adına açılıyor?', a: 'Google Ads hesabı sizin adınıza açılır, biz sadece yönetici erişimiyle çalışırız. Hesap sizde kaldığı için bizimle çalışmayı bırakırsanız geçmiş verileriniz, dönüşüm öğrenmeleriniz ve kampanya geçmişiniz sizde kalır — kimse sizi hesabınıza rehin tutamaz.' },
   { q: '"İlk sırada çıkmayı garanti ediyoruz" diyen ajanslara güvenmeli miyim?', a: 'Hayır, bu bir kırmızı bayraktır. Google Ads sıralaması gerçek zamanlı bir açık artırma ile belirlenir; hiçbir ajans belirli bir sırayı garanti edemez. Biz sonuç garantisi yerine şeffaf raporlama ve ölçülebilir dönüşüm verisi sunuyoruz.' },
 ]
+
+const detay: AjansDetay = {
+  tabloBaslik: 'Google Ads Yönetimi: Kendiniz mi, Ajansla mı?',
+  tabloAciklama: 'Reklamı kendiniz yönetmek ile profesyonel yönetim arasındaki farklar.',
+  sutunlar: ['Konu', 'Kendi başınıza', 'Ramses Dijital ile'],
+  satirlar: [
+    ['Kampanya yapısı', 'Çoğunlukla tek kampanya, geniş eşleme', 'Hizmet ve bölgeye göre ayrılmış kampanya ve reklam grupları'],
+    ['Gereksiz tıklama', 'İş ilanı, ücretsiz ve alakasız aramalara bütçe gider', 'Negatif kelime listeleriyle düzenli ayıklama'],
+    ['Dönüşüm ölçümü', 'Tıklama sayılır, gelen talep bilinmez', 'Telefon, WhatsApp ve form talepleri ölçülür'],
+    ['Bütçe', 'Google önerileriyle hızla artabilir', 'Hedefe göre planlanır, aylık raporla izlenir'],
+    ['Hesap sahipliği', 'Sizde', 'Yine sizde; ayrılsanız bile geçmiş veriler sizde kalır'],
+  ],
+  surecBaslik: 'Google Ads Süreci Nasıl İşler?',
+  adimlar: [
+    { baslik: 'Hesap ve hedef analizi', not: 'Mevcut hesap varsa incelenir; hedef müşteri, bölge ve bütçe netleşir.' },
+    { baslik: 'Kurulum', not: 'Kampanyalar, anahtar kelimeler, reklam metinleri ve dönüşüm ölçümü kurulur.' },
+    { baslik: 'Optimizasyon', not: 'Alakasız aramalar ayıklanır, teklif ve metinler veriye göre iyileştirilir.' },
+    { baslik: 'Aylık rapor', not: 'Harcama, tıklama ve gelen talepler şeffaf biçimde raporlanır.' },
+  ],
+  sehirHizmet: 'google-ads',
+  sehirEtiket: 'Google Ads',
+}
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -128,6 +152,7 @@ export default function GoogleAdsAjansiPage() {
         </div>
       </section>
 
+      <AjansDetayBolumu d={detay} />
       <section className="py-20 px-6">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-10 text-center">Sık Sorulan Sorular</h2>
@@ -142,6 +167,7 @@ export default function GoogleAdsAjansiPage() {
         </div>
       </section>
 
+      <SiziArayalimFormu />
       <RelatedPages
         pages={[
           { label: 'SEO Ajansı', href: '/seo-ajansi' },
@@ -149,6 +175,7 @@ export default function GoogleAdsAjansiPage() {
           { label: 'Yazılım Ajansı', href: '/yazilim-ajansi' },
           { label: 'İzmit Google Ads', href: '/izmit-google-ads' },
           { label: 'Kocaeli Google Ads', href: '/kocaeli-google-ads' },
+          { label: 'Google Ads Ajansı Seçerken 8 Soru', href: '/blog/google-ads-ajansi-secerken-sorulacak-sorular' },
         ]}
       />
 

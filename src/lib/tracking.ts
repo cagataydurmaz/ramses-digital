@@ -15,6 +15,7 @@ export type LeadYontem =
   | 'whatsapp_form'
   | 'whatsapp_ai'
   | 'iletisim_formu'
+  | 'geri_arama'
 
 // GA4'e etkinlik gönderir (sayfa yolu eklenir; hangi sayfanın müşteri getirdiği görülsün).
 export function trackEvent(ad: string, params: Record<string, unknown> = {}) {

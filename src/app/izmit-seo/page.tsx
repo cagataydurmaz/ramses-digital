@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import RaporOrnegi from '@/components/RaporOrnegi'
 import KurumsalSeoBolumu from '@/components/KurumsalSeoBolumu'
 import ProjeGalerisi from '@/components/ProjeGalerisi'
 import KisaOzet from '@/components/KisaOzet'
@@ -232,6 +233,7 @@ export default function IzmitSeoPage() {
         ]}
       />
 
+      <RaporOrnegi />
       <KurumsalSeoBolumu yer="İzmit" />
       <ProjeGalerisi baslik="SEO Çalıştığımız Sitelerden Örnekler" />
       <ReviewsMarquee />
@@ -243,6 +245,8 @@ export default function IzmitSeoPage() {
           { label: 'İzmit Google Ads', href: '/izmit-google-ads' },
           { label: 'İzmit Yazılım Ajansı', href: '/izmit-yazilim-ajansi' },
           { label: 'Kocaeli SEO', href: '/kocaeli-seo' },
+          { label: 'Kocaeli’de Yerel SEO Rehberi', href: '/blog/kocaeli-seo-yerel-isletmeler-rehberi' },
+          { label: 'SEO Ajansı mı Freelancer mı?', href: '/blog/seo-ajansi-mi-freelancer-mi' },
         ]}
       />
 

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import SiziArayalimFormu from '@/components/SiziArayalimFormu'
 import ProjeGalerisi from '@/components/ProjeGalerisi'
 import Link from 'next/link'
 import CityServiceSections, { cityServiceFaqs } from '@/components/CityServiceSections'
@@ -217,6 +218,7 @@ export default function IzmitWebTasarimPage() {
       </section>
 
       <ProjeGalerisi />
+      <SiziArayalimFormu />
       <ReviewsMarquee />
 
       <RelatedPages

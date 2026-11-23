@@ -1,4 +1,6 @@
 import type { Metadata } from 'next'
+import AjansDetayBolumu, { type AjansDetay } from '@/components/AjansDetayBolumu'
+import SiziArayalimFormu from '@/components/SiziArayalimFormu'
 import Link from 'next/link'
 import CalendlyButton from '@/components/CalendlyButton'
 import RelatedPages from '@/components/RelatedPages'
@@ -37,6 +39,28 @@ const faqs = [
   { q: 'Proje teslim edildikten sonra destek veriyor musunuz?', a: 'Evet. Proje sonrası 1-3 ay hata düzeltme garantisi veriyoruz. Uzun vadeli bakım için aylık destek paketi sunuyoruz: güncellemeler, küçük geliştirmeler ve teknik izleme.' },
   { q: 'Proje bittiğinde kaynak kodun mülkiyeti kimde olur?', a: 'Kaynak kod ve tüm mülkiyet hakları tamamen size aittir — teslimle birlikte tam erişim ve kodu size devrediyoruz. Sizi belirli bir ajansa veya platforma bağımlı bırakan kapalı/gizli bir sistem kurmuyoruz.' },
 ]
+
+const detay: AjansDetay = {
+  tabloBaslik: 'Hazır Yazılım mı, Özel Yazılım mı?',
+  tabloAciklama: 'İşletmenize hangi yolun uygun olduğuna karar vermenize yardımcı olacak karşılaştırma.',
+  sutunlar: ['Konu', 'Hazır (paket) yazılım', 'Özel yazılım / otomasyon'],
+  satirlar: [
+    ['Uyum', 'İş süreciniz yazılıma uydurulur', 'Yazılım sizin iş sürecinize göre kurulur'],
+    ['Maliyet yapısı', 'Kullanıcı başına aylık lisans', 'Tek seferlik geliştirme, düşük işletme maliyeti'],
+    ['Entegrasyon', 'Sınırlı bağlantı seçenekleri', 'CRM, e-posta, WhatsApp, ödeme ve yapay zekâ bağlantıları'],
+    ['Veri', 'Sağlayıcının sunucusunda', 'İsterseniz kendi sunucunuzda (KVKK açısından avantaj)'],
+    ['Hız', 'Hemen kullanılır', 'Geliştirme süresi gerekir; n8n gibi araçlarla kısaltılır'],
+  ],
+  surecBaslik: 'Yazılım Projesi Nasıl İlerler?',
+  adimlar: [
+    { baslik: 'İhtiyaç analizi', not: 'Mevcut iş akışı ve tekrar eden işler çıkarılır; neyin otomatikleşeceği belirlenir.' },
+    { baslik: 'Kapsam ve prototip', not: 'Ekranlar ve akış taslağı hazırlanır, onayınıza sunulur.' },
+    { baslik: 'Geliştirme ve test', not: 'Yazılım geliştirilir, gerçek verilerle test edilir.' },
+    { baslik: 'Teslim ve destek', not: 'Eğitim verilir, yayına alınır; bakım ve geliştirme desteği sürer.' },
+  ],
+  sehirHizmet: 'yazilim-ajansi',
+  sehirEtiket: 'Yazılım Ajansı',
+}
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -153,6 +177,7 @@ export default function YazilimAjansiPage() {
         </div>
       </section>
 
+      <AjansDetayBolumu d={detay} />
       <section className="py-20 px-6 bg-[#080D18]">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-10 text-center">Sık Sorulan Sorular</h2>
@@ -167,6 +192,7 @@ export default function YazilimAjansiPage() {
         </div>
       </section>
 
+      <SiziArayalimFormu />
       <RelatedPages
         pages={[
           { label: 'SEO Ajansı', href: '/seo-ajansi' },

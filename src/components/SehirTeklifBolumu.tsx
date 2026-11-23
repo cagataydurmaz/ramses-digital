@@ -1,9 +1,11 @@
 import TeklifAlCalculator from '@/components/TeklifAlCalculator'
+import SiziArayalimFormu from '@/components/SiziArayalimFormu'
 
 // Şehir sayfalarında açık fiyat tablosu yerine AI teklif hesaplayıcı: ziyaretçi
 // kendi işletmesine göre tahmini teklifi görür, iletişime geçmeye yönlendirilir.
 export default function SehirTeklifBolumu({ place }: { place: string }) {
   return (
+    <>
     <section className="py-16 px-6 bg-[#080D18]">
       <div className="max-w-3xl mx-auto text-center mb-10">
         <p className="text-blue-500 text-sm font-medium tracking-wider uppercase mb-3">AI Destekli Teklif Hesaplayıcı</p>
@@ -12,5 +14,7 @@ export default function SehirTeklifBolumu({ place }: { place: string }) {
       </div>
       <TeklifAlCalculator />
     </section>
+    <SiziArayalimFormu />
+    </>
   )
 }

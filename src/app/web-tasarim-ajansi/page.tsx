@@ -1,4 +1,7 @@
 import type { Metadata } from 'next'
+import ProjeGalerisi from '@/components/ProjeGalerisi'
+import AjansDetayBolumu, { type AjansDetay } from '@/components/AjansDetayBolumu'
+import SiziArayalimFormu from '@/components/SiziArayalimFormu'
 import Link from 'next/link'
 import CalendlyButton from '@/components/CalendlyButton'
 import RelatedPages from '@/components/RelatedPages'
@@ -35,6 +38,28 @@ const faqs = [
   { q: 'Web sitem yapıldıktan sonra kim günceller?', a: 'İçerik güncellemeleri için basit bir yönetim paneli kuruyoruz — teknik bilgi gerekmeden blog/ürün ekleyebilirsiniz. Tasarım değişiklikleri için aylık bakım paketi de sunuyoruz.' },
   { q: 'Ödeme sistemi, CRM, WhatsApp gibi entegrasyonlar ekleyebiliyor musunuz?', a: 'Evet. Ödeme altyapısı, kargo takibi, CRM, randevu/takvim sistemi ve WhatsApp gibi entegrasyonları ihtiyacınıza göre kuruyoruz. Her entegrasyon ayrı test ve hata yönetimi gerektirdiği için kapsamı brifing aşamasında netleştiriyoruz.' },
 ]
+
+const detay: AjansDetay = {
+  tabloBaslik: 'Hazır Şablon mu, Özel Tasarım mı?',
+  tabloAciklama: 'Web sitesi kararını verirken en çok karıştırılan seçenekleri sade bir tabloda karşılaştırdık.',
+  sutunlar: ['Konu', 'Hazır şablon / site kurucu', 'Ramses Dijital ile özel site'],
+  satirlar: [
+    ['Hız', 'Gereksiz kod ve eklentilerle çoğunlukla yavaş', 'Next.js ile hızlı açılan, Core Web Vitals hedefli sayfalar'],
+    ['SEO altyapısı', 'Başlık, schema ve site haritası çoğu zaman eksik', 'Başlık yapısı, schema, site haritası ve hız baştan kurulu'],
+    ['Tasarım', 'Binlerce sitede aynı görünüm', 'Markanıza ve sektörünüze özel tasarım'],
+    ['Talep toplama', 'Genel iletişim formu', 'WhatsApp, arama düğmesi, teklif formu ve talep ölçümü'],
+    ['Sahiplik', 'Platforma bağlı, taşıması zor', 'Alan adı, kod ve veriler sizin adınıza'],
+  ],
+  surecBaslik: 'Web Sitesi Nasıl Hazırlanır?',
+  adimlar: [
+    { baslik: 'Ön görüşme', not: 'İşletmenizi, hedef müşterinizi ve rakiplerinizi dinliyoruz; kapsamı birlikte netleştiriyoruz.' },
+    { baslik: 'Yapı ve tasarım', not: 'Sayfa yapısı ve tasarım taslağı hazırlanır, onayınıza sunulur.' },
+    { baslik: 'Geliştirme ve içerik', not: 'Site kodlanır, metinler SEO uyumlu yazılır, ölçüm kurulur.' },
+    { baslik: 'Yayın ve destek', not: 'Site yayına alınır, Google Search Console ve Analytics bağlanır, destek sürer.' },
+  ],
+  sehirHizmet: 'web-tasarim',
+  sehirEtiket: 'Web Tasarım',
+}
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -138,6 +163,8 @@ export default function WebTasarimAjansiPage() {
         </div>
       </section>
 
+      <AjansDetayBolumu d={detay} />
+      <ProjeGalerisi />
       <section className="py-20 px-6">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-10 text-center">Sık Sorulan Sorular</h2>
@@ -152,6 +179,7 @@ export default function WebTasarimAjansiPage() {
         </div>
       </section>
 
+      <SiziArayalimFormu />
       <RelatedPages
         pages={[
           { label: 'SEO Ajansı', href: '/seo-ajansi' },
