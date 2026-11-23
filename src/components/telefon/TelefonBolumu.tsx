@@ -8,6 +8,7 @@ export default function TelefonBolumu({
   metin,
   maddeler = [],
   ters = false,
+  ek,
   children,
 }: {
   ust: string
@@ -15,6 +16,7 @@ export default function TelefonBolumu({
   metin: string
   maddeler?: string[]
   ters?: boolean
+  ek?: ReactNode
   children: ReactNode
 }) {
   return (
@@ -33,6 +35,7 @@ export default function TelefonBolumu({
               </li>
             ))}
           </ul>
+          {ek}
         </div>
       </div>
     </section>

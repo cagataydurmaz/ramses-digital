@@ -3,6 +3,7 @@ import SiteKaydirmaTelefon from './SiteKaydirmaTelefon'
 import WhatsAppTelefon from './WhatsAppTelefon'
 import HaritaTelefon from './HaritaTelefon'
 import ChatbotTelefon from './ChatbotTelefon'
+import AsistaniDeneButonu from './AsistaniDeneButonu'
 
 // Hazır telefon animasyonlu bölümler; sayfalara tek satırla eklenir.
 export function WebSitesiTelefonBolumu({ ters = false }: { ters?: boolean }) {
@@ -60,6 +61,7 @@ export function ChatbotTelefonBolumu({ ters = false }: { ters?: boolean }) {
         'Sizin kurallarınıza göre konuşur: fiyat vermez, söz vermez, uydurmaz',
         'Sağlık, hukuk gibi kurallı sektörlerde iddiasız, mevzuata uygun dil',
       ]}
+      ek={<AsistaniDeneButonu />}
     >
       <ChatbotTelefon />
     </TelefonBolumu>

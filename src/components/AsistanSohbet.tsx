@@ -71,6 +71,17 @@ export default function AsistanSohbet() {
     }
   }, [])
 
+  // Sayfadaki "Bu sitedeki asistanı deneyin" düğmesi
+  useEffect(() => {
+    const ac = () => {
+      setAcik(true)
+      setBalon(false)
+      trackEvent('asistan_demo_acildi')
+    }
+    window.addEventListener('asistan-ac', ac)
+    return () => window.removeEventListener('asistan-ac', ac)
+  }, [])
+
   useEffect(() => {
     liste.current?.scrollTo({ top: liste.current.scrollHeight, behavior: 'smooth' })
   }, [mesajlar, bekliyor, talep, acik])
