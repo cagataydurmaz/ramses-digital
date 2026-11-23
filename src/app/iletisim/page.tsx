@@ -38,40 +38,28 @@ export default function ContactPage() {
   const validate = (): boolean => {
     const newErrors: Partial<FormData> = {}
     if (!form.name.trim()) newErrors.name = 'Ad Soyad gereklidir'
-    if (!form.email.trim() || !/\S+@\S+\.\S+/.test(form.email))
+    if (form.email.trim() && !/\S+@\S+\.\S+/.test(form.email))
       newErrors.email = 'Geçerli bir e-posta adresi girin'
     if (!form.message.trim()) newErrors.message = 'Mesaj gereklidir'
     setErrors(newErrors)
     return Object.keys(newErrors).length === 0
   }
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     if (!validate()) return
-    setIsSubmitting(true)
-    try {
-      const res = await fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          name: form.name,
-          email: form.email,
-          phone: form.phone,
-          service: form.service,
-          message: form.message,
-        }),
-      })
-      if (res.ok) {
-        trackLead('iletisim_formu')
-        setIsSubmitted(true)
-      } else {
-        alert('Mesaj gönderilemedi, lütfen tekrar deneyin.')
-      }
-    } catch {
-      alert('Bir hata oluştu, lütfen tekrar deneyin.')
-    } finally {
-      setIsSubmitting(false)
-    }
+    // Form e-posta yerine doğrudan WhatsApp mesajı olarak gelir.
+    const satirlar = [
+      'Merhaba, iletişim formundan yazıyorum.',
+      `Ad Soyad: ${form.name}`,
+      form.email ? `E-posta: ${form.email}` : null,
+      form.phone ? `Telefon: ${form.phone}` : null,
+      form.service ? `Hizmet: ${form.service}` : null,
+      form.message ? `Mesaj: ${form.message}` : null,
+    ].filter(Boolean)
+    trackLead('iletisim_formu')
+    window.open(`https://wa.me/905355601936?text=${encodeURIComponent(satirlar.join('\n'))}`, '_blank')
+    setIsSubmitted(true)
   }
 
   const handleChange = (
@@ -215,9 +203,9 @@ export default function ContactPage() {
                     <div className="w-16 h-16 bg-green-500/10 rounded-full flex items-center justify-center mx-auto mb-5">
                       <CheckCircle2 size={28} className="text-green-400" />
                     </div>
-                    <h3 className="text-white text-xl font-bold mb-2">Mesajınız Ulaştı!</h3>
+                    <h3 className="text-white text-xl font-bold mb-2">WhatsApp Açıldı</h3>
                     <p className="text-zinc-400 text-sm max-w-sm mx-auto">
-                      En kısa sürede size dönüş yapacağız. Ortalama yanıt süremiz 2 saattir.
+                      Mesajı WhatsApp'ta göndermeniz yeterli. Ortalama 2 saat içinde dönüş yapıyoruz.
                     </p>
                   </div>
                 ) : (
@@ -242,7 +230,7 @@ export default function ContactPage() {
                         </div>
                         <div>
                           <label className="block text-zinc-400 text-xs font-medium mb-1.5">
-                            E-Posta <span className="text-red-400">*</span>
+                            E-Posta <span className="text-zinc-600">(isteğe bağlı)</span>
                           </label>
                           <input
                             name="email"
@@ -311,7 +299,7 @@ export default function ContactPage() {
                         {isSubmitting ? (
                           <><Loader2 size={16} className="animate-spin" />Gönderiliyor...</>
                         ) : (
-                          <><Send size={16} />Mesaj Gönder</>
+                          <><Send size={16} />WhatsApp ile Gönder</>
                         )}
                       </button>
                       <p className="text-zinc-500 text-xs text-center">Ortalama 2 saat içinde dönüş yapıyoruz.</p>

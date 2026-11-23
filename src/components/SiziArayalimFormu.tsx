@@ -9,23 +9,15 @@ export default function SiziArayalimFormu() {
   const [ad, setAd] = useState('')
   const [telefon, setTelefon] = useState('')
   const [tuzak, setTuzak] = useState('')
-  const [durum, setDurum] = useState<'bos' | 'gonderiliyor' | 'tamam' | 'hata'>('bos')
+  const [durum, setDurum] = useState<'bos' | 'tamam'>('bos')
 
-  async function gonder(e: React.FormEvent) {
+  function gonder(e: React.FormEvent) {
     e.preventDefault()
-    setDurum('gonderiliyor')
-    try {
-      const r = await fetch('/api/geri-arama', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ad, telefon, tuzak, sayfa: window.location.pathname }),
-      })
-      if (!r.ok) throw new Error()
-      trackLead('geri_arama')
-      setDurum('tamam')
-    } catch {
-      setDurum('hata')
-    }
+    if (tuzak) return
+    const mesaj = encodeURIComponent(`Merhaba, beni arar mısınız?\nAd: ${ad}\nTelefon: ${telefon}\nSayfa: ${window.location.pathname}`)
+    trackLead('geri_arama')
+    window.open(`https://wa.me/905355601936?text=${mesaj}`, '_blank')
+    setDurum('tamam')
   }
 
   return (
@@ -34,7 +26,7 @@ export default function SiziArayalimFormu() {
         {durum === 'tamam' ? (
           <div className="text-center py-4">
             <CheckCircle2 size={32} className="text-emerald-400 mx-auto mb-3" />
-            <p className="text-white font-semibold text-lg">Talebiniz alındı.</p>
+            <p className="text-white font-semibold text-lg">WhatsApp açıldı, mesajı göndermeniz yeterli.</p>
             <p className="text-zinc-400 text-sm mt-1">Ortalama 2 saat içinde dönüş yapıyoruz.</p>
           </div>
         ) : (
@@ -43,17 +35,17 @@ export default function SiziArayalimFormu() {
               <span className="w-10 h-10 rounded-xl bg-blue-500/10 flex items-center justify-center"><PhoneCall size={18} className="text-blue-400" /></span>
               <h2 id="sizi-arayalim" className="text-2xl font-bold text-white">Sizi Arayalım</h2>
             </div>
-            <p className="text-zinc-400 text-sm mb-6">Adınızı ve telefonunuzu bırakın, sizi arayıp ihtiyacınızı dinleyelim. Ücretsiz, taahhüt yok.</p>
+            <p className="text-zinc-400 text-sm mb-6">Adınızı ve telefonunuzu yazın, WhatsApp üzerinden bize iletin; sizi arayıp ihtiyacınızı dinleyelim. Ücretsiz, taahhüt yok.</p>
             <form onSubmit={gonder} className="grid sm:grid-cols-[1fr_1fr_auto] gap-3">
               <input aria-label="Adınız" required minLength={2} value={ad} onChange={(e) => setAd(e.target.value)} placeholder="Adınız" className="bg-[#080D18] border border-white/[0.1] focus:border-blue-500/60 outline-none rounded-xl px-4 py-3 text-white placeholder:text-zinc-500" />
               <input aria-label="Telefon numaranız" required type="tel" inputMode="tel" value={telefon} onChange={(e) => setTelefon(e.target.value)} placeholder="05xx xxx xx xx" className="bg-[#080D18] border border-white/[0.1] focus:border-blue-500/60 outline-none rounded-xl px-4 py-3 text-white placeholder:text-zinc-500" />
               <input tabIndex={-1} autoComplete="off" aria-hidden value={tuzak} onChange={(e) => setTuzak(e.target.value)} className="hidden" />
-              <button type="submit" disabled={durum === 'gonderiliyor'} className="bg-blue-500 hover:bg-blue-600 disabled:opacity-60 text-white font-medium rounded-xl px-6 py-3 transition-colors">
-                {durum === 'gonderiliyor' ? 'Gönderiliyor…' : 'Beni Arayın'}
+              <button type="submit" className="bg-blue-500 hover:bg-blue-600 disabled:opacity-60 text-white font-medium rounded-xl px-6 py-3 transition-colors">
+                Beni Arayın
               </button>
             </form>
             <p className="text-zinc-500 text-xs mt-3">
-              {durum === 'hata' ? 'Gönderilemedi. Lütfen WhatsApp veya telefonla ulaşın: 0535 560 19 36.' : 'Ortalama 2 saat içinde dönüş yapıyoruz. Bilgileriniz yalnızca sizi aramak için kullanılır.'}
+              Ortalama 2 saat içinde dönüş yapıyoruz. Bilgileriniz yalnızca sizi aramak için kullanılır.
             </p>
           </>
         )}
