@@ -3280,7 +3280,7 @@ export const posts: Post[] = [
   },
   {
     slug: 'ieyp-vaka-analizi-egitim-platformu-geo-aeo',
-    coverImage: '/portfolio/ieyp.png',
+    coverImage: '/portfolio/masaustu/ieyp-international.webp',
     title: "Vaka Analizi: IEYP International'ı Hem Google'da Hem ChatGPT'de Görünür Kılmak",
     excerpt:
       'Yapay zeka destekli bir eğitim platformu için klasik SEO yeterli değildi. IEYP International projesinde web tasarımı, SEO ve GEO/AEO\'yu birlikte nasıl kurduğumuzu gerçek adımlarla anlatıyoruz.',

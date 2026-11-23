@@ -19,6 +19,23 @@ const sektorIkon: Record<string, typeof Briefcase> = {
   'emlak-ofisleri': Home,
   'oto-servis': Car,
 }
+// Sektöre özel renk tonu (ikon kutusu + hover çerçevesi)
+const renk: Record<string, string> = {
+  'avukat-hukuk-burolari': 'bg-amber-500/10 text-amber-400 group-hover:border-amber-500/40',
+  'dis-hekimleri-klinikler': 'bg-cyan-500/10 text-cyan-400 group-hover:border-cyan-500/40',
+  'psikolog-terapistler': 'bg-violet-500/10 text-violet-400 group-hover:border-violet-500/40',
+  'veteriner-klinikleri': 'bg-emerald-500/10 text-emerald-400 group-hover:border-emerald-500/40',
+  'mali-musavirler': 'bg-blue-500/10 text-blue-400 group-hover:border-blue-500/40',
+  'e-ticaret': 'bg-pink-500/10 text-pink-400 group-hover:border-pink-500/40',
+  'restoran-kafe': 'bg-orange-500/10 text-orange-400 group-hover:border-orange-500/40',
+  'ozel-hastane-poliklinik': 'bg-sky-500/10 text-sky-400 group-hover:border-sky-500/40',
+  'agiz-dis-sagligi-merkezleri': 'bg-teal-500/10 text-teal-400 group-hover:border-teal-500/40',
+  'guzellik-merkezleri': 'bg-fuchsia-500/10 text-fuchsia-400 group-hover:border-fuchsia-500/40',
+  'emlak-ofisleri': 'bg-lime-500/10 text-lime-400 group-hover:border-lime-500/40',
+  'oto-servis': 'bg-red-500/10 text-red-400 group-hover:border-red-500/40',
+}
+const ayrac = <div aria-hidden className="max-w-5xl mx-auto h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+
 const aracIkon: Record<string, typeof Briefcase> = {
   'whatsapp-link-olusturucu': MessageCircle,
   'google-yorum-linki': Star,
@@ -29,6 +46,7 @@ const aracIkon: Record<string, typeof Briefcase> = {
 export default function AnaSayfaSektorAraclar() {
   return (
     <>
+      {ayrac}
       <section aria-labelledby="sektorler-baslik" className="py-12 sm:py-16 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-10 sm:mb-12">
@@ -39,10 +57,11 @@ export default function AnaSayfaSektorAraclar() {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
             {sektorler.map((s) => {
               const Icon = sektorIkon[s.slug] ?? Briefcase
+              const [bg, text, hb] = (renk[s.slug] ?? 'bg-blue-500/10 text-blue-400 group-hover:border-blue-500/40').split(' ')
               return (
-                <Link key={s.slug} href={`/sektorler/${s.slug}`} prefetch={false} className="group flex items-center gap-3 bg-[#0D1225] border border-white/[0.14] hover:border-blue-500/40 rounded-xl p-4 transition-colors">
-                  <span className="w-9 h-9 shrink-0 rounded-lg bg-blue-500/10 flex items-center justify-center">
-                    <Icon size={17} className="text-blue-400" />
+                <Link key={s.slug} href={`/sektorler/${s.slug}`} prefetch={false} className="group flex items-center gap-3 bg-[#0D1225] border border-white/[0.14] hover:-translate-y-0.5 hover:bg-[#10162c] rounded-xl p-4 transition-all duration-200">
+                  <span className={`w-9 h-9 shrink-0 rounded-lg border border-transparent ${bg} ${hb} flex items-center justify-center transition-colors`}>
+                    <Icon size={17} className={text} />
                   </span>
                   <span className="text-white text-sm font-medium leading-snug">{s.kisaAd}</span>
                 </Link>
@@ -57,6 +76,7 @@ export default function AnaSayfaSektorAraclar() {
         </div>
       </section>
 
+      {ayrac}
       <section aria-labelledby="araclar-baslik" className="py-12 sm:py-16 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-10 sm:mb-12">
@@ -68,7 +88,7 @@ export default function AnaSayfaSektorAraclar() {
             {araclar.map((a) => {
               const Icon = aracIkon[a.slug] ?? FileSearch
               return (
-                <Link key={a.slug} href={`/araclar/${a.slug}`} prefetch={false} className="group h-full bg-[#0D1225] border border-white/[0.14] hover:border-blue-500/40 rounded-2xl p-6 transition-colors">
+                <Link key={a.slug} href={`/araclar/${a.slug}`} prefetch={false} className="group h-full bg-[#0D1225] border border-white/[0.14] hover:border-blue-500/40 hover:-translate-y-1 hover:shadow-[0_12px_40px_-12px_rgba(59,130,246,0.35)] rounded-2xl p-6 transition-all duration-300">
                   <span className="w-11 h-11 rounded-xl bg-blue-500/10 flex items-center justify-center mb-5">
                     <Icon size={20} className="text-blue-400" />
                   </span>
@@ -81,6 +101,7 @@ export default function AnaSayfaSektorAraclar() {
           </div>
         </div>
       </section>
+      {ayrac}
     </>
   )
 }

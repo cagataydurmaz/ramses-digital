@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { ArrowRight, ExternalLink } from 'lucide-react'
 import { projects } from '@/lib/portfolio'
 import KayanSerit from './KayanSerit'
+import TelefonCercevesi from './TelefonCercevesi'
 
 // Öne çıkan projeler için özel kısa özet; diğerlerinde portföydeki kategori yazılır.
 const OZET: Record<string, string> = {
@@ -26,6 +27,9 @@ function Kart({ p, gizli }: { p: Proje; gizli?: boolean }) {
             sizes="340px"
             className="object-cover object-top group-hover:scale-[1.03] transition-transform duration-500"
           />
+          {p.mobil && (
+            <TelefonCercevesi src={p.mobil} alt={gizli ? '' : `${p.name} mobil görünüm`} sizes="80px" className="w-[58px] sm:w-[66px] right-3 bottom-2 group-hover:-translate-y-1 transition-transform duration-500" />
+          )}
         </div>
       </Link>
       <div className="p-5">

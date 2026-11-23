@@ -17,6 +17,7 @@ export interface CaseStudy {
   desc: string
   tags: string[]
   thumb: string
+  mobil?: string // telefon görünümü (390×844)
   color: ProjectColor
   challenge: string
   approach: string[]
@@ -35,7 +36,8 @@ export const projects: CaseStudy[] = [
     industry: 'Su Deposu Temizliği & Hijyen',
     desc: 'İstanbul\'da su deposu temizliği, dezenfeksiyonu ve izolasyonu yapan firma için eski WordPress sitesinden yeni nesil, hızlı bir siteye geçiş. Web tasarım, SEO, ilçe sayfaları ve Google Ads bakımı tek elden.',
     tags: ['Web Tasarım', 'Yerel SEO', 'İlçe Sayfaları', 'Google Ads', 'İçerik'],
-    thumb: '/portfolio/depodez.png',
+    thumb: '/portfolio/masaustu/depodez.webp',
+    mobil: '/portfolio/mobil/depodez.webp',
     color: 'cyan',
     challenge:
       'Firma eski bir WordPress temasıyla çalışıyordu; site yavaştı, hizmetler ve hizmet bölgeleri net ayrışmıyordu ve İSKİ ile Sağlık Bakanlığı onayları, kurumsal referanslar gibi güven unsurları ziyaretçiye yeterince gösterilmiyordu. Rekabetin yoğun olduğu İstanbul aramalarında hizmet ve ilçe bazında görünür olmak gerekiyordu.',
@@ -61,7 +63,8 @@ export const projects: CaseStudy[] = [
     industry: 'Sağlık & Psikoloji',
     desc: 'Kocaeli\'nin en çok aranan psikologlarından biri için sıfırdan tasarladığımız, SEO odaklı, randevu dönüşümü yüksek web sitesi. Yerel SEO çalışmasıyla Google\'da 1. sayfaya taşındı.',
     tags: ['Web Tasarım', 'Yerel SEO', 'WhatsApp Entegrasyonu'],
-    thumb: '/portfolio/nurcelen.png',
+    thumb: '/portfolio/masaustu/nur-celen.webp',
+    mobil: '/portfolio/mobil/nur-celen.webp',
     color: 'blue',
     challenge:
       'Kocaeli\'de bireysel ve çift terapisi veren bir psikolog olarak dijital bir varlığı yoktu; potansiyel danışanlar "Kocaeli psikolog" gibi aramalarda onu bulamıyordu ve randevu talebi tamamen mevcut hasta yönlendirmelerine bağımlıydı.',
@@ -83,7 +86,8 @@ export const projects: CaseStudy[] = [
     industry: 'Hukuk',
     desc: 'İstanbul Barosu avukatı için premium kurumsal kimliğe sahip, içerik ağırlıklı hukuk bürosu sitesi. Blog ve makale altyapısıyla otorite inşası.',
     tags: ['Web Tasarım', 'Kurumsal SEO', 'İçerik Stratejisi'],
-    thumb: '/portfolio/mertanilguler.png',
+    thumb: '/portfolio/masaustu/mert-anil-guler.webp',
+    mobil: '/portfolio/mobil/mert-anil-guler.webp',
     color: 'violet',
     challenge:
       'Avukatlık Kanunu, avukatların Google Ads gibi ücretli reklam yöntemlerini kullanmasını yasaklıyor — bu yüzden görünürlük tamamen organik SEO ve içerik otoritesi üzerinden inşa edilmek zorundaydı, kurumsal kimliğe yakışan bir tasarımla birlikte.',
@@ -110,7 +114,8 @@ export const projects: CaseStudy[] = [
     industry: 'Sağlık & Güzellik',
     desc: 'Eczacı güvencesiyle makyaj, yüz, cilt ve saç bakım ürünleri sunan e-ticaret platformu. Cilt analizi aracı ve kişiselleştirilmiş ürün öneri sistemi ile dönüşüm odaklı tasarım.',
     tags: ['E-Ticaret', 'SEO', 'Cilt Analizi Aracı'],
-    thumb: '/portfolio/gamzelieczanem.png',
+    thumb: '/portfolio/masaustu/gamzeli-dermokozmetik.webp',
+    mobil: '/portfolio/mobil/gamzeli-dermokozmetik.webp',
     color: 'pink',
     challenge:
       'Eczacı güvencesiyle satılan cilt ve güzellik ürünlerinin geniş kataloğunda, müşterilerin kendi cilt tipine uygun ürünü bulması zordu — bu da sepet terk oranını artıran ve dönüşümü düşüren bir sürtünme noktasıydı.',
@@ -160,7 +165,8 @@ export const projects: CaseStudy[] = [
     industry: 'Psikoloji & Sağlık',
     desc: 'Yapay zeka ile 81 ilden seçilmiş uzman psikolog ve terapistler arasından kişiye özel eşleştirme yapan platform. KVKK uyumlu, güvenli terapi altyapısı ve psikoloji blog sistemi.',
     tags: ['Platform', 'YZ Eşleştirme', 'Online Terapi'],
-    thumb: '/portfolio/terapistbul.png',
+    thumb: '/portfolio/masaustu/terapisti-bul.webp',
+    mobil: '/portfolio/mobil/terapisti-bul.webp',
     color: 'cyan',
     challenge:
       'Terapi arayan kullanıcılar için 81 ildeki uzman havuzundan kendi ihtiyacına en uygun terapisti bulmak zaman alıcı ve rastgele bir süreçti; ayrıca ruh sağlığı verisi taşıyan bir platformun KVKK uyumu baştan tasarlanmak zorundaydı.',
@@ -182,7 +188,8 @@ export const projects: CaseStudy[] = [
     industry: 'Hukuk',
     desc: 'İstanbul Barosu avukatı için ceza, iş ve gayrimenkul hukuku alanlarında dava takibi ve danışmanlık odaklı kurumsal web sitesi. WhatsApp ve telefon entegrasyonuyla hızlı iletişim.',
     tags: ['Web Tasarım', 'Kurumsal SEO', 'WhatsApp Entegrasyonu'],
-    thumb: '/portfolio/furkanarikan.png',
+    thumb: '/portfolio/masaustu/furkan-arikan.webp',
+    mobil: '/portfolio/mobil/furkan-arikan.webp',
     color: 'violet',
     challenge:
       'Ceza, iş ve gayrimenkul hukuku alanlarında hizmet veren bir avukat için mevcut dijital varlık yoktu; danışanların hızlıca iletişime geçebileceği, profesyonel ve hızlı bir site gerekiyordu.',
@@ -209,7 +216,8 @@ export const projects: CaseStudy[] = [
     industry: 'Üretim / Mühendislik',
     desc: '1989\'dan beri faaliyet gösteren, 60.000 m² tesise sahip bir yay (spring) üreticisi için sıfırdan tasarlanmış kurumsal web sitesi. ISO 9001 ve IATF 16949 gibi mühendislik/kalite sertifikalarını, üretim sürecini ve kapasiteyi B2B alıcılara net şekilde anlatan, İngilizce/Türkçe çok dilli bir yapı.',
     tags: ['Web Tasarım', 'Kurumsal Kimlik', 'B2B', 'Çok Dilli'],
-    thumb: '/portfolio/tenvor.png',
+    thumb: '/portfolio/masaustu/tenvor-springs.webp',
+    mobil: '/portfolio/mobil/tenvor-springs.webp',
     color: 'orange',
     challenge:
       'Tenvor Springs, 35 yılı aşkın mühendislik geçmişine ve ISO 9001/IATF 16949 sertifikalarına sahip olmasına rağmen, bu teknik güvenilirliği dijitalde yansıtan bir web sitesine sahip değildi. B2B alıcıların (özellikle otomotiv ve sanayi sektöründen) tedarikçi değerlendirirken aradığı somut bilgiler — üretim süreci, kapasite, sertifikalar, kalite kontrol — sitede net ve profesyonel bir şekilde sunulmalıydı.',
@@ -232,7 +240,8 @@ export const projects: CaseStudy[] = [
     industry: 'Eğitim Teknolojisi',
     desc: '2-6 yaş erken çocukluk eğitimi için yapay zeka destekli, çok dilli müfredat platformu. Okullar, öğretmenler ve ailelere yönelik dijital varlık; hem Google\'da hem ChatGPT/Gemini gibi AI arama motorlarında görünürlük odaklı.',
     tags: ['Web Tasarım', 'SEO', 'GEO & AEO'],
-    thumb: '/portfolio/ieyp.png',
+    thumb: '/portfolio/masaustu/ieyp-international.webp',
+    mobil: '/portfolio/mobil/ieyp-international.webp',
     color: 'fuchsia',
     challenge:
       'AI destekli bir eğitim platformu olarak IEYP\'nin hedef kitlesi (okullar, öğretmenler, aileler) hem klasik Google aramasında hem de artan oranda ChatGPT/Gemini gibi AI motorlarında araştırma yapıyor. Sadece geleneksel SEO yeterli değildi — platformun kendisi AI-native olduğu için görünürlük stratejisinin de aynı çağa uygun kurulması gerekiyordu.',

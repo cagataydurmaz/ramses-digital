@@ -5,6 +5,7 @@ import { Metadata } from 'next'
 import { ExternalLink, Globe, CheckCircle2 } from 'lucide-react'
 import { projects, type ProjectColor } from '@/lib/portfolio'
 import CalendlyButton from '@/components/CalendlyButton'
+import TelefonCercevesi from '@/components/TelefonCercevesi'
 
 const colorMap: Record<ProjectColor, { text: string; badge: string; icon: string; border: string; blockquoteBorder: string; blockquoteBg: string }> = {
   blue: { text: 'text-blue-400', badge: 'text-blue-400 hover:text-blue-300 bg-blue-500/10 hover:bg-blue-500/20 border-blue-500/20', icon: 'text-blue-400', border: 'border-blue-500', blockquoteBorder: 'border-blue-500', blockquoteBg: 'bg-blue-500/[0.04]' },
@@ -87,8 +88,12 @@ export default function CaseStudyPage({ params }: Props) {
           <span className="text-zinc-400">{project.name}</span>
         </nav>
 
-        {/* Browser chrome + screenshot */}
-        <div className="rounded-2xl overflow-hidden border border-white/[0.06] mb-10">
+        {/* Browser chrome + screenshot (+ telefon görünümü) */}
+        <div className={`relative ${project.mobil ? 'mb-16 sm:mb-20' : 'mb-10'}`}>
+        {project.mobil && (
+          <TelefonCercevesi src={project.mobil} alt={`${project.name} mobil görünüm`} sizes="(max-width: 640px) 110px, 180px" priority className="w-[96px] sm:w-[170px] -right-1 sm:-right-6 -bottom-10 sm:-bottom-14" />
+        )}
+        <div className="rounded-2xl overflow-hidden border border-white/[0.06]">
           <div className="bg-[#080D18] border-b border-white/[0.06] px-4 py-3 flex items-center gap-3">
             <div className="flex gap-1.5">
               <div className="w-3 h-3 rounded-full bg-red-500/60" />
@@ -110,6 +115,7 @@ export default function CaseStudyPage({ params }: Props) {
               priority
             />
           </div>
+        </div>
         </div>
 
         {/* Header */}

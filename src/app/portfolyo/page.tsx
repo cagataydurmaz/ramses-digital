@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import CalendlyButton from '@/components/CalendlyButton'
+import TelefonCercevesi from '@/components/TelefonCercevesi'
 import { ArrowRight, Globe } from 'lucide-react'
 import { projects as liveProjects, type ProjectColor } from '@/lib/portfolio'
 
@@ -119,6 +120,9 @@ export default function PortfolioPage() {
                     sizes="(max-width: 1024px) 100vw, 50vw"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0D1225]/80 via-transparent to-transparent" />
+                  {project.mobil && (
+                    <TelefonCercevesi src={project.mobil} alt={`${project.name} mobil görünüm`} sizes="110px" className="w-[78px] sm:w-[96px] right-4 top-6 group-hover:-translate-y-1.5 transition-transform duration-500" />
+                  )}
                 </div>
 
                 {/* Info */}

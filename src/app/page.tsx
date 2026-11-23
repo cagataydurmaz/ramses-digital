@@ -8,6 +8,7 @@ import ReviewsMarquee from '@/components/ReviewsMarquee'
 import FeaturedWork from '@/components/FeaturedWork'
 import AnaSayfaSss from '@/components/AnaSayfaSss'
 import AnaSayfaSektorAraclar from '@/components/AnaSayfaSektorAraclar'
+import MarkaSeridi from '@/components/MarkaSeridi'
 import HeroBackgroundVideo from '@/components/HeroBackgroundVideo'
 import {
   Sparkles,
@@ -423,6 +424,7 @@ export default function HomePage() {
       <div className="relative home-flow-bg">
 
       {/* ── CANLI PROJELER (güven: hero'nun hemen altında) ─────────── */}
+      <MarkaSeridi />
       <FeaturedWork />
 
       {/* ── AI TEKLİF HESAPLAYICI (inline, hero'nun hemen altında) ─────────── */}
