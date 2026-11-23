@@ -1,4 +1,9 @@
 import type { Metadata } from 'next'
+import ProjeGalerisi from '@/components/ProjeGalerisi'
+import KurumsalSeoBolumu from '@/components/KurumsalSeoBolumu'
+import RaporOrnegi from '@/components/RaporOrnegi'
+import SehirSeoEkBolumu from '@/components/SehirSeoEkBolumu'
+import { sehirSeoEk } from '@/lib/sehirSeoEk'
 import KisaOzet from '@/components/KisaOzet'
 import Link from 'next/link'
 import CitySeoSections from '@/components/CitySeoSections'
@@ -44,6 +49,7 @@ const faqs = [
   { q: 'Eskişehir\'deki yerleşik ajanslarla nasıl rekabet edebilirim?', a: 'Yerleşik ajansların çoğu şablon strateji uyguluyor ve öğrenci pazarı/sanayi gibi farklı sektörlere jenerik içerikle yaklaşıyor. Biz her müşteriye sektörüne özel strateji kuran, mühendislik disipliniyle çalışan bir ekibiz — bu da daha hızlı iletişim ve daha isabetli anahtar kelime hedeflemesi anlamına geliyor.' },
   { q: 'GEO (Yapay Zeka Optimizasyonu) Eskişehir işletmesi için neden kritik?', a: 'GEO, ChatGPT ve Gemini gibi araçlarda "Eskişehir\'de güvenilir X önerir misin?" sorusuna verilen cevaplarda kaynak olarak yer alma olasılığını artırmayı hedefler. Eskişehir\'in genç, teknolojiye yatkın nüfusu göz önüne alındığında bu kanal özellikle değerli — öğrenciler AI araçlarını yoğun kullanıyor, erken hareket edenler avantajlı.' },
   ...sehirSeo['eskisehir'].ekSss,
+  ...sehirSeoEk['eskisehir'].sss,
 ]
 
 const jsonLd = {
@@ -184,6 +190,10 @@ export default function EskisehirSeoPage() {
         </div>
       </section>
 
+      <SehirSeoEkBolumu sehir="eskisehir" />
+      <RaporOrnegi />
+      <KurumsalSeoBolumu yer="Eskişehir" />
+      <ProjeGalerisi baslik="SEO Çalıştığımız Sitelerden Örnekler" />
       <ReviewsMarquee />
 
       <SehirTeklifBolumu place="Eskişehir" />

@@ -1,4 +1,9 @@
 import type { Metadata } from 'next'
+import ProjeGalerisi from '@/components/ProjeGalerisi'
+import KurumsalSeoBolumu from '@/components/KurumsalSeoBolumu'
+import RaporOrnegi from '@/components/RaporOrnegi'
+import SehirSeoEkBolumu from '@/components/SehirSeoEkBolumu'
+import { sehirSeoEk } from '@/lib/sehirSeoEk'
 import KisaOzet from '@/components/KisaOzet'
 import Link from 'next/link'
 import CalendlyButton from '@/components/CalendlyButton'
@@ -67,6 +72,7 @@ const faqs = [
   { q: "İstanbul'da SEO ajansı seçerken nelere dikkat etmeliyim?", a: "Canlı ve ziyaret edilebilir referanslar, Search Console verisiyle aylık rapor, sitenin ve hesapların sizin adınıza kalması ve sıralama garantisi vermemesi. 'Garantili 1. sıra' vaadi ya da toplu backlink paketi sunan ajanslardan uzak durun. Ayrıntılı kontrol listesi için SEO Fiyatları 2026 yazımıza bakabilirsiniz." },
   { q: "İstanbul'da hangi aramalarla başlamak daha hızlı sonuç verir?", a: "'istanbul seo ajansı' gibi genel aramalar çok rekabetçidir ve uzun vadeli hedeftir. 'kadıköy diş kliniği', 'bakırköy muhasebe bürosu' gibi ilçe ve hizmet birleşimli aramalarda küçük bir işletme bile birkaç ay içinde öne çıkabilir. Bu yüzden çalışmaya ilçe ve hizmet bazlı sayfalarla başlıyoruz." },
   { q: 'İstanbul dışında olmanız sorun olur mu?', a: "Hayır. SEO çalışması tamamen online yürür: görüşmeler video ile, raporlar Search Console ve Analytics üzerinden paylaşılır. İstanbul'da hizmet verdiğimiz, ziyaret edilebilir canlı projelerimiz (su deposu temizliği firması, avukatlık büroları) portföyümüzde yer alıyor." },
+  ...sehirSeoEk['istanbul'].sss,
 ]
 
 const jsonLd = {
@@ -287,6 +293,10 @@ export default function IstanbulSeoPage() {
         ]}
       />
 
+      <SehirSeoEkBolumu sehir="istanbul" />
+      <RaporOrnegi />
+      <KurumsalSeoBolumu yer="İstanbul" />
+      <ProjeGalerisi baslik="SEO Çalıştığımız Sitelerden Örnekler" />
       <ReviewsMarquee />
 
       <RelatedPages

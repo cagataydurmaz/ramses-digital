@@ -1,4 +1,9 @@
 import type { Metadata } from 'next'
+import ProjeGalerisi from '@/components/ProjeGalerisi'
+import KurumsalSeoBolumu from '@/components/KurumsalSeoBolumu'
+import RaporOrnegi from '@/components/RaporOrnegi'
+import SehirSeoEkBolumu from '@/components/SehirSeoEkBolumu'
+import { sehirSeoEk } from '@/lib/sehirSeoEk'
 import KisaOzet from '@/components/KisaOzet'
 import Link from 'next/link'
 import CitySeoSections from '@/components/CitySeoSections'
@@ -49,6 +54,7 @@ const faqs = [
   { q: "İzmir'de SEO ajansı seçerken nelere dikkat etmeliyim?", a: "Canlı ve ziyaret edilebilir referanslar, Search Console verisiyle aylık rapor, sitenin ve hesapların sizin adınıza kalması ve sıralama garantisi vermemesi. 'Garantili 1. sıra' vaadi ya da toplu backlink paketi sunan ajanslardan uzak durun." },
   { q: "İzmir'de hangi aramalarla başlamak daha hızlı sonuç verir?", a: "'izmir seo ajansı' gibi genel aramalar uzun vadeli hedeftir. 'bornova diş kliniği', 'karşıyaka emlak ofisi' gibi ilçe ve hizmet birleşimli aramalar daha az rekabetlidir ve daha hızlı sonuç verir. Turizm işletmelerinde ise Çeşme, Urla gibi ilçe adlarıyla ve yabancı dilde yapılan aramalar ayrıca planlanır." },
   { q: "İzmir'de SEO ile Google Ads birlikte mi yürütülmeli?", a: 'Hızlı müşteri gerekiyorsa evet. Google Ads ilk günden görünürlük sağlarken SEO zamanla birikir; reklam verisi hangi aramaların gerçekten müşteri getirdiğini gösterir ve SEO önceliklerini belirlemeye yardım eder. İzmir Google Ads sayfamızda reklam tarafını ayrıca anlatıyoruz.' },
+  ...sehirSeoEk['izmir'].sss,
 ]
 
 const jsonLd = {
@@ -203,6 +209,10 @@ export default function IzmirSeoPage() {
         ]}
       />
 
+      <SehirSeoEkBolumu sehir="izmir" />
+      <RaporOrnegi />
+      <KurumsalSeoBolumu yer="İzmir" />
+      <ProjeGalerisi baslik="SEO Çalıştığımız Sitelerden Örnekler" />
       <ReviewsMarquee />
 
       <SehirTeklifBolumu place="İzmir" />

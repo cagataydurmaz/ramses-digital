@@ -1,4 +1,9 @@
 import type { Metadata } from 'next'
+import ProjeGalerisi from '@/components/ProjeGalerisi'
+import KurumsalSeoBolumu from '@/components/KurumsalSeoBolumu'
+import RaporOrnegi from '@/components/RaporOrnegi'
+import SehirSeoEkBolumu from '@/components/SehirSeoEkBolumu'
+import { sehirSeoEk } from '@/lib/sehirSeoEk'
 import KisaOzet from '@/components/KisaOzet'
 import Link from 'next/link'
 import CitySeoSections from '@/components/CitySeoSections'
@@ -45,6 +50,7 @@ const faqs = [
   { q: 'Kayseri\'deki yerleşik ajanslarla nasıl rekabet edebilirim?', a: 'Yerleşik ajansların çoğu şablon strateji uyguluyor ve mobilya/gıda gibi sektörlere jenerik içerikle yaklaşıyor. Biz her müşteriye sektörüne özel strateji kuran, mühendislik disipliniyle çalışan bir ekibiz — bu da daha hızlı iletişim ve daha isabetli anahtar kelime hedeflemesi anlamına geliyor.' },
   { q: 'GEO (Yapay Zeka Optimizasyonu) Kayseri işletmesi için neden kritik?', a: 'GEO, ChatGPT ve Gemini gibi araçlarda "Kayseri\'de güvenilir X önerir misin?" sorusuna verilen cevaplarda kaynak olarak yer alma olasılığını artırmayı hedefler. Bu kanal henüz doymamış durumda — özellikle Kayseri\'nin niş B2B sektörlerinde (mobilya üretimi, gıda üretimi) erken hareket edenler avantajlı.' },
   ...sehirSeo['kayseri'].ekSss,
+  ...sehirSeoEk['kayseri'].sss,
 ]
 
 const jsonLd = {
@@ -187,6 +193,10 @@ export default function KayseriSeoPage() {
         </div>
       </section>
 
+      <SehirSeoEkBolumu sehir="kayseri" />
+      <RaporOrnegi />
+      <KurumsalSeoBolumu yer="Kayseri" />
+      <ProjeGalerisi baslik="SEO Çalıştığımız Sitelerden Örnekler" />
       <ReviewsMarquee />
 
       <SehirTeklifBolumu place="Kayseri" />

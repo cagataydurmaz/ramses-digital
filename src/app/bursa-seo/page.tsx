@@ -1,4 +1,9 @@
 import type { Metadata } from 'next'
+import ProjeGalerisi from '@/components/ProjeGalerisi'
+import KurumsalSeoBolumu from '@/components/KurumsalSeoBolumu'
+import RaporOrnegi from '@/components/RaporOrnegi'
+import SehirSeoEkBolumu from '@/components/SehirSeoEkBolumu'
+import { sehirSeoEk } from '@/lib/sehirSeoEk'
 import KisaOzet from '@/components/KisaOzet'
 import Link from 'next/link'
 import CitySeoSections from '@/components/CitySeoSections'
@@ -44,6 +49,7 @@ const faqs = [
   { q: 'Bursa\'daki yerleşik ajanslarla nasıl rekabet edebilirim?', a: 'Yerleşik ajansların çoğu şablon strateji uyguluyor ve otomotiv/mobilya gibi B2B sektörlere jenerik içerikle yaklaşıyor. Biz her müşteriye sektörüne özel strateji kuran, mühendislik disipliniyle çalışan bir ekibiz — bu da daha hızlı iletişim ve daha isabetli anahtar kelime hedeflemesi anlamına geliyor.' },
   { q: 'GEO (Yapay Zeka Optimizasyonu) Bursa işletmesi için neden kritik?', a: 'GEO, ChatGPT ve Gemini gibi araçlarda "Bursa\'da güvenilir X önerir misin?" sorusuna verilen cevaplarda kaynak olarak yer alma olasılığını artırmayı hedefler. Bu kanal henüz doymamış durumda — özellikle Bursa\'nın niş B2B sektörlerinde (otomotiv yan sanayi, mobilya üretimi) erken hareket edenler avantajlı.' },
   ...sehirSeo['bursa'].ekSss,
+  ...sehirSeoEk['bursa'].sss,
 ]
 
 const jsonLd = {
@@ -186,6 +192,10 @@ export default function BursaSeoPage() {
         </div>
       </section>
 
+      <SehirSeoEkBolumu sehir="bursa" />
+      <RaporOrnegi />
+      <KurumsalSeoBolumu yer="Bursa" />
+      <ProjeGalerisi baslik="SEO Çalıştığımız Sitelerden Örnekler" />
       <ReviewsMarquee />
 
       <SehirTeklifBolumu place="Bursa" />
