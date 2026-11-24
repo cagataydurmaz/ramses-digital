@@ -17,7 +17,10 @@ export interface IlSeoVeri {
   ozet: string // hero altı açıklama
   bolgeler: string[] // hero altında listelenen ilçe/bölgeler
   ilceler: { ad: string; not: string }[]
-  sektorler: { ad: string; not: string }[]
+  sektorler: { ad: string; not: string; arama?: string; slug?: string }[] // arama varsa sektör vitrini (telefonlu) gösterilir
+  mahalleler?: { ad: string; x: number; y: number; arama: string }[] // varsa semt haritası (x,y: 0–100, kuzey yukarı)
+  suAd?: string // ör. 'Boğaz'
+  su?: string // semt haritasında deniz/göl şekli (SVG path, 0–100)
   aramalar: { tur: string; ornek: string; rekabet: string; yaklasim: string }[]
   sss: { q: string; a: string }[]
   ilgili?: { label: string; href: string }[]
@@ -1592,11 +1595,25 @@ export const ilSeo: IlSeoVeri[] = [
       { ad: 'Beşiktaş çarşı ve iskele', not: 'Yoğun yaya trafiği; hızlı mobil site, güncel çalışma saati ve “şu an açık” aramaları.' },
     ],
     sektorler: [
-      { ad: 'Estetik, diş ve özel klinikler', not: 'Hekim ve tedavi sayfaları, mevzuata uygun iddiasız dil, gerçek fotoğraf ve randevu yolu; seçici hasta karşılaştırma yapar.' },
-      { ad: 'Hukuk ve danışmanlık', not: 'Reklam kısıtı olan mesleklerde uzmanlık alanı başına bilgilendirici sayfa ve SEO; yapay zekâ önerileri için net soru-cevap.' },
-      { ad: 'Restoran ve butik mekânlar', not: 'Menü, rezervasyon ve fotoğraf odaklı harita profili; İngilizce özet sayfa.' },
-      { ad: 'Premium hizmetler', not: 'Özel ders, kişisel antrenör, iç mimarlık gibi hizmetlerde portföy ve referans gösteren sade, hızlı site.' },
+      { ad: 'Estetik, diş ve özel klinikler', not: 'Hekim ve tedavi sayfaları, mevzuata uygun iddiasız dil, gerçek fotoğraf ve randevu yolu; seçici hasta karşılaştırma yapar.', arama: 'etiler diş kliniği', slug: 'dis-hekimleri-klinikler' },
+      { ad: 'Hukuk ve danışmanlık', not: 'Reklam kısıtı olan mesleklerde uzmanlık alanı başına bilgilendirici sayfa ve SEO; yapay zekâ önerileri için net soru-cevap.', arama: 'levent hukuk bürosu', slug: 'avukat-hukuk-burolari' },
+      { ad: 'Restoran ve butik mekânlar', not: 'Menü, rezervasyon ve fotoğraf odaklı harita profili; İngilizce özet sayfa.', arama: 'bebek kahvaltı', slug: 'restoran-kafe' },
+      { ad: 'Premium hizmetler', not: 'Özel ders, kişisel antrenör, iç mimarlık gibi hizmetlerde portföy ve referans gösteren sade, hızlı site.', arama: 'akatlar pilates stüdyosu' },
     ],
+    mahalleler: [
+      { ad: 'Levent', x: 24, y: 30, arama: 'levent hukuk bürosu' },
+      { ad: 'Akatlar', x: 40, y: 18, arama: 'akatlar pilates stüdyosu' },
+      { ad: 'Etiler', x: 56, y: 30, arama: 'etiler diş kliniği' },
+      { ad: 'Bebek', x: 78, y: 24, arama: 'bebek kahvaltı' },
+      { ad: 'Ulus', x: 60, y: 46, arama: 'ulus özel ders' },
+      { ad: 'Arnavutköy', x: 77, y: 40, arama: 'arnavutköy balık restoranı' },
+      { ad: 'Gayrettepe', x: 22, y: 58, arama: 'gayrettepe mali müşavir' },
+      { ad: 'Ortaköy', x: 66, y: 64, arama: 'ortaköy restoran' },
+      { ad: 'Balmumcu', x: 40, y: 62, arama: 'balmumcu veteriner' },
+      { ad: 'Beşiktaş çarşı', x: 54, y: 84, arama: 'beşiktaş kuaför' },
+    ],
+    suAd: 'Boğaz',
+    su: 'M62 100 C70 86 74 76 76 70 C80 58 84 48 86 34 C88 22 90 10 92 0 L100 0 L100 100 Z',
     aramalar: [
       { tur: 'İlçe + uzmanlık', ornek: 'beşiktaş estetik kliniği', rekabet: 'Yüksek', yaklasim: 'Uzmanlık ve hekim sayfaları, güçlü harita profili ve düzenli yorum; zaman alır.' },
       { tur: 'Semt + hizmet', ornek: 'etiler diş hekimi', rekabet: 'Orta', yaklasim: 'Semt adıyla özgün içerik; ilçe aramasından daha hızlı sonuç verir.' },

@@ -18,7 +18,7 @@ function alanAdi(ad: string) {
 }
 const ilkHarfBuyuk = (s: string) => s.replace(/(^|\s)(\S)/g, (_, b, h) => b + h.toLocaleUpperCase('tr'))
 
-export default function GoogleOnizleme() {
+export default function GoogleOnizleme({ varsayilanYer = 'İzmit' }: { varsayilanYer?: string } = {}) {
   const [ad, setAd] = useState('')
   const [is, setIs] = useState('')
   const [yer, setYer] = useState('')
@@ -32,7 +32,7 @@ export default function GoogleOnizleme() {
 
   const gAd = ad.trim() || 'İşletmenizin Adı'
   const gIs = is.trim() || 'Diş Kliniği'
-  const gYer = yer.trim() || 'İzmit'
+  const gYer = yer.trim() || varsayilanYer
   const sorgu = `${gYer} ${gIs}`.toLocaleLowerCase('tr')
   const alan = alanAdi(ad.trim())
   const doldu = ad.trim().length > 1
@@ -60,7 +60,7 @@ export default function GoogleOnizleme() {
         </div>
         <div>
           <label htmlFor="go-yer" className="block text-white text-sm font-medium mb-2">Şehir veya ilçe</label>
-          <input id="go-yer" value={yer} maxLength={24} placeholder="Örn. Gebze" onChange={(e) => { setYer(e.target.value); izle() }} className={girdi} />
+          <input id="go-yer" value={yer} maxLength={24} placeholder={`Örn. ${varsayilanYer}`} onChange={(e) => { setYer(e.target.value); izle() }} className={girdi} />
         </div>
         <a
           href={waLink(mesaj)}

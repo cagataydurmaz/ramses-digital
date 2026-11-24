@@ -1,5 +1,8 @@
 import type { Metadata } from 'next'
-import { HaritaTelefonBolumu } from '@/components/telefon/TelefonBolumleri'
+import { HaritaTelefonBolumu, SeoVideoBolumu } from '@/components/telefon/TelefonBolumleri'
+import GoogleOnizleme from '@/components/GoogleOnizleme'
+import MahalleHaritasi from '@/components/MahalleHaritasi'
+import SektorVitrini from '@/components/SektorVitrini'
 import { seoBaslik } from '@/lib/seoBaslik'
 import Link from 'next/link'
 import { MapPin, Search, ArrowRight, CheckCircle2, TrendingUp, Briefcase } from 'lucide-react'
@@ -141,12 +144,32 @@ export default function IlSeoSayfasi({ v }: { v: IlSeoVeri }) {
 
       <KisaOzet>{kisaOzet}</KisaOzet>
 
+      {v.mahalleler && (
+        <>
+          <section aria-labelledby="google-onizleme" className="py-10 md:py-14 px-6">
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-10">
+                <p className="text-blue-400 text-xs font-semibold uppercase tracking-wider mb-2">10 saniyede deneyin</p>
+                <h2 id="google-onizleme" className="text-3xl md:text-4xl font-bold text-white mb-4">{v.bulunma} İşletmeniz Google&apos;da Nasıl Görünür?</h2>
+                <p className="text-zinc-400 max-w-2xl mx-auto">İşletmenizin adını ve ne iş yaptığınızı yazın; müşterinizin göreceği sonucu anında görün.</p>
+              </div>
+              <GoogleOnizleme varsayilanYer={v.ad} />
+            </div>
+          </section>
+          <SeoVideoBolumu />
+          <MahalleHaritasi ilce={v.ad} bulunma={v.bulunma} mahalleler={v.mahalleler} su={v.su} suAd={v.suAd} />
+        </>
+      )}
+
       <section className="pb-14 md:pb-16 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{v.bulunma} Hangi Sektörler İçin SEO?</h2>
             <p className="text-zinc-400 max-w-xl mx-auto">{sec([`${v.icin} ekonomik yapısına göre farklılaştırılmış strateji; şablon değil, sektöre özel plan.`, `${v.bulunma} en çok aranan iş kollarında öne çıkmak için her sektöre ayrı yaklaşım.`, `Her sektörün müşterisi Google'da farklı arar; ${v.ad} için plan bu farka göre kurulur.`], 1)}</p>
           </div>
+          {v.sektorler.some((x) => x.arama) ? (
+            <SektorVitrini sektorler={v.sektorler} />
+          ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {v.sektorler.map(({ ad, not }) => (
               <div key={ad} className="bg-[#0D1225] border border-white/[0.06] rounded-xl p-6">
@@ -158,6 +181,7 @@ export default function IlSeoSayfasi({ v }: { v: IlSeoVeri }) {
               </div>
             ))}
           </div>
+          )}
         </div>
       </section>
 
