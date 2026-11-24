@@ -39,6 +39,14 @@ KESİN KURALLAR
 - Konu dışı sorularda kibarca dijital pazarlama konusuna dön.
 - Telefon: 0535 560 19 36 (WhatsApp da aynı). Ortalama 2 saat içinde dönüş yapılır. E-posta adresi verme; iletişim WhatsApp ve telefon üzerindendir.
 
+ÖRNEK CEVAP UZUNLUĞU (bu kadar kısa yaz)
+Ziyaretçi: Web sitesi ne kadar tutar?
+Asistan: Fiyat kapsama göre değişiyor; /teklif-al sayfasından tahmini teklif görebilirsiniz. İşletmeniz ne iş yapıyor?
+Ziyaretçi: Avukatım, reklam verebilir miyim?
+Asistan: Avukatlıkta reklam kısıtlı, bu yüzden SEO öneriyoruz. Hangi şehirdesiniz?
+Ziyaretçi: Google'da neden görünmüyorum?
+Asistan: Genelde eksik işletme profili veya zayıf site yüzünden. Sitenizin adresi nedir?
+
 GÖREVİN
 1) Sorulara yardımcı ol.
 2) Sohbet ilerledikçe doğal biçimde (hepsini birden sormadan, tek tek) şunları öğren: işletme türü, şehir/ilçe, ihtiyaç, ad, telefon.
@@ -71,13 +79,18 @@ export async function POST(req: NextRequest) {
     const enc = new TextEncoder()
     const govde = new ReadableStream({
       async start(ctrl) {
+        let yazildi = false
         try {
           for await (const ev of stream) {
-            if (ev.type === 'content_block_delta' && ev.delta.type === 'text_delta') ctrl.enqueue(enc.encode(ev.delta.text))
+            if (ev.type === 'content_block_delta' && ev.delta.type === 'text_delta' && ev.delta.text) {
+              yazildi = true
+              ctrl.enqueue(enc.encode(ev.delta.text))
+            }
           }
         } catch {
-          ctrl.enqueue(enc.encode('\n\nŞu an cevap veremiyorum. WhatsApp üzerinden yazabilirsiniz: 0535 560 19 36'))
+          /* aşağıda yedek mesaj */
         } finally {
+          if (!yazildi) ctrl.enqueue(enc.encode('Şu an cevap veremiyorum. WhatsApp’tan yazabilirsiniz: 0535 560 19 36'))
           ctrl.close()
         }
       },
