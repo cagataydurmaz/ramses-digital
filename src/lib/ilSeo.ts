@@ -994,7 +994,7 @@ export const ilSeo: IlSeoVeri[] = [
       { q: "Başiskele'deki küçük işletmeler için nereden başlamalı?", a: 'Eksiksiz bir Google İşletme Profili, düzenli gerçek yorumlar ve telefonla tek dokunuşla aranabilen hızlı bir site. Çoğu müşteri yakındaki işletmeyi haritadan bulur.' },
       { q: 'Yüz yüze görüşebilir miyiz?', a: "Evet. İzmit merkezli bir ekibiz; Başiskele'deki işletmelerle yüz yüze görüşme kolayca ayarlanabilir." },
     ],
-    ilgili: [{ label: 'Kartepe SEO', href: '/kartepe-seo' }, { label: 'İzmit SEO', href: '/izmit-seo' }],
+    ilgili: [{ label: 'Başiskele Dijital Pazarlama', href: '/basiskele-dijital-pazarlama' }, { label: 'Başiskele Google Ads', href: '/basiskele-google-ads' }, { label: 'Kartepe SEO', href: '/kartepe-seo' }, { label: 'İzmit SEO', href: '/izmit-seo' }],
   },
   {
     slug: 'kartepe', ad: 'Kartepe', bulunma: "Kartepe'de", icin: "Kartepe'nin", yonelme: "Kartepe'ye",
@@ -1023,7 +1023,7 @@ export const ilSeo: IlSeoVeri[] = [
       { q: "Kartepe'deki konaklama işletmeleri SEO'ya ne zaman başlamalı?", a: 'Kış sezonu için en geç sonbahar başında, yaz ve hafta sonu turizmi için ilkbaharda. Ziyaretçiler konaklamayı haftalar öncesinden araştırır; sayfaların o zamana kadar Google\'da yer edinmiş olması gerekir.' },
       { q: 'Yüz yüze görüşebilir miyiz?', a: "Evet. İzmit merkezli bir ekibiz; Kartepe'deki işletmelerle yüz yüze görüşme kolayca ayarlanabilir." },
     ],
-    ilgili: [{ label: 'Başiskele SEO', href: '/basiskele-seo' }, { label: 'İzmit SEO', href: '/izmit-seo' }],
+    ilgili: [{ label: 'Kartepe Dijital Pazarlama', href: '/kartepe-dijital-pazarlama' }, { label: 'Kartepe Google Ads', href: '/kartepe-google-ads' }, { label: 'Başiskele SEO', href: '/basiskele-seo' }, { label: 'İzmit SEO', href: '/izmit-seo' }],
   },
   {
     slug: 'karamursel', ad: 'Karamürsel', bulunma: "Karamürsel'de", icin: "Karamürsel'in", yonelme: "Karamürsel'e",

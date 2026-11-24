@@ -137,6 +137,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/gebze-dijital-pazarlama` },
     { url: `${base}/dilovasi-dijital-pazarlama` },
     { url: `${base}/cayirova-dijital-pazarlama` },
+    { url: `${base}/kartepe-dijital-pazarlama` },
+    { url: `${base}/kartepe-google-ads` },
+    { url: `${base}/basiskele-dijital-pazarlama` },
+    { url: `${base}/basiskele-google-ads` },
     ...sektorSehir.map((s) => ({ url: `${base}/${s.slug}` })),
   ]
 

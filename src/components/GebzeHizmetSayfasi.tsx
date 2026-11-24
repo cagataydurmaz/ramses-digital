@@ -31,6 +31,7 @@ export interface GebzeHizmetVeri {
   ilgili: { label: string; href: string }[]
   cta: string
   yer?: { ad: string; seoSlug: string } // varsayılan Gebze
+  haritaArama?: string // harita animasyonundaki örnek arama
 }
 
 export function gebzeMetadata(v: GebzeHizmetVeri): Metadata {
@@ -98,7 +99,7 @@ export default function GebzeHizmetSayfasi({ v }: { v: GebzeHizmetVeri }) {
           <HeroGuvenSatiri />
           </div>
           <div className="mx-auto w-full max-w-[300px] lg:max-w-none">
-            {v.slug.includes('google-ads') ? <ReklamTelefon aramalar={[`${yer.ad} oto servis`, `${yer.ad} nakliyat`].map((x) => x.toLocaleLowerCase('tr-TR'))} /> : <HaritaTelefon arama={`${yer.ad} fabrika tedarikçisi`.toLocaleLowerCase('tr-TR')} />}
+            {v.slug.includes('google-ads') ? <ReklamTelefon aramalar={[`${yer.ad} oto servis`, `${yer.ad} nakliyat`].map((x) => x.toLocaleLowerCase('tr-TR'))} /> : <HaritaTelefon arama={(v.haritaArama ?? `${yer.ad} fabrika tedarikçisi`).toLocaleLowerCase('tr-TR')} />}
           </div>
         </div>
       </section>

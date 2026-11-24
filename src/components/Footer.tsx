@@ -109,6 +109,8 @@ const localPages = [
   { href: '/gebze-dijital-pazarlama', label: 'Gebze Dijital Pazarlama' },
   { href: '/dilovasi-dijital-pazarlama', label: 'Dilovası Dijital Pazarlama' },
   { href: '/cayirova-dijital-pazarlama', label: 'Çayırova Dijital Pazarlama' },
+  { href: '/kartepe-dijital-pazarlama', label: 'Kartepe Dijital Pazarlama' },
+  { href: '/basiskele-dijital-pazarlama', label: 'Başiskele Dijital Pazarlama' },
   ...sektorSehir.map((s) => ({ href: `/${s.slug}`, label: `${s.sehir.ad} ${s.meslek.baslik}` })),
 ]
 
