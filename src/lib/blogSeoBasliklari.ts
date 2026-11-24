@@ -1,6 +1,11 @@
 // Google'da görünen kısa başlıklar (≤60 karakter). Sayfadaki H1 başlık ve adres
 // değişmez; sadece <title> kısalır ki arama sonuçlarında kesilmesin.
 export const blogSeoBasliklari: Record<string, string> = {
+  'web-sitesine-yapay-zeka-asistani-chatbot': 'Web Sitesine Yapay Zekâ Asistanı (Chatbot) Koymak',
+  'yapay-zeka-ile-reels-hazirlama': 'Yapay Zekâ ile Reels Nasıl Hazırlanır? (Adım Adım)',
+  'chatgpt-claude-gemini-isletmeler-icin-karsilastirma': 'ChatGPT mi Claude mu Gemini mi? İşletmeler İçin',
+  'claude-ile-isletme-icin-10-pratik-kullanim': 'Claude ile İşletme İçin 10 Pratik Kullanım',
+  'yapay-zeka-ile-google-yorumlarina-cevap': 'Yapay Zekâ ile Google Yorumlarına Cevap Verme',
   'internet-sitesi-yaptirmak': 'İnternet Sitesi Yaptırmak: Adım Adım Rehber',
   'google-da-neden-cikmiyorum': "İşletmem Google'da Neden Çıkmıyor? 9 Sebep",
   'google-isletme-profili-nasil-acilir': 'Google İşletme Profili Nasıl Açılır? (Adım Adım)',
