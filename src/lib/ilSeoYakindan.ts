@@ -460,4 +460,44 @@ export const ilSeoYakindan: Record<string, IlSeoYakindan> = {
       { baslik: 'Kısaltmaları da kullanın', metin: 'Müşteriler “GOP” diye de arar; sayfada hem Gaziosmanpaşa hem GOP geçmeli.' },
     ],
   },
+  guzelbahce: {
+    baslik: 'Güzelbahçe’de Müşteri Nereden Geliyor?',
+    paragraf:
+      'Güzelbahçe, İzmir’in batısında körfez kıyısında, site ve müstakil konutların yoğun olduğu sakin bir ilçe. İşletmelerin müşterisi iki gruptan gelir: ilçede yaşayan aileler ve hafta sonu sahile, balık restoranlarına ya da kahvaltıya gelen İzmirliler. İlk grup semt adıyla ve yakınlığa göre, ikinci grup haritadaki fotoğraf ve yorumlara bakarak seçim yapar.',
+    ipuclari: [
+      { baslik: 'İki kitleye iki içerik', metin: 'İlçede yaşayanlar için hizmet sayfaları, dışarıdan gelenler için ulaşım, otopark ve menü bilgisi.' },
+      { baslik: 'Hafta sonu saatleri', metin: 'Harita profilinde hafta sonu ve bayram saatlerini güncel tutun; yanlış saat en çok kaybettiren hatadır.' },
+      { baslik: 'Semt adları', metin: 'Yelki, Siteler, Kahramandere gibi adları sayfalarda doğal biçimde kullanın.' },
+    ],
+  },
+  narlidere: {
+    baslik: 'Narlıdere’de Yakınlık Kazandırır',
+    paragraf:
+      'Narlıdere, Balçova ile Güzelbahçe arasında, körfeze bakan sahil konutlarıyla yamaçtaki siteleri bir arada barındıran bir ilçe. Burada müşteri çoğunlukla yakınındaki hizmeti arar: telefondan “narlıdere + hizmet” ya da semt adıyla arama yapar, haritada ilk gördüğü birkaç işletmeyi karşılaştırır. Komşu ilçelerle iç içe olduğu için hizmet bölgesini doğru tanımlamak önemlidir.',
+    ipuclari: [
+      { baslik: 'Hizmet bölgesini yazın', metin: 'Narlıdere, Balçova ve Güzelbahçe’ye hizmet veriyorsanız bunu sayfada ve harita profilinde açıkça belirtin.' },
+      { baslik: 'Sahil mekânları', metin: 'Sahilevleri ve Limanreis’teki kafe ve restoranlar için manzara ve menü fotoğrafları öne çıkmalı.' },
+      { baslik: 'Aile hizmetleri', metin: 'Kreş, kurs ve klinikte karar yorumlarla verilir; memnun müşteriden düzenli yorum isteyin.' },
+    ],
+  },
+  beykoz: {
+    baslik: 'Beykoz’da Üç Ayrı Müşteri',
+    paragraf:
+      'Beykoz; Kavacık’taki iş merkezleri, Boğaz kıyısındaki köklü semtler ve kuzeydeki doğa ile villa bölgeleri arasında geniş bir alana yayılır. Kavacık’ta çalışanlar öğle arası ve iş sonrası hizmet arar; Kanlıca ve Çubuklu’ya gelen ziyaretçi Boğaz manzaralı kahvaltı ve restoran seçer; Acarlar ve villa bölgelerindeki aileler ise ev ve eğitim hizmetlerini semt adıyla arar.',
+    ipuclari: [
+      { baslik: 'Hedefinizi seçin', metin: 'Her işletme tüm Beykoz’a hitap etmez; asıl müşterinizin olduğu semti sayfanın merkezine koyun.' },
+      { baslik: 'Manzara fotoğrafı', metin: 'Boğaz kıyısındaki mekânlarda profesyonel manzara ve masa fotoğrafları harita tıklamasını doğrudan etkiler.' },
+      { baslik: 'Mevsimsel içerik', metin: 'Riva ve Polonezköy’de yaz ve kış için farklı içerik ve çalışma saatleri yayınlayın.' },
+    ],
+  },
+  mudanya: {
+    baslik: 'Mudanya’da Ziyaretçi ve Yerleşik Müşteri',
+    paragraf:
+      'Mudanya, Bursa’nın denize açılan ilçesi; tarihi evleri, iskelesi ve Trilye gibi köyleriyle hafta sonu ziyaretçisi çeker. Güzelyalı ve merkezdeki konutlar ise yıl boyu yaşayan bir nüfusa ev sahipliği yapar. Restoran ve konaklama işletmeleri Bursa ve İstanbul’dan gelen ziyaretçiyi, hizmet işletmeleri ise ilçede yaşayanları hedeflemelidir.',
+    ipuclari: [
+      { baslik: 'Trilye ayrı aranır', metin: 'Trilye’deki işletmeler için “trilye + hizmet” aramalarına özel sayfa açın.' },
+      { baslik: 'Ulaşım bilgisi', metin: 'Bursa merkezinden ve İstanbul’dan deniz yoluyla gelişe dair kısa bilgi, ziyaretçinin kararını kolaylaştırır.' },
+      { baslik: 'Yerel ürün', metin: 'Zeytin ve zeytinyağı satan üreticiler için ürün sayfaları ve online sipariş yolu.' },
+    ],
+  },
 }
