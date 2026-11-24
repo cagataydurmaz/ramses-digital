@@ -39,6 +39,8 @@ Kural: bir yerde hangi hizmet aranıyorsa (Search Console'da gösterim) ona ayr�
 - Zamanlanmış görevler: günlük indeksleme isteği (`~/.claude/scheduled-tasks/ramses-gunluk-indeksleme`), aylık il raporu (her ayın 1'i).
 
 ## Bekleyen işler (24 Kasım 2026)
-- `/ilceler/*` 25 rehber sayfasını derinleştirmek (450–570 kelime).
-- Sektör × şehir sayfaları (ör. /istanbul-avukat-seo): 5 sektör × 5 şehir.
-- İç Anadolu + Karadeniz il sayfaları (3. dalga), 1 Aralık raporundan sonra.
+- Derinleşme sırası: Kocaeli → İstanbul → Sakarya → İzmir → Ankara (24 Kasım'da hepsinin ilk turu yapıldı). Yeni ilçe/sektör sayfası yalnızca Search Console'da o ilçe/hizmet adıyla ~10+ gösterim varsa açılır.
+- Sektör × şehir: `sektorSehir.ts`'de içerik yazılan şehir+meslek kombinasyonu otomatik sayfa olur (Kocaeli'de 10 sektör).
+- Üst alan (hero) düzeni: solda başlık, sağda sayfaya özel telefon animasyonu (`src/components/telefon/*`, `GoogleAramaAnimasyonu`).
+- Formlar ve asistan e-posta değil WhatsApp'a gönderir (`src/lib/whatsapp.ts`); Gmail görünür yerlerde kullanılmaz.
+- 1 Aralık aylık raporundan sonra İç Anadolu + Karadeniz için veri bazlı karar.
