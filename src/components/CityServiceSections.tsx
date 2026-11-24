@@ -34,7 +34,7 @@ export default function CityServiceSections({ city, hizmet }: { city: string; hi
   const bolgeli = hizmet === 'ads' || hizmet === 'reklam'
   const sezonlu = hizmet === 'ads' || hizmet === 'pazarlama' || hizmet === 'reklam'
   return (
-    <section className="py-16 px-6">
+    <section className="py-10 md:py-14 px-6">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{h}</h2>

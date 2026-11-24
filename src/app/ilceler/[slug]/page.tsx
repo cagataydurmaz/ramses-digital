@@ -90,7 +90,7 @@ export default function IlcePage({ params }: { params: { slug: string } }) {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      <section className="relative pt-24 md:pt-32 pb-16 px-6 overflow-hidden">
+      <section className="relative pt-24 md:pt-32 pb-10 md:pb-12 px-6 overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[450px] bg-[radial-gradient(ellipse_at_center,rgba(59,130,246,0.144)_0%,rgba(59,130,246,0.048)_40%,transparent_70%)] rounded-full pointer-events-none" />
         <div data-hero-bolunmus className="max-w-6xl mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-[1fr_340px] gap-8 lg:gap-14 items-center">
           <div className="text-center lg:text-left">
@@ -127,14 +127,14 @@ export default function IlcePage({ params }: { params: { slug: string } }) {
         </div>
       </section>
 
-      <section className="pb-16 px-6">
+      <section className="pb-10 md:pb-12 px-6">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">{ilce.name} Ekonomisi ve Aramalar</h2>
           <p className="text-zinc-400 leading-relaxed">{ilce.ekonomi}</p>
         </div>
       </section>
 
-      <section className="pb-16 px-6">
+      <section className="pb-10 md:pb-12 px-6">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-3 text-center">{bulunma(ilce.name)} Sektöre Göre Yaklaşım</h2>
           <p className="text-zinc-400 text-center max-w-2xl mx-auto mb-10">Aynı site her sektöre uymaz. {ilce.name} için öncelik verdiğimiz alanlar:</p>
@@ -153,7 +153,7 @@ export default function IlcePage({ params }: { params: { slug: string } }) {
       </section>
 
       {detay && (
-        <section className="pb-16 px-6">
+        <section className="pb-10 md:pb-12 px-6">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-3 text-center">Örnek Senaryo: {bulunma(ilce.name)} Bir İşletme</h2>
             <p className="text-zinc-500 text-sm text-center max-w-2xl mx-auto mb-8">
@@ -179,7 +179,7 @@ export default function IlcePage({ params }: { params: { slug: string } }) {
       )}
 
       {detay && (
-        <section className="pb-16 px-6">
+        <section className="pb-10 md:pb-12 px-6">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-8 text-center">{ilce.name} İçin Yerel Görünürlükte 3 Öncelik</h2>
             <div className="grid md:grid-cols-3 gap-5">
@@ -195,7 +195,7 @@ export default function IlcePage({ params }: { params: { slug: string } }) {
       )}
 
       {plan && (
-        <section className="pb-16 px-6">
+        <section className="pb-10 md:pb-12 px-6">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-3 text-center">{ilce.name} İçin İlk Sayfa Planı</h2>
             <p className="text-zinc-400 text-center max-w-2xl mx-auto mb-8">Hangi sayfa, hangi aramayı karşılar ve içinde ne olmalı? {bulunma(ilce.name)} işletmeler için örnek bir başlangıç:</p>
@@ -223,7 +223,7 @@ export default function IlcePage({ params }: { params: { slug: string } }) {
         </section>
       )}
 
-      <section className="pb-16 px-6">
+      <section className="pb-10 md:pb-12 px-6">
         <div className="max-w-3xl mx-auto bg-blue-500/5 border border-blue-500/15 rounded-2xl p-8">
           <div className="flex items-center gap-2 mb-3">
             <Search size={18} className="text-blue-400" />
@@ -238,7 +238,7 @@ export default function IlcePage({ params }: { params: { slug: string } }) {
         </div>
       </section>
 
-      <section className="pb-16 px-6">
+      <section className="pb-10 md:pb-12 px-6">
         <div className="max-w-5xl mx-auto grid sm:grid-cols-3 gap-5">
           {[
             { icon: Smartphone, title: 'Mobil öncelikli', desc: 'Yerel aramaların çoğu telefondan yapılıyor; site hızlı açılır, tek dokunuşla arama ve WhatsApp sağlar.' },
@@ -258,7 +258,7 @@ export default function IlcePage({ params }: { params: { slug: string } }) {
         </div>
       </section>
 
-      <section className="py-16 px-6">
+      <section className="py-10 md:py-14 px-6">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-10 text-center">{ilce.name} İçin Sık Sorulan Sorular</h2>
           <div className="space-y-4">
@@ -287,7 +287,7 @@ export default function IlcePage({ params }: { params: { slug: string } }) {
         ]}
       />
 
-      <section className="py-20 px-6 bg-[#080D18]">
+      <section className="py-12 md:py-16 px-6 bg-[#080D18]/55 border-y border-white/[0.04]">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-white mb-4">{bulunma(ilce.name)} Görünür Olmaya Başlayın</h2>
           <p className="text-zinc-400 text-lg mb-8">30 dakikalık ücretsiz görüşmede işletmenizi ve aramaları birlikte inceleyelim.</p>

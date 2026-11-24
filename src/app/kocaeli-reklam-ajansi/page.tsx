@@ -122,7 +122,7 @@ export default function KocaeliReklamAjansiPage() {
       />
 
       {/* Hero */}
-      <section className="relative pt-24 md:pt-32 pb-20 px-6 overflow-hidden">
+      <section className="relative pt-24 md:pt-32 pb-12 md:pb-16 px-6 overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[500px] bg-[radial-gradient(ellipse_at_center,rgba(59,130,246,0.144)_0%,rgba(59,130,246,0.048)_40%,transparent_70%)] rounded-full pointer-events-none" />
         <div data-hero-bolunmus className="max-w-6xl mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-[1fr_340px] gap-8 lg:gap-14 items-center">
           <div className="text-center lg:text-left">
@@ -156,7 +156,7 @@ export default function KocaeliReklamAjansiPage() {
       </section>
 
       {/* Stats */}
-      <section className="pb-16 px-6">
+      <section className="pb-10 md:pb-12 px-6">
         <div className="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6">
           {[
             { value: '10', label: 'Kocaeli İlçesine Hizmet' },
@@ -173,7 +173,7 @@ export default function KocaeliReklamAjansiPage() {
       </section>
 
       {/* Services */}
-      <section className="pb-24 px-6">
+      <section className="pb-14 md:pb-16 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
@@ -205,7 +205,7 @@ export default function KocaeliReklamAjansiPage() {
       </section>
 
       {/* Districts */}
-      <section className="py-16 px-6 bg-[#080D18]">
+      <section className="py-10 md:py-14 px-6 bg-[#080D18]/55 border-y border-white/[0.04]">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-2xl font-bold text-white mb-3">Kocaeli&apos;nin Tüm İlçelerine Hizmet Veriyoruz</h2>
           <p className="text-zinc-500 text-sm mb-8">İzmit merkez bölgesinden sanayi ilçelerine, her bölgenin dinamiği farklı — uzmanlık önemli.</p>
@@ -220,7 +220,7 @@ export default function KocaeliReklamAjansiPage() {
       </section>
 
       {/* Why Us */}
-      <section className="py-20 px-6">
+      <section className="py-12 md:py-16 px-6">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
@@ -244,7 +244,7 @@ export default function KocaeliReklamAjansiPage() {
       </section>
 
       {/* Real Clients */}
-      <section className="py-20 px-6 bg-[#080D18]">
+      <section className="py-12 md:py-16 px-6 bg-[#080D18]/55 border-y border-white/[0.04]">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-white mb-3">Gerçek Müşteriler, Canlı Siteler</h2>
@@ -279,7 +279,7 @@ export default function KocaeliReklamAjansiPage() {
       {/* FAQ */}
       <CityServiceSections city="kocaeli" hizmet="reklam" />
 
-      <section className="py-20 px-6">
+      <section className="py-12 md:py-16 px-6">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-10 text-center">
             Sık Sorulan Sorular
@@ -308,7 +308,7 @@ export default function KocaeliReklamAjansiPage() {
       />
 
       {/* CTA */}
-      <section className="py-20 px-6 bg-[#080D18]">
+      <section className="py-12 md:py-16 px-6 bg-[#080D18]/55 border-y border-white/[0.04]">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-white mb-4">
             Kocaeli&apos;nin Neresinde Olursanız Olun, Birlikte Büyüyelim

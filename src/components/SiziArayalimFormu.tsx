@@ -21,7 +21,7 @@ export default function SiziArayalimFormu() {
   }
 
   return (
-    <section aria-labelledby="sizi-arayalim" className="py-12 px-6">
+    <section aria-labelledby="sizi-arayalim" className="py-8 md:py-10 px-6">
       <div className="max-w-3xl mx-auto bg-[#0D1225] border border-white/[0.08] rounded-2xl p-6 sm:p-8">
         {durum === 'tamam' ? (
           <div className="text-center py-4">

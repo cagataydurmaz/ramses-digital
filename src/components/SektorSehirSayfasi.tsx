@@ -107,14 +107,14 @@ export default function SektorSehirSayfasi({ slug }: { slug: string }) {
 
       <KapakGorseli src={`/gorseller/${s.slug}.webp`} alt={`${v.sehir.ad} ${s.ad.toLocaleLowerCase('tr-TR')} için SEO`} />
 
-      <section className="pb-16 px-6">
+      <section className="pb-10 md:pb-12 px-6">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">{v.yerelBaslik}</h2>
           <p className="text-zinc-400 leading-relaxed">{v.yerelMetin}</p>
         </div>
       </section>
 
-      <section className="pb-20 px-6">
+      <section className="pb-12 md:pb-16 px-6">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-3 text-center">{v.sehir.de} {v.meslek.ad} Aramaları: Bölge, Arama, Sayfa</h2>
           <p className="text-zinc-400 text-center max-w-2xl mx-auto mb-8">Hangi bölgede, hangi arama yapılıyor ve o aramayı hangi sayfa karşılar?</p>
@@ -141,7 +141,7 @@ export default function SektorSehirSayfasi({ slug }: { slug: string }) {
         </div>
       </section>
 
-      <section className="pb-20 px-6">
+      <section className="pb-12 md:pb-16 px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-10 text-center">{s.kisaAd} İçin Neler Yapıyoruz?</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -158,7 +158,7 @@ export default function SektorSehirSayfasi({ slug }: { slug: string }) {
         </div>
       </section>
 
-      <section className="py-16 px-6 bg-[#080D18]">
+      <section className="py-10 md:py-14 px-6 bg-[#080D18]/55 border-y border-white/[0.04]">
         <div className="max-w-4xl mx-auto">
           <div className="bg-blue-500/5 border border-blue-500/15 rounded-2xl p-8">
             <ShieldCheck size={24} className="text-blue-400 mb-4" />
@@ -175,7 +175,7 @@ export default function SektorSehirSayfasi({ slug }: { slug: string }) {
         </div>
       </section>
 
-      <section className="py-20 px-6">
+      <section className="py-12 md:py-16 px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-10 text-center">Önerdiğimiz Hizmetler</h2>
           <div className="flex flex-wrap justify-center gap-5">
@@ -190,7 +190,7 @@ export default function SektorSehirSayfasi({ slug }: { slug: string }) {
         </div>
       </section>
 
-      <section className="py-20 px-6 bg-[#080D18]">
+      <section className="py-12 md:py-16 px-6 bg-[#080D18]/55 border-y border-white/[0.04]">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-10 text-center">{v.sehir.ad} {v.meslek.ad} SEO: Sık Sorulan Sorular</h2>
           <div className="space-y-4">

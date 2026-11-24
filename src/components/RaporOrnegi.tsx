@@ -12,7 +12,7 @@ const bolumler = [
 
 export default function RaporOrnegi() {
   return (
-    <section aria-labelledby="rapor-ornegi" className="py-16 px-6 bg-[#080D18]">
+    <section aria-labelledby="rapor-ornegi" className="py-10 md:py-14 px-6 bg-[#080D18]/55 border-y border-white/[0.04]">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-10">
           <FileBarChart size={26} className="text-blue-400 mx-auto mb-3" />

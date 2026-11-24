@@ -114,7 +114,7 @@ export default function SektorSayfasi({ v }: { v: SektorVeri }) {
 
       <KapakGorseli src={`/gorseller/${v.slug}.webp`} alt={`${v.ad} için dijital pazarlama`} />
 
-      <section className="pb-20 px-6">
+      <section className="pb-12 md:pb-16 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{v.kisaAd} İçin Dijitalde Neler Önemli?</h2>
@@ -131,7 +131,7 @@ export default function SektorSayfasi({ v }: { v: SektorVeri }) {
         </div>
       </section>
 
-      <section className="py-16 px-6 bg-[#080D18]">
+      <section className="py-10 md:py-14 px-6 bg-[#080D18]/55 border-y border-white/[0.04]">
         <div className="max-w-4xl mx-auto">
           <div className="bg-blue-500/5 border border-blue-500/15 rounded-2xl p-8">
             <ShieldCheck size={24} className="text-blue-400 mb-4" />
@@ -148,7 +148,7 @@ export default function SektorSayfasi({ v }: { v: SektorVeri }) {
         </div>
       </section>
 
-      <section className="py-20 px-6">
+      <section className="py-12 md:py-16 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Önerdiğimiz Hizmetler</h2>
@@ -166,7 +166,7 @@ export default function SektorSayfasi({ v }: { v: SektorVeri }) {
         </div>
       </section>
 
-      <section className="pb-20 px-6">
+      <section className="pb-12 md:pb-16 px-6">
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
           <div>
             <h2 className="text-2xl font-bold text-white mb-2">İlgili Portföy Projeleri</h2>
@@ -200,7 +200,7 @@ export default function SektorSayfasi({ v }: { v: SektorVeri }) {
         </div>
       </section>
 
-      <section className="py-20 px-6 bg-[#080D18]">
+      <section className="py-12 md:py-16 px-6 bg-[#080D18]/55 border-y border-white/[0.04]">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-10 text-center">Sık Sorulan Sorular</h2>
           <div className="space-y-4">

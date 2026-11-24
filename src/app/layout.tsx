@@ -7,6 +7,7 @@ import ConsentScripts from '@/components/ConsentScripts'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import LeadTracker from '@/components/LeadTracker'
+import SayfaArkaPlani from '@/components/SayfaArkaPlani'
 
 // Lazy-load widget'lar — first paint'i engellemez
 const WhatsAppButton = dynamic(() => import('@/components/WhatsAppButton'), { ssr: false })
@@ -86,7 +87,10 @@ export default function RootLayout({
       </head>
       <body className="bg-[#0A0F1E] text-white antialiased">
         <Navbar />
-        <main>{children}</main>
+        <main className="relative isolate">
+          <SayfaArkaPlani />
+          {children}
+        </main>
         <Footer />
         <WhatsAppButton />
         <PhoneButton />

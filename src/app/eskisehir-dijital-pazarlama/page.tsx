@@ -147,7 +147,7 @@ export default function EskisehirDijitalPazarlamaPage() {
       />
 
       {/* Hero */}
-      <section className="relative pt-24 md:pt-32 pb-20 px-6 overflow-hidden">
+      <section className="relative pt-24 md:pt-32 pb-12 md:pb-16 px-6 overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[500px] bg-[radial-gradient(ellipse_at_center,rgba(59,130,246,0.144)_0%,rgba(59,130,246,0.048)_40%,transparent_70%)] rounded-full pointer-events-none" />
         <div data-hero-bolunmus className="max-w-6xl mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-[1fr_340px] gap-8 lg:gap-14 items-center">
           <div className="text-center lg:text-left">
@@ -181,7 +181,7 @@ export default function EskisehirDijitalPazarlamaPage() {
       </section>
 
       {/* Channels */}
-      <section className="pb-24 px-6">
+      <section className="pb-14 md:pb-16 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
@@ -220,7 +220,7 @@ export default function EskisehirDijitalPazarlamaPage() {
       </section>
 
       {/* Sectors */}
-      <section className="py-16 px-6 bg-[#080D18]">
+      <section className="py-10 md:py-14 px-6 bg-[#080D18]/55 border-y border-white/[0.04]">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-2xl font-bold text-white mb-3">Eskişehir&apos;de Hizmet Verdiğimiz Sektörler</h2>
           <p className="text-zinc-500 text-sm mb-8">Öğrenci pazarının ve sanayi üretiminin operasyonel diliyle konuşuyoruz, jenerik pazarlama kalıplarıyla değil.</p>
@@ -235,7 +235,7 @@ export default function EskisehirDijitalPazarlamaPage() {
       </section>
 
       {/* Advantages */}
-      <section className="py-20 px-6">
+      <section className="py-12 md:py-16 px-6">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-white mb-4">Neden Ramses Dijital?</h2>
@@ -257,7 +257,7 @@ export default function EskisehirDijitalPazarlamaPage() {
       </section>
 
       {/* Local proof */}
-      <section className="py-16 px-6 bg-[#080D18]">
+      <section className="py-10 md:py-14 px-6 bg-[#080D18]/55 border-y border-white/[0.04]">
         <div className="max-w-4xl mx-auto">
           <div className="bg-blue-500/5 border border-blue-500/15 rounded-2xl p-8 text-center">
             <CheckCircle2 size={32} className="text-blue-400 mx-auto mb-4" />
@@ -282,7 +282,7 @@ export default function EskisehirDijitalPazarlamaPage() {
       {/* FAQ */}
       <CityServiceSections city="eskisehir" hizmet="pazarlama" />
 
-      <section className="py-20 px-6">
+      <section className="py-12 md:py-16 px-6">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-10 text-center">Sık Sorulan Sorular</h2>
           <div className="space-y-4">
@@ -309,7 +309,7 @@ export default function EskisehirDijitalPazarlamaPage() {
       />
 
       {/* CTA */}
-      <section className="py-20 px-6 bg-[#080D18]">
+      <section className="py-12 md:py-16 px-6 bg-[#080D18]/55 border-y border-white/[0.04]">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-white mb-4">
             Eskişehir&apos;de Dijital Büyümeye Başlayın

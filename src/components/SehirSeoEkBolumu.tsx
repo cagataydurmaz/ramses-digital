@@ -5,7 +5,7 @@ export default function SehirSeoEkBolumu({ sehir }: { sehir: string }) {
   const v = sehirSeoEk[sehir]
   if (!v) return null
   return (
-    <section className="py-16 px-6">
+    <section className="py-10 md:py-14 px-6">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl font-bold text-white mb-3 text-center">{v.tabloBaslik}</h2>
         <p className="text-zinc-400 text-center max-w-2xl mx-auto mb-8">Her bölgenin sektörü ve arama alışkanlığı farklı. Sayfa yapısını buna göre kuruyoruz.</p>

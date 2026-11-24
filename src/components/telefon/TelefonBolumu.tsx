@@ -20,7 +20,7 @@ export default function TelefonBolumu({
   children: ReactNode
 }) {
   return (
-    <section className="py-16 px-6">
+    <section className="py-10 md:py-14 px-6">
       <div className={`max-w-6xl mx-auto grid grid-cols-1 gap-10 lg:gap-16 items-center ${ters ? 'lg:grid-cols-[1fr_340px]' : 'lg:grid-cols-[340px_1fr]'}`}>
         <div className={ters ? 'lg:order-2' : ''}>{children}</div>
         <div className={ters ? 'lg:order-1' : ''}>

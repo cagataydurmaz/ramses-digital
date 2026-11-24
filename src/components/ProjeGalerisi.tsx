@@ -8,7 +8,7 @@ import TelefonCercevesi from './TelefonCercevesi'
 export default function ProjeGalerisi({ baslik = 'Yaptığımız Web Sitelerinden Örnekler', adet = 6 }: { baslik?: string; adet?: number }) {
   const liste = projects.filter((p) => p.mobil).slice(0, adet)
   return (
-    <section aria-label={baslik} className="py-16 px-6">
+    <section aria-label={baslik} className="py-10 md:py-14 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-10">
           <h2 className="text-3xl font-bold text-white mb-3">{baslik}</h2>

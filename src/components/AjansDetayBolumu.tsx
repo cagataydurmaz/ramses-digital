@@ -22,7 +22,7 @@ export interface AjansDetay {
 export default function AjansDetayBolumu({ d }: { d: AjansDetay }) {
   return (
     <>
-      <section className="py-16 px-6">
+      <section className="py-10 md:py-14 px-6">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-3 text-center">{d.tabloBaslik}</h2>
           <p className="text-zinc-400 text-center max-w-2xl mx-auto mb-8">{d.tabloAciklama}</p>
@@ -45,7 +45,7 @@ export default function AjansDetayBolumu({ d }: { d: AjansDetay }) {
         </div>
       </section>
 
-      <section className="py-16 px-6 bg-[#080D18]">
+      <section className="py-10 md:py-14 px-6 bg-[#080D18]/55 border-y border-white/[0.04]">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-10 text-center">{d.surecBaslik}</h2>
           <ol className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
@@ -60,7 +60,7 @@ export default function AjansDetayBolumu({ d }: { d: AjansDetay }) {
         </div>
       </section>
 
-      <section className="py-16 px-6">
+      <section className="py-10 md:py-14 px-6">
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-2xl font-bold text-white mb-3">Şehirlere Göre {d.sehirEtiket}</h2>
           <p className="text-zinc-400 mb-6">Bulunduğunuz şehre özel arama alışkanlıkları ve sektör yapısıyla hazırlanmış sayfalar:</p>

@@ -96,7 +96,7 @@ export default function WebTasarimAjansiPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      <section className="relative pt-32 pb-20 px-6 overflow-hidden">
+      <section className="relative pt-32 pb-12 md:pb-16 px-6 overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[450px] bg-[radial-gradient(ellipse_at_center,rgba(59,130,246,0.144)_0%,rgba(59,130,246,0.048)_40%,transparent_70%)] rounded-full pointer-events-none" />
         <div className="max-w-5xl mx-auto text-center relative z-10">
           <div className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 rounded-full px-4 py-1.5 mb-6">
@@ -120,7 +120,7 @@ export default function WebTasarimAjansiPage() {
         </div>
       </section>
 
-      <section className="pb-24 px-6">
+      <section className="pb-14 md:pb-16 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Neden Ramses Dijital?</h2>
@@ -139,7 +139,7 @@ export default function WebTasarimAjansiPage() {
         </div>
       </section>
 
-      <section className="py-16 px-6 bg-[#080D18]">
+      <section className="py-10 md:py-14 px-6 bg-[#080D18]/55 border-y border-white/[0.04]">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-white mb-4">Yaptığımız Çalışmalar</h2>
           <p className="text-zinc-400 text-sm mb-8 max-w-xl mx-auto">
@@ -167,7 +167,7 @@ export default function WebTasarimAjansiPage() {
       <WebSitesiTelefonBolumu />
       <AjansDetayBolumu d={detay} />
       <ProjeGalerisi />
-      <section className="py-20 px-6">
+      <section className="py-12 md:py-16 px-6">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-10 text-center">Sık Sorulan Sorular</h2>
           <div className="space-y-4">
@@ -192,7 +192,7 @@ export default function WebTasarimAjansiPage() {
         ]}
       />
 
-      <section className="py-20 px-6 bg-[#080D18]">
+      <section className="py-12 md:py-16 px-6 bg-[#080D18]/55 border-y border-white/[0.04]">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-white mb-4">
             Profesyonel Web Siteniz Hazır Olsun

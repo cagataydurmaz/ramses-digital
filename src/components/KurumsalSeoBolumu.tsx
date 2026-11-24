@@ -18,7 +18,7 @@ const yanlislar = [
 
 export default function KurumsalSeoBolumu({ yer }: { yer: string }) {
   return (
-    <section aria-labelledby="kurumsal-seo" className="py-16 px-6">
+    <section aria-labelledby="kurumsal-seo" className="py-10 md:py-14 px-6">
       <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-6">
         <div className="bg-[#0D1225] border border-white/[0.08] rounded-2xl p-7">
           <h2 id="kurumsal-seo" className="text-2xl font-bold text-white mb-2">{yer} Kurumsal SEO</h2>

@@ -8,7 +8,7 @@ interface RelatedPage {
 
 export default function RelatedPages({ pages }: { pages: RelatedPage[] }) {
   return (
-    <section className="py-16 px-6 border-t border-white/[0.06]">
+    <section className="py-10 md:py-14 px-6 border-t border-white/[0.06]">
       <div className="max-w-4xl mx-auto text-center">
         <p className="text-zinc-500 text-xs font-medium uppercase tracking-wider mb-5">İlgili Sayfalar</p>
         <div className="flex flex-wrap justify-center gap-3">
