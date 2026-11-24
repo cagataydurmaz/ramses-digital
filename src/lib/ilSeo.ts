@@ -1374,6 +1374,37 @@ export const ilSeo: IlSeoVeri[] = [
     ],
     ilgili: [{ label: 'İstanbul SEO', href: '/istanbul-seo' }, { label: 'Kadıköy SEO', href: '/kadikoy-seo' }, { label: 'Kartal SEO', href: '/kartal-seo' }, { label: 'Pendik SEO', href: '/pendik-seo' }],
   },
+  // ───────── SAKARYA (il geneli; ilçe aramaları henüz yok) ─────────
+  {
+    slug: 'sakarya', ad: 'Sakarya', bulunma: "Sakarya'da", icin: "Sakarya'nın", yonelme: "Sakarya'ya", rehber: 'sakarya',
+    ozet: "Adapazarı'ndan Serdivan'a, Sapanca'dan Karasu'ya Sakarya'daki üretici, turizm ve yerel işletmeler için SEO ve dijital pazarlama. 'Sakarya + hizmet' ve ilçe aramalarında Google'da görünür olun.",
+    bolgeler: ['Adapazarı', 'Serdivan', 'Erenler', 'Sapanca', 'Arifiye', 'Akyazı', 'Hendek', 'Karasu', 'Kocaali', 'Geyve'],
+    ilceler: [
+      { ad: 'Adapazarı ve Erenler', not: 'İlin ticaret merkezi; sağlık, hukuk, eğitim ve perakende işletmeleri için ilçe adıyla yapılan aramalar ve harita görünürlüğü.' },
+      { ad: 'Serdivan', not: 'Sakarya Üniversitesi çevresi; öğrenciye yönelik kafe, kurs, yurt ve kiralık ev aramaları, yeni konut bölgeleri.' },
+      { ad: 'Sapanca ve Arifiye', not: 'Göl çevresinde bungalov, otel, kahvaltı ve düğün mekânları; İstanbul ve Kocaeli’den gelen hafta sonu ziyaretçileri.' },
+      { ad: 'Akyazı, Hendek ve organize sanayi bölgeleri', not: 'Otomotiv yan sanayi, makine ve gıda üreticileri; ürün, kapasite ve teklif odaklı kurumsal sayfalar.' },
+      { ad: 'Karasu ve Kocaali', not: 'Karadeniz kıyısında yazlık, pansiyon ve sahil işletmeleri; sezon öncesi hazırlanan sayfalar.' },
+    ],
+    sektorler: [
+      { ad: 'Otomotiv yan sanayi ve üretim', not: 'Ürün grubu sayfaları, kalite belgeleri, İngilizce sürüm ve teklif formu; satın almacıların bulabileceği yapı.' },
+      { ad: 'Turizm ve konaklama', not: 'Sapanca ve Karasu için gerçek fotoğraflı, doğrudan rezervasyon alan sayfalar; platform komisyonuna bağımlılığı azaltır.' },
+      { ad: 'Sağlık ve eğitim', not: 'Klinik ve kurslar için hizmet sayfaları, mevzuata uygun dil ve ön kayıt/randevu formu.' },
+      { ad: 'Yerel hizmetler', not: 'Esnaf, oto servis ve ev hizmetleri için kısa hizmet sayfaları ve Google İşletme Profili.' },
+    ],
+    aramalar: [
+      { tur: 'İl araması', ornek: 'sakarya seo ajansı', rekabet: 'Orta', yaklasim: 'Sakarya geneline özel sayfa ve ilçe bölümleri.' },
+      { tur: 'İlçe + hizmet', ornek: 'sapanca web tasarım', rekabet: 'Düşük', yaklasim: 'İlçe rehberi ve bu sayfadan bağlantı; arama arttıkça ayrı sayfa.' },
+      { tur: 'Turizm', ornek: 'sapanca bungalov', rekabet: 'Yüksek', yaklasim: 'Özelliğe göre ayrılmış sayfalar (jakuzili, göl manzaralı) ve gerçek fotoğraf.' },
+      soruSatiri,
+    ],
+    sss: [
+      { q: "Sakarya'da her ilçe için ayrı sayfa gerekir mi?", a: 'Hayır. Müşterileriniz belirli bir ilçe adıyla arıyorsa o ilçe için özgün içerikli ayrı bir sayfa faydalıdır; aksi hâlde ilçeleri anlatan güçlü tek bir sayfa daha sağlıklıdır. Kopya içerikli onlarca ilçe sayfası açmak önerilmez.' },
+      { q: "Sapanca'daki turizm işletmeleri SEO'ya ne zaman başlamalı?", a: 'Hafta sonu ve tatil aramaları yıl boyunca sürse de yaz ve bayram dönemlerinden en az 2–3 ay önce başlamak gerekir. Özelliğe göre ayrılmış sayfalar ve gerçek fotoğraflar rekabette fark yaratır.' },
+      { q: "Sakarya'daki işletmelerle nasıl çalışıyorsunuz?", a: 'Kocaeli kökenli bir ekibiz ve Sakarya’daki işletmelere uzaktan hizmet veriyoruz. Görüşmeler, içerik onayı ve aylık raporlama çevrim içi yürütülür.' },
+    ],
+    ilgili: [{ label: 'Sapanca Web Tasarım', href: '/ilceler/sapanca' }, { label: 'Adapazarı Web Tasarım', href: '/ilceler/adapazari' }, { label: 'Serdivan Web Tasarım', href: '/ilceler/serdivan' }, { label: 'Kocaeli SEO', href: '/kocaeli-seo' }, { label: 'Kartepe SEO', href: '/kartepe-seo' }],
+  },
 ]
 
 export const ilSeoBul = (slug: string) => ilSeo.find((i) => i.slug === slug)

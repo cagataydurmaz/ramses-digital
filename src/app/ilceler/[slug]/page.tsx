@@ -275,6 +275,7 @@ export default function IlcePage({ params }: { params: { slug: string } }) {
       <RelatedPages
         pages={[
         ...(ilSeoBul(ilce.slug) ? [{ label: `${ilce.name} SEO`, href: `/${ilce.slug}-seo` }] : []),
+        ...(ilRehberi && ilSeoBul(ilRehberi.slug) ? [{ label: `${ilRehberi.name} SEO`, href: `/${ilRehberi.slug}-seo` }] : []),
         ...(ilRehberi ? [{ label: `${ilRehberi.name} İl Rehberi`, href: `/ilceler/${ilRehberi.slug}` }] : []),
         ...komsular.filter((k) => k.slug !== ilRehberi?.slug).map((k) => ({ label: rehberAdi(k), href: `/ilceler/${k.slug}` })),
           { label: 'Tüm Bölgeler', href: '/ilceler' },
