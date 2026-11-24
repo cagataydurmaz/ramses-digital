@@ -43,20 +43,24 @@ export default function SosyalMedyaTelefon() {
             <Clapperboard size={18} />
           </div>
           <div className="grid grid-cols-3 gap-[2px]">
-            {gorunen.map((g, i) => (
-              <div
-                key={`${g.yazi}-${adim}-${i}`}
-                className={`relative aspect-[4/5] bg-gradient-to-br ${g.renk} flex items-end p-1.5 ${i === 0 ? 'animate-[belir_.45s_ease-out]' : ''}`}
-              >
-                {g.tur === 'reels' && <Play size={12} className="absolute top-1.5 right-1.5 fill-white" />}
-                {g.tur === 'karusel' && <Layers size={12} className="absolute top-1.5 right-1.5" />}
-                <span className="text-[10px] font-semibold leading-tight drop-shadow">{g.yazi}</span>
-                {i === 0 && <Heart size={26} className="absolute inset-0 m-auto fill-white text-white animate-[pop_.6s_ease-out_.3s_both]" />}
-              </div>
-            ))}
-            {ESKI.concat(ESKI).slice(0, 9 - gorunen.length).map((r, i) => (
-              <div key={`eski-${i}`} className={`aspect-[4/5] bg-gradient-to-br ${r}`} />
-            ))}
+            {Array.from({ length: 9 }).map((_, i) => {
+              const g = gorunen[i]
+              return (
+                // Kutular sabit; yalnızca içerik değişir (sayfa kayması olmaz).
+                <div key={i} className="relative aspect-[4/5] overflow-hidden">
+                  {g ? (
+                    <div key={`${g.yazi}-${adim}`} className={`absolute inset-0 bg-gradient-to-br ${g.renk} flex items-end p-1.5 ${i === 0 ? 'animate-[belir_.45s_ease-out]' : ''}`}>
+                      {g.tur === 'reels' && <Play size={12} className="absolute top-1.5 right-1.5 fill-white" />}
+                      {g.tur === 'karusel' && <Layers size={12} className="absolute top-1.5 right-1.5" />}
+                      <span className="text-[10px] font-semibold leading-tight drop-shadow">{g.yazi}</span>
+                      {i === 0 && <Heart size={26} className="absolute inset-0 m-auto fill-white text-white animate-[pop_.6s_ease-out_.3s_both]" />}
+                    </div>
+                  ) : (
+                    <div className={`absolute inset-0 bg-gradient-to-br ${ESKI[i % ESKI.length]}`} />
+                  )}
+                </div>
+              )
+            })}
           </div>
           {adim > 0 && adim <= YENI.length && (
             <p key={adim} className="absolute bottom-3 left-1/2 -translate-x-1/2 whitespace-nowrap text-[11px] bg-white/10 backdrop-blur border border-white/15 rounded-full px-3 py-1 animate-[belir_.4s_ease-out]">
