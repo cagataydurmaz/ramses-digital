@@ -386,7 +386,7 @@ export const yapayZekaPostlari: Post[] = [
       <table>
         <thead><tr><th>Kötü cevap</th><th>İyi cevap</th></tr></thead>
         <tbody>
-          <tr><td>"O gün çok yoğunduk, anlayışınız için teşekkürler."</td><td>"Beklettiğimiz ve bilgi vermediğimiz için özür dileriz; haklısınız. Gecikme olduğunda artık bekleyen danışanlarımıza hemen bilgi veriyoruz. Yaşadığınızı dinlemek isteriz, 0xxx numaramızdan bize ulaşabilirsiniz."</td></tr>
+          <tr><td>"O gün çok yoğunduk, anlayışınız için teşekkürler."</td><td>"Beklettiğimiz ve bilgi vermediğimiz için özür dileriz; haklısınız. Gecikme olduğunda artık bekleyen danışanlarımıza hemen bilgi veriyoruz. Yaşadığınızı dinlemek isteriz; bize telefonla veya WhatsApp’tan ulaşabilirsiniz."</td></tr>
         </tbody>
       </table>
       <p><em>Not: İyi cevaptaki "artık bilgi veriyoruz" gibi bir taahhüdü ancak gerçekten uyguluyorsanız yazın.</em></p>

@@ -25,9 +25,9 @@ const solutions = [
   { icon: Globe, title: 'Web Uygulaması & Site', desc: 'Next.js ile yüksek performanslı web siteleri. Kocaeli KOBİ\'lerinden sanayi kurumlarına.' },
   { icon: Zap, title: 'İş Süreçleri Otomasyonu', desc: 'n8n ile tedarik zinciri, sipariş yönetimi, fatura akışı ve CRM entegrasyonu.' },
   { icon: Layers, title: 'API & ERP Entegrasyonu', desc: 'Logo, SAP, Mikro, WooCommerce — Kocaeli\'deki sanayi firmalarının kullandığı sistemlerle entegrasyon.' },
-  { icon: BarChart3, title: 'Veri & Raporlama', desc: 'GA4, Looker Studio ve özel dashboard\'larla Kocaeli operasyonlarınızı görsel olarak takip edin.' },
+  { icon: BarChart3, title: 'Veri & Raporlama', desc: 'GA4, Looker Studio ve özel rapor panosu\'larla Kocaeli operasyonlarınızı görsel olarak takip edin.' },
   { icon: Cpu, title: 'Yapay Zeka Entegrasyonu', desc: 'Müşteri destek botu, belge analizi, sınıflandırma ve öneri motorları. Claude & GPT-4 entegrasyonu.' },
-  { icon: Shield, title: 'Güvenlik & Bakım', desc: 'SSL, yedekleme, güvenlik taraması ve uptime monitoring. Kocaeli operasyonlarınız kesintisiz.' },
+  { icon: Shield, title: 'Güvenlik & Bakım', desc: 'SSL, yedekleme, güvenlik taraması ve kesintisiz çalışma takibi. Kocaeli operasyonlarınız kesintisiz.' },
 ]
 
 const sektorler = [

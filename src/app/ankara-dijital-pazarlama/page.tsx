@@ -52,8 +52,8 @@ const channels = [
   {
     icon: Zap,
     title: 'Pazarlama Otomasyonu (n8n)',
-    desc: 'Tekrarlayan pazarlama süreçlerini otomatikleştirin. CRM entegrasyonu, lead nurturing, bildirim akışları.',
-    tags: ['n8n', 'CRM', 'Lead Nurturing', 'Webhook'],
+    desc: 'Tekrarlayan pazarlama süreçlerini otomatikleştirin. CRM entegrasyonu, aday müşteri takibi, bildirim akışları.',
+    tags: ['n8n', 'CRM', 'Aday Müşteri Takibi', 'Webhook'],
     href: '/hizmetler/n8n-otomasyon',
   },
   {
@@ -67,7 +67,7 @@ const channels = [
     icon: BarChart3,
     title: 'Veri Analizi & Raporlama',
     desc: 'GA4, Looker Studio ve dönüşüm hunisi analiziyle hangi kanalın işe yaradığını kesin olarak görün.',
-    tags: ['GA4', 'Looker Studio', 'Dönüşüm Hunisi', 'Dashboard'],
+    tags: ['GA4', 'Looker Studio', 'Dönüşüm Hunisi', 'Rapor Panosu'],
     href: '/hizmetler/veri-analizi',
   },
 ]
@@ -87,7 +87,7 @@ const sectors = [
 const faqs = [
   { q: 'Ankara\'daki rakiplerime karşı nasıl öne çıkabilirim?', a: 'Üç odak noktası: (1) Google Haritalar\'da üst sıra. (2) Yerel/sektörel anahtar kelimede içerik üstünlüğü. (3) Kurumsal güven sinyalleri — Ankara\'nın B2B ağırlıklı pazarında referanslar ve otorite içeriği belirleyici.' },
   { q: 'Ankara\'daki hukuk büroları ve danışmanlık firmaları için özel bir yaklaşımınız var mı?', a: 'Evet. Portföyümüzde İstanbul Barosu\'na kayıtlı avukat müşterilerimiz var. Avukatlık Kanunu\'nun reklam yasağı nedeniyle bu sektörde tamamen SEO ve içerik otoritesine dayalı, kurumsal kimliğe uygun bir strateji uyguluyoruz — Ankara\'daki benzer sektörler için de aynı yaklaşım geçerli.' },
-  { q: 'Uzaktan çalışıyor musunuz, yoksa Ankara\'da yerinde mi?', a: 'Tüm hizmetlerimiz uzaktan yürütülüyor. Toplantılar Google Meet/Zoom üzerinden, raporlar dijital dashboard ve PDF ile paylaşılıyor.' },
+  { q: 'Uzaktan çalışıyor musunuz, yoksa Ankara\'da yerinde mi?', a: 'Tüm hizmetlerimiz uzaktan yürütülüyor. Toplantılar Google Meet/Zoom üzerinden, raporlar dijital rapor panosu ve PDF ile paylaşılıyor.' },
   { q: 'Yapay zeka reklamcılığı ve GEO nedir, Ankara işletmesi için gerekli mi?', a: 'GEO (Generative Engine Optimization), ChatGPT veya Gemini\'de "Ankara\'da [sektörünüz]" aramasında alıntılanma olasılığını artırmak için yapılan içerik ve yapı çalışmasıdır. Ankara\'nın kurumsal/B2B pazarında bu kanal henüz doymamış — erken hareket eden işletmeler avantajlı.' },
   ...cityServiceFaqs('ankara', 'pazarlama'),
 ]

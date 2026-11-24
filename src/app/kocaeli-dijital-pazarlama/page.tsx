@@ -52,8 +52,8 @@ const channels = [
   {
     icon: Zap,
     title: 'Pazarlama Otomasyonu (n8n)',
-    desc: 'Tekrarlayan pazarlama süreçlerini otomatikleştirin. CRM entegrasyonu, lead nurturing, bildirim akışları.',
-    tags: ['n8n', 'CRM', 'Lead Nurturing', 'Webhook'],
+    desc: 'Tekrarlayan pazarlama süreçlerini otomatikleştirin. CRM entegrasyonu, aday müşteri takibi, bildirim akışları.',
+    tags: ['n8n', 'CRM', 'Aday Müşteri Takibi', 'Webhook'],
     href: '/hizmetler/n8n-otomasyon',
   },
   {
@@ -67,7 +67,7 @@ const channels = [
     icon: BarChart3,
     title: 'Veri Analizi & Raporlama',
     desc: 'GA4, Looker Studio ve dönüşüm hunisi analiziyle hangi kanalın işe yaradığını kesin olarak görün.',
-    tags: ['GA4', 'Looker Studio', 'Dönüşüm Hunisi', 'Dashboard'],
+    tags: ['GA4', 'Looker Studio', 'Dönüşüm Hunisi', 'Rapor Panosu'],
     href: '/hizmetler/veri-analizi',
   },
 ]
@@ -87,7 +87,7 @@ const sectors = [
 const faqs = [
   { q: 'Kocaeli\'deki rakiplerime karşı nasıl öne çıkabilirim?', a: 'Üç odak noktası: (1) Google Haritalar\'da üst sıra — çoğu yerel rakip GBP\'yi hâlâ eksik dolduruyor. (2) Yerel anahtar kelimede içerik üstünlüğü — "İzmit + hizmetiniz" aramasında bilgi veren tek site olmak. (3) Kullanıcı yorumları — yerel aramalarda en belirleyici faktörlerden biri.' },
   { q: 'Kocaeli\'deki KOBİ\'ler dijital pazarlamadan gerçekten fayda görüyor mu?', a: 'Kesinlikle. Portföyümüzdeki Kocaeli merkezli Psk. Nur Çelen\'in sitesi SEO çalışması sonrası organik aramadan düzenli randevu almaya başladı. Yerel işletmeler için dijital pazarlama; reklam panolarından ve gazetelerden çok daha ölçülebilir ve maliyet etkin sonuçlar verir.' },
-  { q: 'Uzaktan çalışıyor musunuz, yoksa yerinde mi?', a: 'Tüm hizmetlerimiz uzaktan yürütülüyor. Toplantılar Google Meet/Zoom üzerinden, raporlar dijital dashboard ve PDF ile paylaşılıyor. Kocaeli kökenli olmamız yerel pazarı anlamamızı sağlıyor; fiziksel ofis gerekliliği ortadan kalktı.' },
+  { q: 'Uzaktan çalışıyor musunuz, yoksa yerinde mi?', a: 'Tüm hizmetlerimiz uzaktan yürütülüyor. Toplantılar Google Meet/Zoom üzerinden, raporlar dijital rapor panosu ve PDF ile paylaşılıyor. Kocaeli kökenli olmamız yerel pazarı anlamamızı sağlıyor; fiziksel ofis gerekliliği ortadan kalktı.' },
   { q: 'Yapay zeka reklamcılığı ve GEO nedir, Kocaeli işletmesi için gerekli mi?', a: 'GEO (Generative Engine Optimization), ChatGPT veya Gemini\'de "Kocaeli\'de [sektörünüz]" aramasında alıntılanma olasılığını artırmak için yapılan içerik ve yapı çalışmasıdır. AEO (Answer Engine Optimization) ise Google\'da direkt cevap kutusuna girmektir. Yapay zekâ destekli arama özellikleri yaygınlaşıyor; bugün başlayan işletmeler yarın önemli bir avantaja sahip olacak.' },
   ...cityServiceFaqs('kocaeli', 'pazarlama'),
 ]

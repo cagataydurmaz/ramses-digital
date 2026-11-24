@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     'İnternet sitesi yaptırmak isteyen işletmelere modern, hızlı ve SEO uyumlu web tasarım. Mobil uyumlu, Google’a hazır, dönüşüm odaklı web siteleri.',
   alternates: { canonical: 'https://ramsesdigital.com/hizmetler/web-tasarim' },
   openGraph: {
-    title: 'Web Tasarım Hizmeti | Ramses Digital',
+    title: 'Web Tasarım Hizmeti | Ramses Dijital',
     description: 'Performans odaklı, modern, SEO uyumlu web siteleri. Next.js, WordPress, Shopify.',
     url: 'https://ramsesdigital.com/hizmetler/web-tasarim',
     images: ['https://ramsesdigital.com/og-image.png'],
@@ -42,8 +42,8 @@ const process = [
   { step: '01', title: 'Keşif & Strateji', desc: 'Hedef kitle araştırması, rakip analizi, marka kimliği değerlendirmesi ve site mimarisi planlaması.' },
   { step: '02', title: 'UX & Wireframe', desc: 'Figma üzerinde düşük ve yüksek detaylı tasarımlar. Kullanıcı yolculuğu (user journey) optimizasyonu.' },
   { step: '03', title: 'UI Tasarım', desc: 'Marka kimliğine uygun, modern ve dönüşüm odaklı görsel tasarım. Tüm sayfa türleri için.' },
-  { step: '04', title: 'Geliştirme', desc: 'Next.js veya WordPress ile pixel-perfect kod yazımı. SEO, performans ve erişilebilirlik standartlarında.' },
-  { step: '05', title: 'Test & Yayın', desc: 'Cross-browser test, hız testi, mobil test, form testleri. Vercel, Netlify veya kendi sunucunuza güvenli deploy.' },
+  { step: '04', title: 'Geliştirme', desc: 'Next.js veya WordPress ile özenli, temiz kod yazımı. SEO, performans ve erişilebilirlik standartlarında.' },
+  { step: '05', title: 'Test & Yayın', desc: 'Cross-browser test, hız testi, mobil test, form testleri. Vercel, Netlify veya kendi sunucunuza güvenli yayına alma.' },
 ]
 
 const faqs = [
@@ -51,7 +51,7 @@ const faqs = [
   { q: 'Web sitesi, internet sitesi ve web sayfası aynı şey mi?', a: 'Günlük dilde evet. Web sitesi ya da internet sitesi, alan adınızla açılan sitenin tamamıdır; web sayfası ise o sitenin içindeki tek bir sayfadır (örneğin iletişim sayfası). Web tasarım, bu sitenin planlanıp yapılması işidir.' },
   { q: 'Web sitem ne kadar sürede hazır olur?', a: 'Tek sayfa landing: 1-2 hafta. Kurumsal site (5-10 sayfa): 3-5 hafta. Karmaşık e-ticaret veya özel sistem: 8-16 hafta. Süreyi içerik hazırlık hızı ve revizyon sayısı belirler.' },
   { q: 'Fiyatlandırma nasıl?', a: 'Landing sayfa, kurumsal web sitesi, e-ticaret ve özel Next.js projeleri farklı kapsam ve fiyat seviyelerindedir. Tüm paketler: SEO altyapı, mobil uyum, hosting kurulumu, 30 gün destek dahil. Ücretsiz danışmanlıkta net fiyat sunuyoruz.' },
-  { q: 'Hangi teknolojiyi kullanıyorsunuz?', a: 'Next.js (React 18, TypeScript) ana tercihimiz — performans ve SEO için en iyisi. WordPress (Elementor/Bricks) bütçe sınırlı projeler için. Shopify ve WooCommerce e-ticaret için. Vercel ve Hetzner üzerinde deploy ediyoruz.' },
+  { q: 'Hangi teknolojiyi kullanıyorsunuz?', a: 'Next.js (React 18, TypeScript) ana tercihimiz — performans ve SEO için en iyisi. WordPress (Elementor/Bricks) bütçe sınırlı projeler için. Shopify ve WooCommerce e-ticaret için. Vercel ve Hetzner üzerinde yayına alıyoruz.' },
   { q: 'İçerik yönetimi (CMS) yapılabilir mi?', a: 'Evet. Headless CMS (Sanity, Strapi) veya WordPress üzerinden içerik yönetim paneli kuruyoruz. Yönetici girişi, blog yazısı ekleme, ürün güncelleme gibi işlemleri kolayca yapabilirsiniz. 1 saatlik eğitim videosu da pakete dahil.' },
   { q: 'SEO çalışması yapıyor musunuz?', a: 'Site yapımında SEO altyapısı (schema markup, meta tag, sitemap, hız) zorunlu olarak dahildir. İçerik üretimi, anahtar kelime stratejisi ve backlink çalışması için ayrı SEO hizmet paketimiz mevcut.' },
   { q: 'Hosting ve domain dahil mi?', a: 'İlk yıl Vercel hosting ücretsiz pakete dahildir. Domain alımında size yardımcı oluyoruz, sahipliği size ait olur. İkinci yıldan itibaren self-hosting veya bizim yönetimimizde devam edebilirsiniz.' },
@@ -163,7 +163,7 @@ export default function WebTasarimHizmetPage() {
               <li>Server-side rendering (SSR) sayesinde Google daha hızlı indexler</li>
               <li>Image optimization yerleşik gelir; sayfa hızı maksimum</li>
               <li>React tabanlı; geliştirici bulmak kolay</li>
-              <li>Vercel deploy ile global CDN ücretsiz</li>
+              <li>Vercel ile hızlı küresel yayın ücretsiz</li>
               <li>Schema markup, OG image, sitemap otomatik üretilebilir</li>
             </ul>
             <p>WordPress hâlâ %43 pazar payına sahip ama yavaş kalıyor. Modern alternatif olarak Next.js ile <strong className="text-white">3-5x daha hızlı</strong> siteler kuruyoruz. Ama içerik girişi WordPress kadar kolay olsun derseniz, headless CMS (Sanity, Strapi) entegrasyonu yapıyoruz.</p>
@@ -222,7 +222,7 @@ export default function WebTasarimHizmetPage() {
         '@context': 'https://schema.org', '@type': 'Service',
         name: 'Web Tasarım & Geliştirme',
         description: 'Türkiye genelindeki işletmeler için modern, hızlı ve SEO uyumlu web tasarım hizmeti.',
-        provider: { '@type': 'Organization', name: 'Ramses Digital', url: 'https://ramsesdigital.com' },
+        provider: { '@type': 'Organization', name: 'Ramses Dijital', url: 'https://ramsesdigital.com' },
         areaServed: { '@type': 'Country', name: 'Türkiye' },
         serviceType: 'Web Design and Development',
         url: 'https://ramsesdigital.com/hizmetler/web-tasarim',

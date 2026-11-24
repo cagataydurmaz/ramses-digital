@@ -24,9 +24,9 @@ const solutions = [
   { icon: Globe, title: 'Web Uygulaması & Site', desc: 'Next.js ile yüksek performanslı web siteleri ve uygulamalar. KOBİ\'den kurumsal ölçeğe.' },
   { icon: Zap, title: 'İş Süreçleri Otomasyonu', desc: 'n8n ile CRM, e-posta, muhasebe ve raporlama süreçlerini otomatikleştirin.' },
   { icon: Layers, title: 'API & ERP Entegrasyonu', desc: 'Logo, SAP, Mikro, WooCommerce — kullandığınız sistemlerle sorunsuz entegrasyon.' },
-  { icon: BarChart3, title: 'Veri & Raporlama', desc: 'GA4, Looker Studio ve özel dashboard\'larla verinizi görsel ve anlaşılır hale getirin.' },
+  { icon: BarChart3, title: 'Veri & Raporlama', desc: 'GA4, Looker Studio ve özel rapor panosu\'larla verinizi görsel ve anlaşılır hale getirin.' },
   { icon: Cpu, title: 'Yapay Zeka Entegrasyonu', desc: 'Müşteri destek botu, belge analizi, öneri motorları. Claude & GPT-4 entegrasyonu.' },
-  { icon: Shield, title: 'Güvenlik & Bakım', desc: 'SSL, yedekleme, güvenlik taraması ve uptime monitoring.' },
+  { icon: Shield, title: 'Güvenlik & Bakım', desc: 'SSL, yedekleme, güvenlik taraması ve kesintisiz çalışma takibi.' },
 ]
 
 const stack = ['Next.js', 'TypeScript', 'React', 'Node.js', 'n8n', 'PostgreSQL', 'Vercel', 'Supabase', 'Claude API', 'Stripe']

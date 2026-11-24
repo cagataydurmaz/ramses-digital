@@ -27,9 +27,9 @@ const solutions = [
   { icon: Globe, title: 'Kurumsal Web Uygulaması', desc: 'Next.js ile hızlı, güvenli ve kurumsal kimliğe uygun web siteleri. Hukuk bürosundan danışmanlık firmasına özel tasarım.' },
   { icon: Zap, title: 'Süreç Otomasyonu', desc: 'n8n ile randevu takibi, evrak akışı, teklif hazırlama ve müşteri bildirim süreçlerini otomatikleştirin.' },
   { icon: Layers, title: 'API & Sistem Entegrasyonu', desc: 'Muhasebe yazılımı, CRM, e-imza sistemleri ve ödeme altyapılarını mevcut iş akışınıza bağlayın.' },
-  { icon: BarChart3, title: 'Veri & Raporlama Panelleri', desc: 'GA4, Looker Studio ve özel dashboard\'larla kurumsal karar süreçlerinizi veriye dayandırın.' },
+  { icon: BarChart3, title: 'Veri & Raporlama Panelleri', desc: 'GA4, Looker Studio ve özel rapor panosu\'larla kurumsal karar süreçlerinizi veriye dayandırın.' },
   { icon: Cpu, title: 'Yapay Zeka Entegrasyonu', desc: 'Belge analizi, müşteri ön görüşme botu, içerik üretimi ve sınıflandırma sistemleri. Claude API entegrasyonu.' },
-  { icon: Shield, title: 'Güvenlik & Bakım', desc: 'SSL, düzenli güvenlik taraması, yedekleme ve uptime izleme. Kurumsal veri hassasiyetine uygun standartlar.' },
+  { icon: Shield, title: 'Güvenlik & Bakım', desc: 'SSL, düzenli güvenlik taraması, yedekleme ve kesintisiz çalışma takibi. Kurumsal veri hassasiyetine uygun standartlar.' },
 ]
 
 const stack = ['Next.js', 'TypeScript', 'React', 'Node.js', 'n8n', 'PostgreSQL', 'Vercel', 'Supabase', 'Claude API', 'Stripe']

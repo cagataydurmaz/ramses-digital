@@ -52,8 +52,8 @@ const channels = [
   {
     icon: Zap,
     title: 'Pazarlama Otomasyonu (n8n)',
-    desc: 'Tekrarlayan pazarlama süreçlerini otomatikleştirin. CRM entegrasyonu, lead nurturing, bildirim akışları.',
-    tags: ['n8n', 'CRM', 'Lead Nurturing', 'Webhook'],
+    desc: 'Tekrarlayan pazarlama süreçlerini otomatikleştirin. CRM entegrasyonu, aday müşteri takibi, bildirim akışları.',
+    tags: ['n8n', 'CRM', 'Aday Müşteri Takibi', 'Webhook'],
     href: '/hizmetler/n8n-otomasyon',
   },
   {
@@ -67,7 +67,7 @@ const channels = [
     icon: BarChart3,
     title: 'Veri Analizi & Raporlama',
     desc: 'GA4, Looker Studio ve dönüşüm hunisi analiziyle hangi kanalın işe yaradığını kesin olarak görün.',
-    tags: ['GA4', 'Looker Studio', 'Dönüşüm Hunisi', 'Dashboard'],
+    tags: ['GA4', 'Looker Studio', 'Dönüşüm Hunisi', 'Rapor Panosu'],
     href: '/hizmetler/veri-analizi',
   },
 ]

@@ -33,7 +33,7 @@ const services = [
 
 const faqs = [
   { q: 'Kocaeli sanayi ve B2B firmaları için Google Ads işe yarıyor mu?', a: 'Evet, ancak B2B için strateji farklıdır. "Kocaeli paslanmaz çelik tedarikçi" veya "Gebze endüstriyel boya" gibi uzun kuyruklu B2B aramaları düşük hacimli ama çok yüksek değerli. Bu segmentte düşük trafik yüksek sipariş değeri anlamına gelir. Display + LinkedIn kombinasyonu da önerebiliriz.' },
-  { q: 'Raporlama nasıl yapılıyor?', a: 'Aylık Google Ads performans raporu: gösterim, tıklama, CPC, dönüşüm, ROAS ve CPA metrikleri. Canlı Google Ads dashboard erişimi veriyoruz. Her kuruşun nereye gittiğini görürsünüz — sürpriz yok.' },
+  { q: 'Raporlama nasıl yapılıyor?', a: 'Aylık Google Ads performans raporu: gösterim, tıklama, CPC, dönüşüm, ROAS ve CPA metrikleri. Canlı Google Ads rapor panosu erişimi veriyoruz. Her kuruşun nereye gittiğini görürsünüz — sürpriz yok.' },
   { q: 'Kocaeli\'de Google Ads yönetimi için sözleşme şartı var mı?', a: 'Minimum 3 ay öneriyoruz. Google Ads öğrenme dönemi 30 gün, optimizasyon için en az 60-90 gün gerekiyor. İlk ayda çok yüksek CPA normal — algoritma öğreniyor. 3 ay sonunda net ROI tablonuz netleşir ve devam kararını veri bazlı alırsınız.' },
   { q: 'Reklam hesabımız kimin mülkiyetinde olur?', a: 'Sizin. Hesabı kendi adınıza açarız, biz sadece yönetici olarak bağlanırız — Kocaeli\'deki sanayi firmalarının tedarikçi ilişkilerinde sıkça sorulan bir güven meselesi, hesap her zaman sizin kontrolünüzde kalır.' },
   ...cityServiceFaqs('kocaeli', 'ads'),

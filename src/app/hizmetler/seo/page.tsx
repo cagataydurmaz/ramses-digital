@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     'İşletmenize özel SEO hizmeti. Yerel SEO, teknik SEO, GEO, AEO ve içerik stratejisi. Online çalışıyoruz, tüm Türkiye\'ye hizmet veriyoruz. Ücretsiz analiz.',
   alternates: { canonical: 'https://ramsesdigital.com/hizmetler/seo' },
   openGraph: {
-    title: 'SEO Hizmeti | Ramses Digital',
+    title: 'SEO Hizmeti | Ramses Dijital',
     description: 'ROI odaklı SEO hizmeti: yerel, teknik SEO, GEO ve AEO. Tüm Türkiye\'ye hizmet.',
     url: 'https://ramsesdigital.com/hizmetler/seo',
     images: ['https://ramsesdigital.com/og-image.png'],
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 
 const features = [
   { icon: Search, title: 'Anahtar Kelime Araştırması', desc: 'Sektörünüze özel, dönüşüm odaklı yerel ve uzun kuyruklu anahtar kelime stratejisi.' },
-  { icon: FileText, title: 'Teknik SEO Auditi', desc: 'Site hızı, mobil uyum, schema markup, indexlenebilirlik ve Core Web Vitals optimizasyonu.' },
+  { icon: FileText, title: 'Teknik SEO Denetimi', desc: 'Site hızı, mobil uyum, schema markup, indexlenebilirlik ve Core Web Vitals optimizasyonu.' },
   { icon: Sparkles, title: 'GEO & AEO Optimizasyonu', desc: 'Yapay zekâ özetlerinde ve sesli aramalarda alıntılanma olasılığınızı artırın.' },
   { icon: Link2, title: 'Backlink İnşası', desc: 'Sektörel ve yerel kaliteli backlink stratejisi. Spam yok, sadece organik otorite.' },
   { icon: BarChart3, title: 'İçerik Stratejisi', desc: 'Aylık 4-8 SEO uyumlu blog yazısı. Pillar content ve cluster yapısı.' },
@@ -39,20 +39,20 @@ const features = [
 ]
 
 const process = [
-  { step: '01', title: 'Keşif & Audit', desc: 'Sitenizin teknik durumu, mevcut sıralamalar, rakip analizi ve hedef kitle araştırması. Tam SEO sağlık raporu.' },
+  { step: '01', title: 'Keşif & Denetim', desc: 'Sitenizin teknik durumu, mevcut sıralamalar, rakip analizi ve hedef kitle araştırması. Tam SEO sağlık raporu.' },
   { step: '02', title: 'Strateji', desc: 'Hedef anahtar kelimeler, içerik takvimi, teknik öncelikler ve link inşa planı. 30/60/90 günlük yol haritası.' },
   { step: '03', title: 'Uygulama', desc: 'Teknik düzeltmeler, içerik üretimi, on-page optimizasyon, schema markup, GBP optimizasyonu.' },
   { step: '04', title: 'Backlink & Otorite', desc: 'Misafir yazılar, dijital PR, kırık bağlantı inşası, yerel rehber kayıtları.' },
-  { step: '05', title: 'Ölçüm & İyileştirme', desc: 'Aylık detaylı rapor, canlı dashboard erişimi, sürekli optimizasyon ve A/B testler.' },
+  { step: '05', title: 'Ölçüm & İyileştirme', desc: 'Aylık detaylı rapor, canlı rapor panosu erişimi, sürekli optimizasyon ve A/B testler.' },
 ]
 
 const faqs = [
   { q: 'SEO sonuçları ne kadar sürede görülür?', a: 'Yerel SEO için 2-4 haftada Google Business Profile ve Local Pack sonuçları görünmeye başlar. Web sitesi sıralamaları için 3-6 ay gerçekçi bir bekleme süresidir. Rekabetçi anahtar kelimelerde tam etki 6-12 ayda ortaya çıkar.' },
-  { q: 'SEO paketleriniz ne kadar?', a: 'İşletme büyüklüğüne ve kapsama göre değişir. Her paket: teknik audit, anahtar kelime stratejisi, aylık içerik üretimi, backlink çalışması ve detaylı raporlama içerir. Ücretsiz danışmanlık seansında işletmenize özel teklif sunarız.' },
+  { q: 'SEO paketleriniz ne kadar?', a: 'İşletme büyüklüğüne ve kapsama göre değişir. Her paket: teknik denetim, anahtar kelime stratejisi, aylık içerik üretimi, backlink çalışması ve detaylı raporlama içerir. Ücretsiz danışmanlık seansında işletmenize özel teklif sunarız.' },
   { q: 'Sözleşme süresi ne kadar?', a: 'Minimum 6 ay öneriyoruz. SEO uzun vadeli bir yatırımdır; 1-2 aylık çalışmalar gerçek sonuç vermez. 12 aylık sözleşmelerde %15 indirim sağlıyoruz.' },
   { q: 'Hangi sektörlerde uzmanlığınız var?', a: 'E-ticaret, B2B SaaS, fintech, sanayi/üretim, sağlık hizmetleri ve profesyonel hizmetlerde derin tecrübemiz var.' },
   { q: 'Backlink satın alıyor musunuz?', a: 'Hayır. Sadece organik ve kaliteli backlink stratejileri uyguluyoruz: misafir yazılar, dijital PR, sektörel rehberler, kırık bağlantı inşası ve değer odaklı outreach. Satın alınmış backlinkler Google manuel cezası getirir.' },
-  { q: 'Raporlama nasıl yapılıyor?', a: 'Aylık detaylı performans raporu (PDF) + canlı Looker Studio dashboard erişimi. Organik trafik, sıralamalar, dönüşümler, backlink kazanımları ve teknik SEO sağlığı şeffaf şekilde takip edilir.' },
+  { q: 'Raporlama nasıl yapılıyor?', a: 'Aylık detaylı performans raporu (PDF) + canlı Looker Studio rapor panosu erişimi. Organik trafik, sıralamalar, dönüşümler, backlink kazanımları ve teknik SEO sağlığı şeffaf şekilde takip edilir.' },
   { q: 'Yerel SEO ile klasik SEO farkı nedir?', a: 'Yerel SEO, Google Maps ve "Local Pack" alanında öne çıkmaya odaklanır. Google Business Profile, yerel anahtar kelimeler, müşteri yorumları ve NAP tutarlılığı kritiktir. Klasik SEO ise organik arama sonuçlarındaki sıralamayı hedefler. Yerel müşteriye hizmet veren işletmeler için ikisi birlikte uygulanmalıdır.' },
   { q: 'GEO ve AEO nedir, neden önemli?', a: 'GEO (Generative Engine Optimization) ChatGPT, Gemini ve Perplexity gibi AI motorlarında alıntılanma olasılığını artırmayı hedefler. AEO (Answer Engine Optimization) sesli arama ve öne çıkan snippet alanlarına odaklanır. ' },
 ]
@@ -231,7 +231,7 @@ export default function SeoHizmetPage() {
         '@type': 'Service',
         name: 'SEO Hizmeti',
         description: 'Türkiye genelindeki işletmeler için yerel SEO, teknik SEO ve yapay zekâ aramalarında görünürlük hizmetleri.',
-        provider: { '@type': 'Organization', name: 'Ramses Digital', url: 'https://ramsesdigital.com' },
+        provider: { '@type': 'Organization', name: 'Ramses Dijital', url: 'https://ramsesdigital.com' },
         areaServed: { '@type': 'Country', name: 'Türkiye' },
         serviceType: 'Search Engine Optimization',
         url: 'https://ramsesdigital.com/hizmetler/seo',

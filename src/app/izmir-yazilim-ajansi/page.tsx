@@ -27,7 +27,7 @@ const solutions = [
   { icon: ShoppingBag, title: 'E-ticaret Altyapısı', desc: 'Zeytinyağı, tekstil, tarım ürünü gibi ihraç kalemleri için çok dilli, ödeme entegrasyonlu e-ticaret siteleri.' },
   { icon: Layers, title: 'API & ERP Entegrasyonu', desc: 'Muhasebe yazılımı, gümrük/lojistik sistemleri, e-ticaret pazaryerleri — mevcut araçlarınızı birbirine bağlayın.' },
   { icon: Cpu, title: 'Yapay Zeka Entegrasyonu', desc: 'Çok dilli müşteri destek botu, belge/fatura analizi, ürün açıklaması üretimi. Claude & GPT-4 tabanlı çözümler.' },
-  { icon: Shield, title: 'Güvenlik & Bakım', desc: 'SSL, düzenli güvenlik taraması, otomatik yedekleme ve uptime izleme. Sezon ortasında teknik sorun yaşamayın.' },
+  { icon: Shield, title: 'Güvenlik & Bakım', desc: 'SSL, düzenli güvenlik taraması, otomatik yedekleme ve kesintisiz çalışma takibi. Sezon ortasında teknik sorun yaşamayın.' },
 ]
 
 const stack = ['Next.js', 'TypeScript', 'React', 'Node.js', 'n8n', 'PostgreSQL', 'Vercel', 'Supabase', 'Claude API', 'Stripe']

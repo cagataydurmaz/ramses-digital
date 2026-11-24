@@ -68,7 +68,7 @@ const process = [
   {
     step: '02',
     title: 'Strateji & Akış Haritası',
-    desc: 'Müşteri yolculuğu (buyer journey) haritalanır. Hangi aşamada, hangi mesajın gönderileceği belirlenir. Lead nurturing, onboarding, upsell ve retention akışları tasarlanır.',
+    desc: 'Müşteri yolculuğu haritalanır. Hangi aşamada, hangi mesajın gönderileceği belirlenir. Aday müşteriyi besleyen, yeni müşteriyi karşılayan, ek satış ve müşteriyi elde tutma akışları tasarlanır.',
   },
   {
     step: '03',
@@ -106,11 +106,11 @@ const faqs = [
   },
   {
     q: 'Otomasyon kurulumu ne kadar sürer?',
-    a: 'Basit bir hoş geldiniz serisi 3-5 iş günü. Kapsamlı bir müşteri yaşam döngüsü otomasyonu (onboarding + nurturing + upsell + win-back) 3-4 hafta. CRM entegrasyonu ve özel segmentasyon ek 1-2 hafta sürebilir.',
+    a: 'Basit bir hoş geldiniz serisi 3-5 iş günü. Kapsamlı bir müşteri yaşam döngüsü otomasyonu (karşılama + takip + ek satış + geri kazanma) 3-4 hafta. CRM entegrasyonu ve özel segmentasyon ek 1-2 hafta sürebilir.',
   },
   {
     q: 'Açılma oranım çok düşük, neden?',
-    a: 'Düşük açılma oranının başlıca nedenleri: zayıf konu satırı, yanlış gönderim zamanı, soğuk/satın alınmış liste, spam klasörüne düşme. Hesap auditimizde bu 4 faktörü analiz eder, hızlı kazanımlar (quick wins) belirleriz.',
+    a: 'Düşük açılma oranının başlıca nedenleri: zayıf konu satırı, yanlış gönderim zamanı, soğuk/satın alınmış liste, spam klasörüne düşme. Hesap denetimimizde bu 4 faktörü analiz eder, hızlı kazanımları belirleriz.',
   },
   {
     q: 'GDPR ve KVKK uyumu nasıl sağlanıyor?',
@@ -243,7 +243,7 @@ export default function EpostaOtomasyonPage() {
               Ramses Dijital&apos;in e-posta otomasyon yaklaşımı sadece kampanya göndermekle sınırlı değil. Müşteri yolculuğunun her aşamasına (farkındalık → değerlendirme → satın alma → sadakat) özgün, tetikleyici bazlı akışlar tasarlıyoruz. Bir kullanıcı sepetini terk ettiğinde, ürünü görüntülediğinde veya belirli bir sayfayı ziyaret ettiğinde otomatik devreye giren diziler kuruyoruz.
             </p>
             <p>
-              <strong className="text-white">CRM entegrasyonu</strong>, e-posta pazarlamanın en kritik bileşeni. Satış ekibinizin HubSpot&apos;taki notları, pazarlama ekibinin Klaviyo kampanyalarını doğrudan etkilesin. Bir lead satışa dönüştüğünde nurturing e-postaları otomatik dursun, upsell dizisi başlasın — tüm bunları kurup yönetiyoruz.
+              <strong className="text-white">CRM entegrasyonu</strong>, e-posta pazarlamanın en kritik bileşeni. Satış ekibinizin HubSpot&apos;taki notları, pazarlama ekibinin Klaviyo kampanyalarını doğrudan etkilesin. Bir lead satışa dönüştüğünde takip e-postaları otomatik dursun, ek satış dizisi başlasın — tüm bunları kurup yönetiyoruz.
             </p>
             <p>
               <strong className="text-white">Deliverability (teslim edilebilirlik)</strong> görmezden gelinen ama en önemli faktör. SPF, DKIM ve DMARC kayıtları doğru yapılandırılmadan gönderilen e-postaların önemli bir kısmı spam kutusuna düşebilir; kurulumda bu kayıtları ilk iş olarak düzenliyoruz.

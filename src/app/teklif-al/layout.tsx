@@ -5,14 +5,14 @@ export const metadata: Metadata = {
   description:
     'İşletmenize özel dijital pazarlama stratejisini anında öğrenin. SEO, Google Ads, sosyal medya ve web tasarımı için AI destekli ücretsiz teklif hesaplayıcı.',
   openGraph: {
-    title: 'Ücretsiz Dijital Pazarlama Teklifi | Ramses Digital',
+    title: 'Ücretsiz Dijital Pazarlama Teklifi | Ramses Dijital',
     description: 'İşletme tipinize ve hedeflerinize göre kişiselleştirilmiş dijital pazarlama paketi oluşturun.',
     url: 'https://ramsesdigital.com/teklif-al',
   },
   alternates: { canonical: 'https://ramsesdigital.com/teklif-al' },
   twitter: {
     card: 'summary_large_image',
-    title: 'AI Teklif Hesaplayıcı | Ramses Digital',
+    title: 'AI Teklif Hesaplayıcı | Ramses Dijital',
     description: 'İşletme tipinize ve hedeflerinize göre kişiselleştirilmiş dijital pazarlama paketi.',
     images: ['https://ramsesdigital.com/og-image.png'],
   },
@@ -28,7 +28,7 @@ export default function TeklifAlLayout({ children }: { children: React.ReactNode
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'WebApplication',
-            name: 'Ramses Digital AI Teklif Hesaplayıcı',
+            name: 'Ramses Dijital AI Teklif Hesaplayıcı',
             url: 'https://ramsesdigital.com/teklif-al',
             description: 'Dijital pazarlama hizmetleri için AI destekli ücretsiz teklif hesaplama aracı.',
             applicationCategory: 'BusinessApplication',
@@ -41,7 +41,7 @@ export default function TeklifAlLayout({ children }: { children: React.ReactNode
             },
             provider: {
               '@type': 'Organization',
-              name: 'Ramses Digital',
+              name: 'Ramses Dijital',
               url: 'https://ramsesdigital.com',
             },
           }),

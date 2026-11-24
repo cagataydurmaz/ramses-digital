@@ -32,7 +32,7 @@ const services = [
   { icon: Search, title: 'SEO & Yerel SEO', desc: '39 ilçeye özel anahtar kelime stratejisiyle Google\'da ve yapay zeka aramalarında görünün.', href: '/istanbul-seo' },
   { icon: Users, title: 'Sosyal Medya Danışmanlığı', desc: 'Hangi platformda, hangi mesajla, hangi sıklıkla — stratejik planlama ve içerik yönlendirmesi.', href: '/hizmetler/veri-analizi' },
   { icon: Mail, title: 'E-posta Pazarlama', desc: 'İstanbul müşteri listenizi satışa dönüştüren hoşgeldin serisi ve kampanya akışları. Ortalama %42 ROI.', href: '/hizmetler/eposta-otomasyon' },
-  { icon: Zap, title: 'Pazarlama Otomasyonu', desc: 'n8n ile lead nurturing ve bildirim akışlarını otomatikleştirin. Uyurken de potansiyel müşteri toplayın.', href: '/hizmetler/n8n-otomasyon' },
+  { icon: Zap, title: 'Pazarlama Otomasyonu', desc: 'n8n ile aday müşteri takibi ve bildirim akışlarını otomatikleştirin. Uyurken de potansiyel müşteri toplayın.', href: '/hizmetler/n8n-otomasyon' },
   { icon: BarChart3, title: 'Veri Analizi & Raporlama', desc: 'GA4 ve Looker Studio\'yla hangi kanalın gerçekten işe yaradığını netleştirin.', href: '/hizmetler/veri-analizi' },
 ]
 
@@ -55,7 +55,7 @@ const clients = [
 
 const faqs = [
   { q: 'İstanbul\'da Google Ads maliyeti neden daha yüksek?', a: 'İstanbul, Türkiye\'nin en yüksek CPC (tıklama başı maliyet) seviyesine sahip pazarı — çünkü rekabet ve arama hacmi en yüksek. Bu, bütçe yönetiminin daha kritik olduğu anlamına gelir. Doğru anahtar kelime seçimi, negatif kelime filtreleme ve ilçe bazlı hedeflemeyle bütçenizi verimli kullanıyoruz.' },
-  { q: 'Fiziksel olarak İstanbul\'da bir ofisiniz var mı?', a: 'Hayır, Kocaeli kökenliyiz — İstanbul\'a tamamen uzaktan hizmet veriyoruz. Ancak gerçek, canlı İstanbul müşterilerimiz var: İstanbul Barosu\'na kayıtlı Av. Furkan Arıkan (Beşiktaş) ve Bakırköy\'de Av. Mert Anıl Güler için web tasarım ve SEO çalışması yürüttük. Süreç tamamen dijital: görüşmeler Google Meet/Zoom, raporlar dashboard üzerinden.' },
+  { q: 'Fiziksel olarak İstanbul\'da bir ofisiniz var mı?', a: 'Hayır, Kocaeli kökenliyiz — İstanbul\'a tamamen uzaktan hizmet veriyoruz. Ancak gerçek, canlı İstanbul müşterilerimiz var: İstanbul Barosu\'na kayıtlı Av. Furkan Arıkan (Beşiktaş) ve Bakırköy\'de Av. Mert Anıl Güler için web tasarım ve SEO çalışması yürüttük. Süreç tamamen dijital: görüşmeler Google Meet/Zoom, raporlar çevrim içi rapor panosu üzerinden.' },
   { q: 'Hangi İstanbul ilçelerine hizmet veriyorsunuz?', a: 'Kadıköy, Beşiktaş, Şişli, Bakırköy, Ataşehir, Üsküdar, Beylikdüzü, Maltepe, Kartal, Pendik dahil İstanbul\'un tüm ilçelerine hizmet veriyoruz. Stratejiyi işletmenizin gerçek hizmet alanına göre önceliklendiriyoruz, 39 ilçeye aynı anda yayılmıyoruz.' },
   { q: 'Sosyal medya hesaplarımı da yönetiyor musunuz?', a: 'Stratejik danışmanlık ve içerik planlaması sunuyoruz — hangi platformda, hangi mesajla, hangi sıklıkla paylaşım yapmanız gerektiğini netleştiriyoruz. Ancak günlük gönderi hazırlama ve moderasyon hizmetlerimiz arasında değil; odağımız ölçülebilir ROI getiren kanallar.' },
   { q: 'Reklam hesabım kimin adına açılıyor?', a: 'Sizin adınıza. Google Ads hesabı size ait olur, biz sadece yönetici erişimiyle çalışırız. Bizimle yollarınız ayrılsa bile geçmiş verileriniz ve kampanya öğrenmeleriniz sizde kalır.' },

@@ -26,7 +26,7 @@ function buildPricingBlock(lang: 'tr' | 'en'): string {
 
 function buildSystemPrompt(lang: 'tr' | 'en'): string {
   if (lang === 'en') {
-    return `You are Ramses Digital's AI assistant. Analyze the user's message and determine the most relevant service.
+    return `You are Ramses Dijital's AI assistant. Analyze the user's message and determine the most relevant service.
 
 Available services:
 - seo: SEO & Content Optimization (top Google rankings, organic traffic)
@@ -58,7 +58,7 @@ Respond ONLY in this JSON format, nothing else:
 }`
   }
 
-  return `Sen Ramses Digital'in AI asistanısın. Kullanıcının yazdığı mesajı analiz et ve en uygun hizmeti belirle.
+  return `Sen Ramses Dijital'in AI asistanısın. Kullanıcının yazdığı mesajı analiz et ve en uygun hizmeti belirle.
 
 Mevcut hizmetler:
 - seo: SEO & İçerik Optimizasyonu (Google'da üst sıralar, organik trafik)

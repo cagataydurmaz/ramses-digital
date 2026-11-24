@@ -99,7 +99,7 @@ export const projects: CaseStudy[] = [
     outcome: 'SEO çalışmasıyla birlikte dijitaldeki görünürlüğü belirgin şekilde arttı.',
     testimonial: {
       quote:
-        'Ramses Digital, kurumsal kimliğimize uygun, içerik odaklı bir site tasarladı. SEO çalışmasıyla birlikte dijitaldeki görünürlüğümüz belirgin şekilde arttı.',
+        'Ramses Dijital, kurumsal kimliğimize uygun, içerik odaklı bir site tasarladı. SEO çalışmasıyla birlikte dijitaldeki görünürlüğümüz belirgin şekilde arttı.',
       author: 'Av. Mert Anıl Güler, LL.M.',
       role: 'Kurucu Avukat, Mert Anıl Güler Hukuk Bürosu',
     },
@@ -128,7 +128,7 @@ export const projects: CaseStudy[] = [
       'Cilt analizi aracı sayesinde müşteriler kendilerine en uygun ürünü kolayca buluyor; eczacı güvencesiyle sunulan ürünler doğru kitleye ulaşıyor.',
     testimonial: {
       quote:
-        'Ramses Digital, eczacı güvencesiyle sunduğumuz ürünleri doğru kitleye ulaştıran bir e-ticaret sitesi kurdu. Cilt analizi aracı sayesinde müşterilerimiz kendilerine en uygun ürünü kolayca buluyor.',
+        'Ramses Dijital, eczacı güvencesiyle sunduğumuz ürünleri doğru kitleye ulaştıran bir e-ticaret sitesi kurdu. Cilt analizi aracı sayesinde müşterilerimiz kendilerine en uygun ürünü kolayca buluyor.',
       author: 'Gamzeli Dermokozmetik',
       role: 'E-Ticaret Ekibi',
     },

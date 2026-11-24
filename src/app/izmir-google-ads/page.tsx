@@ -35,7 +35,7 @@ const services = [
 
 const faqs = [
   { q: 'İzmir\'deki turizm işletmeleri için Google Ads özel bir strateji gerektiriyor mu?', a: 'Evet. Sezonluk bütçe planlaması, çok dilli reklam metinleri (özellikle Avrupa pazarı için), rezervasyon odaklı dönüşüm izleme ve Google Haritalar reklamları bu sektörde kritik.' },
-  { q: 'Raporlama nasıl yapılıyor?', a: 'Aylık Google Ads performans raporu: gösterim, tıklama, CPC, dönüşüm, ROAS ve CPA metrikleri. Canlı dashboard erişimi veriyoruz.' },
+  { q: 'Raporlama nasıl yapılıyor?', a: 'Aylık Google Ads performans raporu: gösterim, tıklama, CPC, dönüşüm, ROAS ve CPA metrikleri. Canlı rapor panosu erişimi veriyoruz.' },
   { q: 'İzmir\'de Google Ads yönetimi için sözleşme şartı var mı?', a: 'Minimum 3 ay öneriyoruz. Turizm işletmeleri için sezon boyunca (genellikle 6 ay) sürekli yönetim daha etkili sonuç verir.' },
   { q: 'Reklam hesabımız kimin üzerine açılacak?', a: 'Sizin üzerinize. Hesabı kendi adınıza açıyoruz, biz sadece yönetici olarak erişiyoruz — ihracat ve turizm sektöründe sezonluk ajans değişikliklerinde veri kaybı riski taşımazsınız.' },
   ...cityServiceFaqs('izmir', 'ads'),

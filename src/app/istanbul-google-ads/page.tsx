@@ -35,7 +35,7 @@ const services = [
 
 const faqs = [
   { q: 'İstanbul\'daki büyük ajanslarla rekabet eden bir işletme için Google Ads işe yarar mı?', a: 'Evet, hatta genellikle daha da kritik. Büyük rakiplerin yüksek teklif verdiği ortamda Quality Score optimizasyonu ve niş anahtar kelime stratejisi ("Kadıköy\'de diş implantı" gibi) daha düşük maliyetle rekabet etmenizi sağlar.' },
-  { q: 'Raporlama nasıl yapılıyor?', a: 'Aylık Google Ads performans raporu: gösterim, tıklama, CPC, dönüşüm, ROAS ve CPA metrikleri. Canlı Google Ads dashboard erişimi veriyoruz. Her kuruşun nereye gittiğini görürsünüz — İstanbul\'un yüksek bütçelerinde bu şeffaflık özellikle önemli.' },
+  { q: 'Raporlama nasıl yapılıyor?', a: 'Aylık Google Ads performans raporu: gösterim, tıklama, CPC, dönüşüm, ROAS ve CPA metrikleri. Canlı Google Ads rapor panosu erişimi veriyoruz. Her kuruşun nereye gittiğini görürsünüz — İstanbul\'un yüksek bütçelerinde bu şeffaflık özellikle önemli.' },
   { q: 'İstanbul\'da Google Ads yönetimi için sözleşme şartı var mı?', a: 'Minimum 3 ay öneriyoruz. Google Ads öğrenme dönemi 30 gün, İstanbul\'un rekabetçi ortamında optimizasyon için en az 60-90 gün gerekiyor. 3 ay sonunda net ROI tablonuz netleşir ve devam kararını veri bazlı alırsınız.' },
   { q: 'Hesap bize mi ait olur, ajansta mı kalır?', a: 'Size ait olur. Hesabı kendi adınıza açar, sadece yönetici erişimiyle çalışırız — İstanbul\'un rekabet yoğunluğunda ajans değiştirseniz bile kampanya geçmişiniz ve öğrenmeleriniz kaybolmaz.' },
   ...cityServiceFaqs('istanbul', 'ads'),

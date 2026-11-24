@@ -32,8 +32,8 @@ const solutions = [
   { icon: Zap, title: 'İş Süreçleri Otomasyonu', desc: 'n8n ile tekrarlayan operasyonları otomatikleştirin. CRM senkronizasyonu, lead yönlendirme, bildirim ve fatura akışları.' },
   { icon: Layers, title: 'API & Sistem Entegrasyonu', desc: 'ERP, muhasebe yazılımı, e-ticaret altyapısı ve ödeme sistemleri — İstanbul\'daki kurumsal firmaların mevcut araçlarını birbirine bağlıyoruz.' },
   { icon: Cpu, title: 'Yapay Zeka Entegrasyonu', desc: 'Müşteri destek botu, belge analizi, içerik üretimi ve öneri sistemleri. Claude API ve GPT-4 entegrasyonu.' },
-  { icon: BarChart3, title: 'Veri & Dashboard', desc: 'GA4, Looker Studio ve özel dashboard\'larla İstanbul operasyonunuzun verisini anlaşılır hale getirin.' },
-  { icon: Shield, title: 'Güvenlik & Teknik Bakım', desc: 'SSL, güvenlik taraması, yedekleme ve uptime monitoring. Kurumsal firmaların güven ihtiyacına uygun altyapı.' },
+  { icon: BarChart3, title: 'Veri & Rapor Panosu', desc: 'GA4, Looker Studio ve özel rapor panosu\'larla İstanbul operasyonunuzun verisini anlaşılır hale getirin.' },
+  { icon: Shield, title: 'Güvenlik & Teknik Bakım', desc: 'SSL, güvenlik taraması, yedekleme ve kesintisiz çalışma takibi. Kurumsal firmaların güven ihtiyacına uygun altyapı.' },
 ]
 
 const stack = ['Next.js', 'TypeScript', 'React', 'Node.js', 'n8n', 'PostgreSQL', 'Vercel', 'Supabase', 'Claude API', 'Stripe']

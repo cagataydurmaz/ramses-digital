@@ -79,7 +79,7 @@ function ArticleJsonLd({ post }: { post: (typeof posts)[0] }) {
     },
     publisher: {
       '@type': 'Organization',
-      name: 'Ramses Digital',
+      name: 'Ramses Dijital',
       url: 'https://ramsesdigital.com',
       logo: {
         '@type': 'ImageObject',

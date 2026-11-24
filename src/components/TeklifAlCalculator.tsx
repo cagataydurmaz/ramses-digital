@@ -66,7 +66,7 @@ const serviceLabels: Record<string, string> = {
 const serviceIncludes: Record<string, string[]> = {
   'SEO': ['Teknik SEO denetimi', 'Anahtar kelime stratejisi', 'Aylık içerik üretimi', 'Backlink çalışması', 'Aylık rapor'],
   'SEO Başlangıç Paketi': ['Teknik SEO denetimi', 'Anahtar kelime stratejisi', 'On-page kurulum', 'Schema markup kurulumu'],
-  'Google Ads': ['Haftalık optimizasyon', 'Negatif kelime & bid yönetimi', 'Aylık performans raporu'],
+  'Google Ads': ['Haftalık optimizasyon', 'Negatif kelime ve teklif yönetimi', 'Aylık performans raporu'],
   'Google Ads Kurulum': ['Hesap yapısı kurulumu', 'Dönüşüm izleme (conversion tracking)', 'İlk kampanya kurulumu'],
   'Sosyal Medya': ['Post & story tasarımı', 'İçerik takvimi', 'Caption & hashtag stratejisi'],
   'Web Tasarım': ['UI/UX tasarım', 'Geliştirme & yayına alma', 'Mobil uyumluluk & hız optimizasyonu'],

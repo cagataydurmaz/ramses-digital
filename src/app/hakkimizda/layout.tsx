@@ -1,11 +1,11 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Hakkımızda | Ramses Digital — Mühendislik Temelli Dijital Ajans',
+  title: 'Hakkımızda | Ramses Dijital — Mühendislik Temelli Dijital Ajans',
   description:
     '2019\'dan bu yana, bugün İzmit merkezli, kurucusu Çağatay Durmaz tarafından yönetilen Ramses Dijital\'in hikâyesi ve değerleri. 50+ tamamlanan proje, 5+ yıl deneyim.',
   openGraph: {
-    title: 'Hakkımızda | Ramses Digital',
+    title: 'Hakkımızda | Ramses Dijital',
     description: 'Mühendislik disiplini ile dijital pazarlamayı birleştiren İzmit merkezli ajans. 5+ yıl deneyim, 50+ proje.',
     url: 'https://ramsesdigital.com/hakkimizda',
   },
@@ -22,13 +22,13 @@ export default function HakkimizdaLayout({ children }: { children: React.ReactNo
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'AboutPage',
-            name: 'Hakkımızda — Ramses Digital',
+            name: 'Hakkımızda — Ramses Dijital',
             url: 'https://ramsesdigital.com/hakkimizda',
             description:
               '2019\'dan bu yana dijital pazarlama ajansı; bugün İzmit merkezli. Mühendis kökenli kurucu Çağatay Durmaz tarafından yönetilen, veri odaklı ve şeffaf raporlayan ajans.',
             mainEntity: {
               '@type': 'Organization',
-              name: 'Ramses Digital',
+              name: 'Ramses Dijital',
               url: 'https://ramsesdigital.com',
               foundingDate: '2019',
               foundingLocation: 'İstanbul, Türkiye',

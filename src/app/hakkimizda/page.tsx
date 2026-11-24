@@ -9,14 +9,14 @@ export const metadata: Metadata = {
     'Ramses Dijital Yazılım ve Dijital Pazarlama Ajansı kimdir? 2019\'dan bu yana SEO, Google Ads, web tasarımı ve dijital pazarlama alanında işletmelere gerçek…',
   alternates: { canonical: 'https://ramsesdigital.com/hakkimizda' },
   openGraph: {
-    title: 'Hakkımızda | Ramses Digital',
+    title: 'Hakkımızda | Ramses Dijital',
     description: 'Performans odaklı dijital pazarlama ajansı. Ekibimiz, değerlerimiz ve başarı hikayemiz.',
     url: 'https://ramsesdigital.com/hakkimizda',
     images: ['https://ramsesdigital.com/og-image.png'],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Hakkımızda | Ramses Digital',
+    title: 'Hakkımızda | Ramses Dijital',
     description: 'Mühendislik temelli dijital pazarlama ajansı. 2019\'dan beri ölçülebilir sonuçlar.',
     images: ['https://ramsesdigital.com/og-image.png'],
   },
@@ -31,7 +31,7 @@ const values = [
   {
     icon: Target,
     title: 'Sonuç Odaklılık',
-    desc: 'Her strateji, ölçülebilir ve anlamlı sonuçlar doğurmalıdır. Vanity metrikler değil, gerçek büyüme peşindeyiz.',
+    desc: 'Her strateji, ölçülebilir ve anlamlı sonuçlar doğurmalıdır. Gösteriş metrikleri değil, gerçek büyüme peşindeyiz.',
   },
   {
     icon: Zap,
@@ -159,7 +159,7 @@ export default function AboutPage() {
               Değerlerimiz
             </p>
             <h2 className="text-4xl font-bold text-white">
-              Neden Ramses Digital?
+              Neden Ramses Dijital?
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5">
@@ -220,7 +220,7 @@ export default function AboutPage() {
             </p>
             <h2 className="text-4xl font-bold text-white mb-4">Bizi Tanıyın</h2>
             <p className="text-zinc-400 max-w-2xl mx-auto">
-              Ramses Digital hakkında en çok merak edilen konular.
+              Ramses Dijital hakkında en çok merak edilen konular.
             </p>
           </div>
           <div className="space-y-4">
@@ -276,11 +276,11 @@ export default function AboutPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'AboutPage',
-            name: 'Hakkımızda — Ramses Digital',
+            name: 'Hakkımızda — Ramses Dijital',
             url: 'https://ramsesdigital.com/hakkimizda',
             mainEntity: {
               '@type': 'Organization',
-              name: 'Ramses Digital',
+              name: 'Ramses Dijital',
               foundingDate: '2019',
               description:
                 'Performans odaklı dijital pazarlama ajansı. Mühendislik temelli yaklaşımla SEO, Google Ads ve n8n otomasyon hizmetleri sunuyoruz.',
@@ -295,7 +295,7 @@ export default function AboutPage() {
 
 const aboutFaqs = [
   {
-    q: 'Ramses Digital ne zaman kuruldu?',
+    q: 'Ramses Dijital ne zaman kuruldu?',
     a: 'Ramses Dijital, 2019 yılında mühendis kökenli kurucu Çağatay Durmaz tarafından kuruldu. Kuruluşumuzdan bu yana 50+ proje tamamladık ve dijital pazarlamayı mühendislik disiplinine dayandıran çözümler üretiyoruz.',
   },
   {
@@ -303,8 +303,8 @@ const aboutFaqs = [
     a: 'Kocaeli kökenliyiz. İstanbul, Ankara, İzmir başta olmak üzere Türkiye genelinde ve uluslararası pazarda online olarak hizmet veriyoruz.',
   },
   {
-    q: 'Ramses Digital\'i diğer ajanslardan ayıran ne?',
-    a: 'Mühendislik kökenli bir ekip olarak her stratejiyi veri ve teknik disiplinle kuruyoruz. Vanity metrik yerine ölçülebilir sonuçlara (ROAS, organik trafik artışı, lead kalitesi) odaklanırız. Şeffaf raporlama ve canlı dashboard erişimi standardımızdır.',
+    q: 'Ramses Dijital\'i diğer ajanslardan ayıran ne?',
+    a: 'Mühendislik kökenli bir ekip olarak her stratejiyi veri ve teknik disiplinle kuruyoruz. Gösteriş metrikleri yerine ölçülebilir sonuçlara (ROAS, organik trafik artışı, lead kalitesi) odaklanırız. Şeffaf raporlama ve canlı rapor panosu erişimi standardımızdır.',
   },
   {
     q: 'Hangi sektörlerde uzmanlığınız var?',

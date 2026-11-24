@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     'Profesyonel Google Ads kampanya yönetimi. Search, Display, YouTube, Shopping ve Remarketing kampanyaları; dönüşüm ölçümü ve şeffaf raporlama.',
   alternates: { canonical: 'https://ramsesdigital.com/hizmetler/google-ads' },
   openGraph: {
-    title: 'Google Ads Yönetimi | Ramses Digital',
+    title: 'Google Ads Yönetimi | Ramses Dijital',
     description: 'ROI odaklı Google Ads kampanya yönetimi. Search, Display, YouTube ve Remarketing.',
     url: 'https://ramsesdigital.com/hizmetler/google-ads',
     images: ['https://ramsesdigital.com/og-image.png'],
@@ -39,11 +39,11 @@ const campaignTypes = [
 ]
 
 const process = [
-  { step: '01', title: 'Hesap Auditi', desc: 'Mevcut hesabınızın detaylı incelemesi: kayıp anahtar kelimeler, israf eden kampanyalar, kalite skorları ve dönüşüm takibi sağlığı.' },
-  { step: '02', title: 'Strateji & Bütçe Planı', desc: 'Hedeflerinize göre kampanya yapısı, anahtar kelime listesi, bid stratejisi ve aylık bütçe dağılımı.' },
+  { step: '01', title: 'Hesap Denetimi', desc: 'Mevcut hesabınızın detaylı incelemesi: kayıp anahtar kelimeler, israf eden kampanyalar, kalite skorları ve dönüşüm takibi sağlığı.' },
+  { step: '02', title: 'Strateji & Bütçe Planı', desc: 'Hedeflerinize göre kampanya yapısı, anahtar kelime listesi, teklif stratejisi ve aylık bütçe dağılımı.' },
   { step: '03', title: 'Reklam Yazımı & Görsel', desc: 'A/B test edilebilir 4-6 ad varyasyonu, profesyonel görseller ve landing page önerileri.' },
   { step: '04', title: 'Conversion Tracking', desc: 'GA4, GTM ile temiz dönüşüm takibi. Mikro/makro dönüşümler ayrı ayrı izlenir.' },
-  { step: '05', title: 'Optimizasyon Döngüsü', desc: 'Haftalık bid ayarları, negatif anahtar kelime listesi, ad performans analizi ve sürekli A/B test.' },
+  { step: '05', title: 'Optimizasyon Döngüsü', desc: 'Haftalık teklif ayarları, negatif anahtar kelime listesi, ad performans analizi ve sürekli A/B test.' },
 ]
 
 const faqs = [
@@ -53,7 +53,7 @@ const faqs = [
   { q: 'ROAS ne demek ve hedef ne olmalı?', a: 'ROAS = Gelir / Reklam Harcaması. Yani 4x ROAS, harcadığınız reklam bütçesinin 4 katı gelir getirdiği anlamına gelir. Sektöre göre değişmekle birlikte: e-ticaret 3-5x, B2B SaaS 5-10x, profesyonel hizmetler 6-15x sağlıklı hedeflerdir.' },
   { q: 'Reklam metnini siz mi yazıyorsunuz?', a: 'Evet, tüm reklam metni ve görsel tasarımları biz hazırlıyoruz. Sektörünüze özel 4-6 ad varyasyonu yazıp A/B testle en iyi performans göstereni belirliyoruz. Görsel ihtiyacında profesyonel grafiker desteği sağlıyoruz.' },
   { q: 'Sözleşme süresi ne kadar?', a: 'Minimum 3 ay öneriyoruz. Google Ads algoritmasının öğrenme süresi nedeniyle daha kısa süreli çalışmalar yatırımınızı tam olarak değerlendiremez. 6 ay+ taahhüt verenlere %10 yönetim indirimi sağlıyoruz.' },
-  { q: 'Raporlama nasıl yapılıyor?', a: 'Aylık detaylı performans raporu (PDF) + canlı Looker Studio dashboard erişimi sağlıyoruz. Harcama, dönüşüm, ROAS, CPC, CTR ve sektörel kıyaslamalar şeffaf şekilde takip edilir. Haftalık 15 dk\'lık check-in görüşmesi de pakete dahil.' },
+  { q: 'Raporlama nasıl yapılıyor?', a: 'Aylık detaylı performans raporu (PDF) + canlı Looker Studio rapor panosu erişimi sağlıyoruz. Harcama, dönüşüm, ROAS, CPC, CTR ve sektörel kıyaslamalar şeffaf şekilde takip edilir. Haftalık 15 dk\'lık check-in görüşmesi de pakete dahil.' },
   { q: 'Mevcut Google Ads hesabımı devralabilir misiniz?', a: 'Evet, mevcut hesabınızın sahipliğini değiştirmeden, manager (MCC) hesabımız üzerinden erişim alıyoruz. Hesabınız tamamen size ait kalır; istediğiniz an erişimi geri çekebilirsiniz. Geçmiş veriler ve dönüşüm geçmişi korunur.' },
 ]
 
@@ -77,7 +77,7 @@ export default function GoogleAdsHizmetPage() {
             Search&apos;ten YouTube&apos;a, Shopping&apos;den Remarketing&apos;e — bütçenizi en yüksek ROAS&apos;ı getirecek
             şekilde optimize ediyoruz. Şeffaf raporlama, gerçek sonuçlar.
           </p>
-          <CalendlyButton label="Ücretsiz Hesap Auditi" variant="primary" />
+          <CalendlyButton label="Ücretsiz Hesap Denetimi" variant="primary" />
           </div>
           <div className="order-first lg:order-none mx-auto w-full max-w-[300px] lg:max-w-none">
             <ReklamTelefon aramalar={['izmit oto servis', 'gebze diş kliniği', 'kocaeli nakliyat']} />
@@ -155,7 +155,7 @@ export default function GoogleAdsHizmetPage() {
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 text-center">Google Ads&apos;te Başarının Sırrı</h2>
           <div className="space-y-5 text-zinc-300 leading-relaxed">
             <p>Google Ads, doğru kurgulandığında <strong className="text-white">harcadığınızın 4-10 katını</strong> geri getirebilen en güçlü dijital pazarlama kanalıdır. Yanlış kurgulandığındaysa bütçenizi haftalar içinde tüketebilir. Aradaki fark: <strong className="text-white">veri ve disiplin</strong>.</p>
-            <p>Birçok ajans &ldquo;set it and forget it&rdquo; mantığıyla çalışır: kampanyayı kurar ve aylarca dokunmaz. Biz aksine, haftalık bid optimizasyonu, negatif anahtar kelime ekleme, ad performans analizi ve A/B testlerle sürekli iyileştirme yaparız.</p>
+            <p>Birçok ajans &ldquo;set it and forget it&rdquo; mantığıyla çalışır: kampanyayı kurar ve aylarca dokunmaz. Biz aksine, haftalık teklif optimizasyonu, negatif anahtar kelime ekleme, ad performans analizi ve A/B testlerle sürekli iyileştirme yaparız.</p>
             <p>Uzun kuyruklu anahtar kelimelerle düşük CPC&apos;li yüksek dönüşümlü kampanyalar kurabiliyoruz. Coğrafi hedefleme, saat ve cihaz optimizasyonları gibi mikro detaylar ROAS&apos;ınızı katlıyor.</p>
             <p>Ramses Dijital Yazılım ve Dijital Pazarlama Ajansı&apos;nın Google Ads ekibi, sertifikalı uzmanlardan oluşuyor. Yüksek hacimli reklam bütçeleri yönetiyor ve sektörel kıyaslamalarda %35 daha düşük CPA elde ediyoruz.</p>
           </div>
@@ -202,9 +202,9 @@ export default function GoogleAdsHizmetPage() {
 
       <section className="py-20 px-6">
         <div className="max-w-3xl mx-auto text-center bg-gradient-to-b from-orange-500/10 to-transparent border border-orange-500/20 rounded-3xl p-10 md:p-14">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Kampanyanızı Audit&apos;leyelim</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Kampanyanızı Birlikte İnceleyelim</h2>
           <p className="text-zinc-400 text-lg mb-8">Mevcut Google Ads hesabınızı ücretsiz inceleyip, israf eden alanları ve kazanç fırsatlarını çıkartalım.</p>
-          <CalendlyButton label="Ücretsiz Hesap Auditi" variant="primary" />
+          <CalendlyButton label="Ücretsiz Hesap Denetimi" variant="primary" />
         </div>
       </section>
 
@@ -212,7 +212,7 @@ export default function GoogleAdsHizmetPage() {
         '@context': 'https://schema.org', '@type': 'Service',
         name: 'Google Ads Yönetimi',
         description: 'Türkiye genelindeki işletmeler için Search, Display, YouTube, Shopping ve Remarketing kampanya yönetimi.',
-        provider: { '@type': 'Organization', name: 'Ramses Digital', url: 'https://ramsesdigital.com' },
+        provider: { '@type': 'Organization', name: 'Ramses Dijital', url: 'https://ramsesdigital.com' },
         areaServed: { '@type': 'Country', name: 'Türkiye' },
         serviceType: 'Pay Per Click Advertising',
         url: 'https://ramsesdigital.com/hizmetler/google-ads',

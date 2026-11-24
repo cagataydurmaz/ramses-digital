@@ -17,7 +17,7 @@ export async function POST(request: NextRequest) {
       messages: [
         {
           role: 'user',
-          content: `Sen Ramses Digital'in uzman dijital pazarlama danışmanısın. Aşağıdaki bilgilere göre müşteriye özel, KISA bir strateji önerisi hazırla.
+          content: `Sen Ramses Dijital'in uzman dijital pazarlama danışmanısın. Aşağıdaki bilgilere göre müşteriye özel, KISA bir strateji önerisi hazırla.
 
 Müşteri Bilgileri:
 - İşletme Tipi: ${businessType}${sizeInfo}
@@ -26,22 +26,22 @@ Müşteri Bilgileri:
 
 Lütfen aşağıdaki formatta, KISA ve öz Türkçe bir öneri hazırla (toplam 120-150 kelimeyi geçme):
 
-## 🎯 Önerilen Paket
+## Önerilen Paket
 
 [Pakete bir isim ver, tek cümlede neden uygun olduğunu açıkla]
 
-## 📈 Beklenen Sonuçlar
+## Beklenen Sonuçlar
 
 [En fazla 3 madde, her biri tek satır, nitel ifadelerle (örn. "organik trafikte belirgin artış")]
 
-## 🚀 İlk Adım
+## İlk Adım
 
 [Tek cümlede en kritik aksiyon]
 
 ÖNEMLİ KURALLAR:
 - Yanıtta HİÇBİR ŞEKİLDE fiyat, tutar, TL, ₺ veya sayısal yüzde/oran verme.
 - Kesin fiyat ve paket detaylarının WhatsApp'ta netleştirileceğini son cümlede belirt.
-- Samimi, profesyonel ol ama laf kalabalığı yapma — direkt ve kısa yaz. Türkçe yaz.`,
+- Emoji kullanma. Samimi, profesyonel ol ama laf kalabalığı yapma — direkt ve kısa yaz. Türkçe yaz.`,
         },
       ],
     })

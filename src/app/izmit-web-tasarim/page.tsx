@@ -13,7 +13,7 @@ import SiteKaydirmaTelefon from '@/components/telefon/SiteKaydirmaTelefon'
 export const metadata: Metadata = {
   title: 'İzmit Web Tasarım – Kurumsal Web Sitesi | Ramses Dijital',
   description:
-    'İzmit web tasarım ajansı: SEO uyumlu, mobil öncelikli, hızlı yüklenen kurumsal web siteleri. Web sitesi ya da internet sitesi yaptırmak isteyen İzmit işletmeleri için ücretsiz teklif.',
+    'İzmit web tasarım ajansı: internet sitesi yaptırmak isteyen işletmelere SEO uyumlu, mobil öncelikli, hızlı kurumsal web siteleri. Ücretsiz teklif.',
   alternates: { canonical: 'https://ramsesdigital.com/izmit-web-tasarim' },
   openGraph: {
     title: 'İzmit Web Tasarım | Ramses Dijital',
@@ -29,7 +29,7 @@ const features = [
   { icon: Zap, title: 'Yüksek Performans', desc: 'Next.js ile oluşturulan siteler Lighthouse\'da 90+ puan alır. Rakiplerinizden hızlı yüklenin.' },
   { icon: Palette, title: 'Kurumsal Tasarım', desc: 'Markanıza özel, profesyonel ve güven veren tasarım. Şablon değil, özgün.' },
   { icon: BarChart3, title: 'Dönüşüm Odaklı', desc: 'Randevu formu, WhatsApp entegrasyonu, CTA yerleşimi — ziyaretçiyi müşteriye çeviren yapı.' },
-  { icon: ShieldCheck, title: 'Güvenli & Bakımlı', desc: 'SSL, düzenli güncellemeler, uptime takibi ve teknik destek. Siteniz hep çalışır durumda.' },
+  { icon: ShieldCheck, title: 'Güvenli & Bakımlı', desc: 'SSL, düzenli güncellemeler, kesintisiz çalışma takibi ve teknik destek. Siteniz hep çalışır durumda.' },
 ]
 
 const packages = [

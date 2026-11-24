@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description:
     'SEO, Google Ads, sosyal medya ve yapay zeka üzerine güncel rehberler ve uzman içerikleri. Dijital pazarlama dünyasından en iyi kaynaklar.',
   openGraph: {
-    title: 'Dijital Pazarlama Blogu | Ramses Digital',
+    title: 'Dijital Pazarlama Blogu | Ramses Dijital',
     description: 'SEO, Google Ads ve sosyal medya üzerine uzman içerikleri. Markanızı büyütmek için ücretsiz kaynaklar.',
     url: 'https://ramsesdigital.com/blog',
     type: 'website',
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://ramsesdigital.com/blog' },
   twitter: {
     card: 'summary_large_image',
-    title: 'Dijital Pazarlama Blogu | Ramses Digital',
+    title: 'Dijital Pazarlama Blogu | Ramses Dijital',
     description: 'SEO, Google Ads ve sosyal medya üzerine uzman içerikleri.',
     images: ['https://ramsesdigital.com/og-image.png'],
   },
@@ -29,12 +29,12 @@ export default function BlogLayout({ children }: { children: React.ReactNode }) 
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Blog',
-            name: 'Ramses Digital Blog',
+            name: 'Ramses Dijital Blog',
             url: 'https://ramsesdigital.com/blog',
             description: 'Dijital pazarlama, SEO, Google Ads ve sosyal medya üzerine uzman içerikleri.',
             publisher: {
               '@type': 'Organization',
-              name: 'Ramses Digital',
+              name: 'Ramses Dijital',
               url: 'https://ramsesdigital.com',
               logo: {
                 '@type': 'ImageObject',

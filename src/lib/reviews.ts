@@ -57,7 +57,7 @@ export const reviews: CustomerReview[] = [
     name: 'Gamzeli Dermokozmetik',
     subtitle: 'E-Ticaret Ekibi',
     rating: 5,
-    text: 'Ramses Digital, eczacı güvencesiyle sunduğumuz ürünleri doğru kitleye ulaştıran bir e-ticaret sitesi kurdu. Cilt analizi aracı sayesinde müşterilerimiz kendilerine en uygun ürünü kolayca buluyor.',
+    text: 'Ramses Dijital, eczacı güvencesiyle sunduğumuz ürünleri doğru kitleye ulaştıran bir e-ticaret sitesi kurdu. Cilt analizi aracı sayesinde müşterilerimiz kendilerine en uygun ürünü kolayca buluyor.',
     source: 'site',
     date: '2026-04-15',
   },

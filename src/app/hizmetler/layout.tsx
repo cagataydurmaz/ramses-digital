@@ -1,11 +1,11 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Hizmetler | SEO, Google Ads, Sosyal Medya & Web Tasarımı — Ramses Digital',
+  title: 'Hizmetler | SEO, Google Ads, Sosyal Medya & Web Tasarımı — Ramses Dijital',
   description:
     'SEO, Google Ads, sosyal medya yönetimi, web tasarımı, e-posta otomasyonu ve veri analizinde uzman dijital pazarlama hizmetleri. Ölçülebilir sonuçlar, gerçek büyüme.',
   openGraph: {
-    title: 'Dijital Pazarlama Hizmetleri | Ramses Digital',
+    title: 'Dijital Pazarlama Hizmetleri | Ramses Dijital',
     description: 'SEO\'dan Google Ads\'e, sosyal medyadan web tasarımına — tüm dijital pazarlama çözümleri tek çatı altında.',
     url: 'https://ramsesdigital.com/hizmetler',
   },
@@ -22,7 +22,7 @@ export default function HizmetlerLayout({ children }: { children: React.ReactNod
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'ItemList',
-            name: 'Ramses Digital Hizmetleri',
+            name: 'Ramses Dijital Hizmetleri',
             url: 'https://ramsesdigital.com/hizmetler',
             itemListElement: [
               {
@@ -32,7 +32,7 @@ export default function HizmetlerLayout({ children }: { children: React.ReactNod
                   '@type': 'Service',
                   name: 'SEO & İçerik Optimizasyonu',
                   description: 'Teknik SEO, anahtar kelime stratejisi ve içerik optimizasyonuyla Google\'da üst sıralara çıkın.',
-                  provider: { '@type': 'Organization', name: 'Ramses Digital' },
+                  provider: { '@type': 'Organization', name: 'Ramses Dijital' },
                   areaServed: 'TR',
                   url: 'https://ramsesdigital.com/hizmetler',
                 },
@@ -44,7 +44,7 @@ export default function HizmetlerLayout({ children }: { children: React.ReactNod
                   '@type': 'Service',
                   name: 'Google Ads & Performans Reklamcılığı',
                   description: 'Search, YouTube, Display ve Remarketing kampanyalarıyla ROI odaklı büyüme.',
-                  provider: { '@type': 'Organization', name: 'Ramses Digital' },
+                  provider: { '@type': 'Organization', name: 'Ramses Dijital' },
                   areaServed: 'TR',
                 },
               },
@@ -55,7 +55,7 @@ export default function HizmetlerLayout({ children }: { children: React.ReactNod
                   '@type': 'Service',
                   name: 'Sosyal Medya Yönetimi',
                   description: 'Instagram, LinkedIn, TikTok ve Twitter\'da organik büyüme ve içerik stratejisi.',
-                  provider: { '@type': 'Organization', name: 'Ramses Digital' },
+                  provider: { '@type': 'Organization', name: 'Ramses Dijital' },
                   areaServed: 'TR',
                 },
               },
@@ -66,7 +66,7 @@ export default function HizmetlerLayout({ children }: { children: React.ReactNod
                   '@type': 'Service',
                   name: 'Web Tasarımı & Geliştirme',
                   description: 'Hızlı, dönüşüm odaklı ve modern web siteleri. Next.js ve WordPress uzmanlığı.',
-                  provider: { '@type': 'Organization', name: 'Ramses Digital' },
+                  provider: { '@type': 'Organization', name: 'Ramses Dijital' },
                   areaServed: 'TR',
                 },
               },
@@ -77,7 +77,7 @@ export default function HizmetlerLayout({ children }: { children: React.ReactNod
                   '@type': 'Service',
                   name: 'E-Posta & Otomasyon',
                   description: 'CRM entegrasyonu, drip kampanyalar ve A/B testlerle müşteri sadakati artırın.',
-                  provider: { '@type': 'Organization', name: 'Ramses Digital' },
+                  provider: { '@type': 'Organization', name: 'Ramses Dijital' },
                   areaServed: 'TR',
                 },
               },
@@ -88,7 +88,7 @@ export default function HizmetlerLayout({ children }: { children: React.ReactNod
                   '@type': 'Service',
                   name: 'Veri Analizi & Danışmanlık',
                   description: 'GA4, Data Studio ve Hotjar ile veriye dayalı kararlar alın.',
-                  provider: { '@type': 'Organization', name: 'Ramses Digital' },
+                  provider: { '@type': 'Organization', name: 'Ramses Dijital' },
                   areaServed: 'TR',
                 },
               },

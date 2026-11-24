@@ -5,14 +5,14 @@ export const metadata: Metadata = {
   description:
     'Dijital pazarlama projeniz için ücretsiz danışmanlık alın. WhatsApp\'tan yazın veya formu doldurun — 24 saat içinde geri dönüyoruz.',
   openGraph: {
-    title: 'İletişim | Ramses Digital',
+    title: 'İletişim | Ramses Dijital',
     description: 'Ücretsiz danışmanlık için bize ulaşın. +90 (535) 560 19 36 · WhatsApp ile hızlı dönüş',
     url: 'https://ramsesdigital.com/iletisim',
   },
   alternates: { canonical: 'https://ramsesdigital.com/iletisim' },
   twitter: {
     card: 'summary_large_image',
-    title: 'İletişim | Ramses Digital',
+    title: 'İletişim | Ramses Dijital',
     description: 'Ücretsiz danışmanlık için bize ulaşın.',
     images: ['https://ramsesdigital.com/og-image.png'],
   },
@@ -28,12 +28,12 @@ export default function IletisimLayout({ children }: { children: React.ReactNode
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'ContactPage',
-            name: 'Ramses Digital İletişim',
+            name: 'Ramses Dijital İletişim',
             url: 'https://ramsesdigital.com/iletisim',
-            description: 'Dijital pazarlama danışmanlığı için Ramses Digital ile iletişime geçin.',
+            description: 'Dijital pazarlama danışmanlığı için Ramses Dijital ile iletişime geçin.',
             mainEntity: {
               '@type': 'Organization',
-              name: 'Ramses Digital',
+              name: 'Ramses Dijital',
               telephone: '+905355601936',
               email: 'ramsesdigitalagency@gmail.com',
               openingHoursSpecification: [

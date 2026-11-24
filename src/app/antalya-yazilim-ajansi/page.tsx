@@ -25,9 +25,9 @@ const solutions = [
   { icon: Globe, title: 'Çok Dilli Web Uygulaması & Site', desc: 'Next.js ile yüksek performanslı, çok dilli otel, tur operatörü ve gayrimenkul siteleri. KOBİ\'den kurumsal ölçeğe.' },
   { icon: Zap, title: 'Rezervasyon & Lead Otomasyonu', desc: 'n8n ile rezervasyon takibi, alıcı adayı bildirimleri, CRM entegrasyonu — sezon yoğunluğunda manuel işi azaltın.' },
   { icon: Layers, title: 'API Entegrasyonu', desc: 'Channel manager, ERP, ilan portalları, ödeme sistemleri — mevcut araçlarınızı birbirine bağlayın.' },
-  { icon: BarChart3, title: 'Veri & Analitik', desc: 'GA4, Looker Studio ve özel dashboard\'lar. Hangi dilin, hangi kanalın rezervasyon/satış getirdiğini görsel hale getirin.' },
+  { icon: BarChart3, title: 'Veri & Analitik', desc: 'GA4, Looker Studio ve özel rapor panosu\'lar. Hangi dilin, hangi kanalın rezervasyon/satış getirdiğini görsel hale getirin.' },
   { icon: Cpu, title: 'Yapay Zeka Entegrasyonu', desc: 'Çok dilli müşteri destek botu, ilan açıklaması üretimi, öneri sistemleri. Claude & GPT-4 entegrasyonu.' },
-  { icon: Shield, title: 'Güvenlik & Bakım', desc: 'SSL, düzenli güvenlik taraması, yedekleme ve uptime monitoring. Sezon ortasında teknik sorun riski almayın.' },
+  { icon: Shield, title: 'Güvenlik & Bakım', desc: 'SSL, düzenli güvenlik taraması, yedekleme ve kesintisiz çalışma takibi. Sezon ortasında teknik sorun riski almayın.' },
 ]
 
 const stack = ['Next.js', 'TypeScript', 'React', 'Node.js', 'n8n', 'PostgreSQL', 'Vercel', 'Supabase', 'Claude API', 'Stripe']

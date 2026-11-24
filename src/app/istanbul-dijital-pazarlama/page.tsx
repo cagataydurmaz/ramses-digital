@@ -52,8 +52,8 @@ const channels = [
   {
     icon: Zap,
     title: 'Pazarlama Otomasyonu (n8n)',
-    desc: 'Tekrarlayan pazarlama süreçlerini otomatikleştirin. CRM entegrasyonu, lead nurturing, bildirim akışları.',
-    tags: ['n8n', 'CRM', 'Lead Nurturing', 'Webhook'],
+    desc: 'Tekrarlayan pazarlama süreçlerini otomatikleştirin. CRM entegrasyonu, aday müşteri takibi, bildirim akışları.',
+    tags: ['n8n', 'CRM', 'Aday Müşteri Takibi', 'Webhook'],
     href: '/hizmetler/n8n-otomasyon',
   },
   {
@@ -67,7 +67,7 @@ const channels = [
     icon: BarChart3,
     title: 'Veri Analizi & Raporlama',
     desc: 'GA4, Looker Studio ve dönüşüm hunisi analiziyle hangi kanalın işe yaradığını kesin olarak görün.',
-    tags: ['GA4', 'Looker Studio', 'Dönüşüm Hunisi', 'Dashboard'],
+    tags: ['GA4', 'Looker Studio', 'Dönüşüm Hunisi', 'Rapor Panosu'],
     href: '/hizmetler/veri-analizi',
   },
 ]
@@ -87,7 +87,7 @@ const sectors = [
 const faqs = [
   { q: 'İstanbul\'daki büyük ajanslara ve rakiplerime karşı nasıl öne çıkabilirim?', a: 'Üç odak noktası: (1) İlçe bazlı niş konumlanma — "İstanbul\'da avukat" yerine "Kadıköy\'de diş implantı" gibi daha spesifik, daha az rekabetli aramalarda üstünlük kurmak. (2) Google Haritalar\'da üst sıra — büyük firmalar genellikle GBP\'yi eksik dolduruyor. (3) Kullanıcı yorumları — yerel aramalarda en belirleyici faktörlerden biri.' },
   { q: 'İstanbul\'daki hukuk büroları ve profesyonel hizmet firmaları için özel bir yaklaşımınız var mı?', a: 'Evet. Portföyümüzde İstanbul Barosu\'na kayıtlı iki avukat müşterimiz var (Av. Furkan Arıkan, Av. Mert Anıl Güler). Avukatlık Kanunu\'nun reklam yasağı nedeniyle bu sektörde tamamen SEO ve içerik otoritesine dayalı, kurumsal kimliğe uygun bir strateji uyguluyoruz.' },
-  { q: 'Uzaktan çalışıyor musunuz, yoksa İstanbul\'da yerinde mi?', a: 'Tüm hizmetlerimiz uzaktan yürütülüyor. Toplantılar Google Meet/Zoom üzerinden, raporlar dijital dashboard ve PDF ile paylaşılıyor. İstanbul\'un trafiğinde fiziksel toplantıya gitme zorunluluğu olmadan, aynı kalitede hizmet alıyorsunuz.' },
+  { q: 'Uzaktan çalışıyor musunuz, yoksa İstanbul\'da yerinde mi?', a: 'Tüm hizmetlerimiz uzaktan yürütülüyor. Toplantılar Google Meet/Zoom üzerinden, raporlar dijital rapor panosu ve PDF ile paylaşılıyor. İstanbul\'un trafiğinde fiziksel toplantıya gitme zorunluluğu olmadan, aynı kalitede hizmet alıyorsunuz.' },
   { q: 'Yapay zeka reklamcılığı ve GEO nedir, İstanbul işletmesi için gerekli mi?', a: 'GEO (Generative Engine Optimization), ChatGPT veya Gemini\'de "İstanbul\'da [sektörünüz]" aramasında alıntılanma olasılığını artırmak için yapılan içerik ve yapı çalışmasıdır. İstanbul\'un aşırı rekabetçi geleneksel SEO ortamında, GEO henüz doymamış bir kanal — erken hareket eden işletmeler önemli bir avantaj kazanıyor.' },
   ...cityServiceFaqs('istanbul', 'pazarlama'),
 ]

@@ -1,8 +1,8 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Gizlilik Politikası & KVKK | Ramses Digital Kocaeli',
-  description: 'Ramses Digital kişisel veri işleme politikası: KVKK kapsamında hangi verilerinizi neden topladığımızı ve haklarınızı öğrenin.',
+  title: 'Gizlilik Politikası & KVKK | Ramses Dijital Kocaeli',
+  description: 'Ramses Dijital kişisel veri işleme politikası: KVKK kapsamında hangi verilerinizi neden topladığımızı ve haklarınızı öğrenin.',
   alternates: { canonical: 'https://ramsesdigital.com/gizlilik-politikasi' },
 }
 
@@ -18,7 +18,7 @@ export default function GizlilikPolitikasiPage() {
             <h2 className="text-white font-semibold text-lg mb-3">1. Veri Sorumlusu</h2>
             <p>
               6698 sayılı Kişisel Verilerin Korunması Kanunu (&quot;KVKK&quot;) kapsamında veri sorumlusu sıfatıyla
-              Ramses Digital, kişisel verilerinizin işlenmesine ilişkin bu Gizlilik Politikasını
+              Ramses Dijital, kişisel verilerinizin işlenmesine ilişkin bu Gizlilik Politikasını
               yayımlamaktadır.
             </p>
             <div className="mt-3 bg-white/[0.03] border border-white/[0.06] rounded-xl p-4">

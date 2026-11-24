@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 
 const features = [
   { icon: Search, title: 'Yerel SEO & Google Business', desc: '"İzmit + hizmetiniz" aramalarında harita paketine girin. GBP optimizasyonu, yerel dizinler, müşteri yorum stratejisi.' },
-  { icon: FileText, title: 'Teknik SEO Audit', desc: 'Site hızı, Core Web Vitals, mobil uyum, crawlability ve index optimizasyonu. Teknik engelleri kaldırın.' },
+  { icon: FileText, title: 'Teknik SEO Denetimi', desc: 'Site hızı, Core Web Vitals, mobil uyum, crawlability ve index optimizasyonu. Teknik engelleri kaldırın.' },
   { icon: Zap, title: 'GEO & AEO Optimizasyonu', desc: 'ChatGPT, Gemini ve Perplexity\'de "İzmit\'teki [sektörünüz]" aramasında alıntılanma olasılığını artıran yapılandırılmış içerik.' },
   { icon: Link2, title: 'Backlink İnşası', desc: 'İzmit ve Kocaeli\'deki yerel kaynaklardan, sektörel sitelerden kaliteli backlink. Spam yok, organik otorite.' },
   { icon: BarChart3, title: 'İçerik Stratejisi', desc: 'İzmit\'teki potansiyel müşterilerin aradığı sorulara cevap veren blog ve pillar content. Aylık 4-8 yazı.' },
@@ -50,11 +50,11 @@ const faqs = [
   { q: 'İzmit SEO fiyatları ve SEO paketleri nelerdir?', a: 'Fiyat işletme büyüklüğüne, sektördeki rekabete ve hedeflenen bölgeye göre değişir. Sayfadaki AI teklif hesaplayıcı ile işletmenize özel tahmini teklifi hemen görebilirsiniz; kesin fiyat ücretsiz site analizinden sonra netleşir.' },
   { q: 'İzmit\'te kurumsal SEO ile yerel SEO arasındaki fark nedir?', a: 'Yerel SEO, "İzmit + hizmet" aramalarında Google haritasında ve sonuçlarda görünmeyi hedefler; psikolog, avukat, klinik ya da oto servis gibi tek lokasyonlu işletmeler için uygundur. Kurumsal SEO ise çok hizmetli, B2B ya da çok lokasyonlu firmalarda ürün/hizmet sayfası mimarisi, teknik altyapı ve güven içeriklerine odaklanır.' },
   { q: 'İzmit\'te SEO ne kadar sürede sonuç verir?', a: 'Google Business Profile ve yerel harita için 2-4 hafta içinde iyileşme görülür. Organik web sitesi sıralamaları 3-6 ay içinde belirginleşir. Rakibinize ve anahtar kelime rekabetine göre tam etki 6-12 ayda ortaya çıkar. Sabırsızlar için Google Ads\'i paralelde yürütmek önerilir.' },
-  { q: 'İzmit\'te SEO maliyeti ne kadar?', a: 'İşletme büyüklüğüne ve kapsama göre değişir. Her paket: teknik audit, anahtar kelime stratejisi, aylık içerik üretimi, backlink çalışması, GBP yönetimi ve aylık raporlama içerir. Ücretsiz danışmanlıkta işletmenize özel fiyat sunulur.' },
+  { q: 'İzmit\'te SEO maliyeti ne kadar?', a: 'İşletme büyüklüğüne ve kapsama göre değişir. Her paket: teknik denetim, anahtar kelime stratejisi, aylık içerik üretimi, backlink çalışması, GBP yönetimi ve aylık raporlama içerir. Ücretsiz danışmanlıkta işletmenize özel fiyat sunulur.' },
   { q: 'İzmit\'te hangi işletmeler SEO\'dan en çok fayda görür?', a: 'Yerel hizmet veren işletmeler (psikolog, avukat, diş hekimi, oto servis, güzellik salonu, muhasebe bürosu) yerel SEO\'dan en yüksek ROI alır. E-ticaret siteleri ulusal SEO\'dan faydalanır. B2B sanayi firmaları için içerik ve teknik SEO kombinasyonu en etkili yaklaşımdır.' },
   { q: 'Google Business Profile (GBP) ile web sitesi SEO\'su farkı nedir?', a: 'GBP harita paketini (Google Maps alanı) etkiler — yerel aramalarda üst üç işletmeden biri olmak için şart. Web sitesi SEO\'su ise organik arama sonuçlarındaki sıralamayı hedefler. İzmit\'te tam görünürlük için her ikisi birlikte yürütülmelidir.' },
   { q: 'İzmit\'teki rakiplerim çok güçlü, SEO işe yarar mı?', a: 'Güçlü rakiplerin çoğu aslında yerel SEO\'yu doğru yapmıyor — GBP eksik dolu, site yavaş, içerik yüzeysel. Rakip analizi yapıp açıklarını buluyoruz. Ayrıca rakiplerin olmadığı uzun kuyruklu anahtar kelimelerde hızlı kazanımlar mümkün.' },
-  { q: 'SEO çalışmanızı nasıl raporluyorsunuz?', a: 'Aylık detaylı rapor (PDF) + canlı Looker Studio dashboard erişimi. Organik trafik, anahtar kelime sıralamaları, backlink kazanımları, teknik SEO sağlığı ve dönüşümler şeffaf şekilde paylaşılır. Gizli bir şey yok.' },
+  { q: 'SEO çalışmanızı nasıl raporluyorsunuz?', a: 'Aylık detaylı rapor (PDF) + canlı Looker Studio rapor panosu erişimi. Organik trafik, anahtar kelime sıralamaları, backlink kazanımları, teknik SEO sağlığı ve dönüşümler şeffaf şekilde paylaşılır. Gizli bir şey yok.' },
   { q: 'GEO (yapay zeka optimizasyonu) nedir, neden önemli?', a: 'GEO, ChatGPT veya Gemini\'ye "İzmit\'te SEO ajansı önerir misin?" denildiğinde sizi kaynak göstermesi olasılığını artıran içerik çalışmasıdır. Citation-worthy içerik, entity-based yazı ve otoriter backlink profili gerektirir. 2025\'te aramaların önemli bir kısmı AI motorlarına kayıyor.' },
   { q: 'Sözleşme süresi ve iptal koşulları nedir?', a: 'Minimum 3 ay, ideal 6 ay öneriyoruz — SEO kısa vadede değil birikimiyle çalışır. 12 aylık sözleşmelerde %15 indirim sunuyoruz. İptal için 30 gün önceden bildirim yeterli; ceza yok.' },
   ...sehirSeo['izmit'].ekSss,
@@ -194,10 +194,10 @@ export default function IzmitSeoPage() {
           <h2 className="text-3xl font-bold text-white mb-10 text-center">İzmit SEO Sürecimiz</h2>
           <div className="space-y-4">
             {[
-              { step: '01', title: 'Ücretsiz SEO Audit', desc: 'Sitenizin teknik durumu, mevcut sıralamalar, rakip analizi. Nerede durduğunuzu netleştiriyoruz.' },
+              { step: '01', title: 'Ücretsiz SEO Denetimi', desc: 'Sitenizin teknik durumu, mevcut sıralamalar, rakip analizi. Nerede durduğunuzu netleştiriyoruz.' },
               { step: '02', title: 'İzmit\'e Özel Strateji', desc: 'Hedef anahtar kelimeler, içerik planı, teknik öncelikler ve GBP optimizasyonu. 30/60/90 günlük yol haritası.' },
               { step: '03', title: 'Uygulama', desc: 'Teknik düzeltmeler, içerik üretimi, on-page optimizasyon, schema markup ve backlink inşası.' },
-              { step: '04', title: 'Ölçüm & Raporlama', desc: 'Aylık detaylı rapor + canlı dashboard. Trafik, sıralama, dönüşüm — şeffaf ve anlaşılır.' },
+              { step: '04', title: 'Ölçüm & Raporlama', desc: 'Aylık detaylı rapor + canlı rapor panosu. Trafik, sıralama, dönüşüm — şeffaf ve anlaşılır.' },
             ].map(({ step, title, desc }) => (
               <div key={step} className="flex gap-5 bg-[#0D1225] border border-white/[0.06] rounded-xl p-5">
                 <span className="text-3xl font-bold text-blue-500/30 shrink-0 w-10">{step}</span>

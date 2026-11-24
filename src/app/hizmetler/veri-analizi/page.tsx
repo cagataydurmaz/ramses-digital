@@ -10,7 +10,7 @@ import { BarChart3, TrendingUp, Target, Search, LineChart, Lightbulb, CheckCircl
 export const metadata: Metadata = {
   title: 'Veri Analizi: GA4 ve Looker Studio | Ramses Dijital',
   description:
-    'GA4 kurulumu, özel dashboard tasarımı ve dönüşüm huni analiziyle veriye dayalı büyüme stratejisi.',
+    'GA4 kurulumu, özel rapor panosu tasarımı ve dönüşüm huni analiziyle veriye dayalı büyüme stratejisi.',
   alternates: { canonical: 'https://ramsesdigital.com/hizmetler/veri-analizi' },
   openGraph: {
     title: 'Veri Analizi & Danışmanlık | Ramses Dijital',
@@ -34,7 +34,7 @@ const services = [
   },
   {
     icon: LineChart,
-    title: 'Özel Dashboard Tasarımı',
+    title: 'Özel Rapor Panosu Tasarımı',
     desc: 'Looker Studio (Data Studio) ile işletmenize özgü KPI panelleri. Tüm kanalları tek ekranda gerçek zamanlı izleyin.',
   },
   {
@@ -62,13 +62,13 @@ const services = [
 const process = [
   {
     step: '01',
-    title: 'Analitik Altyapı Auditi',
+    title: 'Analitik Altyapı Denetimi',
     desc: 'GA4, GTM, Search Console ve reklam hesaplarınızın veri kalitesi incelenir. Eksik dönüşüm takibi, yanlış yapılandırmalar ve veri kayıpları tespit edilir. Doğru veri olmadan doğru karar alınamaz.',
   },
   {
     step: '02',
     title: 'KPI Çerçevesi Oluşturma',
-    desc: 'İşletme hedeflerinize göre kuzey yıldızı metriği (North Star Metric) ve ikincil KPI\'lar belirlenir. Vanity metrikleri (saf ziyaretçi sayısı) değil, geliri etkileyen metrikler önceliklendirilir.',
+    desc: 'İşletme hedeflerinize göre kuzey yıldızı metriği (North Star Metric) ve ikincil KPI\'lar belirlenir. Gösteriş metrikleri (saf ziyaretçi sayısı) değil, geliri etkileyen metrikler önceliklendirilir.',
   },
   {
     step: '03',
@@ -97,8 +97,8 @@ const faqs = [
     a: 'Yapılabilir, ama kör uçuşla aynı şey. Hangi reklamın dönüşüm getirdiğini, hangi sayfanın ziyaretçi kaçırdığını, hangi kanalın en değerli müşteriyi çektiğini bilmeden bütçe optimizasyonu yapamazsınız.',
   },
   {
-    q: 'Looker Studio dashboard ne zaman hazır olur?',
-    a: 'Standart bir dashboard (trafik, dönüşüm, kanal performansı, açılış sayfaları) 3-5 iş günü. CRM verisi ve reklam hesaplarını birleştiren kapsamlı bir multi-kaynak dashboard ise 1-2 hafta sürer. Dashboard tesliminden sonra sizi bağımsız kullanabilmeniz için eğitim de yapılıyor.',
+    q: 'Looker Studio rapor panosu ne zaman hazır olur?',
+    a: 'Standart bir rapor panosu (trafik, dönüşüm, kanal performansı, açılış sayfaları) 3-5 iş günü. CRM verisi ve reklam hesaplarını birleştiren kapsamlı bir multi-kaynak rapor panosu ise 1-2 hafta sürer. Rapor panosu tesliminden sonra sizi bağımsız kullanabilmeniz için eğitim de yapılıyor.',
   },
   {
     q: 'Veri analizi SEO ve Google Ads\'i nasıl etkiliyor?',
@@ -110,11 +110,11 @@ const faqs = [
   },
   {
     q: 'Küçük işletmeler için veri analizi gerekli mi?',
-    a: 'Kesinlikle. KOBİ\'ler büyük firmalar kadar veri analitikçisi çalıştıramaz, bu yüzden bütçenin nereye gittiğini bilmek daha kritik. Küçük bir işletme için aylık 30 dakikalık doğru dashboard incelemesi, yanlış kanala giden bütçeyi kurtarabilir ve yıllık büyüme hedefini tutturabilir.',
+    a: 'Kesinlikle. KOBİ\'ler büyük firmalar kadar veri analitikçisi çalıştıramaz, bu yüzden bütçenin nereye gittiğini bilmek daha kritik. Küçük bir işletme için aylık 30 dakikalık doğru rapor panosu incelemesi, yanlış kanala giden bütçeyi kurtarabilir ve yıllık büyüme hedefini tutturabilir.',
   },
   {
     q: 'Danışmanlık hizmeti neleri kapsıyor?',
-    a: 'Aylık strateji görüşmesi (60-90 dk), haftalık performans dashboard güncellemesi, sektör kıyaslaması (benchmarking), rakip izleme ve öne çıkan fırsatların haftalık özeti. Büyüme sürecinizde veri temelli karar almak için sürekli bir danışman olarak yanınızdayız.',
+    a: 'Aylık strateji görüşmesi (60-90 dk), haftalık performans panosu güncellemesi, sektör kıyaslaması (benchmarking), rakip izleme ve öne çıkan fırsatların haftalık özeti. Büyüme sürecinizde veri temelli karar almak için sürekli bir danışman olarak yanınızdayız.',
   },
   {
     q: 'Atıf modeli (attribution model) nedir ve neden önemli?',
@@ -140,10 +140,10 @@ export default function VeriAnaliziPage() {
             <span className="gradient-text">Güvenle Büyü</span>
           </h1>
           <p className="text-zinc-400 text-lg max-w-2xl mx-auto lg:mx-0 mb-10">
-            GA4 kurulumundan Looker Studio dashboard tasarımına, dönüşüm huni analizinden
+            GA4 kurulumundan Looker Studio rapor panosu tasarımına, dönüşüm huni analizinden
             rekabet istihbaratına — tüm büyüme kararlarınızı veriye dayandırın.
           </p>
-          <CalendlyButton label="Ücretsiz Analitik Auditi" variant="primary" />
+          <CalendlyButton label="Ücretsiz Analitik Denetimi" variant="primary" />
           </div>
           <div className="order-first lg:order-none mx-auto w-full max-w-[300px] lg:max-w-none">
             <RaporTelefon />
@@ -318,7 +318,7 @@ export default function VeriAnaliziPage() {
         <div className="max-w-3xl mx-auto text-center bg-gradient-to-b from-cyan-500/10 to-transparent border border-cyan-500/20 rounded-3xl p-10 md:p-14">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Analitik Altyapınızı Denetleyelim</h2>
           <p className="text-zinc-400 text-lg mb-8">GA4 kurulumunuz, dönüşüm takibiniz ve veri kalitenizdeki açıkları ücretsiz tespit edelim.</p>
-          <CalendlyButton label="Ücretsiz Analitik Auditi" variant="primary" />
+          <CalendlyButton label="Ücretsiz Analitik Denetimi" variant="primary" />
         </div>
       </section>
 
@@ -327,7 +327,7 @@ export default function VeriAnaliziPage() {
         '@context': 'https://schema.org',
         '@type': 'Service',
         name: 'Veri Analizi & Stratejik Danışmanlık',
-        description: 'GA4 kurulumu, Looker Studio dashboard tasarımı, dönüşüm huni analizi ve büyüme stratejisi danışmanlığı.',
+        description: 'GA4 kurulumu, Looker Studio rapor panosu tasarımı, dönüşüm huni analizi ve büyüme stratejisi danışmanlığı.',
         provider: { '@type': 'Organization', name: 'Ramses Dijital Yazılım ve Dijital Pazarlama Ajansı', url: 'https://ramsesdigital.com' },
         areaServed: { '@type': 'Country', name: 'Türkiye' },
         serviceType: 'Data Analytics Consulting',
@@ -337,7 +337,7 @@ export default function VeriAnaliziPage() {
           name: 'Veri Analizi Hizmetleri',
           itemListElement: [
             { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'GA4 Kurulum & Yapılandırma' } },
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Looker Studio Dashboard Tasarımı' } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Looker Studio Rapor Panosu Tasarımı' } },
             { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Dönüşüm Huni Analizi' } },
             { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Büyüme Stratejisi Danışmanlığı' } },
           ],

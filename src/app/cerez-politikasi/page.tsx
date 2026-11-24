@@ -1,8 +1,8 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Çerez Politikası | Ramses Digital Kocaeli',
-  description: 'Ramses Digital çerez politikası: sitemizde kullandığımız çerez türleri, amaçları ve nasıl yönetebileceğiniz hakkında bilgi alın.',
+  title: 'Çerez Politikası | Ramses Dijital Kocaeli',
+  description: 'Ramses Dijital çerez politikası: sitemizde kullandığımız çerez türleri, amaçları ve nasıl yönetebileceğiniz hakkında bilgi alın.',
   alternates: { canonical: 'https://ramsesdigital.com/cerez-politikasi' },
 }
 

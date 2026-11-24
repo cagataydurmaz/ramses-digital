@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { Home, Search, ArrowRight, Compass } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Sayfa Bulunamadı | Ramses Digital',
+  title: 'Sayfa Bulunamadı | Ramses Dijital',
   description: 'Aradığınız sayfa bulunamadı. Anasayfaya dönebilir veya popüler sayfalarımıza göz atabilirsiniz.',
   robots: { index: false, follow: false },
 }

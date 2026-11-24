@@ -33,7 +33,7 @@ const services = [
 
 const faqs = [
   { q: 'Ankara\'daki B2B ve kurumsal firmalar için Google Ads işe yarıyor mu?', a: 'Evet, ancak strateji farklıdır. Uzun kuyruklu B2B aramalar ("Ankara endüstriyel ekipman tedarikçisi" gibi) düşük hacimli ama yüksek değerli. LinkedIn ile Google Ads kombinasyonu bu segmentte etkili olabilir.' },
-  { q: 'Raporlama nasıl yapılıyor?', a: 'Aylık Google Ads performans raporu: gösterim, tıklama, CPC, dönüşüm, ROAS ve CPA metrikleri. Canlı dashboard erişimi veriyoruz.' },
+  { q: 'Raporlama nasıl yapılıyor?', a: 'Aylık Google Ads performans raporu: gösterim, tıklama, CPC, dönüşüm, ROAS ve CPA metrikleri. Canlı rapor panosu erişimi veriyoruz.' },
   { q: 'Ankara\'da Google Ads yönetimi için sözleşme şartı var mı?', a: 'Minimum 3 ay öneriyoruz. Google Ads öğrenme dönemi 30 gün, optimizasyon için en az 60-90 gün gerekiyor.' },
   { q: 'Hesabın mülkiyeti kimde olur?', a: 'Sizde. Google Ads hesabı kendi adınıza açılır, biz yönetici erişimiyle bağlanırız — kamu ve kurumsal müşterilerimiz için hesap üzerinde tam şeffaflık ve denetim her zaman sizdedir.' },
   ...cityServiceFaqs('ankara', 'ads'),

@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Dijital Pazarlama Hizmetleri | Ramses Digital',
+    title: 'Dijital Pazarlama Hizmetleri | Ramses Dijital',
     description: 'SEO, GEO, Google Ads, n8n otomasyon — tüm dijital büyüme araçları.',
     images: ['https://ramsesdigital.com/og-image.png'],
   },
@@ -122,7 +122,7 @@ const services = [
       'CRM & Satış Pipeline Otomasyonu',
       'AI Destekli İçerik & Raporlama Akışları',
       'Webhook & API Entegrasyonları',
-      'Lead Yakalama & Nurturing Otomasyonu',
+      'Talep Yakalama & Takip Otomasyonu',
       'Çoklu Platform Senkronizasyonu',
       'Self-Hosted & Güvenli Altyapı',
     ],
@@ -136,7 +136,7 @@ const services = [
     desc: 'Verilerinizi anlamlı içgörülere dönüştürüyor, büyüme fırsatlarını tespit ediyoruz. GA4 kurulumu, özel raporlar ve stratejik danışmanlıkla işletmenizi ileriye taşıyoruz.',
     features: [
       'GA4 Kurulum & Yapılandırma',
-      'Özel Dashboard Tasarımı',
+      'Özel Rapor Panosu Tasarımı',
       'Kullanıcı Davranış Analizi',
       'Dönüşüm Huni Optimizasyonu',
       'Rekabet Analizi',
@@ -399,7 +399,7 @@ export default function ServicesPage() {
                 description: s.desc,
                 provider: {
                   '@type': 'Organization',
-                  name: 'Ramses Digital',
+                  name: 'Ramses Dijital',
                   url: 'https://ramsesdigital.com',
                 },
                 areaServed: ['Kocaeli', 'İstanbul', 'Türkiye'],
@@ -474,7 +474,7 @@ const faqs = [
   },
   {
     q: 'Raporlama nasıl yapılıyor?',
-    a: 'Aylık detaylı performans raporu + canlı dashboard erişimi sağlıyoruz. Google Analytics, Search Console ve özel dashboard\'larımızdan tüm KPI\'ları (trafik, dönüşüm, ROAS, organik sıralamalar) gerçek zamanlı görebilirsiniz.',
+    a: 'Aylık detaylı performans raporu + canlı rapor panosu erişimi sağlıyoruz. Google Analytics, Search Console ve özel rapor panosu\'larımızdan tüm KPI\'ları (trafik, dönüşüm, ROAS, organik sıralamalar) gerçek zamanlı görebilirsiniz.',
   },
   {
     q: 'GEO ve AEO neden önemli?',

@@ -28,7 +28,7 @@ export const posts: Post[] = [
     coverImage: 'https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=800&q=80&fit=crop',
     title: "Google'da Zirveye Çıkmanın 7 Sırrı",
     excerpt:
-      "2024'te Google'da üst sıralara çıkmak için bilmeniz gereken 7 kritik SEO stratejisini keşfedin. Teknik optimizasyondan içerik stratejisine kadar kapsamlı rehber.",
+      "Bugün Google'da üst sıralara çıkmak için bilmeniz gereken 7 kritik SEO stratejisini keşfedin. Teknik optimizasyondan içerik stratejisine kadar kapsamlı rehber.",
     category: 'SEO',
     categoryColor: 'blue',
     emoji: '🔍',
@@ -40,7 +40,7 @@ export const posts: Post[] = [
     tags: ['SEO', 'Google', 'Organik Trafik', 'Anahtar Kelime'],
     content: `
       <h2>Google'da Zirveye Çıkmanın 7 Sırrı</h2>
-      <p>Dijital pazarlama dünyasında Google'da üst sıralara çıkmak, her işletmenin en büyük hedeflerinden biridir. Organik arama trafiği, ücretli reklamların aksine uzun vadeli ve sürdürülebilir bir büyüme sağlar. Bu rehberde, 2024 yılında Google'da zirveye çıkmanıza yardımcı olacak 7 kritik stratejiyi detaylı şekilde ele alacağız.</p>
+      <p>Dijital pazarlama dünyasında Google'da üst sıralara çıkmak, her işletmenin en büyük hedeflerinden biridir. Organik arama trafiği, ücretli reklamların aksine uzun vadeli ve sürdürülebilir bir büyüme sağlar. Bu rehberde, bugün Google'da zirveye çıkmanıza yardımcı olacak 7 kritik stratejiyi detaylı şekilde ele alacağız.</p>
 
       <table>
         <thead><tr><th>#</th><th>Strateji</th><th>Öncelik</th></tr></thead>
@@ -130,7 +130,7 @@ export const posts: Post[] = [
       <h3>Sık Sorulan Sorular</h3>
 
       <h3>SEO çalışmasına nereden başlamalıyım?</h3>
-      <p>Önce mevcut sitenizin teknik durumunu bir audit ile netleştirin: hız, mobil uyum, indeksleme durumu. Ardından anahtar kelime araştırmasıyla hedef kitlenizin ne aradığını belirleyin. Bu iki adım olmadan içerik üretimine başlamak, hedefsiz bir çalışmaya dönüşür.</p>
+      <p>Önce mevcut sitenizin teknik durumunu bir denetim ile netleştirin: hız, mobil uyum, indeksleme durumu. Ardından anahtar kelime araştırmasıyla hedef kitlenizin ne aradığını belirleyin. Bu iki adım olmadan içerik üretimine başlamak, hedefsiz bir çalışmaya dönüşür.</p>
 
       <h3>7 stratejiden hangisi en çok öncelik almalı?</h3>
       <p>Sitenizin mevcut durumuna bağlıdır. Teknik sorunlarınız varsa (yavaş yükleme, mobil uyumsuzluk) önce onu çözün — diğer tüm çalışmalar bu temel olmadan etkisiz kalır. Teknik altyapı sağlamsa, içerik kalitesi ve E-E-A-T sinyallerine odaklanmak en yüksek getiriyi sağlar.</p>
@@ -139,7 +139,7 @@ export const posts: Post[] = [
       <p>Evet, hatta küçük işletmeler için daha da kritik. Büyük bütçeli reklam kampanyaları kuramayan KOBİ'ler için organik SEO, uzun vadede en düşük maliyetli müşteri kazanım kanalıdır. Yerel SEO (5. madde) özellikle fiziksel hizmet veren küçük işletmeler için önceliklidir.</p>
 
       <h3>Sonuç</h3>
-      <p>Google'da zirveye çıkmak sabır ve tutarlılık gerektiren stratejik bir süreçtir. Yukarıdaki 7 stratejiyi sistematik biçimde uygulayarak organik arama görünürlüğünüzü ve trafiğinizi önemli ölçüde artırabilirsiniz. Ramses Digital olarak, SEO çalışmalarınızı veri odaklı yaklaşımımızla desteklemeye hazırız.</p>
+      <p>Google'da zirveye çıkmak sabır ve tutarlılık gerektiren stratejik bir süreçtir. Yukarıdaki 7 stratejiyi sistematik biçimde uygulayarak organik arama görünürlüğünüzü ve trafiğinizi önemli ölçüde artırabilirsiniz. Ramses Dijital olarak, SEO çalışmalarınızı veri odaklı yaklaşımımızla desteklemeye hazırız.</p>
     `,
   },
   {
@@ -164,7 +164,7 @@ export const posts: Post[] = [
       </div>
 
       <h2>Google Ads Tam Rehberi</h2>
-      <p>Google Ads, işletmelerin hedef kitlelerine doğrudan ulaşmasını sağlayan en güçlü dijital reklam platformlarından biridir. Doğru stratejilerle yönetildiğinde, her harcanan lira için birden fazla lira geri kazanmanız mümkündür. Bu kapsamlı rehberde, 2024 yılında Google Ads'ten maksimum verim almanın yollarını adım adım ele alacağız.</p>
+      <p>Google Ads, işletmelerin hedef kitlelerine doğrudan ulaşmasını sağlayan en güçlü dijital reklam platformlarından biridir. Doğru stratejilerle yönetildiğinde, her harcanan lira için birden fazla lira geri kazanmanız mümkündür. Bu kapsamlı rehberde, bugün Google Ads'ten maksimum verim almanın yollarını adım adım ele alacağız.</p>
 
       <div class="stat-grid">
         <div class="stat-card">
@@ -183,7 +183,7 @@ export const posts: Post[] = [
 
       <h2>Kampanya Türlerini Anlayın</h2>
       <p>Google Ads ekosistemi birden fazla kampanya türünü bünyesinde barındırır. Arama ağı kampanyaları, kullanıcılar belirli anahtar kelimeleri aradığında reklamlarınızın görünmesini sağlar. Görüntülü reklam ağı ise milyonlarca web sitesinde görsel reklamlar yayınlamanıza olanak tanır.</p>
-      <p>Video kampanyaları YouTube'da, Alışveriş kampanyaları ise e-ticaret ürünlerinizi doğrudan arama sonuçlarında sergiler. 2024'te Performans Max (PMax) kampanyaları tüm Google kanallarında yapay zeka destekli optimizasyon sunarak ön plana çıkmaktadır.</p>
+      <p>Video kampanyaları YouTube'da, Alışveriş kampanyaları ise e-ticaret ürünlerinizi doğrudan arama sonuçlarında sergiler. Günümüzde Performans Max (PMax) kampanyaları tüm Google kanallarında yapay zeka destekli optimizasyon sunarak ön plana çıkmaktadır.</p>
       <p>Her kampanya türünün ideal kullanım senaryosu farklıdır. Arama kampanyaları en yüksek satın alma niyetini yakalar ama rekabet nedeniyle CPC'si yüksek olabilir. Görüntülü reklamlar marka bilinirliği için düşük maliyetli ama düşük dönüşümlü bir kanaldır. Alışveriş kampanyaları, ürün görseli ve fiyatını doğrudan arama sonucunda gösterdiği için e-ticaret için genellikle en yüksek ROAS'ı sağlar. Doğru kampanya karması, işletmenizin huninin (funnel) hangi aşamasına odaklandığına bağlıdır.</p>
 
       <table>
@@ -255,7 +255,7 @@ export const posts: Post[] = [
       <p>Küçük, tek seferlik kampanyalar için kendi yönetiminiz yeterli olabilir. Ancak Kalite Puanı optimizasyonu, negatif anahtar kelime yönetimi ve teklif stratejisi derinlemesine uzmanlık gerektirir — deneyimsiz yönetimde aynı bütçeyle %40-60 daha az dönüşüm almak çok yaygındır. Profesyonel yönetim genellikle kendini ilk 2-3 ayda amorti eder.</p>
 
       <h3>Sonuç</h3>
-      <p>Google Ads, doğru yönetildiğinde işletmeniz için güçlü bir büyüme motoru olabilir. Veri odaklı kararlar alarak, sürekli test ederek ve optimize ederek yatırım getirinizi maksimize edebilirsiniz. Ramses Digital'in Google Ads uzmanlığından yararlanarak kampanyalarınızı bir üst seviyeye taşıyın.</p>
+      <p>Google Ads, doğru yönetildiğinde işletmeniz için güçlü bir büyüme motoru olabilir. Veri odaklı kararlar alarak, sürekli test ederek ve optimize ederek yatırım getirinizi maksimize edebilirsiniz. Ramses Dijital'in Google Ads uzmanlığından yararlanarak kampanyalarınızı bir üst seviyeye taşıyın.</p>
     `,
   },
   {
@@ -263,7 +263,7 @@ export const posts: Post[] = [
     coverImage: 'https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=800&q=80&fit=crop',
     title: 'Instagram Algoritması: Organik Büyümenin Formülü',
     excerpt:
-      "Instagram algoritmasının 2024'te nasıl çalıştığını anlayın ve organik erişiminizi ikiye katlayacak kanıtlanmış stratejileri keşfedin.",
+      "Instagram algoritmasının bugün nasıl çalıştığını anlayın ve organik erişiminizi ikiye katlayacak kanıtlanmış stratejileri keşfedin.",
     category: 'Sosyal Medya',
     categoryColor: 'pink',
     emoji: '📱',
@@ -275,7 +275,7 @@ export const posts: Post[] = [
     tags: ['Instagram', 'Sosyal Medya', 'Organik Büyüme', 'Reels', 'İçerik Stratejisi'],
     content: `
       <h2>Instagram Algoritması: Organik Büyümenin Formülü</h2>
-      <p>Instagram algoritması, milyonlarca içerik arasından hangilerinin kullanıcılara gösterileceğini belirleyen karmaşık bir sistemdir. Bu sistemi anlamak ve doğru stratejilerle yaklaşmak, organik erişiminizi dramatik biçimde artırabilir. 2024 yılında Instagram'da organik büyümeyi sağlamanın formülünü bu rehberde sizinle paylaşıyoruz.</p>
+      <p>Instagram algoritması, milyonlarca içerik arasından hangilerinin kullanıcılara gösterileceğini belirleyen karmaşık bir sistemdir. Bu sistemi anlamak ve doğru stratejilerle yaklaşmak, organik erişiminizi dramatik biçimde artırabilir. Bugün Instagram'da organik büyümeyi sağlamanın formülünü bu rehberde sizinle paylaşıyoruz.</p>
 
       <div class="stat-grid">
         <div class="stat-card">
@@ -313,7 +313,7 @@ export const posts: Post[] = [
       </table>
 
       <h2>Hashtag Stratejisi: Doğru Kombinasyon</h2>
-      <p>Hashtag kullanımı hâlâ önemini korumakla birlikte, 2024'teki yaklaşım değişmiştir. 3-5 arasında hedefli, alaka düzeyi yüksek hashtag kullanmak, 30 genel hashtag kullanmaktan çok daha etkilidir. Niche hashtag'ler (10.000-500.000 paylaşım arası) genellikle daha iyi sonuçlar verir.</p>
+      <p>Hashtag kullanımı hâlâ önemini korumakla birlikte, bugünkü yaklaşım değişmiştir. 3-5 arasında hedefli, alaka düzeyi yüksek hashtag kullanmak, 30 genel hashtag kullanmaktan çok daha etkilidir. Niche hashtag'ler (10.000-500.000 paylaşım arası) genellikle daha iyi sonuçlar verir.</p>
       <p>Marka hashtag'i oluşturun ve topluluk oluşturmak için bunu düzenli olarak kullanın. Rakip analizi yaparak sektörünüzdeki etkili hashtag'leri belirleyin ve alternatif ifadeler deneyin.</p>
       <p>Aşırı geniş hashtag'ler (#aşk, #istanbul gibi milyonlarca paylaşımlı etiketler) içeriğinizi anında görünmez kılar çünkü rekabet inanılmaz yüksektir ve gönderiniz saniyeler içinde akışın dibine düşer. Bunun yerine orta ölçekli, sektörünüze özgü etiketleri tercih etmek, gönderinizin o etiketin "En İyiler" sekmesinde daha uzun süre kalmasını sağlar.</p>
 
@@ -365,7 +365,7 @@ export const posts: Post[] = [
     tags: ['Strateji', 'Ajans Seçimi', 'Veri Analizi', 'ROI', 'Mühendislik'],
     content: `
       <h2>Neden Mühendislik Temelli Ajans Seçmelisiniz?</h2>
-      <p>Dijital pazarlama dünyasında "ajans" denildiğinde çoğu zaman yaratıcı stüdyolar akla gelir. Ancak günümüz rekabet ortamında başarı, yalnızca estetik değil veri, analitik ve mühendislik disiplininin pazarlama düşüncesiyle birleşmesiyle mümkündür. Ramses Digital olarak mühendislik temelli bir yaklaşımı neden benimsediğimizi ve bunun müşterilerimize nasıl somut avantajlar sağladığını bu yazıda ele alıyoruz.</p>
+      <p>Dijital pazarlama dünyasında "ajans" denildiğinde çoğu zaman yaratıcı stüdyolar akla gelir. Ancak günümüz rekabet ortamında başarı, yalnızca estetik değil veri, analitik ve mühendislik disiplininin pazarlama düşüncesiyle birleşmesiyle mümkündür. Ramses Dijital olarak mühendislik temelli bir yaklaşımı neden benimsediğimizi ve bunun müşterilerimize nasıl somut avantajlar sağladığını bu yazıda ele alıyoruz.</p>
 
       <table>
         <thead><tr><th>Yaklaşım</th><th>Geleneksel Ajans</th><th>Mühendislik Temelli Ajans</th></tr></thead>
@@ -423,7 +423,7 @@ export const posts: Post[] = [
 
       <h3>Sonuç: Ajans Seçerken Sormaya Değer Sorular</h3>
       <p>Bir dijital pazarlama ajansı seçerken şu soruları sormayı ihmal etmeyin: Kampanya performansını nasıl ölçüyorsunuz? Hangi analitik araçları kullanıyorsunuz? Raporlama ne sıklıkla yapılıyor ve hangi metrikleri kapsıyor? Test ve optimizasyon süreçleriniz nasıl işliyor?</p>
-      <p>Ramses Digital olarak bu sorulara somut ve ölçülebilir yanıtlar veriyoruz. Mühendislik disiplini, pazarlama yaratıcılığıyla buluştuğunda işletmeniz için gerçek bir rekabet avantajı doğar.</p>
+      <p>Ramses Dijital olarak bu sorulara somut ve ölçülebilir yanıtlar veriyoruz. Mühendislik disiplini, pazarlama yaratıcılığıyla buluştuğunda işletmeniz için gerçek bir rekabet avantajı doğar.</p>
 
       <h3>Sık Sorulan Sorular</h3>
 
@@ -519,13 +519,13 @@ export const posts: Post[] = [
       <p>Sitenizin mevcut durumuna bağlıdır — Search Console raporunda "Zayıf" olarak işaretlenen metrik önceliğinizdir. Genel olarak LCP çoğu site için en yaygın sorunlu metriktir çünkü büyük görseller ve yavaş sunucu yanıtları yaygın hatalardır.</p>
 
       <h3>Sonuç</h3>
-      <p>Core Web Vitals optimizasyonu, teknik bilgi gerektiren ancak somut iş sonuçları yaratan bir süreçtir. Ramses Digital'in teknik SEO ekibi, sitenizi kapsamlı bir performans denetimiyle analiz ederek iyileştirme planı hazırlar ve uygular. Daha hızlı bir site, daha yüksek sıralamalar ve daha fazla dönüşüm için bugün harekete geçin.</p>
+      <p>Core Web Vitals optimizasyonu, teknik bilgi gerektiren ancak somut iş sonuçları yaratan bir süreçtir. Ramses Dijital'in teknik SEO ekibi, sitenizi kapsamlı bir performans denetimiyle analiz ederek iyileştirme planı hazırlar ve uygular. Daha hızlı bir site, daha yüksek sıralamalar ve daha fazla dönüşüm için bugün harekete geçin.</p>
     `,
   },
   {
     slug: 'yapay-zeka-ile-rakip-analizi',
     coverImage: 'https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=800&q=80&fit=crop',
-    title: 'Yapay Zeka ile Rakip Analizi: 2024 Rehberi',
+    title: 'Yapay Zekâ ile Rakip Analizi: Adım Adım Rehber',
     excerpt:
       'Yapay zeka araçlarını kullanarak rakiplerinizi nasıl derinlemesine analiz edebilir, stratejik boşlukları nasıl tespit edebilir ve rekabet avantajı elde edebilirsiniz?',
     category: 'AI & Strateji',
@@ -538,8 +538,8 @@ export const posts: Post[] = [
     authorRole: 'Kurucu, Ramses Dijital',
     tags: ['Yapay Zeka', 'Rakip Analizi', 'Strateji', 'ChatGPT', 'Rekabetçi İstihbarat'],
     content: `
-      <h2>Yapay Zeka ile Rakip Analizi: 2024 Rehberi</h2>
-      <p>Rekabetçi istihbarat (competitive intelligence), her zaman başarılı pazarlama stratejisinin ayrılmaz bir parçası olmuştur. Ancak yapay zeka araçlarının yaygınlaşmasıyla birlikte, bu analizi yapmanın hızı, derinliği ve kapsamı köklü biçimde değişmiştir. 2024'te yapay zeka destekli rakip analizi, sizi rakiplerinizin adımlarının birkaç adım önünde tutabilir.</p>
+      <h2>Yapay Zekâ ile Rakip Analizi: Adım Adım Rehber</h2>
+      <p>Rekabetçi istihbarat (competitive intelligence), her zaman başarılı pazarlama stratejisinin ayrılmaz bir parçası olmuştur. Ancak yapay zeka araçlarının yaygınlaşmasıyla birlikte, bu analizi yapmanın hızı, derinliği ve kapsamı köklü biçimde değişmiştir. Bugün yapay zekâ destekli rakip analizi, sizi rakiplerinizin adımlarının birkaç adım önünde tutabilir.</p>
 
       <table>
         <thead><tr><th>Analiz Alanı</th><th>Kullanılan Kaynak</th></tr></thead>
@@ -614,7 +614,7 @@ export const posts: Post[] = [
       <p>Evet, kamuya açık verileri (web sitesi içeriği, reklam kütüphaneleri, müşteri yorumları) analiz etmek tamamen yasal ve yaygın bir uygulamadır. Sınır, özel/gizli verilere yetkisiz erişim veya kötü niyetli faaliyetlerdir (sahte hesap oluşturma, veri kazıma yasaklarını ihlal etme gibi).</p>
 
       <h3>Sonuç</h3>
-      <p>Yapay zeka destekli rakip analizi, rekabetçi istihbaratı demokratikleştirmiştir. Artık yalnızca büyük şirketlerin erişebildiği bu içgörüler, doğru araçlarla her ölçekteki işletme için ulaşılabilir durumdadır. Ramses Digital olarak rakip analizi süreçlerinizi yapay zeka ile güçlendirmenize ve stratejik avantaj elde etmenize yardımcı oluyoruz.</p>
+      <p>Yapay zeka destekli rakip analizi, rekabetçi istihbaratı demokratikleştirmiştir. Artık yalnızca büyük şirketlerin erişebildiği bu içgörüler, doğru araçlarla her ölçekteki işletme için ulaşılabilir durumdadır. Ramses Dijital olarak rakip analizi süreçlerinizi yapay zeka ile güçlendirmenize ve stratejik avantaj elde etmenize yardımcı oluyoruz.</p>
     `,
   },
   {
@@ -712,7 +712,7 @@ export const posts: Post[] = [
       <p>SPF, DKIM ve DMARC kayıtlarınızın doğru yapılandırıldığından emin olun. Ani gönderim hacmi artışlarından kaçının (yeni bir domain'den birden 10.000 e-posta göndermek spam sinyali verir). Düzenli liste temizliği ve düşük şikayet oranı, gönderen itibarınızı (sender reputation) korur.</p>
 
       <h3>Sonuç</h3>
-      <p>%40 açılma oranı, doğru stratejilerle ulaşılabilir bir hedef. Kaliteli liste oluşturma, akıllı segmentasyon, kişiselleştirme ve sürekli test bu başarının temellerini oluşturur. Ramses Digital e-posta pazarlama ekibi, stratejinizi geliştirmenize ve ölçülebilir sonuçlar elde etmenize yardımcı olmaya hazır.</p>
+      <p>%40 açılma oranı, doğru stratejilerle ulaşılabilir bir hedef. Kaliteli liste oluşturma, akıllı segmentasyon, kişiselleştirme ve sürekli test bu başarının temellerini oluşturur. Ramses Dijital e-posta pazarlama ekibi, stratejinizi geliştirmenize ve ölçülebilir sonuçlar elde etmenize yardımcı olmaya hazır.</p>
     `,
   },
   {
@@ -730,7 +730,7 @@ export const posts: Post[] = [
     authorRole: 'Kurucu, Ramses Dijital',
     tags: ['GEO', 'AI SEO', 'ChatGPT', 'Perplexity', 'Generative Engine Optimization', 'LLM'],
     content: `
-      <p><strong>Son güncelleme: Nisan 2025 · Yazar: Çağatay Durmaz, Ramses Digital</strong></p>
+      <p><strong>Son güncelleme: Nisan 2025 · Yazar: Çağatay Durmaz, Ramses Dijital</strong></p>
 
       <p>Bir kullanıcı ChatGPT'ye "İstanbul'da en iyi dijital pazarlama ajansı hangisi?" diye sorduğunda, ya da Perplexity'de "KOBİ'ler için SEO yapan güvenilir ajanslar" aradığında — markanız bu cevaplarda yer alıyor mu?</p>
 
@@ -741,7 +741,7 @@ export const posts: Post[] = [
 
       <p>Geleneksel SEO'da hedef, arama motoru sonuç sayfasında (SERP) üst sıralarda görünmektir. GEO'da hedef farklıdır: yapay zeka bir soruya cevap üretirken <em>sizi kaynak göstermesi</em> veya <em>sizi önermesi</em>.</p>
 
-      <blockquote><strong>Ramses Digital perspektifi:</strong> "2023-2024 yıllarında müşterilerimizden gelen organik sorguları incelediğimizde, 'ChatGPT'ye sorduk, sizi önerdiler' diyen müşteri sayısının 6 ayda 3 katına çıktığını gördük. GEO artık bir 'nice to have' değil, 'must have'."</blockquote>
+      <blockquote><strong>Ramses Dijital perspektifi:</strong> "2023-2024 yıllarında müşterilerimizden gelen organik sorguları incelediğimizde, 'ChatGPT'ye sorduk, sizi önerdiler' diyen müşteri sayısının 6 ayda 3 katına çıktığını gördük. GEO artık bir 'nice to have' değil, 'must have'."</blockquote>
 
       <h2>Neden GEO Artık Zorunlu?</h2>
       <p>Rakamlar net konuşuyor:</p>
@@ -816,7 +816,7 @@ export const posts: Post[] = [
       </ul>
 
       <h3>6. Marka Adınızı + Anahtar Kelimeleri Birlikte Konumlandırın</h3>
-      <p>LLM'ler, bir markayı belirli bir uzmanlık alanıyla ilişkilendirir. "Ramses Digital" ve "mühendislik temelli dijital pazarlama" ifadelerini içerik boyunca tutarlı biçimde birlikte kullanmak, zamanla AI'ın bu ilişkiyi kurmasını sağlar. Bu strateji <em>topical authority</em> oluşturmanın GEO versiyonudur.</p>
+      <p>LLM'ler, bir markayı belirli bir uzmanlık alanıyla ilişkilendirir. "Ramses Dijital" ve "mühendislik temelli dijital pazarlama" ifadelerini içerik boyunca tutarlı biçimde birlikte kullanmak, zamanla AI'ın bu ilişkiyi kurmasını sağlar. Bu strateji <em>topical authority</em> oluşturmanın GEO versiyonudur.</p>
 
       <h3>7. Çok Kanallı Varlık (Omnipresence) Stratejisi</h3>
       <p>LLM'ler web'i tarar; dolayısıyla markanızın yalnızca kendi sitenizdeki içeriklerde değil, sosyal medyada, podcast'lerde, misafir blog yazılarında ve haber sitelerinde de görünür olması gerekir. Dijital iz ne kadar geniş ve tutarlı olursa, AI tarafından "güvenilir" olarak işaretlenme olasılığı o kadar artar.</p>
@@ -830,7 +830,7 @@ export const posts: Post[] = [
         <li><strong>Backlink kalitesi:</strong> Otoriter yayınlardan alınan atıflar hem SEO hem GEO için kritik</li>
       </ul>
 
-      <h2>Ramses Digital'in GEO Yaklaşımı</h2>
+      <h2>Ramses Dijital'in GEO Yaklaşımı</h2>
       <p>Mühendislik altyapımız sayesinde GEO stratejilerini sistematik ve ölçülebilir şekilde uyguluyoruz. Schema implementasyonu, içerik mimarisi, E-E-A-T sinyallerinin güçlendirilmesi ve AI mention tracking süreçlerimizin tamamı, veri odaklı bir metodoloji çerçevesinde yürütülüyor.</p>
       <p>Müşterilerimizden biri olan bir <a href="/istanbul-reklam-ajansi">İstanbul merkezli hukuk bürosu</a>, GEO odaklı içerik stratejimiz sayesinde 4 ay içinde Perplexity aramalarında 12 kez kaynak olarak gösterildi ve bu kanaldan 3 yeni müşteri edindi.</p>
 
@@ -843,7 +843,7 @@ export const posts: Post[] = [
       <p>Evet. Hatta niş konularda uzmanlaşmış küçük işletmeler, belirli sorular için büyük rakiplerden daha kolay AI tarafından önerilir hale gelebilir. Önemli olan alan otoritesi oluşturmaktır.</p>
 
       <h3>GEO için teknik bilgi gerekiyor mu?</h3>
-      <p>Schema markup ve teknik SEO konusunda temel bilgi işe yarar; ancak içerik kalitesi ve otorite sinyalleri teknik detaylardan çok daha kritik. Ramses Digital gibi bir ajansla çalışarak teknik kısmı devredebilirsiniz.</p>
+      <p>Schema markup ve teknik SEO konusunda temel bilgi işe yarar; ancak içerik kalitesi ve otorite sinyalleri teknik detaylardan çok daha kritik. Ramses Dijital gibi bir ajansla çalışarak teknik kısmı devredebilirsiniz.</p>
 
       <h3>Google SGE ile GEO arasındaki fark ne?</h3>
       <p>Google SGE (Search Generative Experience / AI Overviews), Google'ın arama sayfasına entegre ettiği yapay zeka katmanıdır. GEO ise ChatGPT, Perplexity, Claude dahil tüm AI araçlarını kapsayan daha geniş bir optimizasyon yaklaşımıdır. Biri diğerini kapsar.</p>
@@ -873,7 +873,7 @@ export const posts: Post[] = [
     authorRole: 'Kurucu, Ramses Dijital',
     tags: ['SEO', 'GEO', 'AEO', 'AI', 'ChatGPT', 'Perplexity', 'Yapay Zeka', 'Dijital Pazarlama'],
     content: `
-      <p><strong>Yayın tarihi: 4 Nisan 2026 · Yazar: Çağatay Durmaz, Ramses Digital</strong></p>
+      <p><strong>Yayın tarihi: 4 Nisan 2026 · Yazar: Çağatay Durmaz, Ramses Dijital</strong></p>
 
       <p>Bir kullanıcı artık "ayakkabı" yazmıyor. Şöyle soruyor: <em>"Ayağım düz taban, haftada 3 gün koşuyorum, hangi koşu ayakkabısını almalıyım?"</em> Ve cevabı Google'ın 10 mavi linkinden değil, ChatGPT'nin tek bir paragrafından alıyor.</p>
 
@@ -939,7 +939,7 @@ export const posts: Post[] = [
       <h2>Semantic Content Architecture: Her Şeyin Temeli</h2>
       <p>Geleneksel SEO "anahtar kelime" üzerine kuruluydu. GEO ve AEO ise <strong>anlamsal (semantic) içerik mimarisi</strong> gerektirir. Bu ne demek?</p>
       <ul>
-        <li><strong>Varlık (entity) odaklı içerik:</strong> "Dijital pazarlama" anahtar kelimesi değil; "Ramses Digital" → "İstanbul" → "mühendislik temelli pazarlama" gibi birbirine bağlı kavramlar ağı oluşturmak.</li>
+        <li><strong>Varlık (entity) odaklı içerik:</strong> "Dijital pazarlama" anahtar kelimesi değil; "Ramses Dijital" → "İstanbul" → "mühendislik temelli pazarlama" gibi birbirine bağlı kavramlar ağı oluşturmak.</li>
         <li><strong>Topical authority:</strong> Bir konuyu yüzeysel değil, tüm alt başlıklarıyla derinlemesine ele alan içerik kümeleri (content cluster) kurmak.</li>
         <li><strong>Makine tarafından okunabilir yapı:</strong> Başlık hiyerarşisi (H1→H2→H3), liste formatları ve açık cevap paragrafları LLM'lerin içeriği daha kolay parse etmesini sağlar.</li>
       </ul>
@@ -996,7 +996,7 @@ export const posts: Post[] = [
         <li><strong>Featured snippet ve AI Overview oranı:</strong> Google Search Console'daki impression ve click verileri.</li>
       </ul>
 
-      <h2>Ramses Digital'in SEO+GEO+AEO Yaklaşımı</h2>
+      <h2>Ramses Dijital'in SEO+GEO+AEO Yaklaşımı</h2>
       <p>Biz bu üç disiplini ayrı ayrı değil, entegre bir strateji olarak uyguluyoruz. Teknik SEO altyapısı, semantik içerik mimarisi, JSON-LD implementasyonu ve LLM görünürlük takibini tek bir çatı altında yönetiyoruz.</p>
       <p>Hedefimiz basit: müşterilerimizin markasını sadece Google'da değil, kullanıcıların soru sorduğu her platformda güvenilir kaynak haline getirmek.</p>
 
@@ -1132,7 +1132,7 @@ export const posts: Post[] = [
       <p>Sağlık hizmetleri (diş hekimi, fizyoterapist, psikolog), hukuk büroları, oto servisleri, güzellik salonları ve restoranlar en yüksek faydayı görüyor çünkü bu sektörlerde kullanıcılar doğrudan "yakınımda" veya "İzmit'te" ifadeleriyle arama yapıyor. B2B sanayi firmaları için yerel SEO'nun etkisi daha sınırlı, çünkü müşteri arama davranışı farklı işliyor.</p>
 
       <h3>Sonuç</h3>
-      <p>Kocaeli'de yerel SEO, sabır ve sistematik çalışma gerektiren stratejik bir yatırımdır. Doğru kurgulanırsa, ücretli reklamlardan çok daha sürdürülebilir ve düşük maliyetli müşteri akışı sağlar. Ramses Digital olarak Kocaeli kökenli ekibimizle bu sürece eşlik etmekten mutluluk duyarız.</p>
+      <p>Kocaeli'de yerel SEO, sabır ve sistematik çalışma gerektiren stratejik bir yatırımdır. Doğru kurgulanırsa, ücretli reklamlardan çok daha sürdürülebilir ve düşük maliyetli müşteri akışı sağlar. Ramses Dijital olarak Kocaeli kökenli ekibimizle bu sürece eşlik etmekten mutluluk duyarız.</p>
     `,
   },
   {
@@ -1681,7 +1681,7 @@ export const posts: Post[] = [
 
       <h2>Kural 3: Net Bir Fayda Vurgula</h2>
       <p>Kullanıcı "ben bunu okuyunca ne kazanırım?" sorusuna cevap arar. Açıklamanızda somut fayda olsun: "5 dakikada kurulum", "ücretsiz ön analiz", "aynı gün dönüş". Gerçek olmayan rakam ve garanti vaatleri ise güveni zedeler.</p>
-      <p>Özellik (feature) ile fayda (benefit) arasındaki farkı ayırt edin. "Gelişmiş analitik dashboard'umuz var" bir özelliktir; "Hangi kampanyanın para kazandırdığını 30 saniyede görün" bir faydadır. Kullanıcılar özellik değil, kendilerine ne kattığını satın alır.</p>
+      <p>Özellik (feature) ile fayda (benefit) arasındaki farkı ayırt edin. "Gelişmiş analitik rapor panomuz var" bir özelliktir; "Hangi kampanyanın para kazandırdığını 30 saniyede görün" bir faydadır. Kullanıcılar özellik değil, kendilerine ne kattığını satın alır.</p>
 
       <h2>Kural 4: Eylem Çağrısı (CTA) Ekle</h2>
       <p>Açıklamayı pasif bir cümleyle değil, eyleme çağıran bir mesajla bitirin: "Hemen analiz et", "Ücretsiz dene", "Şimdi öğren", "Detayları gör".</p>
@@ -1702,7 +1702,7 @@ export const posts: Post[] = [
       <p>Sizi rakiplerden ayıran tek özelliği öne çıkarın: "Tek mühendislik temelli ajans", "İlk hafta sonuç garantisi", "Sınırsız revizyon dahil", "AI destekli analiz".</p>
 
       <h2>Kural 9: Marka İsmini Sona Yerleştir</h2>
-      <p>Marka adınız zaten title tag'de ve URL'de geçiyor. Meta açıklamanın başını fayda mesajı için saklayın, marka adını sonda kullanın: "...Ücretsiz analiz alın. — Ramses Digital Kocaeli"</p>
+      <p>Marka adınız zaten title tag'de ve URL'de geçiyor. Meta açıklamanın başını fayda mesajı için saklayın, marka adını sonda kullanın: "...Ücretsiz analiz alın. — Ramses Dijital Kocaeli"</p>
 
       <h2>Kural 10: A/B Test Yap</h2>
       <p>Meta açıklamayı sabit bilmeyin. 2 farklı versiyonu deneyin, Google Search Console'dan CTR'leri kıyaslayın. Düşük performanslı sayfaları (CTR &lt; %2) yeni açıklamayla yeniden test edin.</p>
@@ -1812,7 +1812,7 @@ export const posts: Post[] = [
       <ul>
         <li>Google Ads hesabı: sizin sahipliğinizde, manager olarak ajans</li>
         <li>Google Analytics 4 + Search Console: tam erişim</li>
-        <li>Canlı dashboard (Looker Studio veya benzer): 7/24 izleme</li>
+        <li>Canlı rapor panosu (Looker Studio veya benzer): 7/24 izleme</li>
         <li>Aylık detaylı PDF rapor: harcama, sonuç, sonraki adımlar</li>
       </ul>
       <p>"Sizin hesabınızı biz yönetiyoruz, raporu ay sonu gönderiyoruz" diyen ajansa ŞÜPHEYLE yaklaşın. Şeffaflık 2026'da pazarlık konusu değil, standarttır.</p>
@@ -1867,7 +1867,7 @@ export const posts: Post[] = [
 
       <h2>Ramses Dijital Reklam Ajansı: Neden Tercih Edilebilir?</h2>
       <p><a href="/izmit-reklam-ajansi">İzmit</a> Kocaeli kökenli olarak 2019'dan bu yana 50+ projeye imza attık. Mühendislik kökenli bir ekibiz; her stratejiyi veri ve teknik disiplinle kuruyoruz. Kocaeli genelinde hizmet veren bir ajans arıyorsanız <a href="/kocaeli-reklam-ajansi">Kocaeli reklam ajansı</a> sayfamıza da göz atabilirsiniz.</p>
-      <p>Bizi farklı kılan: <strong class="text-white">şeffaf raporlama</strong>, <strong class="text-white">veri sahipliğinin tamamen müşteride kalması</strong>, <strong class="text-white">çıkış maddesi her sözleşmede mevcut</strong>, <strong class="text-white">aylık detaylı raporlama + canlı dashboard</strong> ve <strong class="text-white">Kocaeli pazarına 5+ yıllık derin tecrübe</strong>.</p>
+      <p>Bizi farklı kılan: <strong class="text-white">şeffaf raporlama</strong>, <strong class="text-white">veri sahipliğinin tamamen müşteride kalması</strong>, <strong class="text-white">çıkış maddesi her sözleşmede mevcut</strong>, <strong class="text-white">aylık detaylı raporlama + canlı rapor panosu</strong> ve <strong class="text-white">Kocaeli pazarına 5+ yıllık derin tecrübe</strong>.</p>
       <p>Ücretsiz keşif görüşmesinde size özgü strateji çıkartırız ve teklif sunarız — taahhüt yok.</p>
 
       <h3>Sık Sorulan Sorular</h3>
@@ -2051,7 +2051,7 @@ export const posts: Post[] = [
     tags: ['Dijital Pazarlama', 'Uzaktan Çalışma', 'Ajans Seçimi', 'Türkiye'],
     content: `
       <h2>Neden Artık Şehrinizdeki Ajansla Sınırlı Değilsiniz?</h2>
-      <p>Birkaç yıl öncesine kadar bir dijital pazarlama ajansıyla çalışmak, genellikle aynı şehirde olmayı gerektiriyordu — toplantılar yüz yüze yapılır, raporlar basılı sunulurdu. Bugün durum tamamen farklı. Google Meet, Zoom, Slack ve canlı dashboard'lar sayesinde <a href="/istanbul-dijital-pazarlama">İstanbul'daki bir işletme</a> Kocaeli'deki, <a href="/ankara-dijital-pazarlama">Ankara'daki bir işletme</a> <a href="/izmir-dijital-pazarlama">İzmir'deki</a>, <a href="/bursa-dijital-pazarlama">Bursa'daki bir imalatçı</a> ise <a href="/antalya-dijital-pazarlama">Antalya'daki bir otel</a> ile çalışan bir ajansla sorunsuzca çalışabiliyor.</p>
+      <p>Birkaç yıl öncesine kadar bir dijital pazarlama ajansıyla çalışmak, genellikle aynı şehirde olmayı gerektiriyordu — toplantılar yüz yüze yapılır, raporlar basılı sunulurdu. Bugün durum tamamen farklı. Google Meet, Zoom, Slack ve canlı rapor panosu'lar sayesinde <a href="/istanbul-dijital-pazarlama">İstanbul'daki bir işletme</a> Kocaeli'deki, <a href="/ankara-dijital-pazarlama">Ankara'daki bir işletme</a> <a href="/izmir-dijital-pazarlama">İzmir'deki</a>, <a href="/bursa-dijital-pazarlama">Bursa'daki bir imalatçı</a> ise <a href="/antalya-dijital-pazarlama">Antalya'daki bir otel</a> ile çalışan bir ajansla sorunsuzca çalışabiliyor.</p>
       <p>Bu değişim, işletmeler için seçenek havuzunu ciddi şekilde genişletiyor: artık "şehrimde hangi ajanslar var" sorusu yerine "hangi ajans benim sektörümde en iyi sonucu üretiyor" sorusunu sorabiliyorsunuz.</p>
       <p>Bu dönüşümün arkasında pandemi sonrası kalıcılaşan uzaktan çalışma kültürü kadar, dijital pazarlığın doğası gereği zaten "uzaktan yapılabilir" bir iş olması da yatıyor. Bir SEO uzmanının kodu yazması, bir Google Ads yöneticisinin kampanya kurması veya bir içerik yazarının blog metni üretmesi için fiziksel olarak aynı ofiste bulunmanız hiçbir zaman gerekmedi — sadece alışkanlık öyleydi. Bu alışkanlık kırıldıkça, coğrafi sınırların pazarlama ajansı seçiminde bir kriter olmaktan çıktığını görüyoruz.</p>
 
@@ -2072,7 +2072,7 @@ export const posts: Post[] = [
 
       <h2>Uzaktan Çalışan Ajansların Avantajları</h2>
       <p><strong>1. Daha geniş uzmanlık havuzu:</strong> Şehir sınırı olmadığında, sektörünüzde gerçekten deneyimli bir ajans bulma şansınız artar. Yerel bir ajans genel geçer hizmet sunarken, uzaktan çalışan bir ajans belirli bir nişte (örneğin sağlık sektörü SEO'su veya B2B Google Ads) uzmanlaşmış olabilir.</p>
-      <p><strong>2. Şeffaf ve ölçülebilir süreç:</strong> Uzaktan çalışan ajanslar iletişimi dijital kanallar üzerinden yürüttüğü için her şey kayıt altındadır — toplantı notları, raporlar, dashboard erişimi. Bu, hesap verebilirliği artırır.</p>
+      <p><strong>2. Şeffaf ve ölçülebilir süreç:</strong> Uzaktan çalışan ajanslar iletişimi dijital kanallar üzerinden yürüttüğü için her şey kayıt altındadır — toplantı notları, raporlar, rapor panosu erişimi. Bu, hesap verebilirliği artırır.</p>
       <p><strong>3. Genellikle daha rekabetçi fiyatlandırma:</strong> Fiziksel ofis, showroom gibi maliyetleri olmayan ajanslar, bu tasarrufu genellikle müşteriye yansıtabilir.</p>
 
       <table>
@@ -2086,7 +2086,7 @@ export const posts: Post[] = [
 
       <h2>Dikkat Edilmesi Gereken Noktalar</h2>
       <p><strong>1. İletişim ritmi net olmalı:</strong> Yüz yüze görüşme olmadığı için haftalık/aylık düzenli check-in toplantılarının takvime bağlı olduğundan emin olun. Belirsiz iletişim ritmi, uzaktan çalışan ilişkilerde en sık yaşanan sorundur.</p>
-      <p><strong>2. Raporlama şeffaf olmalı:</strong> Canlı dashboard erişimi (Google Analytics, Search Console, Ads hesabı) talep edin. Sadece PDF rapor gönderen değil, verinin kendisine erişim sağlayan bir ajans tercih edin.</p>
+      <p><strong>2. Raporlama şeffaf olmalı:</strong> Canlı rapor panosu erişimi (Google Analytics, Search Console, Ads hesabı) talep edin. Sadece PDF rapor gönderen değil, verinin kendisine erişim sağlayan bir ajans tercih edin.</p>
       <p><strong>3. Referansları doğrulayın:</strong> Uzaktan çalışan bir ajansın gösterdiği "başarı hikayeleri"nin gerçek ve doğrulanabilir olduğundan emin olun. Canlı site linkleri isteyin, mümkünse o müşterilerle iletişime geçin.</p>
       <p><strong>4. Zaman dilimi ve dil uyumu:</strong> Türkiye içi çalışıyorsanız bu genellikle sorun değildir, ancak yanıt sürelerini netleştirin.</p>
 
@@ -2094,7 +2094,7 @@ export const posts: Post[] = [
         <thead><tr><th>Dikkat Noktası</th><th>Ne İsteyin</th></tr></thead>
         <tbody>
           <tr><td>İletişim ritmi</td><td>Takvime bağlı, düzenli haftalık/aylık check-in</td></tr>
-          <tr><td>Raporlama</td><td>Canlı dashboard erişimi, sadece PDF değil</td></tr>
+          <tr><td>Raporlama</td><td>Canlı rapor panosu erişimi, sadece PDF değil</td></tr>
           <tr><td>Referanslar</td><td>Canlı site linkleri, doğrulanabilir müşteri iletişimi</td></tr>
           <tr><td>Yanıt süresi</td><td>Yazılı SLA — kritik sorunlarda somut süre taahhüdü</td></tr>
         </tbody>
@@ -2106,7 +2106,7 @@ export const posts: Post[] = [
 
       <div class="callout">
         <span class="callout-title">Pratik İpucu</span>
-        <p>Canlı dashboard erişimi (Google Analytics, Search Console, Ads hesabı) talep edin — sadece PDF rapor gönderen bir ajans yerine, verinin kendisine erişim sağlayanı tercih edin.</p>
+        <p>Canlı rapor panosu erişimi (Google Analytics, Search Console, Ads hesabı) talep edin — sadece PDF rapor gönderen bir ajans yerine, verinin kendisine erişim sağlayanı tercih edin.</p>
       </div>
 
       <h2>Hangi Hizmetler Uzaktan En İyi Şekilde Yürütülür?</h2>
@@ -2114,7 +2114,7 @@ export const posts: Post[] = [
       <p>Fiziksel varlığın hâlâ bir miktar değer kattığı tek alan, doğrudan saha çekimi gerektiren işlerdir — profesyonel ürün fotoğrafçılığı, tanıtım videosu çekimi gibi. Ancak bu tür ihtiyaçlar için bile ajanslar genellikle yerel bir freelance fotoğrafçıyla koordinasyon kurarak süreci uzaktan yönetebilir; ajansın merkezinin sizinle aynı şehirde olması şart değildir.</p>
 
       <h2>Uzaktan Çalışan Bir Ajansla İlk Görüşmede Nelere Dikkat Etmeli?</h2>
-      <p>İlk görüşmenin kalitesi, sürecin geri kalanı hakkında güçlü bir ipucu verir. Ajans sorularınızı net yanıtlıyor mu, yoksa genel geçer cevaplar mı veriyor? Süreç, araçlar ve zaman çizelgesi hakkında somut bilgi paylaşıyorlar mı? Görüntülü görüşme sırasında ekranlarını paylaşıp gerçek bir dashboard veya rapor örneği gösterebiliyorlar mı? Bu detaylar, ajansın gerçekten sistemli çalışıp çalışmadığının erken sinyalleridir.</p>
+      <p>İlk görüşmenin kalitesi, sürecin geri kalanı hakkında güçlü bir ipucu verir. Ajans sorularınızı net yanıtlıyor mu, yoksa genel geçer cevaplar mı veriyor? Süreç, araçlar ve zaman çizelgesi hakkında somut bilgi paylaşıyorlar mı? Görüntülü görüşme sırasında ekranlarını paylaşıp gerçek bir rapor panosu veya rapor örneği gösterebiliyorlar mı? Bu detaylar, ajansın gerçekten sistemli çalışıp çalışmadığının erken sinyalleridir.</p>
 
       <h3>Sık Sorulan Sorular</h3>
 
@@ -2128,7 +2128,7 @@ export const posts: Post[] = [
       <p>Bu, sözleşme öncesi netleştirilmesi gereken bir konudur. Profesyonel ajanslar genellikle "kritik sorunlarda 2-4 saat içinde ilk yanıt" gibi somut bir hizmet seviyesi taahhüdü (SLA) sunar. Bu taahhüdün yazılı olarak sözleşmede yer alması, acil durumlarda sizi güvence altına alır.</p>
 
       <h3>Sonuç</h3>
-      <p>Doğru ajans, en yakın ofis değil, en doğru uzmanlıktır. Şeffaf raporlama, düzenli iletişim ve doğrulanabilir referanslar sağlayan bir ajans, şehir sınırı olmadan işletmenizi büyütebilir. Ramses Digital olarak Türkiye'nin her yerinden müşterilerimize aynı titizlikle hizmet veriyoruz.</p>
+      <p>Doğru ajans, en yakın ofis değil, en doğru uzmanlıktır. Şeffaf raporlama, düzenli iletişim ve doğrulanabilir referanslar sağlayan bir ajans, şehir sınırı olmadan işletmenizi büyütebilir. Ramses Dijital olarak Türkiye'nin her yerinden müşterilerimize aynı titizlikle hizmet veriyoruz.</p>
     `,
   },
   {
@@ -2180,7 +2180,7 @@ export const posts: Post[] = [
       <h2>Freelancer ile Çalışmanın Avantajları</h2>
       <p><strong>Düşük maliyet:</strong> Freelancer'lar genellikle ajanslardan daha düşük ücretle çalışır çünkü ofis, ekip ve operasyonel giderleri yoktur.</p>
       <p><strong>Doğrudan iletişim:</strong> Aracı olmadan doğrudan işi yapan kişiyle konuşursunuz.</p>
-      <p><strong>Esneklik:</strong> Küçük, spesifik görevler için (örneğin tek seferlik bir teknik audit) idealdir.</p>
+      <p><strong>Esneklik:</strong> Küçük, spesifik görevler için (örneğin tek seferlik bir teknik denetim) idealdir.</p>
       <p>Freelancer'lar aynı zamanda karar alma sürecinde daha az bürokrasi gerektirir — bir ajansta bir stratejinin onaylanması hesap yöneticisinden proje yöneticisine, oradan uzmana geçebilirken, freelancer ile doğrudan konuştuğunuz kişi genellikle işi yapan kişidir. Bu, hızlı tempolu, çevik karar almayı önemseyen küçük işletmeler için değerli bir avantajdır.</p>
 
       <h2>Freelancer ile Çalışmanın Riskleri</h2>
@@ -2228,7 +2228,7 @@ export const posts: Post[] = [
       <p>Geçmiş projelerini ve elde ettiği somut sonuçları (trafik artışı, sıralama iyileşmesi) isteyin. Google Search Console veya Analytics ekran görüntüleri gibi doğrulanabilir kanıtlar isteyin. Sadece "10 yıllık deneyim" gibi iddialar yeterli değildir — somut, ölçülebilir kanıt arayın.</p>
 
       <h3>Sonuç</h3>
-      <p>Küçük, tek seferlik işler için freelancer mantıklı olabilir. Ancak sürekli, çok yönlü ve ölçeklenebilir bir SEO stratejisi için ajans modeli genellikle daha güvenilir ve sürdürülebilirdir. Ramses Digital olarak Türkiye genelindeki işletmelere teknik SEO'dan içerik stratejisine kadar uçtan uca hizmet sunuyoruz.</p>
+      <p>Küçük, tek seferlik işler için freelancer mantıklı olabilir. Ancak sürekli, çok yönlü ve ölçeklenebilir bir SEO stratejisi için ajans modeli genellikle daha güvenilir ve sürdürülebilirdir. Ramses Dijital olarak Türkiye genelindeki işletmelere teknik SEO'dan içerik stratejisine kadar uçtan uca hizmet sunuyoruz.</p>
     `,
   },
   {
@@ -2292,7 +2292,7 @@ export const posts: Post[] = [
       <p>Dönüşüm izleme olmadan yönetilen bir kampanya, hangi anahtar kelimenin veya reklamın gerçekten satış getirdiğini bilmeden bütçe harcamak demektir. Bu, karanlıkta hedef tahtasına ok atmaya benzer — bazı oklar isabet eder ama neden isabet ettiğini asla bilemezsiniz.</p>
 
       <h2>4. "Raporlamaya nasıl erişim sağlıyorsunuz?"</h2>
-      <p>Canlı Google Ads hesap erişimi veya paylaşımlı dashboard talep edin. Sadece aylık PDF gönderen ajanslarda şeffaflık sınırlıdır.</p>
+      <p>Canlı Google Ads hesap erişimi veya paylaşımlı rapor panosu talep edin. Sadece aylık PDF gönderen ajanslarda şeffaflık sınırlıdır.</p>
       <p>Hesabın sahipliğinin sizde kalması da kritik bir detaydır — bazı ajanslar hesabı kendi adlarına açar, ilişki bittiğinde tüm geçmiş veri ve optimizasyon birikimi (öğrenme verisi) ile birlikte kaybolur. Hesap her zaman sizin adınıza (Manager Hesabı erişimiyle ajansa yetki verilerek) açılmalıdır.</p>
 
       <h2>5. "İlk 30 günde ne bekleyebilirim?"</h2>
@@ -2347,7 +2347,7 @@ export const posts: Post[] = [
       <p>Kesinlikle evet. Anonimleştirilmiş bir örnek rapor, ajansın hangi metriklere odaklandığını (sadece tıklama mı, yoksa gerçek dönüşüm ve ROAS mı) net şekilde gösterir. Rapor sadece gösterim ve tıklama sayısı içeriyorsa, bu ajans yüzeysel metriklerle sizi oyalıyor olabilir.</p>
 
       <h3>Sonuç</h3>
-      <p>Doğru sorular sormak, yanlış ajans seçiminin maliyetli sonuçlarından sizi korur. Ramses Digital olarak Türkiye genelindeki müşterilerimize şeffaf raporlama, net Quality Score stratejisi ve dürüst zaman beklentileriyle Google Ads yönetimi sunuyoruz.</p>
+      <p>Doğru sorular sormak, yanlış ajans seçiminin maliyetli sonuçlarından sizi korur. Ramses Dijital olarak Türkiye genelindeki müşterilerimize şeffaf raporlama, net Quality Score stratejisi ve dürüst zaman beklentileriyle Google Ads yönetimi sunuyoruz.</p>
     `,
   },
   {
@@ -2453,7 +2453,7 @@ export const posts: Post[] = [
       <p>Google Search Console şu an için AI Overviews performansını ayrı bir rapor olarak sunmuyor, ancak "Discover" ve genel arama performansı raporlarındaki gösterim artışları dolaylı bir gösterge olabilir. Ayrıca marka adınızla yapılan aramalarda kendi sorgularınızı test ederek manuel kontrol yapabilirsiniz.</p>
 
       <h3>Sonuç</h3>
-      <p>AI Overviews, SEO'yu yok etmiyor; dönüştürüyor. Doğru yapılandırılmış, soru-cevap odaklı ve E-E-A-T sinyalleri güçlü içerik üreten markalar, hem klasik aramada hem AI özetlerinde görünür olmaya devam ediyor. Ramses Digital olarak tüm içerik stratejilerimizi bu iki hedefi birlikte gözeterek kuruyoruz.</p>
+      <p>AI Overviews, SEO'yu yok etmiyor; dönüştürüyor. Doğru yapılandırılmış, soru-cevap odaklı ve E-E-A-T sinyalleri güçlü içerik üreten markalar, hem klasik aramada hem AI özetlerinde görünür olmaya devam ediyor. Ramses Dijital olarak tüm içerik stratejilerimizi bu iki hedefi birlikte gözeterek kuruyoruz.</p>
     `,
   },
   {
@@ -2514,7 +2514,7 @@ export const posts: Post[] = [
       <h2>E-E-A-T'i Pratikte Nasıl Güçlendirirsiniz?</h2>
 
       <h3>1. Gerçek Yazar Bilgisi Ekleyin</h3>
-      <p>Her blog yazısında yazarın adı, unvanı ve varsa kısa bir uzmanlık geçmişi görünür olmalı. "Ramses Digital Ekibi" gibi genel imzalar yerine mümkün olduğunca spesifik roller (SEO Uzmanları, Google Ads Uzmanları gibi) kullanmak bile küçük bir sinyal.</p>
+      <p>Her blog yazısında yazarın adı, unvanı ve varsa kısa bir uzmanlık geçmişi görünür olmalı. "Ramses Dijital Ekibi" gibi genel imzalar yerine mümkün olduğunca spesifik roller (SEO Uzmanları, Google Ads Uzmanları gibi) kullanmak bile küçük bir sinyal.</p>
       <p>İdeal olan, her yazarın kendi profil sayfasına sahip olması — geçmiş yazıları, uzmanlık alanı ve varsa sektördeki tanınırlığını (konuşmacılık, yayın, sertifika) gösteren bir sayfa. Bu, Author schema markup ile birleştiğinde Google'a hem insan hem makine düzeyinde güçlü bir kimlik sinyali gönderir.</p>
 
       <h3>2. Deneyime Dayalı Detaylar Kullanın</h3>
@@ -2567,7 +2567,7 @@ export const posts: Post[] = [
       <p>E-E-A-T sinyalleri, tek bir teknik değişiklik gibi anında etki etmez — Google'ın sitenizi ve yazarlarınızı zaman içinde tekrar tekrar değerlendirmesiyle birikimli olarak güçlenir. Genellikle tutarlı uygulamayla birkaç ay içinde, özellikle rekabetçi ve YMYL konularında, fark edilir bir etki görülüyor.</p>
 
       <h3>Sonuç</h3>
-      <p>Teknik SEO hâlâ önemli, ama artık yeterli değil. Kim olduğunuzu, neyi gerçekten deneyimlediğinizi ve neden güvenilir olduğunuzu açıkça göstermeyen içerikler, teknik olarak kusursuz olsa bile geride kalıyor. Ramses Digital olarak tüm içerik stratejilerimizde E-E-A-T sinyallerini baştan itibaren kuruyoruz.</p>
+      <p>Teknik SEO hâlâ önemli, ama artık yeterli değil. Kim olduğunuzu, neyi gerçekten deneyimlediğinizi ve neden güvenilir olduğunuzu açıkça göstermeyen içerikler, teknik olarak kusursuz olsa bile geride kalıyor. Ramses Dijital olarak tüm içerik stratejilerimizde E-E-A-T sinyallerini baştan itibaren kuruyoruz.</p>
     `,
   },
   {
@@ -2663,7 +2663,7 @@ export const posts: Post[] = [
       <p>İstatistiksel olarak anlamlı sonuç için belirli bir hacim gerekir; çok düşük trafikli sitelerde test sonuçları güvenilir olmayabilir. Bu durumda sektör genelinde kanıtlanmış prensipleri (bu yazıdaki 8 ilke gibi) uygulamak daha pratik bir başlangıçtır.</p>
 
       <h3>Sonuç</h3>
-      <p>Güzel tasarım ile dönüşen tasarım aynı şey değildir. Netlik, hız, güven sinyalleri ve sürekli test — bu dört unsuru merkeze alan bir web sitesi, sadece göze hoş gelmekle kalmaz, işletmenize gerçek müşteri kazandırır. Ramses Digital olarak her web tasarım projemizde bu ilkeleri baştan itibaren uyguluyoruz.</p>
+      <p>Güzel tasarım ile dönüşen tasarım aynı şey değildir. Netlik, hız, güven sinyalleri ve sürekli test — bu dört unsuru merkeze alan bir web sitesi, sadece göze hoş gelmekle kalmaz, işletmenize gerçek müşteri kazandırır. Ramses Dijital olarak her web tasarım projemizde bu ilkeleri baştan itibaren uyguluyoruz.</p>
     `,
   },
   {
@@ -2749,7 +2749,7 @@ export const posts: Post[] = [
       <p>Evet, özellikle niş uzmanlık alanlarında ve belirli bir ilçe/bölgede odaklanarak. Büyük firmalar genel terimlerde güçlüyken, "Kadıköy miras hukuku avukatı" gibi spesifik, yerel aramalarda küçük bir büro çok daha hızlı sonuç alabilir.</p>
 
       <h3>Sonuç</h3>
-      <p>Avukatlar için dijital pazarlama, reklam yasağına rağmen değil, o yasağın açtığı boşlukta organik kanallarla inşa edilir. Yerel SEO, içerik otoritesi ve E-E-A-T sinyalleri güçlü bir şekilde bir araya geldiğinde, uzun vadede reklamdan çok daha kalıcı bir görünürlük sağlar. Ramses Digital olarak hukuk büroları için tamamen mevzuata uygun, SEO ve içerik odaklı stratejiler kuruyoruz.</p>
+      <p>Avukatlar için dijital pazarlama, reklam yasağına rağmen değil, o yasağın açtığı boşlukta organik kanallarla inşa edilir. Yerel SEO, içerik otoritesi ve E-E-A-T sinyalleri güçlü bir şekilde bir araya geldiğinde, uzun vadede reklamdan çok daha kalıcı bir görünürlük sağlar. Ramses Dijital olarak hukuk büroları için tamamen mevzuata uygun, SEO ve içerik odaklı stratejiler kuruyoruz.</p>
     `,
   },
   {
@@ -2841,7 +2841,7 @@ export const posts: Post[] = [
       <p>n8n'in görsel arayüzü kod bilgisi gerektirmez, ama karmaşık iş akışları için otomasyon deneyimi faydalıdır. Çoğu işletme bu kurulumu bir ajansa veya freelance otomasyon uzmanına yaptırıp sonrasında kendi başına yönetir.</p>
 
       <h3>Sonuç</h3>
-      <p>E-ticarette otomasyon, lüks değil rekabet gereğidir. Terk edilmiş sepetten stok senkronizasyonuna kadar bu 7 örnek, çoğu işletmenin haftada saatler kazanmasını sağlıyor. Ramses Digital olarak e-ticaret işletmelerine özel n8n otomasyon altyapıları kuruyoruz.</p>
+      <p>E-ticarette otomasyon, lüks değil rekabet gereğidir. Terk edilmiş sepetten stok senkronizasyonuna kadar bu 7 örnek, çoğu işletmenin haftada saatler kazanmasını sağlıyor. Ramses Dijital olarak e-ticaret işletmelerine özel n8n otomasyon altyapıları kuruyoruz.</p>
     `,
   },
   {
@@ -2929,7 +2929,7 @@ export const posts: Post[] = [
       <p>Hayır, hedef kitlenize bağlı. B2C veya karma bir müşteri kitleniz varsa Instagram hâlâ değerli; ama B2B/sanayi ağırlıklı bir işletmeyseniz kaynaklarınızın büyük kısmını LinkedIn'e yönlendirmek genellikle daha yüksek getiri sağlar.</p>
 
       <h3>Sonuç</h3>
-      <p>Kocaeli'nin sanayi ve B2B ağırlıklı ekonomisinde LinkedIn, Instagram'ın yerini tutamayacağı bir kanal. Doğru içerik sütunları, kişisel profil yatırımı ve tutarlı bir ritimle, LinkedIn hem marka bilinirliği hem doğrudan iş fırsatı üreten güçlü bir kanala dönüşüyor. Ramses Digital olarak B2B firmalar için LinkedIn içerik stratejilerini bu prensiplerle kuruyoruz.</p>
+      <p>Kocaeli'nin sanayi ve B2B ağırlıklı ekonomisinde LinkedIn, Instagram'ın yerini tutamayacağı bir kanal. Doğru içerik sütunları, kişisel profil yatırımı ve tutarlı bir ritimle, LinkedIn hem marka bilinirliği hem doğrudan iş fırsatı üreten güçlü bir kanala dönüşüyor. Ramses Dijital olarak B2B firmalar için LinkedIn içerik stratejilerini bu prensiplerle kuruyoruz.</p>
     `,
   },
   {
@@ -3022,7 +3022,7 @@ export const posts: Post[] = [
       <p>Niş uzmanlık alanına (örneğin "EMDR uzmanı" veya "çift terapisi") ve belirli bir semt/ilçeye odaklanarak — büyük klinikler genel terimlerde güçlüyken, spesifik ve yerel aramalarda küçük bir muayenehane çok daha hızlı sonuç alabilir.</p>
 
       <h3>Sonuç</h3>
-      <p>Psikolog ve terapistler için dijital pazarlama, gizliliğe ve etik sınırlara saygılı, sakin ve güven inşa eden bir yaklaşım gerektirir. Google Business Profile, yerel SEO ve bilgilendirici içerik üçlüsü, agresif reklama ihtiyaç duymadan doğru danışanlara ulaşmanın en sürdürülebilir yoludur. Ramses Digital olarak sağlık ve psikoloji sektöründe bu hassasiyetle çalışıyoruz.</p>
+      <p>Psikolog ve terapistler için dijital pazarlama, gizliliğe ve etik sınırlara saygılı, sakin ve güven inşa eden bir yaklaşım gerektirir. Google Business Profile, yerel SEO ve bilgilendirici içerik üçlüsü, agresif reklama ihtiyaç duymadan doğru danışanlara ulaşmanın en sürdürülebilir yoludur. Ramses Dijital olarak sağlık ve psikoloji sektöründe bu hassasiyetle çalışıyoruz.</p>
     `,
   },
   {
@@ -3108,7 +3108,7 @@ export const posts: Post[] = [
       <p>"İmplant", "ortodonti", "gülüş tasarımı", "diş beyazlatma" gibi tedavi bazlı terimler genellikle en yüksek ticari niyeti taşır; bunları şehir/ilçe adıyla birleştirmek ("Kocaeli implant" gibi) rekabeti azaltıp dönüşümü artırır.</p>
 
       <h3>Sonuç</h3>
-      <p>Diş hekimliğinde SEO ve Google Ads'in birlikte kullanılması, avukatlık gibi kısıtlı sektörlerin sahip olmadığı bir esneklik sunar. Yerel görünürlük, doğru izinle paylaşılan önce/sonra görselleri ve hedefli reklam kampanyalarını bir araya getiren klinikler, hem hızlı hem kalıcı sonuç elde ediyor. Ramses Digital olarak sağlık sektöründe bu dengeyi kuruyoruz.</p>
+      <p>Diş hekimliğinde SEO ve Google Ads'in birlikte kullanılması, avukatlık gibi kısıtlı sektörlerin sahip olmadığı bir esneklik sunar. Yerel görünürlük, doğru izinle paylaşılan önce/sonra görselleri ve hedefli reklam kampanyalarını bir araya getiren klinikler, hem hızlı hem kalıcı sonuç elde ediyor. Ramses Dijital olarak sağlık sektöründe bu dengeyi kuruyoruz.</p>
     `,
   },
   {
@@ -3192,7 +3192,7 @@ export const posts: Post[] = [
       <p>Evet — özellikle mesai saatleri dışında gelen soruları anında yanıtlayıp yönlendirebilmesi, hasta sahibinin başka bir klinik aramasını önler. Bu, özellikle 7/24 hizmet iddiasında olan klinikler için tutarlılığı garanti eder.</p>
 
       <h3>Sonuç</h3>
-      <p>Veteriner kliniklerinde dijital pazarlamanın kalbi hız ve yerel görünürlüktür. Google Business Profile optimizasyonu, kolay online randevu ve acil durum netliği, panik anındaki evcil hayvan sahibinin sizi bulmasını ve size güvenmesini sağlar. Ramses Digital olarak bu sektörde hem geleneksel kliniklere hem yapay zeka destekli platformlara hizmet veriyoruz.</p>
+      <p>Veteriner kliniklerinde dijital pazarlamanın kalbi hız ve yerel görünürlüktür. Google Business Profile optimizasyonu, kolay online randevu ve acil durum netliği, panik anındaki evcil hayvan sahibinin sizi bulmasını ve size güvenmesini sağlar. Ramses Dijital olarak bu sektörde hem geleneksel kliniklere hem yapay zeka destekli platformlara hizmet veriyoruz.</p>
     `,
   },
   {
@@ -3277,7 +3277,7 @@ export const posts: Post[] = [
       <p>Aylık bir mevzuat özeti bile (kısa, düzenli, güvenilir) uzun vadede güçlü bir SEO ve güven varlığı oluşturur. Küçük ve tutarlı bir içerik ritmi, seyrek ve büyük yayınlardan daha etkilidir.</p>
 
       <h3>Sonuç</h3>
-      <p>Mali müşavirlik ve muhasebe hizmetlerinde dijital pazarlama, güven inşa etmek üzerine kuruludur. Yerel SEO, güncel mevzuat içeriği ve LinkedIn'de tutarlı bir B2B varlık, bu güveni dijitalde de kurmanın en sağlam yoludur. Ramses Digital olarak B2B ve profesyonel hizmet sağlayıcılar için bu stratejiyle çalışıyoruz.</p>
+      <p>Mali müşavirlik ve muhasebe hizmetlerinde dijital pazarlama, güven inşa etmek üzerine kuruludur. Yerel SEO, güncel mevzuat içeriği ve LinkedIn'de tutarlı bir B2B varlık, bu güveni dijitalde de kurmanın en sağlam yoludur. Ramses Dijital olarak B2B ve profesyonel hizmet sağlayıcılar için bu stratejiyle çalışıyoruz.</p>
     `,
   },
   {
@@ -3516,7 +3516,7 @@ export const posts: Post[] = [
       <p>Marketplace'ler hızlı erişim sağlar ama marka kontrolü ve müşteri verisi sunmaz — komisyon oranları da yüksektir. Kendi siteniz, uzun vadede marka değeri ve daha düşük maliyetli tekrar satış imkânı sağlar; ikisi birbirini dışlamaz, birlikte kullanılabilir.</p>
 
       <h3>Sonuç</h3>
-      <p>E-ticarette dijital pazarlama, tek bir kanala yatırım yapmak değil, SEO/Google Ads/e-posta üçlüsünü birbirini besleyecek şekilde kurgulamaktır. Ramses Digital olarak e-ticaret işletmeleri için bu üç kanalı bütünleşik bir strateji olarak yönetiyoruz.</p>
+      <p>E-ticarette dijital pazarlama, tek bir kanala yatırım yapmak değil, SEO/Google Ads/e-posta üçlüsünü birbirini besleyecek şekilde kurgulamaktır. Ramses Dijital olarak e-ticaret işletmeleri için bu üç kanalı bütünleşik bir strateji olarak yönetiyoruz.</p>
     `,
   },
   {
@@ -3660,7 +3660,7 @@ export const posts: Post[] = [
       <p>Garanti edilemez. Ama sitenizin net, güvenilir ve yapılandırılmış olması, bu araçların sizden alıntı yapma olasılığını artırır.</p>
 
       <h3>Sonuç</h3>
-      <p>Yerel bir işletme için AEO ve GEO, karmaşık teknik bir iş değil; net cevaplar, düzenli profil ve gerçek yorumlarla başlayan bir hazırlık. Ramses Digital olarak bu yapıyı SEO çalışmasının içine entegre ediyoruz.</p>
+      <p>Yerel bir işletme için AEO ve GEO, karmaşık teknik bir iş değil; net cevaplar, düzenli profil ve gerçek yorumlarla başlayan bir hazırlık. Ramses Dijital olarak bu yapıyı SEO çalışmasının içine entegre ediyoruz.</p>
     `,
   },
   {

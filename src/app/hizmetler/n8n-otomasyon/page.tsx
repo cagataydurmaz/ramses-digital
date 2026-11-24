@@ -14,14 +14,14 @@ export const metadata: Metadata = {
     'n8n ile CRM, e-posta, AI ve sosyal medya araçlarını birbirine bağlayın. Self-hosted, KVKK uyumlu, sınırsız iş akışı. Lead capture\'dan AI agent\'lara kadar.',
   alternates: { canonical: 'https://ramsesdigital.com/hizmetler/n8n-otomasyon' },
   openGraph: {
-    title: 'n8n İş Akışı Otomasyonu | Ramses Digital',
+    title: 'n8n İş Akışı Otomasyonu | Ramses Dijital',
     description: 'No-Code/Low-Code AI entegrasyonlu iş akışı otomasyonu. Online çalışıyoruz, tüm Türkiye\'ye.',
     url: 'https://ramsesdigital.com/hizmetler/n8n-otomasyon',
     images: ['https://ramsesdigital.com/og-image.png'],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'n8n İş Akışı Otomasyonu — Ramses Digital',
+    title: 'n8n İş Akışı Otomasyonu — Ramses Dijital',
     description: 'CRM, e-posta, AI entegrasyonu. Self-hosted, KVKK uyumlu.',
     images: ['https://ramsesdigital.com/og-image.png'],
   },
@@ -31,7 +31,7 @@ const useCases = [
   { icon: Bot, title: 'AI Agent & RAG', desc: 'OpenAI, Anthropic ve LangChain entegrasyonlarıyla müşteri destek bot\'ları, içerik üretimi ve veri analizi otomasyonları.' },
   { icon: GitMerge, title: 'CRM & Satış Pipeline', desc: 'Lead capture\'dan deal closing\'e kadar tüm satış sürecini otomatize edin. HubSpot, Salesforce, Pipedrive entegrasyonu.' },
   { icon: Webhook, title: 'Webhook & API Entegrasyonları', desc: 'Mevcut araçlarınızı birbirine bağlayın. Slack, WhatsApp, Telegram, Stripe, PayTR — sınırsız bağlantı.' },
-  { icon: Zap, title: 'Lead Yakalama & Nurturing', desc: 'Form gönderimleri → CRM → e-posta sekansı → SMS bildirim. Sıfır manuel iş.' },
+  { icon: Zap, title: 'Talep Yakalama & Takip', desc: 'Form gönderimleri → CRM → e-posta sekansı → SMS bildirim. Sıfır manuel iş.' },
   { icon: Workflow, title: 'Çoklu Platform Senkronizasyonu', desc: 'Sosyal medya gönderileri, fatura sistemleri, e-ticaret stok takibi tek noktadan.' },
   { icon: Shield, title: 'Self-Hosted & KVKK Uyumlu', desc: 'Hassas veriler kendi sunucunuzdan asla çıkmaz. GDPR ve KVKK için ideal.' },
 ]
@@ -40,7 +40,7 @@ const process = [
   { step: '01', title: 'Keşif & İhtiyaç Analizi', desc: 'Mevcut iş akışlarınızı haritalandırıyor, otomatize edilebilecek tekrarlanan görevleri tespit ediyoruz.' },
   { step: '02', title: 'Akış Tasarımı', desc: 'Görsel diyagramla akış tasarımı, hata senaryoları ve geri dönüş mantığı (rollback) planlanır.' },
   { step: '03', title: 'Geliştirme & Test', desc: 'n8n üzerinde akışlar kurulur, test ortamında 50+ senaryoyla doğrulanır.' },
-  { step: '04', title: 'Self-Hosted Deploy', desc: 'Kendi sunucunuza veya cloud\'a (AWS/Hetzner/DigitalOcean) güvenli deploy. SSL, backup, monitoring kurulumu.' },
+  { step: '04', title: 'Kendi Sunucunuza Kurulum', desc: 'Kendi sunucunuza veya cloud\'a (AWS/Hetzner/DigitalOcean) güvenli yayına alma. SSL, backup, monitoring kurulumu.' },
   { step: '05', title: 'Bakım & Optimizasyon', desc: 'Aylık check-in, hata izleme, yeni akış ekleme ve performans optimizasyonu.' },
 ]
 
@@ -49,9 +49,9 @@ const faqs = [
   { q: 'Self-hosted ne demek, bana faydası ne?', a: 'Self-hosted, n8n\'i kendi sunucunuzda çalıştırmanız demektir. Tüm veri akışı sizin kontrolünüzde kalır, üçüncü parti servislere gitmez. Bu KVKK, GDPR ve sektörel hassasiyetler (sağlık, finans) için zorunlu olabilir. Aylık 5-30$ arası bir VPS yeterlidir.' },
   { q: 'Zapier veya Make\'ten geçiş yapabilir miyim?', a: 'Evet. Mevcut Zap\'larınızı veya Make senaryolarınızı analiz edip n8n\'e taşıyoruz. Ortalama 30 akışlık bir geçiş 2-3 hafta sürer. Geçiş sonrası aylık $150-500 tasarruf etmek mümkündür (yüksek hacimli kullanımda).' },
   { q: 'AI entegrasyonu ne anlama geliyor?', a: 'n8n yerleşik OpenAI, Anthropic, Hugging Face ve LangChain node\'larıyla geliyor. Bu sayede: müşteri sorularını AI\'ye sordurabilir, gelen e-postaları otomatik kategorize ettirebilir, içerik üretimi yapabilir ve hatta tam fonksiyonel "AI agent"\'lar kurabilirsiniz. RAG (Retrieval Augmented Generation) yapıları için ideal.' },
-  { q: 'Fiyatlandırma nasıl?', a: 'Proje bazlı fiyatlandırma, akış sayısı ve karmaşıklığa göre belirlenir. Aylık bakım ve yeni akış ihtiyaçları için ayrı bir retainer sunuyoruz. Self-hosted sunucu maliyeti ayrıca (sizin adınıza ödenir veya yönetebiliriz). Ücretsiz danışmanlıkta net fiyat sunuyoruz.' },
-  { q: 'Hangi sektörler için uygun?', a: 'Her sektör. En çok değer kattığı alanlar: e-ticaret (sipariş yönetimi), B2B SaaS (lead ops), profesyonel hizmetler (müşteri onboarding), sağlık (randevu/hatırlatma), eğitim (kayıt akışı), pazarlama ajansları (raporlama).' },
-  { q: 'Bakım ve sorunlarda kim destek veriyor?', a: 'Kurulum sonrası 90 günlük garantili destek dahildir. Sonrası için aylık retainer paketleri sunuyoruz: %99.5 uptime taahhüdü, hata bildirim sistemi, aylık check-in görüşmesi ve gerekirse acil müdahale.' },
+  { q: 'Fiyatlandırma nasıl?', a: 'Proje bazlı fiyatlandırma, akış sayısı ve karmaşıklığa göre belirlenir. Aylık bakım ve yeni akış ihtiyaçları için ayrı bir aylık bakım paketi sunuyoruz. Self-hosted sunucu maliyeti ayrıca (sizin adınıza ödenir veya yönetebiliriz). Ücretsiz danışmanlıkta net fiyat sunuyoruz.' },
+  { q: 'Hangi sektörler için uygun?', a: 'Her sektör. En çok değer kattığı alanlar: e-ticaret (sipariş yönetimi), B2B SaaS (lead ops), profesyonel hizmetler (yeni müşteri karşılama), sağlık (randevu/hatırlatma), eğitim (kayıt akışı), pazarlama ajansları (raporlama).' },
+  { q: 'Bakım ve sorunlarda kim destek veriyor?', a: 'Kurulum sonrası 90 günlük garantili destek dahildir. Sonrası için aylık bakım paketleri sunuyoruz: %99,5 kesintisiz çalışma taahhüdü, hata bildirim sistemi, aylık check-in görüşmesi ve gerekirse acil müdahale.' },
   { q: 'AI agent\'lar nedir, ne işe yarar?', a: 'AI agent, belirli bir görevi (örn: müşteri destek, satış soruları cevaplama, içerik üretme) yapay zeka kullanarak otonom çalışan bir program. n8n + LangChain + RAG kombinasyonuyla şirket dokümanlarınızdan beslenen, sürekli çalışan asistanlar kuruyoruz.' },
 ]
 
@@ -208,7 +208,7 @@ export default function N8nOtomasyonPage() {
         '@context': 'https://schema.org', '@type': 'Service',
         name: 'n8n İş Akışı Otomasyonu',
         description: 'n8n ile no-code/low-code AI entegrasyonlu iş akışı otomasyonu hizmeti.',
-        provider: { '@type': 'Organization', name: 'Ramses Digital', url: 'https://ramsesdigital.com' },
+        provider: { '@type': 'Organization', name: 'Ramses Dijital', url: 'https://ramsesdigital.com' },
         areaServed: { '@type': 'Country', name: 'Türkiye' },
         serviceType: 'Workflow Automation',
         url: 'https://ramsesdigital.com/hizmetler/n8n-otomasyon',

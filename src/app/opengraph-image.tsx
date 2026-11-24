@@ -1,7 +1,7 @@
 import { ImageResponse } from 'next/og'
 
 export const runtime = 'edge'
-export const alt = 'Ramses Digital — Performans Odaklı Dijital Pazarlama Ajansı'
+export const alt = 'Ramses Dijital — Performans Odaklı Dijital Pazarlama Ajansı'
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
 
@@ -48,7 +48,7 @@ export default async function Image() {
               textTransform: 'uppercase',
             }}
           >
-            Ramses Digital
+            Ramses Dijital
           </span>
         </div>
         <div

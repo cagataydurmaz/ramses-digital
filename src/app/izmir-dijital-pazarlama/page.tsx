@@ -52,8 +52,8 @@ const channels = [
   {
     icon: Zap,
     title: 'Pazarlama Otomasyonu (n8n)',
-    desc: 'Tekrarlayan pazarlama süreçlerini otomatikleştirin. CRM entegrasyonu, lead nurturing, bildirim akışları.',
-    tags: ['n8n', 'CRM', 'Lead Nurturing', 'Webhook'],
+    desc: 'Tekrarlayan pazarlama süreçlerini otomatikleştirin. CRM entegrasyonu, aday müşteri takibi, bildirim akışları.',
+    tags: ['n8n', 'CRM', 'Aday Müşteri Takibi', 'Webhook'],
     href: '/hizmetler/n8n-otomasyon',
   },
   {
@@ -67,7 +67,7 @@ const channels = [
     icon: BarChart3,
     title: 'Veri Analizi & Raporlama',
     desc: 'GA4, Looker Studio ve dönüşüm hunisi analiziyle hangi kanalın işe yaradığını kesin olarak görün.',
-    tags: ['GA4', 'Looker Studio', 'Dönüşüm Hunisi', 'Dashboard'],
+    tags: ['GA4', 'Looker Studio', 'Dönüşüm Hunisi', 'Rapor Panosu'],
     href: '/hizmetler/veri-analizi',
   },
 ]
@@ -87,7 +87,7 @@ const sectors = [
 const faqs = [
   { q: 'İzmir\'deki rakiplerime karşı nasıl öne çıkabilirim?', a: 'Üç odak noktası: (1) Google Haritalar\'da üst sıra. (2) Sezonluk/yerel içerik üstünlüğü — "İzmir\'de yaz tatili X" gibi zamanında yayınlanan içerik. (3) Kullanıcı yorumları — turizm ve hizmet sektöründe en belirleyici faktörlerden biri.' },
   { q: 'İzmir\'deki turizm ve e-ticaret işletmeleri için özel bir yaklaşımınız var mı?', a: 'Evet. Turizm için sezonluk kampanya planlaması ve çok dilli SEO; e-ticaret için ürün/kategori sayfası optimizasyonu ve dönüşüm odaklı tasarım — portföyümüzdeki e-ticaret projemizde uyguladığımız yaklaşımlar bunlar.' },
-  { q: 'Uzaktan çalışıyor musunuz, yoksa İzmir\'de yerinde mi?', a: 'Tüm hizmetlerimiz uzaktan yürütülüyor. Toplantılar Google Meet/Zoom üzerinden, raporlar dijital dashboard ve PDF ile paylaşılıyor.' },
+  { q: 'Uzaktan çalışıyor musunuz, yoksa İzmir\'de yerinde mi?', a: 'Tüm hizmetlerimiz uzaktan yürütülüyor. Toplantılar Google Meet/Zoom üzerinden, raporlar dijital rapor panosu ve PDF ile paylaşılıyor.' },
   { q: 'Yapay zeka reklamcılığı ve GEO nedir, İzmir işletmesi için gerekli mi?', a: 'GEO (Generative Engine Optimization), ChatGPT veya Gemini\'de "İzmir\'de [sektörünüz]" aramasında alıntılanma olasılığını artırmak için yapılan içerik ve yapı çalışmasıdır. Turistler ve yeni müşteriler artık AI araçlarına da danışıyor — bu kanal henüz doymamış, erken hareket edenler avantajlı.' },
   ...cityServiceFaqs('izmir', 'pazarlama'),
 ]

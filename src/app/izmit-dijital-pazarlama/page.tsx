@@ -71,7 +71,7 @@ const channels = [
     icon: BarChart3,
     title: 'Veri Analizi & Raporlama',
     desc: 'GA4 ve Looker Studio ile İzmit\'teki kampanyalarınızın hangisinin gerçekten satış getirdiğini görün.',
-    tags: ['GA4', 'Looker Studio', 'Dashboard'],
+    tags: ['GA4', 'Looker Studio', 'Rapor Panosu'],
     href: '/hizmetler/veri-analizi',
   },
 ]
