@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import EpostaTelefon from '@/components/telefon/EpostaTelefon'
 import KapakGorseli from '@/components/KapakGorseli'
 import KisaOzet from '@/components/KisaOzet'
 import Link from 'next/link'
@@ -8,7 +9,7 @@ import { Mail, Zap, Users, BarChart3, RefreshCw, Target, CheckCircle2, ArrowRigh
 export const metadata: Metadata = {
   title: 'E-Posta Pazarlama ve Otomasyon — Ramses Dijital',
   description:
-    'Kişiselleştirilmiş e-posta kampanyaları ve otomatik pazarlama akışları. CRM entegrasyonu, segmentasyon ve A/B test ile açılma oranlarını %40 artırın.',
+    'Kişiselleştirilmiş e-posta kampanyaları ve otomatik pazarlama akışları. CRM entegrasyonu, segmentasyon ve A/B test ile açılma ve tıklama oranlarınızı iyileştirin.',
   alternates: { canonical: 'https://ramsesdigital.com/hizmetler/eposta-otomasyon' },
   openGraph: {
     title: 'E-Posta Pazarlama & Otomasyon | Ramses Dijital',
@@ -108,7 +109,7 @@ const faqs = [
   },
   {
     q: 'Açılma oranım çok düşük, neden?',
-    a: 'Düşük açılma oranının başlıca nedenleri: zayıf konu satırı, yanlış gönderim zamanı, soğuk/satın alınmış liste, spam klasörüne düşme. Hesap auditimizde bu 4 faktörü analiz eder, hızlı kazanımlar (quick wins) belirleriz. Genellikle ilk optimizasyondan sonra %20-40 açılma oranı artışı görülüyor.',
+    a: 'Düşük açılma oranının başlıca nedenleri: zayıf konu satırı, yanlış gönderim zamanı, soğuk/satın alınmış liste, spam klasörüne düşme. Hesap auditimizde bu 4 faktörü analiz eder, hızlı kazanımlar (quick wins) belirleriz.',
   },
   {
     q: 'GDPR ve KVKK uyumu nasıl sağlanıyor?',
@@ -124,9 +125,10 @@ export default function EpostaOtomasyonPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative pt-32 pb-16 px-6 overflow-hidden">
+      <section className="relative pt-24 md:pt-32 pb-12 md:pb-16 px-6 overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-[radial-gradient(ellipse_at_center,rgba(249,115,22,0.18)_0%,rgba(249,115,22,0.06)_40%,transparent_70%)] rounded-full pointer-events-none" />
-        <div className="max-w-5xl mx-auto text-center relative z-10">
+        <div data-hero-bolunmus className="max-w-6xl mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-[1fr_340px] gap-10 lg:gap-14 items-center">
+          <div className="text-center lg:text-left">
           <div className="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/20 rounded-full px-4 py-1.5 mb-6">
             <Mail size={14} className="text-orange-400" />
             <span className="text-orange-400 text-xs font-medium tracking-wider uppercase">E-Posta & Otomasyon Pazarlama</span>
@@ -136,41 +138,45 @@ export default function EpostaOtomasyonPage() {
             <br />
             <span className="gradient-text">Pazarlama & Otomasyon</span>
           </h1>
-          <p className="text-zinc-400 text-lg max-w-2xl mx-auto mb-10">
+          <p className="text-zinc-400 text-lg max-w-2xl mx-auto lg:mx-0 mb-10">
             CRM entegrasyonu, davranışsal tetikleyiciler ve kişiselleştirilmiş içeriklerle
-            e-posta kanalınızı en yüksek ROI&apos;lu pazarlama motoruna dönüştürün.
+            e-posta kanalınızı kendi kendine çalışan bir satış kanalına dönüştürün.
           </p>
           <CalendlyButton label="Ücretsiz Strateji Görüşmesi" variant="primary" />
+          </div>
+          <div className="order-first lg:order-none mx-auto w-full max-w-[300px] lg:max-w-none">
+            <EpostaTelefon />
+          </div>
         </div>
       </section>
-
-      <KisaOzet>
-        E-posta pazarlamada amaç doğru kişiye doğru zamanda mesaj göndermektir: hoş geldin serileri, sepet hatırlatmaları ve segmentli kampanyalar. Kurulumu ve otomasyonları yapıyor, onaylı alıcı listesiyle mevzuata uygun çalışıyoruz.
-      </KisaOzet>
-
-      <KapakGorseli src="/gorseller/eposta-otomasyon.webp" alt="Masada dizüstü bilgisayarla e-posta kampanyası hazırlayan kişi" />
 
       {/* Stats */}
       <section className="py-12 px-6 border-y border-white/[0.04]">
         <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
           <div>
-            <div className="text-3xl md:text-4xl font-bold text-white">42x</div>
-            <div className="text-zinc-400 text-sm mt-1">Ortalama E-Posta ROI</div>
+            <div className="text-3xl md:text-4xl font-bold text-white">50+</div>
+            <div className="text-zinc-400 text-sm mt-1">Tamamlanan Proje</div>
           </div>
           <div>
-            <div className="text-3xl md:text-4xl font-bold text-white">%38</div>
-            <div className="text-zinc-400 text-sm mt-1">Ortalama Açılma Oranı</div>
+            <div className="text-3xl md:text-4xl font-bold text-white">%96</div>
+            <div className="text-zinc-400 text-sm mt-1">Müşteri Memnuniyeti</div>
           </div>
           <div>
-            <div className="text-3xl md:text-4xl font-bold text-white">5 gün</div>
-            <div className="text-zinc-400 text-sm mt-1">İlk Otomasyon Kurulum</div>
+            <div className="text-3xl md:text-4xl font-bold text-white">A/B</div>
+            <div className="text-zinc-400 text-sm mt-1">Konu Satırı Testi</div>
           </div>
           <div>
-            <div className="text-3xl md:text-4xl font-bold text-white">200+</div>
-            <div className="text-zinc-400 text-sm mt-1">Entegrasyon Desteği</div>
+            <div className="text-3xl md:text-4xl font-bold text-white">Aylık</div>
+            <div className="text-zinc-400 text-sm mt-1">Şeffaf Rapor</div>
           </div>
         </div>
       </section>
+      <KisaOzet>
+        E-posta pazarlamada amaç doğru kişiye doğru zamanda mesaj göndermektir: hoş geldin serileri, sepet hatırlatmaları ve segmentli kampanyalar. Kurulumu ve otomasyonları yapıyor, onaylı alıcı listesiyle mevzuata uygun çalışıyoruz.
+      </KisaOzet>
+
+
+
 
       {/* Services Grid */}
       <section className="py-20 px-6">
@@ -196,6 +202,8 @@ export default function EpostaOtomasyonPage() {
           </div>
         </div>
       </section>
+
+      <KapakGorseli src="/gorseller/eposta-otomasyon.webp" alt="Masada dizüstü bilgisayarla e-posta kampanyası hazırlayan kişi" />
 
       {/* Process */}
       <section className="py-20 px-6 bg-[#080D18]">
@@ -227,7 +235,7 @@ export default function EpostaOtomasyonPage() {
               Sosyal medya algoritmalarının organik erişimi neredeyse sıfırladığı günümüzde, <strong className="text-white">e-posta listeniz en değerli pazarlama varlığınızdır.</strong> Takipçileriniz bir platformun mülkü; e-posta aboneleriniz ise sizin. Hiçbir algoritma değişikliği onlara erişiminizi engelleyemez.
             </p>
             <p>
-              Litmus&apos;un 2023 araştırmasına göre e-posta pazarlama, yatırımın ortalama 42 katını geri döndürüyor — Google Ads veya sosyal medya reklamlarının çok üzerinde. Bu rakamın sırrı: <strong className="text-white">zaten ilgi duyan kitleye doğru zamanda doğru mesaj gönderilmesi.</strong>
+              E-posta, size zaten ilgi gösteren kişilere ulaşan, reklam bütçesine bağlı olmayan bir kanal. İşe yaramasının sırrı: <strong className="text-white">zaten ilgi duyan kitleye doğru zamanda doğru mesaj gönderilmesi.</strong>
             </p>
             <p>
               Ramses Dijital&apos;in e-posta otomasyon yaklaşımı sadece kampanya göndermekle sınırlı değil. Müşteri yolculuğunun her aşamasına (farkındalık → değerlendirme → satın alma → sadakat) özgün, tetikleyici bazlı akışlar tasarlıyoruz. Bir kullanıcı sepetini terk ettiğinde, ürünü görüntülediğinde veya belirli bir sayfayı ziyaret ettiğinde otomatik devreye giren diziler kuruyoruz.
@@ -236,7 +244,7 @@ export default function EpostaOtomasyonPage() {
               <strong className="text-white">CRM entegrasyonu</strong>, e-posta pazarlamanın en kritik bileşeni. Satış ekibinizin HubSpot&apos;taki notları, pazarlama ekibinin Klaviyo kampanyalarını doğrudan etkilesin. Bir lead satışa dönüştüğünde nurturing e-postaları otomatik dursun, upsell dizisi başlasın — tüm bunları kurup yönetiyoruz.
             </p>
             <p>
-              <strong className="text-white">Deliverability (teslim edilebilirlik)</strong> görmezden gelinen ama en önemli faktör. SPF, DKIM, DMARC kayıtları doğru yapılandırılmadan gönderilen e-postaların %30&apos;u spam kutusuna düşüyor. Bizimle çalışan müşterilerin spam oranı &lt;%0.1&apos;in altında kalıyor.
+              <strong className="text-white">Deliverability (teslim edilebilirlik)</strong> görmezden gelinen ama en önemli faktör. SPF, DKIM ve DMARC kayıtları doğru yapılandırılmadan gönderilen e-postaların önemli bir kısmı spam kutusuna düşebilir; kurulumda bu kayıtları ilk iş olarak düzenliyoruz.
             </p>
           </div>
         </div>

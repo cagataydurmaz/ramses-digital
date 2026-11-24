@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import OtomasyonTelefon from '@/components/telefon/OtomasyonTelefon'
 import { WhatsAppTelefonBolumu, ChatbotTelefonBolumu } from '@/components/telefon/TelefonBolumleri'
 import KapakGorseli from '@/components/KapakGorseli'
 import KisaOzet from '@/components/KisaOzet'
@@ -56,9 +57,10 @@ const faqs = [
 export default function N8nOtomasyonPage() {
   return (
     <>
-      <section className="relative pt-32 pb-16 px-6 overflow-hidden">
+      <section className="relative pt-24 md:pt-32 pb-12 md:pb-16 px-6 overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-[radial-gradient(ellipse_at_center,rgba(217,70,239,0.18)_0%,rgba(217,70,239,0.06)_40%,transparent_70%)] rounded-full pointer-events-none" />
-        <div className="max-w-5xl mx-auto text-center relative z-10">
+        <div data-hero-bolunmus className="max-w-6xl mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-[1fr_340px] gap-10 lg:gap-14 items-center">
+          <div className="text-center lg:text-left">
           <div className="inline-flex items-center gap-2 bg-fuchsia-500/10 border border-fuchsia-500/20 rounded-full px-4 py-1.5 mb-6">
             <Workflow size={14} className="text-fuchsia-400" />
             <span className="text-fuchsia-400 text-xs font-medium tracking-wider uppercase">No-Code · AI Entegrasyonlu</span>
@@ -68,21 +70,17 @@ export default function N8nOtomasyonPage() {
             <br />
             <span className="gradient-text">Otomatize Edin</span>
           </h1>
-          <p className="text-zinc-400 text-lg max-w-2xl mx-auto mb-10">
+          <p className="text-zinc-400 text-lg max-w-2xl mx-auto lg:mx-0 mb-10">
             CRM, e-posta, sosyal medya, AI araçlarını birbirine bağlıyoruz. Tekrar eden manuel işleri
             tamamen otomatize ediyor; ekibinizin zamanını ve enerjisini asıl işe harcamasını sağlıyoruz.
           </p>
           <CalendlyButton label="Otomasyon Danışmanlığı Al" variant="primary" />
+          </div>
+          <div className="order-first lg:order-none mx-auto w-full max-w-[300px] lg:max-w-none">
+            <OtomasyonTelefon />
+          </div>
         </div>
       </section>
-
-      <KisaOzet>
-        n8n ile form, CRM, e-posta, tablo ve yapay zekâ araçları arasında tekrar eden işleri otomatik hale getiriyoruz. İşletmenizdeki zaman alan süreçleri birlikte belirliyor, kurulumu ve bakımını üstleniyoruz.
-      </KisaOzet>
-
-      <KapakGorseli src="/gorseller/n8n-otomasyon.webp" alt="Beyaz tahtaya iş akışı şeması çizen kişi" />
-      <WhatsAppTelefonBolumu />
-      <ChatbotTelefonBolumu ters />
 
       <section className="py-12 px-6 border-y border-white/[0.04]">
         <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
@@ -92,6 +90,14 @@ export default function N8nOtomasyonPage() {
           <div><div className="text-3xl md:text-4xl font-bold text-white">KVKK</div><div className="text-zinc-400 text-sm mt-1">Uyumlu Kurulum</div></div>
         </div>
       </section>
+      <WhatsAppTelefonBolumu />
+      <ChatbotTelefonBolumu ters />
+      <KisaOzet>
+        n8n ile form, CRM, e-posta, tablo ve yapay zekâ araçları arasında tekrar eden işleri otomatik hale getiriyoruz. İşletmenizdeki zaman alan süreçleri birlikte belirliyor, kurulumu ve bakımını üstleniyoruz.
+      </KisaOzet>
+
+
+
 
       <section className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
@@ -116,6 +122,8 @@ export default function N8nOtomasyonPage() {
           </div>
         </div>
       </section>
+
+      <KapakGorseli src="/gorseller/n8n-otomasyon.webp" alt="Beyaz tahtaya iş akışı şeması çizen kişi" />
 
       <section className="py-20 px-6 bg-[#080D18]">
         <div className="max-w-5xl mx-auto">

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import RaporTelefon from '@/components/telefon/RaporTelefon'
 import KapakGorseli from '@/components/KapakGorseli'
 import KisaOzet from '@/components/KisaOzet'
 import Link from 'next/link'
@@ -92,7 +93,7 @@ const faqs = [
   },
   {
     q: 'Veri analitiği olmadan dijital pazarlama yapılabilir mi?',
-    a: 'Yapılabilir, ama kör uçuşla aynı şey. Hangi reklamın dönüşüm getirdiğini, hangi sayfanın ziyaretçi kaçırdığını, hangi kanalın en değerli müşteriyi çektiğini bilmeden bütçe optimizasyonu yapamazsınız. Analitik altyapısı olmayan firmaların %60-70\'i reklam bütçesini israf ediyor.',
+    a: 'Yapılabilir, ama kör uçuşla aynı şey. Hangi reklamın dönüşüm getirdiğini, hangi sayfanın ziyaretçi kaçırdığını, hangi kanalın en değerli müşteriyi çektiğini bilmeden bütçe optimizasyonu yapamazsınız.',
   },
   {
     q: 'Looker Studio dashboard ne zaman hazır olur?',
@@ -124,9 +125,10 @@ export default function VeriAnaliziPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative pt-32 pb-16 px-6 overflow-hidden">
+      <section className="relative pt-24 md:pt-32 pb-12 md:pb-16 px-6 overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-[radial-gradient(ellipse_at_center,rgba(6,182,212,0.18)_0%,rgba(6,182,212,0.06)_40%,transparent_70%)] rounded-full pointer-events-none" />
-        <div className="max-w-5xl mx-auto text-center relative z-10">
+        <div data-hero-bolunmus className="max-w-6xl mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-[1fr_340px] gap-10 lg:gap-14 items-center">
+          <div className="text-center lg:text-left">
           <div className="inline-flex items-center gap-2 bg-cyan-500/10 border border-cyan-500/20 rounded-full px-4 py-1.5 mb-6">
             <BarChart3 size={14} className="text-cyan-400" />
             <span className="text-cyan-400 text-xs font-medium tracking-wider uppercase">Veri Analizi & Stratejik Danışmanlık</span>
@@ -136,41 +138,45 @@ export default function VeriAnaliziPage() {
             <br />
             <span className="gradient-text">Güvenle Büyü</span>
           </h1>
-          <p className="text-zinc-400 text-lg max-w-2xl mx-auto mb-10">
+          <p className="text-zinc-400 text-lg max-w-2xl mx-auto lg:mx-0 mb-10">
             GA4 kurulumundan Looker Studio dashboard tasarımına, dönüşüm huni analizinden
             rekabet istihbaratına — tüm büyüme kararlarınızı veriye dayandırın.
           </p>
           <CalendlyButton label="Ücretsiz Analitik Auditi" variant="primary" />
+          </div>
+          <div className="order-first lg:order-none mx-auto w-full max-w-[300px] lg:max-w-none">
+            <RaporTelefon />
+          </div>
         </div>
       </section>
-
-      <KisaOzet>
-        GA4, Search Console ve reklam verilerinizi tek panelde toplayıp hangi kanalın gerçekten müşteri getirdiğini görünür kılıyoruz. Doğru ölçüm kurulmadan yapılan pazarlama tahmine dayanır; ilk adım takip altyapısıdır.
-      </KisaOzet>
-
-      <KapakGorseli src="/gorseller/veri-analizi.webp" alt="Veri analizi grafikleri ve göstergeleri" />
 
       {/* Stats */}
       <section className="py-12 px-6 border-y border-white/[0.04]">
         <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
           <div>
-            <div className="text-3xl md:text-4xl font-bold text-white">%35</div>
-            <div className="text-zinc-400 text-sm mt-1">Ortalama Dönüşüm Artışı</div>
-          </div>
-          <div>
-            <div className="text-3xl md:text-4xl font-bold text-white">%60</div>
-            <div className="text-zinc-400 text-sm mt-1">Bütçe İsrafı Azalması</div>
-          </div>
-          <div>
-            <div className="text-3xl md:text-4xl font-bold text-white">3 gün</div>
-            <div className="text-zinc-400 text-sm mt-1">İlk Dashboard Teslimi</div>
-          </div>
-          <div>
             <div className="text-3xl md:text-4xl font-bold text-white">50+</div>
-            <div className="text-zinc-400 text-sm mt-1">Analiz Edilen İşletme</div>
+            <div className="text-zinc-400 text-sm mt-1">Tamamlanan Proje</div>
+          </div>
+          <div>
+            <div className="text-3xl md:text-4xl font-bold text-white">%96</div>
+            <div className="text-zinc-400 text-sm mt-1">Müşteri Memnuniyeti</div>
+          </div>
+          <div>
+            <div className="text-3xl md:text-4xl font-bold text-white">GA4</div>
+            <div className="text-zinc-400 text-sm mt-1">Doğru Kurulum</div>
+          </div>
+          <div>
+            <div className="text-3xl md:text-4xl font-bold text-white">Aylık</div>
+            <div className="text-zinc-400 text-sm mt-1">Şeffaf Rapor</div>
           </div>
         </div>
       </section>
+      <KisaOzet>
+        GA4, Search Console ve reklam verilerinizi tek panelde toplayıp hangi kanalın gerçekten müşteri getirdiğini görünür kılıyoruz. Doğru ölçüm kurulmadan yapılan pazarlama tahmine dayanır; ilk adım takip altyapısıdır.
+      </KisaOzet>
+
+
+
 
       {/* Services Grid */}
       <section className="py-20 px-6">
@@ -196,6 +202,8 @@ export default function VeriAnaliziPage() {
           </div>
         </div>
       </section>
+
+      <KapakGorseli src="/gorseller/veri-analizi.webp" alt="Veri analizi grafikleri ve göstergeleri" />
 
       {/* Process */}
       <section className="py-20 px-6 bg-[#080D18]">

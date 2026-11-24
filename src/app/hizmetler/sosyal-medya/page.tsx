@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import SosyalMedyaTelefon from '@/components/telefon/SosyalMedyaTelefon'
 import KapakGorseli from '@/components/KapakGorseli'
 import KisaOzet from '@/components/KisaOzet'
 import Link from 'next/link'
@@ -120,9 +121,10 @@ export default function SosyalMedyaPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative pt-32 pb-16 px-6 overflow-hidden">
+      <section className="relative pt-24 md:pt-32 pb-12 md:pb-16 px-6 overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-[radial-gradient(ellipse_at_center,rgba(236,72,153,0.18)_0%,rgba(236,72,153,0.06)_40%,transparent_70%)] rounded-full pointer-events-none" />
-        <div className="max-w-5xl mx-auto text-center relative z-10">
+        <div data-hero-bolunmus className="max-w-6xl mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-[1fr_340px] gap-10 lg:gap-14 items-center">
+          <div className="text-center lg:text-left">
           <div className="inline-flex items-center gap-2 bg-pink-500/10 border border-pink-500/20 rounded-full px-4 py-1.5 mb-6">
             <Share2 size={14} className="text-pink-400" />
             <span className="text-pink-400 text-xs font-medium tracking-wider uppercase">Sosyal Medya İçerik Üretimi</span>
@@ -132,19 +134,17 @@ export default function SosyalMedyaPage() {
             <br />
             <span className="gradient-text">Sosyal Medya İçeriği</span>
           </h1>
-          <p className="text-zinc-400 text-lg max-w-2xl mx-auto mb-10">
+          <p className="text-zinc-400 text-lg max-w-2xl mx-auto lg:mx-0 mb-10">
             Post, story ve video içeriklerinizi tasarlıyor, içerik takvimi ve strateji kuruyoruz —
             siz sadece yayınlayın.
           </p>
           <CalendlyButton label="Ücretsiz Strateji Görüşmesi" variant="primary" />
+          </div>
+          <div className="order-first lg:order-none mx-auto w-full max-w-[300px] lg:max-w-none">
+            <SosyalMedyaTelefon />
+          </div>
         </div>
       </section>
-
-      <KisaOzet>
-        Markanızın diline uygun post, story ve kısa video içerikleri ile içerik takvimini hazırlıyoruz. Hesap yönetimi ve reklam kampanyaları bu hizmete dahil değildir; içerik üretimine odaklanır.
-      </KisaOzet>
-
-      <KapakGorseli src="/gorseller/sosyal-medya.webp" alt="Akıllı telefonda sosyal medya uygulamaları" />
 
       {/* Format bilgi şeridi */}
       <section className="py-12 px-6 border-y border-white/[0.04]">
@@ -167,6 +167,12 @@ export default function SosyalMedyaPage() {
           </div>
         </div>
       </section>
+      <KisaOzet>
+        Markanızın diline uygun post, story ve kısa video içerikleri ile içerik takvimini hazırlıyoruz. Hesap yönetimi ve reklam kampanyaları bu hizmete dahil değildir; içerik üretimine odaklanır.
+      </KisaOzet>
+
+
+
 
       {/* Services Grid */}
       <section className="py-20 px-6">
@@ -192,6 +198,8 @@ export default function SosyalMedyaPage() {
           </div>
         </div>
       </section>
+
+      <KapakGorseli src="/gorseller/sosyal-medya.webp" alt="Akıllı telefonda sosyal medya uygulamaları" />
 
       {/* Process */}
       <section className="py-20 px-6 bg-[#080D18]">

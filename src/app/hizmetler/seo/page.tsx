@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import GoogleAramaAnimasyonu from '@/components/GoogleAramaAnimasyonu'
 import { HaritaTelefonBolumu } from '@/components/telefon/TelefonBolumleri'
 import KapakGorseli from '@/components/KapakGorseli'
 import KisaOzet from '@/components/KisaOzet'
@@ -58,9 +59,10 @@ export default function SeoHizmetPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative pt-32 pb-16 px-6 overflow-hidden">
+      <section className="relative pt-24 md:pt-32 pb-12 md:pb-16 px-6 overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-[radial-gradient(ellipse_at_center,rgba(59,130,246,0.18)_0%,rgba(59,130,246,0.06)_40%,transparent_70%)] rounded-full pointer-events-none" />
-        <div className="max-w-5xl mx-auto text-center relative z-10">
+        <div data-hero-bolunmus className="max-w-6xl mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-[1fr_340px] gap-10 lg:gap-14 items-center">
+          <div className="text-center lg:text-left">
           <div className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 rounded-full px-4 py-1.5 mb-6">
             <Sparkles size={14} className="text-blue-400" />
             <span className="text-blue-400 text-xs font-medium tracking-wider uppercase">SEO · GEO · AEO</span>
@@ -70,20 +72,17 @@ export default function SeoHizmetPage() {
             <br />
             <span className="gradient-text">1. Sayfaya Çıkın</span>
           </h1>
-          <p className="text-zinc-400 text-lg max-w-2xl mx-auto mb-10">
+          <p className="text-zinc-400 text-lg max-w-2xl mx-auto lg:mx-0 mb-10">
             İşletmenize özel, performans odaklı SEO hizmeti. Yerel SEO&apos;dan teknik optimizasyona,
             GEO&apos;dan içerik stratejisine kadar tek çatı altında.
           </p>
           <CalendlyButton label="Ücretsiz SEO Analizi Al" variant="primary" />
+          </div>
+          <div className="order-first lg:order-none mx-auto w-full max-w-[300px] lg:max-w-none">
+            <GoogleAramaAnimasyonu />
+          </div>
         </div>
       </section>
-
-      <KisaOzet>
-        SEO, işletmenizin Google’da ücretli reklam olmadan bulunmasını sağlayan teknik, içerik ve yerel çalışmaların bütünüdür; buna yapay zekâ aramaları için GEO/AEO da dahildir. Google’a göre etkisini görmek genellikle 4 ay ile 1 yıl arasında sürer ve sıralama garanti edilemez.
-      </KisaOzet>
-
-      <KapakGorseli src="/gorseller/seo.webp" alt="Dizüstü bilgisayarda arama ve analiz ekranı üzerinde çalışan kişi" />
-      <HaritaTelefonBolumu />
 
       {/* Stats */}
       <section className="py-12 px-6 border-y border-white/[0.04]">
@@ -94,6 +93,13 @@ export default function SeoHizmetPage() {
           <div><div className="text-3xl md:text-4xl font-bold text-white">5+</div><div className="text-zinc-400 text-sm mt-1">Yıl Deneyim</div></div>
         </div>
       </section>
+      <HaritaTelefonBolumu />
+      <KisaOzet>
+        SEO, işletmenizin Google’da ücretli reklam olmadan bulunmasını sağlayan teknik, içerik ve yerel çalışmaların bütünüdür; buna yapay zekâ aramaları için GEO/AEO da dahildir. Google’a göre etkisini görmek genellikle 4 ay ile 1 yıl arasında sürer ve sıralama garanti edilemez.
+      </KisaOzet>
+
+
+
 
       {/* What's Included */}
       <section className="py-20 px-6">
@@ -119,6 +125,8 @@ export default function SeoHizmetPage() {
           </div>
         </div>
       </section>
+
+      <KapakGorseli src="/gorseller/seo.webp" alt="Dizüstü bilgisayarda arama ve analiz ekranı üzerinde çalışan kişi" />
 
       {/* Process */}
       <section className="py-20 px-6 bg-[#080D18]">

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
-import { WebSitesiTelefonBolumu, WhatsAppTelefonBolumu, ChatbotTelefonBolumu } from '@/components/telefon/TelefonBolumleri'
+import SiteKaydirmaTelefon from '@/components/telefon/SiteKaydirmaTelefon'
+import { WhatsAppTelefonBolumu, ChatbotTelefonBolumu } from '@/components/telefon/TelefonBolumleri'
 import KapakGorseli from '@/components/KapakGorseli'
 import KisaOzet from '@/components/KisaOzet'
 import Link from 'next/link'
@@ -59,9 +60,10 @@ const faqs = [
 export default function WebTasarimHizmetPage() {
   return (
     <>
-      <section className="relative pt-32 pb-16 px-6 overflow-hidden">
+      <section className="relative pt-24 md:pt-32 pb-12 md:pb-16 px-6 overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-[radial-gradient(ellipse_at_center,rgba(16,185,129,0.18)_0%,rgba(16,185,129,0.06)_40%,transparent_70%)] rounded-full pointer-events-none" />
-        <div className="max-w-5xl mx-auto text-center relative z-10">
+        <div data-hero-bolunmus className="max-w-6xl mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-[1fr_340px] gap-10 lg:gap-14 items-center">
+          <div className="text-center lg:text-left">
           <div className="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full px-4 py-1.5 mb-6">
             <Monitor size={14} className="text-emerald-400" />
             <span className="text-emerald-400 text-xs font-medium tracking-wider uppercase">Next.js · WordPress · Shopify</span>
@@ -71,22 +73,17 @@ export default function WebTasarimHizmetPage() {
             <br />
             <span className="gradient-text">Web Tasarım & Geliştirme</span>
           </h1>
-          <p className="text-zinc-400 text-lg max-w-2xl mx-auto mb-10">
+          <p className="text-zinc-400 text-lg max-w-2xl mx-auto lg:mx-0 mb-10">
             İnternet sitesi yaptırmak isteyen işletmeler için sadece güzel değil, hızlı ve dönüşüm odaklı web siteleri.
             Mobil öncelikli, Google&apos;a hazır altyapı.
           </p>
           <CalendlyButton label="Tasarım Görüşmesi Al" variant="primary" />
+          </div>
+          <div className="order-first lg:order-none mx-auto w-full max-w-[300px] lg:max-w-none">
+            <SiteKaydirmaTelefon />
+          </div>
         </div>
       </section>
-
-      <KisaOzet>
-        Hızlı açılan, mobilde rahat kullanılan ve ziyaretçiyi aramaya ya da mesaja yönlendiren web siteleri tasarlıyoruz. Siteler SEO uyumlu altyapıyla kurulur; böylece sonradan Google görünürlüğü için baştan yapılması gerekmez.
-      </KisaOzet>
-
-      <KapakGorseli src="/gorseller/web-tasarim.webp" alt="Masada açık dizüstü bilgisayarda web sitesi tasarımı" />
-      <WebSitesiTelefonBolumu />
-      <WhatsAppTelefonBolumu ters />
-      <ChatbotTelefonBolumu />
 
       <section className="py-12 px-6 border-y border-white/[0.04]">
         <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
@@ -96,6 +93,14 @@ export default function WebTasarimHizmetPage() {
           <div><div className="text-3xl md:text-4xl font-bold text-white">3-5 hf</div><div className="text-zinc-400 text-sm mt-1">Ortalama Teslim</div></div>
         </div>
       </section>
+      <WhatsAppTelefonBolumu ters />
+      <ChatbotTelefonBolumu />
+      <KisaOzet>
+        Hızlı açılan, mobilde rahat kullanılan ve ziyaretçiyi aramaya ya da mesaja yönlendiren web siteleri tasarlıyoruz. Siteler SEO uyumlu altyapıyla kurulur; böylece sonradan Google görünürlüğü için baştan yapılması gerekmez.
+      </KisaOzet>
+
+
+
 
       <section className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
@@ -120,6 +125,8 @@ export default function WebTasarimHizmetPage() {
           </div>
         </div>
       </section>
+
+      <KapakGorseli src="/gorseller/web-tasarim.webp" alt="Masada açık dizüstü bilgisayarda web sitesi tasarımı" />
 
       <section className="py-20 px-6 bg-[#080D18]">
         <div className="max-w-5xl mx-auto">

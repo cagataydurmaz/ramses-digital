@@ -1,4 +1,6 @@
 import type { Metadata } from 'next'
+import { WhatsAppTelefonBolumu } from '@/components/telefon/TelefonBolumleri'
+import ReklamTelefon from '@/components/telefon/ReklamTelefon'
 import KapakGorseli from '@/components/KapakGorseli'
 import KisaOzet from '@/components/KisaOzet'
 import Link from 'next/link'
@@ -30,7 +32,7 @@ const campaignTypes = [
   { icon: TrendingUp, title: 'Display Ağı', desc: 'Milyonlarca web sitesinde marka bilinirliği ve retargeting kampanyaları.' },
   { icon: Youtube, title: 'YouTube Reklamları', desc: 'Video içerikle hedef kitleye duygusal bağ kurun. TrueView ve Bumper Ad formatları.' },
   { icon: ShoppingBag, title: 'Shopping Kampanyaları', desc: 'E-ticaret işletmeleri için ürün odaklı reklam. Görsel + fiyat + marka tek bakışta.' },
-  { icon: Repeat, title: 'Remarketing', desc: 'Sitenizi ziyaret edip dönüşmeyen kullanıcıları geri kazanın. 3-5x dönüşüm artışı.' },
+  { icon: Repeat, title: 'Remarketing', desc: 'Sitenizi ziyaret edip dönüşmeyen kullanıcıları geri kazanın.' },
   { icon: BarChart3, title: 'Performance Max', desc: 'Google\'ın AI destekli yeni nesil kampanyaları. Tüm kanalları otomatik optimize eder.' },
 ]
 
@@ -56,9 +58,10 @@ const faqs = [
 export default function GoogleAdsHizmetPage() {
   return (
     <>
-      <section className="relative pt-32 pb-16 px-6 overflow-hidden">
+      <section className="relative pt-24 md:pt-32 pb-12 md:pb-16 px-6 overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-[radial-gradient(ellipse_at_center,rgba(249,115,22,0.18)_0%,rgba(249,115,22,0.06)_40%,transparent_70%)] rounded-full pointer-events-none" />
-        <div className="max-w-5xl mx-auto text-center relative z-10">
+        <div data-hero-bolunmus className="max-w-6xl mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-[1fr_340px] gap-10 lg:gap-14 items-center">
+          <div className="text-center lg:text-left">
           <div className="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/20 rounded-full px-4 py-1.5 mb-6">
             <TrendingUp size={14} className="text-orange-400" />
             <span className="text-orange-400 text-xs font-medium tracking-wider uppercase">Google Ads · Performance Marketing</span>
@@ -68,19 +71,17 @@ export default function GoogleAdsHizmetPage() {
             <br />
             <span className="gradient-text">Google Ads Yönetimi</span>
           </h1>
-          <p className="text-zinc-400 text-lg max-w-2xl mx-auto mb-10">
+          <p className="text-zinc-400 text-lg max-w-2xl mx-auto lg:mx-0 mb-10">
             Search&apos;ten YouTube&apos;a, Shopping&apos;den Remarketing&apos;e — bütçenizi en yüksek ROAS&apos;ı getirecek
             şekilde optimize ediyoruz. Şeffaf raporlama, gerçek sonuçlar.
           </p>
           <CalendlyButton label="Ücretsiz Hesap Auditi" variant="primary" />
+          </div>
+          <div className="order-first lg:order-none mx-auto w-full max-w-[300px] lg:max-w-none">
+            <ReklamTelefon aramalar={['izmit oto servis', 'gebze diş kliniği', 'kocaeli nakliyat']} />
+          </div>
         </div>
       </section>
-
-      <KisaOzet>
-        Google Ads, arama yapan kişinin karşısına hemen çıkmanızı sağlar; bütçe durunca görünürlük de durur. Kampanya kurulumu, dönüşüm takibi ve düzenli optimizasyonu biz yürütüyoruz; reklam bütçesi doğrudan Google’a ödenir, yönetim ücretimiz ayrıdır.
-      </KisaOzet>
-
-      <KapakGorseli src="/gorseller/google-ads.webp" alt="Dizüstü bilgisayar ekranında reklam performans grafikleri" />
 
       <section className="py-12 px-6 border-y border-white/[0.04]">
         <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
@@ -90,6 +91,13 @@ export default function GoogleAdsHizmetPage() {
           <div><div className="text-3xl md:text-4xl font-bold text-white">5.0/5</div><div className="text-zinc-400 text-sm mt-1">Google Puanı</div></div>
         </div>
       </section>
+      <WhatsAppTelefonBolumu ters />
+      <KisaOzet>
+        Google Ads, arama yapan kişinin karşısına hemen çıkmanızı sağlar; bütçe durunca görünürlük de durur. Kampanya kurulumu, dönüşüm takibi ve düzenli optimizasyonu biz yürütüyoruz; reklam bütçesi doğrudan Google’a ödenir, yönetim ücretimiz ayrıdır.
+      </KisaOzet>
+
+
+
 
       <section className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
@@ -114,6 +122,8 @@ export default function GoogleAdsHizmetPage() {
           </div>
         </div>
       </section>
+
+      <KapakGorseli src="/gorseller/google-ads.webp" alt="Dizüstü bilgisayar ekranında reklam performans grafikleri" />
 
       <section className="py-20 px-6 bg-[#080D18]">
         <div className="max-w-5xl mx-auto">
