@@ -14,6 +14,46 @@ export interface CustomerReview {
 
 export const reviews: CustomerReview[] = [
   {
+    name: 'Salih Y.',
+    subtitle: '',
+    rating: 5,
+    text: 'Çok hızlı bir şekilde web sitemizi hazırladılar. Telefondan rahatlıkla girilebilen bir sayfa olmasını özellikle belirtmiştim, tam da buna uygun yaptılar. Her aşamada bilgi verdiler.',
+    source: 'google',
+    date: '2026-11-24',
+  },
+  {
+    name: 'Mustafa Şengün',
+    subtitle: '',
+    rating: 5,
+    text: 'Şirketimizin web sitesini ve SEO çalışması işini Ramses Dijital’e teslim ettik. İnternet üzerinden bulmuştum. Beklediğimden çok daha güzel bir web sitesi ve organik çalışmalar gerçekleştirdi. Verdiğiniz emek ve hizmet için çok teşekkür ederim.',
+    source: 'google',
+    date: '2026-11-24',
+  },
+  {
+    name: 'Halil Uçar',
+    subtitle: '',
+    rating: 5,
+    text: 'Bizim siteyi ve dijital işleri devrettikten sonra arkamıza bakmadık diyebilirim. İlgililer, sorduğun soruya günlerce beklemeden cevap veriyorlar. Fiyat/performans olarak da gayet başarılılar.',
+    source: 'google',
+    date: '2026-09-24',
+  },
+  {
+    name: 'Mehmet Akay',
+    subtitle: '',
+    rating: 5,
+    text: 'Vermiş olduğunuz hizmet ve özellikle Çağatay Bey’in ilgi alakası için çok teşekkür ederim.',
+    source: 'google',
+    date: '2026-09-24',
+  },
+  {
+    name: 'Ceko Mahsun',
+    subtitle: '',
+    rating: 5,
+    text: 'Olağanüstü bir hizmet.',
+    source: 'google',
+    date: '2026-09-24',
+  },
+  {
     name: 'Furkan Arıkan',
     subtitle: 'Kurucu Avukat, Furkan Arıkan Hukuk Bürosu',
     rating: 5,
