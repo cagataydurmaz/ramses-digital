@@ -138,15 +138,15 @@ export default function AboutPage() {
             <h2 id="kurucu" className="text-3xl md:text-4xl font-bold text-white mb-1">Çağatay Durmaz</h2>
             <p className="text-zinc-500 mb-5">Kurucu · Elektrik-Elektronik Mühendisi</p>
             <p className="text-zinc-400 leading-relaxed mb-4">
-              2019’dan beri işletmelerin Google’da, haritada ve yapay zekâ aramalarında bulunması için SEO, Google Ads,
-              web sitesi ve otomasyon projeleri yürütüyorum. Mühendislik eğitimim bana her işi ölçerek yapmayı öğretti:
-              hangi sayfanın, hangi reklamın müşteri getirdiğini görmeden karar vermem.
+              Ramses Dijital’i 2019’da, işletmelerin Google’da, haritada ve yapay zekâ aramalarında bulunmasını
+              ölçülebilir bir işe dönüştürmek için kurdum. Mühendislik eğitimim bize her işi ölçerek yapmayı öğretti:
+              hangi sayfanın, hangi reklamın müşteri getirdiğini görmeden karar vermeyiz.
             </p>
             <p className="text-zinc-400 leading-relaxed mb-6">
-              Her projeyi bizzat takip ediyorum; sorunuz olduğunda karşınızda işi yapan kişi olur. Kocaeli’deyseniz
-              yüz yüze, diğer şehirlerde görüntülü görüşme ve WhatsApp ile çalışıyoruz.
+              SEO, reklam, tasarım ve yazılım tarafında uzman ekibimizle her projeyi planlı ve şeffaf yürütüyoruz.
+              Kocaeli’deyseniz yüz yüze, diğer şehirlerde görüntülü görüşme ve WhatsApp ile çalışıyoruz.
             </p>
-            <CalendlyButton label="Benimle Görüşün" variant="primary" />
+            <CalendlyButton label="Tanışalım" variant="primary" />
           </div>
         </div>
       </section>

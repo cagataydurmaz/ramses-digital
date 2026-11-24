@@ -1,8 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import Image from 'next/image'
-import { KURUCU } from '@/components/KurucuKutusu'
 import { PhoneCall, CheckCircle2 } from 'lucide-react'
 import { trackLead } from '@/lib/tracking'
 import { waMesaj, waLink } from '@/lib/whatsapp'
@@ -29,10 +27,7 @@ export default function SiziArayalimFormu() {
           <div className="text-center py-4">
             <CheckCircle2 size={32} className="text-emerald-400 mx-auto mb-3" />
             <p className="text-white font-semibold text-lg">WhatsApp açıldı, mesajı göndermeniz yeterli.</p>
-            <p className="text-zinc-400 text-sm mt-1 flex items-center justify-center gap-2">
-              <Image src={KURUCU.foto} alt={KURUCU.ad} width={22} height={22} className="w-[22px] h-[22px] rounded-full object-cover" />
-              Sizi {KURUCU.ad} arar · Ortalama 2 saat içinde dönüş yapıyoruz.
-            </p>
+            <p className="text-zinc-400 text-sm mt-1">Ekibimiz sizi arayacak · Ortalama 2 saat içinde dönüş yapıyoruz.</p>
           </div>
         ) : (
           <>
