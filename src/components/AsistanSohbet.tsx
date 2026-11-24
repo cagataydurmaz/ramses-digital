@@ -12,7 +12,7 @@ type Talep = { ad?: string; telefon?: string; isletme?: string; sehir?: string; 
 
 const KARSILAMA: Mesaj = {
   rol: 'asistan',
-  metin: 'Merhaba, ben Ramses Dijital’in yapay zekâ asistanıyım. Web sitesi, Google’da görünürlük veya reklam hakkında sorularınızı yanıtlayabilirim. İşletmeniz hakkında kısaca bilgi verir misiniz?',
+  metin: 'Merhaba! Size nasıl yardımcı olabilirim? İşletmeniz ne iş yapıyor?',
 }
 const ONERILER = ['Web sitem yok, yaptırmak istiyorum', 'Google’da görünmüyorum', 'Google Ads hakkında bilgi', 'Fiyat almak istiyorum']
 const AZAMI = 20
