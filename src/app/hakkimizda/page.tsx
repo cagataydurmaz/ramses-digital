@@ -126,9 +126,12 @@ export default function AboutPage() {
       {/* Kurucu */}
       <section aria-labelledby="kurucu" className="py-16 px-6">
         <div className="max-w-5xl mx-auto grid md:grid-cols-[280px_1fr] gap-10 items-center">
-          <div className="relative mx-auto w-full max-w-[280px]">
-            <div className="absolute -inset-6 bg-[radial-gradient(circle,rgba(59,130,246,0.22),transparent_65%)] pointer-events-none" />
-            <Image src="/ekip/cagatay-durmaz.webp" alt="Çağatay Durmaz, Ramses Dijital kurucusu" width={600} height={800} className="relative w-full rounded-2xl object-cover ring-1 ring-white/15" />
+          <div className="relative mx-auto w-60 h-60 md:w-[270px] md:h-[270px]">
+            <div className="absolute -inset-10 bg-[radial-gradient(circle,rgba(59,130,246,0.25),transparent_65%)] pointer-events-none" aria-hidden />
+            <div className="absolute -inset-[5px] rounded-full bg-[conic-gradient(from_210deg,#3b82f6,#8b5cf6,#d946ef,#3b82f6)] animate-[spin_12s_linear_infinite] motion-reduce:animate-none" aria-hidden />
+            <div className="absolute -inset-[1px] rounded-full bg-[#0A0F1E]" aria-hidden />
+            <Image src="/ekip/cagatay-durmaz-kare.webp" alt="Çağatay Durmaz, Ramses Dijital kurucusu" width={600} height={600} className="relative w-full h-full rounded-full object-cover p-1.5" />
+            <span className="absolute bottom-4 right-4 w-5 h-5 rounded-full bg-emerald-500 ring-4 ring-[#0A0F1E]" aria-hidden />
           </div>
           <div>
             <p className="text-blue-500 text-sm font-medium tracking-wider uppercase mb-3">Kurucu</p>
