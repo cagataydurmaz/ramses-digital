@@ -14,6 +14,8 @@ import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
 import { MapPin, Search, ArrowRight, CheckCircle2, FileText, Link2, BarChart3, Zap, Award, TrendingUp } from 'lucide-react'
+import HeroGuvenSatiri from '@/components/HeroGuvenSatiri'
+import GoogleAramaAnimasyonu from '@/components/GoogleAramaAnimasyonu'
 
 export const metadata: Metadata = {
   title: 'Bursa SEO Ajansı – Ücretsiz Site Analizi | Ramses Dijital',
@@ -92,29 +94,35 @@ export default function BursaSeoPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      <section className="relative pt-32 pb-20 px-6 overflow-hidden">
+      <section className="relative pt-24 md:pt-32 pb-20 px-6 overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[450px] bg-[radial-gradient(ellipse_at_center,rgba(59,130,246,0.144)_0%,rgba(59,130,246,0.048)_40%,transparent_70%)] rounded-full pointer-events-none" />
-        <div className="max-w-5xl mx-auto text-center relative z-10">
+        <div data-hero-bolunmus className="max-w-6xl mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-[1fr_340px] gap-8 lg:gap-14 items-center">
+          <div className="text-center lg:text-left">
           <div className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 rounded-full px-4 py-1.5 mb-6">
             <MapPin size={13} className="text-blue-400" />
             <span className="text-blue-400 text-sm font-medium">Bursa — Tüm İlçeler</span>
           </div>
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
+          <h1 className="text-[2rem] sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
             Bursa SEO Ajansı
             <br />
             <span className="gradient-text">Organik Trafiğinizi Büyütün</span>
           </h1>
-          <p className="text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto mb-4 leading-relaxed">
+          <p className="hidden sm:block text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto lg:mx-0 mb-4 leading-relaxed">
             Osmangazi&apos;den Nilüfer&apos;e, İnegöl&apos;den Gemlik&apos;e Bursa&apos;nın her ilçesinde yerel SEO. Otomotiv yan sanayi ve mobilya sektörüne özel B2B içerik stratejisi.
           </p>
-          <p className="text-zinc-500 text-sm mb-10">
+          <p className="hidden sm:block text-zinc-500 text-sm mb-10">
             {ilceler.join(' · ')}
           </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
             <CalendlyButton label="Ücretsiz SEO Analizi" variant="primary" />
             <Link href="/hizmetler/seo" className="text-zinc-400 hover:text-white text-sm font-medium transition-colors flex items-center gap-1.5">
               SEO Hizmet Detayları <ArrowRight size={14} />
             </Link>
+          </div>
+          <HeroGuvenSatiri />
+          </div>
+          <div className="mx-auto w-full max-w-[300px] lg:max-w-none">
+            <GoogleAramaAnimasyonu aramalar={['bursa diş kliniği', 'bursa oto servis', 'bursa emlak ofisi']} />
           </div>
         </div>
       </section>

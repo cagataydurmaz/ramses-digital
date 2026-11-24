@@ -5,9 +5,9 @@ import { Search, MapPin, Star, Sparkles } from 'lucide-react'
 
 // Ana sayfa: telefonda kendiliğinden yazılan Google araması ve öne çıkan "Sizin İşletmeniz" sonucu.
 // Temsili bir gösterimdir (gerçek arama sonucu değil); kodla çizilir, dış görsel/telif yok.
-const ARAMALAR = ['izmit web tasarım', 'kocaeli diş kliniği', 'gebze oto servis', 'bursa veteriner']
+const ARAMALAR: string[] = ['izmit web tasarım', 'kocaeli diş kliniği', 'gebze oto servis', 'bursa veteriner']
 
-export default function GoogleAramaAnimasyonu() {
+export default function GoogleAramaAnimasyonu({ aramalar = ARAMALAR }: { aramalar?: string[] }) {
   const kutu = useRef<HTMLDivElement>(null)
   const [aktif, setAktif] = useState(false)
   const [sira, setSira] = useState(0)
@@ -18,7 +18,7 @@ export default function GoogleAramaAnimasyonu() {
     const el = kutu.current
     if (!el) return
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      setYazi(ARAMALAR[0])
+      setYazi(aramalar[0])
       setSonuc(true)
       return
     }
@@ -29,7 +29,7 @@ export default function GoogleAramaAnimasyonu() {
 
   useEffect(() => {
     if (!aktif) return
-    const hedef = ARAMALAR[sira]
+    const hedef = aramalar[sira % aramalar.length]
     let i = 0
     setYazi('')
     setSonuc(false)
@@ -40,7 +40,7 @@ export default function GoogleAramaAnimasyonu() {
       if (i >= hedef.length) {
         clearInterval(yaz)
         zamanlayicilar.push(setTimeout(() => setSonuc(true), 450))
-        zamanlayicilar.push(setTimeout(() => setSira((s) => (s + 1) % ARAMALAR.length), 4200))
+        zamanlayicilar.push(setTimeout(() => setSira((s) => (s + 1) % aramalar.length), 4200))
       }
     }, 75)
     return () => {

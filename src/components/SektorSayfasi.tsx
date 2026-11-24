@@ -11,9 +11,18 @@ import KisaOzet from '@/components/KisaOzet'
 import { projects } from '@/lib/portfolio'
 import type { SektorVeri } from '@/lib/sektorler'
 import { sektorSehir } from '@/lib/sektorSehir'
+import HeroGuvenSatiri from '@/components/HeroGuvenSatiri'
+import GoogleAramaAnimasyonu from '@/components/GoogleAramaAnimasyonu'
 
 // Veri odaklı sektör sayfası (src/lib/sektorler.ts). IlSeoSayfasi ile aynı görsel dil.
 const SITE = 'https://ramsesdigital.com'
+// Üstteki telefon animasyonunda yazılacak sektör araması
+const SEKTOR_ARAMA: Record<string, string> = {
+  'avukat-hukuk-burolari': 'avukat', 'dis-hekimleri-klinikler': 'diş hekimi', 'psikolog-terapistler': 'psikolog',
+  'veteriner-klinikleri': 'veteriner', 'mali-musavirler': 'mali müşavir', 'e-ticaret': 'online mağaza',
+  'restoran-kafe': 'restoran', 'ozel-hastane-poliklinik': 'özel hastane', 'agiz-dis-sagligi-merkezleri': 'diş merkezi',
+  'guzellik-merkezleri': 'güzellik merkezi', 'emlak-ofisleri': 'emlak ofisi', 'oto-servis': 'oto servis',
+}
 
 export function sektorMetadata(v: SektorVeri): Metadata {
   const title = seoBaslik(`${v.ad} İçin SEO ve Dijital Pazarlama`.length > 52 ? `${v.kisaAd} İçin SEO ve Dijital Pazarlama` : `${v.ad} İçin SEO ve Dijital Pazarlama`)
@@ -73,24 +82,30 @@ export default function SektorSayfasi({ v }: { v: SektorVeri }) {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      <section className="relative pt-32 pb-14 px-6 overflow-hidden">
+      <section className="relative pt-24 md:pt-32 pb-14 px-6 overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[450px] bg-[radial-gradient(ellipse_at_center,rgba(59,130,246,0.144)_0%,rgba(59,130,246,0.048)_40%,transparent_70%)] rounded-full pointer-events-none" />
-        <div className="max-w-5xl mx-auto text-center relative z-10">
+        <div data-hero-bolunmus className="max-w-6xl mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-[1fr_340px] gap-8 lg:gap-14 items-center">
+          <div className="text-center lg:text-left">
           <Link href="/sektorler" className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 rounded-full px-4 py-1.5 mb-6">
             <Briefcase size={13} className="text-blue-400" />
             <span className="text-blue-400 text-sm font-medium">Sektörler · {v.kisaAd}</span>
           </Link>
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+          <h1 className="text-[2rem] sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
             {v.ad} İçin Dijital Pazarlama
             <br />
             <span className="gradient-text">{v.baslikVurgu}</span>
           </h1>
-          <p className="text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">{v.ozet}</p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <p className="hidden sm:block text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto lg:mx-0 mb-10 leading-relaxed">{v.ozet}</p>
+          <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
             <CalendlyButton label="Ücretsiz Görüşme" variant="primary" />
             <Link href="/teklif-al" className="text-zinc-400 hover:text-white text-sm font-medium transition-colors flex items-center gap-1.5">
               AI Teklif Hesaplayıcı <ArrowRight size={14} />
             </Link>
+          </div>
+          <HeroGuvenSatiri />
+          </div>
+          <div className="mx-auto w-full max-w-[300px] lg:max-w-none">
+            <GoogleAramaAnimasyonu aramalar={[`yakınımdaki ${SEKTOR_ARAMA[v.slug] ?? v.kisaAd}`, `en iyi ${SEKTOR_ARAMA[v.slug] ?? v.kisaAd}`, `kocaeli ${SEKTOR_ARAMA[v.slug] ?? v.kisaAd}`].map((x) => x.toLocaleLowerCase('tr-TR'))} />
           </div>
         </div>
       </section>

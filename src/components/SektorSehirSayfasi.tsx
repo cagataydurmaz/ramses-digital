@@ -9,6 +9,7 @@ import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
 import KisaOzet from '@/components/KisaOzet'
 import GooglePuanSatiri from '@/components/GooglePuanSatiri'
+import GoogleAramaAnimasyonu from '@/components/GoogleAramaAnimasyonu'
 import { sektorler } from '@/lib/sektorler'
 import { sektorSehir, sektorSehirBul, type SektorSehirVeri } from '@/lib/sektorSehir'
 
@@ -74,25 +75,30 @@ export default function SektorSehirSayfasi({ slug }: { slug: string }) {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      <section className="relative pt-32 pb-14 px-6 overflow-hidden">
+      <section className="relative pt-24 md:pt-32 pb-10 md:pb-14 px-6 overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[450px] bg-[radial-gradient(ellipse_at_center,rgba(59,130,246,0.144)_0%,rgba(59,130,246,0.048)_40%,transparent_70%)] rounded-full pointer-events-none" />
-        <div className="max-w-5xl mx-auto text-center relative z-10">
-          <Link href={`/sektorler/${s.slug}`} className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 rounded-full px-4 py-1.5 mb-6">
-            <MapPin size={13} className="text-blue-400" />
-            <span className="text-blue-400 text-sm font-medium">{v.sehir.ad} · {s.kisaAd}</span>
-          </Link>
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-            {v.sehir.ad} {v.meslek.baslik}
-            <br />
-            <span className="gradient-text">{v.vurgu}</span>
-          </h1>
-          <p className="text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto mb-6 leading-relaxed">{s.ozet}</p>
-          <GooglePuanSatiri />
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
-            <CalendlyButton label="Ücretsiz Ön Görüşme" variant="primary" />
-            <Link href="/teklif-al" className="text-zinc-400 hover:text-white text-sm font-medium transition-colors flex items-center gap-1.5">
-              AI Teklif Hesaplayıcı <ArrowRight size={14} />
+        <div className="max-w-6xl mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-[1fr_340px] gap-8 lg:gap-14 items-center">
+          <div className="text-center lg:text-left">
+            <Link href={`/sektorler/${s.slug}`} className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 rounded-full px-4 py-1.5 mb-5">
+              <MapPin size={13} className="text-blue-400" />
+              <span className="text-blue-400 text-sm font-medium">{v.sehir.ad} · {s.kisaAd}</span>
             </Link>
+            <h1 className="text-[2rem] sm:text-5xl lg:text-6xl font-bold text-white mb-5 leading-tight">
+              {v.sehir.ad} {v.meslek.baslik}
+              <br />
+              <span className="gradient-text">{v.vurgu}</span>
+            </h1>
+            <p className="hidden sm:block text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto lg:mx-0 mb-6 leading-relaxed">{s.ozet}</p>
+            <div className="flex justify-center lg:justify-start"><GooglePuanSatiri /></div>
+            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mt-6">
+              <CalendlyButton label="Ücretsiz Ön Görüşme" variant="primary" />
+              <Link href="/teklif-al" className="text-zinc-400 hover:text-white text-sm font-medium transition-colors flex items-center gap-1.5">
+                AI Teklif Hesaplayıcı <ArrowRight size={14} />
+              </Link>
+            </div>
+          </div>
+          <div className="mx-auto w-full max-w-[300px] lg:max-w-none">
+            <GoogleAramaAnimasyonu aramalar={[`${v.sehir.ad} ${v.meslek.ad}`.toLocaleLowerCase('tr-TR'), `${v.sehir.ad} ${v.meslek.ad} önerisi`.toLocaleLowerCase('tr-TR'), `en yakın ${v.meslek.ad}`.toLocaleLowerCase('tr-TR')]} />
           </div>
         </div>
       </section>

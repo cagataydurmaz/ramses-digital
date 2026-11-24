@@ -8,6 +8,8 @@ import SehirTeklifBolumu from '@/components/SehirTeklifBolumu'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
 import { MapPin, Megaphone, ArrowRight, Target, BarChart3, Zap, TrendingUp, DollarSign, Clock } from 'lucide-react'
+import HeroGuvenSatiri from '@/components/HeroGuvenSatiri'
+import ReklamTelefon from '@/components/telefon/ReklamTelefon'
 
 export const metadata: Metadata = {
   title: 'İstanbul Google Ads Ajansı – Ücretsiz Analiz | Ramses',
@@ -76,28 +78,34 @@ export default function IstanbulGoogleAdsPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      <section className="relative pt-32 pb-20 px-6 overflow-hidden">
+      <section className="relative pt-24 md:pt-32 pb-20 px-6 overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[450px] bg-[radial-gradient(ellipse_at_center,rgba(59,130,246,0.144)_0%,rgba(59,130,246,0.048)_40%,transparent_70%)] rounded-full pointer-events-none" />
-        <div className="max-w-5xl mx-auto text-center relative z-10">
+        <div data-hero-bolunmus className="max-w-6xl mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-[1fr_340px] gap-8 lg:gap-14 items-center">
+          <div className="text-center lg:text-left">
           <div className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 rounded-full px-4 py-1.5 mb-6">
             <MapPin size={13} className="text-blue-400" />
             <span className="text-blue-400 text-sm font-medium">İstanbul — Tüm İlçeler</span>
           </div>
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
+          <h1 className="text-[2rem] sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
             İstanbul Google Ads
             <br />
             <span className="gradient-text">İlçe Bazlı Hedefleme</span>
           </h1>
-          <p className="text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
+          <p className="hidden sm:block text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto lg:mx-0 mb-10 leading-relaxed">
             Kadıköy, Beşiktaş, Şişli veya Bakırköy — İstanbul&apos;un hangi ilçesinde müşteri arıyorsanız, tam o noktada reklamınız çıksın.
           </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
             <CalendlyButton label="Ücretsiz Kampanya Analizi" variant="primary" />
             <Link href="/hizmetler/google-ads" className="text-zinc-400 hover:text-white text-sm font-medium transition-colors flex items-center gap-1.5">
               Detaylı Hizmet Bilgisi <ArrowRight size={14} />
             </Link>
           </div>
           <GooglePuanSatiri />
+          <HeroGuvenSatiri />
+          </div>
+          <div className="mx-auto w-full max-w-[300px] lg:max-w-none">
+            <ReklamTelefon aramalar={['istanbul oto servis', 'istanbul klima servisi', 'istanbul nakliyat']} />
+          </div>
         </div>
       </section>
 
