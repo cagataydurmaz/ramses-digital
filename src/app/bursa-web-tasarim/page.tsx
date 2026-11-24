@@ -13,7 +13,7 @@ import SiteKaydirmaTelefon from '@/components/telefon/SiteKaydirmaTelefon'
 export const metadata: Metadata = {
   title: 'Bursa Web Tasarım Ajansı — Ramses Dijital',
   description:
-    'Bursa\'da profesyonel web tasarım hizmeti. Osmangazi, Nilüfer, Yıldırım, İnegöl ve tüm Bursa ilçeleri için SEO uyumlu, mobil öncelikli kurumsal web siteleri.',
+    'Bursa\'da web tasarım ve internet sitesi yapımı. Osmangazi, Nilüfer, Yıldırım, İnegöl ve tüm Bursa ilçeleri için SEO uyumlu, mobil öncelikli kurumsal web siteleri.',
   alternates: { canonical: 'https://ramsesdigital.com/bursa-web-tasarim' },
   openGraph: {
     title: 'Bursa Web Tasarım | Ramses Dijital',

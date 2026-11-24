@@ -13,7 +13,7 @@ import SiteKaydirmaTelefon from '@/components/telefon/SiteKaydirmaTelefon'
 export const metadata: Metadata = {
   title: 'Kayseri Web Tasarım Ajansı — Ramses Dijital',
   description:
-    'Kayseri\'de profesyonel web tasarım hizmeti. Melikgazi, Kocasinan, Talas ve tüm Kayseri ilçeleri için SEO uyumlu, mobil öncelikli kurumsal web siteleri.',
+    'Kayseri\'de web tasarım ve internet sitesi yapımı. Melikgazi, Kocasinan, Talas ve tüm Kayseri ilçeleri için SEO uyumlu, mobil öncelikli kurumsal web siteleri.',
   alternates: { canonical: 'https://ramsesdigital.com/kayseri-web-tasarim' },
   openGraph: {
     title: 'Kayseri Web Tasarım | Ramses Dijital',

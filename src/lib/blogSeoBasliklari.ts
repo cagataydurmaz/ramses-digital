@@ -1,6 +1,9 @@
 // Google'da görünen kısa başlıklar (≤60 karakter). Sayfadaki H1 başlık ve adres
 // değişmez; sadece <title> kısalır ki arama sonuçlarında kesilmesin.
 export const blogSeoBasliklari: Record<string, string> = {
+  'internet-sitesi-yaptirmak': 'İnternet Sitesi Yaptırmak: Adım Adım Rehber',
+  'google-da-neden-cikmiyorum': "İşletmem Google'da Neden Çıkmıyor? 9 Sebep",
+  'google-isletme-profili-nasil-acilir': 'Google İşletme Profili Nasıl Açılır? (Adım Adım)',
   'google-ads-tam-rehberi-2024': 'Google Ads Rehberi: Kampanya Türleri ve Bütçe',
   'geo-nedir-chatgpt-yapay-zeka-aramalarda-gorunurluk': 'GEO Rehberi: ChatGPT Aramalarında Görünür Olmak',
   'seo-geo-aeo-arama-motorundan-yanit-motoruna': "SEO'nun Yeni Hali: GEO ve AEO Rehberi",

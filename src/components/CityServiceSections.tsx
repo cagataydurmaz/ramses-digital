@@ -15,7 +15,7 @@ export function cityServiceFaqs(city: string, hizmet: Hizmet): { q: string; a: s
   const sektorListesi = v.sektorler.map((s) => s.ad.toLowerCase()).join(', ')
   switch (hizmet) {
     case 'web':
-      return [{ q: `${v.bulunma} hangi sektörler için web sitesi yapıyorsunuz?`, a: `${v.sehir} için öne çıkan ${sektorListesi} dahil her sektöre hizmet veriyoruz. Site yapısı sektöre göre değişir: ${v.sektorler[0].ad.toLowerCase()} için ${v.sektorler[0].web.charAt(0).toLowerCase() + v.sektorler[0].web.slice(1)}` }]
+      return [{ q: `${v.bulunma} internet sitesi yaptırmak istiyorum, süreç nasıl işliyor?`, a: `Önce kısa bir görüşmede işinizi ve sitenin amacını konuşuyoruz (telefon, WhatsApp, randevu ya da satış). Ardından sayfa listesini ve yazılı teklifi çıkarıyor, tasarımı onayınıza sunuyor, siteyi mobil öncelikli ve Google'a hazır biçimde yayına alıyoruz. ${v.sehir} dışında olsanız bile süreç baştan sona online yürüyebilir.` }, { q: `${v.bulunma} hangi sektörler için web sitesi yapıyorsunuz?`, a: `${v.sehir} için öne çıkan ${sektorListesi} dahil her sektöre hizmet veriyoruz. Site yapısı sektöre göre değişir: ${v.sektorler[0].ad.toLowerCase()} için ${v.sektorler[0].web.charAt(0).toLowerCase() + v.sektorler[0].web.slice(1)}` }]
     case 'ads':
       return [{ q: `${v.bulunma} Google Ads bütçesi hangi dönemlerde artırılmalı?`, a: v.sezon }]
     case 'pazarlama':

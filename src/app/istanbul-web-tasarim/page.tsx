@@ -13,7 +13,7 @@ import SiteKaydirmaTelefon from '@/components/telefon/SiteKaydirmaTelefon'
 export const metadata: Metadata = {
   title: 'İstanbul Web Tasarım Ajansı — Ramses Dijital',
   description:
-    'İstanbul\'da profesyonel web tasarım hizmeti. Kadıköy, Beşiktaş, Şişli, Bakırköy ve tüm İstanbul ilçeleri için SEO uyumlu, mobil öncelikli kurumsal web siteleri.',
+    'İstanbul\'da web tasarım ve internet sitesi yapımı. Kadıköy, Beşiktaş, Şişli, Bakırköy ve tüm İstanbul ilçeleri için SEO uyumlu, mobil öncelikli kurumsal web siteleri.',
   alternates: { canonical: 'https://ramsesdigital.com/istanbul-web-tasarim' },
   openGraph: {
     title: 'İstanbul Web Tasarım | Ramses Dijital',

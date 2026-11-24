@@ -135,6 +135,7 @@ const services = [
   {
     icon: Sparkles,
     title: 'SEO & Yapay Zekâ Görünürlüğü',
+    href: '/hizmetler/seo',
     desc: "Google'da üst sıralar için çalışıyor; ChatGPT ve Gemini gibi yapay zekâ araçlarında da alıntılanma olasılığınızı artırıyoruz.",
     tags: ['Google\'da Üst Sıralar', 'Yapay Zekâ Görünürlüğü', 'Yerel SEO'],
     color: 'blue',
@@ -142,6 +143,7 @@ const services = [
   {
     icon: TrendingUp,
     title: 'Google Ads & Performans',
+    href: '/hizmetler/google-ads',
     desc: 'YouTube, Remarketing ve Display reklamlarıyla ROI odaklı kampanyalar yürütün.',
     tags: ['Search Ads', 'YouTube Ads', 'Remarketing'],
     color: 'violet',
@@ -149,6 +151,7 @@ const services = [
   {
     icon: Share2,
     title: 'Sosyal Medya İçerik Üretimi',
+    href: '/hizmetler/sosyal-medya',
     desc: 'Post, story ve video içeriklerinizi marka kimliğinize uygun tasarlıyor, paylaşım stratejinizi kuruyoruz.',
     tags: ['Post & Story Tasarımı', 'Video İçerik', 'İçerik Takvimi'],
     color: 'pink',
@@ -156,6 +159,7 @@ const services = [
   {
     icon: Monitor,
     title: 'Web Tasarımı & Geliştirme',
+    href: '/hizmetler/web-tasarim',
     desc: 'Modern, hızlı ve mobil uyumlu web siteleri ile dönüşüm oranlarınızı artırın.',
     tags: ['UI/UX Tasarım', 'Next.js', 'WordPress'],
     color: 'emerald',
@@ -163,6 +167,7 @@ const services = [
   {
     icon: Mail,
     title: 'E-Posta & Otomasyon',
+    href: '/hizmetler/eposta-otomasyon',
     desc: 'CRM entegrasyonu ve otomatik akışlarla müşteri sadakatini ve geliri artırın.',
     tags: ['CRM Entegrasyonu', 'Drip Kampanyalar', 'A/B Test'],
     color: 'orange',
@@ -170,6 +175,7 @@ const services = [
   {
     icon: BarChart3,
     title: 'Veri Analizi & Danışmanlık',
+    href: '/hizmetler/veri-analizi',
     desc: 'Google Analytics ve Data Studio raporlarıyla veriye dayalı kararlar alın.',
     tags: ['GA4', 'Data Studio', 'Strateji'],
     color: 'cyan',
@@ -177,6 +183,7 @@ const services = [
   {
     icon: Workflow,
     title: 'n8n İş Akışı Otomasyonu',
+    href: '/hizmetler/n8n-otomasyon',
     desc: 'CRM, e-posta ve yapay zeka araçlarını birbirine bağlayıp tekrar eden işleri otomatize edin — manuel süreçlerden kurtulun, ekibiniz asıl işe odaklansın.',
     tags: ['AI İş Akışları', 'CRM Otomasyonu', 'Webhook & API', 'Self-Hosted', 'Çoklu Platform Senkronizasyonu'],
     color: 'fuchsia',
@@ -494,7 +501,7 @@ export default function HomePage() {
               const c = serviceColorMap[service.color]
               return (
                 <FadeIn key={service.title} delay={i * 0.08}>
-                  <div className="group relative h-full bg-[#0D1225] border border-white/[0.14] rounded-2xl p-6 card-hover cursor-default overflow-hidden">
+                  <Link href={service.href} prefetch={false} aria-label={`${service.title} hizmeti hakkında bilgi al`} className="group relative flex flex-col h-full bg-[#0D1225] border border-white/[0.14] rounded-2xl p-6 card-hover overflow-hidden">
                     <div className={`absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r ${c.bar} scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left`} />
                     <div className={`w-11 h-11 ${c.bg} rounded-xl flex items-center justify-center mb-5 transition-all ${c.bgHover} ${c.glow}`}>
                       <Icon size={20} className={c.text} />
@@ -511,7 +518,10 @@ export default function HomePage() {
                         </span>
                       ))}
                     </div>
-                  </div>
+                    <span className={`mt-auto pt-5 inline-flex items-center gap-1.5 text-sm font-medium ${c.text}`}>
+                      Detaylı bilgi <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+                    </span>
+                  </Link>
                 </FadeIn>
               )
             })}
@@ -523,7 +533,7 @@ export default function HomePage() {
               const c = serviceColorMap[n8n.color]
               return (
                 <FadeIn delay={services.length * 0.08} className="md:col-span-2 lg:col-span-3">
-                  <div className="group relative bg-[#0D1225] border border-white/[0.14] rounded-2xl p-6 sm:p-8 card-hover cursor-default overflow-hidden">
+                  <Link href={n8n.href} prefetch={false} aria-label={`${n8n.title} hizmeti hakkında bilgi al`} className="group relative block bg-[#0D1225] border border-white/[0.14] rounded-2xl p-6 sm:p-8 card-hover overflow-hidden">
                     <div className={`absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r ${c.bar} scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left`} />
                     <div className="flex flex-col sm:flex-row sm:items-center gap-6">
                       <div className={`w-14 h-14 shrink-0 ${c.bg} rounded-2xl flex items-center justify-center transition-all ${c.bgHover} ${c.glow}`}>
@@ -531,7 +541,10 @@ export default function HomePage() {
                       </div>
                       <div className="flex-1">
                         <h3 className="text-white font-semibold text-xl mb-2">{n8n.title}</h3>
-                        <p className="text-zinc-400 text-sm leading-relaxed mb-4 sm:mb-0 max-w-2xl">{n8n.desc}</p>
+                        <p className="text-zinc-400 text-sm leading-relaxed mb-3 max-w-2xl">{n8n.desc}</p>
+                        <span className={`inline-flex items-center gap-1.5 text-sm font-medium ${c.text} mb-4 sm:mb-0`}>
+                          Detaylı bilgi <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+                        </span>
                       </div>
                       <div className="flex flex-wrap gap-2 sm:max-w-[280px] sm:justify-end">
                         {n8n.tags.map((tag) => (
@@ -544,7 +557,7 @@ export default function HomePage() {
                         ))}
                       </div>
                     </div>
-                  </div>
+                  </Link>
                 </FadeIn>
               )
             })()}

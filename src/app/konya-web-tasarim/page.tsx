@@ -13,7 +13,7 @@ import SiteKaydirmaTelefon from '@/components/telefon/SiteKaydirmaTelefon'
 export const metadata: Metadata = {
   title: 'Konya Web Tasarım Ajansı — Ramses Dijital',
   description:
-    'Konya\'da profesyonel web tasarım hizmeti. Selçuklu, Meram, Karatay ve tüm Konya ilçeleri için SEO uyumlu, mobil öncelikli kurumsal web siteleri.',
+    'Konya\'da web tasarım ve internet sitesi yapımı. Selçuklu, Meram, Karatay ve tüm Konya ilçeleri için SEO uyumlu, mobil öncelikli kurumsal web siteleri.',
   alternates: { canonical: 'https://ramsesdigital.com/konya-web-tasarim' },
   openGraph: {
     title: 'Konya Web Tasarım | Ramses Dijital',

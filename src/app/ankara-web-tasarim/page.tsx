@@ -13,7 +13,7 @@ import SiteKaydirmaTelefon from '@/components/telefon/SiteKaydirmaTelefon'
 export const metadata: Metadata = {
   title: 'Ankara Web Tasarım Ajansı — Ramses Dijital',
   description:
-    'Ankara\'da profesyonel web tasarım hizmeti. Çankaya, Keçiören, Yenimahalle ve tüm Ankara ilçeleri için SEO uyumlu, mobil öncelikli kurumsal web siteleri.',
+    'Ankara\'da web tasarım ve internet sitesi yapımı. Çankaya, Keçiören, Yenimahalle ve tüm Ankara ilçeleri için SEO uyumlu, mobil öncelikli kurumsal web siteleri.',
   alternates: { canonical: 'https://ramsesdigital.com/ankara-web-tasarim' },
   openGraph: {
     title: 'Ankara Web Tasarım | Ramses Dijital',

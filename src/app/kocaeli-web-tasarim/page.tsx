@@ -13,7 +13,7 @@ import SiteKaydirmaTelefon from '@/components/telefon/SiteKaydirmaTelefon'
 export const metadata: Metadata = {
   title: 'Kocaeli Web Tasarım Ajansı – Kurumsal Site | Ramses Dijital',
   description:
-    'Kocaeli web tasarım ajansı: İzmit, Gebze, Darıca ve tüm Kocaeli için kurumsal web sitesi, SEO uyumlu ve mobil öncelikli web tasarım. Ücretsiz teklif alın.',
+    'Kocaeli web tasarım ajansı: İzmit, Gebze, Darıca ve tüm Kocaeli için kurumsal web sitesi ve internet sitesi yapımı, SEO uyumlu ve mobil öncelikli web tasarım. Ücretsiz teklif alın.',
   alternates: { canonical: 'https://ramsesdigital.com/kocaeli-web-tasarim' },
   openGraph: {
     title: 'Kocaeli Web Tasarım | Ramses Dijital',

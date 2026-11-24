@@ -13,7 +13,7 @@ import SiteKaydirmaTelefon from '@/components/telefon/SiteKaydirmaTelefon'
 export const metadata: Metadata = {
   title: 'Mersin Web Tasarım Ajansı — Ramses Dijital',
   description:
-    'Mersin\'de profesyonel web tasarım hizmeti. Yenişehir, Akdeniz, Toroslar ve tüm Mersin ilçeleri için SEO uyumlu, mobil öncelikli kurumsal web siteleri.',
+    'Mersin\'de web tasarım ve internet sitesi yapımı. Yenişehir, Akdeniz, Toroslar ve tüm Mersin ilçeleri için SEO uyumlu, mobil öncelikli kurumsal web siteleri.',
   alternates: { canonical: 'https://ramsesdigital.com/mersin-web-tasarim' },
   openGraph: {
     title: 'Mersin Web Tasarım | Ramses Dijital',

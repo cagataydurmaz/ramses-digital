@@ -1,4 +1,5 @@
 import { kasim2026Postlari } from './postsKasim2026'
+import { soruRehberleri } from './postsSoruRehberleri'
 
 export interface Post {
   slug: string
@@ -3806,4 +3807,5 @@ export const posts: Post[] = [
     `,
   },
   ...kasim2026Postlari,
+  ...soruRehberleri,
 ]

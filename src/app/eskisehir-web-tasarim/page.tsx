@@ -13,7 +13,7 @@ import SiteKaydirmaTelefon from '@/components/telefon/SiteKaydirmaTelefon'
 export const metadata: Metadata = {
   title: 'Eskişehir Web Tasarım Ajansı — Ramses Dijital',
   description:
-    'Eskişehir\'de profesyonel web tasarım hizmeti. Odunpazarı, Tepebaşı ve tüm Eskişehir ilçeleri için SEO uyumlu, mobil öncelikli kurumsal web siteleri.',
+    'Eskişehir\'de web tasarım ve internet sitesi yapımı. Odunpazarı, Tepebaşı ve tüm Eskişehir ilçeleri için SEO uyumlu, mobil öncelikli kurumsal web siteleri.',
   alternates: { canonical: 'https://ramsesdigital.com/eskisehir-web-tasarim' },
   openGraph: {
     title: 'Eskişehir Web Tasarım | Ramses Dijital',

@@ -13,7 +13,7 @@ import SiteKaydirmaTelefon from '@/components/telefon/SiteKaydirmaTelefon'
 export const metadata: Metadata = {
   title: 'İzmit Web Tasarım – Kurumsal Web Sitesi | Ramses Dijital',
   description:
-    'İzmit web tasarım ajansı: SEO uyumlu, mobil öncelikli, hızlı yüklenen kurumsal web siteleri. Web tasarım firması arayan İzmit işletmeleri için ücretsiz teklif.',
+    'İzmit web tasarım ajansı: SEO uyumlu, mobil öncelikli, hızlı yüklenen kurumsal web siteleri. Web sitesi ya da internet sitesi yaptırmak isteyen İzmit işletmeleri için ücretsiz teklif.',
   alternates: { canonical: 'https://ramsesdigital.com/izmit-web-tasarim' },
   openGraph: {
     title: 'İzmit Web Tasarım | Ramses Dijital',

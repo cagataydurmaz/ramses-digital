@@ -13,7 +13,7 @@ import SiteKaydirmaTelefon from '@/components/telefon/SiteKaydirmaTelefon'
 export const metadata: Metadata = {
   title: 'Antalya Web Tasarım Ajansı — Ramses Dijital',
   description:
-    'Antalya\'da profesyonel web tasarım hizmeti. Otel, tur operatörü, gayrimenkul ofisi ve klinikler için çok dilli, mobil öncelikli, SEO uyumlu web siteleri.',
+    'Antalya\'da web tasarım ve internet sitesi yapımı. Otel, tur operatörü, gayrimenkul ofisi ve klinikler için çok dilli, mobil öncelikli, SEO uyumlu web siteleri.',
   alternates: { canonical: 'https://ramsesdigital.com/antalya-web-tasarim' },
   openGraph: {
     title: 'Antalya Web Tasarım | Ramses Dijital',

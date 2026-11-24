@@ -13,7 +13,7 @@ import SiteKaydirmaTelefon from '@/components/telefon/SiteKaydirmaTelefon'
 export const metadata: Metadata = {
   title: 'Gaziantep Web Tasarım Ajansı — Ramses Dijital',
   description:
-    'Gaziantep\'te profesyonel web tasarım hizmeti. Şahinbey, Şehitkamil, Nizip ve tüm Gaziantep ilçeleri için SEO uyumlu, mobil öncelikli kurumsal web siteleri.',
+    'Gaziantep\'te web tasarım ve internet sitesi yapımı. Şahinbey, Şehitkamil, Nizip ve tüm Gaziantep ilçeleri için SEO uyumlu, mobil öncelikli kurumsal web siteleri.',
   alternates: { canonical: 'https://ramsesdigital.com/gaziantep-web-tasarim' },
   openGraph: {
     title: 'Gaziantep Web Tasarım | Ramses Dijital',

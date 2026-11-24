@@ -11,7 +11,7 @@ import { Globe2, Globe, ArrowRight, CheckCircle2, Zap, Smartphone, Search, Shiel
 export const metadata: Metadata = {
   title: 'Web Tasarım Ajansı — Ramses Dijital',
   description:
-    'Türkiye genelinde web tasarım ajansı. SEO uyumlu, mobil öncelikli, hızlı yüklenen kurumsal web siteleri.',
+    'Türkiye genelinde web tasarım ajansı. İnternet sitesi yaptırmak isteyen işletmelere SEO uyumlu, mobil öncelikli, hızlı kurumsal web siteleri.',
   alternates: { canonical: 'https://ramsesdigital.com/web-tasarim-ajansi' },
   openGraph: {
     title: 'Web Tasarım Ajansı | Ramses Dijital',
@@ -32,6 +32,7 @@ const features = [
 
 const faqs = [
   { q: 'Farklı bir şehirdeyim, uzaktan web sitesi yaptırabilir miyim?', a: 'Evet, tüm sürecimiz dijital: brifing görüşmesi (Zoom/Meet), tasarım onayı, geliştirme ve teslim — hiçbiri fiziksel görüşme gerektirmiyor. İstanbul, Ankara, İzmir, Antalya dahil Türkiye\'nin her yerinden müşterimiz var.' },
+  { q: 'İnternet sitesi yaptırmak için ne hazırlamam gerekiyor?', a: 'Logonuz, verdiğiniz hizmetlerin listesi, gerçek fotoğraflarınız ve iletişim bilgileriniz başlangıç için yeterli. Metinleri sizinle birlikte yazabiliyoruz. Alan adının sizin adınıza alınmasını öneriyoruz; ayrıntılar rehberimizde: /blog/internet-sitesi-yaptirmak' },
   { q: 'Web sitesi ne kadar sürede teslim edilir?', a: 'Başlangıç paketleri 2-3 hafta, kurumsal projeler 4-6 hafta, e-ticaret ve özel platform projeleri 8-12 hafta sürer. Süreç: brifing → tasarım onayı → geliştirme → test → yayın.' },
   { q: 'Hangi teknolojiyi kullanıyorsunuz?', a: 'Next.js (React tabanlı) kullanıyoruz. WordPress gibi eski sistemlere kıyasla 3-5 kat daha hızlı, güvenlik açıklarına karşı daha dayanıklı ve SEO performansı çok daha yüksek siteler ortaya çıkıyor.' },
   { q: 'Web sitesi fiyatları ne kadar?', a: 'Sektör, sayfa sayısı ve özel özelliklere göre değişir — ücretsiz danışmanlıkta net fiyat alırsınız.' },

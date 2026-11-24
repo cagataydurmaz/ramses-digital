@@ -10,7 +10,7 @@ import { Monitor, Code2, Smartphone, Gauge, Search, ShoppingCart, ArrowRight } f
 export const metadata: Metadata = {
   title: 'Web Tasarım ve Geliştirme | SEO Uyumlu — Ramses Dijital',
   description:
-    'Modern, hızlı ve SEO uyumlu web tasarım. Next.js, WordPress, Shopify. Core Web Vitals optimize, mobil uyumlu, dönüşüm odaklı tasarım.',
+    'İnternet sitesi yaptırmak isteyen işletmelere modern, hızlı ve SEO uyumlu web tasarım. Mobil uyumlu, Google’a hazır, dönüşüm odaklı web siteleri.',
   alternates: { canonical: 'https://ramsesdigital.com/hizmetler/web-tasarim' },
   openGraph: {
     title: 'Web Tasarım Hizmeti | Ramses Digital',
@@ -44,6 +44,8 @@ const process = [
 ]
 
 const faqs = [
+  { q: 'İnternet sitesi yaptırmak istiyorum, nereden başlamalıyım?', a: 'Önce sitenin amacını belirleyin: arama mı, WhatsApp mı, randevu mu, satış mı? Sonra alan adınızı kendi adınıza alın, verdiğiniz hizmetlerin listesini ve gerçek fotoğraflarınızı hazırlayın. Ücretsiz görüşmede sayfa listesini birlikte çıkarıp yazılı teklif veriyoruz. Adım adım rehber: /blog/internet-sitesi-yaptirmak' },
+  { q: 'Web sitesi, internet sitesi ve web sayfası aynı şey mi?', a: 'Günlük dilde evet. Web sitesi ya da internet sitesi, alan adınızla açılan sitenin tamamıdır; web sayfası ise o sitenin içindeki tek bir sayfadır (örneğin iletişim sayfası). Web tasarım, bu sitenin planlanıp yapılması işidir.' },
   { q: 'Web sitem ne kadar sürede hazır olur?', a: 'Tek sayfa landing: 1-2 hafta. Kurumsal site (5-10 sayfa): 3-5 hafta. Karmaşık e-ticaret veya özel sistem: 8-16 hafta. Süreyi içerik hazırlık hızı ve revizyon sayısı belirler.' },
   { q: 'Fiyatlandırma nasıl?', a: 'Landing sayfa, kurumsal web sitesi, e-ticaret ve özel Next.js projeleri farklı kapsam ve fiyat seviyelerindedir. Tüm paketler: SEO altyapı, mobil uyum, hosting kurulumu, 30 gün destek dahil. Ücretsiz danışmanlıkta net fiyat sunuyoruz.' },
   { q: 'Hangi teknolojiyi kullanıyorsunuz?', a: 'Next.js (React 18, TypeScript) ana tercihimiz — performans ve SEO için en iyisi. WordPress (Elementor/Bricks) bütçe sınırlı projeler için. Shopify ve WooCommerce e-ticaret için. Vercel ve Hetzner üzerinde deploy ediyoruz.' },
@@ -70,8 +72,8 @@ export default function WebTasarimHizmetPage() {
             <span className="gradient-text">Web Tasarım & Geliştirme</span>
           </h1>
           <p className="text-zinc-400 text-lg max-w-2xl mx-auto mb-10">
-            Sadece güzel değil, hızlı ve dönüşüm odaklı web siteleri. Core Web Vitals optimize,
-            mobil öncelikli, SEO uyumlu altyapı.
+            İnternet sitesi yaptırmak isteyen işletmeler için sadece güzel değil, hızlı ve dönüşüm odaklı web siteleri.
+            Mobil öncelikli, Google&apos;a hazır altyapı.
           </p>
           <CalendlyButton label="Tasarım Görüşmesi Al" variant="primary" />
         </div>
