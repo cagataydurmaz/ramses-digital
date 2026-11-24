@@ -6,7 +6,7 @@ export type Mahalle = { ad: string; x: number; y: number; arama: string }
 
 // İlçenin semtleri sade bir haritada sırayla yanar; her semtte müşterinin yapabileceği örnek arama gösterilir.
 // Temsili, ölçeksiz bir krokidir; arama hacmi veya müşteri iddiası içermez.
-export default function MahalleHaritasi({ ilce, bulunma, mahalleler, su, suAd }: { ilce: string; bulunma: string; mahalleler: Mahalle[]; su?: string; suAd?: string }) {
+export default function MahalleHaritasi({ ilce, bulunma, mahalleler, su, suAd, suKonum = [95, 60, -72] }: { ilce: string; bulunma: string; mahalleler: Mahalle[]; su?: string; suAd?: string; suKonum?: number[] }) {
   const ref = useRef<HTMLDivElement>(null)
   const [aktif, setAktif] = useState(false)
   const [i, setI] = useState(0)
@@ -52,7 +52,7 @@ export default function MahalleHaritasi({ ilce, bulunma, mahalleler, su, suAd }:
               </defs>
               <rect width="100" height="100" fill="url(#izgara)" />
               {su && <path d={su} fill="url(#deniz)" stroke="rgba(96,165,250,0.35)" strokeWidth="0.4" />}
-              {suAd && <text x="95" y="60" fill="rgba(147,197,253,0.55)" fontSize="3" fontWeight="600" letterSpacing="0.6" transform="rotate(-72 95 60)" textAnchor="middle">{suAd.toLocaleUpperCase('tr-TR')}</text>}
+              {suAd && <text x={suKonum[0]} y={suKonum[1]} fill="rgba(147,197,253,0.55)" fontSize="3" fontWeight="600" letterSpacing="0.6" transform={`rotate(${suKonum[2]} ${suKonum[0]} ${suKonum[1]})`} textAnchor="middle">{suAd.toLocaleUpperCase('tr-TR')}</text>}
               {mahalleler.map((n, k) => (
                 <line key={`c${k}`} x1={n.x} y1={n.y} x2={m.x} y2={m.y} stroke="rgba(96,165,250,0.12)" strokeWidth="0.3" />
               ))}

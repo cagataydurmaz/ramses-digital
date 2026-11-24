@@ -157,7 +157,7 @@ export default function IlSeoSayfasi({ v }: { v: IlSeoVeri }) {
             </div>
           </section>
           <SeoVideoBolumu />
-          <MahalleHaritasi ilce={v.ad} bulunma={v.bulunma} mahalleler={v.mahalleler} su={v.su} suAd={v.suAd} />
+          <MahalleHaritasi ilce={v.ad} bulunma={v.bulunma} mahalleler={v.mahalleler} su={v.su} suAd={v.suAd} suKonum={v.suKonum} />
         </>
       )}
 
