@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { SeoVideoBolumu } from '@/components/telefon/TelefonBolumleri'
 import RaporOrnegi from '@/components/RaporOrnegi'
 import SiziArayalimFormu from '@/components/SiziArayalimFormu'
 import Link from 'next/link'
@@ -135,6 +136,7 @@ export default function SeoAjansiPage() {
 
       <CityLinksGrid servis="seo" />
 
+      <SeoVideoBolumu />
       <RaporOrnegi />
       <section className="py-12 md:py-16 px-6">
         <div className="max-w-3xl mx-auto">

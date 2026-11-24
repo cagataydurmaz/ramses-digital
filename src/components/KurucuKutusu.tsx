@@ -5,6 +5,7 @@ import { ArrowRight } from 'lucide-react'
 export const KURUCU = {
   ad: 'Çağatay Durmaz',
   rol: 'Kurucu, Ramses Dijital',
+  unvan: 'Kurucu · Elektrik-Elektronik Mühendisi',
   foto: '/ekip/cagatay-durmaz-kare.webp',
   kisaBio:
     'Elektrik-elektronik mühendisi. 2019’dan beri işletmelerin Google’da, haritada ve yapay zekâ aramalarında bulunması için SEO, Google Ads ve web projeleri yürütüyor.',
@@ -22,11 +23,11 @@ export default function KurucuKutusu({ yerel = false }: { yerel?: boolean }) {
         <div className="text-center sm:text-left">
           <p className="text-blue-400 text-xs font-semibold uppercase tracking-wider mb-1">Kurucudan</p>
           <p className="text-white text-lg font-semibold">
-            {KURUCU.ad} <span className="text-zinc-500 text-sm font-normal">· {KURUCU.rol}</span>
+            {KURUCU.ad} <span className="text-zinc-500 text-sm font-normal">· {KURUCU.unvan}</span>
           </p>
           <p className="text-zinc-400 text-sm leading-relaxed mt-1.5">
-            “Ramses Dijital’i, işletmelerin dijitalde ölçülebilir biçimde büyümesi için kurdum. Ekibimiz her projeyi planlı ve şeffaf yürütür; sorunuz olduğunda karşınızda bir çağrı merkezi değil, işi yapan ekip olur.
-            {yerel ? ' Kocaeli’deyseniz yüz yüze de görüşebiliriz.' : ' Süreci görüntülü görüşme ve WhatsApp ile yürütüyoruz.'}”
+            “Ramses Dijital’i, işletmelerin dijital kanallarda ölçülebilir biçimde büyümesi amacıyla kurdum. Ekibimiz her projeyi planlı ve şeffaf bir süreçle yürütür; sorularınızı doğrudan projeyi yürüten ekip yanıtlar.
+            {yerel ? ' Kocaeli’deki işletmelerle yüz yüze de görüşebiliriz.' : ' Süreci görüntülü görüşme ve WhatsApp üzerinden yürütüyoruz.'}”
           </p>
           <Link href="/hakkimizda" className="inline-flex items-center gap-1 text-blue-400 hover:text-blue-300 text-sm font-medium mt-2">
             Hakkımızda <ArrowRight size={13} />

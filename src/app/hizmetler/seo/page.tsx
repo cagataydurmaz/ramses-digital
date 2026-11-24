@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import KurucuKutusu from '@/components/KurucuKutusu'
 import KampanyaSeridi from '@/components/KampanyaSeridi'
 import GoogleAramaAnimasyonu from '@/components/GoogleAramaAnimasyonu'
-import { HaritaTelefonBolumu } from '@/components/telefon/TelefonBolumleri'
+import { HaritaTelefonBolumu, SeoVideoBolumu } from '@/components/telefon/TelefonBolumleri'
 import KapakGorseli from '@/components/KapakGorseli'
 import KisaOzet from '@/components/KisaOzet'
 import Link from 'next/link'
@@ -97,6 +97,7 @@ export default function SeoHizmetPage() {
       </section>
 
       <KampanyaSeridi hizmetler={['SEO', 'Web Tasarım']} basliklar={['12 ay taahhütle SEO', 'Web sitesi + aylık SEO', 'İşletme Profili', 'Referans']} />
+      <SeoVideoBolumu ters />
       <HaritaTelefonBolumu />
       <KurucuKutusu yerel />
       <KisaOzet>

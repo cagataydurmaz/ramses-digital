@@ -1,7 +1,7 @@
 import TelefonBolumu from './TelefonBolumu'
+import BilgiVideosu from '@/components/BilgiVideosu'
 import SiteKaydirmaTelefon from './SiteKaydirmaTelefon'
 import WhatsAppTelefon from './WhatsAppTelefon'
-import HaritaTelefon from './HaritaTelefon'
 import ChatbotTelefon from './ChatbotTelefon'
 import AsistaniDeneButonu from './AsistaniDeneButonu'
 
@@ -43,7 +43,7 @@ export function HaritaTelefonBolumu({ arama, yer, ters = false }: { arama?: stri
       metin="Yakınındaki işletmeyi arayan müşteri önce haritaya bakar. Eksiksiz bir Google İşletme Profili, gerçek yorumlar ve güçlü bir web sitesi, haritada görünürlüğü birlikte artırır."
       maddeler={['Doğru kategori, hizmet bölgesi ve çalışma saatleri', 'Teşviksiz, düzenli müşteri yorumu düzeni', 'Profil ile web sitesinin birbirini desteklemesi']}
     >
-      <HaritaTelefon arama={arama} />
+      <BilgiVideosu ad="isletme-profili" baslik="Google İşletme Profili neden önemli? (kısa video)" />
     </TelefonBolumu>
   )
 }
@@ -64,6 +64,21 @@ export function ChatbotTelefonBolumu({ ters = false }: { ters?: boolean }) {
       ek={<AsistaniDeneButonu />}
     >
       <ChatbotTelefon />
+    </TelefonBolumu>
+  )
+}
+
+// "SEO nedir?" kısa video bölümü
+export function SeoVideoBolumu({ ters = false }: { ters?: boolean }) {
+  return (
+    <TelefonBolumu
+      ters={ters}
+      ust="25 saniyede SEO"
+      baslik="SEO Nedir, İşletmenize Ne Kazandırır?"
+      metin="Müşterileriniz bir hizmeti çoğunlukla Google’da arayarak bulur ve ilk sayfadaki sonuçlardan birini seçer. SEO, reklam vermeden bu sonuçlarda yer almanızı sağlayan çalışmaların bütünüdür."
+      maddeler={['Hızlı ve mobil uyumlu bir web sitesi', 'Müşterinin aradığı sorulara net cevap veren içerik', 'Google Haritalar’da eksiksiz bir işletme profili']}
+    >
+      <BilgiVideosu ad="seo-nedir" baslik="SEO nedir? (kısa video)" />
     </TelefonBolumu>
   )
 }
