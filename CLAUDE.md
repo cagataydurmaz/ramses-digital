@@ -20,7 +20,7 @@ Türkçe dijital pazarlama ajansı sitesi. Next.js 14 App Router + Tailwind + Ty
 | Tür | Veri | Bileşen / rota |
 |---|---|---|
 | Büyük şehir × 6 hizmet (12 şehir, el yazımı) | `sehirSeo.ts`, `sehirHizmet.ts` | `src/app/{sehir}-{seo,google-ads,web-tasarim,dijital-pazarlama,reklam-ajansi,yazilim-ajansi}/page.tsx` |
-| İl/ilçe SEO sayfaları (tek sayfa) | `src/lib/ilSeo.ts` (`yerel: true` = Kocaeli ilçeleri, `rehber` = /ilceler eşi) | `IlSeoSayfasi.tsx`, `src/app/{slug}-seo/page.tsx` (2 satır) |
+| İl/ilçe SEO sayfaları (tek sayfa) | `src/lib/ilSeo.ts` (`yerel: true` = Kocaeli ilçeleri, `rehber` = /ilceler eşi; zengin ilçelerde `mahalleler`+`su` = semt haritası, Google önizleme ve video; sektörde `arama`/`slug` = telefonlu sektör vitrini) | `IlSeoSayfasi.tsx`, `src/app/{slug}-seo/page.tsx` (2 satır) |
 | Marmara ilçe web tasarım rehberleri | `ilceler.ts`, `ilceDetay.ts` | `src/app/ilceler/[slug]` |
 | Gebze ek hizmetler | sayfa içinde | `GebzeHizmetSayfasi.tsx` |
 | Sektörler (12) | `src/lib/sektorler.ts` | `SektorSayfasi.tsx`, `/sektorler/[slug]` |
@@ -28,6 +28,7 @@ Türkçe dijital pazarlama ajansı sitesi. Next.js 14 App Router + Tailwind + Ty
 | Blog | `posts.ts` + `postsKasim2026.ts`; Google başlığı ≤60: `blogSeoBasliklari.ts` | `/blog/[slug]`; yazı altı otomatik bağlantılar: `blogIcLinkler.ts` |
 
 Yeni il eklemek: `ilSeo.ts`'e kayıt + 2 satırlık `page.tsx`. Site haritası (`sitemap.ts`), footer (`Footer.tsx`), `/sehirler`, `llms.txt` (`src/app/llms.txt/route.ts` + `src/content/llms-temel.md`) ve blog bağlantıları listeyi otomatik alır.
+**Öncelik: zengin ilçeler/muhitler** (kullanıcı kararı, 24 Kasım 2026). Her ilde önce varlıklı ilçeler; ileride 81 ilin zengin ilçeleri. Veri yoksa önce tek özgün SEO sayfası.
 Kural: bir yerde hangi hizmet aranıyorsa (Search Console'da gösterim) ona ayrı sayfa; aranmıyorsa tek sayfa. Toplu, kopya içerikli sayfa açılmaz.
 
 ## Ortak bileşenler
