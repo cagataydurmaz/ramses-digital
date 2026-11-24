@@ -195,7 +195,7 @@ export default function IstanbulReklamAjansiPage() {
       </section>
 
       {/* Why Us */}
-      <section className="py-12 md:py-16 px-6 bg-[#080D18]/55 border-y border-white/[0.04]">
+      <section className="py-12 md:py-16 px-6 bg-gradient-to-br from-blue-950/30 via-[#080D18]/60 to-violet-950/30 border-y border-white/[0.08]">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
@@ -234,7 +234,7 @@ export default function IstanbulReklamAjansiPage() {
       </section>
 
       {/* Real Clients */}
-      <section className="py-12 md:py-16 px-6 bg-[#080D18]/55 border-y border-white/[0.04]">
+      <section className="py-12 md:py-16 px-6 bg-gradient-to-br from-blue-950/30 via-[#080D18]/60 to-violet-950/30 border-y border-white/[0.08]">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-white mb-3">Gerçek İstanbul Müşterileri, Canlı Siteler</h2>
@@ -298,7 +298,7 @@ export default function IstanbulReklamAjansiPage() {
       />
 
       {/* CTA */}
-      <section className="py-12 md:py-16 px-6 bg-[#080D18]/55 border-y border-white/[0.04]">
+      <section className="py-12 md:py-16 px-6 bg-gradient-to-br from-blue-950/30 via-[#080D18]/60 to-violet-950/30 border-y border-white/[0.08]">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-white mb-4">
             İstanbul&apos;da Dijitalde Öne Çıkmaya Hazır mısınız?

@@ -191,7 +191,7 @@ export default function IstanbulSeoPage() {
         </div>
       </section>
 
-      <section className="py-10 md:py-14 px-6 bg-[#080D18]/55 border-y border-white/[0.04]">
+      <section className="py-10 md:py-14 px-6 bg-gradient-to-br from-blue-950/30 via-[#080D18]/60 to-violet-950/30 border-y border-white/[0.08]">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">İstanbul&apos;dan Gerçek Referanslar</h2>
@@ -318,7 +318,7 @@ export default function IstanbulSeoPage() {
         ]}
       />
 
-      <section className="py-12 md:py-16 px-6 bg-[#080D18]/55 border-y border-white/[0.04]">
+      <section className="py-12 md:py-16 px-6 bg-gradient-to-br from-blue-950/30 via-[#080D18]/60 to-violet-950/30 border-y border-white/[0.08]">
         <div className="max-w-3xl mx-auto text-center">
           <TrendingUp size={40} className="text-blue-400 mx-auto mb-6" />
           <h2 className="text-4xl font-bold text-white mb-4">İstanbul&apos;da Google&apos;ın Zirvesine Çıkın</h2>

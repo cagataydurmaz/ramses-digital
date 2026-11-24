@@ -139,7 +139,7 @@ export default function WebTasarimAjansiPage() {
         </div>
       </section>
 
-      <section className="py-10 md:py-14 px-6 bg-[#080D18]/55 border-y border-white/[0.04]">
+      <section className="py-10 md:py-14 px-6 bg-gradient-to-br from-blue-950/30 via-[#080D18]/60 to-violet-950/30 border-y border-white/[0.08]">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-white mb-4">Yaptığımız Çalışmalar</h2>
           <p className="text-zinc-400 text-sm mb-8 max-w-xl mx-auto">
@@ -192,7 +192,7 @@ export default function WebTasarimAjansiPage() {
         ]}
       />
 
-      <section className="py-12 md:py-16 px-6 bg-[#080D18]/55 border-y border-white/[0.04]">
+      <section className="py-12 md:py-16 px-6 bg-gradient-to-br from-blue-950/30 via-[#080D18]/60 to-violet-950/30 border-y border-white/[0.08]">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-white mb-4">
             Profesyonel Web Siteniz Hazır Olsun

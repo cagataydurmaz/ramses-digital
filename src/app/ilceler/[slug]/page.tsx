@@ -287,7 +287,7 @@ export default function IlcePage({ params }: { params: { slug: string } }) {
         ]}
       />
 
-      <section className="py-12 md:py-16 px-6 bg-[#080D18]/55 border-y border-white/[0.04]">
+      <section className="py-12 md:py-16 px-6 bg-gradient-to-br from-blue-950/30 via-[#080D18]/60 to-violet-950/30 border-y border-white/[0.08]">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-white mb-4">{bulunma(ilce.name)} Görünür Olmaya Başlayın</h2>
           <p className="text-zinc-400 text-lg mb-8">30 dakikalık ücretsiz görüşmede işletmenizi ve aramaları birlikte inceleyelim.</p>

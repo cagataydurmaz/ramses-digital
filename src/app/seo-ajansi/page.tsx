@@ -117,7 +117,7 @@ export default function SeoAjansiPage() {
         </div>
       </section>
 
-      <section className="py-10 md:py-14 px-6 bg-[#080D18]/55 border-y border-white/[0.04]">
+      <section className="py-10 md:py-14 px-6 bg-gradient-to-br from-blue-950/30 via-[#080D18]/60 to-violet-950/30 border-y border-white/[0.08]">
         <div className="max-w-4xl mx-auto">
           <div className="bg-blue-500/5 border border-blue-500/15 rounded-2xl p-8">
             <CheckCircle2 size={24} className="text-blue-400 mb-4" />
@@ -167,7 +167,7 @@ export default function SeoAjansiPage() {
         ]}
       />
 
-      <section className="py-12 md:py-16 px-6 bg-[#080D18]/55 border-y border-white/[0.04]">
+      <section className="py-12 md:py-16 px-6 bg-gradient-to-br from-blue-950/30 via-[#080D18]/60 to-violet-950/30 border-y border-white/[0.08]">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-white mb-4">
             Türkiye&apos;nin Her Yerinden Google&apos;da Zirveye Çıkın

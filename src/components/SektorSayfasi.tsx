@@ -131,7 +131,7 @@ export default function SektorSayfasi({ v }: { v: SektorVeri }) {
         </div>
       </section>
 
-      <section className="py-10 md:py-14 px-6 bg-[#080D18]/55 border-y border-white/[0.04]">
+      <section className="py-10 md:py-14 px-6 bg-gradient-to-br from-blue-950/30 via-[#080D18]/60 to-violet-950/30 border-y border-white/[0.08]">
         <div className="max-w-4xl mx-auto">
           <div className="bg-blue-500/5 border border-blue-500/15 rounded-2xl p-8">
             <ShieldCheck size={24} className="text-blue-400 mb-4" />
@@ -200,7 +200,7 @@ export default function SektorSayfasi({ v }: { v: SektorVeri }) {
         </div>
       </section>
 
-      <section className="py-12 md:py-16 px-6 bg-[#080D18]/55 border-y border-white/[0.04]">
+      <section className="py-12 md:py-16 px-6 bg-gradient-to-br from-blue-950/30 via-[#080D18]/60 to-violet-950/30 border-y border-white/[0.08]">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-10 text-center">Sık Sorulan Sorular</h2>
           <div className="space-y-4">

@@ -141,7 +141,7 @@ export default function IzmitYazilimAjansiPage() {
       </section>
 
       {/* Tech stack */}
-      <section className="py-10 md:py-14 px-6 bg-[#080D18]/55 border-y border-white/[0.04]">
+      <section className="py-10 md:py-14 px-6 bg-gradient-to-br from-blue-950/30 via-[#080D18]/60 to-violet-950/30 border-y border-white/[0.08]">
         <div className="max-w-4xl mx-auto text-center">
           <Code2 size={28} className="text-blue-400 mx-auto mb-4" />
           <h2 className="text-2xl font-bold text-white mb-3">Kullandığımız Teknolojiler</h2>
@@ -188,7 +188,7 @@ export default function IzmitYazilimAjansiPage() {
       {/* FAQ */}
       <CityServiceSections city="izmit" hizmet="yazilim" />
 
-      <section className="py-12 md:py-16 px-6 bg-[#080D18]/55 border-y border-white/[0.04]">
+      <section className="py-12 md:py-16 px-6 bg-gradient-to-br from-blue-950/30 via-[#080D18]/60 to-violet-950/30 border-y border-white/[0.08]">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-10 text-center">Sık Sorulan Sorular</h2>
           <div className="space-y-4">

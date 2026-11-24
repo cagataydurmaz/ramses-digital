@@ -45,7 +45,7 @@ export default function AjansDetayBolumu({ d }: { d: AjansDetay }) {
         </div>
       </section>
 
-      <section className="py-10 md:py-14 px-6 bg-[#080D18]/55 border-y border-white/[0.04]">
+      <section className="py-10 md:py-14 px-6 bg-gradient-to-br from-blue-950/30 via-[#080D18]/60 to-violet-950/30 border-y border-white/[0.08]">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-10 text-center">{d.surecBaslik}</h2>
           <ol className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">

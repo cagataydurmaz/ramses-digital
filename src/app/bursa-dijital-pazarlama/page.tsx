@@ -224,7 +224,7 @@ export default function BursaDijitalPazarlamaPage() {
       </section>
 
       {/* Sectors */}
-      <section className="py-10 md:py-14 px-6 bg-[#080D18]/55 border-y border-white/[0.04]">
+      <section className="py-10 md:py-14 px-6 bg-gradient-to-br from-blue-950/30 via-[#080D18]/60 to-violet-950/30 border-y border-white/[0.08]">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-2xl font-bold text-white mb-3">Bursa&apos;da Hizmet Verdiğimiz Sektörler</h2>
           <p className="text-zinc-500 text-sm mb-8">Otomotiv yan sanayi ve mobilya üretiminin operasyonel diliyle konuşuyoruz, jenerik pazarlama kalıplarıyla değil.</p>
@@ -261,7 +261,7 @@ export default function BursaDijitalPazarlamaPage() {
       </section>
 
       {/* Local proof */}
-      <section className="py-10 md:py-14 px-6 bg-[#080D18]/55 border-y border-white/[0.04]">
+      <section className="py-10 md:py-14 px-6 bg-gradient-to-br from-blue-950/30 via-[#080D18]/60 to-violet-950/30 border-y border-white/[0.08]">
         <div className="max-w-4xl mx-auto">
           <div className="bg-blue-500/5 border border-blue-500/15 rounded-2xl p-8 text-center">
             <CheckCircle2 size={32} className="text-blue-400 mx-auto mb-4" />
@@ -313,7 +313,7 @@ export default function BursaDijitalPazarlamaPage() {
       />
 
       {/* CTA */}
-      <section className="py-12 md:py-16 px-6 bg-[#080D18]/55 border-y border-white/[0.04]">
+      <section className="py-12 md:py-16 px-6 bg-gradient-to-br from-blue-950/30 via-[#080D18]/60 to-violet-950/30 border-y border-white/[0.08]">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-white mb-4">
             Bursa&apos;da Dijital Büyümeye Başlayın
