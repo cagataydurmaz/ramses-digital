@@ -75,7 +75,7 @@ export default function AboutPage() {
             <span className="gradient-text">Giden Yol</span>
           </h1>
           <p className="text-zinc-400 text-lg max-w-2xl mx-auto">
-            Mühendislik disiplini ile dijital pazarlamayı birleştiren, veri odaklı ve sonuç garantili bir ekip.
+            Mühendislik disiplini ile dijital pazarlamayı birleştiren, veri odaklı ve şeffaf raporlayan bir ekip.
           </p>
         </div>
       </section>
@@ -96,7 +96,7 @@ export default function AboutPage() {
                 değil, mühendislik disiplinine dayanması gerektiğine inanıyoruz.
               </p>
               <p className="text-zinc-400 leading-relaxed">
-                2019 yılında İstanbul&apos;da başladığımız yolculuğumuzda bugün 100&apos;den
+                2019 yılında İstanbul&apos;da başladığımız yolculuğumuzda bugün 50&apos;den
                 fazla projeyi başarıyla tamamladık.
               </p>
               <p className="text-zinc-400 leading-relaxed">

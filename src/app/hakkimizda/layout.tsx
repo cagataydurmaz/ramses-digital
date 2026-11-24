@@ -3,10 +3,10 @@ import { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Hakkımızda | Ramses Digital — Mühendislik Temelli Dijital Ajans',
   description:
-    '2019\'dan bu yana İstanbul merkezli, iki mühendis kurucu tarafından yönetilen Ramses Digital\'in hikayesi, değerleri ve uzman ekibini tanıyın. 200+ başarılı proje.',
+    '2019\'dan bu yana, bugün İzmit merkezli, iki mühendis kurucu tarafından yönetilen Ramses Digital\'in hikâyesi, değerleri ve ekibi. 50+ tamamlanan proje, 5+ yıl deneyim.',
   openGraph: {
     title: 'Hakkımızda | Ramses Digital',
-    description: 'Mühendislik disiplini ile dijital pazarlamayı birleştiren İstanbul ajansı. 5+ yıl deneyim, 200+ proje.',
+    description: 'Mühendislik disiplini ile dijital pazarlamayı birleştiren İzmit merkezli ajans. 5+ yıl deneyim, 50+ proje.',
     url: 'https://ramsesdigital.com/hakkimizda',
   },
   alternates: { canonical: 'https://ramsesdigital.com/hakkimizda' },
@@ -25,7 +25,7 @@ export default function HakkimizdaLayout({ children }: { children: React.ReactNo
             name: 'Hakkımızda — Ramses Digital',
             url: 'https://ramsesdigital.com/hakkimizda',
             description:
-              '2019\'dan bu yana İstanbul merkezli dijital pazarlama ajansı. İki mühendis kurucu tarafından yönetilen, veri odaklı ve sonuç garantili ekip.',
+              '2019\'dan bu yana dijital pazarlama ajansı; bugün İzmit merkezli. İki mühendis kurucu tarafından yönetilen, veri odaklı ve şeffaf raporlayan ekip.',
             mainEntity: {
               '@type': 'Organization',
               name: 'Ramses Digital',
