@@ -160,7 +160,7 @@ export default function KonyaSeoPage() {
         </div>
       </section>
 
-      <section className="py-10 md:py-14 px-6 bg-gradient-to-br from-blue-950/30 via-[#080D18]/60 to-violet-950/30 border-y border-white/[0.08]">
+      <section className="py-10 md:py-14 px-6 relative isolate before:absolute before:inset-x-0 before:-inset-y-16 before:-z-10 before:pointer-events-none before:bg-gradient-to-br before:from-blue-800/30 before:via-[#0c1330]/75 before:to-violet-800/30 before:[mask-image:linear-gradient(to_bottom,transparent,black_30%,black_70%,transparent)]">
         <div className="max-w-4xl mx-auto">
           <div className="bg-blue-500/5 border border-blue-500/15 rounded-2xl p-8">
             <CheckCircle2 size={24} className="text-blue-400 mb-4" />
@@ -219,7 +219,7 @@ export default function KonyaSeoPage() {
         ]}
       />
 
-      <section className="py-12 md:py-16 px-6 bg-gradient-to-br from-blue-950/30 via-[#080D18]/60 to-violet-950/30 border-y border-white/[0.08]">
+      <section className="py-12 md:py-16 px-6 relative isolate before:absolute before:inset-x-0 before:-inset-y-16 before:-z-10 before:pointer-events-none before:bg-gradient-to-br before:from-blue-800/30 before:via-[#0c1330]/75 before:to-violet-800/30 before:[mask-image:linear-gradient(to_bottom,transparent,black_30%,black_70%,transparent)]">
         <div className="max-w-3xl mx-auto text-center">
           <TrendingUp size={40} className="text-blue-400 mx-auto mb-6" />
           <h2 className="text-4xl font-bold text-white mb-4">Konya&apos;da Google&apos;ın Zirvesine Çıkın</h2>

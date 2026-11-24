@@ -38,12 +38,12 @@ export default function ReklamTelefon({ aramalar = ['izmit oto servis'] }: { ara
       setYazi(hedef.slice(0, i))
       if (i >= hedef.length) {
         clearInterval(yaz)
-        z.push(setTimeout(() => setAdim(1), 400))
-        z.push(setTimeout(() => setAdim(2), 2200))
-        z.push(setTimeout(() => setAdim(3), 2700))
-        z.push(setTimeout(() => setSira((s) => s + 1), 6200))
+        z.push(setTimeout(() => setAdim(1), 250))
+        z.push(setTimeout(() => setAdim(2), 1400))
+        z.push(setTimeout(() => setAdim(3), 1800))
+        z.push(setTimeout(() => setSira((s) => s + 1), 4200))
       }
-    }, 70)
+    }, 45)
     return () => {
       clearInterval(yaz)
       z.forEach(clearTimeout)

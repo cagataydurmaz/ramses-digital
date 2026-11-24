@@ -6,7 +6,7 @@ import SiziArayalimFormu from '@/components/SiziArayalimFormu'
 export default function SehirTeklifBolumu({ place }: { place: string }) {
   return (
     <>
-    <section className="py-10 md:py-14 px-6 bg-gradient-to-br from-blue-950/30 via-[#080D18]/60 to-violet-950/30 border-y border-white/[0.08]">
+    <section className="py-10 md:py-14 px-6 relative isolate before:absolute before:inset-x-0 before:-inset-y-16 before:-z-10 before:pointer-events-none before:bg-gradient-to-br before:from-blue-800/30 before:via-[#0c1330]/75 before:to-violet-800/30 before:[mask-image:linear-gradient(to_bottom,transparent,black_30%,black_70%,transparent)]">
       <div className="max-w-3xl mx-auto text-center mb-10">
         <p className="text-blue-500 text-sm font-medium tracking-wider uppercase mb-3">AI Destekli Teklif Hesaplayıcı</p>
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{place} İşletmeniz İçin Ücretsiz Teklif Alın</h2>

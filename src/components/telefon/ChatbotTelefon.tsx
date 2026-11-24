@@ -40,14 +40,14 @@ export default function ChatbotTelefon() {
   useEffect(() => {
     if (!aktif) return
     if (!acik) {
-      const t = setTimeout(() => setAcik(true), 1200)
+      const t = setTimeout(() => setAcik(true), 700)
       return () => clearTimeout(t)
     }
     if (adet >= AKIS.length) {
       const t = setTimeout(() => {
         setAdet(0)
         setAcik(false)
-      }, 4000)
+      }, 2800)
       return () => clearTimeout(t)
     }
     const s = AKIS[adet]
@@ -56,10 +56,10 @@ export default function ChatbotTelefon() {
       const t = setTimeout(() => {
         setYaziyor(false)
         setAdet((a) => a + 1)
-      }, adet === 0 ? 700 : 1500)
+      }, adet === 0 ? 450 : 900)
       return () => clearTimeout(t)
     }
-    const t = setTimeout(() => setAdet((a) => a + 1), 1400)
+    const t = setTimeout(() => setAdet((a) => a + 1), 850)
     return () => clearTimeout(t)
   }, [aktif, acik, adet])
 

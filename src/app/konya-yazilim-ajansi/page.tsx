@@ -141,7 +141,7 @@ export default function KonyaYazilimAjansiPage() {
       </section>
 
       {/* Tech stack */}
-      <section className="py-10 md:py-14 px-6 bg-gradient-to-br from-blue-950/30 via-[#080D18]/60 to-violet-950/30 border-y border-white/[0.08]">
+      <section className="py-10 md:py-14 px-6 relative isolate before:absolute before:inset-x-0 before:-inset-y-16 before:-z-10 before:pointer-events-none before:bg-gradient-to-br before:from-blue-800/30 before:via-[#0c1330]/75 before:to-violet-800/30 before:[mask-image:linear-gradient(to_bottom,transparent,black_30%,black_70%,transparent)]">
         <div className="max-w-4xl mx-auto text-center">
           <Code2 size={28} className="text-blue-400 mx-auto mb-4" />
           <h2 className="text-2xl font-bold text-white mb-3">Kullandığımız Teknolojiler</h2>
@@ -188,7 +188,7 @@ export default function KonyaYazilimAjansiPage() {
       {/* FAQ */}
       <CityServiceSections city="konya" hizmet="yazilim" />
 
-      <section className="py-12 md:py-16 px-6 bg-gradient-to-br from-blue-950/30 via-[#080D18]/60 to-violet-950/30 border-y border-white/[0.08]">
+      <section className="py-12 md:py-16 px-6 relative isolate before:absolute before:inset-x-0 before:-inset-y-16 before:-z-10 before:pointer-events-none before:bg-gradient-to-br before:from-blue-800/30 before:via-[#0c1330]/75 before:to-violet-800/30 before:[mask-image:linear-gradient(to_bottom,transparent,black_30%,black_70%,transparent)]">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-10 text-center">Sık Sorulan Sorular</h2>
           <div className="space-y-4">

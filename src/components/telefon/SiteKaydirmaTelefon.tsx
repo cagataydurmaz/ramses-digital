@@ -12,7 +12,7 @@ const SITELER = [
   { src: '/portfolio/uzun/gamzeli-dermokozmetik.webp', ad: 'Gamzeli Eczanem', alan: 'gamzelidermokozmetik.com' },
   { src: '/portfolio/uzun/furkan-arikan.webp', ad: 'Av. Furkan Arıkan', alan: 'furkanarikan.av.tr' },
 ]
-const SURE = 9000 // her site için ms
+const SURE = 6000 // her site için ms
 
 export default function SiteKaydirmaTelefon() {
   const kutu = useRef<HTMLDivElement>(null)

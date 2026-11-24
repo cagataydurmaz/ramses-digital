@@ -23,7 +23,7 @@ export default function HaritaTelefon({ arama = 'yakınımdaki diş kliniği' }:
     let zaman: ReturnType<typeof setTimeout>[] = []
     const dongu = () => {
       setAdim(0)
-      zaman = [setTimeout(() => setAdim(1), 500), setTimeout(() => setAdim(2), 1700), setTimeout(() => setAdim(3), 2500), setTimeout(dongu, 8000)]
+      zaman = [setTimeout(() => setAdim(1), 300), setTimeout(() => setAdim(2), 1000), setTimeout(() => setAdim(3), 1500), setTimeout(dongu, 5000)]
     }
     const io = new IntersectionObserver(([e]) => {
       zaman.forEach(clearTimeout)

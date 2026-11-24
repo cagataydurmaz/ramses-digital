@@ -39,10 +39,10 @@ export default function GoogleAramaAnimasyonu({ aramalar = ARAMALAR }: { aramala
       setYazi(hedef.slice(0, i))
       if (i >= hedef.length) {
         clearInterval(yaz)
-        zamanlayicilar.push(setTimeout(() => setSonuc(true), 450))
-        zamanlayicilar.push(setTimeout(() => setSira((s) => (s + 1) % aramalar.length), 4200))
+        zamanlayicilar.push(setTimeout(() => setSonuc(true), 250))
+        zamanlayicilar.push(setTimeout(() => setSira((s) => (s + 1) % aramalar.length), 3000))
       }
-    }, 75)
+    }, 45)
     return () => {
       clearInterval(yaz)
       zamanlayicilar.forEach(clearTimeout)
