@@ -39,6 +39,8 @@ const ilceler = ['Çankaya', 'Keçiören', 'Yenimahalle', 'Mamak', 'Etimesgut', 
 const faqs = [
   { q: 'Ankara\'da SEO hizmeti diğer şehirlerden farklı mı?', a: 'Ankara\'nın ekonomisi kamu kurumları, savunma sanayi, eğitim (birçok büyük üniversite) ve profesyonel hizmetler etrafında şekilleniyor. Bu, İstanbul\'daki gibi e-ticaret/tüketici odaklı değil, daha çok B2B ve kurumsal kimliğe dayalı bir SEO stratejisi gerektiriyor — içerik ve otorite sinyalleri buna göre kurgulanıyor.' },
   { q: 'Ankara\'nın farklı ilçeleri için ayrı SEO çalışması gerekiyor mu?', a: 'Evet, özellikle Çankaya (iş merkezi, kurumsal firmalar) ile Keçiören veya Mamak (daha yerel/perakende odaklı) farklı arama davranışına sahip. İşinizin hedef kitlesine göre öncelikli ilçeleri belirleyip stratejiyi ona göre kuruyoruz.' },
+  { q: 'Ankara\'da SEO uzmanı veya SEO ajansı seçerken nelere bakmalıyım?', a: 'Ziyaret edebileceğiniz canlı referanslar, Search Console verisiyle aylık rapor, sıralama garantisi vermemesi, Google İşletme Profili yönetiminin pakete dahil olması ve sitenin, alan adının sizin adınıza kalması. 12 ay taahhütte aylık ücrete %15 indirim uyguluyoruz.' },
+  { q: 'Çayyolu, Ümitköy, Oran veya GOP\'taki işletmeler için ayrı çalışma yapıyor musunuz?', a: 'Evet. Ankara\'nın gelir düzeyi yüksek semtlerinde müşteriler hizmeti çoğunlukla semt adıyla arar. Çayyolu–Ümitköy ve Oran–GOP–Kavaklıdere için ayrı sayfalarımız var; işletmenizin semtine göre içerik kuruyoruz.' },
   { q: 'Ankara\'da SEO sonuçları ne kadar sürede görülür?', a: 'Google Business Profile ve harita sonuçları 2-4 haftada görünür olabilir. Organik sıralamalar genellikle 3-6 ayda belirginleşir — Ankara\'nın rekabet seviyesi İstanbul\'a göre biraz daha yönetilebilir, bu da orta vadede daha hızlı sonuç almayı mümkün kılıyor.' },
   { q: 'Ankara\'da hangi sektörler SEO\'dan en çok fayda görüyor?', a: 'Hukuk ve danışmanlık büroları, sağlık (diş hekimi, fizyoterapi), eğitim/kurs merkezleri (üniversite şehri olması nedeniyle), B2B tedarikçiler ve kamu ihale danışmanlığı Ankara\'da yüksek arama hacmine sahip. Kurumsal güven sinyalleri bu sektörlerde belirleyici.' },
   { q: 'Ankara SEO paketi ne kadara mal olur?', a: 'Sektöre ve ilçe kapsamına göre değişir. Kapsam: teknik audit, anahtar kelime araştırması, aylık içerik üretimi, GBP yönetimi, backlink stratejisi ve raporlama. Ücretsiz danışmanlıkta işletmenize özel fiyat sunuyoruz.' },
@@ -210,6 +212,13 @@ export default function AnkaraSeoPage() {
 
       <RelatedPages
         pages={[
+          { label: 'Çankaya SEO', href: '/cankaya-seo' },
+          { label: 'Çayyolu ve Ümitköy SEO', href: '/cayyolu-seo' },
+          { label: 'Oran, GOP ve Kavaklıdere SEO', href: '/oran-seo' },
+          { label: 'Gölbaşı ve İncek SEO', href: '/golbasi-seo' },
+          { label: 'Yenimahalle SEO', href: '/yenimahalle-seo' },
+          { label: 'Etimesgut SEO', href: '/etimesgut-seo' },
+          { label: 'Altındağ SEO', href: '/altindag-seo' },
           { label: 'Ankara Dijital Pazarlama', href: '/ankara-dijital-pazarlama' },
           { label: 'Ankara Web Tasarım', href: '/ankara-web-tasarim' },
           { label: 'Ankara Google Ads', href: '/ankara-google-ads' },

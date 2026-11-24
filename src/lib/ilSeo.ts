@@ -1970,6 +1970,66 @@ export const ilSeo: IlSeoVeri[] = [
     ],
     ilgili: [{ label: 'Antalya SEO', href: '/antalya-seo' }, { label: 'Konyaaltı SEO', href: '/konyaalti-seo' }, { label: 'Antalya Google Ads', href: '/antalya-google-ads' }],
   },
+  {
+    slug: 'cayyolu', ad: 'Çayyolu', bulunma: "Çayyolu'nda", icin: "Çayyolu'nun", yonelme: "Çayyolu'na",
+    ust: { ad: 'Ankara', slug: 'ankara' },
+    ozet: "Çayyolu, Ümitköy, Konutkent ve Yaşamkent'te klinik, özel eğitim, güzellik, restoran ve ev hizmeti işletmeleri için SEO. Ankara'nın batısındaki site ve villa yaşamının aradığı hizmetlerde Google'da öne çıkın.",
+    bolgeler: ['Çayyolu', 'Ümitköy', 'Konutkent', 'Yaşamkent', 'Beysukent', 'Alacaatlı', 'Koru'],
+    ilceler: [
+      { ad: 'Çayyolu ve Koru', not: 'Site ve rezidans yaşamı, gelir düzeyi yüksek aileler; diş, ortodonti, pediatri ve estetik aramaları semt adıyla yapılır.' },
+      { ad: 'Ümitköy', not: 'Cadde üzeri kafe, restoran ve mağazalar; harita profili, fotoğraf ve yorum belirleyici.' },
+      { ad: 'Konutkent ve Yaşamkent', not: 'Aile yoğun konut alanları; kreş, kurs, spor salonu ve ev hizmetleri.' },
+      { ad: 'Beysukent ve Alacaatlı', not: 'Villa ve müstakil konutlar; peyzaj, havuz, tadilat ve güvenlik hizmetleri.' },
+    ],
+    sektorler: [
+      { ad: 'Sağlık ve klinikler', not: 'Hekim ve tedavi sayfaları, mevzuata uygun dil, randevu yolu ve semt bazlı harita görünürlüğü.' },
+      { ad: 'Özel eğitim ve kurslar', not: 'Kreş, etüt, yabancı dil ve sanat kursları için veli güveni veren sayfalar.' },
+      { ad: 'Kafe ve restoran', not: 'Menü, fotoğraf ve rezervasyon odaklı harita profili.' },
+      { ad: 'Villa ve ev hizmetleri', not: 'Peyzaj, havuz, iç mimarlık ve tadilat için portföy gösteren hizmet sayfaları.' },
+    ],
+    aramalar: [
+      { tur: 'Semt + sağlık', ornek: 'çayyolu ortodonti', rekabet: 'Orta', yaklasim: 'Hekim ve tedavi sayfası, güçlü profil ve düzenli yorum.' },
+      { tur: 'Semt + mekân', ornek: 'ümitköy kahvaltı', rekabet: 'Orta', yaklasim: 'Harita profili, fotoğraf ve menü.' },
+      { tur: 'Semt + hizmet', ornek: 'beysukent peyzaj', rekabet: 'Düşük', yaklasim: 'Semt adıyla hizmet sayfası ve gerçek proje fotoğrafları.' },
+      soruSatiri,
+    ],
+    sss: [
+      { q: "Çayyolu'ndaki bir işletme 'Çankaya' veya 'Ankara' aramalarında da görünebilir mi?", a: "Evet. Çayyolu idari olarak Çankaya'ya bağlıdır ve pek çok müşteri 'ankara + hizmet' diye arar. Sayfa başlıklarında Ankara, içerikte Çayyolu ve Ümitköy gibi semt adlarını birlikte kullanmak üç aramayı da destekler." },
+      { q: "Çayyolu'nda en çok hangi işletmeler dijitalde fark yaratır?", a: 'Aile odaklı hizmetler: klinikler, özel eğitim, kreş ve kurslar, güzellik merkezleri ve villa/ev hizmetleri. Bu kitle karar vermeden önce yorumlara ve sitenin özenine bakar.' },
+      { q: "Çayyolu'ndaki işletmelerle nasıl çalışıyorsunuz?", a: 'Kocaeli kökenli bir ekibiz; Ankara’daki işletmelere uzaktan hizmet veriyoruz. Görüşmeler ve raporlama çevrim içi yürütülür.' },
+    ],
+    ilgili: [{ label: 'Ankara SEO', href: '/ankara-seo' }, { label: 'Çankaya SEO', href: '/cankaya-seo' }, { label: 'Etimesgut SEO', href: '/etimesgut-seo' }, { label: 'Oran SEO', href: '/oran-seo' }],
+  },
+  {
+    slug: 'oran', ad: 'Oran', bulunma: "Oran'da", icin: "Oran'ın", yonelme: "Oran'a",
+    ust: { ad: 'Ankara', slug: 'ankara' },
+    ozet: "Oran, Gaziosmanpaşa (GOP), Kavaklıdere ve Yıldız'da estetik, diş, hukuk, butik ve restoran işletmeleri için SEO. Ankara'nın en köklü ve gelir düzeyi yüksek semtlerinde Google'da öne çıkın.",
+    bolgeler: ['Oran', 'Gaziosmanpaşa (GOP)', 'Kavaklıdere', 'Yıldız', 'Çankaya köşkü çevresi', 'Kırkkonaklar', 'Dikmen vadisi'],
+    ilceler: [
+      { ad: 'Gaziosmanpaşa ve Kavaklıdere', not: 'Büyükelçilikler, butik mağazalar, estetik ve diş klinikleri; marka algısı ve görsel kalite belirleyici.' },
+      { ad: 'Oran', not: 'Site yaşamı, alışveriş merkezi ve yeni konutlar; aile hizmetleri, klinik ve kurs aramaları.' },
+      { ad: 'Yıldız ve Kırkkonaklar', not: 'Köklü konut bölgeleri; özel eğitim, sağlık ve ev hizmetleri için semt adıyla aramalar.' },
+      { ad: 'Dikmen vadisi çevresi', not: 'Kafe, restoran ve spor işletmeleri; harita profili ve fotoğraf.' },
+    ],
+    sektorler: [
+      { ad: 'Estetik ve diş klinikleri', not: 'Uygulama ve hekim sayfaları, mevzuata uygun iddiasız dil, gerçek fotoğraf ve randevu yolu.' },
+      { ad: 'Hukuk ve danışmanlık', not: 'Reklam kısıtı olan mesleklerde uzmanlık alanı başına bilgilendirici sayfalar ve SEO.' },
+      { ad: 'Butik ve restoran', not: 'Marka hikâyesi, menü ve harita profili; İngilizce özet sayfa (yabancı misyon çevresi için).' },
+      { ad: 'Özel eğitim', not: 'Okul, kurs ve özel ders için veli güveni veren sayfalar.' },
+    ],
+    aramalar: [
+      { tur: 'Semt + estetik', ornek: 'gop estetik kliniği', rekabet: 'Yüksek', yaklasim: 'Uygulama sayfaları, güçlü görsel kimlik ve düzenli yorum.' },
+      { tur: 'Semt + hizmet', ornek: 'oran diş hekimi', rekabet: 'Orta', yaklasim: 'Semt adıyla özgün sayfa ve harita profili.' },
+      { tur: 'Semt + mekân', ornek: 'kavaklıdere restoran', rekabet: 'Orta', yaklasim: 'Menü, fotoğraf ve yorum yönetimi.' },
+      soruSatiri,
+    ],
+    sss: [
+      { q: "GOP ve Kavaklıdere'deki bir klinik için SEO mu Google Ads mi?", a: 'Hemen randevu için Google Ads, kalıcı görünürlük için SEO ve harita profili. Rekabet yüksek olduğundan ikisini uygulama bazlı sayfalarla birlikte kurmak en verimli yoldur; sağlıkla ilgili ifadelerde mevzuata uygun dil şarttır.' },
+      { q: "Oran ve GOP'taki müşteri neye bakarak seçim yapıyor?", a: 'Gelir düzeyi yüksek müşteri araştırarak karar verir: uzmanlık bilgisi, gerçek fotoğraflar, yorumlar ve sitenin özeni belirleyicidir. Hızlı ve özenli bir site güveni doğrudan artırır.' },
+      { q: "Oran'daki işletmelerle nasıl çalışıyorsunuz?", a: 'Kocaeli kökenli bir ekibiz; Ankara’daki işletmelere uzaktan hizmet veriyoruz. Görüşmeler ve raporlama çevrim içi yürütülür.' },
+    ],
+    ilgili: [{ label: 'Ankara SEO', href: '/ankara-seo' }, { label: 'Çankaya SEO', href: '/cankaya-seo' }, { label: 'Çayyolu SEO', href: '/cayyolu-seo' }, { label: 'Gölbaşı SEO', href: '/golbasi-seo' }],
+  },
 ]
 
 export const ilSeoBul = (slug: string) => ilSeo.find((i) => i.slug === slug)

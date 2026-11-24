@@ -440,4 +440,24 @@ export const ilSeoYakindan: Record<string, IlSeoYakindan> = {
       { baslik: 'Antalya ile birlikte', metin: 'Lara’daki işletme “antalya + hizmet” aramalarında da görünmeli; başlıkta Antalya, içerikte Lara.' },
     ],
   },
+  cayyolu: {
+    baslik: 'Çayyolu’nda Aileler Nasıl Karar Veriyor?',
+    paragraf:
+      'Çayyolu ve Ümitköy, Ankara’nın batısında site ve villa yaşamının yoğunlaştığı, gelir düzeyi yüksek bir bölge. Buradaki aileler bir diş hekimi, kreş ya da kurs seçerken önce telefondan semt adıyla arar, sonra yorumları ve fotoğrafları karşılaştırır. Şehir merkezine gitmek yerine yakındaki kaliteli hizmeti tercih ettikleri için semt adıyla görünür olmak doğrudan müşteri demektir.',
+    ipuclari: [
+      { baslik: 'Semt adı her yerde', metin: 'Çayyolu, Ümitköy, Konutkent gibi adları hizmet sayfalarında ve harita profilinde doğal biçimde kullanın.' },
+      { baslik: 'Veli ve hasta yorumları', metin: 'Aile hizmetlerinde karar yorumlarla verilir; memnun müşteriden düzenli yorum isteyin.' },
+      { baslik: 'Villa hizmetleri', metin: 'Beysukent ve Alacaatlı’daki müstakil konutlar için peyzaj, havuz ve tadilat sayfaları gerçek proje fotoğraflarıyla.' },
+    ],
+  },
+  oran: {
+    baslik: 'Oran, GOP ve Kavaklıdere’de Marka Algısı',
+    paragraf:
+      'Gaziosmanpaşa ve Kavaklıdere, Ankara’nın en köklü ve gelir düzeyi yüksek semtleri; büyükelçilikler, butik mağazalar ve estetik klinikleriyle bilinir. Oran ise yeni siteleri ve alışveriş merkezi çevresiyle büyüyen bir yaşam alanı. Bu semtlerde müşteri seçicidir: fiyattan önce özen, uzmanlık ve güven arar. Dijitalde de aynı özeni göstermek gerekir.',
+    ipuclari: [
+      { baslik: 'Görsel kalite', metin: 'Site, Instagram ve harita profilindeki fotoğraflar aynı özende olmalı; düşük kaliteli görsel güveni düşürür.' },
+      { baslik: 'Yabancı misyon çevresi', metin: 'GOP ve Kavaklıdere’de İngilizce kısa bir hizmet sayfası, yabancı uyruklu müşteriye ulaşmayı kolaylaştırır.' },
+      { baslik: 'Kısaltmaları da kullanın', metin: 'Müşteriler “GOP” diye de arar; sayfada hem Gaziosmanpaşa hem GOP geçmeli.' },
+    ],
+  },
 }
