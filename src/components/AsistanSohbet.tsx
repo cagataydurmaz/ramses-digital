@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { Sparkles, X, Send, Loader2, MessageCircle } from 'lucide-react'
 import { trackEvent, trackLead } from '@/lib/tracking'
-import { waLink, waMesaj } from '@/lib/whatsapp'
+import { waLink, waMesaj, talepBildir } from '@/lib/whatsapp'
 
 // Yapay zekâ sohbet asistanı: soruları cevaplar, bilgileri toplar, onay alınca WhatsApp'a özet açar.
 // Sohbet sunucuda saklanmaz; sayfa geçişlerinde kaybolmasın diye yalnızca bu sekmenin sessionStorage'ında tutulur.
@@ -29,6 +29,17 @@ function ayikla(metin: string): { gorunen: string; talep: Talep | null } {
   } catch {
     return { gorunen, talep: null }
   }
+}
+
+function talepMetni(t: Talep) {
+  return waMesaj('Yapay zekâ asistanı', [
+    t.ad && `Ad: ${t.ad}`,
+    t.telefon && `Telefon: ${t.telefon}`,
+    t.isletme && `İşletme: ${t.isletme}`,
+    t.sehir && `Şehir: ${t.sehir}`,
+    t.ihtiyac && `İhtiyaç: ${t.ihtiyac}`,
+    t.not && `Not: ${t.not}`,
+  ])
 }
 
 export default function AsistanSohbet() {
@@ -121,7 +132,11 @@ export default function AsistanSohbet() {
       }
       const { gorunen, talep: bulunan } = ayikla(tam)
       setMesajlar([...yeni, { rol: 'asistan', metin: gorunen || 'Teşekkürler.' }])
-      if (bulunan) setTalep(bulunan)
+      if (bulunan) {
+        setTalep(bulunan)
+        // Ziyaretçi onay verdi: WhatsApp'ta göndermese bile bilgiler yedek olarak iletilir.
+        talepBildir(talepMetni(bulunan), 'Yapay zekâ asistanı')
+      }
     } catch {
       setMesajlar([...yeni, { rol: 'asistan', metin: 'Şu an cevap veremiyorum. WhatsApp üzerinden yazabilirsiniz: 0535 560 19 36' }])
     } finally {
@@ -132,20 +147,9 @@ export default function AsistanSohbet() {
   function whatsappaGonder() {
     if (!talep) return
     trackLead('whatsapp_ai')
-    window.open(
-      waLink(
-        waMesaj('Yapay zekâ asistanı', [
-          talep.ad && `Ad: ${talep.ad}`,
-          talep.telefon && `Telefon: ${talep.telefon}`,
-          talep.isletme && `İşletme: ${talep.isletme}`,
-          talep.sehir && `Şehir: ${talep.sehir}`,
-          talep.ihtiyac && `İhtiyaç: ${talep.ihtiyac}`,
-          talep.not && `Not: ${talep.not}`,
-        ]),
-      ),
-      '_blank',
-    )
+    window.open(waLink(talepMetni(talep)), '_blank')
   }
+
 
   function ac() {
     setAcik(true)
@@ -193,7 +197,7 @@ export default function AsistanSohbet() {
               <p className="text-white text-sm font-semibold leading-tight">Ramses Dijital Asistan</p>
               <p className="text-emerald-400 text-[11px]">Yapay zekâ asistanı · çevrimiçi</p>
             </div>
-            <a href={waLink(waMesaj('Bilgi talebi', [], 'Web sitenizden yazıyorum.'))} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp'tan yazın" className="p-2 rounded-lg text-zinc-400 hover:text-emerald-400">
+            <a href={waLink(waMesaj('Bilgi talebi', [], 'Hizmetleriniz hakkında bilgi almak istiyorum.'))} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp'tan yazın" className="p-2 rounded-lg text-zinc-400 hover:text-emerald-400">
               <MessageCircle size={18} />
             </a>
             <button onClick={() => setAcik(false)} aria-label="Kapat" className="p-2 rounded-lg text-zinc-400 hover:text-white">

@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { trackLead } from '@/lib/tracking'
 import { Search, TrendingUp, Share2, Monitor, Mail, BarChart3, Workflow, Send } from 'lucide-react'
-import { waMesaj, waLink } from '@/lib/whatsapp'
+import { waMesaj, whatsappAc } from '@/lib/whatsapp'
 
 const WHATSAPP_NUMBER = '905355601936'
 
@@ -44,7 +44,7 @@ export default function WhatsAppLeadForm() {
     ])
     window.fbq?.('track', 'Lead', { content_name: 'WhatsApp Lead Form' })
     trackLead('whatsapp_form')
-    window.open(waLink(metin), '_blank')
+    whatsappAc(metin, 'Hizmet formu')
   }
 
   return (

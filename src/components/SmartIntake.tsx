@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import Link from 'next/link'
 import { trackLead } from '@/lib/tracking'
 import { ArrowRight, Loader2, Sparkles, RotateCcw, Send, Edit3 } from 'lucide-react'
-import { waMesaj, waLink } from '@/lib/whatsapp'
+import { waMesaj, waLink, talepBildir } from '@/lib/whatsapp'
 
 const WHATSAPP_NUMBER = '905355601936'
 
@@ -180,7 +180,9 @@ export default function SmartIntake({ lang = 'tr' }: { lang?: 'tr' | 'en' }) {
 
   const openWhatsApp = () => {
     trackLead('whatsapp_ai')
-    const msg = encodeURIComponent(t.whatsappMessage(result?.message ?? '', input))
+    const metin = t.whatsappMessage(result?.message ?? '', input)
+    talepBildir(metin, 'Yapay zekâ ihtiyaç analizi')
+    const msg = encodeURIComponent(metin)
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${msg}`, '_blank')
   }
 

@@ -4,7 +4,7 @@ import { useState } from 'react'
 import KurucuKutusu from '@/components/KurucuKutusu'
 import { trackLead } from '@/lib/tracking'
 import { Phone, MessageCircle, Clock, Send, CheckCircle2, Loader2 } from 'lucide-react'
-import { waMesaj, waLink } from '@/lib/whatsapp'
+import { waMesaj, waLink, whatsappAc } from '@/lib/whatsapp'
 
 const services = [
   'SEO & İçerik Optimizasyonu',
@@ -52,8 +52,7 @@ export default function ContactPage() {
     if (!validate()) return
     // Form e-posta yerine doğrudan WhatsApp mesajı olarak gelir.
     trackLead('iletisim_formu')
-    window.open(
-      waLink(
+    whatsappAc(
         waMesaj('İletişim formu', [
           `Ad Soyad: ${form.name}`,
           form.phone && `Telefon: ${form.phone}`,
@@ -61,8 +60,7 @@ export default function ContactPage() {
           form.service && `İlgilendiğim hizmet: ${form.service}`,
           form.message && `Mesajım: ${form.message}`,
         ]),
-      ),
-      '_blank',
+      'İletişim formu',
     )
     setIsSubmitted(true)
   }
@@ -186,7 +184,7 @@ export default function ContactPage() {
               </div>
 
               <a
-                href={waLink('Merhaba Ramses Dijital,\n\n*Bilgi talebi*\nWeb sitenizden yazıyorum; hizmetleriniz hakkında bilgi almak istiyorum.')}
+                href={waLink('Merhaba Ramses Dijital,\n\n*Bilgi talebi*\nHizmetleriniz hakkında bilgi almak istiyorum.')}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 bg-[#25D366]/10 hover:bg-[#25D366]/20 border border-[#25D366]/20 hover:border-[#25D366]/40 rounded-2xl p-5 transition-all"

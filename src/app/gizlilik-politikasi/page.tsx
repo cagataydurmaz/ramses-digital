@@ -38,6 +38,7 @@ export default function GizlilikPolitikasiPage() {
               <li>Web sitesi URL&apos;si (opsiyonel)</li>
               <li>IP adresi ve tarayıcı bilgileri (çerezler aracılığıyla)</li>
               <li>Mesaj içerikleri (iletişim formu aracılığıyla)</li>
+              <li>Formlara, teklif hesaplayıcıya ve yapay zekâ asistanına yazdığınız bilgiler (WhatsApp’a yönlendirilirken talebinizin kaçırılmaması için ekibimize e-postayla da iletilir; başka amaçla kullanılmaz)</li>
             </ul>
           </section>
 

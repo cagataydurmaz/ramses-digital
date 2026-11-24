@@ -500,4 +500,54 @@ export const ilSeoYakindan: Record<string, IlSeoYakindan> = {
       { baslik: 'Yerel ürün', metin: 'Zeytin ve zeytinyağı satan üreticiler için ürün sayfaları ve online sipariş yolu.' },
     ],
   },
+  gokturk: {
+    baslik: 'Göktürk’te Müşteri Nasıl Karar Veriyor?',
+    paragraf:
+      'Göktürk, Belgrad Ormanı’na komşu, villa ve site yaşamının yoğunlaştığı, gelir düzeyi yüksek bir yerleşim. Buradaki aileler bir diş hekimi, kreş ya da veteriner seçerken şehir merkezine gitmek yerine yakındaki kaliteli hizmeti tercih eder; önce “göktürk + hizmet” diye arar, sonra fotoğraflara, uzman bilgisine ve diğer ailelerin yorumlarına bakar. Yabancı uyruklu sakinler nedeniyle İngilizce aramalar da azımsanmayacak düzeydedir.',
+    ipuclari: [
+      { baslik: 'Göktürk adını öne çıkarın', metin: 'Müşteri “Eyüpsultan” değil “Göktürk” diye arar; başlıkta, sayfada ve harita profilinde Göktürk geçmeli.' },
+      { baslik: 'İngilizce kısa sayfa', metin: 'Klinik, okul ve evcil hayvan hizmetlerinde İngilizce bir özet sayfa yabancı aileye ulaşmayı kolaylaştırır.' },
+      { baslik: 'Site adlarıyla içerik', metin: 'Kemer Country gibi site adlarıyla yapılan aramalar için villa hizmetlerinde proje fotoğraflı sayfalar.' },
+    ],
+  },
+  bahcesehir: {
+    baslik: 'Bahçeşehir’de Aileler Nasıl Arıyor?',
+    paragraf:
+      'Bahçeşehir, planlı site yaşamı ve gölet çevresiyle İstanbul’un aile odaklı semtlerinden biri. Buradaki müşteri çoğu zaman “bahçeşehir + hizmet” diye arar ve yürüme ya da kısa araba mesafesindeki işletmeyi seçer. Kreş, kurs, klinik ve veteriner gibi hizmetlerde karar, diğer velilerin ve komşuların yorumlarıyla verilir.',
+    ipuclari: [
+      { baslik: 'Bahçeşehir adıyla', metin: 'Sayfa ve harita profilinde Bahçeşehir adı öne çıkmalı; Başakşehir destekleyici olarak geçebilir.' },
+      { baslik: 'Yorum kültürü', metin: 'Aile hizmetlerinde memnun müşteriden düzenli yorum istemek, haritada üst sıralara çıkmanın en etkili yollarından.' },
+      { baslik: 'Gölet çevresi', metin: 'Gölet çevresindeki kafe ve stüdyolar için manzara ve mekân fotoğrafları öne çıkmalı.' },
+    ],
+  },
+  alsancak: {
+    baslik: 'Alsancak’ta Rekabet Haritada Kazanılır',
+    paragraf:
+      'Alsancak, İzmir’in en canlı semti: Kordon boyunca yeme-içme, ara sokaklarda butikler ve kafeler, Talatpaşa çevresinde ofisler ve klinikler. Buradaki ziyaretçi çoğu zaman yürürken telefondan “yakınımdaki” işletmeyi arar ve haritada ilk gördüğü birkaç seçenek arasından karar verir. Bu yüzden harita profili, fotoğraflar ve yorumlar burada sitenin kendisi kadar önemlidir.',
+    ipuclari: [
+      { baslik: 'Güncel saatler', metin: 'Gece geç saate kadar açık mekânlarda yanlış saat bilgisi doğrudan müşteri kaybettirir.' },
+      { baslik: 'Alt bölge adları', metin: 'Kordon, Pasaport, Kıbrıs Şehitleri gibi adları sayfalarda ve profil açıklamasında kullanın.' },
+      { baslik: 'İngilizce menü', metin: 'Turist ve yabancı öğrenciler için İngilizce menü veya hizmet sayfası ekleyin.' },
+    ],
+  },
+  balcova: {
+    baslik: 'Balçova’da İki Ayrı Müşteri',
+    paragraf:
+      'Balçova; İnciraltı sahili, termal bölgesi ve teleferiğiyle İzmir’in farklı semtlerinden ziyaretçi çekerken, Korutürk ve Onur gibi mahallelerdeki aileler de yakın hizmet arar. Restoran ve termal çevresindeki işletmeler ziyaretçiyi, klinik ve eğitim işletmeleri ise ilçede yaşayanları hedeflemelidir.',
+    ipuclari: [
+      { baslik: 'Ziyaretçi bilgisi', metin: 'Ulaşım, otopark ve hafta sonu saatleri gibi bilgiler dışarıdan gelen ziyaretçinin kararını kolaylaştırır.' },
+      { baslik: 'Sağlıkta doğru dil', metin: 'Fizik tedavi ve klinik sayfalarında sonuç vaat etmeyen, bilgilendirici bir dil kullanın.' },
+      { baslik: 'Komşu ilçeler', metin: 'Narlıdere ve Üçkuyular yönünden gelen aramalar için hizmet bölgenizi açıkça yazın.' },
+    ],
+  },
+  fethiye: {
+    baslik: 'Fethiye’de Yabancı ve Yerli Ziyaretçi',
+    paragraf:
+      'Fethiye; Ölüdeniz, Göcek ve Kayaköy gibi bölgeleriyle hem yerli hem yabancı ziyaretçinin uğrak noktası, Çalış çevresinde ise uzun süre kalan yabancı yerleşikler yaşıyor. Konaklama, tur ve tekne işletmelerinde aramaların önemli bir kısmı İngilizce yapılır ve karar fotoğraflar ile yorumlara bakılarak verilir. Sezon dışında da uzun dönem kiralama ve emlak aramaları sürer.',
+    ipuclari: [
+      { baslik: 'Çok dilli içerik', metin: 'İngilizce (gerekirse Rusça) özgün sayfalar; otomatik çeviri yerine kısa ve doğru metinler.' },
+      { baslik: 'Doğrudan rezervasyon', metin: 'Sitede kolay rezervasyon yolu, aracı platformlara ödenen komisyonu azaltır.' },
+      { baslik: 'Bölge adları', metin: 'Ölüdeniz, Hisarönü, Çalış gibi adlarla ayrı içerik; müşteri bölge adıyla arar.' },
+    ],
+  },
 }

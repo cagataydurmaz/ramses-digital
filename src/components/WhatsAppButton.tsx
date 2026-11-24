@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 
 const WHATSAPP_HREF = `https://wa.me/905355601936?text=${encodeURIComponent(
-  'Merhaba Ramses Dijital,\n\n*Bilgi talebi*\nWeb sitenizden yazıyorum; hizmetleriniz hakkında bilgi almak istiyorum.'
+  'Merhaba Ramses Dijital,\n\n*Bilgi talebi*\nHizmetleriniz hakkında bilgi almak istiyorum.'
 )}`
 
 
