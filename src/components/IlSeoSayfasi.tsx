@@ -13,6 +13,7 @@ import type { IlSeoVeri } from '@/lib/ilSeo'
 import HeroGuvenSatiri from '@/components/HeroGuvenSatiri'
 import GoogleAramaAnimasyonu from '@/components/GoogleAramaAnimasyonu'
 import { ilSeoYakindan } from '@/lib/ilSeoYakindan'
+import KurucuKutusu from '@/components/KurucuKutusu'
 import { Lightbulb } from 'lucide-react'
 
 // Veri odaklı il/ilçe SEO sayfası (src/lib/ilSeo.ts). Görünüm mevcut şehir SEO
@@ -205,6 +206,8 @@ export default function IlSeoSayfasi({ v }: { v: IlSeoVeri }) {
           </div>
         </section>
       )}
+
+      <KurucuKutusu yerel={!!v.yerel} />
 
       <section className="pb-10 md:pb-12 px-6">
         <div className="max-w-5xl mx-auto">

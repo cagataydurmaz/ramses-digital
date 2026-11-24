@@ -4,7 +4,7 @@ import type { Post } from './posts'
 // "internet sitesi", "Google'da çıkmıyorum", "işletme profili açma" gibi aramalar için.
 // Açık fiyat yazılmaz; istatistik veya müşteri sonucu uydurulmaz.
 
-const YAZAR = 'Ramses Digital Ekibi'
+const YAZAR = 'Çağatay Durmaz'
 const TARIH = '2026-11-24'
 
 export const soruRehberleri: Post[] = [
@@ -22,7 +22,7 @@ export const soruRehberleri: Post[] = [
     readTime: 6,
     date: TARIH,
     author: YAZAR,
-    authorRole: 'Web Geliştirme Ekibi',
+    authorRole: 'Kurucu, Ramses Dijital',
     tags: ['İnternet Sitesi', 'Web Sitesi Yaptırmak', 'Web Tasarım', 'Küçük İşletme'],
     content: `
       <div class="callout">
@@ -119,7 +119,7 @@ export const soruRehberleri: Post[] = [
     readTime: 7,
     date: TARIH,
     author: YAZAR,
-    authorRole: 'SEO Ekibi',
+    authorRole: 'Kurucu, Ramses Dijital',
     tags: ["Google'da Çıkmak", 'SEO', 'Yerel SEO', 'Google İşletme Profili'],
     content: `
       <div class="callout">
@@ -205,7 +205,7 @@ export const soruRehberleri: Post[] = [
     readTime: 6,
     date: TARIH,
     author: YAZAR,
-    authorRole: 'SEO Ekibi',
+    authorRole: 'Kurucu, Ramses Dijital',
     tags: ['Google İşletme Profili', 'Google Haritalar', 'Yerel SEO', 'Haritaya Ekleme'],
     content: `
       <div class="callout">

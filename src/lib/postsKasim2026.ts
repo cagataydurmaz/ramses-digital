@@ -2,7 +2,7 @@ import type { Post } from './posts'
 
 // Kasım 2026 blog yazıları. Sitede açık fiyat yazılmaz; fiyat için AI teklif hesaplayıcıya yönlendirilir.
 
-const YAZAR = 'Ramses Digital Ekibi'
+const YAZAR = 'Çağatay Durmaz'
 const TARIH = '2026-11-19'
 
 export const kasim2026Postlari: Post[] = [
@@ -20,7 +20,7 @@ export const kasim2026Postlari: Post[] = [
     readTime: 6,
     date: TARIH,
     author: YAZAR,
-    authorRole: 'SEO Ekibi',
+    authorRole: 'Kurucu, Ramses Dijital',
     tags: ['SEO Fiyatları', 'SEO', 'Fiyatlandırma', 'Yerel SEO', 'Şeffaflık'],
     content: `
       <div class="callout">
@@ -109,7 +109,7 @@ export const kasim2026Postlari: Post[] = [
     readTime: 7,
     date: TARIH,
     author: YAZAR,
-    authorRole: 'Google Ads Ekibi',
+    authorRole: 'Kurucu, Ramses Dijital',
     tags: ['Google Ads Fiyatları', 'Google Ads', 'Tıklama Başı Maliyet', 'Reklam Bütçesi', 'Fiyatlandırma'],
     content: `
       <div class="callout">
@@ -212,7 +212,7 @@ export const kasim2026Postlari: Post[] = [
     readTime: 6,
     date: TARIH,
     author: YAZAR,
-    authorRole: 'Yerel SEO Ekibi',
+    authorRole: 'Kurucu, Ramses Dijital',
     tags: ['Google Yorumları', 'Google İşletme Profili', 'Yerel SEO', 'Google Haritalar', 'İtibar Yönetimi'],
     content: `
       <div class="callout">
@@ -309,7 +309,7 @@ export const kasim2026Postlari: Post[] = [
     readTime: 7,
     date: TARIH,
     author: YAZAR,
-    authorRole: 'Strateji Ekibi',
+    authorRole: 'Kurucu, Ramses Dijital',
     tags: ['WhatsApp ile Satış', 'WhatsApp Business', 'Konuşarak Satış', 'Otomasyon', 'Müşteri Adayı'],
     content: `
       <div class="callout">
@@ -401,7 +401,7 @@ export const kasim2026Postlari: Post[] = [
     readTime: 7,
     date: TARIH,
     author: YAZAR,
-    authorRole: 'Sosyal Medya Ekibi',
+    authorRole: 'Kurucu, Ramses Dijital',
     tags: ['Instagram', 'Sıfırdan Büyütme', 'İşletme Hesabı', 'Reels', 'Sosyal Medya'],
     content: `
       <div class="callout">
@@ -497,7 +497,7 @@ export const kasim2026Postlari: Post[] = [
     readTime: 7,
     date: TARIH,
     author: YAZAR,
-    authorRole: 'Sosyal Medya Ekibi',
+    authorRole: 'Kurucu, Ramses Dijital',
     tags: ['Influencer Pazarlaması', 'Influencer', 'Mikro Influencer', 'Instagram', 'TikTok'],
     content: `
       <div class="callout">
@@ -597,7 +597,7 @@ export const kasim2026Postlari: Post[] = [
     readTime: 6,
     date: TARIH,
     author: YAZAR,
-    authorRole: 'Web Geliştirme Ekibi',
+    authorRole: 'Kurucu, Ramses Dijital',
     tags: ['Web Sitesi Fiyatları', 'Web Tasarım', 'Kurumsal Web Sitesi', 'Fiyatlandırma'],
     content: `
       <div class="callout">

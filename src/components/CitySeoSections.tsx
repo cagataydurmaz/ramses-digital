@@ -1,4 +1,5 @@
 import { MapPin } from 'lucide-react'
+import KurucuKutusu from '@/components/KurucuKutusu'
 import { sehirSeo } from '@/lib/sehirSeo'
 
 export default function CitySeoSections({ city }: { city: string }) {
@@ -62,6 +63,7 @@ export default function CitySeoSections({ city }: { city: string }) {
           </div>
         </div>
       </section>
+      <KurucuKutusu yerel={['kocaeli', 'izmit'].includes(city)} />
     </>
   )
 }

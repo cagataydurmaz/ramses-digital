@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import KurucuKutusu from '@/components/KurucuKutusu'
 import EpostaTelefon from '@/components/telefon/EpostaTelefon'
 import KapakGorseli from '@/components/KapakGorseli'
 import KisaOzet from '@/components/KisaOzet'
@@ -171,6 +172,7 @@ export default function EpostaOtomasyonPage() {
           </div>
         </div>
       </section>
+      <KurucuKutusu yerel />
       <KisaOzet>
         E-posta pazarlamada amaç doğru kişiye doğru zamanda mesaj göndermektir: hoş geldin serileri, sepet hatırlatmaları ve segmentli kampanyalar. Kurulumu ve otomasyonları yapıyor, onaylı alıcı listesiyle mevzuata uygun çalışıyoruz.
       </KisaOzet>

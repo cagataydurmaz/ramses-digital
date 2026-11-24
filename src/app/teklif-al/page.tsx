@@ -1,6 +1,7 @@
 'use client'
 
 import { Sparkles } from 'lucide-react'
+import KurucuKutusu from '@/components/KurucuKutusu'
 import TeklifAlCalculator from '@/components/TeklifAlCalculator'
 
 export default function TeklifAlPage() {
@@ -27,6 +28,7 @@ export default function TeklifAlPage() {
       <section className="pb-24 px-6">
         <TeklifAlCalculator />
       </section>
+      <KurucuKutusu yerel />
     </>
   )
 }

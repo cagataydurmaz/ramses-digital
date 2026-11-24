@@ -1,4 +1,5 @@
 import { MapPin, CalendarClock, Building2 } from 'lucide-react'
+import KurucuKutusu from '@/components/KurucuKutusu'
 import { sehirHizmet, type Hizmet } from '@/lib/sehirHizmet'
 
 const basliklar: Record<Hizmet, (b: string) => { h: string; p: string }> = {
@@ -34,6 +35,7 @@ export default function CityServiceSections({ city, hizmet }: { city: string; hi
   const bolgeli = hizmet === 'ads' || hizmet === 'reklam'
   const sezonlu = hizmet === 'ads' || hizmet === 'pazarlama' || hizmet === 'reklam'
   return (
+    <>
     <section className="py-10 md:py-14 px-6">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-10">
@@ -82,5 +84,7 @@ export default function CityServiceSections({ city, hizmet }: { city: string; hi
         )}
       </div>
     </section>
+    <KurucuKutusu yerel={['kocaeli', 'izmit'].includes(city)} />
+    </>
   )
 }

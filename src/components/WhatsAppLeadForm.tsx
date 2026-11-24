@@ -1,6 +1,8 @@
 'use client'
 
 import { useState } from 'react'
+import Image from 'next/image'
+import { KURUCU } from '@/components/KurucuKutusu'
 import { trackLead } from '@/lib/tracking'
 import { Search, TrendingUp, Share2, Monitor, Mail, BarChart3, Workflow, Send } from 'lucide-react'
 import { waMesaj, waLink } from '@/lib/whatsapp'
@@ -139,7 +141,10 @@ export default function WhatsAppLeadForm() {
           >
             <Send size={16} /> WhatsApp&apos;tan Gönder
           </button>
-          <p className="text-zinc-500 text-xs text-center mt-2">Ortalama 2 saat içinde dönüş yapıyoruz.</p>
+          <p className="text-zinc-500 text-xs text-center mt-2 flex items-center justify-center gap-2">
+            <Image src={KURUCU.foto} alt={KURUCU.ad} width={20} height={20} className="w-5 h-5 rounded-full object-cover" />
+            Mesajınız doğrudan {KURUCU.ad}&apos;a ulaşır · Ortalama 2 saat içinde dönüş yapıyoruz.
+          </p>
           <p className="text-zinc-600 text-xs text-center mt-3">
             Gönder&apos;e bastığınızda bilgileriniz WhatsApp&apos;ta hazır bir mesaj olarak açılır.
           </p>

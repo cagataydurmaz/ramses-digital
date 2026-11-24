@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import KurucuKutusu from '@/components/KurucuKutusu'
 import Image from 'next/image'
 import Link from 'next/link'
 import CalendlyButton from '@/components/CalendlyButton'
@@ -154,6 +155,7 @@ export default function PortfolioPage() {
       </section>
 
       {/* CTA */}
+      <KurucuKutusu yerel />
       <section className="py-20 px-6 bg-[#080D18]">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-white mb-4">

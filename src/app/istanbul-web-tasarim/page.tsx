@@ -38,7 +38,7 @@ const faqs = [
   { q: 'İstanbul\'daki kurumsal ve profesyonel hizmet firmaları için web sitesi farklı mı?', a: 'Evet. Hukuk büroları, danışmanlık firmaları ve finans sektörü için güven inşa eden, kurumsal kimliğe uygun, içerik ağırlıklı bir yaklaşım gerekiyor — reklam değil, otorite ve profesyonellik ön planda. Portföyümüzdeki İstanbul Barosu avukatları için tam olarak bu yaklaşımı uyguladık.' },
   { q: 'Fiziksel olarak İstanbul\'da ofisiniz var mı?', a: 'Hayır, Kocaeli kökenliyiz — ama gerçek İstanbul müşterilerimiz var: Bakırköy ve İstanbul Barosu\'na kayıtlı avukatlar için web tasarım yürüttük. Tüm süreç uzaktan yönetiliyor; keşif görüşmesi, tasarım onayı ve teslimat Google Meet/Zoom üzerinden yapılır.' },
   { q: 'Web sitem yapıldıktan sonra kim günceller?', a: 'İçerik güncellemeleri için basit panel kuruyoruz. Blog, ürün ve haber güncellemelerini kendiniz yapabilirsiniz. Tasarım ve teknik değişiklikler için aylık bakım paketi sunuyoruz. Projeyi teslim edip kaybolan bir ajans değiliz.' },
-  { q: 'İstanbul\'daki büyük ajanslara kıyasla neden sizi tercih etmeliyim?', a: 'Büyük ajanslarda küçük/orta ölçekli projeler genellikle düşük öncelik alır, iletişim yavaşlar. Biz her projeye mühendislik disipliniyle, doğrudan kurucu ortak seviyesinde ilgi gösteriyoruz — daha hızlı iletişim, daha esnek süreç, aynı kalite.' },
+  { q: 'İstanbul\'daki büyük ajanslara kıyasla neden sizi tercih etmeliyim?', a: 'Büyük ajanslarda küçük/orta ölçekli projeler genellikle düşük öncelik alır, iletişim yavaşlar. Biz her projeye mühendislik disipliniyle, doğrudan kurucu seviyesinde ilgi gösteriyoruz — daha hızlı iletişim, daha esnek süreç, aynı kalite.' },
   ...cityServiceFaqs('istanbul', 'web'),
 ]
 

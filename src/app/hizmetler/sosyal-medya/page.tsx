@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import KurucuKutusu from '@/components/KurucuKutusu'
 import SosyalMedyaTelefon from '@/components/telefon/SosyalMedyaTelefon'
 import KapakGorseli from '@/components/KapakGorseli'
 import KisaOzet from '@/components/KisaOzet'
@@ -167,6 +168,7 @@ export default function SosyalMedyaPage() {
           </div>
         </div>
       </section>
+      <KurucuKutusu yerel />
       <KisaOzet>
         Markanızın diline uygun post, story ve kısa video içerikleri ile içerik takvimini hazırlıyoruz. Hesap yönetimi ve reklam kampanyaları bu hizmete dahil değildir; içerik üretimine odaklanır.
       </KisaOzet>

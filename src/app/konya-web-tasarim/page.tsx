@@ -38,7 +38,7 @@ const faqs = [
   { q: 'Tarım makineleri üreticileri ve turizm işletmeleri için web sitesi farklı mı?', a: 'Evet. Tarım makineleri üreticileri için teknik özellik tabloları, yedek parça kataloğu ve bayi/tedarikçi iletişim formu ön planda olmalı. Dini turizm işletmeleri (otel, tur operatörü) için görsel galeri, rezervasyon sistemi ve çoklu dil desteği kritik. Genel bir kurumsal şablon yerine sektöre özel bilgi mimarisi kuruyoruz.' },
   { q: 'Fiziksel olarak Konya\'da ofisiniz var mı?', a: 'Hayır, Kocaeli kökenliyiz — Konya\'ya tamamen uzaktan hizmet veriyoruz. Keşif görüşmesi, tasarım onayı ve teslimat Google Meet/Zoom üzerinden yapılır. Türkiye genelinde canlı referanslarımızı portföyümüzde inceleyebilirsiniz.' },
   { q: 'Web sitem yapıldıktan sonra kim günceller?', a: 'İçerik güncellemeleri için basit panel kuruyoruz. Blog, ürün ve haber güncellemelerini kendiniz yapabilirsiniz. Tasarım ve teknik değişiklikler için aylık bakım paketi sunuyoruz. Projeyi teslim edip kaybolan bir ajans değiliz.' },
-  { q: 'Konya\'daki yerleşik ajanslara kıyasla neden sizi tercih etmeliyim?', a: 'Yerleşik ajanslarda küçük/orta ölçekli projeler genellikle düşük öncelik alır, iletişim yavaşlar. Biz her projeye mühendislik disipliniyle, doğrudan kurucu ortak seviyesinde ilgi gösteriyoruz — daha hızlı iletişim, daha esnek süreç, aynı kalite.' },
+  { q: 'Konya\'daki yerleşik ajanslara kıyasla neden sizi tercih etmeliyim?', a: 'Yerleşik ajanslarda küçük/orta ölçekli projeler genellikle düşük öncelik alır, iletişim yavaşlar. Biz her projeye mühendislik disipliniyle, doğrudan kurucu seviyesinde ilgi gösteriyoruz — daha hızlı iletişim, daha esnek süreç, aynı kalite.' },
   ...cityServiceFaqs('konya', 'web'),
 ]
 

@@ -4,7 +4,7 @@ import type { Post } from './posts'
 // Her yazı bir hizmete bağlanır. Açık fiyat, uydurma istatistik veya müşteri sonucu yok.
 // Araçların özellikleri sık değiştiği için sürüm/fiyat bilgisi verilmez.
 
-const YAZAR = 'Ramses Digital Ekibi'
+const YAZAR = 'Çağatay Durmaz'
 const TARIH = '2026-11-24'
 
 export const yapayZekaPostlari: Post[] = [
@@ -22,7 +22,7 @@ export const yapayZekaPostlari: Post[] = [
     readTime: 7,
     date: TARIH,
     author: YAZAR,
-    authorRole: 'Yapay Zekâ ve Otomasyon Ekibi',
+    authorRole: 'Kurucu, Ramses Dijital',
     tags: ['Chatbot', 'Yapay Zekâ Asistanı', 'Web Sitesi', 'Müşteri Talebi', 'WhatsApp'],
     content: `
       <div class="callout">
@@ -106,7 +106,7 @@ export const yapayZekaPostlari: Post[] = [
     readTime: 7,
     date: TARIH,
     author: YAZAR,
-    authorRole: 'Sosyal Medya Ekibi',
+    authorRole: 'Kurucu, Ramses Dijital',
     tags: ['Reels', 'Instagram', 'Yapay Zekâ', 'Video İçerik', 'Sosyal Medya'],
     content: `
       <div class="callout">
@@ -188,7 +188,7 @@ export const yapayZekaPostlari: Post[] = [
     readTime: 6,
     date: TARIH,
     author: YAZAR,
-    authorRole: 'Yapay Zekâ ve Otomasyon Ekibi',
+    authorRole: 'Kurucu, Ramses Dijital',
     tags: ['ChatGPT', 'Claude', 'Gemini', 'Yapay Zekâ', 'Karşılaştırma'],
     content: `
       <div class="callout">
@@ -261,7 +261,7 @@ export const yapayZekaPostlari: Post[] = [
     readTime: 8,
     date: TARIH,
     author: YAZAR,
-    authorRole: 'Yapay Zekâ ve Otomasyon Ekibi',
+    authorRole: 'Kurucu, Ramses Dijital',
     tags: ['Claude', 'Yapay Zekâ', 'Verimlilik', 'Küçük İşletme', 'Komut Örnekleri'],
     content: `
       <div class="callout">
@@ -356,7 +356,7 @@ export const yapayZekaPostlari: Post[] = [
     readTime: 5,
     date: TARIH,
     author: YAZAR,
-    authorRole: 'SEO Ekibi',
+    authorRole: 'Kurucu, Ramses Dijital',
     tags: ['Google Yorumları', 'Yapay Zekâ', 'Google İşletme Profili', 'Müşteri İlişkileri'],
     content: `
       <div class="callout">

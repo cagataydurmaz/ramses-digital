@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import KurucuKutusu from '@/components/KurucuKutusu'
 import OtomasyonTelefon from '@/components/telefon/OtomasyonTelefon'
 import { WhatsAppTelefonBolumu, ChatbotTelefonBolumu } from '@/components/telefon/TelefonBolumleri'
 import KapakGorseli from '@/components/KapakGorseli'
@@ -92,6 +93,7 @@ export default function N8nOtomasyonPage() {
       </section>
       <WhatsAppTelefonBolumu />
       <ChatbotTelefonBolumu ters />
+      <KurucuKutusu yerel />
       <KisaOzet>
         n8n ile form, CRM, e-posta, tablo ve yapay zekâ araçları arasında tekrar eden işleri otomatik hale getiriyoruz. İşletmenizdeki zaman alan süreçleri birlikte belirliyor, kurulumu ve bakımını üstleniyoruz.
       </KisaOzet>

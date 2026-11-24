@@ -35,8 +35,8 @@ export const posts: Post[] = [
     coverGradient: 'from-blue-500/10 to-blue-900/5',
     readTime: 6,
     date: '2023-08-22',
-    author: 'Ramses Digital Ekibi',
-    authorRole: 'SEO Uzmanları',
+    author: 'Çağatay Durmaz',
+    authorRole: 'Kurucu, Ramses Dijital',
     tags: ['SEO', 'Google', 'Organik Trafik', 'Anahtar Kelime'],
     content: `
       <h2>Google'da Zirveye Çıkmanın 7 Sırrı</h2>
@@ -154,8 +154,8 @@ export const posts: Post[] = [
     coverGradient: 'from-orange-500/10 to-orange-900/5',
     readTime: 6,
     date: '2023-11-14',
-    author: 'Ramses Digital Ekibi',
-    authorRole: 'Google Ads Uzmanları',
+    author: 'Çağatay Durmaz',
+    authorRole: 'Kurucu, Ramses Dijital',
     tags: ['Google Ads', 'PPC', 'ROI', 'Kampanya Optimizasyonu'],
     content: `
       <div class="callout">
@@ -270,8 +270,8 @@ export const posts: Post[] = [
     coverGradient: 'from-pink-500/10 to-pink-900/5',
     readTime: 5,
     date: '2024-02-08',
-    author: 'Ramses Digital Ekibi',
-    authorRole: 'Sosyal Medya Stratejistleri',
+    author: 'Çağatay Durmaz',
+    authorRole: 'Kurucu, Ramses Dijital',
     tags: ['Instagram', 'Sosyal Medya', 'Organik Büyüme', 'Reels', 'İçerik Stratejisi'],
     content: `
       <h2>Instagram Algoritması: Organik Büyümenin Formülü</h2>
@@ -360,8 +360,8 @@ export const posts: Post[] = [
     coverGradient: 'from-violet-500/10 to-violet-900/5',
     readTime: 5,
     date: '2024-05-30',
-    author: 'Ramses Digital Ekibi',
-    authorRole: 'Strateji Ekibi',
+    author: 'Çağatay Durmaz',
+    authorRole: 'Kurucu, Ramses Dijital',
     tags: ['Strateji', 'Ajans Seçimi', 'Veri Analizi', 'ROI', 'Mühendislik'],
     content: `
       <h2>Neden Mühendislik Temelli Ajans Seçmelisiniz?</h2>
@@ -449,8 +449,8 @@ export const posts: Post[] = [
     coverGradient: 'from-cyan-500/10 to-cyan-900/5',
     readTime: 5,
     date: '2024-09-17',
-    author: 'Ramses Digital Ekibi',
-    authorRole: 'Teknik SEO Uzmanları',
+    author: 'Çağatay Durmaz',
+    authorRole: 'Kurucu, Ramses Dijital',
     tags: ['Core Web Vitals', 'Teknik SEO', 'Sayfa Hızı', 'Dönüşüm Oranı', 'LCP', 'CLS'],
     content: `
       <h2>Core Web Vitals ile Dönüşüm Oranınızı Artırın</h2>
@@ -534,8 +534,8 @@ export const posts: Post[] = [
     coverGradient: 'from-emerald-500/10 to-emerald-900/5',
     readTime: 4,
     date: '2024-12-03',
-    author: 'Ramses Digital Ekibi',
-    authorRole: 'AI & Strateji Ekibi',
+    author: 'Çağatay Durmaz',
+    authorRole: 'Kurucu, Ramses Dijital',
     tags: ['Yapay Zeka', 'Rakip Analizi', 'Strateji', 'ChatGPT', 'Rekabetçi İstihbarat'],
     content: `
       <h2>Yapay Zeka ile Rakip Analizi: 2024 Rehberi</h2>
@@ -629,8 +629,8 @@ export const posts: Post[] = [
     coverGradient: 'from-orange-500/10 to-amber-900/5',
     readTime: 4,
     date: '2025-02-19',
-    author: 'Ramses Digital Ekibi',
-    authorRole: 'E-Posta Pazarlama Uzmanları',
+    author: 'Çağatay Durmaz',
+    authorRole: 'Kurucu, Ramses Dijital',
     tags: ['E-Posta Pazarlama', 'Açılma Oranı', 'Segmentasyon', 'Otomasyon', 'Konu Satırı'],
     content: `
       <h2>E-Posta Pazarlamada %40 Açılma Oranı Nasıl Yakalanır?</h2>
@@ -727,7 +727,7 @@ export const posts: Post[] = [
     readTime: 6,
     date: '2025-11-28',
     author: 'Çağatay Durmaz',
-    authorRole: 'Co-Founder & CEO, Ramses Digital',
+    authorRole: 'Kurucu, Ramses Dijital',
     tags: ['GEO', 'AI SEO', 'ChatGPT', 'Perplexity', 'Generative Engine Optimization', 'LLM'],
     content: `
       <p><strong>Son güncelleme: Nisan 2025 · Yazar: Çağatay Durmaz, Ramses Digital</strong></p>
@@ -870,7 +870,7 @@ export const posts: Post[] = [
     readTime: 6,
     date: '2026-04-04',
     author: 'Çağatay Durmaz',
-    authorRole: 'Co-Founder & CEO, Ramses Digital',
+    authorRole: 'Kurucu, Ramses Dijital',
     tags: ['SEO', 'GEO', 'AEO', 'AI', 'ChatGPT', 'Perplexity', 'Yapay Zeka', 'Dijital Pazarlama'],
     content: `
       <p><strong>Yayın tarihi: 4 Nisan 2026 · Yazar: Çağatay Durmaz, Ramses Digital</strong></p>
@@ -1030,8 +1030,8 @@ export const posts: Post[] = [
     coverGradient: 'from-blue-500/10 to-blue-900/5',
     readTime: 6,
     date: '2026-04-25',
-    author: 'Ramses Digital Ekibi',
-    authorRole: 'Yerel SEO Uzmanları',
+    author: 'Çağatay Durmaz',
+    authorRole: 'Kurucu, Ramses Dijital',
     tags: ['Yerel SEO', 'Kocaeli', 'Google Business Profile', 'KOBİ'],
     content: `
       <h2>Kocaeli'de SEO Neden Önemli?</h2>
@@ -1147,8 +1147,8 @@ export const posts: Post[] = [
     coverGradient: 'from-fuchsia-500/10 to-fuchsia-900/5',
     readTime: 4,
     date: '2026-04-20',
-    author: 'Ramses Digital Ekibi',
-    authorRole: 'Otomasyon Uzmanları',
+    author: 'Çağatay Durmaz',
+    authorRole: 'Kurucu, Ramses Dijital',
     tags: ['n8n', 'Zapier', 'Make', 'Otomasyon', 'No-Code'],
     content: `
       <h2>İş Akışı Otomasyonunda Üç Dev: n8n, Zapier, Make</h2>
@@ -1249,8 +1249,8 @@ export const posts: Post[] = [
     coverGradient: 'from-blue-500/10 to-blue-900/5',
     readTime: 4,
     date: '2026-04-15',
-    author: 'Ramses Digital Ekibi',
-    authorRole: 'SEO Uzmanları',
+    author: 'Çağatay Durmaz',
+    authorRole: 'Kurucu, Ramses Dijital',
     tags: ['Google Search Console', 'SEO', 'Analytics', 'Sitemap'],
     content: `
       <h2>Google Search Console Nedir?</h2>
@@ -1382,8 +1382,8 @@ export const posts: Post[] = [
     coverGradient: 'from-violet-500/10 to-violet-900/5',
     readTime: 5,
     date: '2026-04-10',
-    author: 'Ramses Digital Ekibi',
-    authorRole: 'Teknik SEO Uzmanları',
+    author: 'Çağatay Durmaz',
+    authorRole: 'Kurucu, Ramses Dijital',
     tags: ['Schema Markup', 'JSON-LD', 'Structured Data', 'GEO'],
     content: `
       <h2>Schema Markup Nedir?</h2>
@@ -1506,8 +1506,8 @@ export const posts: Post[] = [
     coverGradient: 'from-emerald-500/10 to-emerald-900/5',
     readTime: 5,
     date: '2026-04-05',
-    author: 'Ramses Digital Ekibi',
-    authorRole: 'SEO Uzmanları',
+    author: 'Çağatay Durmaz',
+    authorRole: 'Kurucu, Ramses Dijital',
     tags: ['Backlink', 'Link Building', 'SEO', 'Domain Authority'],
     content: `
       <h2>Backlink Nedir?</h2>
@@ -1627,8 +1627,8 @@ export const posts: Post[] = [
     coverGradient: 'from-orange-500/10 to-orange-900/5',
     readTime: 5,
     date: '2026-03-30',
-    author: 'Ramses Digital Ekibi',
-    authorRole: 'İçerik Stratejistleri',
+    author: 'Çağatay Durmaz',
+    authorRole: 'Kurucu, Ramses Dijital',
     tags: ['Meta Description', 'CTR', 'SEO', 'Copywriting'],
     content: `
       <h2>Meta Açıklama Nedir, Neden Önemli?</h2>
@@ -1751,8 +1751,8 @@ export const posts: Post[] = [
     coverGradient: 'from-blue-500/10 to-blue-900/5',
     readTime: 5,
     date: '2026-04-30',
-    author: 'Ramses Dijital Yazılım ve Dijital Pazarlama Ajansı',
-    authorRole: 'Strateji Uzmanları',
+    author: 'Çağatay Durmaz',
+    authorRole: 'Kurucu, Ramses Dijital',
     tags: ['İzmit', 'Reklam Ajansı', 'KOBİ', 'Ajans Seçimi'],
     content: `
       <h2>İzmit'te Reklam Ajansı Seçmek Neden Zor?</h2>
@@ -1900,8 +1900,8 @@ export const posts: Post[] = [
     coverGradient: 'from-orange-500/10 to-orange-900/5',
     readTime: 5,
     date: '2026-04-29',
-    author: 'Ramses Dijital Yazılım ve Dijital Pazarlama Ajansı',
-    authorRole: 'Sektörel Strateji Uzmanları',
+    author: 'Çağatay Durmaz',
+    authorRole: 'Kurucu, Ramses Dijital',
     tags: ['Restoran', 'İzmit', 'Yerel SEO', 'Google Maps'],
     content: `
       <h2>İzmit Restoranları İçin Dijital Pazarlama Neden Kritik?</h2>
@@ -2046,8 +2046,8 @@ export const posts: Post[] = [
     coverGradient: 'from-blue-500/10 to-blue-900/5',
     readTime: 4,
     date: '2026-07-01',
-    author: 'Ramses Digital Ekibi',
-    authorRole: 'Ajans Danışmanları',
+    author: 'Çağatay Durmaz',
+    authorRole: 'Kurucu, Ramses Dijital',
     tags: ['Dijital Pazarlama', 'Uzaktan Çalışma', 'Ajans Seçimi', 'Türkiye'],
     content: `
       <h2>Neden Artık Şehrinizdeki Ajansla Sınırlı Değilsiniz?</h2>
@@ -2143,8 +2143,8 @@ export const posts: Post[] = [
     coverGradient: 'from-cyan-500/10 to-cyan-900/5',
     readTime: 4,
     date: '2026-07-05',
-    author: 'Ramses Digital Ekibi',
-    authorRole: 'SEO Uzmanları',
+    author: 'Çağatay Durmaz',
+    authorRole: 'Kurucu, Ramses Dijital',
     tags: ['SEO', 'Ajans Seçimi', 'Freelancer', 'Bütçe'],
     content: `
       <h2>İki Farklı Model, İki Farklı Risk Profili</h2>
@@ -2243,8 +2243,8 @@ export const posts: Post[] = [
     coverGradient: 'from-orange-500/10 to-orange-900/5',
     readTime: 4,
     date: '2026-07-09',
-    author: 'Ramses Digital Ekibi',
-    authorRole: 'Google Ads Uzmanları',
+    author: 'Çağatay Durmaz',
+    authorRole: 'Kurucu, Ramses Dijital',
     tags: ['Google Ads', 'Ajans Seçimi', 'PPC', 'Bütçe Yönetimi'],
     content: `
       <h2>Google Ads Bütçeniz, Doğrudan Kâr veya Zarar Demek</h2>
@@ -2362,8 +2362,8 @@ export const posts: Post[] = [
     coverGradient: 'from-emerald-500/10 to-emerald-900/5',
     readTime: 5,
     date: '2026-07-14',
-    author: 'Ramses Digital Ekibi',
-    authorRole: 'GEO & AI Arama Uzmanları',
+    author: 'Çağatay Durmaz',
+    authorRole: 'Kurucu, Ramses Dijital',
     tags: ['GEO', 'AI Overviews', 'Google', 'SEO 2026'],
     content: `
       <h2>Google AI Overviews Nedir?</h2>
@@ -2468,8 +2468,8 @@ export const posts: Post[] = [
     coverGradient: 'from-blue-500/10 to-blue-900/5',
     readTime: 5,
     date: '2026-07-18',
-    author: 'Ramses Digital Ekibi',
-    authorRole: 'SEO Uzmanları',
+    author: 'Çağatay Durmaz',
+    authorRole: 'Kurucu, Ramses Dijital',
     tags: ['E-E-A-T', 'SEO', 'İçerik Stratejisi', 'Google'],
     content: `
       <h2>E-E-A-T Nedir?</h2>
@@ -2582,8 +2582,8 @@ export const posts: Post[] = [
     coverGradient: 'from-indigo-500/10 to-indigo-900/5',
     readTime: 4,
     date: '2026-07-22',
-    author: 'Ramses Digital Ekibi',
-    authorRole: 'Web Tasarım & UX Uzmanları',
+    author: 'Çağatay Durmaz',
+    authorRole: 'Kurucu, Ramses Dijital',
     tags: ['Web Tasarım', 'CRO', 'UX', 'Dönüşüm Oranı'],
     content: `
       <h2>Tasarım Bir Sanat Değil, Bir Dönüşüm Aracıdır</h2>
@@ -2678,8 +2678,8 @@ export const posts: Post[] = [
     coverGradient: 'from-orange-500/10 to-orange-900/5',
     readTime: 4,
     date: '2026-07-30',
-    author: 'Ramses Digital Ekibi',
-    authorRole: 'Hukuk Sektörü Dijital Pazarlama Uzmanları',
+    author: 'Çağatay Durmaz',
+    authorRole: 'Kurucu, Ramses Dijital',
     tags: ['Hukuk', 'Avukat SEO', 'Sektörel', 'İçerik Stratejisi'],
     content: `
       <h2>Avukatlar İçin Reklam Neden Yasak?</h2>
@@ -2764,8 +2764,8 @@ export const posts: Post[] = [
     coverGradient: 'from-fuchsia-500/10 to-fuchsia-900/5',
     readTime: 4,
     date: '2026-08-07',
-    author: 'Ramses Digital Ekibi',
-    authorRole: 'Otomasyon Uzmanları',
+    author: 'Çağatay Durmaz',
+    authorRole: 'Kurucu, Ramses Dijital',
     tags: ['n8n', 'E-Ticaret', 'Otomasyon', 'CRM'],
     content: `
       <h2>E-Ticarette Manuel İş Yükü Nereye Gidiyor?</h2>
@@ -2856,8 +2856,8 @@ export const posts: Post[] = [
     coverGradient: 'from-pink-500/10 to-pink-900/5',
     readTime: 4,
     date: '2026-08-15',
-    author: 'Ramses Digital Ekibi',
-    authorRole: 'Sosyal Medya Stratejistleri',
+    author: 'Çağatay Durmaz',
+    authorRole: 'Kurucu, Ramses Dijital',
     tags: ['LinkedIn', 'B2B', 'İçerik Stratejisi', 'Sosyal Medya'],
     content: `
       <h2>LinkedIn, Instagram'ın B2B Versiyonu Değildir</h2>
@@ -2944,8 +2944,8 @@ export const posts: Post[] = [
     coverGradient: 'from-orange-500/10 to-orange-900/5',
     readTime: 4,
     date: '2026-07-26',
-    author: 'Ramses Digital Ekibi',
-    authorRole: 'Sağlık Sektörü Dijital Pazarlama Uzmanları',
+    author: 'Çağatay Durmaz',
+    authorRole: 'Kurucu, Ramses Dijital',
     tags: ['Psikoloji', 'Terapi', 'Sektörel', 'Yerel SEO'],
     content: `
       <h2>Danışan Arayan Biri İlk Önce Ne Yapar? Google'a Bakar.</h2>
@@ -3037,8 +3037,8 @@ export const posts: Post[] = [
     coverGradient: 'from-orange-500/10 to-orange-900/5',
     readTime: 4,
     date: '2026-08-03',
-    author: 'Ramses Digital Ekibi',
-    authorRole: 'Sağlık Sektörü Dijital Pazarlama Uzmanları',
+    author: 'Çağatay Durmaz',
+    authorRole: 'Kurucu, Ramses Dijital',
     tags: ['Diş Hekimliği', 'Sektörel', 'Google Ads', 'Yerel SEO'],
     content: `
       <h2>Diş Kliniği Ararken İnsanlar Ne Yazar?</h2>
@@ -3123,8 +3123,8 @@ export const posts: Post[] = [
     coverGradient: 'from-orange-500/10 to-orange-900/5',
     readTime: 4,
     date: '2026-08-11',
-    author: 'Ramses Digital Ekibi',
-    authorRole: 'Sektörel Dijital Pazarlama Uzmanları',
+    author: 'Çağatay Durmaz',
+    authorRole: 'Kurucu, Ramses Dijital',
     tags: ['Veterinerlik', 'Sektörel', 'Yerel SEO', 'Yapay Zeka'],
     content: `
       <h2>"En Yakın Veteriner" — Panik Anındaki Arama</h2>
@@ -3207,8 +3207,8 @@ export const posts: Post[] = [
     coverGradient: 'from-orange-500/10 to-orange-900/5',
     readTime: 4,
     date: '2026-08-19',
-    author: 'Ramses Digital Ekibi',
-    authorRole: 'B2B Dijital Pazarlama Uzmanları',
+    author: 'Çağatay Durmaz',
+    authorRole: 'Kurucu, Ramses Dijital',
     tags: ['Mali Müşavir', 'Muhasebe', 'B2B', 'Sektörel'],
     content: `
       <h2>Bir Şirket Mali Müşavir Değiştirirken Ne Arar?</h2>
@@ -3292,8 +3292,8 @@ export const posts: Post[] = [
     coverGradient: 'from-fuchsia-500/10 to-fuchsia-900/5',
     readTime: 5,
     date: '2026-08-27',
-    author: 'Ramses Digital Ekibi',
-    authorRole: 'GEO & AEO Uzmanları',
+    author: 'Çağatay Durmaz',
+    authorRole: 'Kurucu, Ramses Dijital',
     tags: ['Vaka Analizi', 'GEO', 'AEO', 'Eğitim Teknolojisi', 'Web Tasarım'],
     content: `
       <h2>Müşteri: IEYP International</h2>
@@ -3370,8 +3370,8 @@ export const posts: Post[] = [
     coverGradient: 'from-blue-500/10 to-blue-900/5',
     readTime: 5,
     date: '2026-08-29',
-    author: 'Ramses Digital Ekibi',
-    authorRole: 'Strateji Ekibi',
+    author: 'Çağatay Durmaz',
+    authorRole: 'Kurucu, Ramses Dijital',
     tags: ['Fiyatlandırma', 'SEO', 'Google Ads', 'Web Tasarım', 'Şeffaflık'],
     content: `
       <div class="callout">
@@ -3447,8 +3447,8 @@ export const posts: Post[] = [
     coverGradient: 'from-orange-500/10 to-orange-900/5',
     readTime: 5,
     date: '2026-08-31',
-    author: 'Ramses Digital Ekibi',
-    authorRole: 'Sektörel Dijital Pazarlama Uzmanları',
+    author: 'Çağatay Durmaz',
+    authorRole: 'Kurucu, Ramses Dijital',
     tags: ['E-Ticaret', 'SEO', 'Google Ads', 'E-Posta Pazarlama', 'Sektörel'],
     content: `
       <h2>E-Ticarette Dijital Pazarlama Neden Farklı Çalışır?</h2>
@@ -3531,8 +3531,8 @@ export const posts: Post[] = [
     coverGradient: 'from-blue-500/10 to-blue-900/5',
     readTime: 5,
     date: '2026-10-28',
-    author: 'Ramses Digital Ekibi',
-    authorRole: 'SEO Uzmanları',
+    author: 'Çağatay Durmaz',
+    authorRole: 'Kurucu, Ramses Dijital',
     tags: ['Yerel SEO', 'İlçe SEO', 'pSEO', 'Google Haritalar'],
     content: `
       <h2>İlçe Bazlı SEO Neden Çalışıyor?</h2>
@@ -3604,8 +3604,8 @@ export const posts: Post[] = [
     coverGradient: 'from-violet-500/10 to-violet-900/5',
     readTime: 5,
     date: '2026-10-28',
-    author: 'Ramses Digital Ekibi',
-    authorRole: 'SEO Uzmanları',
+    author: 'Çağatay Durmaz',
+    authorRole: 'Kurucu, Ramses Dijital',
     tags: ['AEO', 'GEO', 'Yerel SEO', 'Yapay Zekâ'],
     content: `
       <h2>AEO ve GEO Nedir?</h2>
@@ -3675,8 +3675,8 @@ export const posts: Post[] = [
     coverGradient: 'from-blue-500/10 to-blue-900/5',
     readTime: 7,
     date: '2026-11-17',
-    author: 'Ramses Digital Ekibi',
-    authorRole: 'SEO ve Google Ads Uzmanları',
+    author: 'Çağatay Durmaz',
+    authorRole: 'Kurucu, Ramses Dijital',
     tags: ['Kayseri', 'B2B SEO', 'Google Ads', 'Mobilya', 'Sanayi'],
     content: `
       <h2>Kayseri'de Üretici Firmaların Dijital Durumu</h2>
@@ -3757,8 +3757,8 @@ export const posts: Post[] = [
     coverGradient: 'from-blue-500/10 to-blue-900/5',
     readTime: 5,
     date: '2026-11-17',
-    author: 'Ramses Digital Ekibi',
-    authorRole: 'Yerel SEO Uzmanları',
+    author: 'Çağatay Durmaz',
+    authorRole: 'Kurucu, Ramses Dijital',
     tags: ['Kayseri', 'Yerel SEO', 'Google İşletme Profili', 'KOBİ'],
     content: `
       <h2>Kayseri'de Yerel Arama Nasıl Çalışır?</h2>

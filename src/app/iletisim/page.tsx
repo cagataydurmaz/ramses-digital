@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import KurucuKutusu from '@/components/KurucuKutusu'
 import { trackLead } from '@/lib/tracking'
 import { Phone, MessageCircle, Clock, Send, CheckCircle2, Loader2 } from 'lucide-react'
 import { waMesaj, waLink } from '@/lib/whatsapp'
@@ -117,6 +118,7 @@ export default function ContactPage() {
       </section>
 
       {/* Content */}
+      <KurucuKutusu yerel />
       <section className="pb-24 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-5 gap-10">

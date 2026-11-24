@@ -7,6 +7,7 @@ import { posts } from '@/lib/posts'
 import { blogIcLinkler } from '@/lib/blogIcLinkler'
 import { blogSeoBasliklari } from '@/lib/blogSeoBasliklari'
 import CalendlyButton from '@/components/CalendlyButton'
+import { KURUCU } from '@/components/KurucuKutusu'
 
 interface Props {
   params: { slug: string }
@@ -74,6 +75,7 @@ function ArticleJsonLd({ post }: { post: (typeof posts)[0] }) {
       name: post.author,
       jobTitle: post.authorRole,
       url: 'https://ramsesdigital.com/hakkimizda',
+      image: `https://ramsesdigital.com${KURUCU.foto}`,
     },
     publisher: {
       '@type': 'Organization',
@@ -230,9 +232,7 @@ export default function BlogPostPage({ params }: Props) {
           {/* Meta row */}
           <div className="flex flex-wrap items-center gap-4 text-sm text-zinc-400 border-t border-white/[0.06] pt-6">
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400 font-bold text-xs">
-                R
-              </div>
+              <Image src={KURUCU.foto} alt={KURUCU.ad} width={32} height={32} className="w-8 h-8 rounded-full object-cover" />
               <div>
                 <div className="text-zinc-300 font-medium text-sm">{post.author}</div>
                 <div className="text-zinc-400 text-xs">{post.authorRole}</div>
@@ -250,6 +250,17 @@ export default function BlogPostPage({ params }: Props) {
           className="post-content mb-16"
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
+
+        {/* Yazar kutusu (E-E-A-T: içeriğin arkasındaki gerçek kişi) */}
+        <aside aria-label="Yazar hakkında" className="mb-12 flex flex-col sm:flex-row items-center sm:items-start gap-5 bg-[#0D1225] border border-white/[0.08] rounded-2xl p-6">
+          <Image src={KURUCU.foto} alt={`${KURUCU.ad}, Ramses Dijital kurucusu`} width={80} height={80} className="w-20 h-20 rounded-full object-cover ring-2 ring-blue-500/40 shrink-0" />
+          <div className="text-center sm:text-left">
+            <p className="text-zinc-500 text-xs uppercase tracking-wider mb-1">Yazan</p>
+            <p className="text-white font-semibold">{KURUCU.ad} <span className="text-zinc-500 text-sm font-normal">· {KURUCU.rol}</span></p>
+            <p className="text-zinc-400 text-sm leading-relaxed mt-1.5">{KURUCU.kisaBio}</p>
+            <Link href="/hakkimizda" className="inline-block text-blue-400 hover:text-blue-300 text-sm font-medium mt-2">Hakkımızda →</Link>
+          </div>
+        </aside>
 
         {/* Tags */}
         <div className="flex flex-wrap gap-2 mb-16 pt-8 border-t border-white/[0.06]">

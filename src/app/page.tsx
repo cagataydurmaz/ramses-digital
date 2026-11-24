@@ -10,6 +10,7 @@ import AnaSayfaSss from '@/components/AnaSayfaSss'
 import AnaSayfaSektorAraclar from '@/components/AnaSayfaSektorAraclar'
 import MarkaSeridi from '@/components/MarkaSeridi'
 import SurecCizgisi from '@/components/SurecCizgisi'
+import KurucuKutusu from '@/components/KurucuKutusu'
 import GoogleOnizleme from '@/components/GoogleOnizleme'
 import GoogleAramaAnimasyonu from '@/components/GoogleAramaAnimasyonu'
 import ArkaPlanVideo from '@/components/ArkaPlanVideo'
@@ -592,6 +593,8 @@ export default function HomePage() {
           <SurecCizgisi adimlar={surecAdimlari} />
         </div>
       </section>
+
+      <KurucuKutusu yerel />
 
       <WhatsAppTelefonBolumu />
       <ChatbotTelefonBolumu ters />

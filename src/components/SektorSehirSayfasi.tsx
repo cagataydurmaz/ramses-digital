@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import KurucuKutusu from '@/components/KurucuKutusu'
 import { HaritaTelefonBolumu } from '@/components/telefon/TelefonBolumleri'
 import KapakGorseli from '@/components/KapakGorseli'
 import Link from 'next/link'
@@ -207,6 +208,7 @@ export default function SektorSehirSayfasi({ slug }: { slug: string }) {
       <HaritaTelefonBolumu yer={v.sehir.ad} arama={`${v.sehir.ad} ${v.meslek.ad}`.toLocaleLowerCase('tr-TR')} />
       <ReviewsMarquee />
 
+      <KurucuKutusu yerel={v.sehir.key === 'kocaeli'} />
       <SehirTeklifBolumu place={s.teklifAd} />
 
       <RelatedPages pages={ilgili} />

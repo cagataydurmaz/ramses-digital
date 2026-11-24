@@ -38,7 +38,7 @@ const faqs = [
   { q: 'Öğrenciye hitap eden işletmeler ve sanayi firmaları için web sitesi farklı mı?', a: 'Evet. Öğrenciye hitap eden işletmeler (kafe, kırtasiye, kurs merkezi) için hızlı yüklenen, mobil-öncelikli, sosyal medya entegre bir tasarım gerekir. Sanayi/kurumsal firmalar için teknik özellik tabloları ve B2B iletişim formu ön planda olmalı. Genel bir kurumsal şablon yerine sektöre özel bilgi mimarisi kuruyoruz.' },
   { q: 'Fiziksel olarak Eskişehir\'de ofisiniz var mı?', a: 'Hayır, Kocaeli kökenliyiz — Eskişehir\'e tamamen uzaktan hizmet veriyoruz. Keşif görüşmesi, tasarım onayı ve teslimat Google Meet/Zoom üzerinden yapılır. Türkiye genelinde canlı referanslarımızı portföyümüzde inceleyebilirsiniz.' },
   { q: 'Web sitem yapıldıktan sonra kim günceller?', a: 'İçerik güncellemeleri için basit panel kuruyoruz. Blog, ürün ve haber güncellemelerini kendiniz yapabilirsiniz. Tasarım ve teknik değişiklikler için aylık bakım paketi sunuyoruz. Projeyi teslim edip kaybolan bir ajans değiliz.' },
-  { q: 'Eskişehir\'deki yerleşik ajanslara kıyasla neden sizi tercih etmeliyim?', a: 'Yerleşik ajanslarda küçük/orta ölçekli projeler genellikle düşük öncelik alır, iletişim yavaşlar. Biz her projeye mühendislik disipliniyle, doğrudan kurucu ortak seviyesinde ilgi gösteriyoruz — daha hızlı iletişim, daha esnek süreç, aynı kalite.' },
+  { q: 'Eskişehir\'deki yerleşik ajanslara kıyasla neden sizi tercih etmeliyim?', a: 'Yerleşik ajanslarda küçük/orta ölçekli projeler genellikle düşük öncelik alır, iletişim yavaşlar. Biz her projeye mühendislik disipliniyle, doğrudan kurucu seviyesinde ilgi gösteriyoruz — daha hızlı iletişim, daha esnek süreç, aynı kalite.' },
   ...cityServiceFaqs('eskisehir', 'web'),
 ]
 

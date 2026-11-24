@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import CalendlyButton from '@/components/CalendlyButton'
 import { Target, Zap, Heart, Shield, Users, Award, Globe, Code2 } from 'lucide-react'
 
@@ -25,7 +26,7 @@ const values = [
   {
     icon: Code2,
     title: 'Mühendislik Temelli',
-    desc: 'İki mühendis kurucu olarak her kararı veriyle, her stratejiyi teknik disiplinle alıyoruz. Tahmin yok, analiz var.',
+    desc: 'Mühendis kökenli bir kurucu tarafından yönetilen ajans olarak her kararı veriyle, her stratejiyi teknik disiplinle alıyoruz. Tahmin yok, analiz var.',
   },
   {
     icon: Target,
@@ -51,12 +52,9 @@ const values = [
 
 
 const milestones = [
-  { year: '2019', title: 'Kuruluş', desc: 'İstanbul\'da 2 kişilik bir ekiple dijital pazarlama yolculuğumuzu başlattık.' },
-  { year: '2020', title: 'İlk 10 Müşteri', desc: 'KOBİ\'lere odaklanarak ilk 10 müşterimizle anlamlı sonuçlar elde ettik.' },
-  { year: '2021', title: 'Ekip Büyümesi', desc: 'Uzman kadromuzu genişlettik, 6 kişilik güçlü bir ekip oluşturduk.' },
-  { year: '2022', title: '50+ Proje', desc: 'Farklı sektörlerden 50\'den fazla projede başarılı sonuçlar elde ettik.' },
-  { year: '2023', title: 'Uluslararası Müşteriler', desc: 'Yurt dışından müşterilerle çalışmaya başladık, global deneyim kazandık.' },
-  { year: '2024', title: 'Bugün', desc: '50+ proje, 50+ mutlu müşteri ve büyümeye devam eden bir ekip.' },
+  { year: '2019', title: 'Kuruluş', desc: 'Çağatay Durmaz, dijital pazarlamayı mühendislik disipliniyle yürüten Ramses Dijital’i kurdu.' },
+  { year: 'Bugün', title: '50+ Proje', desc: '50+ tamamlanan proje, 50+ müşteri ve %96 müşteri memnuniyeti.' },
+  { year: '2026', title: 'Yapay Zekâ ve Otomasyon', desc: 'SEO, Google Ads ve web tasarımın yanına yapay zekâ asistanı ve iş akışı otomasyonu eklendi; merkez İzmit.' },
 ]
 
 export default function AboutPage() {
@@ -92,8 +90,8 @@ export default function AboutPage() {
                 Markalar İçin Değer Yaratıyoruz
               </h2>
               <p className="text-zinc-400 leading-relaxed">
-                Ramses Digital, iki mühendis tarafından kuruldu. Dijital pazarlamanın sezgiye
-                değil, mühendislik disiplinine dayanması gerektiğine inanıyoruz.
+                Ramses Dijital, elektrik-elektronik mühendisi Çağatay Durmaz tarafından kuruldu. Dijital
+                pazarlamanın sezgiye değil, mühendislik disiplinine dayanması gerektiğine inanıyoruz.
               </p>
               <p className="text-zinc-400 leading-relaxed">
                 2019 yılında İstanbul&apos;da başladığımız yolculuğumuzda bugün 50&apos;den
@@ -121,6 +119,31 @@ export default function AboutPage() {
                 )
               })}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Kurucu */}
+      <section aria-labelledby="kurucu" className="py-16 px-6">
+        <div className="max-w-5xl mx-auto grid md:grid-cols-[280px_1fr] gap-10 items-center">
+          <div className="relative mx-auto w-full max-w-[280px]">
+            <div className="absolute -inset-6 bg-[radial-gradient(circle,rgba(59,130,246,0.22),transparent_65%)] pointer-events-none" />
+            <Image src="/ekip/cagatay-durmaz.webp" alt="Çağatay Durmaz, Ramses Dijital kurucusu" width={600} height={800} className="relative w-full rounded-2xl object-cover ring-1 ring-white/15" />
+          </div>
+          <div>
+            <p className="text-blue-500 text-sm font-medium tracking-wider uppercase mb-3">Kurucu</p>
+            <h2 id="kurucu" className="text-3xl md:text-4xl font-bold text-white mb-1">Çağatay Durmaz</h2>
+            <p className="text-zinc-500 mb-5">Kurucu · Elektrik-Elektronik Mühendisi</p>
+            <p className="text-zinc-400 leading-relaxed mb-4">
+              2019’dan beri işletmelerin Google’da, haritada ve yapay zekâ aramalarında bulunması için SEO, Google Ads,
+              web sitesi ve otomasyon projeleri yürütüyorum. Mühendislik eğitimim bana her işi ölçerek yapmayı öğretti:
+              hangi sayfanın, hangi reklamın müşteri getirdiğini görmeden karar vermem.
+            </p>
+            <p className="text-zinc-400 leading-relaxed mb-6">
+              Her projeyi bizzat takip ediyorum; sorunuz olduğunda karşınızda işi yapan kişi olur. Kocaeli’deyseniz
+              yüz yüze, diğer şehirlerde görüntülü görüşme ve WhatsApp ile çalışıyoruz.
+            </p>
+            <CalendlyButton label="Benimle Görüşün" variant="primary" />
           </div>
         </div>
       </section>
@@ -270,7 +293,7 @@ export default function AboutPage() {
 const aboutFaqs = [
   {
     q: 'Ramses Digital ne zaman kuruldu?',
-    a: 'Ramses Digital, iki mühendis kurucu tarafından 2019 yılında kuruldu. Kuruluşumuzdan bu yana 50+ proje tamamladık ve dijital pazarlamayı mühendislik disiplinine dayandıran çözümler üretiyoruz.',
+    a: 'Ramses Dijital, 2019 yılında mühendis kökenli kurucu Çağatay Durmaz tarafından kuruldu. Kuruluşumuzdan bu yana 50+ proje tamamladık ve dijital pazarlamayı mühendislik disiplinine dayandıran çözümler üretiyoruz.',
   },
   {
     q: 'Nerede konumlanıyorsunuz?',

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import KurucuKutusu from '@/components/KurucuKutusu'
 import ProjeGalerisi from '@/components/ProjeGalerisi'
 import KurumsalSeoBolumu from '@/components/KurumsalSeoBolumu'
 import RaporOrnegi from '@/components/RaporOrnegi'
@@ -303,6 +304,7 @@ export default function IstanbulSeoPage() {
 
       <SehirSeoEkBolumu sehir="istanbul" />
       <RaporOrnegi />
+      <KurucuKutusu />
       <KurumsalSeoBolumu yer="İstanbul" />
       <ProjeGalerisi baslik="SEO Çalıştığımız Sitelerden Örnekler" />
       <ReviewsMarquee />

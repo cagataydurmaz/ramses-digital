@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import KurucuKutusu from '@/components/KurucuKutusu'
 import KapakGorseli from '@/components/KapakGorseli'
 import { seoBaslik } from '@/lib/seoBaslik'
 import Link from 'next/link'
@@ -216,6 +217,7 @@ export default function SektorSayfasi({ v }: { v: SektorVeri }) {
 
       <ReviewsMarquee />
 
+      <KurucuKutusu yerel />
       <SehirTeklifBolumu place={v.teklifAd} />
 
       <RelatedPages pages={ilgili} />

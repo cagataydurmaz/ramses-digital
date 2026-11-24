@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import KurucuKutusu from '@/components/KurucuKutusu'
 import KampanyaSeridi from '@/components/KampanyaSeridi'
 import GoogleAramaAnimasyonu from '@/components/GoogleAramaAnimasyonu'
 import { HaritaTelefonBolumu } from '@/components/telefon/TelefonBolumleri'
@@ -97,6 +98,7 @@ export default function SeoHizmetPage() {
 
       <KampanyaSeridi hizmetler={['SEO', 'Web Tasarım']} basliklar={['12 ay taahhütle SEO', 'Web sitesi + aylık SEO', 'İşletme Profili', 'Referans']} />
       <HaritaTelefonBolumu />
+      <KurucuKutusu yerel />
       <KisaOzet>
         SEO, işletmenizin Google’da ücretli reklam olmadan bulunmasını sağlayan teknik, içerik ve yerel çalışmaların bütünüdür; buna yapay zekâ aramaları için GEO/AEO da dahildir. Google’a göre etkisini görmek genellikle 4 ay ile 1 yıl arasında sürer ve sıralama garanti edilemez.
       </KisaOzet>

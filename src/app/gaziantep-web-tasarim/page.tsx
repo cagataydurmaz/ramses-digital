@@ -38,7 +38,7 @@ const faqs = [
   { q: 'Tekstil ihracatçıları ve gıda üreticileri için web sitesi farklı mı?', a: 'Evet. Tekstil/halı ihracatçıları için yabancı dilde ürün kataloğu, üretim kapasitesi ve B2B iletişim formu ön planda olmalı. Baklava/gıda üreticileri için ürün galerisi, kargo/ihracat bilgisi ve toptan/perakende ayrımı kritik. Genel bir kurumsal şablon yerine sektöre özel bilgi mimarisi kuruyoruz.' },
   { q: 'Fiziksel olarak Gaziantep\'te ofisiniz var mı?', a: 'Hayır, Kocaeli kökenliyiz — Gaziantep\'e tamamen uzaktan hizmet veriyoruz. Keşif görüşmesi, tasarım onayı ve teslimat Google Meet/Zoom üzerinden yapılır. Türkiye genelinde canlı referanslarımızı portföyümüzde inceleyebilirsiniz.' },
   { q: 'Web sitem yapıldıktan sonra kim günceller?', a: 'İçerik güncellemeleri için basit panel kuruyoruz. Blog, ürün ve haber güncellemelerini kendiniz yapabilirsiniz. Tasarım ve teknik değişiklikler için aylık bakım paketi sunuyoruz. Projeyi teslim edip kaybolan bir ajans değiliz.' },
-  { q: 'Gaziantep\'teki yerleşik ajanslara kıyasla neden sizi tercih etmeliyim?', a: 'Yerleşik ajanslarda küçük/orta ölçekli projeler genellikle düşük öncelik alır, iletişim yavaşlar. Biz her projeye mühendislik disipliniyle, doğrudan kurucu ortak seviyesinde ilgi gösteriyoruz — daha hızlı iletişim, daha esnek süreç, aynı kalite.' },
+  { q: 'Gaziantep\'teki yerleşik ajanslara kıyasla neden sizi tercih etmeliyim?', a: 'Yerleşik ajanslarda küçük/orta ölçekli projeler genellikle düşük öncelik alır, iletişim yavaşlar. Biz her projeye mühendislik disipliniyle, doğrudan kurucu seviyesinde ilgi gösteriyoruz — daha hızlı iletişim, daha esnek süreç, aynı kalite.' },
   ...cityServiceFaqs('gaziantep', 'web'),
 ]
 

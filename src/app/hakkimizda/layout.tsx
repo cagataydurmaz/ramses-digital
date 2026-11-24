@@ -3,7 +3,7 @@ import { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Hakkımızda | Ramses Digital — Mühendislik Temelli Dijital Ajans',
   description:
-    '2019\'dan bu yana, bugün İzmit merkezli, iki mühendis kurucu tarafından yönetilen Ramses Digital\'in hikâyesi, değerleri ve ekibi. 50+ tamamlanan proje, 5+ yıl deneyim.',
+    '2019\'dan bu yana, bugün İzmit merkezli, kurucusu Çağatay Durmaz tarafından yönetilen Ramses Dijital\'in hikâyesi ve değerleri. 50+ tamamlanan proje, 5+ yıl deneyim.',
   openGraph: {
     title: 'Hakkımızda | Ramses Digital',
     description: 'Mühendislik disiplini ile dijital pazarlamayı birleştiren İzmit merkezli ajans. 5+ yıl deneyim, 50+ proje.',
@@ -25,28 +25,21 @@ export default function HakkimizdaLayout({ children }: { children: React.ReactNo
             name: 'Hakkımızda — Ramses Digital',
             url: 'https://ramsesdigital.com/hakkimizda',
             description:
-              '2019\'dan bu yana dijital pazarlama ajansı; bugün İzmit merkezli. İki mühendis kurucu tarafından yönetilen, veri odaklı ve şeffaf raporlayan ekip.',
+              '2019\'dan bu yana dijital pazarlama ajansı; bugün İzmit merkezli. Mühendis kökenli kurucu Çağatay Durmaz tarafından yönetilen, veri odaklı ve şeffaf raporlayan ajans.',
             mainEntity: {
               '@type': 'Organization',
               name: 'Ramses Digital',
               url: 'https://ramsesdigital.com',
               foundingDate: '2019',
               foundingLocation: 'İstanbul, Türkiye',
-              numberOfEmployees: { '@type': 'QuantitativeValue', value: 6 },
-              member: [
-                {
-                  '@type': 'Person',
-                  name: 'Çağatay Durmaz',
-                  jobTitle: 'Co-Founder & CEO',
-                  description: 'Elektrik-Elektronik Mühendisi. Dijital pazarlama stratejisi ve performans reklamcılığı uzmanı.',
-                },
-                {
-                  '@type': 'Person',
-                  name: 'Atalay Durmaz',
-                  jobTitle: 'Co-Founder & CTO',
-                  description: 'Yazılım Mühendisi ve AI uzmanı. Teknoloji altyapısı ve otomasyon sistemleri.',
-                },
-              ],
+              founder: {
+                '@type': 'Person',
+                name: 'Çağatay Durmaz',
+                jobTitle: 'Kurucu',
+                description: 'Elektrik-elektronik mühendisi. SEO, Google Ads, web tasarım ve otomasyon projeleri yürütüyor.',
+                image: 'https://ramsesdigital.com/ekip/cagatay-durmaz.webp',
+                url: 'https://ramsesdigital.com/hakkimizda',
+              },
             },
           }),
         }}

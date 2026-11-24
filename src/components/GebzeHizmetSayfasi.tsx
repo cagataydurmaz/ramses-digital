@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import KurucuKutusu from '@/components/KurucuKutusu'
 import Link from 'next/link'
 import { MapPin, ArrowRight, CheckCircle2, type LucideIcon } from 'lucide-react'
 import CalendlyButton from '@/components/CalendlyButton'
@@ -146,6 +147,7 @@ export default function GebzeHizmetSayfasi({ v }: { v: GebzeHizmetVeri }) {
 
       <ReviewsMarquee />
 
+      <KurucuKutusu yerel />
       <SehirTeklifBolumu place={yer.ad} />
 
       <RelatedPages pages={v.ilgili} />
