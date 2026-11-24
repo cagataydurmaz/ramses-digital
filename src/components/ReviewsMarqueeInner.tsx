@@ -59,14 +59,14 @@ export default function ReviewsMarqueeInner({ title = 'Müşterilerimiz Ne Diyor
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-5">
             {title}
           </h2>
-          <div className="flex items-center justify-center gap-2">
+          <div className="flex flex-wrap items-center justify-center gap-2">
             <div className="flex gap-0.5">
               {Array.from({ length: 5 }).map((_, i) => (
                 <Star key={i} size={16} className="text-yellow-400 fill-yellow-400" />
               ))}
             </div>
             <span className="text-zinc-300 text-sm">
-              Google&apos;dan müşteri yorumları
+              <strong className="text-white font-semibold">5.0/5</strong> Google puanı
             </span>
           </div>
         </div>
