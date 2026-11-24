@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { GoogleAdsVideoBolumu } from '@/components/telefon/TelefonBolumleri'
 import AjansDetayBolumu, { type AjansDetay } from '@/components/AjansDetayBolumu'
 import SiziArayalimFormu from '@/components/SiziArayalimFormu'
 import Link from 'next/link'
@@ -168,6 +169,7 @@ export default function GoogleAdsAjansiPage() {
       </section>
 
       <SiziArayalimFormu />
+      <GoogleAdsVideoBolumu />
       <RelatedPages
         pages={[
           { label: 'SEO Ajansı', href: '/seo-ajansi' },

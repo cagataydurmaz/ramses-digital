@@ -1,4 +1,5 @@
 import { MapPin, CalendarClock, Building2 } from 'lucide-react'
+import { GoogleAdsVideoBolumu, WebSitesiVideoBolumu } from '@/components/telefon/TelefonBolumleri'
 import KurucuKutusu from '@/components/KurucuKutusu'
 import { sehirHizmet, type Hizmet } from '@/lib/sehirHizmet'
 
@@ -84,6 +85,8 @@ export default function CityServiceSections({ city, hizmet }: { city: string; hi
         )}
       </div>
     </section>
+    {hizmet === 'ads' && <GoogleAdsVideoBolumu />}
+    {hizmet === 'web' && <WebSitesiVideoBolumu />}
     <KurucuKutusu yerel={['kocaeli', 'izmit'].includes(city)} />
     </>
   )

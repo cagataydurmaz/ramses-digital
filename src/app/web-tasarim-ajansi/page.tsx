@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { WebSitesiTelefonBolumu } from '@/components/telefon/TelefonBolumleri'
+import { WebSitesiTelefonBolumu, WebSitesiVideoBolumu } from '@/components/telefon/TelefonBolumleri'
 import ProjeGalerisi from '@/components/ProjeGalerisi'
 import AjansDetayBolumu, { type AjansDetay } from '@/components/AjansDetayBolumu'
 import SiziArayalimFormu from '@/components/SiziArayalimFormu'
@@ -183,6 +183,7 @@ export default function WebTasarimAjansiPage() {
       </section>
 
       <SiziArayalimFormu />
+      <WebSitesiVideoBolumu />
       <RelatedPages
         pages={[
           { label: 'SEO Ajansı', href: '/seo-ajansi' },

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { ChatGptVideoBolumu } from '@/components/telefon/TelefonBolumleri'
 import Link from 'next/link'
 import CalendlyButton from '@/components/CalendlyButton'
 import RelatedPages from '@/components/RelatedPages'
@@ -160,6 +161,7 @@ export default function Page() {
         </div>
       </section>
 
+      <ChatGptVideoBolumu />
       <RelatedPages
         pages={[
           { label: 'GEO Ajansı', href: '/geo-ajansi' },

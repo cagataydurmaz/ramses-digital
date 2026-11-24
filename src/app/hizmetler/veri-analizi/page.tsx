@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { RaporVideoBolumu } from '@/components/telefon/TelefonBolumleri'
 import KurucuKutusu from '@/components/KurucuKutusu'
 import RaporTelefon from '@/components/telefon/RaporTelefon'
 import KapakGorseli from '@/components/KapakGorseli'
@@ -172,6 +173,7 @@ export default function VeriAnaliziPage() {
           </div>
         </div>
       </section>
+      <RaporVideoBolumu ters />
       <KurucuKutusu yerel />
       <KisaOzet>
         GA4, Search Console ve reklam verilerinizi tek panelde toplayıp hangi kanalın gerçekten müşteri getirdiğini görünür kılıyoruz. Doğru ölçüm kurulmadan yapılan pazarlama tahmine dayanır; ilk adım takip altyapısıdır.

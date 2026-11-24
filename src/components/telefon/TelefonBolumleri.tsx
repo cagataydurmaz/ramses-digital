@@ -82,3 +82,59 @@ export function SeoVideoBolumu({ ters = false }: { ters?: boolean }) {
     </TelefonBolumu>
   )
 }
+
+export function GoogleAdsVideoBolumu({ ters = false }: { ters?: boolean }) {
+  return (
+    <TelefonBolumu
+      ters={ters}
+      ust="25 saniyede Google Ads"
+      baslik="Reklam Bütçeniz Neden Boşa Gidebilir?"
+      metin="Reklama gelen her tıklama müşteri değildir. Doğru anahtar kelimeler, gereksiz aramaların engellenmesi ve gelen taleplerin ölçülmesi bütçenizi korur."
+      maddeler={['Satın alma niyeti olan aramalar', 'İş ilanı ve alakasız aramaların engellenmesi', 'Telefon, WhatsApp ve form taleplerinin ölçülmesi']}
+    >
+      <BilgiVideosu ad="google-ads" baslik="Google Ads bütçeniz neden boşa gidiyor? (kısa video)" />
+    </TelefonBolumu>
+  )
+}
+
+export function WebSitesiVideoBolumu({ ters = false }: { ters?: boolean }) {
+  return (
+    <TelefonBolumu
+      ters={ters}
+      ust="30 saniyede web sitesi"
+      baslik="Web Sitesi Yaptırmadan Önce 5 Soru"
+      metin="Teklif alırken sorulacak beş soru, ileride yaşanabilecek pek çok sorunu baştan önler."
+      maddeler={['Alan adı sizin adınıza mı?', 'Site telefonda hızlı açılıyor mu?', 'SEO altyapısı fiyata dahil mi?', 'Talepler ölçülecek mi, canlı örnek var mı?']}
+    >
+      <BilgiVideosu ad="web-sitesi-5-soru" baslik="Web sitesi yaptırmadan önce 5 soru (kısa video)" />
+    </TelefonBolumu>
+  )
+}
+
+export function ChatGptVideoBolumu({ ters = false }: { ters?: boolean }) {
+  return (
+    <TelefonBolumu
+      ters={ters}
+      ust="30 saniyede GEO"
+      baslik="ChatGPT İşletmenizi Önerir mi?"
+      metin="Müşteriler artık yapay zekâ araçlarına da soruyor. Yapay zekâ, bilgisi net ve tutarlı olan, güvendiği kaynakları önerir; sonuç garanti edilemez."
+      maddeler={['Müşterinin sorularına net cevap veren içerikler', 'Her yerde aynı işletme bilgileri', 'Google’da güncel ve yanıtlanmış yorumlar']}
+    >
+      <BilgiVideosu ad="chatgpt-oneri" baslik="ChatGPT işletmenizi önerir mi? (kısa video)" />
+    </TelefonBolumu>
+  )
+}
+
+export function RaporVideoBolumu({ ters = false }: { ters?: boolean }) {
+  return (
+    <TelefonBolumu
+      ters={ters}
+      ust="25 saniyede aylık rapor"
+      baslik="Her Ay Ne Görürsünüz?"
+      metin="Bizimle çalıştığınızda her ay sade ve anlaşılır bir rapor alırsınız; neyin işe yaradığını açıkça görürsünüz."
+      maddeler={['Google’daki görünürlük', 'Telefon, WhatsApp ve form talepleri', 'O ay yapılan çalışmalar ve gelecek ayın planı']}
+    >
+      <BilgiVideosu ad="aylik-rapor" baslik="Aylık raporda neler görürsünüz? (kısa video)" />
+    </TelefonBolumu>
+  )
+}

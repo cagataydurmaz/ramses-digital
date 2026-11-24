@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import KurucuKutusu from '@/components/KurucuKutusu'
 import KampanyaSeridi from '@/components/KampanyaSeridi'
 import SiteKaydirmaTelefon from '@/components/telefon/SiteKaydirmaTelefon'
-import { WhatsAppTelefonBolumu, ChatbotTelefonBolumu } from '@/components/telefon/TelefonBolumleri'
+import { WhatsAppTelefonBolumu, ChatbotTelefonBolumu, WebSitesiVideoBolumu } from '@/components/telefon/TelefonBolumleri'
 import KapakGorseli from '@/components/KapakGorseli'
 import KisaOzet from '@/components/KisaOzet'
 import Link from 'next/link'
@@ -99,6 +99,7 @@ export default function WebTasarimHizmetPage() {
       <KampanyaSeridi hizmetler={['Web Tasarım', 'SEO']} basliklar={['barındırma', 'taşıma', 'Web sitesi + aylık SEO', 'Peşin']} />
       <WhatsAppTelefonBolumu ters />
       <ChatbotTelefonBolumu />
+      <WebSitesiVideoBolumu ters />
       <KurucuKutusu yerel />
       <KisaOzet>
         Hızlı açılan, mobilde rahat kullanılan ve ziyaretçiyi aramaya ya da mesaja yönlendiren web siteleri tasarlıyoruz. Siteler SEO uyumlu altyapıyla kurulur; böylece sonradan Google görünürlüğü için baştan yapılması gerekmez.
