@@ -1,6 +1,7 @@
 'use client'
 import { useEffect, useRef, useState } from 'react'
 import { Volume2, VolumeX } from 'lucide-react'
+import { trackEvent } from '@/lib/tracking'
 
 // Dikey bilgilendirici video (telefon çerçevesinde). Ekrana gelince sessiz oynar,
 // dosya ancak görünür olunca yüklenir; "Sesi aç" ile kurucunun anlatımı duyulur.
@@ -9,12 +10,17 @@ export default function BilgiVideosu({ ad, baslik }: { ad: string; baslik: strin
   const video = useRef<HTMLVideoElement>(null)
   const [yukle, setYukle] = useState(false)
   const [sesli, setSesli] = useState(false)
+  const izlendi = useRef(false)
 
   useEffect(() => {
     const el = kutu.current
     if (!el) return
     const io = new IntersectionObserver(
       ([e]) => {
+        if (e.isIntersecting && !izlendi.current) {
+          izlendi.current = true
+          trackEvent('video_goruntulendi', { video: ad })
+        }
         if (e.isIntersecting) setYukle(true)
         const v = video.current
         if (!v) return
@@ -33,6 +39,7 @@ export default function BilgiVideosu({ ad, baslik }: { ad: string; baslik: strin
     const yeni = !sesli
     v.muted = !yeni
     if (yeni) {
+      trackEvent('video_sesi_acildi', { video: ad })
       v.currentTime = 0
       v.play().catch(() => {})
     }
