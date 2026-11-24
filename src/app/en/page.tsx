@@ -114,7 +114,7 @@ const stats = [
   { icon: Trophy, value: '50+', label: 'Successful Projects', color: 'text-blue-400', bg: 'bg-blue-500/10' },
   { icon: Users, value: '50+', label: 'Happy Clients', color: 'text-violet-400', bg: 'bg-violet-500/10' },
   { icon: Clock, value: '5+', label: 'Years of Experience', color: 'text-emerald-400', bg: 'bg-emerald-500/10' },
-  { icon: ThumbsUp, value: '94%', label: 'Client Satisfaction', color: 'text-fuchsia-400', bg: 'bg-fuchsia-500/10' },
+  { icon: ThumbsUp, value: '96%', label: 'Client Satisfaction', color: 'text-fuchsia-400', bg: 'bg-fuchsia-500/10' },
 ]
 
 export default function EnglishHomePage() {

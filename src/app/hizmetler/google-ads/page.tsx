@@ -85,7 +85,7 @@ export default function GoogleAdsHizmetPage() {
       <section className="py-12 px-6 border-y border-white/[0.04]">
         <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
           <div><div className="text-3xl md:text-4xl font-bold text-white">50+</div><div className="text-zinc-400 text-sm mt-1">Tamamlanan Proje</div></div>
-          <div><div className="text-3xl md:text-4xl font-bold text-white">%94</div><div className="text-zinc-400 text-sm mt-1">Müşteri Memnuniyeti</div></div>
+          <div><div className="text-3xl md:text-4xl font-bold text-white">%96</div><div className="text-zinc-400 text-sm mt-1">Müşteri Memnuniyeti</div></div>
           <div><div className="text-3xl md:text-4xl font-bold text-white">Aylık</div><div className="text-zinc-400 text-sm mt-1">Şeffaf Rapor</div></div>
           <div><div className="text-3xl md:text-4xl font-bold text-white">5.0/5</div><div className="text-zinc-400 text-sm mt-1">Google Puanı</div></div>
         </div>

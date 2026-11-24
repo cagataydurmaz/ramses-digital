@@ -11,7 +11,7 @@ Türkçe dijital pazarlama ajansı sitesi. Next.js 14 App Router + Tailwind + Ty
 ## Kesin kurallar (kullanıcı kararları)
 - **Tasarım/renk değişikliği önce onay.** Hero'ya dokunma. Yeni sayfalar mevcut bileşen ve sınıflarla yapılır.
 - **Sitede açık fiyat yok** (₺ rakamı yazma). Fiyat için AI teklif hesaplayıcı: `SehirTeklifBolumu` / `/teklif-al`. Fiyat verisi sadece `src/lib/pricing.ts` (hesaplayıcı kullanır).
-- **Uydurma yok:** istatistik, müşteri sonucu, sıralama garantisi, "orada ofisimiz var" yazma. Doğrulanmış: 50+ proje, 50+ müşteri, 5+ yıl, %94 memnuniyet, Google 5.0/5 (yorum sayısı yazılmaz). Ofis: İzmit (Kocaeli'de "yüz yüze görüşebiliriz" denebilir; diğer illerde "uzaktan").
+- **Uydurma yok:** istatistik, müşteri sonucu, sıralama garantisi, "orada ofisimiz var" yazma. Doğrulanmış: 50+ proje, 50+ müşteri, 5+ yıl, %96 memnuniyet, Google 5.0/5 (yorum sayısı yazılmaz). Ofis: İzmit (Kocaeli'de "yüz yüze görüşebiliriz" denebilir; diğer illerde "uzaktan").
 - Avukat, eczane gibi reklam yasağı olan mesleklerde Google Ads önerilmez. Sağlıkta mevzuata uygun, iddiasız dil.
 - Başka sitelerden metin kopyalanmaz (fikir/yapı serbest).
 - Formlarda "Ortalama 2 saat içinde dönüş yapıyoruz" notu onaylı.

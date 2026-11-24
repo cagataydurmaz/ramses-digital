@@ -90,7 +90,7 @@ export default function WebTasarimHizmetPage() {
         <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
           <div><div className="text-3xl md:text-4xl font-bold text-white">95+</div><div className="text-zinc-400 text-sm mt-1">Hedef Lighthouse Skoru</div></div>
           <div><div className="text-3xl md:text-4xl font-bold text-white">&lt;2s</div><div className="text-zinc-400 text-sm mt-1">Hedef Açılış Süresi</div></div>
-          <div><div className="text-3xl md:text-4xl font-bold text-white">%94</div><div className="text-zinc-400 text-sm mt-1">Müşteri Memnuniyeti</div></div>
+          <div><div className="text-3xl md:text-4xl font-bold text-white">%96</div><div className="text-zinc-400 text-sm mt-1">Müşteri Memnuniyeti</div></div>
           <div><div className="text-3xl md:text-4xl font-bold text-white">3-5 hf</div><div className="text-zinc-400 text-sm mt-1">Ortalama Teslim</div></div>
         </div>
       </section>

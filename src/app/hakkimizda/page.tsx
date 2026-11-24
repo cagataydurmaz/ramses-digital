@@ -109,7 +109,7 @@ export default function AboutPage() {
                 { icon: Users, label: '50+ Mutlu Müşteri', value: 'Global & Yerel' },
                 { icon: Award, label: '50+ Tamamlanan Proje', value: 'Her Sektörden' },
                 { icon: Globe, label: '5+ Yıl Deneyim', value: 'Sürekli Gelişim' },
-                { icon: Target, label: '%94 Memnuniyet', value: 'Gerçek Sonuçlar' },
+                { icon: Target, label: '%96 Memnuniyet', value: 'Gerçek Sonuçlar' },
               ].map((item) => {
                 const Icon = item.icon
                 return (
