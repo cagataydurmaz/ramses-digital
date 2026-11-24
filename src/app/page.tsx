@@ -9,6 +9,8 @@ import FeaturedWork from '@/components/FeaturedWork'
 import AnaSayfaSss from '@/components/AnaSayfaSss'
 import AnaSayfaSektorAraclar from '@/components/AnaSayfaSektorAraclar'
 import MarkaSeridi from '@/components/MarkaSeridi'
+import SurecCizgisi from '@/components/SurecCizgisi'
+import GoogleOnizleme from '@/components/GoogleOnizleme'
 import GoogleAramaAnimasyonu from '@/components/GoogleAramaAnimasyonu'
 import ArkaPlanVideo from '@/components/ArkaPlanVideo'
 import { WebSitesiTelefonBolumu, WhatsAppTelefonBolumu, ChatbotTelefonBolumu } from '@/components/telefon/TelefonBolumleri'
@@ -574,25 +576,7 @@ export default function HomePage() {
             </h2>
             <p className="text-zinc-400 max-w-xl mx-auto">Kapsam, süre ve ücret çalışmaya başlamadan önce yazılı olarak netleşir.</p>
           </FadeIn>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
-            {surecAdimlari.map((a, i) => {
-              const Icon = a.icon
-              return (
-                <FadeIn key={a.baslik} delay={i * 0.08}>
-                  <div className="h-full bg-white/[0.02] border border-white/[0.14] rounded-2xl p-6 card-hover">
-                    <div className="flex items-center justify-between mb-4">
-                      <div className="w-10 h-10 rounded-xl bg-blue-500/10 flex items-center justify-center">
-                        <Icon size={18} className="text-blue-400" />
-                      </div>
-                      <span className="text-3xl font-bold text-white/10">{i + 1}</span>
-                    </div>
-                    <h3 className="text-white font-semibold text-lg mb-2">{a.baslik}</h3>
-                    <p className="text-zinc-400 text-sm leading-relaxed">{a.aciklama}</p>
-                  </div>
-                </FadeIn>
-              )
-            })}
-          </div>
+          <SurecCizgisi adimlar={surecAdimlari} />
         </div>
       </section>
 
@@ -642,6 +626,18 @@ export default function HomePage() {
             </FadeIn>
           </div>
           </div>
+        </div>
+      </section>
+
+      {/* ── CANLI GOOGLE ÖNİZLEMESİ (etkileşimli) ──────────────────────────── */}
+      <section aria-labelledby="google-onizleme" className="py-12 sm:py-16 px-6">
+        <div className="max-w-5xl mx-auto">
+          <FadeIn className="text-center mb-10">
+            <p className="text-blue-500 text-sm font-medium tracking-wider uppercase mb-3">Deneyin</p>
+            <h2 id="google-onizleme" className="text-3xl sm:text-4xl font-bold text-white mb-4">İşletmeniz Google&apos;da Nasıl Görünür?</h2>
+            <p className="text-zinc-400 max-w-xl mx-auto">İşletmenizin adını yazın, müşterinin aramada göreceği görünümü anında izleyin.</p>
+          </FadeIn>
+          <GoogleOnizleme />
         </div>
       </section>
 

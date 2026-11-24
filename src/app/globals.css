@@ -439,3 +439,10 @@ html { -webkit-text-size-adjust: 100%; text-rendering: optimizeLegibility; }
 @media (max-width: 767px) {
   body { padding-bottom: calc(3.75rem + env(safe-area-inset-bottom)); }
 }
+
+/* Google önizleme: yazdıkça başlık yumuşakça belirir, harita iğnesi hafif zıplar */
+@keyframes onizleme-yaz { from { opacity: 0.35; transform: translateY(2px); } to { opacity: 1; transform: none; } }
+.onizleme-yaz { animation: onizleme-yaz 0.35s ease-out; }
+@keyframes onizleme-pin { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+.onizleme-pin { animation: onizleme-pin 2.2s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) { .onizleme-yaz, .onizleme-pin { animation: none; } }
