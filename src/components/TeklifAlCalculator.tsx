@@ -23,9 +23,10 @@ import {
   Landmark,
   MessageCircle,
   AlertTriangle,
+  Gift,
 } from 'lucide-react'
 import CalendlyButton from '@/components/CalendlyButton'
-import { estimateQuote, businessSizeLabels, pricing, type BusinessSize } from '@/lib/pricing'
+import { estimateQuote, businessSizeLabels, pricing, kampanyalar, type BusinessSize } from '@/lib/pricing'
 import { waMesaj, waLink } from '@/lib/whatsapp'
 
 const WHATSAPP_NUMBER = '905355601936'
@@ -294,6 +295,7 @@ export default function TeklifAlCalculator() {
           `Hizmetler: ${displayServices.join(', ')}`,
           websiteUrl && `Web sitem: ${websiteUrl}`,
           priceText && `Hesaplayıcının tahmini: ${priceText.trim()}`,
+          businessSize && `Kampanyalar: ${kampanyalar(effectiveServices, businessSize).map((k) => k.baslik).join(' · ')}`,
         ],
         'Teklifi detaylı konuşmak istiyorum.',
       ),
@@ -639,6 +641,32 @@ export default function TeklifAlCalculator() {
                             {est.unpriced.join(', ')} kapsamı projeye göre değiştiği için görüşmede netleştirilir.
                           </p>
                         )}
+
+                        {/* Kampanyalar — seçilen hizmetlere göre */}
+                        {(() => {
+                          const kl = kampanyalar(effectiveServices, businessSize)
+                          if (!kl.length) return null
+                          return (
+                            <div className="mt-5 pt-5 border-t border-white/[0.08]">
+                              <p className="text-emerald-400 text-xs font-medium uppercase tracking-wider mb-3 flex items-center gap-1.5">
+                                <Gift size={13} /> Size Uygun Kampanyalar
+                              </p>
+                              <div className="grid sm:grid-cols-2 gap-3">
+                                {kl.map((k) => (
+                                  <div key={k.baslik} className="bg-emerald-500/[0.07] border border-emerald-500/25 rounded-xl p-3.5">
+                                    <p className="text-white text-sm font-semibold mb-1">{k.baslik}</p>
+                                    <p className="text-zinc-400 text-xs leading-relaxed">{k.detay}</p>
+                                    {k.indirimli && (
+                                      <p className="text-emerald-300 text-xs font-semibold mt-2">
+                                        İndirimli: {fmt(k.indirimli.min)}–{fmt(k.indirimli.max)}₺{k.indirimli.birim}
+                                      </p>
+                                    )}
+                                  </div>
+                                ))}
+                              </div>
+                            </div>
+                          )
+                        })()}
 
                         {/* Bu fiyata dahil olanlar — karşılığı görünür olsun */}
                         {effectiveServices.some((s) => serviceIncludes[s]) && (

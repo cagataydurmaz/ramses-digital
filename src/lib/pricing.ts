@@ -106,3 +106,46 @@ export function estimateQuote(services: string[], size: BusinessSize): QuoteEsti
 
   return { monthlyMin, monthlyMax, oneTimeMin, oneTimeMax, hasAdSpendShare, unpriced }
 }
+
+// ─── Kampanyalar (kullanıcı onaylı, 24 Kasım 2026) ──────────────────────────
+// Hesaplayıcıda seçilen hizmetlere göre gösterilir. Yeni kampanya eklemeden önce
+// işletme sahibinin onayı alınmalı (sitede doğrulanmamış vaat olmaz).
+export interface Kampanya {
+  baslik: string
+  detay: string
+  // Aylık ücrete uygulanan indirimli aralık (varsa)
+  indirimli?: { min: number; max: number; birim: string }
+}
+
+const yuvarla = (n: number) => Math.round(n / 100) * 100
+
+export function kampanyalar(services: string[], size: BusinessSize): Kampanya[] {
+  const liste: Kampanya[] = []
+  const seo = pricing['SEO'][size]
+  const ads = pricing['Google Ads'][size]
+  if (services.includes('SEO')) {
+    liste.push({
+      baslik: '12 aylık SEO’da %15 indirim',
+      detay: 'SEO kalıcı sonuç için zaman ister; 12 aylık sözleşmede aylık ücrete %15 indirim uygulanır.',
+      indirimli: { min: yuvarla(seo.min * 0.85), max: yuvarla(seo.max * 0.85), birim: '/ay' },
+    })
+  }
+  if (services.includes('Google Ads')) {
+    liste.push({
+      baslik: '6 ay ve üzeri Google Ads’te %10 indirim',
+      detay: '6 ay veya daha uzun çalışmada sabit aylık yönetim ücretine %10 indirim uygulanır.',
+      indirimli: { min: yuvarla(ads.min * 0.9), max: yuvarla(ads.max * 0.9), birim: '/ay' },
+    })
+  }
+  if (services.includes('Web Tasarım')) {
+    liste.push({
+      baslik: 'Web sitesinde ilk yıl barındırma ücretsiz',
+      detay: 'İlk yıl barındırma (hosting) bizden; ayrıca 30 gün ücretsiz destek ve siteyi kendiniz güncelleyebilmeniz için 1 saatlik eğitim videosu.',
+    })
+  }
+  liste.push({
+    baslik: 'Referansla gelene %10 indirim',
+    detay: 'Bir müşterimizin tavsiyesiyle geldiyseniz toplam tutarda %10 referans indirimi uygulanır; görüşmede belirtmeniz yeterli.',
+  })
+  return liste
+}
