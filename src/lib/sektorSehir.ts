@@ -29,6 +29,12 @@ export const ssMeslekler: MeslekBilgi[] = [
   { key: 'psikolog', sektorSlug: 'psikolog-terapistler', ad: 'Psikolog', baslik: 'Psikolog SEO' },
   { key: 'veteriner', sektorSlug: 'veteriner-klinikleri', ad: 'Veteriner', baslik: 'Veteriner SEO' },
   { key: 'mali-musavir', sektorSlug: 'mali-musavirler', ad: 'Mali Müşavir', baslik: 'Mali Müşavir SEO' },
+  // Yalnızca içeriği yazılmış şehirlerde sayfa üretir (şu an Kocaeli)
+  { key: 'guzellik-merkezi', sektorSlug: 'guzellik-merkezleri', ad: 'Güzellik Merkezi', baslik: 'Güzellik Merkezi SEO' },
+  { key: 'emlak', sektorSlug: 'emlak-ofisleri', ad: 'Emlak Ofisi', baslik: 'Emlak SEO' },
+  { key: 'oto-servis', sektorSlug: 'oto-servis', ad: 'Oto Servis', baslik: 'Oto Servis SEO' },
+  { key: 'restoran', sektorSlug: 'restoran-kafe', ad: 'Restoran', baslik: 'Restoran ve Kafe SEO' },
+  { key: 'ozel-hastane', sektorSlug: 'ozel-hastane-poliklinik', ad: 'Özel Hastane', baslik: 'Özel Hastane SEO' },
 ]
 
 const icerik: Record<string, SektorSehirIcerik> = {
@@ -416,10 +422,86 @@ const icerik: Record<string, SektorSehirIcerik> = {
       { q: 'Bursa dışından çalışmanız sorun olur mu?', a: 'Hayır. Tüm süreç video görüşme ve WhatsApp ile yürür; içerik onayı ve raporlama çevrim içi yapılır.' },
     ],
   },
+  // ───────── KOCAELİ: EK SEKTÖRLER ─────────
+  'kocaeli-guzellik-merkezi': {
+    vurgu: 'Randevu Getiren Site ve Harita Görünürlüğü',
+    kisaOzet: "Kocaeli'de güzellik merkezi arayanlar çoğunlukla 'ilçe + işlem' diye arar: 'izmit cilt bakımı', 'gebze lazer epilasyon' gibi. İzmit merkezli ekibimizle işlem sayfaları, Google İşletme Profili ve online randevuya yönlendiren bir site kuruyoruz; gerektiğinde yüz yüze görüşebiliriz. Sonuç vaadi içeren dil kullanmıyoruz.",
+    yerelBaslik: 'İlçe yakınlığı ve gerçek fotoğraf belirleyici',
+    yerelMetin: "Güzellik hizmetlerinde müşteri evine veya işine yakın merkezi tercih eder; bu yüzden Kocaeli'de aramalar il adıyla değil İzmit, Gebze, Darıca ve Kartepe gibi ilçe adlarıyla yapılır. Merkezin gerçek fotoğrafları, uzman bilgisi, hijyen ve randevu kolaylığı karar vermede öne çıkar. Estetik içerikli işlemlerde mevzuat gereği önce-sonra görselleri ve kesin sonuç vaadi kullanılmamalıdır.",
+    tablo: [
+      { bolge: 'İzmit merkez', arama: 'izmit cilt bakımı', oneri: 'İşlem başına sayfa, süre ve hazırlık bilgisi, online randevu.' },
+      { bolge: 'Gebze / Darıca / Çayırova', arama: 'gebze lazer epilasyon', oneri: 'Paket bilgisi (fiyatsız), sık sorulan sorular, WhatsApp randevu.' },
+      { bolge: 'Kartepe / Başiskele', arama: 'kartepe kuaför', oneri: 'Eksiksiz Google İşletme Profili ve gerçek fotoğraflar.' },
+    ],
+    sss: [
+      { q: 'Kocaeli için yüz yüze çalışabiliyor musunuz?', a: "Evet. İzmit merkezli bir ekibiz; Kocaeli'deki güzellik merkezleriyle gerektiğinde yüz yüze görüşüp fotoğraf ve içerik sürecini birlikte planlayabiliyoruz." },
+      { q: 'Güzellik merkezi sitesinde önce-sonra fotoğrafı kullanılabilir mi?', a: 'Estetik ve sağlıkla ilişkili işlemlerde önce-sonra görselleri ve kesin sonuç vaadi mevzuat açısından risklidir. İşlemi, süreci ve merkezinizi anlatan gerçek fotoğraflar daha güvenli bir yoldur.' },
+    ],
+  },
+  'kocaeli-emlak': {
+    vurgu: 'İlan, Bölge Rehberi ve Yerel Görünürlük',
+    kisaOzet: "Kocaeli'de emlak aramaları ilçe ve semt düzeyinde yapılır: 'kartepe satılık villa', 'gebze kiralık daire' gibi. İzmit merkezli ekibimizle ilan sayfaları, bölge rehberleri ve Google İşletme Profili ile ofisinizin bu aramalarda görünmesini sağlıyoruz; gerektiğinde yüz yüze görüşebiliriz.",
+    yerelBaslik: 'Sanayi, yeni konut ve yazlık: üç ayrı emlak pazarı',
+    yerelMetin: "Kocaeli'de emlak talebi üç farklı kaynaktan gelir: Gebze, Çayırova ve Dilovası çevresinde sanayi çalışanlarının kiralık arayışı; Kartepe ve Başiskele'de yeni konut ve villa projeleri; Gölcük, Karamürsel ve Kandıra'da yazlık talebi. Her biri için ayrı bölge rehberi ve ilan sayfası, ziyaretçinin aradığı bilgiyi doğrudan bulmasını sağlar.",
+    tablo: [
+      { bolge: 'Gebze / Çayırova / Darıca', arama: 'gebze kiralık daire', oneri: 'Ulaşım ve sanayi bölgelerine mesafe bilgili kiralık ilan sayfaları.' },
+      { bolge: 'Kartepe / Başiskele', arama: 'kartepe satılık villa', oneri: 'Bölge rehberi, proje sayfaları ve fotoğraf galerisi.' },
+      { bolge: 'Gölcük / Karamürsel / Kandıra', arama: 'karamürsel satılık yazlık', oneri: 'Sezona göre güncellenen yazlık ilanları ve plaj mesafesi.' },
+    ],
+    sss: [
+      { q: 'Kocaeli için yüz yüze çalışabiliyor musunuz?', a: "Evet. İzmit merkezli bir ekibiz; Kocaeli'deki emlak ofisleriyle gerektiğinde yüz yüze görüşebiliyoruz." },
+      { q: 'İlanlar zaten portallarda var, ayrıca site gerekir mi?', a: 'Portallar ilan görünürlüğü sağlar ama ofisinizi markalaştırmaz. Bölge rehberleri ve kendi ilan sayfalarınız, "ilçe + emlak" aramalarında ofisinizin adıyla görünmenizi ve doğrudan iletişim almanızı sağlar.' },
+    ],
+  },
+  'kocaeli-oto-servis': {
+    vurgu: 'Sanayi Bölgesinden Mahalleye Servis Aramaları',
+    kisaOzet: "Kocaeli'de oto servis arayanlar çoğunlukla acil ve telefondan arar: 'izmit oto elektrik', 'gebze ağır vasıta servisi' gibi. İzmit merkezli ekibimizle hizmet sayfaları, Google İşletme Profili ve tek dokunuşla arama düğmesi olan hızlı bir site kuruyoruz; gerektiğinde yüz yüze görüşebiliriz.",
+    yerelBaslik: 'Filo, ağır vasıta ve bireysel araç aramaları',
+    yerelMetin: "Kocaeli'de çok sayıda fabrika, lojistik firması ve otomotiv tedarikçisi bulunduğu için filo bakımı ve ağır vasıta servisi aramaları diğer illere göre daha belirgindir. İzmit ve ilçe merkezlerinde ise bireysel araç sahipleri bakım, oto elektrik ve kaporta için yakınındaki servisi arar. Markanın yetkili servisi değilseniz 'yetkili servis' ifadesi yerine 'özel servis' kullanılmalıdır.",
+    tablo: [
+      { bolge: 'Gebze / Çayırova / Dilovası', arama: 'gebze ağır vasıta servisi', oneri: 'Filo ve ağır vasıta hizmet sayfası, kurumsal teklif formu.' },
+      { bolge: 'İzmit merkez ve sanayi siteleri', arama: 'izmit oto elektrik', oneri: 'Hizmet başına sayfa, çalışma saatleri, tek dokunuşla arama.' },
+      { bolge: 'Körfez / Derince', arama: 'körfez tır servisi', oneri: 'Liman ve lojistik çevresine yönelik hizmet sayfası.' },
+    ],
+    sss: [
+      { q: 'Kocaeli için yüz yüze çalışabiliyor musunuz?', a: "Evet. İzmit merkezli bir ekibiz; Kocaeli'deki servislerle gerektiğinde yüz yüze görüşebiliyoruz." },
+      { q: 'Oto servis için Google Ads mi SEO mu?', a: 'Acil aramalarda bölgeyle sınırlı, küçük bütçeli Google Ads hızlı talep getirebilir; SEO ve Google İşletme Profili ise kalıcı görünürlük sağlar. Çoğu servis için ikisinin birlikte kullanılması verimlidir.' },
+    ],
+  },
+  'kocaeli-restoran': {
+    vurgu: 'Menü, Rezervasyon ve Harita Görünürlüğü',
+    kisaOzet: "Kocaeli'de restoran ve kafe aramaları konum ve fırsat odaklıdır: 'izmit sahil kahvaltı', 'maşukiye restoran' gibi. İzmit merkezli ekibimizle menü ve rezervasyon sayfası, Google İşletme Profili ve fotoğraf düzeniyle işletmenizin bu aramalarda öne çıkmasını sağlıyoruz; gerektiğinde yüz yüze görüşebiliriz.",
+    yerelBaslik: 'Şehir merkezi, doğa turizmi ve sahil',
+    yerelMetin: "Kocaeli'de yeme-içme talebi bölgeye göre değişir: İzmit sahili ve merkezinde iş çıkışı ve hafta sonu aramaları, Kartepe ve Maşukiye'de İstanbul'dan gelen hafta sonu ziyaretçileri, Karamürsel ve Kandıra kıyılarında ise yaz sezonu. Güncel menü, gerçek fotoğraflar, çalışma saatleri ve kolay rezervasyon bu aramalarda belirleyicidir.",
+    tablo: [
+      { bolge: 'İzmit sahil ve merkez', arama: 'izmit kahvaltı mekanları', oneri: 'Menü sayfası, fotoğraflar, rezervasyon ve yol tarifi.' },
+      { bolge: 'Kartepe / Maşukiye', arama: 'maşukiye restoran', oneri: 'Hafta sonu yoğunluğu, rezervasyon ve İstanbul’dan ulaşım bilgisi.' },
+      { bolge: 'Karamürsel / Kandıra (Kerpe, Kefken)', arama: 'kerpe balık restoranı', oneri: 'Sezon saatleri ve güncel menü; harita fotoğrafları.' },
+    ],
+    sss: [
+      { q: 'Kocaeli için yüz yüze çalışabiliyor musunuz?', a: "Evet. İzmit merkezli bir ekibiz; Kocaeli'deki restoran ve kafelerle gerektiğinde yüz yüze görüşüp fotoğraf çekimini birlikte planlayabiliyoruz." },
+      { q: 'Restoran için web sitesi gerçekten gerekli mi, Instagram yetmez mi?', a: "Instagram keşif için güçlüdür ama 'ilçe + kahvaltı/restoran' aramaları Google'da yapılır. Hızlı bir menü sayfası ve eksiksiz Google İşletme Profili bu aramalarda görünmenizi sağlar." },
+    ],
+  },
+  'kocaeli-ozel-hastane': {
+    vurgu: 'Branş Sayfaları ve Mevzuata Uygun Görünürlük',
+    kisaOzet: "Kocaeli'de hastalar özel hastane ve polikliniği çoğunlukla 'ilçe + branş' diye arar: 'gebze kardiyoloji', 'izmit çocuk doktoru' gibi. İzmit merkezli ekibimizle branş ve hekim sayfaları, Google İşletme Profili ve randevuya yönlendiren hızlı bir site kuruyoruz; sağlık tanıtım mevzuatına uygun, iddiasız dil kullanıyoruz.",
+    yerelBaslik: 'Kalabalık ilçeler ve branş bazlı aramalar',
+    yerelMetin: "Kocaeli'nin en kalabalık ilçeleri olan İzmit ve Gebze'de branş bazlı aramalar yoğundur; Darıca, Çayırova ve Körfez'den gelen hastalar da genellikle en yakın merkezi arar. Branş ve hekim sayfaları, anlaşmalı kurumlar ve randevu bilgisi net olduğunda hasta doğru sayfaya ulaşır. Sağlık kuruluşlarında tanıtım, Sağlık Bakanlığı mevzuatıyla sınırlıdır; yönlendirici ve iddialı ifadeler kullanılmamalıdır.",
+    tablo: [
+      { bolge: 'İzmit merkez', arama: 'izmit çocuk doktoru', oneri: 'Branş ve hekim sayfaları, randevu ve çalışma saatleri.' },
+      { bolge: 'Gebze / Darıca / Çayırova', arama: 'gebze kardiyoloji', oneri: 'Branş sayfası, anlaşmalı kurumlar ve ulaşım bilgisi.' },
+      { bolge: 'Körfez / Derince / Gölcük', arama: 'gölcük poliklinik', oneri: 'Eksiksiz harita kaydı ve kısa branş listesi.' },
+    ],
+    sss: [
+      { q: 'Kocaeli için yüz yüze çalışabiliyor musunuz?', a: "Evet. İzmit merkezli bir ekibiz; Kocaeli'deki sağlık kuruluşlarıyla gerektiğinde yüz yüze görüşebiliyoruz." },
+      { q: 'Özel hastane sitesinde nelere dikkat edilmeli?', a: 'Hekim ve branş bilgisi, anlaşmalı kurumlar, randevu yolu ve iletişim net olmalı. Tedavi sonucu vaadi, karşılaştırma ve yönlendirici ifadeler mevzuat gereği kullanılmamalıdır.' },
+    ],
+  },
 }
 
 export const sektorSehir: SektorSehirVeri[] = ssMeslekler.flatMap((meslek) =>
-  ssSehirler.map((sehir) => ({
+  ssSehirler.filter((sehir) => icerik[`${sehir.key}-${meslek.key}`]).map((sehir) => ({
     slug: `${sehir.key}-${meslek.key}-seo`,
     sehir,
     meslek,

@@ -906,7 +906,7 @@ export const ilSeo: IlSeoVeri[] = [
       { q: "Çayırova'daki B2B firmalar için web sitesi neden önemli?", a: 'Fabrikaların satın alma ekipleri tedarikçi ararken önce Google\'a bakar. Kapasite, belge, referans ve hızlı teklif yolu sunan bir site, telefonla aranmayı bekleyen firmaların önüne geçer.' },
       { q: 'Yüz yüze görüşebilir miyiz?', a: "Evet. İzmit merkezli bir ekibiz; Çayırova'daki işletmelerle gerektiğinde yüz yüze görüşme ayarlayabiliyoruz." },
     ],
-    ilgili: [{ label: 'Gebze SEO', href: '/gebze-seo' }, { label: 'Dilovası SEO', href: '/dilovasi-seo' }, { label: 'Şekerpınar SEO', href: '/sekerpinar-seo' }],
+    ilgili: [{ label: 'Çayırova Dijital Pazarlama', href: '/cayirova-dijital-pazarlama' }, { label: 'Gebze SEO', href: '/gebze-seo' }, { label: 'Dilovası SEO', href: '/dilovasi-seo' }, { label: 'Şekerpınar SEO', href: '/sekerpinar-seo' }],
   },
   {
     slug: 'sekerpinar', ad: 'Şekerpınar', bulunma: "Şekerpınar'da", icin: "Şekerpınar'ın", yonelme: "Şekerpınar'a",

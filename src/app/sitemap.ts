@@ -136,6 +136,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/gebze-google-ads` },
     { url: `${base}/gebze-dijital-pazarlama` },
     { url: `${base}/dilovasi-dijital-pazarlama` },
+    { url: `${base}/cayirova-dijital-pazarlama` },
     ...sektorSehir.map((s) => ({ url: `${base}/${s.slug}` })),
   ]
 
