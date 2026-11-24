@@ -241,7 +241,7 @@ export const posts: Post[] = [
       <h3>Sık Sorulan Sorular</h3>
 
       <h3>Google Ads'e ayda ne kadar bütçe ayırmalıyım?</h3>
-      <p>Sektöre ve rekabet düzeyine göre değişir. B2B ve niş sektörler için aylık 5.000-15.000 TL test bütçesiyle başlamak makuldür. E-ticaret ve geniş kitleli işletmeler için 15.000-50.000 TL aralığı daha sağlıklı sonuç verir. Önemli olan, algoritmanın öğrenebileceği kadar (ayda en az 30-50 dönüşüm) veri biriktirecek bir bütçeyle başlamaktır.</p>
+      <p>Sektöre ve rekabet düzeyine göre değişir. B2B ve niş sektörler için küçük bir test bütçesiyle başlamak makuldür. E-ticaret ve geniş kitleli işletmelerde ise daha geniş bir bütçe daha sağlıklı sonuç verir. Önemli olan, algoritmanın öğrenebileceği kadar (ayda en az 30-50 dönüşüm) veri biriktirecek bir bütçeyle başlamaktır.</p>
 
       <h3>Kampanya ne zaman sonuç vermeye başlar?</h3>
       <p>Trafik ilk günden gelir, ama anlamlı optimizasyon için 2-4 hafta, akıllı teklif stratejilerinin öğrenme dönemini tamamlaması için ise genellikle 4-6 hafta gerekir. İlk ay yüksek CPA görmeniz normaldir; algoritma hedef kitleyi öğrenirken maliyetler dalgalı seyredebilir.</p>
@@ -1121,7 +1121,7 @@ export const posts: Post[] = [
       <p>Hayır, Kocaeli'de güçlü bir yerel varlık kurduktan sonra <a href="/istanbul-seo">İstanbul</a>, Sakarya, Yalova gibi yakın şehirlere kademeli olarak genişleyebilirsiniz. Her yeni şehir için ayrı bir hizmet sayfası ve yerel içerik stratejisi kurmak idealdir.</p>
 
       <h3>Kocaeli'de yerel SEO ne kadara mal olur?</h3>
-      <p>KOBİ'ler için aylık 4.000-12.000 TL arasında değişen paketlerle yürüyebilir. İçeriğin derinliği, GBP yönetimi, backlink çalışması ve raporlama dahil olmalıdır. Çok düşük fiyatlı paketler ("aylık 1.500 TL'ye SEO") genellikle düşük kaliteli backlink ve şablon içerik anlamına gelir.</p>
+      <p>Maliyet; hizmet bölgesi, sayfa sayısı ve rekabete göre değişir. İşletmenize özel tahmini teklifi AI teklif hesaplayıcı ile görebilirsiniz. İçeriğin derinliği, GBP yönetimi, backlink çalışması ve raporlama dahil olmalıdır. Çok düşük fiyatlı paketler ("çok ucuz aylık SEO" teklifleri) genellikle düşük kaliteli backlink ve şablon içerik anlamına gelir.</p>
 
       <h3>Google Business Profile'ımı kendim yönetebilir miyim?</h3>
       <p>Evet, temel yönetim (fotoğraf ekleme, yorum yanıtlama, çalışma saati güncelleme) kolayca kendiniz yapabilirsiniz. Ancak kategori optimizasyonu, post stratejisi ve yorum toplama sistemi kurmak deneyim gerektirir — bu noktada profesyonel destek zaman kazandırır.</p>
@@ -1581,7 +1581,7 @@ export const posts: Post[] = [
       <table>
         <thead><tr><th>Riskli Yöntem</th><th>Neden Tehlikeli</th></tr></thead>
         <tbody>
-          <tr><td>Backlink satın alma</td><td>50 link 100 TL gibi paketler %99 spam içerir, Google tespit eder</td></tr>
+          <tr><td>Backlink satın alma</td><td>Ucuz toplu link paketleri neredeyse her zaman spam içerir, Google tespit eder</td></tr>
           <tr><td>PBN (Private Blog Network)</td><td>Sahte blog ağları — algoritma bu yapıları tespit etmekte uzman</td></tr>
           <tr><td>Yorum spam'i</td><td>"Harika yazı! Sitemize bekleriz" tarzı linkler değersiz ve riskli</td></tr>
           <tr><td>Link borsası</td><td>"Ben sana, sen bana" agresif değişimler tespit edilir</td></tr>
@@ -1678,7 +1678,7 @@ export const posts: Post[] = [
       </blockquote>
 
       <h2>Kural 3: Net Bir Fayda Vurgula</h2>
-      <p>Kullanıcı "ben bunu okuyunca ne kazanırım?" sorusuna cevap arar. Açıklamanızda somut fayda olsun: "%340 trafik artışı", "5 dakikada kurulum", "ücretsiz", "garantili sonuç".</p>
+      <p>Kullanıcı "ben bunu okuyunca ne kazanırım?" sorusuna cevap arar. Açıklamanızda somut fayda olsun: "5 dakikada kurulum", "ücretsiz ön analiz", "aynı gün dönüş". Gerçek olmayan rakam ve garanti vaatleri ise güveni zedeler.</p>
       <p>Özellik (feature) ile fayda (benefit) arasındaki farkı ayırt edin. "Gelişmiş analitik dashboard'umuz var" bir özelliktir; "Hangi kampanyanın para kazandırdığını 30 saniyede görün" bir faydadır. Kullanıcılar özellik değil, kendilerine ne kattığını satın alır.</p>
 
       <h2>Kural 4: Eylem Çağrısı (CTA) Ekle</h2>
@@ -1754,7 +1754,7 @@ export const posts: Post[] = [
     tags: ['İzmit', 'Reklam Ajansı', 'KOBİ', 'Ajans Seçimi'],
     content: `
       <h2>İzmit'te Reklam Ajansı Seçmek Neden Zor?</h2>
-      <p>İzmit ve Kocaeli genelinde 100'ün üzerinde dijital pazarlama ve reklam ajansı faaliyet gösteriyor. Bunların yarısı freelance, %30'u butik ajans, %20'si kurumsal yapıda. Fiyatlar aylık 1.500 TL'den 50.000 TL'ye kadar uzanıyor. Peki bu yelpazede doğru ajansı nasıl seçeceksiniz?</p>
+      <p>İzmit ve Kocaeli genelinde 100'ün üzerinde dijital pazarlama ve reklam ajansı faaliyet gösteriyor. Bunların yarısı freelance, %30'u butik ajans, %20'si kurumsal yapıda. Fiyatlar ajansın yapısına ve hizmet kapsamına göre çok geniş bir aralıkta değişiyor. Peki bu yelpazede doğru ajansı nasıl seçeceksiniz?</p>
       <p>Yanlış ajans seçimi sadece para kaybı değil; <strong class="text-white">marka itibarınıza zarar</strong>, <strong class="text-white">Google'dan ceza</strong> ve <strong class="text-white">aylar süren toparlanma süreci</strong> demek. Bu rehberde, İzmit'teki KOBİ'ler için doğru ajansı seçmenin 10 kritik adımını anlatıyoruz.</p>
 
       <div class="stat-grid">
@@ -1776,7 +1776,7 @@ export const posts: Post[] = [
       <p>Ajans aramaya başlamadan önce kendinize şu soruları sorun:</p>
       <ul>
         <li>İlk 3 ayda hangi somut sonuçları görmek istiyorum? (örn: ayda 50 lead, %30 organik trafik artışı)</li>
-        <li>Bütçem aylık ne kadar? (gerçekçi: 5.000-25.000 TL aralığı KOBİ için)</li>
+        <li>Bütçem aylık ne kadar? (hedeflerinize ve kanallara göre gerçekçi bir bütçe)</li>
         <li>Hangi kanallarda büyümek istiyorum? (SEO, Google Ads, sosyal medya, hepsi?)</li>
         <li>İç ekibim hangi işleri yapacak, ajans nereyi devralacak?</li>
       </ul>
@@ -1825,17 +1825,17 @@ export const posts: Post[] = [
       </ul>
 
       <h2>7. Fiyatlandırma: Ne Aldığınıza Bakın</h2>
-      <p>İzmit'teki ortalama fiyat yelpazeleri:</p>
+      <p>İzmit'te ajans yapısına göre ne beklenir:</p>
       <table>
-        <thead><tr><th>Aylık Bütçe</th><th>Ne Beklenir</th></tr></thead>
+        <thead><tr><th>Bütçe seviyesi</th><th>Ne Beklenir</th></tr></thead>
         <tbody>
-          <tr><td>1.500-3.000 TL</td><td>Genelde freelance, sınırlı hizmet</td></tr>
-          <tr><td>4.000-8.000 TL</td><td>Butik ajans, 2-3 hizmet kombinasyonu</td></tr>
-          <tr><td>8.000-20.000 TL</td><td>Kurumsal yapı, dedicated account manager</td></tr>
-          <tr><td>20.000+ TL</td><td>Enterprise, multi-disciplinary ekip</td></tr>
+          <tr><td>Düşük</td><td>Genelde freelance, sınırlı hizmet</td></tr>
+          <tr><td>Orta</td><td>Butik ajans, 2-3 hizmet kombinasyonu</td></tr>
+          <tr><td>Yüksek</td><td>Kurumsal yapı, dedicated account manager</td></tr>
+          <tr><td>Kurumsal</td><td>Enterprise, multi-disciplinary ekip</td></tr>
         </tbody>
       </table>
-      <p>"Aylık 1.000 TL'ye SEO" gibi tekliflere asla rağbet etmeyin. Bu fiyatla içerik AI çöp üretir, backlink spam toplanır, Google cezalandırır.</p>
+      <p>Gerçek dışı derecede ucuz SEO tekliflerine rağbet etmeyin. Bu tür tekliflerde içerik AI çöp üretir, backlink spam toplanır, Google cezalandırır.</p>
 
       <h2>8. Yerel Bilgi: İzmit Pazarını Tanıyor mu?</h2>
       <p>Yerel SEO ve Google Ads kampanyaları için ajansın bölgenizi tanıması kritiktir. Sorun:</p>
@@ -1864,7 +1864,7 @@ export const posts: Post[] = [
       <p>Profesyonel bir ajans bu paylaşımı yapmaktan çekinmez. Referans konuşmasında en değerli soru genellikle "ajans sizi hiç sürpriz bir maliyetle karşı karşıya bıraktı mı" sorusudur — bu, sözleşme şeffaflığının gerçek testidir. Ayrıca telefon görüşmesi yerine bizzat o müşterinin canlı web sitesini/kampanyasını incelemek isteyebilirsiniz; sonuçlar sözden daha ikna edicidir.</p>
 
       <h2>Ramses Dijital Reklam Ajansı: Neden Tercih Edilebilir?</h2>
-      <p><a href="/izmit-reklam-ajansi">İzmit</a> Kocaeli kökenli olarak 2019'dan bu yana 100+ projeye imza attık. Mühendislik kökenli bir ekibiz; her stratejiyi veri ve teknik disiplinle kuruyoruz. Kocaeli genelinde hizmet veren bir ajans arıyorsanız <a href="/kocaeli-reklam-ajansi">Kocaeli reklam ajansı</a> sayfamıza da göz atabilirsiniz.</p>
+      <p><a href="/izmit-reklam-ajansi">İzmit</a> Kocaeli kökenli olarak 2019'dan bu yana 50+ projeye imza attık. Mühendislik kökenli bir ekibiz; her stratejiyi veri ve teknik disiplinle kuruyoruz. Kocaeli genelinde hizmet veren bir ajans arıyorsanız <a href="/kocaeli-reklam-ajansi">Kocaeli reklam ajansı</a> sayfamıza da göz atabilirsiniz.</p>
       <p>Bizi farklı kılan: <strong class="text-white">şeffaf raporlama</strong>, <strong class="text-white">veri sahipliğinin tamamen müşteride kalması</strong>, <strong class="text-white">çıkış maddesi her sözleşmede mevcut</strong>, <strong class="text-white">aylık detaylı raporlama + canlı dashboard</strong> ve <strong class="text-white">Kocaeli pazarına 5+ yıllık derin tecrübe</strong>.</p>
       <p>Ücretsiz keşif görüşmesinde size özgü strateji çıkartırız ve teklif sunarız — taahhüt yok.</p>
 
@@ -1874,7 +1874,7 @@ export const posts: Post[] = [
       <p>"En iyi" göreceli bir kavram. Sizin için doğru ajans, hedeflerinize, bütçenize ve ihtiyaçlarınıza uygun olandır. Yukarıdaki 10 maddeyi gözden geçirip 3-5 ajansla görüşün, en uygun olanı seçin.</p>
 
       <h3>Reklam ajansı ile freelance arasında nasıl seçim yaparım?</h3>
-      <p>Bütçeniz aylık 5.000 TL'den azsa freelance daha mantıklı (tek bir uzman, sınırlı kapasite). 5.000 TL+ ajans tercih edilmelidir; ekip yapısı, süreklilik ve birden fazla disiplin kapsama avantajı sağlar.</p>
+      <p>Bütçeniz tek bir kanala yetecek kadarsa freelance daha mantıklı olabilir (tek bir uzman, sınırlı kapasite). Birden fazla kanal yönetilecekse ajans tercih edilmelidir; ekip yapısı, süreklilik ve birden fazla disiplin kapsama avantajı sağlar.</p>
 
       <h3>Sözleşme süresi minimum ne kadar olmalı?</h3>
       <p>SEO için minimum 6 ay, Google Ads için minimum 3 ay, sosyal medya için minimum 3 ay. Daha kısa süreler ajansın algoritma öğrenme sürecini yarıda keser ve sonuç alamazsınız.</p>
@@ -1961,7 +1961,7 @@ export const posts: Post[] = [
         <li><strong class="text-white">Performance Max:</strong> Google'ın AI'ı ile otomatik optimize edilmiş kampanyalar (yeni başlayanlar için ideal)</li>
         <li><strong class="text-white">Yerel kampanyalar:</strong> Maps'te ve Google çevre aramalarında öncelikli görünme</li>
       </ul>
-      <p>Bütçe: Aylık 3.000-8.000 TL ile başlanabilir. Daha düşük bütçelerde (örn: 1.000 TL) Google'ın algoritması yeterli veri toplayamaz.</p>
+      <p>Bütçe: Küçük bir test bütçesiyle başlanabilir; ancak çok düşük bütçelerde Google'ın algoritması yeterli veri toplayamaz.</p>
 
       <div class="callout">
         <span class="callout-title">Pratik İpucu</span>
@@ -1975,7 +1975,7 @@ export const posts: Post[] = [
           <tr><td>Google Business Profile</td><td>Hemen (ücretsiz optimizasyon)</td><td>₺0</td><td>1. — herkes için zorunlu</td></tr>
           <tr><td>Instagram/TikTok</td><td>2-4 hafta</td><td>Düşük (zaman yatırımı)</td><td>2. — görsel iştah açıcı ürün için kritik</td></tr>
           <tr><td>Web Sitesi + Yerel SEO</td><td>3-6 ay</td><td>Orta (tek seferlik + bakım)</td><td>3. — uzun vadeli temel</td></tr>
-          <tr><td>Google Ads</td><td>Anında</td><td>Aylık 3.000-8.000 TL+</td><td>4. — hızlı sonuç gerektiğinde</td></tr>
+          <tr><td>Google Ads</td><td>Anında</td><td>Reklam bütçesine bağlı</td><td>4. — hızlı sonuç gerektiğinde</td></tr>
         </tbody>
       </table>
 
@@ -2014,7 +2014,7 @@ export const posts: Post[] = [
       <h3>Sık Sorulan Sorular</h3>
 
       <h3>İzmit'te bir restoran için aylık dijital pazarlama bütçesi ne olmalı?</h3>
-      <p>Yeni başlayan küçük bir restoran için aylık 3.000-6.000 TL (organik içerik + Google Ads). Orta büyüklükte yerleşik bir restoran için 6.000-15.000 TL. Zincir veya premium restoranlar için 15.000+ TL.</p>
+      <p>Bütçe restoranın büyüklüğüne ve kullanılan kanallara göre değişir. Yeni bir restoran organik içerik ve küçük bir reklam bütçesiyle başlayabilir; zincir ve premium restoranlar daha geniş bir bütçe ayırır.</p>
 
       <h3>Sosyal medyayı kendim mi yöneteyim, ajans mı?</h3>
       <p>Mutfak ekibinizin günlük rutinini biliyor ve fotoğraf çekebiliyorsanız "günlük post" sizin sorumluluğunuzda olabilir. Ajans işi: strateji, ücretli reklam, performans analizi, içerik takvimi planlaması. İdeal model: hibrit.</p>
@@ -2338,7 +2338,7 @@ export const posts: Post[] = [
       <h3>Ajans değiştirirsem geçmiş verileri kaybeder miyim?</h3>
       <p>Hesap sizin adınıza (kendi Google Ads hesabınızda, ajansa sadece yetki vererek) açıldıysa hayır — geçmiş performans verisi, dönüşüm geçmişi ve öğrenme verisi sizinle kalır. Bu yüzden 4. sorudaki hesap sahipliği maddesi bu kadar kritiktir.</p>
 
-      <h3>Küçük bütçeyle (aylık 3.000-5.000 TL) Google Ads ajansı tutmaya değer mi?</h3>
+      <h3>Küçük bütçeyle Google Ads ajansı tutmaya değer mi?</h3>
       <p>Değer, ajansın küçük bütçelere uygun strateji kurup kuramadığına bağlıdır. Dar bütçede geniş kapsamlı kampanya yerine, tek bir yüksek-niyetli anahtar kelime grubuna odaklanan dar-kapsamlı bir kampanya çok daha iyi sonuç verir. Bunu önerebilen bir ajans, bütçenizi gerçekten önemsiyor demektir.</p>
 
       <h3>İlk görüşmede ajanstan örnek rapor istemeli miyim?</h3>
@@ -2686,8 +2686,8 @@ export const posts: Post[] = [
 
       <div class="stat-grid">
         <div class="stat-card">
-          <span class="stat-number">0₺</span>
-          <span class="stat-label">SEO ve içerik stratejisinin reklam bütçesi maliyeti</span>
+          <span class="stat-number">Reklamsız</span>
+          <span class="stat-label">SEO ve içerik stratejisi reklam bütçesi gerektirmez</span>
         </div>
         <div class="stat-card">
           <span class="stat-number emerald">3-6 Ay</span>
@@ -3094,7 +3094,7 @@ export const posts: Post[] = [
       <h2>Sık Sorulan Sorular</h2>
 
       <h3>Diş hekimleri için Google Ads bütçesi ne kadar olmalı?</h3>
-      <p>Rekabetin yoğun olduğu implant ve estetik diş hekimliği gibi alanlarda aylık 5.000-15.000 TL aralığı makul bir başlangıç noktasıdır; genel muayene odaklı klinikler daha düşük bütçeyle de sonuç alabilir.</p>
+      <p>Rekabetin yoğun olduğu implant ve estetik diş hekimliği gibi alanlarda daha geniş bir başlangıç bütçesi gerekir; genel muayene odaklı klinikler daha düşük bütçeyle de sonuç alabilir.</p>
 
       <h3>Hasta onayı olmadan önce/sonra fotoğrafı kullanabilir miyim?</h3>
       <p>Hayır, her durumda yazılı hasta onayı gereklidir. Onay alınmışsa bile kimliği ifşa etmeyecek şekilde (yüzün üst kısmı gizlenerek gibi) paylaşmak ek bir güven adımıdır.</p>

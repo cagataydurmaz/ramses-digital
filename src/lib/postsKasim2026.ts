@@ -152,12 +152,12 @@ export const kasim2026Postlari: Post[] = [
           <tr><td>1. Hedef</td><td>Ayda kaç müşteri adayı (telefon/WhatsApp/form) istiyorsunuz?</td><td>30 aday</td></tr>
           <tr><td>2. Dönüşüm oranı</td><td>Tıklayanların yüzde kaçı sizi arıyor?</td><td>%5 varsayalım</td></tr>
           <tr><td>3. Gereken tıklama</td><td>Aday ÷ dönüşüm oranı</td><td>30 ÷ 0,05 = 600 tıklama</td></tr>
-          <tr><td>4. Tıklama fiyatı</td><td>Anahtar Kelime Planlayıcı'dan</td><td>20₺ varsayalım</td></tr>
-          <tr><td>5. Aylık reklam bütçesi</td><td>Tıklama × tıklama fiyatı</td><td>600 × 20₺ = 12.000₺</td></tr>
-          <tr><td>6. Günlük bütçe</td><td>Aylık ÷ 30,4</td><td>≈ 395₺/gün</td></tr>
+          <tr><td>4. Tıklama fiyatı</td><td>Anahtar Kelime Planlayıcı'dan</td><td>Planlayıcıdaki ortalama tıklama fiyatı</td></tr>
+          <tr><td>5. Aylık reklam bütçesi</td><td>Tıklama × tıklama fiyatı</td><td>600 × ortalama tıklama fiyatı</td></tr>
+          <tr><td>6. Günlük bütçe</td><td>Aylık ÷ 30,4</td><td>Aylık bütçe ÷ 30,4</td></tr>
         </tbody>
       </table>
-      <p>Tablodaki %5 ve 20₺ sadece hesabın nasıl yapıldığını göstermek içindir; sizin rakamlarınız sektörünüze ve şehrinize göre farklı olacaktır. İlk 2–4 hafta gerçek veriyi toplar, sonra bütçeyi bu formülle yeniden ayarlarız.</p>
+      <p>Tablodaki %5 sadece hesabın nasıl yapıldığını göstermek içindir; sizin rakamlarınız sektörünüze ve şehrinize göre farklı olacaktır. İlk 2–4 hafta gerçek veriyi toplar, sonra bütçeyi bu formülle yeniden ayarlarız.</p>
 
       <div class="callout">
         <span class="callout-title">Günlük bütçe neden bazen aşılıyor?</span>

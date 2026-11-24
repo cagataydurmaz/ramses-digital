@@ -56,7 +56,7 @@ const milestones = [
   { year: '2021', title: 'Ekip Büyümesi', desc: 'Uzman kadromuzu genişlettik, 6 kişilik güçlü bir ekip oluşturduk.' },
   { year: '2022', title: '50+ Proje', desc: 'Farklı sektörlerden 50\'den fazla projede başarılı sonuçlar elde ettik.' },
   { year: '2023', title: 'Uluslararası Müşteriler', desc: 'Yurt dışından müşterilerle çalışmaya başladık, global deneyim kazandık.' },
-  { year: '2024', title: 'Bugün', desc: '100+ proje, 50+ mutlu müşteri ve büyümeye devam eden bir ekip.' },
+  { year: '2024', title: 'Bugün', desc: '50+ proje, 50+ mutlu müşteri ve büyümeye devam eden bir ekip.' },
 ]
 
 export default function AboutPage() {
@@ -270,7 +270,7 @@ export default function AboutPage() {
 const aboutFaqs = [
   {
     q: 'Ramses Digital ne zaman kuruldu?',
-    a: 'Ramses Digital, iki mühendis kurucu tarafından 2019 yılında kuruldu. Kuruluşumuzdan bu yana 100+ proje tamamladık ve dijital pazarlamayı mühendislik disiplinine dayandıran çözümler üretiyoruz.',
+    a: 'Ramses Digital, iki mühendis kurucu tarafından 2019 yılında kuruldu. Kuruluşumuzdan bu yana 50+ proje tamamladık ve dijital pazarlamayı mühendislik disiplinine dayandıran çözümler üretiyoruz.',
   },
   {
     q: 'Nerede konumlanıyorsunuz?',

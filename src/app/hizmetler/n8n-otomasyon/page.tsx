@@ -98,7 +98,7 @@ export default function N8nOtomasyonPage() {
           <div className="text-center mb-14">
             <p className="text-fuchsia-500 text-sm font-medium tracking-wider uppercase mb-3">Kullanım Alanları</p>
             <h2 className="text-4xl font-bold text-white mb-4">Ne Tür Otomasyonlar Yapıyoruz?</h2>
-            <p className="text-zinc-400 max-w-2xl mx-auto">200+ otomasyon senaryosu deneyimimizle, işletmenizin tekrarlanan görevlerini bilgisayarlara devrediyoruz.</p>
+            <p className="text-zinc-400 max-w-2xl mx-auto">Otomasyon deneyimimizle işletmenizin tekrarlanan görevlerini bilgisayarlara devrediyoruz.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {useCases.map((c) => {
