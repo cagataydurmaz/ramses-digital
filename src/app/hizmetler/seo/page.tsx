@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import KampanyaSeridi from '@/components/KampanyaSeridi'
 import GoogleAramaAnimasyonu from '@/components/GoogleAramaAnimasyonu'
 import { HaritaTelefonBolumu } from '@/components/telefon/TelefonBolumleri'
 import KapakGorseli from '@/components/KapakGorseli'
@@ -93,6 +94,8 @@ export default function SeoHizmetPage() {
           <div><div className="text-3xl md:text-4xl font-bold text-white">5+</div><div className="text-zinc-400 text-sm mt-1">Yıl Deneyim</div></div>
         </div>
       </section>
+
+      <KampanyaSeridi hizmetler={['SEO', 'Web Tasarım']} basliklar={['12 ay taahhütle SEO', 'Web sitesi + aylık SEO', 'İşletme Profili', 'Referans']} />
       <HaritaTelefonBolumu />
       <KisaOzet>
         SEO, işletmenizin Google’da ücretli reklam olmadan bulunmasını sağlayan teknik, içerik ve yerel çalışmaların bütünüdür; buna yapay zekâ aramaları için GEO/AEO da dahildir. Google’a göre etkisini görmek genellikle 4 ay ile 1 yıl arasında sürer ve sıralama garanti edilemez.

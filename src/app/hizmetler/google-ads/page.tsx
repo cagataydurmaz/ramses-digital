@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import KampanyaSeridi from '@/components/KampanyaSeridi'
 import { WhatsAppTelefonBolumu } from '@/components/telefon/TelefonBolumleri'
 import ReklamTelefon from '@/components/telefon/ReklamTelefon'
 import KapakGorseli from '@/components/KapakGorseli'
@@ -91,6 +92,8 @@ export default function GoogleAdsHizmetPage() {
           <div><div className="text-3xl md:text-4xl font-bold text-white">5.0/5</div><div className="text-zinc-400 text-sm mt-1">Google Puanı</div></div>
         </div>
       </section>
+
+      <KampanyaSeridi hizmetler={['Google Ads']} basliklar={['Google Ads', 'Referans', 'Kocaeli']} />
       <WhatsAppTelefonBolumu ters />
       <KisaOzet>
         Google Ads, arama yapan kişinin karşısına hemen çıkmanızı sağlar; bütçe durunca görünürlük de durur. Kampanya kurulumu, dönüşüm takibi ve düzenli optimizasyonu biz yürütüyoruz; reklam bütçesi doğrudan Google’a ödenir, yönetim ücretimiz ayrıdır.

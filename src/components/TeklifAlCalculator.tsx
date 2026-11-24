@@ -26,7 +26,7 @@ import {
   Gift,
 } from 'lucide-react'
 import CalendlyButton from '@/components/CalendlyButton'
-import { estimateQuote, businessSizeLabels, pricing, kampanyalar, type BusinessSize } from '@/lib/pricing'
+import { estimateQuote, businessSizeLabels, pricing, kampanyalar, KAMPANYA_KURALI, type BusinessSize } from '@/lib/pricing'
 import { waMesaj, waLink } from '@/lib/whatsapp'
 
 const WHATSAPP_NUMBER = '905355601936'
@@ -664,6 +664,7 @@ export default function TeklifAlCalculator() {
                                   </div>
                                 ))}
                               </div>
+                              <p className="text-zinc-500 text-[11px] mt-2.5">{KAMPANYA_KURALI}</p>
                             </div>
                           )
                         })()}

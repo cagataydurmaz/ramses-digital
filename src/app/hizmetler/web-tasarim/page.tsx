@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import KampanyaSeridi from '@/components/KampanyaSeridi'
 import SiteKaydirmaTelefon from '@/components/telefon/SiteKaydirmaTelefon'
 import { WhatsAppTelefonBolumu, ChatbotTelefonBolumu } from '@/components/telefon/TelefonBolumleri'
 import KapakGorseli from '@/components/KapakGorseli'
@@ -93,6 +94,8 @@ export default function WebTasarimHizmetPage() {
           <div><div className="text-3xl md:text-4xl font-bold text-white">3-5 hf</div><div className="text-zinc-400 text-sm mt-1">Ortalama Teslim</div></div>
         </div>
       </section>
+
+      <KampanyaSeridi hizmetler={['Web Tasarım', 'SEO']} basliklar={['barındırma', 'taşıma', 'Web sitesi + aylık SEO', 'Peşin']} />
       <WhatsAppTelefonBolumu ters />
       <ChatbotTelefonBolumu />
       <KisaOzet>

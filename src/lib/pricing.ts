@@ -119,33 +119,64 @@ export interface Kampanya {
 
 const yuvarla = (n: number) => Math.round(n / 100) * 100
 
+export const KAMPANYA_KURALI = 'İndirimler birleştirilmez; size en avantajlı olanı uygulanır. Taahhütlü kampanyalarda süre sözleşmeyle belirlenir.'
+
 export function kampanyalar(services: string[], size: BusinessSize): Kampanya[] {
   const liste: Kampanya[] = []
   const seo = pricing['SEO'][size]
   const ads = pricing['Google Ads'][size]
-  if (services.includes('SEO')) {
+  const aylikSeo = services.includes('SEO')
+  const web = services.includes('Web Tasarım')
+  const tekSeferlik = web || services.includes('SEO Başlangıç Paketi')
+  if (aylikSeo) {
     liste.push({
-      baslik: '12 aylık SEO’da %15 indirim',
-      detay: 'SEO kalıcı sonuç için zaman ister; 12 aylık sözleşmede aylık ücrete %15 indirim uygulanır.',
+      baslik: '12 ay taahhütle SEO’da %15 indirim',
+      detay: 'SEO kalıcı sonuç için zaman ister; 12 aylık taahhütte aylık ücrete %15 indirim uygulanır.',
       indirimli: { min: yuvarla(seo.min * 0.85), max: yuvarla(seo.max * 0.85), birim: '/ay' },
+    })
+  }
+  if (aylikSeo && web) {
+    liste.push({
+      baslik: 'Web sitesi + aylık SEO: ilk ay SEO ücretsiz',
+      detay: 'Web sitesiyle birlikte 12 ay taahhütlü aylık SEO alırsanız SEO’nun ilk ayı bizden. Tek seferlik SEO paketinde geçerli değildir.',
     })
   }
   if (services.includes('Google Ads')) {
     liste.push({
-      baslik: '6 ay ve üzeri Google Ads’te %10 indirim',
-      detay: '6 ay veya daha uzun çalışmada sabit aylık yönetim ücretine %10 indirim uygulanır.',
+      baslik: '6 ay taahhütle Google Ads’te %10 indirim',
+      detay: '6 ay veya daha uzun taahhütte sabit aylık yönetim ücretine %10 indirim uygulanır.',
       indirimli: { min: yuvarla(ads.min * 0.9), max: yuvarla(ads.max * 0.9), birim: '/ay' },
     })
   }
-  if (services.includes('Web Tasarım')) {
+  if (web || aylikSeo) {
     liste.push({
-      baslik: 'Web sitesinde ilk yıl barındırma ücretsiz',
+      baslik: 'Google İşletme Profili kurulumu hediye',
+      detay: 'Web sitesi yaptırana veya 12 ay taahhütlü aylık SEO alana; haritada görünmeniz için profil kurulumu ve doğrulama desteği.',
+    })
+  }
+  if (web) {
+    liste.push({
+      baslik: 'İlk yıl barındırma ücretsiz',
       detay: 'İlk yıl barındırma (hosting) bizden; ayrıca 30 gün ücretsiz destek ve siteyi kendiniz güncelleyebilmeniz için 1 saatlik eğitim videosu.',
+    })
+    liste.push({
+      baslik: 'Eski siteden ücretsiz taşıma',
+      detay: 'Mevcut siteniz varsa içerikleri ve Google’daki sıralamanızı koruyacak yönlendirmelerle yeni siteye ücretsiz taşıyoruz.',
+    })
+  }
+  if (tekSeferlik) {
+    liste.push({
+      baslik: 'Peşin ödemeye %5 indirim',
+      detay: 'Tek seferlik işlerde (web sitesi, SEO başlangıç paketi) tutarın tamamını peşin ödemenize %5 indirim.',
     })
   }
   liste.push({
     baslik: 'Referansla gelene %10 indirim',
-    detay: 'Bir müşterimizin tavsiyesiyle geldiyseniz toplam tutarda %10 referans indirimi uygulanır; görüşmede belirtmeniz yeterli.',
+    detay: 'Bir müşterimizin tavsiyesiyle geldiyseniz toplam tutarda %10 referans indirimi; görüşmede belirtmeniz yeterli.',
+  })
+  liste.push({
+    baslik: 'Kocaeli’de ilk görüşme yüz yüze',
+    detay: 'Kocaeli’deki işletmelerle ilk tanışma görüşmesini ücretsiz ve yüz yüze yapabiliyoruz.',
   })
   return liste
 }
