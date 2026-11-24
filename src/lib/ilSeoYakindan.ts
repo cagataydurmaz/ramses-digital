@@ -308,4 +308,136 @@ export const ilSeoYakindan: Record<string, IlSeoYakindan> = {
       { baslik: 'Konak ve Bornova’ya yakınlık', metin: 'Komşu ilçelerden gelen müşteriyi hedefleyen işletmeler hizmet bölgesini sitede açıkça yazmalı.' },
     ],
   },
+
+  // ── ZENGİN İLÇELER (24 Kasım 2026) ──────────────────────────────────────
+  besiktas: {
+    baslik: 'Beşiktaş’ta Müşteri Nasıl Karar Veriyor?',
+    paragraf:
+      'Beşiktaş’ta müşteri seçici ve araştırıcıdır. Etiler’de bir diş hekimi ya da Levent’te bir hukuk bürosu arayan kişi, karar vermeden önce birkaç sitenin hızına, fotoğraflarına, uzmanlık bilgisine ve yorumlarına bakar. Plazalarda çalışanlar öğle arasında telefondan, Boğaz kıyısına gelen ziyaretçi ise haritadan seçim yapar. Bu ilçede “ucuz” görünmek değil, güvenilir ve özenli görünmek kazandırır.',
+    ipuclari: [
+      { baslik: 'Uzmanlığı gösterin', metin: 'Hekim, avukat ya da uzman kim, hangi konuda deneyimli? Ekip ve uzmanlık sayfası seçici müşterinin ilk baktığı yerdir.' },
+      { baslik: 'Semtle başlayın', metin: '“Beşiktaş + hizmet” uzun soluklu; Etiler, Levent, Bebek gibi semt adlarıyla başlamak daha hızlı sonuç verir.' },
+      { baslik: 'Fotoğraf kalitesi', metin: 'Mekân ve ekip fotoğrafları profesyonel olmalı; harita profilinde düşük kaliteli görseller güveni düşürür.' },
+    ],
+  },
+  sariyer: {
+    baslik: 'Sarıyer’de Üç Ayrı Pazar',
+    paragraf:
+      'Sarıyer tek tip bir ilçe değil: Maslak’ta iş merkezleri ve üniversite, İstinye–Tarabya–Yeniköy hattında Boğaz kıyısında yüksek gelirli yaşam, Zekeriyaköy tarafında villa ve müstakil konutlar, Kilyos’ta ise yaz sezonu. Her bölgenin müşterisi farklı bir şey arar; tek bir genel sayfa yerine semt ve hizmet bazlı içerik daha verimli çalışır.',
+    ipuclari: [
+      { baslik: 'Villa hizmetleri', metin: 'Peyzaj, havuz, güvenlik ve tadilat için Zekeriyaköy gibi semt adlarını ve gerçek proje fotoğraflarını kullanın.' },
+      { baslik: 'Boğaz mekânları', metin: 'Restoran ve kafelerde rezervasyon yolu, menü ve güncel fotoğraf harita profilinde eksiksiz olmalı.' },
+      { baslik: 'Sezon hazırlığı', metin: 'Kilyos ve sahil işletmeleri için içerik ve reklam bütçesi yaz başlamadan hazırlanmalı.' },
+    ],
+  },
+  sisli: {
+    baslik: 'Şişli’de Marka Algısı ve Arama',
+    paragraf:
+      'Şişli’de Nişantaşı ve Teşvikiye moda, güzellik ve estetiğin; Mecidiyeköy ve Esentepe iş dünyasının; Osmanbey ise toptan tekstilin merkezi. Nişantaşı’nda müşteri markaya ve görsel kaliteye, plazalarda uzmanlığa, Osmanbey’de ise ürün çeşidine ve toptan koşullara bakar. Aynı ilçede üç farklı dil konuşmak gerekir.',
+    ipuclari: [
+      { baslik: 'Görsel kimlik', metin: 'Nişantaşı’ndaki işletmeler için site, Instagram ve harita profili aynı kalitede ve aynı tarzda olmalı.' },
+      { baslik: 'Toptancılar için katalog', metin: 'Osmanbey üreticileri için kategori sayfaları, minimum sipariş bilgisi ve yabancı dilde kısa özet yeni alıcı getirir.' },
+      { baslik: 'Sağlıkta dikkat', metin: 'Estetik ve güzellik işletmelerinde iddiasız, mevzuata uygun dil kullanılmalı; abartılı vaatler güveni de görünürlüğü de zedeler.' },
+    ],
+  },
+  atasehir: {
+    baslik: 'Ataşehir’de Kurumsal Güven Önce Gelir',
+    paragraf:
+      'Ataşehir, finans merkezi ve plazalarıyla Anadolu yakasının iş merkezlerinden biri; Batı Ataşehir’in rezidansları ise gelir düzeyi yüksek bir yerleşik kitle oluşturuyor. Burada müşteri hem bireysel hem kurumsal: bir rezidans sakini klinik ararken, bir şirket mali müşavir ya da hukuk danışmanı arıyor. İki kitlenin de ortak beklentisi net bilgi ve profesyonel görünüm.',
+    ipuclari: [
+      { baslik: 'Soru-cevap içerik', metin: 'Danışmanlık ve finans hizmetlerinde sık sorulan sorulara net cevaplar, yapay zekâ önerilerinde görünürlüğü de artırır.' },
+      { baslik: 'Komşu ilçeler', metin: 'Kadıköy, Ümraniye ve Maltepe’den gelen müşteriyi hedefliyorsanız bunu sitede açıkça belirtin.' },
+      { baslik: 'Rezidans sakinleri', metin: 'Bina ve proje adlarıyla aranan hizmetler (temizlik, bakım, kurs) için kısa, net sayfalar.' },
+    ],
+  },
+  uskudar: {
+    baslik: 'Üsküdar’da Boğaz ile Hastane Arasında',
+    paragraf:
+      'Üsküdar’ın bir yüzünde Çengelköy, Kuzguncuk ve Beylerbeyi’nin hafta sonu kalabalığı, öbür yüzünde Altunizade ve Acıbadem’in iş merkezleri ve hastaneleri var. Kahvaltı mekânı arayan ziyaretçi ile uzman hekim arayan hasta aynı ilçede ama bambaşka biçimlerde arama yapıyor. Strateji de bu iki yüze göre ayrılmalı.',
+    ipuclari: [
+      { baslik: 'Hafta sonu ziyaretçisi', metin: 'Çengelköy ve Kuzguncuk’taki mekânlar için güncel fotoğraf, menü ve çalışma saati; ziyaretçi yola çıkmadan haritaya bakar.' },
+      { baslik: 'Sağlıkta semt adı', metin: 'Acıbadem ve Altunizade çevresindeki klinikler semt adıyla aranır; hekim ve bölüm sayfaları bu adları doğal biçimde içermeli.' },
+      { baslik: 'Ulaşım bilgisi', metin: 'Marmaray, metro ve vapura yakınlığı belirtmek, ilçe dışından gelen müşterinin kararını kolaylaştırır.' },
+    ],
+  },
+  beylikduzu: {
+    baslik: 'Beylikdüzü’nde Aileler Nasıl Arıyor?',
+    paragraf:
+      'Beylikdüzü, kapalı siteleri ve genç aileleriyle İstanbul’un Avrupa yakasında hızla büyümüş bir yaşam alanı. Bu kitle hizmetleri çoğunlukla mahalle ya da site adıyla, telefondan arar: kreş, kurs, çocuk doktoru, güzellik merkezi, tadilat. Sahil şeridindeki işletmeler ve organize sanayi bölgesindeki üreticiler ise ilçenin diğer iki pazarını oluşturuyor.',
+    ipuclari: [
+      { baslik: 'Mahalle adları', metin: 'Adnan Kahveci, Barış, Yakuplu gibi mahalle adlarını hizmet sayfalarında ve harita profilinde kullanın.' },
+      { baslik: 'Veli güveni', metin: 'Kreş ve kurslarda gerçek fotoğraf, eğitmen bilgisi ve veli yorumları kararı belirler.' },
+      { baslik: 'Reklamda bölge ayarı', metin: 'Google Ads’te Esenyurt ve Büyükçekmece’yi bilinçli olarak dahil etmek veya dışarıda bırakmak bütçe verimini değiştirir.' },
+    ],
+  },
+  karsiyaka: {
+    baslik: 'Karşıyaka’da Sahil ve Semt Aramaları',
+    paragraf:
+      'Karşıyaka, İzmir’in en köklü ve gelir düzeyi yüksek ilçelerinden biri. Bostanlı sahili kafe ve restoranlarıyla, Mavişehir site ve rezidanslarıyla, çarşı ise yaya trafiğiyle öne çıkıyor. Müşteri hizmeti çoğunlukla semt adıyla arar; “bostanlı” ya da “mavişehir” kelimesi “karşıyaka” kadar değerlidir.',
+    ipuclari: [
+      { baslik: 'Sahil mekânları', metin: 'Bostanlı’daki mekânlar için akşam ve hafta sonu yoğunluğuna göre güncel fotoğraf ve çalışma saati.' },
+      { baslik: 'Site yaşamı', metin: 'Mavişehir’de kreş, kurs, güzellik ve ev hizmetleri semt adıyla aranır; hizmet sayfalarında bunu kullanın.' },
+      { baslik: 'Vapur ve ulaşım', metin: 'Konak ve Alsancak’tan gelecek müşteri için iskeleye yakınlığı belirtmek kararı kolaylaştırır.' },
+    ],
+  },
+  bornova: {
+    baslik: 'Bornova’da Öğrenci, Aile ve Üretici',
+    paragraf:
+      'Bornova’da büyük üniversite ve hastane, köklü konut bölgeleri ve Işıkkent–Pınarbaşı’ndaki üretim alanları bir arada. Öğrenci hızlı ve telefondan, aileler semt adıyla ve yorumlara bakarak, toptan alıcılar ise ürün adıyla arama yapıyor. Bu çeşitlilik, her işletmenin kendi kitlesine göre ayrı bir dil kullanmasını gerektiriyor.',
+    ipuclari: [
+      { baslik: 'Dönem takvimi', metin: 'Öğrenciye yönelik işletmeler için dönem başlangıcı öncesi içerik ve reklam hazırlığı.' },
+      { baslik: 'Semt adıyla aile hizmetleri', metin: 'Kazımdirik, Özkanlar ve Evka 3’teki işletmeler semt adlarını sayfalarında kullanmalı.' },
+      { baslik: 'Üreticiler için ürün sayfası', metin: 'Işıkkent ve Pınarbaşı’ndaki firmalar için ürün kategorisi ve toptan iletişim formu.' },
+    ],
+  },
+  urla: {
+    baslik: 'Urla’da Ziyaretçi Rotasına Girmek',
+    paragraf:
+      'Urla, bağ yolundaki üreticileri, İskele’deki restoranları ve butik konaklama işletmeleriyle İzmir’in gastronomi ve hafta sonu adreslerinden biri. Ziyaretçi rotasını çoğunlukla Google Haritalar’da kaydettiği yerlerle çizer. Haritada eksiksiz, güncel ve iyi fotoğraflı görünen işletme, rotaya giren işletmedir.',
+    ipuclari: [
+      { baslik: 'Harita profili önce', metin: 'Çalışma günleri ve saatleri (özellikle hafta içi kapalı günler) doğru olmalı; yanlış saat olumsuz yorum getirir.' },
+      { baslik: 'Hikâye anlatın', metin: 'Üretici ve şef hikâyesi, ürünün nereden geldiği; gastronomi ziyaretçisi bunu arar.' },
+      { baslik: 'Doğrudan rezervasyon', metin: 'Butik konaklama için kendi sitenizden WhatsApp ile hızlı rezervasyon yolu, aracı payını azaltır.' },
+    ],
+  },
+  cesme: {
+    baslik: 'Çeşme’de Sezon Erken Başlar',
+    paragraf:
+      'Çeşme’de, özellikle Alaçatı’da, ziyaretçi tatil planını aylar önceden yapar; bu yüzden dijital hazırlığın sezondan çok önce bitmesi gerekir. Butik oteller, restoranlar ve beach işletmeleri arasında rekabet yüksek; fark yaratan şey gerçek fotoğraflar, net iletişim ve doğrudan rezervasyon yolu. Yaz boyunca açılan yazlıklar ise villa bakımı, temizlik ve havuz gibi hizmetlere ayrı bir talep oluşturur.',
+    ipuclari: [
+      { baslik: 'Kış aylarında hazırlık', metin: 'Site, fotoğraf ve reklam planı ilkbahardan önce hazır olmalı; planlama dönemi kaçırılmamalı.' },
+      { baslik: 'Konseptle daralın', metin: '“Alaçatı otel” yerine konsept ve konumla daralan aramalar (taş ev, havuzlu, merkeze yürüme mesafesi) daha ulaşılabilir.' },
+      { baslik: 'Yazlık hizmetleri', metin: 'Sezon açılışı öncesi villa bakımı ve temizlik için hizmet sayfaları ve WhatsApp ile hızlı teklif.' },
+    ],
+  },
+  nilufer: {
+    baslik: 'Nilüfer’de Bursa Aramalarıyla Birlikte Düşünmek',
+    paragraf:
+      'Nilüfer, Bursa’nın gelir düzeyi yüksek ve hızla büyüyen ilçesi; Beşevler, Ataevler ve Fethiye köklü, Özlüce ve İhsaniye yeni site yaşamıyla öne çıkıyor. Ancak müşterilerin büyük kısmı “Nilüfer” değil “Bursa + hizmet” diye arıyor. Bu yüzden Nilüfer’deki işletmenin hem semt adlarıyla hem Bursa aramalarıyla görünür olacak şekilde kurgulanması gerekiyor.',
+    ipuclari: [
+      { baslik: 'İki katmanlı arama', metin: 'Sayfa başlıklarında Bursa, içerikte Nilüfer ve semt adları; harita profilinde doğru konum.' },
+      { baslik: 'Yan sanayi tedarikçileri', metin: 'OSB’deki üreticiler için ürün, kalite belgesi ve İngilizce özet; alıcılar ürün adıyla arar.' },
+      { baslik: 'Görükle’de öğrenci', metin: 'Üniversite çevresindeki işletmeler için hızlı mobil site ve dönem başı güncelleme.' },
+    ],
+  },
+  konyaalti: {
+    baslik: 'Konyaaltı’nda Çok Dilli Görünürlük',
+    paragraf:
+      'Konyaaltı, sahili ve yeni rezidanslarıyla hem turistin hem de yabancı uyruklu yerleşik sakinlerin yoğun olduğu bir ilçe. Aynı diş kliniğini bir gün Türkçe, ertesi gün İngilizce ya da Rusça arayan müşteriler bulabilir. Emlak, sağlık ve ev hizmetlerinde çok dilli sayfalar ve harita profilinde yabancı dilde açıklama belirgin bir avantaj sağlar.',
+    ipuclari: [
+      { baslik: 'Dil başına sayfa', metin: 'Hizmet verdiğiniz her dilde kısa, okunaklı ayrı sayfa; otomatik çeviri yerine düzgün metin güven verir.' },
+      { baslik: 'Yıl boyu talep', metin: 'Yerleşik yabancı sakinlere yönelik hizmetler sezondan bağımsız; içerik bu kitleye göre de kurgulanmalı.' },
+      { baslik: 'Uluslararası iletişim', metin: 'WhatsApp ve telefon butonu her sayfada; yabancı müşteri çoğunlukla mesajla iletişim kurar.' },
+    ],
+  },
+  lara: {
+    baslik: 'Lara’da Turizm ile Yerleşik Yaşam Yan Yana',
+    paragraf:
+      'Lara, sahil boyunca uzanan büyük otelleri ve havalimanına yakınlığıyla Antalya’nın turizm vitrinlerinden biri. Güzeloba ve Fener tarafında ise site ve villa yaşamı süren, gelir düzeyi yüksek aileler yaşıyor. Transfer ve tur işletmeleri yabancı dilde, klinik ve ev hizmetleri ise semt adıyla Türkçe aranıyor.',
+    ipuclari: [
+      { baslik: 'Havalimanı yakınlığı', metin: 'Transfer, rent a car ve konaklama işletmeleri havalimanına mesafeyi ve hızlı iletişimi öne çıkarmalı.' },
+      { baslik: 'Semt adıyla hizmet', metin: 'Güzeloba ve Fener’deki klinik, kurs ve ev hizmetleri semt adlarını sayfalarda kullanmalı.' },
+      { baslik: 'Antalya ile birlikte', metin: 'Lara’daki işletme “antalya + hizmet” aramalarında da görünmeli; başlıkta Antalya, içerikte Lara.' },
+    ],
+  },
 }

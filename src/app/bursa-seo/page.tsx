@@ -20,7 +20,7 @@ import GoogleAramaAnimasyonu from '@/components/GoogleAramaAnimasyonu'
 export const metadata: Metadata = {
   title: 'Bursa SEO Ajansı – Ücretsiz Site Analizi | Ramses Dijital',
   description:
-    "Bursa'da Google'da müşteri bulmak isteyen işletmelere SEO hizmeti. Ücretsiz site analizi, net fiyat, aylık şeffaf rapor, taahhüt yok. Google'da 5.0 puan.",
+    "Bursa SEO ajansı, SEO uzmanı ve danışmanlığı: Nilüfer'den İnegöl'e yerel ve teknik SEO. Ücretsiz site analizi, aylık şeffaf rapor. Google'da 5.0 puan.",
   alternates: { canonical: 'https://ramsesdigital.com/bursa-seo' },
   openGraph: {
     title: 'Bursa SEO Ajansı – Ücretsiz Site Analizi | Ramses Dijital',
@@ -36,7 +36,7 @@ const features = [
   { icon: Zap, title: 'GEO & AEO', desc: 'Yapay zekâ araçlarının ve arama özetlerinin alıntılayabileceği net, yapılandırılmış içerik. Sonuç garanti edilmez.' },
   { icon: Link2, title: 'B2B Odaklı Backlink İnşası', desc: 'Bursa\'nın otomotiv yan sanayi, mobilya ve tekstil sektörlerine özgü ticaret odaları, sektörel medya ve dizinlerden yüksek otoriteli link profili.' },
   { icon: BarChart3, title: 'Sektöre Özel İçerik Stratejisi', desc: 'Otomotiv yan sanayi firmanız için B2B içerik, İnegöl mobilya üreticiniz için ürün odaklı SEO — jenerik değil, sektöre özel mimari.' },
-  { icon: Award, title: 'İlçe Bazlı Optimizasyon', desc: 'Osmangazi, Nilüfer, Yıldırım, Gemlik, İnegöl, Mudanya, Gürsu, Kestel, Orhangazi — her ilçeye özel sayfa ve GBP stratejisi.' },
+  { icon: Award, title: 'İlçe Bazlı Optimizasyon', desc: 'Osmangazi, Nilüfer, Yıldırım, Gemlik, İnegöl, Mudanya — işletmenizin gerçekten hizmet verdiği ilçelere göre içerik ve işletme profili stratejisi.' },
 ]
 
 const ilceler = ['Osmangazi', 'Nilüfer', 'Yıldırım', 'Gemlik', 'İnegöl', 'Mudanya', 'Gürsu', 'Kestel', 'Orhangazi', 'Mustafakemalpaşa']
@@ -48,7 +48,9 @@ const faqs = [
   { q: 'Bursa\'da hangi sektörler SEO\'dan en çok fayda görüyor?', a: 'Otomotiv yan sanayi firmaları, mobilya üreticileri (özellikle İnegöl), tekstil firmaları, hukuk büroları, diş hekimleri ve diş klinikleri, psikolog/terapistler, güzellik merkezleri ve estetik klinikleri, gıda sanayii ve termal turizm işletmeleri (Uludağ çevresi) Bursa\'da yüksek arama hacmine sahip alanlar.' },
   { q: 'Bursa SEO paketi ne kadara mal olur?', a: 'Kapsam sektöre ve rekabet seviyesine göre değişir: teknik audit, anahtar kelime araştırması, aylık içerik üretimi, GBP yönetimi, backlink stratejisi ve raporlama. Net fiyat bilgisini ücretsiz danışmanlıkta netleştiriyoruz.' },
   { q: 'Fiziksel olarak Bursa\'da mısınız?', a: 'Hayır, Kocaeli kökenliyiz — Bursa\'ya tamamen uzaktan hizmet veriyoruz. Keşif görüşmesi, strateji onayı ve raporlama Google Meet/Zoom üzerinden yürütülüyor. Türkiye genelinde canlı, ziyaret edilebilir referanslarımızı portföyümüzde inceleyebilirsiniz.' },
-  { q: 'Bursa\'daki yerleşik ajanslarla nasıl rekabet edebilirim?', a: 'Yerleşik ajansların çoğu şablon strateji uyguluyor ve otomotiv/mobilya gibi B2B sektörlere jenerik içerikle yaklaşıyor. Biz her müşteriye sektörüne özel strateji kuran, mühendislik disipliniyle çalışan bir ekibiz — bu da daha hızlı iletişim ve daha isabetli anahtar kelime hedeflemesi anlamına geliyor.' },
+  { q: 'Bursa\'da SEO uzmanı veya SEO firması seçerken nelere bakmalıyım?', a: 'Ziyaret edebileceğiniz canlı referanslar, Search Console verisiyle aylık rapor, sıralama garantisi vermemesi, Google İşletme Profili yönetiminin pakete dahil olması ve sitenin, alan adının sizin adınıza kalması. Bir SEO danışmanından da ajanstan da bu beş şeyi isteyin.' },
+  { q: 'Bursa SEO hizmeti neleri kapsar?', a: 'Teknik SEO (hız, mobil uyum, taranabilirlik), anahtar kelime ve rakip analizi, hizmet ve ilçe sayfaları, aylık içerik, Google İşletme Profili yönetimi, yapay zekâ aramaları için soru-cevap içerikleri ve aylık rapor. 12 ay taahhütte aylık ücrete %15 indirim uygulanır.' },
+  { q: 'Nilüfer\'deki işletmeler için ayrı çalışma yapıyor musunuz?', a: 'Evet. Nilüfer Bursa\'nın gelir düzeyi yüksek ve hızla büyüyen ilçesi; semt adlarıyla (Beşevler, Ataevler, Özlüce, Görükle) yapılan aramalar için ayrı içerik kuruyoruz. Ayrıntılar Nilüfer SEO sayfamızda.' },
   { q: 'GEO (Yapay Zeka Optimizasyonu) Bursa işletmesi için neden kritik?', a: 'GEO, ChatGPT ve Gemini gibi araçlarda "Bursa\'da güvenilir X önerir misin?" sorusuna verilen cevaplarda kaynak olarak yer alma olasılığını artırmayı hedefler. Bu kanal henüz doymamış durumda — özellikle Bursa\'nın niş B2B sektörlerinde (otomotiv yan sanayi, mobilya üretimi) erken hareket edenler avantajlı.' },
   ...sehirSeo['bursa'].ekSss,
   ...sehirSeoEk['bursa'].sss,
@@ -108,7 +110,7 @@ export default function BursaSeoPage() {
             <span className="gradient-text">Organik Trafiğinizi Büyütün</span>
           </h1>
           <p className="hidden sm:block text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto lg:mx-0 mb-4 leading-relaxed">
-            Osmangazi&apos;den Nilüfer&apos;e, İnegöl&apos;den Gemlik&apos;e Bursa&apos;nın her ilçesinde yerel SEO. Otomotiv yan sanayi ve mobilya sektörüne özel B2B içerik stratejisi.
+            Osmangazi&apos;den <Link href="/nilufer-seo" className="text-zinc-300 underline decoration-white/20 hover:text-white">Nilüfer</Link>&apos;e, İnegöl&apos;den Gemlik&apos;e Bursa&apos;da SEO uzmanı ve danışmanlığı. Otomotiv yan sanayi ve mobilya sektörüne özel B2B içerik stratejisi.
           </p>
           <p className="hidden sm:block text-zinc-500 text-sm mb-10">
             {ilceler.join(' · ')}
@@ -222,6 +224,7 @@ export default function BursaSeoPage() {
 
       <RelatedPages
         pages={[
+          { label: 'Nilüfer SEO', href: '/nilufer-seo' },
           { label: 'Bursa Dijital Pazarlama', href: '/bursa-dijital-pazarlama' },
           { label: 'Bursa Web Tasarım', href: '/bursa-web-tasarim' },
           { label: 'Bursa Google Ads', href: '/bursa-google-ads' },
