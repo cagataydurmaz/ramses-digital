@@ -14,6 +14,7 @@ import type { SektorVeri } from '@/lib/sektorler'
 import { sektorSehir } from '@/lib/sektorSehir'
 import HeroGuvenSatiri from '@/components/HeroGuvenSatiri'
 import GoogleAramaAnimasyonu from '@/components/GoogleAramaAnimasyonu'
+import { ChatGptVideoBolumu } from '@/components/telefon/TelefonBolumleri'
 
 // Veri odaklı sektör sayfası (src/lib/sektorler.ts). IlSeoSayfasi ile aynı görsel dil.
 const SITE = 'https://ramsesdigital.com'
@@ -215,6 +216,7 @@ export default function SektorSayfasi({ v }: { v: SektorVeri }) {
         </div>
       </section>
 
+      <ChatGptVideoBolumu />
       <ReviewsMarquee />
 
       <KurucuKutusu yerel />

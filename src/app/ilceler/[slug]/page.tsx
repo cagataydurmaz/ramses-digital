@@ -11,6 +11,8 @@ import { ilceDetay } from '@/lib/ilceDetay'
 import { ilceSayfaPlani } from '@/lib/ilceSayfaPlani'
 import HeroGuvenSatiri from '@/components/HeroGuvenSatiri'
 import SiteKaydirmaTelefon from '@/components/telefon/SiteKaydirmaTelefon'
+import { WebSitesiVideoBolumu } from '@/components/telefon/TelefonBolumleri'
+import KurucuKutusu from '@/components/KurucuKutusu'
 
 export function generateStaticParams() {
   return ilceler.map((i) => ({ slug: i.slug }))
@@ -271,6 +273,9 @@ export default function IlcePage({ params }: { params: { slug: string } }) {
           </div>
         </div>
       </section>
+
+      <WebSitesiVideoBolumu />
+      <KurucuKutusu yerel={ilce.il === 'Kocaeli'} />
 
       <RelatedPages
         pages={[

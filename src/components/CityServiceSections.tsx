@@ -1,5 +1,8 @@
 import { MapPin, CalendarClock, Building2 } from 'lucide-react'
-import { GoogleAdsVideoBolumu, WebSitesiVideoBolumu } from '@/components/telefon/TelefonBolumleri'
+import { GoogleAdsVideoBolumu, WebSitesiVideoBolumu, SeoVideoBolumu } from '@/components/telefon/TelefonBolumleri'
+import AdsButceGrafigi from '@/components/grafik/AdsButceGrafigi'
+import SeoBuyumeGrafigi from '@/components/grafik/SeoBuyumeGrafigi'
+import IlceBaglantilari from '@/components/IlceBaglantilari'
 import KurucuKutusu from '@/components/KurucuKutusu'
 import { sehirHizmet, type Hizmet } from '@/lib/sehirHizmet'
 
@@ -85,8 +88,16 @@ export default function CityServiceSections({ city, hizmet }: { city: string; hi
         )}
       </div>
     </section>
-    {hizmet === 'ads' && <GoogleAdsVideoBolumu />}
-    {hizmet === 'web' && <WebSitesiVideoBolumu />}
+    {(hizmet === 'ads' || hizmet === 'reklam') && <GoogleAdsVideoBolumu />}
+    {(hizmet === 'ads' || hizmet === 'reklam') && <AdsButceGrafigi />}
+    {(hizmet === 'web' || hizmet === 'yazilim') && <WebSitesiVideoBolumu />}
+    {hizmet === 'pazarlama' && <SeoVideoBolumu />}
+    {hizmet === 'pazarlama' && <SeoBuyumeGrafigi />}
+    <IlceBaglantilari
+      ustSlug={city}
+      baslik={`Hizmet Verdiğimiz ${v.sehir} İlçeleri`}
+      aciklama="Kendi ilçenizi seçin; o bölgede müşterinin nasıl aradığını, öne çıkan sektörleri ve size özel yaklaşımımızı görün."
+    />
     <KurucuKutusu yerel={['kocaeli', 'izmit'].includes(city)} />
     </>
   )

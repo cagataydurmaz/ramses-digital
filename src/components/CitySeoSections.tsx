@@ -2,6 +2,9 @@ import { MapPin } from 'lucide-react'
 import KurucuKutusu from '@/components/KurucuKutusu'
 import { sehirSeo } from '@/lib/sehirSeo'
 import IlceBaglantilari from '@/components/IlceBaglantilari'
+import GoogleOnizleme from '@/components/GoogleOnizleme'
+import SeoBuyumeGrafigi from '@/components/grafik/SeoBuyumeGrafigi'
+import { SeoVideoBolumu } from '@/components/telefon/TelefonBolumleri'
 
 export default function CitySeoSections({ city }: { city: string }) {
   const v = sehirSeo[city]
@@ -31,6 +34,19 @@ export default function CitySeoSections({ city }: { city: string }) {
           </div>
         </section>
       )}
+
+      <section aria-labelledby="google-onizleme" className="py-10 md:py-14 px-6">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-10">
+            <p className="text-blue-400 text-xs font-semibold uppercase tracking-wider mb-2">10 saniyede deneyin</p>
+            <h2 id="google-onizleme" className="text-3xl md:text-4xl font-bold text-white mb-4">{v.bulunma} İşletmeniz Google&apos;da Nasıl Görünür?</h2>
+            <p className="text-zinc-400 max-w-2xl mx-auto">İşletmenizin adını ve ne iş yaptığınızı yazın; müşterinizin göreceği sonucu anında görün.</p>
+          </div>
+          <GoogleOnizleme varsayilanYer={v.sehir} />
+        </div>
+      </section>
+      <SeoVideoBolumu />
+      <SeoBuyumeGrafigi />
 
       <IlceBaglantilari
         ustSlug={city}
