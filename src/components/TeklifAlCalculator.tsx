@@ -312,7 +312,7 @@ export default function TeklifAlCalculator() {
     <div className="max-w-3xl mx-auto">
       {/* Progress */}
       {step < 5 && (
-        <div className="mb-8">
+        <div className="mb-4 sm:mb-6">
           <div className="flex items-center justify-between mb-2">
             {['İşletme Tipi', 'Büyüklük', 'Hizmetler', 'Web Sitesi'].map((label, i) => (
               <div
@@ -345,14 +345,14 @@ export default function TeklifAlCalculator() {
         </div>
       )}
 
-      <div className="bg-[#0D1225] border border-white/[0.06] rounded-2xl p-6 md:p-8">
+      <div className="bg-[#0D1225] border border-white/[0.06] rounded-2xl p-4 sm:p-6">
         <>
           {/* Step 1: Business Type */}
           {step === 1 && (
             <div>
-              <h3 className="text-white font-bold text-xl mb-2">İşletme Tipinizi Seçin</h3>
-              <p className="text-zinc-400 text-sm mb-6">Size en uygun paketi hazırlayabilmemiz için işletme tipinizi seçin.</p>
-              <div className="grid grid-cols-2 gap-3">
+              <h3 className="text-white font-bold text-lg mb-1">İşletme Tipinizi Seçin</h3>
+              <p className="text-zinc-400 text-sm mb-4">Size en uygun paketi hazırlayabilmemiz için işletme tipinizi seçin.</p>
+              <div className="grid grid-cols-2 gap-2.5">
                 {businessTypes.map((bt) => {
                   const Icon = bt.icon
                   const selected = businessType === bt.id
@@ -360,20 +360,20 @@ export default function TeklifAlCalculator() {
                     <button
                       key={bt.id}
                       onClick={() => setBusinessType(bt.id)}
-                      className={`p-5 rounded-xl border text-left transition-all ${
+                      className={`flex items-center gap-3 px-3.5 py-3 rounded-xl border text-left transition-all ${
                         selected
                           ? 'border-blue-500/60 bg-blue-500/10'
                           : 'border-white/[0.06] bg-white/[0.02] hover:border-white/20'
                       }`}
                     >
-                      <Icon
-                        size={20}
-                        className={`mb-3 ${selected ? 'text-blue-400' : 'text-zinc-400'}`}
-                      />
-                      <p className={`font-semibold text-sm ${selected ? 'text-white' : 'text-zinc-300'}`}>
-                        {bt.label}
-                      </p>
-                      <p className="text-zinc-600 text-xs mt-0.5">{bt.desc}</p>
+                      <Icon size={18} className={`hidden sm:block shrink-0 ${selected ? 'text-blue-400' : 'text-zinc-400'}`} />
+                      <span className="min-w-0">
+                        <span className={`flex items-center gap-1.5 font-semibold text-sm ${selected ? 'text-white' : 'text-zinc-300'}`}>
+                          <Icon size={15} className={`sm:hidden shrink-0 ${selected ? 'text-blue-400' : 'text-zinc-400'}`} />
+                          {bt.label}
+                        </span>
+                        <span className="block text-zinc-500 text-[11px] sm:text-xs leading-snug mt-1 sm:mt-0.5">{bt.desc}</span>
+                      </span>
                     </button>
                   )
                 })}
@@ -384,9 +384,9 @@ export default function TeklifAlCalculator() {
           {/* Step 2: Business Size */}
           {step === 2 && (
             <div>
-              <h3 className="text-white font-bold text-xl mb-2">İşletmenizin Büyüklüğü</h3>
-              <p className="text-zinc-400 text-sm mb-6">Fiyat aralığını doğru hesaplayabilmemiz için gerekli.</p>
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+              <h3 className="text-white font-bold text-lg mb-1">İşletmenizin Büyüklüğü</h3>
+              <p className="text-zinc-400 text-sm mb-4">Fiyat aralığını doğru hesaplayabilmemiz için gerekli.</p>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
                 {businessSizes.map((bs) => {
                   const Icon = bs.icon
                   const selected = businessSize === bs.id
@@ -394,20 +394,17 @@ export default function TeklifAlCalculator() {
                     <button
                       key={bs.id}
                       onClick={() => setBusinessSize(bs.id)}
-                      className={`p-5 rounded-xl border text-left transition-all ${
+                      className={`flex items-center sm:items-start gap-3 px-3.5 py-3 rounded-xl border text-left transition-all ${
                         selected
                           ? 'border-blue-500/60 bg-blue-500/10'
                           : 'border-white/[0.06] bg-white/[0.02] hover:border-white/20'
                       }`}
                     >
-                      <Icon
-                        size={20}
-                        className={`mb-3 ${selected ? 'text-blue-400' : 'text-zinc-400'}`}
-                      />
-                      <p className={`font-semibold text-sm ${selected ? 'text-white' : 'text-zinc-300'}`}>
-                        {businessSizeLabels[bs.id]}
-                      </p>
-                      <p className="text-zinc-600 text-xs mt-0.5">{bs.desc}</p>
+                      <Icon size={18} className={`shrink-0 sm:mt-0.5 ${selected ? 'text-blue-400' : 'text-zinc-400'}`} />
+                      <span className="min-w-0">
+                        <span className={`block font-semibold text-sm ${selected ? 'text-white' : 'text-zinc-300'}`}>{businessSizeLabels[bs.id]}</span>
+                        <span className="block text-zinc-500 text-xs mt-0.5">{bs.desc}</span>
+                      </span>
                     </button>
                   )
                 })}
@@ -418,9 +415,9 @@ export default function TeklifAlCalculator() {
           {/* Step 3: Services */}
           {step === 3 && (
             <div>
-              <h3 className="text-white font-bold text-xl mb-2">İhtiyacınız Olan Hizmetler</h3>
-              <p className="text-zinc-400 text-sm mb-6">Birden fazla seçebilirsiniz.</p>
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+              <h3 className="text-white font-bold text-lg mb-1">İhtiyacınız Olan Hizmetler</h3>
+              <p className="text-zinc-400 text-sm mb-4">Birden fazla seçebilirsiniz.</p>
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
                 {serviceOptions.map((svc) => {
                   const Icon = svc.icon
                   const selected = services.includes(svc.id)
@@ -428,7 +425,7 @@ export default function TeklifAlCalculator() {
                     <button
                       key={svc.id}
                       onClick={() => toggleService(svc.id)}
-                      className={`p-4 rounded-xl border text-left transition-all relative ${
+                      className={`flex items-center gap-2 px-3 py-2.5 pr-7 rounded-xl border text-left transition-all relative ${
                         selected
                           ? 'border-blue-500/60 bg-blue-500/10'
                           : 'border-white/[0.06] bg-white/[0.02] hover:border-white/20'
@@ -437,13 +434,11 @@ export default function TeklifAlCalculator() {
                       {selected && (
                         <CheckCircle2
                           size={14}
-                          className="absolute top-3 right-3 text-blue-400"
+                          className="absolute top-1/2 -translate-y-1/2 right-2.5 text-blue-400"
                         />
                       )}
-                      <Icon size={18} className={`mb-2 ${selected ? 'text-blue-400' : 'text-zinc-400'}`} />
-                      <p className={`text-xs font-medium ${selected ? 'text-white' : 'text-zinc-400'}`}>
-                        {svc.label}
-                      </p>
+                      <Icon size={16} className={`shrink-0 ${selected ? 'text-blue-400' : 'text-zinc-400'}`} />
+                      <span className={`text-xs font-medium leading-snug ${selected ? 'text-white' : 'text-zinc-400'}`}>{svc.label}</span>
                     </button>
                   )
                 })}
@@ -451,7 +446,7 @@ export default function TeklifAlCalculator() {
 
               {/* SEO seçildiyse: aylık yönetim mi, tek seferlik kurulum mu? */}
               {services.includes('SEO') && (
-                <div className="mt-5 p-4 rounded-xl border border-white/[0.06] bg-white/[0.02]">
+                <div className="mt-4 p-3 sm:p-4 rounded-xl border border-white/[0.06] bg-white/[0.02]">
                   <p className="text-zinc-300 text-xs font-medium mb-3">SEO, AEO & GEO için ödeme şekli</p>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     <button
@@ -493,8 +488,8 @@ export default function TeklifAlCalculator() {
           {/* Step 4: URL */}
           {step === 4 && (
             <div>
-              <h3 className="text-white font-bold text-xl mb-2">Web Siteniz</h3>
-              <p className="text-zinc-400 text-sm mb-6">
+              <h3 className="text-white font-bold text-lg mb-1">Web Siteniz</h3>
+              <p className="text-zinc-400 text-sm mb-4">
                 Opsiyoneldir. Girmeniz durumunda daha kişiselleştirilmiş bir teklif alırsınız.
               </p>
               <input
@@ -757,7 +752,7 @@ export default function TeklifAlCalculator() {
 
         {/* Navigation */}
         {step < 5 && (
-          <div className="flex items-center justify-between mt-8">
+          <div className="flex items-center justify-between mt-5">
             <button
               onClick={() => setStep((s) => Math.max(1, s - 1))}
               disabled={step === 1}

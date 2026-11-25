@@ -12,7 +12,7 @@ const LOGO: Record<string, Logo> = {
   'nur-celen': { src: '/logolar/nur-celen.png', w: 174, h: 'h-10 sm:h-12' },
   'gamzeli-dermokozmetik': { src: '/logolar/gamzeli-dermokozmetik.png', w: 95, ad: true },
   'terapisti-bul': { src: '/logolar/terapisti-bul.png', w: 96, ad: true },
-  'furkan-arikan': { src: '/logolar/furkan-arikan.png', w: 145, ad: true, h: 'h-6 sm:h-7' },
+  'furkan-arikan': { src: '/logolar/furkan-arikan.png', w: 646, h: 'h-7 sm:h-8' },
   'tenvor-springs': { src: '/logolar/tenvor-springs.png', w: 281, h: 'h-9 sm:h-10' },
   'ieyp-international': { src: '/logolar/ieyp-international.png', w: 266, h: 'h-9 sm:h-11' },
 }

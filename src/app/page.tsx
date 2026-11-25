@@ -449,10 +449,10 @@ export default function HomePage() {
 
       {/* ── AI TEKLİF HESAPLAYICI (inline, hero'nun hemen altında) ─────────── */}
       <section id="teklif-hesapla" className="py-12 sm:py-16 px-6 scroll-mt-24">
-        <div className="max-w-3xl mx-auto text-center mb-10">
-          <p className="text-blue-500 text-sm font-medium tracking-wider uppercase mb-3">AI Destekli Teklif Hesaplayıcı</p>
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Anında Ücretsiz Teklif Alın</h2>
-          <p className="text-zinc-400 max-w-xl mx-auto">4 adımda işletmenize özel dijital pazarlama paketi ve tahmini fiyat aralığı görün.</p>
+        <div className="max-w-3xl mx-auto text-center mb-6 sm:mb-8">
+          <p className="text-blue-500 text-sm font-medium tracking-wider uppercase mb-2">AI Destekli Teklif Hesaplayıcı</p>
+          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">Anında Ücretsiz Teklif Alın</h2>
+          <p className="text-zinc-400 text-sm sm:text-base max-w-xl mx-auto">4 adımda işletmenize özel dijital pazarlama paketi ve tahmini fiyat aralığı görün.</p>
         </div>
         <TeklifAlCalculator />
       </section>
