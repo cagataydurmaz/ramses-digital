@@ -276,7 +276,6 @@ export default function HomePage() {
             className="mobile-hide-blur absolute bottom-[5%] left-[5%] w-[400px] h-[400px] bg-[radial-gradient(ellipse_at_center,rgba(16,185,129,0.108)_0%,rgba(16,185,129,0.036)_40%,transparent_70%)] rounded-full"
             style={{ animationDelay: '8s' }}
           />
-          <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/5 to-transparent" />
         </div>
 
         {/* Statik grid deseni kaldırıldı — arka plan videosu kendi hareketli grid'ini taşıyor, ikisi üst üste redundanttı. */}
@@ -313,36 +312,25 @@ export default function HomePage() {
           </svg>
         </div>
 
-        {/* Yüzen hizmet rozetleri — sadece geniş ekranlarda, içerikle çakışmaz */}
+        {/* Yüzen hizmet rozetleri — sadece geniş ekranlarda, içerikle çakışmaz; her biri hizmet sayfasına gider */}
         <div className="hidden xl:block absolute inset-0 pointer-events-none">
-          <div
-            className="hero-chip absolute top-[22%] left-[6%] flex items-center gap-2 bg-[#0d1424]/80 border border-white/[0.08] rounded-full px-4 py-2 shadow-lg shadow-black/20"
-            style={{ animationDelay: '0s' }}
-          >
-            <Search size={14} className="text-blue-400" />
-            <span className="text-xs font-medium text-zinc-300">SEO</span>
-          </div>
-          <div
-            className="hero-chip absolute top-[15%] right-[7%] flex items-center gap-2 bg-[#0d1424]/80 border border-white/[0.08] rounded-full px-4 py-2 shadow-lg shadow-black/20"
-            style={{ animationDelay: '1.2s' }}
-          >
-            <TrendingUp size={14} className="text-violet-400" />
-            <span className="text-xs font-medium text-zinc-300">Google Ads</span>
-          </div>
-          <div
-            className="hero-chip absolute bottom-[26%] left-[9%] flex items-center gap-2 bg-[#0d1424]/80 border border-white/[0.08] rounded-full px-4 py-2 shadow-lg shadow-black/20"
-            style={{ animationDelay: '0.6s' }}
-          >
-            <Sparkles size={14} className="text-emerald-400" />
-            <span className="text-xs font-medium text-zinc-300">Yapay Zekâ</span>
-          </div>
-          <div
-            className="hero-chip absolute bottom-[20%] right-[8%] flex items-center gap-2 bg-[#0d1424]/80 border border-white/[0.08] rounded-full px-4 py-2 shadow-lg shadow-black/20"
-            style={{ animationDelay: '1.8s' }}
-          >
-            <Workflow size={14} className="text-fuchsia-400" />
-            <span className="text-xs font-medium text-zinc-300">n8n Otomasyon</span>
-          </div>
+          {[
+            { href: '/hizmetler/seo', ad: 'SEO', Ikon: Search, renk: 'text-blue-400', yer: 'top-[22%] left-[6%]', gecikme: '0s' },
+            { href: '/hizmetler/google-ads', ad: 'Google Ads', Ikon: TrendingUp, renk: 'text-violet-400', yer: 'top-[15%] right-[7%]', gecikme: '1.2s' },
+            { href: '/geo-ajansi', ad: 'Yapay Zekâ', Ikon: Sparkles, renk: 'text-emerald-400', yer: 'top-[56%] left-[7%]', gecikme: '0.6s' },
+            { href: '/hizmetler/n8n-otomasyon', ad: 'n8n Otomasyon', Ikon: Workflow, renk: 'text-fuchsia-400', yer: 'top-[48%] right-[6%]', gecikme: '1.8s' },
+          ].map(({ href, ad, Ikon, renk, yer, gecikme }) => (
+            <Link
+              key={href}
+              href={href}
+              prefetch={false}
+              className={`hero-chip pointer-events-auto absolute ${yer} flex items-center gap-2 bg-[#0d1424]/80 border border-white/[0.08] hover:border-white/25 hover:bg-[#13284F]/90 rounded-full px-4 py-2 shadow-lg shadow-black/20 transition-colors`}
+              style={{ animationDelay: gecikme }}
+            >
+              <Ikon size={14} className={renk} />
+              <span className="text-xs font-medium text-zinc-300">{ad}</span>
+            </Link>
+          ))}
         </div>
 
         <div className="relative z-10 max-w-5xl mx-auto text-center">

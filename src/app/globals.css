@@ -515,7 +515,7 @@ html { -webkit-text-size-adjust: 100%; text-rendering: optimizeLegibility; }
    .tema-koyu: açık bölüm içinde kendi koyu görünümünü koruyan parça
    (telefon ekranları, videolu kart); kurallar onun içine işlemez. */
 /* Lacivert tonları: eski neredeyse siyah #0A0F1E yerine mavisi belirgin, daha açık lacivert */
-:root { --lacivert: #13284F; --lacivert-alt: #0F2143; }
+:root { --gecis-asagi: linear-gradient(var(--lacivert) 0%, rgba(22,47,94,.93) 14%, rgba(29,60,118,.78) 28%, rgba(39,77,146,.57) 44%, rgba(56,98,175,.36) 60%, rgba(85,128,205,.18) 76%, rgba(130,165,230,.06) 90%, rgba(150,180,235,0) 100%); --lacivert: #13284F; --lacivert-alt: #0F2143; }
 body.bg-\[\#0A0F1E\] { background-color: var(--lacivert); }
 header[class*="bg-[#0A0F1E]"] { background-color: rgba(19, 40, 79, .96); }
 footer.bg-\[\#080D18\] { background-color: var(--lacivert-alt); }
@@ -531,27 +531,29 @@ footer.bg-\[\#080D18\] { background-color: var(--lacivert-alt); }
 }
 .tema-site .tema-acik, .tema-site .home-flow-bg { background: transparent; }
 .tema-acik section:is(.bg-\[\#080D18\], .bg-\[\#0B1022\], .bg-\[\#0D1225\]):not(.tema-koyu *) { background: transparent; box-shadow: none; }
-.tema-gecis-ust { height: 4rem; background: linear-gradient(var(--lacivert), rgba(19,40,79,0)); }
+.tema-gecis-ust { height: 7rem; background: var(--gecis-asagi); }
 /* Bölüm geçişleri: keskin çizgi yok; vurgu bandı açık maviye yumuşakça açılıp kapanır */
 .tema-acik .tema-koyu { color: #FFFFFF; }
 /* Sayfa üst alanı (hero) koyu kalır; altı açık zemine süzülür */
 .tema-acik .tema-hero {
-  --hero-gecis: 5rem;
+  --hero-gecis: 6rem;
   background: linear-gradient(var(--lacivert), var(--lacivert)) top / 100% calc(100% - var(--hero-gecis)) no-repeat;
   padding-bottom: 0 !important;
 }
 .tema-acik .tema-hero::after {
   content: ''; display: block; position: relative; z-index: 0;
   height: var(--hero-gecis); margin-inline: calc(50% - 50vw);
-  background: linear-gradient(var(--lacivert), rgba(19,40,79,0));
+  background: var(--gecis-asagi);
 }
-@media (min-width: 640px) { .tema-acik .tema-hero { --hero-gecis: 7rem; } }
+@media (min-width: 640px) { .tema-acik .tema-hero { --hero-gecis: 10rem; } }
 /* Sayfa sonu: açık zeminden lacivert alt bilgiye yumuşak geçiş */
-.tema-site::after { content: ''; display: block; height: 5rem; background: linear-gradient(rgba(15,33,67,0), var(--lacivert-alt)); }
+.tema-site::after { content: ''; display: block; height: 7rem; background: linear-gradient(rgba(150,180,235,0) 0%, rgba(120,155,220,.06) 10%, rgba(80,118,195,.18) 24%, rgba(52,88,160,.36) 40%, rgba(35,66,130,.57) 56%, rgba(24,50,104,.78) 72%, rgba(17,38,80,.93) 86%, var(--lacivert-alt) 100%); }
+@media (min-width: 640px) { .tema-site::after { height: 11rem; } }
+footer.bg-\[\#080D18\] { border-top-color: transparent; }
 .tema-acik .sayfa-arka-plani { display: none; }
 .tema-acik .bg-\[\#0A0F1E\]:not(.tema-koyu):not(.tema-koyu *) { background: #F2F5F9; }
 .tema-acik .tema-bant { background: linear-gradient(rgba(37,99,235,0), rgba(37,99,235,.07) 25%, rgba(37,99,235,.07) 75%, rgba(37,99,235,0)); }
-@media (min-width: 640px) { .tema-gecis-ust { height: 6rem; } }
+@media (min-width: 640px) { .tema-gecis-ust { height: 11rem; } }
 
 /* Yazılar (renkli zeminli düğmelerdeki beyaz yazıya dokunma) */
 .tema-acik .text-white:not([class*="bg-"]):not(.tema-koyu *) { color: #0F1B2D; }
@@ -598,6 +600,8 @@ footer.bg-\[\#080D18\] { background-color: var(--lacivert-alt); }
 .tema-acik .bg-zinc-800:not(.tema-koyu *) { background: #E4E7EC; }
 .tema-acik [class*="border-white/"]:not(.tema-koyu *) { border-color: #E3E8EF; }
 .tema-acik [class*="hover:border-white/"]:hover:not(.tema-koyu *) { border-color: #CBD5E1; }
+/* Tam genişlik bölümlerin üst/alt çizgisi açık temada keskin çizgi yapar: gizle */
+.tema-acik section:is(.border-y, .border-t, .border-b):not(.tema-koyu *) { border-top-color: transparent; border-bottom-color: transparent; }
 .tema-acik [class*="ring-white/"]:not(.tema-koyu):not(.tema-koyu *) { --tw-ring-color: #E3E8EF; }
 .tema-acik :is([class^="bg-white/"], [class*=" bg-white/"]):not(.tema-koyu *) { background-color: #F7F9FC; }
 .tema-acik [class*="from-white/"]:not(.tema-koyu *) { background-image: none; background-color: #FFFFFF; }
