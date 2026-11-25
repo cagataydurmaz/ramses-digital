@@ -110,7 +110,7 @@ export default function GebzeHizmetSayfasi({ v }: { v: GebzeHizmetVeri }) {
       <section className="pb-14 md:pb-16 px-6">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {v.kartlar.map(({ icon: Icon, title, desc }) => (
-            <div key={title} className="bg-[#0D1225] border border-white/[0.06] rounded-xl p-6">
+            <div key={title} className="kart-kompakt bg-[#0D1225] border border-white/[0.06] rounded-xl p-6">
               <div className="w-10 h-10 rounded-lg bg-blue-500/10 flex items-center justify-center mb-4">
                 <Icon size={20} className="text-blue-400" />
               </div>

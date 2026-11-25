@@ -86,12 +86,12 @@ export default function GoogleAdsHizmetPage() {
         </div>
       </section>
 
-      <section className="py-12 px-6 border-y border-white/[0.04]">
-        <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-          <div><div className="text-3xl md:text-4xl font-bold text-white">50+</div><div className="text-zinc-400 text-sm mt-1">Tamamlanan Proje</div></div>
-          <div><div className="text-3xl md:text-4xl font-bold text-white">%96</div><div className="text-zinc-400 text-sm mt-1">Müşteri Memnuniyeti</div></div>
-          <div><div className="text-3xl md:text-4xl font-bold text-white">Aylık</div><div className="text-zinc-400 text-sm mt-1">Şeffaf Rapor</div></div>
-          <div><div className="text-3xl md:text-4xl font-bold text-white">5.0/5</div><div className="text-zinc-400 text-sm mt-1">Google Puanı</div></div>
+      <section className="py-8 md:py-12 px-6 border-y border-white/[0.04]">
+        <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 text-center">
+          <div><div className="text-2xl md:text-4xl font-bold text-white">50+</div><div className="text-zinc-400 text-xs md:text-sm mt-1">Tamamlanan Proje</div></div>
+          <div><div className="text-2xl md:text-4xl font-bold text-white">%96</div><div className="text-zinc-400 text-xs md:text-sm mt-1">Müşteri Memnuniyeti</div></div>
+          <div><div className="text-2xl md:text-4xl font-bold text-white">Aylık</div><div className="text-zinc-400 text-xs md:text-sm mt-1">Şeffaf Rapor</div></div>
+          <div><div className="text-2xl md:text-4xl font-bold text-white">5.0/5</div><div className="text-zinc-400 text-xs md:text-sm mt-1">Google Puanı</div></div>
         </div>
       </section>
 
@@ -118,7 +118,7 @@ export default function GoogleAdsHizmetPage() {
             {campaignTypes.map((c) => {
               const Icon = c.icon
               return (
-                <div key={c.title} className="bg-[#0D1225] border border-white/[0.06] rounded-2xl p-6 hover:border-orange-500/30 transition-colors">
+                <div key={c.title} className="kart-kompakt bg-[#0D1225] border border-white/[0.06] rounded-2xl p-6 hover:border-orange-500/30 transition-colors">
                   <div className="w-11 h-11 bg-orange-500/10 rounded-xl flex items-center justify-center mb-4">
                     <Icon size={20} className="text-orange-400" />
                   </div>

@@ -29,7 +29,7 @@ import {
   CheckCircle2,
   Workflow,
   ArrowRight,
-  Share2, Megaphone } from 'lucide-react'
+  Share2, Megaphone, ChevronDown } from 'lucide-react'
 
 const services = [
   {
@@ -237,28 +237,33 @@ export default function ServicesPage() {
 
       {/* Services */}
       <section className="pb-24 px-6">
-        <div className="max-w-7xl mx-auto space-y-6">
+        <div className="max-w-7xl mx-auto space-y-4 md:space-y-6">
           {services.map((service) => {
             const Icon = service.icon
             const colors = colorMap[service.color]
             return (
               <div
                 key={service.title}
-                className={`bg-[#0D1225] border ${colors.border} rounded-2xl p-8 md:p-10 transition-all duration-300`}
+                className={`bg-[#0D1225] border ${colors.border} rounded-2xl p-5 md:p-10 transition-all duration-300`}
               >
-                <div className="grid md:grid-cols-2 gap-8 items-start">
+                <div className="grid md:grid-cols-2 gap-4 md:gap-8 items-start">
                   <div>
-                    <div className={`w-12 h-12 ${colors.icon} rounded-xl flex items-center justify-center mb-5`}>
-                      <Icon size={22} />
+                    {/* Mobilde ikon, etiket ve başlık yan yana; kart kısa */}
+                    <div className="flex items-center gap-3 md:block">
+                      <div className={`w-10 h-10 md:w-12 md:h-12 shrink-0 ${colors.icon} rounded-xl flex items-center justify-center md:mb-5`}>
+                        <Icon size={20} />
+                      </div>
+                      <div className="min-w-0">
+                        <p className="text-zinc-400 text-[11px] md:text-xs font-medium uppercase tracking-wider mb-0.5 md:mb-2">
+                          {service.tagline}
+                        </p>
+                        <h2 className="text-lg md:text-3xl font-bold text-white md:mb-4 leading-snug">
+                          {service.title}
+                        </h2>
+                      </div>
                     </div>
-                    <p className="text-zinc-400 text-xs font-medium uppercase tracking-wider mb-2">
-                      {service.tagline}
-                    </p>
-                    <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
-                      {service.title}
-                    </h2>
-                    <p className="text-zinc-400 leading-relaxed">{service.desc}</p>
-                    <div className="flex flex-wrap items-center gap-4 mt-6">
+                    <p className="text-zinc-400 text-sm md:text-base leading-relaxed mt-3 md:mt-0 line-clamp-3 md:line-clamp-none">{service.desc}</p>
+                    <div className="flex flex-wrap items-center gap-4 mt-4 md:mt-6">
                       <CalendlyButton label="Teklif Al" variant="link" />
                       {service.href && (
                         <Link
@@ -271,7 +276,7 @@ export default function ServicesPage() {
                       )}
                     </div>
                   </div>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <div className="hidden md:grid grid-cols-1 sm:grid-cols-2 gap-3">
                     {service.features.map((feature) => (
                       <div key={feature} className="flex items-start gap-2.5">
                         <CheckCircle2 size={15} className={`${colors.tag.split(' ')[1]} mt-0.5 shrink-0`} />
@@ -279,6 +284,21 @@ export default function ServicesPage() {
                       </div>
                     ))}
                   </div>
+                  {/* Mobilde kapsam listesi kapalı menüde */}
+                  <details className="group md:hidden -mt-1">
+                    <summary className="list-none [&::-webkit-details-marker]:hidden cursor-pointer inline-flex items-center gap-1.5 text-sm text-zinc-300">
+                      Neler dahil? <span className="text-zinc-500">({service.features.length})</span>
+                      <ChevronDown size={15} className="group-open:rotate-180 transition-transform" />
+                    </summary>
+                    <div className="mt-3 grid gap-2">
+                      {service.features.map((feature) => (
+                        <div key={feature} className="flex items-start gap-2.5">
+                          <CheckCircle2 size={14} className={`${colors.tag.split(' ')[1]} mt-0.5 shrink-0`} />
+                          <span className="text-zinc-400 text-sm">{feature}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </details>
                 </div>
               </div>
             )

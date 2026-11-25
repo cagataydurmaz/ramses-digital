@@ -70,7 +70,7 @@ export default function SektorlerPage() {
           {sektorler.map((s) => {
             const Icon = ikon[s.slug] ?? Briefcase
             return (
-              <Link key={s.slug} href={`/sektorler/${s.slug}`} className="group bg-[#0D1225] border border-white/[0.06] hover:border-blue-500/30 rounded-xl p-6 transition-colors">
+              <Link key={s.slug} href={`/sektorler/${s.slug}`} className="kart-kompakt group bg-[#0D1225] border border-white/[0.06] hover:border-blue-500/30 rounded-xl p-6 transition-colors">
                 <div className="w-10 h-10 rounded-lg bg-blue-500/10 flex items-center justify-center mb-4">
                   <Icon size={20} className="text-blue-400" />
                 </div>

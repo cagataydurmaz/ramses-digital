@@ -112,7 +112,7 @@ export default function N8nOtomasyonPage() {
             {useCases.map((c) => {
               const Icon = c.icon
               return (
-                <div key={c.title} className="bg-[#0D1225] border border-white/[0.06] rounded-2xl p-6 hover:border-fuchsia-500/30 transition-colors">
+                <div key={c.title} className="kart-kompakt bg-[#0D1225] border border-white/[0.06] rounded-2xl p-6 hover:border-fuchsia-500/30 transition-colors">
                   <div className="w-11 h-11 bg-fuchsia-500/10 rounded-xl flex items-center justify-center mb-4">
                     <Icon size={20} className="text-fuchsia-400" />
                   </div>

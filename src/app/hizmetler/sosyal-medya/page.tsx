@@ -188,7 +188,7 @@ export default function SosyalMedyaPage() {
             {services.map((s) => {
               const Icon = s.icon
               return (
-                <div key={s.title} className="bg-[#0D1225] border border-white/[0.06] rounded-2xl p-6 hover:border-pink-500/30 transition-colors">
+                <div key={s.title} className="kart-kompakt bg-[#0D1225] border border-white/[0.06] rounded-2xl p-6 hover:border-pink-500/30 transition-colors">
                   <div className="w-11 h-11 bg-pink-500/10 rounded-xl flex items-center justify-center mb-4">
                     <Icon size={20} className="text-pink-400" />
                   </div>

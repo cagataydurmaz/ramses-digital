@@ -230,7 +230,7 @@ export default function EnglishHomePage() {
             <p className="text-zinc-400 max-w-xl mx-auto">People now look for your brand in three different places — we work to get you found in all three.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-            <div className="h-full bg-[#0D1225] border border-white/[0.14] rounded-2xl p-6">
+            <div className="kart-kompakt h-full bg-[#0D1225] border border-white/[0.14] rounded-2xl p-6">
               <div className="w-11 h-11 bg-blue-500/10 rounded-xl flex items-center justify-center mb-4">
                 <Search size={20} className="text-blue-400" />
               </div>
@@ -238,7 +238,7 @@ export default function EnglishHomePage() {
               <h3 className="text-white font-semibold text-lg mb-2">Being Found on Google</h3>
               <p className="text-zinc-400 text-sm leading-relaxed">Your brand appearing on the first page, in the top results, when a potential customer searches on Google.</p>
             </div>
-            <div className="h-full bg-[#0D1225] border border-white/[0.14] rounded-2xl p-6">
+            <div className="kart-kompakt h-full bg-[#0D1225] border border-white/[0.14] rounded-2xl p-6">
               <div className="w-11 h-11 bg-violet-500/10 rounded-xl flex items-center justify-center mb-4">
                 <Mic size={20} className="text-violet-400" />
               </div>
@@ -246,7 +246,7 @@ export default function EnglishHomePage() {
               <h3 className="text-white font-semibold text-lg mb-2">Being the Direct Answer</h3>
               <p className="text-zinc-400 text-sm leading-relaxed">Your brand being cited by voice assistants or featured in Google's answer box.</p>
             </div>
-            <div className="h-full bg-[#0D1225] border border-white/[0.14] rounded-2xl p-6">
+            <div className="kart-kompakt h-full bg-[#0D1225] border border-white/[0.14] rounded-2xl p-6">
               <div className="w-11 h-11 bg-fuchsia-500/10 rounded-xl flex items-center justify-center mb-4">
                 <Bot size={20} className="text-fuchsia-400" />
               </div>

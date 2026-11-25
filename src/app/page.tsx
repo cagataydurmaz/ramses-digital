@@ -463,20 +463,23 @@ export default function HomePage() {
           <div className="mobile-hide-blur absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[300px] bg-[radial-gradient(ellipse_at_center,rgba(59,130,246,0.09)_0%,rgba(59,130,246,0.03)_40%,transparent_70%)] rounded-full" />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-6">
             {stats.map((stat, i) => {
               const Icon = stat.icon
               const c = statColorMap[stat.color]
               return (
                 <FadeIn key={stat.label} delay={i * 0.1}>
-                  <div className="group text-center bg-white/[0.02] border border-white/[0.14] rounded-2xl py-6 sm:py-8 px-3 card-hover">
-                    <div className={`w-10 h-10 sm:w-11 sm:h-11 mx-auto mb-3 rounded-xl ${c.bg} flex items-center justify-center ${c.bgHover} transition-colors`}>
-                      <Icon size={18} className={c.text} />
+                  {/* Mobilde yatay ve kısa: ikon solda, rakam ve etiket yanında */}
+                  <div className="group flex items-center gap-2.5 sm:block sm:text-center bg-white/[0.02] border border-white/[0.14] rounded-2xl p-3 sm:py-8 sm:px-3 card-hover">
+                    <div className={`w-9 h-9 sm:w-11 sm:h-11 shrink-0 sm:mx-auto sm:mb-3 rounded-xl ${c.bg} flex items-center justify-center ${c.bgHover} transition-colors`}>
+                      <Icon size={17} className={c.text} />
                     </div>
-                    <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-1.5">
-                      <Counter target={stat.value} suffix={stat.suffix} />
+                    <div className="min-w-0">
+                      <div className="text-xl sm:text-4xl md:text-5xl font-bold text-white leading-none sm:leading-tight sm:mb-1.5">
+                        <Counter target={stat.value} suffix={stat.suffix} />
+                      </div>
+                      <div className="text-zinc-400 text-[11px] sm:text-sm leading-tight mt-1 sm:mt-0">{stat.label}</div>
                     </div>
-                    <div className="text-zinc-400 text-xs sm:text-sm">{stat.label}</div>
                   </div>
                 </FadeIn>
               )
@@ -586,7 +589,7 @@ export default function HomePage() {
           <GoogleAramaAnimasyonu />
           <div className="grid grid-cols-1 gap-5">
             <FadeIn delay={0}>
-              <div className="h-full bg-[#0D1225] border border-white/[0.14] rounded-2xl p-6">
+              <div className="kart-kompakt h-full bg-[#0D1225] border border-white/[0.14] rounded-2xl p-6">
                 <div className="w-11 h-11 bg-blue-500/10 rounded-xl flex items-center justify-center mb-4">
                   <Search size={20} className="text-blue-400" />
                 </div>
@@ -596,7 +599,7 @@ export default function HomePage() {
               </div>
             </FadeIn>
             <FadeIn delay={0.08}>
-              <div className="h-full bg-[#0D1225] border border-white/[0.14] rounded-2xl p-6">
+              <div className="kart-kompakt h-full bg-[#0D1225] border border-white/[0.14] rounded-2xl p-6">
                 <div className="w-11 h-11 bg-violet-500/10 rounded-xl flex items-center justify-center mb-4">
                   <Mic size={20} className="text-violet-400" />
                 </div>
@@ -606,7 +609,7 @@ export default function HomePage() {
               </div>
             </FadeIn>
             <FadeIn delay={0.16}>
-              <div className="h-full bg-[#0D1225] border border-white/[0.14] rounded-2xl p-6">
+              <div className="kart-kompakt h-full bg-[#0D1225] border border-white/[0.14] rounded-2xl p-6">
                 <div className="w-11 h-11 bg-fuchsia-500/10 rounded-xl flex items-center justify-center mb-4">
                   <Bot size={20} className="text-fuchsia-400" />
                 </div>

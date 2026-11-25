@@ -181,7 +181,7 @@ export default function IlSeoSayfasi({ v }: { v: IlSeoVeri }) {
           ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {v.sektorler.map(({ ad, not }) => (
-              <div key={ad} className="bg-[#0D1225] border border-white/[0.06] rounded-xl p-6">
+              <div key={ad} className="kart-kompakt bg-[#0D1225] border border-white/[0.06] rounded-xl p-6">
                 <div className="w-10 h-10 rounded-lg bg-blue-500/10 flex items-center justify-center mb-4">
                   <Briefcase size={20} className="text-blue-400" />
                 </div>
@@ -223,9 +223,9 @@ export default function IlSeoSayfasi({ v }: { v: IlSeoVeri }) {
       {yakindan && (
         <section className="pb-12 md:pb-14 px-6">
           <div className="max-w-5xl mx-auto bg-[#0D1225] border border-white/[0.08] rounded-2xl p-6 md:p-10">
-            <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">{yakindan.baslik}</h2>
-            <p className="text-zinc-300 leading-relaxed mb-8">{yakindan.paragraf}</p>
-            <div className="grid md:grid-cols-3 gap-4">
+            <h2 className="text-xl md:text-3xl font-bold text-white mb-3 md:mb-4">{yakindan.baslik}</h2>
+            <p className="text-zinc-300 text-[15px] md:text-base leading-relaxed mb-5 md:mb-8">{yakindan.paragraf}</p>
+            <div className="grid md:grid-cols-3 gap-3 md:gap-4">
               {yakindan.ipuclari.map((ip) => (
                 <div key={ip.baslik} className="bg-white/[0.03] border border-white/[0.06] rounded-xl p-5">
                   <div className="flex items-center gap-2 mb-2">

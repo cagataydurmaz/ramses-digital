@@ -168,7 +168,7 @@ export default function AboutPage() {
             {values.map((value) => {
               const Icon = value.icon
               return (
-                <div key={value.title} className="bg-[#0D1225] border border-white/[0.06] rounded-2xl p-6 h-full">
+                <div key={value.title} className="kart-kompakt bg-[#0D1225] border border-white/[0.06] rounded-2xl p-6 h-full">
                   <div className="w-10 h-10 bg-blue-500/10 rounded-xl flex items-center justify-center mb-4">
                     <Icon size={18} className="text-blue-400" />
                   </div>
