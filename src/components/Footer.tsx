@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Phone, MessageCircle, Instagram, MapPin, ChevronDown } from 'lucide-react'
+import { Phone, MessageCircle, Instagram, Linkedin, MapPin, ChevronDown } from 'lucide-react'
 import { ilSeo } from '@/lib/ilSeo'
 import { sektorSehir } from '@/lib/sektorSehir'
 
@@ -159,6 +159,15 @@ export default function Footer() {
                 className="w-11 h-11 rounded-full bg-white/5 hover:bg-blue-500/20 border border-white/[0.06] hover:border-blue-500/40 flex items-center justify-center text-zinc-400 hover:text-blue-400 transition-all"
               >
                 <Instagram size={14} aria-hidden="true" />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/ramses-digital-agency/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn sayfamızı ziyaret edin"
+                className="w-11 h-11 rounded-full bg-white/5 hover:bg-blue-500/20 border border-white/[0.06] hover:border-blue-500/40 flex items-center justify-center text-zinc-400 hover:text-blue-400 transition-all"
+              >
+                <Linkedin size={14} aria-hidden="true" />
               </a>
             </div>
           </div>

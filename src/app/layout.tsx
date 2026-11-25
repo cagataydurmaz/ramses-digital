@@ -176,6 +176,7 @@ export default function RootLayout({
                 knowsLanguage: ['tr', 'en'],
                 sameAs: [
                   'https://instagram.com/ramses.digital',
+                  'https://www.linkedin.com/company/ramses-digital-agency/',
                   'https://maps.app.goo.gl/xKzk4Q5VCeK4ePbz6',
                 ],
               },
