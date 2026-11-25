@@ -3,6 +3,7 @@ import { HaritaTelefonBolumu, SeoVideoBolumu } from '@/components/telefon/Telefo
 import GoogleOnizleme from '@/components/GoogleOnizleme'
 import MahalleHaritasi from '@/components/MahalleHaritasi'
 import SektorVitrini from '@/components/SektorVitrini'
+import IlceBaglantilari from '@/components/IlceBaglantilari'
 import { seoBaslik } from '@/lib/seoBaslik'
 import Link from 'next/link'
 import { MapPin, Search, ArrowRight, CheckCircle2, TrendingUp, Briefcase } from 'lucide-react'
@@ -313,6 +314,12 @@ export default function IlSeoSayfasi({ v }: { v: IlSeoVeri }) {
         rows={kriterler}
       />
 
+      <IlceBaglantilari
+        ustSlug={v.ust ? v.ust.slug : v.slug}
+        haric={v.slug}
+        baslik={v.ust ? `Diğer ${v.ust.ad} İlçe Sayfalarımız` : `${v.ad} İlçe Sayfalarımız`}
+        aciklama={v.ust ? `Çevre ilçelerde de hizmet veriyorsanız ilgili sayfalara göz atın; her bölge için ayrı plan yapıyoruz.` : `${v.bulunma} müşteri çoğu zaman ilçe adıyla arar. Her ilçe için ayrı hazırladığımız sayfaları inceleyebilirsiniz.`}
+      />
       <RelatedPages pages={ilgili} />
 
       <section className="py-12 md:py-16 px-6 relative isolate before:absolute before:inset-x-0 before:-inset-y-16 before:-z-10 before:pointer-events-none before:bg-gradient-to-br before:from-blue-800/30 before:via-[#0c1330]/75 before:to-violet-800/30 before:[mask-image:linear-gradient(to_bottom,transparent,black_30%,black_70%,transparent)]">

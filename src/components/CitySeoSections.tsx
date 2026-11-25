@@ -1,6 +1,7 @@
 import { MapPin } from 'lucide-react'
 import KurucuKutusu from '@/components/KurucuKutusu'
 import { sehirSeo } from '@/lib/sehirSeo'
+import IlceBaglantilari from '@/components/IlceBaglantilari'
 
 export default function CitySeoSections({ city }: { city: string }) {
   const v = sehirSeo[city]
@@ -30,6 +31,12 @@ export default function CitySeoSections({ city }: { city: string }) {
           </div>
         </section>
       )}
+
+      <IlceBaglantilari
+        ustSlug={city}
+        baslik={`${v.sehir} İlçe Sayfalarımız`}
+        aciklama={`${v.bulunma} müşteri çoğu zaman ilçe ve semt adıyla arar. Her ilçe için ayrı hazırladığımız sayfalarda o bölgenin sektörlerini, semtlerini ve örnek aramalarını bulabilirsiniz.`}
+      />
 
       <section className="pb-16 px-6">
         <div className="max-w-5xl mx-auto">

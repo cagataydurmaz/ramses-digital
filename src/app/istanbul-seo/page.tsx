@@ -13,6 +13,7 @@ import ReviewsMarquee from '@/components/ReviewsMarquee'
 import RelatedPages from '@/components/RelatedPages'
 import SeoChecklist from '@/components/SeoChecklist'
 import SehirTeklifBolumu from '@/components/SehirTeklifBolumu'
+import IlceBaglantilari from '@/components/IlceBaglantilari'
 import { MapPin, Search, ArrowRight, CheckCircle2, FileText, Link2, BarChart3, Zap, Award, TrendingUp } from 'lucide-react'
 import HeroGuvenSatiri from '@/components/HeroGuvenSatiri'
 import GoogleAramaAnimasyonu from '@/components/GoogleAramaAnimasyonu'
@@ -274,6 +275,11 @@ export default function IstanbulSeoPage() {
         </div>
       </section>
 
+      <IlceBaglantilari
+        ustSlug="istanbul"
+        baslik="İstanbul İlçe Sayfalarımız"
+        aciklama="İstanbul’da müşteri çoğu zaman ilçe ve semt adıyla arar. Her ilçe için ayrı hazırladığımız sayfalarda o bölgenin sektörlerini, semtlerini ve örnek aramalarını bulabilirsiniz."
+      />
       <SehirTeklifBolumu place="İstanbul" />
 
       <section className="py-12 md:py-16 px-6">
