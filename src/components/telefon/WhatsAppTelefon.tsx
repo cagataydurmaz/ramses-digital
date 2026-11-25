@@ -55,42 +55,42 @@ export default function WhatsAppTelefon() {
   return (
     <div ref={kutu}>
       <TelefonKasa>
-        <div className="absolute inset-0 flex flex-col bg-[#0b141a]">
-          <div className="pt-9 pb-3 px-4 bg-[#1f2c34] flex items-center gap-3">
-            <span className="w-9 h-9 rounded-full bg-emerald-600/80 flex items-center justify-center text-white text-sm font-semibold">İ</span>
+        <div className="absolute inset-0 flex flex-col bg-[#efeae2]">
+          <div className="pt-9 pb-3 px-4 bg-white border-b border-black/5 flex items-center gap-3">
+            <span className="w-9 h-9 rounded-full bg-[#25D366] flex items-center justify-center text-white text-sm font-semibold">İ</span>
             <div>
-              <p className="text-white text-sm font-semibold leading-tight">İşletmeniz</p>
-              <p className="text-emerald-400 text-[11px]">{yaziyor ? 'yazıyor…' : 'çevrimiçi'}</p>
+              <p className="text-[#111b21] text-sm font-semibold leading-tight">İşletmeniz</p>
+              <p className="text-[#667781] text-[11px]">{yaziyor ? 'yazıyor…' : 'çevrimiçi'}</p>
             </div>
           </div>
           <div className="flex-1 px-3 py-4 space-y-2 overflow-hidden flex flex-col justify-end">
             {AKIS.slice(0, adet).map((m, i) =>
               m.kim === 'sistem' ? (
-                <p key={i} className="self-center text-[10.5px] text-emerald-300 bg-emerald-500/10 border border-emerald-500/20 rounded-full px-3 py-1 animate-[belir_.4s_ease-out]">
+                <p key={i} className="self-center text-[10.5px] text-[#54656f] bg-[#ffeecd] shadow-sm rounded-full px-3 py-1 animate-[belir_.4s_ease-out]">
                   {m.metin}
                 </p>
               ) : (
                 <div
                   key={i}
                   className={`max-w-[82%] rounded-lg px-3 py-2 text-[13px] leading-snug animate-[belir_.35s_ease-out] ${
-                    m.kim === 'musteri' ? 'self-end bg-[#005c4b] text-white rounded-tr-none' : 'self-start bg-[#1f2c34] text-zinc-100 rounded-tl-none'
+                    m.kim === 'musteri' ? 'self-end bg-[#d9fdd3] text-[#111b21] rounded-tr-none shadow-sm' : 'self-start bg-white text-[#111b21] rounded-tl-none shadow-sm'
                   }`}
                 >
                   {m.metin}
-                  {m.kim === 'musteri' && <CheckCheck size={13} className="inline ml-1.5 text-sky-300 align-[-2px]" />}
+                  {m.kim === 'musteri' && <CheckCheck size={13} className="inline ml-1.5 text-[#53bdeb] align-[-2px]" />}
                 </div>
               ),
             )}
             {yaziyor && (
-              <div className="self-start bg-[#1f2c34] rounded-lg rounded-tl-none px-3 py-2.5 flex gap-1">
+              <div className="self-start bg-white shadow-sm rounded-lg rounded-tl-none px-3 py-2.5 flex gap-1">
                 {[0, 1, 2].map((d) => (
-                  <span key={d} className="w-1.5 h-1.5 rounded-full bg-zinc-400 animate-bounce" style={{ animationDelay: `${d * 0.15}s` }} />
+                  <span key={d} className="w-1.5 h-1.5 rounded-full bg-[#8696a0] animate-bounce" style={{ animationDelay: `${d * 0.15}s` }} />
                 ))}
               </div>
             )}
           </div>
           <div className="px-3 pb-4">
-            <div className="bg-[#1f2c34] rounded-full px-4 py-2.5 text-zinc-500 text-sm">Mesaj</div>
+            <div className="bg-white rounded-full px-4 py-2.5 text-[#8696a0] text-sm">Mesaj</div>
           </div>
         </div>
       </TelefonKasa>

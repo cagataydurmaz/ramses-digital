@@ -55,28 +55,28 @@ export default function MetaReklamTelefon() {
             </div>
           </div>
         ) : (
-          <div className="absolute inset-0 bg-[#0b141a] text-white pt-9 animate-[belir_.4s_ease-out]">
-            <div className="flex items-center gap-2 px-3 py-2.5 bg-[#1f2c34]">
+          <div className="absolute inset-0 bg-[#efeae2] text-[#111b21] pt-9 animate-[belir_.4s_ease-out]">
+            <div className="flex items-center gap-2 px-3 py-2.5 bg-white border-b border-black/5">
               <ChevronLeft size={18} />
-              <span className="w-8 h-8 rounded-full bg-emerald-600 flex items-center justify-center text-sm font-bold">İ</span>
+              <span className="w-8 h-8 rounded-full bg-[#25D366] text-white flex items-center justify-center text-sm font-bold">İ</span>
               <div className="leading-tight">
                 <p className="text-[13px] font-semibold">İşletmeniz</p>
-                <p className="text-[10px] text-emerald-300">çevrimiçi</p>
+                <p className="text-[10px] text-[#667781]">çevrimiçi</p>
               </div>
             </div>
             <div className="px-3 pt-4 space-y-2">
-              <p className="mx-auto w-fit text-[10px] text-zinc-400 bg-[#1f2c34] rounded-md px-2 py-0.5">Instagram reklamından</p>
-              <div className="ml-auto max-w-[80%] rounded-lg rounded-tr-none bg-[#005c4b] px-3 py-2 text-[13px] animate-[belir_.4s_ease-out]">
+              <p className="mx-auto w-fit text-[10px] text-[#54656f] bg-[#ffeecd] shadow-sm rounded-md px-2 py-0.5">Instagram reklamından</p>
+              <div className="ml-auto max-w-[80%] rounded-lg rounded-tr-none bg-[#d9fdd3] shadow-sm px-3 py-2 text-[13px] animate-[belir_.4s_ease-out]">
                 Merhaba, ücretsiz ön görüşme için bu hafta uygun saatiniz var mı?
-                <span className="flex justify-end items-center gap-1 text-[10px] text-zinc-300 mt-0.5">şimdi <CheckCheck size={12} className="text-sky-400" /></span>
+                <span className="flex justify-end items-center gap-1 text-[10px] text-[#667781] mt-0.5">şimdi <CheckCheck size={12} className="text-[#53bdeb]" /></span>
               </div>
               {adim >= 4 && (
-                <div className="max-w-[80%] rounded-lg rounded-tl-none bg-[#1f2c34] px-3 py-2 text-[13px] animate-[belir_.4s_ease-out]">
+                <div className="max-w-[80%] rounded-lg rounded-tl-none bg-white shadow-sm px-3 py-2 text-[13px] animate-[belir_.4s_ease-out]">
                   Merhaba, elbette! Perşembe 14:00 uygun mu?
                 </div>
               )}
             </div>
-            <p className="absolute bottom-4 left-1/2 -translate-x-1/2 whitespace-nowrap text-[11px] bg-white/10 border border-white/15 rounded-full px-3 py-1">Reklamdan gelen talep ölçülür</p>
+            <p className="absolute bottom-4 left-1/2 -translate-x-1/2 whitespace-nowrap text-[11px] text-white bg-[#111b21]/75 rounded-full px-3 py-1">Reklamdan gelen talep ölçülür</p>
           </div>
         )}
       </TelefonKasa>

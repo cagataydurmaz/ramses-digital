@@ -10,7 +10,7 @@ const YENI = [
   { tur: 'reels', renk: 'from-sky-500 to-indigo-500', yazi: 'Ekibimiz' },
   { tur: 'gonderi', renk: 'from-emerald-500 to-teal-500', yazi: 'Kampanya' },
 ]
-const ESKI = ['from-zinc-700 to-zinc-800', 'from-slate-700 to-slate-800', 'from-stone-700 to-stone-800', 'from-zinc-600 to-zinc-800', 'from-neutral-700 to-neutral-800']
+const ESKI = ['from-zinc-200 to-zinc-300', 'from-slate-200 to-slate-300', 'from-stone-200 to-stone-300', 'from-zinc-100 to-zinc-300', 'from-neutral-200 to-neutral-300']
 
 export default function SosyalMedyaTelefon() {
   const { ref, adim } = useSiraliAdim(YENI.length, 800, 2200)
@@ -19,27 +19,27 @@ export default function SosyalMedyaTelefon() {
   return (
     <div ref={ref}>
       <TelefonKasa alt="Temsili gösterim: içerik takvimine göre paylaşımlar">
-        <div className="absolute inset-0 bg-[#0a0a0a] text-white pt-9">
+        <div className="absolute inset-0 bg-white text-[#0a0a0a] pt-9">
           <div className="px-4 flex items-center gap-3">
             <div className="w-16 h-16 rounded-full p-[2px] bg-gradient-to-tr from-amber-400 via-pink-500 to-violet-500">
-              <div className="w-full h-full rounded-full bg-[#0a0a0a] flex items-center justify-center text-lg font-bold">İ</div>
+              <div className="w-full h-full rounded-full bg-white border-2 border-white flex items-center justify-center text-lg font-bold">İ</div>
             </div>
             <div className="flex-1">
               <p className="font-semibold text-sm">isletmeniz</p>
-              <p className="text-zinc-400 text-xs">İzmit · Kafe & Kahvaltı</p>
-              <span className="inline-block mt-1.5 text-[11px] bg-blue-500 rounded-md px-3 py-0.5 font-medium">Takip et</span>
+              <p className="text-zinc-500 text-xs">İzmit · Kafe & Kahvaltı</p>
+              <span className="inline-block mt-1.5 text-[11px] text-white bg-[#0095f6] rounded-md px-3 py-0.5 font-medium">Takip et</span>
             </div>
           </div>
           <div className="flex gap-3 px-4 mt-4">
             {['Menü', 'Ekip', 'Yorumlar', 'Konum'].map((s) => (
               <div key={s} className="text-center">
-                <div className="w-12 h-12 rounded-full border border-zinc-700 bg-zinc-900" />
-                <p className="text-[10px] text-zinc-400 mt-1">{s}</p>
+                <div className="w-12 h-12 rounded-full border border-zinc-300 bg-zinc-100" />
+                <p className="text-[10px] text-zinc-600 mt-1">{s}</p>
               </div>
             ))}
           </div>
-          <div className="flex justify-around border-t border-zinc-800 mt-4 py-2 text-zinc-500">
-            <Grid3x3 size={18} className="text-white" />
+          <div className="flex justify-around border-t border-zinc-200 mt-4 py-2 text-zinc-400">
+            <Grid3x3 size={18} className="text-[#0a0a0a]" />
             <Clapperboard size={18} />
           </div>
           <div className="grid grid-cols-3 gap-[2px]">
@@ -49,7 +49,7 @@ export default function SosyalMedyaTelefon() {
                 // Kutular sabit; yalnızca içerik değişir (sayfa kayması olmaz).
                 <div key={i} className="relative aspect-[4/5] overflow-hidden">
                   {g ? (
-                    <div key={`${g.yazi}-${adim}`} className={`absolute inset-0 bg-gradient-to-br ${g.renk} flex items-end p-1.5 ${i === 0 ? 'animate-[belir_.45s_ease-out]' : ''}`}>
+                    <div key={`${g.yazi}-${adim}`} className={`absolute inset-0 bg-gradient-to-br ${g.renk} text-white flex items-end p-1.5 ${i === 0 ? 'animate-[belir_.45s_ease-out]' : ''}`}>
                       {g.tur === 'reels' && <Play size={12} className="absolute top-1.5 right-1.5 fill-white" />}
                       {g.tur === 'karusel' && <Layers size={12} className="absolute top-1.5 right-1.5" />}
                       <span className="text-[10px] font-semibold leading-tight drop-shadow">{g.yazi}</span>
@@ -63,7 +63,7 @@ export default function SosyalMedyaTelefon() {
             })}
           </div>
           {adim > 0 && adim <= YENI.length && (
-            <p key={adim} className="absolute bottom-3 left-1/2 -translate-x-1/2 whitespace-nowrap text-[11px] bg-white/10 backdrop-blur border border-white/15 rounded-full px-3 py-1 animate-[belir_.4s_ease-out]">
+            <p key={adim} className="absolute bottom-3 left-1/2 -translate-x-1/2 whitespace-nowrap text-[11px] text-white bg-[#0a0a0a]/75 backdrop-blur rounded-full px-3 py-1 animate-[belir_.4s_ease-out]">
               Takvime göre paylaşıldı
             </p>
           )}
