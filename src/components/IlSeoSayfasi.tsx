@@ -31,6 +31,12 @@ function secici(slug: string) {
   return <T,>(secenekler: T[], kaydir = 0): T => secenekler[(h + kaydir) % secenekler.length]
 }
 
+// Üst il adının iyelik hâli (başlıkta doğru Türkçe ek için)
+const UST_IYELIK: Record<string, string> = {
+  istanbul: 'İstanbul’un', izmir: 'İzmir’in', ankara: 'Ankara’nın', bursa: 'Bursa’nın', antalya: 'Antalya’nın',
+  kocaeli: 'Kocaeli’nin', mugla: 'Muğla’nın', mersin: 'Mersin’in', aydin: 'Aydın’ın',
+}
+
 export function ilSeoMetadata(v: IlSeoVeri): Metadata {
   const title = seoBaslik(`${v.ad} SEO Ajansı – Ücretsiz Site Analizi`)
   const description = `${v.bulunma} Google'da müşteri bulmak isteyen işletmelere SEO hizmeti. Ücretsiz site analizi, net fiyat, aylık rapor, taahhüt yok. Google'da 5.0 puan.`
@@ -317,8 +323,8 @@ export default function IlSeoSayfasi({ v }: { v: IlSeoVeri }) {
       <IlceBaglantilari
         ustSlug={v.ust ? v.ust.slug : v.slug}
         haric={v.slug}
-        baslik={v.ust ? `Diğer ${v.ust.ad} İlçe Sayfalarımız` : `${v.ad} İlçe Sayfalarımız`}
-        aciklama={v.ust ? `Çevre ilçelerde de hizmet veriyorsanız ilgili sayfalara göz atın; her bölge için ayrı plan yapıyoruz.` : `${v.bulunma} müşteri çoğu zaman ilçe adıyla arar. Her ilçe için ayrı hazırladığımız sayfaları inceleyebilirsiniz.`}
+        baslik={v.ust ? `${UST_IYELIK[v.ust.slug] ?? v.ust.ad} Diğer İlçelerinde de Yanınızdayız` : `Hizmet Verdiğimiz ${v.ad} İlçeleri`}
+        aciklama={v.ust ? `Birden fazla ilçede şubeniz ya da müşteriniz varsa her bölge için ayrı plan yapıyoruz.` : `Kendi ilçenizi seçin; o bölgede müşterinin nasıl aradığını, öne çıkan sektörleri ve size özel yaklaşımımızı görün.`}
       />
       <RelatedPages pages={ilgili} />
 

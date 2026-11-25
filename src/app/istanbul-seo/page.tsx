@@ -277,8 +277,8 @@ export default function IstanbulSeoPage() {
 
       <IlceBaglantilari
         ustSlug="istanbul"
-        baslik="İstanbul İlçe Sayfalarımız"
-        aciklama="İstanbul’da müşteri çoğu zaman ilçe ve semt adıyla arar. Her ilçe için ayrı hazırladığımız sayfalarda o bölgenin sektörlerini, semtlerini ve örnek aramalarını bulabilirsiniz."
+        baslik="Hizmet Verdiğimiz İstanbul İlçeleri"
+        aciklama="Kendi ilçenizi seçin; o bölgede müşterinin nasıl aradığını, öne çıkan sektörleri ve size özel yaklaşımımızı görün."
       />
       <SehirTeklifBolumu place="İstanbul" />
 

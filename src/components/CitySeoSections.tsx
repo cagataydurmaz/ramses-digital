@@ -34,8 +34,8 @@ export default function CitySeoSections({ city }: { city: string }) {
 
       <IlceBaglantilari
         ustSlug={city}
-        baslik={`${v.sehir} İlçe Sayfalarımız`}
-        aciklama={`${v.bulunma} müşteri çoğu zaman ilçe ve semt adıyla arar. Her ilçe için ayrı hazırladığımız sayfalarda o bölgenin sektörlerini, semtlerini ve örnek aramalarını bulabilirsiniz.`}
+        baslik={`Hizmet Verdiğimiz ${v.sehir} İlçeleri`}
+        aciklama={`Kendi ilçenizi seçin; o bölgede müşterinin nasıl aradığını, öne çıkan sektörleri ve size özel yaklaşımımızı görün.`}
       />
 
       <section className="pb-16 px-6">
