@@ -8,7 +8,8 @@ import { blogIcLinkler } from '@/lib/blogIcLinkler'
 import { blogSeoBasliklari } from '@/lib/blogSeoBasliklari'
 import CalendlyButton from '@/components/CalendlyButton'
 import { KURUCU } from '@/components/KurucuKutusu'
-import BlogIcerik from '@/components/blog/BlogIcerik'
+import BlogIcerik, { hazirla } from '@/components/blog/BlogIcerik'
+import BlogYanMenu from '@/components/blog/BlogYanMenu'
 import { blogZenginlestirme, ZENGIN_TARIH } from '@/lib/blogZenginlestirme'
 
 interface Props {
@@ -182,6 +183,8 @@ export default function BlogPostPage({ params }: Props) {
 
   const faqs = extractFaqs(post.content)
   const icLinkler = blogIcLinkler(post, posts)
+  const { basliklar } = hazirla(post.slug, post.content)
+  const waLink = `https://wa.me/905355601936?text=${encodeURIComponent(`Merhaba Ramses Dijital,\n\n*Blog yazısından geliyorum*\n"${post.title}" yazınızı okudum; bu konuda destek almak istiyorum.`)}`
 
   return (
     <div className="min-h-screen bg-[#0A0F1E]">
@@ -189,7 +192,7 @@ export default function BlogPostPage({ params }: Props) {
       <BreadcrumbJsonLd post={post} />
       <FaqJsonLd faqs={faqs} />
 
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 pt-24 sm:pt-32 pb-24">
+      <div className="max-w-4xl lg:max-w-6xl mx-auto px-4 sm:px-6 pt-24 sm:pt-32 pb-24">
         {/* Breadcrumb */}
         <nav className="flex items-center gap-2 text-sm text-zinc-400 mb-10 flex-wrap">
           <Link href="/" className="hover:text-zinc-300 transition-colors">
@@ -211,7 +214,7 @@ export default function BlogPostPage({ params }: Props) {
             fill
             className="object-cover"
             priority
-            sizes="(max-width: 768px) 100vw, 896px"
+            sizes="(max-width: 768px) 100vw, 1152px"
           />
           <div className={`absolute inset-0 bg-gradient-to-t ${post.coverGradient} opacity-50`} />
         </div>
@@ -253,6 +256,8 @@ export default function BlogPostPage({ params }: Props) {
           </div>
         </header>
 
+        <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_260px] lg:gap-10">
+        <div className="min-w-0">
         {/* Article Content */}
         <BlogIcerik slug={post.slug} html={post.content} />
 
@@ -347,6 +352,11 @@ export default function BlogPostPage({ params }: Props) {
             </a>
           </div>
         </section>
+        </div>
+        <aside aria-label="Yan menü" className="hidden lg:block">
+          <BlogYanMenu basliklar={basliklar} waLink={waLink} />
+        </aside>
+        </div>
       </div>
     </div>
   )

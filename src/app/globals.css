@@ -455,3 +455,10 @@ html { -webkit-text-size-adjust: 100%; text-rendering: optimizeLegibility; }
 .post-content ol { margin: 1rem 0 1.5rem; padding-left: 1.25rem; list-style: decimal; color: #d4d4d8; }
 .post-content ol li { padding-left: 0.25rem; }
 .post-content ol li::before { content: none; }
+
+/* Masaüstünde blog metni sütunun tamamını kullanır, yazı bir kademe büyür */
+@media (min-width: 1024px) {
+  .post-content { max-width: none; }
+  .post-content p, .post-content li { font-size: 1.125rem; line-height: 1.8; }
+  .post-content h2 { font-size: 1.75rem; }
+}

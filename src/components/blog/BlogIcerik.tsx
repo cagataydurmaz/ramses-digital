@@ -63,7 +63,7 @@ const slugla = (s: string) =>
     .replace(/^-|-$/g, '')
     .slice(0, 60)
 
-function hazirla(slug: string, ham: string): { html: string; basliklar: Baslik[] } {
+export function hazirla(slug: string, ham: string): { html: string; basliklar: Baslik[] } {
   let html = ham
   const z = blogZenginlestirme[slug] ?? {}
   const isaret = (ad: string) => `<div data-bilesen="${ad}"></div>`
@@ -125,7 +125,7 @@ function Gomulu({ tanim, basliklar }: { tanim: string; basliklar: Baslik[] }) {
   switch (ad) {
     case 'icindekiler':
       return (
-        <details className="group my-8 rounded-xl border border-white/[0.08] bg-[#0D1225]">
+        <details className="group my-8 rounded-xl border border-white/[0.08] bg-[#0D1225] lg:hidden">
           <summary className="list-none [&::-webkit-details-marker]:hidden cursor-pointer flex items-center gap-2 px-5 py-3.5 text-white font-semibold text-sm">
             <List size={16} className="text-blue-400" /> Bu yazıda ({basliklar.length} başlık)
             <ChevronDown size={16} className="ml-auto text-zinc-400 group-open:rotate-180 transition-transform" />
