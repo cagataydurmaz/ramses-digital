@@ -34,9 +34,9 @@ export default function MetaReklamTelefon() {
                 </span>
                 <div className="flex-1 leading-tight">
                   <p className="text-[12px] font-semibold">isletmeniz</p>
-                  <p className="text-[10px] text-zinc-500">Sponsorlu</p>
+                  <p className="text-[10px] text-gray-500">Sponsorlu</p>
                 </div>
-                <MoreHorizontal size={16} className="text-zinc-500" />
+                <MoreHorizontal size={16} className="text-gray-500" />
               </div>
               <div className="relative h-60 bg-gradient-to-br from-sky-500 via-blue-600 to-indigo-700 flex flex-col items-center justify-center text-white text-center px-6">
                 <p className="text-[11px] uppercase tracking-widest opacity-80 mb-1">İzmit · Kocaeli</p>

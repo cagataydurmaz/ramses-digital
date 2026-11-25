@@ -122,7 +122,7 @@ export default function ChatbotTelefon() {
               )}
             </div>
             <div className="flex items-center gap-2 px-3 py-2.5 border-t border-zinc-200 bg-white">
-              <span className="flex-1 text-zinc-400 text-[12px]">Mesajınızı yazın…</span>
+              <span className="flex-1 text-gray-400 text-[12px]">Mesajınızı yazın…</span>
               <Send size={15} className="text-sky-600" />
             </div>
           </div>

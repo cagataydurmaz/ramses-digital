@@ -31,11 +31,11 @@ export default function EpostaTelefon() {
               >
                 <div className="flex items-center gap-2">
                   <span className="w-7 h-7 rounded-full bg-orange-100 text-orange-600 flex items-center justify-center shrink-0"><Mail size={14} /></span>
-                  <p className={`text-[13px] truncate ${i === 0 ? 'font-semibold' : 'font-medium text-zinc-700'}`}>İşletmeniz</p>
+                  <p className={`text-[13px] truncate ${i === 0 ? 'font-semibold' : 'font-medium text-gray-700'}`}>İşletmeniz</p>
                   {i === 0 && <span className="ml-auto w-2 h-2 rounded-full bg-blue-600 shrink-0" />}
                 </div>
-                <p className={`text-[13px] mt-1 truncate ${i === 0 ? 'font-semibold' : 'text-zinc-700'}`}>{p.konu}</p>
-                <p className="text-[11.5px] text-zinc-500 truncate">{p.ozet}</p>
+                <p className={`text-[13px] mt-1 truncate ${i === 0 ? 'font-semibold' : 'text-gray-700'}`}>{p.konu}</p>
+                <p className="text-[11.5px] text-gray-500 truncate">{p.ozet}</p>
                 <p className="mt-1 inline-flex items-center gap-1 text-[10px] text-orange-600 bg-orange-50 rounded-full px-2 py-0.5">
                   <Zap size={10} /> Otomatik · {p.tetik}
                 </p>

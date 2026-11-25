@@ -57,7 +57,7 @@ export default function GoogleAramaAnimasyonu({ aramalar = ARAMALAR }: { aramala
           <div className="absolute top-2 left-1/2 -translate-x-1/2 w-24 h-5 rounded-full bg-black z-10" />
           <div className="pt-10 px-4">
             <div className="flex items-center gap-2 bg-white/[0.06] border border-white/10 rounded-full px-4 py-2.5">
-              <Search size={15} className="text-zinc-400 shrink-0" />
+              <Search size={15} className="text-gray-400 shrink-0" />
               <span className="text-white text-sm truncate">
                 {yazi}
                 <span className="inline-block w-[2px] h-4 bg-blue-400 align-middle ml-0.5 animate-pulse" />
@@ -76,9 +76,9 @@ export default function GoogleAramaAnimasyonu({ aramalar = ARAMALAR }: { aramala
                 <p className="text-blue-300 text-sm font-semibold">İşletmenizin Adı</p>
                 <p className="flex items-center gap-1 text-amber-400 text-[11px] mt-0.5">
                   <Star size={11} className="fill-amber-400" /><Star size={11} className="fill-amber-400" /><Star size={11} className="fill-amber-400" /><Star size={11} className="fill-amber-400" /><Star size={11} className="fill-amber-400" />
-                  <span className="text-zinc-400 ml-1">Google yorumları</span>
+                  <span className="text-gray-400 ml-1">Google yorumları</span>
                 </p>
-                <p className="flex items-center gap-1 text-zinc-400 text-[11px] mt-1"><MapPin size={11} /> Haritada, aramada ve yapay zekâda</p>
+                <p className="flex items-center gap-1 text-gray-400 text-[11px] mt-1"><MapPin size={11} /> Haritada, aramada ve yapay zekâda</p>
               </div>
 
               {[0, 1, 2].map((n) => (

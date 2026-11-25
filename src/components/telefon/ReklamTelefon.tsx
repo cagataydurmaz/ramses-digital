@@ -55,7 +55,7 @@ export default function ReklamTelefon({ aramalar = ['izmit oto servis'] }: { ara
       <TelefonKasa>
         <div className="pt-10 px-4">
           <div className="flex items-center gap-2 bg-white/[0.06] border border-white/10 rounded-full px-4 py-2.5">
-            <Search size={15} className="text-zinc-400 shrink-0" />
+            <Search size={15} className="text-gray-400 shrink-0" />
             <span className="text-white text-sm truncate">
               {yazi}
               <span className="inline-block w-[2px] h-4 bg-blue-400 align-middle ml-0.5 animate-pulse" />
@@ -66,7 +66,7 @@ export default function ReklamTelefon({ aramalar = ['izmit oto servis'] }: { ara
             <div className="relative rounded-xl border border-amber-400/50 bg-amber-400/[0.06] p-3 shadow-[0_0_30px_-8px_rgba(251,191,36,0.6)]">
               <p className="text-[10px] font-bold text-zinc-300 mb-1">Sponsorlu</p>
               <p className="text-blue-300 text-sm font-semibold leading-snug">İşletmenizin Adı – Hemen Arayın</p>
-              <p className="text-zinc-400 text-[11px] mt-1 leading-snug">Aynı gün hizmet · Ücretsiz keşif · Bölgenize özel</p>
+              <p className="text-gray-400 text-[11px] mt-1 leading-snug">Aynı gün hizmet · Ücretsiz keşif · Bölgenize özel</p>
               <div className="flex gap-2 mt-3">
                 <span className={`flex-1 flex items-center justify-center gap-1.5 text-white text-xs font-semibold rounded-full py-2 transition-all duration-300 ${adim >= 2 ? 'bg-emerald-500 scale-95' : 'bg-blue-500'}`}>
                   <Phone size={13} /> Ara

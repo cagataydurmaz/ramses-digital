@@ -26,7 +26,7 @@ export default function SosyalMedyaTelefon() {
             </div>
             <div className="flex-1">
               <p className="font-semibold text-sm">isletmeniz</p>
-              <p className="text-zinc-500 text-xs">İzmit · Kafe & Kahvaltı</p>
+              <p className="text-gray-500 text-xs">İzmit · Kafe & Kahvaltı</p>
               <span className="inline-block mt-1.5 text-[11px] text-white bg-[#0095f6] rounded-md px-3 py-0.5 font-medium">Takip et</span>
             </div>
           </div>
@@ -34,11 +34,11 @@ export default function SosyalMedyaTelefon() {
             {['Menü', 'Ekip', 'Yorumlar', 'Konum'].map((s) => (
               <div key={s} className="text-center">
                 <div className="w-12 h-12 rounded-full border border-zinc-300 bg-zinc-100" />
-                <p className="text-[10px] text-zinc-600 mt-1">{s}</p>
+                <p className="text-[10px] text-gray-600 mt-1">{s}</p>
               </div>
             ))}
           </div>
-          <div className="flex justify-around border-t border-zinc-200 mt-4 py-2 text-zinc-400">
+          <div className="flex justify-around border-t border-zinc-200 mt-4 py-2 text-gray-400">
             <Grid3x3 size={18} className="text-[#0a0a0a]" />
             <Clapperboard size={18} />
           </div>
