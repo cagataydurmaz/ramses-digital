@@ -24,6 +24,7 @@ import {
   MessageCircle,
   AlertTriangle,
   Gift,
+  Megaphone,
 } from 'lucide-react'
 import CalendlyButton from '@/components/CalendlyButton'
 import { estimateQuote, businessSizeLabels, pricing, kampanyalar, KAMPANYA_KURALI, type BusinessSize } from '@/lib/pricing'
@@ -47,6 +48,7 @@ const businessSizes: { id: BusinessSize; icon: typeof Store; desc: string }[] = 
 const serviceOptions = [
   { id: 'SEO', label: 'SEO, AEO & GEO', icon: Search },
   { id: 'Google Ads', label: 'Google Ads', icon: TrendingUp },
+  { id: 'Meta Ads', label: 'Instagram & Facebook Reklamları', icon: Megaphone },
   { id: 'Sosyal Medya', label: 'Sosyal Medya', icon: Share2 },
   { id: 'Web Tasarım', label: 'Web Sitesi Tasarımı', icon: Monitor },
   { id: 'E-posta', label: 'E-posta & Otomasyon', icon: Mail },
@@ -58,6 +60,8 @@ const serviceOptions = [
 const serviceLabels: Record<string, string> = {
 ...Object.fromEntries(serviceOptions.map((s) => [s.id, s.label])),
   'SEO Başlangıç Paketi': 'SEO Başlangıç Paketi (Tek Seferlik)',
+  'Google Ads Kurulum': 'Google Ads Kurulum (Tek Seferlik)',
+  'Meta Ads Kurulum': 'Instagram & Facebook Reklam Kurulumu (Tek Seferlik)',
 }
 
 // Fiyatın karşılığında ne aldığını göstermek için — "sadece rakam" hissini kırmak amaçlı.
@@ -68,6 +72,8 @@ const serviceIncludes: Record<string, string[]> = {
   'SEO Başlangıç Paketi': ['Teknik SEO denetimi', 'Anahtar kelime stratejisi', 'On-page kurulum', 'Schema markup kurulumu'],
   'Google Ads': ['Haftalık optimizasyon', 'Negatif kelime ve teklif yönetimi', 'Aylık performans raporu'],
   'Google Ads Kurulum': ['Hesap yapısı kurulumu', 'Dönüşüm izleme (conversion tracking)', 'İlk kampanya kurulumu'],
+  'Meta Ads': ['Kitle ve bütçe yönetimi', 'Reklam görselleri ve metinleri', 'Test ve optimizasyon', 'Aylık performans raporu'],
+  'Meta Ads Kurulum': ['Reklam hesabı ve işletme portföyü düzenlemesi', 'Pixel ve dönüşüm ölçümü', 'İlk kampanyaların kurulumu'],
   'Sosyal Medya': ['Post & story tasarımı', 'İçerik takvimi', 'Caption & hashtag stratejisi'],
   'Web Tasarım': ['UI/UX tasarım', 'Geliştirme & yayına alma', 'Mobil uyumluluk & hız optimizasyonu'],
 }
@@ -223,7 +229,7 @@ export default function TeklifAlCalculator() {
   // seferlik kurulum bedeli de eklenir (estimateQuote ve "Bu Ücrete Dahil
   // Olanlar" bunu kullanır; kullanıcıya ayrı bir seçenek olarak sunulmaz).
   const effectiveServices = displayServices.flatMap((s) =>
-    s === 'Google Ads' ? ['Google Ads', 'Google Ads Kurulum'] : [s]
+    s === 'Google Ads' ? ['Google Ads', 'Google Ads Kurulum'] : s === 'Meta Ads' ? ['Meta Ads', 'Meta Ads Kurulum'] : [s]
   )
 
   const handleSubmit = async () => {
@@ -609,7 +615,7 @@ export default function TeklifAlCalculator() {
                                 <>
                                   <p className="text-zinc-500 text-xs mt-1">+ reklam bütçenizin %15&apos;i (yönetim ücretimiz)</p>
                                   <p className="text-zinc-600 text-xs mt-1.5 leading-relaxed">
-                                    Örnek: Google&apos;a aylık 20.000₺ reklam bütçesi ayırırsanız, bizim payımız +3.000₺ olur (20.000 × %15). Bu 20.000₺ bize ödenmez — doğrudan sizin Google hesabınızdan gider, sadece 3.000₺&apos;lik kısım bizim yönetim ücretimizdir.
+                                    Örnek: {effectiveServices.includes('Google Ads') ? (effectiveServices.includes('Meta Ads') ? 'Google ve Meta’ya toplam' : 'Google’a') : 'Meta’ya (Instagram & Facebook)'} aylık 20.000₺ reklam bütçesi ayırırsanız, bizim payımız +3.000₺ olur (20.000 × %15). Bu 20.000₺ bize ödenmez — doğrudan sizin {effectiveServices.includes('Google Ads') && !effectiveServices.includes('Meta Ads') ? 'Google' : effectiveServices.includes('Google Ads') ? 'Google ve Meta' : 'Meta'} reklam hesabınızdan gider, sadece 3.000₺&apos;lik kısım bizim yönetim ücretimizdir.
                                   </p>
                                   <p className="text-zinc-600 text-xs mt-1.5 leading-relaxed">
                                     Sabit ücret, yönetim emeğimizin karşılığıdır; %15&apos;lik pay ise bütçe büyüdükçe artan iş yüküyle orantılıdır — ikisi birlikte dengeli ve şeffaf bir fiyatlandırma sağlar.
@@ -676,7 +682,7 @@ export default function TeklifAlCalculator() {
                             <div className="grid sm:grid-cols-2 gap-x-6 gap-y-3">
                               {effectiveServices.filter((s) => serviceIncludes[s]).map((s) => (
                                 <div key={s}>
-                                  <p className="text-white text-xs font-semibold mb-1.5">{s}</p>
+                                  <p className="text-white text-xs font-semibold mb-1.5">{serviceLabels[s] ?? s}</p>
                                   {s === 'SEO Başlangıç Paketi' && (
                                     <div className="flex items-start gap-1.5 bg-amber-400/10 border border-amber-400/25 rounded-lg px-2.5 py-2 mb-2">
                                       <AlertTriangle size={12} className="text-amber-400 mt-0.5 shrink-0" />
@@ -689,7 +695,7 @@ export default function TeklifAlCalculator() {
                                       <p className="text-amber-300 text-xs font-medium leading-relaxed"><strong className="text-amber-200">Bu fiyat tek bir site içindir</strong> — her ilçe/şehir için ayrı sayfa (pSEO) gibi geniş kapsamlı talepler fiyatı artırır, ayrı teklif gerekir.</p>
                                     </div>
                                   )}
-                                  {s === 'Google Ads Kurulum' && (
+                                  {(s === 'Google Ads Kurulum' || s === 'Meta Ads Kurulum') && (
                                     <p className="text-amber-400/80 text-xs mb-1.5">Tek seferlik — ilk ay için ayrıca yönetim ücreti alınmaz, yönetim ücreti 2. aydan başlar.</p>
                                   )}
                                   <ul className="space-y-1">
