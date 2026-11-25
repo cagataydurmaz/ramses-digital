@@ -229,7 +229,7 @@ export default function Footer() {
                   className="flex items-center gap-3 text-zinc-400 hover:text-white text-sm transition-colors"
                 >
                   <MapPin size={14} className="text-blue-500 shrink-0" aria-hidden="true" />
-                  İzmit, Kocaeli · Google’da 5.0 puan
+                  Dolphin AVM Kat:2 No:224, İzmit/Kocaeli
                 </a>
               </li>
             </ul>

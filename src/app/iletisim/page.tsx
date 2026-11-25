@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import KurucuKutusu from '@/components/KurucuKutusu'
 import { trackLead } from '@/lib/tracking'
-import { Phone, MessageCircle, Clock, Send, CheckCircle2, Loader2 } from 'lucide-react'
+import { Phone, MessageCircle, Clock, Send, CheckCircle2, Loader2, MapPin } from 'lucide-react'
 import { waMesaj, waLink, whatsappAc } from '@/lib/whatsapp'
 
 const services = [
@@ -145,6 +145,17 @@ export default function ContactPage() {
                       <p className="text-white text-sm font-medium mb-0.5">WhatsApp</p>
                       <a href="https://wa.me/905355601936" className="text-zinc-400 hover:text-white text-sm transition-colors">
                         0535 560 19 36
+                      </a>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="w-11 h-11 bg-blue-500/10 rounded-xl flex items-center justify-center shrink-0">
+                      <MapPin size={16} className="text-blue-400" />
+                    </div>
+                    <div>
+                      <p className="text-white text-sm font-medium mb-0.5">Adres</p>
+                      <a href="https://maps.app.goo.gl/xKzk4Q5VCeK4ePbz6" target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-white text-sm transition-colors">
+                        Körfez Mah. Sanayi Cd., Berk Sk., Dolphin AVM Kat:2 No:224, 41050 İzmit/Kocaeli
                       </a>
                     </div>
                   </div>
