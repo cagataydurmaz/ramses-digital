@@ -1,6 +1,13 @@
 // Google'da görünen kısa başlıklar (≤60 karakter). Sayfadaki H1 başlık ve adres
 // değişmez; sadece <title> kısalır ki arama sonuçlarında kesilmesin.
 export const blogSeoBasliklari: Record<string, string> = {
+  'email-pazarlama-acilma-orani': 'E-Posta Açılma Oranı Nasıl Artırılır? 6 Yöntem',
+  'meta-aciklama-yazma-rehberi': 'Meta Açıklama Yazma: Tıklanmayı Artıran 10 Kural',
+  'dijital-pazarlama-takvimi-2027': '2027 Pazarlama Takvimi: Bayramlar ve Özel Günler',
+  'istanbul-prestijli-semtler-yerel-seo': "Beşiktaş, Sarıyer, Göktürk'te Yerel SEO Rehberi",
+  'reklam-yonetmeligi-2026-isletmeler': 'Reklam Yönetmeliği 2026: Influencer ve Yapay Zekâ',
+  'chatgpt-reklamlari-turkiye': 'ChatGPT Reklamları Türkiye: Kimler Denemeli?',
+  'google-ai-modu-seo-rehberi': 'Google AI Modu ve SEO: İşletmeler Ne Yapmalı?',
   'web-sitesine-yapay-zeka-asistani-chatbot': 'Web Sitesine Yapay Zekâ Asistanı (Chatbot) Koymak',
   'yapay-zeka-ile-reels-hazirlama': 'Yapay Zekâ ile Reels Nasıl Hazırlanır? (Adım Adım)',
   'chatgpt-claude-gemini-isletmeler-icin-karsilastirma': 'ChatGPT mi Claude mu Gemini mi? İşletmeler İçin',
@@ -9,7 +16,7 @@ export const blogSeoBasliklari: Record<string, string> = {
   'internet-sitesi-yaptirmak': 'İnternet Sitesi Yaptırmak: Adım Adım Rehber',
   'google-da-neden-cikmiyorum': "İşletmem Google'da Neden Çıkmıyor? 9 Sebep",
   'google-isletme-profili-nasil-acilir': 'Google İşletme Profili Nasıl Açılır? (Adım Adım)',
-  'google-ads-tam-rehberi-2024': 'Google Ads Rehberi: Kampanya Türleri ve Bütçe',
+  'google-ads-tam-rehberi-2024': 'Google Ads Rehberi 2026: AI Max, Kampanya ve Bütçe',
   'geo-nedir-chatgpt-yapay-zeka-aramalarda-gorunurluk': 'GEO Rehberi: ChatGPT Aramalarında Görünür Olmak',
   'seo-geo-aeo-arama-motorundan-yanit-motoruna': "SEO'nun Yeni Hali: GEO ve AEO Rehberi",
   'kocaeli-seo-yerel-isletmeler-rehberi': "Kocaeli'de Google'da Üst Sıraya Çıkma Rehberi",

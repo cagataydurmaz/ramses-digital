@@ -1,6 +1,7 @@
 import { kasim2026Postlari } from './postsKasim2026'
 import { soruRehberleri } from './postsSoruRehberleri'
 import { yapayZekaPostlari } from './postsYapayZeka'
+import { gundem2026Postlari } from './postsGundem2026'
 
 export interface Post {
   slug: string
@@ -145,7 +146,7 @@ export const posts: Post[] = [
   {
     slug: 'google-ads-tam-rehberi-2024',
     coverImage: 'https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=800&q=80&fit=crop',
-    title: 'Google Ads Tam Rehberi: Kampanya Türleri, Bütçe ve Optimizasyon',
+    title: 'Google Ads Rehberi 2026: Kampanya Türleri, AI Max, Bütçe ve Optimizasyon',
     excerpt:
       "Google Ads kampanyalarınızdan maksimum ROI elde etmek için ihtiyaç duyduğunuz her şey: kampanya kurulumundan optimizasyona, bütçe yönetiminden dönüşüm takibine kadar.",
     category: 'Google Ads',
@@ -163,7 +164,7 @@ export const posts: Post[] = [
         <p>Tıklama başı maliyet, aylık bütçe hesaplama ve ajans ücretleri için güncel <a href="/blog/google-ads-fiyatlari-2026">Google Ads Fiyatları 2026</a> rehberimize bakın.</p>
       </div>
 
-      <h2>Google Ads Tam Rehberi</h2>
+      <h2>Google Ads Nedir, Kimler İçin Uygun?</h2>
       <p>Google Ads, işletmelerin hedef kitlelerine doğrudan ulaşmasını sağlayan en güçlü dijital reklam platformlarından biridir. Doğru stratejilerle yönetildiğinde, her harcanan lira için birden fazla lira geri kazanmanız mümkündür. Bu kapsamlı rehberde, bugün Google Ads'ten maksimum verim almanın yollarını adım adım ele alacağız.</p>
 
       <div class="stat-grid">
@@ -179,6 +180,23 @@ export const posts: Post[] = [
           <span class="stat-number">5</span>
           <span class="stat-label">Ana kampanya türü (Arama, Görüntülü, Video, Alışveriş, PMax)</span>
         </div>
+      </div>
+
+      <h2>2026’da Ne Değişti? AI Max ve Performance Max</h2>
+      <p>Google Ads 2026’da yapay zekâ ayarlarını öne çıkardı. Hesabınızı bir ajans yönetse bile aşağıdaki ayarların açık olup olmadığını ve neye göre çalıştığını bilmeniz gerekir; bazıları yeni kampanyalarda varsayılan olarak açık geliyor.</p>
+      <table>
+        <thead><tr><th>Ayar</th><th>Ne yapar?</th><th>Kontrol önerisi</th></tr></thead>
+        <tbody>
+          <tr><td>AI Max (Arama kampanyaları)</td><td>Arama eşleştirmesini genişletir; reklam metnini ve gidilecek sayfayı aramaya göre otomatik uyarlayabilir</td><td>Arama terimleri raporunu haftalık inceleyin, alakasız aramaları negatif listeye ekleyin</td></tr>
+          <tr><td>Eski ayarların AI Max’e taşınması</td><td>Dinamik arama reklamları, otomatik öğeler ve kampanya düzeyinde geniş eşleme kullanan hesaplar Eylül 2026’dan itibaren AI Max’e geçiriliyor</td><td>Bu ayarları kullanıyorsanız kampanya ayarlarınızın değişip değişmediğine bakın</td></tr>
+          <tr><td>Son URL genişletme</td><td>Reklamın sizin seçtiğiniz sayfa yerine sitedeki başka bir sayfaya gitmesine izin verir</td><td>Kariyer, blog, gizlilik gibi satış dışı sayfaları hariç tutun</td></tr>
+          <tr><td>Performance Max kanal kontrolleri</td><td>Arama, YouTube, Görüntülü gibi kanallara göre rapor ve bütçe önceliği (kademeli açılıyor)</td><td>Bütçenin hangi kanala gittiğini aylık kontrol edin</td></tr>
+          <tr><td>Otomatik video oluşturma</td><td>Video yüklemediyseniz görsellerinizden otomatik video üretebilir</td><td>Marka görünümünüze uymuyorsa kampanya ayarlarından kapatın</td></tr>
+        </tbody>
+      </table>
+      <div class="callout">
+        <span class="callout-title">Kısaca</span>
+        <p>Otomasyon açık olabilir; ama dönüşüm ölçümü doğru kurulmamışsa yapay zekâ yanlış hedefe göre öğrenir. Önce telefon, form ve WhatsApp taleplerinin doğru ölçüldüğünden emin olun.</p>
       </div>
 
       <h2>Kampanya Türlerini Anlayın</h2>
@@ -620,9 +638,9 @@ export const posts: Post[] = [
   {
     slug: 'email-pazarlama-acilma-orani',
     coverImage: 'https://images.unsplash.com/photo-1596526131083-e8c633c948d2?w=800&q=80&fit=crop',
-    title: 'E-Posta Pazarlamada %40 Açılma Oranı Nasıl Yakalanır?',
+    title: 'E-Posta Pazarlamada Açılma Oranı Nasıl Artırılır? 6 Etkili Yöntem',
     excerpt:
-      "Sektör ortalamasının iki katı açılma oranına ulaşmak için kullanmanız gereken konu satırı formülleri, segmentasyon taktikleri ve gönderim zamanlaması stratejileri.",
+      "E-posta açılma oranını artırmak için konu satırı formülleri, liste segmentasyonu, gönderim zamanlaması, kişiselleştirme ve A/B testi yöntemleri.",
     category: 'E-Posta',
     categoryColor: 'orange',
     emoji: '✉️',
@@ -633,7 +651,7 @@ export const posts: Post[] = [
     authorRole: 'Kurucu, Ramses Dijital',
     tags: ['E-Posta Pazarlama', 'Açılma Oranı', 'Segmentasyon', 'Otomasyon', 'Konu Satırı'],
     content: `
-      <h2>E-Posta Pazarlamada %40 Açılma Oranı Nasıl Yakalanır?</h2>
+      <h2>E-Posta Pazarlamada Açılma Oranı Nasıl Artırılır?</h2>
       <p>E-posta pazarlaması, dijital kanallar arasında en yüksek yatırım getirisine (ROI) sahip olanlardan biridir. Araştırmalar, e-posta pazarlamasında harcanan her 1 dolar için ortalama 42 dolar geri kazanıldığını ortaya koymaktadır. Ancak bu potansiyeli hayata geçirmek için listenizin sizinle gerçekten etkileşim kurması gerekir. Sektör ortalaması olan %20-25 açılma oranının çok üstüne çıkmanın yollarını bu rehberde ele alıyoruz.</p>
 
       <div class="stat-grid">
@@ -1618,9 +1636,9 @@ export const posts: Post[] = [
   {
     slug: 'meta-aciklama-yazma-rehberi',
     coverImage: 'https://images.unsplash.com/photo-1542435503-956c469947f6?w=1200&q=80&fit=crop',
-    title: 'Meta Açıklama Yazma Sanatı: CTR\'yi 2x Artıran 10 Kural',
+    title: 'Meta Açıklama Yazma Rehberi: Tıklanma Oranını Artıran 10 Kural',
     excerpt:
-      'Meta açıklama, Google\'da sıralama yapmaz ama tıklama oranını (CTR) doğrudan etkiler. CTR\'yi 2x artıran kanıtlanmış 10 yazım kuralı ve gerçek örnekler.',
+      'Meta açıklama, Google\'da sıralama yapmaz ama tıklama oranını (CTR) doğrudan etkiler. Tıklanma oranını artıran 10 yazım kuralı ve örnekler.',
     category: 'SEO',
     categoryColor: 'orange',
     emoji: '✍️',
@@ -1633,20 +1651,20 @@ export const posts: Post[] = [
     content: `
       <h2>Meta Açıklama Nedir, Neden Önemli?</h2>
       <p>Meta açıklama (meta description), bir web sayfasının arama sonuçlarında başlığın altında gösterilen kısa özettir. Google sıralamasını doğrudan etkilemese de, kullanıcının tıklama kararını verdiği son cümledir. İyi yazılmış bir meta açıklama, CTR'yi (tıklama oranını) %30-100 arasında artırabilir.</p>
-      <p>2026'da Google, meta açıklamaları yapay zeka ile yeniden yazabilir, ancak sizin yazdığınız iyi bir meta açıklamayı %70 oranında olduğu gibi kullanır.</p>
+      <p>Google bazı aramalarda meta açıklamayı sayfadaki başka bir metinle değiştirebilir; yine de sayfayı iyi özetleyen bir açıklama yazdığınızda çoğu zaman sizin metniniz gösterilir.</p>
 
       <div class="stat-grid">
         <div class="stat-card">
-          <span class="stat-number">%30-100</span>
-          <span class="stat-label">İyi meta açıklamanın potansiyel CTR artışı</span>
+          <span class="stat-number">1 cümle</span>
+          <span class="stat-label">Tıklama kararının verildiği yer</span>
         </div>
         <div class="stat-card">
           <span class="stat-number">145-155</span>
           <span class="stat-label">İdeal karakter uzunluğu</span>
         </div>
         <div class="stat-card">
-          <span class="stat-number">%70</span>
-          <span class="stat-label">Google'ın yazdığınızı olduğu gibi kullanma oranı</span>
+          <span class="stat-number">Sayfa başına</span>
+          <span class="stat-label">Her sayfaya kendine özgü açıklama</span>
         </div>
       </div>
 
@@ -1756,7 +1774,7 @@ export const posts: Post[] = [
     tags: ['İzmit', 'Reklam Ajansı', 'KOBİ', 'Ajans Seçimi'],
     content: `
       <h2>İzmit'te Reklam Ajansı Seçmek Neden Zor?</h2>
-      <p>İzmit ve Kocaeli genelinde 100'ün üzerinde dijital pazarlama ve reklam ajansı faaliyet gösteriyor. Bunların yarısı freelance, %30'u butik ajans, %20'si kurumsal yapıda. Fiyatlar ajansın yapısına ve hizmet kapsamına göre çok geniş bir aralıkta değişiyor. Peki bu yelpazede doğru ajansı nasıl seçeceksiniz?</p>
+      <p>İzmit ve Kocaeli genelinde çok sayıda dijital pazarlama ve reklam ajansı faaliyet gösteriyor: serbest çalışanlar, butik ajanslar ve kurumsal yapılar. Fiyatlar ajansın yapısına ve hizmet kapsamına göre çok geniş bir aralıkta değişiyor. Peki bu yelpazede doğru ajansı nasıl seçeceksiniz?</p>
       <p>Yanlış ajans seçimi sadece para kaybı değil; <strong class="text-white">marka itibarınıza zarar</strong>, <strong class="text-white">Google'dan ceza</strong> ve <strong class="text-white">aylar süren toparlanma süreci</strong> demek. Bu rehberde, İzmit'teki KOBİ'ler için doğru ajansı seçmenin 10 kritik adımını anlatıyoruz.</p>
 
       <div class="stat-grid">
@@ -1805,7 +1823,7 @@ export const posts: Post[] = [
         <li>SEO çalışmasını kim yapar? Junior bir stajyer mi, deneyimli uzman mı?</li>
         <li>Ekipte kaç kişi var? Tamamı in-house mu, freelance mi?</li>
       </ul>
-      <p>İzmit'teki ajansların %40'ı freelance ekiple çalışır. Bu kötü değil — ama bilmek hakkınız.</p>
+      <p>Bazı ajanslar işin bir kısmını serbest çalışanlarla yürütür. Bu kötü değil — ama kimin çalışacağını bilmek hakkınız.</p>
 
       <h2>5. Şeffaf Raporlama: Ne Yaptıklarını Görebiliyor musunuz?</h2>
       <p>Profesyonel bir ajans size şu erişimleri verir:</p>
@@ -1905,13 +1923,13 @@ export const posts: Post[] = [
     tags: ['Restoran', 'İzmit', 'Yerel SEO', 'Google Maps'],
     content: `
       <h2>İzmit Restoranları İçin Dijital Pazarlama Neden Kritik?</h2>
-      <p>2026 yılında bir restoran arayan İzmitli müşterinin <strong class="text-white">%87'si önce Google'a bakıyor</strong>. "İzmit pizza", "Kocaeli kahvaltı yapılacak yerler", "İzmit en iyi kebapçı" gibi aramalar günlük binlerce kez yapılıyor.</p>
+      <p>Restoran arayan müşterilerin çoğu <strong class="text-white">önce Google’a ve Google Haritalar’a bakıyor</strong>. "İzmit pizza", "Kocaeli kahvaltı yapılacak yerler", "İzmit en iyi kebapçı" gibi aramalar günlük binlerce kez yapılıyor.</p>
       <p>Eğer restoranınız bu aramalarda görünmüyorsa, müşteri rakibinize gidiyor. İyi haber: doğru kurgulanmış bir dijital pazarlama stratejisi 3-6 ayda restoranınızı bölgenizin "git buraya" tavsiyesine dönüştürebilir.</p>
 
       <div class="stat-grid">
         <div class="stat-card">
-          <span class="stat-number">%87</span>
-          <span class="stat-label">Restoran ararken önce Google'a bakan müşteri</span>
+          <span class="stat-number">İlk durak</span>
+          <span class="stat-label">Restoran ararken Google Haritalar</span>
         </div>
         <div class="stat-card">
           <span class="stat-number">30+</span>
@@ -1984,7 +2002,7 @@ export const posts: Post[] = [
       <h2>5. Yorumlar (Reviews): En Güçlü Sosyal Kanıt</h2>
       <p>Yorumlar restoranın can damarıdır. İstatistikler:</p>
       <ul>
-        <li>Müşterilerin %93'ü Google yorumlarını okumadan tercih yapmıyor</li>
+        <li>Müşterilerin çoğu tercih yapmadan önce Google yorumlarını okuyor</li>
         <li>4.5+ ortalama yıldıza sahip restoranlar 2x daha fazla rezervasyon alıyor</li>
         <li>Yorum sayısı 50+ olan restoranlar Local Pack'e öncelikli giriyor</li>
       </ul>
@@ -2010,7 +2028,7 @@ export const posts: Post[] = [
       </ul>
 
       <h2>8. WhatsApp Pazarlama (Yeni Trend)</h2>
-      <p>2026 trendi: WhatsApp Business API ile menü gönderme, rezervasyon kabul etme, kampanya bildirimi yapma. Düzgün kurgulandığında %60+ açılma oranı görülür (e-postanın 4 katı).</p>
+      <p>2026 trendi: WhatsApp Business API ile menü gönderme, rezervasyon kabul etme, kampanya bildirimi yapma. Mesajlar çoğunlukla okunduğu için doğru kurgulandığında e-postadan çok daha etkili olabilir.</p>
       <p>WhatsApp'ın bu kadar etkili olmasının nedeni, kullanıcıların bu kanalı zaten günlük hayatlarında sürekli açık tutmasıdır — bir e-posta kutusunun aksine, WhatsApp bildirimleri neredeyse anında görülür. Otomatik rezervasyon onayı, masa hazır olduğunda bildirim veya haftalık "bugünün özel menüsü" mesajı gibi kullanım senaryoları, minimum efor ile yüksek etkileşim sağlar.</p>
 
       <h3>Sık Sorulan Sorular</h3>
@@ -3810,4 +3828,5 @@ export const posts: Post[] = [
   ...kasim2026Postlari,
   ...soruRehberleri,
   ...yapayZekaPostlari,
+  ...gundem2026Postlari,
 ]

@@ -446,3 +446,12 @@ html { -webkit-text-size-adjust: 100%; text-rendering: optimizeLegibility; }
 @keyframes onizleme-pin { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
 .onizleme-pin { animation: onizleme-pin 2.2s ease-in-out infinite; }
 @media (prefers-reduced-motion: reduce) { .onizleme-yaz, .onizleme-pin { animation: none; } }
+
+/* Blog yazısı içi görsel ve geniş video */
+.post-content figure { margin: 2rem 0; }
+.post-content figure img, .post-content figure video { display: block; width: 100%; height: auto; border-radius: 0.875rem; border: 1px solid rgba(255,255,255,0.08); }
+.post-content figcaption { margin-top: 0.6rem; text-align: center; font-size: 0.8125rem; color: #71717a; }
+.post-content h2[id] { scroll-margin-top: 6rem; }
+.post-content ol { margin: 1rem 0 1.5rem; padding-left: 1.25rem; list-style: decimal; color: #d4d4d8; }
+.post-content ol li { padding-left: 0.25rem; }
+.post-content ol li::before { content: none; }

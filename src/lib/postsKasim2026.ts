@@ -501,6 +501,11 @@ export const kasim2026Postlari: Post[] = [
     tags: ['Influencer Pazarlaması', 'Influencer', 'Mikro Influencer', 'Instagram', 'TikTok'],
     content: `
       <div class="callout">
+        <span class="callout-title">Güncel kural (1 Ağustos 2026)</span>
+        <p>Reklam yönetmeliğindeki değişiklikle hediye ürün, indirim veya davet karşılığı yapılan paylaşımlarda da açık “reklam” veya “tanıtım” ibaresi zorunlu; yapay zekâ ile üretilmiş gerçek kişi görüntüleri yasak. Ayrıntılar: <a href="/blog/reklam-yonetmeligi-2026-isletmeler">Yeni Reklam Yönetmeliği 2026</a>.</p>
+      </div>
+
+      <div class="callout">
         <span class="callout-title">Kısa cevap</span>
         <p>Yerel işletmeler için en verimli seçenek çoğu zaman <strong>nano (1–10 bin) ve mikro (10–100 bin) influencer</strong>lardır: Daha uygun ücretlidirler ve kitleleriyle daha yakındırlar. Seçerken takipçi sayısına değil, <strong>etkileşim oranına ve kitlenin şehrinize uyumuna</strong> bakın. Reklam içeriği, Türkiye'deki kurallar gereği açıkça "reklam" olarak belirtilmelidir.</p>
       </div>

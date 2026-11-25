@@ -111,6 +111,7 @@ export default function IlSeoSayfasi({ v }: { v: IlSeoVeri }) {
   const ilgili = [
     ...(v.rehber ? [{ label: `${v.ad} Web Tasarım`, href: `/ilceler/${v.rehber}` }] : []),
     ...(v.ilgili ?? []),
+    ...(v.ust?.slug === 'istanbul' ? [{ label: 'İstanbul’un Prestijli Semtlerinde Yerel SEO', href: '/blog/istanbul-prestijli-semtler-yerel-seo' }] : []),
     { label: 'Google Yorumları Nasıl Artırılır?', href: '/blog/google-yorumlari-nasil-artirilir' },
     { label: 'Tüm Şehirler', href: '/sehirler' },
   ]

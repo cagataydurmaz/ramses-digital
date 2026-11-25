@@ -316,6 +316,7 @@ export default function IstanbulSeoPage() {
 
       <RelatedPages
         pages={[
+          { label: 'Prestijli Semtlerde Yerel SEO Rehberi', href: '/blog/istanbul-prestijli-semtler-yerel-seo' },
           { label: 'Avukatlar İçin SEO Rehberi', href: '/blog/avukatlar-icin-dijital-pazarlama-seo-rehberi' },
           { label: 'İstanbul Dijital Pazarlama', href: '/istanbul-dijital-pazarlama' },
           { label: 'İstanbul Web Tasarım', href: '/istanbul-web-tasarim' },

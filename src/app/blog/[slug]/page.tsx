@@ -8,6 +8,8 @@ import { blogIcLinkler } from '@/lib/blogIcLinkler'
 import { blogSeoBasliklari } from '@/lib/blogSeoBasliklari'
 import CalendlyButton from '@/components/CalendlyButton'
 import { KURUCU } from '@/components/KurucuKutusu'
+import BlogIcerik from '@/components/blog/BlogIcerik'
+import { blogZenginlestirme, ZENGIN_TARIH } from '@/lib/blogZenginlestirme'
 
 interface Props {
   params: { slug: string }
@@ -69,7 +71,7 @@ function ArticleJsonLd({ post }: { post: (typeof posts)[0] }) {
     description: seoAciklama(post.excerpt),
     image: post.coverImage.startsWith('/') ? `https://ramsesdigital.com${post.coverImage}` : post.coverImage,
     datePublished: post.date,
-    dateModified: post.date,
+    dateModified: blogZenginlestirme[post.slug] && post.date < ZENGIN_TARIH ? ZENGIN_TARIH : post.date,
     author: {
       '@type': 'Person',
       name: post.author,
@@ -240,16 +242,19 @@ export default function BlogPostPage({ params }: Props) {
             </div>
             <span className="hidden sm:block text-zinc-700">·</span>
             <span>{formattedDate}</span>
+            {blogZenginlestirme[post.slug] && post.date < ZENGIN_TARIH && (
+              <>
+                <span className="text-zinc-700">·</span>
+                <span>Güncellendi: {new Date(ZENGIN_TARIH).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' })}</span>
+              </>
+            )}
             <span className="text-zinc-700">·</span>
             <span>{post.readTime} dk okuma</span>
           </div>
         </header>
 
         {/* Article Content */}
-        <article
-          className="post-content mb-16"
-          dangerouslySetInnerHTML={{ __html: post.content }}
-        />
+        <BlogIcerik slug={post.slug} html={post.content} />
 
         {/* Yazar kutusu (E-E-A-T: içeriğin arkasındaki gerçek kişi) */}
         <aside aria-label="Yazar hakkında" className="mb-12 flex flex-col sm:flex-row items-center sm:items-start gap-5 bg-[#0D1225] border border-white/[0.08] rounded-2xl p-6">
