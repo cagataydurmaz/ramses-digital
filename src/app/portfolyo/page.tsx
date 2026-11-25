@@ -139,6 +139,16 @@ export default function PortfolioPage() {
                     </span>
                   </div>
                   <p className="text-zinc-400 text-sm leading-relaxed mb-4">{project.desc}</p>
+                  {project.veri && (
+                    <div className="grid grid-cols-2 gap-2 mb-4">
+                      {project.veri.ozet.slice(0, 2).map((o) => (
+                        <div key={o.etiket} className="rounded-lg bg-emerald-500/[0.06] border border-emerald-500/15 px-3 py-2">
+                          <p className="text-white font-bold tabular-nums">{o.deger}</p>
+                          <p className="text-zinc-400 text-[11px] leading-snug">{o.etiket}</p>
+                        </div>
+                      ))}
+                    </div>
+                  )}
                   <div className="flex flex-wrap gap-2">
                     {project.tags.map((tag) => (
                       <span key={tag} className="text-xs bg-white/[0.04] border border-white/[0.08] text-zinc-400 rounded-full px-2.5 py-1">

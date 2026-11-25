@@ -7,6 +7,7 @@ import { ExternalLink, Globe, CheckCircle2 } from 'lucide-react'
 import { projects, type ProjectColor } from '@/lib/portfolio'
 import CalendlyButton from '@/components/CalendlyButton'
 import TelefonCercevesi from '@/components/TelefonCercevesi'
+import VakaSonuclari from '@/components/VakaSonuclari'
 
 const colorMap: Record<ProjectColor, { text: string; badge: string; icon: string; border: string; blockquoteBorder: string; blockquoteBg: string }> = {
   blue: { text: 'text-blue-400', badge: 'text-blue-400 hover:text-blue-300 bg-blue-500/10 hover:bg-blue-500/20 border-blue-500/20', icon: 'text-blue-400', border: 'border-blue-500', blockquoteBorder: 'border-blue-500', blockquoteBg: 'bg-blue-500/[0.04]' },
@@ -140,6 +141,8 @@ export default function CaseStudyPage({ params }: Props) {
             ))}
           </div>
         </header>
+
+        {project.veri && <VakaSonuclari v={project.veri} />}
 
         {/* Zorluk */}
         <section className="mb-10">
