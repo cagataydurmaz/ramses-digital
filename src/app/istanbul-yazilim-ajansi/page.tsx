@@ -7,6 +7,7 @@ import RelatedPages from '@/components/RelatedPages'
 import { MapPin, Code2, ArrowRight, CheckCircle2, Zap, Globe, BarChart3, Shield, Layers, Cpu } from 'lucide-react'
 import HeroGuvenSatiri from '@/components/HeroGuvenSatiri'
 import ChatbotTelefon from '@/components/telefon/ChatbotTelefon'
+import BolgeMenusu from '@/components/BolgeMenusu'
 
 export const metadata: Metadata = {
   title: 'İstanbul Yazılım Ajansı — Ramses Dijital',
@@ -111,9 +112,7 @@ export default function IstanbulYazilimAjansiPage() {
           <p className="line-clamp-3 sm:line-clamp-none text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto lg:mx-0 mb-4 leading-relaxed">
             İstanbul işletmeleri için Next.js web uygulaması, iş süreçleri otomasyonu, API entegrasyonu ve yapay zeka çözümleri. Kurumsal standart, teknik karmaşıklık olmadan.
           </p>
-          <p className="hidden sm:block text-zinc-500 text-sm mb-10">
-            Kadıköy · Beşiktaş · Şişli · Bakırköy · Ataşehir · Üsküdar · Beylikdüzü
-          </p>
+          <div className="mb-10"><BolgeMenusu liste={['Kadıköy', 'Beşiktaş', 'Şişli', 'Bakırköy', 'Ataşehir', 'Üsküdar', 'Beylikdüzü']} /></div>
           <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
             <CalendlyButton label="Ücretsiz Keşif Görüşmesi" variant="primary" />
             <Link href="/hizmetler/n8n-otomasyon" className="text-zinc-400 hover:text-white text-sm font-medium transition-colors flex items-center gap-1.5">

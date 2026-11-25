@@ -7,6 +7,7 @@ import RelatedPages from '@/components/RelatedPages'
 import { MapPin, CheckCircle2, ArrowRight, Megaphone, Globe, BarChart3, Search, Mail, Zap, Star, Users, TrendingUp } from 'lucide-react'
 import HeroGuvenSatiri from '@/components/HeroGuvenSatiri'
 import HaritaTelefon from '@/components/telefon/HaritaTelefon'
+import BolgeMenusu from '@/components/BolgeMenusu'
 
 export const metadata: Metadata = {
   title: 'İzmit Reklam Ajansı — Ramses Dijital',
@@ -122,9 +123,7 @@ export default function IzmitReklamAjansiPage() {
           <p className="line-clamp-3 sm:line-clamp-none text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto lg:mx-0 mb-4 leading-relaxed">
             Google Ads, SEO, web tasarım ve pazarlama otomasyonu ile İzmit ve Kocaeli işletmelerini dijitalde büyütüyoruz. Gerçek müşteriler, ölçülebilir sonuçlar.
           </p>
-          <p className="hidden sm:block text-zinc-500 text-sm mb-10">
-            Gebze · Darıca · Körfez · Gölcük · Başiskele ve tüm Kocaeli&apos;ye hizmet veriyoruz.
-          </p>
+          <div className="mb-10"><BolgeMenusu liste={['Gebze', 'Darıca', 'Körfez', 'Gölcük', 'Başiskele']} ek="ve Kocaeli’nin tüm ilçeleri" /></div>
           <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
             <CalendlyButton label="Ücretsiz Teklif Al" variant="primary" />
             <Link href="/portfolyo" className="text-zinc-400 hover:text-white text-sm font-medium transition-colors flex items-center gap-1.5">

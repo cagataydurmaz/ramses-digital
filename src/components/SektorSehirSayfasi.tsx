@@ -12,7 +12,8 @@ import KisaOzet from '@/components/KisaOzet'
 import GooglePuanSatiri from '@/components/GooglePuanSatiri'
 import GoogleAramaAnimasyonu from '@/components/GoogleAramaAnimasyonu'
 import { sektorler } from '@/lib/sektorler'
-import { sektorSehir, sektorSehirBul, type SektorSehirVeri } from '@/lib/sektorSehir'
+import { sektorSehir, sektorSehirBul, ssSehirler, type SektorSehirVeri } from '@/lib/sektorSehir'
+import IlceBaglantilari from '@/components/IlceBaglantilari'
 
 // Sektör × şehir sayfası (/istanbul-avukat-seo). Ortak sektör bilgisi sektorler.ts'den,
 // şehre özgü içerik sektorSehir.ts'den gelir. Görsel dil SektorSayfasi ile aynı.
@@ -33,7 +34,11 @@ export default function SektorSehirSayfasi({ slug }: { slug: string }) {
   const calisma = v.sehir.yerel
     ? { q: 'Yüz yüze görüşebilir miyiz?', a: `Evet. İzmit merkezli bir ekibiz; ${v.sehir.de} gerektiğinde yüz yüze görüşebiliyor, süreci WhatsApp ve video görüşmeyle de yürütebiliyoruz.` }
     : { q: 'Hizmeti nasıl veriyorsunuz?', a: `${v.sehir.deki} ${s.kisaAd.toLocaleLowerCase('tr-TR')} ile uzaktan çalışıyoruz. Görüşmeler, içerik onayı ve aylık raporlama çevrim içi yürütülür.` }
-  const faqs = [...v.sss, ...s.sss.slice(0, 2), ...(v.sss.some((f) => /yüz yüze|dışından çalışmanız/.test(f.q)) ? [] : [calisma])]
+  // Sektörün genel sorularından her şehirde farklı biri gösterilir; böylece aynı mesleğin
+  // şehir sayfaları birbirinin kopyası olmaz (genel soruların tamamı sektör sayfasında).
+  const sira = Math.max(0, ssSehirler.findIndex((x) => x.key === v.sehir.key))
+  const genelSoru = s.sss.length ? [s.sss[sira % s.sss.length]] : []
+  const faqs = [...v.sss, ...genelSoru, ...(v.sss.some((f) => /yüz yüze|dışından çalışmanız/.test(f.q)) ? [] : [calisma])]
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -204,6 +209,12 @@ export default function SektorSehirSayfasi({ slug }: { slug: string }) {
           </div>
         </div>
       </section>
+
+      <IlceBaglantilari
+        ustSlug={v.sehir.key}
+        baslik={`Hizmet Verdiğimiz ${v.sehir.ad} İlçeleri`}
+        aciklama={`${s.kisaAd} için arama alışkanlığı ilçeden ilçeye değişir. Kendi ilçenizi seçin; o bölgedeki yaklaşımımızı görün.`}
+      />
 
       <HaritaTelefonBolumu yer={v.sehir.ad} arama={`${v.sehir.ad} ${v.meslek.ad}`.toLocaleLowerCase('tr-TR')} />
       <ReviewsMarquee />

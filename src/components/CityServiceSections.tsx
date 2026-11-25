@@ -6,6 +6,7 @@ import IlceBaglantilari from '@/components/IlceBaglantilari'
 import KurucuKutusu from '@/components/KurucuKutusu'
 import BolgeMenusu from '@/components/BolgeMenusu'
 import { sehirHizmet, type Hizmet } from '@/lib/sehirHizmet'
+import { sehirOzelSss } from '@/lib/sehirOzelSss'
 
 const basliklar: Record<Hizmet, (b: string) => { h: string; p: string }> = {
   web: (b) => ({ h: `${b} Sektöre Göre Web Sitesi İhtiyaçları`, p: 'Her sektörde ziyaretçinin aradığı bilgi farklıdır. Site yapısını işletmenizin sektörüne ve müşterisinin karar sürecine göre kuruyoruz.' }),
@@ -16,6 +17,11 @@ const basliklar: Record<Hizmet, (b: string) => { h: string; p: string }> = {
 }
 
 export function cityServiceFaqs(city: string, hizmet: Hizmet): { q: string; a: string }[] {
+  const ozel = sehirOzelSss[city]?.[hizmet] ?? []
+  return [...ozel, ...sehirGenelSss(city, hizmet)]
+}
+
+function sehirGenelSss(city: string, hizmet: Hizmet): { q: string; a: string }[] {
   const v = sehirHizmet[city]
   if (!v) return []
   const sektorListesi = v.sektorler.map((s) => s.ad.toLowerCase()).join(', ')

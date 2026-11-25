@@ -7,6 +7,7 @@ import RelatedPages from '@/components/RelatedPages'
 import { MapPin, Code2, ArrowRight, CheckCircle2, Zap, Globe, BarChart3, Shield, Layers, Cpu } from 'lucide-react'
 import HeroGuvenSatiri from '@/components/HeroGuvenSatiri'
 import ChatbotTelefon from '@/components/telefon/ChatbotTelefon'
+import { yazilimSehir } from '@/lib/sehirOzelSss'
 
 export const metadata: Metadata = {
   title: 'Bursa Yazılım Ajansı — Ramses Dijital',
@@ -21,22 +22,21 @@ export const metadata: Metadata = {
   },
 }
 
+const ozel = yazilimSehir['bursa']
+
 const solutions = [
-  { icon: Globe, title: 'Web Uygulaması & Site', desc: 'Next.js ile yüksek performanslı web siteleri ve uygulamalar. Mobilya kataloğundan kurumsal B2B portala kadar.' },
-  { icon: Zap, title: 'İş Süreçleri Otomasyonu', desc: 'n8n ile tekrarlayan operasyonları otomatikleştirin. Sipariş takibi, CRM, e-posta, bildirim ve fatura akışları.' },
-  { icon: Layers, title: 'API Entegrasyonu', desc: 'Muhasebe yazılımı, ERP, e-ticaret altyapısı, ödeme sistemleri — mevcut araçlarınızı birbirine bağlayın.' },
-  { icon: BarChart3, title: 'Veri & Analitik', desc: 'GA4, Looker Studio ve özel rapor panosu\'lar. Üretim, satış ve pazarlama verinizi görsel ve anlaşılır hale getirin.' },
-  { icon: Cpu, title: 'Yapay Zeka Entegrasyonu', desc: 'Müşteri destek botu, ürün öneri sistemi, teklif otomasyonu ve sınıflandırma. Claude & GPT-4 entegrasyonu.' },
-  { icon: Shield, title: 'Güvenlik & Bakım', desc: 'SSL, düzenli güvenlik taraması, yedekleme ve kesintisiz çalışma takibi. Teknik sorun yaşamadan büyüyün.' },
+  { icon: Globe, title: 'Web Uygulaması & Site', desc: ozel.cozumler[0] },
+  { icon: Zap, title: 'İş Süreçleri Otomasyonu', desc: ozel.cozumler[1] },
+  { icon: Layers, title: 'API Entegrasyonu', desc: ozel.cozumler[2] },
+  { icon: BarChart3, title: 'Veri & Analitik', desc: ozel.cozumler[3] },
+  { icon: Cpu, title: 'Yapay Zeka Entegrasyonu', desc: ozel.cozumler[4] },
+  { icon: Shield, title: 'Güvenlik & Bakım', desc: ozel.cozumler[5] },
 ]
 
 const stack = ['Next.js', 'TypeScript', 'React', 'Node.js', 'n8n', 'PostgreSQL', 'Vercel', 'Supabase', 'Claude API', 'Stripe']
 
 const faqs = [
-  { q: 'Mevcut yazılımımla entegrasyon yapabilir misiniz?', a: 'Büyük ihtimalle evet. Mikro Yazılım, Logo, SAP, WooCommerce, Shopify, Trendyol, Hepsiburada entegrasyonlarında deneyimimiz var. Otomotiv yan sanayi firmalarının kullandığı ERP sistemleriyle de API veya webhook bazlı entegrasyon kurabiliriz.' },
-  { q: 'Yazılım projesine nasıl başlanıyor?', a: 'Önce 30 dakikalık ücretsiz bir görüşmeyle mevcut iş akışınızı ve hangi sistemle (ERP, üretim takip, bayi portalı vb.) entegre çalışacağımızı netleştiriyoruz. Ardından teknik şartname ve tahmini süreyi paylaşıyor, onayınızla geliştirmeye başlıyoruz. Taahhüt gerektirmez.' },
   { q: 'Fiziksel olarak Bursa\'da ofisiniz var mı?', a: 'Hayır, Kocaeli kökenliyiz — Bursa\'ya tamamen uzaktan hizmet veriyoruz. Keşif görüşmesi ve teknik şartname süreci Google Meet/Zoom üzerinden yürütülüyor.' },
-  { q: 'Kaynak kod kimin mülkiyetinde olur?', a: 'Sizin. ERP/tedarik zinciri entegrasyonu gibi kritik sistemlerde bu özellikle önemli — kodun ve verinin size ait olduğundan emin olmanızı sağlıyoruz, bizimle çalışmaya devam etmek zorunda kalmazsınız.' },
   ...cityServiceFaqs('bursa', 'yazilim'),
 ]
 
@@ -109,7 +109,7 @@ export default function BursaYazilimAjansiPage() {
         <div className="max-w-3xl mx-auto">
           <div className="bg-white/[0.02] border border-white/[0.06] rounded-xl px-6 py-4 text-center">
             <p className="text-zinc-400 text-sm leading-relaxed">
-              Ramses Dijital, reklam ajansı kimliğiyle başladı; bugün SEO ve Google Ads&apos;in yanında yazılım geliştirmeyi de aynı disiplinle sunuyor. Bursa&apos;da otomotiv yan sanayi ve mobilya üreticileriyle çalışırken üretim süreçlerinin dijitalleşme ihtiyacını doğrudan gördük.
+              {ozel.giris}
             </p>
           </div>
         </div>
@@ -165,9 +165,7 @@ export default function BursaYazilimAjansiPage() {
               Neden Yazılım + Dijital Pazarlama Birlikte?
             </h2>
             <p className="text-zinc-400 text-sm leading-relaxed mb-4">
-              Bursa&apos;da çoğu yazılım ajansı sadece teknik iş yapar — sitenizi kurar, sizi bırakır. Biz hem teknik altyapıyı hem de
-              dijital pazarlamayı yürütüyoruz. Bu demek ki web siteniz hem hızlı çalışır hem de Google&apos;da bulunur, hem de
-              ziyaretçiyi müşteriye çeviren bir sistem üzerine kurulur. Parçalar arasında koordinasyon kaybı olmaz.
+              {ozel.neden}
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               {[

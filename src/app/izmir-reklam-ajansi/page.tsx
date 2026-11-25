@@ -7,6 +7,7 @@ import RelatedPages from '@/components/RelatedPages'
 import { MapPin, CheckCircle2, ArrowRight, Megaphone, Globe, BarChart3, Search, Mail, Zap, ShieldCheck, Compass } from 'lucide-react'
 import HeroGuvenSatiri from '@/components/HeroGuvenSatiri'
 import HaritaTelefon from '@/components/telefon/HaritaTelefon'
+import BolgeMenusu from '@/components/BolgeMenusu'
 
 export const metadata: Metadata = {
   title: 'İzmir Reklam Ajansı — Ramses Dijital',
@@ -125,9 +126,7 @@ export default function IzmirReklamAjansiPage() {
           <p className="line-clamp-3 sm:line-clamp-none text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto lg:mx-0 mb-4 leading-relaxed">
             Google Ads, SEO ve pazarlama otomasyonuyla İzmir işletmelerini dijitalde büyütüyoruz. Ege&apos;nin ihracat, turizm ve tarım ağırlıklı ekonomisine uygun, ölçülebilir kampanyalar.
           </p>
-          <p className="hidden sm:block text-zinc-500 text-sm mb-10">
-            Konak · Karşıyaka · Bornova · Buca · Çiğli · Bayraklı · Balçova · Gaziemir · Menemen · Urla
-          </p>
+          <div className="mb-10"><BolgeMenusu liste={['Konak', 'Karşıyaka', 'Bornova', 'Buca', 'Çiğli', 'Bayraklı', 'Balçova', 'Gaziemir', 'Menemen', 'Urla']} /></div>
           <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
             <CalendlyButton label="Ücretsiz Danışmanlık Al" variant="primary" />
             <Link href="/portfolyo" className="text-zinc-400 hover:text-white text-sm font-medium transition-colors flex items-center gap-1.5">

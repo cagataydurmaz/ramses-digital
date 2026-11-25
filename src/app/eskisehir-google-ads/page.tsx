@@ -32,10 +32,6 @@ const services = [
 ]
 
 const faqs = [
-  { q: 'Öğrenciye hitap eden bir işletme veya sanayi firması olarak Google Ads işe yarar mı?', a: 'Evet, ancak strateji tamamen farklı kurgulanır. Öğrenci pazarı için mobil-öncelikli, hızlı dönüşümlü kampanyalar (kafe, kırtasiye, özel ders) etkili olurken, sanayi firmaları için "tedarikçi", "bayi", "üretici firma" gibi B2B terimlere özel, düşük hacimli ama yüksek niyetli kampanyalar daha etkili sonuç verir.' },
-  { q: 'Raporlama nasıl yapılıyor?', a: 'Aylık Google Ads performans raporu: gösterim, tıklama, CPC, dönüşüm, ROAS ve CPA metrikleri. Canlı Google Ads rapor panosu erişimi veriyoruz. Her kuruşun nereye gittiğini görürsünüz.' },
-  { q: 'Eskişehir\'de Google Ads yönetimi için sözleşme şartı var mı?', a: 'Minimum 3 ay öneriyoruz. Google Ads öğrenme dönemi 30 gün, optimizasyon için en az 60-90 gün gerekiyor. 3 ay sonunda net ROI tablonuz netleşir ve devam kararını veri bazlı alırsınız.' },
-  { q: 'Hesap kimin adına açılıyor, bizim mi ajansın mı?', a: 'Sizin adınıza. Google Ads hesabını siz sahiplenirsiniz, biz yönetici erişimiyle çalışırız — hesap üzerinde her zaman söz sahibi olduğunuz anlamına gelir.' },
   ...cityServiceFaqs('eskisehir', 'ads'),
 ]
 

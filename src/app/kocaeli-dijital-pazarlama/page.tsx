@@ -7,6 +7,7 @@ import RelatedPages from '@/components/RelatedPages'
 import { MapPin, CheckCircle2, ArrowRight, BarChart3, Search, Zap, Globe, Mail, Megaphone, TrendingUp, Shield, Clock } from 'lucide-react'
 import HeroGuvenSatiri from '@/components/HeroGuvenSatiri'
 import HaritaTelefon from '@/components/telefon/HaritaTelefon'
+import BolgeMenusu from '@/components/BolgeMenusu'
 
 export const metadata: Metadata = {
   title: 'Kocaeli Dijital Ajans – SEO, Reklam, Web | Ramses Dijital',
@@ -166,9 +167,7 @@ export default function KocaeliDijitalPazarlamaPage() {
           <p className="line-clamp-3 sm:line-clamp-none text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto lg:mx-0 mb-4 leading-relaxed">
             Kocaeli kökenli bir ajans olarak — Kocaeli&apos;nin sanayi ağırlıklı iş yapısını sahada tanıyan bir ekip olarak SEO, Google Ads, web tasarım ve otomasyon sunuyoruz.
           </p>
-          <p className="hidden sm:block text-zinc-500 text-sm mb-10">
-            İzmit · Gebze · Darıca · Körfez · Gölcük · Başiskele · Çayırova
-          </p>
+          <div className="mb-10"><BolgeMenusu liste={['İzmit', 'Gebze', 'Darıca', 'Körfez', 'Gölcük', 'Başiskele', 'Çayırova']} /></div>
           <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
             <CalendlyButton label="Ücretsiz Strateji Görüşmesi" variant="primary" />
             <Link href="/portfolyo" className="text-zinc-400 hover:text-white text-sm font-medium transition-colors flex items-center gap-1.5">

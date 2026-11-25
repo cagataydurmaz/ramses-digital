@@ -7,6 +7,7 @@ import RelatedPages from '@/components/RelatedPages'
 import { MapPin, CheckCircle2, ArrowRight, Megaphone, Globe, BarChart3, Search, Mail, Zap, Star, Compass, TrendingUp } from 'lucide-react'
 import HeroGuvenSatiri from '@/components/HeroGuvenSatiri'
 import HaritaTelefon from '@/components/telefon/HaritaTelefon'
+import BolgeMenusu from '@/components/BolgeMenusu'
 
 export const metadata: Metadata = {
   title: 'Antalya Reklam Ajansı — Ramses Dijital',
@@ -115,9 +116,7 @@ export default function AntalyaReklamAjansiPage() {
           <p className="line-clamp-3 sm:line-clamp-none text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto lg:mx-0 mb-4 leading-relaxed">
             Google Ads, SEO, web tasarım ve pazarlama otomasyonu ile Antalya&apos;nın turizm, gayrimenkul ve tarım ihracatı işletmelerini dijitalde büyütüyoruz.
           </p>
-          <p className="hidden sm:block text-zinc-500 text-sm mb-10">
-            Muratpaşa · Konyaaltı · Kepez · Alanya · Manavgat · Serik ve tüm Antalya&apos;ya hizmet veriyoruz.
-          </p>
+          <div className="mb-10"><BolgeMenusu liste={['Muratpaşa', 'Konyaaltı', 'Kepez', 'Alanya', 'Manavgat', 'Serik']} ek="ve Antalya’nın tüm ilçeleri" /></div>
           <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
             <CalendlyButton label="Ücretsiz Teklif Al" variant="primary" />
             <Link href="/portfolyo" className="text-zinc-400 hover:text-white text-sm font-medium transition-colors flex items-center gap-1.5">

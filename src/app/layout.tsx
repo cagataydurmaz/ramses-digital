@@ -104,6 +104,8 @@ export default function RootLayout({
         />
         <Script id="google-analytics" strategy="afterInteractive">
           {`
+            // Yansıtma koruması: site başka bir alan adında açılırsa asıl adrese yönlendir.
+            (function(){var h=location.hostname;if(!/(^|\.)ramsesdigital\.com$/.test(h)&&!/^(localhost|127\.0\.0\.1)$/.test(h)&&!/\.vercel\.app$/.test(h)){location.replace('https://ramsesdigital.com'+location.pathname+location.search)}})();
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());

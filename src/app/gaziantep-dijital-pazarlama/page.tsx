@@ -7,6 +7,7 @@ import RelatedPages from '@/components/RelatedPages'
 import { MapPin, CheckCircle2, ArrowRight, BarChart3, Search, Zap, Globe, Mail, Megaphone, TrendingUp, Shield, Clock } from 'lucide-react'
 import HeroGuvenSatiri from '@/components/HeroGuvenSatiri'
 import HaritaTelefon from '@/components/telefon/HaritaTelefon'
+import BolgeMenusu from '@/components/BolgeMenusu'
 
 export const metadata: Metadata = {
   title: 'Gaziantep Dijital Pazarlama Ajansı — Ramses Dijital',
@@ -85,10 +86,6 @@ const sectors = [
 ]
 
 const faqs = [
-  { q: 'Gaziantep\'teki hangi dijital kanal en hızlı sonuç verir?', a: 'Hızlı sonuç için Google Ads: 1-2 hafta içinde potansiyel müşteriler arar ve reklamınızı görür. Uzun vadeli ve düşük maliyetli büyüme için SEO: 3-6 ayda organik trafik birikmeye başlar. İkisini birlikte yürütmek en akıllıca stratejidir.' },
-  { q: 'Tekstil ihracatçısı veya gıda üreticisi olarak dijital pazarlamadan nasıl fayda görürüm?', a: 'B2B alıcılar arama motorunda tedarikçi araştırması yapıyor — "tekstil ihracatçı Gaziantep" veya "baklava toptan üretici" gibi aramalar. SEO ve LinkedIn/Google Ads kombinasyonuyla bu talebi yakalamak mümkün. Gıda üreticileri için ise hem B2B toptan hem B2C perakende/e-ticaret talebi ayrı stratejiler gerektiriyor.' },
-  { q: 'Gaziantep\'teki hukuk büroları, klinikler ve estetik merkezleri için özel bir yaklaşımınız var mı?', a: 'Evet. Hukuk büroları için Avukatlık Kanunu\'nun reklam yasağı nedeniyle SEO ve içerik otoritesine dayalı strateji uyguluyoruz. Diş hekimi ve estetik merkezleri için ise güven inşa eden içerik ve yerel SEO ağırlıklı bir yaklaşım kuruyoruz.' },
-  { q: 'Yapay zeka reklamcılığı ve GEO nedir, Gaziantep işletmesi için gerekli mi?', a: 'GEO (Generative Engine Optimization), ChatGPT veya Gemini\'de "Gaziantep\'te [sektörünüz]" aramasında alıntılanma olasılığını artırmak için yapılan içerik ve yapı çalışmasıdır. Bu henüz doymamış bir kanal — özellikle ihracat firmaları için erken hareket eden işletmeler önemli bir avantaj kazanıyor.' },
   ...cityServiceFaqs('gaziantep', 'pazarlama'),
 ]
 
@@ -165,9 +162,7 @@ export default function GaziantepDijitalPazarlamaPage() {
           <p className="line-clamp-3 sm:line-clamp-none text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto lg:mx-0 mb-4 leading-relaxed">
             Gaziantep&apos;in tekstil/halı ihracatçılarına ve gıda üreticilerine özel SEO, Google Ads, web tasarım ve otomasyon — B2B ve ihracat satış huninize uygun kurgu.
           </p>
-          <p className="hidden sm:block text-zinc-500 text-sm mb-10">
-            Şahinbey · Şehitkamil · Nizip · İslahiye · Oğuzeli · Nurdağı
-          </p>
+          <div className="mb-10"><BolgeMenusu liste={['Şahinbey', 'Şehitkamil', 'Nizip', 'İslahiye', 'Oğuzeli', 'Nurdağı']} /></div>
           <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
             <CalendlyButton label="Ücretsiz Strateji Görüşmesi" variant="primary" />
             <Link href="/portfolyo" className="text-zinc-400 hover:text-white text-sm font-medium transition-colors flex items-center gap-1.5">

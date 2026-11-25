@@ -7,6 +7,7 @@ import RelatedPages from '@/components/RelatedPages'
 import { MapPin, CheckCircle2, ArrowRight, Megaphone, Globe, BarChart3, Search, Mail, Zap, Star, Users, TrendingUp } from 'lucide-react'
 import HeroGuvenSatiri from '@/components/HeroGuvenSatiri'
 import HaritaTelefon from '@/components/telefon/HaritaTelefon'
+import BolgeMenusu from '@/components/BolgeMenusu'
 
 export const metadata: Metadata = {
   title: 'Kayseri Reklam Ajansı — Ramses Dijital',
@@ -44,10 +45,7 @@ const whyUs = [
 ]
 
 const faqs = [
-  { q: 'Kayseri\'deki işletmem için Google\'da nasıl üst sıralara çıkarım?', a: 'İki paralel strateji gerekli: Google Business Profile optimizasyonu (harita paketi için) ve web sitesi SEO\'su (organik arama için). GBP için işletme bilgilerini eksiksiz doldurmak, müşteri yorumları toplamak ve yerel dizinlere kayıt olmak kritiktir. Web sitesi için Kayseri\'ye özel içerik üretmek şarttır.' },
-  { q: 'Yapay zeka (ChatGPT, Gemini) aramalarında da görünür olabilir miyim?', a: 'Evet, bu GEO (Generative Engine Optimization) olarak adlandırılıyor. Kayseri\'de sektörünüzü araştıran birinin ChatGPT\'ye sorduğunda sizi kaynak göstermesi olasılığını artıran yapılandırılmış içerik, citation-worthy veriler ve otoriter backlink profili gerekiyor. Tüm SEO paketlerimize GEO stratejisi dahildir.' },
   { q: 'Fiziksel olarak Kayseri\'de ofisiniz var mı?', a: 'Hayır, Kocaeli kökenliyiz — Kayseri\'ye tamamen uzaktan hizmet veriyoruz. Keşif görüşmesi, strateji onayı ve raporlama Google Meet/Zoom üzerinden yürütülüyor.' },
-  { q: 'Reklam hesabımız kimin adına açılır?', a: 'Firmanızın adına. Google Ads hesabı sizde açılır, biz yönetici olarak erişiriz. B2B toptan ilişkilerinde sıkça sorulan bir güven meselesi — hesap üzerinde tam kontrol her zaman sizde kalır.' },
   ...cityServiceFaqs('kayseri', 'reklam'),
 ]
 
@@ -113,9 +111,7 @@ export default function KayseriReklamAjansiPage() {
           <p className="line-clamp-3 sm:line-clamp-none text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto lg:mx-0 mb-4 leading-relaxed">
             Google Ads, SEO, web tasarım ve pazarlama otomasyonu ile Kayseri işletmelerini dijitalde büyütüyoruz. Mobilya üretimi, gıda sanayii ve tekstile özel strateji.
           </p>
-          <p className="hidden sm:block text-zinc-500 text-sm mb-10">
-            Melikgazi · Kocasinan · Talas · Develi · Yahyalı · İncesu · Hacılar · Pınarbaşı
-          </p>
+          <div className="mb-10"><BolgeMenusu liste={['Melikgazi', 'Kocasinan', 'Talas', 'Develi', 'Yahyalı', 'İncesu', 'Hacılar', 'Pınarbaşı']} /></div>
           <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
             <CalendlyButton label="Ücretsiz Teklif Al" variant="primary" />
             <Link href="/portfolyo" className="text-zinc-400 hover:text-white text-sm font-medium transition-colors flex items-center gap-1.5">

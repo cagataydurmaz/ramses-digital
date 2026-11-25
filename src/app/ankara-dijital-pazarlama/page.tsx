@@ -7,6 +7,7 @@ import RelatedPages from '@/components/RelatedPages'
 import { MapPin, CheckCircle2, ArrowRight, BarChart3, Search, Zap, Globe, Mail, Megaphone, TrendingUp, Shield, Clock } from 'lucide-react'
 import HeroGuvenSatiri from '@/components/HeroGuvenSatiri'
 import HaritaTelefon from '@/components/telefon/HaritaTelefon'
+import BolgeMenusu from '@/components/BolgeMenusu'
 
 export const metadata: Metadata = {
   title: 'Ankara Dijital Pazarlama Ajansı — Ramses Dijital',
@@ -164,9 +165,7 @@ export default function AnkaraDijitalPazarlamaPage() {
           <p className="line-clamp-3 sm:line-clamp-none text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto lg:mx-0 mb-4 leading-relaxed">
             Ankara&apos;nın kurumsal ve B2B ağırlıklı pazarına uygun SEO, Google Ads, web tasarım ve otomasyon — güven inşa eden, referanslara dayalı bir büyüme stratejisi.
           </p>
-          <p className="hidden sm:block text-zinc-500 text-sm mb-10">
-            Çankaya · Keçiören · Yenimahalle · Mamak · Etimesgut · Sincan
-          </p>
+          <div className="mb-10"><BolgeMenusu liste={['Çankaya', 'Keçiören', 'Yenimahalle', 'Mamak', 'Etimesgut', 'Sincan']} /></div>
           <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
             <CalendlyButton label="Ücretsiz Strateji Görüşmesi" variant="primary" />
             <Link href="/portfolyo" className="text-zinc-400 hover:text-white text-sm font-medium transition-colors flex items-center gap-1.5">

@@ -36,10 +36,7 @@ const features = [
 const ilceler = ['Yenişehir', 'Akdeniz', 'Toroslar', 'Mezitli', 'Tarsus', 'Erdemli', 'Silifke', 'Anamur']
 
 const faqs = [
-  { q: 'Lojistik firmaları ve narenciye ihracatçıları için web sitesi farklı mı?', a: 'Evet. Lojistik firmaları için hizmet ağı haritası, filo/kapasite bilgisi ve B2B teklif formu ön planda olmalı. Narenciye ihracatçıları için çok dilli ürün kataloğu, sertifika bilgisi ve toptan/ihracat ayrımı kritik. Genel bir kurumsal şablon yerine sektöre özel bilgi mimarisi kuruyoruz.' },
   { q: 'Fiziksel olarak Mersin\'de ofisiniz var mı?', a: 'Hayır, Kocaeli kökenliyiz — Mersin\'e tamamen uzaktan hizmet veriyoruz. Keşif görüşmesi, tasarım onayı ve teslimat Google Meet/Zoom üzerinden yapılır. Türkiye genelinde canlı referanslarımızı portföyümüzde inceleyebilirsiniz.' },
-  { q: 'Web sitem yapıldıktan sonra kim günceller?', a: 'İçerik güncellemeleri için basit panel kuruyoruz. Blog, ürün ve haber güncellemelerini kendiniz yapabilirsiniz. Tasarım ve teknik değişiklikler için aylık bakım paketi sunuyoruz. Projeyi teslim edip kaybolan bir ajans değiliz.' },
-  { q: 'Mersin\'deki yerleşik ajanslara kıyasla neden sizi tercih etmeliyim?', a: 'Yerleşik ajanslarda küçük/orta ölçekli projeler genellikle düşük öncelik alır, iletişim yavaşlar. Biz her projeye mühendislik disipliniyle, doğrudan kurucu seviyesinde ilgi gösteriyoruz — daha hızlı iletişim, daha esnek süreç, aynı kalite.' },
   ...cityServiceFaqs('mersin', 'web'),
 ]
 

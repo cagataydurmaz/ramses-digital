@@ -7,6 +7,7 @@ import RelatedPages from '@/components/RelatedPages'
 import { MapPin, CheckCircle2, ArrowRight, BarChart3, Search, Zap, Globe, Mail, Megaphone, TrendingUp, Shield, Clock } from 'lucide-react'
 import HeroGuvenSatiri from '@/components/HeroGuvenSatiri'
 import HaritaTelefon from '@/components/telefon/HaritaTelefon'
+import BolgeMenusu from '@/components/BolgeMenusu'
 
 export const metadata: Metadata = {
   title: 'Eskişehir Dijital Pazarlama Ajansı — Ramses Dijital',
@@ -85,10 +86,6 @@ const sectors = [
 ]
 
 const faqs = [
-  { q: 'Eskişehir\'deki hangi dijital kanal en hızlı sonuç verir?', a: 'Hızlı sonuç için Google Ads: 1-2 hafta içinde potansiyel müşteriler arar ve reklamınızı görür. Uzun vadeli ve düşük maliyetli büyüme için SEO: 3-6 ayda organik trafik birikmeye başlar. Öğrenciye hitap eden işletmeler için Instagram/sosyal medya içeriği de hızlı fark yaratır.' },
-  { q: 'Öğrenciye hitap eden bir işletme olarak dijital pazarlamadan nasıl fayda görürüm?', a: 'Eskişehir\'in öğrenci nüfusu yoğun şekilde Google\'da ve sosyal medyada arama/keşif yapıyor — "Eskişehir kafe", "kiralık öğrenci evi", "özel ders" gibi aramalar çok yüksek hacimli. SEO ve hedefli Google Ads kombinasyonuyla bu talebi yakalamak mümkün.' },
-  { q: 'Eskişehir\'deki hukuk büroları ve klinikler için özel bir yaklaşımınız var mı?', a: 'Evet. Hukuk büroları için Avukatlık Kanunu\'nun reklam yasağı nedeniyle SEO ve içerik otoritesine dayalı strateji uyguluyoruz. Diş hekimi ve estetik merkezleri için ise güven inşa eden içerik ve yerel SEO ağırlıklı bir yaklaşım kuruyoruz.' },
-  { q: 'Yapay zeka reklamcılığı ve GEO nedir, Eskişehir işletmesi için gerekli mi?', a: 'GEO (Generative Engine Optimization), ChatGPT veya Gemini\'de "Eskişehir\'de [sektörünüz]" aramasında alıntılanma olasılığını artırmak için yapılan içerik ve yapı çalışmasıdır. Eskişehir\'in genç, teknolojiye yatkın nüfusu göz önüne alınca bu kanal özellikle değerli — erken hareket eden işletmeler önemli bir avantaj kazanıyor.' },
   ...cityServiceFaqs('eskisehir', 'pazarlama'),
 ]
 
@@ -163,9 +160,7 @@ export default function EskisehirDijitalPazarlamaPage() {
           <p className="line-clamp-3 sm:line-clamp-none text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto lg:mx-0 mb-4 leading-relaxed">
             Eskişehir&apos;in öğrenciye hitap eden işletmelerine ve sanayi firmalarına özel SEO, Google Ads, web tasarım ve otomasyon.
           </p>
-          <p className="hidden sm:block text-zinc-500 text-sm mb-10">
-            Odunpazarı · Tepebaşı · Sivrihisar · Mihalıççık · Çifteler
-          </p>
+          <div className="mb-10"><BolgeMenusu liste={['Odunpazarı', 'Tepebaşı', 'Sivrihisar', 'Mihalıççık', 'Çifteler']} /></div>
           <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
             <CalendlyButton label="Ücretsiz Strateji Görüşmesi" variant="primary" />
             <Link href="/portfolyo" className="text-zinc-400 hover:text-white text-sm font-medium transition-colors flex items-center gap-1.5">
