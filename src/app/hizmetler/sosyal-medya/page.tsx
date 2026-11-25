@@ -114,7 +114,7 @@ const faqs = [
   },
   {
     q: 'Sosyal medya reklamı da veriyor musunuz?',
-    a: 'Ücretli sosyal medya reklamları bu hizmetin kapsamı dışında; Google Ads ve arama odaklı reklam yönetimi sunuyoruz. Sosyal medya içeriklerinizi reklam materyali olarak kullanmak isterseniz üretilen tasarımlar buna uygun formatta hazırlanabilir.',
+    a: 'Evet, ayrı bir hizmet olarak. Instagram ve Facebook reklamlarının kurulumu, yönetimi ve ölçümü için Instagram ve Facebook Reklam Yönetimi hizmetimize bakabilirsiniz (/hizmetler/meta-reklam). Bu sayfadaki içerik üretimi hizmetiyle hazırlanan tasarımlar reklamlarda da kullanılabilir.',
   },
 ]
 
@@ -170,7 +170,7 @@ export default function SosyalMedyaPage() {
       </section>
       <KurucuKutusu yerel />
       <KisaOzet>
-        Markanızın diline uygun post, story ve kısa video içerikleri ile içerik takvimini hazırlıyoruz. Hesap yönetimi ve reklam kampanyaları bu hizmete dahil değildir; içerik üretimine odaklanır.
+        Markanızın diline uygun post, story ve kısa video içerikleri ile içerik takvimini hazırlıyoruz. Hesap yönetimi bu hizmete dahil değildir; reklam kampanyaları için <a href="/hizmetler/meta-reklam" className="text-pink-400 hover:text-pink-300 underline underline-offset-2">Instagram ve Facebook reklam yönetimi</a> hizmetimiz ayrıdır.
       </KisaOzet>
 
 

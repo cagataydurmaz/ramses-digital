@@ -157,10 +157,10 @@ export default function GoogleAdsHizmetPage() {
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 text-center">Google Ads&apos;te Başarının Sırrı</h2>
           <div className="space-y-5 text-zinc-300 leading-relaxed">
-            <p>Google Ads, doğru kurgulandığında <strong className="text-white">harcadığınızın 4-10 katını</strong> geri getirebilen en güçlü dijital pazarlama kanalıdır. Yanlış kurgulandığındaysa bütçenizi haftalar içinde tüketebilir. Aradaki fark: <strong className="text-white">veri ve disiplin</strong>.</p>
+            <p>Google Ads, doğru kurgulandığında hizmetinizi arayan kişinin karşısına hemen çıkmanızı sağlayan en doğrudan dijital pazarlama kanallarından biridir. Yanlış kurgulandığındaysa bütçenizi haftalar içinde tüketebilir. Aradaki fark: <strong className="text-white">veri ve disiplin</strong>.</p>
             <p>Birçok ajans &ldquo;set it and forget it&rdquo; mantığıyla çalışır: kampanyayı kurar ve aylarca dokunmaz. Biz aksine, haftalık teklif optimizasyonu, negatif anahtar kelime ekleme, ad performans analizi ve A/B testlerle sürekli iyileştirme yaparız.</p>
             <p>Uzun kuyruklu anahtar kelimelerle düşük CPC&apos;li yüksek dönüşümlü kampanyalar kurabiliyoruz. Coğrafi hedefleme, saat ve cihaz optimizasyonları gibi mikro detaylar ROAS&apos;ınızı katlıyor.</p>
-            <p>Ramses Dijital Yazılım ve Dijital Pazarlama Ajansı&apos;nın Google Ads ekibi, sertifikalı uzmanlardan oluşuyor. Yüksek hacimli reklam bütçeleri yönetiyor ve sektörel kıyaslamalarda %35 daha düşük CPA elde ediyoruz.</p>
+            <p>Ramses Dijital ekibi kampanyaları her ay aynı disiplinle yönetir: dönüşüm ölçümü kurulmadan reklam açılmaz, talep getirmeyen anahtar kelimeler durdurulur ve sonuçlar sade bir raporla paylaşılır.</p>
           </div>
         </div>
       </section>

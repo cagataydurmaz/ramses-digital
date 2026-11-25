@@ -29,8 +29,7 @@ import {
   CheckCircle2,
   Workflow,
   ArrowRight,
-  Share2,
-} from 'lucide-react'
+  Share2, Megaphone } from 'lucide-react'
 
 const services = [
   {
@@ -64,6 +63,22 @@ const services = [
     ],
     color: 'violet',
     href: '/hizmetler/google-ads',
+  },
+  {
+    icon: Megaphone,
+    title: 'Instagram & Facebook Reklamları',
+    tagline: 'Meta Ads Yönetimi · WhatsApp ve Form Reklamları',
+    desc: 'Instagram ve Facebook reklamlarınızı kuruyor, içeriklerini hazırlıyor ve yönetiyoruz. Beğeni değil talep hedefliyoruz; reklamdan gelen her mesaj ve form ölçülür.',
+    features: [
+      'WhatsApp & DM Reklamları',
+      'Form (Potansiyel Müşteri) Reklamları',
+      'Yeniden Hedefleme',
+      'Reels & Story Reklamları',
+      'Pixel & Dönüşüm Ölçümü',
+      'Aylık Şeffaf Rapor',
+    ],
+    color: 'pink',
+    href: '/hizmetler/meta-reklam',
   },
   {
     icon: Share2,

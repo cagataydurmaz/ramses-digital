@@ -37,8 +37,7 @@ import {
   MessageCircle,
   FileText,
   Rocket,
-  Star,
-} from 'lucide-react'
+  Star, Megaphone } from 'lucide-react'
 
 // Bileşen kodu ayrı chunk olarak lazy-load edilir (bundle boyutu için) ama
 // ssr:false KULLANMIYORUZ — bu içerikler (hizmet açıklamaları, form etiketleri,
@@ -148,6 +147,14 @@ const services = [
     desc: 'YouTube, Remarketing ve Display reklamlarıyla ROI odaklı kampanyalar yürütün.',
     tags: ['Search Ads', 'YouTube Ads', 'Remarketing'],
     color: 'violet',
+  },
+  {
+    icon: Megaphone,
+    title: 'Instagram & Facebook Reklamları',
+    href: '/hizmetler/meta-reklam',
+    desc: 'Hizmet bölgenizdeki doğru kişilere ulaşın; reklamı gören müşteri tek dokunuşla WhatsApp’tan yazsın.',
+    tags: ['WhatsApp Reklamları', 'Form Reklamları', 'Yeniden Hedefleme'],
+    color: 'pink',
   },
   {
     icon: Share2,

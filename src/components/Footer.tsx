@@ -6,6 +6,7 @@ import { sektorSehir } from '@/lib/sektorSehir'
 const services = [
   { label: 'SEO & İçerik Optimizasyonu', href: '/hizmetler/seo', hoverClass: 'hover:text-blue-400' },
   { label: 'Google Ads & Performans', href: '/hizmetler/google-ads', hoverClass: 'hover:text-violet-400' },
+  { label: 'Instagram & Facebook Reklamları', href: '/hizmetler/meta-reklam', hoverClass: 'hover:text-pink-400' },
   { label: 'Web Tasarımı & Geliştirme', href: '/hizmetler/web-tasarim', hoverClass: 'hover:text-emerald-400' },
   { label: 'Sosyal Medya İçerik Üretimi', href: '/hizmetler/sosyal-medya', hoverClass: 'hover:text-pink-400' },
   { label: 'E-Posta & Otomasyon', href: '/hizmetler/eposta-otomasyon', hoverClass: 'hover:text-orange-400' },

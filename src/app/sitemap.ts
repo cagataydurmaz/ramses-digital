@@ -20,6 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/sehirler' },
     { path: '/hizmetler/seo' },
     { path: '/hizmetler/google-ads' },
+    { path: '/hizmetler/meta-reklam' },
     { path: '/hizmetler/n8n-otomasyon' },
     { path: '/hizmetler/web-tasarim' },
     { path: '/hizmetler/eposta-otomasyon' },
