@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { ilSeo } from '@/lib/ilSeo'
 import CalendlyButton from '@/components/CalendlyButton'
 import ReviewsMarquee from '@/components/ReviewsMarquee'
-import { MapPin, ArrowRight, TrendingUp, Search, Megaphone, Globe, Sparkles, Code2 } from 'lucide-react'
+import { MapPin, ArrowRight, TrendingUp, Search, Megaphone, Globe, Sparkles, Code2, ChevronDown } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Hizmet Verdiğimiz Şehirler — Ramses Dijital',
@@ -69,6 +69,16 @@ const jsonLd = {
     },
   ],
 }
+
+// "Diğer il ve ilçeler": üst ile göre gruplu; il sayfaları (üstü olmayanlar) "Diğer iller" altında
+const gruplar: [string, typeof ilSeo][] = (() => {
+  const m = new Map<string, typeof ilSeo>()
+  for (const x of ilSeo) {
+    const g = x.ust ? `${x.ust.ad} ilçeleri` : 'Diğer iller'
+    m.set(g, [...(m.get(g) ?? []), x])
+  }
+  return Array.from(m.entries()).sort((a, b) => (a[0] === 'Diğer iller' ? 1 : b[0] === 'Diğer iller' ? -1 : b[1].length - a[1].length))
+})()
 
 export default function SehirlerPage() {
   return (
@@ -138,17 +148,27 @@ export default function SehirlerPage() {
       <section className="pb-16 px-6">
         <div className="max-w-6xl mx-auto bg-[#0D1225] border border-white/[0.06] rounded-2xl p-6">
           <h2 className="text-white font-semibold text-lg mb-1">Diğer İl ve İlçeler</h2>
-          <p className="text-zinc-400 text-sm mb-4">Uzaktan hizmet verdiğimiz diğer il ve ilçeler için SEO sayfaları.</p>
-          <div className="flex flex-wrap gap-2">
-            {ilSeo.map((il) => (
+          <p className="text-zinc-400 text-sm mb-4">Bulunduğunuz ili seçin; o ildeki ilçelere özel sayfalarımız açılsın.</p>
+          <div className="space-y-2">
+            {gruplar.map(([grup, liste]) => (
+              <details key={grup} className="group rounded-xl border border-white/[0.06] bg-white/[0.02]">
+                <summary className="list-none [&::-webkit-details-marker]:hidden cursor-pointer flex items-center justify-between gap-3 px-4 py-3 text-sm text-zinc-300 hover:text-white">
+                  <span className="font-medium">{grup} <span className="text-zinc-500 font-normal">({liste.length})</span></span>
+                  <ChevronDown size={15} className="text-zinc-500 group-open:rotate-180 transition-transform" />
+                </summary>
+                <div className="flex flex-wrap gap-2 px-4 pb-4">
+            {liste.map((il) => (
               <Link
                 key={il.slug}
                 href={`/${il.slug}-seo`}
                 prefetch={false}
                 className="text-xs bg-white/[0.04] hover:bg-blue-500/10 border border-white/[0.06] hover:border-blue-500/30 text-zinc-400 hover:text-blue-400 rounded-full px-3 py-1.5 transition-all"
               >
-                {il.ad} SEO
+                {il.ad}
               </Link>
+            ))}
+                </div>
+              </details>
             ))}
           </div>
         </div>

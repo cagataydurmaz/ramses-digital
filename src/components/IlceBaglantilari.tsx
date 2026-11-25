@@ -14,14 +14,11 @@ function Kart({ x }: { x: IlSeoVeri }) {
       prefetch={false}
       className="group flex items-start gap-3 rounded-xl bg-[#0D1225] border border-white/[0.08] hover:border-blue-500/40 p-4 transition-colors"
     >
-      <span className="w-9 h-9 shrink-0 rounded-lg bg-blue-500/10 flex items-center justify-center mt-0.5">
+      <span className="w-9 h-9 shrink-0 rounded-lg bg-blue-500/10 flex items-center justify-center">
         <MapPin size={16} className="text-blue-400" />
       </span>
-      <span className="min-w-0 flex-1">
-        <span className="flex items-center gap-1.5 text-white font-semibold text-sm">
-          {x.ad} <ArrowRight size={13} className="text-blue-400 group-hover:translate-x-0.5 transition-transform" />
-        </span>
-        <span className="block text-zinc-500 text-xs mt-1 line-clamp-2">{x.bolgeler.slice(0, 4).join(' · ')}</span>
+      <span className="min-w-0 flex-1 flex items-center gap-1.5 text-white font-semibold text-sm self-center">
+        {x.ad} <ArrowRight size={13} className="text-blue-400 group-hover:translate-x-0.5 transition-transform" />
       </span>
     </Link>
   )

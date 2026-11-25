@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import BolgeMenusu from '@/components/BolgeMenusu'
 import SiziArayalimFormu from '@/components/SiziArayalimFormu'
 import ProjeGalerisi from '@/components/ProjeGalerisi'
 import Link from 'next/link'
@@ -92,7 +93,7 @@ export default function EskisehirWebTasarimPage() {
           <p className="line-clamp-3 sm:line-clamp-none text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto lg:mx-0 mb-4 leading-relaxed">
             Eskişehir işletmeniz için hızlı, mobil uyumlu ve yerel SEO hazır web siteleri. Odunpazarı&apos;dan Tepebaşı&apos;na tüm ilçelere uzaktan hizmet.
           </p>
-          <p className="hidden sm:block text-zinc-500 text-sm mb-10">{ilceler.join(' · ')}</p>
+          <div className="mb-10"><BolgeMenusu liste={ilceler} /></div>
           <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
             <CalendlyButton label="Ücretsiz Teklif Al" variant="primary" />
             <Link href="/portfolyo" className="text-zinc-400 hover:text-white text-sm font-medium transition-colors flex items-center gap-1.5">

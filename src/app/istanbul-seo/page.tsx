@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import BolgeMenusu from '@/components/BolgeMenusu'
 import KurucuKutusu from '@/components/KurucuKutusu'
 import ProjeGalerisi from '@/components/ProjeGalerisi'
 import KurumsalSeoBolumu from '@/components/KurumsalSeoBolumu'
@@ -135,9 +136,7 @@ export default function IstanbulSeoPage() {
           <p className="hidden sm:block text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto lg:mx-0 mb-4 leading-relaxed">
             Kadıköy&apos;den Beşiktaş&apos;a, Bakırköy&apos;den Pendik&apos;e İstanbul işletmeleri için yerel ve teknik SEO. Google&apos;da ve yapay zekâ aramalarında görünürlüğünüzü artırmak için çalışıyoruz.
           </p>
-          <p className="hidden sm:block text-zinc-500 text-sm mb-10">
-            {ilceler.join(' · ')}
-          </p>
+          <div className="mb-10"><BolgeMenusu liste={ilceler} /></div>
           <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
             <CalendlyButton label="Ücretsiz SEO Analizi" variant="primary" />
             <Link href="/hizmetler/seo" className="text-zinc-400 hover:text-white text-sm font-medium transition-colors flex items-center gap-1.5">

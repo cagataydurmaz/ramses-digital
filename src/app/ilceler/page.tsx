@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import CalendlyButton from '@/components/CalendlyButton'
-import { MapPin, ArrowRight } from 'lucide-react'
+import { MapPin, ArrowRight, ChevronDown } from 'lucide-react'
 import { ilceler, isIl } from '@/lib/ilceler'
 
 export const metadata: Metadata = {
@@ -56,8 +56,9 @@ export default function IlcelerPage() {
                   )}
                 </div>
                 {ilceListesi.length > 0 ? (
+                  <>
                   <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                    {ilceListesi.map((i) => (
+                    {ilceListesi.slice(0, 6).map((i) => (
                       <Link
                         key={i.slug}
                         href={`/ilceler/${i.slug}`}
@@ -72,6 +73,32 @@ export default function IlcelerPage() {
                       </Link>
                     ))}
                   </div>
+                  {ilceListesi.length > 6 && (
+                    <details className="group mt-4">
+                      <summary className="list-none [&::-webkit-details-marker]:hidden cursor-pointer mx-auto w-fit flex items-center gap-1.5 rounded-full border border-white/10 hover:border-blue-500/40 px-4 py-2 text-sm text-zinc-300 hover:text-white">
+                        <span className="group-open:hidden">Tüm {il} ilçelerini göster ({ilceListesi.length - 6} ilçe daha)</span>
+                        <span className="hidden group-open:inline">Daha az göster</span>
+                        <ChevronDown size={15} className="group-open:rotate-180 transition-transform" />
+                      </summary>
+                      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+                        {ilceListesi.slice(6).map((i) => (
+                      <Link
+                        key={i.slug}
+                        href={`/ilceler/${i.slug}`}
+                        prefetch={false}
+                        className="group bg-[#0D1225] border border-white/[0.06] hover:border-blue-500/30 rounded-xl p-5 transition-all"
+                      >
+                        <p className="text-white font-semibold mb-1">{i.name} Web Tasarım ve SEO</p>
+                        <p className="text-zinc-500 text-sm mb-3">{il} ilçesi</p>
+                        <span className="text-blue-400 text-sm flex items-center gap-1.5 group-hover:gap-2.5 transition-all">
+                          İlçe Rehberini Gör <ArrowRight size={13} />
+                        </span>
+                      </Link>
+                        ))}
+                      </div>
+                    </details>
+                  )}
+                  </>
                 ) : (
                   <p className="text-zinc-500 text-sm">İlçe rehberleri hazırlanıyor; şimdilik il rehberini inceleyebilirsiniz.</p>
                 )}

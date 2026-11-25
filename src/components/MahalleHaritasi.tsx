@@ -1,6 +1,6 @@
 'use client'
 import { useEffect, useRef, useState } from 'react'
-import { Search, MapPin } from 'lucide-react'
+import { Search, MapPin, ChevronDown } from 'lucide-react'
 
 export type Mahalle = { ad: string; x: number; y: number; arama: string }
 
@@ -96,7 +96,12 @@ export default function MahalleHaritasi({ ilce, bulunma, mahalleler, su, suAd, s
                 <div className="h-10 rounded-lg bg-zinc-100" />
               </div>
             </div>
-            <div className="flex flex-wrap gap-2 mt-5">
+            <details className="group mt-5">
+              <summary className="list-none [&::-webkit-details-marker]:hidden cursor-pointer inline-flex items-center gap-1.5 rounded-full border border-white/10 hover:border-blue-500/40 px-3.5 py-1.5 text-xs sm:text-sm text-zinc-400 hover:text-white transition-colors">
+                Semt seçin <span className="text-zinc-500">({mahalleler.length})</span>
+                <ChevronDown size={14} className="group-open:rotate-180 transition-transform" />
+              </summary>
+            <div className="flex flex-wrap gap-2 mt-3">
               {mahalleler.map((n, k) => (
                 <button
                   key={n.ad}
@@ -108,6 +113,7 @@ export default function MahalleHaritasi({ ilce, bulunma, mahalleler, su, suAd, s
                 </button>
               ))}
             </div>
+            </details>
             <p className="text-zinc-500 text-xs mt-4">Örnek aramalardır; temsili gösterim. Sıralama garantisi verilmez.</p>
           </div>
         </div>

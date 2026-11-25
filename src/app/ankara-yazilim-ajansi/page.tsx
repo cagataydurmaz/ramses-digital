@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import BolgeMenusu from '@/components/BolgeMenusu'
 import Link from 'next/link'
 import CityServiceSections, { cityServiceFaqs } from '@/components/CityServiceSections'
 import CalendlyButton from '@/components/CalendlyButton'
@@ -98,9 +99,7 @@ export default function AnkaraYazilimAjansiPage() {
           <p className="line-clamp-3 sm:line-clamp-none text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto lg:mx-0 mb-4 leading-relaxed">
             Hukuk büroları, klinikler, danışmanlık firmaları ve B2B tedarikçiler için kurumsal web uygulaması, süreç otomasyonu, API entegrasyonu ve yapay zeka çözümleri.
           </p>
-          <p className="hidden sm:block text-zinc-500 text-sm mb-10">
-            {ilceler.join(' · ')}
-          </p>
+          <div className="mb-10"><BolgeMenusu liste={ilceler} /></div>
           <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
             <CalendlyButton label="Ücretsiz Keşif Görüşmesi" variant="primary" />
             <Link href="/hizmetler/n8n-otomasyon" className="text-zinc-400 hover:text-white text-sm font-medium transition-colors flex items-center gap-1.5">

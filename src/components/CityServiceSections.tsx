@@ -4,6 +4,7 @@ import AdsButceGrafigi from '@/components/grafik/AdsButceGrafigi'
 import SeoBuyumeGrafigi from '@/components/grafik/SeoBuyumeGrafigi'
 import IlceBaglantilari from '@/components/IlceBaglantilari'
 import KurucuKutusu from '@/components/KurucuKutusu'
+import BolgeMenusu from '@/components/BolgeMenusu'
 import { sehirHizmet, type Hizmet } from '@/lib/sehirHizmet'
 
 const basliklar: Record<Hizmet, (b: string) => { h: string; p: string }> = {
@@ -68,11 +69,7 @@ export default function CityServiceSections({ city, hizmet }: { city: string; hi
                 <p className="text-zinc-400 text-sm mb-3">
                   Tüm {v.sehir} yerine, hizmet verdiğiniz bölgelere ayrı hedefleme:
                 </p>
-                <div className="flex flex-wrap gap-2">
-                  {v.hedefBolgeler.map((b) => (
-                    <span key={b} className="text-xs text-zinc-300 bg-white/[0.04] border border-white/[0.08] rounded-full px-3 py-1">{b}</span>
-                  ))}
-                </div>
+                <BolgeMenusu liste={v.hedefBolgeler} etiket="Hedeflenebilecek bölgeler" />
               </div>
             )}
             {sezonlu && (

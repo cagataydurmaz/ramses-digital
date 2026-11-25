@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import BolgeMenusu from '@/components/BolgeMenusu'
 import SiziArayalimFormu from '@/components/SiziArayalimFormu'
 import ProjeGalerisi from '@/components/ProjeGalerisi'
 import Link from 'next/link'
@@ -92,7 +93,7 @@ export default function KocaeliWebTasarimPage() {
           <p className="line-clamp-3 sm:line-clamp-none text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto lg:mx-0 mb-4 leading-relaxed">
             Gebze&apos;den Gölcük&apos;e tüm Kocaeli ilçelerindeki işletmeler ve sanayi firmaları için hızlı, mobil uyumlu, SEO hazır web siteleri. İzmit merkez için <Link href="/izmit-web-tasarim" className="text-blue-400 hover:text-blue-300 underline underline-offset-4">İzmit Web Tasarım</Link>.
           </p>
-          <p className="hidden sm:block text-zinc-500 text-sm mb-10">{ilceler.join(' · ')}</p>
+          <div className="mb-10"><BolgeMenusu liste={ilceler} /></div>
           <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
             <CalendlyButton label="Ücretsiz Teklif Al" variant="primary" />
             <Link href="/portfolyo" className="text-zinc-400 hover:text-white text-sm font-medium transition-colors flex items-center gap-1.5">

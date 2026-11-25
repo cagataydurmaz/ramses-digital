@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import BolgeMenusu from '@/components/BolgeMenusu'
 import { HaritaTelefonBolumu, SeoVideoBolumu } from '@/components/telefon/TelefonBolumleri'
 import GoogleOnizleme from '@/components/GoogleOnizleme'
 import MahalleHaritasi from '@/components/MahalleHaritasi'
@@ -134,7 +135,7 @@ export default function IlSeoSayfasi({ v }: { v: IlSeoVeri }) {
             <span className="gradient-text">Google&apos;da Müşteri Bulun</span>
           </h1>
           <p className="hidden sm:block text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto lg:mx-0 mb-4 leading-relaxed">{v.ozet}</p>
-          <p className="hidden sm:block text-zinc-500 text-sm mb-10">{v.bolgeler.join(' · ')}</p>
+          <div className="mb-10"><BolgeMenusu liste={v.bolgeler} /></div>
           <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
             <CalendlyButton label="Ücretsiz SEO Analizi" variant="primary" />
             <Link href="/hizmetler/seo" className="text-zinc-400 hover:text-white text-sm font-medium transition-colors flex items-center gap-1.5">

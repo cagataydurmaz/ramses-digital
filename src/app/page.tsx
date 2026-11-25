@@ -699,7 +699,11 @@ export default function HomePage() {
             Tüm Şehirleri Gör <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
           </Link>
           <div className="mt-10 pt-8 border-t border-white/[0.06]">
-            <p className="text-zinc-500 text-xs font-medium uppercase tracking-wider mb-4">Kocaeli, Sakarya ve Çevresi — İlçe Rehberleri</p>
+            <details className="group">
+            <summary className="list-none [&::-webkit-details-marker]:hidden cursor-pointer mx-auto w-fit flex items-center gap-1.5 text-zinc-500 hover:text-zinc-300 text-xs font-medium uppercase tracking-wider mb-4">
+              Kocaeli, Sakarya ve Çevresi — İlçe Rehberleri
+              <ChevronDown size={14} className="group-open:rotate-180 transition-transform" />
+            </summary>
             <div className="flex flex-wrap justify-center gap-2">
               {[
                 ['Gebze', 'gebze'], ['Darıca', 'darica'], ['Körfez', 'korfez'], ['Gölcük', 'golcuk'],
@@ -717,6 +721,7 @@ export default function HomePage() {
               ))}
               <Link href="/ilceler" prefetch={false} className="text-xs text-blue-400 hover:text-blue-300 px-3 py-1.5">Tümünü gör →</Link>
             </div>
+            </details>
           </div>
         </div>
       </section>
