@@ -49,7 +49,7 @@ export default function BilgiVideosu({ ad, baslik }: { ad: string; baslik: strin
   return (
     <div ref={kutu} className="relative mx-auto w-full max-w-[300px] sm:max-w-[320px]">
       <div className="absolute -inset-y-10 inset-x-0 bg-[radial-gradient(circle,rgba(59,130,246,0.18),transparent_65%)] pointer-events-none" aria-hidden />
-      <div className="relative rounded-[2.4rem] bg-[#05070d] p-2.5 ring-1 ring-white/15 shadow-[0_30px_80px_-20px_rgba(0,0,0,0.9)]">
+      <div className="tema-koyu relative rounded-[2.4rem] bg-[#05070d] p-2.5 ring-1 ring-white/15 shadow-[0_30px_80px_-20px_rgba(0,0,0,0.9)]">
         <div className="relative rounded-[2rem] overflow-hidden aspect-[9/16] bg-[#0B1022]">
           <video
             ref={video}

@@ -506,3 +506,66 @@ html { -webkit-text-size-adjust: 100%; text-rendering: optimizeLegibility; }
   .post-content h2 { margin-top: 1.75rem; margin-bottom: 0.75rem; }
   .post-content .callout, .post-content figure, .post-content table, .post-content .stat-grid { margin-top: 1.25rem; margin-bottom: 1.25rem; }
 }
+
+/* ── AÇIK TEMA (deneme, 25 Kasım 2026) ─────────────────────────────────────
+   Bir sarmalayıcıya .tema-acik verilince içindeki koyu bileşenler açık palete
+   çevrilir; bileşen dosyalarına dokunmadan bölüm bölüm uygulanabilir.
+   Palet (mavi aile, göz yormayan): zemin #F2F5F9 (maviye çalan açık gri) /
+   kart #FFFFFF, kenar #E3E8EF / yazı #0F1B2D, #475467, #667085 / marka #2563EB.
+   .tema-koyu: açık bölüm içinde kendi koyu görünümünü koruyan parça
+   (telefon ekranları, videolu kart); kurallar onun içine işlemez. */
+.tema-acik { background: #F2F5F9; color: #0F1B2D; }
+.tema-gecis-ust { height: 4rem; background: linear-gradient(#0A0F1E, #F2F5F9); }
+/* Bölüm geçişleri: keskin çizgi yok; vurgu bandı açık maviye yumuşakça açılıp kapanır */
+.tema-gecis-alt { height: 4rem; background: linear-gradient(#F2F5F9, #080D18); }
+.tema-acik .tema-bant { background: linear-gradient(#F2F5F9, #E4ECF8 22%, #E4ECF8 78%, #F2F5F9); }
+@media (min-width: 640px) { .tema-gecis-ust, .tema-gecis-alt { height: 6rem; } }
+
+/* Yazılar (renkli zeminli düğmelerdeki beyaz yazıya dokunma) */
+.tema-acik .text-white:not([class*="bg-"]):not(.tema-koyu *) { color: #0F1B2D; }
+.tema-acik :is(.text-zinc-100, .text-zinc-200, .text-zinc-300):not(.tema-koyu *) { color: #1D2939; }
+.tema-acik .text-zinc-400:not(.tema-koyu *) { color: #475467; }
+.tema-acik .text-zinc-500:not(.tema-koyu *) { color: #667085; }
+.tema-acik :is(.text-zinc-600, .text-zinc-700):not(.tema-koyu *) { color: #98A2B3; }
+.tema-acik :is(.text-blue-300, .text-blue-400, .text-blue-500):not(.tema-koyu *) { color: #2563EB; }
+.tema-acik :is(.hover\:text-blue-300, .hover\:text-white):hover:not(.tema-koyu *) { color: #1D4ED8; }
+.tema-acik .text-violet-400:not(.tema-koyu *) { color: #7C3AED; }
+.tema-acik .text-emerald-400:not(.tema-koyu *) { color: #059669; }
+.tema-acik .text-fuchsia-400:not(.tema-koyu *) { color: #C026D3; }
+.tema-acik .text-amber-400:not(svg):not(.tema-koyu *) { color: #B45309; }
+.tema-acik .text-cyan-400:not(.tema-koyu *) { color: #0891B2; }
+.tema-acik .text-pink-400:not(.tema-koyu *) { color: #DB2777; }
+.tema-acik .text-orange-400:not(.tema-koyu *) { color: #EA580C; }
+.tema-acik .text-green-400:not(.tema-koyu *) { color: #16A34A; }
+.tema-acik .text-teal-400:not(.tema-koyu *) { color: #0D9488; }
+.tema-acik .text-sky-400:not(.tema-koyu *) { color: #0284C7; }
+.tema-acik .text-indigo-400:not(.tema-koyu *) { color: #4F46E5; }
+.tema-acik .text-rose-400:not(.tema-koyu *) { color: #E11D48; }
+.tema-acik .gradient-text:not(.tema-koyu *) {
+  background-image: linear-gradient(90deg, #1D4ED8 0%, #2563EB 35%, #3B82F6 65%, #1D4ED8 100%);
+}
+
+/* Kartlar ve yüzeyler */
+.tema-acik :is(.bg-\[\#0D1225\], .bg-\[\#0B1022\], .bg-\[\#111827\], .bg-\[\#10162c\], .bg-\[\#0B1120\]):not(.tema-koyu *) {
+  background: #FFFFFF;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, .04), 0 1px 3px rgba(16, 24, 40, .06);
+}
+.tema-acik .bg-\[\#080D18\]:not(.tema-koyu *) { background: #EEF2F7; }
+.tema-acik .bg-zinc-800:not(.tema-koyu *) { background: #E4E7EC; }
+.tema-acik [class*="border-white/"]:not(.tema-koyu *) { border-color: #E3E8EF; }
+.tema-acik [class*="hover:border-white/"]:hover:not(.tema-koyu *) { border-color: #CBD5E1; }
+.tema-acik [class*="ring-white/"]:not(.tema-koyu):not(.tema-koyu *) { --tw-ring-color: #E3E8EF; }
+.tema-acik :is([class^="bg-white/"], [class*=" bg-white/"]):not(.tema-koyu *) { background-color: #F7F9FC; }
+.tema-acik [class*="from-white/"]:not(.tema-koyu *) { background-image: none; background-color: #FFFFFF; }
+.tema-acik .bg-white.text-black:not(.tema-koyu *) { background: #0F1B2D; color: #FFFFFF; }
+.tema-acik :is(input, textarea, select):not(.tema-koyu *) { color: #0F1B2D; }
+.tema-acik :is(input, textarea, select)[class*="bg-["]:not(.tema-koyu *) { background: #FFFFFF; }
+.tema-acik button:disabled:is([class*="bg-blue"], [class*="disabled:bg-zinc"]):not(.tema-koyu *) { background: #E4E7EC !important; color: #98A2B3 !important; }
+
+/* Koyu kalan parçalar açık zeminde ağır gölge yapmasın */
+.tema-acik .tema-koyu[class*="shadow-"] { box-shadow: 0 24px 60px -24px rgba(15, 27, 45, .45); }
+
+/* Beyaz logolar açık zeminde koyu görünsün */
+.tema-acik .kayan-serit img[src^="/logolar/"] { filter: brightness(0); }
+/* Arka plandaki koyu ışıma lekeleri açık zeminde gereksiz */
+.tema-acik .mobile-hide-blur:not(.tema-koyu *) { display: none; }

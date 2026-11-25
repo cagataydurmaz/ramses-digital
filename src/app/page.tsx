@@ -444,6 +444,9 @@ export default function HomePage() {
       <div className="relative home-flow-bg">
 
       {/* ── CANLI PROJELER (güven: hero'nun hemen altında) ─────────── */}
+      {/* Açık tema denemesi: hero'dan sonra açık bölümler, rakamlar koyu bant */}
+      <div className="tema-acik">
+      <div className="tema-gecis-ust" aria-hidden="true" />
       <MarkaSeridi />
       <FeaturedWork />
 
@@ -458,7 +461,7 @@ export default function HomePage() {
       </section>
 
       {/* ── STATS ────────────────────────────────────────────────────────── */}
-      <section className="relative py-10 sm:py-14 overflow-hidden">
+      <section className="tema-bant relative py-10 sm:py-14 overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
           <div className="mobile-hide-blur absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[300px] bg-[radial-gradient(ellipse_at_center,rgba(59,130,246,0.09)_0%,rgba(59,130,246,0.03)_40%,transparent_70%)] rounded-full" />
         </div>
@@ -736,7 +739,7 @@ export default function HomePage() {
       <section className="py-12 sm:py-16 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <FadeIn>
-            <div className="relative bg-gradient-to-b from-blue-500/10 to-transparent border border-blue-500/20 rounded-3xl p-6 sm:p-10 md:p-16 overflow-hidden text-center">
+            <div className="tema-koyu relative bg-[#0A0F1E] bg-gradient-to-b from-blue-500/10 to-transparent border border-blue-500/20 rounded-3xl p-6 sm:p-10 md:p-16 overflow-hidden text-center">
               <ArkaPlanVideo src="/video/cta-sehir.mp4" mobilSrc="/video/cta-sehir-mobil.mp4" poster="/video/cta-sehir-poster.jpg" />
               <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[200px] bg-[radial-gradient(ellipse_at_center,rgba(59,130,246,0.18)_0%,rgba(59,130,246,0.06)_40%,transparent_70%)] rounded-full pointer-events-none" />
               <div className="relative z-10">
@@ -765,6 +768,8 @@ export default function HomePage() {
           </FadeIn>
         </div>
       </section>
+      <div className="tema-gecis-alt" aria-hidden="true" />
+      </div>
       </div>
     </>
   )
