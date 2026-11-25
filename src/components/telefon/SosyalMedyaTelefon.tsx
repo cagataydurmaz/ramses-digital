@@ -13,7 +13,7 @@ const YENI = [
 const ESKI = ['from-zinc-700 to-zinc-800', 'from-slate-700 to-slate-800', 'from-stone-700 to-stone-800', 'from-zinc-600 to-zinc-800', 'from-neutral-700 to-neutral-800']
 
 export default function SosyalMedyaTelefon() {
-  const { ref, adim } = useSiraliAdim(YENI.length, 1300)
+  const { ref, adim } = useSiraliAdim(YENI.length, 800, 2200)
   const gorunen = YENI.slice(0, adim).reverse()
 
   return (

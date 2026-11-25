@@ -8,7 +8,7 @@ import { useSiraliAdim } from '@/components/telefon/useSiraliAdim'
 // Blog (reklam yönetmeliği): Menfaat karşılığı paylaşımda "Reklam" ibaresinin olmaması ve olması.
 // Temsili gösterim; hesap ve işletme adları örnektir.
 export default function ReklamEtiketiAnimasyonu() {
-  const { ref, adim } = useSiraliAdim(2, 2200, 2600)
+  const { ref, adim } = useSiraliAdim(2, 1100, 2000)
   const etiketli = adim >= 2
 
   return (
@@ -21,7 +21,7 @@ export default function ReklamEtiketiAnimasyonu() {
             </span>
             <div className="leading-tight">
               <p className="text-white text-[12px] font-semibold">ornek.icerikuretici</p>
-              <p className={`text-[10.5px] transition-all duration-500 ${etiketli ? 'text-zinc-300 opacity-100' : 'text-transparent opacity-0'}`}>
+              <p className={`text-[10.5px] transition-[opacity,transform] duration-300 ease-out ${etiketli ? 'text-zinc-300 opacity-100' : 'text-transparent opacity-0'}`}>
                 <span className="font-semibold text-white">Reklam</span> · Örnek Kafe ile iş birliği
               </p>
             </div>

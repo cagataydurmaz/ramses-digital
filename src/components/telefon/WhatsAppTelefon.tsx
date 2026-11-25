@@ -36,7 +36,7 @@ export default function WhatsAppTelefon() {
   useEffect(() => {
     if (!aktif) return
     if (adet >= AKIS.length) {
-      const t = setTimeout(() => setAdet(0), 2500)
+      const t = setTimeout(() => setAdet(0), 2000)
       return () => clearTimeout(t)
     }
     const sonraki = AKIS[adet]
@@ -48,7 +48,7 @@ export default function WhatsAppTelefon() {
       }, 900)
       return () => clearTimeout(t)
     }
-    const t = setTimeout(() => setAdet((a) => a + 1), adet === 0 ? 400 : 800)
+    const t = setTimeout(() => setAdet((a) => a + 1), adet === 0 ? 300 : 500)
     return () => clearTimeout(t)
   }, [aktif, adet])
 

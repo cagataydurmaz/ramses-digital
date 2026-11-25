@@ -33,7 +33,7 @@ export default function AdsButceGrafigi() {
 
   useEffect(() => {
     if (!aktif || durdu) return
-    const t = setTimeout(() => setDurum((d) => (d === 'kontrolsuz' ? 'duzenli' : 'kontrolsuz')), 3800)
+    const t = setTimeout(() => setDurum((d) => (d === 'kontrolsuz' ? 'duzenli' : 'kontrolsuz')), 2600)
     return () => clearTimeout(t)
   }, [aktif, durdu, durum])
 

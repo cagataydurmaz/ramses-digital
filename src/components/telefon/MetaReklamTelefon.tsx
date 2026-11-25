@@ -6,7 +6,7 @@ import { useSiraliAdim, BELIR_CSS } from './useSiraliAdim'
 // Instagram reklamının temsili gösterimi: akışta "Sponsorlu" gönderi belirir, "Mesaj gönder"e
 // dokunulur ve işletmeye WhatsApp'tan hazır mesaj düşer. Rakam/beğeni sayısı gösterilmez.
 export default function MetaReklamTelefon() {
-  const { ref, adim } = useSiraliAdim(4, 1500, 2800)
+  const { ref, adim } = useSiraliAdim(4, 900, 2200)
   // 0: akış · 1: sponsorlu gönderi · 2: düğmeye dokunma · 3-4: WhatsApp sohbeti
 
   return (

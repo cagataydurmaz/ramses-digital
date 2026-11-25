@@ -12,7 +12,7 @@ const KANAL = [
 ]
 
 export default function RaporTelefon() {
-  const { ref, adim } = useSiraliAdim(3, 1400, 3000)
+  const { ref, adim } = useSiraliAdim(3, 850, 2200)
 
   return (
     <div ref={ref}>

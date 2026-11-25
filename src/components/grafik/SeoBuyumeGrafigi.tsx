@@ -29,7 +29,7 @@ export default function SeoBuyumeGrafigi() {
 
   useEffect(() => {
     if (!goster) return
-    const t = setInterval(() => setEvre((n) => (n + 1) % EVRELER.length), 2600)
+    const t = setInterval(() => setEvre((n) => (n + 1) % EVRELER.length), 1800)
     return () => clearInterval(t)
   }, [goster])
 

@@ -37,7 +37,7 @@ export default function YilTakvimi2027() {
 
   useEffect(() => {
     if (!goster) return
-    const t = setInterval(() => setOdak((n) => (n + 1) % AYLAR.length), 1400)
+    const t = setInterval(() => setOdak((n) => (n + 1) % AYLAR.length), 800)
     return () => clearInterval(t)
   }, [goster])
 
@@ -50,8 +50,8 @@ export default function YilTakvimi2027() {
         {AYLAR.map((m, i) => (
           <div
             key={m.ay}
-            className={`rounded-xl border p-3 transition-all duration-500 ${goster ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'} ${odak === i ? 'border-blue-400/60 bg-blue-500/10 shadow-[0_0_24px_-8px_rgba(59,130,246,0.8)]' : 'border-white/[0.06] bg-white/[0.02]'}`}
-            style={{ transitionDelay: goster && odak < 0 ? `${i * 60}ms` : '0ms' }}
+            className={`rounded-xl border p-3 transition-[opacity,transform,background-color,border-color] duration-300 ease-out ${goster ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'} ${odak === i ? 'border-blue-400/60 bg-blue-500/10 shadow-[0_0_24px_-8px_rgba(59,130,246,0.8)]' : 'border-white/[0.06] bg-white/[0.02]'}`}
+            style={{ transitionDelay: goster && odak < 0 ? `${i * 40}ms` : '0ms' }}
           >
             <p className={`text-xs font-semibold uppercase tracking-wider mb-2 ${odak === i ? 'text-blue-300' : 'text-zinc-400'}`}>{m.ay}</p>
             <ul className="space-y-1.5">

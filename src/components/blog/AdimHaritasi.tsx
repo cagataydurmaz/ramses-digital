@@ -21,7 +21,7 @@ export default function AdimHaritasi({ adimlar }: { adimlar: { id: string; no: s
 
   useEffect(() => {
     if (!goster) return
-    const t = setInterval(() => setOdak((n) => (n + 1) % adimlar.length), 1300)
+    const t = setInterval(() => setOdak((n) => (n + 1) % adimlar.length), 750)
     return () => clearInterval(t)
   }, [goster, adimlar.length])
 
@@ -35,8 +35,8 @@ export default function AdimHaritasi({ adimlar }: { adimlar: { id: string; no: s
         {adimlar.map((x, i) => (
           <li
             key={x.id}
-            className={`relative transition-all duration-500 ${goster ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-2'}`}
-            style={{ transitionDelay: goster && odak < 0 ? `${i * 90}ms` : '0ms' }}
+            className={`relative transition-[opacity,transform] duration-300 ease-out ${goster ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-2'}`}
+            style={{ transitionDelay: goster && odak < 0 ? `${i * 50}ms` : '0ms' }}
           >
             <a href={`#${x.id}`} className="group flex items-center gap-3 no-underline">
               <span

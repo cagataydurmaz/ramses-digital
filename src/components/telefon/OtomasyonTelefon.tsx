@@ -12,7 +12,7 @@ const ADIMLAR = [
 ]
 
 export default function OtomasyonTelefon() {
-  const { ref, adim } = useSiraliAdim(ADIMLAR.length + 1, 1000, 2600)
+  const { ref, adim } = useSiraliAdim(ADIMLAR.length + 1, 650, 2000)
 
   return (
     <div ref={ref}>

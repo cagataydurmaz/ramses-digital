@@ -1,23 +1,6 @@
 import type { ReactNode } from 'react'
 import { List, ChevronDown } from 'lucide-react'
-import BilgiVideosu from '@/components/BilgiVideosu'
-import GoogleAramaAnimasyonu from '@/components/GoogleAramaAnimasyonu'
-import HaritaTelefon from '@/components/telefon/HaritaTelefon'
-import ReklamTelefon from '@/components/telefon/ReklamTelefon'
-import ChatbotTelefon from '@/components/telefon/ChatbotTelefon'
-import EpostaTelefon from '@/components/telefon/EpostaTelefon'
-import MetaReklamTelefon from '@/components/telefon/MetaReklamTelefon'
-import OtomasyonTelefon from '@/components/telefon/OtomasyonTelefon'
-import RaporTelefon from '@/components/telefon/RaporTelefon'
-import SiteKaydirmaTelefon from '@/components/telefon/SiteKaydirmaTelefon'
-import SosyalMedyaTelefon from '@/components/telefon/SosyalMedyaTelefon'
-import WhatsAppTelefon from '@/components/telefon/WhatsAppTelefon'
-import AdsButceGrafigi from '@/components/grafik/AdsButceGrafigi'
-import SeoBuyumeGrafigi from '@/components/grafik/SeoBuyumeGrafigi'
-import AiModuAnimasyonu from './AiModuAnimasyonu'
-import ChatgptReklamAnimasyonu from './ChatgptReklamAnimasyonu'
-import ReklamEtiketiAnimasyonu from './ReklamEtiketiAnimasyonu'
-import YilTakvimi2027 from './YilTakvimi2027'
+import TembelGomulu, { type TembelAd } from './TembelGomulu'
 import AdimHaritasi from './AdimHaritasi'
 import { blogZenginlestirme } from '@/lib/blogZenginlestirme'
 
@@ -147,42 +130,31 @@ function Gomulu({ tanim, basliklar }: { tanim: string; basliklar: Baslik[] }) {
     case 'video': {
       const v = VIDEO_BASLIK[p]
       if (!v) return null
-      return <Cerceve aciklama={a ?? v.aciklama}><BilgiVideosu ad={p} baslik={v.baslik} /></Cerceve>
+      return <Cerceve aciklama={a ?? v.aciklama}><TembelGomulu ad="video" props={{ ad: p, baslik: v.baslik }} /></Cerceve>
     }
     case 'ads-butce':
-      return <div className="my-6 -mx-4 sm:-mx-6"><AdsButceGrafigi /></div>
     case 'seo-buyume':
-      return <div className="my-6 -mx-4 sm:-mx-6"><SeoBuyumeGrafigi /></div>
+      return <div className="my-6 -mx-4 sm:-mx-6"><TembelGomulu ad={ad} /></div>
     case 'takvim-2027':
-      return <div className="my-10"><YilTakvimi2027 /></div>
-    case 'ai-modu':
-      return <Cerceve aciklama={aciklama}><AiModuAnimasyonu /></Cerceve>
-    case 'chatgpt-reklam':
-      return <Cerceve aciklama={aciklama}><ChatgptReklamAnimasyonu /></Cerceve>
-    case 'reklam-etiketi':
-      return <Cerceve aciklama={aciklama}><ReklamEtiketiAnimasyonu /></Cerceve>
+      return <div className="my-10"><TembelGomulu ad={ad} /></div>
     case 'google-arama':
-      return <Cerceve aciklama={aciklama}><GoogleAramaAnimasyonu aramalar={liste} /></Cerceve>
+      return <Cerceve aciklama={aciklama}><TembelGomulu ad={ad} props={{ aramalar: liste }} /></Cerceve>
     case 'harita':
-      return <Cerceve aciklama={aciklama}><HaritaTelefon arama={liste?.[0]} /></Cerceve>
+      return <Cerceve aciklama={aciklama}><TembelGomulu ad={ad} props={{ arama: liste?.[0] }} /></Cerceve>
     case 'reklam-telefon':
-      return <Cerceve aciklama={aciklama}><ReklamTelefon aramalar={liste} /></Cerceve>
+      return <Cerceve aciklama={aciklama}><TembelGomulu ad={ad} props={{ aramalar: liste }} /></Cerceve>
+    case 'ai-modu':
+    case 'chatgpt-reklam':
+    case 'reklam-etiketi':
     case 'chatbot':
-      return <Cerceve aciklama={aciklama}><ChatbotTelefon /></Cerceve>
     case 'eposta':
-      return <Cerceve aciklama={aciklama}><EpostaTelefon /></Cerceve>
     case 'meta-reklam':
-      return <Cerceve aciklama={aciklama}><MetaReklamTelefon /></Cerceve>
     case 'otomasyon':
-      return <Cerceve aciklama={aciklama}><OtomasyonTelefon /></Cerceve>
     case 'rapor':
-      return <Cerceve aciklama={aciklama}><RaporTelefon /></Cerceve>
     case 'site-kaydirma':
-      return <Cerceve aciklama={aciklama}><SiteKaydirmaTelefon /></Cerceve>
     case 'sosyal-medya':
-      return <Cerceve aciklama={aciklama}><SosyalMedyaTelefon /></Cerceve>
     case 'whatsapp':
-      return <Cerceve aciklama={aciklama}><WhatsAppTelefon /></Cerceve>
+      return <Cerceve aciklama={aciklama}><TembelGomulu ad={ad as TembelAd} /></Cerceve>
     default:
       return null
   }

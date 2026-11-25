@@ -12,7 +12,7 @@ const POSTALAR = [
 ]
 
 export default function EpostaTelefon() {
-  const { ref, adim } = useSiraliAdim(POSTALAR.length, 1500)
+  const { ref, adim } = useSiraliAdim(POSTALAR.length, 900, 2200)
   const gelen = POSTALAR.slice(0, adim).reverse()
 
   return (
