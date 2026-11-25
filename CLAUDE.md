@@ -16,6 +16,7 @@ Türkçe dijital pazarlama ajansı sitesi. Next.js 14 App Router + Tailwind + Ty
 - Başka sitelerden metin kopyalanmaz (fikir/yapı serbest).
 - Formlarda "Ortalama 2 saat içinde dönüş yapıyoruz" notu onaylı.
 - **Yeni içerik (blog, sayfa, paylaşım) kendiliğinden üretilmez:** önce öneri, kullanıcı onayı, sonra birlikte üretim.
+- **Renk/tema (25 Kasım 2026, onaylı):** Site açık tema. `<main>` = `.tema-acik.tema-site` (zemin mavinin açık tonları arasında yumuşak dalga, kartlar beyaz, yazı lacivert #0F1B2D, marka mavisi #2563EB). Her sayfanın ilk hero bölümü `tema-koyu tema-hero` (lacivert `--lacivert` #13284F, altı yumuşak geçiş); alt bilgi `--lacivert-alt` #0F2143. Bileşenler eski koyu sınıflarla yazılabilir, `globals.css` "AÇIK TEMA" kuralları çevirir; kendi koyu görünümünü koruyacak parça (telefon ekranı, videolu kart) `tema-koyu`. Yeni sayfanın ilk `<section>`'ı `relative pt-32 …` ise `tema-koyu tema-hero` ekle. Kapkaranlık geniş alan yok; bölüm geçişleri keskin çizgisiz.
 - **Sade tasarım:** mobilde kartlar kompakt (`kart-kompakt`, iç boşluk ~16px), uzun listeler `<details>`; bölümler arası boşluk mobil ~64px / masaüstü ~96px (globals.css ortak kural). Yeni bölüm/kart bu kurallara uyar.
 
 ## pSEO yapısı (veri odaklı)
