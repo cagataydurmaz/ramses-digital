@@ -166,9 +166,9 @@ export default function ContactPage() {
                     <div>
                       <p className="text-white text-sm font-medium mb-0.5">Çalışma Saatleri</p>
                       <p className="text-zinc-400 text-sm">
-                        Pazartesi – Cuma: 09:00 – 18:00
+                        Pazartesi – Cuma: 08:00 – 18:00
                         <br />
-                        Cumartesi: 10:00 – 14:00
+                        Cumartesi – Pazar: Kapalı (WhatsApp’tan yazabilirsiniz)
                       </p>
                     </div>
                   </div>
