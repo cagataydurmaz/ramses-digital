@@ -136,6 +136,9 @@ export default function RootLayout({
                 slogan: 'Markanızı Dijitalde Büyütün, Gerçek Sonuçlar Elde Edin',
                 image: 'https://ramsesdigital.com/og-image.png',
                 telephone: '+905355601936',
+                address: { '@type': 'PostalAddress', addressLocality: 'İzmit', addressRegion: 'Kocaeli', addressCountry: 'TR' },
+                hasMap: 'https://maps.app.goo.gl/xKzk4Q5VCeK4ePbz6',
+                founder: { '@type': 'Person', name: 'Çağatay Durmaz', jobTitle: 'Kurucu' },
                 email: 'ramsesdigitalagency@gmail.com',
                 openingHoursSpecification: [
                   {
@@ -156,6 +159,8 @@ export default function RootLayout({
                   'Generative Engine Optimization (GEO)',
                   'Answer Engine Optimization (AEO)',
                   'Google Ads',
+                  'Meta Ads (Instagram ve Facebook reklamları)',
+                  'Social Media Management',
                   'Google Analytics 4',
                   'n8n Workflow Automation',
                   'Web Design and Development',

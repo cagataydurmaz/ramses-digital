@@ -7,9 +7,9 @@ import TelefonCercevesi from './TelefonCercevesi'
 
 // Öne çıkan projeler için özel kısa özet; diğerlerinde portföydeki kategori yazılır.
 const OZET: Record<string, string> = {
-  depodez: 'Web tasarım, SEO, 16 ilçe sayfası ve Google Ads bakımı',
-  'nur-celen': "Yerel SEO ile Google'da 1. sayfaya taşındı",
-  'mert-anil-guler': 'Reklamsız, içerik ve SEO ile görünürlük',
+  depodez: 'İlk 3 sıradaki arama sayısı 2’den 24’e çıktı',
+  'nur-celen': '11 ayda Google’da 161 bin gösterim',
+  'mert-anil-guler': 'Reklamsız, 5,5 ayda Google’dan 1.271 tıklama',
 }
 
 type Proje = (typeof projects)[number]

@@ -221,6 +221,17 @@ export default function Footer() {
                   WhatsApp: 0535 560 19 36
                 </a>
               </li>
+              <li>
+                <a
+                  href="https://maps.app.goo.gl/xKzk4Q5VCeK4ePbz6"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 text-zinc-400 hover:text-white text-sm transition-colors"
+                >
+                  <MapPin size={14} className="text-blue-500 shrink-0" aria-hidden="true" />
+                  İzmit, Kocaeli · Google’da 5.0 puan
+                </a>
+              </li>
             </ul>
           </div>
         </div>
