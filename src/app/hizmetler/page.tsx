@@ -244,26 +244,26 @@ export default function ServicesPage() {
             return (
               <div
                 key={service.title}
-                className={`bg-[#0D1225] border ${colors.border} rounded-2xl p-5 md:p-10 transition-all duration-300`}
+                className={`bg-[#0D1225] border ${colors.border} rounded-2xl p-5 md:p-8 transition-all duration-300`}
               >
-                <div className="grid md:grid-cols-2 gap-4 md:gap-8 items-start">
+                <div className="grid md:grid-cols-2 gap-4 md:gap-10 items-center">
                   <div>
                     {/* Mobilde ikon, etiket ve başlık yan yana; kart kısa */}
                     <div className="flex items-center gap-3 md:block">
-                      <div className={`w-10 h-10 md:w-12 md:h-12 shrink-0 ${colors.icon} rounded-xl flex items-center justify-center md:mb-5`}>
+                      <div className={`w-10 h-10 md:w-11 md:h-11 shrink-0 ${colors.icon} rounded-xl flex items-center justify-center md:mb-4`}>
                         <Icon size={20} />
                       </div>
                       <div className="min-w-0">
                         <p className="text-zinc-400 text-[11px] md:text-xs font-medium uppercase tracking-wider mb-0.5 md:mb-2">
                           {service.tagline}
                         </p>
-                        <h2 className="text-lg md:text-3xl font-bold text-white md:mb-4 leading-snug">
+                        <h2 className="text-lg md:text-2xl font-bold text-white md:mb-3 leading-snug">
                           {service.title}
                         </h2>
                       </div>
                     </div>
-                    <p className="text-zinc-400 text-sm md:text-base leading-relaxed mt-3 md:mt-0 line-clamp-3 md:line-clamp-none">{service.desc}</p>
-                    <div className="flex flex-wrap items-center gap-4 mt-4 md:mt-6">
+                    <p className="text-zinc-400 text-sm md:text-[15px] leading-relaxed mt-3 md:mt-0 line-clamp-3 md:line-clamp-none">{service.desc}</p>
+                    <div className="flex flex-wrap items-center gap-4 mt-4 md:mt-5">
                       <CalendlyButton label="Teklif Al" variant="link" />
                       {service.href && (
                         <Link

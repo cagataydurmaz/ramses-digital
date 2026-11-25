@@ -470,12 +470,12 @@ export default function HomePage() {
               return (
                 <FadeIn key={stat.label} delay={i * 0.1}>
                   {/* Mobilde yatay ve kısa: ikon solda, rakam ve etiket yanında */}
-                  <div className="group flex items-center gap-2.5 sm:block sm:text-center bg-white/[0.02] border border-white/[0.14] rounded-2xl p-3 sm:py-8 sm:px-3 card-hover">
+                  <div className="group flex items-center gap-2.5 sm:block sm:text-center bg-white/[0.02] border border-white/[0.14] rounded-2xl p-3 sm:py-6 sm:px-3 card-hover">
                     <div className={`w-9 h-9 sm:w-11 sm:h-11 shrink-0 sm:mx-auto sm:mb-3 rounded-xl ${c.bg} flex items-center justify-center ${c.bgHover} transition-colors`}>
                       <Icon size={17} className={c.text} />
                     </div>
                     <div className="min-w-0">
-                      <div className="text-xl sm:text-4xl md:text-5xl font-bold text-white leading-none sm:leading-tight sm:mb-1.5">
+                      <div className="text-xl sm:text-3xl md:text-4xl font-bold text-white leading-none sm:leading-tight sm:mb-1">
                         <Counter target={stat.value} suffix={stat.suffix} />
                       </div>
                       <div className="text-zinc-400 text-[11px] sm:text-sm leading-tight mt-1 sm:mt-0">{stat.label}</div>
