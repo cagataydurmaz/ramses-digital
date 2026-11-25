@@ -26,7 +26,7 @@ export default function AdimHaritasi({ adimlar }: { adimlar: { id: string; no: s
   }, [goster, adimlar.length])
 
   return (
-    <nav ref={ref} aria-label="Yazının adımları" className="my-8 rounded-2xl border border-white/[0.08] bg-[#0D1225] p-5">
+    <nav ref={ref} aria-label="Yazının adımları" className="my-6 sm:my-8 rounded-2xl border border-white/[0.08] bg-[#0D1225] p-4 sm:p-5">
       <p className="flex items-center gap-2 text-white font-semibold text-sm mb-4">
         <Route size={17} className="text-blue-400" /> Yol haritası: {adimlar.length} adım
       </p>

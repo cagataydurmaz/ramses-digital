@@ -15,6 +15,8 @@ Türkçe dijital pazarlama ajansı sitesi. Next.js 14 App Router + Tailwind + Ty
 - Avukat, eczane gibi reklam yasağı olan mesleklerde Google Ads önerilmez. Sağlıkta mevzuata uygun, iddiasız dil.
 - Başka sitelerden metin kopyalanmaz (fikir/yapı serbest).
 - Formlarda "Ortalama 2 saat içinde dönüş yapıyoruz" notu onaylı.
+- **Yeni içerik (blog, sayfa, paylaşım) kendiliğinden üretilmez:** önce öneri, kullanıcı onayı, sonra birlikte üretim.
+- **Sade tasarım:** mobilde kartlar kompakt (`kart-kompakt`, iç boşluk ~16px), uzun listeler `<details>`; bölümler arası boşluk mobil ~64px / masaüstü ~96px (globals.css ortak kural). Yeni bölüm/kart bu kurallara uyar.
 
 ## pSEO yapısı (veri odaklı)
 | Tür | Veri | Bileşen / rota |

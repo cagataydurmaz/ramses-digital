@@ -93,7 +93,7 @@ export function hazirla(slug: string, ham: string): { html: string; basliklar: B
 
 function Cerceve({ children, aciklama }: { children: ReactNode; aciklama?: string }) {
   return (
-    <figure className="my-10 rounded-2xl border border-white/[0.06] bg-gradient-to-b from-blue-500/[0.05] to-transparent px-4 pt-8 pb-6">
+    <figure className="my-6 sm:my-10 rounded-2xl border border-white/[0.06] bg-gradient-to-b from-blue-500/[0.05] to-transparent px-4 pt-6 sm:pt-8 pb-5 sm:pb-6">
       {children}
       {aciklama && <figcaption className="text-center text-zinc-400 text-sm mt-4 max-w-md mx-auto leading-relaxed">{aciklama}</figcaption>}
     </figure>
@@ -108,7 +108,7 @@ function Gomulu({ tanim, basliklar }: { tanim: string; basliklar: Baslik[] }) {
   switch (ad) {
     case 'icindekiler':
       return (
-        <details className="group my-8 rounded-xl border border-white/[0.08] bg-[#0D1225] lg:hidden">
+        <details className="group my-6 sm:my-8 rounded-xl border border-white/[0.08] bg-[#0D1225] lg:hidden">
           <summary className="list-none [&::-webkit-details-marker]:hidden cursor-pointer flex items-center gap-2 px-5 py-3.5 text-white font-semibold text-sm">
             <List size={16} className="text-blue-400" /> Bu yazıda ({basliklar.length} başlık)
             <ChevronDown size={16} className="ml-auto text-zinc-400 group-open:rotate-180 transition-transform" />
@@ -136,7 +136,7 @@ function Gomulu({ tanim, basliklar }: { tanim: string; basliklar: Baslik[] }) {
     case 'seo-buyume':
       return <div className="my-6 -mx-4 sm:-mx-6"><TembelGomulu ad={ad} /></div>
     case 'takvim-2027':
-      return <div className="my-10"><TembelGomulu ad={ad} /></div>
+      return <div className="my-6 sm:my-10"><TembelGomulu ad={ad} /></div>
     case 'google-arama':
       return <Cerceve aciklama={aciklama}><TembelGomulu ad={ad} props={{ aramalar: liste }} /></Cerceve>
     case 'harita':
@@ -164,7 +164,7 @@ export default function BlogIcerik({ slug, html: ham }: { slug: string; html: st
   const { html, basliklar } = hazirla(slug, ham)
   const parcalar = html.split(/<div data-bilesen="([^"]+)"><\/div>/)
   return (
-    <article className="mb-16">
+    <article className="mb-10 sm:mb-14">
       {parcalar.map((x, i) =>
         i % 2 === 0 ? (
           x.trim() ? <div key={i} className="post-content" dangerouslySetInnerHTML={{ __html: x }} /> : null

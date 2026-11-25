@@ -486,3 +486,23 @@ html { -webkit-text-size-adjust: 100%; text-rendering: optimizeLegibility; }
   main .rounded-xl > .mb-4:first-child, main .rounded-xl > .mb-5:first-child, main .rounded-2xl > .mb-4:first-child, main .rounded-2xl > .mb-5:first-child { margin-bottom: 0.75rem; }
   main .rounded-xl > p.text-sm, main .rounded-2xl > p.text-sm { line-height: 1.6; }
 }
+
+/* Bölümler arası boşluk sade: tüm sayfalarda bölüm üst/alt boşluğu tek kuralla sınırlanır.
+   Mobil ~64px, masaüstü ~96px bölüm arası. (Hero'nun üst boşluğu menü için korunur.) */
+@media (max-width: 639px) {
+  main section:is(.py-10, .py-12, .py-14, .py-16, .py-20, .py-24) { padding-top: 2rem; padding-bottom: 2rem; }
+  main section:is(.pb-10, .pb-12, .pb-14, .pb-16, .pb-20, .pb-24) { padding-bottom: 2rem; }
+  main section:is(.pt-12, .pt-16, .pt-20) { padding-top: 2rem; }
+  main section .text-center:is(.mb-10, .mb-12, .mb-14, .mb-16) { margin-bottom: 1.75rem; }
+}
+@media (min-width: 640px) {
+  main section:is(.py-14, .py-16, .py-20, .py-24, .sm\:py-14, .sm\:py-16, .sm\:py-20, .md\:py-14, .md\:py-16, .md\:py-20, .md\:py-24, .lg\:py-24) { padding-top: 3rem; padding-bottom: 3rem; }
+  main section:is(.pb-14, .pb-16, .pb-20, .pb-24, .md\:pb-14, .md\:pb-16, .md\:pb-20) { padding-bottom: 3rem; }
+  main section .text-center:is(.mb-12, .mb-14, .mb-16) { margin-bottom: 2.5rem; }
+}
+
+/* Blog yazısı içi aralıklar mobilde daha sıkı */
+@media (max-width: 639px) {
+  .post-content h2 { margin-top: 1.75rem; margin-bottom: 0.75rem; }
+  .post-content .callout, .post-content figure, .post-content table, .post-content .stat-grid { margin-top: 1.25rem; margin-bottom: 1.25rem; }
+}

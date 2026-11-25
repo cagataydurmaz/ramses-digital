@@ -192,7 +192,7 @@ export default function BlogPostPage({ params }: Props) {
       <BreadcrumbJsonLd post={post} />
       <FaqJsonLd faqs={faqs} />
 
-      <div className="max-w-4xl lg:max-w-6xl mx-auto px-4 sm:px-6 pt-24 sm:pt-32 pb-24">
+      <div className="max-w-4xl lg:max-w-6xl mx-auto px-4 sm:px-6 pt-24 sm:pt-32 pb-12 sm:pb-20">
         {/* Breadcrumb */}
         <nav className="flex items-center gap-2 text-sm text-zinc-400 mb-10 flex-wrap">
           <Link href="/" className="hover:text-zinc-300 transition-colors">
@@ -207,7 +207,7 @@ export default function BlogPostPage({ params }: Props) {
         </nav>
 
         {/* Hero Image */}
-        <div className="relative h-64 sm:h-80 rounded-2xl overflow-hidden mb-10">
+        <div className="relative h-52 sm:h-80 rounded-2xl overflow-hidden mb-6 sm:mb-10">
           <Image
             src={post.coverImage}
             alt={post.title}
@@ -220,7 +220,7 @@ export default function BlogPostPage({ params }: Props) {
         </div>
 
         {/* Article Header */}
-        <header className="mb-12">
+        <header className="mb-8 sm:mb-12">
 
           {/* Category badge */}
           <span
@@ -262,7 +262,7 @@ export default function BlogPostPage({ params }: Props) {
         <BlogIcerik slug={post.slug} html={post.content} />
 
         {/* Yazar kutusu (E-E-A-T: içeriğin arkasındaki gerçek kişi) */}
-        <aside aria-label="Yazar hakkında" className="mb-12 flex flex-col sm:flex-row items-center sm:items-start gap-5 bg-[#0D1225] border border-white/[0.08] rounded-2xl p-6">
+        <aside aria-label="Yazar hakkında" className="mb-8 sm:mb-12 flex flex-col sm:flex-row items-center sm:items-start gap-5 bg-[#0D1225] border border-white/[0.08] rounded-2xl p-6">
           <Image src={KURUCU.foto} alt={`${KURUCU.ad}, Ramses Dijital kurucusu`} width={80} height={80} className="w-20 h-20 rounded-full object-cover ring-2 ring-blue-500/40 shrink-0" />
           <div className="text-center sm:text-left">
             <p className="text-zinc-500 text-xs uppercase tracking-wider mb-1">Yazan</p>
@@ -273,7 +273,7 @@ export default function BlogPostPage({ params }: Props) {
         </aside>
 
         {/* Tags */}
-        <div className="flex flex-wrap gap-2 mb-16 pt-8 border-t border-white/[0.06]">
+        <div className="flex flex-wrap gap-2 mb-8 sm:mb-12 pt-6 sm:pt-8 border-t border-white/[0.06]">
           {post.tags.map((tag) => (
             <span
               key={tag}
@@ -285,7 +285,7 @@ export default function BlogPostPage({ params }: Props) {
         </div>
 
         {/* İlgili hizmet ve şehir sayfaları (konuya göre otomatik, bkz. lib/blogIcLinkler) */}
-        <section className="mb-12">
+        <section className="mb-8 sm:mb-12">
           <h2 className="text-xl font-bold text-white mb-4">İlgili Hizmetler ve Şehirler</h2>
           <div className="flex flex-wrap gap-2">
             {icLinkler.map((l) => (
@@ -303,8 +303,8 @@ export default function BlogPostPage({ params }: Props) {
 
         {/* Related Posts */}
         {related.length > 0 && (
-          <section className="mb-16">
-            <h2 className="text-xl font-bold text-white mb-6">İlgili Yazılar</h2>
+          <section className="mb-8 sm:mb-12">
+            <h2 className="text-xl font-bold text-white mb-4 sm:mb-6">İlgili Yazılar</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {related.map((rp) => (
                 <Link
@@ -329,7 +329,7 @@ export default function BlogPostPage({ params }: Props) {
         )}
 
         {/* CTA Section */}
-        <section className="bg-gradient-to-br from-blue-500/10 to-violet-500/5 border border-blue-500/20 rounded-2xl p-8 sm:p-10 text-center">
+        <section className="bg-gradient-to-br from-blue-500/10 to-violet-500/5 border border-blue-500/20 rounded-2xl p-6 sm:p-10 text-center">
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">
             Projenizi Konuşalım
           </h2>

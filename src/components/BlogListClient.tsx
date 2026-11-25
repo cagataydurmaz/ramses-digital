@@ -46,42 +46,42 @@ function BlogCard({ post, priority = false }: { post: PostMeta; priority?: boole
   return (
     <Link
       href={`/blog/${post.slug}`}
-      className="bg-[#0D1225] border border-white/[0.06] rounded-2xl overflow-hidden hover:border-white/[0.12] transition-all group flex flex-col"
+      className="bg-[#0D1225] border border-white/[0.06] rounded-2xl overflow-hidden hover:border-white/[0.12] transition-all group flex flex-row sm:flex-col"
     >
-      {/* Cover */}
-      <div className="relative h-48 overflow-hidden">
+      {/* Cover — mobilde solda küçük kare, geniş ekranda üstte */}
+      <div className="relative w-28 shrink-0 min-h-[7.5rem] sm:w-auto sm:min-h-0 sm:h-48 overflow-hidden">
         <Image
           src={post.coverImage}
           alt={post.title}
           fill
           priority={priority}
           className="object-cover transition-transform duration-500 group-hover:scale-105"
-          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          sizes="(max-width: 640px) 112px, (max-width: 1024px) 50vw, 33vw"
         />
         <div className={`absolute inset-0 bg-gradient-to-t ${post.coverGradient} opacity-60`} />
       </div>
 
       {/* Body */}
-      <div className="p-5 flex flex-col flex-1">
+      <div className="p-3.5 sm:p-5 flex flex-col flex-1 min-w-0">
         {/* Category badge */}
         <span
-          className={`inline-block rounded-full px-2.5 py-1 text-xs font-medium mb-3 w-fit ${categoryBadgeClass(post.categoryColor)}`}
+          className={`inline-block rounded-full px-2.5 py-1 text-[11px] sm:text-xs font-medium mb-1.5 sm:mb-3 w-fit ${categoryBadgeClass(post.categoryColor)}`}
         >
           {post.category}
         </span>
 
         {/* Title */}
-        <h2 className="text-white font-semibold text-base leading-snug mb-2 group-hover:text-blue-300 transition-colors">
+        <h2 className="text-white font-semibold text-[15px] sm:text-base leading-snug mb-1 sm:mb-2 line-clamp-3 sm:line-clamp-none group-hover:text-blue-300 transition-colors">
           {post.title}
         </h2>
 
         {/* Excerpt */}
-        <p className="text-zinc-400 text-sm leading-relaxed line-clamp-2 mb-4 flex-1">
+        <p className="hidden sm:block text-zinc-400 text-sm leading-relaxed line-clamp-2 mb-4 flex-1">
           {post.excerpt}
         </p>
 
         {/* Tags */}
-        <div className="flex flex-wrap gap-1.5 mb-4">
+        <div className="hidden sm:flex flex-wrap gap-1.5 mb-4">
           {post.tags.slice(0, 3).map((tag) => (
             <span
               key={tag}
@@ -93,8 +93,8 @@ function BlogCard({ post, priority = false }: { post: PostMeta; priority?: boole
         </div>
 
         {/* Footer */}
-        <div className="flex items-center justify-between pt-3 border-t border-white/[0.05]">
-          <div className="flex items-center gap-3 text-xs text-zinc-400">
+        <div className="mt-auto flex items-center justify-between pt-1.5 sm:pt-3 sm:border-t border-white/[0.05]">
+          <div className="flex items-center gap-2 sm:gap-3 text-[11px] sm:text-xs text-zinc-400">
             <span>{post.readTime} dk okuma</span>
             <span>·</span>
             <span>
@@ -105,7 +105,7 @@ function BlogCard({ post, priority = false }: { post: PostMeta; priority?: boole
               })}
             </span>
           </div>
-          <span className="text-blue-400 text-xs font-medium group-hover:translate-x-0.5 transition-transform inline-block">
+          <span className="hidden sm:inline-block text-blue-400 text-xs font-medium group-hover:translate-x-0.5 transition-transform">
             Devamını Oku →
           </span>
         </div>
@@ -144,14 +144,14 @@ export default function BlogListClient({ posts }: { posts: PostMeta[] }) {
       </section>
 
       {/* Posts Grid */}
-      <section className="px-4 sm:px-6 pb-24">
+      <section className="px-4 sm:px-6 pb-12 sm:pb-20">
         <div className="max-w-7xl mx-auto">
           {filtered.length === 0 ? (
             <div className="text-center py-20 text-zinc-400">
               Bu kategoride henüz içerik bulunmuyor.
             </div>
           ) : (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
               {filtered.map((post, idx) => (
                 <BlogCard key={post.slug} post={post} priority={idx < 3} />
               ))}
