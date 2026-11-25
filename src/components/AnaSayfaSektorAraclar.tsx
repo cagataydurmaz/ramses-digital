@@ -84,17 +84,21 @@ export default function AnaSayfaSektorAraclar() {
             <h2 id="araclar-baslik" className="text-3xl sm:text-4xl font-bold text-white mb-4">Hemen Kullanabileceğiniz Ücretsiz Araçlar</h2>
             <p className="text-zinc-400 text-lg max-w-2xl mx-auto">Üyelik yok, veri kaydı yok. Tarayıcınızda çalışır, saniyeler içinde sonuç verir.</p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-5">
             {araclar.map((a) => {
               const Icon = aracIkon[a.slug] ?? FileSearch
               return (
-                <Link key={a.slug} href={`/araclar/${a.slug}`} prefetch={false} className="group h-full bg-[#0D1225] border border-white/[0.14] hover:border-blue-500/40 hover:-translate-y-1 hover:shadow-[0_12px_40px_-12px_rgba(59,130,246,0.35)] rounded-2xl p-6 transition-all duration-300">
-                  <span className="w-11 h-11 rounded-xl bg-blue-500/10 flex items-center justify-center mb-5">
-                    <Icon size={20} className="text-blue-400" />
-                  </span>
-                  <h3 className="text-white font-semibold mb-2">{a.ad}</h3>
-                  <p className="text-zinc-400 text-sm leading-relaxed mb-4">{a.kisa}</p>
-                  <span className="text-blue-400 text-sm font-medium inline-flex items-center gap-1.5 group-hover:gap-2.5 transition-all">Aracı kullan <ArrowRight size={13} /></span>
+                <Link key={a.slug} href={`/araclar/${a.slug}`} prefetch={false} className="group h-full bg-[#0D1225] border border-white/[0.14] hover:border-blue-500/40 hover:-translate-y-1 hover:shadow-[0_12px_40px_-12px_rgba(59,130,246,0.35)] rounded-2xl p-4 sm:p-6 transition-all duration-300">
+                  {/* Mobilde ikon ve başlık yan yana, kart kısa; geniş ekranda dikey düzen */}
+                  <div className="flex items-center gap-3 sm:block">
+                    <span className="w-10 h-10 sm:w-11 sm:h-11 shrink-0 rounded-xl bg-blue-500/10 flex items-center justify-center sm:mb-5">
+                      <Icon size={20} className="text-blue-400" />
+                    </span>
+                    <h3 className="text-white font-semibold text-base sm:mb-2 flex-1">{a.ad}</h3>
+                    <ArrowRight size={16} className="text-blue-400 shrink-0 sm:hidden" />
+                  </div>
+                  <p className="text-zinc-400 text-sm leading-relaxed mt-2 sm:mt-0 sm:mb-4 line-clamp-2 sm:line-clamp-none">{a.kisa}</p>
+                  <span className="hidden sm:inline-flex text-blue-400 text-sm font-medium items-center gap-1.5 group-hover:gap-2.5 transition-all">Aracı kullan <ArrowRight size={13} /></span>
                 </Link>
               )
             })}

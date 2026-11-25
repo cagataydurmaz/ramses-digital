@@ -53,14 +53,20 @@ export default function AraclarPage() {
           {araclar.map((a) => {
             const Icon = ikon[a.slug] ?? Calculator
             return (
-              <Link key={a.slug} href={`/araclar/${a.slug}`} className="group bg-[#0D1225] border border-white/[0.06] hover:border-blue-500/30 rounded-xl p-6 transition-colors">
-                <div className="w-10 h-10 rounded-lg bg-blue-500/10 flex items-center justify-center mb-4">
-                  <Icon size={20} className="text-blue-400" />
+              <Link key={a.slug} href={`/araclar/${a.slug}`} className="group bg-[#0D1225] border border-white/[0.06] hover:border-blue-500/30 rounded-xl p-4 sm:p-6 transition-colors">
+                {/* Mobilde ikon ve başlık yan yana, kart kısa */}
+                <div className="flex items-center gap-3 sm:block">
+                  <div className="w-10 h-10 shrink-0 rounded-lg bg-blue-500/10 flex items-center justify-center sm:mb-4">
+                    <Icon size={20} className="text-blue-400" />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <p className="text-zinc-500 text-xs mb-0.5 sm:mb-1">{a.hizmet}</p>
+                    <h2 className="text-white font-semibold text-base sm:text-lg sm:mb-2">{a.ad}</h2>
+                  </div>
+                  <ArrowRight size={16} className="text-blue-400 shrink-0 sm:hidden" />
                 </div>
-                <p className="text-zinc-500 text-xs mb-1">{a.hizmet}</p>
-                <h2 className="text-white font-semibold text-lg mb-2">{a.ad}</h2>
-                <p className="text-zinc-400 text-sm leading-relaxed mb-4">{a.kisa}</p>
-                <span className="text-blue-400 text-sm font-medium inline-flex items-center gap-1.5 group-hover:gap-2.5 transition-all">Aracı aç <ArrowRight size={13} /></span>
+                <p className="text-zinc-400 text-sm leading-relaxed mt-2 sm:mt-0 sm:mb-4 line-clamp-2 sm:line-clamp-none">{a.kisa}</p>
+                <span className="hidden sm:inline-flex text-blue-400 text-sm font-medium items-center gap-1.5 group-hover:gap-2.5 transition-all">Aracı aç <ArrowRight size={13} /></span>
               </Link>
             )
           })}
