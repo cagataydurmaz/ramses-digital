@@ -19,7 +19,7 @@ Türkçe dijital pazarlama ajansı sitesi. Next.js 14 App Router + Tailwind + Ty
 ## pSEO yapısı (veri odaklı)
 | Tür | Veri | Bileşen / rota |
 |---|---|---|
-| Büyük şehir × 6 hizmet (12 şehir, el yazımı) | `sehirSeo.ts`, `sehirHizmet.ts` | `src/app/{sehir}-{seo,google-ads,web-tasarim,dijital-pazarlama,reklam-ajansi,yazilim-ajansi}/page.tsx` |
+| Büyük şehir × 6 hizmet (12 şehir, el yazımı) | `sehirSeo.ts`, `sehirHizmet.ts`, şehre özgü SSS/yazılım metni `sehirOzelSss.ts` | `src/app/{sehir}-{seo,google-ads,web-tasarim,dijital-pazarlama,reklam-ajansi,yazilim-ajansi}/page.tsx` |
 | İl/ilçe SEO sayfaları (tek sayfa) | `src/lib/ilSeo.ts` (`yerel: true` = Kocaeli ilçeleri, `rehber` = /ilceler eşi; zengin ilçelerde `mahalleler`+`su` = semt haritası, Google önizleme ve video; sektörde `arama`/`slug` = telefonlu sektör vitrini) | `IlSeoSayfasi.tsx`, `src/app/{slug}-seo/page.tsx` (2 satır) |
 | Marmara ilçe web tasarım rehberleri | `ilceler.ts`, `ilceDetay.ts` | `src/app/ilceler/[slug]` |
 | Gebze ek hizmetler | sayfa içinde | `GebzeHizmetSayfasi.tsx` |
@@ -29,6 +29,7 @@ Türkçe dijital pazarlama ajansı sitesi. Next.js 14 App Router + Tailwind + Ty
 
 Yeni il eklemek: `ilSeo.ts`'e kayıt + 2 satırlık `page.tsx`. Site haritası (`sitemap.ts`), footer (`Footer.tsx`), `/sehirler`, `llms.txt` (`src/app/llms.txt/route.ts` + `src/content/llms-temel.md`) ve blog bağlantıları listeyi otomatik alır.
 **Öncelik: zengin ilçeler/muhitler** (kullanıcı kararı, 24 Kasım 2026). Her ilde önce varlıklı ilçeler; ileride 81 ilin zengin ilçeleri. Veri yoksa önce tek özgün SEO sayfası.
+Benzerlik: aynı türdeki sayfalar arasında ana içerik benzerliği (site geneli bileşenler hariç, 5 kelimelik dizi) %40'ın altında kalmalı; şablon kopyası SSS/kart metni yazılmaz.
 Kural: bir yerde hangi hizmet aranıyorsa (Search Console'da gösterim) ona ayrı sayfa; aranmıyorsa tek sayfa. Toplu, kopya içerikli sayfa açılmaz.
 
 ## Ortak bileşenler
