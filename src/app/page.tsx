@@ -503,20 +503,24 @@ export default function HomePage() {
             </p>
           </FadeIn>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {services.slice(0, -1).map((service, i) => {
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-5">
+            {services.map((service, i) => {
               const Icon = service.icon
               const c = serviceColorMap[service.color]
               return (
-                <FadeIn key={service.title} delay={i * 0.08}>
-                  <Link href={service.href} prefetch={false} aria-label={`${service.title} hizmeti hakkında bilgi al`} className="group relative flex flex-col h-full bg-[#0D1225] border border-white/[0.14] rounded-2xl p-6 card-hover overflow-hidden">
+                <FadeIn key={service.title} delay={i * 0.06}>
+                  <Link href={service.href} prefetch={false} aria-label={`${service.title} hizmeti hakkında bilgi al`} className="group relative flex flex-col h-full bg-[#0D1225] border border-white/[0.14] rounded-2xl p-4 sm:p-6 card-hover overflow-hidden">
                     <div className={`absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r ${c.bar} scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left`} />
-                    <div className={`w-11 h-11 ${c.bg} rounded-xl flex items-center justify-center mb-5 transition-all ${c.bgHover} ${c.glow}`}>
-                      <Icon size={20} className={c.text} />
+                    {/* Mobilde ikon ve başlık yan yana, kart kısa; geniş ekranda dikey düzen */}
+                    <div className="flex items-center gap-3 sm:block">
+                      <div className={`w-10 h-10 sm:w-11 sm:h-11 shrink-0 ${c.bg} rounded-xl flex items-center justify-center sm:mb-5 transition-all ${c.bgHover} ${c.glow}`}>
+                        <Icon size={20} className={c.text} />
+                      </div>
+                      <h3 className="text-white font-semibold text-base sm:text-lg sm:mb-2 flex-1">{service.title}</h3>
+                      <ArrowRight size={16} className={`${c.text} shrink-0 sm:hidden`} />
                     </div>
-                    <h3 className="text-white font-semibold text-lg mb-2">{service.title}</h3>
-                    <p className="text-zinc-400 text-sm leading-relaxed mb-4">{service.desc}</p>
-                    <div className="flex flex-wrap gap-2">
+                    <p className="text-zinc-400 text-sm leading-relaxed mt-2 sm:mt-0 sm:mb-4 line-clamp-2 sm:line-clamp-none">{service.desc}</p>
+                    <div className="hidden sm:flex flex-wrap gap-2">
                       {service.tags.map((tag) => (
                         <span
                           key={tag}
@@ -526,49 +530,13 @@ export default function HomePage() {
                         </span>
                       ))}
                     </div>
-                    <span className={`mt-auto pt-5 inline-flex items-center gap-1.5 text-sm font-medium ${c.text}`}>
+                    <span className={`hidden sm:inline-flex mt-auto pt-5 items-center gap-1.5 text-sm font-medium ${c.text}`}>
                       Detaylı bilgi <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
                     </span>
                   </Link>
                 </FadeIn>
               )
             })}
-
-            {/* n8n — son kart, tam genişlikte, yatay düzen */}
-            {(() => {
-              const n8n = services[services.length - 1]
-              const Icon = n8n.icon
-              const c = serviceColorMap[n8n.color]
-              return (
-                <FadeIn delay={services.length * 0.08} className="md:col-span-2 lg:col-span-3">
-                  <Link href={n8n.href} prefetch={false} aria-label={`${n8n.title} hizmeti hakkında bilgi al`} className="group relative block bg-[#0D1225] border border-white/[0.14] rounded-2xl p-6 sm:p-8 card-hover overflow-hidden">
-                    <div className={`absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r ${c.bar} scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left`} />
-                    <div className="flex flex-col sm:flex-row sm:items-center gap-6">
-                      <div className={`w-14 h-14 shrink-0 ${c.bg} rounded-2xl flex items-center justify-center transition-all ${c.bgHover} ${c.glow}`}>
-                        <Icon size={26} className={c.text} />
-                      </div>
-                      <div className="flex-1">
-                        <h3 className="text-white font-semibold text-xl mb-2">{n8n.title}</h3>
-                        <p className="text-zinc-400 text-sm leading-relaxed mb-3 max-w-2xl">{n8n.desc}</p>
-                        <span className={`inline-flex items-center gap-1.5 text-sm font-medium ${c.text} mb-4 sm:mb-0`}>
-                          Detaylı bilgi <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
-                        </span>
-                      </div>
-                      <div className="flex flex-wrap gap-2 sm:max-w-[280px] sm:justify-end">
-                        {n8n.tags.map((tag) => (
-                          <span
-                            key={tag}
-                            className="text-xs text-zinc-400 bg-white/[0.04] px-2.5 py-1 rounded-full whitespace-nowrap"
-                          >
-                            {tag}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-                  </Link>
-                </FadeIn>
-              )
-            })()}
           </div>
 
           <FadeIn className="text-center mt-10">
