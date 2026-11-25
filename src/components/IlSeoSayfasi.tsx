@@ -323,6 +323,7 @@ export default function IlSeoSayfasi({ v }: { v: IlSeoVeri }) {
       <IlceBaglantilari
         ustSlug={v.ust ? v.ust.slug : v.slug}
         haric={v.slug}
+        oncelik={(v.ilgili ?? []).map((l) => l.href.match(/^\/(.+)-seo$/)?.[1]).filter((x): x is string => !!x)}
         baslik={v.ust ? `${UST_IYELIK[v.ust.slug] ?? v.ust.ad} Diğer İlçelerinde de Yanınızdayız` : `Hizmet Verdiğimiz ${v.ad} İlçeleri`}
         aciklama={v.ust ? `Birden fazla ilçede şubeniz ya da müşteriniz varsa her bölge için ayrı plan yapıyoruz.` : `Kendi ilçenizi seçin; o bölgede müşterinin nasıl aradığını, öne çıkan sektörleri ve size özel yaklaşımımızı görün.`}
       />
