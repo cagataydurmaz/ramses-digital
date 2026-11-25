@@ -89,7 +89,7 @@ export default function RootLayout({
       </head>
       <body className="bg-[#0A0F1E] text-white antialiased">
         <Navbar />
-        <main className="relative isolate">
+        <main className="tema-acik tema-site relative isolate">
           <SayfaArkaPlani />
           {children}
         </main>

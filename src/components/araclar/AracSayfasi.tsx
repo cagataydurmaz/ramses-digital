@@ -37,7 +37,7 @@ export default function AracSayfasi({ slug, baslik, aciklama, sss, hizmet, blog,
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <section className="relative pt-32 pb-10 px-6 overflow-hidden">
+      <section className="tema-koyu tema-hero relative pt-32 pb-10 px-6 overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[450px] bg-[radial-gradient(ellipse_at_center,rgba(59,130,246,0.144)_0%,rgba(59,130,246,0.048)_40%,transparent_70%)] rounded-full pointer-events-none" />
         <div className="max-w-3xl mx-auto text-center relative z-10">
           <Link href="/araclar" className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 rounded-full px-4 py-1.5 mb-6 text-blue-400 text-sm font-medium">

@@ -10,7 +10,7 @@ export default function SayfaArkaPlani() {
   return (
     <div
       aria-hidden
-      className="pointer-events-none absolute inset-0 -z-10"
+      className="sayfa-arka-plani pointer-events-none absolute inset-0 -z-10"
       style={{
         backgroundImage: [
           'radial-gradient(800px 560px at 88% 300px, rgba(139,92,246,0.24), transparent 70%)',

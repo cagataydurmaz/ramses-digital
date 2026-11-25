@@ -124,9 +124,9 @@ export default function EnglishHomePage() {
     // metinlerde "DRİVEN" gibi hatalı büyük harfe çeviriyor.
     <div lang="en">
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
-      <section className="relative min-h-screen flex flex-col items-center overflow-hidden px-4 sm:px-6 pt-24 sm:pt-32 md:pt-44 pb-12 sm:pb-16">
+      <section className="tema-koyu tema-hero bg-[#0A0F1E] relative min-h-screen flex flex-col items-center overflow-hidden px-4 sm:px-6 pt-24 sm:pt-32 md:pt-44 pb-12 sm:pb-16">
         <HeroBackgroundVideo />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#080D18]/20 via-transparent to-[#080D18] pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#13284F]/20 via-transparent to-[#13284F] pointer-events-none" />
 
         <div className="relative z-10 max-w-5xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 rounded-full px-4 py-1.5 mb-6 sm:mb-10">

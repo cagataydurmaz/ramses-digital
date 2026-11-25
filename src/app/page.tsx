@@ -258,9 +258,9 @@ export default function HomePage() {
   return (
     <>
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
-      <section className="relative min-h-screen flex flex-col items-center overflow-hidden px-4 sm:px-6 pt-24 sm:pt-32 md:pt-44 pb-8 sm:pb-10">
+      <section className="tema-koyu bg-[#0A0F1E] relative min-h-screen flex flex-col items-center overflow-hidden px-4 sm:px-6 pt-24 sm:pt-32 md:pt-44 pb-8 sm:pb-10">
         <HeroBackgroundVideo />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#080D18]/20 via-transparent to-[#080D18] pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#13284F]/20 via-transparent to-[#13284F] pointer-events-none" />
 
         {/* Background glow */}
         <div className="absolute inset-0 pointer-events-none">
@@ -768,7 +768,6 @@ export default function HomePage() {
           </FadeIn>
         </div>
       </section>
-      <div className="tema-gecis-alt" aria-hidden="true" />
       </div>
       </div>
     </>

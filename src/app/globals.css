@@ -514,19 +514,55 @@ html { -webkit-text-size-adjust: 100%; text-rendering: optimizeLegibility; }
    kart #FFFFFF, kenar #E3E8EF / yazı #0F1B2D, #475467, #667085 / marka #2563EB.
    .tema-koyu: açık bölüm içinde kendi koyu görünümünü koruyan parça
    (telefon ekranları, videolu kart); kurallar onun içine işlemez. */
+/* Lacivert tonları: eski neredeyse siyah #0A0F1E yerine mavisi belirgin, daha açık lacivert */
+:root { --lacivert: #13284F; --lacivert-alt: #0F2143; }
+body.bg-\[\#0A0F1E\] { background-color: var(--lacivert); }
+header[class*="bg-[#0A0F1E]"] { background-color: rgba(19, 40, 79, .96); }
+footer.bg-\[\#080D18\] { background-color: var(--lacivert-alt); }
+.tema-koyu.bg-\[\#0A0F1E\] { background-color: var(--lacivert); }
 .tema-acik { background: #F2F5F9; color: #0F1B2D; }
-.tema-gecis-ust { height: 4rem; background: linear-gradient(#0A0F1E, #F2F5F9); }
+/* Site geneli: zemin mavinin açık tonları arasında yumuşakça dalgalanır (keskin sınır yok);
+   iç sarmalayıcılar ve bölümler şeffaf kalır, akış kesilmez. */
+.tema-site {
+  background-color: #F2F6FB;
+  background-image: linear-gradient(#F2F6FB 0, #E3EDFB 700px, #F4F8FC 1400px, #E6EFFC 2100px, #F2F6FB 2800px);
+  background-size: 100% 2800px;
+  background-repeat: repeat-y;
+}
+.tema-site .tema-acik, .tema-site .home-flow-bg { background: transparent; }
+.tema-acik section:is(.bg-\[\#080D18\], .bg-\[\#0B1022\], .bg-\[\#0D1225\]):not(.tema-koyu *) { background: transparent; box-shadow: none; }
+.tema-gecis-ust { height: 4rem; background: linear-gradient(var(--lacivert), rgba(19,40,79,0)); }
 /* Bölüm geçişleri: keskin çizgi yok; vurgu bandı açık maviye yumuşakça açılıp kapanır */
-.tema-gecis-alt { height: 4rem; background: linear-gradient(#F2F5F9, #080D18); }
-.tema-acik .tema-bant { background: linear-gradient(#F2F5F9, #E4ECF8 22%, #E4ECF8 78%, #F2F5F9); }
-@media (min-width: 640px) { .tema-gecis-ust, .tema-gecis-alt { height: 6rem; } }
+.tema-acik .tema-koyu { color: #FFFFFF; }
+/* Sayfa üst alanı (hero) koyu kalır; altı açık zemine süzülür */
+.tema-acik .tema-hero {
+  --hero-gecis: 5rem;
+  background: linear-gradient(var(--lacivert), var(--lacivert)) top / 100% calc(100% - var(--hero-gecis)) no-repeat;
+  padding-bottom: 0 !important;
+}
+.tema-acik .tema-hero::after {
+  content: ''; display: block; position: relative; z-index: 0;
+  height: var(--hero-gecis); margin-inline: calc(50% - 50vw);
+  background: linear-gradient(var(--lacivert), rgba(19,40,79,0));
+}
+@media (min-width: 640px) { .tema-acik .tema-hero { --hero-gecis: 7rem; } }
+/* Sayfa sonu: açık zeminden lacivert alt bilgiye yumuşak geçiş */
+.tema-site::after { content: ''; display: block; height: 5rem; background: linear-gradient(rgba(15,33,67,0), var(--lacivert-alt)); }
+.tema-acik .sayfa-arka-plani { display: none; }
+.tema-acik .bg-\[\#0A0F1E\]:not(.tema-koyu):not(.tema-koyu *) { background: #F2F5F9; }
+.tema-acik .tema-bant { background: linear-gradient(rgba(37,99,235,0), rgba(37,99,235,.07) 25%, rgba(37,99,235,.07) 75%, rgba(37,99,235,0)); }
+@media (min-width: 640px) { .tema-gecis-ust { height: 6rem; } }
 
 /* Yazılar (renkli zeminli düğmelerdeki beyaz yazıya dokunma) */
 .tema-acik .text-white:not([class*="bg-"]):not(.tema-koyu *) { color: #0F1B2D; }
 .tema-acik :is(.text-zinc-100, .text-zinc-200, .text-zinc-300):not(.tema-koyu *) { color: #1D2939; }
 .tema-acik .text-zinc-400:not(.tema-koyu *) { color: #475467; }
 .tema-acik .text-zinc-500:not(.tema-koyu *) { color: #667085; }
-.tema-acik :is(.text-zinc-600, .text-zinc-700):not(.tema-koyu *) { color: #98A2B3; }
+.tema-acik .text-zinc-600:not(.tema-koyu *) { color: #667085; }
+.tema-acik .text-zinc-700:not(.tema-koyu *) { color: #7A8699; }
+.tema-acik :is(.text-blue-100, .text-blue-200):not(.tema-koyu *) { color: #1D4ED8; }
+.tema-acik :is(.text-red-300, .text-red-400):not(.tema-koyu *) { color: #DC2626; }
+.tema-acik :is(.text-emerald-300, .text-emerald-200):not(.tema-koyu *) { color: #047857; }
 .tema-acik :is(.text-blue-300, .text-blue-400, .text-blue-500):not(.tema-koyu *) { color: #2563EB; }
 .tema-acik :is(.hover\:text-blue-300, .hover\:text-white):hover:not(.tema-koyu *) { color: #1D4ED8; }
 .tema-acik .text-violet-400:not(.tema-koyu *) { color: #7C3AED; }
@@ -551,6 +587,14 @@ html { -webkit-text-size-adjust: 100%; text-rendering: optimizeLegibility; }
   box-shadow: 0 1px 2px rgba(16, 24, 40, .04), 0 1px 3px rgba(16, 24, 40, .06);
 }
 .tema-acik .bg-\[\#080D18\]:not(.tema-koyu *) { background: #EEF2F7; }
+.tema-acik [class*="bg-[#0B1022]/"]:not(.tema-koyu *) { background: #FFFFFF; }
+/* Koyu zeminden açığa çevrilen öğelerin kendi beyaz yazısı da koyulaşsın */
+.tema-acik :is(.bg-\[\#0D1225\], .bg-\[\#0B1022\], .bg-\[\#111827\], .bg-\[\#10162c\], .bg-\[\#0B1120\], .bg-\[\#080D18\], [class*="bg-white/"], [class*="bg-[#0B1022]/"]).text-white:not(.tema-koyu *) { color: #0F1B2D; }
+.tema-acik thead[class*="bg-["]:not(.tema-koyu *) { background: #EAF1FE; box-shadow: none; }
+/* Bölüm vurgu bantları: koyu lacivert-mor şerit yerine açık mavi tonlu yumuşak bant (kenar maskesi aynen) */
+.tema-acik [class*="before:via-[#0c1330]"]:not(.tema-koyu *)::before {
+  background-image: linear-gradient(to bottom right, rgba(37,99,235,.11), rgba(96,165,250,.09), rgba(79,70,229,.08));
+}
 .tema-acik .bg-zinc-800:not(.tema-koyu *) { background: #E4E7EC; }
 .tema-acik [class*="border-white/"]:not(.tema-koyu *) { border-color: #E3E8EF; }
 .tema-acik [class*="hover:border-white/"]:hover:not(.tema-koyu *) { border-color: #CBD5E1; }
@@ -569,3 +613,22 @@ html { -webkit-text-size-adjust: 100%; text-rendering: optimizeLegibility; }
 .tema-acik .kayan-serit img[src^="/logolar/"] { filter: brightness(0); }
 /* Arka plandaki koyu ışıma lekeleri açık zeminde gereksiz */
 .tema-acik .mobile-hide-blur:not(.tema-koyu *) { display: none; }
+
+/* Blog yazı metni (açık tema) */
+.tema-acik .post-content h2 { color: #1D4ED8; }
+.tema-acik .post-content h3 { color: #0F1B2D; }
+.tema-acik .post-content :is(p, li, td, blockquote, .callout p) { color: #344054; }
+.tema-acik .post-content strong { color: #0F1B2D; }
+.tema-acik .post-content a { color: #2563EB; }
+.tema-acik .post-content table { border-color: #E3E8EF; background: #FFFFFF; }
+.tema-acik .post-content th { background: #EAF1FE; color: #1D4ED8; border-bottom-color: #E3E8EF; }
+.tema-acik .post-content td { border-bottom-color: #EEF2F7; }
+.tema-acik .post-content tr:nth-child(even) td { background: #F8FAFC; }
+.tema-acik .post-content blockquote { background: #EAF1FE; }
+.tema-acik .post-content .stat-card { background: #FFFFFF; border-color: #E3E8EF; }
+.tema-acik .post-content .stat-number { color: #2563EB; }
+.tema-acik .post-content .stat-number.emerald { color: #059669; }
+.tema-acik .post-content .stat-number.violet { color: #7C3AED; }
+.tema-acik .post-content .stat-label { color: #667085; }
+.tema-acik .post-content .callout { background: #ECFDF5; border-color: #A7F3D0; }
+.tema-acik .post-content .callout-title { color: #047857; }

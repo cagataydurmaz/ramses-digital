@@ -39,7 +39,7 @@ export default function AraclarPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <section className="relative pt-32 pb-12 px-6 overflow-hidden">
+      <section className="tema-koyu tema-hero relative pt-32 pb-12 px-6 overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[450px] bg-[radial-gradient(ellipse_at_center,rgba(59,130,246,0.144)_0%,rgba(59,130,246,0.048)_40%,transparent_70%)] rounded-full pointer-events-none" />
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <p className="text-blue-500 text-sm font-medium tracking-wider uppercase mb-3">Ücretsiz Araçlar</p>

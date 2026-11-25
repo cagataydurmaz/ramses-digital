@@ -218,7 +218,7 @@ export default function ServicesPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative pt-32 pb-20 px-6 overflow-hidden">
+      <section className="tema-koyu tema-hero relative pt-32 pb-20 px-6 overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-[radial-gradient(ellipse_at_center,rgba(59,130,246,0.144)_0%,rgba(59,130,246,0.048)_40%,transparent_70%)] rounded-full pointer-events-none" />
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <p className="text-blue-500 text-sm font-medium tracking-wider uppercase mb-3">

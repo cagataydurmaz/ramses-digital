@@ -62,7 +62,7 @@ const faqs = [
 export default function WebTasarimHizmetPage() {
   return (
     <>
-      <section className="relative pt-24 md:pt-32 pb-12 md:pb-16 px-6 overflow-hidden">
+      <section className="tema-koyu tema-hero relative pt-24 md:pt-32 pb-12 md:pb-16 px-6 overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-[radial-gradient(ellipse_at_center,rgba(16,185,129,0.18)_0%,rgba(16,185,129,0.06)_40%,transparent_70%)] rounded-full pointer-events-none" />
         <div data-hero-bolunmus className="max-w-6xl mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-[1fr_340px] gap-10 lg:gap-14 items-center">
           <div className="text-center lg:text-left">

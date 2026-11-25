@@ -92,7 +92,7 @@ export default function SektorVitrini({ sektorler }: { sektorler: VitrinSektor[]
           <div key={i} className={`mt-3 rounded-xl border-2 p-3 transition-all duration-500 ${yazildi ? 'border-blue-500 bg-blue-50 opacity-100' : 'border-zinc-200 opacity-40'}`}>
             <p className="text-[#1a0dab] font-medium text-[15px]">İşletmenizin Adı</p>
             <p className="text-zinc-600 text-xs">{s.ad}</p>
-            <p className="text-xs mt-0.5"><span className="text-[#188038] font-medium">Açık</span> <span className="text-zinc-500">· WhatsApp ile iletişim</span></p>
+            <p className="text-xs mt-0.5"><span className="text-[#188038] font-medium">Açık</span> <span className="text-[#70757a]">· WhatsApp ile iletişim</span></p>
             <div className="flex gap-1.5 mt-2">
               {[{ I: Globe, t: 'Site' }, { I: Navigation, t: 'Yol' }, { I: Phone, t: 'Ara' }].map(({ I, t }) => (
                 <span key={t} className="inline-flex items-center gap-1 rounded-full border border-zinc-300 px-2 py-0.5 text-[11px] text-[#1a73e8]"><I size={11} /> {t}</span>
