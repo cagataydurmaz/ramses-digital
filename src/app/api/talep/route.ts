@@ -1,5 +1,6 @@
 import { NextRequest } from 'next/server'
 import { Resend } from 'resend'
+import { whatsappBildir, sayfaYolu } from '@/lib/bildirim'
 
 // Yedek talep bildirimi: ziyaretçi WhatsApp'ı açtığı anda (mesajı göndermese bile)
 // hazırlanan mesajın bir kopyası işletme sahibine e-postayla iletilir. Hiçbir yerde saklanmaz.
@@ -31,6 +32,7 @@ export async function POST(req: NextRequest) {
     const kaynak = String(govde?.kaynak || 'WhatsApp').slice(0, 60)
     const sayfa = String(govde?.sayfa || '/').slice(0, 200)
     if (metin.length < 10) return new Response(null, { status: 400 })
+    await whatsappBildir(`Yeni talep: ${kaynak}`, ['Ziyaretçi WhatsApp mesajını hazırladı (göndermemiş olabilir). Ayrıntı e-postada.', `Sayfa: ${sayfaYolu(sayfa)}`])
     if (!resend || !ALICI) return new Response(null, { status: 204 })
 
     const telefon = metin.match(/(?:\+?90|0)?\s*5\d{2}[\s.-]?\d{3}[\s.-]?\d{2}[\s.-]?\d{2}/)?.[0]

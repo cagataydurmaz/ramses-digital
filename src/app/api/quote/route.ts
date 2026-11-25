@@ -1,11 +1,17 @@
 import Anthropic from '@anthropic-ai/sdk'
 import { NextRequest } from 'next/server'
+import { whatsappBildir } from '@/lib/bildirim'
 
 const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY })
 
 export async function POST(request: NextRequest) {
   try {
     const { businessType, businessSize, services, websiteUrl } = await request.json()
+    void whatsappBildir('Teklif hesaplayıcı kullanıldı', [
+      `İşletme: ${String(businessType || '-').slice(0, 60)}${businessSize ? ` (${String(businessSize).slice(0, 40)})` : ''}`,
+      `Hizmetler: ${Array.isArray(services) ? services.join(', ').slice(0, 200) : '-'}`,
+      websiteUrl ? `Site: ${String(websiteUrl).slice(0, 100)}` : 'Site: belirtilmedi',
+    ])
 
     const servicesList = services.join(', ')
     const urlInfo = websiteUrl ? `Web sitesi: ${websiteUrl}` : 'Web sitesi belirtilmedi'

@@ -570,7 +570,8 @@ footer.bg-\[\#080D18\] { border-top-color: transparent; }
 .tema-acik .text-violet-400:not(.tema-koyu *) { color: #7C3AED; }
 .tema-acik .text-emerald-400:not(.tema-koyu *) { color: #059669; }
 .tema-acik .text-fuchsia-400:not(.tema-koyu *) { color: #C026D3; }
-.tema-acik .text-amber-400:not(svg):not(.tema-koyu *) { color: #B45309; }
+.tema-acik [class*="text-amber-"]:not(svg):not(.tema-koyu *), .tema-acik [class*="text-yellow-"]:not(svg):not(.tema-koyu *) { color: #B45309; }
+.tema-acik :is(.text-amber-100, .text-amber-200, .text-yellow-200):not(.tema-koyu *) { color: #92400E; }
 .tema-acik .text-cyan-400:not(.tema-koyu *) { color: #0891B2; }
 .tema-acik .text-pink-400:not(.tema-koyu *) { color: #DB2777; }
 .tema-acik .text-orange-400:not(.tema-koyu *) { color: #EA580C; }

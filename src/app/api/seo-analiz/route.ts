@@ -1,11 +1,13 @@
 import Anthropic from '@anthropic-ai/sdk'
 import { NextRequest } from 'next/server'
+import { whatsappBildir } from '@/lib/bildirim'
 
 const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY })
 
 export async function POST(request: NextRequest) {
   try {
     const { url } = await request.json()
+    void whatsappBildir('Ücretsiz SEO analizi yapıldı', [`Analiz edilen site: ${String(url || '-').slice(0, 100)}`])
 
     const response = await client.messages.create({
       model: 'claude-sonnet-4-6',

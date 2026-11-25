@@ -1,5 +1,6 @@
 import Anthropic from '@anthropic-ai/sdk'
 import { NextRequest } from 'next/server'
+import { whatsappBildir, sayfaYolu } from '@/lib/bildirim'
 
 // Sitedeki yapay zekâ sohbet asistanı. Sohbetler saklanmaz; talep yalnızca ziyaretçi
 // onaylarsa istemci tarafında WhatsApp mesajı olarak açılır.
@@ -68,6 +69,7 @@ export async function POST(req: NextRequest) {
       .map((m: { rol: string; metin: string }) => ({ role: m.rol === 'kullanici' ? ('user' as const) : ('assistant' as const), content: m.metin.slice(0, 800) }))
     while (temiz.length && temiz[0].role !== 'user') temiz.shift()
     if (!temiz.length) return new Response('Geçersiz istek', { status: 400 })
+    if (temiz.filter((m) => m.role === 'user').length === 1) void whatsappBildir('AI asistanla sohbet başladı', [`Sayfa: ${sayfaYolu(sayfa)}`])
 
     const stream = client.messages.stream({
       model: MODEL,
