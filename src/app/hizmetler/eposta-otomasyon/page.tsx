@@ -256,14 +256,14 @@ export default function EpostaOtomasyonPage() {
       <section className="py-16 px-6 bg-[#080D18]">
         <div className="max-w-4xl mx-auto">
           <div className="bg-[#0D1225] border border-orange-500/20 rounded-2xl p-8">
-            <div className="flex items-start gap-4">
-              <div className="w-10 h-10 bg-orange-500/10 rounded-xl flex items-center justify-center shrink-0 mt-0.5">
+            <div className="sm:flex items-start gap-4">
+              <div className="hidden sm:flex w-10 h-10 bg-orange-500/10 rounded-xl items-center justify-center shrink-0 mt-0.5">
                 <CheckCircle2 size={18} className="text-orange-400" />
               </div>
               <div>
-                <h3 className="text-white font-semibold text-lg mb-2">E-Posta & Google Ads Quality Score Bağlantısı</h3>
+                <h3 className="text-white font-semibold text-base sm:text-lg mb-2">E-Posta & Google Ads Quality Score Bağlantısı</h3>
                 <p className="text-zinc-400 text-sm leading-relaxed">
-                  E-posta listenizdeki müşterileri Google Ads&apos;te Customer Match ile hedefleyerek <strong className="text-white">Quality Score&apos;unuzu doğrudan artırabilirsiniz.</strong> Marka isminizi tanıyan, e-postanızı açan kullanıcılar reklamınıza tıkladığında dönüşüm oranı yükselir → Google bu kitleyi &ldquo;kaliteli&rdquo; olarak değerlendirir → CPC düşer, Ad Rank artar. E-posta + Google Ads entegrasyonu, dijital pazarlama stratejinizin en güçlü kombo&apos;sudur.
+                  E-posta listenizdeki müşterileri Google Ads&apos;te Customer Match ile hedefleyerek <strong className="text-white">reklamlarınızı sizi zaten tanıyan kişilere gösterebilirsiniz.</strong> Markanızı tanıyan kullanıcılar reklama daha sık tıklar ve daha sık dönüşür; bu da Kalite Puanı&apos;nın bileşenlerinden biri olan beklenen tıklama oranını olumlu etkileyebilir. E-posta ve Google Ads birlikte planlandığında bütçe daha verimli kullanılır.
                 </p>
               </div>
             </div>

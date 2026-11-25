@@ -258,12 +258,12 @@ export default function VeriAnaliziPage() {
       <section className="py-16 px-6 bg-[#080D18]">
         <div className="max-w-4xl mx-auto">
           <div className="bg-[#0D1225] border border-cyan-500/20 rounded-2xl p-8">
-            <div className="flex items-start gap-4">
-              <div className="w-10 h-10 bg-cyan-500/10 rounded-xl flex items-center justify-center shrink-0 mt-0.5">
+            <div className="sm:flex items-start gap-4">
+              <div className="hidden sm:flex w-10 h-10 bg-cyan-500/10 rounded-xl items-center justify-center shrink-0 mt-0.5">
                 <CheckCircle2 size={18} className="text-cyan-400" />
               </div>
               <div>
-                <h3 className="text-white font-semibold text-lg mb-2">Veri Analizi → Google Ads Quality Score Etkisi</h3>
+                <h3 className="text-white font-semibold text-base sm:text-lg mb-2">Veri Analizi → Google Ads Quality Score Etkisi</h3>
                 <p className="text-zinc-400 text-sm leading-relaxed">
                   Quality Score üç faktöre dayanır: <strong className="text-white">beklenen tıklama oranı, reklam alaka düzeyi ve açılış sayfası deneyimi.</strong> Veri analitiğiyle hangi reklam metninin gerçekten tıklandığını, hangi landing page&apos;in bounce rate&apos;i düşük tuttuğunu ve hangi anahtar kelimenin dönüşüm getirdiğini bilirsiniz. Bu bilgilerle optimize edilen kampanyalar Quality Score&apos;unu artırır, rakiplerinizden daha düşük CPC ile daha üst sıralarda görünürsünüz.
                 </p>
