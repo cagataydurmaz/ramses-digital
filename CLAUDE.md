@@ -35,6 +35,8 @@ Kural: bir yerde hangi hizmet aranıyorsa (Search Console'da gösterim) ona ayr�
 `KisaOzet` (sayfa başı özet), `GooglePuanSatiri` (5.0 rozeti), `SehirTeklifBolumu`, `RelatedPages`, `ReviewsMarquee`, `SeoChecklist`, `CalendlyButton` (WhatsApp'a yönlendirir), `MobileContactBar` (mobil alt Ara/WhatsApp çubuğu), `KayanSerit` (sürüklenebilir şerit).
 
 ## Ölçüm
+- GA4/Ads etiketi yalnızca ramsesdigital.com'da çalışır (layout.tsx hostname kontrolü); yerel testler raporu şişirmez.
+- İç bağlantı kümesi: `IlceBaglantilari` (şehir SEO, şehir × hizmet ve ilçe sayfalarında, `ilSeo.ts` `ust.slug` ile otomatik).
 - GA4 `G-JQWD80KVTJ` (mülk p531200144, oturum ramsesdigitalagency@gmail.com, authuser=2). Talep etkinliği `generate_lead` (method: whatsapp/telefon/whatsapp_form/whatsapp_ai/iletisim_formu) + Google Ads dönüşümü; `src/lib/tracking.ts`, `LeadTracker.tsx`. 18 Kasım 2026'dan itibaren ölçülüyor.
 - Search Console: sc-domain:ramsesdigital.com (durmazcagatay@gmail.com). Bing Webmaster ve IndexNow kurulu.
 - Zamanlanmış görevler: günlük indeksleme isteği (`~/.claude/scheduled-tasks/ramses-gunluk-indeksleme`), aylık il raporu (her ayın 1'i).
