@@ -6,7 +6,8 @@ export type Mahalle = { ad: string; x: number; y: number; arama: string }
 
 // İlçenin semtleri sade bir haritada sırayla yanar; her semtte müşterinin yapabileceği örnek arama gösterilir.
 // Temsili, ölçeksiz bir krokidir; arama hacmi veya müşteri iddiası içermez.
-export default function MahalleHaritasi({ ilce, bulunma, mahalleler, su, suAd, suKonum = [95, 60, -72] }: { ilce: string; bulunma: string; mahalleler: Mahalle[]; su?: string; suAd?: string; suKonum?: number[] }) {
+export default function MahalleHaritasi({ ilce, bulunma, mahalleler, su, suAd, suKonum = [95, 60, -72], birim = 'semt' }: { ilce: string; bulunma: string; mahalleler: Mahalle[]; su?: string; suAd?: string; suKonum?: number[]; birim?: 'semt' | 'ilçe' }) {
+  const B = birim === 'ilçe' ? 'İlçe' : 'Semt'
   const ref = useRef<HTMLDivElement>(null)
   const [aktif, setAktif] = useState(false)
   const [i, setI] = useState(0)
@@ -33,9 +34,9 @@ export default function MahalleHaritasi({ ilce, bulunma, mahalleler, su, suAd, s
     <section aria-labelledby="semt-haritasi" className="py-12 md:py-16 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-10">
-          <p className="text-blue-400 text-xs font-semibold uppercase tracking-wider mb-2">Semt semt görünürlük</p>
-          <h2 id="semt-haritasi" className="text-3xl md:text-4xl font-bold text-white mb-4">{ilce} Müşterisi Semt Adıyla Arar</h2>
-          <p className="text-zinc-400 max-w-2xl mx-auto">{bulunma} aramaların önemli bir kısmı semt adıyla yapılır. Her semt için ayrı hedef belirleyip işletmenizi o aramalarda görünür kılmayı amaçlıyoruz.</p>
+          <p className="text-blue-400 text-xs font-semibold uppercase tracking-wider mb-2">{B} {birim} görünürlük</p>
+          <h2 id="semt-haritasi" className="text-3xl md:text-4xl font-bold text-white mb-4">{ilce} Müşterisi {B} Adıyla Arar</h2>
+          <p className="text-zinc-400 max-w-2xl mx-auto">{bulunma} aramaların önemli bir kısmı {birim} adıyla yapılır. Her {birim} için ayrı hedef belirleyip işletmenizi o aramalarda görünür kılmayı amaçlıyoruz.</p>
         </div>
 
         <div ref={ref} className="grid lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] gap-8 lg:gap-12 items-center">
@@ -98,7 +99,7 @@ export default function MahalleHaritasi({ ilce, bulunma, mahalleler, su, suAd, s
             </div>
             <details className="group mt-5">
               <summary className="list-none [&::-webkit-details-marker]:hidden cursor-pointer inline-flex items-center gap-1.5 rounded-full border border-white/10 hover:border-blue-500/40 px-3.5 py-1.5 text-xs sm:text-sm text-zinc-400 hover:text-white transition-colors">
-                Semt seçin <span className="text-zinc-500">({mahalleler.length})</span>
+                {B} seçin <span className="text-zinc-500">({mahalleler.length})</span>
                 <ChevronDown size={14} className="group-open:rotate-180 transition-transform" />
               </summary>
             <div className="flex flex-wrap gap-2 mt-3">

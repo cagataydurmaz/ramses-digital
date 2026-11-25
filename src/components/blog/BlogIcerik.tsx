@@ -150,9 +150,9 @@ function Gomulu({ tanim, basliklar }: { tanim: string; basliklar: Baslik[] }) {
       return <Cerceve aciklama={a ?? v.aciklama}><BilgiVideosu ad={p} baslik={v.baslik} /></Cerceve>
     }
     case 'ads-butce':
-      return <div className="my-6 -mx-6"><AdsButceGrafigi /></div>
+      return <div className="my-6 -mx-4 sm:-mx-6"><AdsButceGrafigi /></div>
     case 'seo-buyume':
-      return <div className="my-6 -mx-6"><SeoBuyumeGrafigi /></div>
+      return <div className="my-6 -mx-4 sm:-mx-6"><SeoBuyumeGrafigi /></div>
     case 'takvim-2027':
       return <div className="my-10"><YilTakvimi2027 /></div>
     case 'ai-modu':

@@ -90,6 +90,26 @@ export const ilSeoYakindan: Record<string, IlSeoYakindan> = {
       { baslik: 'Tavşancıl esnafı', metin: 'Mahalle işletmeleri için harita profili, gerçek fotoğraf ve yorum yönetimi en hızlı sonucu verir.' },
     ],
   },
+  tekirdag: {
+    baslik: 'Tekirdağ’da Üç Ayrı Pazar',
+    paragraf:
+      'Tekirdağ’ı tek bir pazar gibi düşünmek yanıltır. Çorlu ve Çerkezköy sanayinin ve nüfusun yoğun olduğu, firmaların birbirinden tedarikçi aradığı bir bölge; Süleymanpaşa il merkezi ve sahil yaşamıyla ayrı bir müşteri kitlesine sahip; Marmaraereğlisi ve Şarköy ise yazlık, bağ ve hafta sonu turizmiyle İstanbul’dan gelen ziyaretçiye hitap ediyor. Her bölgede müşteri farklı kelimelerle ve farklı zamanlarda arıyor.',
+    ipuclari: [
+      { baslik: 'Ürün adıyla sayfa', metin: 'Çerkezköy ve Çorlu’daki üreticiler için satın almacının yazdığı ürün ve proses adlarıyla ayrı sayfalar; il adı tek başına yetmez.' },
+      { baslik: 'İlçe adını açık yazın', metin: 'Çorlu’daki bir klinik ile Süleymanpaşa’daki bir klinik farklı aramalarda çıkar; hizmet verdiğiniz ilçeyi sayfada ve harita profilinde belirtin.' },
+      { baslik: 'Yazlık sezonuna erken hazırlık', metin: 'Sahil ve bağ işletmeleri için içerik ve fotoğraflar ilkbaharda güncellenmeli; İstanbul’daki alıcı ve ziyaretçi haftalar öncesinden araştırır.' },
+    ],
+  },
+  alanya: {
+    baslik: 'Alanya’da Çok Dilli Arama',
+    paragraf:
+      'Alanya, yıl boyu yaşayan yabancıların ve turistlerin aynı anda arama yaptığı bir ilçe. Oba, Tosmur, Kestel ve Mahmutlar gibi semtler kendi adlarıyla aranır; emlak, sağlık ve ev hizmetlerinde arama çoğu zaman Rusça, Almanca veya İngilizce yapılır. Turizm sezonu dışında da talebin sürmesi, Alanya’yı yalnızca yaz işletmeleri için değil, yıl boyu hizmet verenler için de önemli kılıyor.',
+    ipuclari: [
+      { baslik: 'Gerçek çeviri', metin: 'Otomatik çeviri yerine kısa ama doğru çevrilmiş sayfalar; yabancı müşteri hatalı metni hemen fark eder.' },
+      { baslik: 'Semt adıyla sayfa', metin: 'Mahmutlar veya Oba’da hizmet veren işletmeler semt adını sayfada ve harita profilinde doğal biçimde kullanmalı.' },
+      { baslik: 'Yorumlara o dilde cevap', metin: 'Yabancı dilde gelen yorumlara aynı dilde cevap vermek hem güven verir hem de o dildeki aramalarda görünürlüğü destekler.' },
+    ],
+  },
   basiskele: {
     baslik: 'Başiskele’de Arama Alışkanlıkları',
     paragraf:

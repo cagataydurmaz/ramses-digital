@@ -28,7 +28,7 @@ export default function VakaSonuclari({ v }: { v: VakaVerisi }) {
   const maxD = Math.max(once.ilk10, sonra.ilk10, 1)
 
   return (
-    <div ref={ref} className="space-y-6 mb-12">
+    <div ref={ref} className="space-y-6 mb-12 overflow-x-clip">
       <div className="flex items-center gap-2 text-emerald-400 text-xs font-semibold uppercase tracking-wider">
         <BarChart3 size={14} /> Rakamlarla sonuç · {v.aralik}
       </div>
