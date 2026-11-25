@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { trackLead } from '@/lib/tracking'
-import { Search, TrendingUp, Share2, Monitor, Mail, BarChart3, Workflow, Send } from 'lucide-react'
+import { Search, TrendingUp, Share2, Monitor, Mail, BarChart3, Workflow, Send, Megaphone } from 'lucide-react'
 import { waMesaj, whatsappAc } from '@/lib/whatsapp'
 
 const WHATSAPP_NUMBER = '905355601936'
@@ -10,6 +10,7 @@ const WHATSAPP_NUMBER = '905355601936'
 const interestOptions = [
   { id: 'SEO', label: 'SEO, AEO & GEO', icon: Search },
   { id: 'Google Ads', label: 'Google Ads', icon: TrendingUp },
+  { id: 'Instagram & Facebook Reklamları', label: 'Instagram & Facebook Reklamları', icon: Megaphone },
   { id: 'Sosyal Medya', label: 'Sosyal Medya', icon: Share2 },
   { id: 'Web Tasarım', label: 'Web Sitesi Tasarımı', icon: Monitor },
   { id: 'E-posta', label: 'E-posta & Otomasyon', icon: Mail },

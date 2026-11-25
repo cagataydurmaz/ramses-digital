@@ -11,7 +11,7 @@ const WHATSAPP_NUMBER = '905355601936'
 
 const EXAMPLES_TR = [
   'Google\'da üst sıralara çıkmak istiyorum',
-  'Instagram hesabımı büyütmek istiyorum',
+  'Instagram’da reklam vermek istiyorum',
   'Web sitem çok yavaş, yenileyelim',
   'Google Ads ile satış artırmak istiyorum',
   'Rakiplerimden neden geride kalıyoruz?',
@@ -19,7 +19,7 @@ const EXAMPLES_TR = [
 
 const EXAMPLES_EN = [
   'I want to rank higher on Google',
-  'I want to grow my Instagram account',
+  'I want to run Instagram ads',
   'My website is too slow, let\'s rebuild it',
   'I want to increase sales with Google Ads',
   'Why are we falling behind our competitors?',

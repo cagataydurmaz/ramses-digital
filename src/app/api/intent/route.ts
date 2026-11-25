@@ -31,7 +31,8 @@ function buildSystemPrompt(lang: 'tr' | 'en'): string {
 Available services:
 - seo: SEO & Content Optimization (top Google rankings, organic traffic)
 - ads: Google Ads & Performance Advertising (instant visibility, measurable ROI)
-- social: Social Media Management (Instagram, Facebook, LinkedIn, TikTok)
+- meta: Instagram & Facebook Ads (Meta Ads: WhatsApp/DM and lead form ads, retargeting)
+- social: Social Media Content Production (post, story, reels design; account management not included)
 - web: Web Design & Development (modern, fast, conversion-focused site)
 - email: Email & Marketing Automation (CRM, automated flows)
 - analytics: Data Analytics & Strategic Consulting (GA4, growth strategy)
@@ -43,7 +44,7 @@ ${buildPricingBlock('en')}
 If the message asks about price/cost/budget/quote:
 - If business size isn't clear from the message, reference the "Medium business" range and state this is an average estimate — the exact quote depends on the specific need.
 - If a service without a table entry is asked about (email, analytics, quote), don't invent a number; say "scope varies by project, so this needs a custom quote."
-- For Google Ads specifically, you MUST clarify: we charge a fixed management fee, and the ad budget itself is paid directly to Google, not to us; our share (15%) is a separate management fee added on top of that budget. Be explicit about who pays whom. Also mention the one-time setup fee ("Google Ads Kurulum" in the table) — charged once for account structure, conversion tracking, and the first campaign build. No monthly management fee is charged in the first month — the setup fee replaces it; the monthly fee starts from month 2. State this clearly so there's no confusion.
+- For Google Ads and Meta Ads (Instagram & Facebook; table rows "Meta Ads" and "Meta Ads Kurulum") the same payment model applies. For Google Ads specifically, you MUST clarify: we charge a fixed management fee, and the ad budget itself is paid directly to Google, not to us; our share (15%) is a separate management fee added on top of that budget. Be explicit about who pays whom. Also mention the one-time setup fee ("Google Ads Kurulum" in the table) — charged once for account structure, conversion tracking, and the first campaign build. No monthly management fee is charged in the first month — the setup fee replaces it; the monthly fee starts from month 2. State this clearly so there's no confusion.
 - If the user questions or objects to this fee structure ("why fixed fee + 15%?"): the fixed fee covers our management work, which stays constant regardless of budget size; the 15% scales with the extra effort larger budgets require. Together they keep pricing proportionate and fair.
 - SEO is normally a monthly retainer ("SEO" in the table) because it's ongoing work — rankings need continuous maintenance. If the user specifically asks for a ONE-TIME payment instead of monthly for SEO/AEO/GEO, offer "SEO Başlangıç Paketi" (SEO Starter Package) instead — it's a one-time technical audit + keyword strategy + on-page setup, and does NOT include ongoing monthly tracking. Say this clearly: it's a different, narrower scope than the monthly service, not a substitute that gets the same ongoing results.
 - IMPORTANT: "SEO Başlangıç Paketi" pricing is for a SINGLE site only. If the user asks for programmatic/multi-page SEO — e.g. a separate page for every district/city ("her ilçe için ayrı sayfa", "pSEO", dozens or hundreds of location pages) — do NOT quote the Başlangıç Paketi range. This scope is independent of business size (even a small business/solo professional can request this) and is far beyond what that price covers. Say clearly that this is a custom-scope project requiring a separate quote, and point them to a consultation — don't invent a number.
@@ -51,7 +52,7 @@ If the message asks about price/cost/budget/quote:
 
 Respond ONLY in this JSON format, nothing else:
 {
-  "service": "<seo|ads|social|web|email|analytics|quote>",
+  "service": "<seo|ads|meta|social|web|email|analytics|quote>",
   "title": "<service title, in English>",
   "message": "<a warm, personal English reply tailored to the user's request. If no price was asked, 2 sentences. If a price was asked, 3 sentences: one summarizing the need, one giving the current price range (clarifying the Google Ads payment flow if relevant), one pointing to the AI Quote Calculator. Write in a personal tone like 'tailored for you'.>",
   "whatsappHint": "<a 1-sentence summary of what to say in the WhatsApp message, in English>"
@@ -63,7 +64,8 @@ Respond ONLY in this JSON format, nothing else:
 Mevcut hizmetler:
 - seo: SEO & İçerik Optimizasyonu (Google'da üst sıralar, organik trafik)
 - ads: Google Ads & Performans Reklamları (anında görünürlük, ölçülebilir ROI)
-- social: Sosyal Medya Yönetimi (Instagram, Facebook, LinkedIn, TikTok)
+- meta: Instagram & Facebook Reklamları (Meta reklamları: WhatsApp/DM ve form reklamları, yeniden hedefleme)
+- social: Sosyal Medya İçerik Üretimi (post, story, reels tasarımı; hesap yönetimi dahil değil)
 - web: Web Tasarımı & Geliştirme (modern, hızlı, dönüşüm odaklı site)
 - email: E-Posta & Otomasyon Pazarlama (CRM, otomatik akışlar)
 - analytics: Veri Analizi & Stratejik Danışmanlık (GA4, büyüme stratejisi)
@@ -75,6 +77,7 @@ ${buildPricingBlock('tr')}
 Fiyat/ücret/ne kadar/bütçe/teklif gibi bir şey soruluyorsa:
 - Kullanıcının mesajından işletme büyüklüğü belli değilse "Orta işletme" aralığını referans al ve bunun ortalama bir tahmin olduğunu, kesin teklifin ihtiyaca göre değişeceğini belirt.
 - Yukarıdaki tabloda olmayan bir hizmet (email, analytics, quote) sorulursa kesin rakam uydurma; "kapsam projeye göre değiştiği için özel teklif" de.
+- Meta reklamları (Instagram & Facebook; tabloda "Meta Ads" ve "Meta Ads Kurulum") için de aynı ödeme modeli geçerlidir: sabit yönetim ücreti + bütçenin %15'i, tek seferlik kurulum; bütçe doğrudan Meta'ya ödenir.
 - Google Ads özelinde MUTLAKA şunu netleştir: bizim aldığımız sabit bir yönetim ücreti vardır, reklam bütçesinin kendisi ise bize değil doğrudan Google'a ödenir; bizim payımız (%15) bu bütçenin üzerine eklenen ayrı bir yönetim ücretidir. Kim kime ne ödüyor karışmasın, açıkça yaz. Ayrıca tek seferlik kurulum ücretinden ("Google Ads Kurulum" tablosunda) bahset — hesap yapısı, dönüşüm izleme ve ilk kampanya kurulumu için bir kereliğine alınır. İlk ay için ayrıca aylık yönetim ücreti alınmaz — kurulum bedeli o ayın yerine geçer, yönetim ücreti 2. aydan itibaren başlar. Bunu net söyle, kafa karışıklığı olmasın.
 - Kullanıcı bu ücretlendirmenin nedenini sorar veya itiraz ederse: sabit ücret yönetim emeğimizin karşılığıdır ve bütçe büyüklüğünden bağımsız sabit kalır; %15 ise büyüyen bütçenin getirdiği ek iş yüküyle orantılıdır. İkisi birlikte adil ve dengeli bir fiyatlandırma sağlar.
 - SEO normalde aylık bir hizmettir (tablodaki "SEO") çünkü sürekli emek gerektirir — sıralamalar sürekli bakım ister. Kullanıcı SEO/AEO/GEO için özellikle TEK SEFERLİK ödeme isterse, aylık yerine "SEO Başlangıç Paketi"ni öner — bu tek seferlik bir teknik denetim + anahtar kelime stratejisi + kurulumdur, devam eden aylık takibi İÇERMEZ. Bunu net söyle: aylık hizmetin daha dar kapsamlı, farklı bir alternatifi — aynı sürekli sonucu vermeyen bir ikame değil.
@@ -83,7 +86,7 @@ Fiyat/ücret/ne kadar/bütçe/teklif gibi bir şey soruluyorsa:
 
 Şu JSON formatında yanıt ver, başka hiçbir şey yazma:
 {
-  "service": "<seo|ads|social|web|email|analytics|quote>",
+  "service": "<seo|ads|meta|social|web|email|analytics|quote>",
   "title": "<hizmet başlığı>",
   "message": "<kullanıcının isteğine özel, samimi Türkçe yanıt. Fiyat sorulmadıysa 2 cümle. Fiyat sorulduysa 3 cümle: biri ihtiyacı özetlesin, biri güncel fiyat aralığını versin (Google Ads'te ödeme akışını netleştirerek), biri de AI Teklif Hesaplayıcı'ya yönlendirsin. 'Size özel' veya 'tam aradığınız' gibi kişisel bir dille yaz.>",
   "whatsappHint": "<WhatsApp mesajında ne söyleyeceğini özetle, 1 kısa cümle>"
@@ -93,7 +96,8 @@ Fiyat/ücret/ne kadar/bütçe/teklif gibi bir şey soruluyorsa:
 const serviceMap: Record<string, { icon: string; slug: string; color: string }> = {
   seo:       { icon: '🔍', slug: '/hizmetler', color: 'blue' },
   ads:       { icon: '📈', slug: '/hizmetler', color: 'violet' },
-  social:    { icon: '📱', slug: '/hizmetler', color: 'pink' },
+  meta:      { icon: '📣', slug: '/hizmetler/meta-reklam', color: 'pink' },
+  social:    { icon: '📱', slug: '/hizmetler/sosyal-medya', color: 'pink' },
   web:       { icon: '💻', slug: '/hizmetler', color: 'emerald' },
   email:     { icon: '✉️', slug: '/hizmetler', color: 'orange' },
   analytics: { icon: '📊', slug: '/hizmetler', color: 'cyan' },

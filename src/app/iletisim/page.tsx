@@ -9,6 +9,7 @@ import { waMesaj, waLink, whatsappAc } from '@/lib/whatsapp'
 const services = [
   'SEO & İçerik Optimizasyonu',
   'Google Ads & Performans Reklamları',
+  'Instagram & Facebook Reklamları',
   'Web Tasarımı & Geliştirme',
   'E-Posta & Otomasyon Pazarlama',
   'n8n İş Akışı Otomasyonu',
