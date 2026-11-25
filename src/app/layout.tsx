@@ -107,8 +107,11 @@ export default function RootLayout({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-JQWD80KVTJ');
-            gtag('config', 'AW-18459249890');
+            // Yalnızca canlı sitede ölç; yerel testler ve önizlemeler raporları şişirmesin.
+            if (/(^|\.)ramsesdigital\.com$/.test(location.hostname)) {
+              gtag('config', 'G-JQWD80KVTJ');
+              gtag('config', 'AW-18459249890');
+            }
           `}
         </Script>
         {/* Clarity ve Meta Pixel */}
