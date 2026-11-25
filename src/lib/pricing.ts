@@ -47,10 +47,8 @@ export const pricing: Record<string, Record<BusinessSize, PriceRange>> = {
     orta: { min: 12000, max: 16000, unit: 'tek seferlik', note: 'tek seferlik — ilk ay yönetim ücreti alınmaz, yönetim ücreti 2. aydan başlar' },
     buyuk: { min: 20000, max: 28000, unit: 'tek seferlik', note: 'tek seferlik — ilk ay yönetim ücreti alınmaz, yönetim ücreti 2. aydan başlar' },
   },
-  // Bu hizmet ÜRETİM odaklıdır — hesap yönetimi, paylaşım ve topluluk moderasyonu
-  // kapsam dışıdır (bkz. /hizmetler/sosyal-medya SSS). 2026 piyasa karşılaştırması
-  // (sadece tasarım/üretim hizmeti veren sağlayıcılar) sonrası güncellendi — en alt
-  // tier piyasanın belirgin altındaydı, orta/üst tier'lar zaten makuldü.
+  // Sosyal medya yönetimi: hesap yönetimi + içerik üretimi + paylaşım ve yorum/mesaj takibi
+  // (kullanıcı 25 Kasım 2026'da kapsamın hesap yönetimini de içerdiğini belirtti).
   'Sosyal Medya': {
     kucuk: { min: 8000, max: 14000, unit: 'aylık', note: 'haftada 3-4 içerik tasarımı, 1-2 platform formatı' },
     orta: { min: 15000, max: 24000, unit: 'aylık', note: 'haftada 5-6 içerik tasarımı + reels, 2-3 platform formatı' },

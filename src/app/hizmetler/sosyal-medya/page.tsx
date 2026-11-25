@@ -8,20 +8,20 @@ import CalendlyButton from '@/components/CalendlyButton'
 import { Share2, Image as ImageIcon, Video, Calendar, Palette, Hash, CheckCircle2, ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Sosyal Medya İçerik Üretimi — Ramses Dijital',
+  title: 'Sosyal Medya Yönetimi — Ramses Dijital',
   description:
-    'Instagram, LinkedIn ve diğer platformlar için post, story ve video içerik üretimi. Marka kimliğinize uygun tasarım, içerik takvimi ve strateji.',
+    'Instagram, Facebook ve LinkedIn hesaplarınızı yönetiyoruz: içerik üretimi, paylaşım, yorum ve mesaj takibi, içerik takvimi ve aylık rapor.',
   alternates: { canonical: 'https://ramsesdigital.com/hizmetler/sosyal-medya' },
   openGraph: {
-    title: 'Sosyal Medya İçerik Üretimi | Ramses Dijital',
-    description: 'Post, story ve video tasarımı, içerik takvimi ve marka sesiyle sosyal medyada tutarlı bir görünüm kurun.',
+    title: 'Sosyal Medya Yönetimi | Ramses Dijital',
+    description: 'Hesap yönetimi, içerik üretimi, paylaşım ve yorum takibiyle sosyal medyanızı baştan sona yönetiyoruz.',
     url: 'https://ramsesdigital.com/hizmetler/sosyal-medya',
     images: ['https://ramsesdigital.com/og-image.png'],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Sosyal Medya İçerik Üretimi — Ramses Dijital',
-    description: 'Post, story, video tasarımı ve içerik takvimi. Marka kimliğinize uygun sosyal medya içeriği.',
+    title: 'Sosyal Medya Yönetimi — Ramses Dijital',
+    description: 'Hesap yönetimi, içerik üretimi ve paylaşım. Sosyal medyanız tek elden.',
     images: ['https://ramsesdigital.com/og-image.png'],
   },
 }
@@ -82,15 +82,15 @@ const process = [
   },
   {
     step: '05',
-    title: 'Teslim & Sonraki Döngü',
-    desc: 'İçerikler yayınlanmaya hazır formatta teslim edilir. Bir sonraki dönem için performansa göre strateji güncellenir.',
+    title: 'Paylaşım, Takip & Rapor',
+    desc: 'İçerikler takvime göre hesabınızda paylaşılır, yorum ve mesajlar takip edilir. Aylık raporla bir sonraki dönemin planı güncellenir.',
   },
 ]
 
 const faqs = [
   {
     q: 'Hesabımı da yönetiyor musunuz, paylaşımları siz mi yapıyorsunuz?',
-    a: 'Hayır — biz post, story ve video içeriklerini tasarlayıp yayın için hazır şekilde teslim ediyoruz. Günlük paylaşım, yorum yanıtlama ve topluluk moderasyonu hizmet kapsamımızda değil. Bu şekilde odağımızı içerik kalitesine verebiliyoruz.',
+    a: 'Evet. İçerikleri üretmekle kalmıyor, takvime göre hesabınızda paylaşıyor, yorum ve mesajları takip ediyoruz. Dilerseniz yalnızca içerik üretimi de alabilirsiniz; kapsam ihtiyacınıza göre belirlenir.',
   },
   {
     q: 'Ayda kaç içerik üretiyorsunuz?',
@@ -128,7 +128,7 @@ export default function SosyalMedyaPage() {
           <div className="text-center lg:text-left">
           <div className="inline-flex items-center gap-2 bg-pink-500/10 border border-pink-500/20 rounded-full px-4 py-1.5 mb-6">
             <Share2 size={14} className="text-pink-400" />
-            <span className="text-pink-400 text-xs font-medium tracking-wider uppercase">Sosyal Medya İçerik Üretimi</span>
+            <span className="text-pink-400 text-xs font-medium tracking-wider uppercase">Sosyal Medya Yönetimi</span>
           </div>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-[1.1]">
             Marka Kimliğinize Uygun
@@ -170,7 +170,7 @@ export default function SosyalMedyaPage() {
       </section>
       <KurucuKutusu yerel />
       <KisaOzet>
-        Markanızın diline uygun post, story ve kısa video içerikleri ile içerik takvimini hazırlıyoruz. Hesap yönetimi bu hizmete dahil değildir; reklam kampanyaları için <a href="/hizmetler/meta-reklam" className="text-pink-400 hover:text-pink-300 underline underline-offset-2">Instagram ve Facebook reklam yönetimi</a> hizmetimiz ayrıdır.
+        Sosyal medya hesaplarınızı baştan sona yönetiyoruz: içerik takvimi, post, story ve kısa video üretimi, paylaşım, yorum ve mesaj takibi ve aylık rapor. Reklam kampanyaları için <a href="/hizmetler/meta-reklam" className="text-pink-400 hover:text-pink-300 underline underline-offset-2">Instagram ve Facebook reklam yönetimi</a> hizmetimizle birlikte de çalışabilirsiniz.
       </KisaOzet>
 
 
@@ -208,7 +208,7 @@ export default function SosyalMedyaPage() {
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-14">
             <p className="text-pink-500 text-sm font-medium tracking-wider uppercase mb-3">Süreç</p>
-            <h2 className="text-4xl font-bold text-white mb-4">5 Adımda İçerik Üretimi</h2>
+            <h2 className="text-4xl font-bold text-white mb-4">5 Adımda Sosyal Medya Yönetimi</h2>
           </div>
           <div className="space-y-4">
             {process.map((p) => (
@@ -233,7 +233,7 @@ export default function SosyalMedyaPage() {
               Sosyal medya hesabınız, çoğu potansiyel müşterinin markanızla ilk temas noktası. <strong className="text-white">Düzensiz paylaşılan, marka kimliğinden uzak içerikler</strong> güven inşa etmek yerine güveni zedeler. Biz bu noktada devreye giriyoruz: her post, story ve video aynı görsel dilin, aynı marka sesinin parçası olacak şekilde tasarlanıyor.
             </p>
             <p>
-              Hizmetimiz <strong className="text-white">üretim odaklı</strong> — içerikleri tasarlıyor, yazıyor ve teslim ediyoruz. Hesap yönetimi, günlük paylaşım ve yorum moderasyonu işini bilinçli olarak kapsam dışında tutuyoruz; çünkü bu iki iş farklı beceri ve zaman gerektiriyor. Sonuç: siz veya ekibiniz ne zaman, nasıl paylaşacağınıza karar veriyorsunuz, biz içeriğin kalitesinden sorumlu oluyoruz.
+              Hizmetimiz <strong className="text-white">uçtan uca</strong>: içerikleri tasarlıyor, yazıyor, takvime göre paylaşıyor; yorum ve mesajları takip ediyoruz. Böylece siz işinize odaklanırken hesabınız düzenli, tutarlı ve canlı kalıyor; her ay neyin işe yaradığını rapor ediyoruz.
             </p>
             <p>
               İçerik takvimi hazırlarken sadece &ldquo;bugün ne paylaşalım&rdquo; sorusuna değil, <strong className="text-white">markanızın hedef kitlesine hangi mesajı hangi formatta iletmesi gerektiğine</strong> odaklanıyoruz — eğitici içerik, sektörel bilgi, müşteri hikayeleri gibi farklı içerik türlerini dengeli bir takvimde birleştiriyoruz.
@@ -297,11 +297,11 @@ export default function SosyalMedyaPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'Service',
-        name: 'Sosyal Medya İçerik Üretimi',
+        name: 'Sosyal Medya Yönetimi',
         description: 'Post, story ve video içerik tasarımı, içerik takvimi ve marka sesi stratejisi ile sosyal medya içerik üretimi.',
         provider: { '@type': 'Organization', name: 'Ramses Dijital Yazılım ve Dijital Pazarlama Ajansı', url: 'https://ramsesdigital.com' },
         areaServed: { '@type': 'Country', name: 'Türkiye' },
-        serviceType: 'Social Media Content Production',
+        serviceType: 'Social Media Management',
         url: 'https://ramsesdigital.com/hizmetler/sosyal-medya',
         hasOfferCatalog: {
           '@type': 'OfferCatalog',
@@ -333,7 +333,7 @@ export default function SosyalMedyaPage() {
         itemListElement: [
           { '@type': 'ListItem', position: 1, name: 'Anasayfa', item: 'https://ramsesdigital.com' },
           { '@type': 'ListItem', position: 2, name: 'Hizmetler', item: 'https://ramsesdigital.com/hizmetler' },
-          { '@type': 'ListItem', position: 3, name: 'Sosyal Medya İçerik Üretimi', item: 'https://ramsesdigital.com/hizmetler/sosyal-medya' },
+          { '@type': 'ListItem', position: 3, name: 'Sosyal Medya Yönetimi', item: 'https://ramsesdigital.com/hizmetler/sosyal-medya' },
         ],
       })}} />
     </>

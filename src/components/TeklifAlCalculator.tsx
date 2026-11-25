@@ -49,7 +49,7 @@ const serviceOptions = [
   { id: 'SEO', label: 'SEO, AEO & GEO', icon: Search },
   { id: 'Google Ads', label: 'Google Ads', icon: TrendingUp },
   { id: 'Meta Ads', label: 'Instagram & Facebook Reklamları', icon: Megaphone },
-  { id: 'Sosyal Medya', label: 'Sosyal Medya', icon: Share2 },
+  { id: 'Sosyal Medya', label: 'Sosyal Medya Yönetimi', icon: Share2 },
   { id: 'Web Tasarım', label: 'Web Sitesi Tasarımı', icon: Monitor },
   { id: 'E-posta', label: 'E-posta & Otomasyon', icon: Mail },
   { id: 'Danışmanlık', label: 'Veri & Danışmanlık', icon: BarChart3 },
@@ -74,7 +74,7 @@ const serviceIncludes: Record<string, string[]> = {
   'Google Ads Kurulum': ['Hesap yapısı kurulumu', 'Dönüşüm izleme (conversion tracking)', 'İlk kampanya kurulumu'],
   'Meta Ads': ['Kitle ve bütçe yönetimi', 'Reklam görselleri ve metinleri', 'Test ve optimizasyon', 'Aylık performans raporu'],
   'Meta Ads Kurulum': ['Reklam hesabı ve işletme portföyü düzenlemesi', 'Pixel ve dönüşüm ölçümü', 'İlk kampanyaların kurulumu'],
-  'Sosyal Medya': ['Post & story tasarımı', 'İçerik takvimi', 'Caption & hashtag stratejisi'],
+  'Sosyal Medya': ['Hesap yönetimi ve paylaşım', 'Post, story ve reels üretimi', 'İçerik takvimi', 'Yorum ve mesaj takibi'],
   'Web Tasarım': ['UI/UX tasarım', 'Geliştirme & yayına alma', 'Mobil uyumluluk & hız optimizasyonu'],
 }
 

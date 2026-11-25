@@ -65,9 +65,9 @@ const services = [
   },
   {
     icon: Share2,
-    title: 'Social Media Content',
-    desc: 'Posts, stories and video content designed to match your brand identity, with a clear publishing strategy.',
-    tags: ['Post & Story Design', 'Video Content', 'Content Calendar'],
+    title: 'Social Media Management',
+    desc: 'We run your accounts end to end: content calendar, posts, stories and reels, publishing, comment and DM follow-up.',
+    tags: ['Account Management', 'Posts & Reels', 'Content Calendar'],
     color: 'pink',
   },
   {

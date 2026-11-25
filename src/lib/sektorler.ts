@@ -425,7 +425,7 @@ export const sektorler: SektorVeri[] = [
       { ad: 'Yerel SEO', href: SEO, not: 'Hizmet sayfaları, Google İşletme Profili ve "ilçe + hizmet" aramalarında görünürlük.' },
       { ad: 'Web Tasarım', href: WEB, not: 'Hızlı, görsel ağırlıklı ve randevuya yönlendiren site.' },
       { ad: 'Google Ads', href: ADS, not: 'İlçe hedefli, politikalara uygun hizmet kampanyaları.' },
-      { ad: 'Sosyal Medya İçerik Üretimi', href: '/hizmetler/sosyal-medya', not: 'Instagram için post, story ve reels tasarımı.' },
+      { ad: 'Sosyal Medya Yönetimi', href: '/hizmetler/sosyal-medya', not: 'Instagram hesap yönetimi, post, story ve reels üretimi.' },
     ],
     bloglar: [{ label: "Sıfırdan Instagram'da İşletme Hesabı Büyütmek", href: '/blog/sifirdan-instagram-isletme-hesabi-buyutme' }, { label: 'Influencer ile Çalışmak', href: '/blog/influencer-ile-calismak-2026' }, { label: 'Google Yorumları Nasıl Artırılır?', href: '/blog/google-yorumlari-nasil-artirilir' }],
     portfoy: ['gamzeli-dermokozmetik'],

@@ -158,10 +158,10 @@ const services = [
   },
   {
     icon: Share2,
-    title: 'Sosyal Medya İçerik Üretimi',
+    title: 'Sosyal Medya Yönetimi',
     href: '/hizmetler/sosyal-medya',
-    desc: 'Post, story ve video içeriklerinizi marka kimliğinize uygun tasarlıyor, paylaşım stratejinizi kuruyoruz.',
-    tags: ['Post & Story Tasarımı', 'Video İçerik', 'İçerik Takvimi'],
+    desc: 'Hesaplarınızı yönetiyor; içerik üretiyor, paylaşıyor, yorum ve mesajları takip ediyoruz.',
+    tags: ['Hesap Yönetimi', 'Post & Reels', 'İçerik Takvimi'],
     color: 'pink',
   },
   {
