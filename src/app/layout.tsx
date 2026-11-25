@@ -16,7 +16,9 @@ const MobileContactBar = dynamic(() => import('@/components/MobileContactBar'), 
 const AsistanSohbet = dynamic(() => import('@/components/AsistanSohbet'), { ssr: false })
 
 const inter = Inter({
-  subsets: ['latin'],
+  // latin-ext: ş, ğ, İ, Ş, Ğ bu dosyada; önceden yüklenmezse 'optional' ayarında
+  // ilk ziyarette bu harfler yedek fontla görünebiliyor.
+  subsets: ['latin', 'latin-ext'],
   weight: ['400', '500', '600', '700'],
   variable: '--font-inter',
   // 'optional': tarayıcı ~100ms içinde font yükleyemezse fallback fontla devam eder,
