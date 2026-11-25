@@ -25,7 +25,7 @@ Türkçe dijital pazarlama ajansı sitesi. Next.js 14 App Router + Tailwind + Ty
 | Gebze ek hizmetler | sayfa içinde | `GebzeHizmetSayfasi.tsx` |
 | Sektörler (12) | `src/lib/sektorler.ts` | `SektorSayfasi.tsx`, `/sektorler/[slug]` |
 | Ücretsiz araçlar | `src/lib/araclar.ts` | `src/components/araclar/*`, `/araclar/*` |
-| Blog | `posts.ts` + `postsKasim2026.ts`; Google başlığı ≤60: `blogSeoBasliklari.ts` | `/blog/[slug]`; yazı altı otomatik bağlantılar: `blogIcLinkler.ts` |
+| Blog | `posts.ts` + `postsKasim2026.ts` + `postsGundem2026.ts`; Google başlığı ≤60: `blogSeoBasliklari.ts`; yazıya göre animasyon/video/kısa cevap: `blogZenginlestirme.ts` | `/blog/[slug]` → `BlogIcerik` (`<div data-bilesen="ad|param"></div>` işaretleri, ekrana yaklaşınca yüklenir: `TembelGomulu`); yazı altı bağlantılar: `blogIcLinkler.ts` |
 
 Yeni il eklemek: `ilSeo.ts`'e kayıt + 2 satırlık `page.tsx`. Site haritası (`sitemap.ts`), footer (`Footer.tsx`), `/sehirler`, `llms.txt` (`src/app/llms.txt/route.ts` + `src/content/llms-temel.md`) ve blog bağlantıları listeyi otomatik alır.
 **Öncelik: zengin ilçeler/muhitler** (kullanıcı kararı, 24 Kasım 2026). Her ilde önce varlıklı ilçeler; ileride 81 ilin zengin ilçeleri. Veri yoksa önce tek özgün SEO sayfası.
