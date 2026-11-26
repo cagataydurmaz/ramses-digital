@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
-import { Menu, X, ChevronDown } from 'lucide-react'
+import { Menu, X, ChevronDown, ArrowRight } from 'lucide-react'
 import CalendlyButton from '@/components/CalendlyButton'
 import LanguageSwitcher from '@/components/LanguageSwitcher'
 
@@ -15,6 +15,24 @@ const navLinks = [
   { href: '/portfolyo', label: 'Portföy' },
   { href: '/blog', label: 'Blog' },
   { href: '/iletisim', label: 'İletişim' },
+]
+
+// Telefon menüsü: hizmet odaklı, tek ekrana sığar. Şehir bağlantıları footer'da ve sayfa içlerinde duruyor.
+const mobilHizmetler = [
+  { href: '/hizmetler/seo', label: 'SEO' },
+  { href: '/hizmetler/google-ads', label: 'Google Ads' },
+  { href: '/hizmetler/web-tasarim', label: 'Web Tasarım' },
+  { href: '/hizmetler/sosyal-medya', label: 'Sosyal Medya Yönetimi' },
+  { href: '/hizmetler/meta-reklam', label: 'Instagram & Facebook Reklamları' },
+  { href: '/geo-ajansi', label: 'Yapay Zekâ Görünürlüğü' },
+  { href: '/hizmetler/n8n-otomasyon', label: 'Otomasyon' },
+]
+const mobilSayfalar = [
+  { href: '/portfolyo', label: 'Portföy' },
+  { href: '/blog', label: 'Blog' },
+  { href: '/hakkimizda', label: 'Hakkımızda' },
+  { href: '/iletisim', label: 'İletişim' },
+  { href: '/sehirler', label: 'Şehirler' },
 ]
 
 const cityLinks = [
@@ -231,65 +249,61 @@ export default function Navbar() {
           className="fixed top-16 left-0 right-0 bottom-[calc(60px+env(safe-area-inset-bottom))] md:bottom-0 z-[45] bg-[#080D18] xl:hidden overflow-y-auto overscroll-contain"
           style={{ contain: 'layout style paint' }}
         >
-          <div className="px-6 py-6 flex flex-col gap-1">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                prefetch={false}
-                onClick={() => setMenuOpen(false)}
-                className={`text-base py-3 border-b border-white/[0.04] ${
-                  pathname === link.href ? 'text-white' : 'text-zinc-400'
-                }`}
-              >
-                {link.label}
-              </Link>
-            ))}
-
-            <details className="border-b border-white/[0.04]">
-              <summary className="text-base py-3 text-zinc-400 cursor-pointer list-none flex items-center justify-between">
-                Sektörler <ChevronDown size={16} />
+          <div className="px-6 py-4 flex flex-col">
+            <details className="border-b border-white/[0.06]" open={pathname.startsWith('/hizmetler') || undefined}>
+              <summary className="text-base py-3 text-zinc-300 cursor-pointer list-none flex items-center justify-between [&::-webkit-details-marker]:hidden">
+                Hizmetler <ChevronDown size={16} />
               </summary>
-              <div className="grid grid-cols-1 gap-0.5 pb-3">
-                {sektorLinks.map((l) => (
-                  <Link key={l.href} href={l.href} prefetch={false} onClick={() => setMenuOpen(false)} className={`text-sm py-2 ${pathname === l.href ? 'text-white' : 'text-zinc-400'}`}>
+              <div className="grid grid-cols-1 pb-2">
+                {mobilHizmetler.map((l) => (
+                  <Link key={l.href} href={l.href} prefetch={false} onClick={() => setMenuOpen(false)} className={`text-sm py-2 pl-3 ${pathname === l.href ? 'text-white' : 'text-zinc-400'}`}>
                     {l.label}
                   </Link>
                 ))}
-                <Link href="/sektorler" prefetch={false} onClick={() => setMenuOpen(false)} className="text-sm py-2 text-blue-400">
+                <Link href="/hizmetler" prefetch={false} onClick={() => setMenuOpen(false)} className="text-sm py-2 pl-3 text-blue-400">
+                  Tüm hizmetler →
+                </Link>
+              </div>
+            </details>
+
+            <details className="border-b border-white/[0.06]" open={pathname.startsWith('/sektorler') || undefined}>
+              <summary className="text-base py-3 text-zinc-300 cursor-pointer list-none flex items-center justify-between [&::-webkit-details-marker]:hidden">
+                Sektörler <ChevronDown size={16} />
+              </summary>
+              <div className="grid grid-cols-1 pb-2">
+                {sektorLinks.map((l) => (
+                  <Link key={l.href} href={l.href} prefetch={false} onClick={() => setMenuOpen(false)} className={`text-sm py-2 pl-3 ${pathname === l.href ? 'text-white' : 'text-zinc-400'}`}>
+                    {l.label}
+                  </Link>
+                ))}
+                <Link href="/sektorler" prefetch={false} onClick={() => setMenuOpen(false)} className="text-sm py-2 pl-3 text-blue-400">
                   Tüm sektörler →
                 </Link>
               </div>
             </details>
 
-            <p className="text-zinc-600 text-xs uppercase tracking-wider pt-4 pb-1">Şehirler</p>
-            <div className="grid grid-cols-2 gap-1 pb-3 border-b border-white/[0.04]">
-              {cityLinks.map((city) => (
-                <Link
-                  key={city.href}
-                  href={city.href}
-                  prefetch={false}
-                  onClick={() => setMenuOpen(false)}
-                  className={`text-sm py-2 ${
-                    pathname === city.href ? 'text-white' : 'text-zinc-400'
-                  }`}
-                >
-                  {city.label}
-                </Link>
-              ))}
-            </div>
-            <Link
-              href="/sehirler"
-              prefetch={false}
-              onClick={() => setMenuOpen(false)}
-              className="text-sm py-2 text-blue-400 border-b border-white/[0.04]"
-            >
-              Tüm Şehirler & Hizmetler →
-            </Link>
+            {mobilSayfalar.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                prefetch={false}
+                onClick={() => setMenuOpen(false)}
+                className={`text-base py-3 border-b border-white/[0.06] ${pathname === link.href ? 'text-white' : 'text-zinc-300'}`}
+              >
+                {link.label}
+              </Link>
+            ))}
 
-            <div className="pt-4 pb-2 flex flex-wrap items-center gap-3">
-              <LanguageSwitcher />
-              <CalendlyButton label="Ücretsiz Danışmanlık" variant="primary" />
+            <div className="pt-5 pb-2 flex flex-col gap-4">
+              <Link
+                href="/teklif-al"
+                prefetch={false}
+                onClick={() => setMenuOpen(false)}
+                className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-blue-500 active:bg-blue-600 text-white font-semibold py-3.5"
+              >
+                Ücretsiz Teklif Al <ArrowRight size={16} />
+              </Link>
+              <div className="flex justify-center"><LanguageSwitcher /></div>
             </div>
           </div>
         </div>
