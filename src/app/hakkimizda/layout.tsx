@@ -37,7 +37,7 @@ export default function HakkimizdaLayout({ children }: { children: React.ReactNo
                 name: 'Çağatay Durmaz',
                 jobTitle: 'Kurucu',
                 description: 'Elektrik-elektronik mühendisi. SEO, Google Ads, web tasarım ve otomasyon projeleri yürütüyor.',
-                image: 'https://ramsesdigital.com/ekip/cagatay-durmaz.webp',
+                image: 'https://ramsesdigital.com/ekip/cagatay-durmaz-2026.webp',
                 url: 'https://ramsesdigital.com/hakkimizda',
               },
             },

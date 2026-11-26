@@ -79,7 +79,7 @@ export default function VakaSonuclari({ v }: { v: VakaVerisi }) {
       </div>
 
       {/* Önce / sonra */}
-      <div className="grid md:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="rounded-2xl bg-[#0D1225] border border-white/[0.08] p-5">
           <p className="text-white font-semibold text-sm mb-4">Google’da kaçıncı sıradaydı?</p>
           {([['ilk3', 'İlk 3 sırada', 'bg-emerald-500'], ['ilk10', 'İlk sayfada (1–10)', 'bg-blue-500']] as const).map(([k, etiket, renk]) => (

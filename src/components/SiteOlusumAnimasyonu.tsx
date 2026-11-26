@@ -157,7 +157,7 @@ export default function SiteOlusumAnimasyonu() {
   }, [mobilOtomatik])
 
   return (
-    <div ref={kutuRef} className="grid lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] gap-8 lg:gap-14">
+    <div ref={kutuRef} className="grid grid-cols-[minmax(0,1fr)] lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] gap-8 lg:gap-14">
       {/* Çerçeve: mobilde üstte, masaüstünde sağda yapışkan */}
       <div className="lg:order-2">
         <div className="lg:sticky lg:top-28 pb-2 lg:pb-8">

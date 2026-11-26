@@ -6,7 +6,7 @@ export const KURUCU = {
   ad: 'Çağatay Durmaz',
   rol: 'Kurucu, Ramses Dijital',
   unvan: 'Kurucu · Elektrik-Elektronik Mühendisi',
-  foto: '/ekip/cagatay-durmaz-kare.webp',
+  foto: '/ekip/cagatay-durmaz-2026-kare.webp',
   kisaBio:
     'Elektrik-elektronik mühendisi. 2019’dan beri işletmelerin Google’da, haritada ve yapay zekâ aramalarında bulunması için SEO, Google Ads ve web projeleri yürütüyor.',
 }

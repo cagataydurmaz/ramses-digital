@@ -130,7 +130,7 @@ export default function AboutPage() {
             <div className="absolute -inset-10 bg-[radial-gradient(circle,rgba(59,130,246,0.25),transparent_65%)] pointer-events-none" aria-hidden />
             <div className="absolute -inset-[5px] rounded-full bg-[conic-gradient(from_210deg,#3b82f6,#8b5cf6,#d946ef,#3b82f6)] animate-[spin_12s_linear_infinite] motion-reduce:animate-none" aria-hidden />
             <div className="absolute -inset-[1px] rounded-full bg-[#0A0F1E]" aria-hidden />
-            <Image src="/ekip/cagatay-durmaz-kare.webp" alt="Çağatay Durmaz, Ramses Dijital kurucusu" width={600} height={600} className="relative w-full h-full rounded-full object-cover p-1.5" />
+            <Image src="/ekip/cagatay-durmaz-2026-kare.webp" alt="Çağatay Durmaz, Ramses Dijital kurucusu" width={600} height={600} className="relative w-full h-full rounded-full object-cover p-1.5" />
             <span className="absolute bottom-4 right-4 w-5 h-5 rounded-full bg-emerald-500 ring-4 ring-[#0A0F1E]" aria-hidden />
           </div>
           <div>

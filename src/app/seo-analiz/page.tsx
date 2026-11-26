@@ -166,7 +166,7 @@ export default function SeoAnalizPage() {
                 onChange={(e) => setUrl(e.target.value)}
                 onKeyDown={(e) => e.key === 'Enter' && handleAnalyze()}
                 placeholder="örn: ramsesdigital.com"
-                className="flex-1 bg-[#111827] border border-white/[0.06] rounded-xl px-4 py-3 text-white placeholder:text-zinc-700 focus:outline-none focus:border-blue-500/50 transition-colors text-sm"
+                className="flex-1 min-w-0 bg-[#111827] border border-white/[0.06] rounded-xl px-4 py-3 text-white placeholder:text-zinc-700 focus:outline-none focus:border-blue-500/50 transition-colors text-sm"
               />
               <button
                 onClick={handleAnalyze}
