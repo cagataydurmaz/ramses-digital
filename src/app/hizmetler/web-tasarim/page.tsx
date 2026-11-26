@@ -76,7 +76,7 @@ export default function WebTasarimHizmetPage() {
           <CalendlyButton label="Tasarım Görüşmesi Al" variant="primary" />
           </div>
           <div className="order-first lg:order-none mx-auto w-full max-w-[300px] lg:max-w-none">
-            <SiteKaydirmaTelefon />
+            <SiteKaydirmaTelefon oncelikli />
           </div>
         </div>
       </section>

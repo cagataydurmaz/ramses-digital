@@ -125,7 +125,7 @@ export default function IzmitWebTasarimPage() {
           <HeroGuvenSatiri />
           </div>
           <div className="mx-auto w-full max-w-[300px] lg:max-w-none">
-            <SiteKaydirmaTelefon />
+            <SiteKaydirmaTelefon oncelikli />
           </div>
         </div>
       </section>

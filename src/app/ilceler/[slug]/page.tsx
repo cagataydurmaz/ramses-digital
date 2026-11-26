@@ -124,7 +124,7 @@ export default function IlcePage({ params }: { params: { slug: string } }) {
           <HeroGuvenSatiri />
           </div>
           <div className="mx-auto w-full max-w-[300px] lg:max-w-none">
-            <SiteKaydirmaTelefon />
+            <SiteKaydirmaTelefon oncelikli />
           </div>
         </div>
       </section>
