@@ -155,7 +155,7 @@ export default function ContactPage() {
                     <div>
                       <p className="text-white text-sm font-medium mb-0.5">Adres</p>
                       <a href="https://maps.app.goo.gl/xKzk4Q5VCeK4ePbz6" target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-white text-sm transition-colors">
-                        Körfez Mah. Sanayi Cd., Berk Sk., Dolphin AVM Kat:2 No:224, 41050 İzmit/Kocaeli
+                        Körfez Mah. Sanayi Cd., Berk Sk., Dolphin AVM Kat:2, 41050 İzmit/Kocaeli
                       </a>
                     </div>
                   </div>

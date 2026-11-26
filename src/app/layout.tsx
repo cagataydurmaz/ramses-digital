@@ -143,7 +143,7 @@ export default function RootLayout({
                 slogan: 'Markanızı Dijitalde Büyütün, Gerçek Sonuçlar Elde Edin',
                 image: 'https://ramsesdigital.com/og-image.png',
                 telephone: '+905355601936',
-                address: { '@type': 'PostalAddress', streetAddress: 'Körfez Mah. Sanayi Cd., Berk Sk., Dolphin AVM Kat:2 No:224', postalCode: '41050', addressLocality: 'İzmit', addressRegion: 'Kocaeli', addressCountry: 'TR' },
+                address: { '@type': 'PostalAddress', streetAddress: 'Körfez Mah. Sanayi Cd., Berk Sk., Dolphin AVM Kat:2', postalCode: '41050', addressLocality: 'İzmit', addressRegion: 'Kocaeli', addressCountry: 'TR' },
                 hasMap: 'https://maps.app.goo.gl/xKzk4Q5VCeK4ePbz6',
                 founder: { '@type': 'Person', name: 'Çağatay Durmaz', jobTitle: 'Kurucu' },
                 email: 'ramsesdigitalagency@gmail.com',

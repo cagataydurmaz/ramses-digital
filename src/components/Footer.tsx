@@ -136,20 +136,21 @@ const currentYear = new Date().getFullYear()
 export default function Footer() {
   return (
     <footer className="bg-[#080D18] border-t border-white/[0.06]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
-        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10 sm:py-12">
+        <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_1.3fr_1.3fr_1fr] gap-7 lg:gap-12">
           {/* Brand */}
-          <div className="col-span-2 md:col-span-2 lg:col-span-1">
-            <Link href="/" className="flex items-center gap-1 mb-4">
+          <div>
+            <div className="flex items-center justify-between gap-4 lg:block">
+            <Link href="/" className="flex items-center gap-1 lg:mb-4">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src="/amblem.png" alt="" width={44} height={44} loading="lazy" className="mr-2" />
               <span className="text-blue-500 font-bold text-xl tracking-tight">RAMSES</span>
               <span className="text-white font-light text-xl tracking-tight">Dijital</span>
             </Link>
-            <p className="text-zinc-400 text-sm leading-relaxed mb-6">
+            <p className="hidden lg:block text-zinc-400 text-sm leading-relaxed mb-5">
               Performans odaklı dijital pazarlama ajansı. SEO, Google Ads ve n8n otomasyon ile markanızı dijitalde büyütüyoruz.
             </p>
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-2.5">
               {/* Sosyal medya linkleri — aria-label ile ekran okuyucu desteği */}
               <a
                 href="https://instagram.com/ramses.digital"
@@ -170,18 +171,19 @@ export default function Footer() {
                 <Linkedin size={14} aria-hidden="true" />
               </a>
             </div>
+            </div>
           </div>
 
           {/* Quick Links — h3 kullan (h4 heading hiyerarşisini bozar) */}
           <div>
-            <h3 className="text-white font-semibold text-sm mb-4">Hızlı Linkler</h3>
-            <ul className="space-y-1">
+            <h3 className="text-white font-semibold text-sm mb-2 lg:mb-3">Hızlı Linkler</h3>
+            <ul className="flex flex-wrap gap-x-4 lg:block">
               {quickLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
                     prefetch={false}
-                    className="text-zinc-400 hover:text-white text-sm transition-colors py-2 block"
+                    className="text-zinc-400 hover:text-white text-sm transition-colors py-1.5 lg:py-1 block"
                   >
                     {link.label}
                   </Link>
@@ -192,14 +194,14 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h3 className="text-white font-semibold text-sm mb-4">Hizmetlerimiz</h3>
-            <ul className="space-y-1">
+            <h3 className="text-white font-semibold text-sm mb-2 lg:mb-3">Hizmetlerimiz</h3>
+            <ul className="flex flex-wrap gap-x-4 lg:block">
               {services.map((service) => (
                 <li key={service.href}>
                   <Link
                     href={service.href}
                     prefetch={false}
-                    className={`text-zinc-400 ${service.hoverClass} text-sm transition-colors py-2 block`}
+                    className={`text-zinc-400 ${service.hoverClass} text-sm transition-colors py-1.5 lg:py-1 block`}
                   >
                     {service.label}
                   </Link>
@@ -210,8 +212,8 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="text-white font-semibold text-sm mb-4">İletişim</h3>
-            <ul className="space-y-4">
+            <h3 className="text-white font-semibold text-sm mb-2 lg:mb-3">İletişim</h3>
+            <ul className="space-y-2.5">
               <li>
                 <a
                   href="tel:+905355601936"
@@ -238,7 +240,7 @@ export default function Footer() {
                   className="flex items-center gap-3 text-zinc-400 hover:text-white text-sm transition-colors"
                 >
                   <MapPin size={14} className="text-blue-500 shrink-0" aria-hidden="true" />
-                  Dolphin AVM Kat:2 No:224, İzmit/Kocaeli
+                  Dolphin AVM Kat:2, İzmit/Kocaeli
                 </a>
               </li>
             </ul>
@@ -247,7 +249,7 @@ export default function Footer() {
 
         {/* Şehir sayfaları — tek butonla açılır. Bağlantılar HTML'de her zaman var
             (details kapalıyken de), Google tüm şehir sayfalarını görmeye devam eder. */}
-        <details className="group mt-12 pt-8 border-t border-white/[0.05]">
+        <details className="group mt-8 pt-6 border-t border-white/[0.05]">
           <summary className="list-none [&::-webkit-details-marker]:hidden cursor-pointer inline-flex items-center gap-2 border border-white/10 hover:border-white/20 rounded-full px-5 py-2.5 text-sm text-zinc-300 hover:text-white transition-colors select-none">
             <MapPin size={14} className="text-blue-400" />
             Hizmet Verdiğimiz Şehirler
@@ -275,8 +277,8 @@ export default function Footer() {
           </div>
         </details>
 
-        <div className="mt-10 pt-8 border-t border-white/[0.05] flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-zinc-400 text-sm">
+        <div className="mt-6 pt-6 border-t border-white/[0.05] flex flex-col md:flex-row items-center justify-between gap-3 text-center md:text-left">
+          <p className="text-zinc-400 text-xs sm:text-sm">
             © {foundingYear}{currentYear > foundingYear ? `–${currentYear}` : ''} Ramses Dijital Yazılım ve Dijital Pazarlama Ajansı. Tüm hakları saklıdır.
           </p>
           <div className="flex items-center gap-6">

@@ -228,7 +228,7 @@ export default function Navbar() {
       {/* Mobile Menu — no Framer Motion, no opacity animation, instant render */}
       {menuOpen && (
         <div
-          className="fixed top-16 left-0 right-0 bottom-0 z-40 bg-[#080D18] xl:hidden overflow-y-auto"
+          className="fixed top-16 left-0 right-0 bottom-[calc(60px+env(safe-area-inset-bottom))] md:bottom-0 z-[45] bg-[#080D18] xl:hidden overflow-y-auto overscroll-contain"
           style={{ contain: 'layout style paint' }}
         >
           <div className="px-6 py-6 flex flex-col gap-1">
@@ -287,7 +287,7 @@ export default function Navbar() {
               Tüm Şehirler & Hizmetler →
             </Link>
 
-            <div className="pt-4 flex items-center gap-3">
+            <div className="pt-4 pb-2 flex flex-wrap items-center gap-3">
               <LanguageSwitcher />
               <CalendlyButton label="Ücretsiz Danışmanlık" variant="primary" />
             </div>
