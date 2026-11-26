@@ -32,6 +32,29 @@ const cityLinks = [
   { href: '/eskisehir-dijital-pazarlama', label: 'Eskişehir' },
 ]
 
+// Sektör menüsü (sektorler.ts'teki 12 sayfa; istemci paketine tüm sektör metni girmesin diye ad/slug burada).
+const sektorLinks = [
+  { href: '/sektorler/avukat-hukuk-burolari', label: 'Avukatlar ve Hukuk Büroları' },
+  { href: '/sektorler/dis-hekimleri-klinikler', label: 'Diş Hekimleri ve Klinikler' },
+  { href: '/sektorler/psikolog-terapistler', label: 'Psikologlar ve Terapistler' },
+  { href: '/sektorler/veteriner-klinikleri', label: 'Veteriner Klinikleri' },
+  { href: '/sektorler/mali-musavirler', label: 'Mali Müşavirler' },
+  { href: '/sektorler/e-ticaret', label: 'E-Ticaret İşletmeleri' },
+  { href: '/sektorler/restoran-kafe', label: 'Restoran ve Kafeler' },
+  { href: '/sektorler/ozel-hastane-poliklinik', label: 'Özel Hastane ve Poliklinikler' },
+  { href: '/sektorler/agiz-dis-sagligi-merkezleri', label: 'Ağız ve Diş Sağlığı Merkezleri' },
+  { href: '/sektorler/guzellik-merkezleri', label: 'Güzellik ve Estetik Merkezleri' },
+  { href: '/sektorler/emlak-ofisleri', label: 'Emlak ve İnşaat Firmaları' },
+  { href: '/sektorler/oto-servis', label: 'Oto Servis ve Ekspertiz' },
+]
+const populerLinks = [
+  { href: '/hizmetler/seo', label: 'SEO Hizmeti' },
+  { href: '/hizmetler/web-tasarim', label: 'Web Tasarım' },
+  { href: '/hizmetler/google-ads', label: 'Google Ads Yönetimi' },
+  { href: '/geo-ajansi', label: 'Yapay Zekâ Görünürlüğü (GEO)' },
+  { href: '/teklif-al', label: 'Ücretsiz Teklif Al' },
+]
+
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
@@ -90,6 +113,52 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
+
+            {/* Sektörler mega menü — hover ile açılır, CSS-only */}
+            <div className="group relative py-2 -my-2">
+              <button
+                className={`flex items-center gap-1 text-sm transition-colors duration-200 ${
+                  pathname.startsWith('/sektorler') ? 'text-white' : 'text-zinc-400 group-hover:text-white'
+                }`}
+              >
+                Sektörler
+                <ChevronDown size={14} className="transition-transform group-hover:rotate-180" />
+              </button>
+              <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-150">
+                <div className="bg-[#0D1225] border border-white/[0.08] rounded-2xl p-3 w-[720px] shadow-xl flex gap-3">
+                  <div className="w-[210px] shrink-0 rounded-xl bg-white/[0.04] p-4 flex flex-col">
+                    <p className="text-white font-semibold text-[15px] leading-snug">Sektörünüze özel dijital pazarlama</p>
+                    <p className="text-zinc-500 text-xs mt-1.5 leading-relaxed">Her mesleğin kuralı ve müşterisinin arama alışkanlığı farklı.</p>
+                    <p className="text-zinc-500 text-[11px] uppercase tracking-wider mt-auto pt-5 pb-1.5">Popüler sayfalar</p>
+                    {populerLinks.map((l) => (
+                      <Link key={l.href} href={l.href} prefetch={false} className="text-zinc-400 hover:text-white text-[13px] py-1 transition-colors">
+                        {l.label}
+                      </Link>
+                    ))}
+                  </div>
+                  <div className="flex-1 py-1">
+                    <p className="text-zinc-500 text-[11px] uppercase tracking-wider px-3 pb-1.5">Sektöre özel çözümler</p>
+                    <div className="grid grid-cols-2 gap-0.5">
+                      {sektorLinks.map((l) => (
+                        <Link
+                          key={l.href}
+                          href={l.href}
+                          prefetch={false}
+                          className={`block px-3 py-1.5 rounded-lg text-[13px] transition-colors ${
+                            pathname === l.href ? 'text-white bg-white/[0.06]' : 'text-zinc-400 hover:text-white hover:bg-white/[0.06]'
+                          }`}
+                        >
+                          {l.label}
+                        </Link>
+                      ))}
+                    </div>
+                    <Link href="/sektorler" prefetch={false} className="block mt-1 px-3 py-2 text-[13px] text-blue-400 hover:text-blue-300 transition-colors">
+                      Tüm sektörler →
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             {/* Şehirler dropdown — hover ile açılır, CSS-only */}
             <div className="group relative py-2 -my-2">
@@ -176,6 +245,22 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
+
+            <details className="border-b border-white/[0.04]">
+              <summary className="text-base py-3 text-zinc-400 cursor-pointer list-none flex items-center justify-between">
+                Sektörler <ChevronDown size={16} />
+              </summary>
+              <div className="grid grid-cols-1 gap-0.5 pb-3">
+                {sektorLinks.map((l) => (
+                  <Link key={l.href} href={l.href} prefetch={false} onClick={() => setMenuOpen(false)} className={`text-sm py-2 ${pathname === l.href ? 'text-white' : 'text-zinc-400'}`}>
+                    {l.label}
+                  </Link>
+                ))}
+                <Link href="/sektorler" prefetch={false} onClick={() => setMenuOpen(false)} className="text-sm py-2 text-blue-400">
+                  Tüm sektörler →
+                </Link>
+              </div>
+            </details>
 
             <p className="text-zinc-600 text-xs uppercase tracking-wider pt-4 pb-1">Şehirler</p>
             <div className="grid grid-cols-2 gap-1 pb-3 border-b border-white/[0.04]">

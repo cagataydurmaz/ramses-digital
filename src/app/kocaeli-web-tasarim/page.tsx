@@ -10,6 +10,7 @@ import RelatedPages from '@/components/RelatedPages'
 import { MapPin, Globe, ArrowRight, CheckCircle2, Zap, Smartphone, Search, ShieldCheck, BarChart3, Palette } from 'lucide-react'
 import HeroGuvenSatiri from '@/components/HeroGuvenSatiri'
 import SiteKaydirmaTelefon from '@/components/telefon/SiteKaydirmaTelefon'
+import WebSurecAdimlari from '@/components/WebSurecAdimlari'
 
 export const metadata: Metadata = {
   title: 'Kocaeli Web Tasarım Ajansı – Kurumsal Site | Ramses Dijital',
@@ -151,6 +152,17 @@ export default function KocaeliWebTasarimPage() {
       </section>
 
       <CityServiceSections city="kocaeli" hizmet="web" />
+
+      <section className="py-16 md:py-24 px-6">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-10 md:mb-14">
+            <p className="text-blue-500 text-sm font-medium tracking-wider uppercase mb-3">Süreç</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Kocaeli&apos;de Web Siteniz Adım Adım Nasıl Hazırlanır?</h2>
+            <p className="text-zinc-400 max-w-2xl mx-auto">Her adımda ne teslim ettiğimizi ve sizden ne beklediğimizi baştan bilirsiniz.</p>
+          </div>
+          <WebSurecAdimlari yuzYuze />
+        </div>
+      </section>
 
       <section className="py-12 md:py-16 px-6">
         <div className="max-w-3xl mx-auto">

@@ -5,6 +5,8 @@ import SiteKaydirmaTelefon from '@/components/telefon/SiteKaydirmaTelefon'
 import { WhatsAppTelefonBolumu, ChatbotTelefonBolumu, WebSitesiVideoBolumu } from '@/components/telefon/TelefonBolumleri'
 import KapakGorseli from '@/components/KapakGorseli'
 import KisaOzet from '@/components/KisaOzet'
+import WebSurecAdimlari from '@/components/WebSurecAdimlari'
+import SiteOlusumAnimasyonu from '@/components/SiteOlusumAnimasyonu'
 import Link from 'next/link'
 import CityLinksGrid from '@/components/CityLinksGrid'
 import CalendlyButton from '@/components/CalendlyButton'
@@ -36,14 +38,6 @@ const features = [
   { icon: Code2, title: 'Modern Teknoloji', desc: 'Next.js 14, React 18, TypeScript, Tailwind. Geliştirilebilir, ölçeklenebilir altyapı.' },
   { icon: ShoppingCart, title: 'E-Ticaret Hazır', desc: 'Shopify, WooCommerce, Medusa veya Next.js Commerce ile özel e-ticaret çözümleri.' },
   { icon: Monitor, title: 'CMS Entegrasyonu', desc: 'Sanity, Strapi, WordPress headless. İçerik ekibinizin kolayca yönetebileceği panel.' },
-]
-
-const process = [
-  { step: '01', title: 'Keşif & Strateji', desc: 'Hedef kitle araştırması, rakip analizi, marka kimliği değerlendirmesi ve site mimarisi planlaması.' },
-  { step: '02', title: 'UX & Wireframe', desc: 'Figma üzerinde düşük ve yüksek detaylı tasarımlar. Kullanıcı yolculuğu (user journey) optimizasyonu.' },
-  { step: '03', title: 'UI Tasarım', desc: 'Marka kimliğine uygun, modern ve dönüşüm odaklı görsel tasarım. Tüm sayfa türleri için.' },
-  { step: '04', title: 'Geliştirme', desc: 'Next.js veya WordPress ile özenli, temiz kod yazımı. SEO, performans ve erişilebilirlik standartlarında.' },
-  { step: '05', title: 'Test & Yayın', desc: 'Cross-browser test, hız testi, mobil test, form testleri. Vercel, Netlify veya kendi sunucunuza güvenli yayına alma.' },
 ]
 
 const faqs = [
@@ -105,6 +99,17 @@ export default function WebTasarimHizmetPage() {
         Hızlı açılan, mobilde rahat kullanılan ve ziyaretçiyi aramaya ya da mesaja yönlendiren web siteleri tasarlıyoruz. Siteler SEO uyumlu altyapıyla kurulur; böylece sonradan Google görünürlüğü için baştan yapılması gerekmez.
       </KisaOzet>
 
+      <section className="py-16 md:py-24 px-6">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-10 md:mb-6">
+            <p className="text-emerald-500 text-sm font-medium tracking-wider uppercase mb-3">Sitenin Parçaları</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Siteniz Parça Parça Böyle Oluşur</h2>
+            <p className="text-zinc-400 max-w-2xl mx-auto">Tasarım, içerik, iletişim ve Google ayarları aynı ekipten çıkar. Aşağı kaydırdıkça sitenin nasıl tamamlandığını izleyin.</p>
+          </div>
+          <SiteOlusumAnimasyonu />
+        </div>
+      </section>
+
 
 
 
@@ -134,23 +139,14 @@ export default function WebTasarimHizmetPage() {
 
       <KapakGorseli src="/gorseller/web-tasarim.webp" alt="Masada açık dizüstü bilgisayarda web sitesi tasarımı" />
 
-      <section className="py-20 px-6 bg-[#080D18]">
+      <section className="py-16 md:py-24 px-6">
         <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-14">
+          <div className="text-center mb-10 md:mb-14">
             <p className="text-emerald-500 text-sm font-medium tracking-wider uppercase mb-3">Süreç</p>
-            <h2 className="text-4xl font-bold text-white mb-4">5 Adımda Web Tasarım</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Web Siteniz Adım Adım Nasıl Hazırlanır?</h2>
+            <p className="text-zinc-400 max-w-2xl mx-auto">Her adımda ne teslim ettiğimizi ve sizden ne beklediğimizi baştan bilirsiniz; sürpriz olmaz.</p>
           </div>
-          <div className="space-y-4">
-            {process.map((p) => (
-              <div key={p.step} className="flex gap-6 items-start bg-[#0D1225] border border-white/[0.06] rounded-2xl p-6">
-                <div className="text-3xl font-bold gradient-text shrink-0">{p.step}</div>
-                <div>
-                  <h3 className="text-white font-semibold text-lg mb-1">{p.title}</h3>
-                  <p className="text-zinc-400 text-sm leading-relaxed">{p.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+          <WebSurecAdimlari />
         </div>
       </section>
 
