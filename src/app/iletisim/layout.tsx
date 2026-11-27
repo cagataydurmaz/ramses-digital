@@ -41,7 +41,7 @@ export default function IletisimLayout({ children }: { children: React.ReactNode
                   '@type': 'OpeningHoursSpecification',
                   dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
                   opens: '08:00',
-                  closes: '18:00',
+                  closes: '21:00',
                 },
               ],
             },
